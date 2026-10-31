@@ -19,6 +19,9 @@ jobs:
   run:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    env:
+      # Until the Cloudflare token is added as a repo secret, ingest and build still run; only deploy is skipped.
+      HAS_CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -54,7 +57,12 @@ jobs:
           git diff --cached --quiet || git commit -m "data: nightly snapshot $(date -u +%F)"
           git push
 
+      - name: Deploy skipped (no Cloudflare token yet)
+        if: env.HAS_CF_TOKEN != 'true'
+        run: echo "::notice::CLOUDFLARE_API_TOKEN is not set, so this run built the site but did not deploy it."
+
       - name: Deploy to Cloudflare
+        if: env.HAS_CF_TOKEN == 'true'
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
