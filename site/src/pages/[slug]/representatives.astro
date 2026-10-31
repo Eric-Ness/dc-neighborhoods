@@ -1,7 +1,7 @@
 ---
 import Hood from "../../layouts/Hood.astro";
 import { staticPaths, pageUrl, type Neighborhood } from "../../lib/data";
-import { titleCase } from "../../lib/c5";
+import { titleCase, newsDate, eventDay } from "../../lib/c5";
 
 export const getStaticPaths = staticPaths;
 const { n } = Astro.props as { n: Neighborhood };
@@ -11,8 +11,31 @@ const ancs = [...new Set(n.smds.map((s) => s.anc))].sort().map((anc) => {
   return { anc, rs, url: rs.find((s) => s.url)?.url ?? null };
 });
 const vacant = n.smds.filter((s) => !s.commissioner).length;
+
+// ---- ANC Decoder: what the commissions are doing, from their own posts and DC's ANC office ----
+const TOPICS: [RegExp, string, string][] = [
+  [/\bABRA\b|\bABCA\b|liquor|alcohol/i, "Liquor license", "A bar, restaurant or store's liquor license; the ANC can protest or set conditions."],
+  [/\bBZA\b|zoning|variance|special exception/i, "Zoning case", "A request to build or use a property in a way zoning doesn't allow by right."],
+  [/\bHPRB\b|historic/i, "Historic preservation", "Changes to a building in a historic district."],
+  [/\bDDOT\b|traffic|pedestrian|bike|bus|parking|sidewalk|public space|streetery/i, "Streets & public space", "Traffic, parking, sidewalks and anything built in the public right of way."],
+  [/grant/i, "Grant request", "ANCs can give small grants to local groups; each one is voted on."],
+  [/budget|financial|treasurer/i, "ANC finances", "The commission's own budget and spending reports."],
+  [/minutes/i, "Meeting minutes", "The official record of what was voted on."],
+  [/agenda/i, "Meeting agenda", "What's on the next meeting's table."],
+  [/crime|police|MPD/i, "Police report", "MPD's monthly report to the commission."],
+  [/presentation|briefing|update from/i, "Presentation", "A DC agency, utility or developer briefing the commission."],
+  [/resolution/i, "Resolution", "A formal position the ANC voted to send to a DC agency."],
+];
+const topic = (t: string) => TOPICS.find(([re]) => re.test(t)) ?? null;
+const ancPosts = (n.news?.items ?? []).filter((i) => /^ANC /.test(i.source)).map((i) => ({ ...i, topic: topic(i.title) }));
+const topicCounts = TOPICS.map(([, name, why]) => ({ name, why, n: ancPosts.filter((p) => p.topic?.[1] === name).length })).filter((t) => t.n);
+const ev = n.events;
+const upcoming = (ev?.events ?? []).filter((e) => e.kind === "civic");
+const notices = (ev?.anc_meetings ?? []).filter((m) => !ev || m.date < ev.today).slice(0, 8);
+const postAncs = new Set(ancPosts.map((p) => p.source));
+const unread = ancs.filter((a) => !postAncs.has(`ANC ${a.anc}`));
 ---
-<Hood n={n} page="representatives/" title={`Who represents ${n.name}: ANC commissioners`} description={`The Advisory Neighborhood Commissions and Single Member Districts that cover ${n.name}, with each commissioner and a plain-language guide to what an ANC does.`}
+<Hood n={n} page="representatives/" title={`Who represents ${n.name}: ANC commissioners and what's on their agenda`} description={`The Advisory Neighborhood Commissions and Single Member Districts that cover ${n.name}, with each commissioner and a plain-language guide to what an ANC does.`}
   heading="Representatives" intro={`${n.name} is covered by ${n.smds.length} Single Member Districts in ${ancs.length} Advisory Neighborhood Commission${ancs.length === 1 ? "" : "s"}. Each district elects one unpaid commissioner, your closest elected official.`}>
 
   <div class="row">
@@ -41,11 +64,42 @@ const vacant = n.smds.filter((s) => !s.commissioner).length;
         <a class="cta" href="https://anc.dc.gov/">Look up your SMD by address <span>anc.dc.gov ↗</span></a>
       </section>
       <section class="panel" aria-labelledby="mt-h">
-        <div class="ph"><h2 id="mt-h">Meetings</h2></div>
-        <p class="reps-p">Each ANC posts its own meeting dates, agendas and how to join. Check the commission's site rather than this page, which doesn't track meetings.</p>
+        <div class="ph"><h2 id="mt-h">Next ANC meetings</h2></div>
+        {upcoming.length === 0 ? <p class="reps-p">No meeting notice posted yet for the next {ev?.days_ahead ?? 30} days. ANCs usually post a week or two ahead.</p> : (
+          <ul class="rec">{upcoming.map((e) => <li><a href={e.url} rel="noopener">{e.title}</a><span>{eventDay(e.date, ev!.today).label}{e.time && ` · ${e.time}`}</span></li>)}</ul>
+        )}
         <ul class="reps-links">
-          {ancs.map((a) => <li>{a.url ? <a href={a.url}>ANC {a.anc} meetings and agendas ↗</a> : <span>ANC {a.anc}: no site on file; use anc.dc.gov</span>}</li>)}
+          {ancs.map((a) => <li>{a.url ? <a href={a.url}>ANC {a.anc} site ↗</a> : <span>ANC {a.anc}: no site on file; use anc.dc.gov</span>}</li>)}
         </ul>
+      </section>
+    </div>
+  </div>
+
+  <div class="row" id="decoder">
+    <section class="panel" aria-labelledby="dec-h">
+      <div class="ph"><h2 id="dec-h">ANC Decoder: what's on the table</h2><span class="sub">{ancPosts.length} posts · 6 months</span></div>
+      {ancPosts.length === 0 ? <p class="note">None of {n.name}'s ANCs publishes its documents in a form we can read automatically, so there's nothing to decode yet. {unread.map((a) => `ANC ${a.anc}`).join(" and ")} {unread.length === 1 ? "posts" : "post"} on {unread.length === 1 ? "its" : "their"} own site{unread.length === 1 ? "" : "s"}; see the links beside this.</p> : (
+        <ol class="hl">
+          {ancPosts.slice(0, 14).map((p) => (
+            <li><a href={p.url} rel="noopener">{p.title}</a>
+              <span class="hl-m">{p.topic ? <span class="kind k-civic">{p.topic[1]}</span> : <span class="kind">Other</span>} <b>{p.source}</b> · {newsDate(p.published, n.generated_at)}</span></li>
+          ))}
+        </ol>
+      )}
+      {ancPosts.length > 0 && unread.length > 0 && <p class="hl-note">{unread.map((a) => `ANC ${a.anc}`).join(" and ")} {unread.length === 1 ? "doesn't" : "don't"} publish a feed we can read, so only {[...postAncs].join(" and ")} is decoded here.</p>}
+    </section>
+    <div class="stack">
+      <section class="panel" aria-labelledby="tp-h">
+        <div class="ph"><h2 id="tp-h">What the topics mean</h2></div>
+        {topicCounts.length === 0 ? <p class="reps-p">Each post is tagged by topic once there are posts to read.</p> : (
+          <ul class="rec">{topicCounts.map((t) => <li><b>{t.name} <span class="num">({t.n})</span></b><span>{t.why}</span></li>)}</ul>
+        )}
+      </section>
+      <section class="panel" aria-labelledby="nt-h">
+        <div class="ph"><h2 id="nt-h">Recent meeting notices</h2><span class="sub">DC Office of ANCs</span></div>
+        {notices.length === 0 ? <p class="reps-p">DC's ANC office posts a notice for each public meeting, often with the recording. We started collecting them for {n.name}'s ANCs ({(ev?.ancs ?? ancs.map((a) => `ANC ${a.anc}`)).join(", ")}) on Oct 31, 2026; they'll collect here.</p> : (
+          <ul class="rec">{notices.map((m) => <li><a href={m.url} rel="noopener">{m.title}</a></li>)}</ul>
+        )}
       </section>
     </div>
   </div>

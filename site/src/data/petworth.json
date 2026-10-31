@@ -1,7 +1,7 @@
 {
  "slug": "petworth",
  "name": "Petworth",
- "generated_at": "2026-10-31T19:32:03Z",
+ "generated_at": "2026-10-31T23:01:55Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1195,17 +1195,17 @@
    "smd": "4D07"
   },
   {
-   "id": "BP2700384",
+   "id": "B2609360",
    "issued": "2026-10-23T04:00:00Z",
-   "group": "Minor work",
-   "type": "POST CARD",
-   "subtype": "BUILDING",
-   "address": "504 ALLISON ST NW 20011",
-   "work": "",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "822 GALLATIN ST NW 20011",
+   "work": "replace rear 42 inch by 96 inch metal porch and steps with new wood 42 inch x 96inch rear porch and steps",
    "zoning": "R-3",
-   "lat": 38.94508,
-   "lon": -77.01964,
-   "smd": "4C05"
+   "lat": 38.95173,
+   "lon": -77.02535,
+   "smd": "4D04"
   },
   {
    "id": "B2604550",
@@ -1221,30 +1221,17 @@
    "smd": "4D04"
   },
   {
-   "id": "B2609360",
+   "id": "BP2700384",
    "issued": "2026-10-23T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "822 GALLATIN ST NW 20011",
-   "work": "replace rear 42 inch by 96 inch metal porch and steps with new wood 42 inch x 96inch rear porch and steps",
-   "zoning": "R-3",
-   "lat": 38.95173,
-   "lon": -77.02535,
-   "smd": "4D04"
-  },
-  {
-   "id": "BP2700350",
-   "issued": "2026-10-22T04:00:00Z",
    "group": "Minor work",
    "type": "POST CARD",
    "subtype": "BUILDING",
-   "address": "4914 KANSAS AVE NW 20011",
+   "address": "504 ALLISON ST NW 20011",
    "work": "",
    "zoning": "R-3",
-   "lat": 38.95044,
-   "lon": -77.01989,
-   "smd": "4D07"
+   "lat": 38.94508,
+   "lon": -77.01964,
+   "smd": "4C05"
   },
   {
    "id": "BP2700348",
@@ -1338,17 +1325,17 @@
    "smd": "4D07"
   },
   {
-   "id": "E2700713",
-   "issued": "2026-10-21T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "725 SHEPHERD ST NW 20011",
+   "id": "BP2700350",
+   "issued": "2026-10-22T04:00:00Z",
+   "group": "Minor work",
+   "type": "POST CARD",
+   "subtype": "BUILDING",
+   "address": "4914 KANSAS AVE NW 20011",
    "work": "",
-   "zoning": "RF-1",
-   "lat": 38.93998,
-   "lon": -77.02279,
-   "smd": "4C06"
+   "zoning": "R-3",
+   "lat": 38.95044,
+   "lon": -77.01989,
+   "smd": "4D07"
   },
   {
    "id": "B2605444",
@@ -1362,6 +1349,19 @@
    "lat": 38.94971,
    "lon": -77.02091,
    "smd": "4D06"
+  },
+  {
+   "id": "E2700713",
+   "issued": "2026-10-21T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "725 SHEPHERD ST NW 20011",
+   "work": "",
+   "zoning": "RF-1",
+   "lat": 38.93998,
+   "lon": -77.02279,
+   "smd": "4C06"
   },
   {
    "id": "P2700599",
@@ -2028,33 +2028,33 @@
   }
  ],
  "requests": {
-  "total": 1169,
-  "previous_total": 1337,
+  "total": 1162,
+  "previous_total": 1343,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 213,
-    "previous": 230
+    "count": 211,
+    "previous": 233
    },
    {
     "type": "Scheduled Yard Waste",
     "count": 131,
-    "previous": 167
+    "previous": 166
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 117,
-    "previous": 83
+    "count": 113,
+    "previous": 84
    },
    {
     "type": "Parking Enforcement",
     "count": 86,
-    "previous": 94
+    "previous": 93
    },
    {
     "type": "Illegal Dumping",
     "count": 69,
-    "previous": 94
+    "previous": 95
    },
    {
     "type": "Trash Collection - Missed",
@@ -2084,12 +2084,12 @@
    {
     "type": "Residential Parking Permit Violation",
     "count": 24,
-    "previous": 28
+    "previous": 29
    },
    {
     "type": "Recycling Collection - Missed",
     "count": 22,
-    "previous": 24
+    "previous": 26
    },
    {
     "type": "Rat Replacement Containers",
@@ -2119,7 +2119,7 @@
    {
     "type": "Supercan - Delivery",
     "count": 14,
-    "previous": 35
+    "previous": 34
    },
    {
     "type": "Recycling Cart Delivery",
@@ -2154,7 +2154,7 @@
    {
     "type": "Trash Cart Repair",
     "count": 9,
-    "previous": 23
+    "previous": 22
    },
    {
     "type": "Streetlight Repair Investigation",
@@ -2164,7 +2164,7 @@
    {
     "type": "Supercan - Repair",
     "count": 9,
-    "previous": 7
+    "previous": 8
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
@@ -2252,11 +2252,6 @@
     "previous": 3
    },
    {
-    "type": "Pothole",
-    "count": 2,
-    "previous": 3
-   },
-   {
     "type": "Pet Waste Complaint",
     "count": 2,
     "previous": 4
@@ -2275,6 +2270,11 @@
     "type": "Illegal Poster",
     "count": 2,
     "previous": 5
+   },
+   {
+    "type": "Pothole",
+    "count": 1,
+    "previous": 4
    },
    {
     "type": "DMV - Ticket Ombudsman",
@@ -2337,8 +2337,38 @@
     "previous": 1
    }
   ],
-  "open": 254,
+  "open": 258,
   "recent": [
+   {
+    "type": "Recycling Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-10-31T21:27:30Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "700 block of UPSHUR STREET NW",
+    "lat": 38.942,
+    "lon": -77.023
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-10-31T20:14:59Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "5000 block of ILLINOIS AVENUE NW",
+    "lat": 38.951,
+    "lon": -77.025
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-10-31T19:34:44Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "900 block of DELAFIELD PLACE NW",
+    "lat": 38.949,
+    "lon": -77.026
+   },
    {
     "type": "Container Removal",
     "agency": "DPW",
@@ -2808,36 +2838,6 @@
     "block": "4000 block of 3RD STREET NW",
     "lat": 38.941,
     "lon": -77.015
-   },
-   {
-    "type": "DC Government Information",
-    "agency": "OUC",
-    "added": "2026-10-30T13:17:34Z",
-    "resolved": "2026-10-30T13:17:34Z",
-    "status": "Closed",
-    "block": "5000 block of 1ST STREET NW",
-    "lat": 38.951,
-    "lon": -77.012
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-30T12:55:24Z",
-    "resolved": "2026-10-30T12:55:24Z",
-    "status": "Closed",
-    "block": "200 block of UPSHUR STREET NW",
-    "lat": 38.942,
-    "lon": -77.014
-   },
-   {
-    "type": "Dead Animal Collection",
-    "agency": "DPW",
-    "added": "2026-10-30T12:41:02Z",
-    "resolved": "2026-10-31T15:42:03Z",
-    "status": "Closed",
-    "block": "Unit block of SHERMAN CIRCLE NW",
-    "lat": 38.948,
-    "lon": -77.023
    }
   ]
  },
@@ -2924,7 +2924,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-10-31T19:32:03Z",
+  "generated_at": "2026-10-31T23:01:55Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2939,7 +2939,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Petworth through OTR assessment neighborhood \"Petworth\" (all sub-areas) in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Petworth boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds): 61% of the 6,430 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 93% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Petworth through OTR assessment neighborhood \"Petworth\" (all sub-areas) in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Petworth boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-10-31): 61% of the 6,430 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 93% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -2951,7 +2951,8 @@
    "squares": 108,
    "area_parcels": 6430,
    "area_share_inside": 0.608,
-   "boundary_share_in_area": 0.93
+   "boundary_share_in_area": 0.93,
+   "measured": "2026-10-31"
   },
   "house": {
    "median_12mo": 810000,
@@ -3249,7 +3250,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-10-31T19:32:03Z",
+  "generated_at": "2026-10-31T23:01:55Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3532,7 +3533,7 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 4.06,
-    "city_median_days": 5.14,
+    "city_median_days": 5.13,
     "closed_n": 806
    },
    {
@@ -3557,7 +3558,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-10-31T19:32:03Z",
+  "generated_at": "2026-10-31T23:01:55Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3720,6 +3721,495 @@
    "screened": 0,
    "note": "Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
   }
+ },
+ "news": {
+  "generated_at": "2026-10-31T23:01:55Z",
+  "archive_days": 180,
+  "sources": [
+   {
+    "name": "PoPville",
+    "url": "https://www.popville.com/"
+   },
+   {
+    "name": "Petworth News",
+    "url": "https://www.petworthnews.org/"
+   },
+   {
+    "name": "The DC Line",
+    "url": "https://thedcline.org/"
+   },
+   {
+    "name": "Washingtonian",
+    "url": "https://www.washingtonian.com/"
+   },
+   {
+    "name": "Washington City Paper",
+    "url": "https://washingtoncitypaper.com/"
+   },
+   {
+    "name": "WTOP",
+    "url": "https://wtop.com/"
+   },
+   {
+    "name": "WAMU",
+    "url": "https://wamu.org/"
+   },
+   {
+    "name": "51st",
+    "url": "https://51st.news/"
+   },
+   {
+    "name": "Greater Greater Washington",
+    "url": "https://ggwash.org/"
+   },
+   {
+    "name": "Mayor's office",
+    "url": "https://mayor.dc.gov/newsroom"
+   },
+   {
+    "name": "DDOT",
+    "url": "https://ddot.dc.gov/newsroom"
+   },
+   {
+    "name": "DC Parks and Recreation",
+    "url": "https://dpr.dc.gov/"
+   },
+   {
+    "name": "DC ABCA, Alcohol License Business Locations (Open Data DC)",
+    "url": "https://opendata.dc.gov/datasets/alcohol-license-business-locations"
+   },
+   {
+    "name": "DC ABCA, Liquor License Cancellations (Open Data DC)",
+    "url": "https://opendata.dc.gov/datasets/abca-liquor-license-cancellation"
+   }
+  ],
+  "outlets": [
+   {
+    "name": "PoPville",
+    "url": "https://www.popville.com/",
+    "state": "ok",
+    "matched": 3,
+    "fetched": 3
+   },
+   {
+    "name": "Petworth News",
+    "url": "https://www.petworthnews.org/",
+    "state": "ok",
+    "matched": 6,
+    "fetched": 1
+   },
+   {
+    "name": "The DC Line",
+    "url": "https://thedcline.org/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
+    "name": "Washingtonian",
+    "url": "https://www.washingtonian.com/",
+    "state": "ok",
+    "matched": 1,
+    "fetched": 1
+   },
+   {
+    "name": "Washington City Paper",
+    "url": "https://washingtoncitypaper.com/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
+    "name": "WTOP",
+    "url": "https://wtop.com/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
+    "name": "WAMU",
+    "url": "https://wamu.org/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
+    "name": "51st",
+    "url": "https://51st.news/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
+    "name": "Greater Greater Washington",
+    "url": "https://ggwash.org/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
+    "name": "Mayor's office",
+    "url": "https://mayor.dc.gov/newsroom",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
+    "name": "DDOT",
+    "url": "https://ddot.dc.gov/newsroom",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
+    "name": "DC Parks and Recreation",
+    "url": "https://dpr.dc.gov/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   }
+  ],
+  "items": [
+   {
+    "title": "Shooting Homicide in Park View around 4pm yesterday (Thursday afternoon) not far from Petworth metro",
+    "url": "https://www.popville.com/2026/10/shooting-homicide-dc-park-view-near-petworth-metro/",
+    "source": "PoPville",
+    "published": "2026-10-30T13:15:54Z",
+    "first_seen": "2026-10-31T21:48:28Z"
+   },
+   {
+    "title": "Exclusive Interview with Mayor Bowser \u2013 A Little Walk Down Memory Lane plus a Sneak Peek into the Mayor\u2019s Future Plans.",
+    "url": "https://www.popville.com/2026/10/exclusive-interview-dc-mayor-bowser-past-plus-future-plans/",
+    "source": "PoPville",
+    "published": "2026-10-29T17:25:39Z",
+    "first_seen": "2026-10-31T21:48:28Z"
+   },
+   {
+    "title": "MPD looking for 5 Juveniles involved in a Petworth robbery around 9:45am.",
+    "url": "https://www.popville.com/2026/10/mpd-looking-5-juveniles-dc-petworth-robbery/",
+    "source": "PoPville",
+    "published": "2026-10-28T16:15:56Z",
+    "first_seen": "2026-10-31T21:48:28Z"
+   },
+   {
+    "title": "Free Homecoming community event at Lincoln\u2019s Cottage Sept 19",
+    "url": "https://www.petworthnews.org/blog/cottage-corner-homecoming-26",
+    "source": "Petworth News",
+    "published": "2026-09-05T16:32:22Z",
+    "first_seen": "2026-10-31T21:48:28Z"
+   },
+   {
+    "title": "Where to Eat Ethiopian Food Around the DC Area Right Now",
+    "url": "https://washingtonian.com/guide/food/where-to-eat-ethiopian-food-around-the-dc-area-right-now/",
+    "source": "Washingtonian",
+    "published": "2026-08-31T20:24:18Z",
+    "first_seen": "2026-10-31T21:48:28Z"
+   },
+   {
+    "title": "Live music, dancing, fitness, and a giant book sale: The Parks at Walter Reed",
+    "url": "https://www.petworthnews.org/blog/summer-time-events-the-parks",
+    "source": "Petworth News",
+    "published": "2026-08-11T16:11:49Z",
+    "first_seen": "2026-10-31T21:48:28Z"
+   },
+   {
+    "title": "Lincoln's Cottage hosts free events for America\u2019s 250th",
+    "url": "https://www.petworthnews.org/blog/cottage-corner-250th-events",
+    "source": "Petworth News",
+    "published": "2026-06-19T18:43:41Z",
+    "first_seen": "2026-10-31T21:48:28Z"
+   },
+   {
+    "title": "Porchfest is Saturday, May 30th \u2014 get ready!",
+    "url": "https://www.petworthnews.org/blog/porchfest-53026",
+    "source": "Petworth News",
+    "published": "2026-05-26T12:35:00Z",
+    "first_seen": "2026-10-31T21:48:28Z"
+   },
+   {
+    "title": "Check out 3 ways to find great Petworth Porchfest music on 5/30",
+    "url": "https://www.petworthnews.org/blog/porchfest-426-tools",
+    "source": "Petworth News",
+    "published": "2026-05-13T13:15:00Z",
+    "first_seen": "2026-10-31T21:48:28Z"
+   },
+   {
+    "title": "The Parks at Walter Reed brings a full season of fitness, music, markets and community events",
+    "url": "https://www.petworthnews.org/blog/the-parks-summer-26",
+    "source": "Petworth News",
+    "published": "2026-05-11T22:01:33Z",
+    "first_seen": "2026-10-31T21:48:28Z"
+   }
+  ],
+  "licenses": {
+   "tracked_since": "2026-10-31T21:48:28Z",
+   "active": 28,
+   "by_type": [
+    {
+     "type": "Restaurant",
+     "count": 10
+    },
+    {
+     "type": "Tavern",
+     "count": 8
+    },
+    {
+     "type": "Retail - Grocery",
+     "count": 5
+    },
+    {
+     "type": "Retail - Liquor Store",
+     "count": 3
+    },
+    {
+     "type": "Caterer",
+     "count": 2
+    }
+   ],
+   "ids": [
+    "ABRA-060094",
+    "ABRA-060453",
+    "ABRA-090258",
+    "ABRA-090417",
+    "ABRA-101399",
+    "ABRA-105441",
+    "ABRA-110934",
+    "ABRA-112634",
+    "ABRA-112694",
+    "ABRA-117015",
+    "ABRA-118483",
+    "ABRA-118886",
+    "ABRA-119131",
+    "ABRA-120259",
+    "ABRA-120262",
+    "ABRA-121630",
+    "ABRA-123022",
+    "ABRA-123063",
+    "ABRA-123600",
+    "ABRA-124341",
+    "ABRA-124927",
+    "ABRA-125480",
+    "ABRA-125774",
+    "ABRA-129034",
+    "ABRA-129639",
+    "ABRA-133376",
+    "ABRA-134319",
+    "ABRA-135497"
+   ],
+   "new": [],
+   "cancelled": [
+    {
+     "license": "ABRA-126458",
+     "trade_name": "Uno Mas DC",
+     "address": "3911 GEORGIA AVENUE NW",
+     "type": "Tavern",
+     "cancelled": null,
+     "first_seen": null
+    },
+    {
+     "license": "ABRA-117530",
+     "trade_name": "The Pitch Tavern and Lounge",
+     "address": "4015 GEORGIA AVENUE NW",
+     "type": "Tavern",
+     "cancelled": null,
+     "first_seen": null
+    },
+    {
+     "license": "ABRA-109631",
+     "trade_name": "Slash Run",
+     "address": "201 UPSHUR STREET NW",
+     "type": "Restaurant",
+     "cancelled": null,
+     "first_seen": null
+    },
+    {
+     "license": "ABRA-131677",
+     "trade_name": "Husporia Cocktail Bar & Kitchen",
+     "address": "3725 GEORGIA AVENUE NW",
+     "type": "Restaurant",
+     "cancelled": null,
+     "first_seen": null
+    },
+    {
+     "license": "ABRA-072165",
+     "trade_name": "El Torogoz Restaurant",
+     "address": "4231 9TH STREET NW",
+     "type": "Restaurant",
+     "cancelled": null,
+     "first_seen": null
+    },
+    {
+     "license": "ABRA-122442",
+     "trade_name": "1865 Steak, Seafood & Cigars",
+     "address": "3813 GEORGIA AVENUE NW",
+     "type": "Tavern",
+     "cancelled": null,
+     "first_seen": null
+    }
+   ]
+  }
+ },
+ "events": {
+  "generated_at": "2026-10-31T23:01:55Z",
+  "today": "2026-10-31",
+  "days_ahead": 30,
+  "sources": [
+   {
+    "name": "DC farmers market list",
+    "url": "https://opendata.dc.gov/datasets/farmers-market-locations"
+   },
+   {
+    "name": "DC Office of ANCs meeting notices",
+    "url": "https://oanc.dc.gov/"
+   }
+  ],
+  "calendars": [
+   {
+    "name": "DC farmers market list",
+    "url": "https://opendata.dc.gov/datasets/farmers-market-locations",
+    "state": "ok"
+   },
+   {
+    "name": "DC Office of ANCs meeting notices",
+    "url": "https://oanc.dc.gov/",
+    "state": "ok"
+   }
+  ],
+  "events": [
+   {
+    "title": "Petworth Community Market",
+    "place": "4131-4101 Block 9th St NW",
+    "time": "9:00 AM - 1:00 PM",
+    "url": "https://www.petworthcommunitymarket.org/",
+    "source": "DC farmers market list",
+    "kind": "market",
+    "date": "2026-10-31"
+   },
+   {
+    "title": "Petworth Corner Market",
+    "place": "9th St & Varnum St NW",
+    "time": "3:00 PM - 8:00 PM",
+    "url": "https://opendata.dc.gov/datasets/farmers-market-locations",
+    "source": "DC farmers market list",
+    "kind": "market",
+    "date": "2026-11-01"
+   },
+   {
+    "title": "Petworth Community Market",
+    "place": "4131-4101 Block 9th St NW",
+    "time": "9:00 AM - 1:00 PM",
+    "url": "https://www.petworthcommunitymarket.org/",
+    "source": "DC farmers market list",
+    "kind": "market",
+    "date": "2026-11-07"
+   },
+   {
+    "title": "Petworth Corner Market",
+    "place": "9th St & Varnum St NW",
+    "time": "3:00 PM - 8:00 PM",
+    "url": "https://opendata.dc.gov/datasets/farmers-market-locations",
+    "source": "DC farmers market list",
+    "kind": "market",
+    "date": "2026-11-08"
+   },
+   {
+    "title": "Petworth Community Market",
+    "place": "4131-4101 Block 9th St NW",
+    "time": "9:00 AM - 1:00 PM",
+    "url": "https://www.petworthcommunitymarket.org/",
+    "source": "DC farmers market list",
+    "kind": "market",
+    "date": "2026-11-14"
+   },
+   {
+    "title": "Petworth Community Market",
+    "place": "4131-4101 Block 9th St NW",
+    "time": "9:00 AM - 1:00 PM",
+    "url": "https://www.petworthcommunitymarket.org/",
+    "source": "DC farmers market list",
+    "kind": "market",
+    "date": "2026-11-21"
+   },
+   {
+    "title": "Petworth Corner Market",
+    "place": "9th St & Varnum St NW",
+    "time": "3:00 PM - 8:00 PM",
+    "url": "https://opendata.dc.gov/datasets/farmers-market-locations",
+    "source": "DC farmers market list",
+    "kind": "market",
+    "date": "2026-11-22"
+   }
+  ],
+  "unscheduled": [],
+  "links": [
+   {
+    "name": "Petworth Library events",
+    "url": "https://dclibrary.libnet.info/events?l=Petworth%20Neighborhood%20Library"
+   },
+   {
+    "name": "ANC 4C meetings",
+    "url": "https://www.anc4c.com/"
+   },
+   {
+    "name": "Petworth Community Market",
+    "url": "https://www.petworthcommunitymarket.org/"
+   }
+  ],
+  "ancs": [
+   "ANC 4C",
+   "ANC 4D"
+  ],
+  "anc_meetings": []
+ },
+ "jobs": {
+  "generated_at": "2026-10-31T23:01:55Z",
+  "max_age_days": 120,
+  "sources": [
+   {
+    "name": "Children's National Hospital",
+    "url": "https://childrensnational.wd108.myworkdayjobs.com/CN_Careers"
+   },
+   {
+    "name": "Sweetgreen (Greenhouse)",
+    "url": "https://boards.greenhouse.io/sweetgreen"
+   }
+  ],
+  "employers": [
+   {
+    "name": "Children's National Hospital",
+    "url": "https://childrensnational.wd108.myworkdayjobs.com/CN_Careers",
+    "state": "ok",
+    "count": 2
+   },
+   {
+    "name": "Sweetgreen (Greenhouse)",
+    "url": "https://boards.greenhouse.io/sweetgreen",
+    "state": "ok",
+    "count": 0
+   }
+  ],
+  "jobs": [
+   {
+    "title": "Pediatrician (CA) Primary Care Columbia Heights (PRN)",
+    "employer": "Children's National Hospital",
+    "place": "Columbia Heights",
+    "where": "nearby",
+    "note": "about 1 mi south",
+    "posted": "2026-09-25",
+    "hours": null,
+    "url": "https://childrensnational.wd108.myworkdayjobs.com/CN_Careers/job/Columbia-Heights/Pediatrician--CA--Primary-Care-Columbia-Heights--PRN-_R-000581"
+   },
+   {
+    "title": "LPN II - Primary Care Columbia Heights",
+    "employer": "Children's National Hospital",
+    "place": "Columbia Heights",
+    "where": "nearby",
+    "note": "about 1 mi south",
+    "posted": "2026-08-12",
+    "hours": null,
+    "url": "https://childrensnational.wd108.myworkdayjobs.com/CN_Careers/job/Columbia-Heights/LPN-II---Primary-Care-Columbia-Heights_R-000920"
+   }
+  ]
  },
  "module_errors": {}
 }

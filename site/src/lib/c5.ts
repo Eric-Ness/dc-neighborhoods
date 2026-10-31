@@ -135,6 +135,42 @@ export const asOfDay = (iso: string) =>
 export const shortDate = (iso: string | null) =>
   iso ? new Date(iso).toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: ET }) : "";
 
+/** "Today", "Yesterday", or "Oct 28" (with the year when it isn't this year's), in Washington time. */
+export function newsDate(iso: string, nowIso: string): string {
+  const day = (t: string) => new Date(t).toLocaleDateString("en-CA", { timeZone: ET });
+  const d = day(iso), now = day(nowIso);
+  if (d === now) return "Today";
+  if (d === day(new Date(Date.parse(nowIso) - 86400_000).toISOString())) return "Yesterday";
+  const opts: Intl.DateTimeFormatOptions = { month: "short", day: "numeric", timeZone: ET };
+  if (d.slice(0, 4) !== now.slice(0, 4)) opts.year = "numeric";
+  return new Date(iso).toLocaleDateString("en-US", opts);
+}
+
+/** Event dates are plain calendar days ("2026-11-07"): "Today", "Tomorrow", or "Sat, Nov 7". */
+export function eventDay(day: string, today: string): { label: string; sub: string } {
+  const d = new Date(day + "T12:00:00Z");
+  const diff = Math.round((d.getTime() - new Date(today + "T12:00:00Z").getTime()) / 86400_000);
+  const full = d.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", timeZone: "UTC" });
+  return diff === 0 ? { label: "Today", sub: full } : diff === 1 ? { label: "Tomorrow", sub: full } : { label: full, sub: "" };
+}
+
+/** "9:00 AM - 1:00 PM" or "7 p.m. to 11:59 p.m." -> "9 AM–1 PM", "7 PM–11:59 PM". */
+export const evTime = (s: string) =>
+  s.replace(/\s*(?:-|–|\bto\b)\s*/g, "–")
+    .replace(/(\d{1,2}):(\d{2})\s*([ap])\.?\s?m\.?/gi, (_, h, mi, ap) => `${mi === "00" ? h : `${h}:${mi}`} ${ap.toUpperCase()}M`)
+    .replace(/(\d)\s*([ap])\.\s?m\./gi, (_, d, ap) => `${d} ${ap.toUpperCase()}M`);
+
+/** Group events by day, keeping date order. */
+export function byDay<T extends { date: string }>(events: T[]): { date: string; items: T[] }[] {
+  const out: { date: string; items: T[] }[] = [];
+  for (const e of events) {
+    const last = out[out.length - 1];
+    if (last && last.date === e.date) last.items.push(e);
+    else out.push({ date: e.date, items: [e] });
+  }
+  return out;
+}
+
 // ---------- 311 naming ----------
 const SHORT: Record<string, string> = { "DC Health Rodent & Vector Control": "Rodent & vector control" };
 const LEAD_NAME: Record<string, string> = { "DC Health Rodent & Vector Control": "Rodent complaints" };

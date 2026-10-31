@@ -80,7 +80,7 @@ const condCls: Record<string, string> = { Excellent: "fill s-easing", Good: "fil
       <section class="panel" aria-labelledby="up-h">
         <div class="ph"><h2 id="up-h">Starting in the next 7 days</h2><span class="sub">{upcoming.length} curb permits</span></div>
         {upcoming.length === 0 ? <p class="note">No curb permits start in the next 7 days.</p> : (
-          <div class="dtable-wrap"><table class="dtable">
+          <div class="dtable-wrap"><table class="dtable" data-collapse="6" data-noun="curb permits">
             <thead><tr><th>Block</th><th>Use</th><th>Dates</th><th class="r">Curb</th></tr></thead>
             <tbody>
               {upcoming.map((c) => (

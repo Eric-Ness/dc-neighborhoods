@@ -1,4 +1,4 @@
-// Gate checks for GATES.md. Usage: node tools/verify.mjs <ideas|ranking|docs|privacy|site|deploy|demos>
+// Gate checks for GATES.md. Usage: node tools/verify.mjs <check> (run with no argument to list them)
 // Each check prints "<name> verified" only after every assertion passes, and exits 1 otherwise.
 import { readFileSync, existsSync, readdirSync } from "node:fs";
 import { join, dirname } from "node:path";
@@ -207,7 +207,7 @@ checks.ideademos = () => {
 };
 
 // ---------- phase 3: filled-out C5 site ----------
-const SITE_PAGES = ["", "projects/", "homes/", "streets/", "then/", "representatives/", "subscribe/", "about/"];
+const SITE_PAGES = ["", "news/", "projects/", "homes/", "streets/", "then/", "jobs/", "representatives/", "subscribe/", "about/"];
 const hoods = () => JSON.parse(read("site/src/data/index.json"));
 
 checks.datafull = () => {
@@ -295,6 +295,150 @@ checks.demoindex = () => {
     assert(!card.includes("prov-missing"), `index: #${i.rank} marked not built`);
   }
   assert((html.match(/<li class="card"/g) ?? []).length === 30, "index must have exactly 30 cards");
+};
+
+// ---- news & events ----
+const NEWS_KEYS = ["first_seen", "published", "source", "title", "url"];
+const EVENT_KEYS = ["date", "kind", "place", "source", "time", "title", "url"];
+const etDay = (iso) => new Date(iso).toLocaleDateString("en-CA", { timeZone: "America/New_York" });
+const addDays = (day, k) => new Date(Date.parse(day + "T12:00:00Z") + k * 86400_000).toISOString().slice(0, 10);
+function newsItemProblems(it, now, days) {
+  const p = [];
+  if (Object.keys(it).sort().join() !== NEWS_KEYS.join()) p.push(`fields ${Object.keys(it).sort()}`); // no article text, ever
+  if (!/^https?:\/\//.test(it.url ?? "")) p.push("url");
+  if (!it.title || !it.source) p.push("title/source");
+  const t = Date.parse(it.published);
+  if (!(t <= now + 86400_000 && t >= now - days * 86400_000)) p.push(`published ${it.published} outside ${days} days`);
+  return p;
+}
+
+checks.newsdata = () => {
+  // Positive control: the item check must reject an item that carries article text or a stale date.
+  const now0 = Date.now();
+  const good = { title: "t", url: "https://x.test/a", source: "s", published: new Date(now0).toISOString(), first_seen: new Date(now0).toISOString() };
+  assert(newsItemProblems(good, now0, 180).length === 0, "control: valid item rejected");
+  assert(newsItemProblems({ ...good, summary: "copied text" }, now0, 180).length > 0, "control: item with article text accepted");
+  assert(newsItemProblems({ ...good, published: "2001-01-01T00:00:00Z" }, now0, 180).length > 0, "control: stale item accepted");
+  for (const h of hoods()) {
+    const d = JSON.parse(read(`site/src/data/${h.slug}.json`));
+    const tag = h.slug, nw = d.news, ev = d.events;
+    assert(nw && ev, `${tag}: news/events section missing (${JSON.stringify(d.module_errors ?? {})})`);
+    if (!nw || !ev) continue;
+    const now = Date.parse(d.generated_at);
+    for (const [k, sec] of Object.entries({ news: nw, events: ev }))
+      assert(Math.abs(Date.parse(sec.generated_at) - now) < 30 * 60 * 1000, `${tag}: ${k} not from this run`);
+    const ok = nw.outlets.filter((o) => o.state === "ok" || o.state === "partial");
+    assert(ok.length >= nw.outlets.length / 2, `${tag}: only ${ok.length}/${nw.outlets.length} outlets read`);
+    assert(nw.items.length > 0, `${tag}: no headlines`);
+    for (const it of nw.items) { const p = newsItemProblems(it, now, nw.archive_days); assert(!p.length, `${tag}: news item ${it.url}: ${p.join(", ")}`); }
+    assert(new Set(nw.items.map((i) => i.url)).size === nw.items.length, `${tag}: duplicate headline urls`);
+    assert(nw.items.every((it, i) => i === 0 || nw.items[i - 1].published >= it.published), `${tag}: headlines not newest first`);
+    assert(nw.licenses.active > 0 && Array.isArray(nw.licenses.ids), `${tag}: liquor licenses missing`);
+    assert(nw.licenses.new.every((l) => Object.keys(l).sort().join() === "address,first_seen,license,trade_name,type"), `${tag}: license item carries extra fields`);
+    assert(ev.today === etDay(d.generated_at), `${tag}: events.today ${ev.today} is not the run's Washington date ${etDay(d.generated_at)}`);
+    const end = addDays(ev.today, ev.days_ahead);
+    for (const e of ev.events) {
+      assert(Object.keys(e).sort().join() === EVENT_KEYS.join(), `${tag}: event fields ${Object.keys(e)}`);
+      assert(e.date >= ev.today && e.date < end, `${tag}: event ${e.title} on ${e.date} outside ${ev.today}..${end}`);
+      assert(/^https?:\/\//.test(e.url), `${tag}: event ${e.title} has no link`);
+    }
+    assert(ev.events.every((e, i) => i === 0 || ev.events[i - 1].date <= e.date), `${tag}: events not in date order`);
+    assert(ev.calendars.some((c) => c.name === "DC farmers market list" && c.state === "ok"), `${tag}: DC farmers market list not read`);
+  }
+};
+
+const unamp = (s) => s.replace(/&/g, "&amp;");
+checks.sitenews = () => {
+  for (const h of hoods()) {
+    const d = JSON.parse(read(`site/src/data/${h.slug}.json`));
+    const page = read(`site/dist/${h.slug}/news/index.html`);
+    const home = read(`site/dist/${h.slug}/index.html`);
+    for (const it of d.news?.items ?? []) assert(page.includes(`href="${unamp(it.url)}"`), `${h.slug}/news: headline missing ${it.url}`);
+    for (const e of d.events?.events ?? []) assert(page.includes(`href="${unamp(e.url)}"`) && page.includes(unamp(e.title).replace(/'/g, "&#39;")) , `${h.slug}/news: event missing ${e.title} ${e.date}`);
+    for (const it of (d.news?.items ?? []).slice(0, 6)) assert(home.includes(`href="${unamp(it.url)}"`), `${h.slug}/: top headline missing ${it.url}`);
+    const iH = home.indexOf('id="happening"'), iC = home.indexOf('id="condition"');
+    assert(iH > 0 && iC > iH, `${h.slug}/: news & events band is not above today's condition`);
+    assert(home.includes('href="/' + h.slug + '/news/"'), `${h.slug}/: no link to the news page`);
+    // Every headline link opens the outlet (external), never a copy on our site.
+    for (const m of page.matchAll(/<ol class="hl">([\s\S]*?)<\/ol>/g))
+      for (const a of m[1].matchAll(/<a href="([^"]+)"/g)) assert(/^https?:\/\//.test(a[1]), `${h.slug}/news: headline link ${a[1]} is not external`);
+  }
+};
+
+// ---- curated history content: every street-name entry cites a source; every voice links to an archive ----
+const words = (t) => (t ?? "").trim().split(/\s+/).filter(Boolean).length;
+checks.curated = () => {
+  const sn = JSON.parse(read("site/src/curated/streetnames.json"));
+  const vo = JSON.parse(read("site/src/curated/voices.json"));
+  for (const h of hoods()) {
+    const s = sn.neighborhoods?.[h.slug];
+    assert(s && s.entries.length > 0, `${h.slug}: no street-name entries`);
+    for (const e of s?.entries ?? []) {
+      assert(e.name && e.summary, `${h.slug}: street entry missing name/summary`);
+      assert(words(e.summary) <= 60, `${h.slug}: ${e.name} summary over 60 words`);
+      assert(Array.isArray(e.sources) && e.sources.length > 0 && e.sources.every((x) => /^https:\/\//.test(x.url) && x.title), `${h.slug}: ${e.name} has no usable source`);
+    }
+    for (const v of vo.neighborhoods?.[h.slug] ?? []) {
+      assert(/^https:\/\//.test(v.url) && v.title && v.archive, `${h.slug}: voice item incomplete ${v.title}`);
+      assert(words(v.summary) <= 70, `${h.slug}: voice summary over 70 words ${v.title}`);
+    }
+    const page = read(`site/dist/${h.slug}/then/index.html`);
+    for (const e of s?.entries ?? []) for (const x of e.sources) assert(page.includes(`href="${x.url.replace(/&/g, "&amp;")}"`), `${h.slug}/then: source link missing for ${e.name}`);
+    for (const v of vo.neighborhoods?.[h.slug] ?? []) assert(page.includes(`href="${v.url.replace(/&/g, "&amp;")}"`), `${h.slug}/then: voice link missing ${v.title}`);
+  }
+};
+
+// ---- ANC Decoder, openings & closings, cross-site links ----
+checks.decoder = () => {
+  const sites = JSON.parse(read("site/src/data/index.json"));
+  for (const h of hoods()) {
+    const d = JSON.parse(read(`site/src/data/${h.slug}.json`));
+    const rep = read(`site/dist/${h.slug}/representatives/index.html`);
+    assert(rep.includes('id="decoder"'), `${h.slug}: no ANC Decoder section`);
+    for (const it of (d.news?.items ?? []).filter((i) => /^ANC /.test(i.source)).slice(0, 14))
+      assert(rep.includes(`href="${it.url.replace(/&/g, "&amp;")}"`), `${h.slug}: ANC post missing from decoder ${it.url}`);
+    const lic = d.news?.licenses;
+    assert(lic && Array.isArray(lic.cancelled), `${h.slug}: licenses.cancelled missing`);
+    const news = read(`site/dist/${h.slug}/news/index.html`);
+    assert(news.includes('id="openings"'), `${h.slug}: no Openings & closings section`);
+    for (const c of lic?.cancelled ?? []) {
+      assert(Object.keys(c).sort().join() === "address,cancelled,first_seen,license,trade_name,type", `${h.slug}: cancelled item fields ${Object.keys(c)}`);
+      assert(!lic.ids.includes(c.license), `${h.slug}: ${c.license} is both active and cancelled`);
+    }
+    // every page links every other live neighborhood's own domain
+    for (const p of SITE_PAGES) {
+      const html = read(`site/dist/${h.slug}/${p}index.html`);
+      for (const o of sites.filter((x) => x.slug !== h.slug)) assert(html.includes(`href="https://${o.hosts[0]}/"`), `${h.slug}/${p}: no link to ${o.hosts[0]}`);
+    }
+  }
+};
+
+// ---- jobs: title/employer/place/date/link only, every job on the page, links go to the employer ----
+const JOB_KEYS = "employer,hours,note,place,posted,title,url,where";
+const jobProblems = (j) => {
+  const p = [];
+  if (Object.keys(j).sort().join() !== JOB_KEYS) p.push(`fields ${Object.keys(j).sort()}`);
+  if (!/^https:\/\//.test(j.url ?? "")) p.push("url");
+  if (!["in", "nearby"].includes(j.where)) p.push("where");
+  return p;
+};
+checks.jobs = () => {
+  const good = { title: "t", employer: "e", place: "p", where: "in", note: null, posted: null, hours: null, url: "https://x.test/j" };
+  assert(jobProblems(good).length === 0, "control: valid job rejected");
+  assert(jobProblems({ ...good, description: "copied" }).length > 0, "control: job with a description accepted");
+  for (const h of hoods()) {
+    const d = JSON.parse(read(`site/src/data/${h.slug}.json`));
+    const jb = d.jobs;
+    assert(jb, `${h.slug}: jobs section missing (${JSON.stringify(d.module_errors ?? {})})`);
+    if (!jb) continue;
+    assert(jb.employers.some((e) => e.state === "ok"), `${h.slug}: no employer feed read`);
+    const page = read(`site/dist/${h.slug}/jobs/index.html`);
+    for (const j of jb.jobs) {
+      const p = jobProblems(j);
+      assert(!p.length, `${h.slug}: job ${j.url}: ${p.join(", ")}`);
+      assert(page.includes(`href="${j.url.replace(/&/g, "&amp;")}"`), `${h.slug}/jobs: missing ${j.title}`);
+    }
+  }
 };
 
 const name = process.argv[2];

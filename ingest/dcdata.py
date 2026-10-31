@@ -18,7 +18,7 @@ SEARCH_API = "https://opendata.dc.gov/api/search/v1/collections/dataset/items"
 USER_AGENT = "dc-neighborhoods-ingest/0.1 (+https://petworth.org)"
 
 
-def _request(url: str, params: dict, post: bool = False, retries: int = 3) -> dict:
+def _request(url: str, params: dict, post: bool = False, retries: int = 5) -> dict:
     body = urllib.parse.urlencode(params).encode()
     for attempt in range(retries):
         try:
@@ -35,7 +35,8 @@ def _request(url: str, params: dict, post: bool = False, retries: int = 3) -> di
         except (urllib.error.URLError, TimeoutError, RuntimeError):
             if attempt == retries - 1:
                 raise
-            time.sleep(2 ** attempt)
+            # DC's servers answer "503 wait timeout" under load; give them real time (5, 10, 20, 40 s).
+            time.sleep(5 * 2 ** attempt)
     raise AssertionError("unreachable")
 
 

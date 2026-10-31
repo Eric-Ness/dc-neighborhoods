@@ -1,0 +1,83 @@
+---
+import Hood from "../../layouts/Hood.astro";
+import NewsList from "../../components/NewsList.astro";
+import EventList from "../../components/EventList.astro";
+import { staticPaths, pageUrl, type Neighborhood } from "../../lib/data";
+import { model, addr, newsDate, titleCase } from "../../lib/c5";
+
+export const getStaticPaths = staticPaths;
+const { n } = Astro.props as { n: Neighborhood };
+const u = (p: string) => pageUrl(n.slug, p);
+const nw = n.news;
+const ev = n.events;
+const m = model(n);
+const fresh = m.projects.filter((p) => p.isNew);
+const lic = nw?.licenses;
+const since = lic ? new Date(lic.tracked_since).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "America/New_York" }) : "";
+const STATE: Record<string, string> = { ok: "Read tonight", partial: "Partly read tonight" };
+---
+<Hood n={n} page="news/" title={`${n.name} news and events`} description={`Local headlines that mention ${n.name}, what's on in the next month, openings and closings, and new projects from DC's records. Updated nightly.`}
+  heading="News & events" intro={`Headlines about ${n.name} from local outlets, what's coming up, and what's new in DC's own records. Gathered automatically every night; each item links to its source.`}>
+
+  <div class="row">
+    <NewsList n={n} heading="Headlines" />
+    <div class="stack">
+      <EventList n={n} heading="What's on" />
+
+      <section id="records" class="panel" aria-labelledby="rec-h">
+        <div class="ph"><h2 id="rec-h">New in DC's records</h2><span class="sub">From DC open data</span></div>
+        <h3 class="sh">Bigger projects, permits issued this week</h3>
+        {fresh.length === 0 ? <p class="note">No demolition, addition or new-building permits issued in the last 7 days.</p> : (
+          <ul class="rec">
+            {fresh.map((p) => <li><a href={u(`projects/#p${p.id}`)}>{addr(p.address)}</a><span>{p.group} · {newsDate(p.issued!, n.generated_at)}</span></li>)}
+          </ul>
+        )}
+      </section>
+
+      <section id="openings" class="panel" aria-labelledby="oc-h">
+        <div class="ph"><h2 id="oc-h">Openings & closings</h2><span class="sub">From liquor licenses</span></div>
+        <h3 class="sh">Opened: new licenses</h3>
+        {!lic ? <p class="note">License data didn't update tonight.</p>
+        : lic.new.length === 0 ? <p class="note">None since we started tracking on {since}. A new liquor license usually means a new restaurant, bar or shop; it shows here the night it appears in DC's list.</p>
+        : (
+          <ul class="rec">
+            {lic.new.map((l) => <li><div><b>{l.trade_name ? titleCase(l.trade_name) : "New license"}</b> · {addr(l.address)}</div><span>{l.type} · first seen {newsDate(l.first_seen, n.generated_at)}</span></li>)}
+          </ul>
+        )}
+        <h3 class="sh">Gone: licenses cancelled</h3>
+        {!lic?.cancelled ? <p class="note">Cancellations didn't update tonight.</p>
+        : lic.cancelled.length === 0 ? <p class="note">No cancelled liquor licenses in {n.name}.</p>
+        : (
+          <ul class="rec">
+            {lic.cancelled.map((c) => <li><div><b>{c.trade_name && c.trade_name !== "TBD" ? titleCase(c.trade_name) : "Unnamed business"}</b> · {addr(c.address)}</div>
+              <span>{c.type} · {c.cancelled ? `cancelled ${newsDate(c.cancelled, n.generated_at)}` : c.first_seen ? `cancellation first seen ${newsDate(c.first_seen, n.generated_at)}` : `cancelled before ${since}`}</span></li>)}
+          </ul>
+        )}
+        <p class="note">A cancelled license usually means the place closed, but not always: it can also mean an ownership change. Places that got a new license at the same address under a similar name are left out. {lic && `${lic.active} liquor licenses are active in ${n.name} now.`}</p>
+      </section>
+    </div>
+  </div>
+
+  <div class="row even">
+    <section id="outlets" class="panel" aria-labelledby="out-h">
+      <div class="ph"><h2 id="out-h">Where the headlines come from</h2><span class="sub">{nw?.outlets.length ?? 0} outlets</span></div>
+      {nw ? (
+        <div class="tbl-wrap"><table class="dtable">
+          <thead><tr><th>Outlet</th><th>Tonight</th><th class="num">Matches</th></tr></thead>
+          <tbody>{nw.outlets.map((o) => <tr><td><a href={o.url}>{o.name}</a></td><td>{STATE[o.state] ?? "Not read tonight"}</td><td class="num">{o.matched}</td></tr>)}</tbody>
+        </table></div>
+      ) : <p class="note">Headlines didn't update tonight.</p>}
+      <p class="note">A story counts when its headline, summary or tags mention {n.name} or a landmark in it. We read each outlet's public feed, only where its robots.txt allows, and keep the headline, outlet, date and link; never the article. Stories stay listed for {Math.round((nw?.archive_days ?? 180) / 30)} months.</p>
+    </section>
+    <section id="calendars" class="panel" aria-labelledby="cal-h">
+      <div class="ph"><h2 id="cal-h">Where the events come from</h2></div>
+      {ev ? (
+        <ul class="rec">
+          {ev.calendars.map((c) => <li><a href={c.url}>{c.name}</a><span>{STATE[c.state] ?? "Not read tonight"}</span></li>)}
+          {ev.unscheduled.map((x) => <li><a href={x.url}>{x.title}</a><span>{x.schedule}{x.time && ` · ${x.time}`} (schedule not dated)</span></li>)}
+        </ul>
+      ) : <p class="note">Events didn't update tonight.</p>}
+      <p class="note">Only calendars that publish listings for computers to read are included, so some events are missing; the "Also check" links cover the rest. Know a public calendar that should be here? <a href={u("about/#corrections")}>Tell us</a>.</p>
+    </section>
+  </div>
+</Hood>

@@ -1,5 +1,7 @@
 ---
 import Hood from "../../layouts/Hood.astro";
+import StreetNames from "../../components/StreetNames.astro";
+import Voices from "../../components/Voices.astro";
 import { staticPaths, pageUrl, type Neighborhood } from "../../lib/data";
 import { bar, fmt, money, shortDate } from "../../lib/c5";
 
@@ -114,6 +116,9 @@ const clipDate = (d: string) => new Date(d + "T12:00:00Z").toLocaleDateString("e
         <p class="note then-note">{ar!.note}</p>
       </section>
     </div>
+
+    <StreetNames slug={n.slug} name={n.name} />
+    <Voices slug={n.slug} name={n.name} />
 
     <div class="row one">
       <section class="panel" aria-labelledby="src-h">

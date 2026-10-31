@@ -2,6 +2,8 @@
 import Hood from "../../layouts/Hood.astro";
 import PermitMap from "../../components/PermitMap.astro";
 import ProjectList from "../../components/ProjectList.astro";
+import NewsList from "../../components/NewsList.astro";
+import EventList from "../../components/EventList.astro";
 import { staticPaths, pageUrl, type Neighborhood } from "../../lib/data";
 import {
   model, reading, pair, bar, icon, stateTag, glyph, fmt, money, sign, shortType, leadName, titleCase, asOfDay,
@@ -74,7 +76,12 @@ const hi = n.history;
 const fb = hi?.buildings.featured_block;
 const clip = hi?.archive.clips[0];
 ---
-<Hood n={n} page="" title={`${n.name}: what's changing, from DC's own data`} description={`What's changing in ${n.name}, Washington DC: permits, 311, homes, streets and history from DC's own open data. Independent; updated nightly.`}>
+<Hood n={n} page="" title={`${n.name}: news, events and what's changing`} description={`${n.name}, Washington DC: local headlines, what's on this week, and what's changing in permits, 311, homes and streets, from DC's own open data. Independent; updated nightly.`}>
+
+  <div class="row happening" id="happening">
+    <NewsList n={n} limit={6} moreHref={u("news/")} />
+    <EventList n={n} days={14} limit={8} moreHref={u("news/#events")} heading="Coming up" />
+  </div>
 
   <section id="condition" class="cond" aria-labelledby="c-h">
     <div>

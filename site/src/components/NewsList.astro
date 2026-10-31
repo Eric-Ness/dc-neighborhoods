@@ -1,0 +1,28 @@
+---
+// Local headlines that mention the neighborhood (ingest/news.py). Headline, outlet and date only:
+// every item links out to the outlet that reported it.
+import type { Neighborhood } from "../lib/data";
+import { newsDate } from "../lib/c5";
+
+interface Props { n: Neighborhood; limit?: number; moreHref?: string; heading?: string; id?: string }
+const { n, limit, moreHref, heading = "Latest news", id = "news" } = Astro.props;
+const nw = n.news;
+const items = nw ? (limit ? nw.items.slice(0, limit) : nw.items) : [];
+const months = Math.round((nw?.archive_days ?? 180) / 30);
+---
+<section id={id} class="panel newsp" aria-labelledby={`${id}-h`}>
+  <div class="ph"><h2 id={`${id}-h`}>{heading}</h2>{moreHref ? <a href={moreHref}>All news & events →</a> : nw && <span class="sub">{nw.items.length} in {months} months</span>}</div>
+  {!nw ? <p class="note">Headlines didn't update tonight. They'll return after the next nightly run.</p>
+  : items.length === 0 ? <p class="note">No local outlet has mentioned {n.name} in the last {months} months.</p>
+  : (
+    <ol class="hl">
+      {items.map((it) => (
+        <li>
+          <a href={it.url} rel="noopener">{it.title}</a>
+          <span class="hl-m"><b>{it.source}</b> · <time datetime={it.published}>{newsDate(it.published, n.generated_at)}</time></span>
+        </li>
+      ))}
+    </ol>
+  )}
+  {nw && <p class="hl-note">Headlines from local outlets that mention {n.name}, linked to the outlet. We don't copy articles.</p>}
+</section>

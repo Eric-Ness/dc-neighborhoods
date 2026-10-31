@@ -1,0 +1,32 @@
+---
+// Street-Name Dictionary (site/src/curated/streetnames.json, researched by hand with a source on every
+// entry). Names nobody could source are listed as open questions, never guessed.
+interface Entry { name: string; kind: string; honors: string | null; summary: string; named: string | null; former_names?: string[]; sources: { title: string; url: string }[] }
+interface Props { slug: string; name: string }
+const { slug, name } = Astro.props;
+const files = import.meta.glob<{ default: { neighborhoods: Record<string, { entries: Entry[]; unsourced: string[] }> } }>("../curated/streetnames.json", { eager: true });
+const data = Object.values(files)[0]?.default.neighborhoods[slug];
+const entries = (data?.entries ?? []).filter((e) => e.sources?.length).sort((a, b) => a.name.localeCompare(b.name));
+const unsourced = data?.unsourced ?? [];
+---
+{entries.length > 0 && (
+  <div class="row one">
+    <section id="street-names" class="panel" aria-labelledby="sn-h">
+      <div class="ph"><h2 id="sn-h">Street names: where they come from</h2><span class="sub">{entries.length} names, each with a source</span></div>
+      <dl class="names">
+        {entries.map((e) => (
+          <div class="nm">
+            <dt><b>{e.name}</b>{e.named && <span class="num">{e.named}</span>}</dt>
+            <dd>
+              {e.honors && <span class="nm-h">Honors: {e.honors}</span>}
+              <p>{e.summary}</p>
+              {e.former_names && e.former_names.length > 0 && <span class="nm-f">Earlier: {e.former_names.join(", ")}</span>}
+              <span class="nm-s">Source{e.sources.length > 1 ? "s" : ""}: {e.sources.map((s, i) => <>{i > 0 && " · "}<a href={s.url} rel="noopener">{s.title}</a></>)}</span>
+            </dd>
+          </div>
+        ))}
+      </dl>
+      {unsourced.length > 0 && <p class="note">Still looking for a reliable source on {unsourced.join(", ")}. We don't publish a name's story until we can cite one. Know it? <a href={`/${slug}/about/#corrections`}>Tell us</a>.</p>}
+    </section>
+  </div>
+)}

@@ -7,6 +7,9 @@
 | `ingest/homes.py` | `homes` |
 | `ingest/streets.py` | `streets` |
 | `ingest/history.py` | `history` |
+| `ingest/news.py` | `news` (reads the previous snapshot back to keep its archive) |
+| `ingest/events.py` | `events` |
+| `ingest/jobs.py` | `jobs` (sources and exclusions in `ingest/JOBS-SOURCES.md`) |
 
 ## Interface (each module)
 

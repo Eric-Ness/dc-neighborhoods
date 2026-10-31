@@ -1,0 +1,31 @@
+---
+// Neighborhood Voices (site/src/curated/voices.json): an index of oral histories held by archives.
+// We link to each archive; nothing is copied or hosted here.
+interface Item { title: string; who: string | null; year: string | null; decades?: string[]; topics?: string[]; summary: string; archive: string; url: string; format: string }
+interface Props { slug: string; name: string }
+const { slug, name } = Astro.props;
+const files = import.meta.glob<{ default: { neighborhoods: Record<string, Item[]>; archives?: { name: string; url: string; how_to_search: string }[] } }>("../curated/voices.json", { eager: true });
+const data = Object.values(files)[0]?.default;
+const items = data?.neighborhoods[slug] ?? [];
+const archives = data?.archives ?? [];
+---
+{data && (
+  <div class="row one">
+    <section id="voices" class="panel" aria-labelledby="vo-h">
+      <div class="ph"><h2 id="vo-h">Neighborhood voices</h2><span class="sub">Oral histories, held by the archives</span></div>
+      {items.length === 0 ? <p class="note">We haven't found a recorded oral history about {name} in a public archive yet.</p> : (
+        <ul class="voices">
+          {items.map((v) => (
+            <li>
+              <a href={v.url} rel="noopener">{v.title}</a>
+              <span class="hl-m">{[v.who, v.year, v.format].filter(Boolean).join(" · ")}{v.decades?.length ? ` · remembers the ${v.decades.join(", ")}` : ""}</span>
+              <p>{v.summary}</p>
+              <span class="hl-m">At <b>{v.archive}</b>{v.topics?.length ? ` · ${v.topics.join(", ")}` : ""}</span>
+            </li>
+          ))}
+        </ul>
+      )}
+      {archives.length > 0 && <p class="hl-note">Search the archives yourself: {archives.map((a, i) => <>{i > 0 && " · "}<a href={a.url} rel="noopener">{a.name}</a></>)}. Summaries are ours; the recordings and their rights stay with each archive.</p>}
+    </section>
+  </div>
+)}

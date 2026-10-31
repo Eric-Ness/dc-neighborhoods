@@ -15,13 +15,13 @@ interface Props {
 const { n, page, title, description, heading, intro } = Astro.props;
 const home = pageUrl(n.slug);
 ---
-<Base title={title} description={description} rss={`/${n.slug}/permits.xml`} generated={n.generated_at}>
+<Base title={title} description={description} rss={`/${n.slug}/permits.xml`} generated={n.generated_at} slug={n.slug}>
   <header><div class="wrap">
     <div class="topbar">
       <div class="hd">
         <div class="brand">
           {page === "" ? <h1>{n.name}</h1> : <a class="brand-link" href={home}>{n.name}</a>}
-          <p>What's changing in {n.name}, from DC's own data</p>
+          <p>News, events and what's changing in {n.name}</p>
         </div>
         <div class="asof"><span class="dot" aria-hidden="true"></span>Data as of <b><time datetime={n.generated_at}>{asOf(n.generated_at)}</time></b><br />Updated nightly</div>
       </div>

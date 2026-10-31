@@ -25,7 +25,10 @@ const house = h ? change(h.house) : null;
 const condo = h ? change(h.condo) : null;
 const months = h?.by_month ?? [];
 const maxMonth = Math.max(...months.map((m) => m.median ?? 0), 1);
-const fit = (h?.boundary_fit ?? null) as { squares: number; area_parcels: number; area_share_inside: number; boundary_share_in_area: number } | null;
+type Fit = { squares: number; area_parcels: number; area_share_inside: number | null; boundary_share_in_area: number | null };
+const rawFit = (h?.boundary_fit ?? null) as Partial<Fit> | null;
+// The overlap is measured each run; when DC's address-point query comes back empty the ingest writes {}.
+const fit = rawFit && rawFit.squares && rawFit.area_share_inside != null && rawFit.boundary_share_in_area != null ? (rawFit as Fit) : null;
 const salesNote = typeof h?.sales_note === "string" ? (h.sales_note as string) : null;
 const sales = h?.recent_sales ?? [];
 const above = sales.filter((s) => s.assessed != null && s.price > s.assessed).length;
@@ -102,7 +105,7 @@ const withAssess = sales.filter((s) => s.assessed != null).length;
     <div class="row one">
       <section id="recent" class="panel" aria-labelledby="rs-h">
         <div class="ph"><h2 id="rs-h">Recent sales</h2><span class="sub">{sales.length} newest market sales</span></div>
-        <div class="dtable-wrap"><table class="dtable">
+        <div class="dtable-wrap"><table class="dtable" data-collapse="10" data-noun="recent sales">
           <thead><tr><th>Date</th><th>Address</th><th>Type</th><th class="r">Price</th><th class="r">Assessed</th><th class="r">Beds</th><th class="r">Sq ft</th></tr></thead>
           <tbody>
             {sales.map((s) => (
@@ -127,8 +130,8 @@ const withAssess = sales.filter((s) => s.assessed != null).length;
         <div class="ph"><h2 id="ar-h">Which sales count as {n.name}</h2></div>
         {fit && (
           <div class="stats s3">
-            <div><div class="v">{Math.round(fit.area_share_inside * 100)}%</div><div class="k">of the {fmt(fit.area_parcels)} tax-area homes sit on squares inside the {n.name} boundary</div></div>
-            <div><div class="v">{Math.round(fit.boundary_share_in_area * 100)}%</div><div class="k">of homes on in-boundary squares fall in the tax area</div></div>
+            <div><div class="v">{Math.round(fit.area_share_inside! * 100)}%</div><div class="k">of the {fmt(fit.area_parcels)} tax-area homes sit on squares inside the {n.name} boundary</div></div>
+            <div><div class="v">{Math.round(fit.boundary_share_in_area! * 100)}%</div><div class="k">of homes on in-boundary squares fall in the tax area</div></div>
             <div><div class="v">{fmt(fit.squares)}</div><div class="k">tax squares checked against the boundary</div></div>
           </div>
         )}

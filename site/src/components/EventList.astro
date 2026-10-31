@@ -1,0 +1,43 @@
+---
+// Upcoming events (ingest/events.py), grouped by day. Every event links to whoever listed it.
+import type { Neighborhood } from "../lib/data";
+import { byDay, eventDay, evTime } from "../lib/c5";
+
+interface Props { n: Neighborhood; days?: number; limit?: number; moreHref?: string; heading?: string; id?: string }
+const { n, days, limit, moreHref, heading = "Coming up", id = "events" } = Astro.props;
+const ev = n.events;
+const KIND: Record<string, string> = { market: "Market", community: "Community", civic: "Public meeting" };
+let list = ev ? ev.events : [];
+if (ev && days) {
+  const end = new Date(Date.parse(ev.today + "T12:00:00Z") + days * 86400_000).toISOString().slice(0, 10);
+  list = list.filter((e) => e.date < end);
+}
+const total = list.length;
+if (limit) list = list.slice(0, limit);
+const span = days ?? ev?.days_ahead ?? 30;
+---
+<section id={id} class="panel evp" aria-labelledby={`${id}-h`}>
+  <div class="ph"><h2 id={`${id}-h`}>{heading}</h2>{moreHref ? <a href={moreHref}>{total > list.length ? `All ${total} →` : "News & events →"}</a> : <span class="sub">Next {span} days</span>}</div>
+  {!ev ? <p class="note">Events didn't update tonight. They'll return after the next nightly run.</p>
+  : list.length === 0 ? <p class="note">Nothing listed in {n.name} for the next {span} days yet.</p>
+  : byDay(list).map((g) => {
+      const dl = eventDay(g.date, ev.today);
+      return (
+        <div class="evd">
+          <div class="evd-h">{dl.label}{dl.sub && <span>{dl.sub}</span>}</div>
+          <ul>
+            {g.items.map((e) => (
+              <li class="ev">
+                <span class="ev-t num">{e.time ? evTime(e.time) : "Time TBA"}</span>
+                <span class="ev-b"><a href={e.url} rel="noopener">{e.title}</a>
+                  <span class="ev-m"><span class={`kind k-${e.kind}`}>{KIND[e.kind] ?? "Event"}</span>{e.place && <> · {e.place}</>}</span></span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      );
+    })}
+  {ev && ev.links.length > 0 && (
+    <div class="evlinks"><span>Also check:</span> {ev.links.map((l, i) => <>{i > 0 && " · "}<a href={l.url} rel="noopener">{l.name}</a></>)}</div>
+  )}
+</section>

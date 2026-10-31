@@ -1,14 +1,15 @@
-/* C5 design system, ported from design/layouts/src/C5_hybrid.py. Shared by every neighborhood page. */
+/* C5 design system, ported from design/layouts/src/C5_hybrid.py. Shared by every neighborhood page.
+   Light theme uses a soft blue-gray ground (chosen 2026-10-31 over the original cream). */
 :root{
-  --bg:#f1efea; --surface:#fbfaf7; --surface-2:#f5f3ee; --ink:#1e2a2e; --ink-2:#3e4a4d; --muted:#6a7471;
-  --line:#ddd9d0; --line-2:#e8e5de;
+  --bg:#e6edf2; --surface:#fbfdfe; --surface-2:#f1f5f8; --ink:#1e2a2e; --ink-2:#3e4a4d; --muted:#5e6a73;
+  --line:#d2dce4; --line-2:#e3eaf0;
   --accent:#466f60; --accent-soft:#e2ebe5;
   --rising:#b05a36; --rising-soft:#f4e3d9;
   --easing:#3d6684; --easing-soft:#dfe8ef;
   --steady:#6f7a75; --steady-soft:#e7e9e6;
   --mix:#7a6a45;
-  --track:#ebe8e1; --prevbar:#cbc7bd; --neutral:#4f5a5d;
-  --grid-f:#e6e3db; --grid-m:#d5d1c7; --map-bg:#f3f1ec;
+  --track:#e3eaf0; --prevbar:#bfcbd5; --neutral:#4f5a5d;
+  --grid-f:#e3eaf0; --grid-m:#cfd9e2; --map-bg:#f4f7fa;
   --c-demo:#b05a36; --c-add:#466f60; --c-newc:#7a6a45; --on-mk:#ffffff;
   --sans:"Instrument Sans", "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
   --mono:"IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, Menlo, monospace;
@@ -381,3 +382,72 @@ table.dtable{border-collapse:collapse;width:100%;font-size:13.5px}
 .pwork.full{display:block;-webkit-line-clamp:unset}
 body.hide-other .pt.c-other{display:none}
 .row.top{align-items:start}
+
+/* ---------- news & events ---------- */
+.hl{list-style:none;margin:0;padding:0}
+.hl li{display:flex;flex-direction:column;gap:3px;padding:10px 0;border-top:1px solid var(--line-2)}
+.hl li:first-child{border-top:0;padding-top:2px}
+.hl a{color:var(--ink);text-decoration:none;font-size:15px;line-height:1.35;font-weight:500}
+.hl a:hover{color:var(--accent);text-decoration:underline}
+.hl-m{font-size:12.5px;color:var(--muted)}
+.hl-m b{font-weight:600;color:var(--ink-2)}
+.hl-note{font-size:12px;color:var(--muted);margin:10px 0 0;padding-top:10px;border-top:1px solid var(--line)}
+.evd+.evd{margin-top:12px}
+.evd-h{font:600 12px/1.2 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--accent);display:flex;gap:8px;align-items:baseline;padding-bottom:4px;border-bottom:1px solid var(--line)}
+.evd-h span{color:var(--muted);font-weight:500;letter-spacing:.02em;text-transform:none;font-size:12px}
+.evd ul{list-style:none;margin:0;padding:0}
+.ev{display:grid;grid-template-columns:118px minmax(0,1fr);gap:10px;padding:8px 0;border-top:1px solid var(--line-2)}
+.ev:first-child{border-top:0}
+.ev-t{font:500 12px/1.5 var(--mono);color:var(--ink-2)}
+.ev-b{display:flex;flex-direction:column;gap:2px;min-width:0}
+.ev-b a{color:var(--ink);text-decoration:none;font-weight:500;font-size:14.5px;line-height:1.35}
+.ev-b a:hover{color:var(--accent);text-decoration:underline}
+.ev-m{font-size:12.5px;color:var(--muted)}
+.kind{display:inline-block;font:600 10.5px/1 var(--sans);letter-spacing:.05em;text-transform:uppercase;padding:3px 6px;border-radius:4px;background:var(--surface-2);border:1px solid var(--line);color:var(--ink-2)}
+.kind.k-market{background:var(--accent-soft);border-color:transparent;color:var(--accent)}
+.kind.k-civic{background:var(--steady-soft);border-color:transparent}
+.evlinks{font-size:12.5px;color:var(--muted);margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}
+.evlinks a{color:var(--accent);font-weight:600;text-decoration:none}
+.sh{font-size:13.5px;font-weight:600;margin:14px 0 6px;color:var(--ink)}
+.sh:first-of-type{margin-top:0}
+.rec{list-style:none;margin:0;padding:0}
+.rec li{display:flex;flex-direction:column;gap:2px;padding:8px 0;border-top:1px solid var(--line-2);font-size:14px}
+.rec li:first-child{border-top:0}
+.rec li span{font-size:12.5px;color:var(--muted)}
+.rec a{color:var(--accent);font-weight:600;text-decoration:none}
+.happening{margin-top:0}
+.happening+.cond{margin-top:14px}
+@media (min-width:720px){.happening+.cond{margin-top:18px}}
+@media (max-width:480px){.ev{grid-template-columns:1fr;gap:2px}}
+
+/* ---------- cross-site links ---------- */
+.sites{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;padding:0 0 14px;margin-bottom:14px;border-bottom:1px solid var(--line)}
+.sites>span{font:600 12px/1.2 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.sites ul{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.sites li>a,.sites li>span{display:inline-flex;gap:6px;align-items:baseline;padding:5px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);font-size:13.5px;text-decoration:none;color:var(--ink)}
+.sites li>a small{color:var(--muted);font:500 11px/1 var(--mono)}
+.sites li>a:hover{border-color:var(--accent);color:var(--accent)}
+.sites li>span[aria-current]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+
+/* ---------- street names & voices ---------- */
+.names{margin:0;display:grid;gap:0 28px}
+@media (min-width:720px){.names{grid-template-columns:1fr 1fr}}
+.nm{padding:12px 0;border-top:1px solid var(--line-2)}
+.nm dt{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.nm dt b{font-size:15px}
+.nm dt span{font-size:12px;color:var(--muted)}
+.nm dd{margin:4px 0 0;display:flex;flex-direction:column;gap:3px}
+.nm dd p{margin:0;font-size:14px;line-height:1.5}
+.nm-h{font-size:13px;font-weight:600;color:var(--accent)}
+.nm-f,.nm-s{font-size:12px;color:var(--muted)}
+.nm-s a{color:var(--muted)}
+.voices{list-style:none;margin:0;padding:0;display:grid;gap:0 28px}
+@media (min-width:720px){.voices{grid-template-columns:1fr 1fr}}
+.voices li{display:flex;flex-direction:column;gap:3px;padding:12px 0;border-top:1px solid var(--line-2)}
+.voices a{font-weight:600;color:var(--ink);text-decoration:none;font-size:15px}
+.voices a:hover{color:var(--accent);text-decoration:underline}
+.voices p{margin:2px 0;font-size:14px;line-height:1.5}
+
+/* ---------- collapsible long tables ---------- */
+.more-btn{display:block;width:100%;margin-top:10px;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface-2);color:var(--accent);font-weight:600;font-size:13.5px;cursor:pointer}
+.more-btn:hover{border-color:var(--accent)}

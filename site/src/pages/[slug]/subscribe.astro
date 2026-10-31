@@ -14,7 +14,11 @@ const hi = n.history;
 const ancs = new Set(n.smds.map((s) => s.anc)).size;
 
 // Mirrors the home page, section by section, with this week's figure as the example.
+const nw = n.news, ev = n.events;
+const evWeek = ev ? ev.events.filter((e) => e.date < new Date(Date.parse(ev.today + "T12:00:00Z") + 7 * 86400_000).toISOString().slice(0, 10)) : [];
 const items: { name: string; what: string; now: string; href: string }[] = [
+  ...(nw ? [{ name: "Headlines", what: `This week's local stories that mention ${n.name}, linked to the outlets.`, now: nw.items[0] ? `Latest: "${nw.items[0].title}" (${nw.items[0].source}).` : "No stories this week.", href: u("news/") }] : []),
+  ...(ev ? [{ name: "This week", what: "Markets, community events and public meetings for the week ahead.", now: evWeek.length ? `${evWeek.length} listed for the next 7 days, starting with ${evWeek[0].title}.` : "Nothing listed for the next 7 days yet.", href: u("news/#events") }] : []),
   { name: "Today's condition", what: `The biggest change in ${n.name}'s 311 requests, in one sentence.`, now: m.leadSentence, href: u("") },
   { name: "Measures", what: `311 requests, crime report counts, home prices and permits, each against the period before.`, now: `${fmt(n.requests.total)} 311 requests and ${n.crime.total} crime reports in the last ${days} days.`, href: u("") },
   { name: "Projects", what: "New additions, demolitions and new buildings, with a map link for each.", now: `${n.permits.length} permits issued, ${m.projects.length} of them bigger projects.`, href: u("projects/") },
@@ -26,7 +30,7 @@ if (hi) items.push({ name: "Then", what: "A block's building story and a newspap
 items.push({ name: "Who represents you", what: "Your ANC commissioners and links to their meetings.", now: `${n.smds.length} commissioners across ${ancs} ANC${ancs === 1 ? "" : "s"}.`, href: u("representatives/") });
 const rss = pageUrl(n.slug, "permits.xml");
 ---
-<Hood n={n} page="subscribe/" title={`${n.name} weekly email`} description={`One email a week with what changed in ${n.name}: 311, permits, home sales and more, from DC's own data.`}
+<Hood n={n} page="subscribe/" title={`${n.name} weekly email`} description={`One email a week about ${n.name}: local headlines, what's on, and what changed in 311, permits and home sales.`}
   heading="Weekly email" intro={`Everything on the ${n.name} front page, in your inbox once a week. Short, plain and sourced.`}>
 
   <div class="row one">

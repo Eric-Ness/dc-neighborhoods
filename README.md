@@ -8,7 +8,7 @@ Each night a Python job pulls DC open data (building permits, 311 requests, crim
 
 | Path | What it is |
 |---|---|
-| `ingest/` | Python 3.13, stdlib only. `run.py` is the nightly job; `dcdata.py` is the ArcGIS/Open Data DC client; `neighborhoods.json` lists neighborhoods, boundaries and hosts |
+| `ingest/` | Python 3.13, stdlib only. `run.py` is the nightly job; `dcdata.py` is the ArcGIS/Open Data DC client; `neighborhoods.json` lists neighborhoods, boundaries and hosts. Extra sections are one module each (`homes`, `streets`, `history`, `news`, `events`; see `ingest/MODULES.md`). `news.py` keeps headline links only and reads its archive back from the last snapshot |
 | `site/` | Astro 7 static site. Data lands in `site/src/data/` |
 | `worker/` | Cloudflare Worker: hostname → neighborhood folder, .net and www → .org redirects |
 | `wrangler.jsonc` | Worker + static assets config, custom domain routes |

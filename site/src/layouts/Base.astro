@@ -1,13 +1,16 @@
 ---
 import "../styles/c5.css";
+// Live neighborhoods only (ingest writes this list); each links to its own .org.
+import sites from "../data/index.json";
 
 interface Props {
   title: string;
   description: string;
   rss?: string;
   generated?: string;
+  slug?: string; // the neighborhood this page belongs to, marked in the cross-site links
 }
-const { title, description, rss, generated } = Astro.props;
+const { title, description, rss, generated, slug } = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
@@ -25,10 +28,36 @@ const { title, description, rss, generated } = Astro.props;
   <body>
     <slot />
     <footer><div class="wrap">
+      <nav class="sites" aria-label="Other DC neighborhood sites">
+        <span>More DC neighborhoods:</span>
+        <ul>{sites.map((x) => (
+          <li>{x.slug === slug ? <span aria-current="page">{x.name}</span> : <a href={`https://${x.hosts[0]}/`}>{x.name} <small>{x.hosts[0]}</small></a>}</li>
+        ))}</ul>
+      </nav>
       <p><strong>Independent project. Not affiliated with the DC Government, any Advisory Neighborhood Commission, or any Business Improvement District.</strong></p>
-      <p>Data comes from Open Data DC (CC BY 4.0) and the Library of Congress, shown as published; it may lag or contain errors. Crime figures are preliminary counts. Check the official source before acting on anything here.</p>
+      <p>Data comes from Open Data DC (CC BY 4.0) and the Library of Congress, shown as published; it may lag or contain errors. Headlines and events link to whoever published them. Crime figures are preliminary counts. Check the official source before acting on anything here.</p>
       <slot name="footer" />
     </div></footer>
+    <script is:inline>
+      // Long tables marked data-collapse="N" show N rows plus a "Show all" button. Without JS, every row shows.
+      document.querySelectorAll("table[data-collapse]").forEach(function (t) {
+        var n = +t.dataset.collapse, rows = t.tBodies[0] ? t.tBodies[0].rows : [];
+        if (rows.length <= n + 2) return; // not worth hiding one or two rows
+        for (var i = n; i < rows.length; i++) rows[i].hidden = true;
+        var b = document.createElement("button");
+        b.type = "button"; b.className = "more-btn";
+        var label = "Show all " + rows.length + " " + (t.dataset.noun || "rows");
+        b.textContent = label; b.setAttribute("aria-expanded", "false");
+        b.addEventListener("click", function () {
+          var open = b.getAttribute("aria-expanded") !== "true";
+          for (var i = n; i < rows.length; i++) rows[i].hidden = !open;
+          b.setAttribute("aria-expanded", String(open));
+          b.textContent = open ? "Show fewer" : label;
+          if (!open) t.scrollIntoView({ block: "nearest" });
+        });
+        (t.closest(".dtable-wrap") || t).after(b);
+      });
+    </script>
     {generated && (
       <script is:inline define:vars={{ generated }}>
         // The build can't know when someone visits, so the staleness warning is decided in the browser.

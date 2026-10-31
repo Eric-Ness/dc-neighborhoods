@@ -1,5 +1,5 @@
 // Typed access to the JSON written by ingest/run.py (core sections) and its modules
-// (ingest/homes.py, ingest/streets.py, ingest/history.py). Module sections are optional
+// (ingest/homes.py, streets.py, history.py, news.py, events.py). Module sections are optional
 // so a page still builds if one feed fails on a given night.
 
 export interface Permit {
@@ -69,6 +69,44 @@ export interface History {
   archive: { week_label: string; paper: string; terms: string[]; clips: { date: string; page: number; text: string; url: string }[]; note: string };
 }
 
+export interface NewsItem { title: string; url: string; source: string; published: string; first_seen: string }
+export interface News {
+  generated_at: string;
+  archive_days: number;
+  sources: Source[];
+  outlets: { name: string; url: string; state: string; matched: number }[];
+  items: NewsItem[];
+  licenses: {
+    tracked_since: string; active: number;
+    by_type: { type: string; count: number }[];
+    new: { license: string; trade_name: string | null; address: string; type: string; first_seen: string }[];
+    cancelled?: { license: string; trade_name: string | null; address: string; type: string; cancelled: string | null; first_seen: string | null }[];
+  };
+}
+
+export interface EventItem { title: string; date: string; time: string | null; place: string | null; url: string; source: string; kind: string }
+export interface Events {
+  generated_at: string;
+  today: string;
+  days_ahead: number;
+  sources: Source[];
+  calendars: { name: string; url: string; state: string }[];
+  events: EventItem[];
+  unscheduled: (Omit<EventItem, "date"> & { schedule: string })[];
+  links: Source[];
+  ancs?: string[];
+  anc_meetings?: { anc: string; date: string; special: boolean; title: string; url: string }[];
+}
+
+export interface Job { title: string; employer: string; place: string; where: "in" | "nearby"; note: string | null; posted: string | null; hours: string | null; url: string }
+export interface Jobs {
+  generated_at: string;
+  max_age_days: number;
+  sources: Source[];
+  employers: { name: string; url: string; state: string; count: number }[];
+  jobs: Job[];
+}
+
 export interface Neighborhood {
   slug: string;
   name: string;
@@ -94,6 +132,9 @@ export interface Neighborhood {
   homes?: Homes;
   streets?: Streets;
   history?: History;
+  news?: News;
+  events?: Events;
+  jobs?: Jobs;
 }
 
 const files = import.meta.glob<{ default: Neighborhood }>("../data/*.json", { eager: true });
@@ -110,10 +151,12 @@ export function titleCase(s: string): string {
 /** Every page of a neighborhood section, in nav order. */
 export const PAGES = [
   { path: "", label: "Overview" },
+  { path: "news/", label: "News & events" },
   { path: "projects/", label: "Projects" },
   { path: "homes/", label: "Homes" },
   { path: "streets/", label: "Streets" },
   { path: "then/", label: "Then" },
+  { path: "jobs/", label: "Jobs" },
   { path: "representatives/", label: "Representatives" },
   { path: "subscribe/", label: "Weekly email" },
   { path: "about/", label: "About the data" },

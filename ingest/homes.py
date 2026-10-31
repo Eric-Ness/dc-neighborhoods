@@ -28,6 +28,8 @@ sys.path.insert(0, str(Path(__file__).parent))
 import dcdata  # noqa: E402
 from run import iso  # noqa: E402
 
+ROOT = Path(__file__).resolve().parent.parent
+
 ITSPE_TITLE = "Integrated Tax System Public Extract"
 CAMA_RES_TITLE = "Computer Assisted Mass Appraisal - Residential"
 ADDRESS_POINTS = "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
@@ -271,8 +273,18 @@ def build(geom: dict, hood: dict, now: float) -> dict:
     with_assessment = [s for s in last12 if s["assessed"]]
     ov = _overlap(geom, itspe, otr)
     if ov.get("area_share_inside") is not None:
+        ov["measured"] = str(today)
+    else:
+        # DC's address-point query sometimes comes back empty; the fit barely moves, so keep the last measurement.
+        try:
+            last = json.loads((ROOT / "site" / "src" / "data" / f"{slug}.json").read_text(encoding="utf-8"))["homes"]["boundary_fit"]
+            if last.get("area_share_inside") is not None:
+                ov = {**last, "measured": last.get("measured") or "an earlier run"}
+        except (OSError, ValueError, KeyError, TypeError, AttributeError):
+            pass
+    if ov.get("area_share_inside") is not None:
         fit = (f" Fit with the {hood['name']} boundary, measured this run by tax square (a square counts as inside if any "
-               f"DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds): "
+               f"DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured {ov['measured']}): "
                f"{ov['area_share_inside']:.0%} of the {ov['area_parcels']:,} house and condo parcels in the OTR area(s) sit on "
                f"squares inside the boundary, and {ov['boundary_share_in_area']:.0%} of house and condo parcels on in-boundary "
                f"squares belong to the OTR area(s).")
