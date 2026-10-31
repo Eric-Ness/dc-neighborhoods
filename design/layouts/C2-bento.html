@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Petworth Bento</title>
+<meta name="description" content="What's changing in Petworth, Washington DC, from DC's own open data. Independent; updated nightly.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="Petworth permits" href="/petworth/permits.xml">
+<style>
+:root{
+  --bg:#ebe8e1; --paper:#ffffff; --ink:#15130f; --ink-2:#47433b; --line:#d8d3c8;
+  --tomato:#ff5b3a; --cobalt:#2340d8; --cobalt-ink:#ffffff; --cobalt-soft:#e5e9ff;
+  --lemon:#ffd43b; --forest:#0f6b3e; --mint:#c8f2d6; --asphalt:#24272c; --cream:#f4ead6;
+  --slate:#dfe3e8; --pink:#ffc9d9;
+  --up:#b42318; --down:#0b6b3a;
+  --r:22px; --gap:8px;
+  --sans:"Archivo","Helvetica Neue",Arial,system-ui,sans-serif;
+  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 var(--sans)}
+a{color:inherit}
+.tag-top{font:700 11px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;background:var(--ink);color:#fff;padding:7px 12px}
+.bento{max-width:1400px;margin:0 auto;padding:var(--gap) 12px;display:grid;gap:var(--gap);
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  grid-template-areas:
+   "hdr hdr" "srch srch" "lead lead" "req crime" "prm map" "home home" "proj proj"
+   "t311 t311" "curb trees" "hist hist" "ocr ocr" "reps reps" "sub sub" "spon spon"}
+
+/* tile */
+.t{border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:8px;min-width:0;
+  background:var(--paper);text-decoration:none;container-type:inline-size;position:relative;overflow:hidden}
+a.t{transition:transform .15s ease}
+a.t:hover{transform:translateY(-2px)}
+a.t:focus-visible,.t a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.k{display:flex;justify-content:space-between;align-items:center;gap:8px;font:700 11px/1.2 var(--sans);
+  letter-spacing:.09em;text-transform:uppercase}
+.k a{text-decoration:underline;text-underline-offset:2px}
+.n{font-family:var(--sans);font-weight:800;font-stretch:125%;font-variant-numeric:tabular-nums lining-nums;
+  line-height:.86;letter-spacing:-.035em;font-size:min(27cqi,104px)}
+.cap{font-size:13px;line-height:1.35;color:inherit;opacity:.82}
+.cap b{opacity:1;font-weight:700}
+.foot{margin-top:auto;padding-top:6px;font-weight:700;font-size:13.5px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.foot a{text-decoration:none}
+.go{display:inline-block;transition:transform .15s}
+a.t:hover .go,.foot a:hover .go{transform:translateX(3px)}
+.chg{font-weight:800;font-stretch:112%;font-size:17px;font-variant-numeric:tabular-nums}
+.chg.up{color:var(--up)} .chg.down{color:var(--down)}
+
+@container (max-width:220px){.k span+span{display:none}}
+/* header */
+.hdr{background:var(--ink);color:#fff;gap:6px}
+.brand{margin:4px 0 0;font-weight:900;font-stretch:125%;letter-spacing:-.045em;line-height:.85;font-size:min(16cqi,128px)}
+.desc{margin:4px 0 0;font-size:17px;font-weight:500;max-width:34ch}
+.asof{margin:auto 0 0;padding-top:10px;font-size:12.5px;opacity:.85;font-variant-numeric:tabular-nums}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--lemon);margin-right:7px;vertical-align:1px}
+
+/* search */
+.srch{background:var(--paper);justify-content:center}
+.sbox{display:flex;align-items:center;gap:8px;border:2px solid var(--ink);border-radius:14px;padding:0 5px 0 12px;height:52px;background:#fff}
+.sbox input{flex:1;min-width:0;border:0;background:transparent;font:500 16px var(--sans);color:var(--ink);outline:none;height:100%}
+.sbox input::placeholder{color:#6b665c}
+.sbox button,.sub-row button{flex:none;border:0;background:var(--ink);color:#fff;font:700 14px var(--sans);border-radius:10px;padding:10px 16px;cursor:pointer}
+.hint{display:flex;gap:6px;flex-wrap:wrap}
+.hint a{font-size:13px;font-weight:600;text-decoration:none;background:var(--bg);border-radius:999px;padding:5px 11px}
+
+/* lead */
+.lead{background:var(--tomato);color:var(--ink);gap:12px}
+.lead-s{margin:2px 0 0;font-weight:700;font-stretch:100%;font-size:clamp(19px,4.6cqi,34px);line-height:1.15;letter-spacing:-.015em;max-width:30ch}
+.lead-nums{display:flex;align-items:flex-end;gap:5cqi}
+.lead-now{display:flex;flex-direction:column;gap:8px}
+.lead-now .n{font-size:min(31cqi,300px);letter-spacing:-.05em}
+.lead-was{display:flex;flex-direction:column;gap:6px;padding-bottom:4px}
+.lead-was .n{font-size:min(14cqi,104px);-webkit-text-stroke:2px var(--ink);color:transparent}
+.lead .cap{font-weight:600;opacity:1}
+.pill{align-self:flex-start;background:var(--ink);color:var(--tomato);font:800 15px/1 var(--sans);font-stretch:112%;padding:7px 10px;border-radius:999px;font-variant-numeric:tabular-nums}
+.bars{display:grid;gap:4px}
+.bars i{display:block;height:10px;border-radius:5px;background:var(--ink)}
+.bars i.was{background:transparent;border:2px solid var(--ink)}
+.lead .foot{font-weight:600;justify-content:space-between}
+.more{font-weight:800;white-space:nowrap}
+
+/* small stat tiles */
+.req{background:var(--paper)}
+.crime{background:var(--slate)}
+.req .n,.crime .n{margin-top:6px}
+.req .cap,.crime .cap{margin-top:auto}
+.mini{display:grid;grid-template-columns:auto 1fr;gap:4px 8px;align-items:center;font-size:11px;font-weight:600;margin:4px 0 6px}
+.mini i{display:block;height:9px;border-radius:5px;background:var(--ink)}
+.mini i.was{background:transparent;border:2px solid var(--ink)}
+
+/* permits */
+.prm{background:var(--cobalt);color:var(--cobalt-ink)}
+.prm .n{margin-top:2px}
+.stack{display:flex;gap:2px;height:14px;border-radius:4px;overflow:hidden;margin-top:4px}
+.stack i,.lgd i{display:block}
+.lgd{list-style:none;margin:0;padding:0;display:grid;gap:3px;font-size:12px}
+.lgd li{display:grid;grid-template-columns:10px 1fr auto;gap:6px;align-items:center}
+.lgd i{width:10px;height:10px;border-radius:2px}
+.lgd b{font-variant-numeric:tabular-nums}
+.demo{background:var(--tomato)} .add{background:var(--lemon)} .newc{background:var(--mint)}
+.ren{background:#9fb1ff} .mep{background:#ffffff} .home{background:var(--pink)} .minor{background:#6f84ea}
+
+/* map */
+.mapt{background:var(--paper)}
+.map{flex:1 1 0;min-height:200px;width:100%;display:block}
+.bnd{fill:var(--cobalt-soft);stroke:var(--cobalt);stroke-width:2;stroke-linejoin:round}
+.ps{fill:var(--cobalt);opacity:.55}
+.pb{stroke:var(--ink);stroke-width:1.6}
+.pb.add{fill:var(--lemon)} .pb.demo{fill:var(--tomato)}
+.mlgd{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:12px;font-weight:600}
+.mlgd i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px}
+.mlgd i.ps{background:var(--cobalt);opacity:.55}
+.mlgd i.pb{border:1.5px solid var(--ink)}
+
+/* projects */
+.proj{background:var(--cobalt-soft)}
+.proj-head{display:flex;align-items:flex-end;gap:12px}
+.proj-head .n{font-size:min(22cqi,96px);color:var(--cobalt)}
+.proj-head .cap{max-width:36ch;padding-bottom:4px}
+.plist{list-style:none;margin:4px 0 0;padding:0;display:grid;gap:6px}
+.plist li{background:#fff;border-radius:14px;padding:10px 12px;min-width:0}
+.pmeta{display:flex;gap:8px;align-items:center;font-size:12px;font-variant-numeric:tabular-nums}
+.pmeta time{margin-left:auto;font-weight:600}
+.tag{font:800 10.5px/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;padding:4px 7px;border-radius:5px;color:var(--ink)}
+.new{font:800 10.5px/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;padding:4px 7px;border-radius:5px;background:var(--ink);color:#fff}
+.paddr{font-weight:800;font-size:16px;margin-top:5px;letter-spacing:-.01em}
+.pwork{margin:2px 0 0;font-size:13px;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.proj .foot{text-decoration:none}
+
+/* homes */
+.home{background:var(--lemon)}
+.home .n{font-size:min(23cqi,132px)}
+.facts{margin:6px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:2px solid var(--ink)}
+.facts div{padding:9px 8px 9px 0;border-bottom:1px solid rgba(21,19,15,.35)}
+.facts div:nth-child(even){padding-left:10px;border-left:1px solid rgba(21,19,15,.35)}
+.facts dt{font:700 10.5px/1.2 var(--sans);letter-spacing:.07em;text-transform:uppercase}
+.facts dd{margin:3px 0 1px;font-weight:800;font-stretch:118%;font-size:24px;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.facts dd small{font-size:14px;font-weight:700;letter-spacing:0}
+.facts span{font-size:12px}
+
+/* 311 ranking */
+.t311{background:var(--paper)}
+.rank{list-style:none;margin:2px 0 0;padding:0;display:grid;gap:9px}
+.rank li{display:grid;grid-template-columns:18px 1fr auto 44px;gap:2px 8px;align-items:baseline;font-size:14px}
+.rn{font-weight:800;font-variant-numeric:tabular-nums;opacity:.5}
+.rname{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:600}
+.rc{font-weight:800;font-stretch:118%;font-size:18px;font-variant-numeric:tabular-nums}
+.rd{text-align:right;font-weight:700;font-size:12.5px;font-variant-numeric:tabular-nums}
+.rd.up{color:var(--up)} .rd.down{color:var(--down)} .rd.flat{opacity:.7}
+.rbar{grid-column:2/5;position:relative;height:8px;background:#f0ede6;border-radius:4px}
+.rbar i{position:absolute;inset:0 auto 0 0;border-radius:4px;background:var(--ink)}
+.rbar b{position:absolute;top:-3px;bottom:-3px;width:2px;margin-left:-1px;background:var(--ink-2)}
+.rank li.hot .rbar i{background:var(--tomato)}
+.rank li.hot .rname::after{content:" ●";color:var(--tomato)}
+.t311 .cap{font-size:12px}
+.t311 .rank{flex:1;align-content:space-evenly}
+
+/* curb */
+.curb{background:var(--asphalt);color:#fff}
+.curb .n{color:var(--lemon)}
+.paint{height:6px;margin:4px 0;background:repeating-linear-gradient(90deg,var(--lemon) 0 22px,transparent 22px 36px)}
+
+/* trees */
+.trees{background:var(--forest);color:#fff}
+.tree{width:22px;height:30px;fill:var(--mint)}
+.trees .n{color:var(--mint)}
+.boxes{display:grid;grid-template-columns:repeat(auto-fill,minmax(11px,1fr));gap:4px;margin-top:4px;max-width:260px}
+.boxes i{aspect-ratio:1;border:1.6px solid var(--mint);border-radius:2px}
+
+/* archives */
+.hist,.ocr{background:var(--cream)}
+.serif{font-family:var(--serif)}
+.hrow{display:flex;align-items:flex-end;gap:10px}
+.sn{font-family:var(--serif);font-size:min(40cqi,120px);line-height:.8;font-variant-numeric:lining-nums;color:#8a2a14}
+.hblock{font-family:var(--serif);font-style:italic;font-size:17px;line-height:1.15;padding-bottom:4px}
+.hist p.serif{margin:0;font-size:17px;line-height:1.3}
+.hblock{max-width:22ch}
+.ocr blockquote{margin:0;font-style:italic;font-size:clamp(20px,6.4cqi,30px);line-height:1.2}
+.badge{border:1.5px solid var(--ink);border-radius:5px;padding:3px 6px;font-size:10px}
+.src{font-size:12px;opacity:.8}
+
+/* reps */
+.reps{background:var(--paper)}
+.ancs{display:grid;grid-template-columns:1fr;gap:12px}
+.anc-h{display:inline-block;font-weight:800;font-size:13px;text-decoration:none;background:var(--ink);color:#fff;border-radius:999px;padding:4px 10px}
+.anc ul{list-style:none;margin:6px 0 0;padding:0}
+.anc li{display:flex;gap:10px;align-items:baseline;padding:6px 0;border-bottom:1px solid #ece8df;font-size:14.5px;font-weight:600}
+.smd{font-weight:800;font-stretch:118%;font-variant-numeric:tabular-nums;min-width:44px}
+
+/* subscribe, sponsor */
+.sub{background:var(--pink)}
+.sub-p{margin:0;font-weight:800;font-stretch:112%;font-size:clamp(22px,8cqi,40px);line-height:1.05;letter-spacing:-.02em}
+.sub-row{display:flex;gap:6px;margin-top:auto}
+.sub-row input{flex:1;min-width:0;border:2px solid var(--ink);border-radius:12px;padding:0 12px;height:46px;font:500 16px var(--sans);background:#fff;color:var(--ink)}
+.spon{background:transparent;border:2px dashed #a49d8f;justify-content:center}
+.spon p{margin:0;font-size:15px}
+
+footer{max-width:1400px;margin:0 auto;padding:10px 16px 40px;font-size:12.5px;color:var(--ink-2)}
+footer p{margin:6px 0;max-width:80ch}
+footer strong{color:var(--ink)}
+
+/* tablet: 4 columns */
+@media (min-width:640px){
+  :root{--gap:10px}
+  .bento{padding:var(--gap) 16px;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-areas:
+   "hdr hdr srch srch" "lead lead lead lead" "req crime prm prm" "map map home home" "map map curb curb"
+   "proj proj proj proj" "t311 t311 trees trees" "t311 t311 hist hist" "ocr ocr ocr ocr"
+   "reps reps sub sub" "spon spon spon spon"}
+  .t{padding:20px}
+  .plist{grid-template-columns:1fr 1fr}
+  .ancs{grid-template-columns:1fr 1fr}
+}
+/* desktop: 6 columns */
+@media (min-width:1100px){
+  :root{--gap:12px;--r:26px}
+  .bento{padding:var(--gap) 24px;grid-template-columns:repeat(6,minmax(0,1fr));grid-template-areas:
+   "hdr hdr hdr hdr srch srch"
+   "lead lead lead lead map map"
+   "lead lead lead lead map map"
+   "req crime prm prm map map"
+   "proj proj proj proj home home"
+   "proj proj proj proj curb curb"
+   "t311 t311 trees trees hist hist"
+   "t311 t311 sub sub ocr ocr"
+   "reps reps reps reps spon spon"}
+  .t{padding:22px}
+  .lead{padding:28px}
+  footer{padding:14px 24px 48px}
+}
+@media (prefers-reduced-motion:reduce){a.t,.go{transition:none}a.t:hover{transform:none}}
+</style>
+</head>
+<body>
+<div class="tag-top">Layout C2: Bento</div>
+<main class="bento">
+
+<header class="t hdr" style="grid-area:hdr">
+  <div class="k"><span>petworth.org</span><span>Independent · updated nightly</span></div>
+  <h1 class="brand">Petworth</h1>
+  <p class="desc">What's changing in Petworth, from DC's own data.</p>
+  <p class="asof"><span class="dot" aria-hidden="true"></span>Data as of <time datetime="2026-10-31T16:35:40Z">Oct 31, 2026 · 12:35 PM ET</time></p>
+</header>
+<div class="t srch" style="grid-area:srch">
+  <label class="k" for="q"><span>Look up your block or building</span></label>
+  <div class="sbox"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" placeholder="e.g. 4400 Georgia Ave NW" autocomplete="off"><button type="button">Go</button></div>
+  <div class="hint"><a href="../../demos/ideas/01-block-watch.html">Block Watch <span class="go" aria-hidden="true">→</span></a><a href="../../demos/ideas/02-building-biography.html">Building biography <span class="go" aria-hidden="true">→</span></a></div>
+</div>
+<a class="t lead" id="week" href="../../demos/ideas/08-311-report-card.html" style="grid-area:lead">
+  <div class="k"><span>This week's finding</span><span>311 · last 30 days</span></div>
+  <h2 class="lead-s">Rodent complaints rose to 118 in the past 30 days, up from 84, even as total 311 requests in Petworth fell from 1,336 to 1,168.</h2>
+  <div class="lead-nums">
+    <div class="lead-now"><span class="n">118</span><span class="cap">rodent complaints, last 30 days</span></div>
+    <div class="lead-was">
+      <span class="pill">+34</span>
+      <span class="n">84</span><span class="cap">the 30 days before</span>
+    </div>
+  </div>
+  <div class="bars" aria-hidden="true">
+    <i style="width:100.0%"></i>
+    <i class="was" style="width:71.2%"></i>
+  </div>
+  <div class="foot">DC Health Rodent &amp; Vector Control requests filed through 311 <span class="more">311 report card <span class="go" aria-hidden="true">→</span></span></div>
+</a>
+<a class="t mapt" href="../../demos/ideas/01-block-watch.html" style="grid-area:map">
+  <div class="k"><span>Where the permits are</span><span>30 days</span></div>
+  <svg class="map" viewBox="0 0 300 328" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Map of Petworth with this month's permit locations; large dots are additions and demolition"><path d="M287.5,13.5L288.0,21.5L288.6,31.0L288.8,34.6L289.0,37.8L289.0,38.2L289.4,45.2L289.7,49.7L290.2,59.5L290.6,66.7L291.1,75.3L291.5,82.0L291.9,88.1L292.0,90.6L291.5,101.0L291.7,105.7L291.8,110.7L291.8,112.4L291.7,114.9L291.8,119.7L291.6,123.5L290.8,126.3L290.1,128.8L289.1,131.8L288.6,132.7L288.0,133.6L287.5,134.5L284.2,138.9L281.7,141.2L280.8,142.0L279.8,142.9L278.8,143.6L272.2,148.9L266.0,153.9L260.6,158.1L259.9,158.6L259.1,159.2L258.1,159.9L256.8,160.8L256.0,161.3L254.3,162.2L253.5,162.7L252.7,163.1L249.9,164.6L249.2,165.1L248.8,165.4L248.3,165.8L247.6,166.3L246.7,167.1L245.3,168.7L244.3,169.9L244.0,170.3L241.4,173.3L239.6,175.4L239.4,175.7L239.0,176.5L238.7,177.2L235.7,185.5L235.2,186.9L235.0,187.5L233.2,192.5L232.7,193.7L232.1,195.2L231.6,196.1L231.0,197.2L230.7,197.7L229.6,199.2L228.6,200.7L227.0,202.6L224.6,205.4L221.9,208.2L220.5,209.7L218.8,211.7L215.2,216.2L208.7,224.5L207.8,225.8L205.9,228.7L202.9,233.5L202.0,235.1L198.7,242.1L196.2,247.2L195.0,249.7L193.6,252.7L193.3,253.2L193.0,253.6L192.4,254.5L189.9,257.3L177.5,271.6L174.3,275.3L173.0,276.8L167.9,282.6L163.3,288.0L162.8,288.5L161.9,289.4L160.9,290.2L159.9,291.1L159.4,291.5L158.3,292.2L156.9,293.0L156.4,293.3L155.1,293.9L154.4,294.2L150.3,295.6L147.2,296.7L145.6,297.2L144.1,297.8L139.4,299.3L137.6,299.8L135.3,300.5L127.9,302.6L127.0,302.9L126.1,303.2L125.4,303.4L124.4,303.6L123.8,303.8L101.8,307.4L99.8,307.7L98.3,308.0L90.7,310.3L80.5,313.6L73.8,315.6L69.8,316.9L59.5,320.2L56.9,319.8L55.2,319.5L52.4,296.4L50.8,282.8L50.3,279.6L50.0,277.6L49.5,275.4L49.1,273.6L48.3,269.6L47.2,264.1L45.4,254.8L43.5,245.3L41.2,234.0L39.1,223.6L37.4,215.4L37.0,213.3L36.6,211.4L35.4,205.1L34.0,198.2L32.9,192.8L31.0,183.6L29.1,173.6L28.7,171.9L28.4,170.4L28.3,169.8L27.1,164.0L24.9,152.8L24.6,151.2L24.2,149.1L22.3,139.6L20.6,130.4L19.6,125.1L17.8,109.7L17.4,106.1L15.5,88.9L15.4,87.4L15.2,86.3L15.1,84.8L14.5,79.1L14.3,77.6L14.0,74.6L13.8,72.8L13.3,67.8L12.5,60.1L12.1,56.3L11.3,49.5L11.1,47.8L10.9,46.1L10.7,44.4L10.6,42.7L10.4,41.0L10.2,39.3L8.9,27.3L8.7,24.9L8.5,23.3L8.2,20.0L8.0,18.5L10.4,18.5L26.3,17.9L36.5,17.5L40.2,17.4L46.0,17.3L48.4,17.1L50.6,17.0L59.9,16.7L61.0,16.7L62.6,16.6L64.1,16.6L75.6,16.1L87.2,15.7L88.7,15.6L92.6,15.5L96.9,15.3L102.8,15.1L109.0,14.9L122.3,14.4L125.4,14.3L127.0,14.2L130.4,14.1L136.1,13.9L146.0,13.5L156.9,13.1L162.9,12.9L168.7,12.7L174.3,12.5L176.3,12.4L176.7,12.4L177.1,12.3L178.3,12.2L179.6,12.2L180.2,12.1L182.9,12.0L184.7,11.9L192.2,11.6L219.8,10.6L221.2,10.5L222.1,10.5L235.4,9.9L237.8,9.8L252.2,9.2L261.6,8.9L262.2,8.9L270.3,8.6L279.9,8.2L285.1,8.0L287.2,8.0L287.5,13.5Z" class="bnd"/><circle cx="173.7" cy="72.4" r="3" class="ps"/><circle cx="121.2" cy="65.2" r="3" class="ps"/><circle cx="179.8" cy="30.1" r="3" class="ps"/><circle cx="163.4" cy="87.2" r="3" class="ps"/><circle cx="169.4" cy="50.2" r="3" class="ps"/><circle cx="193.1" cy="182.9" r="3" class="ps"/><circle cx="170.8" cy="256.8" r="3" class="ps"/><circle cx="36.8" cy="140.6" r="3" class="ps"/><circle cx="86.7" cy="259.1" r="3" class="ps"/><circle cx="170.8" cy="256.8" r="3" class="ps"/><circle cx="87.6" cy="257.2" r="3" class="ps"/><circle cx="199.3" cy="64.4" r="3" class="ps"/><circle cx="170.0" cy="95.4" r="3" class="ps"/><circle cx="83.5" cy="264.6" r="3" class="ps"/><circle cx="85.2" cy="261.8" r="3" class="ps"/><circle cx="93.5" cy="44.7" r="3" class="ps"/><circle cx="126.1" cy="150.9" r="3" class="ps"/><circle cx="39.5" cy="21.3" r="3" class="ps"/><circle cx="122.3" cy="46.5" r="3" class="ps"/><circle cx="110.9" cy="65.8" r="3" class="ps"/><circle cx="122.2" cy="22.9" r="3" class="ps"/><circle cx="97.3" cy="68.1" r="3" class="ps"/><circle cx="78.3" cy="250.3" r="3" class="ps"/><circle cx="91.8" cy="278.2" r="3" class="ps"/><circle cx="60.0" cy="195.8" r="3" class="ps"/><circle cx="84.6" cy="262.8" r="3" class="ps"/><circle cx="81.7" cy="267.7" r="3" class="ps"/><circle cx="102.4" cy="285.2" r="3" class="ps"/><circle cx="122.0" cy="18.2" r="3" class="ps"/><circle cx="83.2" cy="308.4" r="3" class="ps"/><circle cx="168.4" cy="134.6" r="3" class="ps"/><circle cx="60.9" cy="271.4" r="3" class="ps"/><circle cx="223.1" cy="64.2" r="3" class="ps"/><circle cx="124.4" cy="289.7" r="3" class="ps"/><circle cx="160.5" cy="258.7" r="3" class="ps"/><circle cx="36.4" cy="113.1" r="3" class="ps"/><circle cx="132.8" cy="112.2" r="3" class="ps"/><circle cx="200.2" cy="190.5" r="3" class="ps"/><circle cx="225.4" cy="181.5" r="3" class="ps"/><circle cx="193.5" cy="196.5" r="3" class="ps"/><circle cx="47.1" cy="145.9" r="3" class="ps"/><circle cx="138.5" cy="17.3" r="3" class="ps"/><circle cx="82.3" cy="266.7" r="3" class="ps"/><circle cx="224.3" cy="181.3" r="3" class="ps"/><circle cx="82.9" cy="265.5" r="3" class="ps"/><circle cx="85.6" cy="260.9" r="3" class="ps"/><circle cx="112.0" cy="269.6" r="3" class="ps"/><circle cx="149.1" cy="267.7" r="3" class="ps"/><circle cx="113.4" cy="102.8" r="3" class="ps"/><circle cx="154.0" cy="44.5" r="3" class="ps"/><circle cx="161.6" cy="226.8" r="3" class="ps"/><circle cx="267.7" cy="20.0" r="3" class="ps"/><circle cx="210.4" cy="171.6" r="3" class="ps"/><circle cx="86.8" cy="236.3" r="3" class="ps"/><circle cx="107.3" cy="89.4" r="3" class="ps"/><circle cx="138.5" cy="17.3" r="3" class="ps"/><circle cx="143.1" cy="51.6" r="3" class="ps"/><circle cx="32.4" cy="84.9" r="3" class="ps"/><circle cx="173.7" cy="72.4" r="6" class="pb add"><title>Additions</title></circle><circle cx="24.7" cy="35.4" r="6" class="pb add"><title>Additions</title></circle><circle cx="25.6" cy="23.1" r="6" class="pb add"><title>Additions</title></circle><circle cx="106.8" cy="60.7" r="6" class="pb add"><title>Additions</title></circle><circle cx="50.8" cy="62.9" r="6" class="pb add"><title>Additions</title></circle><circle cx="142.3" cy="162.6" r="6" class="pb demo"><title>Demolition</title></circle><circle cx="52.4" cy="269.0" r="6" class="pb add"><title>Additions</title></circle></svg>
+  <div class="mlgd"><span><i class="ps"></i>Permit</span><span><i class="pb add"></i>Addition</span><span><i class="pb demo"></i>Demolition</span></div>
+  <div class="foot">Block Watch <span class="go" aria-hidden="true">→</span></div>
+</a>
+<a class="t req" href="../../demos/ideas/08-311-report-card.html" style="grid-area:req">
+  <div class="k"><span>All 311 requests</span></div>
+  <div class="n">1,168</div>
+  <div class="chg down">−168 (−13%)</div>
+  <div class="mini" aria-hidden="true"><span>Now</span><i style="width:87.4%"></i><span>Before</span><i class="was" style="width:100.0%"></i></div>
+  <div class="cap">last 30 days, vs 1,336 the 30 days before</div>
+</a>
+<a class="t crime" href="../../demos/ideas/07-block-report-card.html" style="grid-area:crime">
+  <div class="k"><span>Crime reports</span></div>
+  <div class="n">49</div>
+  <div class="chg">+9</div>
+  <div class="mini" aria-hidden="true"><span>Now</span><i style="width:100.0%"></i><span>Before</span><i class="was" style="width:81.6%"></i></div>
+  <div class="cap">last 30 days, vs 40 the 30 days before. Counts only.</div>
+</a>
+<a class="t prm" href="#projects" style="grid-area:prm">
+  <div class="k"><span>Building permits</span></div>
+  <div class="n">84</div>
+  <div class="cap">issued in the last 30 days</div>
+  <div class="stack" aria-hidden="true"><i class="demo" style="flex:1" title="Demolition: 1"></i><i class="add" style="flex:6" title="Additions: 6"></i><i class="ren" style="flex:15" title="Renovation &amp; repair: 15"></i><i class="mep" style="flex:34" title="Electrical, plumbing &amp; mechanical: 34"></i><i class="home" style="flex:5" title="Home businesses: 5"></i><i class="minor" style="flex:23" title="Minor work: 23"></i></div>
+  <ul class="lgd"><li><i class="demo"></i><span>Demolition</span><b>1</b></li><li><i class="add"></i><span>Additions</span><b>6</b></li><li><i class="ren"></i><span>Renovation &amp; repair</span><b>15</b></li><li><i class="mep"></i><span>Electrical, plumbing, mech.</span><b>34</b></li><li><i class="home"></i><span>Home businesses</span><b>5</b></li><li><i class="minor"></i><span>Minor work</span><b>23</b></li></ul>
+</a>
+<section class="t proj" id="projects" style="grid-area:proj" aria-labelledby="proj-h">
+  <div class="k"><span id="proj-h">Bigger projects</span><a href="/petworth/permits.xml">RSS</a></div>
+  <div class="proj-head"><span class="n">7</span><span class="cap">demolition and addition permits in the last 30 days · 2 new this week · no new construction</span></div>
+  <ul class="plist">
+  <li>
+    <div class="pmeta"><span class="tag add">Addition</span><span class="new">New</span><time datetime="2026-10-27">Oct 27</time></div>
+    <div class="paddr">314 Delafield Pl NW</div>
+    <p class="pwork">Alteration of the existing two-story residential building to reconfigure the interior layout and increase the total number of dwelling units from four (4) to si…</p>
+  </li>
+  <li>
+    <div class="pmeta"><span class="tag add">Addition</span><span class="new">New</span><time datetime="2026-10-27">Oct 27</time></div>
+    <div class="paddr">919 Farragut St NW</div>
+    <p class="pwork">Two Story Rear addition with cellar. Change of use from Single Family to Single Family with ADUNew rear Deck with Stairs to grade.Rear parking pad. Roll garage…</p>
+  </li>
+  <li>
+    <div class="pmeta"><span class="tag add">Addition</span><time datetime="2026-10-23">Oct 23</time></div>
+    <div class="paddr">912 Gallatin St NW</div>
+    <p class="pwork">Renovation of 3 story building + basement 14-unit apartment building. RENOVATION OF EXISTING 3 STORY PLUS BASEMENT 14 UNIT APARTMENT BUILDING TO EXPAND THE CEL…</p>
+  </li>
+  <li>
+    <div class="pmeta"><span class="tag add">Addition</span><time datetime="2026-10-21">Oct 21</time></div>
+    <div class="paddr">602 Emerson St NW</div>
+    <p class="pwork">The project involves replacement of existing plaster walls and ceilings with drywall to address potential lead-based paint concerns. The work is limited to inte…</p>
+  </li>
+  <li>
+    <div class="pmeta"><span class="tag add">Addition</span><time datetime="2026-10-20">Oct 20</time></div>
+    <div class="paddr">820 Emerson St NW</div>
+    <p class="pwork">Revision On Permit B2506312 relocate kitchen enclose the space under existing wood frame addition replace existing pier footing with continuos foundation interi…</p>
+  </li>
+  <li>
+    <div class="pmeta"><span class="tag demo">Demolition</span><time datetime="2026-10-13">Oct 13</time></div>
+    <div class="paddr">4404 New Hampshire Ave NW</div>
+    <p class="pwork">Partial demolition of fire-damaged 2-story single family row dwelling with basement. Remove front porch roof, roof trusses, decking, wood floor framing, interio…</p>
+  </li>
+  <li>
+    <div class="pmeta"><span class="tag add">Addition</span><time datetime="2026-10-09">Oct 9</time></div>
+    <div class="paddr">3907 Georgia Ave NW</div>
+    <p class="pwork">Revision to B2401648: Provide elevator overrun space above roof deck. Unit count reduced from 15 to 14.</p>
+  </li></ul>
+  <a class="foot" href="../../demos/ideas/01-block-watch.html">All permits on Block Watch <span class="go" aria-hidden="true">→</span></a>
+</section>
+<section class="t home" id="homes" style="grid-area:home" aria-labelledby="home-h">
+  <div class="k"><span id="home-h">Homes</span><span>12 months</span></div>
+  <div class="n">$810K</div>
+  <div class="cap">median house price · 145 house sales</div>
+  <dl class="facts">
+    <div><dt>Last 60 days</dt><dd>$789K</dd><span>median, 21 sales</span></div>
+    <div><dt>Condos, 12 mo</dt><dd>$499K</dd><span>median, 44 sales</span></div>
+    <div><dt>Per sq ft, 60 days</dt><dd>$535</dd><span>median</span></div>
+    <div><dt>Above assessment</dt><dd>93<small> of 189</small></dd><span>sales, 12 months</span></div>
+  </dl>
+  <div class="foot"><a href="../../demos/ideas/04-home-sales-assessment-check.html">Check your assessment <span class="go" aria-hidden="true">→</span></a><a href="../../demos/ideas/05-realtor-market-page.html">Housing pulse <span class="go" aria-hidden="true">→</span></a></div>
+</section>
+<a class="t t311" href="../../demos/ideas/08-311-report-card.html" style="grid-area:t311">
+  <div class="k"><span>Top 311 requests</span><span>30 days</span></div>
+  <ol class="rank"><li class=""><span class="rn">1</span><span class="rname">Bulk Collection</span><span class="rc">210</span><span class="rd down">−15</span><span class="rbar" aria-hidden="true"><i style="width:93.3%"></i><b style="left:100.0%"></b></span></li><li class=""><span class="rn">2</span><span class="rname">Scheduled Yard Waste</span><span class="rc">131</span><span class="rd down">−35</span><span class="rbar" aria-hidden="true"><i style="width:58.2%"></i><b style="left:73.8%"></b></span></li><li class="hot"><span class="rn">3</span><span class="rname">Rodent &amp; vector control</span><span class="rc">118</span><span class="rd up">+34</span><span class="rbar" aria-hidden="true"><i style="width:52.4%"></i><b style="left:37.3%"></b></span></li><li class=""><span class="rn">4</span><span class="rname">Parking Enforcement</span><span class="rc">85</span><span class="rd down">−12</span><span class="rbar" aria-hidden="true"><i style="width:37.8%"></i><b style="left:43.1%"></b></span></li><li class=""><span class="rn">5</span><span class="rname">Illegal Dumping</span><span class="rc">68</span><span class="rd down">−27</span><span class="rbar" aria-hidden="true"><i style="width:30.2%"></i><b style="left:42.2%"></b></span></li><li class=""><span class="rn">6</span><span class="rname">Trash Collection - Missed</span><span class="rc">66</span><span class="rd down">−1</span><span class="rbar" aria-hidden="true"><i style="width:29.3%"></i><b style="left:29.8%"></b></span></li></ol>
+  <div class="cap">Bar is the last 30 days; the tick is the 30 days before.</div>
+  <div class="foot">311 report card <span class="go" aria-hidden="true">→</span></div>
+</a>
+<a class="t trees" href="../../demos/ideas/20-street-tree-atlas.html" style="grid-area:trees">
+  <div class="k"><span>Street trees</span><svg class="tree" viewBox="0 0 24 32" aria-hidden="true"><circle cx="12" cy="10" r="9"/><circle cx="6.5" cy="15" r="5.5"/><circle cx="17.5" cy="15" r="5.5"/><rect x="10.5" y="17" width="3" height="13" rx="1"/><rect x="5" y="29" width="14" height="2.4" rx="1.2"/></svg></div>
+  <div class="n">3,990</div>
+  <div class="cap">trees, 196 species · 530 planted in 5 years</div>
+  <div class="boxes" role="img" aria-label="32 empty tree boxes"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="cap"><b>32</b> empty tree boxes open <span class="go" aria-hidden="true">→</span></div>
+</a>
+<a class="t curb" id="streets" href="../../demos/ideas/12-curb-radar.html" style="grid-area:curb">
+  <div class="k"><span>Curb permits</span><span>this week</span></div>
+  <div class="n">114</div>
+  <div class="cap">active now, <b>16</b> more start in the next 7 days</div>
+  <div class="paint" aria-hidden="true"></div>
+  <div class="cap"><b>14,212 ft</b> of curb reserved</div>
+  <div class="foot">Curb radar <span class="go" aria-hidden="true">→</span></div>
+</a>
+<a class="t hist" id="history" href="../../demos/ideas/02-building-biography.html" style="grid-area:hist">
+  <div class="k"><span>From the archives</span><span>1926</span></div>
+  <div class="hrow"><span class="sn">62</span><span class="hblock">rowhouses, one builder, 400 block of Delafield Place NW</span></div>
+  <p class="serif">The Cafritz Construction Co. built all 62 rowhouses in 1926 on four permits; architects H. H. Warwick (52) and D. W. Moore (10). One permit covered 21 houses for $105,000.</p>
+  <div class="foot">Building biography <span class="go" aria-hidden="true">→</span></div>
+</a>
+<a class="t ocr" href="../../demos/ideas/14-hundred-years-ago.html" style="grid-area:ocr">
+  <div class="k"><span>100 years ago this week</span><span class="badge">OCR text</span></div>
+  <blockquote class="serif">“Mount Pleasant moved into a tie with Central and Immanuel Baptists for second place by taking all three from Petworth Methodists.”</blockquote>
+  <div class="src">Evening Star, Sun Oct 31, 1926, page 94 (OCR text; Library of Congress Chronicling America). Machine-read; may contain errors.</div>
+  <div class="foot">100 years ago <span class="go" aria-hidden="true">→</span></div>
+</a>
+<section class="t reps" id="reps" style="grid-area:reps" aria-labelledby="reps-h">
+  <div class="k"><span id="reps-h">Who represents you</span><span>6 commissioners</span></div>
+  <div class="ancs"><div class="anc"><a class="anc-h" href="https://www.anc4c.com/">ANC 4C ↗</a><ul><li><span class="smd">4C05</span><span>Brittany Kademian</span></li><li><span class="smd">4C06</span><span>Christen Boas Hayes</span></li><li><span class="smd">4C07</span><span>Eric Heller</span></li></ul></div><div class="anc"><a class="anc-h" href="https://anc4d.org/">ANC 4D ↗</a><ul><li><span class="smd">4D04</span><span>Eliza Cava</span></li><li><span class="smd">4D05</span><span>Stephen Marencic Jr.</span></li><li><span class="smd">4D06</span><span>Stoyan Dimitrov</span></li></ul></div></div>
+  <div class="cap">Each Single Member District (SMD) elects one ANC commissioner.</div>
+</section>
+<section class="t sub" id="subscribe" style="grid-area:sub" aria-labelledby="sub-h">
+  <div class="k"><span id="sub-h">Weekly email</span><a href="../../demos/digest-petworth.html">See a sample <span class="go" aria-hidden="true">→</span></a></div>
+  <p class="sub-p">These numbers, once a week.</p>
+  <form class="sub-row" onsubmit="return false"><input type="email" placeholder="you@example.com" aria-label="Email address"><button type="button">Subscribe</button></form>
+  <div class="cap">Mock signup. Or follow the <a href="/petworth/permits.xml">permits RSS feed</a>.</div>
+</section>
+<aside class="t spon" style="grid-area:spon">
+  <div class="k"><span>Sponsor</span></div>
+  <p>Presented by <b>[Local sponsor]</b></p>
+</aside>
+</main>
+<footer>
+  <p><strong>Independent project. Not affiliated with the DC Government, any Advisory Neighborhood Commission, or any Business Improvement District.</strong></p>
+  <p>Sources: Open Data DC (CC BY 4.0); Library of Congress, Chronicling America. Crime figures are preliminary counts. Data as of Oct 31, 2026 · 12:35 PM ET.</p>
+</footer>
+</body>
+</html>

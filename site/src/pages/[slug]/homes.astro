@@ -1,0 +1,187 @@
+---
+import Hood from "../../layouts/Hood.astro";
+import { staticPaths, pageUrl, type Neighborhood } from "../../lib/data";
+import { reading, pair, bar, icon, stateTag, money, fmt, sign, shortDate } from "../../lib/c5";
+
+export const getStaticPaths = staticPaths;
+const { n } = Astro.props as { n: Neighborhood };
+const u = (p: string) => pageUrl(n.slug, p);
+const h = n.homes;
+
+type Seg = { median_12mo: number; count_12mo: number; median_prev_12mo: number; count_prev_12mo: number };
+// Price change: dollars always; a percentage only when both windows hold 100+ sales.
+function change(s: Seg) {
+  const r = reading(s.median_12mo, s.median_prev_12mo);
+  const d = s.median_12mo - s.median_prev_12mo;
+  const big = s.count_12mo >= 100 && s.count_prev_12mo >= 100;
+  const pct = big && s.median_prev_12mo ? Math.round((d / s.median_prev_12mo) * 100) : null;
+  return { state: r.state, txt: `${sign(d)}${money(Math.abs(d))}` + (pct !== null ? ` (${sign(d)}${Math.abs(pct)}%)` : ""), big };
+}
+const monthName = (ym: string, long = false) =>
+  new Date(ym + "-15T12:00:00Z").toLocaleDateString("en-US", long ? { month: "short", year: "numeric", timeZone: "UTC" } : { month: "short", timeZone: "UTC" });
+const fullDate = (d: string) => new Date(d + "T12:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
+
+const house = h ? change(h.house) : null;
+const condo = h ? change(h.condo) : null;
+const months = h?.by_month ?? [];
+const maxMonth = Math.max(...months.map((m) => m.median ?? 0), 1);
+const fit = (h?.boundary_fit ?? null) as { squares: number; area_parcels: number; area_share_inside: number; boundary_share_in_area: number } | null;
+const salesNote = typeof h?.sales_note === "string" ? (h.sales_note as string) : null;
+const sales = h?.recent_sales ?? [];
+const above = sales.filter((s) => s.assessed != null && s.price > s.assessed).length;
+const withAssess = sales.filter((s) => s.assessed != null).length;
+---
+<Hood n={n} page="homes/" title={`Homes in ${n.name}: sale prices and recent sales`} description={`Median house and condo prices, monthly sales and every recent market sale in ${n.name}, from DC's Office of Tax and Revenue data.`}
+  heading="Homes" intro={`What homes in ${n.name} sell for, from the deeds DC's Office of Tax and Revenue records. Medians compare the last 12 months with the 12 months before.`}>
+
+  {!h ? (
+    <div class="row one"><section class="panel"><div class="ph"><h2>Home sales</h2></div><p class="note">Home sales data didn't update tonight. The last good figures will return after the next nightly run.</p></section></div>
+  ) : (<>
+    <div class="row even">
+      <section class="panel" aria-labelledby="hs-h">
+        <div class="ph"><h2 id="hs-h">Houses</h2><Fragment set:html={stateTag(house!.state)} /></div>
+        <div class="hero"><b class="num">{money(h.house.median_12mo)}</b><span>median house price, last 12 months, from {h.house.count_12mo} sales</span></div>
+        <div class="homes-chg"><span class={`chg s-${house!.state}`}><Fragment set:html={icon(house!.state)} />{house!.txt}</span><span class="homes-vs">vs {money(h.house.median_prev_12mo)} from {h.house.count_prev_12mo} sales the 12 months before</span></div>
+        <div class="cmp" set:html={pair("Last 12 months", h.house.median_12mo, money(h.house.median_12mo), "12 months before", h.house.median_prev_12mo, money(h.house.median_prev_12mo), `fill s-${house!.state}`)} />
+        <div class="cmp homes-cnt" set:html={pair("Sales, last 12", h.house.count_12mo, fmt(h.house.count_12mo), "Sales, before", h.house.count_prev_12mo, fmt(h.house.count_prev_12mo), "fill")} />
+        <p class="note">Row houses, semi-detached and detached houses. Within 5% either way reads as steady.</p>
+      </section>
+      <section class="panel" aria-labelledby="cd-h">
+        <div class="ph"><h2 id="cd-h">Condos</h2><Fragment set:html={stateTag(condo!.state)} /></div>
+        <div class="hero"><b class="num">{money(h.condo.median_12mo)}</b><span>median condo price, last 12 months, from {h.condo.count_12mo} sales</span></div>
+        <div class="homes-chg"><span class={`chg s-${condo!.state}`}><Fragment set:html={icon(condo!.state)} />{condo!.txt}</span><span class="homes-vs">vs {money(h.condo.median_prev_12mo)} from {h.condo.count_prev_12mo} sales the 12 months before</span></div>
+        <div class="cmp" set:html={pair("Last 12 months", h.condo.median_12mo, money(h.condo.median_12mo), "12 months before", h.condo.median_prev_12mo, money(h.condo.median_prev_12mo), `fill s-${condo!.state}`)} />
+        <div class="cmp homes-cnt" set:html={pair("Sales, last 12", h.condo.count_12mo, fmt(h.condo.count_12mo), "Sales, before", h.condo.count_prev_12mo, fmt(h.condo.count_prev_12mo), "fill")} />
+        {!condo!.big && <p class="note">Fewer than 100 condo sales in a window, so no percentage: a few sales can move this median a long way.</p>}
+      </section>
+    </div>
+
+    <div class="row">
+      <section class="panel" aria-labelledby="mo-h">
+        <div class="ph"><h2 id="mo-h">Median house price by month</h2><span class="sub">Bar label: sales that month</span></div>
+        <div class="vbars homes-vb" role="img" aria-label={`Monthly median house price: ${months.map((m) => `${monthName(m.month, true)} ${m.median == null ? "no median" : money(m.median)} from ${m.count} sales`).join("; ")}`}>
+          {months.map((m, i) => (
+            <div title={`${monthName(m.month, true)}: ${m.median == null ? "fewer than 3 sales, no median" : money(m.median)} · ${m.count} sales`}>
+              <i class={i === months.length - 1 ? "homes-part" : ""} style={`height:calc((100% - 30px) * ${m.median == null ? 0 : (m.median / maxMonth).toFixed(3)})`}></i>
+              <span>{monthName(m.month)}</span><span class="homes-n">{m.count}</span>
+            </div>
+          ))}
+        </div>
+        <details class="homes-det">
+          <summary>Monthly figures</summary>
+          <div class="dtable-wrap"><table class="dtable">
+            <thead><tr><th>Month</th><th class="r">Median</th><th class="r">Sales</th></tr></thead>
+            <tbody>{months.map((m) => <tr><td>{monthName(m.month, true)}</td><td class="r num">{money(m.median)}</td><td class="r num">{m.count}</td></tr>)}</tbody>
+          </table></div>
+        </details>
+        {h.by_month_basis && <p class="note">Basis: {h.by_month_basis}. The paler last bar is the month still in progress.</p>}
+      </section>
+
+      <div class="stack">
+        <section class="panel" aria-labelledby="d60-h">
+          <div class="ph"><h2 id="d60-h">Last 60 days</h2><span class="sub">Houses and condos</span></div>
+          <div class="stats s3">
+            <div><div class="v">{money(h.last_60d.median)}</div><div class="k">median sale price</div></div>
+            <div><div class="v">{h.last_60d.count}</div><div class="k">market sales</div></div>
+            <div><div class="v">{h.last_60d.median_ppsf ? `$${fmt(h.last_60d.median_ppsf)}` : "—"}</div><div class="k">median price per sq ft</div></div>
+          </div>
+          <p class="note">Deeds reach DC's records a few weeks after closing, so the newest weeks undercount.</p>
+        </section>
+        <section class="panel" aria-labelledby="aa-h">
+          <div class="ph"><h2 id="aa-h">Sold above assessment</h2><span class="sub">Last 12 months</span></div>
+          <div class="hero"><b class="num">{h.above_assessment_12mo.n}</b><span>of {h.above_assessment_12mo.of} sales closed above DC's assessed value</span></div>
+          <ul class="hbars">
+            <li><span>Above assessment</span><Fragment set:html={bar(h.above_assessment_12mo.n, h.above_assessment_12mo.of, "fill c-add")} /><b>{h.above_assessment_12mo.n}</b></li>
+            <li><span>At or below</span><Fragment set:html={bar(h.above_assessment_12mo.of - h.above_assessment_12mo.n, h.above_assessment_12mo.of, "prev")} /><b>{h.above_assessment_12mo.of - h.above_assessment_12mo.n}</b></li>
+          </ul>
+          <p class="note">"Assessed" is OTR's current total assessment, which may be newer than the sale.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="row one">
+      <section id="recent" class="panel" aria-labelledby="rs-h">
+        <div class="ph"><h2 id="rs-h">Recent sales</h2><span class="sub">{sales.length} newest market sales</span></div>
+        <div class="dtable-wrap"><table class="dtable">
+          <thead><tr><th>Date</th><th>Address</th><th>Type</th><th class="r">Price</th><th class="r">Assessed</th><th class="r">Beds</th><th class="r">Sq ft</th></tr></thead>
+          <tbody>
+            {sales.map((s) => (
+              <tr>
+                <td class="num muted homes-nw">{fullDate(s.date)}</td>
+                <td class="homes-addr">{s.address}</td>
+                <td class="muted">{s.kind === "condo" ? "Condo" : "House"}</td>
+                <td class="r num"><b>{money(s.price)}</b></td>
+                <td class="r num muted">{money(s.assessed)}{s.assessed != null && s.price > s.assessed && <span class="homes-up" title="Sold above assessment"> ▲</span>}</td>
+                <td class="r num">{s.beds ?? "—"}</td>
+                <td class="r num">{s.sqft ? fmt(s.sqft) : "—"}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table></div>
+        <p class="note">▲ marks a sale above its current assessment ({above} of these {withAssess}). Bedrooms and floor area come from DC's appraisal records and are listed for houses only. Owner and buyer names are never shown.</p>
+      </section>
+    </div>
+
+    <div class="row even">
+      <section id="area" class="panel" aria-labelledby="ar-h">
+        <div class="ph"><h2 id="ar-h">Which sales count as {n.name}</h2></div>
+        {fit && (
+          <div class="stats s3">
+            <div><div class="v">{Math.round(fit.area_share_inside * 100)}%</div><div class="k">of the {fmt(fit.area_parcels)} tax-area homes sit on squares inside the {n.name} boundary</div></div>
+            <div><div class="v">{Math.round(fit.boundary_share_in_area * 100)}%</div><div class="k">of homes on in-boundary squares fall in the tax area</div></div>
+            <div><div class="v">{fmt(fit.squares)}</div><div class="k">tax squares checked against the boundary</div></div>
+          </div>
+        )}
+        <p class="homes-area">{h.area_note}</p>
+      </section>
+      <div class="stack">
+        <section class="panel" aria-labelledby="ap-h">
+          <div class="ph"><h2 id="ap-h">Appeal your assessment</h2></div>
+          <div class="prose homes-prose">
+            <p>If your home's assessed value looks higher than what it would sell for, you can ask DC to review it. Recent sales of similar homes nearby, like the ones above, are the kind of evidence an appeal uses.</p>
+            <ul>
+              <li>Check your assessment and its notice date on the Office of Tax and Revenue site.</li>
+              <li>File the first-level appeal with OTR before the deadline printed on your notice.</li>
+              <li>If you disagree with that result, further appeal levels are explained on the same site.</li>
+            </ul>
+          </div>
+          <a class="cta" href="https://otr.cfo.dc.gov/">How to appeal a property assessment <span>DC OTR ↗</span></a>
+        </section>
+        {salesNote && (
+          <section class="panel" aria-labelledby="hc-h">
+            <div class="ph"><h2 id="hc-h">How sales are counted</h2></div>
+            <p class="homes-area">{salesNote}</p>
+          </section>
+        )}
+      </div>
+    </div>
+
+    <div class="row one">
+      <section class="panel" aria-labelledby="src-h">
+        <div class="ph"><h2 id="src-h">Sources</h2><a href={u("about/")}>All sources →</a></div>
+        <ul class="homes-src">{h.sources.map((s) => <li><a href={s.url}>{s.name}</a></li>)}</ul>
+        <p class="note">Home data refreshed {shortDate(h.generated_at)}.</p>
+      </section>
+    </div>
+  </>)}
+</Hood>
+
+<style is:global>
+  .homes-chg{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin:-4px 0 12px}
+  .homes-chg .chg{font-size:16px}
+  .homes-vs{font-size:12.5px;color:var(--muted)}
+  .homes-cnt{margin-top:10px;padding-top:10px;border-top:1px solid var(--line-2)}
+  .homes-vb{height:170px}
+  .homes-vb i.homes-part{opacity:.45}
+  .homes-vb .homes-n{color:var(--ink-2);font-weight:600}
+  .homes-det{margin-top:12px;font-size:13.5px}
+  .homes-det summary{cursor:pointer;color:var(--accent);font-weight:600;margin-bottom:8px}
+  .homes-nw{white-space:nowrap}
+  .homes-addr{min-width:150px}
+  .homes-up{color:var(--c-add);font-size:10px}
+  .homes-area{font-size:13.5px;line-height:1.55;color:var(--ink-2);margin:12px 0 0;overflow-wrap:anywhere}
+  .homes-prose{font-size:14px}
+  .homes-prose p{margin:0 0 8px}
+  .homes-src{margin:0;padding-left:18px;font-size:14px}
+  .homes-src li{margin:4px 0;overflow-wrap:anywhere}
+</style>

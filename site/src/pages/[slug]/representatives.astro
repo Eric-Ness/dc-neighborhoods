@@ -1,0 +1,99 @@
+---
+import Hood from "../../layouts/Hood.astro";
+import { staticPaths, pageUrl, type Neighborhood } from "../../lib/data";
+import { titleCase } from "../../lib/c5";
+
+export const getStaticPaths = staticPaths;
+const { n } = Astro.props as { n: Neighborhood };
+const u = (p: string) => pageUrl(n.slug, p);
+const ancs = [...new Set(n.smds.map((s) => s.anc))].sort().map((anc) => {
+  const rs = n.smds.filter((s) => s.anc === anc).sort((a, b) => a.smd.localeCompare(b.smd));
+  return { anc, rs, url: rs.find((s) => s.url)?.url ?? null };
+});
+const vacant = n.smds.filter((s) => !s.commissioner).length;
+---
+<Hood n={n} page="representatives/" title={`Who represents ${n.name}: ANC commissioners`} description={`The Advisory Neighborhood Commissions and Single Member Districts that cover ${n.name}, with each commissioner and a plain-language guide to what an ANC does.`}
+  heading="Representatives" intro={`${n.name} is covered by ${n.smds.length} Single Member Districts in ${ancs.length} Advisory Neighborhood Commission${ancs.length === 1 ? "" : "s"}. Each district elects one unpaid commissioner, your closest elected official.`}>
+
+  <div class="row">
+    <section id="smds" class="panel" aria-labelledby="sm-h">
+      <div class="ph"><h2 id="sm-h">Your commissioners</h2><span class="sub">{n.smds.length} SMDs · {ancs.length} ANC{ancs.length === 1 ? "" : "s"}</span></div>
+      <div class="stats s3 reps-st">
+        <div><div class="v">{ancs.length}</div><div class="k">Advisory Neighborhood Commission{ancs.length === 1 ? "" : "s"}</div></div>
+        <div><div class="v">{n.smds.length}</div><div class="k">Single Member Districts</div></div>
+        <div><div class="v">{vacant}</div><div class="k">vacant seat{vacant === 1 ? "" : "s"}</div></div>
+      </div>
+      <div class="reps-grid">
+        {ancs.map((a) => (
+          <div class="anc reps-anc">
+            <div class="anc-h"><span>ANC {a.anc} · {a.rs.length} SMD{a.rs.length === 1 ? "" : "s"}</span>{a.url && <a href={a.url}>ANC {a.anc} site ↗</a>}</div>
+            <ul>{a.rs.map((s) => <li><span class="smd num">{s.smd}</span><span>{s.commissioner ? titleCase(s.commissioner) : <span class="reps-vac">Vacant</span>}</span></li>)}</ul>
+          </div>
+        ))}
+      </div>
+      <p class="repnote">Some of these districts may reach beyond the {n.name} boundary. Names of elected officials are public record.</p>
+    </section>
+
+    <div class="stack">
+      <section class="panel" aria-labelledby="fd-h">
+        <div class="ph"><h2 id="fd-h">Find your district</h2></div>
+        <p class="reps-p">Your Single Member District depends on your exact address. DC's ANC office has a lookup that returns your district and commissioner.</p>
+        <a class="cta" href="https://anc.dc.gov/">Look up your SMD by address <span>anc.dc.gov ↗</span></a>
+      </section>
+      <section class="panel" aria-labelledby="mt-h">
+        <div class="ph"><h2 id="mt-h">Meetings</h2></div>
+        <p class="reps-p">Each ANC posts its own meeting dates, agendas and how to join. Check the commission's site rather than this page, which doesn't track meetings.</p>
+        <ul class="reps-links">
+          {ancs.map((a) => <li>{a.url ? <a href={a.url}>ANC {a.anc} meetings and agendas ↗</a> : <span>ANC {a.anc}: no site on file; use anc.dc.gov</span>}</li>)}
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <div class="row one">
+    <section id="what" class="panel" aria-labelledby="wh-h">
+      <div class="ph"><h2 id="wh-h">What an ANC does</h2></div>
+      <div class="reps-cols">
+        <div class="prose">
+          <p>An Advisory Neighborhood Commission is the most local level of DC government. The city is split into ANCs, and each ANC into small Single Member Districts. Every district elects one commissioner. Commissioners are unpaid neighbors.</p>
+          <p>ANCs don't make final decisions. They vote on positions and send them to DC agencies, which by law must give those positions <b>"great weight"</b>: the agency has to respond to the ANC's concerns in writing when it decides.</p>
+        </div>
+        <div>
+          <div class="reps-sub">Where ANCs weigh in</div>
+          <ul class="reps-topics">
+            <li><b>Zoning</b><span>Variances, special exceptions and new development before the zoning boards</span></li>
+            <li><b>Liquor licenses</b><span>New bars, restaurants and stores, and changes to their hours</span></li>
+            <li><b>Public space</b><span>Sidewalk cafes, driveways, curb cuts and anything built in the public right of way</span></li>
+            <li><b>Permits</b><span>Building, historic preservation and other city permits that affect the neighborhood</span></li>
+          </ul>
+        </div>
+      </div>
+      <a class="cta" href={u("projects/")}>See the permits issued in {n.name} this month <span>Projects →</span></a>
+    </section>
+  </div>
+</Hood>
+
+<style is:global>
+  .reps-st{margin-bottom:16px}
+  .reps-grid{display:grid;gap:14px}
+  .reps-grid .anc+.anc{margin-top:0}
+  .reps-anc{background:var(--surface-2);border:1px solid var(--line-2);border-radius:12px;padding:12px 14px 6px}
+  .reps-anc .anc-h{gap:10px;flex-wrap:wrap}
+  .reps-anc li:first-child{border-top:0}
+  .reps-vac{color:var(--muted);font-style:italic}
+  .reps-p{margin:0;font-size:14px;color:var(--ink-2)}
+  .reps-links{list-style:none;margin:12px 0 0;padding:0;font-size:14px}
+  .reps-links li{padding:7px 0;border-top:1px solid var(--line-2)}
+  .reps-links a{text-decoration:none;font-weight:600}
+  .reps-cols{display:grid;gap:18px}
+  .reps-cols .prose p{margin:0 0 10px}
+  .reps-sub{font:600 11px/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+  .reps-topics{list-style:none;margin:0;padding:0}
+  .reps-topics li{display:grid;gap:2px;padding:9px 0;border-top:1px solid var(--line-2);font-size:14px}
+  .reps-topics li:first-child{border-top:0}
+  .reps-topics span{color:var(--muted);font-size:13px}
+  @media (min-width:720px){
+    .reps-grid{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .reps-cols{grid-template-columns:1.2fr 1fr;gap:32px}
+  }
+</style>

@@ -1,4 +1,6 @@
-// Typed access to the JSON written by ingest/run.py.
+// Typed access to the JSON written by ingest/run.py (core sections) and its modules
+// (ingest/homes.py, ingest/streets.py, ingest/history.py). Module sections are optional
+// so a page still builds if one feed fails on a given night.
 
 export interface Permit {
   id: string;
@@ -14,6 +16,59 @@ export interface Permit {
   smd: string | null;
 }
 
+export interface Source { name: string; url: string }
+
+export interface Homes {
+  generated_at: string;
+  sources: Source[];
+  area_note: string;
+  house: { median_12mo: number; count_12mo: number; median_prev_12mo: number; count_prev_12mo: number };
+  condo: { median_12mo: number; count_12mo: number; median_prev_12mo: number; count_prev_12mo: number };
+  last_60d: { median: number; count: number; median_ppsf: number | null };
+  above_assessment_12mo: { n: number; of: number };
+  by_month: { month: string; median: number; count: number }[];
+  by_month_basis?: string;
+  recent_sales: { address: string; date: string; price: number; kind: string; beds: number | null; sqft: number | null; assessed: number | null }[];
+  [k: string]: unknown;
+}
+
+export interface Streets {
+  generated_at: string;
+  sources: Source[];
+  curb: {
+    active_this_week: number; starting_next_7d: number; reserved_ft: number; long_running_90d: number;
+    freshness_note: string;
+    by_type: { type: string; count: number }[];
+    upcoming: { type: string; block: string; start: string; end: string; ft: number | null; hours: string | null }[];
+  };
+  trees: {
+    total: number; species: number; planted_5y: number; empty_boxes: number; empty_boxes_note: string;
+    condition: Record<string, number>;
+    top_species: { name: string; count: number }[];
+    biggest: { species: string; dbh_in: number; block: string }[];
+    inventory_date: string;
+  };
+  service: { type: string; median_days: number; city_median_days: number; closed_n: number }[];
+}
+
+export interface History {
+  generated_at: string;
+  sources: Source[];
+  buildings: {
+    records: number; year_min: number; year_max: number;
+    by_decade: { decade: number; count: number }[];
+    top_architects: { name: string; count: number }[];
+    top_builders: { name: string; count: number }[];
+    featured_block: {
+      block: string; year: number; buildings: number; permits: number; builder: string;
+      architects: { name: string; count: number }[];
+      largest_permit: { buildings: number; cost: number | null };
+      sentence: string;
+    } | null;
+  };
+  archive: { week_label: string; paper: string; terms: string[]; clips: { date: string; page: number; text: string; url: string }[]; note: string };
+}
+
 export interface Neighborhood {
   slug: string;
   name: string;
@@ -26,7 +81,7 @@ export interface Neighborhood {
     previous_total: number;
     open: number;
     by_type: { type: string; count: number; previous: number }[];
-    recent: { type: string; agency: string; added: string; status: string; block: string | null }[];
+    recent: { type: string; agency: string; added: string; resolved: string | null; status: string; block: string | null }[];
   };
   crime: {
     total: number;
@@ -36,6 +91,9 @@ export interface Neighborhood {
   };
   smds: { smd: string; anc: string; commissioner: string | null; url: string | null }[];
   sources: Record<string, string>;
+  homes?: Homes;
+  streets?: Streets;
+  history?: History;
 }
 
 const files = import.meta.glob<{ default: Neighborhood }>("../data/*.json", { eager: true });
@@ -45,46 +103,24 @@ export const neighborhoods: Neighborhood[] = Object.entries(files)
   .map(([, mod]) => mod.default)
   .sort((a, b) => a.name.localeCompare(b.name));
 
-export function pctChange(now: number, before: number): number | null {
-  // Percentages on small counts read as alarming swings; below this, show raw numbers only.
-  if (before < 100 && now < 100) return null;
-  return Math.round(((now - before) / before) * 100);
-}
-
-export function fmtDate(iso: string | null): string {
-  if (!iso) return "";
-  return new Date(iso).toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "America/New_York" });
-}
-
-export function fmtDateTime(iso: string): string {
-  return new Date(iso).toLocaleString("en-US", {
-    month: "long",
-    day: "numeric",
-    year: "numeric",
-    hour: "numeric",
-    minute: "2-digit",
-    timeZone: "America/New_York",
-    timeZoneName: "short",
-  });
-}
-
 export function titleCase(s: string): string {
   return s.toLowerCase().replace(/\b([a-z])/g, (m) => m.toUpperCase()).replace(/\b(Nw|Ne|Sw|Se)\b/g, (m) => m.toUpperCase());
 }
 
-/** Headline facts a resident would actually notice, generated from the numbers. */
-export function headlines(n: Neighborhood): string[] {
-  const out: string[] = [];
-  // Rank by absolute change so a jump from 84 to 117 outranks one from 13 to 20.
-  const movers = n.requests.by_type
-    .filter((t) => Math.max(t.count, t.previous) >= 30 && t.previous >= 10)
-    .map((t) => ({ ...t, pct: Math.round(((t.count - t.previous) / t.previous) * 100) }))
-    .sort((a, b) => Math.abs(b.count - b.previous) - Math.abs(a.count - a.previous));
-  for (const m of movers.slice(0, 2)) {
-    if (Math.abs(m.pct) < 20) continue;
-    out.push(`${m.type} requests ${m.pct > 0 ? "up" : "down"} ${Math.abs(m.pct)}% vs. the previous 30 days (${m.count} vs. ${m.previous}).`);
-  }
-  const big = n.permits.filter((p) => ["Demolition", "New construction", "Additions"].includes(p.group));
-  if (big.length) out.push(`${big.length} permit${big.length === 1 ? "" : "s"} for demolition, additions or new construction issued in the last ${n.windows.permits_days} days.`);
-  return out;
+/** Every page of a neighborhood section, in nav order. */
+export const PAGES = [
+  { path: "", label: "Overview" },
+  { path: "projects/", label: "Projects" },
+  { path: "homes/", label: "Homes" },
+  { path: "streets/", label: "Streets" },
+  { path: "then/", label: "Then" },
+  { path: "representatives/", label: "Representatives" },
+  { path: "subscribe/", label: "Weekly email" },
+  { path: "about/", label: "About the data" },
+] as const;
+
+export const pageUrl = (slug: string, path = "") => `/${slug}/${path}`;
+
+export function staticPaths() {
+  return neighborhoods.map((n) => ({ params: { slug: n.slug }, props: { n } }));
 }

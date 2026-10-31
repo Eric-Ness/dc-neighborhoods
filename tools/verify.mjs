@@ -52,7 +52,7 @@ const checks = {
   },
 
   privacy() {
-    const FORBIDDEN = ["OWNER_NAME", "PERMIT_APPLICANT", "INSPECTORNAME", "DETAILS", "CCN"];
+    const FORBIDDEN = ["OWNER_NAME", "OWNERNAME", "OWNNAME", "OWNER", "PERMIT_APPLICANT", "APPLICANT", "INSPECTORNAME", "DETAILS", "CCN"];
     const scan = (obj, hits = [], path = "$") => {
       if (Array.isArray(obj)) obj.forEach((v, i) => scan(v, hits, `${path}[${i}]`));
       else if (obj && typeof obj === "object")
@@ -93,7 +93,8 @@ const checks = {
       assert(html.includes("Data as of"), `${h.slug}: no freshness stamp`);
       assert(html.includes(`datetime="${data.generated_at}"`), `${h.slug}: page not built from current data`);
       assert(html.includes("Independent project"), `${h.slug}: no independence disclaimer`);
-      assert(html.includes(`>${data.permits.length}</div>`), `${h.slug}: permit count ${data.permits.length} not rendered`);
+      // C5 shows the count in the permit-map header and the permits measure.
+      assert(html.includes(`<b id="shown">${data.permits.length}</b>`) && html.includes(`${data.permits.length} issued`), `${h.slug}: permit count ${data.permits.length} not rendered`);
       assert(data.permits.length > 0 && data.requests.total > 0, `${h.slug}: empty data`);
       const rss = `site/dist/${h.slug}/permits.xml`;
       assert(existsSync(join(root, rss)) && (read(rss).match(/<item>/g) ?? []).length === Math.min(100, data.permits.length), `${h.slug}: RSS item count wrong`);
@@ -121,6 +122,12 @@ const checks = {
       assert(seen.at(-1) === `/${h.slug}/`, `${host}/ served ${seen.at(-1)} instead of /${h.slug}/`);
       await worker.fetch(new Request(`https://${host}/permits.xml`), env);
       assert(seen.at(-1) === `/${h.slug}/permits.xml`, `${host}/permits.xml served ${seen.at(-1)}`);
+      for (const sub of ["projects/", "homes/", "streets/", "then/", "representatives/", "subscribe/", "about/", "search.json"]) {
+        await worker.fetch(new Request(`https://${host}/${sub}`), env);
+        assert(seen.at(-1) === `/${h.slug}/${sub}`, `${host}/${sub} served ${seen.at(-1)}`);
+        await worker.fetch(new Request(`https://${host}/${h.slug}/${sub}`), env);
+        assert(seen.at(-1) === `/${h.slug}/${sub}`, `${host}/${h.slug}/${sub} (prefixed link) served ${seen.at(-1)}`);
+      }
       await worker.fetch(new Request(`https://${host}/_astro/x.css`), env);
       assert(seen.at(-1) === "/_astro/x.css", `${host} rewrote a shared asset path`);
       for (const r of h.redirect_hosts) {
@@ -196,6 +203,79 @@ checks.ideademos = () => {
     assert(!/OWNER_NAME|PERMIT_APPLICANT|INSPECTORNAME/.test(html), `${tag}: raw personal field name present`);
     assert(!/lorem ipsum/i.test(html), `${tag}: lorem ipsum`);
     assert(Buffer.byteLength(html) < 1.5 * 1024 * 1024, `${tag}: page over 1.5 MB`);
+  }
+};
+
+// ---------- phase 3: filled-out C5 site ----------
+const SITE_PAGES = ["", "projects/", "homes/", "streets/", "then/", "representatives/", "subscribe/", "about/"];
+const hoods = () => JSON.parse(read("site/src/data/index.json"));
+
+checks.datafull = () => {
+  for (const h of hoods()) {
+    const d = JSON.parse(read(`site/src/data/${h.slug}.json`));
+    const tag = h.slug;
+    assert(d.homes && d.streets && d.history, `${tag}: homes/streets/history section missing (${JSON.stringify(d.module_errors ?? {})})`);
+    if (!d.homes || !d.streets || !d.history) continue;
+    assert(Object.keys(d.module_errors ?? {}).length === 0, `${tag}: module errors ${JSON.stringify(d.module_errors)}`);
+    const hm = d.homes, st = d.streets, hi = d.history;
+    assert(hm.house.count_12mo > 0 && hm.house.median_12mo >= 100000 && hm.house.median_12mo <= 5000000, `${tag}: implausible house median ${hm.house.median_12mo}`);
+    assert(hm.by_month.length >= 6, `${tag}: homes.by_month has ${hm.by_month.length} months`);
+    assert(hm.recent_sales.length > 0, `${tag}: no recent sales`);
+    assert(st.curb.active_this_week > 0 && st.trees.total > 0, `${tag}: empty curb or trees`);
+    assert(st.service.length >= 4 && st.service.every((s) => s.median_days >= 0), `${tag}: service medians incomplete`);
+    assert(hi.buildings.records > 0 && hi.buildings.featured_block && hi.buildings.by_decade.length > 0, `${tag}: history buildings incomplete`);
+    assert(typeof hi.archive.note === "string" && Array.isArray(hi.archive.clips), `${tag}: archive malformed`);
+    for (const sec of [hm, st, hi]) assert(Array.isArray(sec.sources) && sec.sources.length > 0, `${tag}: a section has no sources`);
+    // Same-run freshness: every module section was produced by the run that wrote this file.
+    for (const [k, sec] of Object.entries({ homes: hm, streets: st, history: hi }))
+      assert(Math.abs(Date.parse(sec.generated_at) - Date.parse(d.generated_at)) < 30 * 60 * 1000, `${tag}: ${k} not from this run`);
+  }
+};
+
+checks.sitefull = () => {
+  for (const h of hoods()) {
+    const d = JSON.parse(read(`site/src/data/${h.slug}.json`));
+    for (const p of SITE_PAGES) {
+      const file = `site/dist/${h.slug}/${p}index.html`;
+      assert(existsSync(join(root, file)), `${file} not built`);
+      if (!existsSync(join(root, file))) continue;
+      const html = read(file);
+      const tag = `${h.slug}/${p}`;
+      assert(html.includes(`datetime="${d.generated_at}"`), `${tag}: freshness stamp missing or stale`);
+      assert(html.includes("Not affiliated with the DC Government"), `${tag}: independence footer missing`);
+      const visible = html.replace(/<script[\s\S]*?<\/script>/g, "");
+      // Case-insensitive for mockup leftovers; whole-word and case-sensitive for NaN/undefined,
+      // so real permit text like "maintenance" or "TENANT" can't trip it.
+      assert(!/LAYOUT C\d|\bapprox\b|lorem|\{\{/i.test(visible), `${tag}: mockup leftover in page`);
+      assert(!/\bNaN\b|\bundefined\b/.test(visible), `${tag}: NaN or undefined rendered in page`);
+      for (const q of SITE_PAGES) assert(html.includes(`href="/${h.slug}/${q}"`), `${tag}: nav link to /${h.slug}/${q} missing`);
+      // every internal link on the page resolves to a built file (anchors ignored)
+      for (const m of html.matchAll(/href="(\/[^"#?]*)/g)) {
+        const target = m[1].endsWith("/") ? `${m[1]}index.html` : m[1];
+        assert(existsSync(join(root, "site/dist", target)), `${tag}: broken internal link ${m[1]}`);
+      }
+    }
+    assert(existsSync(join(root, `site/dist/${h.slug}/search.json`)), `${h.slug}: search.json not built`);
+    const idx = JSON.parse(read(`site/dist/${h.slug}/search.json`));
+    assert(idx.length >= d.permits.length, `${h.slug}: search index smaller than permit count`);
+  }
+};
+
+checks.markers = () => {
+  for (const h of hoods()) {
+    const d = JSON.parse(read(`site/src/data/${h.slug}.json`));
+    const html = read(`site/dist/${h.slug}/index.html`);
+    const big = d.permits.filter((p) => ["Demolition", "New construction", "Additions"].includes(p.group));
+    const withCoords = big.filter((p) => p.lat && p.lon);
+    const marks = [...html.matchAll(/class="mk c-\w+" data-id="p([^"]+)" data-pid="[^"]+" data-lat="([^"]+)" data-lon="([^"]+)" data-addr="([^"]+)"/g)];
+    assert(marks.length === withCoords.length, `${h.slug}: ${marks.length} markers for ${withCoords.length} mapped bigger projects`);
+    for (const [, id, lat, lon, a] of marks) {
+      const p = big.find((x) => x.id === id);
+      assert(p, `${h.slug}: marker for unknown permit ${id}`);
+      if (!p) continue;
+      assert(+lat === p.lat && +lon === p.lon, `${h.slug}: marker ${id} not at its permit's coordinates`);
+      assert(a.replace(/&amp;/g, "&") === p.address, `${h.slug}: marker ${id} address mismatch`);
+    }
   }
 };
 

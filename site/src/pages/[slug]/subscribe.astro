@@ -1,0 +1,113 @@
+---
+import Hood from "../../layouts/Hood.astro";
+import { staticPaths, pageUrl, type Neighborhood } from "../../lib/data";
+import { model, money, fmt, shortType } from "../../lib/c5";
+
+export const getStaticPaths = staticPaths;
+const { n } = Astro.props as { n: Neighborhood };
+const u = (p: string) => pageUrl(n.slug, p);
+const m = model(n);
+const days = n.windows.requests_days;
+const h = n.homes;
+const st = n.streets;
+const hi = n.history;
+const ancs = new Set(n.smds.map((s) => s.anc)).size;
+
+// Mirrors the home page, section by section, with this week's figure as the example.
+const items: { name: string; what: string; now: string; href: string }[] = [
+  { name: "Today's condition", what: `The biggest change in ${n.name}'s 311 requests, in one sentence.`, now: m.leadSentence, href: u("") },
+  { name: "Measures", what: `311 requests, crime report counts, home prices and permits, each against the period before.`, now: `${fmt(n.requests.total)} 311 requests and ${n.crime.total} crime reports in the last ${days} days.`, href: u("") },
+  { name: "Projects", what: "New additions, demolitions and new buildings, with a map link for each.", now: `${n.permits.length} permits issued, ${m.projects.length} of them bigger projects.`, href: u("projects/") },
+];
+if (h) items.push({ name: "Homes", what: "Median house and condo prices and the newest sales.", now: `Median house price ${money(h.house.median_12mo)} over 12 months; ${h.last_60d.count} sales in the last 60 days.`, href: u("homes/") });
+if (st) items.push({ name: "Streets", what: "Curb permits starting this week, street trees and how fast 311 closes requests.", now: `${st.curb.starting_next_7d} curb permits starting in the next 7 days.`, href: u("streets/") });
+items.push({ name: "Top 311 requests", what: "The request types residents filed most, ranked, with the change.", now: n.requests.by_type[0] ? `Most filed: ${shortType(n.requests.by_type[0].type)} (${fmt(n.requests.by_type[0].count)}).` : `${fmt(n.requests.total)} requests in total.`, href: u("streets/#requests") });
+if (hi) items.push({ name: "Then", what: "A block's building story and a newspaper reading from 100 years ago that week.", now: hi.buildings.featured_block ? `${hi.buildings.featured_block.year}: ${hi.buildings.featured_block.block}.` : hi.archive.week_label, href: u("then/") });
+items.push({ name: "Who represents you", what: "Your ANC commissioners and links to their meetings.", now: `${n.smds.length} commissioners across ${ancs} ANC${ancs === 1 ? "" : "s"}.`, href: u("representatives/") });
+const rss = pageUrl(n.slug, "permits.xml");
+---
+<Hood n={n} page="subscribe/" title={`${n.name} weekly email`} description={`One email a week with what changed in ${n.name}: 311, permits, home sales and more, from DC's own data.`}
+  heading="Weekly email" intro={`Everything on the ${n.name} front page, in your inbox once a week. Short, plain and sourced.`}>
+
+  <div class="row one">
+    <section class="panel subband" aria-labelledby="sf-h">
+      <div class="ph"><h2 id="sf-h">Sign up</h2><span class="sub">Free · weekly</span></div>
+      <div style="font-size:15px">One email a week about {n.name}, built from the same nightly data as this site.</div>
+      <form class="subrow" action={u("subscribe/")} method="get"><input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required /><button type="submit">Subscribe</button></form>
+      <div class="subnote"><span>One email a week. We never sell or share addresses.</span><a href={rss}>Permits RSS feed</a></div>
+      <p id="sub-msg" class="sub-msg" role="status" hidden>Signups open soon. Use the <a href={rss}>RSS feed</a> meanwhile.</p>
+    </section>
+  </div>
+
+  <div class="row">
+    <section id="contents" class="panel" aria-labelledby="wc-h">
+      <div class="ph"><h2 id="wc-h">What's in each email</h2><span class="sub">With this week's figures</span></div>
+      <ol class="sub-list">
+        {items.map((it, i) => (
+          <li>
+            <span class="sub-i num">{String(i + 1).padStart(2, "0")}</span>
+            <div>
+              <div class="sub-t"><a href={it.href}>{it.name}</a></div>
+              <p class="sub-w">{it.what}</p>
+              <p class="sub-now"><span>This week</span>{it.now}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </section>
+
+    <div class="stack">
+      <section class="panel" aria-labelledby="pr-h">
+        <div class="ph"><h2 id="pr-h">Our privacy promise</h2></div>
+        <ul class="sub-promise">
+          <li><b>One email a week.</b> No daily alerts, no "breaking" emails.</li>
+          <li><b>Your address stays here.</b> We never sell, rent or share it.</li>
+          <li><b>Leave any time.</b> Every email has an unsubscribe link.</li>
+          <li><b>Same rules as the site.</b> No owner or applicant names, 311 only to the hundred block, crime as counts only.</li>
+        </ul>
+        <a class="cta" href={u("about/")}>Privacy rules for the data <span>About →</span></a>
+      </section>
+      <section class="panel" aria-labelledby="rs-h">
+        <div class="ph"><h2 id="rs-h">Prefer RSS?</h2></div>
+        <p class="sub-p">New building permits for {n.name} as a feed, updated nightly. It works today in any feed reader.</p>
+        <a class="cta" href={rss}>Subscribe to the permits feed <span>RSS →</span></a>
+      </section>
+    </div>
+  </div>
+
+  <div class="row even">
+    <section class="panel" aria-labelledby="sp-h">
+      <div class="ph"><h2 id="sp-h">Sponsor policy</h2></div>
+      <ul class="sub-promise">
+        <li><b>One sponsor per email,</b> clearly labeled "Sponsor".</li>
+        <li><b>Never inside the data.</b> A sponsor never appears in a chart, table or reading, and never changes what we report.</li>
+        <li><b>No sponsored stories.</b> The sponsor gets one labeled line, nothing more.</li>
+      </ul>
+    </section>
+    <aside class="panel sponsor" aria-label="Example sponsor slot"><small>Sponsor</small><div>Presented by <b>[Local sponsor]</b></div><span class="sub-ex">This is how the one sponsor line looks, set apart from the data.</span></aside>
+  </div>
+</Hood>
+
+<script is:inline>
+  // No real submission yet: acknowledge the address and point to RSS.
+  if (new URLSearchParams(location.search).has("email")) { var m = document.getElementById("sub-msg"); if (m) m.hidden = false; }
+</script>
+
+<style is:global>
+  .sub-msg{grid-column:1/-1;margin:12px 0 0;padding:10px 14px;border-radius:12px;background:var(--accent-soft);color:var(--ink);font-size:14px;font-weight:500}
+  .sub-list{list-style:none;margin:0;padding:0}
+  .sub-list li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px;padding:12px 0;border-top:1px solid var(--line-2)}
+  .sub-list li:first-child{border-top:0;padding-top:2px}
+  .sub-i{font-size:11px;color:var(--muted);padding-top:3px}
+  .sub-t a{font-weight:600;font-size:15px;color:var(--ink);text-decoration:none}
+  .sub-w{margin:2px 0 0;font-size:13.5px;color:var(--ink-2)}
+  .sub-now{margin:6px 0 0;font-size:13px;color:var(--ink-2);background:var(--surface-2);border:1px solid var(--line-2);border-radius:10px;padding:7px 10px;overflow-wrap:anywhere}
+  .sub-now span{display:block;font:600 10px/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+  .sub-promise{list-style:none;margin:0;padding:0;font-size:14px;color:var(--ink-2)}
+  .sub-promise li{padding:8px 0;border-top:1px solid var(--line-2)}
+  .sub-promise li:first-child{border-top:0;padding-top:0}
+  .sub-promise b{color:var(--ink)}
+  .sub-p{margin:0;font-size:14px;color:var(--ink-2)}
+  .sub-ex{font-size:12.5px;color:var(--muted)}
+  @media (min-width:1024px){.sub-msg{grid-column:2}}
+</style>

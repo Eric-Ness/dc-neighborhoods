@@ -1,179 +1,267 @@
 ---
-import Base from "../../layouts/Base.astro";
-import BoundaryMap from "../../components/BoundaryMap.astro";
-import { neighborhoods, pctChange, fmtDate, fmtDateTime, titleCase, headlines, type Neighborhood } from "../../lib/data";
+import Hood from "../../layouts/Hood.astro";
+import PermitMap from "../../components/PermitMap.astro";
+import ProjectList from "../../components/ProjectList.astro";
+import { staticPaths, pageUrl, type Neighborhood } from "../../lib/data";
+import {
+  model, reading, pair, bar, icon, stateTag, glyph, fmt, money, sign, shortType, leadName, titleCase, asOfDay,
+  CATS, BIG, MIX_ICON, STATE_WORD, type State,
+} from "../../lib/c5";
 
-export function getStaticPaths() {
-  return neighborhoods.map((n) => ({ params: { slug: n.slug }, props: { n } }));
-}
-
+export const getStaticPaths = staticPaths;
 const { n } = Astro.props as { n: Neighborhood };
-const permitDays = n.windows.permits_days;
-const srDays = n.windows.requests_days;
-const srChange = pctChange(n.requests.total, n.requests.previous_total);
-const crimeChange = pctChange(n.crime.total, n.crime.previous_total);
-const facts = headlines(n);
+const m = model(n);
+const u = (p: string) => pageUrl(n.slug, p);
+const days = n.windows.requests_days;
 
-const groupOrder = ["Demolition", "New construction", "Additions", "Renovation & repair", "Electrical, plumbing & mechanical", "Home businesses", "Minor work", "Other"];
-const groups = groupOrder
-  .map((g) => ({ name: g, items: n.permits.filter((p) => p.group === g) }))
-  .filter((g) => g.items.length);
-const maxType = Math.max(...n.requests.by_type.slice(0, 12).map((t) => Math.max(t.count, t.previous)), 1);
-const ancs = [...new Set(n.smds.map((s) => s.anc))];
-const change = (pct: number | null) => (pct === null ? "" : `${pct > 0 ? "+" : ""}${pct}%`);
+// ---- measures: C3 vitals layout, C4 paired bars ----
+const falls = n.requests.by_type.filter((t) => t.count < t.previous).sort((a, b) => a.count - a.previous - (b.count - b.previous)).slice(0, 2);
+const fallsTxt = falls.length ? ` Biggest falls: ${falls.map((t) => `${shortType(t.type).toLowerCase()} (−${t.previous - t.count})`).join(" and ")}.` : "";
+type Measure = { name: string; href: string; state: State | "neutral" | "mix"; chg: string; glyph?: State; sub?: string; bars: string; read: string };
+const measures: Measure[] = [
+  {
+    name: "311 requests", href: u("streets/"), state: m.reqR.state, chg: m.reqR.txt,
+    bars: pair(`Last ${days} days`, n.requests.total, fmt(n.requests.total), `${days} days before`, n.requests.previous_total, fmt(n.requests.previous_total), `fill s-${m.reqR.state}`),
+    read: `${fmt(Math.abs(m.reqR.d))} ${m.reqR.d < 0 ? "fewer" : "more"} requests than the ${days} days before.${fallsTxt}`,
+  },
+  {
+    name: "Crime reports", href: u("about/#crime"), state: "neutral", glyph: m.crimeR.state, chg: m.crimeR.txt,
+    sub: `${n.crime.total} reports · ${n.crime.previous_total} the ${days} days before`,
+    bars: pair(`Last ${days} days`, n.crime.total, fmt(n.crime.total), `${days} days before`, n.crime.previous_total, fmt(n.crime.previous_total), "fill neutral"),
+    read: `Counts this small swing from month to month: ${Math.abs(m.crimeR.d)} ${m.crimeR.d > 0 ? "more" : "fewer"} than the ${days} days before. Shown as counts only, never mapped.`,
+  },
+];
+const h = n.homes;
+if (h) {
+  const r = reading(h.house.median_12mo, h.house.median_prev_12mo);
+  const d = h.house.median_12mo - h.house.median_prev_12mo;
+  const pct = h.house.median_prev_12mo ? Math.round((d / h.house.median_prev_12mo) * 100) : 0;
+  measures.push({
+    name: "Median house price", href: u("homes/"), state: r.state,
+    chg: `${sign(d)}${money(Math.abs(d))} (${sign(d)}${Math.abs(pct)}%)`,
+    bars: pair("Last 12 months", h.house.median_12mo, money(h.house.median_12mo), "12 months before", h.house.median_prev_12mo, money(h.house.median_prev_12mo), `fill s-${r.state}`),
+    read: `From ${h.house.count_12mo} house sales, against ${h.house.count_prev_12mo} the year before.${r.state === "steady" ? " Within 5%, so steady." : ""}`,
+  });
+}
+const bigCount = m.projects.length;
+measures.push({
+  name: "Building permits", href: u("projects/"), state: "mix", chg: `${n.permits.length} issued`,
+  bars: pair("Bigger projects", bigCount, fmt(bigCount), "Smaller jobs", n.permits.length - bigCount, fmt(n.permits.length - bigCount), "fill c-add"),
+  read: `${m.groups["Additions"] ?? 0} additions, ${m.groups["Demolition"] ?? 0} demolition${(m.groups["Demolition"] ?? 0) === 1 ? "" : "s"} and ${m.groups["New construction"] ?? 0} new building${(m.groups["New construction"] ?? 0) === 1 ? "" : "s"}; the rest are smaller jobs.`,
+});
+
+// condition strip: graded readings only (crime is shown as counts, not graded)
+const graded: State[] = [m.lead?.r.state, ...m.others.map((o) => o.r.state), m.reqR.state].filter(Boolean) as State[];
+if (h) graded.push(reading(h.house.median_12mo, h.house.median_prev_12mo).state);
+const counts = { rising: 0, easing: 0, steady: 0 } as Record<State, number>;
+graded.forEach((s) => counts[s]++);
+const condWord =
+  (counts.easing > counts.rising ? "Mostly easing" : counts.rising > counts.easing ? "Mostly rising" : "Mixed") +
+  (counts.rising === 0 ? ", with nothing rising" : `, with ${counts.rising} reading${counts.rising === 1 ? "" : "s"} rising`);
+
+// 311 ranked table
+const top311 = n.requests.by_type.slice(0, 6);
+const max311 = Math.max(...top311.map((t) => Math.max(t.count, t.previous)), 1);
+
+// permits by type
+const present = CATS.filter((c) => m.groups[c.group]);
+const maxg = Math.max(...present.map((c) => m.groups[c.group]), 1);
+
+// reps grouped by ANC
+const ancs = [...new Set(n.smds.map((s) => s.anc))].sort();
+const st = n.streets;
+const hi = n.history;
+const fb = hi?.buildings.featured_block;
+const clip = hi?.archive.clips[0];
 ---
-<Base
-  title={`${n.name}: what's changing, from DC open data`}
-  description={`Building permits, 311 requests and public safety counts for ${n.name}, Washington DC, updated nightly from Open Data DC.`}
-  rss={`/${n.slug}/permits.xml`}
->
-  <header class="hero">
-    <div class="wrap">
-      <p class="eyebrow">Independent civic data · Washington, DC</p>
-      <h1>{n.name}</h1>
-      <p class="muted">Data as of <time datetime={n.generated_at}>{fmtDateTime(n.generated_at)}</time>. Updated nightly.</p>
-      <p id="stale" class="stale" hidden>This data is more than 3 days old. The nightly update may have failed; check the official sources below.</p>
-    </div>
-  </header>
-  <script is:inline define:vars={{ generated: n.generated_at }}>
-    // The build can't know when someone visits, so the staleness warning is decided in the browser.
-    if (Date.now() - Date.parse(generated) > 3 * 86400000) document.getElementById("stale").hidden = false;
-  </script>
+<Hood n={n} page="" title={`${n.name}: what's changing, from DC's own data`} description={`What's changing in ${n.name}, Washington DC: permits, 311, homes, streets and history from DC's own open data. Independent; updated nightly.`}>
 
-  <main class="wrap">
-    <section class="stats">
-      <div class="card stat">
-        <div class="big-num">{n.permits.length}</div>
-        <div>building permits issued<br /><span class="muted">last {permitDays} days</span></div>
+  <section id="condition" class="cond" aria-labelledby="c-h">
+    <div>
+      <div class="c-kick">Today's condition · {asOfDay(n.generated_at)} {m.lead && <Fragment set:html={stateTag(m.lead.r.state)} />}</div>
+      <h2 class="c-head" id="c-h">{m.leadSentence}</h2>
+      <p class="c-word">{condWord}. Each reading compares the last {days} days with the {days} days before; crime is shown as counts, not graded.</p>
+      <ul class="c-strip" aria-label="Readings by state">
+        {(["rising", "easing", "steady"] as State[]).map((s) => (
+          <li class={`s-${s}`}><Fragment set:html={icon(s)} /><b class="num">{counts[s]}</b> {STATE_WORD[s].toLowerCase()}</li>
+        ))}
+      </ul>
+    </div>
+    {m.lead && (
+      <div class="c-box">
+        <a class="c-lead" href={u("streets/#service")}>
+          <div class="ph"><h2>Biggest change in 311</h2><span class="sub" style="color:var(--accent);font-weight:600">Streets →</span></div>
+          <div class="lh"><b>{leadName(m.lead.type)}</b><span class={`chg s-${m.lead.r.state}`}><Fragment set:html={icon(m.lead.r.state)} />{m.lead.r.txt}</span></div>
+          <div class="cmp" set:html={pair(`Last ${days} days`, m.lead.count, fmt(m.lead.count), `${days} days before`, m.lead.previous, fmt(m.lead.previous), `fill s-${m.lead.r.state}`)} />
+        </a>
+        {m.others.length > 0 && <>
+          <div class="also-h">Also in 311</div>
+          <ul class="also">
+            {m.others.map((o) => (
+              <li>
+                <span class={`chg s-${o.r.state} ar`}><Fragment set:html={icon(o.r.state)} /></span>
+                <span class="al">{shortType(o.type)}</span>
+                <span class="anum num"><b class="av">{o.count}</b> <span class="ap">from {o.previous}</span></span>
+                <span class={`chg s-${o.r.state} num ad`}>{o.r.txt}</span>
+              </li>
+            ))}
+          </ul>
+        </>}
       </div>
-      <div class="card stat">
-        <div class="big-num">{n.requests.total.toLocaleString()}</div>
-        <div>311 requests <span class={srChange && srChange > 0 ? "up" : "down"}>{change(srChange)}</span><br /><span class="muted">last {srDays} days vs. prior {srDays}</span></div>
-      </div>
-      <div class="card stat">
-        <div class="big-num">{n.crime.total}</div>
-        <div>crime reports {crimeChange === null ? <span class="muted">({n.crime.previous_total} prior)</span> : <span class={crimeChange > 0 ? "up" : "down"}>{change(crimeChange)}</span>}<br /><span class="muted">last {srDays} days, preliminary</span></div>
+    )}
+  </section>
+
+  <div class="mapgrid">
+    <section id="vitals" class="panel vitals" aria-labelledby="v-h">
+      <div class="ph" style="padding:12px 16px 0"><h2 id="v-h">Measures</h2><span class="sub">Latest period vs the one before</span></div>
+      <div class="vlist">
+        {measures.map((ms) => (
+          <a class="vital" href={ms.href}>
+            <div class="v-top"><span class="v-name">{ms.name}</span>
+              {ms.state === "mix" ? <span class="tag s-mix"><Fragment set:html={MIX_ICON} />Mix</span> : ms.state !== "neutral" && <Fragment set:html={stateTag(ms.state)} />}
+            </div>
+            {ms.sub && <div class="v-sub num">{ms.sub}</div>}
+            <div class="v-chg">
+              {ms.state === "neutral" ? <span class="chg s-neutral"><Fragment set:html={icon(ms.glyph!)} />{ms.chg}</span>
+                : ms.state === "mix" ? <span class="chg s-mix">{ms.chg}</span>
+                : <span class={`chg s-${ms.state}`}><Fragment set:html={icon(ms.state)} />{ms.chg}</span>}
+            </div>
+            <div class="cmp" set:html={ms.bars} />
+            <p class="v-read">{ms.read}</p>
+          </a>
+        ))}
       </div>
     </section>
 
-    {facts.length > 0 && (
-      <section class="card facts">
-        <h2>This month in {n.name}</h2>
-        <ul>{facts.map((f) => <li>{f}</li>)}</ul>
+    <div class="mapcol"><PermitMap n={n} projects={m.projects} moreHref={u("projects/")} /></div>
+
+    <div class="projcol">
+      <ProjectList projects={m.projects} total={n.permits.length} slug={n.slug} limit={8} moreHref={u("projects/")} />
+      <section class="panel mix" aria-labelledby="mix-h">
+        <div class="ph"><h2 id="mix-h">All {n.permits.length} permits by type</h2><span class="sub">Tap to filter the map</span></div>
+        <ul>
+          {present.map((c) => (
+            <li><button type="button" class="mixrow" data-g={c.key} aria-pressed="true">
+              <Fragment set:html={glyph(c.kind, c.key)} /><span class="ml">{c.group}</span>
+              <Fragment set:html={bar(m.groups[c.group], maxg, BIG.includes(c.group) ? `fill c-${c.key}` : "fill")} />
+              <b class="num">{m.groups[c.group]}</b>
+            </button></li>
+          ))}
+        </ul>
       </section>
-    )}
-
-    <h2 id="permits">Building permits</h2>
-    <div class="permits-layout">
-      <BoundaryMap rings={n.boundary.rings} permits={n.permits} label={`${n.name} (${n.boundary.source})`} />
-      <div>
-        {groups.map((g) => (
-          <details open={["Demolition", "New construction", "Additions"].includes(g.name)}>
-            <summary><strong>{g.name}</strong> <span class="muted">({g.items.length})</span></summary>
-            <ul class="permit-list">
-              {g.items.map((p) => (
-                <li>
-                  <span class="addr">{titleCase(p.address)}</span>
-                  <span class="muted"> · {fmtDate(p.issued)} · {p.id}</span>
-                  {p.work && <div class="work">{p.work}</div>}
-                </li>
-              ))}
-            </ul>
-          </details>
-        ))}
-        <p class="muted small">Subscribe to new permits: <a href={`/${n.slug}/permits.xml`}>RSS feed</a>.</p>
-      </div>
     </div>
+  </div>
 
-    <h2 id="requests">311 service requests</h2>
-    <p class="muted">What residents reported to the city in the last {srDays} days, compared with the {srDays} days before. Bars: dark = this period, light = previous.</p>
-    <div class="scroll-x">
-      <table>
-        <thead><tr><th>Request type</th><th class="num">Last {srDays}d</th><th class="num">Prior {srDays}d</th><th class="num">Change</th><th class="bars-col"></th></tr></thead>
+  <div class="row">
+    {h ? (
+      <section id="homes" class="panel" aria-labelledby="h-h">
+        <div class="ph"><h2 id="h-h">Homes</h2><a href={u("homes/")}>Sales and prices →</a></div>
+        <div class="hero"><b class="num">{money(h.house.median_12mo)}</b><span>median house price, last 12 months, from {h.house.count_12mo} house sales</span></div>
+        <table class="htbl"><tbody>
+          <tr><th scope="row">Median price<span>last 60 days</span></th><td class="hv num">{money(h.last_60d.median)}</td><td class="hn num">{h.last_60d.count} sales</td></tr>
+          {h.last_60d.median_ppsf && <tr><th scope="row">Price per sq ft<span>last 60 days</span></th><td class="hv num">${fmt(h.last_60d.median_ppsf)}</td><td class="hn num">median</td></tr>}
+          <tr><th scope="row">Median condo<span>12 months</span></th><td class="hv num">{money(h.condo.median_12mo)}</td><td class="hn num">{h.condo.count_12mo} sales</td></tr>
+          <tr><th scope="row">Sold above assessment<span>12 months</span></th><td class="hv num">{h.above_assessment_12mo.n} <small>of {h.above_assessment_12mo.of}</small></td><td class="hn num">sales</td></tr>
+        </tbody></table>
+        <a class="cta" href={u("homes/#recent")}>See every recent sale <span>Homes →</span></a>
+      </section>
+    ) : <section id="homes" class="panel"><div class="ph"><h2>Homes</h2></div><p class="note">Home sales data didn't update tonight.</p></section>}
+    {st ? (
+      <section class="panel" aria-labelledby="tr-h">
+        <div class="ph"><h2 id="tr-h">Street trees</h2><a href={u("streets/#trees")}>Tree details →</a></div>
+        <div class="hero"><b class="num">{fmt(st.trees.total)}</b><span>street trees, {st.trees.species} species</span></div>
+        <div class="stats s2">
+          <div><div class="v">{fmt(st.trees.planted_5y)}</div><div class="k">planted in the last 5 years</div></div>
+          <div><div class="v" style="color:var(--accent)">{st.trees.empty_boxes}</div><div class="k">empty tree boxes open for planting</div></div>
+        </div>
+        <a class="cta" href="https://311.dc.gov/">Ask DC to plant a tree on your block <span>DC 311 →</span></a>
+      </section>
+    ) : <section class="panel"><div class="ph"><h2>Street trees</h2></div><p class="note">Tree data didn't update tonight.</p></section>}
+  </div>
+
+  <div class="row even" id="streets">
+    <section class="panel" aria-labelledby="t-h">
+      <div class="ph"><h2 id="t-h">Top 311 requests</h2><a href={u("streets/#requests")}>All types →</a></div>
+      <div class="tbl-wrap"><table class="t311">
+        <thead><tr><th></th><th>Type · last {days} days</th><th>Now</th><th>Prior</th><th>Change</th></tr></thead>
         <tbody>
-          {n.requests.by_type.slice(0, 12).map((t) => {
-            const pct = pctChange(t.count, t.previous);
+          {top311.map((t, i) => {
+            const r = reading(t.count, t.previous);
             return (
               <tr>
-                <td>{t.type}</td>
-                <td class="num">{t.count}</td>
-                <td class="num">{t.previous}</td>
-                <td class={`num ${pct !== null && pct > 0 ? "up" : "down"}`}>{change(pct)}</td>
-                <td class="bars-col">
-                  <div class="bar now" style={`width:${(t.count / maxType) * 100}%`}></div>
-                  <div class="bar before" style={`width:${(t.previous / maxType) * 100}%`}></div>
-                </td>
+                <td class="ri num">{String(i + 1).padStart(2, "0")}</td>
+                <td class="rn"><span>{shortType(t.type)}</span>
+                  <Fragment set:html={`<svg class="rb" viewBox="0 0 100 6" preserveAspectRatio="none" aria-hidden="true"><rect class="trk" width="100" height="6"/><rect class="fill s-${r.state}" width="${((100 * t.count) / max311).toFixed(1)}" height="6"/><rect class="tick" x="${((100 * t.previous) / max311 - 0.5).toFixed(1)}" y="-2" width="1" height="10"/></svg>`} /></td>
+                <td class="rc num">{t.count}</td>
+                <td class="rp num">{t.previous}</td>
+                <td class="rd num"><span class={`chg s-${r.state}`}><Fragment set:html={icon(r.state)} />{r.txt.split(" ")[0]}</span></td>
               </tr>
             );
           })}
         </tbody>
-      </table>
+      </table></div>
+      <div class="legend"><span><i style="width:12px;height:6px;background:var(--ink-2)"></i>Last {days} days</span><span><i style="width:1.5px;height:10px;background:var(--ink)"></i>{days} days before</span><span><Fragment set:html={icon("rising")} />rising <Fragment set:html={icon("easing")} />easing <Fragment set:html={icon("steady")} />within 5%</span></div>
+    </section>
+    <div class="stack">
+      {st && (
+        <section class="panel" aria-labelledby="curb-h">
+          <div class="ph"><h2 id="curb-h">Curb space</h2><a href={u("streets/#curb")}>This week's curb permits →</a></div>
+          <div class="stats s3">
+            <div><div class="v">{st.curb.active_this_week}</div><div class="k">curb permits active this week</div></div>
+            <div><div class="v">{st.curb.starting_next_7d}</div><div class="k">starting in the next 7 days</div></div>
+            <div><div class="v">{fmt(st.curb.reserved_ft)} ft</div><div class="k">of curb reserved, about {(st.curb.reserved_ft / 5280).toFixed(1)} miles</div></div>
+          </div>
+        </section>
+      )}
+      <aside class="panel sponsor" aria-label="Sponsor"><small>Sponsor</small><div>Presented by <b>[Local sponsor]</b></div></aside>
     </div>
-
-    <h2 id="safety">Public safety</h2>
-    <p class="muted">Counts only, by offense. Individual incidents are deliberately not shown. {n.crime.note}</p>
-    <div class="scroll-x">
-      <table class="narrow">
-        <thead><tr><th>Offense</th><th class="num">Last {srDays}d</th><th class="num">Prior {srDays}d</th></tr></thead>
-        <tbody>
-          {n.crime.by_offense.map((c) => (
-            <tr><td>{titleCase(c.offense)}</td><td class="num">{c.count}</td><td class="num">{c.previous}</td></tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-
-    <h2 id="anc">Your Advisory Neighborhood Commissioners</h2>
-    <p class="muted">
-      {n.name} spans ANC {ancs.join(", ")}. Each Single Member District elects one commissioner.
-      Elected commissioners' names are public record.
-    </p>
-    <div class="smds">
-      {n.smds.map((s) => (
-        <div class="card smd">
-          <strong>SMD {s.smd}</strong><br />
-          {s.commissioner ? titleCase(s.commissioner) : <span class="muted">Vacant</span>}
-          {s.url && <><br /><a href={s.url}>ANC {s.anc} site</a></>}
-        </div>
-      ))}
-    </div>
-  </main>
-
-  <div slot="footer">
-    <p>
-      Boundary: {n.boundary.source}. Sources: {Object.entries(n.sources).filter(([k]) => k !== "license").map(([, v]) => v).join("; ")}.
-      License: {n.sources.license}. <a href="/">Other neighborhoods</a>.
-    </p>
   </div>
-</Base>
 
-<style>
-  .hero { background: var(--accent-soft); border-bottom: 1px solid var(--line); padding: 2rem 0 1.5rem; }
-  .hero h1 { font-size: clamp(2rem, 6vw, 3rem); margin: 0.2rem 0; }
-  .stale { background: var(--surface); border-left: 4px solid var(--up); padding: 0.5rem 0.8rem; }
-  .eyebrow { margin: 0; text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.78rem; color: var(--accent); font-weight: 600; }
-  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 1.5rem; }
-  .stat { display: flex; gap: 0.9rem; align-items: center; }
-  .big-num { font-size: 2.2rem; font-weight: 700; font-variant-numeric: tabular-nums; }
-  .up { color: var(--up); font-weight: 600; }
-  .down { color: var(--down); font-weight: 600; }
-  .facts { margin-top: 1.2rem; }
-  .facts h2 { margin-top: 0; font-size: 1.05rem; }
-  .facts ul { margin: 0; padding-left: 1.2rem; }
-  .permits-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1.2rem; align-items: start; }
-  @media (max-width: 760px) { .permits-layout { grid-template-columns: 1fr; } }
-  details { border-bottom: 1px solid var(--line); padding: 0.5rem 0; }
-  summary { cursor: pointer; }
-  .permit-list { list-style: none; padding: 0; margin: 0.5rem 0 0; max-height: 420px; overflow-y: auto; }
-  .permit-list li { padding: 0.4rem 0; border-top: 1px dashed var(--line); font-size: 0.92rem; }
-  .addr { font-weight: 600; }
-  .work { color: var(--muted); font-size: 0.86rem; overflow-wrap: anywhere; }
-  .small { font-size: 0.85rem; }
-  .bars-col { width: 30%; min-width: 120px; }
-  .bar { height: 7px; border-radius: 4px; margin: 2px 0; }
-  .bar.now { background: var(--accent); }
-  .bar.before { background: var(--line); }
-  table.narrow { max-width: 520px; }
-  .smds { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; }
-  .smd { font-size: 0.92rem; }
-</style>
+  <div class="row">
+    <section id="then" class="panel" aria-labelledby="th-h">
+      <div class="ph"><h2 id="th-h">Then</h2><a href={u("then/")}>History →</a></div>
+      <div class="then">
+        {fb && (
+          <a class="thencard" href={u("then/#featured")}>
+            <div class="th-k"><span class="th-yr">{fb.year}</span>{fb.block}</div>
+            <div class="th-big">{fb.buildings} buildings, one builder</div>
+            <p>{fb.sentence}</p>
+            <span class="th-go">How {n.name} was built →</span>
+          </a>
+        )}
+        {clip ? (
+          <a class="thencard" href={u("then/#archive")}>
+            <div class="th-k"><span class="th-yr">{clip.date.slice(0, 4)}</span>A reading from 100 years ago <span class="ocr">OCR</span></div>
+            <blockquote>“{clip.text}”</blockquote>
+            <div class="th-src">{hi!.archive.paper}, {new Date(clip.date + "T12:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}, page {clip.page}. Machine-read text; may contain errors.</div>
+          </a>
+        ) : hi && (
+          <div class="thencard"><div class="th-k">100 years ago this week</div><p>{hi.archive.note}</p></div>
+        )}
+      </div>
+    </section>
+
+    <section id="reps" class="panel" aria-labelledby="r-h">
+      <div class="ph"><h2 id="r-h">Who represents you</h2><a href={u("representatives/")}>{n.smds.length} SMDs →</a></div>
+      {ancs.map((anc) => {
+        const rs = n.smds.filter((s) => s.anc === anc);
+        return (
+          <div class="anc">
+            <div class="anc-h"><span>ANC {anc}</span>{rs[0].url && <a href={rs[0].url}>ANC {anc} site ↗</a>}</div>
+            <ul>{rs.map((s) => <li><span class="smd num">{s.smd}</span><span>{s.commissioner ? titleCase(s.commissioner) : "Vacant"}</span></li>)}</ul>
+          </div>
+        );
+      })}
+      <p class="repnote">Each Single Member District elects one ANC commissioner. Names of elected officials are public record.</p>
+    </section>
+  </div>
+
+  <div class="row one" id="subscribe">
+    <section class="panel subband" aria-labelledby="s-h">
+      <div class="ph"><h2 id="s-h">Weekly email</h2><a href={u("subscribe/")}>What's in it →</a></div>
+      <div style="font-size:15px">These readings in your inbox once a week.</div>
+      <form class="subrow" action={u("subscribe/")} method="get"><input type="email" name="email" placeholder="you@example.com" aria-label="Email address" /><button type="submit">Subscribe</button></form>
+      <div class="subnote"><span>One email a week. No ads in the data.</span><a href={`/${n.slug}/permits.xml`}>Permits RSS feed</a></div>
+    </section>
+  </div>
+</Hood>

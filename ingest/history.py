@@ -1,0 +1,512 @@
+"""`history` section: how the neighborhood was built, and what the paper said 100 years ago this week.
+
+    python ingest/history.py petworth
+
+Buildings come from DC HPO's "Historic Data on DC Buildings" (HistoryQuest), which indexes original
+building permits. Historic owner names are never requested: only address, date, architect, builder,
+estimated cost and permit number.
+
+The archive comes from the Evening Star on the Library of Congress's Chronicling America (loc.gov JSON
+API, no key). It searches the calendar week exactly 100 years before `now` for each neighborhood's
+terms, pulls each matching page's OCR text and clips a sentence or two around the mention. Clips that
+touch race, covenants, deed restrictions or slurs are skipped (see SCREEN_TERMS): they need an editor's
+context, not a bare clipping.
+"""
+
+from __future__ import annotations
+
+import http.client
+import json
+import re
+import sys
+import time
+import urllib.error
+import urllib.parse
+import urllib.request
+from collections import Counter, defaultdict
+from datetime import date, datetime, timedelta, timezone
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent))
+import dcdata  # noqa: E402
+from run import find_forbidden, hundred_block, iso  # noqa: E402
+
+ROOT = Path(__file__).resolve().parent.parent
+
+HISTORIC = "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/DC_HistoricalBuildings2017/FeatureServer/0"
+HISTORIC_PAGE = "https://opendata.dc.gov/datasets/historic-data-on-dc-buildings"
+# "Owner" is deliberately absent.
+HQ_FIELDS = ["FULLADDRES", "Date", "Architect", "Builder", "EstimatedCost", "PermitNumber"]
+
+LOC_SEARCH = "https://www.loc.gov/collections/chronicling-america/"
+LOC_TEXT = "https://tile.loc.gov/text-services/word-coordinates-service"
+STAR = "evening star (washington, d.c.) 1854-1972"
+STAR_ITEM = "https://www.loc.gov/item/sn83045462/"
+UA = "dc-neighborhoods-ingest/0.1 (+https://petworth.org)"
+PAGES_PER_TERM = 8
+MAX_PAGE_FETCHES = 24
+ARCHIVE_BUDGET_S = 110  # leave room inside the ~3 minute per-neighborhood budget
+MAX_CLIPS = 6
+
+# Per-neighborhood archive settings. `pattern` finds the mention in OCR text; `local` boosts clips that
+# also name a local street or institution, so clearly-local items rank above passing mentions.
+ARCHIVE = {
+    "petworth": {
+        "terms": ["Petworth", '"Grant Circle"', '"Sherman Circle"'],
+        "pattern": r"petworth|grant\s+circle|sherman\s+circle",
+        "local": r"georgia\s+av|upshur|shepherd|iowa\s+av|delafield|kansas\s+av|new\s+hampshire\s+av|"
+                 r"rock\s+creek\s+church|petworth\s+(school|m\.?\s*e\.?|methodist|citizens|library)|st\.?\s+gabriel|"
+                 r"roosevelt\s+high|sherman\s+circle|grant\s+circle",
+    },
+    "tenleytown": {
+        "terms": ["Tenleytown", "Tenley", '"Fort Reno"'],
+        # Bare "Tenley" also matches people's surnames, so the clip must say Tenleytown, Tenley road/circle, or Fort Reno.
+        "pattern": r"tenley\s*-?\s*town|tenley\s+(road|circle)|fort\s+reno",
+        "local": r"wisconsin\s+av|river\s+road|albemarle|brandywine|chesapeake|fessenden|grant\s+road|"
+                 r"janney|st\.?\s+ann|fort\s+reno|reno\s+road|nebraska\s+av|american\s+university",
+    },
+}
+
+# Content screening. A clip that matches any of these is skipped, never published. 1920s news and
+# real-estate ads often carry segregation language that needs written context from an editor.
+SCREEN_TERMS = [
+    "race", "races", "racial", "colored", "coloured", "negro", "negroes", "white only", "whites only", "for whites",
+    "white people", "white persons", "white residents", "caucasian", "segregation", "segregated",
+    "covenant", "covenants", "restricted", "restriction", "restrictions", "restrictive",
+    "darky", "darkey", "darkies", "pickaninny", "coon", "nigger", "jap", "chink", "dago", "wop", "kike",
+]
+SCREEN = re.compile(r"\b(" + "|".join(re.escape(t).replace(r"\ ", r"\s+") for t in SCREEN_TERMS) + r")\b", re.I)
+# Legal notices (trustee sales, probate) and rosters name private individuals; skip them too.
+LEGAL = re.compile(r"\b(trustees?|liber|folio|plat recorded|deed of trust|probate|executor|administratri?x)\b", re.I)
+# Building-permit and sale columns name the owner ("John Smith, owner and builder"); historic owner names are forbidden.
+OWNER_NOTICE = re.compile(r"\bowners?\s+and\s+builders?\b|,\s*owners?\b|\bto\s+erect\b|\bsquare\s+\d+|\blot\s+\d+", re.I)
+NAME_LIST = re.compile(r"\b[A-Z][a-z]+(?: [A-Z]\.)? [A-Z][a-z]+, [a-z]")
+ABBREV = {"st", "ave", "n", "s", "e", "w", "mr", "mrs", "dr", "rev", "no", "sts", "jr", "co", "p.m", "a.m",
+          "d.c", "nw", "n.w", "ne", "se", "sw", "pl", "rd"}
+SHORT_OK = {"a", "i", "an", "as", "at", "be", "by", "do", "go", "he", "if", "in", "is", "it", "me", "my", "no", "of",
+            "on", "or", "so", "to", "up", "us", "we", "am", "mr", "dr", "st", "n.w", "s.w", "ave", "mrs", "&", "…"}
+WORD = re.compile(r"^[\"'(“]?[A-Za-z][a-z]*[.,;:!?'\")”]*$|^\$?[\d,.]+[.,;:]?$")
+JUNK_NAMES = {"", "unknown", "none", "n/a", "na", "not listed", "owner", "same", "self", "?"}
+
+
+# ---------------------------------------------------------------- buildings (HistoryQuest)
+
+def year_of(ms: int | None) -> int | None:
+    # Historic permit dates are negative epoch milliseconds, which time.gmtime rejects on Windows.
+    if ms is None:
+        return None
+    return (datetime(1970, 1, 1) + timedelta(milliseconds=ms)).year
+
+
+def clean_name(name: str | None) -> str | None:
+    """'Thompson, D. D.' -> 'D. D. Thompson'; firms ('Shannon & Luchs, Inc.') are left alone."""
+    n = re.sub(r"\s+", " ", (name or "").strip())
+    if n.lower().strip(".") in JUNK_NAMES:
+        return None
+    parts = [p.strip() for p in n.split(",")]
+    if len(parts) == 2 and parts[1] and not re.search(r"\b(inc|co|corp|company|bros|jr|sr|ltd|llc)\b", parts[1], re.I) \
+            and "&" not in n and " and " not in n.lower():
+        return f"{parts[1]} {parts[0]}"
+    return n
+
+
+def street_title(s: str) -> str:
+    out = []
+    for w in s.split():
+        if w.upper() in ("NW", "NE", "SW", "SE"):
+            out.append(w.upper())
+        elif re.match(r"^\d+(ST|ND|RD|TH)$", w, re.I):
+            out.append(w.lower())
+        else:
+            out.append(w.capitalize())
+    return " ".join(out)
+
+
+def block_label(address: str | None) -> str | None:
+    if not address or not re.match(r"^\s*\d+\s+\S", address):
+        return None
+    hb = hundred_block(address)
+    m = re.match(r"^(\S+ block of )(.*)$", hb or "")
+    return m.group(1) + street_title(m.group(2)) if m else None
+
+
+def cost_of(value) -> int | None:
+    digits = re.sub(r"[^\d]", "", str(value or ""))
+    return int(digits) if digits else None
+
+
+def names_list(people: list[str]) -> str:
+    return people[0] if len(people) == 1 else ", ".join(people[:-1]) + " and " + people[-1]
+
+
+def featured_block(rows: list[dict]) -> dict | None:
+    """The block with the most records sharing one builder and one year (a speculative row, usually)."""
+    groups: dict[tuple, list[dict]] = defaultdict(list)
+    for r in rows:
+        if r["block"] and r["builder"] and r["year"]:
+            groups[(r["block"], r["builder"], r["year"])].append(r)
+    if not groups:
+        return None
+    (block, builder, year), members = max(groups.items(), key=lambda kv: (len(kv[1]), -kv[0][2]))
+    # Cost is per permit, not per house: one permit often covered a whole row.
+    permits: dict[str, list[dict]] = defaultdict(list)
+    for r in members:
+        permits[r["permit"] or "unknown"].append(r)
+    largest_num, largest = max(permits.items(), key=lambda kv: (len(kv[1]), kv[1][0]["cost"] or 0))
+    architects = Counter(r["architect"] for r in members if r["architect"])
+    arch = [{"name": n, "count": c} for n, c in architects.most_common(5)]
+    largest_cost = largest[0]["cost"]
+    n_permits = len(permits)
+    sentence = (
+        f"In {year}, {builder} built {len(members)} buildings on the {block} under "
+        f"{n_permits} permit{'s' if n_permits != 1 else ''}"
+    )
+    if arch:
+        sentence += f", designed by {names_list([a['name'] for a in arch[:2]])}"
+    sentence += "."
+    if n_permits > 1 or len(largest) > 1:
+        sentence += f" The largest permit covered {len(largest)} buildings"
+        sentence += f" at an estimated ${largest_cost:,} in total." if largest_cost else "."
+    return {
+        "block": block,
+        "year": year,
+        "buildings": len(members),
+        "permits": n_permits,
+        "builder": builder,
+        "architects": arch,
+        "largest_permit": {"buildings": len(largest), "cost": largest_cost},
+        "sentence": sentence,
+    }
+
+
+def build_buildings(geom: dict) -> dict:
+    for attempt in range(3):  # dcdata retries URLError only; ArcGIS Online sometimes drops the connection
+        try:
+            raw = dcdata.query_features(HISTORIC, geom, "1=1", HQ_FIELDS)
+            break
+        except (http.client.HTTPException, OSError):
+            if attempt == 2:
+                raise
+            time.sleep(3 * (attempt + 1))
+    rows = [
+        {
+            "block": block_label(r.get("FULLADDRES")),
+            "year": year_of(r.get("Date")),
+            "architect": clean_name(r.get("Architect")),
+            "builder": clean_name(r.get("Builder")),
+            "cost": cost_of(r.get("EstimatedCost")),
+            "permit": str(r.get("PermitNumber") or "").strip() or None,
+        }
+        for r in raw
+    ]
+    years = [r["year"] for r in rows if r["year"] and 1800 <= r["year"] <= 2100]
+    decades = Counter(y // 10 * 10 for y in years)
+    return {
+        "records": len(rows),
+        "year_min": min(years) if years else None,
+        "year_max": max(years) if years else None,
+        "by_decade": [{"decade": d, "count": decades[d]} for d in sorted(decades)],
+        "top_architects": [{"name": n, "count": c} for n, c in Counter(r["architect"] for r in rows if r["architect"]).most_common(5)],
+        "top_builders": [{"name": n, "count": c} for n, c in Counter(r["builder"] for r in rows if r["builder"]).most_common(5)],
+        "featured_block": featured_block(rows),
+    }
+
+
+# ---------------------------------------------------------------- archive (Evening Star, loc.gov)
+
+def week_100_years_ago(now: float) -> tuple[date, date]:
+    today = datetime.fromtimestamp(now, timezone.utc).date()
+    try:
+        then = today.replace(year=today.year - 100)
+    except ValueError:  # Feb 29
+        then = today.replace(year=today.year - 100, day=28)
+    start = then - timedelta(days=(then.weekday() + 1) % 7)  # back to Sunday
+    return start, start + timedelta(days=6)
+
+
+def week_label(start: date, end: date) -> str:
+    if start.year != end.year:
+        return f"{start:%B} {start.day}, {start.year} – {end:%B} {end.day}, {end.year}"
+    if start.month != end.month:
+        return f"{start:%B} {start.day} – {end:%B} {end.day}, {end.year}"
+    return f"{start:%B} {start.day}–{end.day}, {end.year}"
+
+
+def get_json(url: str, params: dict, tries: int = 3):
+    full = url + "?" + urllib.parse.urlencode(params)
+    for attempt in range(tries):
+        try:
+            req = urllib.request.Request(full, headers={"User-Agent": UA, "Accept": "application/json"})
+            with urllib.request.urlopen(req, timeout=45) as resp:
+                return json.loads(resp.read())
+        except (urllib.error.URLError, http.client.HTTPException, OSError, json.JSONDecodeError, ValueError):
+            if attempt == tries - 1:
+                raise
+            time.sleep(4 * (attempt + 1))  # loc.gov answers bursts with HTML/429; back off
+    raise AssertionError("unreachable")
+
+
+def search(term: str, start: date, end: date) -> list[dict]:
+    params = {
+        "q": term, "dates": f"{start.isoformat()}/{end.isoformat()}", "fa": f"partof_title:{STAR}",
+        "fo": "json", "c": PAGES_PER_TERM, "at": "results,pagination",
+    }
+    data = get_json(LOC_SEARCH, params)
+    time.sleep(2)
+    results = data.get("results", [])
+    if not results and (data.get("pagination") or {}).get("of"):
+        time.sleep(5)  # loc.gov sometimes returns an empty page under load; ask once more
+        results = get_json(LOC_SEARCH, params).get("results", [])
+    return results
+
+
+def page_text(result: dict) -> str:
+    wc = result.get("word_coordinates_url") or ""
+    seg = urllib.parse.parse_qs(urllib.parse.urlparse(wc).query).get("segment", [""])[0]
+    if not seg:
+        return ""
+    data = get_json(LOC_TEXT, {"segment": seg, "format": "alto_xml", "full_text": 1})
+    time.sleep(1.2)
+    for v in data.values():
+        if isinstance(v, dict):
+            return v.get("full_text", "") or ""
+    return ""
+
+
+def clean(text: str) -> str:
+    text = re.sub(r"-\s*\n\s*", "", text)  # rejoin hyphenated line breaks
+    text = re.sub(r"_{1,}", " ", text)
+    text = text.replace("�", "").replace("­", "")
+    text = re.sub(r"[^\x20-\x7E‘-”\n]", "", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def legibility(s: str) -> float:
+    """1.0 for clean prose; each garbled token costs double, so OCR soup drops fast."""
+    toks = s.split()
+    bad = 0
+    for t in toks:
+        core = t.strip(".,;:!?'\"()“”").lower()
+        if not WORD.match(t) and t not in ("…", "&"):
+            bad += 1
+        elif core.isalpha() and len(core) <= 2 and core not in SHORT_OK:
+            bad += 1
+    return 1 - 2 * bad / max(1, len(toks))
+
+
+def _is_break(s: str, i: int) -> bool:
+    prev = re.search(r"([A-Za-z.]+)$", s[:i])
+    return not (prev and (prev.group(1).lower().strip(".") in ABBREV or len(prev.group(1)) == 1))
+
+
+def sentence_end(s: str, start: int) -> int:
+    for m in re.finditer(r"[.?!]\s+(?=[A-Z\"“])", s[start:]):
+        if _is_break(s, start + m.start()):
+            return start + m.start()
+    return -1
+
+
+def sentence_start(s: str, k: int) -> int:
+    best = -1
+    for m in re.finditer(r"[.?!]\s+(?=[A-Z\"“])", s[:k]):
+        if _is_break(s, m.start()):
+            best = m.end()
+    return best
+
+
+def snippets(text: str, pattern: str) -> list[tuple[str, float]]:
+    """1-3 sentences around each mention, with a legibility score."""
+    out = []
+    for m in re.finditer(pattern, text, re.I):
+        lo, hi = max(0, m.start() - 240), min(len(text), m.end() + 240)
+        window, k = text[lo:hi], m.start() - lo
+        left = sentence_start(window, k)
+        if left != -1 and k - left < 220:
+            window, k = window[left:], k - left
+        else:
+            sp = window.find(" ", max(0, k - 160))
+            if 0 <= sp < k:
+                window, k = "… " + window[sp + 1:], k - sp + 1
+        right = sentence_end(window, k + 10)
+        if right != -1 and right - k < 240:
+            window = window[:right + 1]
+        elif len(window) > k + 200:
+            window = window[:window.rfind(" ", 0, k + 200)] + " …"
+        out.append((window.strip(), legibility(window)))
+    return out
+
+
+def build_archive(slug: str, now: float) -> dict:
+    cfg = ARCHIVE.get(slug)
+    start, end = week_100_years_ago(now)
+    base_note = (
+        "Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's "
+        "Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings "
+        "are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. "
+        "Clips that mention race, covenants, deed restrictions or slurs are skipped automatically "
+        f"(keyword list: {', '.join(SCREEN_TERMS[:21])}, plus a list of slurs), because they need an editor's context; "
+        "legal notices and lists of private individuals are skipped too."
+    )
+    section = {
+        "week_label": week_label(start, end),
+        "week_start": start.isoformat(),
+        "week_end": end.isoformat(),
+        "paper": "Evening Star",
+        "terms": cfg["terms"] if cfg else [],
+        "clips": [],
+        "screened": 0,
+        "note": base_note,
+    }
+    if not cfg:
+        section["note"] = f"No archive search terms are configured for this neighborhood yet. {base_note}"
+        return section
+
+    t0 = time.time()
+    results, seen = [], set()
+    try:
+        for term in cfg["terms"]:
+            for r in search(term, start, end):
+                if r.get("id") and r["id"] not in seen:
+                    seen.add(r["id"])
+                    results.append(r)
+    except Exception as exc:  # noqa: BLE001 - the archive is optional; never fail the section
+        section["note"] = f"The Library of Congress search could not be reached this run ({type(exc).__name__}). {base_note}"
+        return section
+
+    items, seen_text, screened, fetched = [], set(), 0, 0
+    for r in results:
+        if fetched >= MAX_PAGE_FETCHES or time.time() - t0 > ARCHIVE_BUDGET_S:
+            break
+        try:
+            text = clean(page_text(r))
+        except Exception:  # noqa: BLE001 - skip a page whose text will not load
+            continue
+        fetched += 1
+        for snip, score in snippets(text, cfg["pattern"]):
+            if score < 0.7 or len(snip) < 50 or len(snip) > 700:
+                continue
+            if len(NAME_LIST.findall(snip)) >= 3 or LEGAL.search(snip) or OWNER_NOTICE.search(snip):
+                continue
+            if SCREEN.search(snip):
+                screened += 1
+                continue
+            key = re.sub(r"[^a-z]", "", snip.lower())[:60]
+            if key in seen_text:
+                continue
+            seen_text.add(key)
+            local = 0.3 if re.search(cfg["local"], snip, re.I) else 0.0
+            page_m = re.search(r"[?&]sp=(\d+)", r.get("id") or "") or re.match(r"0*(\d+)", str(r.get("shelf_id") or ""))
+            url = (r.get("id") or r.get("url") or "").replace("http://", "https://", 1)
+            items.append({
+                "date": r.get("date"), "page": int(page_m.group(1)) if page_m else None,
+                "text": snip, "url": url, "_rank": score + local, "_res": r["id"],
+            })
+
+    # Best per page, then prefer different days; shown in date order.
+    items.sort(key=lambda i: -i["_rank"])
+    picked, pages, days = [], set(), set()
+    for pass_ in (0, 1):
+        for i in items:
+            if len(picked) >= MAX_CLIPS or i in picked or i["_res"] in pages:
+                continue
+            if pass_ == 0 and i["date"] in days:
+                continue
+            picked.append(i)
+            pages.add(i["_res"])
+            days.add(i["date"])
+    picked.sort(key=lambda i: (i["date"] or "", i["page"] or 0))
+    section["clips"] = [{k: i[k] for k in ("date", "page", "text", "url")} for i in picked]
+    section["screened"] = screened
+    if screened:
+        section["note"] += f" This week {screened} otherwise usable clip{'s were' if screened != 1 else ' was'} held back by that screen."
+    if not picked:
+        section["note"] = (
+            f"No usable mentions in the Evening Star for {section['week_label']} "
+            f"({len(results)} matching page{'s' if len(results) != 1 else ''} searched). "
+            "Some weeks a neighborhood just isn't in the paper. " + section["note"]
+        )
+    return section
+
+
+# ---------------------------------------------------------------- module interface
+
+def build(geom: dict, hood: dict, now: float) -> dict:
+    return {
+        "generated_at": iso(int(now * 1000)),
+        "sources": [
+            {"name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0", "url": HISTORIC_PAGE},
+            {"name": "Evening Star (Washington, D.C.), Chronicling America, Library of Congress; public domain", "url": STAR_ITEM},
+        ],
+        "buildings": build_buildings(geom),
+        "archive": build_archive(hood["slug"], now),
+    }
+
+
+def check(section: dict) -> list[str]:
+    errors = []
+    for key in ("generated_at", "sources", "buildings", "archive"):
+        if key not in section:
+            errors.append(f"history: missing {key}")
+    if errors:
+        return errors
+    b = section["buildings"]
+    if not b.get("records"):
+        errors.append("history: buildings.records is 0")
+    if not b.get("by_decade"):
+        errors.append("history: buildings.by_decade is empty")
+    fb = b.get("featured_block")
+    if not fb:
+        errors.append("history: featured_block missing")
+    else:
+        for k in ("block", "year", "buildings", "permits", "builder", "architects", "largest_permit", "sentence"):
+            if fb.get(k) in (None, ""):
+                errors.append(f"history: featured_block.{k} missing")
+        if fb.get("largest_permit", {}).get("buildings", 0) > fb.get("buildings", 0):
+            errors.append("history: largest permit covers more buildings than the block")
+    if not b.get("top_architects") or not b.get("top_builders"):
+        errors.append("history: top architects/builders empty")
+    a = section["archive"]
+    for k in ("week_label", "paper", "terms", "clips", "note"):
+        if k not in a:
+            errors.append(f"history: archive.{k} missing")
+    for c in a.get("clips", []):
+        if not (c.get("url", "").startswith("https://www.loc.gov/") and c.get("text") and c.get("date")):
+            errors.append(f"history: bad clip {c.get('url')}")
+        if SCREEN.search(c.get("text", "")):
+            errors.append(f"history: clip failed screening {c.get('url')}")
+    if len(a.get("clips", [])) > MAX_CLIPS:
+        errors.append("history: too many clips")
+    errors += [f"history: forbidden field {h}" for h in find_forbidden(section)]
+    return errors
+
+
+def main() -> int:
+    sys.stdout.reconfigure(encoding="utf-8")
+    slug = sys.argv[1] if len(sys.argv) > 1 else "petworth"
+    config = json.loads((ROOT / "ingest" / "neighborhoods.json").read_text(encoding="utf-8"))
+    hood = next((h for h in config["neighborhoods"] if h["slug"] == slug), None)
+    if not hood:
+        print(f"unknown neighborhood {slug!r}", file=sys.stderr)
+        return 2
+    now = time.time()
+    t0 = time.time()
+    geom = dcdata.boundary(config["boundary_layer"], hood["boundary_where"])
+    section = build(geom, hood, now)
+    out_dir = ROOT / "ingest" / "_out"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    (out_dir / f"history-{slug}.json").write_text(json.dumps(section, indent=1, ensure_ascii=False), encoding="utf-8")
+    b, a = section["buildings"], section["archive"]
+    fb = b["featured_block"] or {}
+    print(f"{slug}: {b['records']} HistoryQuest records, {b['year_min']}-{b['year_max']}, {len(b['by_decade'])} decades")
+    print(f"  featured: {fb.get('sentence')}")
+    print(f"  archive {a['week_label']}: {len(a['clips'])} clips, {a.get('screened', 0)} screened out ({time.time() - t0:.0f}s)")
+    errors = check(section)
+    if errors:
+        print("\n".join(errors), file=sys.stderr)
+        return 1
+    print("history ok")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

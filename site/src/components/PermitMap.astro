@@ -1,0 +1,147 @@
+---
+// Interactive permit map (C4 data presentation in a C5 card). Bigger projects are numbered markers
+// keyed by permit id, so a marker can never drift onto the wrong address.
+import type { Neighborhood } from "../lib/data";
+import { CATS, GKEY, BIG, esc, glyph, groupCounts, type Project } from "../lib/c5";
+
+interface Props {
+  n: Neighborhood;
+  projects: Project[];
+  moreHref?: string;
+}
+const { n, projects, moreHref } = Astro.props;
+
+const rings = n.boundary.rings;
+const all = rings.flat();
+const minx = Math.min(...all.map((q) => q[0])), maxx = Math.max(...all.map((q) => q[0]));
+const miny = Math.min(...all.map((q) => q[1])), maxy = Math.max(...all.map((q) => q[1]));
+const MARG = 0.0012, STEP = 0.0005;
+const W = Math.floor((minx - MARG) / STEP) * STEP, E = Math.ceil((maxx + MARG) / STEP) * STEP;
+const S = Math.floor((miny - MARG) / STEP) * STEP, N = Math.ceil((maxy + MARG) / STEP) * STEP;
+const K = Math.cos((((miny + maxy) / 2) * Math.PI) / 180);
+const VBW = 600, SC = VBW / ((E - W) * K), VBH = (N - S) * SC;
+const X = (lon: number) => (lon - W) * K * SC;
+const Y = (lat: number) => (N - lat) * SC;
+const M_PER_UNIT = 111_320 / SC;
+const f1 = (v: number) => v.toFixed(1);
+
+// grid
+const ext = 0.03, fine: string[] = [], major: string[] = [];
+const isMajor = (v: number) => Math.abs(Math.round(v / 0.005) * 0.005 - v) < 1e-9;
+for (let i = Math.floor((W - ext) / 0.001); i * 0.001 <= E + ext; i++) {
+  const v = +(i * 0.001).toFixed(6);
+  (isMajor(v) ? major : fine).push(`M${f1(X(v))},${Y(N + ext).toFixed(0)}V${Y(S - ext).toFixed(0)}`);
+}
+for (let i = Math.floor((S - ext) / 0.001); i * 0.001 <= N + ext; i++) {
+  const v = +(i * 0.001).toFixed(6);
+  (isMajor(v) ? major : fine).push(`M${X(W - ext).toFixed(0)},${f1(Y(v))}H${X(E + ext).toFixed(0)}`);
+}
+const d = rings.map((r) => "M" + r.map(([a, b]) => `${f1(X(a))},${f1(Y(b))}`).join("L") + "Z").join(" ");
+const labels: string[] = [];
+for (let v = Math.ceil(W / 0.005) * 0.005; v < E - 1e-9; v += 0.005)
+  labels.push(`<g transform="translate(${f1(X(v))},0)"><g class="s"><text class="gt" x="3" y="11">${Math.abs(v).toFixed(3)}°W</text></g></g>`);
+for (let v = Math.ceil(S / 0.005) * 0.005; v < N - 1e-9; v += 0.005)
+  labels.push(`<g transform="translate(0,${f1(Y(v))})"><g class="s"><text class="gt" x="4" y="-4">${v.toFixed(3)}°N</text></g></g>`);
+const sb = 500 / M_PER_UNIT;
+
+const projIds = new Set(projects.map((p) => p.id));
+const small = n.permits
+  .filter((p) => p.lat && p.lon && !projIds.has(p.id))
+  .map((p) => {
+    const key = GKEY[p.group] ?? "minor";
+    const shape = key === "mep" ? '<circle r="3"/>' : key === "home" ? '<rect x="-3" y="-3" width="6" height="6"/>' : key === "minor" || key === "other" ? '<circle r="2.2"/>' : '<circle r="3.4"/>';
+    return `<g class="pt c-${key}" transform="translate(${f1(X(p.lon!))},${f1(Y(p.lat!))})"><g class="s">${shape}</g><title>${esc(p.group)}: ${esc(p.address)}</title></g>`;
+  })
+  .join("");
+const mapped = projects.filter((p) => p.lat && p.lon);
+const markers = [...mapped]
+  .reverse()
+  .map((p) => {
+    const shape = p.key === "demo" ? '<rect class="mk-b" x="-9" y="-9" width="18" height="18" rx="2"/>' : '<circle class="mk-b" r="9.5"/>';
+    return `<g class="mk c-${p.key}" data-id="p${esc(p.id)}" data-pid="${esc(p.id)}" data-lat="${p.lat}" data-lon="${p.lon}" data-addr="${esc(p.address)}" tabindex="0" role="button" aria-label="Project ${p.n}: ${esc(p.address)}, ${esc(p.group)}. Go to its row." transform="translate(${f1(X(p.lon!))},${f1(Y(p.lat!))})"><g class="s ms"><circle class="mk-halo" r="17"/>${shape}<text class="mk-t" y="3.6" text-anchor="middle">${p.n}</text></g></g>`;
+  })
+  .join("");
+
+const svg =
+  `<svg id="map" class="map" viewBox="0 0 ${VBW} ${f1(VBH)}" preserveAspectRatio="xMidYMid meet" data-w="${W}" data-n="${N}" data-k="${K}" data-sc="${SC}" role="img" aria-label="Map of ${esc(n.name)}: ${n.permits.length} building permits from the last ${n.windows.permits_days} days. Numbered markers are the ${projects.length} bigger projects listed on this page.">` +
+  `<path class="g-fine" d="${fine.join("")}"/><path class="g-major" d="${major.join("")}"/>` +
+  `<rect class="frame" x="0" y="0" width="${VBW}" height="${f1(VBH)}"/>` +
+  `<path class="bnd-halo" d="${d}"/><path class="bnd" d="${d}"/>` +
+  labels.join("") +
+  `<g transform="translate(${f1(VBW - 16 - sb)},${f1(VBH - 16)})"><path class="sb" d="M0,0H${f1(sb)}M0,-5V0M${f1(sb / 2)},-3V0M${f1(sb)},-5V0"/><g class="s"><text class="gt" x="0" y="-8">0</text></g><g transform="translate(${f1(sb)},0)"><g class="s"><text class="gt" x="0" y="-8" text-anchor="end">500 m</text></g></g></g>` +
+  `<g transform="translate(${VBW - 22},24)"><g class="s"><path class="na" d="M0,-12L6,6L0,2L-6,6Z"/><text class="gt" x="0" y="18" text-anchor="middle">N</text></g></g>` +
+  `<g class="pts">${small}</g><g class="mks">${markers}</g></svg>`;
+
+const groups = groupCounts(n.permits);
+const present = CATS.filter((c) => groups[c.group]);
+const total = n.permits.length;
+const center = `Center  ${((miny + maxy) / 2).toFixed(5)}°N  ${Math.abs((minx + maxx) / 2).toFixed(5)}°W`;
+const unmapped = projects.length - mapped.length;
+---
+<section id="permit-map" class="panel mappanel" aria-labelledby="m-h">
+  <div class="ph"><h2 id="m-h">Permit map</h2>{moreHref && <a href={moreHref}>All projects →</a>}</div>
+  <div class="mbar"><span><b id="shown">{total}</b> permits shown · last {n.windows.permits_days} days</span><span>{mapped.length} numbered</span></div>
+  <div class="stage" style={`aspect-ratio:${VBW}/${VBH.toFixed(0)}`}>
+    <Fragment set:html={svg} />
+    <div class="readout" id="readout" aria-live="polite">{center}</div>
+  </div>
+  <div class="chips" role="group" aria-label="Filter permits by type">
+    <button type="button" class="chip all" data-all aria-pressed="true"><span class="cl">All</span><b class="num">{total}</b></button>
+    {present.map((c) => (
+      <button type="button" class="chip" data-g={c.key} aria-pressed="true"><Fragment set:html={glyph(c.kind, c.key)} /><span class="cl">{c.short}</span><b class="num">{groups[c.group]}</b></button>
+    ))}
+  </div>
+  <div class="mkey"><span><Fragment set:html={glyph("num")} />Numbered: bigger project, matches the list</span><span>Grid 0.001°</span>{unmapped > 0 && <span>{unmapped} without coordinates</span>}</div>
+</section>
+
+<script is:inline>
+// Runs after the whole page is parsed: on the overview the project rows come after the map in the DOM.
+function initPermitMap(){
+  var map=document.getElementById('map'); if(!map) return;
+  var ro=document.getElementById('readout'), def=ro.innerHTML;
+  var vb=map.viewBox.baseVal, W=+map.dataset.w, N=+map.dataset.n, K=+map.dataset.k, SC=+map.dataset.sc;
+  function fit(){var r=map.getBoundingClientRect(); if(!r.width) return;
+    var s=Math.min(r.width/vb.width,r.height/vb.height); map.style.setProperty('--k',(1/s).toFixed(4));}
+  fit(); if(window.ResizeObserver){new ResizeObserver(fit).observe(map);} else {window.addEventListener('resize',fit);}
+  function ll(lat,lon){return Math.abs(lat).toFixed(5)+'°N  '+Math.abs(lon).toFixed(5)+'°W';}
+  map.addEventListener('mousemove',function(ev){ if(document.querySelector('.mk.hot')) return;
+    var m=map.getScreenCTM(); if(!m) return; var p=new DOMPoint(ev.clientX,ev.clientY).matrixTransform(m.inverse());
+    ro.innerHTML='Cursor  '+ll(N-p.y/SC, W+p.x/(K*SC));});
+  map.addEventListener('mouseleave',function(){ if(!document.querySelector('.mk.hot')) ro.innerHTML=def;});
+  var mks=map.querySelector('.mks');
+  function hot(id,on){
+    document.querySelectorAll('[data-id="'+id+'"]').forEach(function(el){el.classList.toggle('hot',on);});
+    mks.classList.toggle('dim',on);
+    var mk=map.querySelector('.mk[data-id="'+id+'"]');
+    if(on&&mk){ro.textContent=mk.querySelector('.mk-t').textContent+'  '+mk.dataset.addr+'  ·  '+ll(+mk.dataset.lat,+mk.dataset.lon);
+      mk.parentNode.appendChild(mk);} else ro.innerHTML=def;
+  }
+  document.querySelectorAll('[data-id]').forEach(function(el){
+    var id=el.dataset.id;
+    el.addEventListener('mouseenter',function(){hot(id,true);});
+    el.addEventListener('mouseleave',function(){hot(id,false);});
+    el.addEventListener('focus',function(){hot(id,true);});
+    el.addEventListener('blur',function(){hot(id,false);});
+  });
+  map.querySelectorAll('.mk').forEach(function(mk){
+    function go(ev){ev.stopPropagation();
+      var row=document.querySelector('.prow[data-id="'+mk.dataset.id+'"]'); if(!row) return;
+      row.scrollIntoView({behavior:'smooth',block:'center'}); row.focus({preventScroll:true});}
+    mk.addEventListener('click',go);
+    mk.addEventListener('keydown',function(ev){if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();go(ev);}});
+  });
+  var keys=[].slice.call(document.querySelectorAll('.chips [data-g]')).map(function(b){return b.dataset.g;});
+  var off={};
+  function sync(){ keys.forEach(function(k){document.body.classList.toggle('hide-'+k,!!off[k]);
+      document.querySelectorAll('[data-g="'+k+'"]').forEach(function(b){b.setAttribute('aria-pressed',!off[k]);});});
+    document.querySelector('[data-all]').setAttribute('aria-pressed',!keys.some(function(k){return off[k];}));
+    document.getElementById('shown').textContent=keys.reduce(function(s,k){
+      return s+(off[k]?0:+document.querySelector('.chips [data-g="'+k+'"] b').textContent);},0);}
+  document.querySelectorAll('[data-g]').forEach(function(b){b.addEventListener('click',function(){
+    var k=b.dataset.g, all=keys.every(function(x){return !off[x];});
+    if(all){keys.forEach(function(x){off[x]=x!==k;});} else {off[k]=!off[k]; if(keys.every(function(x){return off[x];})) off={};}
+    sync();});});
+  document.querySelector('[data-all]').addEventListener('click',function(){off={};sync();});
+}
+if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initPermitMap); else initPermitMap();
+</script>

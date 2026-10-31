@@ -1,7 +1,7 @@
 {
  "slug": "petworth",
  "name": "Petworth",
- "generated_at": "2026-10-31T16:35:40Z",
+ "generated_at": "2026-10-31T19:32:03Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -2028,43 +2028,43 @@
   }
  ],
  "requests": {
-  "total": 1168,
-  "previous_total": 1336,
+  "total": 1169,
+  "previous_total": 1337,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 210,
-    "previous": 225
+    "count": 213,
+    "previous": 230
    },
    {
     "type": "Scheduled Yard Waste",
     "count": 131,
-    "previous": 166
+    "previous": 167
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 118,
-    "previous": 84
+    "count": 117,
+    "previous": 83
    },
    {
     "type": "Parking Enforcement",
-    "count": 85,
-    "previous": 97
+    "count": 86,
+    "previous": 94
    },
    {
     "type": "Illegal Dumping",
-    "count": 68,
-    "previous": 95
+    "count": 69,
+    "previous": 94
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 66,
-    "previous": 67
+    "count": 64,
+    "previous": 68
    },
    {
     "type": "Sanitation Enforcement",
     "count": 37,
-    "previous": 49
+    "previous": 48
    },
    {
     "type": "DOEE - LIHEAP",
@@ -2077,19 +2077,19 @@
     "previous": 21
    },
    {
+    "type": "Container Removal",
+    "count": 24,
+    "previous": 48
+   },
+   {
     "type": "Residential Parking Permit Violation",
     "count": 24,
     "previous": 28
    },
    {
     "type": "Recycling Collection - Missed",
-    "count": 23,
-    "previous": 23
-   },
-   {
-    "type": "Container Removal",
-    "count": 23,
-    "previous": 49
+    "count": 22,
+    "previous": 24
    },
    {
     "type": "Rat Replacement Containers",
@@ -2113,7 +2113,7 @@
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 16,
+    "count": 15,
     "previous": 2
    },
    {
@@ -2124,7 +2124,12 @@
    {
     "type": "Recycling Cart Delivery",
     "count": 13,
-    "previous": 10
+    "previous": 9
+   },
+   {
+    "type": "Abandoned Bicycle",
+    "count": 13,
+    "previous": 1
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
@@ -2147,34 +2152,24 @@
     "previous": 15
    },
    {
-    "type": "Abandoned Bicycle",
-    "count": 11,
-    "previous": 1
-   },
-   {
     "type": "Trash Cart Repair",
-    "count": 10,
-    "previous": 23
-   },
-   {
-    "type": "Supercan - Repair",
     "count": 9,
-    "previous": 6
+    "previous": 23
    },
    {
     "type": "Streetlight Repair Investigation",
     "count": 9,
-    "previous": 4
+    "previous": 3
    },
    {
-    "type": "Roadway Signs",
-    "count": 8,
-    "previous": 15
+    "type": "Supercan - Repair",
+    "count": 9,
+    "previous": 7
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
     "count": 8,
-    "previous": 13
+    "previous": 14
    },
    {
     "type": "DC Government Information",
@@ -2185,6 +2180,11 @@
     "type": "DOB - Vacant Private Property Inspection",
     "count": 7,
     "previous": 11
+   },
+   {
+    "type": "Roadway Signs",
+    "count": 7,
+    "previous": 16
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -2249,7 +2249,7 @@
    {
     "type": "Roadway Markings / Pylons",
     "count": 3,
-    "previous": 2
+    "previous": 3
    },
    {
     "type": "Pothole",
@@ -2284,7 +2284,7 @@
    {
     "type": "Alley Cleaning",
     "count": 1,
-    "previous": 27
+    "previous": 26
    },
    {
     "type": "DOEE - Report Construction Erosion Runoff",
@@ -2337,8 +2337,98 @@
     "previous": 1
    }
   ],
-  "open": 248,
+  "open": 254,
   "recent": [
+   {
+    "type": "Container Removal",
+    "agency": "DPW",
+    "added": "2026-10-31T18:43:31Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "400 block of RANDOLPH STREET NW",
+    "lat": 38.939,
+    "lon": -77.018
+   },
+   {
+    "type": "Supercan - Repair",
+    "agency": "DPW",
+    "added": "2026-10-31T18:38:45Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "400 block of RANDOLPH STREET NW",
+    "lat": 38.939,
+    "lon": -77.018
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-10-31T18:19:37Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "300 block of TAYLOR STREET NW",
+    "lat": 38.941,
+    "lon": -77.016
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-10-31T17:58:02Z",
+    "resolved": "2026-10-31T18:54:11Z",
+    "status": "Closed",
+    "block": "4300 block of GEORGIA AVENUE NW",
+    "lat": 38.944,
+    "lon": -77.026
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-10-31T17:40:55Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "600 block of GALLATIN STREET NW",
+    "lat": 38.952,
+    "lon": -77.02
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-10-31T17:26:58Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of FARRAGUT PLACE NW",
+    "lat": 38.951,
+    "lon": -77.01
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-10-31T17:06:07Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4500 block of 4TH STREET NW",
+    "lat": 38.946,
+    "lon": -77.018
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-10-31T16:59:56Z",
+    "resolved": "2026-10-31T18:31:29Z",
+    "status": "Closed",
+    "block": "4100 block of 7TH STREET NW",
+    "lat": 38.941,
+    "lon": -77.022
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-10-31T16:59:48Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4800 block of ILLINOIS AVENUE NW",
+    "lat": 38.949,
+    "lon": -77.023
+   },
    {
     "type": "DC Health Rodent & Vector Control",
     "agency": "DOH",
@@ -2363,8 +2453,8 @@
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-10-31T14:48:28Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-10-31T16:51:17Z",
+    "status": "Canceled",
     "block": "8TH STREET NW AND VARNUM STREET NW",
     "lat": 38.943,
     "lon": -77.023
@@ -2748,96 +2838,6 @@
     "block": "Unit block of SHERMAN CIRCLE NW",
     "lat": 38.948,
     "lon": -77.023
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-30T12:30:07Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "Unit block of GRANT CIRCLE NW",
-    "lat": 38.943,
-    "lon": -77.02
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-30T12:20:38Z",
-    "resolved": "2026-10-30T12:20:38Z",
-    "status": "Closed",
-    "block": "4900 block of 9TH STREET NW",
-    "lat": 38.951,
-    "lon": -77.026
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-30T11:52:44Z",
-    "resolved": "2026-10-30T13:15:04Z",
-    "status": "Closed",
-    "block": "800 block of VARNUM STREET NW",
-    "lat": 38.943,
-    "lon": -77.025
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-10-30T11:29:24Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4400 block of NEW HAMPSHIRE AVENUE NW",
-    "lat": 38.944,
-    "lon": -77.019
-   },
-   {
-    "type": "Dead Animal Collection",
-    "agency": "DPW",
-    "added": "2026-10-30T10:29:54Z",
-    "resolved": "2026-10-31T15:41:58Z",
-    "status": "Closed",
-    "block": "600 block of FARRAGUT STREET NW",
-    "lat": 38.951,
-    "lon": -77.02
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-30T02:57:49Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4600 block of 8TH STREET NW",
-    "lat": 38.947,
-    "lon": -77.023
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-30T01:13:52Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4400 block of KANSAS AVENUE NW",
-    "lat": 38.945,
-    "lon": -77.024
-   },
-   {
-    "type": "Container Removal",
-    "agency": "DPW",
-    "added": "2026-10-29T22:42:17Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "800 block of VARNUM STREET NW",
-    "lat": 38.943,
-    "lon": -77.024
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-29T21:23:09Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3700 block of NEW HAMPSHIRE AVENUE NW",
-    "lat": 38.937,
-    "lon": -77.023
    }
   ]
  },
@@ -2922,5 +2922,804 @@
   "crime": "Open Data DC: Crime Incidents (MPD), counts only",
   "smds": "Open Data DC: Single Member Districts 2023",
   "license": "CC BY 4.0"
- }
+ },
+ "homes": {
+  "generated_at": "2026-10-31T19:32:03Z",
+  "sources": [
+   {
+    "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
+    "url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/ITSPE_08172026/FeatureServer/0"
+   },
+   {
+    "name": "Computer Assisted Mass Appraisal - Residential (OTR) via Open Data DC",
+    "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Property_and_Land_WebMercator/FeatureServer/25"
+   },
+   {
+    "name": "Address Points (DC MAR) via Open Data DC, for the boundary-fit check",
+    "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
+   }
+  ],
+  "area_note": "Sales are tied to Petworth through OTR assessment neighborhood \"Petworth\" (all sub-areas) in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Petworth boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds): 61% of the 6,430 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 93% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
+  "otr_neighborhoods": [
+   {
+    "nbhdname": "Petworth",
+    "subnbhd": null
+   }
+  ],
+  "boundary_fit": {
+   "squares": 108,
+   "area_parcels": 6430,
+   "area_share_inside": 0.608,
+   "boundary_share_in_area": 0.93
+  },
+  "house": {
+   "median_12mo": 810000,
+   "count_12mo": 145,
+   "median_prev_12mo": 832500,
+   "count_prev_12mo": 131
+  },
+  "condo": {
+   "median_12mo": 499000,
+   "count_12mo": 44,
+   "median_prev_12mo": 370000,
+   "count_prev_12mo": 50
+  },
+  "last_60d": {
+   "median": 789000,
+   "count": 21,
+   "median_ppsf": 535,
+   "ppsf_count": 21
+  },
+  "above_assessment_12mo": {
+   "n": 93,
+   "of": 189
+  },
+  "by_month": [
+   {
+    "month": "2025-11",
+    "median": 794450,
+    "count": 10
+   },
+   {
+    "month": "2025-12",
+    "median": 695000,
+    "count": 12
+   },
+   {
+    "month": "2026-01",
+    "median": 835000,
+    "count": 7
+   },
+   {
+    "month": "2026-02",
+    "median": 857500,
+    "count": 8
+   },
+   {
+    "month": "2026-03",
+    "median": 835000,
+    "count": 13
+   },
+   {
+    "month": "2026-04",
+    "median": 720000,
+    "count": 17
+   },
+   {
+    "month": "2026-05",
+    "median": 840000,
+    "count": 15
+   },
+   {
+    "month": "2026-06",
+    "median": 842000,
+    "count": 16
+   },
+   {
+    "month": "2026-07",
+    "median": 852500,
+    "count": 16
+   },
+   {
+    "month": "2026-08",
+    "median": 737500,
+    "count": 10
+   },
+   {
+    "month": "2026-09",
+    "median": 925000,
+    "count": 9
+   },
+   {
+    "month": "2026-10",
+    "median": 625000,
+    "count": 12
+   }
+  ],
+  "by_month_basis": "houses only; calendar months, the last one in progress; median null when under 3 sales",
+  "recent_sales": [
+   {
+    "address": "5128 Kansas Ave NW",
+    "date": "2026-10-19",
+    "price": 425000,
+    "kind": "house",
+    "beds": 3,
+    "sqft": 1280,
+    "assessed": 684980
+   },
+   {
+    "address": "5121 New Hampshire Ave NW",
+    "date": "2026-10-19",
+    "price": 474900,
+    "kind": "house",
+    "beds": 3,
+    "sqft": 1260,
+    "assessed": 653880
+   },
+   {
+    "address": "318 Varnum St NW",
+    "date": "2026-10-16",
+    "price": 845000,
+    "kind": "house",
+    "beds": 3,
+    "sqft": 1488,
+    "assessed": 798240
+   },
+   {
+    "address": "5226 7th St NW",
+    "date": "2026-10-15",
+    "price": 440000,
+    "kind": "house",
+    "beds": 2,
+    "sqft": 1336,
+    "assessed": 590740
+   },
+   {
+    "address": "5011 Illinois Ave NW",
+    "date": "2026-10-14",
+    "price": 410000,
+    "kind": "house",
+    "beds": 3,
+    "sqft": 1640,
+    "assessed": 668990
+   },
+   {
+    "address": "5328 Kansas Ave NW",
+    "date": "2026-10-13",
+    "price": 530000,
+    "kind": "house",
+    "beds": 4,
+    "sqft": 2058,
+    "assessed": 814230
+   },
+   {
+    "address": "417 Ingraham St NW",
+    "date": "2026-10-13",
+    "price": 895000,
+    "kind": "house",
+    "beds": 3,
+    "sqft": 1296,
+    "assessed": 770190
+   },
+   {
+    "address": "701 Longfellow St NW",
+    "date": "2026-10-09",
+    "price": 550000,
+    "kind": "house",
+    "beds": 3,
+    "sqft": 1496,
+    "assessed": 719220
+   },
+   {
+    "address": "4504 New Hampshire Ave NW",
+    "date": "2026-10-09",
+    "price": 799900,
+    "kind": "house",
+    "beds": 4,
+    "sqft": 2040,
+    "assessed": 892040
+   },
+   {
+    "address": "4917 9th St NW",
+    "date": "2026-10-07",
+    "price": 725000,
+    "kind": "house",
+    "beds": 3,
+    "sqft": 1630,
+    "assessed": 774190
+   },
+   {
+    "address": "4122 7th St NW",
+    "date": "2026-10-07",
+    "price": 938000,
+    "kind": "house",
+    "beds": 3,
+    "sqft": 1716,
+    "assessed": 954060
+   },
+   {
+    "address": "834 Varnum St NW # 2",
+    "date": "2026-10-06",
+    "price": 599000,
+    "kind": "condo",
+    "beds": null,
+    "sqft": null,
+    "assessed": 594490
+   },
+   {
+    "address": "706 Longfellow St NW",
+    "date": "2026-10-06",
+    "price": 699999,
+    "kind": "house",
+    "beds": 3,
+    "sqft": 1488,
+    "assessed": 641130
+   },
+   {
+    "address": "822 Madison St NW",
+    "date": "2026-09-29",
+    "price": 1125000,
+    "kind": "house",
+    "beds": 5,
+    "sqft": 1260,
+    "assessed": 1113540
+   },
+   {
+    "address": "4840 Kansas Ave NW",
+    "date": "2026-09-29",
+    "price": 945000,
+    "kind": "house",
+    "beds": 3,
+    "sqft": 1640,
+    "assessed": 983580
+   },
+   {
+    "address": "813 Delafield Pl NW",
+    "date": "2026-09-14",
+    "price": 789000,
+    "kind": "house",
+    "beds": 4,
+    "sqft": 1476,
+    "assessed": 947050
+   },
+   {
+    "address": "810 Madison St NW",
+    "date": "2026-09-10",
+    "price": 725000,
+    "kind": "house",
+    "beds": 3,
+    "sqft": 1260,
+    "assessed": 652530
+   },
+   {
+    "address": "3926 Illinois Ave NW",
+    "date": "2026-09-10",
+    "price": 735000,
+    "kind": "house",
+    "beds": 3,
+    "sqft": 1680,
+    "assessed": 763420
+   },
+   {
+    "address": "308 Upshur St NW",
+    "date": "2026-09-10",
+    "price": 934000,
+    "kind": "house",
+    "beds": 4,
+    "sqft": 1368,
+    "assessed": 1047290
+   },
+   {
+    "address": "4928 5th St NW",
+    "date": "2026-09-04",
+    "price": 925000,
+    "kind": "house",
+    "beds": 3,
+    "sqft": 1728,
+    "assessed": 738700
+   },
+   {
+    "address": "4308 4th St NW",
+    "date": "2026-09-04",
+    "price": 1030000,
+    "kind": "house",
+    "beds": 3,
+    "sqft": 1488,
+    "assessed": 638470
+   },
+   {
+    "address": "415 Varnum St NW # 2",
+    "date": "2026-09-03",
+    "price": 645000,
+    "kind": "condo",
+    "beds": null,
+    "sqft": null,
+    "assessed": 594670
+   },
+   {
+    "address": "5002 7th Pl NW",
+    "date": "2026-09-02",
+    "price": 865000,
+    "kind": "house",
+    "beds": 4,
+    "sqft": 1336,
+    "assessed": 831130
+   }
+  ]
+ },
+ "streets": {
+  "generated_at": "2026-10-31T19:32:03Z",
+  "sources": [
+   {
+    "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
+    "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DDOT/TOPS/MapServer/1"
+   },
+   {
+    "name": "DDOT Urban Forestry Division: Urban Forestry Street Trees (Open Data DC)",
+    "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Urban_Tree_Canopy/MapServer/23"
+   },
+   {
+    "name": "311 City Service Requests (OUC), layer 1 of 2",
+    "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/ServiceRequests/FeatureServer/18"
+   },
+   {
+    "name": "311 City Service Requests (OUC), layer 2 of 2",
+    "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/ServiceRequests/FeatureServer/21"
+   }
+  ],
+  "curb": {
+   "active_this_week": 114,
+   "starting_next_7d": 16,
+   "reserved_ft": 14212,
+   "long_running_90d": 39,
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-10-31: newest permit issued 2026-10-31, newest record update 2026-10-31, so the layer is current to within a day or two.",
+   "by_type": [
+    {
+     "type": "Moving & storage",
+     "count": 5
+    },
+    {
+     "type": "Dumpsters",
+     "count": 1
+    },
+    {
+     "type": "Construction staging",
+     "count": 35
+    },
+    {
+     "type": "Lead pipe replacement",
+     "count": 34
+    },
+    {
+     "type": "Utility & DDOT work",
+     "count": 39
+    }
+   ],
+   "upcoming": [
+    {
+     "type": "Construction staging",
+     "block": "100 block of Emerson Street NW",
+     "start": "2026-11-02",
+     "end": "2026-11-30",
+     "ft": 44,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "4200 block of 5th Street NW",
+     "start": "2026-11-02",
+     "end": "2026-12-01",
+     "ft": 44,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "300 block of Allison Street NW",
+     "start": "2026-11-02",
+     "end": "2026-11-06",
+     "ft": 396,
+     "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "400 block of Allison Street NW",
+     "start": "2026-11-02",
+     "end": "2026-11-06",
+     "ft": 264,
+     "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "500 block of Allison Street NW",
+     "start": "2026-11-02",
+     "end": "2026-11-06",
+     "ft": 110,
+     "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "600 block of Allison Street NW",
+     "start": "2026-11-02",
+     "end": "2026-11-06",
+     "ft": 154,
+     "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "300 block of Allison Street NW",
+     "start": "2026-11-02",
+     "end": "2026-11-06",
+     "ft": 22,
+     "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "400 block of Allison Street NW",
+     "start": "2026-11-02",
+     "end": "2026-11-06",
+     "ft": 264,
+     "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Moving & storage",
+     "block": "700 block of Varnum Street NW",
+     "start": "2026-11-04",
+     "end": "2026-11-04",
+     "ft": 88,
+     "hours": ""
+    },
+    {
+     "type": "Lead pipe replacement",
+     "block": "500 block of Taylor Street NW",
+     "start": "2026-11-05",
+     "end": "2027-01-03",
+     "ft": 66,
+     "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Lead pipe replacement",
+     "block": "600 block of Taylor Street NW",
+     "start": "2026-11-05",
+     "end": "2027-01-03",
+     "ft": 66,
+     "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Lead pipe replacement",
+     "block": "700 block of Taylor Street NW",
+     "start": "2026-11-05",
+     "end": "2027-01-03",
+     "ft": 44,
+     "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Moving & storage",
+     "block": "3900 block of 8th Street NW",
+     "start": "2026-11-05",
+     "end": "2026-11-06",
+     "ft": 88,
+     "hours": ""
+    },
+    {
+     "type": "Moving & storage",
+     "block": "900 block of Decatur Street NW",
+     "start": "2026-11-05",
+     "end": "2026-11-06",
+     "ft": 88,
+     "hours": ""
+    },
+    {
+     "type": "Construction staging",
+     "block": "500 block of Webster Street NW",
+     "start": "2026-11-06",
+     "end": "2026-12-05",
+     "ft": 44,
+     "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Moving & storage",
+     "block": "700 block of Upshur Street NW",
+     "start": "2026-11-06",
+     "end": "2026-11-07",
+     "ft": 88,
+     "hours": ""
+    }
+   ]
+  },
+  "trees": {
+   "total": 3990,
+   "species": 196,
+   "planted_5y": 530,
+   "empty_boxes": 32,
+   "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (32). Not counted: 'Proposed' = planting scheduled (2), 'Conflict'/'Utility' = empty but blocked (40), 'Retired' = box removed (241). 'total' is boxes with status 'Plant' whose condition is not Dead.",
+   "condition": {
+    "Good": 3319,
+    "Fair": 501,
+    "Excellent": 128,
+    "Poor": 38,
+    "Not rated": 4
+   },
+   "dead": 82,
+   "top_species": [
+    {
+     "name": "Pin oak",
+     "count": 277
+    },
+    {
+     "name": "Japanese zelkova",
+     "count": 268
+    },
+    {
+     "name": "American elm",
+     "count": 189
+    },
+    {
+     "name": "Scarlet oak",
+     "count": 150
+    },
+    {
+     "name": "Red maple",
+     "count": 140
+    },
+    {
+     "name": "Red oak",
+     "count": 126
+    },
+    {
+     "name": "Ginkgo",
+     "count": 111
+    },
+    {
+     "name": "London plane tree",
+     "count": 102
+    }
+   ],
+   "biggest": [
+    {
+     "species": "Red oak",
+     "dbh_in": 64.2,
+     "block": "200 block of Allison St NW"
+    },
+    {
+     "species": "Cherry",
+     "dbh_in": 56.8,
+     "block": "200 block of Allison St NW"
+    },
+    {
+     "species": "Red oak",
+     "dbh_in": 56.3,
+     "block": "200 block of Allison St NW"
+    },
+    {
+     "species": "Red oak",
+     "dbh_in": 52.4,
+     "block": "Sherman Circle NW"
+    },
+    {
+     "species": "Scarlet oak",
+     "dbh_in": 50.6,
+     "block": "4200 block of Illinois Ave NW"
+    }
+   ],
+   "inventory_date": "2026-10-29"
+  },
+  "service": [
+   {
+    "type": "Bulk Collection",
+    "median_days": 7.95,
+    "city_median_days": 6.91,
+    "closed_n": 2260
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "median_days": 3.71,
+    "city_median_days": 4.17,
+    "closed_n": 1184
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "median_days": 11.84,
+    "city_median_days": 9.83,
+    "closed_n": 1126
+   },
+   {
+    "type": "Parking Enforcement",
+    "median_days": 0.05,
+    "city_median_days": 0.05,
+    "closed_n": 975
+   },
+   {
+    "type": "Recycling Collection - Missed",
+    "median_days": 4.06,
+    "city_median_days": 5.14,
+    "closed_n": 806
+   },
+   {
+    "type": "Illegal Dumping",
+    "median_days": 3.9,
+    "city_median_days": 4.04,
+    "closed_n": 709
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "median_days": 2.05,
+    "city_median_days": 2.79,
+    "closed_n": 692
+   },
+   {
+    "type": "Sanitation Enforcement",
+    "median_days": 0.89,
+    "city_median_days": 1.1,
+    "closed_n": 487
+   }
+  ],
+  "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
+ },
+ "history": {
+  "generated_at": "2026-10-31T19:32:03Z",
+  "sources": [
+   {
+    "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
+    "url": "https://opendata.dc.gov/datasets/historic-data-on-dc-buildings"
+   },
+   {
+    "name": "Evening Star (Washington, D.C.), Chronicling America, Library of Congress; public domain",
+    "url": "https://www.loc.gov/item/sn83045462/"
+   }
+  ],
+  "buildings": {
+   "records": 4007,
+   "year_min": 1892,
+   "year_max": 1955,
+   "by_decade": [
+    {
+     "decade": 1890,
+     "count": 41
+    },
+    {
+     "decade": 1900,
+     "count": 333
+    },
+    {
+     "decade": 1910,
+     "count": 1002
+    },
+    {
+     "decade": 1920,
+     "count": 2048
+    },
+    {
+     "decade": 1930,
+     "count": 539
+    },
+    {
+     "decade": 1940,
+     "count": 8
+    },
+    {
+     "decade": 1950,
+     "count": 6
+    }
+   ],
+   "top_architects": [
+    {
+     "name": "George T. Santmyers",
+     "count": 1258
+    },
+    {
+     "name": "H. H. Warwick",
+     "count": 340
+    },
+    {
+     "name": "A. H. Beers",
+     "count": 128
+    },
+    {
+     "name": "Alvin L. Aubinoe",
+     "count": 124
+    },
+    {
+     "name": "Cafritz Const. Co.",
+     "count": 108
+    }
+   ],
+   "top_builders": [
+    {
+     "name": "D. J. Dunigan",
+     "count": 719
+    },
+    {
+     "name": "Cafritz Const. Co.",
+     "count": 584
+    },
+    {
+     "name": "Morris Cafritz",
+     "count": 191
+    },
+    {
+     "name": "Middaugh & Shannon Inc.",
+     "count": 86
+    },
+    {
+     "name": "Samuel Shapiro",
+     "count": 78
+    }
+   ],
+   "featured_block": {
+    "block": "400 block of Delafield Place NW",
+    "year": 1926,
+    "buildings": 62,
+    "permits": 4,
+    "builder": "Cafritz Const. Co.",
+    "architects": [
+     {
+      "name": "H. H. Warwick",
+      "count": 52
+     },
+     {
+      "name": "D. W. Moore",
+      "count": 10
+     }
+    ],
+    "largest_permit": {
+     "buildings": 21,
+     "cost": 105000
+    },
+    "sentence": "In 1926, Cafritz Const. Co. built 62 buildings on the 400 block of Delafield Place NW under 4 permits, designed by H. H. Warwick and D. W. Moore. The largest permit covered 21 buildings at an estimated $105,000 in total."
+   }
+  },
+  "archive": {
+   "week_label": "October 31 \u2013 November 6, 1926",
+   "week_start": "1926-10-31",
+   "week_end": "1926-11-06",
+   "paper": "Evening Star",
+   "terms": [
+    "Petworth",
+    "\"Grant Circle\"",
+    "\"Sherman Circle\""
+   ],
+   "clips": [
+    {
+     "date": "1926-10-31",
+     "page": 94,
+     "text": "Mount Pleasant moved into a tie with Central and Immanuel Baptists for second place by taking all three from Petworth Methodists.",
+     "url": "https://www.loc.gov/resource/sn83045462/1926-10-31/ed-1/?sp=94"
+    },
+    {
+     "date": "1926-10-31",
+     "page": 111,
+     "text": "Star OWNER wTll 'sacrifice for quick sale one of the best homes in Petworth. near Sherman Circle: heautiful 8-room and hath brick home, having a.m.i.. garage, attic, porch, newly papered and painted: immediate possession: must be aeen to be appreciated.",
+     "url": "https://www.loc.gov/resource/sn83045462/1926-10-31/ed-1/?sp=111"
+    },
+    {
+     "date": "1926-11-02",
+     "page": 44,
+     "text": "Six-room brick house In finest section of Petworth. recently redecorated throughout and in excellent condition: let us show you what a remarkable buy we can offer you.",
+     "url": "https://www.loc.gov/resource/sn83045462/1926-11-02/ed-1/?sp=44"
+    },
+    {
+     "date": "1926-11-05",
+     "page": 52,
+     "text": "Union Sta. 7* S7O. 6 large rooms and bath: house one year Old. overlooking Sherman Circle: built-in garage, screened breakfast porch, hot-water heat, electricity, gas and instantaneous gas heater: immediate possession.",
+     "url": "https://www.loc.gov/resource/sn83045462/1926-11-05/ed-1/?sp=52"
+    },
+    {
+     "date": "1926-11-05",
+     "page": 53,
+     "text": "This splendid home faces a park and over looks Grant Circle It is two blocks irom Bt.",
+     "url": "https://www.loc.gov/resource/sn83045462/1926-11-05/ed-1/?sp=53"
+    },
+    {
+     "date": "1926-11-06",
+     "page": 18,
+     "text": "Point in Petworth Really SIO,OOO Homes One square from Sherman Circle One of Petworth s Prett,e.t Sec.,on,. t 6 Large Rooms 6 Beautifully arranged Room, Homes of Think of all these features for $7,950 Cement \u2026",
+     "url": "https://www.loc.gov/resource/sn83045462/1926-11-06/ed-1/?sp=18"
+    }
+   ],
+   "screened": 0,
+   "note": "Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
+  }
+ },
+ "module_errors": {}
 }

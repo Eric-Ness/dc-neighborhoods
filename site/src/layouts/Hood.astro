@@ -1,0 +1,87 @@
+---
+// Shared frame for every page of a neighborhood: C5 header, search, cross-page navigation.
+import Base from "./Base.astro";
+import { PAGES, pageUrl, type Neighborhood } from "../lib/data";
+import { asOf, ICON_SEARCH } from "../lib/c5";
+
+interface Props {
+  n: Neighborhood;
+  page: string; // path from PAGES, "" for the overview
+  title: string;
+  description: string;
+  heading?: string; // page heading under the brand on sub-pages
+  intro?: string;
+}
+const { n, page, title, description, heading, intro } = Astro.props;
+const home = pageUrl(n.slug);
+---
+<Base title={title} description={description} rss={`/${n.slug}/permits.xml`} generated={n.generated_at}>
+  <header><div class="wrap">
+    <div class="topbar">
+      <div class="hd">
+        <div class="brand">
+          {page === "" ? <h1>{n.name}</h1> : <a class="brand-link" href={home}>{n.name}</a>}
+          <p>What's changing in {n.name}, from DC's own data</p>
+        </div>
+        <div class="asof"><span class="dot" aria-hidden="true"></span>Data as of <b><time datetime={n.generated_at}>{asOf(n.generated_at)}</time></b><br />Updated nightly</div>
+      </div>
+      <div class="search" data-slug={n.slug}>
+        <label class="sbox" for="q"><Fragment set:html={ICON_SEARCH} /><input id="q" type="search" placeholder="Look up a street or address" autocomplete="off" aria-controls="q-results" aria-describedby="q-hint" /><button type="button" id="q-go">Look up</button></label>
+        <div class="shint" id="q-hint">Permits, home sales and curb permits on your street</div>
+        <div class="sresults" id="q-results" role="listbox" hidden></div>
+      </div>
+    </div>
+    <nav class="snav" aria-label={`${n.name} pages`}><ul>
+      {PAGES.map((p) => (
+        <li><a href={pageUrl(n.slug, p.path)} aria-current={p.path === page ? "page" : undefined}>{p.label}</a></li>
+      ))}
+    </ul></nav>
+    <p id="stale" class="stale" hidden>This data is more than 3 days old. The nightly update may have failed; check the official sources.</p>
+  </div></header>
+
+  <main class="wrap">
+    {heading && (
+      <div class="pagehead">
+        <h1>{heading}</h1>
+        {intro && <p>{intro}</p>}
+      </div>
+    )}
+    <slot />
+  </main>
+
+  <div slot="footer">
+    <p>{n.name} boundary: {n.boundary.source}. <a href={pageUrl(n.slug, "about/")}>About the data, sources and privacy</a> · <a href={`/${n.slug}/permits.xml`}>Permits RSS</a> · <a href="/">Other neighborhoods</a></p>
+  </div>
+
+  <script>
+    // Street/address lookup over a small per-neighborhood index (search.json), loaded on first use.
+    const box = document.querySelector<HTMLElement>(".search");
+    const input = document.getElementById("q") as HTMLInputElement | null;
+    const out = document.getElementById("q-results");
+    if (box && input && out) {
+      type Hit = { a: string; k: string; d: string; u: string };
+      let index: Hit[] | null = null;
+      const load = async () => {
+        if (!index) index = await fetch(`/${box.dataset.slug}/search.json`).then((r) => r.json()).catch(() => []);
+        return index!;
+      };
+      const norm = (s: string) => s.toUpperCase().replace(/\b(STREET|ST)\b/g, "ST").replace(/\b(AVENUE|AVE)\b/g, "AVE").replace(/\b(PLACE|PL)\b/g, "PL").replace(/\b(ROAD|RD)\b/g, "RD").replace(/[^A-Z0-9 ]/g, "").replace(/\s+/g, " ").trim();
+      const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]!);
+      const run = async () => {
+        const q = norm(input.value);
+        if (q.length < 3) { out.hidden = true; return; }
+        const terms = q.split(" ");
+        const hits = (await load()).filter((h) => { const t = norm(h.a); return terms.every((w) => t.includes(w)); }).slice(0, 12);
+        out.innerHTML = hits.length
+          ? hits.map((h) => `<a role="option" href="${h.u}"><b>${esc(h.a)}</b><span>${esc(h.k)} · ${esc(h.d)}</span></a>`).join("")
+          : `<p>Nothing on file for “${esc(input.value)}” in the last 30–60 days. Try just the street name.</p>`;
+        out.hidden = false;
+      };
+      input.addEventListener("focus", load, { once: true });
+      input.addEventListener("input", run);
+      document.getElementById("q-go")?.addEventListener("click", run);
+      input.addEventListener("keydown", (e) => { if (e.key === "Escape") out.hidden = true; });
+      document.addEventListener("click", (e) => { if (!box.contains(e.target as Node)) out.hidden = true; });
+    }
+  </script>
+</Base>

@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Petworth: the weekly edition</title>
+<meta name="description" content="What's changing in Petworth, from DC's own data. Independent; updated nightly.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400..800;1,6..72,400..700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#fbfaf8; --ink:#141414; --ink-2:#3d3d3b; --muted:#6b6a66; --rule:#141414; --hair:#d9d6cf;
+  --tint:#f1efea; --accent:#0b6e4f; --accent-ink:#ffffff; --bar-prev:#c9c6be;
+  --serif:"Newsreader", "Iowan Old Style", "Charter", "Georgia", "Times New Roman", serif;
+  --sans:"Libre Franklin", "Franklin Gothic Medium", "Helvetica Neue", Arial, system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --paper:#151514; --ink:#eeece6; --ink-2:#c9c6be; --muted:#9a978f; --rule:#eeece6; --hair:#3a3936;
+    --tint:#1f1f1d; --accent:#4cc39a; --accent-ink:#0c1a14; --bar-prev:#4a4945;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.5;
+  font-optical-sizing:auto;text-rendering:optimizeLegibility}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--accent)}
+h1,h2,h3,h4{margin:0;font-weight:inherit}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+
+.layout-label{font:600 11px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;background:var(--ink);color:var(--paper);
+  padding:7px 16px;text-align:center}
+
+/* masthead */
+.mast{padding-top:18px;text-align:center}
+.mast-top{display:flex;justify-content:space-between;gap:12px;font:500 11px/1.3 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.mast-name{font-family:var(--serif);font-weight:800;font-size:clamp(3.4rem,18.5vw,10.5rem);line-height:.86;letter-spacing:-.035em;
+  margin:14px 0 8px;font-variation-settings:"opsz" 72}
+.mast-desc{font-style:italic;font-size:clamp(1.05rem,3.6vw,1.35rem);color:var(--ink-2);margin-bottom:14px}
+.edition{border-top:3px solid var(--rule);border-bottom:1px solid var(--rule);padding:8px 0 7px;margin-top:4px;
+  display:flex;flex-direction:column;align-items:center;gap:2px;font:500 12px/1.35 var(--sans);letter-spacing:.04em}
+.edition span+span::before{display:none;content:"";width:3px;height:3px;border-radius:50%;background:currentColor;vertical-align:middle;margin-right:14px;position:relative;top:-1px}
+.edition .asof{color:var(--accent);font-weight:600}
+
+/* index / search */
+.lookup{margin:20px 0 4px;border-bottom:1px solid var(--hair);padding-bottom:20px}
+.lookup label{display:block;font:700 12px/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}
+.lookup-row{display:flex;border:1.5px solid var(--ink);background:var(--paper)}
+.lookup input{flex:1;min-width:0;border:0;background:transparent;font:400 17px/1.2 var(--serif);color:var(--ink);padding:13px 12px}
+.lookup input::placeholder{color:var(--muted);font-style:italic}
+.lookup button{border:0;background:var(--ink);color:var(--paper);font:600 14px/1 var(--sans);padding:0 18px;cursor:pointer}
+.lookup-hint{font:400 13px/1.45 var(--sans);color:var(--muted);margin-top:8px}
+.lookup-hint a{color:var(--ink-2)}
+
+/* section heads */
+.kicker{font:700 11.5px/1.2 var(--sans);letter-spacing:.13em;text-transform:uppercase;color:var(--accent)}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;border-top:3px solid var(--rule);padding-top:8px;margin:40px 0 18px}
+.sec-head h2{font:700 13px/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase}
+.sec-head a{font:500 13px/1.2 var(--sans);white-space:nowrap}
+.more{display:inline-block;margin-top:14px;font:600 14px/1.3 var(--sans)}
+.more::after{content:" \2192"}
+
+/* front page grid */
+.front{display:grid;gap:28px;margin-top:24px}
+.lead .kicker{margin-bottom:10px}
+.lead h2{font-weight:700;font-size:clamp(2.1rem,8.6vw,3.6rem);line-height:1.02;letter-spacing:-.022em;font-variation-settings:"opsz" 72}
+.lead .dek{font-size:clamp(1.13rem,4vw,1.4rem);line-height:1.38;color:var(--ink-2);margin-top:14px;font-weight:400}
+.byline{font:500 12px/1.4 var(--sans);color:var(--muted);margin-top:14px;text-transform:uppercase;letter-spacing:.07em}
+.lead-body{margin-top:20px;columns:1;column-gap:32px}
+.lead-body p{margin-bottom:12px}
+.lead-body p:first-child::first-letter{float:left;font-weight:700;font-size:3.6em;line-height:.82;padding:5px 8px 0 0}
+.chart-cap{font:700 12px/1.3 var(--sans);letter-spacing:.06em;text-transform:uppercase;margin:22px 0 4px}
+.chart-note{font:400 12.5px/1.4 var(--sans);color:var(--muted);margin-bottom:10px}
+.chart-note i{display:inline-block;width:14px;height:6px;vertical-align:middle;margin:0 4px 0 2px}
+.chg{display:grid;grid-template-columns:1fr;gap:4px;padding:10px 0;border-top:1px solid var(--hair)}
+.chg-label{font:500 14px/1.3 var(--sans)}
+.chg-bars{display:grid;gap:3px}
+.bar{display:block;height:7px;background:var(--bar-prev)}
+.bar-now{background:var(--ink-2)}
+.chg.is-hl .bar-now{background:var(--accent)}
+.chg-num{font:400 13px/1.3 var(--sans);color:var(--muted)}
+.chg-num b{font:700 17px/1 var(--serif);color:var(--ink)}
+.chg .delta{font-weight:600;color:var(--ink-2);margin-left:4px}
+.chg.is-hl .delta,.chg.is-hl .chg-num b{color:var(--accent)}
+
+/* by the numbers */
+.btn-box{border:1.5px solid var(--ink);padding:16px 16px 6px}
+.btn-box h3{font:800 13px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;padding-bottom:10px;border-bottom:3px double var(--ink)}
+.btn-list li{padding:13px 0;border-bottom:1px solid var(--hair)}
+.btn-list li:last-child{border-bottom:0}
+.btn-num{font-weight:700;font-size:2.5rem;line-height:1;letter-spacing:-.02em;font-variant-numeric:lining-nums tabular-nums;font-variation-settings:"opsz" 72}
+.btn-lab{font:500 13.5px/1.35 var(--sans);margin-top:4px}
+.btn-sub{font:400 12.5px/1.35 var(--sans);color:var(--muted);margin-top:2px}
+.btn-foot{font:400 11.5px/1.4 var(--sans);color:var(--muted);padding:10px 0}
+.sponsor{margin-top:18px;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);padding:12px 0;text-align:center;font:400 12px/1.3 var(--sans);color:var(--muted)}
+.sponsor b{display:block;font:italic 600 18px/1.3 var(--serif);color:var(--ink);margin-top:3px}
+.sponsor small{display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:2px}
+
+/* secondary stories */
+.cols{display:grid;gap:0}
+.story{padding:20px 0;border-top:1px solid var(--hair)}
+.story:first-child{border-top:0;padding-top:0}
+.story .kicker{margin-bottom:8px}
+.story h3{font-weight:700;font-size:1.65rem;line-height:1.1;letter-spacing:-.012em;font-variation-settings:"opsz" 48}
+.story .summary{margin-top:10px;color:var(--ink-2);font-size:17px}
+.big-figure{display:flex;align-items:baseline;gap:10px;margin:14px 0 4px}
+.big-figure .fig{font-weight:700;font-size:3.4rem;line-height:.9;letter-spacing:-.03em;font-variation-settings:"opsz" 72}
+.big-figure .fig-lab{font:500 13px/1.3 var(--sans);color:var(--muted)}
+.leaders li{display:flex;align-items:baseline;gap:6px;font:400 14.5px/1.35 var(--sans);padding:6px 0}
+.tt-name{flex:0 1 auto}
+.tt-dots{flex:1 1 20px;border-bottom:1px dotted var(--muted);transform:translateY(-4px);min-width:16px}
+.tt-n{font-weight:700;font-variant-numeric:tabular-nums}
+.facts2{display:grid;grid-template-columns:1fr 1fr;gap:12px 16px;margin-top:14px}
+.facts2 div{border-top:1px solid var(--ink);padding-top:6px}
+.facts2 b{display:block;font-weight:700;font-size:1.6rem;line-height:1.1;font-variation-settings:"opsz" 48}
+.facts2 span{font:400 12.5px/1.35 var(--sans);color:var(--muted)}
+
+/* projects */
+.projects-wrap{display:grid;gap:24px}
+.proj{padding:14px 0;border-top:1px solid var(--hair)}
+.proj:first-child{border-top:0;padding-top:0}
+.proj-meta{font:500 11.5px/1.3 var(--sans);color:var(--muted);letter-spacing:.04em}
+.proj-tag{font-weight:700;text-transform:uppercase;letter-spacing:.11em;color:var(--ink)}
+.proj-tag.is-demo{color:var(--accent)}
+.proj-addr{font-weight:700;font-size:1.3rem;line-height:1.2;margin-top:4px}
+.proj-addr a{text-decoration:none}
+.proj-addr a:hover{text-decoration:underline}
+.proj-work{font-size:15.5px;line-height:1.45;color:var(--ink-2);margin-top:4px}
+.map-fig{margin:0}
+.map{display:block;width:100%;height:auto;max-width:440px;margin:0 auto}
+.m-boundary{fill:var(--tint);stroke:var(--ink);stroke-width:1.4;stroke-linejoin:round}
+.m-dot{fill:var(--ink);fill-opacity:.42}
+.m-big{fill:var(--accent);stroke:var(--paper);stroke-width:1.5}
+.map-fig figcaption{font:400 12.5px/1.45 var(--sans);color:var(--muted);margin-top:8px}
+.map-fig figcaption i{display:inline-block;width:9px;height:9px;border-radius:50%;vertical-align:middle;margin:0 3px 0 0}
+.groups-h{font:700 12px/1.3 var(--sans);letter-spacing:.06em;text-transform:uppercase;margin:20px 0 4px}
+
+/* archives */
+.archive{background:var(--tint);padding:24px 16px;margin:0 -16px}
+.archive .inner{max-width:780px;margin:0 auto}
+.archive h3{font-weight:700;font-size:clamp(1.8rem,7vw,2.6rem);line-height:1.05;letter-spacing:-.02em;margin-top:8px;font-variation-settings:"opsz" 72}
+.archive .lede{margin-top:12px;font-size:18px}
+.archive .lede strong{font-weight:700}
+.clip{margin:26px 0 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:18px 0}
+.clip-label{font:700 11px/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.clip blockquote{margin:10px 0 0;font-style:italic;font-size:clamp(1.25rem,4.6vw,1.6rem);line-height:1.35}
+.clip blockquote::before{content:"\201C"}
+.clip blockquote::after{content:"\201D"}
+.clip figcaption{font:400 12.5px/1.45 var(--sans);color:var(--muted);margin-top:10px}
+.ocr{display:inline-block;border:1px solid var(--muted);padding:1px 5px;font:700 10px/1.3 var(--sans);letter-spacing:.1em;margin-right:6px;color:var(--ink-2)}
+
+/* reps */
+.reps-intro{font-size:17px;color:var(--ink-2);margin-bottom:12px}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table.reps{width:100%;border-collapse:collapse;font:400 15px/1.35 var(--sans);min-width:320px}
+.reps th,.reps td{text-align:left;padding:10px 8px 10px 0;border-bottom:1px solid var(--hair);vertical-align:baseline}
+.reps thead th{font:700 11px/1.2 var(--sans);letter-spacing:.11em;text-transform:uppercase;color:var(--muted);border-bottom:1.5px solid var(--ink)}
+.reps tbody th{font:700 15px/1.2 var(--serif);font-variant-numeric:tabular-nums;width:4.5em}
+.reps td:last-child{text-align:right;padding-right:0;white-space:nowrap}
+
+/* subscribe */
+.subscribe{border:3px solid var(--ink);padding:22px 18px;margin-top:44px;text-align:center}
+.subscribe h2{font-weight:700;font-size:clamp(1.9rem,7.4vw,2.6rem);line-height:1.05;letter-spacing:-.02em;font-variation-settings:"opsz" 72}
+.subscribe p{color:var(--ink-2);margin:10px auto 0;max-width:34em;font-size:17px}
+.sub-form{display:flex;flex-wrap:wrap;gap:8px;max-width:460px;margin:18px auto 0}
+.sub-form input{flex:1 1 200px;min-width:0;border:1.5px solid var(--ink);background:var(--paper);color:var(--ink);font:400 16px/1.2 var(--sans);padding:12px}
+.sub-form button{flex:0 0 auto;border:0;background:var(--accent);color:var(--accent-ink);font:700 15px/1 var(--sans);padding:12px 18px;cursor:pointer}
+.sub-links{font:400 13px/1.4 var(--sans);color:var(--muted);margin-top:12px}
+
+/* footer */
+footer.wrap{margin-top:48px;border-top:3px solid var(--rule);padding:16px 16px 40px;font:400 13px/1.55 var(--sans);color:var(--ink-2)}
+footer .foot-name{font:800 1.6rem/1 var(--serif);color:var(--ink);letter-spacing:-.02em;margin-bottom:10px}
+footer p+p{margin-top:8px}
+.foot-grid>div+div{margin-top:10px}
+@media (min-width:760px){.foot-grid>div+div{margin-top:0}}
+footer .indep{font-weight:600;color:var(--ink)}
+
+/* desktop */
+@media (min-width:760px){
+  body{font-size:19px}
+  .wrap{padding:0 28px}
+  footer.wrap{padding-left:28px;padding-right:28px}
+  .edition{flex-direction:row;justify-content:center;gap:14px}
+  .edition span+span::before{display:inline-block}
+  .lookup{display:grid;grid-template-columns:auto 1fr;gap:4px 18px;align-items:center}
+  .lookup label{margin:0}
+  .lookup-hint{grid-column:2}
+  .front{grid-template-columns:minmax(0,1fr) 300px;gap:40px}
+  .lead{border-right:1px solid var(--hair);padding-right:40px}
+  .lead-body{columns:2}
+  .cols{grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
+  .story{border-top:0;padding:0 24px;border-left:1px solid var(--hair)}
+  .story:first-child{padding-left:0;border-left:0}
+  .story:last-child{padding-right:0}
+  .projects-wrap{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:40px}
+  .proj-list{columns:2;column-gap:28px;column-rule:1px solid var(--hair)}
+  .proj{break-inside:avoid}
+  .proj:first-child{padding-top:14px;border-top:1px solid var(--hair)}
+  .archive{margin:0 -28px;padding:40px 28px}
+  .reps-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:40px;align-items:start}
+  .subscribe{padding:36px}
+  .foot-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:40px}
+  .chg{grid-template-columns:minmax(0,13em) minmax(0,1fr) 11em;align-items:center;gap:14px}
+}
+@media (min-width:1100px){
+  .front{grid-template-columns:minmax(0,1fr) 320px}
+  .proj-list{columns:2}
+}
+</style>
+</head>
+<body>
+<div class="layout-label">Layout A: Neighborhood Paper</div>
+
+<header class="wrap mast">
+  <div class="mast-top"><span>petworth.org</span><span>The weekly edition</span></div>
+  <h1 class="mast-name">Petworth</h1>
+  <p class="mast-desc">What&rsquo;s changing in Petworth, from DC&rsquo;s own data</p>
+  <div class="edition">
+    <span>Saturday, October 31, 2026</span>
+    <span class="asof">Data as of Oct. 31, 2026, 12:35 p.m. ET</span>
+    <span>Updated nightly</span>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <form class="lookup" role="search" action="../../demos/ideas/01-block-watch.html" onsubmit="return false">
+    <label for="addr">Look up your block or building</label>
+    <div class="lookup-row">
+      <input id="addr" type="text" placeholder="e.g. 4400 block of 9th St. NW" autocomplete="street-address">
+      <button type="submit">Look up</button>
+    </div>
+    <p class="lookup-hint">Opens <a href="../../demos/ideas/01-block-watch.html">Block Watch</a>, the <a href="../../demos/ideas/07-block-report-card.html">block report card</a> or a <a href="../../demos/ideas/02-building-biography.html">building biography</a>.</p>
+  </form>
+
+  <!-- ===== Front page: lead + by the numbers ===== -->
+  <section class="front" aria-labelledby="lead-h">
+    <article class="lead">
+      <p class="kicker">This week &middot; 311 requests</p>
+      <h2 id="lead-h">Rodent complaints rose to 118, up from 84 the month before</h2>
+      <p class="dek">Calls to DC Health&rsquo;s rodent and vector control line went up by 34 in the past 30 days, while total 311 requests in Petworth fell from 1,336 to 1,168.</p>
+      <p class="byline">From DC 311 open data &middot; last 30 days vs. the 30 before</p>
+      <div class="lead-body">
+        <p>Rodent and vector control was the third most common 311 request in Petworth over the past 30 days, with 118 requests. Only bulk collection (210) and scheduled yard waste (131) drew more.</p>
+        <p>It was one of the few request types to go up. Overall, residents filed 168 fewer requests than in the previous 30 days. Illegal dumping reports fell from 95 to 68, and yard-waste pickups from 166 to 131.</p>
+        <p>The 311 report card has the full breakdown by request type.</p>
+      </div>
+      <p class="chart-cap">Biggest changes in 311 requests</p>
+      <p class="chart-note"><i style="background:var(--bar-prev)"></i>previous 30 days <i style="background:var(--ink-2)"></i>past 30 days</p>
+      <ul class="changes">
+      <li class="chg">
+        <div class="chg-label">Scheduled Yard Waste</div>
+        <div class="chg-bars" aria-hidden="true">
+          <span class="bar bar-prev" style="width:100.0%"></span>
+          <span class="bar bar-now" style="width:78.9%"></span>
+        </div>
+        <div class="chg-num"><b>131</b> <span class="was">from 166</span> <span class="delta">−35</span></div>
+      </li>
+      <li class="chg is-hl">
+        <div class="chg-label">DC Health Rodent &amp; Vector Control</div>
+        <div class="chg-bars" aria-hidden="true">
+          <span class="bar bar-prev" style="width:50.6%"></span>
+          <span class="bar bar-now" style="width:71.1%"></span>
+        </div>
+        <div class="chg-num"><b>118</b> <span class="was">from 84</span> <span class="delta">+34</span></div>
+      </li>
+      <li class="chg">
+        <div class="chg-label">Illegal Dumping</div>
+        <div class="chg-bars" aria-hidden="true">
+          <span class="bar bar-prev" style="width:57.2%"></span>
+          <span class="bar bar-now" style="width:41.0%"></span>
+        </div>
+        <div class="chg-num"><b>68</b> <span class="was">from 95</span> <span class="delta">−27</span></div>
+      </li>
+      </ul>
+      <a class="more" href="../../demos/ideas/08-311-report-card.html">Read the 311 report card</a>
+    </article>
+
+    <aside aria-label="By the numbers">
+      <div class="btn-box">
+        <h3>By the numbers</h3>
+        <ul class="btn-list">
+          <li><div class="btn-num">84</div><div class="btn-lab">building permits issued</div><div class="btn-sub">6 additions, 1 demolition</div></li>
+          <li><div class="btn-num">1,168</div><div class="btn-lab">311 requests</div><div class="btn-sub">1,336 in the 30 days before</div></li>
+          <li><div class="btn-num">49</div><div class="btn-lab">reported crimes</div><div class="btn-sub">40 in the 30 days before</div></li>
+          <li><div class="btn-num">114</div><div class="btn-lab">curb permits active this week</div><div class="btn-sub">16 more start in the next 7 days</div></li>
+          <li><div class="btn-num">$810K</div><div class="btn-lab">median house price</div><div class="btn-sub">145 sales in the past 12 months</div></li>
+        </ul>
+        <p class="btn-foot">Past 30 days unless noted. Crime shown as counts; small numbers move a lot from month to month.</p>
+      </div>
+      <div class="sponsor"><small>Sponsor</small><b>Presented by [Local sponsor]</b></div>
+    </aside>
+  </section>
+
+  <!-- ===== Bigger projects ===== -->
+  <div class="sec-head"><h2 id="proj-h">Bigger projects</h2><a href="../../demos/ideas/01-block-watch.html">All permits &rarr;</a></div>
+  <section class="projects-wrap" aria-labelledby="proj-h">
+    <div>
+      <p class="kicker">Permits &middot; Oct 9&ndash;Oct 27</p>
+      <h3 class="story-h" style="font-weight:700;font-size:clamp(1.7rem,6.4vw,2.3rem);line-height:1.06;letter-spacing:-.018em;margin:8px 0 10px">Six additions and one partial demolition</h3>
+      <p class="summary" style="color:var(--ink-2);margin-bottom:16px;font-size:17px">The larger jobs among 84 permits issued in the past 30 days. No new-construction permits were issued in this period.</p>
+      <ol class="proj-list">
+        <li class="proj">
+          <div class="proj-meta"><span class="proj-tag">Addition</span> <span class="proj-date">Issued Oct 27</span></div>
+          <h4 class="proj-addr"><a href="../../demos/ideas/02-building-biography.html">314 Delafield Pl. NW</a></h4>
+          <p class="proj-work">Alteration of the existing two-story residential building to reconfigure the interior layout and increase the total number of dwelling units from…</p>
+        </li>
+        <li class="proj">
+          <div class="proj-meta"><span class="proj-tag">Addition</span> <span class="proj-date">Issued Oct 27</span></div>
+          <h4 class="proj-addr"><a href="../../demos/ideas/02-building-biography.html">919 Farragut St. NW</a></h4>
+          <p class="proj-work">Two Story Rear addition with cellar. Change of use from Single Family to Single Family with ADU New rear Deck with Stairs to grade. Rear parking pad…</p>
+        </li>
+        <li class="proj">
+          <div class="proj-meta"><span class="proj-tag">Addition</span> <span class="proj-date">Issued Oct 23</span></div>
+          <h4 class="proj-addr"><a href="../../demos/ideas/02-building-biography.html">912 Gallatin St. NW</a></h4>
+          <p class="proj-work">Renovation of 3 story building + basement 14-unit apartment building.</p>
+        </li>
+        <li class="proj">
+          <div class="proj-meta"><span class="proj-tag">Addition</span> <span class="proj-date">Issued Oct 21</span></div>
+          <h4 class="proj-addr"><a href="../../demos/ideas/02-building-biography.html">602 Emerson St. NW</a></h4>
+          <p class="proj-work">The project involves replacement of existing plaster walls and ceilings with drywall to address potential lead-based paint concerns. The work is…</p>
+        </li>
+        <li class="proj">
+          <div class="proj-meta"><span class="proj-tag">Addition</span> <span class="proj-date">Issued Oct 20</span></div>
+          <h4 class="proj-addr"><a href="../../demos/ideas/02-building-biography.html">820 Emerson St. NW</a></h4>
+          <p class="proj-work">Revision On Permit B2506312 relocate kitchen enclose the space under existing wood frame addition replace existing pier footing with continuos…</p>
+        </li>
+        <li class="proj">
+          <div class="proj-meta"><span class="proj-tag is-demo">Demolition</span> <span class="proj-date">Issued Oct 13</span></div>
+          <h4 class="proj-addr"><a href="../../demos/ideas/02-building-biography.html">4404 New Hampshire Ave. NW</a></h4>
+          <p class="proj-work">Partial demolition of fire-damaged 2-story single family row dwelling with basement. Remove front porch roof, roof trusses, decking, wood floor…</p>
+        </li>
+        <li class="proj">
+          <div class="proj-meta"><span class="proj-tag">Addition</span> <span class="proj-date">Issued Oct 9</span></div>
+          <h4 class="proj-addr"><a href="../../demos/ideas/02-building-biography.html">3907 Georgia Ave. NW</a></h4>
+          <p class="proj-work">Revision to B2401648: Provide elevator overrun space above roof deck. Unit count reduced from 15 to 14.</p>
+        </li>
+      </ol>
+    </div>
+    <div>
+      <figure class="map-fig">
+        <svg viewBox="0 0 360 394" role="img" aria-labelledby="map-t" class="map"><title id="map-t">Map of Petworth with a dot for each permit issued in the past 30 days</title><path d="M344.7,16.6 L345.2,26.1 L345.9,37.5 L346.1,41.9 L346.4,45.7 L346.4,46.1 L346.9,54.5 L347.2,59.9 L347.8,71.7 L348.3,80.3 L348.9,90.6 L349.4,98.6 L349.8,105.9 L350.0,108.9 L349.5,121.3 L349.7,127.0 L349.8,133.0 L349.8,135.0 L349.7,137.9 L349.8,143.7 L349.5,148.3 L348.6,151.6 L347.7,154.7 L346.6,158.3 L345.9,159.3 L345.3,160.4 L344.6,161.4 L340.7,166.7 L337.7,169.4 L336.6,170.5 L335.4,171.5 L334.2,172.4 L326.3,178.7 L318.8,184.6 L312.4,189.6 L311.5,190.3 L310.6,191.0 L309.5,191.8 L307.8,192.9 L307.0,193.5 L304.9,194.6 L303.9,195.2 L302.9,195.7 L299.6,197.5 L298.8,198.1 L298.3,198.5 L297.6,199.0 L296.9,199.6 L295.8,200.5 L294.1,202.4 L292.9,203.9 L292.6,204.3 L289.4,207.9 L287.3,210.4 L287.0,210.8 L286.5,211.7 L286.2,212.6 L282.6,222.5 L282.0,224.1 L281.8,224.9 L279.6,230.9 L279.0,232.3 L278.2,234.1 L277.7,235.2 L276.9,236.5 L276.6,237.1 L275.3,238.9 L274.0,240.7 L272.2,242.9 L269.3,246.3 L266.1,249.7 L264.4,251.5 L262.3,253.9 L258.1,259.2 L250.3,269.1 L249.1,270.8 L247.0,274.2 L243.3,280.0 L242.3,281.9 L238.3,290.2 L235.4,296.4 L233.9,299.3 L232.1,303.0 L231.8,303.5 L231.5,304.0 L230.7,305.1 L227.7,308.5 L212.9,325.6 L209.1,330.0 L207.5,331.8 L201.5,338.7 L195.9,345.2 L195.3,345.8 L194.2,346.9 L193.1,347.9 L191.9,348.9 L191.2,349.4 L190.0,350.2 L188.2,351.2 L187.7,351.5 L186.1,352.2 L185.3,352.6 L180.3,354.4 L176.6,355.7 L174.8,356.3 L172.9,356.9 L167.3,358.7 L165.1,359.4 L162.4,360.2 L153.6,362.7 L152.5,363.1 L151.4,363.4 L150.5,363.6 L149.3,363.9 L148.7,364.1 L122.3,368.4 L119.9,368.8 L118.1,369.2 L109.1,371.9 L96.8,375.8 L88.8,378.3 L84.0,379.8 L71.7,383.7 L68.5,383.3 L66.6,383.0 L63.2,355.2 L61.2,339.0 L60.6,335.1 L60.2,332.8 L59.7,330.2 L59.2,328.0 L58.3,323.2 L57.0,316.6 L54.7,305.4 L52.4,294.1 L49.7,280.5 L47.2,268.1 L45.2,258.3 L44.7,255.8 L44.3,253.6 L42.8,246.0 L41.1,237.7 L39.8,231.2 L37.6,220.2 L35.2,208.3 L34.8,206.2 L34.4,204.4 L34.3,203.7 L32.9,196.8 L30.2,183.4 L29.8,181.4 L29.3,179.0 L27.1,167.6 L25.0,156.6 L23.8,150.1 L21.7,131.7 L21.2,127.5 L19.0,106.8 L18.8,105.1 L18.7,103.7 L18.5,102.0 L17.7,95.1 L17.5,93.3 L17.1,89.7 L16.9,87.5 L16.3,81.6 L15.3,72.4 L14.9,67.9 L14.0,59.7 L13.7,57.7 L13.5,55.6 L13.3,53.6 L13.1,51.5 L12.8,49.5 L12.6,47.4 L11.1,33.1 L10.8,30.3 L10.6,28.4 L10.2,24.4 L10.0,22.6 L12.9,22.6 L31.9,21.9 L44.1,21.4 L48.5,21.3 L55.5,21.1 L58.4,20.9 L61.0,20.8 L72.2,20.4 L73.5,20.4 L75.3,20.3 L77.2,20.2 L90.9,19.8 L104.8,19.2 L106.6,19.1 L111.3,19.0 L116.5,18.7 L123.4,18.5 L130.9,18.2 L146.9,17.7 L150.6,17.6 L152.4,17.5 L156.6,17.3 L163.4,17.0 L175.2,16.6 L188.2,16.2 L195.5,15.9 L202.3,15.6 L209.1,15.4 L211.5,15.3 L211.9,15.2 L212.4,15.2 L213.9,15.1 L215.4,15.0 L216.2,14.9 L219.4,14.7 L221.5,14.6 L230.5,14.3 L263.5,13.1 L265.2,13.0 L266.3,13.0 L282.2,12.3 L285.1,12.2 L302.4,11.5 L313.6,11.1 L314.3,11.0 L324.0,10.7 L335.5,10.2 L341.7,10.0 L344.3,10.0 L344.7,16.6 Z" class="m-boundary"/><circle cx="208.4" cy="87.1" r="2.6" class="m-dot"><title>Renovation &amp; repair</title></circle><circle cx="145.6" cy="78.5" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="215.6" cy="36.5" r="2.6" class="m-dot"><title>Home businesses</title></circle><circle cx="196.0" cy="104.8" r="2.6" class="m-dot"><title>Minor work</title></circle><circle cx="203.3" cy="60.5" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="231.6" cy="219.4" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="204.9" cy="307.8" r="2.6" class="m-dot"><title>Minor work</title></circle><circle cx="44.5" cy="168.8" r="2.6" class="m-dot"><title>Home businesses</title></circle><circle cx="104.2" cy="310.6" r="2.6" class="m-dot"><title>Minor work</title></circle><circle cx="204.9" cy="307.8" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="105.3" cy="308.3" r="2.6" class="m-dot"><title>Minor work</title></circle><circle cx="239.0" cy="77.5" r="2.6" class="m-dot"><title>Renovation &amp; repair</title></circle><circle cx="204.0" cy="114.6" r="2.6" class="m-dot"><title>Renovation &amp; repair</title></circle><circle cx="100.4" cy="317.1" r="2.6" class="m-dot"><title>Minor work</title></circle><circle cx="239.0" cy="77.5" r="2.6" class="m-dot"><title>Renovation &amp; repair</title></circle><circle cx="204.0" cy="114.6" r="2.6" class="m-dot"><title>Renovation &amp; repair</title></circle><circle cx="102.4" cy="313.9" r="2.6" class="m-dot"><title>Minor work</title></circle><circle cx="112.4" cy="54.0" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="151.4" cy="181.1" r="2.6" class="m-dot"><title>Minor work</title></circle><circle cx="47.8" cy="26.0" r="2.6" class="m-dot"><title>Renovation &amp; repair</title></circle><circle cx="146.8" cy="56.1" r="2.6" class="m-dot"><title>Minor work</title></circle><circle cx="146.8" cy="56.1" r="2.6" class="m-dot"><title>Minor work</title></circle><circle cx="133.2" cy="79.2" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="146.7" cy="27.8" r="2.6" class="m-dot"><title>Minor work</title></circle><circle cx="204.0" cy="114.6" r="2.6" class="m-dot"><title>Renovation &amp; repair</title></circle><circle cx="116.9" cy="82.0" r="2.6" class="m-dot"><title>Renovation &amp; repair</title></circle><circle cx="231.6" cy="219.4" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="146.8" cy="56.1" r="2.6" class="m-dot"><title>Minor work</title></circle><circle cx="94.2" cy="300.1" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="145.6" cy="78.5" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="110.4" cy="333.5" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="72.3" cy="234.8" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="101.7" cy="315.0" r="2.6" class="m-dot"><title>Minor work</title></circle><circle cx="98.2" cy="320.9" r="2.6" class="m-dot"><title>Minor work</title></circle><circle cx="123.1" cy="341.9" r="2.6" class="m-dot"><title>Renovation &amp; repair</title></circle><circle cx="146.5" cy="22.2" r="2.6" class="m-dot"><title>Minor work</title></circle><circle cx="100.0" cy="369.6" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="202.0" cy="161.5" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="73.4" cy="325.3" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="267.5" cy="77.3" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="112.4" cy="54.0" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="149.4" cy="347.2" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="110.4" cy="333.5" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="192.6" cy="310.1" r="2.6" class="m-dot"><title>Renovation &amp; repair</title></circle><circle cx="44.0" cy="135.9" r="2.6" class="m-dot"><title>Minor work</title></circle><circle cx="44.0" cy="135.9" r="2.6" class="m-dot"><title>Minor work</title></circle><circle cx="159.4" cy="134.7" r="2.6" class="m-dot"><title>Home businesses</title></circle><circle cx="240.1" cy="228.5" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="270.2" cy="217.8" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="232.1" cy="235.7" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="56.8" cy="175.1" r="2.6" class="m-dot"><title>Renovation &amp; repair</title></circle><circle cx="166.3" cy="21.1" r="2.6" class="m-dot"><title>Minor work</title></circle><circle cx="145.6" cy="78.5" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="98.9" cy="319.7" r="2.6" class="m-dot"><title>Minor work</title></circle><circle cx="269.0" cy="217.5" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="166.3" cy="21.1" r="2.6" class="m-dot"><title>Minor work</title></circle><circle cx="166.3" cy="21.1" r="2.6" class="m-dot"><title>Minor work</title></circle><circle cx="99.7" cy="318.3" r="2.6" class="m-dot"><title>Minor work</title></circle><circle cx="102.9" cy="312.7" r="2.6" class="m-dot"><title>Minor work</title></circle><circle cx="134.5" cy="323.2" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="179.0" cy="320.9" r="2.6" class="m-dot"><title>Home businesses</title></circle><circle cx="269.0" cy="217.5" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="136.1" cy="123.5" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="184.8" cy="53.7" r="2.6" class="m-dot"><title>Minor work</title></circle><circle cx="193.8" cy="271.9" r="2.6" class="m-dot"><title>Renovation &amp; repair</title></circle><circle cx="320.9" cy="24.3" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="145.6" cy="78.5" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="56.8" cy="175.1" r="2.6" class="m-dot"><title>Renovation &amp; repair</title></circle><circle cx="56.8" cy="175.1" r="2.6" class="m-dot"><title>Renovation &amp; repair</title></circle><circle cx="252.3" cy="205.9" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="134.5" cy="323.2" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="104.4" cy="283.3" r="2.6" class="m-dot"><title>Renovation &amp; repair</title></circle><circle cx="128.9" cy="107.4" r="2.6" class="m-dot"><title>Home businesses</title></circle><circle cx="166.3" cy="21.1" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="171.7" cy="62.1" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="269.0" cy="217.5" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="39.2" cy="102.0" r="2.6" class="m-dot"><title>Electrical, plumbing &amp; mechanical</title></circle><circle cx="208.4" cy="87.1" r="4.6" class="m-big"><title>Additions</title></circle><circle cx="30.0" cy="42.8" r="4.6" class="m-big"><title>Additions</title></circle><circle cx="31.1" cy="28.1" r="4.6" class="m-big"><title>Additions</title></circle><circle cx="128.3" cy="73.1" r="4.6" class="m-big"><title>Additions</title></circle><circle cx="61.2" cy="75.7" r="4.6" class="m-big"><title>Additions</title></circle><circle cx="170.8" cy="195.1" r="4.6" class="m-big"><title>Demolition</title></circle><circle cx="63.2" cy="322.5" r="4.6" class="m-big"><title>Additions</title></circle></svg>
+        <figcaption><i style="background:var(--accent)"></i>Additions and demolition &nbsp; <i style="background:var(--ink);opacity:.42"></i>Other work. 84 permits with a mapped location.</figcaption>
+      </figure>
+      <p class="groups-h">All 84 permits by type</p>
+      <ul class="leaders"><li><span class="tt-name">Electrical, plumbing &amp; mechanical</span><span class="tt-dots"></span><span class="tt-n">34</span></li><li><span class="tt-name">Minor work</span><span class="tt-dots"></span><span class="tt-n">23</span></li><li><span class="tt-name">Renovation &amp; repair</span><span class="tt-dots"></span><span class="tt-n">15</span></li><li><span class="tt-name">Additions</span><span class="tt-dots"></span><span class="tt-n">6</span></li><li><span class="tt-name">Home businesses</span><span class="tt-dots"></span><span class="tt-n">5</span></li><li><span class="tt-name">Demolition</span><span class="tt-dots"></span><span class="tt-n">1</span></li></ul>
+    </div>
+  </section>
+
+  <!-- ===== Secondary stories ===== -->
+  <div class="sec-head"><h2>Homes, streets &amp; trees</h2></div>
+  <section class="cols">
+    <article class="story">
+      <p class="kicker">Homes</p>
+      <h3>Median Petworth house sold for $810K over the past year</h3>
+      <div class="big-figure"><span class="fig">145</span><span class="fig-lab">house sales<br>in 12 months</span></div>
+      <div class="facts2">
+        <div><b>21</b><span>sales in the past 60 days</span></div>
+        <div><b>$789K</b><span>median price, past 60 days</span></div>
+        <div><b>$535</b><span>median per square foot</span></div>
+      </div>
+      <p class="summary">Compare your assessment with what nearby homes sold for.</p>
+      <a class="more" href="../../demos/ideas/04-home-sales-assessment-check.html">Check your assessment</a><br>
+      <a class="more" style="margin-top:6px" href="../../demos/ideas/05-realtor-market-page.html">Housing pulse</a>
+    </article>
+    <article class="story">
+      <p class="kicker">Streets</p>
+      <h3>114 curb permits are active this week</h3>
+      <p class="summary">Together they reserve 14,212 feet of curb, about 2.7 miles. Another 16 start in the next seven days.</p>
+      <p class="groups-h">Top 311 requests, past 30 days</p>
+      <ul class="leaders"><li><span class="tt-name">Bulk Collection</span><span class="tt-dots"></span><span class="tt-n">210</span></li><li><span class="tt-name">Scheduled Yard Waste</span><span class="tt-dots"></span><span class="tt-n">131</span></li><li><span class="tt-name">DC Health Rodent &amp; Vector Control</span><span class="tt-dots"></span><span class="tt-n">118</span></li><li><span class="tt-name">Parking Enforcement</span><span class="tt-dots"></span><span class="tt-n">85</span></li><li><span class="tt-name">Illegal Dumping</span><span class="tt-dots"></span><span class="tt-n">68</span></li><li><span class="tt-name">Trash Collection - Missed</span><span class="tt-dots"></span><span class="tt-n">66</span></li></ul>
+      <a class="more" href="../../demos/ideas/12-curb-radar.html">Open curb radar</a>
+    </article>
+    <article class="story">
+      <p class="kicker">Trees</p>
+      <h3>32 empty tree boxes are waiting for a tree</h3>
+      <div class="big-figure"><span class="fig">3,990</span><span class="fig-lab">street trees<br>in Petworth</span></div>
+      <div class="facts2">
+        <div><b>196</b><span>species</span></div>
+        <div><b>530</b><span>planted in the past 5 years</span></div>
+      </div>
+      <p class="summary">Find the open boxes on your street, and what grows on the rest.</p>
+      <a class="more" href="../../demos/ideas/20-street-tree-atlas.html">See the street tree atlas</a>
+    </article>
+  </section>
+
+  <!-- ===== From the archives ===== -->
+  <div class="sec-head"><h2>From the archives</h2><a href="../../demos/ideas/14-hundred-years-ago.html">100 years ago &rarr;</a></div>
+  <section class="archive">
+    <div class="inner">
+      <p class="kicker">400 block of Delafield Place NW</p>
+      <h3>One builder, one year, 62 rowhouses</h3>
+      <p class="lede">The Cafritz Construction Co. built all 62 rowhouses in 1926 on four permits; architects H. H. Warwick (52) and D. W. Moore (10). One permit covered 21 houses for $105,000.</p>
+      <figure class="clip">
+        <p class="clip-label">This week in 1926 &middot; October 31 – November 6, 1926, Evening Star (Library of Congress)</p>
+        <blockquote>Mount Pleasant moved into a tie with Central and Immanuel Baptists for second place by taking all three from Petworth Methodists.</blockquote>
+        <figcaption><span class="ocr">OCR</span>Machine-read text, unedited; errors are possible. Source: Evening Star, Sun Oct 31, 1926, page 94 (OCR text; Library of Congress Chronicling America).</figcaption>
+      </figure>
+      <a class="more" href="../../demos/ideas/14-hundred-years-ago.html">Read this week&rsquo;s 1926 pages</a>
+    </div>
+  </section>
+
+  <!-- ===== Who represents you ===== -->
+  <div class="sec-head"><h2 id="reps-h">Who represents you</h2></div>
+  <section class="reps-grid" aria-labelledby="reps-h">
+    <div>
+      <h3 style="font-weight:700;font-size:1.65rem;line-height:1.1;letter-spacing:-.012em;margin-bottom:10px">Six commissioners, two ANCs</h3>
+      <p class="reps-intro">Petworth spans six single-member districts in ANCs 4C and 4D. Commissioners are elected officials; their names are public record. Your block page shows which district you are in.</p>
+    </div>
+    <div class="table-scroll">
+      <table class="reps">
+        <thead><tr><th scope="col">SMD</th><th scope="col">Commissioner</th><th scope="col" style="text-align:right">Commission</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">4C05</th><td>Brittany Kademian</td><td><a href="https://www.anc4c.com/">ANC 4C</a></td></tr>
+          <tr><th scope="row">4C06</th><td>Christen Boas Hayes</td><td><a href="https://www.anc4c.com/">ANC 4C</a></td></tr>
+          <tr><th scope="row">4C07</th><td>Eric Heller</td><td><a href="https://www.anc4c.com/">ANC 4C</a></td></tr>
+          <tr><th scope="row">4D04</th><td>Eliza Cava</td><td><a href="https://anc4d.org/">ANC 4D</a></td></tr>
+          <tr><th scope="row">4D05</th><td>Stephen Marencic Jr.</td><td><a href="https://anc4d.org/">ANC 4D</a></td></tr>
+          <tr><th scope="row">4D06</th><td>Stoyan Dimitrov</td><td><a href="https://anc4d.org/">ANC 4D</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ===== Subscribe ===== -->
+  <section class="subscribe" aria-labelledby="sub-h">
+    <p class="kicker">Free &middot; Every week</p>
+    <h2 id="sub-h" style="margin-top:8px">Get the weekly edition</h2>
+    <p>The numbers on this page, in your inbox once a week: permits, 311, crime counts, homes and what happened in 1926.</p>
+    <form class="sub-form" onsubmit="return false">
+      <label for="email" style="position:absolute;left:-9999px">Email address</label>
+      <input id="email" type="email" placeholder="you@example.com">
+      <button type="submit">Subscribe</button>
+    </form>
+    <p class="sub-links"><a href="../../demos/digest-petworth.html">See a sample edition</a> &middot; <a href="/rss.xml">RSS feed</a></p>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <div class="foot-grid">
+    <div>
+      <p class="foot-name">Petworth</p>
+      <p class="indep">Independent project. Not affiliated with the DC Government, any Advisory Neighborhood Commission, or any Business Improvement District.</p>
+    </div>
+    <div>
+      <p>Sources: <a href="https://opendata.dc.gov/">Open Data DC</a> (CC BY 4.0), including permits, 311 requests, crime incidents, property sales, public-space permits and street trees. Historical newspapers from the <a href="https://chroniclingamerica.loc.gov/">Library of Congress, Chronicling America</a>.</p>
+      <p>Data as of Oct. 31, 2026, 12:35 p.m. ET. Numbers are recomputed nightly and may change as agencies update their records.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Petworth Dashboard</title>
+<meta name="description" content="What's changing in Petworth, Washington DC, from DC's own open data. Independent; updated nightly.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="Petworth permits" href="/petworth/permits.xml">
+<style>
+:root{
+  --bg:#f3f2ee; --surface:#ffffff; --surface-2:#f8f7f4; --ink:#14171c; --ink-2:#3b4048; --muted:#6b7079;
+  --line:#e2e0da; --line-2:#ecebe6;
+  --accent:#0b6b70; --accent-ink:#ffffff; --accent-soft:#e3f0ef;
+  --up:#c2410c; --up-soft:#fbe9df; --down:#2f7a4a; --down-soft:#e2f1e6; --neutral:#4a5260;
+  --c-demo:#c2410c; --c-add:#0b6b70; --c-newc:#7a5a00; --c-ren:#6f8aa0; --c-mep:#9aa3ad; --c-home:#b49a5e; --c-minor:#cfd3d8;
+  --r:10px; --font:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#111315; --surface:#1a1d20; --surface-2:#202428; --ink:#eceae5; --ink-2:#c5c3be; --muted:#959aa1;
+  --line:#2c3035; --line-2:#262a2e; --accent:#4fb3b0; --accent-ink:#0d1214; --accent-soft:#18302f;
+  --up:#f08a5d; --up-soft:#3a2219; --down:#6cc08a; --down-soft:#1b2f22; --neutral:#a7afba;
+  --c-demo:#f08a5d; --c-add:#4fb3b0; --c-ren:#7f9bb2; --c-mep:#5f6873; --c-home:#a58d55; --c-minor:#3d434a;
+}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 var(--font);font-feature-settings:"tnum" 1,"cv11" 1}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.num{font-variant-numeric:tabular-nums}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+.layout-tag{font:600 10.5px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;background:var(--ink);color:var(--bg);padding:6px 16px}
+
+/* header */
+.top{background:var(--surface);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding-top:14px;padding-bottom:12px}
+.brand{display:flex;gap:10px;align-items:center;min-width:0}
+.mark{flex:none;width:34px;height:34px;border-radius:9px;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font:700 17px/1 var(--font)}
+.brand h1{margin:0;font-size:21px;line-height:1.1;letter-spacing:-.01em}
+.brand p{margin:2px 0 0;font-size:12.5px;color:var(--muted);line-height:1.3}
+.asof{flex:none;text-align:right;font:500 11px/1.35 var(--mono);color:var(--muted)}
+.asof b{display:block;color:var(--ink);font-weight:600}
+.live{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--down);margin-right:5px;vertical-align:1px;box-shadow:0 0 0 3px var(--down-soft)}
+
+/* search */
+.search{padding-top:12px;padding-bottom:4px}
+.sbox{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:0 6px 0 12px;height:46px;box-shadow:0 1px 0 rgba(0,0,0,.02)}
+.sbox svg{flex:none;color:var(--muted)}
+.sbox input{flex:1;min-width:0;border:0;background:transparent;font:inherit;font-size:15px;color:var(--ink);outline:none;height:100%}
+.sbox input::placeholder{color:var(--muted)}
+.sbox button{flex:none;border:0;background:var(--accent);color:var(--accent-ink);font:600 13px var(--font);border-radius:8px;padding:8px 12px;cursor:pointer}
+.shint{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;font-size:12.5px;color:var(--muted);align-items:center}
+.shint a{border:1px solid var(--line);border-radius:999px;padding:3px 9px;background:var(--surface);color:var(--ink-2)}
+
+/* section nav */
+.snav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);margin-top:10px}
+.snav .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;padding-top:6px;padding-bottom:6px}
+.snav .wrap::-webkit-scrollbar{display:none}
+.snav a{flex:none;font-size:13px;font-weight:500;color:var(--ink-2);padding:6px 10px;border-radius:7px}
+.snav a:first-child{background:var(--ink);color:var(--bg)}
+
+/* section frame */
+section{padding:18px 0 4px}
+.sh{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:0 0 10px}
+.sh h2{margin:0;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.sh .sub{font-size:12px;color:var(--muted)}
+.sh a{font-size:12.5px;font-weight:600;white-space:nowrap}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r)}
+.p-pad{padding:14px}
+
+/* lead */
+.lead{display:block;color:inherit;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--up);border-radius:var(--r);padding:14px 14px 12px}
+.lead:hover{text-decoration:none;border-color:var(--ink-2)}
+.lead-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.lead-kicker{font-size:12px;color:var(--muted)}
+.pill{font:700 11px/1 var(--font);padding:4px 7px;border-radius:5px;letter-spacing:.02em}
+.pill.up{background:var(--up-soft);color:var(--up)}
+.pill.down{background:var(--down-soft);color:var(--down)}
+.nw{white-space:nowrap}
+.lead-h{margin:8px 0 10px;font-size:20px;line-height:1.25;letter-spacing:-.01em}
+.lead-bars{display:grid;gap:5px}
+.lb-row{display:grid;grid-template-columns:96px 1fr 34px;gap:8px;align-items:center;font-size:12px;color:var(--muted)}
+.lb{width:100%;height:10px;display:block}
+.lb-v{text-align:right;color:var(--ink);font-weight:600;font-size:13px}
+.lead-note{margin:10px 0 0;font-size:12.5px;color:var(--muted)}
+.more{color:var(--accent);font-weight:600;white-space:nowrap}
+
+/* KPI tiles */
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+.tile{display:flex;flex-direction:column;gap:6px;color:inherit;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:11px 12px 10px;min-width:0}
+.tile:hover{text-decoration:none;border-color:var(--ink-2)}
+.t-label{font-size:11.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.t-value{display:flex;align-items:baseline;gap:5px}
+.t-value .num{font-size:28px;font-weight:700;letter-spacing:-.02em;line-height:1}
+.t-unit{font-size:12px;color:var(--muted)}
+.cmpwrap{display:grid;gap:3px}
+.cmp{width:100%;height:18px;display:block}
+.cmplbl{display:flex;justify-content:space-between;gap:6px;font-size:10.5px;color:var(--muted);white-space:nowrap}
+.cmplbl span:first-child{font-weight:600}
+.up-t{color:var(--up)} .down-t{color:var(--down)} .neutral-t{color:var(--neutral)}
+.t-foot{font-size:11.5px;color:var(--muted);line-height:1.35;margin-top:auto}
+.chg{font-weight:700}
+.chg.up,.up{color:var(--up)} .chg.down,.down{color:var(--down)}
+svg .trk{fill:var(--line-2)}
+svg .prev{fill:var(--c-minor)}
+svg .now.up{fill:var(--up)} svg .now.down{fill:var(--down)} svg .now.neutral{fill:var(--neutral)} svg .now.flat{fill:var(--neutral)}
+svg .seg.demo{fill:var(--c-demo)} svg .seg.add{fill:var(--c-add)} svg .seg.newc{fill:var(--c-newc)} svg .seg.ren{fill:var(--c-ren)}
+svg .seg.mep{fill:var(--c-mep)} svg .seg.home{fill:var(--c-home)} svg .seg.minor{fill:var(--c-minor)}
+
+/* what changed */
+.changed{margin:8px 0 0;padding:4px 12px;list-style:none;background:var(--surface-2);border:1px solid var(--line);border-radius:var(--r)}
+.changed-h{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:8px 0 2px}
+.changed li{display:flex;gap:9px;align-items:baseline;padding:7px 0;border-top:1px solid var(--line-2);font-size:13.5px}
+.changed li:first-of-type{border-top:0}
+.arrow{font-size:9px;width:10px;flex:none}
+.arrow.up{color:var(--up)} .arrow.down{color:var(--down)}
+
+/* chips */
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:500;color:var(--ink-2);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:4px 8px;white-space:nowrap}
+.chip i{width:8px;height:8px;border-radius:2px;background:var(--c-minor);flex:none}
+.chip b{font-weight:700;color:var(--ink)}
+.chip.demo i{background:var(--c-demo)} .chip.add i{background:var(--c-add)} .chip.newc i{background:var(--c-newc)} .chip.ren i{background:var(--c-ren)}
+.chip.mep i{background:var(--c-mep)} .chip.home i{background:var(--c-home)}
+.chip.sm{font-size:11px;padding:2px 7px;font-weight:600}
+.chip.sm.demo{color:var(--c-demo);border-color:color-mix(in srgb,var(--c-demo) 35%,var(--line))}
+.chip.sm.add{color:var(--c-add);border-color:color-mix(in srgb,var(--c-add) 35%,var(--line))}
+.badge-new{font:700 10px/1 var(--font);letter-spacing:.04em;text-transform:uppercase;background:var(--accent);color:var(--accent-ink);border-radius:4px;padding:4px 6px}
+
+/* projects */
+.proj{display:grid;gap:10px}
+.mapcard{padding:10px}
+.map{width:100%;height:auto;display:block;max-height:340px}
+.bnd{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1.4;stroke-linejoin:round}
+.pt{fill:var(--muted);opacity:.55}
+.pt-big{stroke:var(--surface);stroke-width:1.4}
+.pt-big.add{fill:var(--c-add)} .pt-big.demo{fill:var(--c-demo)} .pt-big.newc{fill:var(--c-newc)}
+.mapkey{display:flex;gap:12px;flex-wrap:wrap;font-size:11.5px;color:var(--muted);margin-top:6px}
+.mapkey i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px;vertical-align:0}
+.plist{list-style:none;margin:0;padding:0}
+.prow{padding:10px 14px;border-top:1px solid var(--line-2)}
+.prow:first-child{border-top:0}
+.prow-top{display:flex;align-items:center;gap:6px}
+.pdate{margin-left:auto;font:500 11.5px var(--mono);color:var(--muted)}
+.paddr{font-weight:600;font-size:15px;margin-top:5px}
+.pwork{font-size:12.5px;color:var(--muted);margin-top:2px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;overflow-wrap:anywhere}
+.pfoot{display:flex;justify-content:space-between;gap:8px;padding:10px 14px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+
+/* mini stat grid */
+.mini{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line-2)}
+.mini>div{padding:10px 12px;border-left:1px solid var(--line-2);min-width:0}
+.mini>div:first-child{border-left:0}
+.mini.m2{grid-template-columns:1fr 1fr}
+.mini.m2>div:nth-child(odd){border-left:0}
+.mini.m2>div:nth-child(n+3){border-top:1px solid var(--line-2)}
+.mini .v{font-size:19px;font-weight:700;letter-spacing:-.01em;line-height:1.1}
+.mini .k{font-size:11px;color:var(--muted);line-height:1.3;margin-top:2px}
+.hero-stat{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;padding:14px}
+.hero-stat .v{font-size:32px;font-weight:700;letter-spacing:-.02em;line-height:1}
+.hero-stat .k{font-size:12px;color:var(--muted);margin-top:4px}
+.hero-stat .cmpwrap{width:44%;min-width:130px}
+.cta{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 14px;border-top:1px solid var(--line);font-weight:600;font-size:13.5px}
+.cta span{color:var(--muted);font-weight:400;font-size:12px}
+
+/* ranked list */
+.rank{list-style:none;margin:0;padding:4px 14px 8px}
+.rk{display:grid;grid-template-columns:18px 1fr;gap:8px;padding:7px 0;border-top:1px solid var(--line-2)}
+.rk:first-child{border-top:0}
+.rk-n{font:600 11px/1.6 var(--mono);color:var(--muted)}
+.rk-line{display:grid;grid-template-columns:1fr 38px 44px;gap:6px;align-items:baseline;font-size:13.5px}
+.rk-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rk-c{text-align:right;font-weight:700}
+.rk-d{text-align:right;font-size:12px;font-weight:600}
+.rk-d.flat{color:var(--muted)}
+.rk-bar{width:100%;height:6px;display:block;margin-top:4px;overflow:visible}
+.rk-bar .fill{fill:var(--accent)}
+.rk-bar .tick{fill:var(--ink)}
+.legend{display:flex;gap:12px;font-size:11px;color:var(--muted);padding:0 14px 10px}
+.legend i{display:inline-block;vertical-align:1px;margin-right:4px}
+
+/* streets */
+.streets{display:grid;gap:10px}
+
+/* history */
+.hist{display:grid;gap:10px}
+.hcard{padding:14px}
+.hk{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.hcard p{margin:6px 0 0;font-size:14px}
+.hcard .big{font-size:26px;font-weight:700;letter-spacing:-.02em;margin:6px 0 0;line-height:1}
+.ocr{font:600 10px/1 var(--mono);border:1px solid var(--line);color:var(--ink-2);padding:3px 5px;border-radius:4px;letter-spacing:.04em}
+blockquote{margin:8px 0 0;padding:8px 12px;border-left:3px solid var(--line);background:var(--surface-2);font-family:Georgia,"Times New Roman",serif;font-size:14.5px;color:var(--ink-2)}
+.src{font-size:11.5px;color:var(--muted);margin-top:8px}
+
+/* reps */
+.reps{display:grid;grid-template-columns:1fr 1fr}
+.anc{padding:10px 14px 12px;min-width:0}
+.anc+.anc{border-left:1px solid var(--line-2)}
+.anc-h{display:flex;justify-content:space-between;align-items:baseline;gap:6px;font-size:12px;font-weight:700;margin-bottom:4px}
+.anc-h a{font-weight:500;font-size:11.5px;white-space:nowrap}
+.anc ul{list-style:none;margin:0;padding:0}
+.anc li{display:flex;gap:8px;align-items:baseline;padding:5px 0;border-top:1px solid var(--line-2);font-size:13px;min-width:0}
+.smd{font:600 11px var(--mono);color:var(--accent);flex:none}
+.cname{overflow-wrap:anywhere}
+
+/* subscribe + sponsor */
+.sub-row{display:flex;gap:8px;margin-top:10px}
+.sub-row input{flex:1;min-width:0;height:42px;border:1px solid var(--line);border-radius:8px;padding:0 12px;font:inherit;background:var(--surface-2);color:var(--ink)}
+.sub-row button{height:42px;border:0;border-radius:8px;background:var(--ink);color:var(--bg);font:600 14px var(--font);padding:0 16px;cursor:pointer}
+.subnote{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:8px}
+.sponsor{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:10px;padding:11px 14px;border:1px dashed var(--line);border-radius:var(--r);font-size:13px;color:var(--ink-2)}
+.sponsor small{font:600 10px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+
+footer{margin-top:24px;border-top:1px solid var(--line);padding:16px 0 28px;font-size:12px;color:var(--muted)}
+footer p{margin:0 0 6px}
+footer strong{color:var(--ink-2)}
+
+/* desktop */
+@media (min-width:760px){
+  body{font-size:15.5px}
+  .tiles{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .week{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:10px;align-items:stretch}
+  .week .changed{margin-top:0}
+  .proj{grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);align-items:start}
+  .two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:start}
+  .streets{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start}
+  .curbp{grid-column:1;grid-row:1} .treep{grid-column:1;grid-row:2} .rankp{grid-column:2;grid-row:1 / span 3}
+  .homes{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr)}
+  .homes .hero-stat{flex-direction:column;align-items:stretch;justify-content:center;gap:14px;border-right:1px solid var(--line-2)}
+  .homes .hero-stat .cmpwrap{width:100%}
+  .homes .m2{border-top:0}
+  .homes .cta{grid-column:1 / -1}
+  .mapcard{position:sticky;top:56px}
+  .hist{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .t-value .num{font-size:32px}
+  .snav a{font-size:13.5px}
+}
+</style>
+</head>
+<body>
+<div class="layout-tag">Layout C: Civic Dashboard</div>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <div class="mark" aria-hidden="true">P</div>
+      <div><h1>Petworth</h1><p>What's changing in Petworth, from DC's own data</p></div>
+    </div>
+    <div class="asof"><span class="live" aria-hidden="true"></span>Data as of<b><time datetime="2026-10-31T16:35:40Z">Oct 31, 12:35 PM</time></b>updated nightly</div>
+  </div>
+</header>
+
+<div class="wrap search">
+  <label class="sbox" for="q"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" placeholder="Look up your block or building" autocomplete="off"><button type="button">Go</button></label>
+  <div class="shint">Opens <a href="../../demos/ideas/07-block-report-card.html">Block report card</a><a href="../../demos/ideas/02-building-biography.html">Building biography</a><a href="../../demos/ideas/01-block-watch.html">Block Watch</a></div>
+</div>
+
+<nav class="snav" aria-label="Sections"><div class="wrap">
+  <a href="#week">This week</a><a href="#projects">Projects</a><a href="#homes">Homes</a><a href="#streets">Streets</a><a href="#history">History</a><a href="#reps">Representatives</a><a href="#subscribe">Subscribe</a>
+</div></nav>
+
+<main class="wrap">
+
+<section id="week">
+  <div class="sh"><h2>This week</h2><span class="sub">Last 30 days vs the 30 before</span></div>
+  <div class="week">
+    
+<a class="lead" href="../../demos/ideas/08-311-report-card.html">
+  <div class="lead-top"><span class="pill up">Up 34</span><span class="lead-kicker">Biggest change in 311 · last 30 days</span></div>
+  <h3 class="lead-h">Rodent complaints: <span class="num">118</span>, <span class="nw">up from <span class="num">84</span></span></h3>
+  <div class="lead-bars">
+    <div class="lb-row"><span class="lb-k">Last 30 days</span><svg class="lb" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><rect class="trk" width="100" height="10" rx="2"/><rect class="now up" width="100.0" height="10" rx="2"/></svg><span class="lb-v num">118</span></div>
+    <div class="lb-row"><span class="lb-k">30 days before</span><svg class="lb" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><rect class="trk" width="100" height="10" rx="2"/><rect class="prev" width="71.2" height="10" rx="2"/></svg><span class="lb-v num">84</span></div>
+  </div>
+  <p class="lead-note">DC Health Rodent &amp; Vector Control requests filed through 311. <span class="more">311 report card →</span></p>
+</a>
+    <div class="changed"><div class="changed-h">What changed</div><ul style="list-style:none;margin:0;padding:0"><li><span class="arrow down" aria-hidden="true">▼</span><span>311 requests down 168 (13%), to 1,168</span></li><li><span class="arrow down" aria-hidden="true">▼</span><span>Scheduled yard waste requests down 35 (21%), to 131</span></li><li><span class="arrow down" aria-hidden="true">▼</span><span>Illegal dumping requests down 27, to 68</span></li></ul></div>
+  </div>
+  <div class="tiles">
+<a class="tile " href="#projects">
+  <div class="t-label">Building permits</div>
+  <div class="t-value"><span class="num">84</span><span class="t-unit">issued</span></div>
+  <div class="cmpwrap"><svg class="cmp" viewBox="0 0 100 18" preserveAspectRatio="none" aria-hidden="true"><rect class="seg demo" x="0.00" y="1" width="0.59" height="16"><title>Demolition: 1</title></rect><rect class="seg add" x="1.19" y="1" width="6.54" height="16"><title>Additions: 6</title></rect><rect class="seg ren" x="8.33" y="1" width="17.26" height="16"><title>Renovation &amp; repair: 15</title></rect><rect class="seg mep" x="26.19" y="1" width="39.88" height="16"><title>Electrical, plumbing &amp; mechanical: 34</title></rect><rect class="seg home" x="66.67" y="1" width="5.35" height="16"><title>Home businesses: 5</title></rect><rect class="seg minor" x="72.62" y="1" width="26.78" height="16"><title>Minor work: 23</title></rect></svg><div class="cmplbl"><span>7 demolition / addition</span><span>77 other</span></div></div>
+  <div class="t-foot">Last 30 days · split by type</div>
+</a>
+<a class="tile " href="../../demos/ideas/08-311-report-card.html">
+  <div class="t-label">311 requests</div>
+  <div class="t-value"><span class="num">1,168</span></div>
+  <div class="cmpwrap"><svg class="cmp" viewBox="0 0 100 18" preserveAspectRatio="none" aria-hidden="true"><rect class="trk" x="0" y="1" width="100" height="7" rx="1.5"/><rect class="now down" x="0" y="1" width="87.4" height="7" rx="1.5"/><rect class="trk" x="0" y="10" width="100" height="7" rx="1.5"/><rect class="prev" x="0" y="10" width="100.0" height="7" rx="1.5"/></svg>
+    <div class="cmplbl"><span class="down-t">Last 30d 1,168</span><span>Prior 1,336</span></div></div>
+  <div class="t-foot"><span class="chg down">−168 (−13%)</span> vs prior 30d</div>
+</a>
+<a class="tile " href="../../demos/ideas/07-block-report-card.html">
+  <div class="t-label">Crime reports</div>
+  <div class="t-value"><span class="num">49</span></div>
+  <div class="cmpwrap"><svg class="cmp" viewBox="0 0 100 18" preserveAspectRatio="none" aria-hidden="true"><rect class="trk" x="0" y="1" width="100" height="7" rx="1.5"/><rect class="now up" x="0" y="1" width="100.0" height="7" rx="1.5"/><rect class="trk" x="0" y="10" width="100" height="7" rx="1.5"/><rect class="prev" x="0" y="10" width="81.6" height="7" rx="1.5"/></svg>
+    <div class="cmplbl"><span class="up-t">Last 30d 49</span><span>Prior 40</span></div></div>
+  <div class="t-foot"><span class="chg up">+9</span> vs prior 30d · counts only</div>
+</a>
+<a class="tile " href="#homes">
+  <div class="t-label">Median house price</div>
+  <div class="t-value"><span class="num">$810K</span></div>
+  <div class="cmpwrap"><svg class="cmp" viewBox="0 0 100 18" preserveAspectRatio="none" aria-hidden="true"><rect class="trk" x="0" y="1" width="100" height="7" rx="1.5"/><rect class="now neutral" x="0" y="1" width="97.4" height="7" rx="1.5"/><rect class="trk" x="0" y="10" width="100" height="7" rx="1.5"/><rect class="prev" x="0" y="10" width="100.0" height="7" rx="1.5"/></svg>
+    <div class="cmplbl"><span class="neutral-t">Last 60d $789K</span><span>12 mo $810K</span></div></div>
+  <div class="t-foot">145 house sales in 12 months</div>
+</a></div>
+</section>
+
+<section id="projects">
+  <div class="sh"><h2>Bigger projects</h2><a href="../../demos/ideas/01-block-watch.html">Block Watch →</a></div>
+  <div class="chips" style="margin-bottom:10px"><span class="chip demo"><i></i>Demolition <b class="num">1</b></span><span class="chip add"><i></i>Additions <b class="num">6</b></span><span class="chip ren"><i></i>Renovation &amp; repair <b class="num">15</b></span><span class="chip mep"><i></i>Electrical / plumbing / mech. <b class="num">34</b></span><span class="chip home"><i></i>Home businesses <b class="num">5</b></span><span class="chip minor"><i></i>Minor work <b class="num">23</b></span></div>
+  <div class="proj">
+    <div class="panel mapcard">
+      <svg class="map" viewBox="0 0 320 350" role="img" aria-label="Map of Petworth with permit locations; larger dots are demolition and addition permits"><path d="M305.3,15.8L305.7,24.2L306.4,34.3L306.6,38.1L306.8,41.5L306.8,41.9L307.2,49.3L307.5,54.1L308.0,64.4L308.5,72.0L309.1,81.1L309.5,88.2L309.9,94.6L310.0,97.2L309.5,108.2L309.7,113.2L309.8,118.5L309.8,120.3L309.7,122.9L309.8,128.0L309.6,132.1L308.8,134.9L308.0,137.7L307.0,140.8L306.4,141.8L305.8,142.7L305.2,143.6L301.8,148.3L299.2,150.7L298.1,151.6L297.1,152.5L296.0,153.3L289.1,158.8L282.5,164.1L276.8,168.5L276.1,169.1L275.3,169.7L274.2,170.4L272.8,171.4L272.0,171.9L270.2,172.9L269.4,173.4L268.5,173.8L265.5,175.5L264.8,176.0L264.4,176.3L263.8,176.7L263.1,177.3L262.2,178.1L260.7,179.7L259.6,181.1L259.3,181.4L256.6,184.7L254.7,186.8L254.4,187.2L254.0,187.9L253.7,188.8L250.5,197.5L250.0,198.9L249.8,199.6L247.9,204.9L247.4,206.1L246.7,207.7L246.2,208.7L245.5,209.8L245.2,210.4L244.1,212.0L243.0,213.5L241.4,215.5L238.8,218.5L236.0,221.5L234.5,223.1L232.6,225.2L228.9,229.9L222.0,238.7L221.0,240.1L219.1,243.1L215.9,248.2L215.0,249.9L211.4,257.2L208.8,262.7L207.6,265.3L206.0,268.5L205.7,269.0L205.4,269.4L204.7,270.4L202.1,273.3L189.1,288.4L185.6,292.3L184.2,293.9L178.9,300.1L174.0,305.8L173.5,306.3L172.5,307.2L171.5,308.2L170.5,309.0L169.9,309.4L168.8,310.2L167.3,311.1L166.8,311.3L165.4,312.0L164.7,312.3L160.3,313.9L157.0,315.0L155.4,315.5L153.7,316.1L148.8,317.7L146.9,318.3L144.4,319.0L136.7,321.2L135.7,321.5L134.8,321.8L134.0,322.0L132.9,322.3L132.4,322.4L109.1,326.2L107.0,326.6L105.4,326.9L97.4,329.3L86.5,332.8L79.5,335.0L75.3,336.3L64.4,339.8L61.7,339.4L59.9,339.1L56.9,314.6L55.2,300.3L54.7,296.9L54.3,294.8L53.9,292.5L53.4,290.5L52.6,286.3L51.4,280.5L49.5,270.7L47.4,260.7L45.0,248.7L42.8,237.7L41.1,229.1L40.7,226.9L40.3,224.9L38.9,218.2L37.5,210.9L36.3,205.2L34.3,195.4L32.2,184.9L31.9,183.2L31.5,181.5L31.4,180.9L30.2,174.8L27.8,163.0L27.5,161.2L27.1,159.1L25.1,149.0L23.3,139.3L22.2,133.7L20.3,117.4L19.9,113.7L17.9,95.5L17.8,93.9L17.7,92.7L17.5,91.2L16.8,85.1L16.6,83.5L16.3,80.3L16.1,78.4L15.6,73.2L14.7,65.0L14.3,61.1L13.5,53.8L13.3,52.1L13.1,50.2L12.9,48.5L12.7,46.6L12.5,44.9L12.3,43.0L11.0,30.4L10.7,27.9L10.5,26.2L10.2,22.7L10.0,21.1L12.6,21.1L29.3,20.5L40.1,20.1L44.0,19.9L50.2,19.8L52.7,19.6L55.0,19.5L64.9,19.2L66.0,19.1L67.6,19.1L69.3,19.0L81.4,18.6L93.7,18.1L95.3,18.0L99.4,17.9L103.9,17.7L110.1,17.5L116.7,17.3L130.8,16.8L134.1,16.7L135.7,16.6L139.3,16.5L145.3,16.2L155.8,15.8L167.2,15.4L173.7,15.2L179.7,14.9L185.6,14.8L187.8,14.7L188.2,14.6L188.6,14.6L189.9,14.5L191.2,14.4L191.9,14.4L194.7,14.2L196.7,14.1L204.5,13.8L233.7,12.7L235.2,12.6L236.2,12.6L250.2,12.0L252.7,11.9L268.0,11.3L277.9,11.0L278.5,10.9L287.0,10.6L297.2,10.2L302.7,10.0L305.0,10.0L305.3,15.8Z" class="bnd"/><circle cx="185.0" cy="78.0" r="2.4" class="pt"/><circle cx="129.6" cy="70.4" r="2.4" class="pt"/><circle cx="191.4" cy="33.4" r="2.4" class="pt"/><circle cx="174.1" cy="93.7" r="2.4" class="pt"/><circle cx="180.5" cy="54.6" r="2.4" class="pt"/><circle cx="205.5" cy="194.8" r="2.4" class="pt"/><circle cx="182.0" cy="272.8" r="2.4" class="pt"/><circle cx="40.4" cy="150.1" r="2.4" class="pt"/><circle cx="93.1" cy="275.2" r="2.4" class="pt"/><circle cx="94.1" cy="273.2" r="2.4" class="pt"/><circle cx="212.1" cy="69.6" r="2.4" class="pt"/><circle cx="181.2" cy="102.3" r="2.4" class="pt"/><circle cx="89.8" cy="281.0" r="2.4" class="pt"/><circle cx="91.5" cy="278.1" r="2.4" class="pt"/><circle cx="100.3" cy="48.8" r="2.4" class="pt"/><circle cx="134.7" cy="161.0" r="2.4" class="pt"/><circle cx="43.3" cy="24.1" r="2.4" class="pt"/><circle cx="130.7" cy="50.7" r="2.4" class="pt"/><circle cx="118.7" cy="71.0" r="2.4" class="pt"/><circle cx="130.6" cy="25.7" r="2.4" class="pt"/><circle cx="104.3" cy="73.5" r="2.4" class="pt"/><circle cx="84.3" cy="266.0" r="2.4" class="pt"/><circle cx="98.6" cy="295.4" r="2.4" class="pt"/><circle cx="64.9" cy="208.3" r="2.4" class="pt"/><circle cx="90.9" cy="279.2" r="2.4" class="pt"/><circle cx="87.8" cy="284.3" r="2.4" class="pt"/><circle cx="109.8" cy="302.8" r="2.4" class="pt"/><circle cx="130.4" cy="20.8" r="2.4" class="pt"/><circle cx="89.4" cy="327.3" r="2.4" class="pt"/><circle cx="179.4" cy="143.7" r="2.4" class="pt"/><circle cx="65.9" cy="288.2" r="2.4" class="pt"/><circle cx="237.2" cy="69.4" r="2.4" class="pt"/><circle cx="133.0" cy="307.6" r="2.4" class="pt"/><circle cx="171.1" cy="274.8" r="2.4" class="pt"/><circle cx="40.0" cy="121.1" r="2.4" class="pt"/><circle cx="141.8" cy="120.0" r="2.4" class="pt"/><circle cx="213.0" cy="202.8" r="2.4" class="pt"/><circle cx="239.6" cy="193.3" r="2.4" class="pt"/><circle cx="206.0" cy="209.2" r="2.4" class="pt"/><circle cx="51.3" cy="155.6" r="2.4" class="pt"/><circle cx="147.9" cy="19.8" r="2.4" class="pt"/><circle cx="88.5" cy="283.3" r="2.4" class="pt"/><circle cx="238.5" cy="193.1" r="2.4" class="pt"/><circle cx="89.1" cy="282.0" r="2.4" class="pt"/><circle cx="92.0" cy="277.1" r="2.4" class="pt"/><circle cx="119.9" cy="286.4" r="2.4" class="pt"/><circle cx="159.1" cy="284.3" r="2.4" class="pt"/><circle cx="121.3" cy="110.1" r="2.4" class="pt"/><circle cx="164.2" cy="48.6" r="2.4" class="pt"/><circle cx="172.2" cy="241.1" r="2.4" class="pt"/><circle cx="284.3" cy="22.7" r="2.4" class="pt"/><circle cx="223.8" cy="182.8" r="2.4" class="pt"/><circle cx="93.3" cy="251.2" r="2.4" class="pt"/><circle cx="114.9" cy="95.9" r="2.4" class="pt"/><circle cx="152.7" cy="56.0" r="2.4" class="pt"/><circle cx="35.8" cy="91.2" r="2.4" class="pt"/><circle cx="185.0" cy="78.0" r="4.6" class="pt-big add"><title>Additions</title></circle><circle cx="27.6" cy="38.9" r="4.6" class="pt-big add"><title>Additions</title></circle><circle cx="28.6" cy="26.0" r="4.6" class="pt-big add"><title>Additions</title></circle><circle cx="114.4" cy="65.7" r="4.6" class="pt-big add"><title>Additions</title></circle><circle cx="55.2" cy="67.9" r="4.6" class="pt-big add"><title>Additions</title></circle><circle cx="151.9" cy="173.3" r="4.6" class="pt-big demo"><title>Demolition</title></circle><circle cx="56.9" cy="285.7" r="4.6" class="pt-big add"><title>Additions</title></circle></svg>
+      <div class="mapkey"><span><i style="background:var(--c-add)"></i>Addition</span><span><i style="background:var(--c-demo)"></i>Demolition</span><span><i style="background:var(--muted);opacity:.55"></i>Other permit</span></div>
+    </div>
+    <div class="panel">
+      <ul class="plist">
+<li class="prow">
+  <div class="prow-top">
+    <span class="chip sm add"><i></i>Addition</span>
+    <span class="badge-new">New this week</span>
+    <time class="pdate num" datetime="2026-10-27">Oct 27</time>
+  </div>
+  <div class="paddr">314 Delafield Pl NW</div>
+  <div class="pwork">Alteration of the existing two-story residential building to reconfigure the interior layout and increase the total number of dwelling units from four (4) to si…</div>
+</li>
+<li class="prow">
+  <div class="prow-top">
+    <span class="chip sm add"><i></i>Addition</span>
+    <span class="badge-new">New this week</span>
+    <time class="pdate num" datetime="2026-10-27">Oct 27</time>
+  </div>
+  <div class="paddr">919 Farragut St NW</div>
+  <div class="pwork">Two Story Rear addition with cellar. Change of use from Single Family to Single Family with ADUNew rear Deck with Stairs to grade.Rear parking pad. Roll garage…</div>
+</li>
+<li class="prow">
+  <div class="prow-top">
+    <span class="chip sm add"><i></i>Addition</span>
+    
+    <time class="pdate num" datetime="2026-10-23">Oct 23</time>
+  </div>
+  <div class="paddr">912 Gallatin St NW</div>
+  <div class="pwork">Renovation of 3 story building + basement 14-unit apartment building. RENOVATION OF EXISTING 3 STORY PLUS BASEMENT 14 UNIT APARTMENT BUILDING TO EXPAND THE CEL…</div>
+</li>
+<li class="prow">
+  <div class="prow-top">
+    <span class="chip sm add"><i></i>Addition</span>
+    
+    <time class="pdate num" datetime="2026-10-21">Oct 21</time>
+  </div>
+  <div class="paddr">602 Emerson St NW</div>
+  <div class="pwork">The project involves replacement of existing plaster walls and ceilings with drywall to address potential lead-based paint concerns. The work is limited to inte…</div>
+</li>
+<li class="prow">
+  <div class="prow-top">
+    <span class="chip sm add"><i></i>Addition</span>
+    
+    <time class="pdate num" datetime="2026-10-20">Oct 20</time>
+  </div>
+  <div class="paddr">820 Emerson St NW</div>
+  <div class="pwork">Revision On Permit B2506312 relocate kitchen enclose the space under existing wood frame addition replace existing pier footing with continuos foundation interi…</div>
+</li>
+<li class="prow">
+  <div class="prow-top">
+    <span class="chip sm demo"><i></i>Demolition</span>
+    
+    <time class="pdate num" datetime="2026-10-13">Oct 13</time>
+  </div>
+  <div class="paddr">4404 New Hampshire Ave NW</div>
+  <div class="pwork">Partial demolition of fire-damaged 2-story single family row dwelling with basement. Remove front porch roof, roof trusses, decking, wood floor framing, interio…</div>
+</li>
+<li class="prow">
+  <div class="prow-top">
+    <span class="chip sm add"><i></i>Addition</span>
+    
+    <time class="pdate num" datetime="2026-10-09">Oct 9</time>
+  </div>
+  <div class="paddr">3907 Georgia Ave NW</div>
+  <div class="pwork">Revision to B2401648: Provide elevator overrun space above roof deck. Unit count reduced from 15 to 14.</div>
+</li></ul>
+      <div class="pfoot"><span><b class="num" style="color:var(--ink)">7</b> projects · 2 new this week · no new construction</span><a href="/petworth/permits.xml">RSS</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="homes">
+  <div class="sh"><h2>Homes</h2><a href="../../demos/ideas/05-realtor-market-page.html">Housing pulse →</a></div>
+  <div class="panel homes">
+    <div class="hero-stat">
+      <div><div class="v num">$810K</div><div class="k">Median house price, last 12 months</div></div>
+      <div class="cmpwrap"><svg class="cmp" viewBox="0 0 100 18" preserveAspectRatio="none" aria-hidden="true"><rect class="trk" x="0" y="1" width="100" height="7" rx="1.5"/><rect class="now neutral" x="0" y="1" width="97.4" height="7" rx="1.5"/><rect class="trk" x="0" y="10" width="100" height="7" rx="1.5"/><rect class="prev" x="0" y="10" width="100.0" height="7" rx="1.5"/></svg>
+    <div class="cmplbl"><span class="neutral-t">60 days $789K</span><span>12 mo $810K</span></div></div>
+    </div>
+    <div class="mini m2">
+      <div><div class="v num">145</div><div class="k">house sales, 12 months</div></div>
+      <div><div class="v num">21</div><div class="k">sales, last 60 days</div></div>
+      <div><div class="v num">$535</div><div class="k">median per sq ft, 60 days</div></div>
+      <div><div class="v num">~$499K</div><div class="k">median condo, 12 mo (approx.)</div></div>
+    </div>
+    <a class="cta" href="../../demos/ideas/04-home-sales-assessment-check.html">Is your assessment in line with sales? <span>Assessment check →</span></a>
+  </div>
+</section>
+
+<section id="streets">
+  <div class="sh"><h2>Streets</h2><a href="../../demos/ideas/12-curb-radar.html">Curb radar →</a></div>
+  <div class="streets">
+    <div class="panel curbp">
+      <div class="mini" style="border-top:0">
+        <div><div class="v num">114</div><div class="k">curb permits active this week</div></div>
+        <div><div class="v num">16</div><div class="k">starting in the next 7 days</div></div>
+        <div><div class="v num">2.7 mi</div><div class="k">14,212 ft of curb reserved</div></div>
+      </div>
+    </div>
+    <div class="panel rankp">
+      <div class="sh" style="padding:12px 14px 0;margin:0"><h2 style="font-size:11.5px">Top 311 requests · 30 days</h2><a href="../../demos/ideas/08-311-report-card.html">All types →</a></div>
+      <ol class="rank">
+<li class="rk">
+  <span class="rk-n num">1</span>
+  <div class="rk-body">
+    <div class="rk-line"><span class="rk-name">Bulk Collection</span><span class="rk-c num">210</span><span class="rk-d num down">−15</span></div>
+    <svg class="rk-bar" viewBox="0 0 100 6" preserveAspectRatio="none" aria-hidden="true"><rect class="trk" width="100" height="6" rx="1"/><rect class="fill" width="93.3" height="6" rx="1"/><rect class="tick" x="99.6" y="-1" width="0.8" height="8"/></svg>
+  </div>
+</li>
+<li class="rk">
+  <span class="rk-n num">2</span>
+  <div class="rk-body">
+    <div class="rk-line"><span class="rk-name">Scheduled Yard Waste</span><span class="rk-c num">131</span><span class="rk-d num down">−35</span></div>
+    <svg class="rk-bar" viewBox="0 0 100 6" preserveAspectRatio="none" aria-hidden="true"><rect class="trk" width="100" height="6" rx="1"/><rect class="fill" width="58.2" height="6" rx="1"/><rect class="tick" x="73.4" y="-1" width="0.8" height="8"/></svg>
+  </div>
+</li>
+<li class="rk">
+  <span class="rk-n num">3</span>
+  <div class="rk-body">
+    <div class="rk-line"><span class="rk-name">Rodent &amp; vector control</span><span class="rk-c num">118</span><span class="rk-d num up">+34</span></div>
+    <svg class="rk-bar" viewBox="0 0 100 6" preserveAspectRatio="none" aria-hidden="true"><rect class="trk" width="100" height="6" rx="1"/><rect class="fill" width="52.4" height="6" rx="1"/><rect class="tick" x="36.9" y="-1" width="0.8" height="8"/></svg>
+  </div>
+</li>
+<li class="rk">
+  <span class="rk-n num">4</span>
+  <div class="rk-body">
+    <div class="rk-line"><span class="rk-name">Parking Enforcement</span><span class="rk-c num">85</span><span class="rk-d num down">−12</span></div>
+    <svg class="rk-bar" viewBox="0 0 100 6" preserveAspectRatio="none" aria-hidden="true"><rect class="trk" width="100" height="6" rx="1"/><rect class="fill" width="37.8" height="6" rx="1"/><rect class="tick" x="42.7" y="-1" width="0.8" height="8"/></svg>
+  </div>
+</li>
+<li class="rk">
+  <span class="rk-n num">5</span>
+  <div class="rk-body">
+    <div class="rk-line"><span class="rk-name">Illegal Dumping</span><span class="rk-c num">68</span><span class="rk-d num down">−27</span></div>
+    <svg class="rk-bar" viewBox="0 0 100 6" preserveAspectRatio="none" aria-hidden="true"><rect class="trk" width="100" height="6" rx="1"/><rect class="fill" width="30.2" height="6" rx="1"/><rect class="tick" x="41.8" y="-1" width="0.8" height="8"/></svg>
+  </div>
+</li>
+<li class="rk">
+  <span class="rk-n num">6</span>
+  <div class="rk-body">
+    <div class="rk-line"><span class="rk-name">Trash Collection - Missed</span><span class="rk-c num">66</span><span class="rk-d num down">−1</span></div>
+    <svg class="rk-bar" viewBox="0 0 100 6" preserveAspectRatio="none" aria-hidden="true"><rect class="trk" width="100" height="6" rx="1"/><rect class="fill" width="29.3" height="6" rx="1"/><rect class="tick" x="29.4" y="-1" width="0.8" height="8"/></svg>
+  </div>
+</li></ol>
+      <div class="legend"><span><i style="width:10px;height:6px;background:var(--accent)"></i>Last 30 days</span><span><i style="width:2px;height:9px;background:var(--ink)"></i>Prior 30 days</span></div>
+    </div>
+    <div class="panel treep">
+      <div class="mini" style="border-top:0">
+        <div><div class="v num">3,990</div><div class="k">street trees, 196 species</div></div>
+        <div><div class="v num">530</div><div class="k">planted in the last 5 years</div></div>
+        <div><div class="v num" style="color:var(--accent)">32</div><div class="k">empty tree boxes open</div></div>
+      </div>
+      <a class="cta" href="../../demos/ideas/20-street-tree-atlas.html">Find an empty tree box near you <span>Street trees →</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="history">
+  <div class="sh"><h2>History</h2><a href="../../demos/ideas/14-hundred-years-ago.html">100 years ago →</a></div>
+  <div class="hist">
+    <a class="panel hcard" href="../../demos/ideas/02-building-biography.html" style="color:inherit;text-decoration:none">
+      <div class="hk">400 block of Delafield Place NW</div>
+      <div class="big num">62 rowhouses · 1926</div>
+      <p>The Cafritz Construction Co. built all 62 rowhouses in 1926 on four permits; architects H. H. Warwick (52) and D. W. Moore (10). One permit covered 21 houses for $105,000.</p>
+      <div class="src"><span style="color:var(--accent);font-weight:600">Building biography →</span></div>
+    </a>
+    <div class="panel hcard">
+      <div class="hk">100 years ago this week <span class="ocr">OCR TEXT</span></div>
+      <blockquote>“Mount Pleasant moved into a tie with Central and Immanuel Baptists for second place by taking all three from Petworth Methodists.”</blockquote>
+      <div class="src">Evening Star, Sun Oct 31, 1926, page 94 (OCR text; Library of Congress Chronicling America). Machine-read text; may contain errors.</div>
+    </div>
+  </div>
+</section>
+
+<div class="two">
+<section id="reps">
+  <div class="sh"><h2>Who represents you</h2><span class="sub">6 SMDs · ANC 4C & 4D</span></div>
+  <div class="panel reps"><div class="anc"><div class="anc-h"><span>ANC 4C</span><a href="https://www.anc4c.com/">ANC 4C site ↗</a></div><ul><li><span class="smd num">4C05</span><span class="cname">Brittany Kademian</span></li><li><span class="smd num">4C06</span><span class="cname">Christen Boas Hayes</span></li><li><span class="smd num">4C07</span><span class="cname">Eric Heller</span></li></ul></div><div class="anc"><div class="anc-h"><span>ANC 4D</span><a href="https://anc4d.org/">ANC 4D site ↗</a></div><ul><li><span class="smd num">4D04</span><span class="cname">Eliza Cava</span></li><li><span class="smd num">4D05</span><span class="cname">Stephen Marencic Jr.</span></li><li><span class="smd num">4D06</span><span class="cname">Stoyan Dimitrov</span></li></ul></div></div>
+  <p class="sub" style="font-size:12px;color:var(--muted);margin:8px 0 0">Each Single Member District elects one commissioner. Names of elected officials are public record.</p>
+</section>
+
+<section id="subscribe">
+  <div class="sh"><h2>Get the weekly email</h2><a href="../../demos/digest-petworth.html">See a sample →</a></div>
+  <div class="panel p-pad">
+    <div style="font-size:14px">These numbers in your inbox once a week.</div>
+    <form class="sub-row" onsubmit="return false"><input type="email" placeholder="you@example.com" aria-label="Email address"><button type="button">Subscribe</button></form>
+    <div class="subnote"><span>One email a week. Mock signup.</span><a href="/petworth/permits.xml">Permits RSS feed</a></div>
+  </div>
+  <div class="sponsor"><span>Presented by <b>[Local sponsor]</b></span><small>Sponsor</small></div>
+</section>
+</div>
+
+</main>
+
+<footer><div class="wrap">
+  <p><strong>Independent project. Not affiliated with the DC Government, any Advisory Neighborhood Commission, or any Business Improvement District.</strong></p>
+  <p>Sources: Open Data DC (CC BY 4.0); Library of Congress, Chronicling America. Crime figures are preliminary counts. Data as of Oct 31, 2026 · 12:35 PM ET.</p>
+  <p>petworth.org</p>
+</div></footer>
+</body>
+</html>

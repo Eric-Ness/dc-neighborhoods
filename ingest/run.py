@@ -12,6 +12,7 @@ Privacy rules are enforced here, at ingest, so nothing personal reaches the repo
 
 from __future__ import annotations
 
+import importlib
 import json
 import re
 import sys
@@ -44,7 +45,10 @@ SR_FIELDS = [
     "ADDDATE", "RESOLUTIONDATE", "SERVICEORDERSTATUS", "STREETADDRESS", "LATITUDE", "LONGITUDE",
 ]
 # Fields that must never appear in output. tools/verify.mjs checks the written JSON against this list too.
-FORBIDDEN_KEYS = {"OWNER_NAME", "PERMIT_APPLICANT", "INSPECTORNAME", "DETAILS", "CCN"}
+FORBIDDEN_KEYS = {"OWNER_NAME", "OWNERNAME", "OWNNAME", "OWNER", "PERMIT_APPLICANT", "APPLICANT", "INSPECTORNAME", "DETAILS", "CCN"}
+
+# Extra sections, one module each (see ingest/MODULES.md). Order is the order they run.
+MODULES = ("homes", "streets", "history")
 
 
 def years_in(start: float, end: float) -> list[int]:
@@ -253,6 +257,15 @@ def build(hood: dict, boundary_layer: str, boundary_source: str, now: float) -> 
     sr = fetch_311(geom, now)
     crime = fetch_crime_counts(geom, now)
     smds = fetch_smds(geom)
+    extra, module_errors = {}, {}
+    for name in MODULES:
+        # A broken feed must not take down the core page; it is recorded and fails --check instead.
+        try:
+            mod = importlib.import_module(name)
+            extra[name] = mod.build(geom, hood, now)
+        except Exception as exc:  # noqa: BLE001 - any feed failure is reported, never fatal here
+            module_errors[name] = f"{type(exc).__name__}: {exc}"
+            print(f"  {hood['slug']}: module {name} failed: {module_errors[name]}", file=sys.stderr)
     return {
         "slug": hood["slug"],
         "name": hood["name"],
@@ -270,6 +283,8 @@ def build(hood: dict, boundary_layer: str, boundary_source: str, now: float) -> 
             "smds": "Open Data DC: Single Member Districts 2023",
             "license": "CC BY 4.0",
         },
+        **extra,
+        "module_errors": module_errors,
     }
 
 
@@ -298,6 +313,11 @@ def check(outputs: dict[str, dict]) -> list[str]:
         if len(data["boundary"]["rings"]) == 0:
             errors.append(f"{slug}: empty boundary")
         errors += [f"{slug}: forbidden field {h}" for h in find_forbidden(data)]
+        for name in MODULES:
+            if name not in data:
+                errors.append(f"{slug}: {name} missing ({data['module_errors'].get(name, 'not built')})")
+            else:
+                errors += [f"{slug}: {name}: {e}" for e in importlib.import_module(name).check(data[name])]
         reread = json.loads((OUT_DIR / f"{slug}.json").read_text(encoding="utf-8"))
         if reread["generated_at"] != data["generated_at"]:
             errors.append(f"{slug}: written file does not match this run")

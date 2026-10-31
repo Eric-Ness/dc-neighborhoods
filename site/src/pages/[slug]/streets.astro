@@ -1,0 +1,288 @@
+---
+import Hood from "../../layouts/Hood.astro";
+import { staticPaths, pageUrl, type Neighborhood } from "../../lib/data";
+import { reading, pair, bar, icon, stateTag, fmt, shortType, shortDate, titleCase } from "../../lib/c5";
+
+export const getStaticPaths = staticPaths;
+const { n } = Astro.props as { n: Neighborhood };
+const u = (p: string) => pageUrl(n.slug, p);
+const st = n.streets;
+const req = n.requests;
+const days = n.windows.requests_days;
+const reqR = reading(req.total, req.previous_total);
+
+// Date-only strings ("2026-11-02") are calendar days; pin them to noon UTC so they never shift a day.
+const day = (d: string, year = false) =>
+  new Date(d + "T12:00:00Z").toLocaleDateString("en-US", year ? { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" } : { month: "short", day: "numeric", timeZone: "UTC" });
+
+// ---- curb ----
+const curbTypes = [...(st?.curb.by_type ?? [])].sort((a, b) => b.count - a.count);
+const maxCurb = Math.max(...curbTypes.map((t) => t.count), 1);
+const upcoming = [...(st?.curb.upcoming ?? [])].sort((a, b) => a.start.localeCompare(b.start));
+
+// ---- 311: every type, ranked ----
+const types = [...req.by_type].sort((a, b) => b.count - a.count || b.previous - a.previous);
+const max311 = Math.max(...types.map((t) => Math.max(t.count, t.previous)), 1);
+const rising = types.filter((t) => reading(t.count, t.previous).state === "rising").length;
+const easing = types.filter((t) => reading(t.count, t.previous).state === "easing").length;
+
+// ---- service: typical days to close, here vs citywide ----
+const dur = (d: number) => (d < 1 ? `${Math.max(1, Math.round(d * 24))} hr` : `${d.toFixed(1)} days`);
+const service = (st?.service ?? []).map((s) => {
+  const diff = s.median_days - s.city_median_days;
+  const same = Math.abs(diff) < 0.1 || Math.abs(diff) <= 0.05 * s.city_median_days;
+  const verdict = same ? "About the same as citywide" : diff < 0 ? `${dur(-diff)} faster than citywide` : `${dur(diff)} slower than citywide`;
+  return { ...s, diff, same, verdict, cls: same ? "same" : diff < 0 ? "fast" : "slow" };
+});
+const faster = service.filter((s) => s.cls === "fast").length;
+const slower = service.filter((s) => s.cls === "slow").length;
+const serviceNote = typeof (st as Record<string, unknown> | undefined)?.service_note === "string" ? ((st as Record<string, unknown>).service_note as string) : null;
+
+// ---- recent 311: hundred block only ----
+const HUNDRED = /^\d+\s+block\s+of\s+/i;
+const recent = req.recent.map((r) => ({ ...r, place: r.block && HUNDRED.test(r.block) ? titleCase(r.block).replace(/ Block Of /, " block of ") : null }));
+const withheld = recent.filter((r) => !r.place).length;
+
+// ---- trees ----
+const t = st?.trees;
+const COND_ORDER = ["Excellent", "Good", "Fair", "Poor", "Dead", "Not rated"];
+const cond = t ? Object.entries(t.condition).sort((a, b) => (COND_ORDER.indexOf(a[0]) + 1 || 99) - (COND_ORDER.indexOf(b[0]) + 1 || 99)) : [];
+const maxCond = Math.max(...cond.map(([, v]) => v), 1);
+const maxSp = Math.max(...(t?.top_species ?? []).map((s) => s.count), 1);
+const dead = typeof (t as Record<string, unknown> | undefined)?.dead === "number" ? ((t as Record<string, unknown>).dead as number) : null;
+const condCls: Record<string, string> = { Excellent: "fill s-easing", Good: "fill s-easing", Fair: "fill", Poor: "fill s-rising" };
+---
+<Hood n={n} page="streets/" title={`Streets in ${n.name}: curb permits, 311 and street trees`} description={`Who has the curb in ${n.name} this week, every 311 request type over the last ${days} days, how fast DC closes them compared with citywide, and the street trees.`}
+  heading="Streets" intro={`The public space outside your door in ${n.name}: who has reserved the curb, what residents report to 311, how quickly DC closes those requests, and the street trees.`}>
+
+  {!st && (
+    <div class="row one"><section class="panel"><div class="ph"><h2>Curb, service times and trees</h2></div><p class="note">Curb permits, service times and street tree data didn't update tonight. They will return after the next nightly run; the 311 counts below are current.</p></section></div>
+  )}
+
+  {st && (
+    <div class="row top">
+      <section id="curb" class="panel" aria-labelledby="curb-h">
+        <div class="ph"><h2 id="curb-h">Curb space</h2><span class="sub">DDOT public space permits</span></div>
+        <div class="stats streets-s4">
+          <div><div class="v">{fmt(st.curb.active_this_week)}</div><div class="k">curb permits active this week</div></div>
+          <div><div class="v">{fmt(st.curb.starting_next_7d)}</div><div class="k">starting in the next 7 days</div></div>
+          <div><div class="v">{fmt(st.curb.reserved_ft)} ft</div><div class="k">of curb reserved, about {(st.curb.reserved_ft / 5280).toFixed(1)} miles</div></div>
+          <div><div class="v">{fmt(st.curb.long_running_90d)}</div><div class="k">running longer than 90 days</div></div>
+        </div>
+        <div class="streets-sub">Active this week, by use</div>
+        <ul class="hbars">{curbTypes.map((c) => <li><span>{c.type}</span><Fragment set:html={bar(c.count, maxCurb, "fill c-add")} /><b>{fmt(c.count)}</b></li>)}</ul>
+        <div class="streets-fresh">
+          <div class="streets-sub">How current this is</div>
+          <p>{st.curb.freshness_note}</p>
+        </div>
+      </section>
+
+      <section class="panel" aria-labelledby="up-h">
+        <div class="ph"><h2 id="up-h">Starting in the next 7 days</h2><span class="sub">{upcoming.length} curb permits</span></div>
+        {upcoming.length === 0 ? <p class="note">No curb permits start in the next 7 days.</p> : (
+          <div class="dtable-wrap"><table class="dtable">
+            <thead><tr><th>Block</th><th>Use</th><th>Dates</th><th class="r">Curb</th></tr></thead>
+            <tbody>
+              {upcoming.map((c) => (
+                <tr>
+                  <td class="streets-blk">{c.block}{c.hours && <span class="streets-hrs">{c.hours}</span>}</td>
+                  <td class="muted">{c.type}</td>
+                  <td class="num streets-nw">{day(c.start)}–{day(c.end)}</td>
+                  <td class="r num">{c.ft != null ? `${fmt(c.ft)} ft` : "—"}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table></div>
+        )}
+        <p class="note">Listed by block, as DDOT issues them, with the hours each permit holds the curb.</p>
+      </section>
+    </div>
+  )}
+
+  <div class="row one">
+    <section id="requests" class="panel" aria-labelledby="rq-h">
+      <div class="ph"><h2 id="rq-h">311 requests</h2><span class="sub">All {types.length} types · last {days} days</span></div>
+      <div class="streets-top">
+        <div>
+          <div class="hero"><b class="num">{fmt(req.total)}</b><span>311 requests in the last {days} days, {fmt(req.open)} still open</span></div>
+          <div class="streets-chg"><span class={`chg s-${reqR.state}`}><Fragment set:html={icon(reqR.state)} />{reqR.txt}</span><Fragment set:html={stateTag(reqR.state)} /><span class="streets-vs">vs {fmt(req.previous_total)} the {days} days before</span></div>
+        </div>
+        <div class="cmp" set:html={pair(`Last ${days} days`, req.total, fmt(req.total), `${days} days before`, req.previous_total, fmt(req.previous_total), `fill s-${reqR.state}`)} />
+      </div>
+      <div class="tbl-wrap"><table class="t311 streets-t311">
+        <thead><tr><th></th><th>Type · last {days} days</th><th>Now</th><th>Prior</th><th>Change</th></tr></thead>
+        <tbody>
+          {types.map((tp, i) => {
+            const r = reading(tp.count, tp.previous);
+            return (
+              <tr>
+                <td class="ri num">{String(i + 1).padStart(2, "0")}</td>
+                <td class="rn"><span title={tp.type}>{shortType(tp.type)}</span>
+                  <Fragment set:html={`<svg class="rb" viewBox="0 0 100 6" preserveAspectRatio="none" aria-hidden="true"><rect class="trk" width="100" height="6"/><rect class="fill s-${r.state}" width="${Math.max((100 * tp.count) / max311, 0.6).toFixed(1)}" height="6"/><rect class="tick" x="${Math.max((100 * tp.previous) / max311 - 0.5, 0).toFixed(1)}" y="-2" width="1" height="10"/></svg>`} /></td>
+                <td class="rc num">{fmt(tp.count)}</td>
+                <td class="rp num">{fmt(tp.previous)}</td>
+                <td class="rd num"><span class={`chg s-${r.state}`}><Fragment set:html={icon(r.state)} />{r.txt}</span></td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table></div>
+      <div class="legend"><span><i style="width:12px;height:6px;background:var(--ink-2)"></i>Last {days} days</span><span><i style="width:1.5px;height:10px;background:var(--ink)"></i>{days} days before</span><span><Fragment set:html={icon("rising")} />rising <Fragment set:html={icon("easing")} />easing <Fragment set:html={icon("steady")} />within 5%</span></div>
+      <p class="note">{rising} types rose, {easing} fell, the rest held within 5%. Percent changes appear only when both periods have 100 or more requests; smaller counts show the difference alone.</p>
+    </section>
+  </div>
+
+  {st && (
+    <div class="row">
+      <section id="service" class="panel" aria-labelledby="sv-h">
+        <div class="ph"><h2 id="sv-h">Typical days to close</h2><span class="sub">{n.name} vs citywide</span></div>
+        <p class="streets-lead">The median time from a 311 request to DC closing it, for the most common request types. Half of requests closed faster than this, half slower. {faster} of {service.length} types close faster here than citywide; {slower} close slower.</p>
+        <ul class="streets-svc">
+          {service.map((s) => (
+            <li>
+              <div class="streets-svh"><b>{shortType(s.type)}</b><span class={`streets-v ${s.cls}`}>{s.verdict}</span></div>
+              <div class="cmp" set:html={pair(n.name, s.median_days, dur(s.median_days), "Citywide", s.city_median_days, dur(s.city_median_days), "fill c-add")} />
+              <div class="streets-n">From {fmt(s.closed_n)} closed requests in {n.name}</div>
+            </li>
+          ))}
+        </ul>
+        <details class="streets-det">
+          <summary>As a table</summary>
+          <div class="dtable-wrap"><table class="dtable">
+            <thead><tr><th>Type</th><th class="r">{n.name}</th><th class="r">Citywide</th><th class="r">Closed here</th></tr></thead>
+            <tbody>{service.map((s) => <tr><td>{shortType(s.type)}</td><td class="r num"><b>{dur(s.median_days)}</b></td><td class="r num muted">{dur(s.city_median_days)}</td><td class="r num">{fmt(s.closed_n)}</td></tr>)}</tbody>
+          </table></div>
+        </details>
+        <p class="note">Within 5% of citywide, or a tenth of a day, reads as about the same. Times under a day are shown in hours.{serviceNote && ` ${serviceNote}`}</p>
+      </section>
+
+      <section id="recent311" class="panel" aria-labelledby="rc-h">
+        <div class="ph"><h2 id="rc-h">Latest 311 requests</h2><span class="sub">{recent.length} newest</span></div>
+        <ul class="streets-rec">
+          {recent.map((r) => (
+            <li>
+              <div class="streets-r1"><b>{shortType(r.type)}</b><span class={`streets-st ${r.resolved || /close/i.test(r.status) ? "done" : ""}`}>{r.status}</span></div>
+              <div class="streets-r2"><span>{r.place ?? "Location withheld"}</span><span class="num">{shortDate(r.added)}{r.resolved && ` · closed ${shortDate(r.resolved)}`}</span></div>
+            </li>
+          ))}
+        </ul>
+        <p class="note">Locations are shown to the hundred block only.{withheld > 0 && ` ${withheld} request${withheld === 1 ? " was" : "s were"} logged at an intersection or exact point, so no location is shown.`} Request details are never published.</p>
+      </section>
+    </div>
+  )}
+
+  {!st && (
+    <div class="row one">
+      <section id="recent311" class="panel" aria-labelledby="rc-h">
+        <div class="ph"><h2 id="rc-h">Latest 311 requests</h2><span class="sub">{recent.length} newest</span></div>
+        <ul class="streets-rec">
+          {recent.map((r) => (
+            <li>
+              <div class="streets-r1"><b>{shortType(r.type)}</b><span class="streets-st">{r.status}</span></div>
+              <div class="streets-r2"><span>{r.place ?? "Location withheld"}</span><span class="num">{shortDate(r.added)}</span></div>
+            </li>
+          ))}
+        </ul>
+        <p class="note">Locations are shown to the hundred block only. Request details are never published.</p>
+      </section>
+    </div>
+  )}
+
+  {t && (
+    <div class="row">
+      <section id="trees" class="panel" aria-labelledby="tr-h">
+        <div class="ph"><h2 id="tr-h">Street trees</h2><span class="sub">Inventory of {day(t.inventory_date, true)}</span></div>
+        <div class="hero"><b class="num">{fmt(t.total)}</b><span>street trees, {fmt(t.species)} species</span></div>
+        <div class="stats">
+          <div><div class="v">{fmt(t.planted_5y)}</div><div class="k">planted in the last 5 years</div></div>
+          <div><div class="v" style="color:var(--accent)">{fmt(t.empty_boxes)}</div><div class="k">empty tree boxes open for planting</div></div>
+          {dead != null ? <div><div class="v">{fmt(dead)}</div><div class="k">trees recorded as dead, not in the total</div></div>
+            : <div><div class="v">{fmt(t.species)}</div><div class="k">species</div></div>}
+        </div>
+        <div class="streets-sub">Condition</div>
+        <ul class="hbars">{cond.map(([k, v]) => <li><span>{k}</span><Fragment set:html={bar(v, maxCond, condCls[k] ?? "prev")} /><b>{fmt(v)}</b></li>)}</ul>
+        <div class="streets-fresh">
+          <div class="streets-sub">About the empty boxes</div>
+          <p>{t.empty_boxes_note}</p>
+        </div>
+        <a class="cta" href="https://311.dc.gov/">Ask DC to plant a tree on your block <span>DC 311 ↗</span></a>
+      </section>
+
+      <div class="stack">
+        <section class="panel" aria-labelledby="sp-h">
+          <div class="ph"><h2 id="sp-h">Most common species</h2><span class="sub">Trees</span></div>
+          <ul class="hbars">{t.top_species.map((s) => <li><span>{s.name}</span><Fragment set:html={bar(s.count, maxSp, "fill c-newc")} /><b>{fmt(s.count)}</b></li>)}</ul>
+        </section>
+        <section class="panel" aria-labelledby="bg-h">
+          <div class="ph"><h2 id="bg-h">Biggest trees</h2><span class="sub">By trunk diameter</span></div>
+          <div class="dtable-wrap"><table class="dtable">
+            <thead><tr><th>Species</th><th>Where</th><th class="r">Trunk</th></tr></thead>
+            <tbody>{t.biggest.map((b) => <tr><td><b>{b.species}</b></td><td class="muted">{b.block}</td><td class="r num">{b.dbh_in.toFixed(1)} in</td></tr>)}</tbody>
+          </table></div>
+          <p class="note">Trunk diameter at breast height (4.5 ft), as DDOT's Urban Forestry Division measured it.</p>
+        </section>
+      </div>
+    </div>
+  )}
+
+  <div class="row one">
+    <section class="panel" aria-labelledby="src-h">
+      <div class="ph"><h2 id="src-h">Sources</h2><a href={u("about/")}>All sources →</a></div>
+      <ul class="streets-src">
+        {st?.sources.map((s) => <li><a href={s.url}>{s.name}</a></li>)}
+        {!st && n.sources.requests && <li>{n.sources.requests}</li>}
+      </ul>
+      {st && <p class="note">Street data refreshed {shortDate(st.generated_at)}.</p>}
+    </section>
+  </div>
+</Hood>
+
+<style is:global>
+  .streets-s4{grid-template-columns:1fr 1fr}
+  .streets-s4>div:last-child{grid-column:auto}
+  .streets-sub{font:600 11px/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:16px 0 8px}
+  .streets-fresh{margin-top:14px;padding:10px 12px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line-2)}
+  .streets-fresh .streets-sub{margin:0 0 6px}
+  .streets-fresh p{margin:0;font-size:13px;line-height:1.5;color:var(--ink-2);overflow-wrap:anywhere}
+  .streets-blk{min-width:150px}
+  .streets-hrs{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+  .streets-nw{white-space:nowrap}
+  .streets-top{display:grid;gap:12px;margin-bottom:14px}
+  .streets-chg{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin:-4px 0 0}
+  .streets-chg .chg{font-size:16px}
+  .streets-vs{font-size:12.5px;color:var(--muted)}
+  .streets-t311 .rn span{max-width:150px}
+  .streets-lead{margin:0 0 12px;color:var(--ink-2);font-size:14px;line-height:1.5}
+  .streets-svc{list-style:none;margin:0;padding:0}
+  .streets-svc li{padding:11px 0;border-top:1px solid var(--line-2)}
+  .streets-svc li:first-child{border-top:0;padding-top:2px}
+  .streets-svh{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:2px 10px;margin-bottom:6px;font-size:14px}
+  .streets-v{font-size:12.5px;font-weight:600}
+  .streets-v.fast{color:var(--easing)} .streets-v.slow{color:var(--rising)} .streets-v.same{color:var(--muted)}
+  .streets-n{font-size:12px;color:var(--muted);margin-top:4px}
+  .streets-svc .cr-r{grid-template-columns:86px minmax(0,1fr) 76px}
+  .streets-svc .cr-r .k{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .streets-svc .cr-r .v{white-space:nowrap}
+  .streets-det{margin-top:10px;font-size:13.5px}
+  .streets-det summary{cursor:pointer;color:var(--accent);font-weight:600;margin-bottom:8px}
+  .streets-rec{list-style:none;margin:0 -16px;padding:0;max-height:640px;overflow-y:auto}
+  .streets-rec li{padding:9px 16px;border-top:1px solid var(--line-2)}
+  .streets-rec li:first-child{border-top:0;padding-top:2px}
+  .streets-r1,.streets-r2{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+  .streets-r1 b{font-size:14px;font-weight:600;min-width:0}
+  .streets-r2{font-size:12.5px;color:var(--muted);margin-top:2px}
+  .streets-r2 span:first-child{min-width:0;overflow-wrap:anywhere}
+  .streets-r2 span:last-child{white-space:nowrap}
+  .streets-st{font:600 10px/1 var(--mono);letter-spacing:.05em;text-transform:uppercase;padding:4px 7px;border-radius:999px;background:var(--accent-soft);color:var(--accent);white-space:nowrap}
+  .streets-st.done{background:var(--surface-2);color:var(--muted)}
+  .streets-src{margin:0;padding-left:18px;font-size:14px}
+  .streets-src li{margin:4px 0;overflow-wrap:anywhere}
+  @media (min-width:720px){
+    .streets-s4{grid-template-columns:repeat(4,1fr)}
+    .streets-top{grid-template-columns:1fr 1fr;align-items:center;gap:24px}
+    .streets-t311 .rn span{max-width:none}
+  }
+  @media (min-width:1024px){
+    .streets-s4{grid-template-columns:1fr 1fr}
+  }
+</style>

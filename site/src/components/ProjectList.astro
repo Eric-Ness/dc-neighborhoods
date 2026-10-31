@@ -1,0 +1,44 @@
+---
+import { addr, cleanWork, shortDate, type Project } from "../lib/c5";
+
+interface Props {
+  projects: Project[];
+  total: number;
+  slug: string;
+  limit?: number;
+  moreHref?: string;
+  full?: boolean; // full descriptions instead of two-line clamps
+}
+const { projects, total, slug, limit, moreHref, full } = Astro.props;
+const shown = limit ? projects.slice(0, limit) : projects;
+const newCount = projects.filter((p) => p.isNew).length;
+const hasNewConstruction = projects.some((p) => p.group === "New construction");
+---
+<section id="projects" class="panel" aria-labelledby="p-h">
+  <div class="ph"><h2 id="p-h">Bigger projects</h2>{moreHref && <a href={moreHref}>All projects →</a>}</div>
+  {shown.length === 0 ? (
+    <p class="note">No demolition, addition or new-construction permits in this period.</p>
+  ) : (
+    <ol class="plist">
+      {shown.map((p) => (
+        <li class={`prow c-${p.key}`} data-id={`p${p.id}`} id={`p${p.id}`} tabindex="0" aria-label={`Project ${p.n}, ${addr(p.address)}`}>
+          <span class={`pn ${p.key === "demo" ? "sq" : ""} num`} aria-hidden="true">{p.n}</span>
+          <div class="pb">
+            <div class="pt1"><span class="paddr">{addr(p.address)}</span><time class="pdate num" datetime={p.issued ?? ""}>{shortDate(p.issued)}</time></div>
+            <div class="pt2">
+              <span class="ptype">{p.group === "Additions" ? "Addition" : p.group}</span>
+              {p.isNew && <span class="new">New this week</span>}
+              <span class="coord num">{p.id}</span>
+              {p.lat && p.lon && <span class="coord num">{p.lat.toFixed(4)}°N {Math.abs(p.lon).toFixed(4)}°W</span>}
+            </div>
+            {p.work && <div class={full ? "pwork full" : "pwork"}>{full ? cleanWork(p.work, 400) : cleanWork(p.work)}</div>}
+          </div>
+        </li>
+      ))}
+    </ol>
+  )}
+  <div class="pfoot">
+    <span><b class="num" style="color:var(--ink)">{projects.length}</b> of {total} permits · {newCount} new this week{hasNewConstruction ? "" : " · no new construction"}</span>
+    <a href={`/${slug}/permits.xml`}>Permits RSS</a>
+  </div>
+</section>

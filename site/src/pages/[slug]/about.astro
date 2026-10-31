@@ -1,0 +1,150 @@
+---
+import Hood from "../../layouts/Hood.astro";
+import { staticPaths, pageUrl, type Neighborhood, type Source } from "../../lib/data";
+import { pair, bar, fmt, asOf } from "../../lib/c5";
+
+export const getStaticPaths = staticPaths;
+const { n } = Astro.props as { n: Neighborhood };
+const u = (p: string) => pageUrl(n.slug, p);
+const days = n.windows.requests_days;
+
+// Core feeds carry names only; they all come from Open Data DC.
+const LABEL: Record<string, string> = { permits: "Building permits", requests: "311 requests", crime: "Crime counts", smds: "ANC districts" };
+const core = Object.entries(n.sources).filter(([k]) => k !== "license");
+const license = n.sources.license ?? "CC BY 4.0";
+type Sec = { key: "homes" | "streets" | "history"; label: string; page: string };
+const SECS: Sec[] = [
+  { key: "homes", label: "Homes", page: "homes/" },
+  { key: "streets", label: "Streets", page: "streets/" },
+  { key: "history", label: "Then", page: "then/" },
+];
+const present = SECS.filter((s) => n[s.key]).map((s) => ({ ...s, sources: (n[s.key] as { sources: Source[] }).sources, at: (n[s.key] as { generated_at: string }).generated_at }));
+const missing = SECS.filter((s) => !n[s.key]);
+
+const offense = (s: string) => { const t = s.toLowerCase(); return t.charAt(0).toUpperCase() + t.slice(1); };
+const maxOff = Math.max(...n.crime.by_offense.map((o) => Math.max(o.count, o.previous)), 1);
+---
+<Hood n={n} page="about/" title={`About the ${n.name} data: sources, privacy and corrections`} description={`Where every figure on the ${n.name} site comes from, how often it updates, what we leave out for privacy, and how to report a mistake.`}
+  heading="About the data" intro={`Every number on this site comes from public data published by the District of Columbia and the Library of Congress. Here is where each one comes from and the rules we follow.`}>
+
+  <div class="row">
+    <section id="independence" class="panel" aria-labelledby="in-h">
+      <div class="ph"><h2 id="in-h">Independent</h2></div>
+      <div class="prose about-prose">
+        <p><b>This site is independent.</b> It is not affiliated with the DC Government, any Advisory Neighborhood Commission, or any Business Improvement District, and no agency reviews it before publication.</p>
+        <p>We show the data as DC publishes it, with the comparison and context needed to read it. We don't take positions on projects, candidates or policy. Where the data is thin or imperfect, we say so on the page.</p>
+      </div>
+    </section>
+    <section id="schedule" class="panel" aria-labelledby="sc-h">
+      <div class="ph"><h2 id="sc-h">Update schedule</h2></div>
+      <div class="stats s2">
+        <div><div class="v">05:15 ET</div><div class="k">nightly rebuild from every source</div></div>
+        <div><div class="v">{days} days</div><div class="k">window for 311 and crime readings{n.windows.permits_days === days ? " and permits" : ""}</div></div>
+      </div>
+      <ul class="about-times">
+        <li><span>Core data (permits, 311, crime, ANCs)</span><b class="num">{asOf(n.generated_at)}</b></li>
+        {present.map((s) => <li><span>{s.label}</span><b class="num">{asOf(s.at)}</b></li>)}
+        {missing.map((s) => <li><span>{s.label}</span><b class="about-miss">didn't update tonight</b></li>)}
+      </ul>
+      <p class="note">If a feed fails, its section shows a short note and the rest of the site still updates. A banner appears when the data is more than 3 days old.</p>
+    </section>
+  </div>
+
+  <div class="row one">
+    <section id="sources" class="panel" aria-labelledby="so-h">
+      <div class="ph"><h2 id="so-h">Data sources</h2><span class="sub">{core.length + present.reduce((a, s) => a + s.sources.length, 0)} sources</span></div>
+      <div class="about-src">
+        <div>
+          <div class="about-sub">Core · overview, projects, crime, representatives</div>
+          <ul>
+            {core.map(([k, v]) => <li><span class="about-k">{LABEL[k] ?? k}</span>{v.startsWith("Open Data DC") ? <a href="https://opendata.dc.gov/">{v}</a> : v}</li>)}
+          </ul>
+        </div>
+        {present.map((s) => (
+          <div>
+            <div class="about-sub"><a href={u(s.page)}>{s.label}</a></div>
+            <ul>{s.sources.map((x) => <li><a href={x.url}>{x.name}</a></li>)}</ul>
+          </div>
+        ))}
+      </div>
+      {missing.length > 0 && <p class="note">{missing.map((s) => s.label).join(" and ")} data didn't update tonight, so {missing.length === 1 ? "its sources are" : "their sources are"} not listed here.</p>}
+    </section>
+  </div>
+
+  <div class="row">
+    <section id="privacy" class="panel" aria-labelledby="pv-h">
+      <div class="ph"><h2 id="pv-h">Privacy rules</h2></div>
+      <ul class="about-rules">
+        <li><b>No names of private people.</b> Owner, buyer, applicant and inspector names are dropped before anything is published. Elected commissioners' names are public record and are shown.</li>
+        <li><b>311 to the hundred block.</b> Requests show the type, dates and status, located only to the block (for example, "the 400 block"), never the exact address or the request's text.</li>
+        <li><b>Crime as counts only.</b> Crime reports are counted by offense and never mapped or placed on a block.</li>
+        <li><b>No percentages on small counts.</b> Below 100, a change is shown as a number, because a few reports swing a percentage wildly.</li>
+        <li><b>Old newspapers, screened.</b> Archive clips that mention race, covenants or deed restrictions, and lists of private individuals, are skipped automatically.</li>
+      </ul>
+    </section>
+
+    <section id="crime" class="panel" aria-labelledby="cr-h">
+      <div class="ph"><h2 id="cr-h">Crime counts</h2><span class="sub">Last {days} days</span></div>
+      <div class="hero"><b class="num">{n.crime.total}</b><span>crime reports, against {n.crime.previous_total} the {days} days before</span></div>
+      <div class="cmp" set:html={pair(`Last ${days} days`, n.crime.total, fmt(n.crime.total), `${days} days before`, n.crime.previous_total, fmt(n.crime.previous_total), "fill neutral")} />
+      <div class="dtable-wrap about-crt"><table class="dtable">
+        <thead><tr><th>Offense</th><th></th><th class="r">Now</th><th class="r">Before</th></tr></thead>
+        <tbody>
+          {n.crime.by_offense.map((o) => (
+            <tr><td>{offense(o.offense)}</td><td class="about-cb"><Fragment set:html={bar(o.count, maxOff, "fill neutral")} /></td><td class="r num"><b>{o.count}</b></td><td class="r num muted">{o.previous}</td></tr>
+          ))}
+        </tbody>
+      </table></div>
+      <p class="note">{n.crime.note} These are MPD's preliminary reports: offenses can be reclassified or removed as cases are reviewed, so the counts change after the fact. Counts this small move a lot from month to month, so we don't grade them as rising or easing, and we never map them.</p>
+    </section>
+  </div>
+
+  <div class="row even">
+    <section id="boundary" class="panel" aria-labelledby="bo-h">
+      <div class="ph"><h2 id="bo-h">The {n.name} boundary</h2></div>
+      <div class="prose about-prose">
+        <p>{n.name} has no official legal boundary. This site uses the area defined in <b>{n.boundary.source}</b>. Permits, 311 requests and crime counts are included when their location falls inside that outline.</p>
+        {n.homes && <p>Home sales are the exception: DC's tax records have no coordinates, so sales are matched by tax assessment neighborhood instead. <a href={u("homes/#area")}>How well the two areas line up →</a></p>}
+        <p>Some of the ANC districts that cover the area extend past it.</p>
+      </div>
+    </section>
+    <div class="stack">
+      <section id="corrections" class="panel" aria-labelledby="co-h">
+        <div class="ph"><h2 id="co-h">Corrections</h2></div>
+        <p class="about-p">Spotted a mistake? Tell us what page and figure, and what the official source says. We check it against the source and fix what is wrong.</p>
+        <p class="about-mail num">corrections@[domain]</p>
+      </section>
+      <section id="license" class="panel" aria-labelledby="li-h">
+        <div class="ph"><h2 id="li-h">License</h2></div>
+        <p class="about-p">DC's open data is published under <a href="https://creativecommons.org/licenses/by/4.0/">{license}</a>, and the figures on this site are shared under the same license: reuse them with credit to the original sources. Newspaper clips from the Library of Congress are public domain.</p>
+      </section>
+    </div>
+  </div>
+</Hood>
+
+<style is:global>
+  .about-prose{font-size:14.5px}
+  .about-prose p{margin:0 0 10px}
+  .about-prose p:last-child{margin-bottom:0}
+  .about-times{list-style:none;margin:12px 0 0;padding:0;font-size:13.5px}
+  .about-times li{display:flex;justify-content:space-between;gap:4px 12px;flex-wrap:wrap;padding:7px 0;border-top:1px solid var(--line-2)}
+  .about-times b{font-size:12.5px;font-weight:500;color:var(--ink-2)}
+  .about-times .about-miss{font-family:var(--sans);color:var(--muted);font-style:italic}
+  .about-src{display:grid;gap:16px}
+  .about-src ul{list-style:none;margin:0;padding:0;font-size:14px}
+  .about-src li{padding:7px 0;border-top:1px solid var(--line-2);overflow-wrap:anywhere}
+  .about-src li:first-child{border-top:0}
+  .about-src a{text-decoration:none}
+  .about-k{display:block;font-size:12px;color:var(--muted)}
+  .about-sub{font:600 11px/1.3 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+  .about-sub a{color:var(--accent)}
+  .about-rules{list-style:none;margin:0;padding:0;font-size:14px;color:var(--ink-2)}
+  .about-rules li{padding:9px 0;border-top:1px solid var(--line-2)}
+  .about-rules li:first-child{border-top:0;padding-top:0}
+  .about-rules b{color:var(--ink)}
+  .about-crt{margin-top:14px}
+  .about-cb{width:40%;vertical-align:middle!important}
+  .about-p{margin:0;font-size:14px;color:var(--ink-2)}
+  .about-mail{margin:12px 0 0;font-size:15px;font-weight:600;padding:10px 14px;border-radius:12px;background:var(--surface-2);border:1px solid var(--line-2);overflow-wrap:anywhere}
+  @media (min-width:720px){.about-src{grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}}
+</style>

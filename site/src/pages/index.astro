@@ -1,23 +1,26 @@
 ---
 import Base from "../layouts/Base.astro";
-import { neighborhoods, fmtDateTime } from "../lib/data";
+import { neighborhoods } from "../lib/data";
+import { asOf, fmt, money } from "../lib/c5";
 ---
 <Base title="DC Neighborhoods: civic data, block by block" description="Independent, automatically updated civic data for Washington, DC neighborhoods.">
-  <main class="wrap">
-    <h1>DC Neighborhoods</h1>
-    <p class="muted">Building permits, 311 requests, public safety counts and ANC contacts, updated nightly from Open Data DC.</p>
-    <ul class="hoods">
+  <main class="wrap" style="padding-top:28px">
+    <div class="pagehead">
+      <h1>DC Neighborhoods</h1>
+      <p>Permits, 311 requests, home sales, curb space, street trees, history and who represents you, updated nightly from DC's own open data.</p>
+    </div>
+    <div class="row even">
       {neighborhoods.map((n) => (
-        <li class="card">
-          <a href={`/${n.slug}/`}><strong>{n.name}</strong></a>
-          <div class="muted">{n.permits.length} permits · {n.requests.total.toLocaleString()} 311 requests · as of {fmtDateTime(n.generated_at)}</div>
-        </li>
+        <a class="panel" href={`/${n.slug}/`} style="text-decoration:none;color:inherit">
+          <div class="ph"><h2>{n.name}</h2><span class="sub" style="color:var(--accent);font-weight:600">Open →</span></div>
+          <div class="stats s3">
+            <div><div class="v">{n.permits.length}</div><div class="k">permits, last {n.windows.permits_days} days</div></div>
+            <div><div class="v">{fmt(n.requests.total)}</div><div class="k">311 requests</div></div>
+            <div><div class="v">{n.homes ? money(n.homes.house.median_12mo) : "—"}</div><div class="k">median house price</div></div>
+          </div>
+          <p class="note">Data as of {asOf(n.generated_at)}</p>
+        </a>
       ))}
-    </ul>
+    </div>
   </main>
 </Base>
-
-<style>
-  main { padding-top: 2rem; }
-  .hoods { list-style: none; padding: 0; display: grid; gap: 10px; }
-</style>

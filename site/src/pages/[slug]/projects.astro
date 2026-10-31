@@ -1,0 +1,170 @@
+---
+import Hood from "../../layouts/Hood.astro";
+import PermitMap from "../../components/PermitMap.astro";
+import ProjectList from "../../components/ProjectList.astro";
+import { staticPaths, pageUrl, type Neighborhood, type Permit } from "../../lib/data";
+import { model, bar, glyph, fmt, addr, cleanWork, shortDate, CATS, GKEY, BIG } from "../../lib/c5";
+
+export const getStaticPaths = staticPaths;
+const { n } = Astro.props as { n: Neighborhood };
+const m = model(n);
+const u = (p: string) => pageUrl(n.slug, p);
+const days = n.windows.permits_days;
+const total = n.permits.length;
+
+// Bigger projects already carry id="p<id>" in ProjectList; remember their list numbers.
+const projNo = new Map(m.projects.map((p) => [p.id, p.n]));
+const newCount = m.projects.filter((p) => p.isNew).length;
+const mapped = n.permits.filter((p) => p.lat && p.lon).length;
+
+// Every permit, grouped by type in CATS order (any group CATS doesn't know goes last).
+const byGroup = new Map<string, Permit[]>();
+for (const p of n.permits) {
+  if (!byGroup.has(p.group)) byGroup.set(p.group, []);
+  byGroup.get(p.group)!.push(p);
+}
+const order = [...CATS.map((c) => c.group), ...[...byGroup.keys()].filter((g) => !CATS.some((c) => c.group === g)).sort()];
+const groups = order
+  .filter((g) => byGroup.has(g))
+  .map((g) => {
+    const cat = CATS.find((c) => c.group === g);
+    const list = [...byGroup.get(g)!].sort((a, b) => (b.issued ?? "").localeCompare(a.issued ?? "") || a.id.localeCompare(b.id));
+    return { group: g, key: GKEY[g] ?? "other", kind: cat?.kind ?? "small", big: BIG.includes(g), list };
+  });
+const present = CATS.filter((c) => m.groups[c.group]);
+const maxg = Math.max(...present.map((c) => m.groups[c.group]), 1);
+const issued = n.permits.map((p) => p.issued).filter((d): d is string => !!d).sort();
+const span = issued.length ? `${shortDate(issued[0])} to ${shortDate(issued[issued.length - 1])}` : "";
+const subLabel = (s: string | null) => (s && s !== "NA" ? s.charAt(0) + s.slice(1).toLowerCase() : "");
+const fullDate = (iso: string | null) =>
+  iso ? new Date(iso).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "America/New_York" }) : "No date";
+---
+<Hood n={n} page="projects/" title={`Building permits in ${n.name}: map and every project`} description={`Every DC building permit issued in ${n.name} in the last ${days} days, on a map and grouped by type, with the bigger demolition, addition and new-construction projects first.`}
+  heading="Projects" intro={`Every building permit DC issued in ${n.name} in the last ${days} days. Bigger projects (demolitions, additions and new buildings) are numbered on the map and listed in full; every permit follows, grouped by type.`}>
+
+  <div class="mapgrid projects-grid">
+    <div class="projects-side">
+      <section class="panel" aria-labelledby="ps-h">
+        <div class="ph"><h2 id="ps-h">Last {days} days</h2><span class="sub">Building permits</span></div>
+        <div class="stats">
+          <div><div class="v">{fmt(total)}</div><div class="k">permits issued</div></div>
+          <div><div class="v">{m.projects.length}</div><div class="k">bigger projects, numbered on the map</div></div>
+          <div><div class="v">{newCount}</div><div class="k">bigger projects new this week</div></div>
+        </div>
+        <p class="note">{mapped} of {total} permits have map coordinates. Applicant and owner names are never shown.</p>
+      </section>
+      <section class="panel mix" aria-labelledby="mix-h">
+        <div class="ph"><h2 id="mix-h">All {total} permits by type</h2><span class="sub">Tap to filter the map</span></div>
+        <ul>
+          {present.map((c) => (
+            <li><button type="button" class="mixrow" data-g={c.key} aria-pressed="true">
+              <Fragment set:html={glyph(c.kind, c.key)} /><span class="ml">{c.group}</span>
+              <Fragment set:html={bar(m.groups[c.group], maxg, BIG.includes(c.group) ? `fill c-${c.key}` : "fill")} />
+              <b class="num">{m.groups[c.group]}</b>
+            </button></li>
+          ))}
+        </ul>
+        <a class="cta" href="#all">Every permit, grouped by type <span>Jump ↓</span></a>
+      </section>
+    </div>
+
+    <div class="projcol">
+      <ProjectList projects={m.projects} total={total} slug={n.slug} full />
+    </div>
+
+    <div class="mapcol"><PermitMap n={n} projects={m.projects} /></div>
+  </div>
+
+  <div class="row one">
+    <section id="all" class="panel" aria-labelledby="all-h">
+      <div class="ph"><h2 id="all-h">Every permit</h2><span class="sub">{fmt(total)} permits · {groups.length} types</span></div>
+      <p class="projects-lead">Newest first within each type. Each row shows the address, issue date, DC permit number and the work described on the permit.</p>
+      {groups.map((g) => (
+        <details class={`projects-grp c-${g.key}`} open={g.big}>
+          <summary>
+            <Fragment set:html={glyph(g.kind, g.key)} />
+            <span class="projects-gn">{g.group}</span>
+            <b class="num">{g.list.length}</b>
+          </summary>
+          <ul class="projects-list">
+            {g.list.map((p) => {
+              const no = projNo.get(p.id);
+              return (
+                <li id={no ? undefined : `p${p.id}`} class="projects-item">
+                  <div class="projects-l1">
+                    <span class="projects-addr">{addr(p.address)}</span>
+                    <time class="projects-date num" datetime={p.issued ?? ""}>{fullDate(p.issued)}</time>
+                  </div>
+                  <div class="projects-l2">
+                    <span class="coord num">{p.id}</span>
+                    {subLabel(p.subtype) && <span>{subLabel(p.subtype)}</span>}
+                    {no && <a href={`#p${p.id}`}>Project {no} on the list ↑</a>}
+                  </div>
+                  {p.work && <p class="projects-work">{cleanWork(p.work, 600)}</p>}
+                </li>
+              );
+            })}
+          </ul>
+        </details>
+      ))}
+      <div class="pfoot projects-foot">
+        <span>Bigger projects link back to their numbered row above.</span>
+        <a href={`/${n.slug}/permits.xml`}>Permits RSS</a>
+      </div>
+    </section>
+  </div>
+
+  <div class="row one">
+    <section class="panel" aria-labelledby="src-h">
+      <div class="ph"><h2 id="src-h">Source</h2><a href={u("about/")}>All sources →</a></div>
+      <p class="projects-lead">{n.sources.permits ?? "Open Data DC: Building Permits"}, refreshed nightly. Each permit is placed at the coordinates DC records for it. Boundary: {n.boundary.source}.{span && ` These permits were issued ${span}.`}</p>
+    </section>
+  </div>
+</Hood>
+
+<script is:inline>
+(function(){
+  // Open the group holding a permit when a search link lands on its row.
+  function reveal(){
+    var id=decodeURIComponent(location.hash.slice(1)); if(!id) return;
+    var el=document.getElementById(id); if(!el) return;
+    var d=el.closest('details'); if(d&&!d.open){d.open=true;}
+    document.querySelectorAll('.projects-item.projects-hit').forEach(function(x){x.classList.remove('projects-hit');});
+    if(el.classList.contains('projects-item')) el.classList.add('projects-hit');
+    el.scrollIntoView({block:'center'});
+  }
+  window.addEventListener('hashchange',reveal);
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',reveal); else reveal();
+})();
+</script>
+
+<style is:global>
+  .projects-grid{grid-template-areas:"side" "map" "proj"}
+  .projects-side{grid-area:side;display:grid;gap:14px;min-width:0}
+  .projects-grid .stats>div:last-child{grid-column:1/-1}
+  .projects-lead{margin:0 0 12px;color:var(--ink-2);font-size:14px;line-height:1.5}
+  .projects-grp{border-top:1px solid var(--line-2)}
+  .projects-grp summary{display:grid;grid-template-columns:14px minmax(0,1fr) auto;gap:10px;align-items:center;padding:11px 2px;cursor:pointer;font-weight:600;font-size:15px}
+  .projects-grp summary::-webkit-details-marker{display:none}
+  .projects-grp summary{list-style:none}
+  .projects-grp summary b{font:600 13px var(--mono);color:var(--muted)}
+  .projects-grp summary b::after{content:" ▸";color:var(--accent)}
+  .projects-grp[open] summary b::after{content:" ▾"}
+  .projects-list{list-style:none;margin:0 -16px 8px;padding:0}
+  .projects-item{padding:10px 16px;border-top:1px solid var(--line-2);scroll-margin-top:24px}
+  .projects-item:target,.projects-item.projects-hit{background:var(--accent-soft);box-shadow:inset 3px 0 0 var(--accent)}
+  .projects-l1{display:flex;gap:8px;align-items:baseline}
+  .projects-addr{font-weight:600;font-size:14.5px;min-width:0;overflow-wrap:anywhere}
+  .projects-date{margin-left:auto;font-size:12px;color:var(--muted);white-space:nowrap}
+  .projects-l2{display:flex;flex-wrap:wrap;gap:3px 10px;align-items:center;margin-top:2px;font-size:12.5px;color:var(--ink-2)}
+  .projects-l2 a{font-weight:600;text-decoration:none}
+  .projects-work{margin:4px 0 0;font-size:13px;line-height:1.45;color:var(--muted);overflow-wrap:anywhere}
+  .projects-foot{margin-top:0}
+  .prow{scroll-margin-top:24px}
+  @media (min-width:720px){
+    .projects-grid .stats>div:last-child{grid-column:auto}
+  }
+  @media (min-width:1024px){
+    .projects-grid{grid-template-areas:"side map" "proj map"}
+  }
+</style>
