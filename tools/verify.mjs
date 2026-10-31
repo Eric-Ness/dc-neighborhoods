@@ -110,7 +110,12 @@ const checks = {
     assert(/schedule:\s*\n\s*- cron:/.test(wf), "workflow has no nightly schedule");
     const wr = read("wrangler.jsonc");
     const index = JSON.parse(read("site/src/data/index.json"));
-    for (const h of index) for (const host of [...h.hosts, ...h.redirect_hosts]) assert(wr.includes(`"${host}"`), `wrangler.jsonc missing route for ${host}`);
+    // Each neighborhood's primary .org (and www) must be routed. Redirect domains (.net) are routed only once
+    // their zone is on Cloudflare; the Worker test below still proves they 301 to the .org.
+    for (const h of index) for (const host of h.hosts) {
+      assert(wr.includes(`"${host}"`), `wrangler.jsonc missing route for ${host}`);
+      assert(wr.includes(`"www.${host}"`), `wrangler.jsonc missing route for www.${host}`);
+    }
 
     // Exercise the Worker's routing against a fake asset binding.
     const worker = (await import(pathToFileURL(join(root, "worker/index.js")).href)).default;
