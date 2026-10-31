@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en" data-idea="monetization#4" data-rank="21">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Grand Opening Spotlight (demo #21)</title>
+<style>
+:root{--bg:#f6f7f4;--card:#fff;--ink:#1c2420;--muted:#5b6660;--line:#dfe3dc;--accent:#245c4f;--soft:#e5eee9;--brick:#a2412b;--gold:#8a6a1f;--up:#a33a2c;--down:#2c6e49;--live:#2c6e49;--sample:#8a6a1f}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#121715;--card:#1a201d;--ink:#e6ebe7;--muted:#9ba7a1;--line:#2c3430;--accent:#7dc3ac;--soft:#1f2b27;--brick:#e58a72;--gold:#d8b25c;--up:#f08a7a;--down:#8fd3a8;--live:#8fd3a8;--sample:#d8b25c;color-scheme:dark}}
+:root[data-theme=dark]{--bg:#121715;--card:#1a201d;--ink:#e6ebe7;--muted:#9ba7a1;--line:#2c3430;--accent:#7dc3ac;--soft:#1f2b27;--brick:#e58a72;--gold:#d8b25c;--up:#f08a7a;--down:#8fd3a8;--live:#8fd3a8;--sample:#d8b25c;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:20px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px))}
+a{color:var(--accent)}
+h1{font-size:clamp(1.6rem,5vw,2.2rem);line-height:1.15;margin:.3rem 0 .4rem;text-wrap:balance}
+h2{font-size:1.15rem;margin:0 0 .6rem}
+.demo-bar{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:space-between;background:var(--soft);border-bottom:1px solid var(--line);padding:8px max(16px,env(safe-area-inset-right,0px)) 8px max(16px,env(safe-area-inset-left,0px));font-size:.82rem}
+.demo-bar b{letter-spacing:.06em}
+.badge{display:inline-block;font-size:.75rem;font-weight:600;padding:2px 8px;border-radius:999px;border:1px solid currentColor}
+.badge.live{color:var(--live)}.badge.sample{color:var(--sample)}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:.72rem;font-weight:700;color:var(--brick);margin:0}
+.muted{color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:14px 0;min-width:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.stat b{display:block;font-size:1.7rem;font-variant-numeric:tabular-nums}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{text-align:left;padding:.42rem .45rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.up{color:var(--up);font-weight:600}.down{color:var(--down);font-weight:600}
+.sponsor{border:1px dashed var(--accent);background:var(--soft);font-size:.92rem}
+.sponsor .label{font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.about{font-size:.9rem}
+.about dt{font-weight:600;margin-top:.5rem}.about dd{margin:0;color:var(--muted)}
+footer{font-size:.82rem;color:var(--muted);border-top:1px solid var(--line);margin-top:28px;padding-top:12px}
+svg text{fill:var(--muted);font-size:11px}
+:focus-visible{outline:2px solid var(--brick);outline-offset:2px}
+/* ---- demo-specific rules below this line ---- */
+
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.chip{font:inherit;font-size:.82rem;padding:.3rem .75rem;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+.chip.on{background:var(--accent);border-color:var(--accent);color:var(--card)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.biz{border:1px solid var(--line);border-radius:10px;padding:12px 14px;background:var(--bg);min-width:0}
+.biz[hidden],tr[hidden]{display:none}
+.biz.food{border-left:4px solid var(--brick)}
+.biz h3{margin:.15rem 0 .1rem;font-size:1.02rem;overflow-wrap:anywhere}
+.biz .cat{font-size:.68rem;text-transform:uppercase;letter-spacing:.07em;color:var(--brick);font-weight:700}
+.biz .addr{margin:0;font-size:.85rem;color:var(--muted)}
+.biz .acts{margin:.3rem 0;font-size:.82rem}
+.pipe{list-style:none;padding:0;margin:.4rem 0;font-size:.8rem}
+.pipe li{padding-left:16px;position:relative;margin:2px 0}
+.pipe li:before{content:"";position:absolute;left:2px;top:.45em;width:8px;height:8px;border-radius:50%;border:1.5px solid var(--accent)}
+.pipe li.done:before{background:var(--accent)}.pipe li.todo{color:var(--muted)}
+.claim{font-size:.8rem}
+.featured{border:2px solid var(--gold)}
+.featured .feat{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold);border-radius:999px;padding:1px 8px}
+.featured h3{margin:.4rem 0 0}
+
+</style>
+</head>
+<body>
+<div class="demo-bar">
+  <span><b>DEMO</b> · Idea #21 of 39 · weighted score 68.5/100</span>
+  <span class="badge live" data-provenance="live">Live data · Open Data DC · pulled 2026-10-31</span>
+</div>
+<div class="wrap">
+  <p class="eyebrow">New business licenses · last 60 days</p>
+  <h1>What's coming to the neighborhood</h1>
+  <p class="muted">16 storefront-type business licenses issued in Adams Morgan, Petworth, Tenleytown/Friendship Heights and SW Waterfront in the last 60 days, 3 of them for food and drink, plus every commercial space DC cleared for a new use.</p>
+
+  
+<div class="grid">
+  <div class="card stat"><span class="muted">Storefront-type licenses issued</span><b>16</b><span class="muted">last 60 days, four neighborhoods</span></div>
+  <div class="card stat"><span class="muted">Food &amp; drink</span><b>3</b><span class="muted">restaurants, delis, caterers, grocers</span></div>
+  <div class="card stat"><span class="muted">Spaces cleared for a new use</span><b>21</b><span class="muted">non-residential certificates of occupancy</span></div>
+  <div class="card stat"><span class="muted">All new business licenses</span><b>216</b><span class="muted">incl. rentals, contractors</span></div>
+</div>
+
+<nav class="chips" aria-label="Filter by neighborhood"><button type="button" class="chip on" data-f="">All (16)</button><button type="button" class="chip" data-f="Adams Morgan">Adams Morgan (0)</button><button type="button" class="chip" data-f="Petworth">Petworth (3)</button><button type="button" class="chip" data-f="Tenleytown &amp; Friendship Heights">Tenleytown &amp; Friendship Heights (7)</button><button type="button" class="chip" data-f="SW Waterfront">SW Waterfront (6)</button></nav>
+
+<section class="featured card" aria-label="Featured listing (paid)">
+  <span class="feat">Featured</span>
+  <h3>[Your business here]</h3>
+  <p class="muted" style="margin:.2rem 0 .4rem">[Address] · [Opening date]</p>
+  <p style="margin:0">Opening soon? A one-time spotlight puts your photo, hours and opening-day offer at the top of this page and in the weekly email. Featured listings are always labeled.</p>
+</section>
+
+<section class="card">
+  <h2>Food &amp; drink: license issued</h2>
+  <p class="muted" style="margin-top:0">New food-service business licenses, newest first. A license is a step toward opening, not proof a place is open.</p>
+  <div class="cards"><article class="biz food" data-hood="SW Waterfront"><span class="cat">Food &amp; drink</span><h3>Theater Alliance</h3><p class="addr">340 Maple Dr SW · SW Waterfront · SMD 6D04</p><p class="acts">Delicatessen</p><ol class="pipe"><li class="done">Certificate of occupancy Oct 19, 2026</li><li class="done">License issued Oct 19, 2026</li><li class="todo">Opening date: not in public data</li></ol><a class="claim" href="#about-demo">Is this your business? Claim this listing</a></article><article class="biz food" data-hood="Tenleytown &amp; Friendship Heights"><span class="cat">Food &amp; drink</span><h3>SNH, LLC</h3><p class="addr">4903 Wisconsin Ave NW · Tenleytown &amp; Friendship Heights · SMD 3E03</p><p class="acts">Delicatessen</p><ol class="pipe"><li class="done">Certificate of occupancy Sep 3, 2026</li><li class="done">License issued Sep 22, 2026</li><li class="todo">Opening date: not in public data</li></ol><a class="claim" href="#about-demo">Is this your business? Claim this listing</a></article><article class="biz food" data-hood="Petworth"><span class="cat">Food &amp; drink</span><h3>4000 Market</h3><p class="addr">4000 Georgia Ave NW · Petworth · SMD 4C02</p><p class="acts">Cigarette Sales (Retail), Delicatessen, Food Products, General Business, Grocery Store, Patent Medicine</p><ol class="pipe"><li class="done">Certificate of occupancy Sep 13, 2026</li><li class="done">License issued Sep 14, 2026</li><li class="todo">Opening date: not in public data</li></ol><a class="claim" href="#about-demo">Is this your business? Claim this listing</a></article></div>
+</section>
+
+<section class="card">
+  <h2>Shops &amp; services: license issued</h2>
+  <p class="muted" style="margin-top:0">Other storefront-type licenses, newest first. Some will be offices or online businesses registered at a commercial or mailbox address.</p>
+  <div class="cards"><article class="biz" data-hood="Tenleytown &amp; Friendship Heights"><span class="cat">Beauty &amp; grooming</span><h3>The Head Spa by Bare</h3><p class="addr">4545 42nd St NW · Tenleytown &amp; Friendship Heights · SMD 3E01</p><p class="acts">Beauty Shop</p><ol class="pipe"><li class="done">License issued Oct 21, 2026</li><li class="todo">Opening date: not in public data</li></ol><a class="claim" href="#about-demo">Is this your business? Claim this listing</a></article><article class="biz" data-hood="Tenleytown &amp; Friendship Heights"><span class="cat">Shops &amp; services</span><h3>EVG Veterinarians of Friendship LLC</h3><p class="addr">5025 Wisconsin Ave NW · Tenleytown &amp; Friendship Heights · SMD 3E03</p><p class="acts">General Business</p><ol class="pipe"><li class="done">License issued Oct 9, 2026</li><li class="todo">Opening date: not in public data</li></ol><a class="claim" href="#about-demo">Is this your business? Claim this listing</a></article><article class="biz" data-hood="Tenleytown &amp; Friendship Heights"><span class="cat">Shops &amp; services</span><h3>EasySpanish123 LLC</h3><p class="addr">4626 Wisconsin Ave NW · Tenleytown &amp; Friendship Heights · SMD 3E03</p><p class="acts">General Business</p><ol class="pipe"><li class="done">License issued Oct 6, 2026</li><li class="todo">Opening date: not in public data</li></ol><a class="claim" href="#about-demo">Is this your business? Claim this listing</a></article><article class="biz" data-hood="Tenleytown &amp; Friendship Heights"><span class="cat">Shops &amp; services</span><h3>EVG Specialty Network LLC</h3><p class="addr">4105 Brandywine St NW · Tenleytown &amp; Friendship Heights · SMD 3E03</p><p class="acts">General Business</p><ol class="pipe"><li class="done">License issued Oct 6, 2026</li><li class="todo">Opening date: not in public data</li></ol><a class="claim" href="#about-demo">Is this your business? Claim this listing</a></article><article class="biz" data-hood="Tenleytown &amp; Friendship Heights"><span class="cat">Shops &amp; services</span><h3>EVG Specialty Network LLC</h3><p class="addr">5025 Wisconsin Ave NW · Tenleytown &amp; Friendship Heights · SMD 3E03</p><p class="acts">General Business</p><ol class="pipe"><li class="done">License issued Oct 6, 2026</li><li class="todo">Opening date: not in public data</li></ol><a class="claim" href="#about-demo">Is this your business? Claim this listing</a></article><article class="biz" data-hood="Petworth"><span class="cat">Shops &amp; services</span><h3>AXUMITE, LLC</h3><p class="addr">5215 Georgia Ave NW · Petworth · SMD 4D03</p><p class="acts">General Business</p><ol class="pipe"><li class="done">Certificate of occupancy Sep 22, 2026</li><li class="done">License issued Oct 5, 2026</li><li class="todo">Opening date: not in public data</li></ol><a class="claim" href="#about-demo">Is this your business? Claim this listing</a></article><article class="biz" data-hood="SW Waterfront"><span class="cat">Shops &amp; services</span><h3>Emerald Cut Public Relations LLC</h3><p class="addr">101 V St SW · SW Waterfront · SMD 6D07</p><p class="acts">General Business</p><ol class="pipe"><li class="done">License issued Sep 30, 2026</li><li class="todo">Opening date: not in public data</li></ol><a class="claim" href="#about-demo">Is this your business? Claim this listing</a></article><article class="biz" data-hood="SW Waterfront"><span class="cat">Shops &amp; services</span><h3>Peter VanderPoel Professional Limited Liability Company</h3><p class="addr">800 Maine Ave SW · SW Waterfront · SMD 6D01</p><p class="acts">General Business</p><ol class="pipe"><li class="done">Certificate of occupancy Sep 15, 2026</li><li class="done">License issued Sep 25, 2026</li><li class="todo">Opening date: not in public data</li></ol><a class="claim" href="#about-demo">Is this your business? Claim this listing</a></article><article class="biz" data-hood="SW Waterfront"><span class="cat">Shops &amp; services</span><h3>DC Diagnostic Institute</h3><p class="addr">800 Maine Ave SW · SW Waterfront · SMD 6D01</p><p class="acts">General Business</p><ol class="pipe"><li class="done">Certificate of occupancy Sep 15, 2026</li><li class="done">License issued Sep 16, 2026</li><li class="todo">Opening date: not in public data</li></ol><a class="claim" href="#about-demo">Is this your business? Claim this listing</a></article><article class="biz" data-hood="Tenleytown &amp; Friendship Heights"><span class="cat">Shops &amp; services</span><h3>Eco-Cleaners &amp; Tailoring</h3><p class="addr">3811 Mckinley St NW · Tenleytown &amp; Friendship Heights · SMD 3/4G06</p><p class="acts">General Business</p><ol class="pipe"><li class="done">License issued Sep 14, 2026</li><li class="todo">Opening date: not in public data</li></ol><a class="claim" href="#about-demo">Is this your business? Claim this listing</a></article><article class="biz" data-hood="SW Waterfront"><span class="cat">Shops &amp; services</span><h3>Pro-Infra Consulting LLC</h3><p class="addr">113 Potomac Ave SW · SW Waterfront · SMD 6D08</p><p class="acts">General Business</p><ol class="pipe"><li class="done">License issued Sep 12, 2026</li><li class="todo">Opening date: not in public data</li></ol><a class="claim" href="#about-demo">Is this your business? Claim this listing</a></article><article class="biz" data-hood="Petworth"><span class="cat">Shops &amp; services</span><h3>UTOPIE BEAUTY DC LLC</h3><p class="addr">5227 Georgia Ave NW · Petworth · SMD 4D03</p><p class="acts">General Business</p><ol class="pipe"><li class="done">Certificate of occupancy Sep 8, 2026</li><li class="done">License issued Sep 9, 2026</li><li class="todo">Opening date: not in public data</li></ol><a class="claim" href="#about-demo">Is this your business? Claim this listing</a></article><article class="biz" data-hood="SW Waterfront"><span class="cat">Shops &amp; services</span><h3>Inman Consulting LLC</h3><p class="addr">800 Maine Ave SW · SW Waterfront · SMD 6D01</p><p class="acts">General Business</p><ol class="pipe"><li class="done">Certificate of occupancy Sep 15, 2026</li><li class="done">License issued Sep 2, 2026</li><li class="todo">Opening date: not in public data</li></ol><a class="claim" href="#about-demo">Is this your business? Claim this listing</a></article></div>
+</section>
+
+<section class="card">
+  <h2>Spaces cleared for a new use</h2>
+  <p class="muted" style="margin-top:0">Non-residential certificates of occupancy DOB issued in the last 60 days. A new certificate often comes shortly before a new tenant opens, or after an ownership change.</p>
+  <div class="scroll"><table><thead><tr><th>Issued</th><th>Area</th><th>Trading as</th><th>Address</th><th>Approved use</th><th>Change</th></tr></thead>
+  <tbody><tr data-hood="SW Waterfront"><td>Oct 23, 2026</td><td>SW Waterfront</td><td>—</td><td>800 Maine Ave SW</td><td>Office</td><td>Owner change</td></tr><tr data-hood="SW Waterfront"><td>Oct 23, 2026</td><td>SW Waterfront</td><td>THEATER ALLIANCE</td><td>340 Maple Dr SW</td><td>Theater, including motion picture or performing arts</td><td>New construction</td></tr><tr data-hood="Tenleytown &amp; Friendship Heights"><td>Oct 19, 2026</td><td>Tenleytown &amp; Friendship Heights</td><td>—</td><td>5252 Wisconsin Ave NW</td><td>Gym or exercise studio</td><td>Owner change, proposed load</td></tr><tr data-hood="SW Waterfront"><td>Oct 19, 2026</td><td>SW Waterfront</td><td>WFS2, LLC</td><td>340 Maple Dr SW</td><td>Art center</td><td>New construction</td></tr><tr data-hood="Petworth"><td>Oct 14, 2026</td><td>Petworth</td><td>EVERYTHING ADA LLC</td><td>936 Madison St NW 100</td><td>Office</td><td>Owner change</td></tr><tr data-hood="Tenleytown &amp; Friendship Heights"><td>Oct 8, 2026</td><td>Tenleytown &amp; Friendship Heights</td><td>FOXHALL WOMEN&#x27;S HEALTH</td><td>5301 Wisconsin Ave NW</td><td>Office, medical -including physicians, dentists</td><td>Owner change</td></tr><tr data-hood="Tenleytown &amp; Friendship Heights"><td>Oct 7, 2026</td><td>Tenleytown &amp; Friendship Heights</td><td>SMITHLIFE HOMECARE</td><td>5101 Wisconsin Ave NW</td><td>Office</td><td>Owner change</td></tr><tr data-hood="Adams Morgan"><td>Oct 2, 2026</td><td>Adams Morgan</td><td>SITAR ARTS CENTER</td><td>1724 Kalorama Rd NW</td><td>Art center</td><td>New construction</td></tr><tr data-hood="Petworth"><td>Oct 2, 2026</td><td>Petworth</td><td>POPLAR</td><td>701 Kennedy St NW</td><td>Restaurant</td><td>Proposed use, proposed load</td></tr><tr data-hood="Petworth"><td>Sep 30, 2026</td><td>Petworth</td><td>—</td><td>4905 Georgia Ave NW</td><td>—</td><td>Proposed load</td></tr><tr data-hood="SW Waterfront"><td>Sep 30, 2026</td><td>SW Waterfront</td><td>STREETS MARKET</td><td>798 Maine Ave SW</td><td>Grocery store</td><td>Owner change, proposed use, proposed load</td></tr><tr data-hood="Tenleytown &amp; Friendship Heights"><td>Sep 23, 2026</td><td>Tenleytown &amp; Friendship Heights</td><td>SP PLUS LLC</td><td>4500 Wisconsin Ave NW</td><td>Parking lot, public</td><td>Owner change</td></tr><tr data-hood="Petworth"><td>Sep 22, 2026</td><td>Petworth</td><td>—</td><td>5215 Georgia Ave NW</td><td>Office</td><td>Owner change</td></tr><tr data-hood="SW Waterfront"><td>Sep 16, 2026</td><td>SW Waterfront</td><td>DC DIAGNOSTIC INSTITUTE</td><td>800 Maine Ave SW</td><td>Office</td><td>Owner change</td></tr><tr data-hood="SW Waterfront"><td>Sep 15, 2026</td><td>SW Waterfront</td><td>TOUCHSTONE DESIGN LLC</td><td>800 Maine Ave SW</td><td>Office</td><td>Owner change</td></tr><tr data-hood="Petworth"><td>Sep 14, 2026</td><td>Petworth</td><td>MTP TOWING &amp; RECOVERY</td><td>916 Taylor St NW</td><td>Garage, repair</td><td>Owner change</td></tr><tr data-hood="Petworth"><td>Sep 13, 2026</td><td>Petworth</td><td>4000 MARKET</td><td>4000 Georgia Ave NW</td><td>Retail establishment</td><td>Owner change</td></tr><tr data-hood="Tenleytown &amp; Friendship Heights"><td>Sep 11, 2026</td><td>Tenleytown &amp; Friendship Heights</td><td>MASTER BALLET ACADEMY</td><td>4646 40th St NW</td><td>Performing arts ticket office or booking agency</td><td>Owner change</td></tr><tr data-hood="Tenleytown &amp; Friendship Heights"><td>Sep 11, 2026</td><td>Tenleytown &amp; Friendship Heights</td><td>SECURITY SOLUTIONS NETWORK INC</td><td>5506 Connecticut Ave NW</td><td>Office</td><td>Owner change</td></tr><tr data-hood="Petworth"><td>Sep 8, 2026</td><td>Petworth</td><td>KNEW BEAUTY I</td><td>5227 Georgia Ave NW</td><td>Cosmetic/toiletries sales</td><td>Owner change</td></tr><tr data-hood="Tenleytown &amp; Friendship Heights"><td>Sep 3, 2026</td><td>Tenleytown &amp; Friendship Heights</td><td>PIZZA BOLI&#x27;S</td><td>4903 Wisconsin Ave NW</td><td>Fast food establishment</td><td>Owner change</td></tr></tbody></table></div>
+</section>
+
+<section class="card">
+  <h2>Liquor licenses: newest on file</h2>
+  <p class="muted" style="margin-top:0">ABCA's open dataset has no issue dates and is a periodic snapshot (latest: May 29, 2026), so it can't show the last 60 days. These are the highest-numbered active licenses in these ANCs in that snapshot, a rough proxy for the newest.</p>
+  <div class="scroll"><table><thead><tr><th>Trade name</th><th>Area</th><th>Type</th><th>Address</th><th>License</th></tr></thead>
+  <tbody><tr data-hood="SW Waterfront"><td>The Dock Shop</td><td>SW Waterfront</td><td>Beer and Wine</td><td>658 Wharf Street SW</td><td>ABRA-135569</td></tr><tr data-hood="Adams Morgan"><td>El Tamarindo</td><td>Adams Morgan</td><td>Caterer</td><td>1785 Florida Avenue NW</td><td>ABRA-135565</td></tr><tr data-hood="Petworth"><td>District Larder</td><td>Petworth</td><td>Restaurant</td><td>821 Upshur Street NW</td><td>ABRA-135497</td></tr><tr data-hood="Adams Morgan"><td>El Meson Espanol</td><td>Adams Morgan</td><td>Restaurant</td><td>1826 Columbia Road NW</td><td>ABRA-135348</td></tr><tr data-hood="Adams Morgan"><td>The Line DC</td><td>Adams Morgan</td><td>Hotel</td><td>1770 Euclid Street NW</td><td>ABRA-135185</td></tr><tr data-hood="Adams Morgan"><td>Bukom</td><td>Adams Morgan</td><td>Tavern</td><td>2442 18th Street NW</td><td>ABRA-135139</td></tr><tr data-hood="Petworth"><td>DC Al Toque</td><td>Petworth</td><td>Tavern</td><td>3910 14th Street NW</td><td>ABRA-134822</td></tr><tr data-hood="Adams Morgan"><td>TBD</td><td>Adams Morgan</td><td>Tavern</td><td>2442 18th Street NW</td><td>ABRA-134750</td></tr></tbody></table></div>
+</section>
+<p class="muted" style="font-size:.8rem">Areas are matched by ANC: Adams Morgan: ANC 1C; Petworth: ANC 4C, 4D; Tenleytown &amp; Friendship Heights: ANC 3E, 3/4G; SW Waterfront: ANC 6D.</p>
+
+<script>
+(() => {
+  const chips = document.querySelectorAll(".chip");
+  chips.forEach(c => c.addEventListener("click", () => {
+    chips.forEach(x => x.classList.toggle("on", x === c));
+    const f = c.dataset.f;
+    document.querySelectorAll("[data-hood]").forEach(el => { el.hidden = !!f && el.dataset.hood !== f; });
+  }));
+})();
+</script>
+
+
+  <section class="card about" id="about-demo">
+    <h2>About this demo</h2>
+    <dl>
+      <dt>The idea</dt><dd>An automatically built list of new businesses from license and occupancy records, with a $49–149 paid "Featured" spotlight for owners who want to announce their opening. Items are labeled by the record that exists ("license issued"), never "opened".</dd>
+      <dt>What's real here</dt><dd>Every listing. This run pulled 216 Basic Business Licenses first issued in the last 60 days in these ANCs (Adams Morgan: ANC 1C; Petworth: ANC 4C, 4D; Tenleytown &amp; Friendship Heights: ANC 3E, 3/4G; SW Waterfront: ANC 6D) and kept 16 storefront-type businesses (food, retail and services). 53 were dropped as likely home-based: an apartment address, an address DC's address registry marks as residential, or a sole proprietor with no trade name (whose legal name is a person's name and is never shown). It also pulled 21 non-residential certificates of occupancy inside the same ANC boundaries and the newest active ABCA liquor licenses there.</dd>
+      <dt>What's mocked</dt><dd>The Featured card and the "Claim this listing" links are placeholders. The liquor-license section is from ABCA's latest open snapshot, not the last 60 days, because that dataset has no issue dates. Matching by ANC is approximate at neighborhood edges, and grouping licenses into one business by address and name is automatic.</dd>
+      <dt>To build it for real</dt><dd>Track ABCA placard notices and hearing agendas for true liquor-license dates; add DC Health food inspections when a bulk feed exists; review items weekly before the email goes out; build the claim form and a checkout for spotlights; match by neighborhood polygon once license coordinates are published at full precision (they are rounded to whole degrees today).</dd>
+    </dl>
+  </section>
+
+  <footer>
+    Independent project; not affiliated with DC Government, any ANC, BID or property owner.
+    Sources: <a href="https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/DCRA/FeatureServer/0">Basic Business Licenses (DLCP)</a>, <a href="https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Licensing_and_Grants_WebMercator/FeatureServer/46">Certificate of Occupancy (DOB)</a>, <a href="https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Licensing_and_Grants_WebMercator/FeatureServer/5">Alcohol License Business Locations (ABCA)</a>, ANC boundaries via Open Data DC. Generated 2026-10-31 17:08 UTC.
+  </footer>
+</div>
+</body>
+</html>

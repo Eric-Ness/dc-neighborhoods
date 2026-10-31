@@ -14,6 +14,7 @@ Each night a Python job pulls DC open data (building permits, 311 requests, crim
 | `wrangler.jsonc` | Worker + static assets config, custom domain routes |
 | `.github/workflows/nightly.yml` | Ingest → build → verify → commit snapshot → deploy |
 | `demos/` | Weekly digest email and block-history page, generated from live data (`python demos/make_demos.py`) |
+| `demos/ideas/` | One demo per top-30 idea (`NN-slug.html`), each rebuilt by `src/NN_*.py`; `index.html` lists them (`node tools/demo-index.mjs`). Rules in `CONVENTIONS.md` |
 | `research/` | 39 scored ideas, ranking, business case, content strategy |
 | `tools/` | `verify.mjs` (gate checks), `rank.mjs` (rebuilds the idea ranking) |
 

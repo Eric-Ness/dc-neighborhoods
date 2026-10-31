@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en" data-idea="transit-tech#6" data-rank="28">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ask L'Enfant (demo #28)</title>
+<style>
+:root{--bg:#f6f7f4;--card:#fff;--ink:#1c2420;--muted:#5b6660;--line:#dfe3dc;--accent:#245c4f;--soft:#e5eee9;--brick:#a2412b;--gold:#8a6a1f;--up:#a33a2c;--down:#2c6e49;--live:#2c6e49;--sample:#8a6a1f}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#121715;--card:#1a201d;--ink:#e6ebe7;--muted:#9ba7a1;--line:#2c3430;--accent:#7dc3ac;--soft:#1f2b27;--brick:#e58a72;--gold:#d8b25c;--up:#f08a7a;--down:#8fd3a8;--live:#8fd3a8;--sample:#d8b25c;color-scheme:dark}}
+:root[data-theme=dark]{--bg:#121715;--card:#1a201d;--ink:#e6ebe7;--muted:#9ba7a1;--line:#2c3430;--accent:#7dc3ac;--soft:#1f2b27;--brick:#e58a72;--gold:#d8b25c;--up:#f08a7a;--down:#8fd3a8;--live:#8fd3a8;--sample:#d8b25c;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:20px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px))}
+a{color:var(--accent)}
+h1{font-size:clamp(1.6rem,5vw,2.2rem);line-height:1.15;margin:.3rem 0 .4rem;text-wrap:balance}
+h2{font-size:1.15rem;margin:0 0 .6rem}
+.demo-bar{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:space-between;background:var(--soft);border-bottom:1px solid var(--line);padding:8px max(16px,env(safe-area-inset-right,0px)) 8px max(16px,env(safe-area-inset-left,0px));font-size:.82rem}
+.demo-bar b{letter-spacing:.06em}
+.badge{display:inline-block;font-size:.75rem;font-weight:600;padding:2px 8px;border-radius:999px;border:1px solid currentColor}
+.badge.live{color:var(--live)}.badge.sample{color:var(--sample)}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:.72rem;font-weight:700;color:var(--brick);margin:0}
+.muted{color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:14px 0;min-width:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.stat b{display:block;font-size:1.7rem;font-variant-numeric:tabular-nums}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{text-align:left;padding:.42rem .45rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.up{color:var(--up);font-weight:600}.down{color:var(--down);font-weight:600}
+.sponsor{border:1px dashed var(--accent);background:var(--soft);font-size:.92rem}
+.sponsor .label{font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.about{font-size:.9rem}
+.about dt{font-weight:600;margin-top:.5rem}.about dd{margin:0;color:var(--muted)}
+footer{font-size:.82rem;color:var(--muted);border-top:1px solid var(--line);margin-top:28px;padding-top:12px}
+svg text{fill:var(--muted);font-size:11px}
+:focus-visible{outline:2px solid var(--brick);outline-offset:2px}
+/* ---- demo-specific rules below this line ---- */
+
+.chat{padding:0;overflow:hidden}
+.chat-h{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;justify-content:space-between;padding:12px 16px;border-bottom:1px solid var(--line);background:var(--soft)}
+.log{padding:12px 14px;display:flex;flex-direction:column;gap:8px}
+.msg{max-width:88%;padding:9px 13px;border-radius:14px;font-size:.94rem;overflow-wrap:anywhere}
+.msg.me{align-self:flex-end;background:var(--accent);color:var(--card);border-bottom-right-radius:4px}
+.msg.bot{align-self:flex-start;background:var(--soft);border-bottom-left-radius:4px}
+#out{margin:0 14px 10px;max-width:none}
+.cite{display:inline-block;margin-left:3px;font-size:.68rem;font-weight:700;text-decoration:none;padding:0 5px;border-radius:4px;vertical-align:super;line-height:1.4;border:1px solid currentColor}
+.cite.sample,.prov.sample{color:var(--sample)}.cite.live,.prov.live{color:var(--live)}.cite.verified,.prov.verified{color:var(--accent)}.cite.estimate,.prov.estimate{color:var(--muted)}
+.prov{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.kind{display:block;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px}
+.kind.no{color:var(--up)}.kind.defer{color:var(--gold)}
+.ask{display:flex;gap:8px;padding:10px 14px;border-top:1px solid var(--line)}
+.ask input{flex:1;min-width:0;padding:10px;font:inherit;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
+.ask button{font:inherit;font-weight:600;padding:8px 16px;border:0;border-radius:8px;background:var(--accent);color:var(--card);cursor:pointer}
+.chat > p{padding:0 14px}
+.hit{margin-top:6px}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.small{font-size:.86rem}
+.facts td{font-size:.88rem}
+tr:target{background:var(--soft)}
+
+</style>
+</head>
+<body>
+<div class="demo-bar">
+  <span><b>DEMO</b> · Idea #28 of 39 · weighted score 64.2/100</span>
+  <span class="badge sample" data-provenance="sample">Sample data · illustrative</span>
+</div>
+<div class="wrap">
+  <p class="eyebrow">lenfantplaza.net · Visitor concierge</p>
+  <h1>Ask L'Enfant</h1>
+  <p class="muted">Ask about the station, the Mall and getting around. Every answer shows where it came from, and if we don't know, we say so.</p>
+
+  
+<div class="chat card">
+  <div class="chat-h"><b>Ask L'Enfant</b><span class="muted small">Answers only from the cited facts below · as of 12:53 PM Oct 31</span></div>
+  <div class="log"><div class="msg me">I have 3 hours and a stroller. Can we get from the train to the Air and Space Museum without stairs?</div><div class="msg bot">Yes. Use the <b>7th St/Maryland Ave (Smithsonian Museums)</b> entrance: WMATA lists elevators there from each Green/Yellow platform to the mezzanine and from the mezzanine to the street<a class="cite verified" href="#F3">F3</a>. All 4 elevators were in service as of 12:53 PM Oct 31<a class="cite sample" href="#F4">F4</a>. From there it's about 7 minutes on foot<a class="cite estimate" href="#F8">F8</a>. The museum is open 10 a.m. to 5:30 p.m. and you need a free timed-entry pass, so book one before you go<a class="cite verified" href="#F7">F7</a>.</div><div class="msg me">Is the Natural History Museum open late tonight?</div><div class="msg bot"><span class="kind no">Out of sources</span>I don't have verified hours for the Natural History Museum, so I won't guess. Check <a href="https://www.si.edu/museums/natural-history-museum">its si.edu page</a>. The only museum hours in my sources are Air and Space<a class="cite verified" href="#F7">F7</a>.</div><div class="msg me">Is the free shuttle running today?</div><div class="msg bot">Yes, Saturdays 12 to 6 p.m. from April 1 through October 31. Today is the last Saturday of that season. It stops at the station (7th St at Maryland Ave SW) and on the Mall near the Hirshhorn<a class="cite verified" href="#F6">F6</a>.</div><div class="msg me">My kids are done walking. Can we bike back?</div><div class="msg bot">Bikes near the station as of 12:53 PM Oct 31: L&#x27;Enfant Plaza / 7th &amp; C St SW (155 m): 3 bikes, 12 open docks; 7th &amp; E St SW (162 m): 4 bikes, 15 open docks<a class="cite live" href="#F9">F9</a>. Check Capital Bikeshare's own rider rules before riding with kids; they aren't in my sources.</div><div class="msg me">Which exit letter goes to the Spy Museum?</div><div class="msg bot"><span class="kind defer">Deferred</span>I don't know that yet. Exit letters at L'Enfant aren't in my verified facts. WMATA names three entrances<a class="cite verified" href="#F2">F2</a>; we still need to walk the station to say which one is best for the Spy Museum.</div><div class="msg me">When&#x27;s the next Green Line to Branch Ave?</div><div class="msg bot">4 minutes, then 12<a class="cite sample" href="#F5">F5</a>. (Demo note: this fact is sample data until the WMATA feed is connected.)</div><div class="msg me">What&#x27;s the best crab cake near the Wharf?</div><div class="msg bot"><span class="kind no">Out of sources</span>That's outside what I cover: I only answer from cited transit, museum and shuttle facts. <a href="https://www.wharfdc.com/">The Wharf's own site</a> lists its restaurants.</div></div>
+  <form id="ask" class="ask" autocomplete="off">
+    <label for="q" class="vh">Ask a question</label>
+    <input id="q" placeholder="Try: is there an elevator? / bikes? / museum hours?">
+    <button>Ask</button>
+  </form>
+  <div id="out" class="msg bot" hidden aria-live="polite"></div>
+  <p class="small muted">Demo: typed questions are matched to facts by keyword in your browser. No AI model runs on this page.</p>
+</div>
+
+<div class="card">
+  <h2>What the assistant knows</h2>
+  <p class="small muted">The entire knowledge base for this demo. Citations above link to these rows.
+  <span class="prov verified">verified</span> from the operator's page,
+  <span class="prov live">live</span> pulled at build,
+  <span class="prov sample">sample</span> made up for the demo,
+  <span class="prov estimate">estimate</span> computed by us.</p>
+  <div class="scroll"><table class="facts"><thead><tr><th>Id</th><th>Fact</th><th>Type</th><th>Source</th></tr></thead><tbody><tr id="F1"><td><b>F1</b></td><td><b>Station levels</b><br>Green and Yellow trains use upper-level side platforms; Orange, Blue and Silver use a lower-level center platform.</td><td><span class="prov verified">verified</span><br><span class="muted small">2026-10-31</span></td><td class="small"><a href="https://www.wmata.com/ridertools/station/l&#x27;enfant-plaza/info">WMATA station page</a></td></tr><tr id="F2"><td><b>F2</b></td><td><b>Entrances</b><br>Three street entrances: 7th St/Maryland Ave (Smithsonian Museums, VRE); 9th &amp; D St (L&#x27;Enfant Plaza); 7th &amp; D St (USDOT).</td><td><span class="prov verified">verified</span><br><span class="muted small">2026-10-31</span></td><td class="small"><a href="https://www.wmata.com/ridertools/station/l&#x27;enfant-plaza/info">WMATA station page</a></td></tr><tr id="F3"><td><b>F3</b></td><td><b>Elevators</b><br>At the 7th St/Maryland Ave entrance: an elevator from street to mezzanine and from the mezzanine to each Green/Yellow platform. At 9th &amp; D St: an elevator linking the upper platform to Branch Ave/Huntington and the lower Blue/Orange platform.</td><td><span class="prov verified">verified</span><br><span class="muted small">2026-10-31</span></td><td class="small"><a href="https://www.wmata.com/ridertools/station/l&#x27;enfant-plaza/info">WMATA station page</a></td></tr><tr id="F4"><td><b>F4</b></td><td><b>Elevator status</b><br>All 4 station elevators in service.</td><td><span class="prov sample">sample</span><br><span class="muted small">12:53 PM Oct 31</span></td><td class="small"><a href="https://developer.wmata.com/">WMATA ElevatorIncidents (sample)</a></td></tr><tr id="F5"><td><b>F5</b></td><td><b>Next trains</b><br>Green toward Branch Ave: 4 and 12 min. Silver toward Ashburn: 6 and 18 min.</td><td><span class="prov sample">sample</span><br><span class="muted small">12:53 PM Oct 31</span></td><td class="small"><a href="https://developer.wmata.com/">WMATA Rail Predictions (sample)</a></td></tr><tr id="F6"><td><b>F6</b></td><td><b>SW Shuttle</b><br>Free. Mon–Fri 7 a.m.–7 p.m.; Sat 12–6 p.m., Apr 1–Oct 31; no Sunday hours listed. Stops include L&#x27;Enfant Plaza Metro &amp; VRE (7th St at Maryland Ave SW) and the National Mall (Independence Ave at 7th St SW, near the Hirshhorn).</td><td><span class="prov verified">verified</span><br><span class="muted small">2026-10-31</span></td><td class="small"><a href="https://www.wharfdc.com/getting-here/the-wharf-shuttle/">Wharf Neighborhood Shuttle page</a></td></tr><tr id="F7"><td><b>F7</b></td><td><b>Air and Space Museum hours</b><br>10 a.m.–5:30 p.m. daily; closed Dec. 25. A free timed-entry pass is required.</td><td><span class="prov verified">verified</span><br><span class="muted small">2026-10-31</span></td><td class="small"><a href="https://www.si.edu/museums/air-and-space-museum">si.edu (via search; direct fetch blocked)</a></td></tr><tr id="F8"><td><b>F8</b></td><td><b>Walk to Air and Space</b><br>About 7 min on foot from the station, estimated from map distance.</td><td><span class="prov estimate">estimate</span><br><span class="muted small">2026-10-31</span></td><td class="small">Map-distance estimate</td></tr><tr id="F9"><td><b>F9</b></td><td><b>Bikeshare near the station</b><br>L&#x27;Enfant Plaza / 7th &amp; C St SW (155 m): 3 bikes, 12 open docks; 7th &amp; E St SW (162 m): 4 bikes, 15 open docks.</td><td><span class="prov live">live</span><br><span class="muted small">12:53 PM Oct 31</span></td><td class="small"><a href="https://gbfs.lyft.com/gbfs/1.1/dca-cabi/en/station_status.json">Capital Bikeshare GBFS</a></td></tr></tbody></table></div>
+</div>
+
+<script>
+(function(){
+var KB=[{"id": "F1", "t": "Station levels", "x": "Green and Yellow trains use upper-level side platforms; Orange, Blue and Silver use a lower-level center platform.", "p": "verified", "k": ["line", "lines", "level", "platform", "green", "yellow", "orange", "blue", "silver", "transfer", "upstairs", "downstairs"]}, {"id": "F2", "t": "Entrances", "x": "Three street entrances: 7th St/Maryland Ave (Smithsonian Museums, VRE); 9th & D St (L'Enfant Plaza); 7th & D St (USDOT).", "p": "verified", "k": ["exit", "exits", "entrance", "entrances", "street", "door", "way", "out", "letter"]}, {"id": "F3", "t": "Elevators", "x": "At the 7th St/Maryland Ave entrance: an elevator from street to mezzanine and from the mezzanine to each Green/Yellow platform. At 9th & D St: an elevator linking the upper platform to Branch Ave/Huntington and the lower Blue/Orange platform.", "p": "verified", "k": ["elevator", "elevators", "stroller", "wheelchair", "step-free", "stairs", "accessible", "lift"]}, {"id": "F4", "t": "Elevator status", "x": "All 4 station elevators in service.", "p": "sample", "k": ["elevator", "working", "broken", "out", "status", "outage"]}, {"id": "F5", "t": "Next trains", "x": "Green toward Branch Ave: 4 and 12 min. Silver toward Ashburn: 6 and 18 min.", "p": "sample", "k": ["train", "next", "when", "arrival", "minutes", "branch", "green", "silver", "ashburn"]}, {"id": "F6", "t": "SW Shuttle", "x": "Free. Mon\u2013Fri 7 a.m.\u20137 p.m.; Sat 12\u20136 p.m., Apr 1\u2013Oct 31; no Sunday hours listed. Stops include L'Enfant Plaza Metro & VRE (7th St at Maryland Ave SW) and the National Mall (Independence Ave at 7th St SW, near the Hirshhorn).", "p": "verified", "k": ["shuttle", "bus", "free", "wharf", "ride", "circulator"]}, {"id": "F7", "t": "Air and Space Museum hours", "x": "10 a.m.\u20135:30 p.m. daily; closed Dec. 25. A free timed-entry pass is required.", "p": "verified", "k": ["air", "space", "museum", "hours", "open", "close", "pass", "ticket", "nasm"]}, {"id": "F8", "t": "Walk to Air and Space", "x": "About 7 min on foot from the station, estimated from map distance.", "p": "estimate", "k": ["walk", "far", "distance", "minutes", "air", "space"]}, {"id": "F9", "t": "Bikeshare near the station", "x": "L'Enfant Plaza / 7th & C St SW (155 m): 3 bikes, 12 open docks; 7th & E St SW (162 m): 4 bikes, 15 open docks.", "p": "live", "k": ["bike", "bikes", "bikeshare", "capital", "dock", "cycle"]}];
+var f=document.getElementById('ask'),q=document.getElementById('q'),o=document.getElementById('out');
+function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+f.onsubmit=function(ev){
+  ev.preventDefault();
+  var w=q.value.toLowerCase().match(/[a-z-]+/g)||[];
+  var hits=KB.map(function(r){return [r,w.filter(function(x){return r.k.indexOf(x)>=0;}).length];}).filter(function(h){return h[1]>0;}).sort(function(a,b){return b[1]-a[1];}).slice(0,2);
+  o.hidden=false;
+  if(!hits.length){o.innerHTML='<span class="kind no">Out of sources</span>I don\u2019t have a cited fact for that, so I won\u2019t guess. Try the station, elevators, trains, the shuttle, Air and Space hours, or bikes.';return;}
+  o.innerHTML='Facts that would ground this answer:'+hits.map(function(h){var r=h[0];return '<div class="hit"><a class="cite '+r.p+'" href="#'+r.id+'">'+r.id+'</a> <b>'+esc(r.t)+':</b> '+esc(r.x)+'</div>';}).join('')+'<div class="muted small">The real version passes only these rows to the model and requires it to cite them.</div>';
+};
+})();
+</script>
+
+
+  <section class="card about" id="about-demo">
+    <h2>About this demo</h2>
+    <dl>
+      <dt>The idea</dt><dd>A chat box for visitors at L'Enfant Plaza that answers combined questions ("3 hours, a stroller, which museum and how?") using only a curated, regularly refreshed set of facts, cites each one with its as-of time, and refuses anything outside them.</dd>
+      <dt>What's real here</dt><dd>The conversation is scripted, but its facts are real where marked: Capital Bikeshare dock counts (F9) were pulled live at build time; station levels, entrances and elevators (F1–F3) come from WMATA's station page; the SW Shuttle schedule (F6) from wharfdc.com; Air and Space hours (F7) from si.edu as shown in search results (si.edu blocked our direct fetch). The shuttle answer is computed for the build date.</dd>
+      <dt>What's mocked</dt><dd>No language model runs here: the answers were written by hand to show the intended behavior. Elevator status (F4) and train times (F5) are sample. The typing box only keyword-matches the fact table. The walk time (F8) is a map-distance estimate.</dd>
+      <dt>To build it for real</dt><dd>Grounding design: a cron Worker refreshes a small fact store (D1 rows with id, text, source URL, fetched-at, type) from WMATA, NPS, NWS, GBFS, the shuttle page and per-museum si.edu scrapes. For each question, retrieval (keyword plus Vectorize) picks at most about 8 rows; the model (Workers AI or the Claude API) gets only those rows and a system prompt requiring a citation id on every sentence, "I don't know that; check X" when no row answers it, and no restaurant, medical or safety advice. A post-check drops any answer whose citations don't exist or whose numbers don't appear in the cited rows. Log questions that got refusals and add facts for the common ones. Rate-limit per IP to cap inference cost, and keep commerce on the .net domain.</dd>
+    </dl>
+  </section>
+
+  <footer>
+    Independent project; not affiliated with DC Government, any ANC, BID or property owner. Not affiliated with WMATA or the Smithsonian.
+    Sources: <a href="https://www.wmata.com/ridertools/station/l'enfant-plaza/info">WMATA station page</a>, <a href="https://www.wharfdc.com/getting-here/the-wharf-shuttle/">Wharf Neighborhood Shuttle</a>, <a href="https://www.si.edu/museums/air-and-space-museum">si.edu Air and Space Museum</a>, <a href="https://gbfs.lyft.com/gbfs/1.1/dca-cabi/en/station_status.json">Capital Bikeshare GBFS</a> (live). Generated 2026-10-31 16:53 UTC.
+  </footer>
+</div>
+</body>
+</html>

@@ -44,5 +44,18 @@ Scope: 20-40 scored ideas from parallel research, ranked review, business case, 
   EXPECT: demos verified
   EVIDENCE: exit=0; shell=C:\WINDOWS\system32\cmd.exe; cwd=C:\Users\ericn\source\repos\DCNeighborhoods; path=acc3919f8bbe/61 entries; EXPECT=matched; output-sha256=ea8201f3891ff937e5a192f298763b0bd5e86a9252ccb3868590cb6cfbd6913b; output-bytes=15
 
+- [x] G10: each of the top 30 ideas has a demo page (rank 3 reuses the digest) with honest live/sample provenance, About box, self-contained, privacy-clean
+  CHECK: node tools/verify.mjs ideademos
+  EXPECT: ideademos verified
+  EVIDENCE: exit=0; shell=C:\WINDOWS\system32\cmd.exe; cwd=C:\Users\ericn\source\repos\DCNeighborhoods; path=acc3919f8bbe/61 entries; EXPECT=matched; output-sha256=bc2b9b5f36d699992ea184d9b912f8341854bb233651190ec1ae1736b5718cf9; output-bytes=19
+
+- [x] G11: demo index lists all 30 ideas in rank order with links that resolve and none marked not built
+  CHECK: node tools/demo-index.mjs && node tools/verify.mjs demoindex
+  EXPECT: demoindex verified
+  EVIDENCE: exit=0; shell=C:\WINDOWS\system32\cmd.exe; cwd=C:\Users\ericn\source\repos\DCNeighborhoods; path=acc3919f8bbe/61 entries; EXPECT=matched; output-sha256=e6b5958fae7715bc7e28373db9f8d2e2c74365245f866e56ad826f2594a844d4; output-bytes=66
+
+- [x] G12: every top-30 demo was read by the driver (not just its builder) and problems found were fixed; hub republished with the demo index
+  EVIDENCE: manual review 2026-10-31: driver read head + About box of all 29 new demos (groups A-F) and grepped B/D for owner names (only disclaimers and CofO "Owner change" reasons); checked #28 F4 sample labeling; 375px overflow test over all 31 pages in iframes found 1 failure (#23, repeated ANCSMD values), fixed in generator and re-tested 371/371; hub republish recorded in research/README.md
+
 - [x] G9: research hub is published as a private artifact and its URL is recorded in research/README.md
   EVIDENCE: manual 2026-10-31: Artifact publish returned https://claude.ai/artifact/8265xWrJ9cvUsL3AXBzvW2 (version 1, with demos/digest-petworth.html and demos/block-delafield.html as files); URL written to research/README.md hub row

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en" data-idea="culture-content#8" data-rank="29">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>1950 Block Portrait (demo #29)</title>
+<style>
+:root{--bg:#f6f7f4;--card:#fff;--ink:#1c2420;--muted:#5b6660;--line:#dfe3dc;--accent:#245c4f;--soft:#e5eee9;--brick:#a2412b;--gold:#8a6a1f;--up:#a33a2c;--down:#2c6e49;--live:#2c6e49;--sample:#8a6a1f}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#121715;--card:#1a201d;--ink:#e6ebe7;--muted:#9ba7a1;--line:#2c3430;--accent:#7dc3ac;--soft:#1f2b27;--brick:#e58a72;--gold:#d8b25c;--up:#f08a7a;--down:#8fd3a8;--live:#8fd3a8;--sample:#d8b25c;color-scheme:dark}}
+:root[data-theme=dark]{--bg:#121715;--card:#1a201d;--ink:#e6ebe7;--muted:#9ba7a1;--line:#2c3430;--accent:#7dc3ac;--soft:#1f2b27;--brick:#e58a72;--gold:#d8b25c;--up:#f08a7a;--down:#8fd3a8;--live:#8fd3a8;--sample:#d8b25c;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:20px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px))}
+a{color:var(--accent)}
+h1{font-size:clamp(1.6rem,5vw,2.2rem);line-height:1.15;margin:.3rem 0 .4rem;text-wrap:balance}
+h2{font-size:1.15rem;margin:0 0 .6rem}
+.demo-bar{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:space-between;background:var(--soft);border-bottom:1px solid var(--line);padding:8px max(16px,env(safe-area-inset-right,0px)) 8px max(16px,env(safe-area-inset-left,0px));font-size:.82rem}
+.demo-bar b{letter-spacing:.06em}
+.badge{display:inline-block;font-size:.75rem;font-weight:600;padding:2px 8px;border-radius:999px;border:1px solid currentColor}
+.badge.live{color:var(--live)}.badge.sample{color:var(--sample)}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:.72rem;font-weight:700;color:var(--brick);margin:0}
+.muted{color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:14px 0;min-width:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.stat b{display:block;font-size:1.7rem;font-variant-numeric:tabular-nums}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{text-align:left;padding:.42rem .45rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.up{color:var(--up);font-weight:600}.down{color:var(--down);font-weight:600}
+.sponsor{border:1px dashed var(--accent);background:var(--soft);font-size:.92rem}
+.sponsor .label{font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.about{font-size:.9rem}
+.about dt{font-weight:600;margin-top:.5rem}.about dd{margin:0;color:var(--muted)}
+footer{font-size:.82rem;color:var(--muted);border-top:1px solid var(--line);margin-top:28px;padding-top:12px}
+svg text{fill:var(--muted);font-size:11px}
+:focus-visible{outline:2px solid var(--brick);outline-offset:2px}
+/* ---- demo-specific rules below this line ---- */
+
+.small{font-size:.84rem}
+.ribbon{background:var(--soft);border-color:var(--gold);border-left:4px solid var(--gold);font-size:.92rem}
+.stag{display:inline-block;vertical-align:middle;font-size:.6rem;font-weight:700;letter-spacing:.08em;color:var(--sample);border:1px dashed var(--sample);border-radius:4px;padding:0 5px;margin-left:4px}
+h2 .stag{vertical-align:3px}
+.stat{font-size:.88rem;color:var(--muted)}.stat b{color:var(--ink)}
+.chart{width:100%;height:auto;display:block}
+.chart .bar{fill:url(#hatch)}
+.hbg{fill:var(--accent);opacity:.85}
+.hline{stroke:var(--card);stroke-width:2;opacity:.35}
+.chart .lab{fill:var(--ink);font-size:13px}
+.chart .val{fill:var(--muted);font-size:12px;font-variant-numeric:tabular-nums}
+.two{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}.two .card{margin:0}
+.tight{padding-left:1.1rem;margin:.3rem 0}.tight li{margin:.4rem 0}
+.steps{padding-left:1.2rem}.steps li{margin:.5rem 0}
+a.src{font-size:.72rem;color:var(--muted);white-space:nowrap}
+a.src::before{content:"["}a.src::after{content:"]"}
+.btn{display:inline-block;background:var(--accent);color:var(--card);padding:.45rem .9rem;border-radius:8px;text-decoration:none;font-weight:600}
+
+</style>
+</head>
+<body>
+<div class="demo-bar">
+  <span><b>DEMO</b> · Idea #29 of 39 · weighted score 63.6/100</span>
+  <span class="badge sample" data-provenance="sample">Sample data · illustrative</span>
+</div>
+<div class="wrap">
+  <p class="eyebrow">Petworth · 1950 Block Portrait</p>
+  <h1>The 400 block of Upshur Street NW, as counted in 1950</h1>
+  <p class="muted">Jobs, birthplaces, ages and household sizes for one block, from the 1950 census sheets. Charts only. No names, ever.</p>
+
+  
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" class="hbg"/><line x1="0" y1="0" x2="0" y2="6" class="hline"/></pattern></defs></svg>
+<div class="card ribbon"><b>Every number on this page is a made-up sample</b> that shows the layout. The real figures would come from transcribing NARA's 1950 census sheets for this block's enumeration district.</div>
+
+<div class="card">
+  <div class="grid">
+    <div class="stat"><b>118</b>people counted <span class="stag">SAMPLE FIGURES</span></div>
+    <div class="stat"><b>33</b>households <span class="stag">SAMPLE FIGURES</span></div>
+    <div class="stat"><b>3.6</b>people per household <span class="stag">SAMPLE FIGURES</span></div>
+    <div class="stat"><b>Apr 1, 1950</b>census day</div>
+  </div>
+  <p class="muted small">Enumeration district: <b>1-[###]</b> (looked up from the ED descriptions; placeholder here). Counts only: no names, and any category with fewer than 3 people is folded into "other" before publishing.</p>
+</div>
+
+<section class="card">
+  <h2>What people did for work <span class="stag">SAMPLE FIGURES</span></h2>
+  <svg viewBox="0 0 380 214" role="img" class="chart" aria-label="Sample chart"><text x="120" y="19" text-anchor="end" class="lab">Government clerk</text><rect x="128" y="7" width="208.0" height="16" rx="2" class="bar"/><text x="342.0" y="19" class="val">15</text><text x="120" y="45" text-anchor="end" class="lab">Laborer</text><rect x="128" y="33" width="124.8" height="16" rx="2" class="bar"/><text x="258.8" y="45" class="val">9</text><text x="120" y="71" text-anchor="end" class="lab">Teacher</text><rect x="128" y="59" width="83.2" height="16" rx="2" class="bar"/><text x="217.2" y="71" class="val">6</text><text x="120" y="97" text-anchor="end" class="lab">Domestic worker</text><rect x="128" y="85" width="83.2" height="16" rx="2" class="bar"/><text x="217.2" y="97" class="val">6</text><text x="120" y="123" text-anchor="end" class="lab">Messenger</text><rect x="128" y="111" width="69.3" height="16" rx="2" class="bar"/><text x="203.3" y="123" class="val">5</text><text x="120" y="149" text-anchor="end" class="lab">Salesperson</text><rect x="128" y="137" width="69.3" height="16" rx="2" class="bar"/><text x="203.3" y="149" class="val">5</text><text x="120" y="175" text-anchor="end" class="lab">Carpenter</text><rect x="128" y="163" width="55.5" height="16" rx="2" class="bar"/><text x="189.5" y="175" class="val">4</text><text x="120" y="201" text-anchor="end" class="lab">Nurse</text><rect x="128" y="189" width="41.6" height="16" rx="2" class="bar"/><text x="175.6" y="201" class="val">3</text></svg>
+  <p class="muted small">From the occupation column, grouped into plain job names. Shown for people with a listed occupation.</p>
+</section>
+
+<section class="card">
+  <h2>Where they were born <span class="stag">SAMPLE FIGURES</span></h2>
+  <svg viewBox="0 0 380 188" role="img" class="chart" aria-label="Sample chart"><text x="142" y="19" text-anchor="end" class="lab">District of Columbia</text><rect x="150" y="7" width="186.0" height="16" rx="2" class="bar"/><text x="342.0" y="19" class="val">39</text><text x="142" y="45" text-anchor="end" class="lab">Virginia</text><rect x="150" y="33" width="104.9" height="16" rx="2" class="bar"/><text x="260.9" y="45" class="val">22</text><text x="142" y="71" text-anchor="end" class="lab">Maryland</text><rect x="150" y="59" width="81.1" height="16" rx="2" class="bar"/><text x="237.1" y="71" class="val">17</text><text x="142" y="97" text-anchor="end" class="lab">North Carolina</text><rect x="150" y="85" width="52.5" height="16" rx="2" class="bar"/><text x="208.5" y="97" class="val">11</text><text x="142" y="123" text-anchor="end" class="lab">Pennsylvania</text><rect x="150" y="111" width="28.6" height="16" rx="2" class="bar"/><text x="184.6" y="123" class="val">6</text><text x="142" y="149" text-anchor="end" class="lab">Other states</text><rect x="150" y="137" width="85.8" height="16" rx="2" class="bar"/><text x="241.8" y="149" class="val">18</text><text x="142" y="175" text-anchor="end" class="lab">Outside the U.S.</text><rect x="150" y="163" width="23.8" height="16" rx="2" class="bar"/><text x="179.8" y="175" class="val">5</text></svg>
+  <p class="muted small">From the birthplace column (state, or country if born abroad).</p>
+</section>
+
+<div class="grid two">
+<section class="card">
+  <h2>Ages <span class="stag">SAMPLE FIGURES</span></h2>
+  <svg viewBox="0 0 360 170" role="img" class="chart" aria-label="Sample chart"><rect x="18.0" y="33.6" width="32.6" height="110.4" rx="2" class="bar"/><text x="34.3" y="28.6" text-anchor="middle" class="val">19</text><text x="34.3" y="162" text-anchor="middle" class="lab">0–9</text><rect x="66.6" y="62.7" width="32.6" height="81.3" rx="2" class="bar"/><text x="82.9" y="57.7" text-anchor="middle" class="val">14</text><text x="82.9" y="162" text-anchor="middle" class="lab">10–19</text><rect x="115.1" y="45.2" width="32.6" height="98.8" rx="2" class="bar"/><text x="131.4" y="40.2" text-anchor="middle" class="val">17</text><text x="131.4" y="162" text-anchor="middle" class="lab">20–29</text><rect x="163.7" y="22.0" width="32.6" height="122.0" rx="2" class="bar"/><text x="180.0" y="17.0" text-anchor="middle" class="val">21</text><text x="180.0" y="162" text-anchor="middle" class="lab">30–39</text><rect x="212.3" y="39.4" width="32.6" height="104.6" rx="2" class="bar"/><text x="228.6" y="34.4" text-anchor="middle" class="val">18</text><text x="228.6" y="162" text-anchor="middle" class="lab">40–49</text><rect x="260.9" y="62.7" width="32.6" height="81.3" rx="2" class="bar"/><text x="277.1" y="57.7" text-anchor="middle" class="val">14</text><text x="277.1" y="162" text-anchor="middle" class="lab">50–59</text><rect x="309.4" y="56.9" width="32.6" height="87.1" rx="2" class="bar"/><text x="325.7" y="51.9" text-anchor="middle" class="val">15</text><text x="325.7" y="162" text-anchor="middle" class="lab">60+</text></svg>
+</section>
+<section class="card">
+  <h2>Household size <span class="stag">SAMPLE FIGURES</span></h2>
+  <svg viewBox="0 0 360 170" role="img" class="chart" aria-label="Sample chart"><rect x="18.0" y="98.2" width="40.7" height="45.8" rx="2" class="bar"/><text x="38.3" y="93.2" text-anchor="middle" class="val">3</text><text x="38.3" y="162" text-anchor="middle" class="lab">1</text><rect x="74.7" y="37.2" width="40.7" height="106.8" rx="2" class="bar"/><text x="95.0" y="32.2" text-anchor="middle" class="val">7</text><text x="95.0" y="162" text-anchor="middle" class="lab">2</text><rect x="131.3" y="22.0" width="40.7" height="122.0" rx="2" class="bar"/><text x="151.7" y="17.0" text-anchor="middle" class="val">8</text><text x="151.7" y="162" text-anchor="middle" class="lab">3</text><rect x="188.0" y="37.2" width="40.7" height="106.8" rx="2" class="bar"/><text x="208.3" y="32.2" text-anchor="middle" class="val">7</text><text x="208.3" y="162" text-anchor="middle" class="lab">4</text><rect x="244.7" y="83.0" width="40.7" height="61.0" rx="2" class="bar"/><text x="265.0" y="78.0" text-anchor="middle" class="val">4</text><text x="265.0" y="162" text-anchor="middle" class="lab">5</text><rect x="301.3" y="83.0" width="40.7" height="61.0" rx="2" class="bar"/><text x="321.7" y="78.0" text-anchor="middle" class="val">4</text><text x="321.7" y="162" text-anchor="middle" class="lab">6+</text></svg>
+  <p class="muted small">Number of households by people living in them. The product would set this beside today's figure from the Census Bureau's American Community Survey.</p>
+</section>
+</div>
+
+<section class="card">
+  <h2>What the sheets can and can't tell us</h2>
+  <ul class="tight">
+    <li>Census day was April 1, 1950. Each Form P1 page has a line for each of 30 people, and six people per page were asked extra "sample" questions. <a class="src" href="https://1950census.archives.gov/about/">NARA</a></li>
+    <li>Renters versus owners is <b>not</b> available: the housing schedule was on the back of the form, was never microfilmed, and the paper originals no longer exist. <a class="src" href="https://1950census.archives.gov/about/">NARA</a></li>
+    <li>The records opened on April 1, 2022, after the 72-year privacy restriction. <a class="src" href="https://www.archives.gov/research/census/1950">NARA</a></li>
+    <li>NARA's own name index was built with AI/OCR and isn't 100 percent accurate. <a class="src" href="https://www.archives.gov/research/census/1950">NARA</a></li>
+  </ul>
+  <p><a class="btn" href="https://1950census.archives.gov/">See the original sheets at the National Archives →</a></p>
+  <p class="muted small">Names stay on NARA's site. This project never transcribes, indexes or displays them. Some people counted in 1950 are still alive.</p>
+</section>
+
+<section class="card">
+  <h2>How the real version gets built</h2>
+  <ol class="steps">
+    <li><b>Find the district.</b> Match each block to its 1950 enumeration district using NARA's ED maps and descriptions (<a href="https://stevemorse.org/census/faq1950.htm">Steve Morse's 1950 ED tools</a> help).</li>
+    <li><b>Download the sheets.</b> NARA publishes every population schedule, ED map and description as open data on AWS, free and with no account. <a class="src" href="https://registry.opendata.aws/nara-1950-census/">AWS Open Data</a></li>
+    <li><b>Transcribe only the non-name columns:</b> relationship, age, birthplace, occupation. Run OCR or Claude vision on roughly 200–400 sheets per neighborhood, then spot-check by hand.</li>
+    <li><b>Aggregate and suppress.</b> Roll up to block or ED, fold small groups into "other", and publish counts and charts only.</li>
+    <li><b>Link out for names.</b> Each portrait links to the matching sheets on NARA's viewer.</li>
+  </ol>
+</section>
+
+<div class="card sponsor"><div class="label">Partner slot</div><b>[Grant funder or newsroom partner]</b>. A good fit for a humanities grant or a data-journalism partnership.</div>
+
+
+  <section class="card about" id="about-demo">
+    <h2>About this demo</h2>
+    <dl>
+      <dt>The idea</dt><dd>A per-block statistical portrait built from the 1950 census manuscript schedules, released free in 2022: what people did, where they came from and how they lived. A social-history page for every block, not a people search.</dd>
+      <dt>What's real here</dt><dd>The facts about the 1950 census and its records (census day, the Form P1 layout, the missing housing schedule, the 2022 release, NARA's AI/OCR name index, the AWS open-data copy), each linked to NARA or AWS. The block and neighborhood are real places.</dd>
+      <dt>What's mocked</dt><dd>Every count and chart. They are invented sample figures that show the layout, because no per-block 1950 statistics exist to query. The enumeration district number is a placeholder.</dd>
+      <dt>To build it for real</dt><dd>For each neighborhood, map blocks to 1950 enumeration districts, pull those sheets from NARA's AWS bucket, transcribe only the non-name columns with OCR or Claude vision, spot-check, aggregate with small-group suppression, and add today's ACS figures for comparison. Expect 40–80 hours for the first neighborhood.</dd>
+    </dl>
+  </section>
+
+  <footer>
+    Independent project; not affiliated with DC Government, any ANC, BID or property owner.
+    Sources: <a href="https://1950census.archives.gov/">NARA 1950 Census</a>; <a href="https://www.archives.gov/research/census/1950">NARA 1950 Census Records</a>; <a href="https://registry.opendata.aws/nara-1950-census/">1950 Census on AWS Open Data</a>; <a href="https://stevemorse.org/census/faq1950.htm">Steve Morse 1950 ED FAQ</a>. All charts are sample figures. Generated 2026-10-31 17:35 UTC.
+  </footer>
+</div>
+</body>
+</html>

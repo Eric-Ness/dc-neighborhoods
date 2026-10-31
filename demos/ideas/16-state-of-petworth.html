@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en" data-idea="monetization#10" data-rank="16">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The State of Petworth 2026 (demo #16)</title>
+<style>
+:root{--bg:#f6f7f4;--card:#fff;--ink:#1c2420;--muted:#5b6660;--line:#dfe3dc;--accent:#245c4f;--soft:#e5eee9;--brick:#a2412b;--gold:#8a6a1f;--up:#a33a2c;--down:#2c6e49;--live:#2c6e49;--sample:#8a6a1f}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#121715;--card:#1a201d;--ink:#e6ebe7;--muted:#9ba7a1;--line:#2c3430;--accent:#7dc3ac;--soft:#1f2b27;--brick:#e58a72;--gold:#d8b25c;--up:#f08a7a;--down:#8fd3a8;--live:#8fd3a8;--sample:#d8b25c;color-scheme:dark}}
+:root[data-theme=dark]{--bg:#121715;--card:#1a201d;--ink:#e6ebe7;--muted:#9ba7a1;--line:#2c3430;--accent:#7dc3ac;--soft:#1f2b27;--brick:#e58a72;--gold:#d8b25c;--up:#f08a7a;--down:#8fd3a8;--live:#8fd3a8;--sample:#d8b25c;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:20px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px))}
+a{color:var(--accent)}
+h1{font-size:clamp(1.6rem,5vw,2.2rem);line-height:1.15;margin:.3rem 0 .4rem;text-wrap:balance}
+h2{font-size:1.15rem;margin:0 0 .6rem}
+.demo-bar{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:space-between;background:var(--soft);border-bottom:1px solid var(--line);padding:8px max(16px,env(safe-area-inset-right,0px)) 8px max(16px,env(safe-area-inset-left,0px));font-size:.82rem}
+.demo-bar b{letter-spacing:.06em}
+.badge{display:inline-block;font-size:.75rem;font-weight:600;padding:2px 8px;border-radius:999px;border:1px solid currentColor}
+.badge.live{color:var(--live)}.badge.sample{color:var(--sample)}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:.72rem;font-weight:700;color:var(--brick);margin:0}
+.muted{color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:14px 0;min-width:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.stat b{display:block;font-size:1.7rem;font-variant-numeric:tabular-nums}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{text-align:left;padding:.42rem .45rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.up{color:var(--up);font-weight:600}.down{color:var(--down);font-weight:600}
+.sponsor{border:1px dashed var(--accent);background:var(--soft);font-size:.92rem}
+.sponsor .label{font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.about{font-size:.9rem}
+.about dt{font-weight:600;margin-top:.5rem}.about dd{margin:0;color:var(--muted)}
+footer{font-size:.82rem;color:var(--muted);border-top:1px solid var(--line);margin-top:28px;padding-top:12px}
+svg text{fill:var(--muted);font-size:11px}
+:focus-visible{outline:2px solid var(--brick);outline-offset:2px}
+/* ---- demo-specific rules below this line ---- */
+
+.hero{background:var(--accent);color:var(--card);border-radius:14px;padding:26px 22px;margin:10px 0 16px}
+.hero .kicker{text-transform:uppercase;letter-spacing:.1em;font-size:.72rem;font-weight:700;margin:0;opacity:.85}
+.hero .big{font-size:clamp(2rem,8vw,3.2rem);font-weight:800;line-height:1.05;margin:.3rem 0 .5rem;letter-spacing:-.01em}
+.hero .lede{margin:0 0 .9rem;max-width:56ch;opacity:.95}
+.hero .title-sponsor{display:inline-block;border:1px dashed currentColor;border-radius:8px;padding:.3rem .7rem;font-size:.9rem}
+.hero .title-sponsor .label{font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;opacity:.85}
+.toc{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:14px;font-size:.88rem}
+.toc a{color:var(--card);opacity:.9}
+.chapter h2{font-size:1.45rem;margin-top:.1rem}
+.chapter .eyebrow{margin-bottom:0}
+.kpis .stat b{font-size:1.9rem}
+
+</style>
+</head>
+<body>
+<div class="demo-bar">
+  <span><b>DEMO</b> · Idea #16 of 39 · weighted score 69.7/100</span>
+  <span class="badge live" data-provenance="live">Live data · Open Data DC · pulled 2026-10-31</span>
+</div>
+<div class="wrap">
+  <p class="eyebrow">Petworth · Annual data report</p>
+  <h1>Petworth by the numbers, Oct 2025 – Oct 2026</h1>
+  <p class="muted">Six short chapters, every number from DC open data, refreshed when the report is published each fall.</p>
+
+  
+<section class="hero">
+  <p class="kicker">Annual report · Oct 2025 – Oct 2026</p>
+  <p class="big">The State of Petworth 2026</p>
+  <p class="lede">A year of permits, 311 calls, home sales, new businesses and public safety in one of DC's fastest-changing rowhouse neighborhoods, measured from the District's own open data.</p>
+  <div class="title-sponsor"><span class="label">Presented by</span> <b>[Title sponsor]</b></div>
+  <nav class="toc" aria-label="Chapters"><a href="#ch-build">Building</a><a href="#ch-homes">Homes</a><a href="#ch-biz">Business</a><a href="#ch-311">311</a><a href="#ch-safety">Safety</a><a href="#ch-gov">Who represents you</a></nav>
+</section>
+
+<div class="grid kpis">
+  <div class="card stat"><span class="muted">Building permits</span><b>1,412</b><span class="muted"><span class="down">-11%</span> vs prior year</span></div>
+  <div class="card stat"><span class="muted">Median house sale</span><b>$810K</b><span class="muted"><span class="down">-3%</span> vs prior year</span></div>
+  <div class="card stat"><span class="muted">311 requests</span><b>13,925</b><span class="muted"><span class="up">+6%</span> vs prior year</span></div>
+  <div class="card stat"><span class="muted">Reported crimes</span><b>462</b><span class="muted"><span class="up">+8%</span> vs prior year</span></div>
+</div>
+
+<section class="card chapter" id="ch-build">
+  <p class="eyebrow">Chapter 1</p><h2>Building</h2>
+  <p>DOB issued <b>1,412</b> building permits inside Petworth in the last 12 months, compared with 1,584 the year before. The last 30 days in the nightly feed add 84 more to watch.</p>
+  <svg viewBox="0 0 640 160" width="100%" role="img" aria-label="Building permits issued per month"><line x1="0" x2="640" y1="136" y2="136" stroke="var(--line)"/><rect x="13.3" y="32.6" width="37.7" height="103.4" rx="2" fill="var(--accent)"><title>Nov: 135</title></rect><text x="32.2" y="28.6" text-anchor="middle" style="font-size:10px">135</text><text x="32.2" y="153" text-anchor="middle" style="font-size:10px">Nov</text><rect x="65.7" y="18.0" width="37.7" height="118.0" rx="2" fill="var(--accent)"><title>Dec: 154</title></rect><text x="84.5" y="14.0" text-anchor="middle" style="font-size:10px">154</text><text x="84.5" y="153" text-anchor="middle" style="font-size:10px">Dec</text><rect x="118.0" y="38.7" width="37.7" height="97.3" rx="2" fill="var(--accent)"><title>Jan: 127</title></rect><text x="136.8" y="34.7" text-anchor="middle" style="font-size:10px">127</text><text x="136.8" y="153" text-anchor="middle" style="font-size:10px">Jan</text><rect x="170.3" y="70.1" width="37.7" height="65.9" rx="2" fill="var(--accent)"><title>Feb: 86</title></rect><text x="189.2" y="66.1" text-anchor="middle" style="font-size:10px">86</text><text x="189.2" y="153" text-anchor="middle" style="font-size:10px">Feb</text><rect x="222.7" y="32.6" width="37.7" height="103.4" rx="2" fill="var(--accent)"><title>Mar: 135</title></rect><text x="241.5" y="28.6" text-anchor="middle" style="font-size:10px">135</text><text x="241.5" y="153" text-anchor="middle" style="font-size:10px">Mar</text><rect x="275.0" y="46.4" width="37.7" height="89.6" rx="2" fill="var(--accent)"><title>Apr: 117</title></rect><text x="293.8" y="42.4" text-anchor="middle" style="font-size:10px">117</text><text x="293.8" y="153" text-anchor="middle" style="font-size:10px">Apr</text><rect x="327.3" y="44.8" width="37.7" height="91.2" rx="2" fill="var(--accent)"><title>May: 119</title></rect><text x="346.2" y="40.8" text-anchor="middle" style="font-size:10px">119</text><text x="346.2" y="153" text-anchor="middle" style="font-size:10px">May</text><rect x="379.7" y="44.1" width="37.7" height="91.9" rx="2" fill="var(--accent)"><title>Jun: 120</title></rect><text x="398.5" y="40.1" text-anchor="middle" style="font-size:10px">120</text><text x="398.5" y="153" text-anchor="middle" style="font-size:10px">Jun</text><rect x="432.0" y="58.6" width="37.7" height="77.4" rx="2" fill="var(--accent)"><title>Jul: 101</title></rect><text x="450.8" y="54.6" text-anchor="middle" style="font-size:10px">101</text><text x="450.8" y="153" text-anchor="middle" style="font-size:10px">Jul</text><rect x="484.3" y="35.6" width="37.7" height="100.4" rx="2" fill="var(--accent)"><title>Aug: 131</title></rect><text x="503.2" y="31.6" text-anchor="middle" style="font-size:10px">131</text><text x="503.2" y="153" text-anchor="middle" style="font-size:10px">Aug</text><rect x="536.7" y="60.9" width="37.7" height="75.1" rx="2" fill="var(--accent)"><title>Sep: 98</title></rect><text x="555.5" y="56.9" text-anchor="middle" style="font-size:10px">98</text><text x="555.5" y="153" text-anchor="middle" style="font-size:10px">Sep</text><rect x="589.0" y="67.8" width="37.7" height="68.2" rx="2" fill="var(--brick)"><title>Oct: 89</title></rect><text x="607.8" y="63.8" text-anchor="middle" style="font-size:10px">89</text><text x="607.8" y="153" text-anchor="middle" style="font-size:10px">Oct</text></svg>
+  <div class="scroll"><table><thead><tr><th>Kind of work</th><th class="n">Last 12 mo</th><th class="n">Prior 12 mo</th></tr></thead><tbody><tr><td>Electrical, plumbing &amp; mechanical</td><td class="n">700</td><td class="n">615</td></tr><tr><td>Renovation &amp; repair</td><td class="n">332</td><td class="n">413</td></tr><tr><td>Minor work</td><td class="n">320</td><td class="n">498</td></tr><tr><td>Home businesses</td><td class="n">39</td><td class="n">38</td></tr><tr><td>Additions</td><td class="n">9</td><td class="n">14</td></tr><tr><td>Demolition</td><td class="n">9</td><td class="n">5</td></tr><tr><td>New construction</td><td class="n">3</td><td class="n">0</td></tr></tbody></table></div>
+</section>
+
+<section class="card chapter" id="ch-homes">
+  <p class="eyebrow">Chapter 2</p><h2>Homes</h2>
+  <p>OTR recorded <b>189</b> market-rate sales of Petworth houses and condos in the last 12 months. The median house sold for <b>$810,000</b> and the median condo for <b>$499,000</b>.</p>
+  <div class="grid">
+    <div class="stat"><span class="muted">Houses, median</span><b>$810K</b><span class="muted">prior year $832K</span></div>
+    <div class="stat"><span class="muted">Condos, median</span><b>$499K</b><span class="muted">prior year $370K</span></div>
+    <div class="stat"><span class="muted">On the vacant/blighted list</span><b>64</b><span class="muted">addresses today</span></div>
+  </div>
+</section>
+
+<section class="card chapter" id="ch-biz">
+  <p class="eyebrow">Chapter 3</p><h2>Business</h2>
+  <p>DC issued <b>94</b> new storefront-type business licenses (food, retail and services, personal care) in ANC 4C and 4D over the year, against 96 the year before. All new licenses by category:</p>
+  <svg viewBox="0 0 640 228" width="100%" role="img" aria-label="New business licenses by category, ANC 4C and 4D" style="max-width:640px"><text x="222" y="17.0" text-anchor="end" style="font-size:12px">Housing and Lodging Services</text><rect x="230" y="2" width="340.0" height="22" rx="3" fill="var(--accent)"><title>Housing and Lodging Services: 237</title></rect><text x="576.0" y="17.0" style="font-size:12px;fill:var(--ink)">237</text><text x="222" y="45.0" text-anchor="end" style="font-size:12px">General Sales and Services</text><rect x="230" y="30" width="111.9" height="22" rx="3" fill="var(--accent)"><title>General Sales and Services: 78</title></rect><text x="347.9" y="45.0" style="font-size:12px;fill:var(--ink)">78</text><text x="222" y="73.0" text-anchor="end" style="font-size:12px">Short Term/Vacation Rental</text><rect x="230" y="58" width="90.4" height="22" rx="3" fill="var(--accent)"><title>Short Term/Vacation Rental: 63</title></rect><text x="326.4" y="73.0" style="font-size:12px;fill:var(--ink)">63</text><text x="222" y="101.0" text-anchor="end" style="font-size:12px">Food Services</text><rect x="230" y="86" width="21.5" height="22" rx="3" fill="var(--accent)"><title>Food Services: 15</title></rect><text x="257.5" y="101.0" style="font-size:12px;fill:var(--ink)">15</text><text x="222" y="129.0" text-anchor="end" style="font-size:12px">Contractor and Construction Serv…</text><rect x="230" y="114" width="10.0" height="22" rx="3" fill="var(--accent)"><title>Contractor and Construction Services: 7</title></rect><text x="246.0" y="129.0" style="font-size:12px;fill:var(--ink)">7</text><text x="222" y="157.0" text-anchor="end" style="font-size:12px">Charitable Services</text><rect x="230" y="142" width="8.6" height="22" rx="3" fill="var(--accent)"><title>Charitable Services: 6</title></rect><text x="244.6" y="157.0" style="font-size:12px;fill:var(--ink)">6</text><text x="222" y="185.0" text-anchor="end" style="font-size:12px">Employee/Salesperson</text><rect x="230" y="170" width="4.3" height="22" rx="3" fill="var(--accent)"><title>Employee/Salesperson: 3</title></rect><text x="240.3" y="185.0" style="font-size:12px;fill:var(--ink)">3</text><text x="222" y="213.0" text-anchor="end" style="font-size:12px">Environmental Services</text><rect x="230" y="198" width="4.3" height="22" rx="3" fill="var(--accent)"><title>Environmental Services: 3</title></rect><text x="240.3" y="213.0" style="font-size:12px;fill:var(--ink)">3</text></svg>
+</section>
+
+<section class="card chapter" id="ch-311">
+  <p class="eyebrow">Chapter 4</p><h2>311</h2>
+  <p>Residents and city crews logged <b>13,925</b> service requests inside Petworth this year. The top requests:</p>
+  <svg viewBox="0 0 640 284" width="100%" role="img" aria-label="Top 311 request types, last 12 months" style="max-width:640px"><text x="242" y="17.0" text-anchor="end" style="font-size:12px">Bulk Collection</text><rect x="250" y="2" width="320.0" height="22" rx="3" fill="var(--accent)"><title>Bulk Collection: 2,353</title></rect><text x="576.0" y="17.0" style="font-size:12px;fill:var(--ink)">2,353</text><text x="242" y="45.0" text-anchor="end" style="font-size:12px">Trash Collection - Missed</text><rect x="250" y="30" width="165.2" height="22" rx="3" fill="var(--accent)"><title>Trash Collection - Missed: 1,215</title></rect><text x="421.2" y="45.0" style="font-size:12px;fill:var(--ink)">1,215</text><text x="242" y="73.0" text-anchor="end" style="font-size:12px">Scheduled Yard Waste</text><rect x="250" y="58" width="158.7" height="22" rx="3" fill="var(--accent)"><title>Scheduled Yard Waste: 1,167</title></rect><text x="414.7" y="73.0" style="font-size:12px;fill:var(--ink)">1,167</text><text x="242" y="101.0" text-anchor="end" style="font-size:12px">Parking Enforcement</text><rect x="250" y="86" width="136.4" height="22" rx="3" fill="var(--accent)"><title>Parking Enforcement: 1,003</title></rect><text x="392.4" y="101.0" style="font-size:12px;fill:var(--ink)">1,003</text><text x="242" y="129.0" text-anchor="end" style="font-size:12px">Recycling Collection - Missed</text><rect x="250" y="114" width="114.0" height="22" rx="3" fill="var(--accent)"><title>Recycling Collection - Missed: 838</title></rect><text x="370.0" y="129.0" style="font-size:12px;fill:var(--ink)">838</text><text x="242" y="157.0" text-anchor="end" style="font-size:12px">Illegal Dumping</text><rect x="250" y="142" width="104.4" height="22" rx="3" fill="var(--accent)"><title>Illegal Dumping: 768</title></rect><text x="360.4" y="157.0" style="font-size:12px;fill:var(--ink)">768</text><text x="242" y="185.0" text-anchor="end" style="font-size:12px">DC Health Rodent &amp; Vector Control</text><rect x="250" y="170" width="94.9" height="22" rx="3" fill="var(--accent)"><title>DC Health Rodent &amp; Vector Control: 698</title></rect><text x="350.9" y="185.0" style="font-size:12px;fill:var(--ink)">698</text><text x="242" y="213.0" text-anchor="end" style="font-size:12px">Sanitation Enforcement</text><rect x="250" y="198" width="67.6" height="22" rx="3" fill="var(--accent)"><title>Sanitation Enforcement: 497</title></rect><text x="323.6" y="213.0" style="font-size:12px;fill:var(--ink)">497</text><text x="242" y="241.0" text-anchor="end" style="font-size:12px">Rodent Inspection and Treatment</text><rect x="250" y="226" width="50.2" height="22" rx="3" fill="var(--accent)"><title>Rodent Inspection and Treatment: 369</title></rect><text x="306.2" y="241.0" style="font-size:12px;fill:var(--ink)">369</text><text x="242" y="269.0" text-anchor="end" style="font-size:12px">Container Removal</text><rect x="250" y="254" width="38.2" height="22" rx="3" fill="var(--accent)"><title>Container Removal: 281</title></rect><text x="294.2" y="269.0" style="font-size:12px;fill:var(--ink)">281</text></svg>
+  <p class="muted" style="font-size:.85rem;margin:.6rem 0 .2rem">Requests per month</p>
+  <svg viewBox="0 0 640 150" width="100%" role="img" aria-label="311 requests per month"><line x1="0" x2="640" y1="126" y2="126" stroke="var(--line)"/><rect x="13.3" y="68.8" width="37.7" height="57.2" rx="2" fill="var(--accent)"><title>Nov: 825</title></rect><text x="32.2" y="64.8" text-anchor="middle" style="font-size:10px">825</text><text x="32.2" y="143" text-anchor="middle" style="font-size:10px">Nov</text><rect x="65.7" y="73.8" width="37.7" height="52.2" rx="2" fill="var(--accent)"><title>Dec: 752</title></rect><text x="84.5" y="69.8" text-anchor="middle" style="font-size:10px">752</text><text x="84.5" y="143" text-anchor="middle" style="font-size:10px">Dec</text><rect x="118.0" y="43.7" width="37.7" height="82.3" rx="2" fill="var(--accent)"><title>Jan: 1,186</title></rect><text x="136.8" y="39.7" text-anchor="middle" style="font-size:10px">1,186</text><text x="136.8" y="143" text-anchor="middle" style="font-size:10px">Jan</text><rect x="170.3" y="18.0" width="37.7" height="108.0" rx="2" fill="var(--accent)"><title>Feb: 1,557</title></rect><text x="189.2" y="14.0" text-anchor="middle" style="font-size:10px">1,557</text><text x="189.2" y="143" text-anchor="middle" style="font-size:10px">Feb</text><rect x="222.7" y="51.7" width="37.7" height="74.3" rx="2" fill="var(--accent)"><title>Mar: 1,071</title></rect><text x="241.5" y="47.7" text-anchor="middle" style="font-size:10px">1,071</text><text x="241.5" y="143" text-anchor="middle" style="font-size:10px">Mar</text><rect x="275.0" y="46.7" width="37.7" height="79.3" rx="2" fill="var(--accent)"><title>Apr: 1,143</title></rect><text x="293.8" y="42.7" text-anchor="middle" style="font-size:10px">1,143</text><text x="293.8" y="143" text-anchor="middle" style="font-size:10px">Apr</text><rect x="327.3" y="42.8" width="37.7" height="83.2" rx="2" fill="var(--accent)"><title>May: 1,200</title></rect><text x="346.2" y="38.8" text-anchor="middle" style="font-size:10px">1,200</text><text x="346.2" y="143" text-anchor="middle" style="font-size:10px">May</text><rect x="379.7" y="32.2" width="37.7" height="93.8" rx="2" fill="var(--accent)"><title>Jun: 1,352</title></rect><text x="398.5" y="28.2" text-anchor="middle" style="font-size:10px">1,352</text><text x="398.5" y="143" text-anchor="middle" style="font-size:10px">Jun</text><rect x="432.0" y="44.3" width="37.7" height="81.7" rx="2" fill="var(--accent)"><title>Jul: 1,178</title></rect><text x="450.8" y="40.3" text-anchor="middle" style="font-size:10px">1,178</text><text x="450.8" y="143" text-anchor="middle" style="font-size:10px">Jul</text><rect x="484.3" y="31.9" width="37.7" height="94.1" rx="2" fill="var(--accent)"><title>Aug: 1,356</title></rect><text x="503.2" y="27.9" text-anchor="middle" style="font-size:10px">1,356</text><text x="503.2" y="143" text-anchor="middle" style="font-size:10px">Aug</text><rect x="536.7" y="41.0" width="37.7" height="85.0" rx="2" fill="var(--accent)"><title>Sep: 1,225</title></rect><text x="555.5" y="37.0" text-anchor="middle" style="font-size:10px">1,225</text><text x="555.5" y="143" text-anchor="middle" style="font-size:10px">Sep</text><rect x="589.0" y="52.8" width="37.7" height="73.2" rx="2" fill="var(--brick)"><title>Oct: 1,055</title></rect><text x="607.8" y="48.8" text-anchor="middle" style="font-size:10px">1,055</text><text x="607.8" y="143" text-anchor="middle" style="font-size:10px">Oct</text></svg>
+</section>
+
+<section class="card chapter" id="ch-safety">
+  <p class="eyebrow">Chapter 5</p><h2>Public safety</h2>
+  <p>MPD recorded <b>462</b> reported crimes in Petworth over the last 12 months, compared with 428 the year before. These are preliminary DC Code counts, not FBI totals.</p>
+  <div class="scroll"><table><thead><tr><th>Offense</th><th class="n">Last 12 mo</th><th class="n">Prior 12 mo</th></tr></thead><tbody><tr><td>Theft/Other</td><td class="n">248</td><td class="n">213</td></tr><tr><td>Theft F/Auto</td><td class="n">87</td><td class="n">80</td></tr><tr><td>Motor Vehicle Theft</td><td class="n">68</td><td class="n">95</td></tr><tr><td>Robbery</td><td class="n">28</td><td class="n">13</td></tr><tr><td>Assault W/Dangerous Weapon</td><td class="n">19</td><td class="n">16</td></tr><tr><td>Burglary</td><td class="n">9</td><td class="n">6</td></tr><tr><td>Sex Abuse</td><td class="n">2</td><td class="n">2</td></tr><tr><td>Homicide</td><td class="n">1</td><td class="n">3</td></tr></tbody></table></div>
+</section>
+
+<section class="card chapter" id="ch-gov">
+  <p class="eyebrow">Chapter 6</p><h2>Who represents you</h2>
+  <p>Petworth's single-member districts and their elected ANC commissioners.</p>
+  <div class="scroll"><table><thead><tr><th>SMD</th><th>Commissioner</th></tr></thead><tbody><tr><td>4C05</td><td>BRITTANY KADEMIAN</td></tr><tr><td>4C06</td><td>CHRISTEN BOAS HAYES</td></tr><tr><td>4C07</td><td>ERIC HELLER</td></tr><tr><td>4D04</td><td>ELIZA CAVA</td></tr><tr><td>4D05</td><td>STEPHEN MARENCIC JR.</td></tr><tr><td>4D06</td><td>STOYAN DIMITROV</td></tr></tbody></table></div>
+</section>
+
+<section class="card sponsor">
+  <span class="label">Title sponsor</span>
+  <p style="margin:.2rem 0 0"><b>[Title sponsor]</b> makes this report free for everyone. The sponsor did not see or shape the findings. Want the data behind every chart? <b>[Data pack: CSV + methodology]</b></p>
+</section>
+
+
+  <section class="card about" id="about-demo">
+    <h2>About this demo</h2>
+    <dl>
+      <dt>The idea</dt><dd>A once-a-year, press-ready data report per neighborhood (permits, homes, businesses, 311, safety, representation) published as a microsite and PDF. A bank, developer or brokerage pays as title sponsor; a CSV data pack is sold to brokers and retailers.</dd>
+      <dt>What's real here</dt><dd>Every number. This run pulled 24 months of building permits inside the DC Health Petworth boundary (2,996 permits), 12 monthly 311 counts plus counts by type, MPD crime counts by offense for two 12-month windows, 370 OTR market sales, business-license counts for ANC 4C and 4D, and the vacant/blighted address count. The 30-day permit count and the commissioner list come from the nightly ingest file generated 2026-10-31.</dd>
+      <dt>What's mocked</dt><dd>The title sponsor and data-pack slots are placeholders. Business licenses use ANC 4C and 4D, which are close to but not the same as the Petworth boundary, and home sales use OTR's Petworth assessment neighborhood. Metro ridership and foot-traffic chapters from the original idea are left out (WMATA ridership needs a separate download).</dd>
+      <dt>To build it for real</dt><dd>Freeze a dated snapshot each October so year-over-year numbers are reproducible; add a methodology appendix and printable PDF; add WMATA station ridership; pitch three title sponsors per neighborhood with this demo; offer the CSV pack via a simple checkout.</dd>
+    </dl>
+  </section>
+
+  <footer>
+    Independent project; not affiliated with DC Government, any ANC, BID or property owner.
+    Sources: Nightly ingest (site/src/data/petworth.json); Building Permits, 311 City Service Requests, Crime Incidents, Integrated Tax System Public Extract, Basic Business Licenses and Vacant and Blighted Building Addresses via Open Data DC. Generated 2026-10-31 17:10 UTC.
+  </footer>
+</div>
+</body>
+</html>

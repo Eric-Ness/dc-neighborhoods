@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en" data-idea="transit-tech#7" data-rank="13">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mall Day Planner (demo #13)</title>
+<style>
+:root{--bg:#f6f7f4;--card:#fff;--ink:#1c2420;--muted:#5b6660;--line:#dfe3dc;--accent:#245c4f;--soft:#e5eee9;--brick:#a2412b;--gold:#8a6a1f;--up:#a33a2c;--down:#2c6e49;--live:#2c6e49;--sample:#8a6a1f}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#121715;--card:#1a201d;--ink:#e6ebe7;--muted:#9ba7a1;--line:#2c3430;--accent:#7dc3ac;--soft:#1f2b27;--brick:#e58a72;--gold:#d8b25c;--up:#f08a7a;--down:#8fd3a8;--live:#8fd3a8;--sample:#d8b25c;color-scheme:dark}}
+:root[data-theme=dark]{--bg:#121715;--card:#1a201d;--ink:#e6ebe7;--muted:#9ba7a1;--line:#2c3430;--accent:#7dc3ac;--soft:#1f2b27;--brick:#e58a72;--gold:#d8b25c;--up:#f08a7a;--down:#8fd3a8;--live:#8fd3a8;--sample:#d8b25c;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:20px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px))}
+a{color:var(--accent)}
+h1{font-size:clamp(1.6rem,5vw,2.2rem);line-height:1.15;margin:.3rem 0 .4rem;text-wrap:balance}
+h2{font-size:1.15rem;margin:0 0 .6rem}
+.demo-bar{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:space-between;background:var(--soft);border-bottom:1px solid var(--line);padding:8px max(16px,env(safe-area-inset-right,0px)) 8px max(16px,env(safe-area-inset-left,0px));font-size:.82rem}
+.demo-bar b{letter-spacing:.06em}
+.badge{display:inline-block;font-size:.75rem;font-weight:600;padding:2px 8px;border-radius:999px;border:1px solid currentColor}
+.badge.live{color:var(--live)}.badge.sample{color:var(--sample)}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:.72rem;font-weight:700;color:var(--brick);margin:0}
+.muted{color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:14px 0;min-width:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.stat b{display:block;font-size:1.7rem;font-variant-numeric:tabular-nums}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{text-align:left;padding:.42rem .45rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.up{color:var(--up);font-weight:600}.down{color:var(--down);font-weight:600}
+.sponsor{border:1px dashed var(--accent);background:var(--soft);font-size:.92rem}
+.sponsor .label{font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.about{font-size:.9rem}
+.about dt{font-weight:600;margin-top:.5rem}.about dd{margin:0;color:var(--muted)}
+footer{font-size:.82rem;color:var(--muted);border-top:1px solid var(--line);margin-top:28px;padding-top:12px}
+svg text{fill:var(--muted);font-size:11px}
+:focus-visible{outline:2px solid var(--brick);outline-offset:2px}
+/* ---- demo-specific rules below this line ---- */
+
+.today{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;margin:6px 0}
+.date{font-size:1.15rem;font-weight:700}
+.print{font:inherit;font-size:.85rem;padding:6px 12px;border:1px solid var(--accent);background:var(--card);color:var(--accent);border-radius:999px;cursor:pointer}
+.wx{background:linear-gradient(135deg,var(--soft),var(--card));border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:12px 0}
+.wx-t{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline}.wx-t b{font-size:2rem}
+.wx p{margin:.3rem 0}
+.alerts{padding-left:1.1rem;margin:.2rem 0}.alerts li{margin:.3rem 0}
+.two{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}.two .card{margin:0}
+.big{font-size:1.25rem;font-weight:700;margin:.2rem 0}.ok{color:var(--down)}
+.small{font-size:.86rem}
+.docks{list-style:none;padding:0;margin:0}.docks li{padding:5px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+a.chk{font-weight:600;white-space:nowrap}
+@media print{.demo-bar,.print,.sponsor,#about-demo{display:none}body{background:#fff;color:#000}.card,.wx{break-inside:avoid;border-color:#999}}
+
+</style>
+</head>
+<body>
+<div class="demo-bar">
+  <span><b>DEMO</b> · Idea #13 of 39 · weighted score 71.5/100</span>
+  <span class="badge sample" data-provenance="sample">Sample data · illustrative</span>
+</div>
+<div class="wrap">
+  <p class="eyebrow">lenfantplaza.org · Your Mall day</p>
+  <h1>Your Mall day, starting from L'Enfant Plaza</h1>
+  <p class="muted">Weather, what's open, how far it is, the free shuttle and the step-free way in. One page, checked the morning of.</p>
+
+  
+<div class="today">
+  <div class="date">Saturday, October 31</div>
+  <button class="print" onclick="window.print()">Print for the front desk</button>
+</div>
+
+<div class="wx"><div class="wx-t"><b>64°F</b><span>Today: Partly Sunny</span></div><p>Good walking weather. Most Mall museums are a 5–15 minute walk from the station.</p><p class="small"><span class="badge live">Live</span> National Weather Service forecast, pulled at build time. Tonight: 46° Mostly Cloudy. Sunday: 66° Mostly Cloudy.</p></div>
+
+<div class="card">
+  <h2>On the Mall today <span class="badge sample">sample</span></h2>
+  <ul class="alerts">
+    <li><b>[Sample NPS alert]</b> A memorial area or path closure would appear here, from the National Park Service alerts feed.</li>
+    <li><b>[Sample permitted event]</b> A permitted rally, festival or race would appear here with its location and time.</li>
+  </ul>
+  <p class="small muted">These two lines are placeholders. The real page pulls the <a href="https://www.nps.gov/subjects/developer/get-started.htm">NPS API</a> alerts and events each morning (free key, not yet registered).</p>
+</div>
+
+<div class="card">
+  <h2>Where to go, and how far</h2>
+  <p class="small muted">Walk times from the station's 7th St/Maryland Ave entrance area, estimated from map distance. We list hours only where the
+  museum's own page states them; everything else links out so you never get a wrong time from us.</p>
+  <div class="scroll"><table><thead><tr><th>Place</th><th class="n">Walk (est.)</th><th>Hours today</th></tr></thead><tbody><tr><td><b>International Spy Museum</b><br><span class="muted small">Museum</span></td><td class="n">~5 min</td><td><a class="chk" href="https://www.spymuseum.org/">Check hours</a></td></tr><tr><td><b>Hirshhorn Museum and Sculpture Garden</b><br><span class="muted small">Smithsonian</span></td><td class="n">~6 min</td><td><a class="chk" href="https://www.si.edu/museums/hirshhorn-museum">Check hours</a></td></tr><tr><td><b>National Air and Space Museum</b><br><span class="muted small">Smithsonian</span></td><td class="n">~7 min</td><td>10 a.m.–5:30 p.m. daily; closed Dec. 25. Free timed-entry pass required. <a href="https://www.si.edu/museums/air-and-space-museum">si.edu</a></td></tr><tr><td><b>National Museum of the American Indian</b><br><span class="muted small">Smithsonian</span></td><td class="n">~10 min</td><td><a class="chk" href="https://www.si.edu/museums/american-indian-museum">Check hours</a></td></tr><tr><td><b>The Wharf</b><br><span class="muted small">Waterfront</span></td><td class="n">~12 min</td><td><a class="chk" href="https://www.wharfdc.com/">Check hours</a></td></tr><tr><td><b>National Gallery of Art (West Building)</b><br><span class="muted small">Museum</span></td><td class="n">~12 min</td><td><a class="chk" href="https://www.nga.gov/visit">Check hours</a></td></tr><tr><td><b>National Museum of Natural History</b><br><span class="muted small">Smithsonian</span></td><td class="n">~13 min</td><td><a class="chk" href="https://www.si.edu/museums/natural-history-museum">Check hours</a></td></tr><tr><td><b>U.S. Botanic Garden</b><br><span class="muted small">Garden</span></td><td class="n">~14 min</td><td><a class="chk" href="https://www.usbg.gov/visit">Check hours</a></td></tr><tr><td><b>U.S. Holocaust Memorial Museum</b><br><span class="muted small">Museum</span></td><td class="n">~15 min</td><td><a class="chk" href="https://www.ushmm.org/information/visit-the-museum">Check hours</a></td></tr><tr><td><b>National Museum of American History</b><br><span class="muted small">Smithsonian</span></td><td class="n">~16 min</td><td><a class="chk" href="https://www.si.edu/museums/american-history-museum">Check hours</a></td></tr><tr><td><b>National Museum of African American History and Culture</b><br><span class="muted small">Smithsonian</span></td><td class="n">~19 min</td><td><a class="chk" href="https://www.si.edu/museums/african-american-museum">Check hours</a></td></tr><tr><td><b>U.S. Capitol (Visitor Center)</b><br><span class="muted small">Landmark</span></td><td class="n">~20 min</td><td><a class="chk" href="https://www.visitthecapitol.gov/">Check hours</a></td></tr><tr><td><b>Washington Monument</b><br><span class="muted small">NPS</span></td><td class="n">~21 min</td><td><a class="chk" href="https://www.nps.gov/wamo/">Check hours</a></td></tr><tr><td><b>Tidal Basin (Jefferson Memorial side)</b><br><span class="muted small">NPS</span></td><td class="n">~21 min</td><td><a class="chk" href="https://www.nps.gov/thje/">Check hours</a></td></tr><tr><td><b>Lincoln Memorial</b><br><span class="muted small">NPS</span></td><td class="n">~41 min</td><td><a class="chk" href="https://www.nps.gov/linc/">Check hours</a></td></tr></tbody></table></div>
+</div>
+
+<div class="grid two">
+  <div class="card">
+    <h2>Free SW Shuttle</h2>
+    <p class="big">Running now until 6 p.m.</p>
+    <p class="small">Saturdays 12–6 p.m., Apr. 1–Oct. 31. Today is the last Saturday of the season. Stops include L'Enfant Plaza Metro &amp; VRE
+    (7th St at Maryland Ave SW) and the National Mall (Independence Ave at 7th St SW, near the Hirshhorn). Free.
+    <a href="https://www.wharfdc.com/getting-here/the-wharf-shuttle/">Schedule source</a>.</p>
+  </div>
+  <div class="card">
+    <h2>Stroller route <span class="badge sample">sample status</span></h2>
+    <p class="big ok">All 4 station elevators running</p>
+    <p class="small">Use the 7th St/Maryland Ave · Smithsonian Museums entrance: WMATA lists an elevator from street to mezzanine there, and elevators
+    from the mezzanine to both Green/Yellow platforms (<a href="https://www.wmata.com/ridertools/station/l'enfant-plaza/info">station page</a>). Status above is sample until the WMATA feed is connected.</p>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Bike it <span class="badge live">live</span></h2>
+  <ul class="docks"><li><b>3</b> bikes (2 e-bikes) · 12 open docks — L&#x27;Enfant Plaza / 7th &amp; C St SW <span class="muted">(155 m)</span></li><li><b>4</b> bikes · 15 open docks — 7th &amp; E St SW <span class="muted">(162 m)</span></li><li><b>9</b> bikes (3 e-bikes) · 15 open docks — 10th St &amp; L&#x27;Enfant Plaza SW <span class="muted">(362 m)</span></li><li><b>2</b> bikes (1 e-bikes) · 16 open docks — 4th &amp; E St SW <span class="muted">(395 m)</span></li></ul>
+  <p class="small muted">Capital Bikeshare, as of 12:51 PM DC time when this page was built.</p>
+</div>
+
+<div class="sponsor card"><div class="label">Sponsor slot (lenfantplaza.net only)</div>[Hotel or tour sponsor] — the .org version stays ad-free.</div>
+
+
+  <section class="card about" id="about-demo">
+    <h2>About this demo</h2>
+    <dl>
+      <dt>The idea</dt><dd>A one-page morning-of dashboard for visitors coming through L'Enfant Plaza: Mall closures and events, museum hours, weather tips, the free SW Shuttle, walking times and elevator status for strollers, printable for hotel front desks.</dd>
+      <dt>What's real here</dt><dd>Live at build time: the National Weather Service forecast for the station's grid point and Capital Bikeshare dock counts within 700 m. Verified on the operators' pages: the SW Shuttle's hours and stops (wharfdc.com), the station's entrances and elevators (wmata.com), and the Air and Space Museum's hours (si.edu, read from search results because si.edu blocked our direct fetch; confirm before relying on it).</dd>
+      <dt>What's mocked</dt><dd>The NPS alert and permitted-event lines are placeholders, and elevator status is sample (no NPS or WMATA keys yet). Other museum hours are not shown at all, only "Check hours" links. Walk times are map-distance estimates (×1.3, 80 m/min) from approximate coordinates.</dd>
+      <dt>To build it for real</dt><dd>Register free NPS and WMATA keys. Run a 6 a.m. Worker cron that pulls NPS alerts and events for the Mall parks, NWS forecast and heat index, WMATA ElevatorIncidents, and the shuttle page, then re-renders this static page. Museum hours have no API, so scrape each si.edu museum page with a check that fails loudly when the layout changes, and fall back to "Check hours" links. Time the walks on foot once. Put ads and hotel sponsorship only on the lenfantplaza.net copy.</dd>
+    </dl>
+  </section>
+
+  <footer>
+    Independent project; not affiliated with DC Government, any ANC, BID or property owner. Not affiliated with WMATA, the Smithsonian or the National Park Service.
+    Sources: <a href="https://www.wharfdc.com/getting-here/the-wharf-shuttle/">Wharf Neighborhood Shuttle</a>, <a href="https://www.wmata.com/ridertools/station/l'enfant-plaza/info">WMATA station page</a>, <a href="https://www.si.edu/museums/air-and-space-museum">si.edu Air and Space Museum</a>, <a href="https://api.weather.gov/gridpoints/LWX/97,71/forecast">National Weather Service</a> (live), <a href="https://gbfs.lyft.com/gbfs/1.1/dca-cabi/en/station_status.json">Capital Bikeshare GBFS</a> (live). Generated 2026-10-31 16:51 UTC.
+  </footer>
+</div>
+</body>
+</html>

@@ -153,6 +153,70 @@ const checks = {
   },
 };
 
+// Top-30 idea demos. Rank 3 (Data Digest) is served by the existing demos/digest-petworth.html.
+export const DEMO_ALIASES = { 3: "demos/digest-petworth.html" };
+
+function rankedIdeas() {
+  const block = read("research/IDEAS.md").match(/<!-- ranking:start -->([\s\S]*?)<!-- ranking:end -->/)?.[1] ?? "";
+  return [...block.matchAll(/^\| (\d+) \| (.*?) \| (\w+) \|.*\| ([\d.]+) \| [\d.]+ \| `([^`]+)` \|$/gm)].map((m) => ({
+    rank: Number(m[1]), title: m[2], engine: m[3], score: m[4], id: m[5],
+  }));
+}
+
+checks.ideademos = () => {
+  const only = process.argv[3] ? Number(process.argv[3]) : null;
+  const dir = join(root, "demos/ideas");
+  const files = existsSync(dir) ? readdirSync(dir) : [];
+  const srcFiles = existsSync(join(dir, "src")) ? readdirSync(join(dir, "src")) : [];
+  for (const idea of rankedIdeas().filter((i) => i.rank <= 30 && (only === null || i.rank === only))) {
+    const nn = String(idea.rank).padStart(2, "0");
+    if (DEMO_ALIASES[idea.rank]) {
+      assert(existsSync(join(root, DEMO_ALIASES[idea.rank])), `#${nn}: alias ${DEMO_ALIASES[idea.rank]} missing`);
+      continue;
+    }
+    const pages = files.filter((f) => f.startsWith(`${nn}-`) && f.endsWith(".html"));
+    assert(pages.length === 1, `#${nn}: expected 1 page demos/ideas/${nn}-*.html, found ${pages.length}`);
+    assert(srcFiles.some((f) => f.startsWith(`${nn}_`) && f.endsWith(".py")), `#${nn}: no generator demos/ideas/src/${nn}_*.py`);
+    if (pages.length !== 1) continue;
+    const path = `demos/ideas/${pages[0]}`;
+    const html = read(path);
+    const tag = `#${nn} ${pages[0]}`;
+    assert(html.includes(`data-idea="${idea.id}"`), `${tag}: data-idea must be ${idea.id}`);
+    assert(html.includes(`data-rank="${idea.rank}"`), `${tag}: data-rank must be ${idea.rank}`);
+    assert(html.includes(`Idea #${idea.rank} of 39`) && html.includes(`weighted score ${idea.score}/100`), `${tag}: demo bar must say Idea #${idea.rank} of 39 and weighted score ${idea.score}/100`);
+    assert(!html.includes("{{"), `${tag}: unfilled template placeholder`);
+    const prov = html.match(/data-provenance="(live|sample)"/)?.[1];
+    assert(prov, `${tag}: provenance badge must be live or sample`);
+    if (prov === "live") assert(/pulled \d{4}-\d{2}-\d{2}/.test(html), `${tag}: live badge must say "pulled YYYY-MM-DD"`);
+    assert(!/<script[^>]+src=|<link[^>]+rel=["']?stylesheet|<iframe|<img[^>]+src=["']?https?:|@import|url\(\s*["']?https?:/i.test(html), `${tag}: external resource (must be self-contained)`);
+    assert(/<script[^>]*>[^<]*\bfetch\(/i.test(html) === false, `${tag}: page must not fetch at runtime`);
+    assert((html.match(/<dt>/g) ?? []).length >= 4 && html.includes('id="about-demo"'), `${tag}: About this demo box incomplete`);
+    assert(html.includes("not affiliated with DC Government"), `${tag}: independence footer missing`);
+    assert(/Generated \d{4}-\d{2}-\d{2}/.test(html), `${tag}: no Generated stamp`);
+    assert(!/OWNER_NAME|PERMIT_APPLICANT|INSPECTORNAME/.test(html), `${tag}: raw personal field name present`);
+    assert(!/lorem ipsum/i.test(html), `${tag}: lorem ipsum`);
+    assert(Buffer.byteLength(html) < 1.5 * 1024 * 1024, `${tag}: page over 1.5 MB`);
+  }
+};
+
+checks.demoindex = () => {
+  const path = "demos/ideas/index.html";
+  assert(existsSync(join(root, path)), `${path} missing`);
+  if (!existsSync(join(root, path))) return;
+  const html = read(path);
+  const top = rankedIdeas().filter((i) => i.rank <= 30);
+  for (const i of top) {
+    const card = html.match(new RegExp(`<li class="card" data-rank="${i.rank}" data-idea="${i.id.replace("#", "\\#")}">([\\s\\S]*?)</li>`))?.[1];
+    assert(card, `index: no card for #${i.rank} ${i.id}`);
+    if (!card) continue;
+    const href = card.match(/<a href="([^"]+)"/)?.[1];
+    assert(href, `index: #${i.rank} has no link`);
+    if (href) assert(existsSync(join(root, "demos/ideas", href)), `index: #${i.rank} link ${href} does not resolve`);
+    assert(!card.includes("prov-missing"), `index: #${i.rank} marked not built`);
+  }
+  assert((html.match(/<li class="card"/g) ?? []).length === 30, "index must have exactly 30 cards");
+};
+
 const name = process.argv[2];
 if (!checks[name]) {
   console.error(`usage: node tools/verify.mjs <${Object.keys(checks).join("|")}>`);

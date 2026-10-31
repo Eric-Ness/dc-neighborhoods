@@ -1,0 +1,146 @@
+<!doctype html>
+
+<html lang="en" data-idea="transit-tech#3" data-rank="11">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Last Ride Home (demo #11)</title>
+<style>
+:root{--bg:#f6f7f4;--card:#fff;--ink:#1c2420;--muted:#5b6660;--line:#dfe3dc;--accent:#245c4f;--soft:#e5eee9;--brick:#a2412b;--gold:#8a6a1f;--up:#a33a2c;--down:#2c6e49;--live:#2c6e49;--sample:#8a6a1f}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#121715;--card:#1a201d;--ink:#e6ebe7;--muted:#9ba7a1;--line:#2c3430;--accent:#7dc3ac;--soft:#1f2b27;--brick:#e58a72;--gold:#d8b25c;--up:#f08a7a;--down:#8fd3a8;--live:#8fd3a8;--sample:#d8b25c;color-scheme:dark}}
+:root[data-theme=dark]{--bg:#121715;--card:#1a201d;--ink:#e6ebe7;--muted:#9ba7a1;--line:#2c3430;--accent:#7dc3ac;--soft:#1f2b27;--brick:#e58a72;--gold:#d8b25c;--up:#f08a7a;--down:#8fd3a8;--live:#8fd3a8;--sample:#d8b25c;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:20px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px))}
+a{color:var(--accent)}
+h1{font-size:clamp(1.6rem,5vw,2.2rem);line-height:1.15;margin:.3rem 0 .4rem;text-wrap:balance}
+h2{font-size:1.15rem;margin:0 0 .6rem}
+.demo-bar{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:space-between;background:var(--soft);border-bottom:1px solid var(--line);padding:8px max(16px,env(safe-area-inset-right,0px)) 8px max(16px,env(safe-area-inset-left,0px));font-size:.82rem}
+.demo-bar b{letter-spacing:.06em}
+.badge{display:inline-block;font-size:.75rem;font-weight:600;padding:2px 8px;border-radius:999px;border:1px solid currentColor}
+.badge.live{color:var(--live)}.badge.sample{color:var(--sample)}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:.72rem;font-weight:700;color:var(--brick);margin:0}
+.muted{color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:14px 0;min-width:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.stat b{display:block;font-size:1.7rem;font-variant-numeric:tabular-nums}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{text-align:left;padding:.42rem .45rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.up{color:var(--up);font-weight:600}.down{color:var(--down);font-weight:600}
+.sponsor{border:1px dashed var(--accent);background:var(--soft);font-size:.92rem}
+.sponsor .label{font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.about{font-size:.9rem}
+.about dt{font-weight:600;margin-top:.5rem}.about dd{margin:0;color:var(--muted)}
+footer{font-size:.82rem;color:var(--muted);border-top:1px solid var(--line);margin-top:28px;padding-top:12px}
+svg text{fill:var(--muted);font-size:11px}
+:focus-visible{outline:2px solid var(--brick);outline-offset:2px}
+/* ---- demo-specific rules below this line ---- */
+
+.toolbar{display:flex;gap:12px;align-items:center;margin:6px 0}
+.pill{font:inherit;font-size:.85rem;padding:5px 12px;border-radius:999px;border:1px solid var(--accent);background:var(--card);color:var(--accent);cursor:pointer}
+.pill[disabled]{opacity:.6;cursor:not-allowed}
+.small{font-size:.85rem}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0 14px}
+.train h2{font-size:1.25rem}
+.dir{display:grid;grid-template-columns:1fr auto;gap:0 10px;border-top:1px solid var(--line);padding:10px 0}
+.dir .muted{grid-column:1/-1}
+.dlabel{font-weight:600}
+.count b{font-size:2.4rem;line-height:1;font-variant-numeric:tabular-nums;color:var(--brick)}
+.tag{display:inline-block;margin:0 0 8px;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:6px;border:1px solid currentColor}
+.sample-tag{color:var(--sample)}.live-tag{color:var(--live)}
+.route{display:inline-block;padding:1px 7px;border-radius:5px;background:var(--soft);font-weight:700;font-size:.85rem}
+h3{font-size:.95rem;margin:14px 0 4px}
+
+</style>
+</head>
+<body>
+<div class="demo-bar">
+  <span><b>DEMO</b> · Idea #11 of 39 · weighted score 72.1/100</span>
+  <span class="badge sample" data-provenance="sample">Sample data · illustrative (bike docks live)</span>
+</div>
+<div class="wrap">
+  <p class="eyebrow">Adams Morgan · 18th St &amp; Columbia Rd NW</p>
+  <h1>Can you still catch a train home?</h1>
+  <p class="muted">Last trains from the two nearest stations with your walk time already subtracted, the next late buses, and bikes and docks around 18th Street right now.</p>
+
+  
+  <div class="toolbar"><button type="button" id="themeBtn" class="pill">Night mode</button><span class="muted small" id="clock"></span></div>
+
+  <section class="grid2"><div class="card train"><p class="tag sample-tag">Sample countdown</p><h2>Woodley Park <span class="muted small">· Red line · 0.9 km, about 15 min walk</span></h2><div class="dir"><span class="dlabel">Toward Shady Grove</span><span class="count" data-min="56"><b>0:56</b></span><span class="muted small">leave the bar within (h:mm) · last train 71 min away</span></div><div class="dir"><span class="dlabel">Toward Glenmont</span><span class="count" data-min="49"><b>0:49</b></span><span class="muted small">leave the bar within (h:mm) · last train 64 min away</span></div><p class="small">Real last-train times change with Metro's service plan: <a href="https://www.wmata.com/ridertools/station/woodley-park">check tonight's first and last trains for Woodley Park on wmata.com</a>.</p></div><div class="card train"><p class="tag sample-tag">Sample countdown</p><h2>Columbia Heights <span class="muted small">· Green line · 1.1 km, about 18 min walk</span></h2><div class="dir"><span class="dlabel">Northbound, toward Greenbelt</span><span class="count" data-min="40"><b>0:40</b></span><span class="muted small">leave the bar within (h:mm) · last train 58 min away</span></div><div class="dir"><span class="dlabel">Southbound, toward Branch Ave</span><span class="count" data-min="34"><b>0:34</b></span><span class="muted small">leave the bar within (h:mm) · last train 52 min away</span></div><p class="small">Real last-train times change with Metro's service plan: <a href="https://www.wmata.com/ridertools/station/columbia-heights">check tonight's first and last trains for Columbia Heights on wmata.com</a>.</p></div></section>
+
+  <section class="card">
+    <p class="tag live-tag">Live · Capital Bikeshare · snapshot 2026-10-31 16:49 UTC</p>
+    <h2>Bikes within a 7-minute walk of 18th St & Columbia Rd NW</h2>
+    <div class="grid">
+      <div class="stat"><b>4</b>classic bikes</div>
+      <div class="stat"><b>26</b>e-bikes</div>
+      <div class="stat"><b>10</b>docks nearby</div>
+    </div>
+    <div class="scroll"><table><tr><th>Dock</th><th class=n>Walk</th><th class=n>Bikes</th><th class=n>E-bikes</th><th class=n>Open docks</th></tr><tr><td>Adams Mill &amp; Columbia Rd NW</td><td class="n">2 min</td><td class="n">0</td><td class="n">0</td><td class="n">17</td></tr><tr><td>18th St &amp; Belmont Rd NW</td><td class="n">2 min</td><td class="n">0</td><td class="n">3</td><td class="n">13</td></tr><tr><td>Columbia Rd &amp; Belmont St NW</td><td class="n">3 min</td><td class="n">0</td><td class="n">1</td><td class="n">18</td></tr><tr><td>Columbia &amp; Ontario Rd NW</td><td class="n">5 min</td><td class="n">1</td><td class="n">8</td><td class="n">18</td></tr><tr><td>Adams Mill Rd &amp; Ontario Pl NW Walter Pierce Park</td><td class="n">5 min</td><td class="n">0</td><td class="n">0</td><td class="n">18</td></tr><tr><td>18th St &amp; Wyoming Ave NW</td><td class="n">5 min</td><td class="n">0</td><td class="n">1</td><td class="n">20</td></tr><tr><td>17th St &amp; Kalorama Rd NW</td><td class="n">5 min</td><td class="n">1</td><td class="n">7</td><td class="n">3</td></tr><tr><td>Calvert &amp; Biltmore St NW</td><td class="n">8 min</td><td class="n">0</td><td class="n">4</td><td class="n">19</td></tr><tr><td>California St &amp; Florida Ave NW</td><td class="n">8 min</td><td class="n">2</td><td class="n">1</td><td class="n">16</td></tr><tr><td>20th St &amp; Columbia Rd NW</td><td class="n">8 min</td><td class="n">0</td><td class="n">1</td><td class="n">17</td></tr></table></div>
+    <p class="small muted">Walk times are estimates from straight-line distance plus 30% for the street grid, at about 3 mph.</p>
+  </section>
+
+  <section class="card">
+    <p class="tag live-tag">Live · same snapshot</p>
+    <h2>Will there be a dock where you're going?</h2>
+    <h3>Near Georgia Ave–Petworth Metro</h3><div class="scroll"><table><tr><th>Dock</th><th class=n>Walk</th><th class=n>Open docks</th></tr><tr><td>Georgia &amp; New Hampshire Ave NW</td><td class="n">2 min</td><td class="n">2</td></tr><tr><td>10th St &amp; Spring Rd NW</td><td class="n">6 min</td><td class="n">6</td></tr><tr><td>Park Pl &amp; Rock Creek Church Rd NW</td><td class="n">6 min</td><td class="n">10</td></tr></table></div><h3>Near Columbia Heights Metro</h3><div class="scroll"><table><tr><th>Dock</th><th class=n>Walk</th><th class=n>Open docks</th></tr><tr><td>14th &amp; Irving St NW</td><td class="n">1 min</td><td class="n">34</td></tr><tr><td>14th &amp; Harvard St NW</td><td class="n">2 min</td><td class="n">17</td></tr><tr><td>14th &amp; Girard St NW</td><td class="n">5 min</td><td class="n">22</td></tr></table></div><h3>Near Dupont Circle Metro</h3><div class="scroll"><table><tr><th>Dock</th><th class=n>Walk</th><th class=n>Open docks</th></tr><tr><td>20th &amp; O St NW / Dupont South</td><td class="n">2 min</td><td class="n">13</td></tr><tr><td>20th &amp; Q St NW</td><td class="n">4 min</td><td class="n">13</td></tr><tr><td>18th &amp; New Hampshire Ave NW</td><td class="n">4 min</td><td class="n">9</td></tr></table></div>
+  </section>
+
+  <section class="card">
+    <p class="tag sample-tag">Sample arrivals · route names withheld</p>
+    <h2>Late-night buses from 18th &amp; Columbia</h2>
+    <div class="scroll"><table><tr><th>Route</th><th>Heading</th><th class=n>Next</th><th class=n>Then</th></tr><tr><td><span class="route">[Route]</span></td><td>toward Columbia Heights &amp; Petworth</td><td class="n"><b>6</b> min</td><td class="n">27 min</td></tr><tr><td><span class="route">[Route]</span></td><td>toward Dupont Circle &amp; downtown</td><td class="n"><b>11</b> min</td><td class="n">41 min</td></tr><tr><td><span class="route">[Route]</span></td><td>toward Woodley Park &amp; upper Northwest</td><td class="n"><b>19</b> min</td><td class="n">49 min</td></tr></table></div>
+    <p class="small muted">Metrobus routes were renamed in the 2025 Better Bus network redesign, so this demo shows "[Route]" instead of guessing names.
+    The real board fills these rows from WMATA's bus GTFS static schedule plus its real-time trip-updates feed.</p>
+  </section>
+
+  <section class="grid2">
+    <div class="card">
+      <h2>Share my ETA</h2>
+      <p>Send a friend a link that says which ride you picked and when you should be home.</p>
+      <button type="button" class="pill" disabled>Share link (demo)</button>
+      <p class="small muted">Nothing is tracked: the link carries only your chosen ride and an arrival estimate.</p>
+    </div>
+    <div class="card sponsor">
+      <p class="label">Table tent · bars that opt in</p>
+      <p><b>Scan for your last ride home.</b> One QR code on the table opens this board, already pointed at the nearest stations.</p>
+      <p class="small">This board brought to you by <b>[Sponsor bar name]</b>. One clearly labeled sponsor at a time.</p>
+    </div>
+  </section>
+
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('themeBtn');
+  var h=new Date().getHours();
+  if(h>=22||h<5){root.setAttribute('data-theme','dark');}
+  function label(){btn.textContent=root.getAttribute('data-theme')==='dark'?'Day mode':'Night mode';}
+  btn.addEventListener('click',function(){root.setAttribute('data-theme',root.getAttribute('data-theme')==='dark'?'light':'dark');label();});
+  label();
+  document.getElementById('clock').textContent='Board switches to night mode after 10 pm. Sample countdowns tick down from page load.';
+  var t0=Date.now();
+  var els=[].slice.call(document.querySelectorAll('.count'));
+  function tick(){var m=Math.floor((Date.now()-t0)/60000);els.forEach(function(e){var v=Math.max(0,+e.dataset.min-m);e.querySelector('b').textContent=Math.floor(v/60)+':'+String(v%60).padStart(2,'0');});}
+  setInterval(tick,15000);
+})();
+</script>
+
+  <section class="card about" id="about-demo">
+    <h2>About this demo</h2>
+    <dl>
+      <dt>The idea</dt><dd>A late-night board for Adams Morgan bar-goers, restaurant staff and visitors that answers one question: can I still make the train, and if not, which bus or bike? Bars that opt in put a QR code on the table.</dd>
+      <dt>What's real here</dt><dd>Every bike, e-bike and open-dock count comes from Capital Bikeshare's public GBFS feed, pulled 2026-10-31 (snapshot 2026-10-31 16:49 UTC). Station locations come from DC GIS's Metro Stations layer, so the walk times are real estimates: Woodley Park is 0.94 km and Columbia Heights 1.08 km from 18th &amp; Columbia as the crow flies.</dd>
+      <dt>What's mocked</dt><dd>The train countdowns and bus arrivals are sample values. We have no WMATA API key, and Metro's late-night closing times change, so this page states no real closing times; it links to each station's first-and-last-train page instead. Bus route names are placeholders because the 2025 Better Bus redesign renamed routes. The share link and the sponsor are mockups.</dd>
+      <dt>To build it for real</dt><dd>Register a free WMATA developer key. A Cloudflare Worker on a 30-60 second cron calls Rail Predictions for the two stations and bus GTFS-RT trip updates, merges GTFS static for last-trip times, and caches one JSON blob in KV that every visitor reads (WMATA's terms forbid one key per user and re-exposing the data as an API). GBFS is polled the same way. Refresh bus GTFS weekly with a GitHub Action so route renames flow through. Then print table tents for two or three bars.</dd>
+    </dl>
+  </section>
+
+  <footer>
+    Independent project; not affiliated with DC Government, any ANC, BID or property owner.
+    Sources: <a href="https://gbfs.capitalbikeshare.com/gbfs/gbfs.json">Capital Bikeshare GBFS</a>, <a href="https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Transportation_Rail_Bus_WebMercator/MapServer/51">DC GIS Metro Stations</a>, <a href="https://www.wmata.com/ridertools/station/woodley-park">WMATA station pages</a>; not affiliated with WMATA or Capital Bikeshare. Generated 2026-10-31 16:50 UTC.
+  </footer>
+</div>
+</body>
+</html>

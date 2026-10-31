@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en" data-idea="monetization#6" data-rank="18">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>L'Enfant Plaza Companion (demo #18)</title>
+<style>
+:root{--bg:#f6f7f4;--card:#fff;--ink:#1c2420;--muted:#5b6660;--line:#dfe3dc;--accent:#245c4f;--soft:#e5eee9;--brick:#a2412b;--gold:#8a6a1f;--up:#a33a2c;--down:#2c6e49;--live:#2c6e49;--sample:#8a6a1f}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#121715;--card:#1a201d;--ink:#e6ebe7;--muted:#9ba7a1;--line:#2c3430;--accent:#7dc3ac;--soft:#1f2b27;--brick:#e58a72;--gold:#d8b25c;--up:#f08a7a;--down:#8fd3a8;--live:#8fd3a8;--sample:#d8b25c;color-scheme:dark}}
+:root[data-theme=dark]{--bg:#121715;--card:#1a201d;--ink:#e6ebe7;--muted:#9ba7a1;--line:#2c3430;--accent:#7dc3ac;--soft:#1f2b27;--brick:#e58a72;--gold:#d8b25c;--up:#f08a7a;--down:#8fd3a8;--live:#8fd3a8;--sample:#d8b25c;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:20px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px))}
+a{color:var(--accent)}
+h1{font-size:clamp(1.6rem,5vw,2.2rem);line-height:1.15;margin:.3rem 0 .4rem;text-wrap:balance}
+h2{font-size:1.15rem;margin:0 0 .6rem}
+.demo-bar{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:space-between;background:var(--soft);border-bottom:1px solid var(--line);padding:8px max(16px,env(safe-area-inset-right,0px)) 8px max(16px,env(safe-area-inset-left,0px));font-size:.82rem}
+.demo-bar b{letter-spacing:.06em}
+.badge{display:inline-block;font-size:.75rem;font-weight:600;padding:2px 8px;border-radius:999px;border:1px solid currentColor}
+.badge.live{color:var(--live)}.badge.sample{color:var(--sample)}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:.72rem;font-weight:700;color:var(--brick);margin:0}
+.muted{color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:14px 0;min-width:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.stat b{display:block;font-size:1.7rem;font-variant-numeric:tabular-nums}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{text-align:left;padding:.42rem .45rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.up{color:var(--up);font-weight:600}.down{color:var(--down);font-weight:600}
+.sponsor{border:1px dashed var(--accent);background:var(--soft);font-size:.92rem}
+.sponsor .label{font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.about{font-size:.9rem}
+.about dt{font-weight:600;margin-top:.5rem}.about dd{margin:0;color:var(--muted)}
+footer{font-size:.82rem;color:var(--muted);border-top:1px solid var(--line);margin-top:28px;padding-top:12px}
+svg text{fill:var(--muted);font-size:11px}
+:focus-visible{outline:2px solid var(--brick);outline-offset:2px}
+/* ---- demo-specific rules below this line ---- */
+
+.strip{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;margin:10px 0}
+.pill{font-size:.8rem;font-weight:700;padding:3px 10px;border-radius:999px;color:#fff}
+.pill.bad{background:#a33a2c}.pill.ok{background:#2c6e49}
+.small{font-size:.86rem}
+.boards{background:#0f1412;color:#e6ebe7;border-radius:12px;padding:14px;margin:12px 0}
+.boards a{color:#7dc3ac}.boards .muted{color:#9ba7a1}
+.boards-h{display:flex;justify-content:space-between;align-items:center;gap:8px}.boards-h h2{margin:0}
+.boards .badge.sample{color:#d8b25c}
+.bgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px;margin-top:10px}
+.bd{background:#000;border-radius:8px;padding:8px 10px;font-family:ui-monospace,Consolas,monospace}
+.bd-h{font-size:.72rem;color:#9ba7a1;margin-bottom:4px}
+.bd table{font-size:.95rem}.bd th{color:#6f7a74;border-color:#222}.bd td{border-color:#222;color:#f5c542;padding:.3rem .35rem}
+.bd .mm{font-weight:700}
+.ln{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;font-weight:700;font-size:.72rem;font-family:system-ui,sans-serif}
+.wgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}
+.wk{background:var(--soft);border-radius:8px;padding:8px 10px}
+.wk b{font-size:1.5rem}.wk span{margin-left:3px;color:var(--muted);font-size:.8rem}.wk div{font-weight:600;font-size:.88rem;line-height:1.25}.wk small{color:var(--muted)}
+.aff{border:2px dashed var(--gold);background:var(--soft)}
+.aff-l{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;font-weight:700;color:var(--gold);margin-bottom:8px}
+.stay{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;align-items:start}
+.map{width:100%;height:auto}.map-bg{fill:var(--card);stroke:var(--line)}.road{stroke:var(--line);stroke-width:6;fill:none}
+.pin{fill:var(--gold)}.map text.pin-t{fill:#fff;font-weight:700}.stn{fill:var(--accent)}.map text.stn-t{fill:var(--card);font-weight:700}
+.hotels{list-style:none;padding:0;margin:0}.hotels li{padding:7px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.cta{display:inline-block;margin-left:4px;font-size:.78rem;font-weight:700;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:1px 8px}
+.tours{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px}
+.tour{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px;display:flex;flex-direction:column;gap:4px;font-size:.9rem}
+.food{list-style:none;padding:0;margin:0}.food li{padding:5px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.ad{border:1px dashed var(--line);color:var(--muted);text-align:center;padding:40px 10px;border-radius:8px;margin:14px auto;max-width:300px;font-size:.85rem}
+.disclose{text-align:center}
+
+</style>
+</head>
+<body>
+<div class="demo-bar">
+  <span><b>DEMO</b> · Idea #18 of 39 · weighted score 69.1/100</span>
+  <span class="badge sample" data-provenance="sample">Sample data · illustrative</span>
+</div>
+<div class="wrap">
+  <p class="eyebrow">lenfantplaza.net</p>
+  <h1>L'Enfant Plaza, right now</h1>
+  <p class="muted">Trains on all four platforms, what's broken, how far everything is, and where to stay and what to book while you're here.</p>
+
+  
+<div class="strip" role="status">
+  <span class="pill bad">1 escalator out</span><span class="pill ok">4/4 elevators</span>
+  <span class="muted small">Sample status · updated every minute once live</span>
+</div>
+
+<div class="boards">
+  <div class="boards-h"><h2>Next trains</h2><span class="badge sample">sample arrivals</span></div>
+  <div class="bgrid"><div class="bd"><div class="bd-h">Upper level · platform to Branch Ave/Huntington</div><table><thead><tr><th>Ln</th><th>Dest</th><th class="n">Car</th><th class="n">Min</th></tr></thead><tbody><tr><td><span class="ln" style="background:#00a650;color:#fff">G</span></td><td>Branch Ave</td><td class="n">8</td><td class="n mm">2</td></tr><tr><td><span class="ln" style="background:#ffd200;color:#111">Y</span></td><td>Huntington</td><td class="n">8</td><td class="n mm">6</td></tr><tr><td><span class="ln" style="background:#00a650;color:#fff">G</span></td><td>Branch Ave</td><td class="n">8</td><td class="n mm">10</td></tr></tbody></table></div><div class="bd"><div class="bd-h">Upper level · platform to Greenbelt/Mt Vernon Sq</div><table><thead><tr><th>Ln</th><th>Dest</th><th class="n">Car</th><th class="n">Min</th></tr></thead><tbody><tr><td><span class="ln" style="background:#ffd200;color:#111">Y</span></td><td>Mt Vernon Sq</td><td class="n">8</td><td class="n mm">ARR</td></tr><tr><td><span class="ln" style="background:#00a650;color:#fff">G</span></td><td>Greenbelt</td><td class="n">8</td><td class="n mm">4</td></tr><tr><td><span class="ln" style="background:#00a650;color:#fff">G</span></td><td>Greenbelt</td><td class="n">8</td><td class="n mm">12</td></tr></tbody></table></div><div class="bd"><div class="bd-h">Lower level · westbound side</div><table><thead><tr><th>Ln</th><th>Dest</th><th class="n">Car</th><th class="n">Min</th></tr></thead><tbody><tr><td><span class="ln" style="background:#a1a3a1;color:#111">S</span></td><td>Ashburn</td><td class="n">8</td><td class="n mm">3</td></tr><tr><td><span class="ln" style="background:#f7931d;color:#111">O</span></td><td>Vienna</td><td class="n">8</td><td class="n mm">5</td></tr><tr><td><span class="ln" style="background:#0076c0;color:#fff">B</span></td><td>Franconia-Spfld</td><td class="n">8</td><td class="n mm">9</td></tr></tbody></table></div><div class="bd"><div class="bd-h">Lower level · eastbound side</div><table><thead><tr><th>Ln</th><th>Dest</th><th class="n">Car</th><th class="n">Min</th></tr></thead><tbody><tr><td><span class="ln" style="background:#f7931d;color:#111">O</span></td><td>New Carrollton</td><td class="n">8</td><td class="n mm">2</td></tr><tr><td><span class="ln" style="background:#a1a3a1;color:#111">S</span></td><td>Downtown Largo</td><td class="n">8</td><td class="n mm">7</td></tr><tr><td><span class="ln" style="background:#0076c0;color:#fff">B</span></td><td>Downtown Largo</td><td class="n">8</td><td class="n mm">11</td></tr></tbody></table></div></div>
+  <p class="small muted">Boards are sample data. Live version: WMATA Rail Predictions for L'Enfant's upper and lower levels, polled once by our server
+  and cached so every visitor shares one call (<a href="https://developer.wmata.com/license">WMATA data terms</a>).</p>
+</div>
+
+<div class="card">
+  <h2>Walk from the station</h2>
+  <div class="wgrid"><div class="wk"><b>~5</b><span>min</span><div>International Spy Museum</div><small>Museums</small></div><div class="wk"><b>~6</b><span>min</span><div>Hirshhorn Museum</div><small>Museums</small></div><div class="wk"><b>~7</b><span>min</span><div>National Air and Space Museum</div><small>Museums</small></div><div class="wk"><b>~12</b><span>min</span><div>The Wharf</div><small>Waterfront</small></div><div class="wk"><b>~15</b><span>min</span><div>U.S. Holocaust Memorial Museum</div><small>Museums</small></div><div class="wk"><b>~20</b><span>min</span><div>U.S. Capitol</div><small>Monuments</small></div><div class="wk"><b>~21</b><span>min</span><div>Washington Monument</div><small>Monuments</small></div><div class="wk"><b>~30</b><span>min</span><div>Nationals Park</div><small>Games</small></div></div>
+  <p class="small muted">Estimated from map distance. Which street exit to use is coming after our on-site walk: [Exit for each place — verify on site].</p>
+</div>
+
+<div class="card aff">
+  <div class="aff-l">[Affiliate placement] · Stay nearby</div>
+  <div class="stay">
+    <svg viewBox="0 0 320 180" role="img" aria-label="Schematic map with the station and three placeholder hotel pins" class="map"><rect width="320" height="180" rx="8" class="map-bg"/><path d="M0 120 L320 95" class="road"/><path d="M150 0 L165 180" class="road"/><path d="M0 30 L320 20" class="road"/><text x="8" y="16">Mall ↑</text><text x="8" y="172">Wharf ↓</text><rect x="148" y="98" width="26" height="18" rx="4" class="stn"/><text x="161" y="111" text-anchor="middle" class="stn-t">M</text><g><circle cx="70" cy="60" r="13" class="pin"/><text x="70" y="64" text-anchor="middle" class="pin-t">A</text></g><g><circle cx="250" cy="48" r="13" class="pin"/><text x="250" y="52" text-anchor="middle" class="pin-t">B</text></g><g><circle cx="200" cy="140" r="13" class="pin"/><text x="200" y="144" text-anchor="middle" class="pin-t">C</text></g></svg>
+    <ul class="hotels">
+      <li><b>A</b> [Hotel name] · [distance] · from $[rate]/night <span class="cta">[Check dates]</span></li>
+      <li><b>B</b> [Hotel name] · [distance] · from $[rate]/night <span class="cta">[Check dates]</span></li>
+      <li><b>C</b> [Hotel name] · [distance] · from $[rate]/night <span class="cta">[Check dates]</span></li>
+    </ul>
+  </div>
+  <p class="small muted">A hotel-map widget (for example <a href="https://stay22.com/faq">Stay22</a>) fills this box with real listings and pays a share of booking commission.</p>
+</div>
+
+<div class="card aff">
+  <div class="aff-l">[Affiliate placement] · Tours &amp; tickets</div>
+  <div class="tours">
+    <div class="tour"><b>[Tour partner] Monuments at night</b><span>[time slots] · $[price]</span><span class="cta">[See times]</span></div>
+    <div class="tour"><b>[Tour partner] Mall walking tour</b><span>[time slots] · $[price]</span><span class="cta">[See times]</span></div>
+    <div class="tour"><b>[Ticket partner] Museum or game tickets</b><span>[date] · $[price]</span><span class="cta">[See times]</span></div>
+  </div>
+</div>
+
+<div class="grid">
+  <div class="card">
+    <h2>Food open now <span class="badge sample">sample</span></h2>
+    <ul class="food"><li>Sample Café · coffee, pastries · [hours]</li><li>Sample Deli · sandwiches · [hours]</li><li>Sample Noodle Bar · [hours]</li></ul>
+  </div>
+  <div class="card">
+    <h2>Grab a bike <span class="badge live">live</span></h2>
+    <ul class="food"><li><b>3</b> bikes · 12 docks — L&#x27;Enfant Plaza / 7th &amp; C St SW</li><li><b>4</b> bikes · 15 docks — 7th &amp; E St SW</li><li><b>9</b> bikes · 15 docks — 10th St &amp; L&#x27;Enfant Plaza SW</li></ul>
+    <p class="small muted">Capital Bikeshare, 12:52 PM DC time at build.</p>
+  </div>
+</div>
+
+<div class="ad">[Ad slot · 300×250 display]</div>
+<p class="small muted disclose">Disclosure: lenfantplaza.net earns commission on some hotel and tour bookings. It does not change what the train boards show.</p>
+
+
+  <section class="card about" id="about-demo">
+    <h2>About this demo</h2>
+    <dl>
+      <dt>The idea</dt><dd>The commercial companion on lenfantplaza.net: a fast mobile page with arrival boards by platform, an outage strip, a walking-time grid, food open now, and paid hotel-map and tour placements for the tourists and conference-goers passing through. The ad-free how-to-transfer guide lives on the .org.</dd>
+      <dt>What's real here</dt><dd>Capital Bikeshare dock counts near the station were pulled live from the public GBFS feed at build time. Platform names (upper-level platforms to Branch Ave/Huntington and Greenbelt/Mt Vernon Sq; lower-level Blue/Orange/Silver) and the four-elevator count follow WMATA's station page. Walk times are map-distance estimates.</dd>
+      <dt>What's mocked</dt><dd>Arrival boards, car counts and the outage strip are sample data (no WMATA key). Every hotel, tour, ticket and ad box is an unfilled [Affiliate placement] with no real business named. Food spots use placeholder names ("Sample Café"). Exit-per-destination is unverified.</dd>
+      <dt>To build it for real</dt><dd>Register a WMATA key and serve predictions and ElevatorIncidents from one cached Worker; confirm WMATA's terms allow display on an ad-supported page and add the required non-endorsement line. Apply to Stay22 and a tour affiliate (GetYourGuide or Viator) and drop their widgets into the marked boxes. Pull food hours from a places source with a commercial license, or sell those slots to local spots. Walk the station to fill the exit-per-destination column.</dd>
+    </dl>
+  </section>
+
+  <footer>
+    Independent project; not affiliated with DC Government, any ANC, BID or property owner. Not affiliated with or endorsed by WMATA.
+    Sources: <a href="https://www.wmata.com/ridertools/station/l'enfant-plaza/info">WMATA station page</a>, <a href="https://developer.wmata.com/license">WMATA data terms</a>, <a href="https://stay22.com/faq">Stay22 FAQ</a>, <a href="https://gbfs.lyft.com/gbfs/1.1/dca-cabi/en/station_status.json">Capital Bikeshare GBFS</a> (live). Generated 2026-10-31 16:52 UTC.
+  </footer>
+</div>
+</body>
+</html>

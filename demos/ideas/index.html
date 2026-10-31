@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Top 30 Idea Demos</title>
+<style>
+:root{--bg:#f6f7f4;--card:#fff;--ink:#1c2420;--muted:#5b6660;--line:#dfe3dc;--accent:#245c4f;--brick:#a2412b;--gold:#8a6a1f;--live:#2c6e49;--sample:#8a6a1f}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#121715;--card:#1a201d;--ink:#e6ebe7;--muted:#9ba7a1;--line:#2c3430;--accent:#7dc3ac;--brick:#e58a72;--gold:#d8b25c;--live:#8fd3a8;--sample:#d8b25c;color-scheme:dark}}
+:root[data-theme=dark]{--bg:#121715;--card:#1a201d;--ink:#e6ebe7;--muted:#9ba7a1;--line:#2c3430;--accent:#7dc3ac;--brick:#e58a72;--gold:#d8b25c;--live:#8fd3a8;--sample:#d8b25c;color-scheme:dark}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1040px;margin:0 auto;padding:24px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px))}
+h1{margin:.2rem 0 .4rem;font-size:clamp(1.7rem,5vw,2.3rem)}a{color:var(--accent)}
+.muted{color:var(--muted)}
+ol{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.card h2{font-size:1.02rem;margin:0;line-height:1.3}
+.card p{margin:0;font-size:.88rem;color:var(--muted)}
+.top{display:flex;justify-content:space-between;font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.rank{font-weight:700;color:var(--brick)}
+.meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:6px;font-size:.72rem}
+.meta span{border:1px solid var(--line);border-radius:999px;padding:2px 8px}
+.eng-data{color:var(--accent)}.eng-history{color:var(--gold)}.eng-transit{color:var(--brick)}
+.prov-live{color:var(--live);border-color:currentColor!important;font-weight:600}.prov-sample{color:var(--sample);border-color:currentColor!important;font-weight:600}.prov-missing{color:var(--brick)}
+</style></head><body><div class="wrap">
+<p class="muted"><a href="../../">← Research summary</a></p>
+<h1>Top 30 ideas, demoed</h1>
+<p class="muted">One working demo per idea, in ranked order. 19 of 30 run on live DC data; the rest use clearly labeled sample data where the real source needs an API key or doesn't exist yet. Every demo ends with an "About this demo" box saying what's real and what's mocked.</p>
+<ol>
+<li class="card" data-rank="1" data-idea="civic-data#1">
+  <div class="top"><span class="rank">#1</span><span class="score">79.4</span></div>
+  <h2><a href="01-block-watch.html">Block Watch</a></h2>
+  <p>What's changing in [Neighborhood] this week</p>
+  <div class="meta"><span class="eng eng-data">Data</span><span class="lens">Civic data</span><span class="prov prov-live">Live data</span></div>
+</li>
+<li class="card" data-rank="2" data-idea="culture-content#1">
+  <div class="top"><span class="rank">#2</span><span class="score">79.4</span></div>
+  <h2><a href="02-building-biography.html">House &amp; Block History Pages</a></h2>
+  <p>an auto-generated &quot;biography&quot; for every building</p>
+  <div class="meta"><span class="eng eng-history">History</span><span class="lens">History &amp; culture</span><span class="prov prov-live">Live data</span></div>
+</li>
+<li class="card" data-rank="3" data-idea="monetization#1">
+  <div class="top"><span class="rank">#3</span><span class="score">78.2</span></div>
+  <h2><a href="../digest-petworth.html">Data Digest + Exclusive Sponsors</a></h2>
+  <p>an automated weekly neighborhood email with 3-6 sponsor slots</p>
+  <div class="meta"><span class="eng eng-data">Data</span><span class="lens">Money</span><span class="prov prov-live">Live data</span></div>
+</li>
+<li class="card" data-rank="4" data-idea="civic-data#5">
+  <div class="top"><span class="rank">#4</span><span class="score">75.8</span></div>
+  <h2><a href="04-home-sales-assessment-check.html">Home Sales &amp; Assessment Check</a></h2>
+  
+  <div class="meta"><span class="eng eng-data">Data</span><span class="lens">Civic data</span><span class="prov prov-live">Live data</span></div>
+</li>
+<li class="card" data-rank="5" data-idea="monetization#2">
+  <div class="top"><span class="rank">#5</span><span class="score">75.2</span></div>
+  <h2><a href="05-realtor-market-page.html">Realtor Market Page</a></h2>
+  <p>one exclusive agent sponsors each neighborhood's housing-data page</p>
+  <div class="meta"><span class="eng eng-data">Data</span><span class="lens">Money</span><span class="prov prov-live">Live data</span></div>
+</li>
+<li class="card" data-rank="6" data-idea="transit-tech#1">
+  <div class="top"><span class="rank">#6</span><span class="score">75.2</span></div>
+  <h2><a href="06-lenfant-transfer-coach.html">L'Enfant Transfer Coach</a></h2>
+  <p>Which escalator, which platform, which exit</p>
+  <div class="meta"><span class="eng eng-transit">Transit</span><span class="lens">Transit &amp; tech</span><span class="prov prov-sample">Sample data</span></div>
+</li>
+<li class="card" data-rank="7" data-idea="civic-data#9">
+  <div class="top"><span class="rank">#7</span><span class="score">73.3</span></div>
+  <h2><a href="07-block-report-card.html">Block Report Card</a></h2>
+  <p>one page per block (unusual)</p>
+  <div class="meta"><span class="eng eng-data">Data</span><span class="lens">Civic data</span><span class="prov prov-live">Live data</span></div>
+</li>
+<li class="card" data-rank="8" data-idea="civic-data#4">
+  <div class="top"><span class="rank">#8</span><span class="score">72.7</span></div>
+  <h2><a href="08-311-report-card.html">311 Report Card</a></h2>
+  <p>How fast does the city fix things here?</p>
+  <div class="meta"><span class="eng eng-data">Data</span><span class="lens">Civic data</span><span class="prov prov-live">Live data</span></div>
+</li>
+<li class="card" data-rank="9" data-idea="monetization#5">
+  <div class="top"><span class="rank">#9</span><span class="score">72.7</span></div>
+  <h2><a href="09-building-report-card.html">Building Report Cards for Renters, with affiliate and featured-building revenue</a></h2>
+  
+  <div class="meta"><span class="eng eng-data">Data</span><span class="lens">Money</span><span class="prov prov-live">Live data</span></div>
+</li>
+<li class="card" data-rank="10" data-idea="monetization#8">
+  <div class="top"><span class="rank">#10</span><span class="score">72.7</span></div>
+  <h2><a href="10-address-watch.html">Address Watch</a></h2>
+  <p>paid &quot;what's happening within 500 ft of my home&quot; alerts (unusual)</p>
+  <div class="meta"><span class="eng eng-data">Data</span><span class="lens">Money</span><span class="prov prov-live">Live data</span></div>
+</li>
+<li class="card" data-rank="11" data-idea="transit-tech#3">
+  <div class="top"><span class="rank">#11</span><span class="score">72.1</span></div>
+  <h2><a href="11-last-ride-home.html">Last Ride Home</a></h2>
+  
+  <div class="meta"><span class="eng eng-transit">Transit</span><span class="lens">Transit &amp; tech</span><span class="prov prov-sample">Sample data</span></div>
+</li>
+<li class="card" data-rank="12" data-idea="civic-data#6">
+  <div class="top"><span class="rank">#12</span><span class="score">71.5</span></div>
+  <h2><a href="12-curb-radar.html">Curb Radar</a></h2>
+  <p>dumpsters, cranes &amp; emergency no-parking (unusual)</p>
+  <div class="meta"><span class="eng eng-data">Data</span><span class="lens">Civic data</span><span class="prov prov-live">Live data</span></div>
+</li>
+<li class="card" data-rank="13" data-idea="transit-tech#7">
+  <div class="top"><span class="rank">#13</span><span class="score">71.5</span></div>
+  <h2><a href="13-mall-day-planner.html">Mall Day Planner from L'Enfant</a></h2>
+  
+  <div class="meta"><span class="eng eng-transit">Transit</span><span class="lens">Transit &amp; tech</span><span class="prov prov-sample">Sample data</span></div>
+</li>
+<li class="card" data-rank="14" data-idea="culture-content#2">
+  <div class="top"><span class="rank">#14</span><span class="score">70.9</span></div>
+  <h2><a href="14-hundred-years-ago.html">&quot;100 Years Ago This Week&quot;</a></h2>
+  <p>an Evening Star dispatch mined from Chronicling America</p>
+  <div class="meta"><span class="eng eng-history">History</span><span class="lens">History &amp; culture</span><span class="prov prov-live">Live data</span></div>
+</li>
+<li class="card" data-rank="15" data-idea="culture-content#3">
+  <div class="top"><span class="rank">#15</span><span class="score">70.9</span></div>
+  <h2><a href="15-lost-southwest-walk.html">Lost Southwest</a></h2>
+  <p>a self-guided walk for the people stuck at L'Enfant Plaza</p>
+  <div class="meta"><span class="eng eng-history">History</span><span class="lens">History &amp; culture</span><span class="prov prov-live">Live data</span></div>
+</li>
+<li class="card" data-rank="16" data-idea="monetization#10">
+  <div class="top"><span class="rank">#16</span><span class="score">69.7</span></div>
+  <h2><a href="16-state-of-petworth.html">Annual Neighborhood Data Report</a></h2>
+  <p>sponsored PDF and microsite, sold to businesses</p>
+  <div class="meta"><span class="eng eng-data">Data</span><span class="lens">Money</span><span class="prov prov-live">Live data</span></div>
+</li>
+<li class="card" data-rank="17" data-idea="civic-data#7">
+  <div class="top"><span class="rank">#17</span><span class="score">69.1</span></div>
+  <h2><a href="17-liquor-license-pipeline.html">Liquor License &amp; Nightlife Pipeline</a></h2>
+  
+  <div class="meta"><span class="eng eng-data">Data</span><span class="lens">Civic data</span><span class="prov prov-live">Live data</span></div>
+</li>
+<li class="card" data-rank="18" data-idea="monetization#6">
+  <div class="top"><span class="rank">#18</span><span class="score">69.1</span></div>
+  <h2><a href="18-lenfant-companion-net.html">L'Enfant Plaza Transfer Companion</a></h2>
+  <p>transit and visitor utility with hotel and tour affiliate</p>
+  <div class="meta"><span class="eng eng-transit">Transit</span><span class="lens">Money</span><span class="prov prov-sample">Sample data</span></div>
+</li>
+<li class="card" data-rank="19" data-idea="transit-tech#5">
+  <div class="top"><span class="rank">#19</span><span class="score">69.1</span></div>
+  <h2><a href="19-will-there-be-a-bike.html">Will There Be a Bike? Bikeshare dock reliability forecasts</a></h2>
+  
+  <div class="meta"><span class="eng eng-transit">Transit</span><span class="lens">Transit &amp; tech</span><span class="prov prov-sample">Sample data</span></div>
+</li>
+<li class="card" data-rank="20" data-idea="civic-data#8">
+  <div class="top"><span class="rank">#20</span><span class="score">68.5</span></div>
+  <h2><a href="20-street-tree-atlas.html">Street Tree Atlas &amp; Empty-Box Finder</a></h2>
+  
+  <div class="meta"><span class="eng eng-data">Data</span><span class="lens">Civic data</span><span class="prov prov-live">Live data</span></div>
+</li>
+<li class="card" data-rank="21" data-idea="monetization#4">
+  <div class="top"><span class="rank">#21</span><span class="score">68.5</span></div>
+  <h2><a href="21-grand-opening-spotlight.html">Grand Opening Spotlight</a></h2>
+  <p>a new-business tracker with paid $49-149 launch features</p>
+  <div class="meta"><span class="eng eng-data">Data</span><span class="lens">Money</span><span class="prov prov-live">Live data</span></div>
+</li>
+<li class="card" data-rank="22" data-idea="culture-content#4">
+  <div class="top"><span class="rank">#22</span><span class="score">67.3</span></div>
+  <h2><a href="22-then-and-now.html">Then &amp; Now Slider Gallery</a></h2>
+  <p>rephotography of public-domain views</p>
+  <div class="meta"><span class="eng eng-history">History</span><span class="lens">History &amp; culture</span><span class="prov prov-sample">Sample data</span></div>
+</li>
+<li class="card" data-rank="23" data-idea="civic-data#2">
+  <div class="top"><span class="rank">#23</span><span class="score">66.7</span></div>
+  <h2><a href="23-zoning-case-explainer.html">Zoning Case Explainer</a></h2>
+  
+  <div class="meta"><span class="eng eng-data">Data</span><span class="lens">Civic data</span><span class="prov prov-live">Live data</span></div>
+</li>
+<li class="card" data-rank="24" data-idea="civic-data#10">
+  <div class="top"><span class="rank">#24</span><span class="score">66.1</span></div>
+  <h2><a href="24-vacant-blighted-watch.html">Vacant &amp; Blighted Watch</a></h2>
+  
+  <div class="meta"><span class="eng eng-data">Data</span><span class="lens">Civic data</span><span class="prov prov-live">Live data</span></div>
+</li>
+<li class="card" data-rank="25" data-idea="monetization#3">
+  <div class="top"><span class="rank">#25</span><span class="score">66.1</span></div>
+  <h2><a href="25-permit-lead-feed.html">Permit &amp; License Lead Feed</a></h2>
+  <p>a B2B email or CSV of new projects for contractors and suppliers</p>
+  <div class="meta"><span class="eng eng-data">Data</span><span class="lens">Money</span><span class="prov prov-live">Live data</span></div>
+</li>
+<li class="card" data-rank="26" data-idea="transit-tech#2">
+  <div class="top"><span class="rank">#26</span><span class="score">66.1</span></div>
+  <h2><a href="26-step-free-status.html">Step-Free Status</a></h2>
+  <p>elevator outage pages and alerts for the five neighborhoods' stations</p>
+  <div class="meta"><span class="eng eng-transit">Transit</span><span class="lens">Transit &amp; tech</span><span class="prov prov-sample">Sample data</span></div>
+</li>
+<li class="card" data-rank="27" data-idea="monetization#7">
+  <div class="top"><span class="rank">#27</span><span class="score">64.2</span></div>
+  <h2><a href="27-domain-lease-pitch.html">Domain Lease to a Stakeholder</a></h2>
+  
+  <div class="meta"><span class="eng eng-none">None</span><span class="lens">Money</span><span class="prov prov-sample">Sample data</span></div>
+</li>
+<li class="card" data-rank="28" data-idea="transit-tech#6">
+  <div class="top"><span class="rank">#28</span><span class="score">64.2</span></div>
+  <h2><a href="28-ask-lenfant.html">Ask L'Enfant</a></h2>
+  <p>an AI visitor concierge grounded in live data (unusual)</p>
+  <div class="meta"><span class="eng eng-transit">Transit</span><span class="lens">Transit &amp; tech</span><span class="prov prov-sample">Sample data</span></div>
+</li>
+<li class="card" data-rank="29" data-idea="culture-content#8">
+  <div class="top"><span class="rank">#29</span><span class="score">63.6</span></div>
+  <h2><a href="29-1950-block-portrait.html">1950 Block Portrait</a></h2>
+  <p>what your street looked like in the 1950 census (unusual)</p>
+  <div class="meta"><span class="eng eng-history">History</span><span class="lens">History &amp; culture</span><span class="prov prov-sample">Sample data</span></div>
+</li>
+<li class="card" data-rank="30" data-idea="transit-tech#8">
+  <div class="top"><span class="rank">#30</span><span class="score">63.6</span></div>
+  <h2><a href="30-bus-report-card.html">Bus Report Card</a></h2>
+  <p>automated reliability grades for neighborhood bus lines</p>
+  <div class="meta"><span class="eng eng-transit">Transit</span><span class="lens">Transit &amp; tech</span><span class="prov prov-sample">Sample data</span></div>
+</li>
+</ol>
+</div></body></html>

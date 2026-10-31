@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="en" data-idea="civic-data#2" data-rank="23">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zoning Case Explainer (demo #23)</title>
+<style>
+:root{--bg:#f6f7f4;--card:#fff;--ink:#1c2420;--muted:#5b6660;--line:#dfe3dc;--accent:#245c4f;--soft:#e5eee9;--brick:#a2412b;--gold:#8a6a1f;--up:#a33a2c;--down:#2c6e49;--live:#2c6e49;--sample:#8a6a1f}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#121715;--card:#1a201d;--ink:#e6ebe7;--muted:#9ba7a1;--line:#2c3430;--accent:#7dc3ac;--soft:#1f2b27;--brick:#e58a72;--gold:#d8b25c;--up:#f08a7a;--down:#8fd3a8;--live:#8fd3a8;--sample:#d8b25c;color-scheme:dark}}
+:root[data-theme=dark]{--bg:#121715;--card:#1a201d;--ink:#e6ebe7;--muted:#9ba7a1;--line:#2c3430;--accent:#7dc3ac;--soft:#1f2b27;--brick:#e58a72;--gold:#d8b25c;--up:#f08a7a;--down:#8fd3a8;--live:#8fd3a8;--sample:#d8b25c;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:20px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px))}
+a{color:var(--accent)}
+h1{font-size:clamp(1.6rem,5vw,2.2rem);line-height:1.15;margin:.3rem 0 .4rem;text-wrap:balance}
+h2{font-size:1.15rem;margin:0 0 .6rem}
+.demo-bar{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:space-between;background:var(--soft);border-bottom:1px solid var(--line);padding:8px max(16px,env(safe-area-inset-right,0px)) 8px max(16px,env(safe-area-inset-left,0px));font-size:.82rem}
+.demo-bar b{letter-spacing:.06em}
+.badge{display:inline-block;font-size:.75rem;font-weight:600;padding:2px 8px;border-radius:999px;border:1px solid currentColor}
+.badge.live{color:var(--live)}.badge.sample{color:var(--sample)}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:.72rem;font-weight:700;color:var(--brick);margin:0}
+.muted{color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:14px 0;min-width:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.stat b{display:block;font-size:1.7rem;font-variant-numeric:tabular-nums}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{text-align:left;padding:.42rem .45rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.up{color:var(--up);font-weight:600}.down{color:var(--down);font-weight:600}
+.sponsor{border:1px dashed var(--accent);background:var(--soft);font-size:.92rem}
+.sponsor .label{font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.about{font-size:.9rem}
+.about dt{font-weight:600;margin-top:.5rem}.about dd{margin:0;color:var(--muted)}
+footer{font-size:.82rem;color:var(--muted);border-top:1px solid var(--line);margin-top:28px;padding-top:12px}
+svg text{fill:var(--muted);font-size:11px}
+:focus-visible{outline:2px solid var(--brick);outline-offset:2px}
+/* ---- demo-specific rules below this line ---- */
+
+.small{font-size:.84rem}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0 4px}
+.tabs button{font:inherit;font-size:.9rem;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:4px 13px;cursor:pointer}
+.tabs button[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:var(--card)}
+.tabs button[aria-pressed=true] .muted{color:inherit}
+.hood h2{margin-top:14px}
+.case{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:12px 0}
+.case header{line-height:1.7}
+.case .where{font-weight:600;margin:.3rem 0}
+.case .desc{margin:.3rem 0;color:var(--muted);font-size:.92rem}
+.plain{background:var(--soft);border-radius:8px;padding:8px 12px;margin:.5rem 0;font-size:.93rem}
+.plain p{margin:.35rem 0}.plain ul{margin:.2rem 0 .3rem;padding-left:1.2rem}
+.plain .eyebrow{color:var(--accent);margin:0}
+.st{display:inline-block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;border-radius:999px;padding:1px 9px;border:1px solid currentColor}
+.st.pending{color:var(--gold)}.st.approved{color:var(--down)}.st.closed{color:var(--muted)}
+.hearing{border-left:4px solid var(--gold)}
+
+</style>
+</head>
+<body>
+<div class="demo-bar">
+  <span><b>DEMO</b> · Idea #23 of 39 · weighted score 66.7/100</span>
+  <span class="badge live" data-provenance="live">Live data · Open Data DC · pulled 2026-10-31</span>
+</div>
+<div class="wrap">
+  <p class="eyebrow">Zoning watch · BZA &amp; Zoning Commission</p>
+  <h1>8 zoning cases are still open in Tenleytown, Friendship Heights and Petworth</h1>
+  <p class="muted">Every Board of Zoning Adjustment and Zoning Commission case filed since 2024 in these neighborhoods, with what's being asked in plain English and a link to the official record.</p>
+
+  
+
+<section class="grid" aria-label="Headline numbers">
+  <div class="card stat"><b>8</b>cases still pending</div>
+  <div class="card stat"><b>44</b>Tenleytown &amp; Friendship Heights cases since 2024</div>
+  <div class="card stat"><b>15</b>Petworth cases since 2024</div>
+</section>
+<section class="card hearing">
+  <h2>Upcoming hearings</h2>
+  <p>The city's zoning-case data doesn't include hearing dates, so we don't guess. Open a pending case below and check its IZIS record for the hearing date, the ANC's report and how to testify.</p>
+  <p class="small"><a href="https://dcoz.dc.gov/service/interactive-zoning-information-system-izis">About IZIS, the Office of Zoning's case system →</a></p>
+</section>
+<div class="tabs" role="group" aria-label="Choose a neighborhood"><button type="button" data-hood="tenleytown" aria-pressed="true">Tenleytown &amp; Friendship Heights <span class="muted">(44)</span></button><button type="button" data-hood="petworth" aria-pressed="false">Petworth <span class="muted">(15)</span></button></div>
+
+<section class="hood" id="tenleytown" >
+  <h2>Tenleytown &amp; Friendship Heights</h2>
+  <p class="muted small">44 cases filed since 2024: 34 approved · 7 pending · 2 withdrawn · 1 dismissed.</p>
+  
+<article class="case" data-status="pending">
+  <header><span class="st pending">Pending</span> <b>BZA case 21553</b> <span class="muted small">filed Oct 19, 2026 · SMD 3F05</span></header>
+  <p class="where">Address not listed in the case record</p>
+  <p class="desc">To permit the continued operation of an accessory parking lot in the R-1B zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>An <b>area variance</b>: permission to break a size or placement rule. The applicant must show something unusual about the property makes the rule a practical difficulty. A harder bar than a special exception.</p><p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The design rules for parking lots <span class='muted small'>(The size and layout requirements of Subtitle C § 712.5)</span></li><li>The uses allowed without a hearing (this one needs Board approval) <span class='muted small'>(The matter-of-right uses of Subtitle U § 201)</span></li></ul>
+    <p class='small'>Zone: <b>R-1B</b> — detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21553">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="pending">
+  <header><span class="st pending">Pending</span> <b>BZA case 21546</b> <span class="muted small">filed Oct 1, 2026 · SMD 3E02</span></header>
+  <p class="where">4638 Ellicott St NW</p>
+  <p class="desc">To construct a rear addition to an existing, detached, two-story plus basement, principal dwelling unit in the R-1B zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>How much of the lot the building may cover <span class='muted small'>(The lot occupancy requirements of Subtitle D § 210.1)</span></li><li>The open space required at the back of the lot <span class='muted small'>(The rear yard requirements of Subtitle D § 207.1)</span></li></ul>
+    <p class='small'>Zone: <b>R-1B</b> — detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21546">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="pending">
+  <header><span class="st pending">Pending</span> <b>BZA case 21532</b> <span class="muted small">filed Aug 31, 2026 · SMD 3E05</span></header>
+  <p class="where">4251 Wisconsin Ave NW</p>
+  <p class="desc">To construct an eating and drinking establishment in a new penthouse with roof deck, to an existing, detached, two-story plus cellar, commercial building in the MU-3A zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The rules for rooftop penthouses <span class='muted small'>(The penthouse requirements of Subtitle C § 1501.1(d))</span></li><li>How far a structure must step back from the roof edge or lot line <span class='muted small'>(The setback requirements of Subtitle C § 1504.1)</span></li></ul>
+    <p class='small'>Zone: <b>MU-3A</b> — mixed use: shops below, homes or offices above.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21532">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="pending">
+  <header><span class="st pending">Pending</span> <b>BZA case 21516</b> <span class="muted small">filed Jul 17, 2026 · SMD 3E02</span></header>
+  <p class="where">4510 Davenport St NW</p>
+  <p class="desc">To construct a two-story side addition to an existing, detached, two-story plus basement, principal dwelling unit in the R-1B zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The gap required between the building and the side lot line <span class='muted small'>(The side yard addition requirements of Subtitle D § 208.2)</span></li></ul>
+    <p class='small'>Zone: <b>R-1B</b> — detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21516">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="pending">
+  <header><span class="st pending">Pending</span> <b>BZA case 21508</b> <span class="muted small">filed Jun 26, 2026 · SMD 3E04</span></header>
+  <p class="where">5332 41st St NW</p>
+  <p class="desc">To construct a front porch addition, to an existing, attached, two-story plus basement, principal dwelling unit in the R-2 zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>An <b>area variance</b>: permission to break a size or placement rule. The applicant must show something unusual about the property makes the rule a practical difficulty. A harder bar than a special exception.</p>
+    <p>The rules they want relief from:</p><ul><li>How much of the lot the building may cover <span class='muted small'>(The lot occupancy requirements of Subtitle D § 210.1)</span></li></ul>
+    <p class='small'>Zone: <b>R-2</b> — detached and semi-detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21508">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="pending">
+  <header><span class="st pending">Pending</span> <b>BZA case 21404</b> <span class="muted small">filed Oct 14, 2025 · SMD 3F06</span></header>
+  <p class="where">5034 Nebraska Ave NW</p>
+  <p class="desc">To construct a third story and three-story plus cellar rear addition, to an existing, two-story plus cellar, principal row dwelling in the R-2 zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    
+    <p class='small'>Zone: <b>R-2</b> — detached and semi-detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21404">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="pending">
+  <header><span class="st pending">Pending</span> <b>Zoning Commission case 25-13</b> <span class="muted small">filed Jul 23, 2025 · SMD 3A03, 3E01, 3E03, 3E04…</span></header>
+  <p class="where">95 properties, including 4240 39th St NW; 4530 40th St NW; 4619 41st St NW</p>
+  <p class="desc">Text &amp; Map Amendments to Create New Wisconsin Avenue Mixed Use Zones</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>map amendment</b> (rezoning): changing which zone, and so which height and density rules, apply to these lots.</p><p>A <b>text amendment</b>: changing the wording of the zoning rules themselves.</p>
+    
+    
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=25-13">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21501</b> <span class="muted small">filed Jun 4, 2026 · SMD 3E05</span></header>
+  <p class="where">3900 Alton Pl NW</p>
+  <p class="desc">To construct second-story addition and a third story addition, to an existing detached, two-story plus basement, principal dwelling unit in the R-1B zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>How much of the lot the building may cover <span class='muted small'>(The lot occupancy requirements of Subtitle D § 210)</span></li><li>The open space required at the back of the lot <span class='muted small'>(The rear yard requirements of Subtitle D § 207.1)</span></li></ul>
+    <p class='small'>Zone: <b>R-1B</b> — detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21501">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21500</b> <span class="muted small">filed Jun 3, 2026 · SMD 3E04</span></header>
+  <p class="where">3812 Garrison St NW</p>
+  <p class="desc">To construct a one-story rear addition (screened porch), to an existing, detached, two-story plus cellar, principal dwelling with a one-story accessory structure (garage) in the rear yard in the R-1B zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The open space required at the back of the lot <span class='muted small'>(The rear yard requirements of Subtitle D § 207.1)</span></li></ul>
+    <p class='small'>Zone: <b>R-1B</b> — detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21500">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21374A</b> <span class="muted small">filed May 27, 2026 · SMD 3E03</span></header>
+  <p class="where">4401 Garrison St NW</p>
+  <p class="desc">To modify the rear yard relief from Subtitle D § 207.1 approved in Board of Zoning Adjustment Order Number 21374, to construct a one-story rear screened-in porch addition, to an existing, detached, two-story plus basement, principal dwelling in the R-2 zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>modification</b>: a change to an earlier approval.</p>
+    <p>The rules they want relief from:</p><ul><li>An earlier Board order <span class='muted small'>(Modification without Hearing from Board of Zoning Adjustment Order Number 21374)</span></li></ul>
+    <p class='small'>Zone: <b>R-2</b> — detached and semi-detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21374A">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="closed">
+  <header><span class="st closed">Withdrawn</span> <b>BZA case 21494</b> <span class="muted small">filed May 27, 2026 · SMD 3E04</span></header>
+  <p class="where">3812 Garrison St NW</p>
+  <p class="desc">To construct a one-story rear addition, to an existing, detached, two-story plus cellar, principal dwelling unit in the R-1B zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The open space required at the back of the lot <span class='muted small'>(The rear yard requirements of Subtitle D § 207.1)</span></li></ul>
+    <p class='small'>Zone: <b>R-1B</b> — detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21494">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21481</b> <span class="muted small">filed Apr 24, 2026 · SMD 3E06</span></header>
+  <p class="where">4610 Verplanck Pl NW</p>
+  <p class="desc">To construct a one-story rear and side addition, to an existing, detached, two-story, principal dwelling unit in the R-1B zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The gap required between the building and the side lot line <span class='muted small'>(The side yard requirements of Subtitle D § 208.7)</span></li></ul>
+    <p class='small'>Zone: <b>R-1B</b> — detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21481">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21479</b> <span class="muted small">filed Apr 17, 2026 · SMD 3F06</span></header>
+  <p class="where">3619 Everett St NW</p>
+  <p class="desc">To construct a one-story rear porch addition, to an existing, semi-detached, two-story plus basement, principal dwelling unit in the R-1B zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>How much of the lot the building may cover <span class='muted small'>(The lot occupancy requirements of Subtitle D § 210)</span></li><li>The open space required at the back of the lot <span class='muted small'>(The rear yard requirements of Subtitle D § 207.1)</span></li></ul>
+    <p class='small'>Zone: <b>R-1B</b> — detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21479">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21468</b> <span class="muted small">filed Mar 31, 2026 · SMD 3E03</span></header>
+  <p class="where">5020 Belt Rd NW</p>
+  <p class="desc">To construct a one-story accessory structure (storage) in the rear yard of an existing, detached, two-story plus basement, principal dwelling in the R-1B zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>How far a structure must step back from the roof edge or lot line <span class='muted small'>(The alley centerline setback requirements of Subtitle D § 5004.1(a))</span></li><li>The gap required between the building and the side lot line <span class='muted small'>(The accessory structure side yard requirements of Subtitle D § 5005.3)</span></li></ul>
+    <p class='small'>Zone: <b>R-1B</b> — detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21468">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21452</b> <span class="muted small">filed Feb 23, 2026 · SMD 3/4G07</span></header>
+  <p class="where">3817 Jenifer St NW</p>
+  <p class="desc">To construct a ground-floor addition to an existing accessory building (garage) connecting it to the existing detached two-story plus cellar principal dwelling unit in the R-1B zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The open space required at the back of the lot <span class='muted small'>(The rear yard requirements of Subtitle D § 207.1)</span></li><li>The gap required between the building and the side lot line <span class='muted small'>(The side yard requirements of Subtitle D § 208.2)</span></li></ul>
+    <p class='small'>Zone: <b>R-1B</b> — detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21452">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>Zoning Commission case 96-13B</b> <span class="muted small">filed Dec 9, 2025 · SMD 3E04</span></header>
+  <p class="where">29 properties, including 5314 43rd St NW; 5318 43rd St NW; 5320 43rd St NW</p>
+  <p class="desc">Two-Year PUD Time Extension, 5333 Wisconsin Ave. NW (Sq. 1661, Lot 855) - Ward 3</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>time extension</b>: more time to start work under an approval already granted.</p>
+    
+    
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=96-13B">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21429</b> <span class="muted small">filed Dec 8, 2025 · SMD 3E05</span></header>
+  <p class="where">3704 Brandywine St NW</p>
+  <p class="desc">To raze an existing one-story accessory building (garage) and to construct a two-story accessory building (accessory apartment) in the rear of an existing, detached, one-and-a-half story principal dwelling in the R-1B zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The size cap on an accessory building such as a garage <span class='muted small'>(The building area requirements of Subtitle D § 5003.1)</span></li><li>How much of the lot the building may cover <span class='muted small'>(The lot occupancy requirements of Subtitle D § 210.1)</span></li></ul>
+    <p class='small'>Zone: <b>R-1B</b> — detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21429">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21374</b> <span class="muted small">filed Aug 14, 2025 · SMD 3E03</span></header>
+  <p class="where">4401 Garrison St NW</p>
+  <p class="desc">To construct a one-story rear screened-in porch addition, to an existing, detached, two-story with basement, principal dwelling unit in the R-2 zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The open space required at the back of the lot <span class='muted small'>(The rear yard requirements of Subtitle D § 207.1)</span></li></ul>
+    <p class='small'>Zone: <b>R-2</b> — detached and semi-detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21374">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21348</b> <span class="muted small">filed Jun 25, 2025 · SMD 3F05</span></header>
+  <p class="where">3566 Alton Pl NW</p>
+  <p class="desc">To permit a fourth story, to an existing, detached, four-story, principal dwelling unit in the R-1B zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>An <b>area variance</b>: permission to break a size or placement rule. The applicant must show something unusual about the property makes the rule a practical difficulty. A harder bar than a special exception.</p>
+    <p>The rules they want relief from:</p><ul><li>The height or number-of-stories limit <span class='muted small'>(The maximum height and number of stories requirements of Subtitle D § 203.2)</span></li></ul>
+    <p class='small'>Zone: <b>R-1B</b> — detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21348">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21347</b> <span class="muted small">filed Jun 17, 2025 · SMD 3F05</span></header>
+  <p class="where">3564 Alton Pl NW</p>
+  <p class="desc">To permit a fourth story, to an existing, detached, four-story, principal dwelling unit in the R-1B zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>An <b>area variance</b>: permission to break a size or placement rule. The applicant must show something unusual about the property makes the rule a practical difficulty. A harder bar than a special exception.</p>
+    <p>The rules they want relief from:</p><ul><li>The height or number-of-stories limit <span class='muted small'>(The maximum height and number of stories requirements of Subtitle D § 203.2)</span></li></ul>
+    <p class='small'>Zone: <b>R-1B</b> — detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21347">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="closed">
+  <header><span class="st closed">Dismissed</span> <b>BZA case 19823A</b> <span class="muted small">filed Jun 5, 2025 · SMD 3E05</span></header>
+  <p class="where">3920 Alton Pl NW</p>
+  <p class="desc">To extend for an additional two years, Board of Zoning Adjustment Order Number 19823, to construct a new church and continuing care retirement community in the R-1B Zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>time extension</b>: more time to start work under an approval already granted.</p>
+    <p>The rules they want relief from:</p><ul><li>An earlier Board order <span class='muted small'>(Board of Zoning Adjustment Order Number 19823)</span></li></ul>
+    
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=19823A">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21309</b> <span class="muted small">filed Apr 11, 2025 · SMD 3F06</span></header>
+  <p class="where">5012 Nebraska Ave NW</p>
+  <p class="desc">To construct a two-story rear addition with an accessory apartment in the cellar level, to an existing, semi-detached, two-story plus cellar principal dwelling unit in the R-2 zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>How far a rear addition may reach past the houses next door <span class='muted small'>(The rear addition requirements of Subtitle D § 207.5)</span></li></ul>
+    <p class='small'>Zone: <b>R-2</b> — detached and semi-detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21309">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21286</b> <span class="muted small">filed Feb 21, 2025 · SMD 3A03</span></header>
+  <p class="where">3822 Van Ness St NW</p>
+  <p class="desc">To construct a one-story side and a two-story rear addition, to an existing, semi-detached, two-story plus cellar, principal dwelling unit in the R-2 zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The open space required at the back of the lot <span class='muted small'>(The rear yard requirements of Subtitle D § 5004.1(a))</span></li></ul>
+    <p class='small'>Zone: <b>R-2</b> — detached and semi-detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21286">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21281</b> <span class="muted small">filed Feb 18, 2025 · SMD 3E03</span></header>
+  <p class="where">4525 River Rd NW</p>
+  <p class="desc">To construct a one-story detached accessory building (garage) in the required rear yard a detached two-story plus basement principal dwelling unit in the R-1B zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The open space required at the back of the lot <span class='muted small'>(The rear yard requirements of Subtitle D § 5004.1(a))</span></li><li>The size cap on an accessory building such as a garage <span class='muted small'>(The building area requirements of Subtitle D § 5003)</span></li><li>How much of the lot the building may cover <span class='muted small'>(The lot occupancy requirements of Subtitle D § 210)</span></li></ul>
+    <p class='small'>Zone: <b>R-1B</b> — detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21281">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>Zoning Commission case 18-03B</b> <span class="muted small">filed Feb 14, 2025 · SMD 3E05</span></header>
+  <p class="where">4615 Wisconsin Ave NW</p>
+  <p class="desc">Two-Year PUD Time Extension to Begin Construction, 4611-4615 41 St. NW (Sq. 1769, Lot 32) - Ward 3</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>time extension</b>: more time to start work under an approval already granted.</p>
+    
+    
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=18-03B">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21278</b> <span class="muted small">filed Feb 7, 2025 · SMD 3E05</span></header>
+  <p class="where">3841 Warren St NW</p>
+  <p class="desc">To construct a one-story rear addition, to an existing, detached, two-story plus basement, principal dwelling unit in the R-2 zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The open space required at the back of the lot <span class='muted small'>(The rear yard requirements of Subtitle D § 5004.1(a))</span></li><li>The open space required at the back of the lot <span class='muted small'>(The rear yard requirements of Subtitle D § 207.1)</span></li></ul>
+    <p class='small'>Zone: <b>R-2</b> — detached and semi-detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21278">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21255</b> <span class="muted small">filed Dec 16, 2024 · SMD 3E06</span></header>
+  <p class="where">4725 Yuma St NW</p>
+  <p class="desc">To construct a two-story plus cellar rear addition, to an existing, detached, two-story plus cellar, principal dwelling unit in the R-1B zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The open space required at the back of the lot <span class='muted small'>(The rear yard requirements of Subtitle D § 5004.1(a))</span></li><li>The open space required at the back of the lot <span class='muted small'>(The rear yard requirements of Subtitle D § 207.1)</span></li></ul>
+    <p class='small'>Zone: <b>R-1B</b> — detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21255">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21243</b> <span class="muted small">filed Nov 27, 2024 · SMD 3E04</span></header>
+  <p class="where">5322 41st St NW</p>
+  <p class="desc">To construct a rear deck addition, to an existing, attached, two-story, principal dwelling unit in the R-2 zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>An <b>area variance</b>: permission to break a size or placement rule. The applicant must show something unusual about the property makes the rule a practical difficulty. A harder bar than a special exception.</p><p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>How much of the lot the building may cover <span class='muted small'>(The lot occupancy requirements of Subtitle D § 210.1)</span></li><li>The gap required between the building and the side lot line <span class='muted small'>(The side yard requirements of Subtitle D § 208.7)</span></li></ul>
+    <p class='small'>Zone: <b>R-2</b> — detached and semi-detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21243">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21234</b> <span class="muted small">filed Nov 12, 2024 · SMD 3F05</span></header>
+  <p class="where">Connecticut Ave NW</p>
+  <p class="desc">To relocate six building-mounted antenna on an existing school building in the R-1B zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The rules for antennas mounted on buildings <span class='muted small'>(The building-mounted antenna requirements of Subtitle C § 1305.1)</span></li></ul>
+    <p class='small'>Zone: <b>R-1B</b> — detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21234">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21210</b> <span class="muted small">filed Sep 30, 2024 · SMD 3E06</span></header>
+  <p class="where">4505 Warren St NW</p>
+  <p class="desc">To reconfigure an existing accessory building (garage) in the rear yard into storage space and an outdoor kitchen and to construct a new porch roof on an existing, detached, two-story with basement, principal dwelling unit in the R-1B zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The minimum number of off-street parking spaces <span class='muted small'>(The minimum vehicle parking requirements of Subtitle C § 701)</span></li></ul>
+    <p class='small'>Zone: <b>R-1B</b> — detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21210">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>Zoning Commission case 24-12</b> <span class="muted small">filed Sep 16, 2024 · SMD 3E03</span></header>
+  <p class="where">42nd St NW; 5151 Wisconsin Ave NW</p>
+  <p class="desc">Consolidated PUD &amp; Related Map Amendment from R-2 for the eastern portion to RA-3, 4201 Garrison St. NW (Sq. 1666, Lot 810 &amp; portion of Lot 809) - Ward 3</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>Planned Unit Development</b>: extra height or density in exchange for public benefits, with the design approved in the same case.</p><p>A <b>map amendment</b> (rezoning): changing which zone, and so which height and density rules, apply to these lots.</p>
+    
+    
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=24-12">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21205</b> <span class="muted small">filed Sep 10, 2024 · SMD 3E05</span></header>
+  <p class="where">3730 Windom Pl NW</p>
+  <p class="desc">To construct a first-floor rear deck addition, to an existing, semi-detached, two-story with cellar, principal dwelling unit in the R-2 zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The open space required at the back of the lot <span class='muted small'>(The rear yard requirements of Subtitle D § 207.1)</span></li><li>How much of the lot the building may cover <span class='muted small'>(The lot occupancy requirements of Subtitle D § 210.1)</span></li></ul>
+    <p class='small'>Zone: <b>R-2</b> — detached and semi-detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21205">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21203</b> <span class="muted small">filed Sep 5, 2024 · SMD 3E04</span></header>
+  <p class="where">3800 Harrison St NW</p>
+  <p class="desc">To construct a side addition and a new, detached, two-story garage with accessory apartment in the rear yard of an existing, detached, two-story with basement, principal dwelling unit in the R-1B Zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The open space required at the back of the lot <span class='muted small'>(The accessory building rear yard requirements of Subtitle D § 5004.1(a))</span></li><li>The gap required between the building and the side lot line <span class='muted small'>(The accessory building side yard requirements of Subtitle D § 5005.1)</span></li><li>The vehicle access requirements of Subtitle C § 711.7 <span class='muted small'>(The vehicle access requirements of Subtitle C § 711.7)</span></li></ul>
+    
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21203">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21198</b> <span class="muted small">filed Aug 9, 2024 · SMD 3E03</span></header>
+  <p class="where">4426 Harrison St NW</p>
+  <p class="desc">To construct a third story with roof deck and three-story with cellar rear addition, to an existing, semi-detached, two-story with cellar principal dwelling unit in the R-2 zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>How far a rear addition may reach past the houses next door <span class='muted small'>(The rear addition requirements of Subtitle D § 207.4)</span></li></ul>
+    <p class='small'>Zone: <b>R-2</b> — detached and semi-detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21198">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 7096A</b> <span class="muted small">filed Jul 19, 2024 · SMD 3F05</span></header>
+  <p class="where">4400 Connecticut Ave NW; Connecticut Ave NW; 3415 Yuma St NW</p>
+  <p class="desc">To modify the condition in BZA Appeal Nos.: 7096 and 7097, and to reduce the number of required parking spaces to an existing hotel in the MU-7B AND R-1B zones.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>modification</b>: a change to an earlier approval.</p><p>A <b>modification of significance</b>: a bigger change to an earlier approval, which gets a fresh look.</p>
+    
+    
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=7096A">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21165</b> <span class="muted small">filed May 6, 2024 · SMD 3E04</span></header>
+  <p class="where">3803 Gramercy St NW</p>
+  <p class="desc">To raze an existing structure and construct a new, one-story accessory garage and a two-story rear addition, to an existing, detached, two-story with basement, principal dwelling unit in the R-1B zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The open space required at the back of the lot <span class='muted small'>(The rear yard requirements of Subtitle D § 5004.1(a))</span></li></ul>
+    <p class='small'>Zone: <b>R-1B</b> — detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21165">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21162</b> <span class="muted small">filed May 2, 2024 · SMD 3A03</span></header>
+  <p class="where">4117 38th St NW</p>
+  <p class="desc">To construct a two-story with basement rear addition, to an existing, semi-detached, two-story with basement, principal dwelling unit in the R-2 zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The open space required at the back of the lot <span class='muted small'>(The rear yard requirements of Subtitle D § 5004.1(a))</span></li></ul>
+    <p class='small'>Zone: <b>R-2</b> — detached and semi-detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21162">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21150</b> <span class="muted small">filed Apr 19, 2024 · SMD 3E01</span></header>
+  <p class="where">4450 Alton Pl NW</p>
+  <p class="desc">To construct front and side additions to an existing, detached, two-story, principal dwelling unit in the R-1B zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The gap required between the building and the side lot line <span class='muted small'>(The side yard requirements of Subtitle D § 208.2)</span></li></ul>
+    <p class='small'>Zone: <b>R-1B</b> — detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21150">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21141</b> <span class="muted small">filed Apr 4, 2024 · SMD 3E03</span></header>
+  <p class="where">4005 Fessenden St NW</p>
+  <p class="desc">To construct a one-story accessory building (garage) to serve an existing, detached two-story with cellar, principal dwelling in the R-1B zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The open space required at the back of the lot <span class='muted small'>(The rear yard requirements of Subtitle D § 207.1)</span></li></ul>
+    <p class='small'>Zone: <b>R-1B</b> — detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21141">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21127</b> <span class="muted small">filed Mar 19, 2024 · SMD 3E06</span></header>
+  <p class="where">4425 Warren St NW</p>
+  <p class="desc">To construct a rear addition to an existing, detached, two-story with basement, principal dwelling unit in the R-1B zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>How much of the lot the building may cover <span class='muted small'>(The lot occupancy requirements of Subtitle D § 210.1)</span></li><li>The open space required at the back of the lot <span class='muted small'>(The rear yard requirements of Subtitle D § 5004.1(a))</span></li></ul>
+    <p class='small'>Zone: <b>R-1B</b> — detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21127">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21108</b> <span class="muted small">filed Feb 22, 2024 · SMD 3E01</span></header>
+  <p class="where">4526 43rd Pl NW</p>
+  <p class="desc">To construct a rear addition and accessory garage, to an existing, semi-detached, two-story with basement principal dwelling unit in the R-2 zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>How far a rear addition may reach past the houses next door <span class='muted small'>(The rear addition requirements of Subtitle D § 207.4)</span></li><li>How much of the lot the building may cover <span class='muted small'>(The lot occupancy requirements of Subtitle D § 210.1)</span></li></ul>
+    <p class='small'>Zone: <b>R-2</b> — detached and semi-detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21108">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21097</b> <span class="muted small">filed Jan 25, 2024 · SMD 3E01</span></header>
+  <p class="where">4401 Burlington Pl NW</p>
+  <p class="desc">To construct a side addition to an existing, detached, two-story with cellar, principal dwelling unit in the R-1B zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The gap required between the building and the side lot line <span class='muted small'>(The side yard requirements of Subtitle D § 208)</span></li></ul>
+    <p class='small'>Zone: <b>R-1B</b> — detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21097">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="closed">
+  <header><span class="st closed">Withdrawn</span> <b>BZA case 21089</b> <span class="muted small">filed Jan 16, 2024 · SMD 3E02</span></header>
+  <p class="where">4711 Ellicott St NW</p>
+  <p class="desc">To construct a new, two-story with cellar, detached, principal dwelling unit on an alley lot in the R-1B zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>use variance</b>: permission for a use the zone doesn't allow. The hardest bar to clear.</p>
+    <p>The rules they want relief from:</p><ul><li>The uses allowed without a hearing (this one needs Board approval) <span class='muted small'>(The matter-of-right uses of Subtitle U § 600.1)</span></li></ul>
+    <p class='small'>Zone: <b>R-1B</b> — detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21089">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21086</b> <span class="muted small">filed Jan 9, 2024 · SMD 3/4G06</span></header>
+  <p class="where">Mckinley St NW</p>
+  <p class="desc">To permit an accessory parking lot located elsewhere than on the same lot as the principal use in the R-2 zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The uses allowed without a hearing (this one needs Board approval) <span class='muted small'>(The matter-of-right uses of Subtitle U § 201)</span></li></ul>
+    <p class='small'>Zone: <b>R-2</b> — detached and semi-detached houses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21086">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+  
+</section>
+<section class="hood" id="petworth" hidden>
+  <h2>Petworth</h2>
+  <p class="muted small">15 cases filed since 2024: 13 approved · 1 pending · 1 closed.</p>
+  
+<article class="case" data-status="pending">
+  <header><span class="st pending">Pending</span> <b>BZA case 21484</b> <span class="muted small">filed Apr 29, 2026 · SMD 4C06</span></header>
+  <p class="where">115 Rock Creek Church Rd NW</p>
+  <p class="desc">To construct a rear deck addition to an existing, attached, two-story plus basement, principal dwelling unit in the RA-1 zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>How much of the lot the building may cover <span class='muted small'>(The lot occupancy requirements of Subtitle F § 210)</span></li></ul>
+    <p class='small'>Zone: <b>RA-1</b> — apartment buildings.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21484">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="closed">
+  <header><span class="st closed">Closed</span> <b>BZA case 21490</b> <span class="muted small">filed May 15, 2026 · SMD 4C01</span></header>
+  <p class="where">827 Upshur St NW; 829 Upshur St NW</p>
+  <p class="desc">To consolidate two existing one-story buildings (retail) on two contiguous record lots and construct a two-story addition (providing seven dwelling units) above the two existing one-story retail buildings in the MU-4 zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The minimum number of off-street parking spaces <span class='muted small'>(The minimum vehicle parking requirements of Subtitle C § 701.5)</span></li><li>How much of the lot the building may cover <span class='muted small'>(The lot occupancy requirements of Subtitle G § 210)</span></li></ul>
+    <p class='small'>Zone: <b>MU-4</b> — mixed use: shops below, homes or offices above.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21490">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 20676B</b> <span class="muted small">filed Apr 28, 2026 · SMD 4C05</span></header>
+  <p class="where">4500 New Hampshire Ave NW</p>
+  <p class="desc">To extend for an additional two years, Board of Zoning Adjustment Order Number 20676, to convert an existing, semi-detached, two-story plus basement, principal dwelling unit to a child development center, in the R-3 zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>time extension</b>: more time to start work under an approval already granted.</p>
+    <p>The rules they want relief from:</p><ul><li>An earlier Board order <span class='muted small'>(Board of Zoning Adjustment Order Number 20676)</span></li></ul>
+    <p class='small'>Zone: <b>R-3</b> — rowhouses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=20676B">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21462</b> <span class="muted small">filed Mar 24, 2026 · SMD 4C03</span></header>
+  <p class="where">3831 Georgia Ave NW</p>
+  <p class="desc">To permit a fast-food establishment use in an existing, six-story mixed-use building (residential with ground floor retail) in the NMU-7B/GA zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The uses allowed without a hearing (this one needs Board approval) <span class='muted small'>(The matter-of-right uses of Subtitle H § 6003.1)</span></li></ul>
+    <p class='small'>Zone: <b>NMU-7B/GA</b>.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21462">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21441</b> <span class="muted small">filed Jan 8, 2026 · SMD 4D05</span></header>
+  <p class="where">318 Delafield Pl NW</p>
+  <p class="desc">To construct a two-story rear addition plus cellar and two additional dwelling units, to an existing, semi-detached, two-story plus cellar, 4-unit apartment house in the RA-1 zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The standards for new homes in a residential zone <span class='muted small'>(The new residential development standards of Subtitle U § 421)</span></li></ul>
+    <p class='small'>Zone: <b>RA-1</b> — apartment buildings.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21441">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21434</b> <span class="muted small">filed Dec 18, 2025 · SMD 4D05</span></header>
+  <p class="where">314 Delafield Pl NW</p>
+  <p class="desc">To construct a two-story plus basement rear addition and increase the number of dwelling units from 4 to 6 units in a two-story plus basement apartment house in the RA-1 zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>How much of the lot the building may cover <span class='muted small'>(The lot occupancy requirements of Subtitle F § 210.1)</span></li><li>The minimum number of off-street parking spaces <span class='muted small'>(The minimum vehicle parking requirements of Subtitle C § 701.5)</span></li><li>The standards for new homes in a residential zone <span class='muted small'>(The new residential development standards of Subtitle U § 421)</span></li></ul>
+    <p class='small'>Zone: <b>RA-1</b> — apartment buildings.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21434">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21430</b> <span class="muted small">filed Dec 10, 2025 · SMD 4C06</span></header>
+  <p class="where">710 Taylor St NW</p>
+  <p class="desc">To construct a third story plus penthouse and roof deck, and a three-story plus cellar rear addition, and convert to a 3-unit apartment house, an existing, attached, two-story plus cellar, principal dwelling unit in the RF-1 zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>How far a rear addition may reach past the houses next door <span class='muted small'>(The rear addition requirements of Subtitle E § 207.5)</span></li><li>The rules for rooftop penthouses <span class='muted small'>(The penthouse requirements of Subtitle C § 1501.1)</span></li><li>The rules for turning a building into three or more apartments <span class='muted small'>(The residential conversion requirements of Subtitle U § 320.2)</span></li><li>The rule protecting rooftop features such as cornices and turrets <span class='muted small'>(The roof top or upper floor element requirements of Subtitle E § 204.4)</span></li></ul>
+    <p class='small'>Zone: <b>RF-1</b> — rowhouse flats.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21430">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21384</b> <span class="muted small">filed Aug 29, 2025 · SMD 4C07</span></header>
+  <p class="where">630 Randolph St NW</p>
+  <p class="desc">To construct a two-story rear addition to an existing, semi-detached, two-story, principal dwelling unit in the RF-1 zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>How far a rear addition may reach past the houses next door <span class='muted small'>(The rear addition requirements of Subtitle E § 207.5)</span></li></ul>
+    <p class='small'>Zone: <b>RF-1</b> — rowhouse flats.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21384">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21359</b> <span class="muted small">filed Jul 23, 2025 · SMD 4C07</span></header>
+  <p class="where">524 Taylor St NW</p>
+  <p class="desc">To construct a two-story accessory building for use a garage and principal dwelling in the rear of an existing two-story with basement principal row dwelling in the RF-1 zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The height or number-of-stories limit <span class='muted small'>(The garage door height requirements of Subtitle C § 711.7)</span></li><li>The rules for a small second unit, such as a basement apartment <span class='muted small'>(The accessory apartment use requirements of Subtitle U § 301.1(e))</span></li><li>The size cap on an accessory building such as a garage <span class='muted small'>(The maximum building area requirements of Subtitle E § 5003.1)</span></li><li>How far a structure must step back from the roof edge or lot line <span class='muted small'>(The alley centerline setback requirements of Subtitle C § 711.7)</span></li></ul>
+    <p class='small'>Zone: <b>RF-1</b> — rowhouse flats.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21359">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21302</b> <span class="muted small">filed Apr 7, 2025 · SMD 4D05</span></header>
+  <p class="where">4921 1st St NW</p>
+  <p class="desc">To construct two additional dwelling units on the basement level of an existing semi-detached, two-story, four-unit apartment building in the RA-1 zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The standards for new homes in a residential zone <span class='muted small'>(The new residential development standards of Subtitle U § 421)</span></li></ul>
+    <p class='small'>Zone: <b>RA-1</b> — apartment buildings.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21302">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21268</b> <span class="muted small">filed Jan 5, 2025 · SMD 4C07</span></header>
+  <p class="where">305 Rock Creek Church Rd NW</p>
+  <p class="desc">To install a retractable awning above the rear deck of an existing, attached, three-story principal dwelling unit in the RF-1 zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>How much of the lot the building may cover <span class='muted small'>(The lot occupancy requirements of Subtitle E § 210.1)</span></li></ul>
+    <p class='small'>Zone: <b>RF-1</b> — rowhouse flats.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21268">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21222</b> <span class="muted small">filed Oct 18, 2024 · SMD 4D07</span></header>
+  <p class="where">5001 4th St NW</p>
+  <p class="desc">To construct a rear deck addition, to an existing, semi-detached, two-story with cellar, principal dwelling unit in the R-3 zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>An <b>area variance</b>: permission to break a size or placement rule. The applicant must show something unusual about the property makes the rule a practical difficulty. A harder bar than a special exception.</p><p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>The open space required at the back of the lot <span class='muted small'>(The rear yard requirements of Subtitle D § 207.1)</span></li><li>How much of the lot the building may cover <span class='muted small'>(The lot occupancy requirements of Subtitle D § 210.1)</span></li></ul>
+    <p class='small'>Zone: <b>R-3</b> — rowhouses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21222">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 20302A</b> <span class="muted small">filed Sep 18, 2024 · SMD 4C07</span></header>
+  <p class="where">512 Taylor St NW</p>
+  <p class="desc">To extend the rear deck across the full width of the building on each floor and add an additional parking space to the previously approved plans for a three-story rear addition and conversion of an existing semi-detached principal dwelling unit into a three-unit apartment house in the RF-1 zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>modification</b>: a change to an earlier approval.</p>
+    <p>The rules they want relief from:</p><ul><li>An earlier Board order <span class='muted small'>(Modification without Hearing to Board of Zoning Adjustment Order Number 20302.)</span></li></ul>
+    <p class='small'>Zone: <b>RF-1</b> — rowhouse flats.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=20302A">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 20676A</b> <span class="muted small">filed Apr 10, 2024 · SMD 4C05</span></header>
+  <p class="where">4500 New Hampshire Ave NW</p>
+  <p class="desc">To extend for an additional 2 years, Board of Zoning Adjustment Order Number 20676, final date April 26, 2022, to convert an existing, semi-detached, two-story with basement, principal dwelling unit to a child development center, in the R-3 zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>time extension</b>: more time to start work under an approval already granted.</p>
+    <p>The rules they want relief from:</p><ul><li>An earlier Board order <span class='muted small'>(Time Extension from Board of Zoning Adjustment Order Number 20676)</span></li></ul>
+    <p class='small'>Zone: <b>R-3</b> — rowhouses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=20676A">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+<article class="case" data-status="approved">
+  <header><span class="st approved">Approved</span> <b>BZA case 21102</b> <span class="muted small">filed Feb 2, 2024 · SMD 4C05, 4D05</span></header>
+  <p class="where">201/210 Allison Street, NW (Square Par0111, Lot 37)</p>
+  <p class="desc">To increase the number of students to 150, and the number of staff members to 25, of an existing, private school and child development center in the R-3/RA-1 zone.</p>
+  <div class="plain"><p class="eyebrow">In plain English</p>
+    <p>A <b>special exception</b>: the Board approves it if the project passes tests already written into the code, such as not unduly hurting neighbors' light, air and privacy.</p>
+    <p>The rules they want relief from:</p><ul><li>A university campus plan <span class='muted small'>(Under the campus plan requirements of Subtitle X § 104)</span></li><li>The conditions for a private school in a residential zone <span class='muted small'>(Under the private school requirements of Subtitle U § 203.1(m))</span></li></ul>
+    <p class='small'>Zone: <b>R-3/RA-1</b> — rowhouses.</p>
+  </div>
+  <p class="small"><a href="https://app.dcoz.dc.gov/Home/ViewCase?case_id=21102">Case record, filings and exhibits on IZIS →</a></p>
+</article>
+  
+</section>
+<section class="card" id="glossary">
+  <h2>The two boards, in a sentence each</h2>
+  <p><b>BZA</b> (Board of Zoning Adjustment) rules on one property at a time: an addition that's too deep, a use the zone doesn't allow outright.</p>
+  <p><b>Zoning Commission</b> writes and changes the rules and the map: rezonings, text changes and large Planned Unit Developments.</p>
+</section>
+<section class="card sponsor"><span class="label">Presented by</span><br><b>[Sponsor name]</b>: sponsor slot for this page. On a civic page like this, we'd keep land-use firms out of it to avoid a conflict of interest.</section>
+
+<script>
+(function(){var bs=document.querySelectorAll('.tabs button');bs.forEach(function(b){b.addEventListener('click',function(){bs.forEach(function(o){o.setAttribute('aria-pressed',o===b?'true':'false')});document.querySelectorAll('section.hood').forEach(function(s){s.hidden=s.id!==b.getAttribute('data-hood')})})})})();
+</script>
+
+  <section class="card about" id="about-demo">
+    <h2>About this demo</h2>
+    <dl>
+      <dt>The idea</dt><dd>Every BZA and Zoning Commission case touching the neighborhood gets one plain-English entry: what's requested, its status, which ANC it's in, and where to read the filings and testify.</dd>
+      <dt>What's real here</dt><dd>Case numbers, filing dates, status, addresses, ANC/SMD, official descriptions and the specific relief requested come from the Office of Zoning's "Zoning Cases" layer, queried live on 2026-10-31 inside the DC Health planning-neighborhood boundaries for Tenleytown (which includes Friendship Heights) and Petworth (59 cases). Case-name and owner fields, which usually carry the applicant's name, are never requested.</dd>
+      <dt>What's mocked</dt><dd>Only the sponsor slot. The "In plain English" notes are our generic glosses of the relief type and the rule cited, written once and matched by keyword; they are not legal advice and are not specific to each case. Hearing dates and ANC votes are not shown because this dataset doesn't carry them.</dd>
+      <dt>To build it for real</dt><dd>Pull hearing dates from the Office of Zoning's public hearing calendar, link each ANC's filed resolution from IZIS exhibits, add a small map per case, send a weekly email when a case is filed or decided, and have a human review the gloss on big Zoning Commission cases.</dd>
+    </dl>
+  </section>
+
+  <footer>
+    Independent project; not affiliated with DC Government, any ANC, BID or property owner.
+    Sources: <a href="https://catalog.data.gov/dataset/weekly-zoning-cases-report">Zoning Cases (DC Office of Zoning)</a>, <a href="https://dcoz.dc.gov/service/interactive-zoning-information-system-izis">IZIS</a>, DC Health Planning Neighborhoods; Open Data DC, CC BY 4.0. Generated 2026-10-31 17:37 UTC.
+  </footer>
+</div>
+</body>
+</html>
