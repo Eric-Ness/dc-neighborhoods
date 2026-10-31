@@ -1,0 +1,23 @@
+---
+import Base from "../layouts/Base.astro";
+import { neighborhoods, fmtDateTime } from "../lib/data";
+---
+<Base title="DC Neighborhoods: civic data, block by block" description="Independent, automatically updated civic data for Washington, DC neighborhoods.">
+  <main class="wrap">
+    <h1>DC Neighborhoods</h1>
+    <p class="muted">Building permits, 311 requests, public safety counts and ANC contacts, updated nightly from Open Data DC.</p>
+    <ul class="hoods">
+      {neighborhoods.map((n) => (
+        <li class="card">
+          <a href={`/${n.slug}/`}><strong>{n.name}</strong></a>
+          <div class="muted">{n.permits.length} permits · {n.requests.total.toLocaleString()} 311 requests · as of {fmtDateTime(n.generated_at)}</div>
+        </li>
+      ))}
+    </ul>
+  </main>
+</Base>
+
+<style>
+  main { padding-top: 2rem; }
+  .hoods { list-style: none; padding: 0; display: grid; gap: 10px; }
+</style>

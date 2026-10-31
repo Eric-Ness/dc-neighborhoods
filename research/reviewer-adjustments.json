@@ -1,0 +1,13 @@
+{
+  "civic-data#6": { "set": { "Low-upkeep": 3 }, "why": "DDOT TOPS refresh cadence unverified; a stale 'radar' needs babysitting or dies" },
+  "civic-data#3": { "set": { "Low-upkeep": 2 }, "why": "Scraping 4 different ANC sites and PDF agendas is the most brittle pipeline in the set" },
+  "monetization#2": { "set": { "Uniqueness": 3, "Low-upkeep": 4 }, "why": "Zillow/Redfin/RentCafe own price data; sponsor renewals are recurring sales work; Redfin source unverified (use OTR CAMA sales instead)" },
+  "monetization#1": { "set": { "Uniqueness": 4 }, "why": "Data-generated digest is rarer than the researcher scored; nothing equivalent exists for these 5" },
+  "monetization#5": { "set": { "Monetization": 2, "Low-upkeep": 3 }, "why": "Paid building profiles conflict with grading on a .org; landlord disputes cost time" },
+  "monetization#8": { "set": { "Low-upkeep": 4 }, "why": "Payments, stored addresses and support requests are real upkeep" },
+  "monetization#3": { "set": { "Uniqueness": 2 }, "why": "Construction Monitor, Apify scrapers and PermitMint already sell this" },
+  "culture-content#2": { "set": { "Low-upkeep": 3 }, "why": "1926 OCR text needs a human skim every week before it ships" },
+  "culture-content#5": { "set": { "Low-upkeep": 2 }, "why": "User-submitted wall needs moderation, against the owner's stated preference" },
+  "transit-tech#7": { "set": { "Uniqueness": 2 }, "why": "washington.org, NPS.gov and travel blogs dominate this search space" },
+  "transit-tech#1": { "set": { "Low-upkeep": 3 }, "why": "Exit/escalator directions must be re-walked whenever WMATA changes construction or signage" }
+}

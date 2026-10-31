@@ -1,0 +1,53 @@
+---
+// Dependency-free SVG map: the neighborhood outline plus one dot per permit.
+// Equirectangular projection with a cos(latitude) correction is accurate enough at neighborhood scale.
+import type { Permit } from "../lib/data";
+
+interface Props {
+  rings: number[][][];
+  permits: Permit[];
+  label: string;
+}
+const { rings, permits, label } = Astro.props;
+
+const pts = rings.flat();
+const lons = pts.map((p) => p[0]);
+const lats = pts.map((p) => p[1]);
+const [minX, maxX, minY, maxY] = [Math.min(...lons), Math.max(...lons), Math.min(...lats), Math.max(...lats)];
+const k = Math.cos((((minY + maxY) / 2) * Math.PI) / 180);
+const W = 600;
+const pad = 14;
+const scale = (W - 2 * pad) / ((maxX - minX) * k);
+const H = Math.round((maxY - minY) * scale + 2 * pad);
+const px = (lon: number) => pad + (lon - minX) * k * scale;
+const py = (lat: number) => pad + (maxY - lat) * scale;
+const path = rings.map((r) => "M" + r.map(([x, y]) => `${px(x).toFixed(1)},${py(y).toFixed(1)}`).join("L") + "Z").join(" ");
+const dots = permits.filter((p) => p.lat && p.lon && p.lat > 38 && p.lon < -76);
+const big = new Set(["Demolition", "New construction", "Additions"]);
+---
+<figure class="map card">
+  <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={label}>
+    <path d={path} class="outline" />
+    {dots.map((p) => (
+      <circle cx={px(p.lon!)} cy={py(p.lat!)} r={big.has(p.group) ? 6 : 3.5} class={big.has(p.group) ? "big" : "dot"}>
+        <title>{`${p.address} · ${p.group}`}</title>
+      </circle>
+    ))}
+  </svg>
+  <figcaption class="muted">
+    <span class="key dot"></span> permit <span class="key big"></span> demolition, addition or new construction.
+    Outline: {label}.
+  </figcaption>
+</figure>
+
+<style>
+  .map { margin: 0; }
+  svg { width: 100%; height: auto; display: block; max-height: 520px; }
+  .outline { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 2; }
+  .dot { fill: var(--dot); opacity: 0.75; }
+  .big { fill: var(--up); stroke: var(--surface); stroke-width: 1.5; }
+  figcaption { font-size: 0.85rem; margin-top: 0.5rem; }
+  .key { display: inline-block; width: 10px; height: 10px; border-radius: 50%; vertical-align: middle; margin-left: 0.4rem; }
+  .key.dot { background: var(--dot); }
+  .key.big { background: var(--up); }
+</style>

@@ -1,0 +1,30 @@
+{
+  "boundary_layer": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Health_WebMercator/MapServer/13",
+  "boundary_source": "DC Health Planning Neighborhoods (Open Data DC)",
+  "neighborhoods": [
+    {
+      "slug": "petworth",
+      "name": "Petworth",
+      "boundary_where": "DC_HPN_NAME='PETWORTH'",
+      "hosts": ["petworth.org"],
+      "redirect_hosts": ["petworth.net"],
+      "enabled": true
+    },
+    {
+      "slug": "tenleytown",
+      "name": "Tenleytown",
+      "boundary_where": "DC_HPN_NAME='TENLEYTOWN'",
+      "hosts": ["tenleytown.org"],
+      "redirect_hosts": ["tenleytown.net"],
+      "enabled": true
+    },
+    {
+      "slug": "adamsmorgan",
+      "name": "Adams Morgan",
+      "boundary_where": "DC_HPN_NAME='ADAMS MORGAN'",
+      "hosts": ["adamsmorgan.org"],
+      "redirect_hosts": [],
+      "enabled": false
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+---
+import Base from "../../layouts/Base.astro";
+import BoundaryMap from "../../components/BoundaryMap.astro";
+import { neighborhoods, pctChange, fmtDate, fmtDateTime, titleCase, headlines, type Neighborhood } from "../../lib/data";
+
+export function getStaticPaths() {
+  return neighborhoods.map((n) => ({ params: { slug: n.slug }, props: { n } }));
+}
+
+const { n } = Astro.props as { n: Neighborhood };
+const permitDays = n.windows.permits_days;
+const srDays = n.windows.requests_days;
+const srChange = pctChange(n.requests.total, n.requests.previous_total);
+const crimeChange = pctChange(n.crime.total, n.crime.previous_total);
+const facts = headlines(n);
+
+const groupOrder = ["Demolition", "New construction", "Additions", "Renovation & repair", "Electrical, plumbing & mechanical", "Home businesses", "Minor work", "Other"];
+const groups = groupOrder
+  .map((g) => ({ name: g, items: n.permits.filter((p) => p.group === g) }))
+  .filter((g) => g.items.length);
+const maxType = Math.max(...n.requests.by_type.slice(0, 12).map((t) => Math.max(t.count, t.previous)), 1);
+const ancs = [...new Set(n.smds.map((s) => s.anc))];
+const change = (pct: number | null) => (pct === null ? "" : `${pct > 0 ? "+" : ""}${pct}%`);
+---
+<Base
+  title={`${n.name}: what's changing, from DC open data`}
+  description={`Building permits, 311 requests and public safety counts for ${n.name}, Washington DC, updated nightly from Open Data DC.`}
+  rss={`/${n.slug}/permits.xml`}
+>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Independent civic data · Washington, DC</p>
+      <h1>{n.name}</h1>
+      <p class="muted">Data as of <time datetime={n.generated_at}>{fmtDateTime(n.generated_at)}</time>. Updated nightly.</p>
+      <p id="stale" class="stale" hidden>This data is more than 3 days old. The nightly update may have failed; check the official sources below.</p>
+    </div>
+  </header>
+  <script is:inline define:vars={{ generated: n.generated_at }}>
+    // The build can't know when someone visits, so the staleness warning is decided in the browser.
+    if (Date.now() - Date.parse(generated) > 3 * 86400000) document.getElementById("stale").hidden = false;
+  </script>
+
+  <main class="wrap">
+    <section class="stats">
+      <div class="card stat">
+        <div class="big-num">{n.permits.length}</div>
+        <div>building permits issued<br /><span class="muted">last {permitDays} days</span></div>
+      </div>
+      <div class="card stat">
+        <div class="big-num">{n.requests.total.toLocaleString()}</div>
+        <div>311 requests <span class={srChange && srChange > 0 ? "up" : "down"}>{change(srChange)}</span><br /><span class="muted">last {srDays} days vs. prior {srDays}</span></div>
+      </div>
+      <div class="card stat">
+        <div class="big-num">{n.crime.total}</div>
+        <div>crime reports {crimeChange === null ? <span class="muted">({n.crime.previous_total} prior)</span> : <span class={crimeChange > 0 ? "up" : "down"}>{change(crimeChange)}</span>}<br /><span class="muted">last {srDays} days, preliminary</span></div>
+      </div>
+    </section>
+
+    {facts.length > 0 && (
+      <section class="card facts">
+        <h2>This month in {n.name}</h2>
+        <ul>{facts.map((f) => <li>{f}</li>)}</ul>
+      </section>
+    )}
+
+    <h2 id="permits">Building permits</h2>
+    <div class="permits-layout">
+      <BoundaryMap rings={n.boundary.rings} permits={n.permits} label={`${n.name} (${n.boundary.source})`} />
+      <div>
+        {groups.map((g) => (
+          <details open={["Demolition", "New construction", "Additions"].includes(g.name)}>
+            <summary><strong>{g.name}</strong> <span class="muted">({g.items.length})</span></summary>
+            <ul class="permit-list">
+              {g.items.map((p) => (
+                <li>
+                  <span class="addr">{titleCase(p.address)}</span>
+                  <span class="muted"> · {fmtDate(p.issued)} · {p.id}</span>
+                  {p.work && <div class="work">{p.work}</div>}
+                </li>
+              ))}
+            </ul>
+          </details>
+        ))}
+        <p class="muted small">Subscribe to new permits: <a href={`/${n.slug}/permits.xml`}>RSS feed</a>.</p>
+      </div>
+    </div>
+
+    <h2 id="requests">311 service requests</h2>
+    <p class="muted">What residents reported to the city in the last {srDays} days, compared with the {srDays} days before. Bars: dark = this period, light = previous.</p>
+    <div class="scroll-x">
+      <table>
+        <thead><tr><th>Request type</th><th class="num">Last {srDays}d</th><th class="num">Prior {srDays}d</th><th class="num">Change</th><th class="bars-col"></th></tr></thead>
+        <tbody>
+          {n.requests.by_type.slice(0, 12).map((t) => {
+            const pct = pctChange(t.count, t.previous);
+            return (
+              <tr>
+                <td>{t.type}</td>
+                <td class="num">{t.count}</td>
+                <td class="num">{t.previous}</td>
+                <td class={`num ${pct !== null && pct > 0 ? "up" : "down"}`}>{change(pct)}</td>
+                <td class="bars-col">
+                  <div class="bar now" style={`width:${(t.count / maxType) * 100}%`}></div>
+                  <div class="bar before" style={`width:${(t.previous / maxType) * 100}%`}></div>
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="safety">Public safety</h2>
+    <p class="muted">Counts only, by offense. Individual incidents are deliberately not shown. {n.crime.note}</p>
+    <div class="scroll-x">
+      <table class="narrow">
+        <thead><tr><th>Offense</th><th class="num">Last {srDays}d</th><th class="num">Prior {srDays}d</th></tr></thead>
+        <tbody>
+          {n.crime.by_offense.map((c) => (
+            <tr><td>{titleCase(c.offense)}</td><td class="num">{c.count}</td><td class="num">{c.previous}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="anc">Your Advisory Neighborhood Commissioners</h2>
+    <p class="muted">
+      {n.name} spans ANC {ancs.join(", ")}. Each Single Member District elects one commissioner.
+      Elected commissioners' names are public record.
+    </p>
+    <div class="smds">
+      {n.smds.map((s) => (
+        <div class="card smd">
+          <strong>SMD {s.smd}</strong><br />
+          {s.commissioner ? titleCase(s.commissioner) : <span class="muted">Vacant</span>}
+          {s.url && <><br /><a href={s.url}>ANC {s.anc} site</a></>}
+        </div>
+      ))}
+    </div>
+  </main>
+
+  <div slot="footer">
+    <p>
+      Boundary: {n.boundary.source}. Sources: {Object.entries(n.sources).filter(([k]) => k !== "license").map(([, v]) => v).join("; ")}.
+      License: {n.sources.license}. <a href="/">Other neighborhoods</a>.
+    </p>
+  </div>
+</Base>
+
+<style>
+  .hero { background: var(--accent-soft); border-bottom: 1px solid var(--line); padding: 2rem 0 1.5rem; }
+  .hero h1 { font-size: clamp(2rem, 6vw, 3rem); margin: 0.2rem 0; }
+  .stale { background: var(--surface); border-left: 4px solid var(--up); padding: 0.5rem 0.8rem; }
+  .eyebrow { margin: 0; text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.78rem; color: var(--accent); font-weight: 600; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 1.5rem; }
+  .stat { display: flex; gap: 0.9rem; align-items: center; }
+  .big-num { font-size: 2.2rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .up { color: var(--up); font-weight: 600; }
+  .down { color: var(--down); font-weight: 600; }
+  .facts { margin-top: 1.2rem; }
+  .facts h2 { margin-top: 0; font-size: 1.05rem; }
+  .facts ul { margin: 0; padding-left: 1.2rem; }
+  .permits-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1.2rem; align-items: start; }
+  @media (max-width: 760px) { .permits-layout { grid-template-columns: 1fr; } }
+  details { border-bottom: 1px solid var(--line); padding: 0.5rem 0; }
+  summary { cursor: pointer; }
+  .permit-list { list-style: none; padding: 0; margin: 0.5rem 0 0; max-height: 420px; overflow-y: auto; }
+  .permit-list li { padding: 0.4rem 0; border-top: 1px dashed var(--line); font-size: 0.92rem; }
+  .addr { font-weight: 600; }
+  .work { color: var(--muted); font-size: 0.86rem; overflow-wrap: anywhere; }
+  .small { font-size: 0.85rem; }
+  .bars-col { width: 30%; min-width: 120px; }
+  .bar { height: 7px; border-radius: 4px; margin: 2px 0; }
+  .bar.now { background: var(--accent); }
+  .bar.before { background: var(--line); }
+  table.narrow { max-width: 520px; }
+  .smds { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; }
+  .smd { font-size: 0.92rem; }
+</style>

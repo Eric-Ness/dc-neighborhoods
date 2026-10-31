@@ -1,0 +1,21 @@
+{
+  // One Worker serves every neighborhood domain from one static build (site/dist).
+  // Each domain must be a zone in your Cloudflare account before deploying.
+  "name": "dc-neighborhoods",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./site/dist",
+    "binding": "ASSETS",
+    "run_worker_first": true,
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    { "pattern": "petworth.org", "custom_domain": true },
+    { "pattern": "www.petworth.org", "custom_domain": true },
+    { "pattern": "petworth.net", "custom_domain": true },
+    { "pattern": "tenleytown.org", "custom_domain": true },
+    { "pattern": "www.tenleytown.org", "custom_domain": true },
+    { "pattern": "tenleytown.net", "custom_domain": true }
+  ]
+}

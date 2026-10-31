@@ -1,0 +1,62 @@
+name: Nightly ingest, build, deploy
+
+on:
+  schedule:
+    - cron: "15 9 * * *" # 05:15 Eastern (EDT), after DC's overnight dataset refresh
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["site/**", "worker/**", "ingest/**", "wrangler.jsonc"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nightly
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      # Fails the job (and GitHub emails you) if DC's data is missing, empty, or contains personal fields.
+      - name: Ingest DC open data
+        run: python ingest/run.py --check
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Build site
+        working-directory: site
+        run: |
+          npm ci
+          npm run build
+
+      - name: Verify build output
+        run: node tools/verify.mjs site
+
+      # Keeping each night's JSON in git gives free history for week-over-week comparisons.
+      - name: Commit data snapshot
+        run: |
+          git config user.name "dc-neighborhoods-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add site/src/data
+          git diff --cached --quiet || git commit -m "data: nightly snapshot $(date -u +%F)"
+          git push
+
+      - name: Deploy to Cloudflare
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy
