@@ -1,7 +1,7 @@
 {
  "slug": "friendshipheights",
  "name": "Friendship Heights",
- "generated_at": "2026-11-01T03:07:36Z",
+ "generated_at": "2026-11-01T09:18:20Z",
  "boundary": {
   "source": "ANC single-member districts 3E03 and 3E04, around the Friendship Heights Metro (Open Data DC). DC has no planning area for Friendship Heights; this overlaps the Tenleytown site.",
   "rings": [
@@ -2611,19 +2611,6 @@
    "smd": "3E03"
   },
   {
-   "id": "M2700200",
-   "issued": "2026-10-16T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "MECHANICAL",
-   "address": "3859 GRAMERCY ST NW 20016",
-   "work": "",
-   "zoning": "R-1B",
-   "lat": 38.95646,
-   "lon": -77.07684,
-   "smd": "3E04"
-  },
-  {
    "id": "P2700475",
    "issued": "2026-10-16T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -2648,6 +2635,19 @@
    "lat": 38.95623,
    "lon": -77.08057,
    "smd": "3E03"
+  },
+  {
+   "id": "M2700200",
+   "issued": "2026-10-16T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "MECHANICAL",
+   "address": "3859 GRAMERCY ST NW 20016",
+   "work": "",
+   "zoning": "R-1B",
+   "lat": 38.95646,
+   "lon": -77.07684,
+   "smd": "3E04"
   },
   {
    "id": "P2700472",
@@ -2911,8 +2911,8 @@
   }
  ],
  "requests": {
-  "total": 450,
-  "previous_total": 551,
+  "total": 449,
+  "previous_total": 553,
   "by_type": [
    {
     "type": "Bulk Collection",
@@ -2941,8 +2941,8 @@
    },
    {
     "type": "Roadway Signs",
-    "count": 17,
-    "previous": 69
+    "count": 15,
+    "previous": 71
    },
    {
     "type": "Residential Parking Permit Violation",
@@ -2980,6 +2980,11 @@
     "previous": 6
    },
    {
+    "type": "Tree Removal",
+    "count": 8,
+    "previous": 10
+   },
+   {
     "type": "Public Space Litter Can-Collection",
     "count": 7,
     "previous": 1
@@ -2988,11 +2993,6 @@
     "type": "Illegal Dumping",
     "count": 7,
     "previous": 2
-   },
-   {
-    "type": "Tree Removal",
-    "count": 7,
-    "previous": 10
    },
    {
     "type": "Pothole",
@@ -3664,12 +3664,12 @@
     "previous": 0
    },
    {
-    "offense": "ROBBERY",
+    "offense": "MOTOR VEHICLE THEFT",
     "count": 1,
     "previous": 0
    },
    {
-    "offense": "MOTOR VEHICLE THEFT",
+    "offense": "ROBBERY",
     "count": 1,
     "previous": 0
    }
@@ -3698,7 +3698,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T03:07:36Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3930,7 +3930,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T03:07:36Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3950,11 +3950,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 30,
-   "starting_next_7d": 7,
+   "active_this_week": 29,
+   "starting_next_7d": 5,
    "reserved_ft": 4026,
    "long_running_90d": 9,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-01: newest permit issued 2026-10-31, newest record update 2026-10-31, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-01: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -3979,29 +3979,9 @@
     {
      "type": "Utility & DDOT work",
      "count": 2
-    },
-    {
-     "type": "Events & reserved parking",
-     "count": 1
     }
    ],
    "upcoming": [
-    {
-     "type": "Events & reserved parking",
-     "block": "4400 block of Harrison Street NW",
-     "start": "2026-11-01",
-     "end": "2026-11-01",
-     "ft": 0,
-     "hours": "10 am\u201310 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "3800 block of Harrison Street NW",
-     "start": "2026-11-01",
-     "end": "2026-12-25",
-     "ft": 154,
-     "hours": "8 am\u20135:30 pm"
-    },
     {
      "type": "Lead pipe replacement",
      "block": "5100 block of 39th Street NW",
@@ -4125,7 +4105,7 @@
    {
     "type": "Bulk Collection",
     "median_days": 7.71,
-    "city_median_days": 6.91,
+    "city_median_days": 6.92,
     "closed_n": 692
    },
    {
@@ -4174,7 +4154,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T03:07:36Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4316,11 +4296,11 @@
    ],
    "clips": [],
    "screened": 0,
-   "note": "No usable mentions in the Evening Star for October 31 \u2013 November 6, 1926 (0 matching pages searched). Some weeks a neighborhood just isn't in the paper. Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
+   "note": "The Library of Congress search could not be reached this run (HTTPError). Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
   }
  },
  "news": {
-  "generated_at": "2026-11-01T03:07:36Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4388,13 +4368,6 @@
    {
     "name": "ANC 3E",
     "url": "https://anc3e.org/",
-    "state": "error: ParseError",
-    "matched": 0,
-    "failed": 1
-   },
-   {
-    "name": "WTOP",
-    "url": "https://wtop.com/",
     "state": "ok",
     "matched": 0,
     "fetched": 1
@@ -4596,8 +4569,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T03:07:36Z",
-  "today": "2026-10-31",
+  "generated_at": "2026-11-01T09:18:20Z",
+  "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
    {
@@ -4622,7 +4595,7 @@
    {
     "name": "ANC 3E meeting agendas",
     "url": "https://anc3e.org/",
-    "state": "error: ParseError"
+    "state": "ok"
    },
    {
     "name": "DC Office of ANCs meeting notices",
@@ -4648,7 +4621,7 @@
   "anc_meetings": []
  },
  "jobs": {
-  "generated_at": "2026-11-01T03:07:36Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "max_age_days": 120,
   "sources": [
    {

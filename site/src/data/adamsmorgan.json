@@ -1,7 +1,7 @@
 {
  "slug": "adamsmorgan",
  "name": "Adams Morgan",
- "generated_at": "2026-11-01T03:07:36Z",
+ "generated_at": "2026-11-01T09:18:20Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1847,32 +1847,32 @@
   }
  ],
  "requests": {
-  "total": 1180,
-  "previous_total": 1661,
+  "total": 1184,
+  "previous_total": 1651,
   "by_type": [
    {
     "type": "Parking Enforcement",
     "count": 269,
-    "previous": 250
+    "previous": 251
    },
    {
     "type": "Bulk Collection",
     "count": 109,
-    "previous": 117
+    "previous": 115
    },
    {
     "type": "DC Health Rodent & Vector Control",
     "count": 95,
-    "previous": 149
+    "previous": 147
    },
    {
     "type": "Illegal Dumping",
     "count": 70,
-    "previous": 77
+    "previous": 74
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 51,
+    "count": 52,
     "previous": 85
    },
    {
@@ -1887,8 +1887,8 @@
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 39,
-    "previous": 58
+    "count": 40,
+    "previous": 59
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
@@ -1898,7 +1898,7 @@
    {
     "type": "Graffiti Removal",
     "count": 30,
-    "previous": 68
+    "previous": 64
    },
    {
     "type": "Roadway Signs",
@@ -1907,23 +1907,23 @@
    },
    {
     "type": "Tree Pruning",
-    "count": 27,
+    "count": 28,
     "previous": 37
    },
    {
     "type": "Tree Planting",
-    "count": 23,
+    "count": 24,
     "previous": 35
    },
    {
     "type": "Sidewalk Repair",
-    "count": 20,
+    "count": 21,
     "previous": 28
    },
    {
     "type": "DOB - Vacant Private Property Inspection",
-    "count": 20,
-    "previous": 22
+    "count": 19,
+    "previous": 21
    },
    {
     "type": "Dead Animal Collection",
@@ -1953,7 +1953,7 @@
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 12,
-    "previous": 18
+    "previous": 19
    },
    {
     "type": "Abandoned Bicycle",
@@ -1981,19 +1981,14 @@
     "previous": 17
    },
    {
-    "type": "Residential Parking Permit Violation",
-    "count": 8,
-    "previous": 27
-   },
-   {
     "type": "Recycling Cart Delivery",
     "count": 7,
     "previous": 15
    },
    {
-    "type": "Rat Replacement Containers",
+    "type": "Residential Parking Permit Violation",
     "count": 7,
-    "previous": 19
+    "previous": 27
    },
    {
     "type": "DC How Am I Driving?",
@@ -2006,9 +2001,14 @@
     "previous": 4
    },
    {
+    "type": "Rat Replacement Containers",
+    "count": 6,
+    "previous": 19
+   },
+   {
     "type": "DMV - Drivers License/ID Issues",
     "count": 6,
-    "previous": 27
+    "previous": 26
    },
    {
     "type": "Traffic Safety Input",
@@ -2021,6 +2021,11 @@
     "previous": 11
    },
    {
+    "type": "Missed Curbside Compost Collection",
+    "count": 6,
+    "previous": 1
+   },
+   {
     "type": "Public Space Litter Can-Collection",
     "count": 5,
     "previous": 11
@@ -2031,9 +2036,9 @@
     "previous": 3
    },
    {
-    "type": "Missed Curbside Compost Collection",
+    "type": "Roadway Repair",
     "count": 5,
-    "previous": 1
+    "previous": 3
    },
    {
     "type": "DOEE - LIHEAP",
@@ -2054,11 +2059,6 @@
     "type": "DC Government Information",
     "count": 4,
     "previous": 0
-   },
-   {
-    "type": "Roadway Repair",
-    "count": 4,
-    "previous": 3
    },
    {
     "type": "Tree Removal",
@@ -2166,7 +2166,7 @@
     "previous": 1
    }
   ],
-  "open": 236,
+  "open": 240,
   "recent": [
    {
     "type": "Parking Enforcement",
@@ -2778,7 +2778,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T03:07:36Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3157,7 +3157,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T03:07:36Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3177,15 +3177,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 208,
-   "starting_next_7d": 104,
-   "reserved_ft": 24772,
+   "active_this_week": 205,
+   "starting_next_7d": 97,
+   "reserved_ft": 24596,
    "long_running_90d": 26,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-01: newest permit issued 2026-10-31, newest record update 2026-10-31, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-01: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 46
+     "count": 43
     },
     {
      "type": "Dumpsters",
@@ -3213,86 +3213,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Moving & storage",
-     "block": "1800 block of S Street NW",
-     "start": "2026-11-01",
-     "end": "2026-11-02",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Moving & storage",
-     "block": "1700 block of 19th Street NW",
-     "start": "2026-11-01",
-     "end": "2026-11-01",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Moving & storage",
-     "block": "1800 block of 18th Street NW",
-     "start": "2026-11-01",
-     "end": "2026-11-01",
-     "ft": 0,
-     "hours": ""
-    },
-    {
-     "type": "Moving & storage",
-     "block": "1700 block of Euclid Street NW",
-     "start": "2026-11-01",
-     "end": "2026-11-02",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Moving & storage",
-     "block": "1700 block of Swann Street NW",
-     "start": "2026-11-01",
-     "end": "2026-11-02",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "1500 block of 19th Street NW",
-     "start": "2026-11-01",
-     "end": "2026-11-09",
-     "ft": 0,
-     "hours": "7 am\u201311 pm"
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "1600 block of U Street NW",
-     "start": "2026-11-01",
-     "end": "2026-11-09",
-     "ft": 0,
-     "hours": "7 am\u201311 pm"
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "1700 block of U Street NW",
-     "start": "2026-11-01",
-     "end": "2026-11-09",
-     "ft": 0,
-     "hours": "7 am\u201311 pm"
-    },
-    {
-     "type": "Moving & storage",
-     "block": "1900 block of 17th Street NW",
-     "start": "2026-11-01",
-     "end": "2026-11-02",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Construction staging",
-     "block": "1800 block of S Street NW",
-     "start": "2026-11-02",
-     "end": "2026-12-01",
-     "ft": 176,
-     "hours": "9:30 am\u20133:30 pm"
-    },
     {
      "type": "Construction staging",
      "block": "1900 block of 18th Street NW",
@@ -3351,6 +3271,14 @@
     },
     {
      "type": "Construction staging",
+     "block": "1800 block of S Street NW",
+     "start": "2026-11-02",
+     "end": "2026-12-01",
+     "ft": 176,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
      "block": "1700 block of Florida Avenue NW",
      "start": "2026-11-02",
      "end": "2026-11-06",
@@ -3374,6 +3302,14 @@
      "hours": ""
     },
     {
+     "type": "Moving & storage",
+     "block": "1700 block of 19th Street NW",
+     "start": "2026-11-03",
+     "end": "2026-11-04",
+     "ft": 88,
+     "hours": ""
+    },
+    {
      "type": "Events & reserved parking",
      "block": "1800 block of Mintwood Place NW",
      "start": "2026-11-03",
@@ -3383,7 +3319,7 @@
     },
     {
      "type": "Moving & storage",
-     "block": "1700 block of 19th Street NW",
+     "block": "1600 block of T Street NW",
      "start": "2026-11-03",
      "end": "2026-11-04",
      "ft": 88,
@@ -3391,9 +3327,9 @@
     },
     {
      "type": "Moving & storage",
-     "block": "1600 block of T Street NW",
+     "block": "2500 block of Cliffbourne Place NW",
      "start": "2026-11-03",
-     "end": "2026-11-04",
+     "end": "2026-11-03",
      "ft": 88,
      "hours": ""
     },
@@ -3532,6 +3468,70 @@
      "end": "2026-11-07",
      "ft": 88,
      "hours": ""
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "1600 block of Crescent Place NW",
+     "start": "2026-11-06",
+     "end": "2026-11-06",
+     "ft": 88,
+     "hours": "7 am\u201311:59 pm"
+    },
+    {
+     "type": "Moving & storage",
+     "block": "1800 block of 17th Street NW",
+     "start": "2026-11-06",
+     "end": "2026-11-06",
+     "ft": 88,
+     "hours": ""
+    },
+    {
+     "type": "Construction staging",
+     "block": "1800 block of Clydesdale Place NW",
+     "start": "2026-11-06",
+     "end": "2026-12-11",
+     "ft": 88,
+     "hours": "9 am\u20133 pm"
+    },
+    {
+     "type": "Moving & storage",
+     "block": "1600 block of Harvard Street NW",
+     "start": "2026-11-06",
+     "end": "2026-11-06",
+     "ft": 88,
+     "hours": ""
+    },
+    {
+     "type": "Moving & storage",
+     "block": "1800 block of Riggs Place NW",
+     "start": "2026-11-06",
+     "end": "2026-11-07",
+     "ft": 88,
+     "hours": ""
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "2200 block of Ontario Road NW",
+     "start": "2026-11-06",
+     "end": "2026-11-06",
+     "ft": 44,
+     "hours": "9 am\u20136 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "1600 block of Florida Avenue NW",
+     "start": "2026-11-06",
+     "end": "2026-11-08",
+     "ft": 220,
+     "hours": "12 am\u201310:30 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "1700 block of Florida Avenue NW",
+     "start": "2026-11-06",
+     "end": "2026-11-08",
+     "ft": 22,
+     "hours": "12 am\u201310:30 pm"
     }
    ]
   },
@@ -3617,12 +3617,12 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 2540
+    "closed_n": 2535
    },
    {
     "type": "Bulk Collection",
     "median_days": 7.4,
-    "city_median_days": 6.91,
+    "city_median_days": 6.92,
     "closed_n": 971
    },
    {
@@ -3665,7 +3665,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T03:07:36Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3797,38 +3797,13 @@
     "\"Champlain street\"",
     "\"Washington Heights\""
    ],
-   "clips": [
-    {
-     "date": "1926-10-31",
-     "page": 47,
-     "text": "\u2026 of Masonic Clufesisf the United States with which chibs in Washington are nnaktetL* service will be at 8 p.m. at the Y.ajFTington Heights Presbyterian Church, Kalorama road east of Co lumbia road.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-10-31/ed-1/?sp=47"
-    },
-    {
-     "date": "1926-10-31",
-     "page": 67,
-     "text": "Miss Fannie Dial, debutante daugh ter of former Senator and Mrs. Nathaniel B. Dial, will entertain a group of buds of the season at a noon day breakfast today at her home on Kalorama road.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-10-31/ed-1/?sp=67"
-    },
-    {
-     "date": "1926-11-02",
-     "page": 39,
-     "text": "The frowning old rooms of Little Champlain street would never again see her hugging the warmest corner to keep warm; the shopkeeper at the end of the street would never again refuse her food.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-02/ed-1/?sp=39"
-    },
-    {
-     "date": "1926-11-05",
-     "page": 2,
-     "text": "The assault and robbery took place at Florida avenue and Champlain street.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-05/ed-1/?sp=2"
-    }
-   ],
+   "clips": [],
    "screened": 0,
-   "note": "Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
+   "note": "The Library of Congress search could not be reached this run (HTTPError). Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
   }
  },
  "news": {
-  "generated_at": "2026-11-01T03:07:36Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4415,8 +4390,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T03:07:36Z",
-  "today": "2026-10-31",
+  "generated_at": "2026-11-01T09:18:20Z",
+  "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
    {
@@ -4441,15 +4416,6 @@
    }
   ],
   "events": [
-   {
-    "title": "Adams Morgan Farmers Market",
-    "place": "Euclid Street & Columbia Road",
-    "time": "8:30 AM - 1:00 PM",
-    "url": "https://www.lickingcreekbendfarm.com",
-    "source": "DC farmers market list",
-    "kind": "market",
-    "date": "2026-10-31"
-   },
    {
     "title": "Adams Morgan Farmers Market",
     "place": "Euclid Street & Columbia Road",
@@ -4505,7 +4471,7 @@
   "anc_meetings": []
  },
  "jobs": {
-  "generated_at": "2026-11-01T03:07:36Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "max_age_days": 120,
   "sources": [
    {

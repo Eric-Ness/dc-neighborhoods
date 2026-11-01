@@ -1,7 +1,7 @@
 {
  "slug": "anacostia",
  "name": "Anacostia",
- "generated_at": "2026-11-01T03:33:06Z",
+ "generated_at": "2026-11-01T09:18:20Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -886,6 +886,19 @@
    "smd": "8B06"
   },
   {
+   "id": "B2606001",
+   "issued": "2026-10-14T04:00:00Z",
+   "group": "Additions",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "2620 BOWEN RD SE 20020",
+   "work": "This submission details the replacement of the existing fire alarm control panel. The existing control panel, ES-200X, will be replaced in its entirety. All existing field wirings shall remain unchanged and reconnected to the new panel. No modifications or additions to devices are performed. The existing sequence of operations for the system shall remain unchanged.",
+   "zoning": "RA-1",
+   "lat": 38.85953,
+   "lon": -76.99196,
+   "smd": "8B06"
+  },
+  {
    "id": "E2700468",
    "issued": "2026-10-14T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -910,19 +923,6 @@
    "lat": 38.86465,
    "lon": -76.98473,
    "smd": "8A05"
-  },
-  {
-   "id": "B2606001",
-   "issued": "2026-10-14T04:00:00Z",
-   "group": "Additions",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "2620 BOWEN RD SE 20020",
-   "work": "This submission details the replacement of the existing fire alarm control panel. The existing control panel, ES-200X, will be replaced in its entirety. All existing field wirings shall remain unchanged and reconnected to the new panel. No modifications or additions to devices are performed. The existing sequence of operations for the system shall remain unchanged.",
-   "zoning": "RA-1",
-   "lat": 38.85953,
-   "lon": -76.99196,
-   "smd": "8B06"
   },
   {
    "id": "M2700159",
@@ -1044,17 +1044,17 @@
  ],
  "requests": {
   "total": 498,
-  "previous_total": 887,
+  "previous_total": 883,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 88,
-    "previous": 110
+    "count": 87,
+    "previous": 109
    },
    {
     "type": "Parking Enforcement",
-    "count": 71,
-    "previous": 124
+    "count": 69,
+    "previous": 126
    },
    {
     "type": "DOEE - LIHEAP",
@@ -1064,7 +1064,7 @@
    {
     "type": "Illegal Dumping",
     "count": 35,
-    "previous": 32
+    "previous": 31
    },
    {
     "type": "Trash Collection - Missed",
@@ -1084,7 +1084,7 @@
    {
     "type": "Supercan - Delivery",
     "count": 13,
-    "previous": 13
+    "previous": 12
    },
    {
     "type": "Recycling Collection - Missed",
@@ -1114,7 +1114,7 @@
    {
     "type": "Abandoned Vehicle - On Public Property",
     "count": 8,
-    "previous": 33
+    "previous": 32
    },
    {
     "type": "Recycling Cart Delivery",
@@ -1122,9 +1122,19 @@
     "previous": 7
    },
    {
+    "type": "Scheduled Yard Waste",
+    "count": 8,
+    "previous": 28
+   },
+   {
     "type": "DMV - Drivers License/ID Issues",
     "count": 8,
     "previous": 24
+   },
+   {
+    "type": "Dead Animal Collection",
+    "count": 7,
+    "previous": 3
    },
    {
     "type": "Tree Inspection",
@@ -1132,19 +1142,9 @@
     "previous": 31
    },
    {
-    "type": "Scheduled Yard Waste",
-    "count": 7,
-    "previous": 28
-   },
-   {
     "type": "DC Health Rodent & Vector Control",
     "count": 7,
     "previous": 13
-   },
-   {
-    "type": "Dead Animal Collection",
-    "count": 6,
-    "previous": 3
    },
    {
     "type": "Residential Parking Permit Violation",
@@ -1162,19 +1162,19 @@
     "previous": 53
    },
    {
+    "type": "Tree Pruning",
+    "count": 4,
+    "previous": 27
+   },
+   {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 4,
-    "previous": 3
+    "previous": 2
    },
    {
     "type": "Tree Removal",
     "count": 4,
     "previous": 5
-   },
-   {
-    "type": "Tree Pruning",
-    "count": 3,
-    "previous": 27
    },
    {
     "type": "Pet Waste Complaint",
@@ -1199,7 +1199,7 @@
    {
     "type": "Out of State Parking Violation (ROSA)",
     "count": 2,
-    "previous": 9
+    "previous": 8
    },
    {
     "type": "Public Space Inspection",
@@ -1841,14 +1841,14 @@
     "previous": 14
    },
    {
-    "offense": "MOTOR VEHICLE THEFT",
-    "count": 5,
-    "previous": 7
-   },
-   {
     "offense": "THEFT F/AUTO",
     "count": 5,
     "previous": 6
+   },
+   {
+    "offense": "MOTOR VEHICLE THEFT",
+    "count": 5,
+    "previous": 7
    },
    {
     "offense": "ROBBERY",
@@ -1913,7 +1913,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T03:33:06Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2104,7 +2104,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T03:33:06Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2125,10 +2125,10 @@
   ],
   "curb": {
    "active_this_week": 73,
-   "starting_next_7d": 16,
+   "starting_next_7d": 15,
    "reserved_ft": 8382,
    "long_running_90d": 22,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-01: newest permit issued 2026-10-31, newest record update 2026-10-31, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-01: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -2156,14 +2156,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Construction staging",
-     "block": "1200 block of Marion Barry Avenue SE",
-     "start": "2026-11-01",
-     "end": "2026-11-30",
-     "ft": 132,
-     "hours": "9:30 am\u20133:30 pm"
-    },
     {
      "type": "Construction staging",
      "block": "2500 block of Elvans Road SE",
@@ -2367,8 +2359,8 @@
    {
     "type": "Bulk Collection",
     "median_days": 6.13,
-    "city_median_days": 6.91,
-    "closed_n": 929
+    "city_median_days": 6.92,
+    "closed_n": 928
    },
    {
     "type": "Parking Enforcement",
@@ -2416,7 +2408,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T03:33:06Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2542,50 +2534,13 @@
     "\"Nichols avenue\"",
     "\"Good Hope road\""
    ],
-   "clips": [
-    {
-     "date": "1926-10-31",
-     "page": 5,
-     "text": "There are 803 acres in four f>arcels one on each side of Nichols avenue, Anacostia; one in Congress Heights, and one at God ding Hall, named for a former super intendent.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-10-31/ed-1/?sp=5"
-    },
-    {
-     "date": "1926-10-31",
-     "page": 23,
-     "text": "Helen ttlmstend. Anacostia Station, sends in a cartoon consisting of 16 pictures, to show the excitement caused in a latnilv with several school children by the piraffe naming con test.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-10-31/ed-1/?sp=23"
-    },
-    {
-     "date": "1926-11-02",
-     "page": 13,
-     "text": "No. 4. meeting at Fourth street and Penn sylvania avenue southeast at 8 o\u2019clock, and to Anacostia Lodge.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-02/ed-1/?sp=13"
-    },
-    {
-     "date": "1926-11-04",
-     "page": 43,
-     "text": "Pointing for their game Sunday with Argyles. Anacostia Eagle Prep pigskin handlers will work out tonight at 7:30 o\u2019clock at Fourteenth street and Good Hope road southeast.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-04/ed-1/?sp=43"
-    },
-    {
-     "date": "1926-11-05",
-     "page": 17,
-     "text": "The visita tion to Anacostia Lodge was followed by a program of entertainment fea tures, after which supper was served by members of Electa Chapter, Order of the Eastern Star.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-05/ed-1/?sp=17"
-    },
-    {
-     "date": "1926-11-06",
-     "page": 32,
-     "text": "The commission established a near side car stop for northbound cars on Eleventh street at Harvard street, and an additional car stop at S street and Nichols avenue southeast.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-06/ed-1/?sp=32"
-    }
-   ],
+   "clips": [],
    "screened": 0,
-   "note": "Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
+   "note": "The Library of Congress search could not be reached this run (HTTPError). Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
   }
  },
  "news": {
-  "generated_at": "2026-11-01T03:33:06Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2863,8 +2818,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T03:33:06Z",
-  "today": "2026-10-31",
+  "generated_at": "2026-11-01T09:18:20Z",
+  "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
    {
@@ -2889,24 +2844,6 @@
    }
   ],
   "events": [
-   {
-    "title": "FRESHFARM Anacostia Community Museum",
-    "place": "1901 Fort Pl SE",
-    "time": "10:00 AM - 2:00 PM",
-    "url": "https://www.freshfarm.org/markets",
-    "source": "DC farmers market list",
-    "kind": "market",
-    "date": "2026-10-31"
-   },
-   {
-    "title": "Dreaming Out Loud's Anacostia Farmers Market",
-    "place": "1301 Marion Barry Ave SE",
-    "time": "11:00 AM - 2:00 PM",
-    "url": "https://www.dolgrocery.org",
-    "source": "DC farmers market list",
-    "kind": "market",
-    "date": "2026-10-31"
-   },
    {
     "title": "FRESHFARM Anacostia Community Museum",
     "place": "1901 Fort Pl SE",
@@ -3009,7 +2946,7 @@
   ]
  },
  "jobs": {
-  "generated_at": "2026-11-01T03:33:06Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "max_age_days": 120,
   "sources": [
    {

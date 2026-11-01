@@ -1,7 +1,7 @@
 {
  "slug": "clevelandpark",
  "name": "Cleveland Park",
- "generated_at": "2026-11-01T03:33:06Z",
+ "generated_at": "2026-11-01T09:18:20Z",
  "boundary": {
   "source": "Cleveland Park Historic District (DC Historic Preservation Office, Open Data DC). DC has no planning area named Cleveland Park.",
   "rings": [
@@ -2937,7 +2937,7 @@
  ],
  "requests": {
   "total": 249,
-  "previous_total": 301,
+  "previous_total": 299,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
@@ -2947,7 +2947,7 @@
    {
     "type": "Bulk Collection",
     "count": 36,
-    "previous": 45
+    "previous": 44
    },
    {
     "type": "Parking Enforcement",
@@ -3072,7 +3072,7 @@
    {
     "type": "Roadway Repair",
     "count": 2,
-    "previous": 2
+    "previous": 1
    },
    {
     "type": "Supercan - Delivery",
@@ -3702,7 +3702,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T03:33:06Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3952,7 +3952,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T03:33:06Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3972,15 +3972,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 45,
+   "active_this_week": 44,
    "starting_next_7d": 9,
-   "reserved_ft": 7524,
+   "reserved_ft": 7436,
    "long_running_90d": 9,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-01: newest permit issued 2026-10-31, newest record update 2026-10-31, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-01: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 3
+     "count": 2
     },
     {
      "type": "Construction staging",
@@ -4161,7 +4161,7 @@
    {
     "type": "Bulk Collection",
     "median_days": 7.91,
-    "city_median_days": 6.91,
+    "city_median_days": 6.92,
     "closed_n": 373
    },
    {
@@ -4204,7 +4204,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T03:33:06Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4328,38 +4328,13 @@
    "terms": [
     "\"Cleveland Park\""
    ],
-   "clips": [
-    {
-     "date": "1926-10-31",
-     "page": 33,
-     "text": "There will be a meeting of the i Chevy Chase Chapter Tuesday at the j home of Mrs. W. O. Clephane, Con necticut avenue and Benox street, at 2:30 p.m. i The Cleveland Park Chapter an nounces a bazaar, to be held at the borne of Mrs. W. B. Browning, 3300 Newark street.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-10-31/ed-1/?sp=33"
-    },
-    {
-     "date": "1926-10-31",
-     "page": 111,
-     "text": "Call Col. 2228 for auto, or write 827 Upshur St. N.W I i RODMAN ST., CLEVELAND PARK. lust a few d<ors off Connecticut ave., 5 beautiful semi detached stone houses consisting of eight large rooms, 2 haths, hardwood floors and trim throughout.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-10-31/ed-1/?sp=111"
-    },
-    {
-     "date": "1926-11-01",
-     "page": 42,
-     "text": "It is well located on one of the highest elevations in Cleveland Park and within a short distance of the publi. school.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-01/ed-1/?sp=42"
-    },
-    {
-     "date": "1926-11-04",
-     "page": 56,
-     "text": "Moderate payment terms arranged. $10,850 Cleveland Park.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-04/ed-1/?sp=56"
-    }
-   ],
+   "clips": [],
    "screened": 0,
-   "note": "Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
+   "note": "The Library of Congress search could not be reached this run (HTTPError). Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
   }
  },
  "news": {
-  "generated_at": "2026-11-01T03:33:06Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4764,8 +4739,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T03:33:06Z",
-  "today": "2026-10-31",
+  "generated_at": "2026-11-01T09:18:20Z",
+  "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
    {
@@ -4790,15 +4765,6 @@
    }
   ],
   "events": [
-   {
-    "title": "FRESHFARM Cleveland Park",
-    "place": "3426 Connecticut Ave NW",
-    "time": "9:00 AM - 1:00 PM",
-    "url": "https://www.freshfarm.org/markets",
-    "source": "DC farmers market list",
-    "kind": "market",
-    "date": "2026-10-31"
-   },
    {
     "title": "FRESHFARM Cleveland Park",
     "place": "3426 Connecticut Ave NW",
@@ -4844,7 +4810,7 @@
   "anc_meetings": []
  },
  "jobs": {
-  "generated_at": "2026-11-01T03:33:06Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "max_age_days": 120,
   "sources": [
    {

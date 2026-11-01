@@ -1,7 +1,7 @@
 {
  "slug": "columbiaheights",
  "name": "Columbia Heights",
- "generated_at": "2026-11-01T03:07:36Z",
+ "generated_at": "2026-11-01T09:18:20Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1233,6 +1233,19 @@
    "smd": "1A05"
   },
   {
+   "id": "B2603913",
+   "issued": "2026-10-26T04:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "3602 NEW HAMPSHIRE AVE NW 20010",
+   "work": "Revision for already approved interior renovation for permit# B2401860.Revision on Mechanical, plumbing, and minor modification on the front porch.",
+   "zoning": "RF-1",
+   "lat": 38.93421,
+   "lon": -77.02617,
+   "smd": "1A07"
+  },
+  {
    "id": "P2700747",
    "issued": "2026-10-26T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -1296,19 +1309,6 @@
    "lat": 38.93425,
    "lon": -77.02195,
    "smd": "1E01"
-  },
-  {
-   "id": "B2603913",
-   "issued": "2026-10-26T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "3602 NEW HAMPSHIRE AVE NW 20010",
-   "work": "Revision for already approved interior renovation for permit# B2401860.Revision on Mechanical, plumbing, and minor modification on the front porch.",
-   "zoning": "RF-1",
-   "lat": 38.93421,
-   "lon": -77.02617,
-   "smd": "1A07"
   },
   {
    "id": "E2700836",
@@ -1714,6 +1714,19 @@
    "smd": "1E04"
   },
   {
+   "id": "E2700607",
+   "issued": "2026-10-19T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "622 IRVING ST NW 20010",
+   "work": "",
+   "zoning": "RF-1",
+   "lat": 38.92888,
+   "lon": -77.0217,
+   "smd": "1E04"
+  },
+  {
    "id": "P2700545",
    "issued": "2026-10-19T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -1816,19 +1829,6 @@
    "lat": 38.93193,
    "lon": -77.03042,
    "smd": "1A04"
-  },
-  {
-   "id": "E2700607",
-   "issued": "2026-10-19T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "622 IRVING ST NW 20010",
-   "work": "",
-   "zoning": "RF-1",
-   "lat": 38.92888,
-   "lon": -77.0217,
-   "smd": "1E04"
   },
   {
    "id": "P2700511",
@@ -2260,19 +2260,6 @@
    "smd": "1E04"
   },
   {
-   "id": "BP2700128",
-   "issued": "2026-10-07T04:00:00Z",
-   "group": "Minor work",
-   "type": "POST CARD",
-   "subtype": "BUILDING",
-   "address": "1016 IRVING ST NW 20010",
-   "work": "",
-   "zoning": "RF-1",
-   "lat": 38.92858,
-   "lon": -77.02695,
-   "smd": "1A10"
-  },
-  {
    "id": "P2700193",
    "issued": "2026-10-07T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -2297,6 +2284,19 @@
    "lat": 38.93105,
    "lon": -77.02631,
    "smd": "1E03"
+  },
+  {
+   "id": "BP2700128",
+   "issued": "2026-10-07T04:00:00Z",
+   "group": "Minor work",
+   "type": "POST CARD",
+   "subtype": "BUILDING",
+   "address": "1016 IRVING ST NW 20010",
+   "work": "",
+   "zoning": "RF-1",
+   "lat": 38.92858,
+   "lon": -77.02695,
+   "smd": "1A10"
   },
   {
    "id": "GF2700104",
@@ -2521,73 +2521,73 @@
   }
  ],
  "requests": {
-  "total": 1913,
-  "previous_total": 2232,
+  "total": 1912,
+  "previous_total": 2218,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 294,
-    "previous": 276
+    "count": 296,
+    "previous": 281
    },
    {
     "type": "Bulk Collection",
-    "count": 206,
-    "previous": 265
+    "count": 205,
+    "previous": 257
    },
    {
     "type": "Illegal Dumping",
     "count": 168,
-    "previous": 150
+    "previous": 146
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 151,
-    "previous": 163
+    "count": 148,
+    "previous": 166
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 121,
-    "previous": 134
+    "count": 120,
+    "previous": 132
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 78,
-    "previous": 95
+    "count": 79,
+    "previous": 99
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 76,
-    "previous": 155
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "count": 60,
-    "previous": 14
+    "count": 78,
+    "previous": 152
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 59,
+    "count": 62,
     "previous": 5
    },
    {
     "type": "Dead Animal Collection",
+    "count": 57,
+    "previous": 67
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
     "count": 56,
-    "previous": 68
+    "previous": 14
    },
    {
     "type": "Trash Cart - Delivery",
-    "count": 52,
+    "count": 53,
     "previous": 57
    },
    {
     "type": "Public Space Litter Can-Collection",
-    "count": 50,
-    "previous": 66
+    "count": 51,
+    "previous": 65
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
     "count": 44,
-    "previous": 46
+    "previous": 50
    },
    {
     "type": "Residential Parking Permit Violation",
@@ -2597,17 +2597,17 @@
    {
     "type": "Recycling Collection - Missed",
     "count": 34,
-    "previous": 80
-   },
-   {
-    "type": "Roadway Signs",
-    "count": 30,
-    "previous": 16
+    "previous": 72
    },
    {
     "type": "Graffiti Removal",
     "count": 29,
     "previous": 24
+   },
+   {
+    "type": "Roadway Signs",
+    "count": 27,
+    "previous": 16
    },
    {
     "type": "Abandoned Bicycle",
@@ -2616,7 +2616,7 @@
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
-    "count": 21,
+    "count": 20,
     "previous": 24
    },
    {
@@ -2626,13 +2626,18 @@
    },
    {
     "type": "DOB - Vacant Private Property Inspection",
-    "count": 20,
-    "previous": 14
+    "count": 19,
+    "previous": 15
    },
    {
     "type": "Tree Pruning",
     "count": 19,
-    "previous": 11
+    "previous": 10
+   },
+   {
+    "type": "Recycling Cart Delivery",
+    "count": 18,
+    "previous": 24
    },
    {
     "type": "Tree Planting",
@@ -2642,22 +2647,22 @@
    {
     "type": "Tree Inspection",
     "count": 18,
-    "previous": 37
-   },
-   {
-    "type": "Recycling Cart Delivery",
-    "count": 17,
-    "previous": 23
-   },
-   {
-    "type": "Container Removal",
-    "count": 15,
-    "previous": 27
+    "previous": 38
    },
    {
     "type": "DC Government Information",
     "count": 14,
     "previous": 7
+   },
+   {
+    "type": "Container Removal",
+    "count": 13,
+    "previous": 26
+   },
+   {
+    "type": "Trash Cart Repair",
+    "count": 13,
+    "previous": 17
    },
    {
     "type": "DMV - Drivers License/ID Issues",
@@ -2675,11 +2680,6 @@
     "previous": 11
    },
    {
-    "type": "Trash Cart Repair",
-    "count": 11,
-    "previous": 17
-   },
-   {
     "type": "DGS - Playground Repair",
     "count": 10,
     "previous": 3
@@ -2687,7 +2687,7 @@
    {
     "type": "Pothole",
     "count": 9,
-    "previous": 12
+    "previous": 13
    },
    {
     "type": "DOB - Illegal Construction",
@@ -2697,7 +2697,7 @@
    {
     "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
     "count": 9,
-    "previous": 13
+    "previous": 11
    },
    {
     "type": "Public Space Inspection",
@@ -2712,7 +2712,7 @@
    {
     "type": "Missed Curbside Compost Collection",
     "count": 6,
-    "previous": 7
+    "previous": 6
    },
    {
     "type": "Traffic Safety Input",
@@ -2732,7 +2732,7 @@
    {
     "type": "Supercan - Delivery",
     "count": 5,
-    "previous": 4
+    "previous": 3
    },
    {
     "type": "Streetlight Repair Investigation",
@@ -2757,22 +2757,22 @@
    {
     "type": "FEMS - Smoke Alarm Application",
     "count": 4,
-    "previous": 2
+    "previous": 1
    },
    {
     "type": "OCTFME - Down Cable Wires",
     "count": 3,
-    "previous": 7
+    "previous": 6
    },
    {
     "type": "DOEE - Engine Idling Tips",
     "count": 3,
-    "previous": 4
+    "previous": 5
    },
    {
     "type": "Alley Cleaning",
     "count": 2,
-    "previous": 47
+    "previous": 48
    },
    {
     "type": "DMV - Vehicle Title Issues",
@@ -2810,6 +2810,11 @@
     "previous": 0
    },
    {
+    "type": "DMV - Driver and Vehicle Services Refund",
+    "count": 2,
+    "previous": 0
+   },
+   {
     "type": "Bicycle Services",
     "count": 2,
     "previous": 5
@@ -2832,7 +2837,7 @@
    {
     "type": "Grass and Weeds Mowing",
     "count": 1,
-    "previous": 10
+    "previous": 9
    },
    {
     "type": "Recycling- Information Request",
@@ -2848,11 +2853,6 @@
     "type": "DC How Am I Driving?",
     "count": 1,
     "previous": 1
-   },
-   {
-    "type": "DMV - Driver and Vehicle Services Refund",
-    "count": 1,
-    "previous": 0
    },
    {
     "type": "Public Space Litter Can Installation",
@@ -2875,7 +2875,7 @@
     "previous": 0
    }
   ],
-  "open": 392,
+  "open": 394,
   "recent": [
    {
     "type": "Illegal Dumping",
@@ -3503,7 +3503,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T03:07:36Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3721,7 +3721,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T03:07:36Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3741,15 +3741,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 158,
-   "starting_next_7d": 24,
-   "reserved_ft": 26554,
+   "active_this_week": 152,
+   "starting_next_7d": 22,
+   "reserved_ft": 25894,
    "long_running_90d": 14,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-01: newest permit issued 2026-10-31, newest record update 2026-10-31, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-01: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 10
+     "count": 5
     },
     {
      "type": "Dumpsters",
@@ -3757,7 +3757,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 68
+     "count": 67
     },
     {
      "type": "Cranes",
@@ -3777,22 +3777,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Moving & storage",
-     "block": "700 block of Otis Place NW",
-     "start": "2026-11-01",
-     "end": "2026-11-01",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Moving & storage",
-     "block": "3300 block of 13th Street NW",
-     "start": "2026-11-01",
-     "end": "2026-11-02",
-     "ft": 88,
-     "hours": ""
-    },
     {
      "type": "Events & reserved parking",
      "block": "3600 block of 13th Street NW",
@@ -3938,20 +3922,20 @@
      "hours": ""
     },
     {
-     "type": "Construction staging",
-     "block": "900 block of Monroe Street NW",
-     "start": "2026-11-06",
-     "end": "2026-12-05",
-     "ft": 176,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
      "type": "Moving & storage",
      "block": "700 block of Park Road NW",
      "start": "2026-11-06",
      "end": "2026-11-07",
      "ft": 88,
      "hours": ""
+    },
+    {
+     "type": "Construction staging",
+     "block": "900 block of Monroe Street NW",
+     "start": "2026-11-06",
+     "end": "2026-12-05",
+     "ft": 176,
+     "hours": "9:30 am\u20133:30 pm"
     },
     {
      "type": "Moving & storage",
@@ -4052,7 +4036,7 @@
    {
     "type": "Bulk Collection",
     "median_days": 8.01,
-    "city_median_days": 6.91,
+    "city_median_days": 6.92,
     "closed_n": 2557
    },
    {
@@ -4101,7 +4085,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T03:07:36Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4226,50 +4210,13 @@
     "\"Columbia Heights\"",
     "\"Tivoli\""
    ],
-   "clips": [
-    {
-     "date": "1926-10-31",
-     "page": 83,
-     "text": "Art Landry and his \"recording art ists,\u201d 12 clever instrumentalists, are billed for a week\u2019s engagement at Crandall\u2019s Tivoli Theater, starting to day.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-10-31/ed-1/?sp=83"
-    },
-    {
-     "date": "1926-11-01",
-     "page": 42,
-     "text": "Large Detached House in Columbia HeightsPriced Right.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-01/ed-1/?sp=42"
-    },
-    {
-     "date": "1926-11-03",
-     "page": 12,
-     "text": "The relatively small number of tax assessors in the District of Colum bia compared to other representative cities was attacked by the Columbia Heights Citizens\u2019 Associations in St. Stephen's Parish Hall, 3017 Four teenth street, last night.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-03/ed-1/?sp=12"
-    },
-    {
-     "date": "1926-11-04",
-     "page": 55,
-     "text": "Cleve, 3049. $75 CASHS7S MO. Columbia Heights Six rooms, bath, sleeping porch, h.-w.h., electric lights: deep lot to paved alley: metal garage: strictly white neighborhood.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-04/ed-1/?sp=55"
-    },
-    {
-     "date": "1926-11-05",
-     "page": 18,
-     "text": "Mrs. Theodore Tiller Is among the mothers especially sponsoring the at traction tomorrow morning at the Tivoli Theater, and the debutantes and their mothers will assist her as hostess.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-05/ed-1/?sp=18"
-    },
-    {
-     "date": "1926-11-06",
-     "page": 12,
-     "text": "\u2026 and Irving streets: Episcopal Advent, Second and U streets; All Saints, Chevy Chase circle; All Souls, cathe dral near Connecticut avenue; Luth eranColumbia Heights, Park road and New Hampshire avenue; Epi phany, Sixteenth and U streets; Meth odist Episcopal Anacostia, Four teenth and U streets southeast; Brightwood, Eighth street and Jef ferson \u2026",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-06/ed-1/?sp=12"
-    }
-   ],
+   "clips": [],
    "screened": 0,
-   "note": "Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
+   "note": "The Library of Congress search could not be reached this run (HTTPError). Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
   }
  },
  "news": {
-  "generated_at": "2026-11-01T03:07:36Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4785,8 +4732,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T03:07:36Z",
-  "today": "2026-10-31",
+  "generated_at": "2026-11-01T09:18:20Z",
+  "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
    {
@@ -4831,7 +4778,7 @@
   "anc_meetings": []
  },
  "jobs": {
-  "generated_at": "2026-11-01T03:07:36Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "max_age_days": 120,
   "sources": [
    {

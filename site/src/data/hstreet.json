@@ -1,7 +1,7 @@
 {
  "slug": "hstreet",
  "name": "H Street NE",
- "generated_at": "2026-11-01T03:07:36Z",
+ "generated_at": "2026-11-01T09:18:20Z",
  "boundary": {
   "source": "The six ANC single-member districts along H Street NE from 3rd to 15th Street (6A01, 6A02, 6A06, 6C04, 6C05, 6C06; Open Data DC). DC has no planning area for H Street.",
   "rings": [
@@ -3580,19 +3580,6 @@
    "smd": "6C06"
   },
   {
-   "id": "P2700654",
-   "issued": "2026-10-22T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "1247 WYLIE ST NE 20002",
-   "work": "Plumbing trade Permit",
-   "zoning": null,
-   "lat": 38.90065,
-   "lon": -76.98886,
-   "smd": "6A01"
-  },
-  {
    "id": "E2700725",
    "issued": "2026-10-22T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -3603,6 +3590,19 @@
    "zoning": "RA-2",
    "lat": 38.90082,
    "lon": -76.98621,
+   "smd": "6A01"
+  },
+  {
+   "id": "P2700654",
+   "issued": "2026-10-22T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "1247 WYLIE ST NE 20002",
+   "work": "Plumbing trade Permit",
+   "zoning": null,
+   "lat": 38.90065,
+   "lon": -76.98886,
    "smd": "6A01"
   },
   {
@@ -4439,48 +4439,48 @@
   }
  ],
  "requests": {
-  "total": 2303,
-  "previous_total": 2934,
+  "total": 2304,
+  "previous_total": 2923,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 360,
+    "count": 365,
     "previous": 415
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 335,
-    "previous": 390
+    "count": 332,
+    "previous": 387
    },
    {
     "type": "Parking Enforcement",
-    "count": 300,
-    "previous": 255
+    "count": 297,
+    "previous": 246
    },
    {
     "type": "Residential Parking Permit Violation",
-    "count": 197,
-    "previous": 272
+    "count": 191,
+    "previous": 270
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 123,
-    "previous": 64
+    "count": 124,
+    "previous": 66
    },
    {
     "type": "Illegal Dumping",
     "count": 118,
-    "previous": 143
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "count": 87,
-    "previous": 99
+    "previous": 146
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 84,
-    "previous": 100
+    "count": 87,
+    "previous": 101
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "count": 86,
+    "previous": 99
    },
    {
     "type": "Tree Planting",
@@ -4494,13 +4494,13 @@
    },
    {
     "type": "Dead Animal Collection",
-    "count": 48,
+    "count": 46,
     "previous": 47
    },
    {
     "type": "Trash Cart - Delivery",
-    "count": 40,
-    "previous": 43
+    "count": 42,
+    "previous": 44
    },
    {
     "type": "DOB - Vacant Private Property Inspection",
@@ -4509,22 +4509,22 @@
    },
    {
     "type": "Tree Inspection",
-    "count": 31,
-    "previous": 119
+    "count": 32,
+    "previous": 120
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 27,
+    "count": 28,
     "previous": 45
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
-    "count": 26,
+    "count": 28,
     "previous": 22
    },
    {
     "type": "Recycling Collection - Missed",
-    "count": 25,
+    "count": 26,
     "previous": 36
    },
    {
@@ -4534,18 +4534,13 @@
    },
    {
     "type": "Container Removal",
-    "count": 21,
-    "previous": 30
+    "count": 22,
+    "previous": 29
    },
    {
     "type": "Streetlight Repair Investigation",
-    "count": 20,
-    "previous": 45
-   },
-   {
-    "type": "Sidewalk Repair",
-    "count": 17,
-    "previous": 41
+    "count": 21,
+    "previous": 44
    },
    {
     "type": "Roadway Signs",
@@ -4563,14 +4558,14 @@
     "previous": 32
    },
    {
-    "type": "Abandoned Vehicle - On Public Property",
-    "count": 14,
-    "previous": 34
+    "type": "Sidewalk Repair",
+    "count": 16,
+    "previous": 41
    },
    {
-    "type": "DMV - Vehicle Registration Issues",
-    "count": 13,
-    "previous": 14
+    "type": "Abandoned Vehicle - On Public Property",
+    "count": 15,
+    "previous": 33
    },
    {
     "type": "DMV - Drivers License/ID Issues",
@@ -4585,12 +4580,17 @@
    {
     "type": "Traffic Safety Input",
     "count": 12,
-    "previous": 11
+    "previous": 10
    },
    {
     "type": "Public Space Litter Can-Collection",
     "count": 12,
     "previous": 14
+   },
+   {
+    "type": "DMV - Vehicle Registration Issues",
+    "count": 10,
+    "previous": 15
    },
    {
     "type": "Tree Removal",
@@ -4605,7 +4605,7 @@
    {
     "type": "Tree Pruning",
     "count": 9,
-    "previous": 33
+    "previous": 34
    },
    {
     "type": "Abandoned Bicycle",
@@ -4623,9 +4623,9 @@
     "previous": 3
    },
    {
-    "type": "DOB - Illegal Construction",
+    "type": "Roadway Markings / Pylons",
     "count": 8,
-    "previous": 12
+    "previous": 4
    },
    {
     "type": "Rat Replacement Containers",
@@ -4638,9 +4638,9 @@
     "previous": 0
    },
    {
-    "type": "Roadway Markings / Pylons",
+    "type": "DOB - Illegal Construction",
     "count": 7,
-    "previous": 4
+    "previous": 12
    },
    {
     "type": "DMV - Vehicle Title Issues",
@@ -4700,7 +4700,7 @@
    {
     "type": "OCTFME - Down Cable Wires",
     "count": 3,
-    "previous": 34
+    "previous": 33
    },
    {
     "type": "Missed Curbside Compost Collection",
@@ -4728,14 +4728,14 @@
     "previous": 4
    },
    {
+    "type": "Bus Stop Issues",
+    "count": 2,
+    "previous": 2
+   },
+   {
     "type": "DMV - Forms, Applications, and Manuals Request",
     "count": 2,
     "previous": 3
-   },
-   {
-    "type": "Bus Stop Issues",
-    "count": 1,
-    "previous": 2
    },
    {
     "type": "Signed Street Sweeping Missed",
@@ -4748,7 +4748,7 @@
     "previous": 0
    }
   ],
-  "open": 296,
+  "open": 299,
   "recent": [
    {
     "type": "Parking Enforcement",
@@ -5335,7 +5335,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T03:07:36Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -5607,7 +5607,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T03:07:36Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -5627,11 +5627,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 135,
+   "active_this_week": 134,
    "starting_next_7d": 23,
-   "reserved_ft": 18744,
+   "reserved_ft": 18304,
    "long_running_90d": 16,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-01: newest permit issued 2026-10-31, newest record update 2026-10-31, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-01: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -5647,7 +5647,7 @@
     },
     {
      "type": "Lead pipe replacement",
-     "count": 29
+     "count": 28
     },
     {
      "type": "Utility & DDOT work",
@@ -5666,14 +5666,6 @@
      "end": "2026-11-02",
      "ft": 44,
      "hours": "2 pm\u20135 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "1200 block of I Street NE",
-     "start": "2026-11-02",
-     "end": "2026-12-01",
-     "ft": 132,
-     "hours": "9:30 am\u20133:30 pm"
     },
     {
      "type": "Construction staging",
@@ -5754,6 +5746,14 @@
      "end": "2026-11-03",
      "ft": 66,
      "hours": "7:30 am\u20133 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "1200 block of I Street NE",
+     "start": "2026-11-02",
+     "end": "2026-12-01",
+     "ft": 132,
+     "hours": "9:30 am\u20133:30 pm"
     },
     {
      "type": "Lead pipe replacement",
@@ -5926,8 +5926,8 @@
    {
     "type": "Bulk Collection",
     "median_days": 5.76,
-    "city_median_days": 6.91,
-    "closed_n": 2147
+    "city_median_days": 6.92,
+    "closed_n": 2146
    },
    {
     "type": "Scheduled Yard Waste",
@@ -5939,7 +5939,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 1388
+    "closed_n": 1387
    },
    {
     "type": "Trash Collection - Missed",
@@ -5967,15 +5967,15 @@
    },
    {
     "type": "Recycling Collection - Missed",
-    "median_days": 6.72,
+    "median_days": 6.71,
     "city_median_days": 5.13,
-    "closed_n": 376
+    "closed_n": 374
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T03:07:36Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -6101,11 +6101,11 @@
    ],
    "clips": [],
    "screened": 0,
-   "note": "No usable mentions in the Evening Star for October 31 \u2013 November 6, 1926 (8 matching pages searched). Some weeks a neighborhood just isn't in the paper. Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
+   "note": "The Library of Congress search could not be reached this run (HTTPError). Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
   }
  },
  "news": {
-  "generated_at": "2026-11-01T03:07:36Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "archive_days": 180,
   "sources": [
    {
@@ -6595,8 +6595,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T03:07:36Z",
-  "today": "2026-10-31",
+  "generated_at": "2026-11-01T09:18:20Z",
+  "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
    {
@@ -6665,7 +6665,7 @@
   ]
  },
  "jobs": {
-  "generated_at": "2026-11-01T03:07:36Z",
+  "generated_at": "2026-11-01T09:18:20Z",
   "max_age_days": 120,
   "sources": [
    {
