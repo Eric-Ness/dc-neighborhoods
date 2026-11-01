@@ -154,6 +154,129 @@
         "capitolriverfront.net"
       ],
       "enabled": true
+    },
+    {
+      "slug": "brookland",
+      "name": "Brookland",
+      "boundary_layer": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Administrative_Other_Boundaries_WebMercator/MapServer/55",
+      "boundary_where": "SMD_ID IN ('5B02','5B03','5B04','5B05','5B06','5F02','5A04')",
+      "boundary_parts": 7,
+      "boundary_source": "ANC single-member districts 5B02-5B06 (the Brookland commission's core), 5F02 (Monroe Street Market, the Arts Walk, Dance Place) and 5A04 (Catholic University and the Basilica), Open Data DC. DC has no planning area named Brookland.",
+      "hosts": [
+        "brooklanddc.org"
+      ],
+      "redirect_hosts": [],
+      "enabled": true
+    },
+    {
+      "slug": "chinatown",
+      "name": "Chinatown",
+      "boundary_where": "DC_HPN_NAME='CHINATOWN'",
+      "hosts": [
+        "chinatown-dc.org"
+      ],
+      "redirect_hosts": [],
+      "enabled": false
+    },
+    {
+      "slug": "gloverpark",
+      "name": "Glover Park",
+      "boundary_layer": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Administrative_Other_Boundaries_WebMercator/MapServer/55",
+      "boundary_where": "SMD_ID LIKE '3B%'",
+      "boundary_parts": 6,
+      "boundary_source": "ANC 3B, the Glover Park commission (all its single-member districts, Open Data DC). DC has no planning area named Glover Park.",
+      "hosts": [
+        "gloverpark.net"
+      ],
+      "redirect_hosts": [],
+      "enabled": true
+    },
+    {
+      "slug": "lenfantplaza",
+      "name": "L'Enfant Plaza",
+      "boundary_layer": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Betterment_Areas_WebMercator/MapServer/15",
+      "boundary_where": "NAME='Southwest BID'",
+      "boundary_source": "Southwest Business Improvement District, which takes in L'Enfant Plaza and the federal blocks around it (Open Data DC). DC has no planning area for L'Enfant Plaza.",
+      "hosts": [
+        "lenfantplaza.org"
+      ],
+      "redirect_hosts": [
+        "lenfantplaza.net"
+      ],
+      "enabled": true
+    },
+    {
+      "slug": "noma",
+      "name": "NoMa",
+      "boundary_layer": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Betterment_Areas_WebMercator/MapServer/15",
+      "boundary_where": "NAME='NoMa BID'",
+      "boundary_source": "NoMa Business Improvement District boundary (Open Data DC). DC has no planning area for NoMa.",
+      "hosts": [
+        "nomadc.net"
+      ],
+      "redirect_hosts": [],
+      "enabled": true
+    },
+    {
+      "slug": "palisades",
+      "name": "Palisades",
+      "boundary_where": "DC_HPN_NAME='KENT/PALISADES'",
+      "boundary_source": "DC Health Planning Neighborhoods: Kent/Palisades (Open Data DC). It includes Kent and the C&O Canal parkland along the river.",
+      "hosts": [
+        "palisadesdc.net"
+      ],
+      "redirect_hosts": [],
+      "enabled": true
+    },
+    {
+      "slug": "logancircle",
+      "name": "Logan Circle",
+      "boundary_layer": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Administrative_Other_Boundaries_WebMercator/MapServer/55",
+      "boundary_where": "SMD_ID LIKE '2F%'",
+      "boundary_parts": 8,
+      "boundary_source": "ANC 2F, the Logan Circle commission (all its single-member districts, Open Data DC). DC's LOGAN CIRCLE/SHAW planning area also covers Shaw, which has its own site.",
+      "hosts": [
+        "logancircledc.org"
+      ],
+      "redirect_hosts": [],
+      "enabled": false
+    },
+    {
+      "slug": "shaw",
+      "name": "Shaw",
+      "boundary_where": "SMD_ID LIKE '2G%'",
+      "boundary_source": "ANC 2G, the Shaw commission (all its single-member districts, Open Data DC). DC's LOGAN CIRCLE/SHAW planning area also covers Logan Circle, which has its own site.",
+      "hosts": [
+        "shawdc.org"
+      ],
+      "redirect_hosts": [],
+      "enabled": false,
+      "boundary_layer": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Administrative_Other_Boundaries_WebMercator/MapServer/55",
+      "boundary_parts": 6
+    },
+    {
+      "slug": "ustreet",
+      "name": "U Street",
+      "boundary_where": "DC_HPN_NAME='U ST/PLEASANT'",
+      "boundary_source": "DC Health Planning Neighborhoods: U Street/Pleasant Plains (Open Data DC), so it includes Howard University and Pleasant Plains.",
+      "hosts": [
+        "ustreet.org"
+      ],
+      "redirect_hosts": [],
+      "enabled": false
+    },
+    {
+      "slug": "vanness",
+      "name": "Van Ness",
+      "boundary_layer": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Administrative_Other_Boundaries_WebMercator/MapServer/55",
+      "boundary_where": "SMD_ID IN ('3F01','3F02','3F05')",
+      "boundary_parts": 3,
+      "boundary_source": "ANC single-member districts 3F01, 3F02 and 3F05 around the Van Ness-UDC Metro (Open Data DC). DC has no planning area named Van Ness.",
+      "hosts": [
+        "vannessdc.org"
+      ],
+      "redirect_hosts": [],
+      "enabled": false
     }
   ]
 }

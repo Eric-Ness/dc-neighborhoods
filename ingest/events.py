@@ -44,7 +44,8 @@ TMS_LIST = "https://tenleytownmainstreet.org/wp-json/events/list/?period={period
 TMS_PAGE = "https://tenleytownmainstreet.org/events/"
 TMS_DELAY = 10  # robots.txt Crawl-delay
 
-CALENDARS = {"tenleytown": ["tms"], "petworth": []}
+CALENDARS = {"tenleytown": ["tms"], "petworth": [], "brookland": ["danceplace", "shrine"], "palisades": ["pca"],
+             "chinatown": ["mvtcid"], "lenfantplaza": ["swbid"]}
 # DC's Office of ANCs announces every ANC's public meetings in one feed (latest ~10 items only), so
 # matches for this neighborhood's ANCs are archived run to run, like the headlines.
 OANC_FEED = "https://oanc.dc.gov/rss.xml"
@@ -53,8 +54,10 @@ ANCS = {"petworth": ["4C", "4D"], "tenleytown": ["3E", "3F", "3/4G"], "adamsmorg
         # From ingest/setup_hood.py (SMD centroids inside each boundary), 2026-11-01.
         "capitolhill": ["6B", "6C"], "columbiaheights": ["1A", "1E", "1D"], "georgetown": ["2E"], "chevychase": ["3/4G"],
         "anacostia": ["8A", "8B"], "clevelandpark": ["3C"], "dupontcircle": ["2B"], "hstreet": ["6A", "6C"],
-        "navyyard": ["8F", "6B", "6D"]}
-OANC_TITLE = re.compile(r"^([A-Z][a-z]+ \d{1,2}, \d{4}),?\s+ANC\s+([0-9/]+[A-Z])\s+(Special\s+)?Public Meeting", re.I)
+        "navyyard": ["8F", "6B", "6D"],
+        "brookland": ["5B", "5F", "5A"], "chinatown": ["2C", "6E"], "gloverpark": ["3B"], "lenfantplaza": ["6D"], "noma": ["6E", "5F", "6C"],
+        "palisades": ["3D"], "shaw": ["2G"], "logancircle": ["2F"], "ustreet": ["1B", "1E"], "vanness": ["3F"]}
+OANC_TITLE = re.compile(r"^([A-Z][a-z]+ \d{1,2}, \d{4}),?\s+ANC\s+([0-9/]+[A-Z])\s+(Special\s+)?(?:Public|Virtual|Regular) Meeting", re.I)
 ANC_ARCHIVE_DAYS = 400
 ANC_FEEDS = {"tenleytown": ("ANC 3E", "https://anc3e.org/feed/", "https://anc3e.org/"),
              "friendshipheights": ("ANC 3E", "https://anc3e.org/feed/", "https://anc3e.org/")}
@@ -76,6 +79,54 @@ LINKS = {  # calendars we point to but can't (or shouldn't) read
         {"name": "Tenley-Friendship Library events", "url": "https://dclibrary.libnet.info/events?l=Tenley-Friendship%20Neighborhood%20Library"},
         {"name": "Tenleytown Main Street calendar", "url": TMS_PAGE},
         {"name": "Fort Reno summer concerts", "url": "https://www.fortreno.com/"},
+    ],
+    # Added 2026-11-01 (ingest/SOURCES-NORTHWEST.md): sources with no machine-readable calendar, linked instead.
+    "brookland": [
+        {"name": "Woodridge Library events", "url": "https://dclibrary.libnet.info/events?l=Woodridge%20Neighborhood%20Library"},
+        {"name": "ANC 5B meetings", "url": "https://www.anc5b.org/meetings"},
+        {"name": "Catholic University events", "url": "https://www.catholic.edu/event-calendar"},
+    ],
+    "gloverpark": [
+        {"name": "ANC 3B meeting schedule", "url": "https://anc3b.org/meeting-schedule/"},
+        {"name": "Glover Park Citizens' Association", "url": "https://gpcadc.org/"},
+        {"name": "Georgetown Library events", "url": "https://dclibrary.libnet.info/events?l=Georgetown%20Neighborhood%20Library"},
+    ],
+    "palisades": [
+        {"name": "Palisades Library events", "url": "https://dclibrary.libnet.info/events?l=Palisades%20Neighborhood%20Library"},
+        {"name": "ANC 3D", "url": "https://www.anc3d.org/"},
+    ],
+    "vanness": [
+        {"name": "Van Ness Main Street events", "url": "https://vannessmainstreet.org/events/"},
+        {"name": "UDC events", "url": "https://www.udc.edu/"},
+        {"name": "Cleveland Park Library events", "url": "https://dclibrary.libnet.info/events?l=Cleveland%20Park%20Neighborhood%20Library"},
+    ],
+    # (ingest/SOURCES-CENTRAL.md) The library location names in these links follow DCPL's pattern but weren't confirmed.
+    "chinatown": [
+        {"name": "MLK Library events", "url": "https://dclibrary.libnet.info/events?l=Martin%20Luther%20King%20Jr.%20Memorial%20Library"},
+        {"name": "DowntownDC BID events", "url": "https://www.downtowndc.org/events/"},
+        {"name": "ANC 2C", "url": "https://anc2c.dc.gov/"},
+    ],
+    "lenfantplaza": [
+        {"name": "Southwest Library events", "url": "https://dclibrary.libnet.info/events?l=Southwest%20Neighborhood%20Library"},
+        {"name": "The Wharf events", "url": "https://www.wharfdc.com/upcoming-events/"},
+        {"name": "ANC 6D meeting schedule", "url": "https://www.anc6d.org/"},
+    ],
+    "noma": [
+        {"name": "NoMa BID events", "url": "https://www.nomabid.org/events/"},
+        {"name": "ANC 6E", "url": "https://anc6e.dc.gov/"},
+    ],
+    "shaw": [
+        {"name": "Shaw Library events", "url": "https://dclibrary.libnet.info/events?l=Shaw%20(Watha%20T.%20Daniel)%20Neighborhood%20Library"},
+        {"name": "Shaw Main Streets", "url": "https://www.shawmainstreets.org/"},
+        {"name": "ANC 2G meetings", "url": "https://www.anc2g.org/meetings"},
+    ],
+    "logancircle": [
+        {"name": "Logan Circle Community Association", "url": "https://www.logancircle.org/"},
+        {"name": "ANC 2F", "url": "https://anc2f.org/"},
+    ],
+    "ustreet": [
+        {"name": "ANC 1B meetings", "url": "https://www.anc1b.org/"},
+        {"name": "District Bridges events (U Street Main Street)", "url": "https://districtbridges.org/events/"},
     ],
 }
 
@@ -197,6 +248,63 @@ def build_tms(today: date) -> tuple[list[dict], str]:
     return out, state
 
 
+# Calendars run on WordPress's "The Events Calendar" plugin publish a JSON API at /wp-json/tribe/events/v1/events.
+# key -> (name, API url, page to link, titles to drop (regex or None), robots Crawl-delay in seconds). Researched in
+# ingest/SOURCES-NORTHWEST.md and SOURCES-CENTRAL.md.
+TRIBE: dict[str, tuple[str, str, str, str | None, int]] = {
+    "danceplace": ("Dance Place", "https://www.danceplace.org/wp-json/tribe/events/v1/events", "https://www.danceplace.org/", None, 0),
+    # Mostly the liturgical calendar and pilgrimages, so only concerts, recitals, lectures and exhibitions stay.
+    "shrine": ("Basilica of the National Shrine", "https://www.nationalshrine.org/wp-json/tribe/events/v1/events",
+               "https://www.nationalshrine.org/", r"^(?!.*\b(concerts?|recitals?|lectures?|choral|organ|choirs?|exhibits?|exhibitions?|festival)\b)", 0),
+    # Its Sunday farmers market is kept: DC's market layer lists that market as "Sundays" with no season, so only
+    # this calendar gives it dates.
+    "pca": ("Palisades Citizens' Association", "https://palisadesdc.org/wp-json/tribe/events/v1/events", "https://palisadesdc.org/",
+            None, 0),
+    # Its FRESHFARM market is kept for the same reason as the Palisades one (the market layer can't date it).
+    "mvtcid": ("Mount Vernon Triangle CID", "https://www.mvtcid.org/wp-json/tribe/events/v1/events", "https://www.mvtcid.org/",
+               None, 10),
+    "swbid": ("Southwest BID", "https://www.swbid.org/wp-json/tribe/events/v1/events", "https://www.swbid.org/", None, 0),
+}
+
+
+def tribe_time(s: str | None) -> str | None:
+    """'2026-12-04 19:00:00' -> '7 PM'."""
+    m = re.match(r"\d{4}-\d\d-\d\d (\d\d):(\d\d)", s or "")
+    if not m:
+        return None
+    h, mi = int(m.group(1)), m.group(2)
+    return f"{h % 12 or 12}{'' if mi == '00' else ':' + mi} {'AM' if h < 12 else 'PM'}"
+
+
+def build_tribe(key: str, today: date) -> tuple[list[dict], str]:
+    name, api, page, skip, delay = TRIBE[key]
+    end = today + timedelta(days=DAYS_AHEAD - 1)
+    url = f"{api}?start_date={today.isoformat()}&end_date={end.isoformat()}&per_page=50"
+    if not news.allowed(url):
+        return [], "skipped: robots.txt"
+    if delay:
+        time.sleep(delay)
+    try:
+        rows = json.loads(news.fetch(url)).get("events") or []
+    except Exception as e:
+        return [], f"error: {type(e).__name__}"
+    out = []
+    for r in rows:
+        title = html.unescape(r.get("title") or "").strip()
+        try:
+            d = date.fromisoformat((r.get("start_date") or "")[:10])
+        except ValueError:
+            continue
+        if not title or (skip and re.search(skip, title, re.I)) or not (today <= d <= end):
+            continue
+        v = r.get("venue") if isinstance(r.get("venue"), dict) else {}
+        place = ", ".join(x for x in (news.plain(v.get("venue")), news.plain(v.get("address"))) if x) or None
+        s, e = (None, None) if r.get("all_day") else (tribe_time(r.get("start_date")), tribe_time(r.get("end_date")))
+        out.append({"title": title, "date": d.isoformat(), "time": f"{s} to {e}" if s and e and s != e else s,
+                    "place": place, "url": r.get("url") or page, "source": name, "kind": "community"})
+    return out, "ok"
+
+
 AGENDA = re.compile(r"^([A-Z][a-z]+ \d{1,2}, \d{4})\s+(?:Public\s+)?Meeting Agenda\b")
 
 
@@ -261,6 +369,11 @@ def build(geom: dict, hood: dict, now: float) -> dict:
         tms, st = build_tms(today)
         community += tms
         calendars.append({"name": "Tenleytown Main Street", "url": TMS_PAGE, "state": st})
+    for key in CALENDARS.get(slug, []):
+        if key in TRIBE:
+            rows, st = build_tribe(key, today)
+            community += rows
+            calendars.append({"name": TRIBE[key][0], "url": TRIBE[key][2], "state": st})
     anc, st = build_anc(slug, today)
     if slug in ANC_FEEDS:
         calendars.append({"name": f"{ANC_FEEDS[slug][0]} meeting agendas", "url": ANC_FEEDS[slug][2], "state": st})

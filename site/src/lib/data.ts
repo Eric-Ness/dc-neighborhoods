@@ -2,6 +2,8 @@
 // (ingest/homes.py, streets.py, history.py, news.py, events.py). Module sections are optional
 // so a page still builds if one feed fails on a given night.
 
+import siteList from "../data/index.json";
+
 export interface Permit {
   id: string;
   issued: string | null;
@@ -170,9 +172,13 @@ export interface Neighborhood {
 
 const files = import.meta.glob<{ default: Neighborhood }>("../data/*.json", { eager: true });
 
+// Only the neighborhoods ingest lists as live (index.json): a disabled one keeps its last data file, but gets no
+// pages and no links, so nothing points at a domain that isn't serving yet.
+const live = new Set(siteList.map((s) => s.slug));
 export const neighborhoods: Neighborhood[] = Object.entries(files)
   .filter(([path]) => !path.endsWith("/index.json"))
   .map(([, mod]) => mod.default)
+  .filter((n) => live.has(n.slug))
   .sort((a, b) => a.name.localeCompare(b.name));
 
 export function titleCase(s: string): string {

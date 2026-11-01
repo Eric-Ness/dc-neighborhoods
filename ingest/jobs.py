@@ -41,6 +41,7 @@ NEARBY_CAP = 15  # newest N "nearby" jobs per employer, so one big campus can't 
 WORKDAY = {
     "au": ("American University", "american.wd1.myworkdayjobs.com", "american", "AU"),
     "cn": ("Children's National Hospital", "childrensnational.wd108.myworkdayjobs.com", "childrensnational", "CN_Careers"),
+    "gu": ("Georgetown University", "georgetown.wd1.myworkdayjobs.com", "georgetown", "Georgetown_Admin_Careers"),
 }
 SITES = {
     "tenleytown": [
@@ -70,10 +71,38 @@ SITES = {
     "chevychase": [
         ("cn", "Friendship Heights", "nearby", "Friendship Heights, about 0.8 mi west"),
     ],
+    # Added 2026-11-01 (ingest/SOURCES-NORTHWEST.md). Location names are matched by prefix, so Georgetown's four
+    # Wisconsin Avenue offices are each named in full.
+    "brookland": [
+        ("cn", "Rehabilitation and Specialized Care Bunker Hill Road", "nearby", "1731 Bunker Hill Rd NE, about 0.8 mi"),
+    ],
+    "gloverpark": [
+        ("gu", "2115 Wisconsin Avenue", "in", "2115 Wisconsin Ave NW"),
+        ("gu", "2115 Wisconsin Ave 3rd Floor", "in", "2115 Wisconsin Ave NW"),
+        ("gu", "2115 Wisconsin Ave G1 Floor", "in", "2115 Wisconsin Ave NW"),
+        ("gu", "2121 Wisconsin Avenue", "in", "2121 Wisconsin Ave NW"),
+        ("au", "3201 New Mexico Campus", "in", "3201 New Mexico Ave NW"),
+    ],
+    "vanness": [
+        ("au", "4401 Connecticut Campus", "in", "4401 Connecticut Ave NW"),
+        ("au", "Tenley Campus", "nearby", "4300 Nebraska Ave NW, about 0.8 mi"),
+    ],    # Children's National's "Shaw Metro" clinic is at 641 S St NW: inside U Street's planning area, just north of ANC 2G.
+    "ustreet": [
+        ("cn", "Shaw Metro", "in", "641 S St NW"),
+    ],
+    "shaw": [
+        ("cn", "Shaw Metro", "nearby", "641 S St NW, just north of ANC 2G"),
+    ],
+    "logancircle": [
+        ("cn", "Shaw Metro", "nearby", "641 S St NW, about 0.5 mi east"),
+    ],
 }
-GREENHOUSE = ["sweetgreen"]  # local employers on Greenhouse; extend as more are found
+# Local employers on Greenhouse (board slug -> display name); extend as more are found. Monumental Sports is Capital One
+# Arena, matched to Chinatown by ZIP 20004.
+GREENHOUSE = {"sweetgreen": "Sweetgreen", "monumentalsports": "Monumental Sports & Entertainment"}
 ZIPS = {"petworth": ("20011",), "tenleytown": ("20016", "20015"),  # no Adams Morgan: 20009 also covers Dupont, Logan, U St
-        "friendshipheights": ("20015", "20016")}
+        "friendshipheights": ("20015", "20016"), "brookland": ("20017",),
+        "chinatown": ("20004",)}  # Penn Quarter; not 20001, which also covers Shaw, NoMa and Bloomingdale
 
 
 def _json(url: str, body: dict | None = None) -> dict:
@@ -193,7 +222,7 @@ def _greenhouse(slug: str) -> tuple[list[dict], list[dict]]:
     zips = ZIPS.get(slug, ())
     for board in GREENHOUSE:
         url = f"https://boards-api.greenhouse.io/v1/boards/{board}/jobs"
-        st = {"name": f"{board.title()} (Greenhouse)", "url": f"https://boards.greenhouse.io/{board}", "state": "ok", "count": 0}
+        st = {"name": f"{GREENHOUSE[board]} (Greenhouse)", "url": f"https://boards.greenhouse.io/{board}", "state": "ok", "count": 0}
         status.append(st)
         if not news.allowed(url):
             st["state"] = "skipped: robots.txt"
@@ -208,7 +237,7 @@ def _greenhouse(slug: str) -> tuple[list[dict], list[dict]]:
             if not any(z in loc for z in zips):
                 continue
             upd = (j.get("updated_at") or "")[:10]
-            jobs.append({"title": news.plain(j.get("title")), "employer": board.title(), "place": loc, "where": "in",
+            jobs.append({"title": news.plain(j.get("title")), "employer": GREENHOUSE[board], "place": loc, "where": "in",
                          "note": None, "posted": upd or None, "hours": None, "url": j.get("absolute_url")})
             st["count"] += 1
     return jobs, status

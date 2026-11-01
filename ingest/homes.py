@@ -157,6 +157,71 @@ HOODS = {
         # trend, so houses and condos are counted together.
         "primary": "all",
     },
+    # The ten below were measured 2026-11-01 with ingest/setup_hood.py, same rule as above.
+    "brookland": {
+        # Boundary 5B02-5B06 + 5F02 + 5A04: Brookland C (76% inside), E (45%) and D (100%), Woodridge A (44%).
+        "otr": [("Brookland", "C"), ("Brookland", "E"), ("Brookland", "D"), ("Woodridge", "A")],
+        "label": "OTR assessment sub-areas Brookland C, D and E and Woodridge A",
+    },
+    "chinatown": {
+        # Central (44% inside) and Old City 2 B (76%, shared with Shaw at its northern edge). Downtown is nearly all
+        # condos: 4,273 condo parcels against 203 houses.
+        "otr": [("Central", None), ("Old City 2", "B")],
+        "label": "OTR assessment neighborhood Central and sub-area Old City 2 B",
+        "primary": "condo",
+    },
+    "gloverpark": {
+        # Glover Park and Wesley Heights B are wholly inside; Observatory Circle 47%.
+        "otr": [("Glover Park", None), ("Wesley Heights", "B"), ("Observatory Circle", None)],
+        "label": "OTR assessment neighborhoods Glover Park and Observatory Circle and sub-area Wesley Heights B",
+    },
+    "lenfantplaza": {
+        # The Southwest BID holds one OTR area, R. L. A. SW (69% inside; the rest is toward the Wharf).
+        "otr": [("R. L. A. SW", None)],
+        "label": "OTR assessment neighborhood R. L. A. SW",
+        "primary": "condo",
+    },
+    "noma": {
+        # Only Eckington B is a real match (28% inside, 64% of in-boundary homes); the other areas setup_hood lists are
+        # square numbers reused across the city. NoMa's big buildings are mostly rentals, so sales are few.
+        "otr": [("Eckington", "B")],
+        "label": "OTR assessment sub-area Eckington B",
+        # About 23 house and 25 condo sales a year: too few of either for a monthly trend, so counted together.
+        "primary": "all",
+    },
+    "palisades": {
+        # The Kent/Palisades planning area also takes in Wesley Heights, Spring Valley, Foxhall and Berkley; every
+        # sub-area below is wholly inside. Wesley Heights B is shared with Glover Park.
+        "otr": [("Palisades", None), ("Wesley Heights", "A"), ("Wesley Heights", "B"), ("Spring Valley", "B"),
+                ("Berkley", "A"), ("Kent", "B"), ("Kent", "C"), ("Foxhall", None)],
+        "label": "OTR assessment neighborhoods Palisades and Foxhall and sub-areas Wesley Heights A and B, "
+                 "Spring Valley B, Berkley A and Kent B and C",
+    },
+    "shaw": {
+        # ANC 2G: Old City 2 B (48% inside) and G (39%). Old City 2 C is mostly Logan Circle (73% there), so it stays out.
+        "otr": [("Old City 2", "B"), ("Old City 2", "G")],
+        "label": "OTR assessment sub-areas Old City 2 B and G",
+        # About 31 house and 50 condo sales a year; houses alone leave half the months blank, so counted together.
+        "primary": "all",
+    },
+    "logancircle": {
+        # ANC 2F: Old City 2 C (73% inside) and E (70%).
+        "otr": [("Old City 2", "C"), ("Old City 2", "E")],
+        "label": "OTR assessment sub-areas Old City 2 C and E",
+        "primary": "condo",
+    },
+    "ustreet": {
+        # Old City 2 F and LeDroit Park A wholly inside, Columbia Heights E 35%, Old City 2 G 39% (shared with Shaw).
+        # Old City 2 E (27%) is mostly Logan Circle and stays out.
+        "otr": [("Old City 2", "F"), ("Ledroit Park", "A"), ("Columbia Heights", "E"), ("Old City 2", "G")],
+        "label": "OTR assessment sub-areas Old City 2 F and G, LeDroit Park A and Columbia Heights E",
+    },
+    "vanness": {
+        # Forest Hills (35% inside), Wakefield (72%) and North Cleveland Park (47%); the last two are shared with Tenleytown,
+        # whose planning area runs to Connecticut Avenue.
+        "otr": [("Forest Hills", None), ("Wakefield", None), ("North Cleveland Park", None)],
+        "label": "OTR assessment neighborhoods Forest Hills, Wakefield and North Cleveland Park",
+    },
 }
 
 PERSONAL = {"OWNERNAME", "OWNNAME2", "CAREOFNAME", "ADDRESS1", "ADDRESS2", "CITYSTZIP", "MORTGAGECO", "SALE_CURR_OWNER"}

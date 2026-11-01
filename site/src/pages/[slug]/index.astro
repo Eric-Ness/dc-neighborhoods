@@ -160,12 +160,12 @@ const mmax = Math.max(1, ...mvals);
   <aside id="map" class="plate" aria-labelledby="h-map">
     <div class="plate-h"><h2 id="h-map">The map</h2><p>Permits issued {window} <i class="sep" aria-hidden="true">/</i> this week on the street</p></div>
     <div class="maplegend" role="group" aria-label="Map layers">
-      <button type="button" class="lg lg-permits" data-layer="permits" aria-pressed="true"><span class="sw" aria-hidden="true"></span><span class="lt">Permits</span><span class="ls">{minorIn} in {n.windows.permits_days} days</span></button>
+      <button type="button" class="lg lg-permits" data-layer="permits" aria-pressed="true"><span class="sw" aria-hidden="true"></span><span class="lt">Permits</span><span class="ls">{minorIn} in {n.windows.permits_days}d</span></button>
       <button type="button" class="lg lg-events" data-layer="events" aria-pressed="true"><span class="sw" aria-hidden="true"></span><span class="lt">Events</span><span class="ls">{ev.places.size} places</span></button>
-      <button type="button" class="lg lg-curb" data-layer="curb" aria-pressed="true"><span class="sw" aria-hidden="true"></span><span class="lt">Curb reserved</span><span class="ls">starting this week</span></button>
-      {layers.then && <button type="button" class="lg lg-then" data-layer="then" aria-pressed="true"><span class="sw" aria-hidden="true"></span><span class="lt">{layers.then.year}</span><span class="ls">featured block</span></button>}
-      <button type="button" class="lg lg-transit" data-layer="transit" aria-pressed="false"><span class="sw" aria-hidden="true"></span><span class="lt">Metro &amp; bikes</span><span class="ls">stations, docks</span></button>
-      <button type="button" class="lg lg-req" data-layer="req" aria-pressed="false"><span class="sw" aria-hidden="true"></span><span class="lt">311 requests</span><span class="ls">recent, by block</span></button>
+      <button type="button" class="lg lg-curb" data-layer="curb" aria-pressed="true"><span class="sw" aria-hidden="true"></span><span class="lt">Curb</span><span class="ls">this week</span></button>
+      {layers.then && <button type="button" class="lg lg-then" data-layer="then" aria-pressed="true"><span class="sw" aria-hidden="true"></span><span class="lt">{layers.then.year}</span><span class="ls">one block</span></button>}
+      <button type="button" class="lg lg-transit" data-layer="transit" aria-pressed="false"><span class="sw" aria-hidden="true"></span><span class="lt">Transit</span><span class="ls">Metro, bikes</span></button>
+      <button type="button" class="lg lg-req" data-layer="req" aria-pressed="false"><span class="sw" aria-hidden="true"></span><span class="lt">311</span><span class="ls">by block</span></button>
     </div>
     <Fragment set:html={svg} />
     <p class="fine">Streets from DDOT&rsquo;s roadway blocks; squares A&ndash;{"ABCDEFGHI"[pr.COLS - 1]}, 1&ndash;{pr.ROWS} match the references in the lists. Crime is never mapped.</p>

@@ -62,6 +62,27 @@ export function plate(n: Neighborhood, L: Layers): string {
   const VW = ML + MW + MR, VH = MT + MH + MB;
   const rings = n.boundary.rings.map((r) => r.map(([lon, lat]) => P(lat, lon)));
   const bd = rings.map((r) => "M" + r.map(([x, y]) => `${f1(x)},${f1(y)}`).join(" L") + " Z").join(" ");
+  // A boundary made of several ANC districts shares edges between them; the line is drawn only along edges that
+  // belong to one ring, so the outline is the outer edge of the whole neighborhood.
+  const ekey = (a: [number, number], b: [number, number]) => {
+    const p = `${f1(a[0])},${f1(a[1])}`, q = `${f1(b[0])},${f1(b[1])}`;
+    return p < q ? `${p}|${q}` : `${q}|${p}`;
+  };
+  const uses = new Map<string, number>();
+  for (const r of rings) for (let i = 0; i < r.length; i++) {
+    const k = ekey(r[i], r[(i + 1) % r.length]);
+    uses.set(k, (uses.get(k) ?? 0) + 1);
+  }
+  const outline = rings.map((r) => {
+    let d = "", pen = false;
+    for (let i = 0; i < r.length; i++) {
+      const a = r[i], b = r[(i + 1) % r.length];
+      if (uses.get(ekey(a, b))! > 1) { pen = false; continue; }
+      if (!pen) { d += `M${f1(a[0])},${f1(a[1])}`; pen = true; }
+      d += ` L${f1(b[0])},${f1(b[1])}`;
+    }
+    return d;
+  }).join(" ");
   const streets = n.blocks?.basemap.streets ?? [];
   const o: string[] = [];
   const desc = `The ${n.name} boundary with its streets, ${L.minor.reduce((a, m) => a + m.n, 0) + L.projects.length} building permit locations `
@@ -83,7 +104,7 @@ export function plate(n: Neighborhood, L: Layers): string {
   }
   // hatch the ground outside the boundary (even-odd: plate rectangle minus the boundary)
   o.push(`<path fill="url(#hatch)" fill-rule="evenodd" d="M0,0 H${f1(MW)} V${f1(MH)} H0 Z ${bd}"/>`);
-  o.push(`<path class="ribbon" d="${bd}"/><path class="bline" d="${bd}"/>`);
+  o.push(`<path class="ribbon" d="${outline}"/><path class="bline" d="${outline}"/>`);
   o.push(`<g class="grid">`);
   for (let c = 1; c < COLS; c++) o.push(`<line x1="${f1((MW / COLS) * c)}" y1="0" x2="${f1((MW / COLS) * c)}" y2="${f1(MH)}"/>`);
   for (let r = 1; r < ROWS; r++) o.push(`<line x1="0" y1="${f1((MH / ROWS) * r)}" x2="${f1(MW)}" y2="${f1((MH / ROWS) * r)}"/>`);

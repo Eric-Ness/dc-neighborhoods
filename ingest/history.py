@@ -141,6 +141,95 @@ ARCHIVE = {
         "pattern": r"chevy\s+chase,?\s+d\.?\s*c",
         "local": r"connecticut\s+av|chevy\s+chase\s+circle|livingston|northampton|military\s+road|citizens",
     },
+    # Added 2026-11-01; terms tested against the Evening Star (ingest/SOURCES-NORTHWEST.md, SOURCES-CENTRAL.md).
+    "brookland": {
+        "terms": ["Brookland", '"Brookland Citizens"', '"Catholic University"'],
+        # "Catholic University" in 1926 is mostly its football team.
+        "pattern": r"brookland|catholic\s+univ|franciscan\s+monastery|national\s+shrine|turkey\s+thicket",
+        "reject": r"foot\s*ball|eleven|gridiron|touchdown|varsity|coach|quarterback|basket\s*ball|blue\s+ridge|stadium",
+        "local": r"12th\s+st|twelfth|monroe\s+st|newton\s+st|otis\s+st|quincy|rhode\s+island\s+av|michigan\s+av|10th\s+st|n\.\s?e\.|"
+                 r"northeast|citizens.\s+association|masonic\s+temple",
+    },
+    "gloverpark": {
+        # The Glover Park subdivision was new in 1926 (mostly real-estate ads).
+        "terms": ['"Glover Park"', '"Tunlaw road"'],
+        "pattern": r"glover\s+park|tunlaw|cathedral\s+heights\s+citizens|observatory\s+(hill|circle)",
+        "local": r"wisconsin\s+av|tunlaw|cathedral\s+av|calvert\s+st|39th|37th|38th|new\s+mexico\s+av|n\.\s?w\.|citizens",
+    },
+    "palisades": {
+        # MacArthur Boulevard was Conduit Road in 1926; "Palisades" alone also means the Hudson.
+        "terms": ['"Conduit road"', '"Chain Bridge"', "Palisades"],
+        "pattern": r"conduit\s+r(oa)?d|chain\s+bridge\s+r(oa)?d|palisades\s+of\s+the\s+potomac|"
+                   r"palisades(?=.{0,200}(conduit|d\.\s?c|n\.\s?w|potomac|reservoir))",
+        "reject": r"hudson|new\s+jersey|n\.\s?j\.|palisades\s+(interstate|park,?\s+n)|cross\s+chain\s+bridge\s+to\s+va|virginia\s+side",
+        "local": r"conduit|reservoir|potomac|canal|chain\s+bridge\s+road|foxhall|arizona\s+av|macarthur|dalecarlia|n\.\s?w\.",
+    },
+    "vanness": {
+        # The National Bureau of Standards held the future UDC site in 1926; "Forest Hills" in sports copy is Queens tennis.
+        "terms": ['"North Cleveland Park"', '"Bureau of Standards"', '"Van Ness street"', '"Forest Hills"'],
+        "pattern": r"bureau\s+of\s+standards(?=.{0,200}(near|squares|connecticut|van\s+ness|home|house|lot))|north\s+cleveland\s+park|"
+                   r"van\s+ness\s+st|forest\s+hills(?=.{0,200}(connecticut|d\.\s?c|n\.\s?w|chevy\s+chase|rock\s+creek))",
+        "reject": r"forest\s+hills,?\s+(l\.\s?i|long\s+island|n\.\s?y|queens)|tennis",
+        "local": r"connecticut\s+av|van\s+ness|veazey|upton|tilden|yuma|albemarle|windom|38th|36th|reno\s+road|soapstone|n\.\s?w\.",
+    },
+    # Several of these names are later coinages (NoMa, L'Enfant Plaza, Shaw as a neighborhood; Logan Circle was Iowa Circle
+    # until 1930), so the terms are 1926 landmarks and streets. loc.gov drops one-letter words, so "U street" is really a
+    # search for "street": the pattern does the real filtering. The 1926 Star was segregated, so Shaw and U Street clips are
+    # thin and many are screened out.
+    "chinatown": {
+        "terms": ['"Mount Vernon place"', "\"Ford's Theater\"", '"Pension Office"', '"Seventh street"', "Chinatown"],
+        "pattern": r"mount\s+vernon\s+(place|square)|ford.s\s+theat|pension\s+(office|building)|judiciary\s+square|court\s+house\s+park|"
+                   r"\b[4-9]\d\d\s+(seventh|7th|eighth|8th|ninth|9th|tenth|10th)\s+st(reet|\.)?|"
+                   r"(seventh|7th|eighth|8th|ninth|9th)\s+st(reet|\.)?\s+(between|and|at)\s+[d-i]\b|chinatown",
+        "reject": r"sage\s+of\s+chinatown|(seventh|7th)\s+st(reet|\.)?\s+(southwest|s\.\s?w)|patent\s+office\s+(examiner|team|bowl|roll)|"
+                  r"chinatown.{0,40}(san\s+francisco|new\s+york)",
+        "local": r"n\.\s?w\.|northwest|seventh\s+st|7th\s+st|massachusetts\s+av|new\s+york\s+av|mount\s+vernon|judiciary|lansburgh|"
+                 r"woodward|palais\s+royal|kann|patent\s+office|pension",
+    },
+    "lenfantplaza": {
+        "terms": ['"Southwest Washington"', '"Neighborhood House"', "Southwest", '"Maine avenue"'],
+        "pattern": r"southwest\s+(washington|site|market|section|citizens)|neighborhood\s+house|"
+                   r"\b\d{2,4}\s+[\w\-½]+\s+st(reet|\.)?\s+(southwest|s\.\s?w)|maine\s+av(enue|e)?\.?\s+(southwest|s\.\s?w)|"
+                   r"water\s+st(reet|\.)?\s+(southwest|s\.\s?w)|four.and.a.half\s+st|fish\s+wharf|seventh\s+street\s+wharf",
+        "reject": r"(south\s+and\s+)?southwest\s+winds?|winds?,?\s+(mostly\s+)?(south\s+and\s+)?southwest|southwest\s+(virginia|texas|africa|pacific)|"
+                  r"maine\s+av(enue|e)?\.?\s+(southeast|s\.\s?e)",
+        "local": r"s\.\s?w\.|southwest|maine\s+av|water\s+st|n\s+street|seventh\s+st|four.and.a.half|wharf|barney",
+    },
+    "noma": {
+        "terms": ['"Sibley Hospital"', "Eckington", '"North Capitol street"', '"Government Printing Office"'],
+        "pattern": r"sibley\s+hospital|eckington|government\s+printing\s+office|swampoodle|gonzaga\s+(college|high)|"
+                   r"\b([2-9]\d\d|1[0-5]\d\d)\s+north\s+capitol\s+st|north\s+capitol\s+(street\s+)?(and|at)\s+[g-r]\s+st|tiber\s+creek",
+        "reject": r"gonzaga\s*(vs\.?|,|\d)|spokane",
+        "local": r"north\s+capitol|first\s+st(reet)?\s+n|1st\s+st|n\.\s?e\.|northeast|eckington|florida\s+av|new\s+york\s+av|k\s+st|m\s+st|"
+                 r"union\s+station|printing\s+office",
+    },
+    "shaw": {
+        "terms": ['"Shaw Junior High"', '"Rhode Island avenue"', '"Ninth street"', '"Seventh street"'],
+        "pattern": r"shaw\s+junior\s+high|howard\s+theat|o\s+street\s+market|northern\s+liberty|"
+                   r"\b1[1-9]\d\d\s+(seventh|7th|ninth|9th|eighth|8th)\s+st(reet|\.)?|"
+                   r"(seventh|ninth)\s+(street\s+)?and\s+(rhode\s+island|[m-t]\s+st)|rhode\s+island\s+av(enue|e)?\.?\s+and\s+(sixth|seventh|eighth|ninth|tenth)",
+        "reject": r"(seventh|ninth|rhode\s+island)\s+(street|avenue)\s+(southwest|northeast|s\.\s?w|n\.\s?e)",
+        "local": r"n\.\s?w\.|northwest|seventh\s+st|ninth\s+st|rhode\s+island\s+av|o\s+st|p\s+st|r\s+st|s\s+st|t\s+st|shaw|howard",
+    },
+    "logancircle": {
+        "terms": ['"Iowa Circle"', '"Thomas Circle"', '"Vermont avenue"', '"Fourteenth street"'],
+        "pattern": r"iowa\s+circle|logan\s+circle|thomas\s+circle|vermont\s+avenue\s+(christian|church|m\.\s?e)|"
+                   r"\b1[0-6]\d\d\s+(vermont|rhode\s+island)\s+av|\b1[0-6]\d\d\s+(fourteenth|14th|thirteenth|13th|fifteenth|15th)\s+st|"
+                   r"\b1[3-5]\d\d\s+[n-r]\s+st(reet|\.)?\s+n\.?\s?w|(fourteenth|thirteenth)\s+(street\s+)?and\s+[n-r]\s+st",
+        "reject": r"park\s+r(oa)?d|columbia\s+heights|arcadia|above\s+.?k.?\b",
+        "local": r"vermont\s+av|rhode\s+island\s+av|fourteenth|thirteenth|fifteenth|\b[n-r]\s+st|iowa\s+circle|thomas\s+circle|n\.\s?w\.",
+    },
+    "ustreet": {
+        "terms": ['"Howard University"', '"Lincoln Theater"', '"U street"', '"Florida avenue"'],
+        "pattern": r"howard\s+university|lincoln\s+theat|lincoln\s+colonnade|true\s+reformers?|industrial\s+savings\s+bank|"
+                   r"\b([7-9]|1[0-9])\d\d\s+U\s+st(reet|\.)?|\bU\s+st(reet|\.)?\s+(n\.?\s?w|northwest)|le\s?droit\s+park|"
+                   r"(eleventh|twelfth|thirteenth|fourteenth|ninth|seventh)\s+(street\s+)?and\s+(U|florida\s+av)",
+        # Griffith Stadium (now Howard University Hospital) is only ever a football venue in November 1926.
+        "reject": r"foot\s*ball|eleven|touchdown|gridiron|varsity|quarterback|coach|base\s*ball|senators|griffith\s+stadium|"
+                  r"\bU\s+st(reet|\.)?\s+(s\.\s?e|southeast|n\.\s?e|northeast)",
+        "local": r"\bU\s+st|florida\s+av|georgia\s+av|vermont\s+av|seventh\s+st|eleventh|twelfth|thirteenth|fourteenth|le\s?droit|"
+                 r"howard\s+place|sherman\s+av|n\.\s?w\.",
+    },
 }
 
 # Content screening. A clip that matches any of these is skipped, never published. 1920s news and
@@ -462,6 +551,8 @@ def build_archive(slug: str, now: float) -> dict:
             if score < 0.7 or len(snip) < 50 or len(snip) > 700:
                 continue
             if len(NAME_LIST.findall(snip)) >= 3 or LEGAL.search(snip) or OWNER_NOTICE.search(snip):
+                continue
+            if cfg.get("reject") and re.search(cfg["reject"], snip, re.I):  # e.g. 1926 college football, other states
                 continue
             if SCREEN.search(snip):
                 screened += 1

@@ -166,3 +166,10 @@ main.inner{padding-top:24px;padding-bottom:8px}
   .mast>.wrap{grid-template-columns:minmax(0,1fr);padding-top:16px;padding-bottom:12px}
   .mast h1,.mast .brand-link,.mast.small h1,.mast.small .brand-link{font-size:40px;line-height:1.05}
 }
+/* map layer buttons: one row of equal buttons on wider screens (5 or 6 of them, depending on the 1926 layer) */
+@media (min-width:761px){
+  .maplegend{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+  .lg{min-width:0;padding:5px 7px 5px 6px}
+  .lg .lt,.lg .ls{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+}
+@media (min-width:1100px){.maplegend{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr)}}
