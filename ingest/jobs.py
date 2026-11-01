@@ -54,9 +54,17 @@ SITES = {
     "petworth": [
         ("cn", "Columbia Heights", "nearby", "about 1 mi south"),
     ],
+    "adamsmorgan": [
+        ("cn", "Columbia Heights", "nearby", "about 0.6 mi east"),
+    ],
+    "friendshipheights": [
+        ("cn", "Friendship Heights", "in", "Friendship Heights"),
+        ("au", "Tenley Campus", "nearby", "4300 Nebraska Ave NW, about 0.6 mi south"),
+    ],
 }
 GREENHOUSE = ["sweetgreen"]  # local employers on Greenhouse; extend as more are found
-ZIPS = {"petworth": ("20011",), "tenleytown": ("20016", "20015")}
+ZIPS = {"petworth": ("20011",), "tenleytown": ("20016", "20015"), "adamsmorgan": ("20009",),
+        "friendshipheights": ("20015", "20016")}
 
 
 def _json(url: str, body: dict | None = None) -> dict:

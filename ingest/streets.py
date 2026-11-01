@@ -378,7 +378,7 @@ def main() -> int:
         print(f"unknown slug {slug}", file=sys.stderr)
         return 2
     t0 = time.time()
-    geom = dcdata.boundary(config["boundary_layer"], hood["boundary_where"])
+    geom = dcdata.hood_boundary(config, hood)
     section = build(geom, hood, time.time())
     out = ROOT / "ingest" / "_out" / f"streets-{slug}.json"
     out.parent.mkdir(parents=True, exist_ok=True)

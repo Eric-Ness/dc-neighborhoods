@@ -57,14 +57,21 @@ def resolve_yearly_layer(title_template: str, year: int) -> str | None:
     return None
 
 
-def boundary(layer_url: str, where: str) -> dict:
-    """Fetch one polygon (WGS84) as an Esri geometry dict."""
+def boundary(layer_url: str, where: str, parts: int = 1) -> dict:
+    """Fetch a neighborhood polygon (WGS84) as an Esri geometry dict. With parts > 1 the where clause must match
+    exactly that many features (e.g. two adjacent ANC districts), and their rings are combined into one polygon."""
     data = _request(f"{layer_url}/query", {"where": where, "outFields": "*", "outSR": 4326, "f": "json"})
     features = data.get("features", [])
-    if len(features) != 1:
-        raise RuntimeError(f"expected 1 boundary for {where!r}, got {len(features)}")
-    geom = features[0]["geometry"]
-    return {"rings": geom["rings"], "spatialReference": {"wkid": 4326}}
+    if len(features) != parts:
+        raise RuntimeError(f"expected {parts} boundary feature(s) for {where!r}, got {len(features)}")
+    rings = [ring for f in features for ring in f["geometry"]["rings"]]
+    return {"rings": rings, "spatialReference": {"wkid": 4326}}
+
+
+def hood_boundary(config: dict, hood: dict) -> dict:
+    """The polygon for one entry of ingest/neighborhoods.json. A neighborhood may override the default layer
+    (DC Health Planning Neighborhoods) when DC has no planning area for it, as with Friendship Heights."""
+    return boundary(hood.get("boundary_layer", config["boundary_layer"]), hood["boundary_where"], hood.get("boundary_parts", 1))
 
 
 def _spatial(geometry: dict) -> dict:

@@ -65,6 +65,24 @@ ARCHIVE = {
         "local": r"wisconsin\s+av|river\s+road|albemarle|brandywine|chesapeake|fessenden|grant\s+road|"
                  r"janney|st\.?\s+ann|fort\s+reno|reno\s+road|nebraska\s+av|american\s+university",
     },
+    "adamsmorgan": {
+        # "Adams Morgan" dates from the 1950s (the Adams and Morgan schools). In 1926 the paper said Lanier Heights,
+        # Washington Heights or Kalorama; "Washington Heights" also names a New York neighborhood, so it only
+        # counts with a local street or landmark nearby (see `pattern`).
+        "terms": ['"Lanier Heights"', '"Washington Heights"', '"Kalorama road"', '"Columbia road"'],
+        "pattern": r"lanier\s+heights|kalorama\s+(road|park|heights)|washington\s+heights(?=.{0,200}(columbia\s+road|18th|"
+                   r"kalorama|lanier|champlain|ontario))|columbia\s+road(?=.{0,120}18th)",
+        "local": r"18th\s+st|columbia\s+road|kalorama|lanier|champlain|ontario\s+road|belmont|mintwood|calvert|"
+                 r"adams\s+school|morgan\s+school|meridian\s+hill",
+    },
+    "friendshipheights": {
+        # Only "Friendship Heights" itself: "Chevy Chase, D.C." was tried and pulled in house ads near Connecticut
+        # Ave, which is Chevy Chase, not this area.
+        "terms": ['"Friendship Heights"'],
+        "pattern": r"friendship\s+heights",
+        "local": r"wisconsin\s+av|western\s+av|jenifer|harrison\s+st|military\s+road|reno\s+road|"
+                 r"chevy\s+chase\s+circle|tenley",
+    },
 }
 
 # Content screening. A clip that matches any of these is skipped, never published. 1920s news and
@@ -490,7 +508,7 @@ def main() -> int:
         return 2
     now = time.time()
     t0 = time.time()
-    geom = dcdata.boundary(config["boundary_layer"], hood["boundary_where"])
+    geom = dcdata.hood_boundary(config, hood)
     section = build(geom, hood, now)
     out_dir = ROOT / "ingest" / "_out"
     out_dir.mkdir(parents=True, exist_ok=True)

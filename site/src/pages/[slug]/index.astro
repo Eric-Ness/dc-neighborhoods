@@ -34,15 +34,18 @@ const measures: Measure[] = [
   },
 ];
 const h = n.homes;
+const kind = n.homes?.primary ?? "house"; // condos lead where houses are rare (Adams Morgan)
+const other = kind === "house" ? "condo" : "house";
 if (h) {
-  const r = reading(h.house.median_12mo, h.house.median_prev_12mo);
-  const d = h.house.median_12mo - h.house.median_prev_12mo;
-  const pct = h.house.median_prev_12mo ? Math.round((d / h.house.median_prev_12mo) * 100) : 0;
+  const b = h[kind];
+  const r = reading(b.median_12mo, b.median_prev_12mo);
+  const d = b.median_12mo - b.median_prev_12mo;
+  const pct = b.median_prev_12mo ? Math.round((d / b.median_prev_12mo) * 100) : 0;
   measures.push({
-    name: "Median house price", href: u("homes/"), state: r.state,
+    name: `Median ${kind} price`, href: u("homes/"), state: r.state,
     chg: `${sign(d)}${money(Math.abs(d))} (${sign(d)}${Math.abs(pct)}%)`,
-    bars: pair("Last 12 months", h.house.median_12mo, money(h.house.median_12mo), "12 months before", h.house.median_prev_12mo, money(h.house.median_prev_12mo), `fill s-${r.state}`),
-    read: `From ${h.house.count_12mo} house sales, against ${h.house.count_prev_12mo} the year before.${r.state === "steady" ? " Within 5%, so steady." : ""}`,
+    bars: pair("Last 12 months", b.median_12mo, money(b.median_12mo), "12 months before", b.median_prev_12mo, money(b.median_prev_12mo), `fill s-${r.state}`),
+    read: `From ${b.count_12mo} ${kind} sales, against ${b.count_prev_12mo} the year before.${r.state === "steady" ? " Within 5%, so steady." : ""}`,
   });
 }
 const bigCount = m.projects.length;
@@ -54,7 +57,7 @@ measures.push({
 
 // condition strip: graded readings only (crime is shown as counts, not graded)
 const graded: State[] = [m.lead?.r.state, ...m.others.map((o) => o.r.state), m.reqR.state].filter(Boolean) as State[];
-if (h) graded.push(reading(h.house.median_12mo, h.house.median_prev_12mo).state);
+if (h) graded.push(reading(h[kind].median_12mo, h[kind].median_prev_12mo).state);
 const counts = { rising: 0, easing: 0, steady: 0 } as Record<State, number>;
 graded.forEach((s) => counts[s]++);
 const condWord =
@@ -163,11 +166,11 @@ const clip = hi?.archive.clips[0];
     {h ? (
       <section id="homes" class="panel" aria-labelledby="h-h">
         <div class="ph"><h2 id="h-h">Homes</h2><a href={u("homes/")}>Sales and prices →</a></div>
-        <div class="hero"><b class="num">{money(h.house.median_12mo)}</b><span>median house price, last 12 months, from {h.house.count_12mo} house sales</span></div>
+        <div class="hero"><b class="num">{money(h[kind].median_12mo)}</b><span>median {kind} price, last 12 months, from {h[kind].count_12mo} {kind} sales</span></div>
         <table class="htbl"><tbody>
-          <tr><th scope="row">Median price<span>last 60 days</span></th><td class="hv num">{money(h.last_60d.median)}</td><td class="hn num">{h.last_60d.count} sales</td></tr>
+          <tr><th scope="row">Median {kind}<span>last 60 days</span></th><td class="hv num">{money(h.last_60d.median)}</td><td class="hn num">{h.last_60d.count} sales</td></tr>
           {h.last_60d.median_ppsf && <tr><th scope="row">Price per sq ft<span>last 60 days</span></th><td class="hv num">${fmt(h.last_60d.median_ppsf)}</td><td class="hn num">median</td></tr>}
-          <tr><th scope="row">Median condo<span>12 months</span></th><td class="hv num">{money(h.condo.median_12mo)}</td><td class="hn num">{h.condo.count_12mo} sales</td></tr>
+          <tr><th scope="row">Median {other}<span>12 months</span></th><td class="hv num">{money(h[other].median_12mo)}</td><td class="hn num">{h[other].count_12mo} sales</td></tr>
           <tr><th scope="row">Sold above assessment<span>12 months</span></th><td class="hv num">{h.above_assessment_12mo.n} <small>of {h.above_assessment_12mo.of}</small></td><td class="hn num">sales</td></tr>
         </tbody></table>
         <a class="cta" href={u("homes/#recent")}>See every recent sale <span>Homes →</span></a>

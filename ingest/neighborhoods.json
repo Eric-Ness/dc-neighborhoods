@@ -6,25 +6,48 @@
       "slug": "petworth",
       "name": "Petworth",
       "boundary_where": "DC_HPN_NAME='PETWORTH'",
-      "hosts": ["petworth.org"],
-      "redirect_hosts": ["petworth.net"],
+      "hosts": [
+        "petworth.org"
+      ],
+      "redirect_hosts": [
+        "petworth.net"
+      ],
       "enabled": true
     },
     {
       "slug": "tenleytown",
       "name": "Tenleytown",
       "boundary_where": "DC_HPN_NAME='TENLEYTOWN'",
-      "hosts": ["tenleytown.org"],
-      "redirect_hosts": ["tenleytown.net"],
+      "hosts": [
+        "tenleytown.org"
+      ],
+      "redirect_hosts": [
+        "tenleytown.net"
+      ],
       "enabled": true
     },
     {
       "slug": "adamsmorgan",
       "name": "Adams Morgan",
       "boundary_where": "DC_HPN_NAME='ADAMS MORGAN'",
-      "hosts": ["adamsmorgan.org"],
+      "hosts": [
+        "adamsmorgan.org"
+      ],
       "redirect_hosts": [],
-      "enabled": false
+      "enabled": true
+    },
+    {
+      "slug": "friendshipheights",
+      "name": "Friendship Heights",
+      "boundary_layer": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Administrative_Other_Boundaries_WebMercator/MapServer/55",
+      "boundary_where": "SMD_ID IN ('3E03','3E04')",
+      "boundary_parts": 2,
+      "boundary_source": "ANC single-member districts 3E03 and 3E04, around the Friendship Heights Metro (Open Data DC). DC has no planning area for Friendship Heights; this overlaps the Tenleytown site.",
+      "hosts": [
+        "friendshipheights.org"
+      ],
+      "redirect_hosts": [],
+      "enabled": true
     }
   ]
 }

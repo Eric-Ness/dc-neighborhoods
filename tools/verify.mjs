@@ -223,7 +223,8 @@ checks.datafull = () => {
     if (!d.homes || !d.streets || !d.history) continue;
     assert(Object.keys(d.module_errors ?? {}).length === 0, `${tag}: module errors ${JSON.stringify(d.module_errors)}`);
     const hm = d.homes, st = d.streets, hi = d.history;
-    assert(hm.house.count_12mo > 0 && hm.house.median_12mo >= 100000 && hm.house.median_12mo <= 5000000, `${tag}: implausible house median ${hm.house.median_12mo}`);
+    const pk = hm.primary ?? "house"; // the home type that leads the section
+    assert(hm[pk].count_12mo > 0 && hm[pk].median_12mo >= 100000 && hm[pk].median_12mo <= 5000000, `${tag}: implausible ${pk} median ${hm[pk].median_12mo}`);
     assert(hm.by_month.length >= 6, `${tag}: homes.by_month has ${hm.by_month.length} months`);
     assert(hm.recent_sales.length > 0, `${tag}: no recent sales`);
     assert(st.curb.active_this_week > 0 && st.trees.total > 0, `${tag}: empty curb or trees`);
@@ -375,9 +376,11 @@ const words = (t) => (t ?? "").trim().split(/\s+/).filter(Boolean).length;
 checks.curated = () => {
   const sn = JSON.parse(read("site/src/curated/streetnames.json"));
   const vo = JSON.parse(read("site/src/curated/voices.json"));
+  // Curated research exists for some neighborhoods only; the Then page omits the sections elsewhere.
+  // Both researched neighborhoods must keep their entries.
+  for (const slug of ["petworth", "tenleytown"]) assert(sn.neighborhoods?.[slug]?.entries?.length > 0, `${slug}: no street-name entries`);
   for (const h of hoods()) {
     const s = sn.neighborhoods?.[h.slug];
-    assert(s && s.entries.length > 0, `${h.slug}: no street-name entries`);
     for (const e of s?.entries ?? []) {
       assert(e.name && e.summary, `${h.slug}: street entry missing name/summary`);
       assert(words(e.summary) <= 60, `${h.slug}: ${e.name} summary over 60 words`);

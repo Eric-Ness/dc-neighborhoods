@@ -43,7 +43,7 @@ MARKET_CODE = "Market Sale"
 PRICE_FLOOR = 75_000
 RECENT_DAYS = 60
 RECENT_CAP = 40
-MIN_MONTH_SALES = 3  # a month with fewer house sales gets a count but no median
+MIN_MONTH_SALES = 3  # a month with fewer sales of the primary home type gets a count but no median
 
 DAY = 86400
 
@@ -75,6 +75,31 @@ HOODS = {
         ],
         "label": "OTR assessment neighborhoods \"American University\" (all), \"Chevy Chase\" sub-area A, "
                  "\"North Cleveland Park\" and \"Wakefield\"",
+    },    "adamsmorgan": {
+        # No OTR area is called Adams Morgan. In the 2026-10-31 check, 96% of residential parcels on squares
+        # inside the DC Health ADAMS MORGAN area were in five OTR sub-areas: Old City 2 D (30%), Mount
+        # Pleasant C (21%), Kalorama C (20%), Kalorama B (15%) and Mount Pleasant B (9%). All of Kalorama B/C
+        # and Mount Pleasant B/C sit inside; Old City 2 D is split (about 46% inside, the rest toward Dupont
+        # and U Street), so it's included and the per-run fit note reports the overlap. The other ~4% were
+        # scattered matches across the city (square numbers reused with suffixes), not real overlap.
+        "otr": [
+            ("Kalorama", "B"), ("Kalorama", "C"),
+            ("Mount Pleasant", "B"), ("Mount Pleasant", "C"),
+            ("Old City 2", "D"),
+        ],
+        "label": "OTR assessment sub-areas Kalorama B and C, Mount Pleasant B and C, and Old City 2 D",
+        # Mostly apartments: 234 condo sales against 26 house sales in the 12 months to 2026-10, too few houses
+        # for a monthly trend. Condos lead the section here.
+        "primary": "condo",
+    },
+    "friendshipheights": {
+        # Boundary is ANC districts 3E03+3E04 (DC has no Friendship Heights planning area). In the 2026-11-01
+        # check, residential parcels on in-boundary squares were OTR Chevy Chase A (63%), American University A
+        # (30%) and American University B (7%). B is left out: it is mostly AU Park, outside these districts.
+        # Both included areas extend past the districts (toward Tenleytown and Chevy Chase DC); the per-run fit
+        # note reports how far.
+        "otr": [("Chevy Chase", "A"), ("American University", "A")],
+        "label": "OTR assessment sub-areas Chevy Chase A and American University A",
     },
 }
 
@@ -255,10 +280,11 @@ def build(geom: dict, hood: dict, now: float) -> dict:
         v = cama.get(s["ssl"], {}).get("BEDRM") if s["kind"] == "house" else None
         return int(v) if v else None
 
-    recent_houses = [s for s in recent if s["kind"] == "house"]
-    ppsf = [s["price"] / gba(s) for s in recent_houses if gba(s)]
+    primary = cfg.get("primary", "house")  # the home type that leads the section: houses, or condos where houses are rare
+    recent_primary = [s for s in recent if s["kind"] == primary]
+    ppsf = [s["price"] / gba(s) for s in recent_primary if gba(s)]  # floor area is known for houses only
 
-    # Calendar months: this month (partial) and the 11 before it. Houses only.
+    # Calendar months: this month (partial) and the 11 before it. Primary home type only.
     months = []
     y, m = today.year, today.month
     for _ in range(12):
@@ -267,7 +293,7 @@ def build(geom: dict, hood: dict, now: float) -> dict:
     months.reverse()
     by_month = []
     for mo in months:
-        p = [s["price"] for s in sales if s["kind"] == "house" and s["date"].startswith(mo)]
+        p = [s["price"] for s in sales if s["kind"] == primary and s["date"].startswith(mo)]
         by_month.append({"month": mo, "median": _median(p) if len(p) >= MIN_MONTH_SALES else None, "count": len(p)})
 
     with_assessment = [s for s in last12 if s["assessed"]]
@@ -315,17 +341,18 @@ def build(geom: dict, hood: dict, now: float) -> dict:
         "sales_note": sales_note,
         "otr_neighborhoods": [{"nbhdname": n, "subnbhd": s} for n, s in otr],
         "boundary_fit": ov,
+        "primary": primary,
         "house": block("house"),
         "condo": block("condo"),
         "last_60d": {
-            "median": _median([s["price"] for s in recent_houses]),
-            "count": len(recent_houses),
+            "median": _median([s["price"] for s in recent_primary]),
+            "count": len(recent_primary),
             "median_ppsf": _median(ppsf),
             "ppsf_count": len(ppsf),
         },
         "above_assessment_12mo": {"n": sum(1 for s in with_assessment if s["price"] > s["assessed"]), "of": len(with_assessment)},
         "by_month": by_month,
-        "by_month_basis": f"houses only; calendar months, the last one in progress; median null when under {MIN_MONTH_SALES} sales",
+        "by_month_basis": f"{primary}s only; calendar months, the last one in progress; median null when under {MIN_MONTH_SALES} sales",
         "recent_sales": [
             {"address": s["address"], "date": s["date"], "price": s["price"], "kind": s["kind"],
              "beds": beds(s), "sqft": gba(s), "assessed": s["assessed"]}
@@ -405,7 +432,7 @@ def main() -> int:
         print(f"unknown slug {slug!r}", file=sys.stderr)
         return 2
     now = time.time()
-    geom = dcdata.boundary(config["boundary_layer"], hood["boundary_where"])
+    geom = dcdata.hood_boundary(config, hood)
     section = build(geom, hood, now)
     out_dir = Path(__file__).parent / "_out"
     out_dir.mkdir(exist_ok=True)

@@ -86,9 +86,29 @@ FEEDS = {
         ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
         *SHARED,
     ],
+    "adamsmorgan": [
+        ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=2", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=3", "https://www.popville.com/", "match"),
+        ("The DC Line", WP_SEARCH.format(base="https://thedcline.org", q="adams+morgan"), "https://thedcline.org/", "search"),
+        ("Washingtonian", WP_SEARCH.format(base="https://www.washingtonian.com", q="adams+morgan"), "https://www.washingtonian.com/", "match"),
+        *SHARED,
+    ],
+    "friendshipheights": [
+        ("ANC 3E", "https://anc3e.org/feed/", "https://anc3e.org/", "match"),  # also covers Tenleytown, so filtered
+        ("Forest Hills Connection", WP_SEARCH.format(base="https://foresthillsconnection.com", q="friendship+heights"), "https://foresthillsconnection.com/", "search"),
+        ("The DC Line", WP_SEARCH.format(base="https://thedcline.org", q="friendship+heights"), "https://thedcline.org/", "search"),
+        ("Washingtonian", WP_SEARCH.format(base="https://www.washingtonian.com", q="friendship+heights"), "https://www.washingtonian.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
+        *SHARED,
+    ],
 }
 TERMS = {
     "petworth": re.compile(r"\bpetworth\b|\bupshur st(reet)?\b|\bgrant circle\b|\bsherman circle\b", re.I),
+    "adamsmorgan": re.compile(r"\badams[- ]morgan\b|\bkalorama park\b|\blanier heights\b|\bmarie reed\b|\bmintwood\b", re.I),
+    # The Friendship Heights site covers both sides of the District line in news (stories about either side
+    # matter to residents), so the name counts here, plus DC-side landmarks.
+    "friendshipheights": re.compile(r"\bfriendship heights\b|\bmazza gallerie\b|\bchevy chase pavilion\b|\bjenifer st(reet)?\b", re.I),
     # "Friendship Heights" alone is left out: it also names the Maryland side of the line.
     "tenleytown": re.compile(r"\btenleytown\b|\btenley (circle|library)\b|\bfort reno\b|\bjackson[- ]reed\b|\btenley-friendship\b", re.I),
 }
@@ -336,7 +356,7 @@ def main() -> int:
         print(f"unknown neighborhood {slug!r}", file=sys.stderr)
         return 2
     t0 = time.time()
-    geom = dcdata.boundary(config["boundary_layer"], hood["boundary_where"])
+    geom = dcdata.hood_boundary(config, hood)
     section = build(geom, hood, time.time())
     out_dir = ROOT / "ingest" / "_out"
     out_dir.mkdir(parents=True, exist_ok=True)

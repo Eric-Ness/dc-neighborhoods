@@ -14,9 +14,12 @@
     { "pattern": "petworth.org", "custom_domain": true },
     { "pattern": "www.petworth.org", "custom_domain": true },
     { "pattern": "tenleytown.org", "custom_domain": true },
-    { "pattern": "www.tenleytown.org", "custom_domain": true }
+    { "pattern": "www.tenleytown.org", "custom_domain": true },
+    { "pattern": "adamsmorgan.org", "custom_domain": true },
+    { "pattern": "www.adamsmorgan.org", "custom_domain": true },
+    { "pattern": "friendshipheights.org", "custom_domain": true },
+    { "pattern": "www.friendshipheights.org", "custom_domain": true }
     // petworth.net and tenleytown.net come back here once those zones are on Cloudflare;
     // the Worker already 301s them to the .org.
-
   ]
 }

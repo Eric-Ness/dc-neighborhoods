@@ -22,6 +22,7 @@ export interface Homes {
   generated_at: string;
   sources: Source[];
   area_note: string;
+  primary?: "house" | "condo"; // the home type that leads (condos where houses are rare)
   house: { median_12mo: number; count_12mo: number; median_prev_12mo: number; count_prev_12mo: number };
   condo: { median_12mo: number; count_12mo: number; median_prev_12mo: number; count_prev_12mo: number };
   last_60d: { median: number; count: number; median_ppsf: number | null };

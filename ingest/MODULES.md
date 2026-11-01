@@ -18,7 +18,7 @@ def build(geom: dict, hood: dict, now: float) -> dict: ...
 def check(section: dict) -> list[str]: ...   # [] when the section is complete and plausible
 ```
 
-- `geom`: the neighborhood polygon from `dcdata.boundary(...)`, an Esri geometry in WGS84.
+- `geom`: the neighborhood polygon from `dcdata.hood_boundary(config, hood)`, an Esri geometry in WGS84. It may have several rings: a neighborhood can set its own `boundary_layer`, and `boundary_parts` > 1 combines several features (Friendship Heights is two ANC districts).
 - `hood`: the entry from `ingest/neighborhoods.json` (`slug`, `name`, ...). Per-neighborhood settings the module needs (search terms, an OTR assessment-neighborhood name, etc.) live in a dict **inside the module**, keyed by slug. Do not edit `neighborhoods.json`.
 - `now`: epoch seconds of this run. Every date window is relative to it.
 - Python 3.13 stdlib only. Use `dcdata` (`_request`, `query_features`, `count_by`, `resolve_yearly_layer`, `date_where`, `boundary`) and helpers from `run.py` (`hundred_block`, `iso`, `round_coord`, `point_in_rings`, `ring_centroid`). Don't modify `dcdata.py` or `run.py`.

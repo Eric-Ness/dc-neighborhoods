@@ -49,11 +49,20 @@ CALENDARS = {"tenleytown": ["tms"], "petworth": []}
 # matches for this neighborhood's ANCs are archived run to run, like the headlines.
 OANC_FEED = "https://oanc.dc.gov/rss.xml"
 OANC_PAGE = "https://oanc.dc.gov/"
-ANCS = {"petworth": ["4C", "4D"], "tenleytown": ["3E", "3F", "3/4G"]}
+ANCS = {"petworth": ["4C", "4D"], "tenleytown": ["3E", "3F", "3/4G"], "adamsmorgan": ["1C", "2B"], "friendshipheights": ["3E"]}
 OANC_TITLE = re.compile(r"^([A-Z][a-z]+ \d{1,2}, \d{4}),?\s+ANC\s+([0-9/]+[A-Z])\s+(Special\s+)?Public Meeting", re.I)
 ANC_ARCHIVE_DAYS = 400
-ANC_FEEDS = {"tenleytown": ("ANC 3E", "https://anc3e.org/feed/", "https://anc3e.org/")}
+ANC_FEEDS = {"tenleytown": ("ANC 3E", "https://anc3e.org/feed/", "https://anc3e.org/"),
+             "friendshipheights": ("ANC 3E", "https://anc3e.org/feed/", "https://anc3e.org/")}
 LINKS = {  # calendars we point to but can't (or shouldn't) read
+    "adamsmorgan": [
+        {"name": "Mt. Pleasant Library events", "url": "https://dclibrary.libnet.info/events?l=Mt.%20Pleasant%20Neighborhood%20Library"},
+        {"name": "Adams Morgan Partnership", "url": "https://www.adamsmorgandc.org/"},
+    ],
+    "friendshipheights": [
+        {"name": "Tenley-Friendship Library events", "url": "https://dclibrary.libnet.info/events?l=Tenley-Friendship%20Neighborhood%20Library"},
+        {"name": "Chevy Chase Library events", "url": "https://dclibrary.libnet.info/events?l=Chevy%20Chase%20Neighborhood%20Library"},
+    ],
     "petworth": [
         {"name": "Petworth Library events", "url": "https://dclibrary.libnet.info/events?l=Petworth%20Neighborhood%20Library"},
         {"name": "ANC 4C meetings", "url": "https://www.anc4c.com/"},
@@ -304,7 +313,7 @@ def main() -> int:
         print(f"unknown neighborhood {slug!r}", file=sys.stderr)
         return 2
     t0 = time.time()
-    geom = dcdata.boundary(config["boundary_layer"], hood["boundary_where"])
+    geom = dcdata.hood_boundary(config, hood)
     section = build(geom, hood, time.time())
     out_dir = ROOT / "ingest" / "_out"
     out_dir.mkdir(parents=True, exist_ok=True)

@@ -251,8 +251,9 @@ def permit_group(permit_type: str | None, subtype: str | None, work: str) -> str
     return "Other"
 
 
-def build(hood: dict, boundary_layer: str, boundary_source: str, now: float) -> dict:
-    geom = dcdata.boundary(boundary_layer, hood["boundary_where"])
+def build(hood: dict, config: dict, now: float) -> dict:
+    geom = dcdata.hood_boundary(config, hood)
+    boundary_source = hood.get("boundary_source", config["boundary_source"])
     permits = fetch_permits(geom, now)
     sr = fetch_311(geom, now)
     crime = fetch_crime_counts(geom, now)
@@ -332,7 +333,7 @@ def main() -> int:
     for hood in config["neighborhoods"]:
         if not hood["enabled"]:
             continue
-        data = build(hood, config["boundary_layer"], config["boundary_source"], now)
+        data = build(hood, config, now)
         (OUT_DIR / f"{hood['slug']}.json").write_text(json.dumps(data, indent=1), encoding="utf-8")
         outputs[hood["slug"]] = data
         print(
