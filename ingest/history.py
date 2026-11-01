@@ -69,9 +69,12 @@ ARCHIVE = {
         # "Adams Morgan" dates from the 1950s (the Adams and Morgan schools). In 1926 the paper said Lanier Heights,
         # Washington Heights or Kalorama; "Washington Heights" also names a New York neighborhood, so it only
         # counts with a local street or landmark nearby (see `pattern`).
-        "terms": ['"Lanier Heights"', '"Washington Heights"', '"Kalorama road"', '"Columbia road"'],
-        "pattern": r"lanier\s+heights|kalorama\s+(road|park|heights)|washington\s+heights(?=.{0,200}(columbia\s+road|18th|"
-                   r"kalorama|lanier|champlain|ontario))|columbia\s+road(?=.{0,120}18th)",
+        # Tested against the 1926 Evening Star (2026-11-01): each term had hits in the target week, all DC.
+        # Most reliable first: the page budget can run out before later terms are read.
+        "terms": ['"Kalorama road"', '"Ontario road"', '"Lanier Heights"', '"Champlain street"', '"Washington Heights"'],
+        "pattern": r"lanier\s+heights|kalorama\s+(road|park|heights)|ontario\s+road|champlain\s+st|"
+                   r"washington\s+heights(?=.{0,200}(columbia\s+road|18th|kalorama|lanier|champlain|ontario))|"
+                   r"columbia\s+road(?=.{0,120}18th)",
         "local": r"18th\s+st|columbia\s+road|kalorama|lanier|champlain|ontario\s+road|belmont|mintwood|calvert|"
                  r"adams\s+school|morgan\s+school|meridian\s+hill",
     },

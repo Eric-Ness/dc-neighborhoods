@@ -63,7 +63,7 @@ SITES = {
     ],
 }
 GREENHOUSE = ["sweetgreen"]  # local employers on Greenhouse; extend as more are found
-ZIPS = {"petworth": ("20011",), "tenleytown": ("20016", "20015"), "adamsmorgan": ("20009",),
+ZIPS = {"petworth": ("20011",), "tenleytown": ("20016", "20015"),  # no Adams Morgan: 20009 also covers Dupont, Logan, U St
         "friendshipheights": ("20015", "20016")}
 
 

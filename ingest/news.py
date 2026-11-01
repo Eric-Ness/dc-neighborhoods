@@ -92,10 +92,14 @@ FEEDS = {
         ("PoPville", "https://www.popville.com/feed/?paged=3", "https://www.popville.com/", "match"),
         ("The DC Line", WP_SEARCH.format(base="https://thedcline.org", q="adams+morgan"), "https://thedcline.org/", "search"),
         ("Washingtonian", WP_SEARCH.format(base="https://www.washingtonian.com", q="adams+morgan"), "https://www.washingtonian.com/", "match"),
+        ("Washington Blade", "https://www.washingtonblade.com/?s=adams+morgan&feed=rss2&orderby=date&order=DESC", "https://www.washingtonblade.com/", "match"),
+        ("WTOP", "https://wtop.com/tag/adams-morgan/feed/", "https://wtop.com/", "match"),
+        ("ANC 2B", "https://www.dupontcircleanc.net/wordpress/feed/", "https://www.dupontcircleanc.net/", "match"),  # Dupont ANC; covers the southern strip
         *SHARED,
     ],
     "friendshipheights": [
         ("ANC 3E", "https://anc3e.org/feed/", "https://anc3e.org/", "match"),  # also covers Tenleytown, so filtered
+        ("WTOP", "https://wtop.com/tag/friendship-heights/feed/", "https://wtop.com/", "match"),  # mixes MD; see NOT_HERE
         ("Forest Hills Connection", WP_SEARCH.format(base="https://foresthillsconnection.com", q="friendship+heights"), "https://foresthillsconnection.com/", "search"),
         ("The DC Line", WP_SEARCH.format(base="https://thedcline.org", q="friendship+heights"), "https://thedcline.org/", "search"),
         ("Washingtonian", WP_SEARCH.format(base="https://www.washingtonian.com", q="friendship+heights"), "https://www.washingtonian.com/", "match"),
@@ -105,12 +109,22 @@ FEEDS = {
 }
 TERMS = {
     "petworth": re.compile(r"\bpetworth\b|\bupshur st(reet)?\b|\bgrant circle\b|\bsherman circle\b", re.I),
-    "adamsmorgan": re.compile(r"\badams[- ]morgan\b|\bkalorama park\b|\blanier heights\b|\bmarie reed\b|\bmintwood\b", re.I),
-    # The Friendship Heights site covers both sides of the District line in news (stories about either side
-    # matter to residents), so the name counts here, plus DC-side landmarks.
-    "friendshipheights": re.compile(r"\bfriendship heights\b|\bmazza gallerie\b|\bchevy chase pavilion\b|\bjenifer st(reet)?\b", re.I),
+    # Not "Kalorama" alone (Sheridan-Kalorama is ANC 2D), nor Columbia Road or 18th Street alone.
+    "adamsmorgan": re.compile(r"\badams[- ]morgan\b|\badmo\b|\bkalorama (park|triangle)\b|\blanier heights\b|\bmarie reed\b|"
+                              r"\bmintwood\b|\bwalter pierce park\b|\bjumbo slice\b", re.I),
+    "friendshipheights": re.compile(r"\bfriendship heights\b|\bmazza gallerie\b|\bchevy chase pavilion\b|\bjenifer st(reet)?\b|"
+                                    r"\bfort bayard\b", re.I),
     # "Friendship Heights" alone is left out: it also names the Maryland side of the line.
     "tenleytown": re.compile(r"\btenleytown\b|\btenley (circle|library)\b|\bfort reno\b|\bjackson[- ]reed\b|\btenley-friendship\b", re.I),
+}
+
+# Friendship Heights straddles the District line. A story that names only "Friendship Heights" and also a
+# Maryland place is about the Maryland side, unless it names a DC-side landmark too.
+NOT_HERE = {
+    "friendshipheights": (re.compile(r"\b(maryland|md\.?|montgomery county|bethesda|somerset|brookdale|chevy chase,? md|"
+                                     r"wisconsin place|the hills plaza|geico)\b", re.I),
+                          re.compile(r"\bmazza gallerie\b|\bchevy chase pavilion\b|\bjenifer st(reet)?\b|\bfort bayard\b|"
+                                     r"\b(d\.?c\.?|northwest|nw)\b", re.I)),
 }
 
 _robots: dict[str, urllib.robotparser.RobotFileParser] = {}
@@ -236,6 +250,8 @@ def build_headlines(slug: str, now: float, prev: dict) -> tuple[list[dict], list
             if ts < cutoff or ts > now + DAY:
                 continue
             if mode != "all" and not terms.search(it["text"]):
+                continue
+            if slug in NOT_HERE and NOT_HERE[slug][0].search(it["text"]) and not NOT_HERE[slug][1].search(it["text"]):
                 continue
             if it["url"] not in found:
                 st["matched"] += 1
