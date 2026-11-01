@@ -48,6 +48,112 @@
       ],
       "redirect_hosts": [],
       "enabled": true
+    },
+    {
+      "slug": "capitolhill",
+      "name": "Capitol Hill",
+      "boundary_where": "DC_HPN_NAME='CAPITOL HILL'",
+      "hosts": [
+        "capitolhilldc.org"
+      ],
+      "redirect_hosts": [],
+      "enabled": true
+    },
+    {
+      "slug": "columbiaheights",
+      "name": "Columbia Heights",
+      "boundary_where": "DC_HPN_NAME='COLUMBIA HEIGHTS'",
+      "hosts": [
+        "columbiaheights.net"
+      ],
+      "redirect_hosts": [],
+      "enabled": true
+    },
+    {
+      "slug": "georgetown",
+      "name": "Georgetown",
+      "boundary_where": "NAME='Georgetown Historic District'",
+      "hosts": [
+        "georgetowndc.org"
+      ],
+      "redirect_hosts": [],
+      "enabled": true,
+      "boundary_layer": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Historic_WebMercator/MapServer/6",
+      "boundary_source": "Georgetown Historic District (DC Historic Preservation Office, Open Data DC). DC's GEORGETOWN planning area covers only the western half of the neighborhood."
+    },
+    {
+      "slug": "chevychase",
+      "name": "Chevy Chase",
+      "boundary_where": "SMD_ID LIKE '3/4G%'",
+      "hosts": [
+        "chevychasedc.net"
+      ],
+      "redirect_hosts": [],
+      "enabled": true,
+      "boundary_layer": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Administrative_Other_Boundaries_WebMercator/MapServer/55",
+      "boundary_parts": 7,
+      "boundary_source": "ANC 3/4G, the Chevy Chase DC commission (all its single-member districts, Open Data DC). DC's CHEVY CHASE planning area stops at Connecticut Avenue; this overlaps the Tenleytown site a little."
+    },
+    {
+      "slug": "anacostia",
+      "name": "Anacostia",
+      "boundary_where": "DC_HPN_NAME='HISTORIC ANACOSTIA'",
+      "hosts": [
+        "anacostiadc.net"
+      ],
+      "redirect_hosts": [],
+      "enabled": true
+    },
+    {
+      "slug": "clevelandpark",
+      "name": "Cleveland Park",
+      "boundary_layer": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Historic_WebMercator/MapServer/6",
+      "boundary_where": "NAME='Cleveland Park Historic District'",
+      "boundary_source": "Cleveland Park Historic District (DC Historic Preservation Office, Open Data DC). DC has no planning area named Cleveland Park.",
+      "hosts": [
+        "clevelandpark.org"
+      ],
+      "redirect_hosts": [],
+      "enabled": true
+    },
+    {
+      "slug": "dupontcircle",
+      "name": "Dupont Circle",
+      "boundary_layer": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Historic_WebMercator/MapServer/6",
+      "boundary_where": "NAME='Dupont Circle Historic District'",
+      "boundary_source": "Dupont Circle Historic District (DC Historic Preservation Office, Open Data DC). DC has no planning area named Dupont Circle; this overlaps the Adams Morgan site to the north.",
+      "hosts": [
+        "dupontcircledc.net"
+      ],
+      "redirect_hosts": [],
+      "enabled": true
+    },
+    {
+      "slug": "hstreet",
+      "name": "H Street NE",
+      "boundary_layer": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Administrative_Other_Boundaries_WebMercator/MapServer/55",
+      "boundary_where": "SMD_ID IN ('6A01','6A02','6A06','6C04','6C05','6C06')",
+      "boundary_parts": 6,
+      "boundary_source": "The six ANC single-member districts along H Street NE from 3rd to 15th Street (6A01, 6A02, 6A06, 6C04, 6C05, 6C06; Open Data DC). DC has no planning area for H Street.",
+      "hosts": [
+        "hstreet.net"
+      ],
+      "redirect_hosts": [],
+      "enabled": true
+    },
+    {
+      "slug": "navyyard",
+      "name": "Navy Yard",
+      "boundary_layer": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Betterment_Areas_WebMercator/MapServer/15",
+      "boundary_where": "NAME='Navy Yard BID'",
+      "boundary_source": "Navy Yard (Capitol Riverfront) Business Improvement District boundary (Open Data DC). DC's planning area here is SW/Waterfront.",
+      "hosts": [
+        "navyyarddc.net"
+      ],
+      "redirect_hosts": [
+        "capitolriverfront.net"
+      ],
+      "enabled": true
     }
   ]
 }

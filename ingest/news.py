@@ -106,8 +106,125 @@ FEEDS = {
         ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
         *SHARED,
     ],
+    # The nine below: feeds tested 2026-10-31/11-01 (robots allowed for our agent); see ingest/SOURCES-*.md.
+    "capitolhill": [
+        ("The Hill is Home", "https://thehillishome.com/feed/", "https://thehillishome.com/", "all"),
+        ("Capitol Hill Corner", "https://www.capitolhillcorner.org/feed/", "https://www.capitolhillcorner.org/", "all"),
+        ("Capitol Hill Restoration Society", "https://www.chrs.org/feed/", "https://www.chrs.org/", "all"),
+        ("Hill Center", "https://www.hillcenterdc.org/feed/", "https://www.hillcenterdc.org/", "all"),
+        ("WTOP", "https://wtop.com/tag/eastern-market/feed/", "https://wtop.com/", "match"),
+        ("WTOP", "https://wtop.com/tag/capitol-hill/feed/", "https://wtop.com/", "match"),
+        ("Washingtonian", WP_SEARCH.format(base="https://www.washingtonian.com", q="eastern+market"), "https://www.washingtonian.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
+        *SHARED,
+    ],
+    "hstreet": [
+        ("WTOP", "https://wtop.com/tag/h-street-corridor/feed/", "https://wtop.com/", "match"),
+        ("WTOP", "https://wtop.com/tag/h-street/feed/", "https://wtop.com/", "match"),
+        ("The Hill is Home", "https://thehillishome.com/feed/", "https://thehillishome.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=2", "https://www.popville.com/", "match"),
+        *SHARED,
+    ],
+    "navyyard": [
+        ("WTOP", "https://wtop.com/tag/navy-yard/feed/", "https://wtop.com/", "match"),
+        ("Washingtonian", WP_SEARCH.format(base="https://www.washingtonian.com", q="navy+yard"), "https://www.washingtonian.com/", "match"),
+        ("Washingtonian", WP_SEARCH.format(base="https://www.washingtonian.com", q="capitol+riverfront"), "https://www.washingtonian.com/", "match"),
+        ("The Hill is Home", "https://thehillishome.com/feed/", "https://thehillishome.com/", "match"),
+        ("ANC 8F", "https://anc8f.dc.gov/rss.xml", "https://anc8f.dc.gov/", "all"),
+        ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
+        *SHARED,
+    ],
+    "anacostia": [
+        ("Anacostia BID", "https://www.anacostiabid.org/news?format=rss", "https://www.anacostiabid.org/", "match"),
+        ("WTOP", "https://wtop.com/tag/anacostia/feed/", "https://wtop.com/", "match"),
+        ("WTOP", "https://wtop.com/tag/ward-8/feed/", "https://wtop.com/", "match"),
+        ("ANC 8A", "https://anc8a.dc.gov/rss.xml", "https://anc8a.dc.gov/", "all"),
+        ("Washington Informer", "https://www.washingtoninformer.com/feed/", "https://www.washingtoninformer.com/", "match"),
+        *SHARED,
+    ],
+    "columbiaheights": [
+        ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=2", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=3", "https://www.popville.com/", "match"),
+        ("WTOP", "https://wtop.com/tag/columbia-heights/feed/", "https://wtop.com/", "match"),
+        ("ANC 1E", "https://anc1e.org/feed/", "https://anc1e.org/", "all"),
+        ("Washington Blade", "https://www.washingtonblade.com/?s=columbia+heights&feed=rss2&orderby=date&order=DESC", "https://www.washingtonblade.com/", "match"),
+        *SHARED,
+    ],
+    "georgetown": [
+        ("Georgetown Metropolitan", "https://georgetownmetropolitan.com/feed/", "https://georgetownmetropolitan.com/", "all"),
+        ("The Georgetowner", "https://georgetowner.com/feed/", "https://georgetowner.com/", "match"),
+        ("The Hoya (City News)", "https://thehoya.com/section/news/city-news/feed/", "https://thehoya.com/", "match"),
+        ("WTOP", "https://wtop.com/tag/georgetown/feed/", "https://wtop.com/", "match"),
+        ("Washingtonian", WP_SEARCH.format(base="https://www.washingtonian.com", q="georgetown"), "https://www.washingtonian.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=2", "https://www.popville.com/", "match"),
+        *SHARED,
+    ],
+    "dupontcircle": [
+        ("ANC 2B", "https://www.dupontcircleanc.net/wordpress/feed/", "https://www.dupontcircleanc.net/", "all"),
+        ("WTOP", "https://wtop.com/tag/dupont-circle/feed/", "https://wtop.com/", "match"),
+        ("Washington Blade", "https://www.washingtonblade.com/?s=dupont+circle&feed=rss2&orderby=date&order=DESC", "https://www.washingtonblade.com/", "match"),
+        ("Washingtonian", WP_SEARCH.format(base="https://www.washingtonian.com", q="dupont+circle"), "https://www.washingtonian.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=2", "https://www.popville.com/", "match"),
+        *SHARED,
+    ],
+    "clevelandpark": [
+        ("Cleveland Park Citizens Association", "https://www.cpcadc.org/feed/", "https://www.cpcadc.org/", "all"),
+        ("ANC 3C", "https://anc3c.dc.gov/rss.xml", "https://anc3c.dc.gov/", "all"),
+        ("District Bridges", "https://districtbridges.org/feed/", "https://districtbridges.org/", "match"),
+        ("WTOP", "https://wtop.com/tag/cleveland-park/feed/", "https://wtop.com/", "match"),
+        ("Forest Hills Connection", "https://foresthillsconnection.com/feed/", "https://foresthillsconnection.com/", "match"),
+        ("Washingtonian", WP_SEARCH.format(base="https://www.washingtonian.com", q="cleveland+park"), "https://www.washingtonian.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
+        *SHARED,
+    ],
+    "chevychase": [
+        ("ANC 3/4G", "https://anc3g.dc.gov/rss.xml", "https://anc3g.dc.gov/", "all"),
+        ("Historic Chevy Chase DC", "https://www.historicchevychasedc.org/feed/", "https://www.historicchevychasedc.org/", "all"),
+        ("District Bridges", "https://districtbridges.org/feed/", "https://districtbridges.org/", "match"),
+        ("WTOP", "https://wtop.com/tag/chevy-chase/feed/", "https://wtop.com/", "match"),
+        ("Forest Hills Connection", "https://foresthillsconnection.com/feed/", "https://foresthillsconnection.com/", "match"),
+        ("Washingtonian", WP_SEARCH.format(base="https://www.washingtonian.com", q="chevy+chase"), "https://www.washingtonian.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
+        *SHARED,
+    ],
 }
 TERMS = {
+    # Capitol Hill: never the bare name (it also means Congress); a landmark, or the name plus a neighborhood cue.
+    "capitolhill": re.compile(
+        r"\beastern\s+market\b|\bbarracks\s+row\b|\bstanton\s+park\b|\bseward\s+square\b|\bhill\s+center\b|"
+        r"\bfolger\s+(shakespeare|theat|library)|\bmarine\s+barracks\b|\beast\s+capitol\s+st|\bpennsylvania\s+ave(nue)?\.?\s+s\.?e\b|"
+        r"\bcapitol\s+hill\s+(neighborhood|restoration\s+society|village|day\s+school|montessori|arts\s+workshop|bid|"
+        r"business\s+improvement|main\s+street|residents?|neighbors?|rowhouses?|homes?)\b|\bANC\s*6B\b|"
+        r"\bcapitol\s+hill\b(?=.*(\b\d{2,4}\s+[\w.]+\s+(st|street|ave|avenue|pl|place)\.?\s+(s\.?e|n\.?e)\b|\bward\s*6\b|"
+        r"\bANC\s*6[ABC]\b|\browhouse|\bneighbou?rhood\b))", re.I | re.S),
+    # "H Street" alone also means H St NW downtown.
+    "hstreet": re.compile(r"\bh\s+st(reet)?\.?\s*,?\s*n\.?e\b|\bh\s+street\s+(corridor|festival|main\s+street|streetcar|country\s+club)\b|"
+                          r"\batlas\s+(district|performing\s+arts|theat)|\bstarburst\s+(plaza|intersection)\b|\bANC\s*6A\b", re.I),
+    "navyyard": re.compile(r"\bnavy\s+yard\b|\bcapitol\s+riverfront\b|\byards\s+park\b|\bANC\s*(6/)?8F\b", re.I),
+    # Anacostia is also the river (and the riverside park, which runs far beyond the neighborhood).
+    "anacostia": re.compile(
+        r"\bhistoric\s+anacostia\b|\bgood\s+hope\s+r(oa)?d\b|\bbig\s+chair\b|"
+        r"\banacostia\s+(arts\s+center|playhouse|bid|business\s+improvement|community\s+museum|neighborhood\s+library|library|"
+        r"high\s+school|metro|historic\s+district|neighborhood)\b|\bfrederick\s+douglass\s+(national\s+historic|house|home)|"
+        r"\bmarion\s+barry\s+market|\bANC\s*8A\b|"
+        r"\banacostia\b(?!\s+(river|watershed|riverwalk|waterfront|riverkeeper|river\s*partners|freeway|park))"
+        r"(?=.*(\bs\.?e\b|\bsoutheast\b|\bward\s*8\b|\beast\s+of\s+the\s+river\b))", re.I | re.S),
+    # Columbia Heights, Minnesota is a Minneapolis suburb.
+    "columbiaheights": re.compile(r"\bcolumbia\s+heights\b(?!.*\b(minn|minnesota|MN)\b)|\btivoli\s+(theat|square)|\bgala\s+(hispanic\s+)?theat|"
+                                  r"\bpark\s+view\b(?=.*\b(d\.?c|NW|ANC)\b)|\bANC\s*1[AE]\b", re.I | re.S),
+    # Georgetown is also the university and towns elsewhere; take the neighborhood's own places.
+    "georgetown": re.compile(r"\bgeorgetown\b(?=.*\b(d\.?c|NW|m\s+st(reet)?|wisconsin\s+ave|c&o\s+canal|waterfront|neighborhood|"
+                             r"ANC\s*2E)\b)|\bm\s+st(reet)?\s+nw\b.{0,40}\bgeorgetown|\bcitizens\s+association\s+of\s+georgetown", re.I | re.S),
+    # "Dupont" alone is also the chemical company.
+    "dupontcircle": re.compile(r"\bdupont\s+circle\b|\bANC\s*2B\b", re.I),
+    "clevelandpark": re.compile(r"\bcleveland\s+park\b(?!.*\b(ohio|OH|cleveland,)\b)|\bANC\s*3C\b|\bmacomb\s+(st|playground)\b|\buptown\s+theat", re.I | re.S),
+    # Chevy Chase, DC only: the Maryland town and village share the name.
+    "chevychase": re.compile(r"\bchevy\s+chase,?\s+(dc|d\.c\.)|\bchevy\s+chase\s+(library|community\s+center|circle)\b|\blafayette\s+(elementary|park)\b|"
+                             r"\bbroad\s+branch\s+market\b|\bANC\s*3/?4G\b", re.I),
     "petworth": re.compile(r"\bpetworth\b|\bupshur st(reet)?\b|\bgrant circle\b|\bsherman circle\b", re.I),
     # Not "Kalorama" alone (Sheridan-Kalorama is ANC 2D), nor Columbia Road or 18th Street alone.
     "adamsmorgan": re.compile(r"\badams[- ]morgan\b|\badmo\b|\bkalorama (park|triangle)\b|\blanier heights\b|\bmarie reed\b|"
@@ -127,26 +244,72 @@ NOT_HERE = {
                                      r"\b(d\.?c\.?|northwest|nw)\b", re.I)),
 }
 
-_robots: dict[str, urllib.robotparser.RobotFileParser] = {}
+# robots.txt, read the way search engines do (RFC 9309): the group naming our agent beats the "*" group, rules
+# may use "*" wildcards and a "$" end anchor, the longest matching rule wins, and Allow wins a tie. The stdlib
+# parser ignores wildcards, so a rule like "Disallow: /*?" slipped through it.
+AGENT_TOKEN = USER_AGENT.split("/")[0].lower()  # "dc-neighborhoods-ingest"
+_robots: dict[str, list[tuple[bool, str]] | bool] = {}
+
+
+def parse_robots(text: str, token: str = AGENT_TOKEN) -> list[tuple[bool, str]]:
+    """The (allow, path-pattern) rules that apply to `token`."""
+    groups: list[tuple[list[str], list[tuple[bool, str]]]] = []
+    agents: list[str] = []
+    rules: list[tuple[bool, str]] = []
+    for raw in text.splitlines():
+        line = raw.split("#", 1)[0].strip()
+        if ":" not in line:
+            continue
+        key, val = (s.strip() for s in line.split(":", 1))
+        key = key.lower()
+        if key == "user-agent":
+            if rules:  # a user-agent line after rules starts a new group
+                groups.append((agents, rules))
+                agents, rules = [], []
+            agents.append(val.lower())
+        elif key in ("allow", "disallow") and agents:
+            if val:  # an empty Disallow allows everything
+                rules.append((key == "allow", val))
+    if agents:
+        groups.append((agents, rules))
+    mine = [r for a, r in groups if any(x != "*" and x in token for x in a)]
+    if mine:
+        return [rule for r in mine for rule in r]
+    return [rule for a, r in groups if "*" in a for rule in r]
+
+
+def _rule_matches(pattern: str, path: str) -> bool:
+    regex = "".join(".*" if ch == "*" else re.escape(ch) for ch in pattern.rstrip("$"))
+    return re.match(regex + ("$" if pattern.endswith("$") else ""), path) is not None
+
+
+def robots_allows(rules: list[tuple[bool, str]], path: str) -> bool:
+    best: tuple[int, bool] | None = None
+    for allow, pattern in rules:
+        if _rule_matches(pattern, path):
+            score = (len(pattern), allow)  # longest pattern wins; Allow wins a tie
+            best = max(best, score) if best else score
+    return True if best is None else best[1]
 
 
 def allowed(url: str) -> bool:
     parts = urllib.parse.urlsplit(url)
     host = f"{parts.scheme}://{parts.netloc}"
     if host not in _robots:
-        rp = urllib.robotparser.RobotFileParser()
         try:
             req = urllib.request.Request(f"{host}/robots.txt", headers={"User-Agent": USER_AGENT})
             with urllib.request.urlopen(req, timeout=20) as r:
-                rp.parse(r.read().decode("utf-8", "replace").splitlines())
+                _robots[host] = parse_robots(r.read().decode("utf-8", "replace"))
         except urllib.error.HTTPError as e:
-            # Same rule as the stdlib: 401/403 means stay out, any other error means no robots.txt.
-            rp.disallow_all = e.code in (401, 403)
-            rp.allow_all = not rp.disallow_all
+            # 401/403 means stay out; any other error (404 and so on) means there is no robots.txt.
+            _robots[host] = e.code not in (401, 403)
         except Exception:
-            rp.allow_all = True
-        _robots[host] = rp
-    return _robots[host].can_fetch(USER_AGENT, url)
+            _robots[host] = True
+    rules = _robots[host]
+    if isinstance(rules, bool):
+        return rules
+    path = (parts.path or "/") + (f"?{parts.query}" if parts.query else "")
+    return robots_allows(rules, path)
 
 
 def fetch(url: str) -> bytes:

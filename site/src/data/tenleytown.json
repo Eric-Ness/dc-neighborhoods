@@ -1,7 +1,7 @@
 {
  "slug": "tenleytown",
  "name": "Tenleytown",
- "generated_at": "2026-11-01T02:17:00Z",
+ "generated_at": "2026-11-01T03:07:36Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -2704,28 +2704,28 @@
   }
  ],
  "requests": {
-  "total": 1692,
-  "previous_total": 2293,
+  "total": 1693,
+  "previous_total": 2292,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
-    "count": 375,
+    "count": 376,
     "previous": 400
    },
    {
     "type": "Bulk Collection",
-    "count": 355,
+    "count": 356,
     "previous": 361
    },
    {
     "type": "Parking Enforcement",
     "count": 98,
-    "previous": 63
+    "previous": 64
    },
    {
     "type": "Roadway Signs",
     "count": 84,
-    "previous": 181
+    "previous": 182
    },
    {
     "type": "Tree Pruning",
@@ -2775,7 +2775,7 @@
    {
     "type": "Tree Planting",
     "count": 29,
-    "previous": 136
+    "previous": 135
    },
    {
     "type": "Container Removal",
@@ -2818,11 +2818,6 @@
     "previous": 26
    },
    {
-    "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 15,
-    "previous": 80
-   },
-   {
     "type": "DMV - Vehicle Registration Issues",
     "count": 14,
     "previous": 15
@@ -2831,6 +2826,11 @@
     "type": "Public Space Litter Can-Collection",
     "count": 14,
     "previous": 2
+   },
+   {
+    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "count": 14,
+    "previous": 79
    },
    {
     "type": "Recycling Cart Delivery",
@@ -2905,7 +2905,7 @@
    {
     "type": "DC Government Information",
     "count": 5,
-    "previous": 9
+    "previous": 8
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
@@ -3655,7 +3655,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T02:17:00Z",
+  "generated_at": "2026-11-01T03:07:36Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -4003,7 +4003,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T02:17:00Z",
+  "generated_at": "2026-11-01T03:07:36Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4504,14 +4504,14 @@
    {
     "type": "Roadway Signs",
     "median_days": 7.05,
-    "city_median_days": 6.97,
+    "city_median_days": 6.96,
     "closed_n": 347
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T02:17:00Z",
+  "generated_at": "2026-11-01T03:07:36Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4670,7 +4670,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-01T02:17:00Z",
+  "generated_at": "2026-11-01T03:07:36Z",
   "archive_days": 180,
   "sources": [
    {
@@ -5176,7 +5176,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T02:17:00Z",
+  "generated_at": "2026-11-01T03:07:36Z",
   "today": "2026-10-31",
   "days_ahead": 30,
   "sources": [
@@ -5334,7 +5334,7 @@
   "anc_meetings": []
  },
  "jobs": {
-  "generated_at": "2026-11-01T02:17:00Z",
+  "generated_at": "2026-11-01T03:07:36Z",
   "max_age_days": 120,
   "sources": [
    {

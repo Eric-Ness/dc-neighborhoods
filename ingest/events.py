@@ -49,7 +49,11 @@ CALENDARS = {"tenleytown": ["tms"], "petworth": []}
 # matches for this neighborhood's ANCs are archived run to run, like the headlines.
 OANC_FEED = "https://oanc.dc.gov/rss.xml"
 OANC_PAGE = "https://oanc.dc.gov/"
-ANCS = {"petworth": ["4C", "4D"], "tenleytown": ["3E", "3F", "3/4G"], "adamsmorgan": ["1C", "2B"], "friendshipheights": ["3E"]}
+ANCS = {"petworth": ["4C", "4D"], "tenleytown": ["3E", "3F", "3/4G"], "adamsmorgan": ["1C", "2B"], "friendshipheights": ["3E"],
+        # From ingest/setup_hood.py (SMD centroids inside each boundary), 2026-11-01.
+        "capitolhill": ["6B", "6C"], "columbiaheights": ["1A", "1E", "1D"], "georgetown": ["2E"], "chevychase": ["3/4G"],
+        "anacostia": ["8A", "8B"], "clevelandpark": ["3C"], "dupontcircle": ["2B"], "hstreet": ["6A", "6C"],
+        "navyyard": ["8F", "6B", "6D"]}
 OANC_TITLE = re.compile(r"^([A-Z][a-z]+ \d{1,2}, \d{4}),?\s+ANC\s+([0-9/]+[A-Z])\s+(Special\s+)?Public Meeting", re.I)
 ANC_ARCHIVE_DAYS = 400
 ANC_FEEDS = {"tenleytown": ("ANC 3E", "https://anc3e.org/feed/", "https://anc3e.org/"),
@@ -143,8 +147,11 @@ def build_markets(geom: dict, today: date) -> tuple[list[dict], list[dict]]:
     events, unread = [], []
     for r in rows:
         name = news.plain(r.get("NAME"))
+        site = (r.get("WEBSITE") or "").strip()
+        if site and not re.match(r"https?://", site, re.I):  # DC's list sometimes omits the scheme ("www.dolgrocery.org")
+            site = "https://" + site
         base = {"title": name, "place": news.plain(r.get("ADDRESS")), "time": news.plain(r.get("TIMES")) or None,
-                "url": (r.get("WEBSITE") or "").strip() or MARKETS_PAGE, "source": "DC farmers market list", "kind": "market"}
+                "url": site or MARKETS_PAGE, "source": "DC farmers market list", "kind": "market"}
         dates = market_dates(r.get("DAYS") or "", r.get("STARTDATE"), r.get("ENDDATE"), today)
         if dates is None:
             unread.append({**base, "schedule": news.plain(r.get("DAYS"))})

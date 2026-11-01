@@ -61,6 +61,15 @@ SITES = {
         ("cn", "Friendship Heights", "in", "Friendship Heights"),
         ("au", "Tenley Campus", "nearby", "4300 Nebraska Ave NW, about 0.6 mi south"),
     ],
+    "columbiaheights": [
+        ("cn", "Columbia Heights", "in", "Columbia Heights"),
+    ],
+    "anacostia": [
+        ("cn", "Anacostia", "in", "2101 Martin Luther King Jr Ave SE"),
+    ],
+    "chevychase": [
+        ("cn", "Friendship Heights", "nearby", "Friendship Heights, about 0.8 mi west"),
+    ],
 }
 GREENHOUSE = ["sweetgreen"]  # local employers on Greenhouse; extend as more are found
 ZIPS = {"petworth": ("20011",), "tenleytown": ("20016", "20015"),  # no Adams Morgan: 20009 also covers Dupont, Logan, U St

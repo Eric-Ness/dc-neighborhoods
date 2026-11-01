@@ -3,6 +3,7 @@
 Usage:
     python ingest/run.py            # write site/src/data/<slug>.json
     python ingest/run.py --check    # same, then validate the output (used by CI and GATES.md)
+    python ingest/run.py --only=georgetown,chevychase   # rebuild just those (others keep their snapshot)
 
 Privacy rules are enforced here, at ingest, so nothing personal reaches the repo or the site:
 - Permits keep an allowlist of fields; owner and applicant names are never requested.
@@ -330,8 +331,10 @@ def main() -> int:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     now = time.time()
     outputs: dict[str, dict] = {}
+    # --only a,b rebuilds just those neighborhoods (the others keep their last snapshot), e.g. after a boundary change.
+    only = next((a.split("=", 1)[1].split(",") for a in sys.argv if a.startswith("--only=")), None)
     for hood in config["neighborhoods"]:
-        if not hood["enabled"]:
+        if not hood["enabled"] or (only and hood["slug"] not in only):
             continue
         data = build(hood, config, now)
         (OUT_DIR / f"{hood['slug']}.json").write_text(json.dumps(data, indent=1), encoding="utf-8")

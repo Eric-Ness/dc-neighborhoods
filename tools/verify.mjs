@@ -251,8 +251,9 @@ checks.sitefull = () => {
       assert(html.includes("Not affiliated with the DC Government"), `${tag}: independence footer missing`);
       const visible = html.replace(/<script[\s\S]*?<\/script>/g, "");
       // Case-insensitive for mockup leftovers; whole-word and case-sensitive for NaN/undefined,
-      // so real permit text like "maintenance" or "TENANT" can't trip it.
-      assert(!/LAYOUT C\d|\bapprox\b|lorem|\{\{/i.test(visible), `${tag}: mockup leftover in page`);
+      // so real permit text like "maintenance" or "TENANT" can't trip it. ("approx" was dropped: permits say
+      // "approx. 5,901 sf".)
+      assert(!/LAYOUT C\d|lorem|\{\{/i.test(visible), `${tag}: mockup leftover in page`);
       assert(!/\bNaN\b|\bundefined\b/.test(visible), `${tag}: NaN or undefined rendered in page`);
       for (const q of SITE_PAGES) assert(html.includes(`href="/${h.slug}/${q}"`), `${tag}: nav link to /${h.slug}/${q} missing`);
       // every internal link on the page resolves to a built file (anchors ignored)

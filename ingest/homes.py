@@ -101,6 +101,62 @@ HOODS = {
         "otr": [("Chevy Chase", "A"), ("American University", "A")],
         "label": "OTR assessment sub-areas Chevy Chase A and American University A",
     },
+    # The nine below were measured 2026-11-01 with ingest/setup_hood.py. Rule: keep a sub-area that holds at
+    # least 5% of in-boundary homes, unless less than about 30% of the sub-area itself lies inside.
+    "capitolhill": {
+        # Capitol Hill A/B/C are 85-100% inside; Old City 1 M is 70% inside. Old City 1 C (29% inside) is left out.
+        "otr": [("Capitol Hill", "A"), ("Capitol Hill", "B"), ("Capitol Hill", "C"), ("Old City 1", "M")],
+        "label": "OTR assessment sub-areas Capitol Hill A, B and C and Old City 1 M",
+    },
+    "columbiaheights": {
+        # D and C are 93-100% inside, A 53%. E (26% inside) is left out.
+        "otr": [("Columbia Heights", "D"), ("Columbia Heights", "C"), ("Columbia Heights", "A")],
+        "label": "OTR assessment sub-areas Columbia Heights A, C and D",
+    },
+    "georgetown": {
+        # Boundary is the Georgetown Historic District, which holds every OTR Georgetown sub-area (A-J), each
+        # wholly inside. Observatory Circle (13% inside) is left out.
+        "otr": [("Georgetown", None)],
+        "label": "OTR assessment neighborhood \"Georgetown\" (all sub-areas)",
+    },
+    "chevychase": {
+        # Boundary is ANC 3/4G. Chevy Chase B-E and Hawthorne are 84-100% inside; A is 49% (it is shared with
+        # Friendship Heights, west of Wisconsin) and holds 19% of in-boundary homes, so it is kept.
+        "otr": [("Chevy Chase", None), ("Hawthorne", None)],
+        "label": "OTR assessment neighborhoods \"Chevy Chase\" (all sub-areas) and \"Hawthorne\"",
+    },
+    "anacostia": {
+        # Anacostia A 96% inside, Barry Farms 85%, Randle Heights B 56%. Anacostia B (24% inside) is left out.
+        "otr": [("Anacostia", "A"), ("Barry Farms", None), ("Randle Heights", "B")],
+        "label": "OTR assessment sub-areas Anacostia A and Randle Heights B, and Barry Farms",
+    },
+    "clevelandpark": {
+        # The historic district holds parts of two OTR areas: Cleveland Park (39% of it inside: the area runs
+        # north and west of the district) and Forest Hills (24%: the Connecticut Ave apartment houses).
+        "otr": [("Cleveland Park", None), ("Forest Hills", None)],
+        "label": "OTR assessment neighborhoods Cleveland Park and Forest Hills",
+    },
+    "dupontcircle": {
+        # 73% of homes in the historic district are OTR Old City 2 D (78% of it inside). Central (20% inside,
+        # mostly downtown condos) is left out. Old City 2 D is shared with Adams Morgan's southern edge.
+        "otr": [("Old City 2", "D")],
+        "label": "OTR assessment sub-area Old City 2 D",
+        "primary": "condo",  # 4,062 condo parcels against 261 houses
+    },
+    "hstreet": {
+        # Old City 1 J 87% inside, L 57%, F 51%. K (22% inside) is left out.
+        "otr": [("Old City 1", "L"), ("Old City 1", "F"), ("Old City 1", "J")],
+        "label": "OTR assessment sub-areas Old City 1 F, J and L",
+    },
+    "navyyard": {
+        # Old City 1 E (84% inside) and the Washington Navy Yard area (wholly inside). Mostly apartment and condo
+        # buildings: 839 condo parcels against 301 houses.
+        "otr": [("Old City 1", "E"), ("Washington Navy Yard", None)],
+        "label": "OTR assessment sub-areas Old City 1 E and Washington Navy Yard",
+        # Mostly rental apartments: about 15 house and 27 condo sales a year, too few of either for a monthly
+        # trend, so houses and condos are counted together.
+        "primary": "all",
+    },
 }
 
 PERSONAL = {"OWNERNAME", "OWNNAME2", "CAREOFNAME", "ADDRESS1", "ADDRESS2", "CITYSTZIP", "MORTGAGECO", "SALE_CURR_OWNER"}
@@ -258,9 +314,12 @@ def build(geom: dict, hood: dict, now: float) -> dict:
 
     last12, prev12, recent = since(365), since(730, 365), since(RECENT_DAYS)
 
+    def of(kind: str, s: dict) -> bool:  # "all" = houses and condos together, for areas with few of either
+        return kind == "all" or s["kind"] == kind
+
     def block(kind: str) -> dict:
-        a = [s["price"] for s in last12 if s["kind"] == kind]
-        b = [s["price"] for s in prev12 if s["kind"] == kind]
+        a = [s["price"] for s in last12 if of(kind, s)]
+        b = [s["price"] for s in prev12 if of(kind, s)]
         return {"median_12mo": _median(a), "count_12mo": len(a), "median_prev_12mo": _median(b), "count_prev_12mo": len(b)}
 
     # CAMA building area and bedrooms for recent house sales (condos are in CAMA Condominium, not used here).
@@ -280,8 +339,8 @@ def build(geom: dict, hood: dict, now: float) -> dict:
         v = cama.get(s["ssl"], {}).get("BEDRM") if s["kind"] == "house" else None
         return int(v) if v else None
 
-    primary = cfg.get("primary", "house")  # the home type that leads the section: houses, or condos where houses are rare
-    recent_primary = [s for s in recent if s["kind"] == primary]
+    primary = cfg.get("primary", "house")  # what leads the section: houses, condos where houses are rare, or "all"
+    recent_primary = [s for s in recent if primary == "all" or s["kind"] == primary]
     ppsf = [s["price"] / gba(s) for s in recent_primary if gba(s)]  # floor area is known for houses only
 
     # Calendar months: this month (partial) and the 11 before it. Primary home type only.
@@ -293,7 +352,7 @@ def build(geom: dict, hood: dict, now: float) -> dict:
     months.reverse()
     by_month = []
     for mo in months:
-        p = [s["price"] for s in sales if s["kind"] == primary and s["date"].startswith(mo)]
+        p = [s["price"] for s in sales if (primary == "all" or s["kind"] == primary) and s["date"].startswith(mo)]
         by_month.append({"month": mo, "median": _median(p) if len(p) >= MIN_MONTH_SALES else None, "count": len(p)})
 
     with_assessment = [s for s in last12 if s["assessed"]]
@@ -342,6 +401,7 @@ def build(geom: dict, hood: dict, now: float) -> dict:
         "otr_neighborhoods": [{"nbhdname": n, "subnbhd": s} for n, s in otr],
         "boundary_fit": ov,
         "primary": primary,
+        **({"all": block("all")} if primary == "all" else {}),
         "house": block("house"),
         "condo": block("condo"),
         "last_60d": {
@@ -352,7 +412,7 @@ def build(geom: dict, hood: dict, now: float) -> dict:
         },
         "above_assessment_12mo": {"n": sum(1 for s in with_assessment if s["price"] > s["assessed"]), "of": len(with_assessment)},
         "by_month": by_month,
-        "by_month_basis": f"{primary}s only; calendar months, the last one in progress; median null when under {MIN_MONTH_SALES} sales",
+        "by_month_basis": f"{'houses and condos together' if primary == 'all' else primary + 's only'}; calendar months, the last one in progress; median null when under {MIN_MONTH_SALES} sales",
         "recent_sales": [
             {"address": s["address"], "date": s["date"], "price": s["price"], "kind": s["kind"],
              "beds": beds(s), "sqft": gba(s), "assessed": s["assessed"]}

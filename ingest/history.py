@@ -86,6 +86,61 @@ ARCHIVE = {
         "local": r"wisconsin\s+av|western\s+av|jenifer|harrison\s+st|military\s+road|reno\s+road|"
                  r"chevy\s+chase\s+circle|tenley",
     },
+    # East-side terms tested against the 1926 Evening Star (ingest/SOURCES-EAST.md); west side from 1926 usage.
+    "capitolhill": {
+        "terms": ['"Lincoln Park"', '"Stanton Park"', '"East Capitol street"', '"Capitol Hill"'],
+        # "Capitol Hill" and "Lincoln Park" also mean Congress and Chicago, so they need a local cue (see `local`).
+        "pattern": r"stanton\s+park|east\s+capitol\s+st|pennsylvania\s+av(enue|e)?\.?\s+(southeast|s\.?\s?e)|eastern\s+market|"
+                   r"seward\s+square|(lincoln\s+park|capitol\s+hill)(?=.{0,200}(s\.\s?e\.|n\.\s?e\.|southeast|northeast|citizens|"
+                   r"east\s+capitol|massachusetts\s+av))",
+        "local": r"east\s+capitol|lincoln\s+park|stanton\s+park|eastern\s+market|southeast|northeast|s\.\s?e\.|n\.\s?e\.",
+    },
+    "hstreet": {
+        "terms": ['"H street"'],  # loc.gov drops one-letter words, so the NE form is checked locally
+        "pattern": r"\bh\s+st(reet|\.)?\s*,?\s*n(orth)?\.?\s?e(ast)?\b",
+        "local": r"northeast|n\.\s?e\.|empire\s+theat|gallaudet",
+    },
+    "navyyard": {
+        "terms": ['"Washington Navy Yard"', '"navy yard"'],
+        # In 1926 "navy yard" usually meant Philadelphia or Norfolk; only the Washington yard or SE cues count.
+        "pattern": r"washington\s+navy\s+yard|navy\s+yard\s+(here|in\s+this\s+city|employes|workers|gate)|gun\s+factory|"
+                   r"\bm\s+st(reet|\.)?\s+(southeast|s\.?\s?e)|(8th|eighth)\s+st(reet|\.)?\s+(southeast|s\.?\s?e)",
+        "local": r"southeast|s\.\s?e\.|washington\s+navy\s+yard|8th\s+st|m\s+st",
+    },
+    "anacostia": {
+        "terms": ['"Anacostia"', '"Nichols avenue"', '"Good Hope road"'],
+        # In 1926 Anacostia was the town; the river and its flats, park and bridge are excluded.
+        "pattern": r"anacostia(?!\s+(river|flats?|park|water\s*front|bridge|reclamation|basin))|nichols\s+av|good\s+hope\s+r(oa)?d",
+        "local": r"nichols\s+av|good\s+hope|minnesota\s+av|cedar\s+hill|douglass|anacostia\s+(citizens|lodge|station|road)",
+    },
+    "columbiaheights": {
+        "terms": ['"Columbia Heights"', '"Tivoli"'],
+        "pattern": r"columbia\s+heights|tivoli\s+theat|crandall.s\s+tivoli",
+        "local": r"14th\s+st|fourteenth|park\s+road|irving|columbia\s+road|tivoli|citizens",
+    },
+    "georgetown": {
+        "terms": ['"Georgetown"'],
+        # Georgetown in 1926 also meant towns in other states and the university's teams; keep local cues.
+        "pattern": r"georgetown(?!,?\s+(ky|del|s\.?\s?c|texas|ohio|colo|mass|me\b|kentucky|delaware))(?=.{0,200}"
+                   r"(m\s+st|wisconsin\s+av|canal|key\s+bridge|n\.\s?w\.|northwest|citizens|p\s+st|q\s+st|r\s+st|dumbarton))",
+        "local": r"m\s+st|wisconsin\s+av|canal|dumbarton|citizens|n\.\s?w\.",
+    },
+    "dupontcircle": {
+        "terms": ['"Dupont Circle"', '"Du Pont Circle"'],
+        "pattern": r"du\s*pont\s+circle",
+        "local": r"connecticut\s+av|massachusetts\s+av|new\s+hampshire\s+av|p\s+st|q\s+st|r\s+st|n\.\s?w\.",
+    },
+    "clevelandpark": {
+        "terms": ['"Cleveland Park"'],
+        "pattern": r"cleveland\s+park(?!,?\s+(ohio|o\.))",
+        "local": r"connecticut\s+av|macomb|newark|ordway|porter|wisconsin\s+av|citizens",
+    },
+    "chevychase": {
+        # Real-estate ads near Connecticut Ave are this neighborhood (they were wrong only for Friendship Heights).
+        "terms": ['"Chevy Chase, D. C."', '"Chevy Chase, D.C."'],
+        "pattern": r"chevy\s+chase,?\s+d\.?\s*c",
+        "local": r"connecticut\s+av|chevy\s+chase\s+circle|livingston|northampton|military\s+road|citizens",
+    },
 }
 
 # Content screening. A clip that matches any of these is skipped, never published. 1920s news and

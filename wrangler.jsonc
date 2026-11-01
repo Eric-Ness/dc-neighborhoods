@@ -18,7 +18,26 @@
     { "pattern": "adamsmorgan.org", "custom_domain": true },
     { "pattern": "www.adamsmorgan.org", "custom_domain": true },
     { "pattern": "friendshipheights.org", "custom_domain": true },
-    { "pattern": "www.friendshipheights.org", "custom_domain": true }
+    { "pattern": "www.friendshipheights.org", "custom_domain": true },
+    { "pattern": "capitolhilldc.org", "custom_domain": true },
+    { "pattern": "www.capitolhilldc.org", "custom_domain": true },
+    { "pattern": "columbiaheights.net", "custom_domain": true },
+    { "pattern": "www.columbiaheights.net", "custom_domain": true },
+    { "pattern": "georgetowndc.org", "custom_domain": true },
+    { "pattern": "www.georgetowndc.org", "custom_domain": true },
+    { "pattern": "chevychasedc.net", "custom_domain": true },
+    { "pattern": "www.chevychasedc.net", "custom_domain": true },
+    { "pattern": "anacostiadc.net", "custom_domain": true },
+    { "pattern": "www.anacostiadc.net", "custom_domain": true },
+    { "pattern": "clevelandpark.org", "custom_domain": true },
+    { "pattern": "www.clevelandpark.org", "custom_domain": true },
+    { "pattern": "dupontcircledc.net", "custom_domain": true },
+    { "pattern": "www.dupontcircledc.net", "custom_domain": true },
+    { "pattern": "hstreet.net", "custom_domain": true },
+    { "pattern": "www.hstreet.net", "custom_domain": true },
+    { "pattern": "navyyarddc.net", "custom_domain": true },
+    { "pattern": "www.navyyarddc.net", "custom_domain": true }
+    // capitolriverfront.net (redirects to navyyarddc.net) comes back once its zone is active on Cloudflare.
     // petworth.net and tenleytown.net come back here once those zones are on Cloudflare;
     // the Worker already 301s them to the .org.
   ]

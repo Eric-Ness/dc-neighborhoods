@@ -24,6 +24,7 @@ const fullDate = (d: string) => new Date(d + "T12:00:00Z").toLocaleDateString("e
 const house = h ? change(h.house) : null;
 const condo = h ? change(h.condo) : null;
 const kind = h?.primary ?? "house";
+const word = kind === "all" ? "home" : kind;
 const months = h?.by_month ?? [];
 const maxMonth = Math.max(...months.map((m) => m.median ?? 0), 1);
 type Fit = { squares: number; area_parcels: number; area_share_inside: number | null; boundary_share_in_area: number | null };
@@ -62,8 +63,8 @@ const withAssess = sales.filter((s) => s.assessed != null).length;
 
     <div class="row">
       <section class="panel" aria-labelledby="mo-h">
-        <div class="ph"><h2 id="mo-h">Median {kind} price by month</h2><span class="sub">Bar label: sales that month</span></div>
-        <div class="vbars homes-vb" role="img" aria-label={`Monthly median ${kind} price: ${months.map((m) => `${monthName(m.month, true)} ${m.median == null ? "no median" : money(m.median)} from ${m.count} sales`).join("; ")}`}>
+        <div class="ph"><h2 id="mo-h">Median {word} price by month</h2><span class="sub">Bar label: sales that month</span></div>
+        <div class="vbars homes-vb" role="img" aria-label={`Monthly median ${word} price: ${months.map((m) => `${monthName(m.month, true)} ${m.median == null ? "no median" : money(m.median)} from ${m.count} sales`).join("; ")}`}>
           {months.map((m, i) => (
             <div title={`${monthName(m.month, true)}: ${m.median == null ? "fewer than 3 sales, no median" : money(m.median)} · ${m.count} sales`}>
               <i class={i === months.length - 1 ? "homes-part" : ""} style={`height:calc((100% - 30px) * ${m.median == null ? 0 : (m.median / maxMonth).toFixed(3)})`}></i>
