@@ -1,7 +1,7 @@
 {
  "slug": "columbiaheights",
  "name": "Columbia Heights",
- "generated_at": "2026-11-01T09:18:20Z",
+ "generated_at": "2026-11-01T20:25:43Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1233,19 +1233,6 @@
    "smd": "1A05"
   },
   {
-   "id": "B2603913",
-   "issued": "2026-10-26T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "3602 NEW HAMPSHIRE AVE NW 20010",
-   "work": "Revision for already approved interior renovation for permit# B2401860.Revision on Mechanical, plumbing, and minor modification on the front porch.",
-   "zoning": "RF-1",
-   "lat": 38.93421,
-   "lon": -77.02617,
-   "smd": "1A07"
-  },
-  {
    "id": "P2700747",
    "issued": "2026-10-26T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -1309,6 +1296,19 @@
    "lat": 38.93425,
    "lon": -77.02195,
    "smd": "1E01"
+  },
+  {
+   "id": "B2603913",
+   "issued": "2026-10-26T04:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "3602 NEW HAMPSHIRE AVE NW 20010",
+   "work": "Revision for already approved interior renovation for permit# B2401860.Revision on Mechanical, plumbing, and minor modification on the front porch.",
+   "zoning": "RF-1",
+   "lat": 38.93421,
+   "lon": -77.02617,
+   "smd": "1A07"
   },
   {
    "id": "E2700836",
@@ -2260,6 +2260,19 @@
    "smd": "1E04"
   },
   {
+   "id": "BP2700128",
+   "issued": "2026-10-07T04:00:00Z",
+   "group": "Minor work",
+   "type": "POST CARD",
+   "subtype": "BUILDING",
+   "address": "1016 IRVING ST NW 20010",
+   "work": "",
+   "zoning": "RF-1",
+   "lat": 38.92858,
+   "lon": -77.02695,
+   "smd": "1A10"
+  },
+  {
    "id": "P2700193",
    "issued": "2026-10-07T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -2284,19 +2297,6 @@
    "lat": 38.93105,
    "lon": -77.02631,
    "smd": "1E03"
-  },
-  {
-   "id": "BP2700128",
-   "issued": "2026-10-07T04:00:00Z",
-   "group": "Minor work",
-   "type": "POST CARD",
-   "subtype": "BUILDING",
-   "address": "1016 IRVING ST NW 20010",
-   "work": "",
-   "zoning": "RF-1",
-   "lat": 38.92858,
-   "lon": -77.02695,
-   "smd": "1A10"
   },
   {
    "id": "GF2700104",
@@ -2521,213 +2521,208 @@
   }
  ],
  "requests": {
-  "total": 1912,
-  "previous_total": 2218,
+  "total": 1896,
+  "previous_total": 2177,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 296,
-    "previous": 281
+    "count": 283,
+    "previous": 276
    },
    {
     "type": "Bulk Collection",
-    "count": 205,
-    "previous": 257
+    "count": 216,
+    "previous": 266
    },
    {
     "type": "Illegal Dumping",
-    "count": 168,
-    "previous": 146
+    "count": 170,
+    "previous": 149
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 148,
-    "previous": 166
+    "count": 145,
+    "previous": 163
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 120,
-    "previous": 132
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "count": 79,
-    "previous": 99
+    "count": 132,
+    "previous": 129
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 78,
-    "previous": 152
+    "count": 75,
+    "previous": 149
    },
    {
-    "type": "DOEE - LIHEAP",
-    "count": 62,
-    "previous": 5
+    "type": "Sanitation Enforcement",
+    "count": 72,
+    "previous": 95
    },
    {
     "type": "Dead Animal Collection",
-    "count": 57,
-    "previous": 67
+    "count": 63,
+    "previous": 64
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "count": 63,
+    "previous": 4
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 56,
+    "count": 62,
     "previous": 14
    },
    {
-    "type": "Trash Cart - Delivery",
-    "count": 53,
-    "previous": 57
-   },
-   {
     "type": "Public Space Litter Can-Collection",
-    "count": 51,
-    "previous": 65
+    "count": 55,
+    "previous": 44
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
-    "count": 44,
-    "previous": 50
+    "count": 48,
+    "previous": 57
    },
    {
-    "type": "Residential Parking Permit Violation",
-    "count": 36,
-    "previous": 33
+    "type": "Trash Cart - Delivery",
+    "count": 44,
+    "previous": 55
    },
    {
     "type": "Recycling Collection - Missed",
     "count": 34,
-    "previous": 72
+    "previous": 67
+   },
+   {
+    "type": "Residential Parking Permit Violation",
+    "count": 31,
+    "previous": 34
+   },
+   {
+    "type": "Abandoned Bicycle",
+    "count": 24,
+    "previous": 6
    },
    {
     "type": "Graffiti Removal",
-    "count": 29,
+    "count": 23,
     "previous": 24
    },
    {
     "type": "Roadway Signs",
-    "count": 27,
-    "previous": 16
-   },
-   {
-    "type": "Abandoned Bicycle",
-    "count": 23,
-    "previous": 5
-   },
-   {
-    "type": "Abandoned Vehicle - On Public Property",
-    "count": 20,
-    "previous": 24
+    "count": 22,
+    "previous": 15
    },
    {
     "type": "Sidewalk Repair",
-    "count": 20,
-    "previous": 15
-   },
-   {
-    "type": "DOB - Vacant Private Property Inspection",
     "count": 19,
-    "previous": 15
-   },
-   {
-    "type": "Tree Pruning",
-    "count": 19,
-    "previous": 10
+    "previous": 20
    },
    {
     "type": "Recycling Cart Delivery",
     "count": 18,
-    "previous": 24
+    "previous": 23
    },
    {
     "type": "Tree Planting",
     "count": 18,
-    "previous": 8
+    "previous": 7
+   },
+   {
+    "type": "Abandoned Vehicle - On Public Property",
+    "count": 18,
+    "previous": 21
    },
    {
     "type": "Tree Inspection",
     "count": 18,
-    "previous": 38
+    "previous": 36
    },
    {
-    "type": "DC Government Information",
-    "count": 14,
-    "previous": 7
+    "type": "DOB - Vacant Private Property Inspection",
+    "count": 17,
+    "previous": 15
    },
    {
     "type": "Container Removal",
-    "count": 13,
-    "previous": 26
+    "count": 15,
+    "previous": 25
    },
    {
-    "type": "Trash Cart Repair",
-    "count": 13,
-    "previous": 17
-   },
-   {
-    "type": "DMV - Drivers License/ID Issues",
-    "count": 13,
-    "previous": 17
-   },
-   {
-    "type": "Rat Replacement Containers",
-    "count": 12,
-    "previous": 23
-   },
-   {
-    "type": "DMV - Vehicle Registration Issues",
-    "count": 12,
+    "type": "Tree Pruning",
+    "count": 15,
     "previous": 11
    },
    {
     "type": "DGS - Playground Repair",
-    "count": 10,
+    "count": 13,
     "previous": 3
    },
    {
-    "type": "Pothole",
-    "count": 9,
-    "previous": 13
+    "type": "Trash Cart Repair",
+    "count": 12,
+    "previous": 16
    },
    {
-    "type": "DOB - Illegal Construction",
-    "count": 9,
+    "type": "DC Government Information",
+    "count": 12,
     "previous": 7
    },
    {
-    "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
-    "count": 9,
+    "type": "DMV - Drivers License/ID Issues",
+    "count": 12,
+    "previous": 20
+   },
+   {
+    "type": "DOB - Illegal Construction",
+    "count": 11,
+    "previous": 6
+   },
+   {
+    "type": "DMV - Vehicle Registration Issues",
+    "count": 11,
     "previous": 11
+   },
+   {
+    "type": "Rat Replacement Containers",
+    "count": 10,
+    "previous": 24
+   },
+   {
+    "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
+    "count": 10,
+    "previous": 12
    },
    {
     "type": "Public Space Inspection",
     "count": 8,
-    "previous": 9
+    "previous": 10
+   },
+   {
+    "type": "Pothole",
+    "count": 8,
+    "previous": 11
+   },
+   {
+    "type": "Missed Curbside Compost Collection",
+    "count": 8,
+    "previous": 6
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 7,
-    "previous": 52
-   },
-   {
-    "type": "Missed Curbside Compost Collection",
-    "count": 6,
-    "previous": 6
+    "previous": 50
    },
    {
     "type": "Traffic Safety Input",
     "count": 6,
-    "previous": 12
+    "previous": 9
    },
    {
-    "type": "Recycling Cart - Repair",
-    "count": 5,
-    "previous": 10
-   },
-   {
-    "type": "DOEE - General Air Quality Concerns",
-    "count": 5,
-    "previous": 1
+    "type": "Pet Waste Complaint",
+    "count": 6,
+    "previous": 2
    },
    {
     "type": "Supercan - Delivery",
@@ -2740,44 +2735,44 @@
     "previous": 12
    },
    {
-    "type": "Illegal Poster",
-    "count": 4,
-    "previous": 3
-   },
-   {
     "type": "Roadway Repair",
     "count": 4,
     "previous": 3
    },
    {
-    "type": "Pet Waste Complaint",
-    "count": 4,
-    "previous": 2
-   },
-   {
-    "type": "FEMS - Smoke Alarm Application",
+    "type": "DOEE - General Air Quality Concerns",
     "count": 4,
     "previous": 1
    },
    {
+    "type": "Illegal Poster",
+    "count": 3,
+    "previous": 5
+   },
+   {
     "type": "OCTFME - Down Cable Wires",
     "count": 3,
-    "previous": 6
+    "previous": 7
+   },
+   {
+    "type": "Recycling Cart - Repair",
+    "count": 3,
+    "previous": 8
+   },
+   {
+    "type": "FEMS - Smoke Alarm Application",
+    "count": 3,
+    "previous": 1
    },
    {
     "type": "DOEE - Engine Idling Tips",
     "count": 3,
-    "previous": 5
+    "previous": 4
    },
    {
-    "type": "Alley Cleaning",
-    "count": 2,
-    "previous": 48
-   },
-   {
-    "type": "DMV - Vehicle Title Issues",
-    "count": 2,
-    "previous": 5
+    "type": "Bicycle Services",
+    "count": 3,
+    "previous": 4
    },
    {
     "type": "DMV - Forms, Applications, and Manuals Request",
@@ -2787,12 +2782,12 @@
    {
     "type": "Signed Street Sweeping Missed",
     "count": 2,
-    "previous": 2
+    "previous": 1
    },
    {
     "type": "Tree Removal",
     "count": 2,
-    "previous": 16
+    "previous": 18
    },
    {
     "type": "Emergency No-Parking Verification",
@@ -2802,12 +2797,7 @@
    {
     "type": "Roadway Markings / Pylons",
     "count": 2,
-    "previous": 5
-   },
-   {
-    "type": "FEMS - Fire Safety Inspection",
-    "count": 2,
-    "previous": 0
+    "previous": 6
    },
    {
     "type": "DMV - Driver and Vehicle Services Refund",
@@ -2815,19 +2805,19 @@
     "previous": 0
    },
    {
-    "type": "Bicycle Services",
+    "type": "Public Space Litter Can Installation",
     "count": 2,
-    "previous": 5
-   },
-   {
-    "type": "Bus Stop Issues",
-    "count": 1,
-    "previous": 0
+    "previous": 1
    },
    {
     "type": "Supercan - Repair",
     "count": 1,
-    "previous": 5
+    "previous": 4
+   },
+   {
+    "type": "Alley Cleaning",
+    "count": 1,
+    "previous": 45
    },
    {
     "type": "DMV - Online Processing Issues",
@@ -2850,14 +2840,19 @@
     "previous": 1
    },
    {
+    "type": "DMV - Vehicle Title Issues",
+    "count": 1,
+    "previous": 4
+   },
+   {
     "type": "DC How Am I Driving?",
     "count": 1,
     "previous": 1
    },
    {
-    "type": "Public Space Litter Can Installation",
+    "type": "FEMS - Fire Safety Inspection",
     "count": 1,
-    "previous": 1
+    "previous": 0
    },
    {
     "type": "DGS-Exterior Lighting on DC Gov Property",
@@ -2875,8 +2870,228 @@
     "previous": 0
    }
   ],
-  "open": 394,
+  "open": 408,
   "recent": [
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-01T19:08:58Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3600 block of NEW HAMPSHIRE AVENUE NW",
+    "lat": 38.935,
+    "lon": -77.025
+   },
+   {
+    "type": "DOB - Illegal Construction",
+    "agency": "DOB",
+    "added": "2026-11-01T18:47:05Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1000 block of MONROE STREET NW",
+    "lat": 38.933,
+    "lon": -77.028
+   },
+   {
+    "type": "Dead Animal Collection",
+    "agency": "DPW",
+    "added": "2026-11-01T18:34:58Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3500 block of 10TH STREET NW",
+    "lat": 38.933,
+    "lon": -77.027
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-01T18:32:23Z",
+    "resolved": "2026-11-01T19:07:03Z",
+    "status": "Closed",
+    "block": "700 block of PRINCETON PLACE NW",
+    "lat": 38.935,
+    "lon": -77.022
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-01T18:03:37Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "700 block of KENYON STREET NW",
+    "lat": 38.93,
+    "lon": -77.024
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "agency": "DOH",
+    "added": "2026-11-01T17:54:23Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1400 block of SPRING ROAD NW",
+    "lat": 38.937,
+    "lon": -77.035
+   },
+   {
+    "type": "Abandoned Bicycle",
+    "agency": "DPW",
+    "added": "2026-11-01T17:51:56Z",
+    "resolved": null,
+    "status": "Open (Duplicate)",
+    "block": "600 block of ROCK CREEK CHURCH ROAD NW",
+    "lat": 38.937,
+    "lon": -77.02
+   },
+   {
+    "type": "Abandoned Bicycle",
+    "agency": "DPW",
+    "added": "2026-11-01T17:50:35Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "600 block of ROCK CREEK CHURCH ROAD NW",
+    "lat": 38.937,
+    "lon": -77.02
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "agency": "DDOT",
+    "added": "2026-11-01T17:33:36Z",
+    "resolved": "2026-11-01T17:40:57Z",
+    "status": "Closed",
+    "block": "3100 block of 11TH STREET NW",
+    "lat": 38.93,
+    "lon": -77.027
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "agency": "DDOT",
+    "added": "2026-11-01T17:12:59Z",
+    "resolved": "2026-11-01T17:20:53Z",
+    "status": "Closed",
+    "block": "1400 block of IRVING STREET NW",
+    "lat": 38.928,
+    "lon": -77.035
+   },
+   {
+    "type": "Sanitation Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-01T17:09:25Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "700 block of KENYON STREET NW",
+    "lat": 38.93,
+    "lon": -77.025
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "agency": "DDOT",
+    "added": "2026-11-01T16:59:10Z",
+    "resolved": "2026-11-01T17:06:03Z",
+    "status": "Closed",
+    "block": "700 block of QUEBEC PLACE NW",
+    "lat": 38.936,
+    "lon": -77.022
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "agency": "DDOT",
+    "added": "2026-11-01T16:58:12Z",
+    "resolved": "2026-11-01T17:05:59Z",
+    "status": "Closed",
+    "block": "700 block of QUEBEC PLACE NW",
+    "lat": 38.936,
+    "lon": -77.022
+   },
+   {
+    "type": "Recycling Cart Delivery",
+    "agency": "DPW",
+    "added": "2026-11-01T16:30:57Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "400 block of NEWTON PLACE NW",
+    "lat": 38.934,
+    "lon": -77.02
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "agency": "DOH",
+    "added": "2026-11-01T16:30:20Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1000 block of PARK ROAD NW",
+    "lat": 38.932,
+    "lon": -77.028
+   },
+   {
+    "type": "Dead Animal Collection",
+    "agency": "DPW",
+    "added": "2026-11-01T16:20:08Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "700 block of COLUMBIA ROAD NW",
+    "lat": 38.928,
+    "lon": -77.024
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "agency": "DDOT",
+    "added": "2026-11-01T15:42:27Z",
+    "resolved": "2026-11-01T15:50:54Z",
+    "status": "Closed",
+    "block": "3500 block of 14TH STREET NW",
+    "lat": 38.936,
+    "lon": -77.032
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-01T14:24:07Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1400 block of OGDEN STREET NW",
+    "lat": 38.935,
+    "lon": -77.035
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-01T14:20:36Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1400 block of OGDEN STREET NW",
+    "lat": 38.935,
+    "lon": -77.034
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-01T14:18:28Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1300 block of KENYON STREET NW",
+    "lat": 38.929,
+    "lon": -77.031
+   },
+   {
+    "type": "Container Removal",
+    "agency": "DPW",
+    "added": "2026-11-01T13:25:34Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3400 block of HOLMEAD PLACE NW",
+    "lat": 38.933,
+    "lon": -77.031
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-01T13:15:55Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3400 block of HOLMEAD PLACE NW",
+    "lat": 38.933,
+    "lon": -77.031
+   },
    {
     "type": "Illegal Dumping",
     "agency": "DPW",
@@ -3021,8 +3236,8 @@
     "type": "Trash Collection - Missed",
     "agency": "DPW",
     "added": "2026-11-01T00:12:28Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-01T13:12:25Z",
+    "status": "Closed",
     "block": "700 block of MORTON STREET NW",
     "lat": 38.932,
     "lon": -77.024
@@ -3061,8 +3276,8 @@
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-10-31T22:10:45Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-01T12:22:49Z",
+    "status": "Closed",
     "block": "1300 block of PARK ROAD NW",
     "lat": 38.931,
     "lon": -77.031
@@ -3156,241 +3371,21 @@
     "block": "700 block of MORTON STREET NW",
     "lat": 38.932,
     "lon": -77.025
-   },
-   {
-    "type": "Container Removal",
-    "agency": "DPW",
-    "added": "2026-10-31T19:40:53Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "700 block of PRINCETON PLACE NW",
-    "lat": 38.935,
-    "lon": -77.024
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T19:02:01Z",
-    "resolved": "2026-10-31T21:45:05Z",
-    "status": "Closed",
-    "block": "600 block of LAMONT STREET NW",
-    "lat": 38.931,
-    "lon": -77.022
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-10-31T17:29:28Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "600 block of OTIS PLACE NW",
-    "lat": 38.935,
-    "lon": -77.02
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T16:57:03Z",
-    "resolved": "2026-10-31T17:45:05Z",
-    "status": "Closed",
-    "block": "600 block of IRVING STREET NW",
-    "lat": 38.929,
-    "lon": -77.023
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "agency": "DPW",
-    "added": "2026-10-31T16:50:36Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "14TH STREET NW AND OGDEN STREET NW",
-    "lat": 38.934,
-    "lon": -77.033
-   },
-   {
-    "type": "DOB - Vacant Private Property Inspection",
-    "agency": "DOB",
-    "added": "2026-10-31T15:58:45Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3500 block of HOLMEAD PLACE NW",
-    "lat": 38.935,
-    "lon": -77.031
-   },
-   {
-    "type": "Dead Animal Collection",
-    "agency": "DPW",
-    "added": "2026-10-31T15:55:03Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1000 block of COLUMBIA ROAD NW",
-    "lat": 38.928,
-    "lon": -77.026
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-10-31T15:54:53Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3300 block of 11TH STREET NW",
-    "lat": 38.931,
-    "lon": -77.028
-   },
-   {
-    "type": "Roadway Markings / Pylons",
-    "agency": "DDOT",
-    "added": "2026-10-31T15:50:34Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "1300 block of OTIS PLACE NW",
-    "lat": 38.935,
-    "lon": -77.031
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-31T15:39:01Z",
-    "resolved": "2026-10-31T15:39:01Z",
-    "status": "Closed",
-    "block": "1400 block of IRVING STREET NW",
-    "lat": 38.929,
-    "lon": -77.034
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-31T15:03:53Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1500 block of MONROE STREET NW",
-    "lat": 38.932,
-    "lon": -77.035
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T14:51:27Z",
-    "resolved": "2026-10-31T14:55:40Z",
-    "status": "Closed",
-    "block": "600 block of LAMONT STREET NW",
-    "lat": 38.931,
-    "lon": -77.022
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-10-31T14:49:41Z",
-    "resolved": "2026-10-31T14:55:54Z",
-    "status": "Closed",
-    "block": "3500 block of 14TH STREET NW",
-    "lat": 38.936,
-    "lon": -77.032
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-10-31T14:48:11Z",
-    "resolved": "2026-10-31T14:55:58Z",
-    "status": "Closed",
-    "block": "3500 block of 14TH STREET NW",
-    "lat": 38.936,
-    "lon": -77.032
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T14:40:39Z",
-    "resolved": "2026-10-31T16:19:29Z",
-    "status": "Closed",
-    "block": "600 block of IRVING STREET NW",
-    "lat": 38.929,
-    "lon": -77.023
-   },
-   {
-    "type": "DGS - Playground Repair",
-    "agency": "DGS",
-    "added": "2026-10-31T14:16:26Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3200 block of 16TH STREET NW",
-    "lat": 38.93,
-    "lon": -77.036
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-31T14:13:16Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1400 block of MERIDIAN PLACE NW",
-    "lat": 38.934,
-    "lon": -77.034
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-10-31T14:04:10Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "700 block of KENYON STREET NW",
-    "lat": 38.93,
-    "lon": -77.025
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "agency": "DPW",
-    "added": "2026-10-31T13:33:50Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3200 block of 16TH STREET NW",
-    "lat": 38.93,
-    "lon": -77.036
-   },
-   {
-    "type": "Public Space Inspection",
-    "agency": "DDOT",
-    "added": "2026-10-31T13:07:26Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "3200 block of 16TH STREET NW",
-    "lat": 38.93,
-    "lon": -77.036
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "agency": "DPW",
-    "added": "2026-10-31T13:04:33Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3100 block of 16TH STREET NW",
-    "lat": 38.93,
-    "lon": -77.036
-   },
-   {
-    "type": "Dead Animal Collection",
-    "agency": "DPW",
-    "added": "2026-10-31T13:03:27Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "600 block of KENYON STREET NW",
-    "lat": 38.93,
-    "lon": -77.022
    }
   ]
  },
  "crime": {
-  "total": 114,
+  "total": 112,
   "previous_total": 124,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
-    "count": 68,
-    "previous": 76
+    "count": 65,
+    "previous": 75
    },
    {
     "offense": "THEFT F/AUTO",
-    "count": 24,
+    "count": 26,
     "previous": 15
    },
    {
@@ -3400,8 +3395,8 @@
    },
    {
     "offense": "MOTOR VEHICLE THEFT",
-    "count": 6,
-    "previous": 12
+    "count": 5,
+    "previous": 13
    },
    {
     "offense": "BURGLARY",
@@ -3503,7 +3498,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T09:18:20Z",
+  "generated_at": "2026-11-01T20:25:43Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3721,7 +3716,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T09:18:20Z",
+  "generated_at": "2026-11-01T20:25:43Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3958,7 +3953,7 @@
   "trees": {
    "total": 3056,
    "species": 165,
-   "planted_5y": 533,
+   "planted_5y": 531,
    "empty_boxes": 41,
    "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (41). Not counted: 'Proposed' = planting scheduled (73), 'Conflict'/'Utility' = empty but blocked (86), 'Retired' = box removed (197). 'total' is boxes with status 'Plant' whose condition is not Dead.",
    "condition": {
@@ -4037,25 +4032,25 @@
     "type": "Bulk Collection",
     "median_days": 8.01,
     "city_median_days": 6.92,
-    "closed_n": 2557
+    "closed_n": 2552
    },
    {
     "type": "Parking Enforcement",
     "median_days": 0.05,
     "city_median_days": 0.05,
-    "closed_n": 2454
+    "closed_n": 2448
    },
    {
     "type": "Trash Collection - Missed",
-    "median_days": 7.74,
+    "median_days": 7.69,
     "city_median_days": 4.17,
-    "closed_n": 1798
+    "closed_n": 1796
    },
    {
     "type": "Illegal Dumping",
     "median_days": 3.46,
     "city_median_days": 4.04,
-    "closed_n": 1419
+    "closed_n": 1417
    },
    {
     "type": "Recycling Collection - Missed",
@@ -4065,9 +4060,9 @@
    },
    {
     "type": "Scheduled Yard Waste",
-    "median_days": 13.02,
-    "city_median_days": 9.83,
-    "closed_n": 1072
+    "median_days": 13.01,
+    "city_median_days": 9.81,
+    "closed_n": 1071
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -4077,15 +4072,15 @@
    },
    {
     "type": "Sanitation Enforcement",
-    "median_days": 1.02,
-    "city_median_days": 1.1,
-    "closed_n": 849
+    "median_days": 1.01,
+    "city_median_days": 1.09,
+    "closed_n": 848
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T09:18:20Z",
+  "generated_at": "2026-11-01T20:25:43Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4212,11 +4207,11 @@
    ],
    "clips": [],
    "screened": 0,
-   "note": "The Library of Congress search could not be reached this run (HTTPError). Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
+   "note": "The Library of Congress search could not be reached this run (IncompleteRead). Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
   }
  },
  "news": {
-  "generated_at": "2026-11-01T09:18:20Z",
+  "generated_at": "2026-11-01T20:25:43Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4732,7 +4727,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T09:18:20Z",
+  "generated_at": "2026-11-01T20:25:43Z",
   "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
@@ -4778,7 +4773,7 @@
   "anc_meetings": []
  },
  "jobs": {
-  "generated_at": "2026-11-01T09:18:20Z",
+  "generated_at": "2026-11-01T20:25:43Z",
   "max_age_days": 120,
   "sources": [
    {
@@ -4827,9 +4822,8 @@
    }
   ]
  },
- "module_errors": {},
  "blocks": {
-  "generated_at": "2026-11-01T18:14:59Z",
+  "generated_at": "2026-11-01T20:25:43Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -21111,7 +21105,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-01T18:15:02Z",
+  "generated_at": "2026-11-01T20:25:43Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
@@ -21498,5 +21492,6 @@
     "lon": -77.0315
    }
   ]
- }
+ },
+ "module_errors": {}
 }

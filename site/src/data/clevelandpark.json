@@ -1,7 +1,7 @@
 {
  "slug": "clevelandpark",
  "name": "Cleveland Park",
- "generated_at": "2026-11-01T09:18:20Z",
+ "generated_at": "2026-11-01T20:25:43Z",
  "boundary": {
   "source": "Cleveland Park Historic District (DC Historic Preservation Office, Open Data DC). DC has no planning area named Cleveland Park.",
   "rings": [
@@ -2936,23 +2936,23 @@
   }
  ],
  "requests": {
-  "total": 249,
-  "previous_total": 299,
+  "total": 243,
+  "previous_total": 302,
   "by_type": [
+   {
+    "type": "Bulk Collection",
+    "count": 37,
+    "previous": 42
+   },
    {
     "type": "Scheduled Yard Waste",
     "count": 36,
-    "previous": 39
-   },
-   {
-    "type": "Bulk Collection",
-    "count": 36,
-    "previous": 44
+    "previous": 41
    },
    {
     "type": "Parking Enforcement",
-    "count": 27,
-    "previous": 42
+    "count": 25,
+    "previous": 41
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -2967,7 +2967,7 @@
    {
     "type": "Tree Inspection",
     "count": 10,
-    "previous": 12
+    "previous": 11
    },
    {
     "type": "Public Space Inspection",
@@ -2980,11 +2980,6 @@
     "previous": 3
    },
    {
-    "type": "Dockless Vehicle Parking Complaint",
-    "count": 7,
-    "previous": 6
-   },
-   {
     "type": "Trash Collection - Missed",
     "count": 7,
     "previous": 10
@@ -2995,9 +2990,9 @@
     "previous": 2
    },
    {
-    "type": "Traffic Safety Input",
+    "type": "Dockless Vehicle Parking Complaint",
     "count": 6,
-    "previous": 4
+    "previous": 7
    },
    {
     "type": "Residential Parking Permit Violation",
@@ -3035,6 +3030,11 @@
     "previous": 6
    },
    {
+    "type": "Traffic Safety Input",
+    "count": 3,
+    "previous": 7
+   },
+   {
     "type": "Tree Removal",
     "count": 3,
     "previous": 3
@@ -3053,11 +3053,6 @@
     "type": "Dead Animal Collection",
     "count": 3,
     "previous": 2
-   },
-   {
-    "type": "Out of State Parking Violation (ROSA)",
-    "count": 2,
-    "previous": 1
    },
    {
     "type": "Illegal Dumping",
@@ -3088,11 +3083,6 @@
     "type": "Trash Cart Repair",
     "count": 2,
     "previous": 0
-   },
-   {
-    "type": "Pothole",
-    "count": 1,
-    "previous": 3
    },
    {
     "type": "DOEE - Report Construction Erosion Runoff",
@@ -3127,12 +3117,17 @@
    {
     "type": "OCTFME - Down Cable Wires",
     "count": 1,
-    "previous": 6
+    "previous": 5
    },
    {
     "type": "Parking Meter Repair",
     "count": 1,
     "previous": 3
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "count": 1,
+    "previous": 2
    },
    {
     "type": "DC How Am I Driving?",
@@ -3158,10 +3153,55 @@
     "type": "Bicycle Services",
     "count": 1,
     "previous": 0
+   },
+   {
+    "type": "Container Removal",
+    "count": 1,
+    "previous": 7
    }
   ],
-  "open": 64,
+  "open": 68,
   "recent": [
+   {
+    "type": "Container Removal",
+    "agency": "DPW",
+    "added": "2026-11-01T20:42:02Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3400 block of MACOMB STREET NW",
+    "lat": 38.934,
+    "lon": -77.068
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-01T18:11:17Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3500 block of 30TH STREET NW",
+    "lat": 38.936,
+    "lon": -77.061
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-01T16:35:57Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3400 block of LOWELL STREET NW",
+    "lat": 38.932,
+    "lon": -77.067
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-01T15:06:21Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3400 block of PORTER STREET NW",
+    "lat": 38.937,
+    "lon": -77.067
+   },
    {
     "type": "DC Health Rodent & Vector Control",
     "agency": "DOH",
@@ -3621,57 +3661,17 @@
     "block": "3600 block of PORTER STREET NW",
     "lat": 38.937,
     "lon": -77.071
-   },
-   {
-    "type": "Graffiti Removal",
-    "agency": "DPW",
-    "added": "2026-10-26T13:46:03Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3500 block of CONNECTICUT AVENUE NW",
-    "lat": 38.937,
-    "lon": -77.059
-   },
-   {
-    "type": "Tree Planting",
-    "agency": "DDOT",
-    "added": "2026-10-26T09:45:11Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "3500 block of RODMAN STREET NW",
-    "lat": 38.939,
-    "lon": -77.07
-   },
-   {
-    "type": "Tree Inspection",
-    "agency": "DDOT",
-    "added": "2026-10-26T09:39:56Z",
-    "resolved": "2026-10-26T16:41:23Z",
-    "status": "Closed",
-    "block": "3500 block of RODMAN STREET NW",
-    "lat": 38.939,
-    "lon": -77.07
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-26T01:16:13Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3700 block of 35TH STREET NW",
-    "lat": 38.938,
-    "lon": -77.069
    }
   ]
  },
  "crime": {
   "total": 16,
-  "previous_total": 6,
+  "previous_total": 7,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
     "count": 13,
-    "previous": 4
+    "previous": 5
    },
    {
     "offense": "THEFT F/AUTO",
@@ -3702,7 +3702,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T09:18:20Z",
+  "generated_at": "2026-11-01T20:25:43Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3952,7 +3952,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T09:18:20Z",
+  "generated_at": "2026-11-01T20:25:43Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4155,20 +4155,20 @@
    {
     "type": "Scheduled Yard Waste",
     "median_days": 7.97,
-    "city_median_days": 9.83,
-    "closed_n": 437
+    "city_median_days": 9.81,
+    "closed_n": 435
    },
    {
     "type": "Bulk Collection",
     "median_days": 7.91,
     "city_median_days": 6.92,
-    "closed_n": 373
+    "closed_n": 372
    },
    {
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 287
+    "closed_n": 286
    },
    {
     "type": "Recycling Collection - Missed",
@@ -4204,7 +4204,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T09:18:20Z",
+  "generated_at": "2026-11-01T20:25:43Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4334,7 +4334,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-01T09:18:20Z",
+  "generated_at": "2026-11-01T20:25:43Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4739,7 +4739,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T09:18:20Z",
+  "generated_at": "2026-11-01T20:25:43Z",
   "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
@@ -4810,7 +4810,7 @@
   "anc_meetings": []
  },
  "jobs": {
-  "generated_at": "2026-11-01T09:18:20Z",
+  "generated_at": "2026-11-01T20:25:43Z",
   "max_age_days": 120,
   "sources": [
    {
@@ -4828,9 +4828,8 @@
   ],
   "jobs": []
  },
- "module_errors": {},
  "blocks": {
-  "generated_at": "2026-11-01T18:15:16Z",
+  "generated_at": "2026-11-01T20:25:43Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -16167,7 +16166,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-01T18:15:19Z",
+  "generated_at": "2026-11-01T20:25:43Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
@@ -16525,5 +16524,6 @@
     "lon": -77.07276
    }
   ]
- }
+ },
+ "module_errors": {}
 }

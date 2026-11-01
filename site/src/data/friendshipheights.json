@@ -1,7 +1,7 @@
 {
  "slug": "friendshipheights",
  "name": "Friendship Heights",
- "generated_at": "2026-11-01T09:18:20Z",
+ "generated_at": "2026-11-01T20:25:43Z",
  "boundary": {
   "source": "ANC single-member districts 3E03 and 3E04, around the Friendship Heights Metro (Open Data DC). DC has no planning area for Friendship Heights; this overlaps the Tenleytown site.",
   "rings": [
@@ -2611,6 +2611,19 @@
    "smd": "3E03"
   },
   {
+   "id": "M2700200",
+   "issued": "2026-10-16T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "MECHANICAL",
+   "address": "3859 GRAMERCY ST NW 20016",
+   "work": "",
+   "zoning": "R-1B",
+   "lat": 38.95646,
+   "lon": -77.07684,
+   "smd": "3E04"
+  },
+  {
    "id": "P2700475",
    "issued": "2026-10-16T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -2635,19 +2648,6 @@
    "lat": 38.95623,
    "lon": -77.08057,
    "smd": "3E03"
-  },
-  {
-   "id": "M2700200",
-   "issued": "2026-10-16T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "MECHANICAL",
-   "address": "3859 GRAMERCY ST NW 20016",
-   "work": "",
-   "zoning": "R-1B",
-   "lat": 38.95646,
-   "lon": -77.07684,
-   "smd": "3E04"
   },
   {
    "id": "P2700472",
@@ -2911,23 +2911,18 @@
   }
  ],
  "requests": {
-  "total": 449,
-  "previous_total": 553,
+  "total": 453,
+  "previous_total": 549,
   "by_type": [
    {
-    "type": "Bulk Collection",
-    "count": 85,
-    "previous": 82
-   },
-   {
     "type": "Scheduled Yard Waste",
-    "count": 80,
-    "previous": 70
+    "count": 83,
+    "previous": 68
    },
    {
-    "type": "Tree Pruning",
-    "count": 26,
-    "previous": 28
+    "type": "Bulk Collection",
+    "count": 82,
+    "previous": 82
    },
    {
     "type": "Recycling Collection - Missed",
@@ -2935,29 +2930,39 @@
     "previous": 7
    },
    {
+    "type": "Tree Pruning",
+    "count": 25,
+    "previous": 29
+   },
+   {
     "type": "Trash Collection - Missed",
     "count": 21,
-    "previous": 35
+    "previous": 34
    },
    {
     "type": "Roadway Signs",
-    "count": 15,
+    "count": 17,
     "previous": 71
    },
    {
-    "type": "Residential Parking Permit Violation",
-    "count": 14,
-    "previous": 21
-   },
-   {
     "type": "Tree Inspection",
-    "count": 14,
-    "previous": 17
+    "count": 15,
+    "previous": 16
    },
    {
     "type": "Graffiti Removal",
-    "count": 14,
-    "previous": 29
+    "count": 15,
+    "previous": 27
+   },
+   {
+    "type": "Parking Enforcement",
+    "count": 13,
+    "previous": 11
+   },
+   {
+    "type": "DOB - Vacant Private Property Inspection",
+    "count": 12,
+    "previous": 6
    },
    {
     "type": "Sanitation Enforcement",
@@ -2965,9 +2970,9 @@
     "previous": 8
    },
    {
-    "type": "Parking Enforcement",
+    "type": "Residential Parking Permit Violation",
     "count": 12,
-    "previous": 12
+    "previous": 23
    },
    {
     "type": "Streetlight Repair Investigation",
@@ -2975,9 +2980,9 @@
     "previous": 2
    },
    {
-    "type": "DOB - Vacant Private Property Inspection",
-    "count": 9,
-    "previous": 6
+    "type": "Public Space Litter Can-Collection",
+    "count": 8,
+    "previous": 1
    },
    {
     "type": "Tree Removal",
@@ -2985,24 +2990,19 @@
     "previous": 10
    },
    {
-    "type": "Public Space Litter Can-Collection",
-    "count": 7,
-    "previous": 1
+    "type": "Tree Planting",
+    "count": 8,
+    "previous": 28
    },
    {
     "type": "Illegal Dumping",
     "count": 7,
-    "previous": 2
+    "previous": 1
    },
    {
     "type": "Pothole",
     "count": 6,
     "previous": 7
-   },
-   {
-    "type": "Tree Planting",
-    "count": 6,
-    "previous": 28
    },
    {
     "type": "Missed Curbside Compost Collection",
@@ -3042,7 +3042,7 @@
    {
     "type": "Supercan - Repair",
     "count": 4,
-    "previous": 2
+    "previous": 1
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -3072,17 +3072,7 @@
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 3,
-    "previous": 26
-   },
-   {
-    "type": "Recycling Cart - Repair",
-    "count": 2,
-    "previous": 2
-   },
-   {
-    "type": "DMV - Vehicle Inspection Issues",
-    "count": 2,
-    "previous": 0
+    "previous": 25
    },
    {
     "type": "Supercan - Delivery",
@@ -3122,7 +3112,7 @@
    {
     "type": "Illegal Poster",
     "count": 1,
-    "previous": 1
+    "previous": 0
    },
    {
     "type": "DC Government Information",
@@ -3145,8 +3135,48 @@
     "previous": 1
    }
   ],
-  "open": 114,
+  "open": 115,
   "recent": [
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-01T20:00:17Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4400 block of FESSENDEN STREET NW",
+    "lat": 38.955,
+    "lon": -77.088
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-01T17:37:10Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "5300 block of 41ST STREET NW",
+    "lat": 38.959,
+    "lon": -77.08
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-01T15:42:32Z",
+    "resolved": "2026-11-01T19:15:12Z",
+    "status": "Closed",
+    "block": "4600 block of 42ND STREET NW",
+    "lat": 38.95,
+    "lon": -77.082
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-01T12:50:58Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "5300 block of 42ND STREET NW",
+    "lat": 38.96,
+    "lon": -77.082
+   },
    {
     "type": "Trash Collection - Missed",
     "agency": "DPW",
@@ -3606,46 +3636,6 @@
     "block": "3800 block of HARRISON STREET NW",
     "lat": 38.957,
     "lon": -77.076
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-26T19:50:57Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4100 block of INGOMAR STREET NW",
-    "lat": 38.958,
-    "lon": -77.081
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-26T19:35:50Z",
-    "resolved": "2026-10-30T14:02:47Z",
-    "status": "Closed",
-    "block": "4400 block of CHESAPEAKE STREET NW",
-    "lat": 38.951,
-    "lon": -77.088
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-26T19:31:54Z",
-    "resolved": "2026-10-26T19:31:54Z",
-    "status": "Closed",
-    "block": "5300 block of WISCONSIN AVENUE NW",
-    "lat": 38.96,
-    "lon": -77.086
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-26T18:34:37Z",
-    "resolved": "2026-10-30T15:58:18Z",
-    "status": "Closed",
-    "block": "4900 block of 43RD PLACE NW",
-    "lat": 38.954,
-    "lon": -77.085
    }
   ]
  },
@@ -3698,7 +3688,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T09:18:20Z",
+  "generated_at": "2026-11-01T20:25:43Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3930,7 +3920,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T09:18:20Z",
+  "generated_at": "2026-11-01T20:25:43Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4106,13 +4096,13 @@
     "type": "Bulk Collection",
     "median_days": 7.71,
     "city_median_days": 6.92,
-    "closed_n": 692
+    "closed_n": 691
    },
    {
     "type": "Scheduled Yard Waste",
     "median_days": 7.92,
-    "city_median_days": 9.83,
-    "closed_n": 523
+    "city_median_days": 9.81,
+    "closed_n": 522
    },
    {
     "type": "Trash Collection - Missed",
@@ -4130,7 +4120,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 159
+    "closed_n": 160
    },
    {
     "type": "Residential Parking Permit Violation",
@@ -4147,14 +4137,14 @@
    {
     "type": "Roadway Signs",
     "median_days": 7.76,
-    "city_median_days": 6.96,
+    "city_median_days": 6.98,
     "closed_n": 92
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T09:18:20Z",
+  "generated_at": "2026-11-01T20:25:43Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4300,7 +4290,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-01T09:18:20Z",
+  "generated_at": "2026-11-01T20:25:43Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4569,7 +4559,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T09:18:20Z",
+  "generated_at": "2026-11-01T20:25:43Z",
   "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
@@ -4621,7 +4611,7 @@
   "anc_meetings": []
  },
  "jobs": {
-  "generated_at": "2026-11-01T09:18:20Z",
+  "generated_at": "2026-11-01T20:25:43Z",
   "max_age_days": 120,
   "sources": [
    {
@@ -4700,9 +4690,8 @@
    }
   ]
  },
- "module_errors": {},
  "blocks": {
-  "generated_at": "2026-11-01T18:14:49Z",
+  "generated_at": "2026-11-01T20:25:43Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -19259,7 +19248,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-01T18:14:52Z",
+  "generated_at": "2026-11-01T20:25:43Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
@@ -19500,5 +19489,6 @@
     "lon": -77.08464
    }
   ]
- }
+ },
+ "module_errors": {}
 }
