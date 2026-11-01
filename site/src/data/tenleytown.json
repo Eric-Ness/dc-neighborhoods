@@ -1,7 +1,7 @@
 {
  "slug": "tenleytown",
  "name": "Tenleytown",
- "generated_at": "2026-11-01T00:10:51Z",
+ "generated_at": "2026-11-01T00:16:43Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -2704,12 +2704,12 @@
   }
  ],
  "requests": {
-  "total": 1692,
+  "total": 1693,
   "previous_total": 2292,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
-    "count": 374,
+    "count": 375,
     "previous": 400
    },
    {
@@ -3038,8 +3038,18 @@
     "previous": 0
    }
   ],
-  "open": 383,
+  "open": 384,
   "recent": [
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-10-31T23:56:17Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3600 block of VAN NESS STREET NW",
+    "lat": 38.943,
+    "lon": -77.07
+   },
    {
     "type": "Trash Collection - Missed",
     "agency": "DPW",
@@ -3529,16 +3539,6 @@
     "block": "3600 block of VEAZEY STREET NW",
     "lat": 38.944,
     "lon": -77.071
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-10-29T22:31:42Z",
-    "resolved": "2026-10-29T22:40:55Z",
-    "status": "Closed",
-    "block": "4200 block of 46TH STREET NW",
-    "lat": 38.944,
-    "lon": -77.091
    }
   ]
  },
@@ -3655,7 +3655,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T00:10:51Z",
+  "generated_at": "2026-11-01T00:16:43Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -4002,7 +4002,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T00:10:51Z",
+  "generated_at": "2026-11-01T00:16:43Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4510,7 +4510,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T00:10:51Z",
+  "generated_at": "2026-11-01T00:16:43Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4669,7 +4669,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-01T00:10:51Z",
+  "generated_at": "2026-11-01T00:16:43Z",
   "archive_days": 180,
   "sources": [
    {
@@ -5175,7 +5175,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T00:10:51Z",
+  "generated_at": "2026-11-01T00:16:43Z",
   "today": "2026-10-31",
   "days_ahead": 30,
   "sources": [
@@ -5333,7 +5333,7 @@
   "anc_meetings": []
  },
  "jobs": {
-  "generated_at": "2026-11-01T00:10:51Z",
+  "generated_at": "2026-11-01T00:16:43Z",
   "max_age_days": 120,
   "sources": [
    {
