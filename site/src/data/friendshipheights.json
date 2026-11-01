@@ -1,7 +1,7 @@
 {
  "slug": "friendshipheights",
  "name": "Friendship Heights",
- "generated_at": "2026-11-01T02:07:22Z",
+ "generated_at": "2026-11-01T02:17:00Z",
  "boundary": {
   "source": "ANC single-member districts 3E03 and 3E04, around the Friendship Heights Metro (Open Data DC). DC has no planning area for Friendship Heights; this overlaps the Tenleytown site.",
   "rings": [
@@ -3698,7 +3698,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T02:07:22Z",
+  "generated_at": "2026-11-01T02:17:00Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3930,7 +3930,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T02:07:22Z",
+  "generated_at": "2026-11-01T02:17:00Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4174,7 +4174,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T02:07:22Z",
+  "generated_at": "2026-11-01T02:17:00Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4320,12 +4320,16 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-01T02:07:22Z",
+  "generated_at": "2026-11-01T02:17:00Z",
   "archive_days": 180,
   "sources": [
    {
     "name": "ANC 3E",
     "url": "https://anc3e.org/"
+   },
+   {
+    "name": "WTOP",
+    "url": "https://wtop.com/"
    },
    {
     "name": "Forest Hills Connection",
@@ -4346,10 +4350,6 @@
    {
     "name": "Washington City Paper",
     "url": "https://washingtoncitypaper.com/"
-   },
-   {
-    "name": "WTOP",
-    "url": "https://wtop.com/"
    },
    {
     "name": "WAMU",
@@ -4388,9 +4388,16 @@
    {
     "name": "ANC 3E",
     "url": "https://anc3e.org/",
+    "state": "error: ParseError",
+    "matched": 0,
+    "failed": 1
+   },
+   {
+    "name": "WTOP",
+    "url": "https://wtop.com/",
     "state": "ok",
     "matched": 1,
-    "fetched": 1
+    "fetched": 2
    },
    {
     "name": "Forest Hills Connection",
@@ -4423,13 +4430,6 @@
    {
     "name": "Washington City Paper",
     "url": "https://washingtoncitypaper.com/",
-    "state": "ok",
-    "matched": 0,
-    "fetched": 1
-   },
-   {
-    "name": "WTOP",
-    "url": "https://wtop.com/",
     "state": "ok",
     "matched": 0,
     "fetched": 1
@@ -4491,6 +4491,13 @@
     "source": "Washingtonian",
     "published": "2026-07-27T08:59:36Z",
     "first_seen": "2026-11-01T01:54:37Z"
+   },
+   {
+    "title": "Opponents of Friendship Heights development take their cause to the street",
+    "url": "https://wtop.com/maryland/2026/06/opponents-of-friendship-heights-development-take-their-cause-to-the-street/",
+    "source": "WTOP",
+    "published": "2026-06-10T09:42:22Z",
+    "first_seen": "2026-11-01T02:17:00Z"
    }
   ],
   "licenses": {
@@ -4582,7 +4589,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T02:07:22Z",
+  "generated_at": "2026-11-01T02:17:00Z",
   "today": "2026-10-31",
   "days_ahead": 30,
   "sources": [
@@ -4608,7 +4615,7 @@
    {
     "name": "ANC 3E meeting agendas",
     "url": "https://anc3e.org/",
-    "state": "ok"
+    "state": "error: ParseError"
    },
    {
     "name": "DC Office of ANCs meeting notices",
@@ -4634,7 +4641,7 @@
   "anc_meetings": []
  },
  "jobs": {
-  "generated_at": "2026-11-01T02:07:22Z",
+  "generated_at": "2026-11-01T02:17:00Z",
   "max_age_days": 120,
   "sources": [
    {

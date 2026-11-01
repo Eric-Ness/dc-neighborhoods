@@ -1,7 +1,7 @@
 {
  "slug": "adamsmorgan",
  "name": "Adams Morgan",
- "generated_at": "2026-11-01T02:07:22Z",
+ "generated_at": "2026-11-01T02:17:00Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1847,12 +1847,12 @@
   }
  ],
  "requests": {
-  "total": 1179,
+  "total": 1180,
   "previous_total": 1661,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 268,
+    "count": 269,
     "previous": 250
    },
    {
@@ -2166,8 +2166,18 @@
     "previous": 1
    }
   ],
-  "open": 235,
+  "open": 236,
   "recent": [
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-01T01:59:49Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1800 block of MINTWOOD PLACE NW",
+    "lat": 38.922,
+    "lon": -77.044
+   },
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
@@ -2657,16 +2667,6 @@
     "block": "1700 block of SEATON STREET NW",
     "lat": 38.918,
     "lon": -77.04
-   },
-   {
-    "type": "Trash Cart - Delivery",
-    "agency": "DPW",
-    "added": "2026-10-30T18:33:36Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1800 block of BELMONT ROAD NW",
-    "lat": 38.92,
-    "lon": -77.043
    }
   ]
  },
@@ -2690,14 +2690,14 @@
     "previous": 2
    },
    {
-    "offense": "ASSAULT W/DANGEROUS WEAPON",
-    "count": 2,
-    "previous": 0
-   },
-   {
     "offense": "MOTOR VEHICLE THEFT",
     "count": 2,
     "previous": 5
+   },
+   {
+    "offense": "ASSAULT W/DANGEROUS WEAPON",
+    "count": 2,
+    "previous": 0
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -2778,7 +2778,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T02:07:22Z",
+  "generated_at": "2026-11-01T02:17:00Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3157,7 +3157,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T02:07:22Z",
+  "generated_at": "2026-11-01T02:17:00Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3665,7 +3665,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T02:07:22Z",
+  "generated_at": "2026-11-01T02:17:00Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3791,18 +3791,19 @@
    "week_end": "1926-11-06",
    "paper": "Evening Star",
    "terms": [
-    "\"Lanier Heights\"",
-    "\"Washington Heights\"",
     "\"Kalorama road\"",
-    "\"Columbia road\""
+    "\"Ontario road\"",
+    "\"Lanier Heights\"",
+    "\"Champlain street\"",
+    "\"Washington Heights\""
    ],
    "clips": [],
    "screened": 0,
-   "note": "No usable mentions in the Evening Star for October 31 \u2013 November 6, 1926 (23 matching pages searched). Some weeks a neighborhood just isn't in the paper. Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
+   "note": "The Library of Congress search could not be reached this run (HTTPError). Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
   }
  },
  "news": {
-  "generated_at": "2026-11-01T02:07:22Z",
+  "generated_at": "2026-11-01T02:17:00Z",
   "archive_days": 180,
   "sources": [
    {
@@ -3818,12 +3819,20 @@
     "url": "https://www.washingtonian.com/"
    },
    {
-    "name": "Washington City Paper",
-    "url": "https://washingtoncitypaper.com/"
+    "name": "Washington Blade",
+    "url": "https://www.washingtonblade.com/"
    },
    {
     "name": "WTOP",
     "url": "https://wtop.com/"
+   },
+   {
+    "name": "ANC 2B",
+    "url": "https://www.dupontcircleanc.net/"
+   },
+   {
+    "name": "Washington City Paper",
+    "url": "https://washingtoncitypaper.com/"
    },
    {
     "name": "WAMU",
@@ -3881,15 +3890,29 @@
     "fetched": 1
    },
    {
-    "name": "Washington City Paper",
-    "url": "https://washingtoncitypaper.com/",
+    "name": "Washington Blade",
+    "url": "https://www.washingtonblade.com/",
     "state": "ok",
-    "matched": 0,
+    "matched": 3,
     "fetched": 1
    },
    {
     "name": "WTOP",
     "url": "https://wtop.com/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 2
+   },
+   {
+    "name": "ANC 2B",
+    "url": "https://www.dupontcircleanc.net/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
+    "name": "Washington City Paper",
+    "url": "https://washingtoncitypaper.com/",
     "state": "ok",
     "matched": 0,
     "fetched": 1
@@ -3960,6 +3983,13 @@
     "first_seen": "2026-11-01T01:54:37Z"
    },
    {
+    "title": "Dawn Huggins reflects on year-long reign as Miss Adams Morgan",
+    "url": "https://www.washingtonblade.com/2026/10/16/miss-adams-morgan-pageant-dawn-huggins/",
+    "source": "Washington Blade",
+    "published": "2026-10-16T20:07:47Z",
+    "first_seen": "2026-11-01T02:17:00Z"
+   },
+   {
     "title": "A Garden-Party-Themed Wedding in Adams Morgan",
     "url": "https://washingtonian.com/2026/10/15/a-garden-party-themed-wedding-in-adams-morgan/",
     "source": "Washingtonian",
@@ -3972,6 +4002,20 @@
     "source": "Washingtonian",
     "published": "2026-10-13T17:10:34Z",
     "first_seen": "2026-11-01T01:54:37Z"
+   },
+   {
+    "title": "Summer in the City: Free exhibits, movies, more fill D.C.\u2019s calendar",
+    "url": "https://www.washingtonblade.com/2026/07/26/dc-summer-events-exhibits-movies-calendar/",
+    "source": "Washington Blade",
+    "published": "2026-07-26T23:16:50Z",
+    "first_seen": "2026-11-01T02:17:00Z"
+   },
+   {
+    "title": "When buying a home, it\u2019s decisions, decisions, decisions",
+    "url": "https://www.washingtonblade.com/2026/07/19/real-estate-decisions/",
+    "source": "Washington Blade",
+    "published": "2026-07-19T16:30:38Z",
+    "first_seen": "2026-11-01T02:17:00Z"
    }
   ],
   "licenses": {
@@ -4346,7 +4390,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T02:07:22Z",
+  "generated_at": "2026-11-01T02:17:00Z",
   "today": "2026-10-31",
   "days_ahead": 30,
   "sources": [
@@ -4436,7 +4480,7 @@
   "anc_meetings": []
  },
  "jobs": {
-  "generated_at": "2026-11-01T02:07:22Z",
+  "generated_at": "2026-11-01T02:17:00Z",
   "max_age_days": 120,
   "sources": [
    {
