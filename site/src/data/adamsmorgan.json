@@ -1,7 +1,7 @@
 {
  "slug": "adamsmorgan",
  "name": "Adams Morgan",
- "generated_at": "2026-11-01T01:54:37Z",
+ "generated_at": "2026-11-01T02:07:22Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1847,8 +1847,8 @@
   }
  ],
  "requests": {
-  "total": 1181,
-  "previous_total": 1659,
+  "total": 1179,
+  "previous_total": 1661,
   "by_type": [
    {
     "type": "Parking Enforcement",
@@ -1897,8 +1897,8 @@
    },
    {
     "type": "Graffiti Removal",
-    "count": 32,
-    "previous": 66
+    "count": 30,
+    "previous": 68
    },
    {
     "type": "Roadway Signs",
@@ -2166,7 +2166,7 @@
     "previous": 1
    }
   ],
-  "open": 237,
+  "open": 235,
   "recent": [
    {
     "type": "Parking Enforcement",
@@ -2690,14 +2690,14 @@
     "previous": 2
    },
    {
-    "offense": "MOTOR VEHICLE THEFT",
-    "count": 2,
-    "previous": 5
-   },
-   {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
     "count": 2,
     "previous": 0
+   },
+   {
+    "offense": "MOTOR VEHICLE THEFT",
+    "count": 2,
+    "previous": 5
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -2778,7 +2778,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T01:54:37Z",
+  "generated_at": "2026-11-01T02:07:22Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3157,7 +3157,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T01:54:37Z",
+  "generated_at": "2026-11-01T02:07:22Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3665,7 +3665,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T01:54:37Z",
+  "generated_at": "2026-11-01T02:07:22Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3796,26 +3796,13 @@
     "\"Kalorama road\"",
     "\"Columbia road\""
    ],
-   "clips": [
-    {
-     "date": "1926-10-31",
-     "page": 47,
-     "text": "\u2026 of Masonic Clufesisf the United States with which chibs in Washington are nnaktetL* service will be at 8 p.m. at the Y.ajFTington Heights Presbyterian Church, Kalorama road east of Co lumbia road.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-10-31/ed-1/?sp=47"
-    },
-    {
-     "date": "1926-10-31",
-     "page": 67,
-     "text": "Miss Fannie Dial, debutante daugh ter of former Senator and Mrs. Nathaniel B. Dial, will entertain a group of buds of the season at a noon day breakfast today at her home on Kalorama road.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-10-31/ed-1/?sp=67"
-    }
-   ],
+   "clips": [],
    "screened": 0,
-   "note": "Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
+   "note": "No usable mentions in the Evening Star for October 31 \u2013 November 6, 1926 (23 matching pages searched). Some weeks a neighborhood just isn't in the paper. Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
   }
  },
  "news": {
-  "generated_at": "2026-11-01T01:54:37Z",
+  "generated_at": "2026-11-01T02:07:22Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4359,7 +4346,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T01:54:37Z",
+  "generated_at": "2026-11-01T02:07:22Z",
   "today": "2026-10-31",
   "days_ahead": 30,
   "sources": [
@@ -4443,12 +4430,13 @@
    }
   ],
   "ancs": [
-   "ANC 1C"
+   "ANC 1C",
+   "ANC 2B"
   ],
   "anc_meetings": []
  },
  "jobs": {
-  "generated_at": "2026-11-01T01:54:37Z",
+  "generated_at": "2026-11-01T02:07:22Z",
   "max_age_days": 120,
   "sources": [
    {
