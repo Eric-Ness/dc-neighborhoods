@@ -1,6 +1,35 @@
 # Research brief (shared by all idea researchers)
 
-The owner holds 8 domains for Washington, DC neighborhoods: adamsmorgan.org, friendshipheights.org, lenfantplaza.net/.org, petworth.net/.org, tenleytown.net/.org (5 neighborhoods).
+The owner holds 26 domains for 22 Washington, DC neighborhoods.
+
+Done = marked complete by the owner (13 of 22 as of 2026-11-01).
+
+| Neighborhood | Domains | Acquired | Done |
+|---|---|---|---|
+| Adams Morgan | adamsmorgan.org | original | ✓ |
+| Friendship Heights | friendshipheights.org | original | ✓ |
+| L'Enfant Plaza | lenfantplaza.net, lenfantplaza.org | original | |
+| Petworth | petworth.net, petworth.org | original | ✓ |
+| Tenleytown | tenleytown.net, tenleytown.org | original | ✓ |
+| Anacostia | anacostiadc.net | 2026-10-31 | ✓ |
+| Brookland | brooklanddc.org | 2026-10-31 | |
+| Capitol Hill | capitolhilldc.org | 2026-10-31 | ✓ |
+| Chevy Chase DC | chevychasedc.net | 2026-10-31 | ✓ |
+| Chinatown | chinatown-dc.org | 2026-11-01 | |
+| Cleveland Park | clevelandpark.org | 2026-10-31 | ✓ |
+| Columbia Heights | columbiaheights.net | 2026-10-31 | ✓ |
+| Dupont Circle | dupontcircledc.net | 2026-10-31 | ✓ |
+| Georgetown | georgetowndc.org | 2026-10-31 | ✓ |
+| Glover Park | gloverpark.net | 2026-10-31 | |
+| H Street NE | hstreet.net | 2026-10-31 | ✓ |
+| Navy Yard / Capitol Riverfront | navyyarddc.net, capitolriverfront.net | 2026-10-31 | ✓ |
+| NoMa | nomadc.net | 2026-10-31 | |
+| Palisades | palisadesdc.net | 2026-10-31 | |
+| Shaw | shawdc.org | 2026-10-31 | |
+| U Street | ustreet.org | 2026-10-31 | |
+| Van Ness | vannessdc.org | 2026-11-01 | |
+
+The first batch of ten 2026-10-31 domains (all except dupontcircledc.net, brooklanddc.org, palisadesdc.net, gloverpark.net, chevychasedc.net and ustreet.org) cost $71.90 for the first year: six .net at $4.99, four .org at $9.99 and $2.00 in ICANN fees. That's promo pricing, so renewals will likely cost more.
 
 **Owner:** developer fluent in Astro static sites, Cloudflare (Workers, R2, D1, Pages), GitHub Actions, Python. Has 1-3 hours/week after launch. Lives in DC but not in these five. Goals are a MIX of community resource, hobby/portfolio, and some income. Strongly prefers automated, low-upkeep, low-moderation sites.
 
