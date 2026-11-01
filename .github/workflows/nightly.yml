@@ -29,9 +29,18 @@ jobs:
         with:
           python-version: "3.13"
 
-      # Fails the job (and GitHub emails you) if DC's data is missing, empty, or contains personal fields.
+      # If DC's data is missing, empty or contains personal fields, this step fails. The job then still builds and
+      # deploys the last good snapshot (the site flags data older than 3 days) and fails at the end, so GitHub emails you.
       - name: Ingest DC open data
+        id: ingest
+        continue-on-error: true
         run: python ingest/run.py --check
+
+      - name: Fall back to the last good snapshot
+        if: steps.ingest.outcome != 'success'
+        run: |
+          git checkout -- site/src/data
+          echo "::warning::Ingest failed; deploying the last committed data instead."
 
       - uses: actions/setup-node@v4
         with:
@@ -50,6 +59,7 @@ jobs:
 
       # Keeping each night's JSON in git gives free history for week-over-week comparisons.
       - name: Commit data snapshot
+        if: steps.ingest.outcome == 'success'
         run: |
           git config user.name "dc-neighborhoods-bot"
           git config user.email "actions@users.noreply.github.com"
@@ -68,3 +78,9 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: deploy
+
+      - name: Report a failed ingest
+        if: steps.ingest.outcome != 'success'
+        run: |
+          echo "::error::Tonight's ingest failed (see the Ingest step). The site was redeployed with the last good data."
+          exit 1
