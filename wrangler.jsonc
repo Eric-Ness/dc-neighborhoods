@@ -46,9 +46,18 @@
     { "pattern": "nomadc.net", "custom_domain": true },
     { "pattern": "www.nomadc.net", "custom_domain": true },
     { "pattern": "palisadesdc.net", "custom_domain": true },
-    { "pattern": "www.palisadesdc.net", "custom_domain": true }
-    // chinatown-dc.org, shawdc.org, logancircledc.org, ustreet.org and vannessdc.org (and lenfantplaza.net, which redirects
-    // to the .org) come back once their zones are active on Cloudflare; their sites are disabled in neighborhoods.json until then.
+    { "pattern": "www.palisadesdc.net", "custom_domain": true },
+    { "pattern": "chinatown-dc.org", "custom_domain": true },
+    { "pattern": "www.chinatown-dc.org", "custom_domain": true },
+    { "pattern": "shawdc.org", "custom_domain": true },
+    { "pattern": "www.shawdc.org", "custom_domain": true },
+    { "pattern": "logancircledc.org", "custom_domain": true },
+    { "pattern": "www.logancircledc.org", "custom_domain": true },
+    { "pattern": "ustreet.org", "custom_domain": true },
+    { "pattern": "www.ustreet.org", "custom_domain": true },
+    { "pattern": "vannessdc.org", "custom_domain": true },
+    { "pattern": "www.vannessdc.org", "custom_domain": true }
+    // lenfantplaza.net (redirects to the .org) comes back once its zone is active on Cloudflare.
     // capitolriverfront.net (redirects to navyyarddc.net) comes back once its zone is active on Cloudflare.
     // petworth.net and tenleytown.net come back here once those zones are on Cloudflare;
     // the Worker already 301s them to the .org.
