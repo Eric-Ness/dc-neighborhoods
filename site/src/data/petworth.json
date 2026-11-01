@@ -1,7 +1,7 @@
 {
  "slug": "petworth",
  "name": "Petworth",
- "generated_at": "2026-10-31T23:34:28Z",
+ "generated_at": "2026-11-01T00:10:51Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1973,62 +1973,10 @@
    "lat": 38.94824,
    "lon": -77.02088,
    "smd": "4D06"
-  },
-  {
-   "id": "E2700063",
-   "issued": "2026-10-02T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "412 GALLATIN ST NW 20011",
-   "work": "",
-   "zoning": "R-3",
-   "lat": 38.95194,
-   "lon": -77.01882,
-   "smd": "4D07"
-  },
-  {
-   "id": "E2700090",
-   "issued": "2026-10-02T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "423 EMERSON ST NW 20011",
-   "work": "",
-   "zoning": "R-3",
-   "lat": 38.95018,
-   "lon": -77.01852,
-   "smd": "4D07"
-  },
-  {
-   "id": "P2700049",
-   "issued": "2026-10-02T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "119 VARNUM ST NW 20011",
-   "work": "",
-   "zoning": "RA-1",
-   "lat": 38.94352,
-   "lon": -77.01316,
-   "smd": "4C05"
-  },
-  {
-   "id": "E2700062",
-   "issued": "2026-10-02T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "909 DECATUR ST NW 20011",
-   "work": "",
-   "zoning": "R-3",
-   "lat": 38.94847,
-   "lon": -77.02582,
-   "smd": "4D04"
   }
  ],
  "requests": {
-  "total": 1163,
+  "total": 1164,
   "previous_total": 1343,
   "by_type": [
    {
@@ -2038,7 +1986,7 @@
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 131,
+    "count": 132,
     "previous": 166
    },
    {
@@ -2337,8 +2285,18 @@
     "previous": 1
    }
   ],
-  "open": 259,
+  "open": 260,
   "recent": [
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-10-31T23:34:45Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4000 block of MARLBORO PLACE NW",
+    "lat": 38.94,
+    "lon": -77.016
+   },
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
@@ -2828,16 +2786,6 @@
     "block": "800 block of RANDOLPH STREET NW",
     "lat": 38.939,
     "lon": -77.024
-   },
-   {
-    "type": "Residential Parking Permit Violation",
-    "agency": "DPW",
-    "added": "2026-10-30T13:39:06Z",
-    "resolved": "2026-10-30T16:25:58Z",
-    "status": "Closed",
-    "block": "4100 block of 3RD STREET NW",
-    "lat": 38.942,
-    "lon": -77.015
    }
   ]
  },
@@ -2866,14 +2814,14 @@
     "previous": 4
    },
    {
-    "offense": "HOMICIDE",
-    "count": 1,
-    "previous": 0
-   },
-   {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
     "count": 1,
     "previous": 3
+   },
+   {
+    "offense": "HOMICIDE",
+    "count": 1,
+    "previous": 0
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -2924,7 +2872,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-10-31T23:34:28Z",
+  "generated_at": "2026-11-01T00:10:51Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2939,7 +2887,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Petworth through OTR assessment neighborhood \"Petworth\" (all sub-areas) in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Petworth boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-10-31): 61% of the 6,430 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 93% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Petworth through OTR assessment neighborhood \"Petworth\" (all sub-areas) in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Petworth boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-01): 61% of the 6,430 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 93% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -2952,7 +2900,7 @@
    "area_parcels": 6430,
    "area_share_inside": 0.608,
    "boundary_share_in_area": 0.93,
-   "measured": "2026-10-31"
+   "measured": "2026-11-01"
   },
   "house": {
    "median_12mo": 810000,
@@ -2977,11 +2925,6 @@
    "of": 189
   },
   "by_month": [
-   {
-    "month": "2025-11",
-    "median": 794450,
-    "count": 10
-   },
    {
     "month": "2025-12",
     "median": 695000,
@@ -3036,6 +2979,11 @@
     "month": "2026-10",
     "median": 625000,
     "count": 12
+   },
+   {
+    "month": "2026-11",
+    "median": null,
+    "count": 0
    }
   ],
   "by_month_basis": "houses only; calendar months, the last one in progress; median null when under 3 sales",
@@ -3250,7 +3198,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-10-31T23:34:28Z",
+  "generated_at": "2026-11-01T00:10:51Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3270,11 +3218,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 114,
-   "starting_next_7d": 16,
-   "reserved_ft": 14212,
+   "active_this_week": 115,
+   "starting_next_7d": 17,
+   "reserved_ft": 14300,
    "long_running_90d": 39,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-10-31: newest permit issued 2026-10-31, newest record update 2026-10-31, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-01: newest permit issued 2026-10-31, newest record update 2026-10-31, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -3295,6 +3243,10 @@
     {
      "type": "Utility & DDOT work",
      "count": 39
+    },
+    {
+     "type": "Events & reserved parking",
+     "count": 1
     }
    ],
    "upcoming": [
@@ -3425,6 +3377,14 @@
      "end": "2026-11-07",
      "ft": 88,
      "hours": ""
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "400 block of Buchanan Street NW",
+     "start": "2026-11-08",
+     "end": "2026-11-09",
+     "ft": 88,
+     "hours": "9:30 am\u20133:30 pm"
     }
    ]
   },
@@ -3558,7 +3518,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-10-31T23:34:28Z",
+  "generated_at": "2026-11-01T00:10:51Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3700,22 +3660,22 @@
      "url": "https://www.loc.gov/resource/sn83045462/1926-11-02/ed-1/?sp=44"
     },
     {
-     "date": "1926-11-06",
-     "page": 11,
-     "text": "The Friendliness of Petworth Church is Permeating the Neighborhood.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-06/ed-1/?sp=11"
+     "date": "1926-11-05",
+     "page": 52,
+     "text": "Union Sta. 7* S7O. 6 large rooms and bath: house one year Old. overlooking Sherman Circle: built-in garage, screened breakfast porch, hot-water heat, electricity, gas and instantaneous gas heater: immediate possession.",
+     "url": "https://www.loc.gov/resource/sn83045462/1926-11-05/ed-1/?sp=52"
+    },
+    {
+     "date": "1926-11-05",
+     "page": 53,
+     "text": "This splendid home faces a park and over looks Grant Circle It is two blocks irom Bt.",
+     "url": "https://www.loc.gov/resource/sn83045462/1926-11-05/ed-1/?sp=53"
     },
     {
      "date": "1926-11-06",
      "page": 18,
      "text": "Point in Petworth Really SIO,OOO Homes One square from Sherman Circle One of Petworth s Prett,e.t Sec.,on,. t 6 Large Rooms 6 Beautifully arranged Room, Homes of Think of all these features for $7,950 Cement \u2026",
      "url": "https://www.loc.gov/resource/sn83045462/1926-11-06/ed-1/?sp=18"
-    },
-    {
-     "date": "1926-11-06",
-     "page": 27,
-     "text": "\u2026 Home 4018 Illinois Ave. N.W. Eight well arranged rooms and 2 baths, with all modern conveniences and Is situated on one of the most beautiful avenues in Petworth. There is a garage on rear of lot It will pay you to inspect this property.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-06/ed-1/?sp=27"
     }
    ],
    "screened": 0,
@@ -3723,7 +3683,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-10-31T23:34:28Z",
+  "generated_at": "2026-11-01T00:10:51Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4050,7 +4010,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-10-31T23:34:28Z",
+  "generated_at": "2026-11-01T00:10:51Z",
   "today": "2026-10-31",
   "days_ahead": 30,
   "sources": [
@@ -4162,7 +4122,7 @@
   "anc_meetings": []
  },
  "jobs": {
-  "generated_at": "2026-10-31T23:34:28Z",
+  "generated_at": "2026-11-01T00:10:51Z",
   "max_age_days": 120,
   "sources": [
    {
