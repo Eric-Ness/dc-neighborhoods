@@ -77,6 +77,8 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # The action's default wrangler is too old to read wrangler.jsonc; pin the version tested locally.
+          wranglerVersion: "4.156.0"
           command: deploy
 
       - name: Report a failed ingest
