@@ -1,278 +1,409 @@
 ---
+// Front page in the Atlas design (design/frontpage/atlas, Harbor palette with a slate masthead): a text column
+// of news, events, getting around, curb work and bigger projects beside a sticky map plate whose marks the
+// lists point to by grid square. Then the numbers, a ledger, the lookups, Then, representatives and email.
 import Hood from "../../layouts/Hood.astro";
-import PermitMap from "../../components/PermitMap.astro";
-import ProjectList from "../../components/ProjectList.astro";
-import NewsList from "../../components/NewsList.astro";
-import EventList from "../../components/EventList.astro";
+import TransitBoard from "../../components/TransitBoard.astro";
+import sites from "../../data/index.json";
 import { staticPaths, pageUrl, type Neighborhood } from "../../lib/data";
+import { fmt, money, newsDate, shortDate, titleCase } from "../../lib/c5";
+import { plate, projection } from "../../lib/atlas";
 import {
-  model, reading, pair, bar, icon, stateTag, glyph, fmt, money, sign, shortType, leadName, titleCase, asOfDay,
-  CATS, BIG, MIX_ICON, STATE_WORD, type State,
-} from "../../lib/c5";
+  ownNews, nearbyNews, elsewhereNews, eventPlaces, curbGroups, bigProjects, mapLayers, condition, lookups, dayList,
+  reqTitle, pct, pctOk,
+} from "../../lib/front";
 
 export const getStaticPaths = staticPaths;
 const { n } = Astro.props as { n: Neighborhood };
-const m = model(n);
 const u = (p: string) => pageUrl(n.slug, p);
+const siteUrl = (slug: string) => { const s = sites.find((x) => x.slug === slug); return s ? `https://${s.hosts[0]}/` : `/${slug}/`; };
 const days = n.windows.requests_days;
+const pr = projection(n);
 
-// ---- measures: C3 vitals layout, C4 paired bars ----
-const falls = n.requests.by_type.filter((t) => t.count < t.previous).sort((a, b) => a.count - a.previous - (b.count - b.previous)).slice(0, 2);
-const fallsTxt = falls.length ? ` Biggest falls: ${falls.map((t) => `${shortType(t.type).toLowerCase()} (−${t.previous - t.count})`).join(" and ")}.` : "";
-type Measure = { name: string; href: string; state: State | "neutral" | "mix"; chg: string; glyph?: State; sub?: string; bars: string; read: string };
-const measures: Measure[] = [
-  {
-    name: "311 requests", href: u("streets/"), state: m.reqR.state, chg: m.reqR.txt,
-    bars: pair(`Last ${days} days`, n.requests.total, fmt(n.requests.total), `${days} days before`, n.requests.previous_total, fmt(n.requests.previous_total), `fill s-${m.reqR.state}`),
-    read: `${fmt(Math.abs(m.reqR.d))} ${m.reqR.d < 0 ? "fewer" : "more"} requests than the ${days} days before.${fallsTxt}`,
-  },
-  {
-    name: "Crime reports", href: u("about/#crime"), state: "neutral", glyph: m.crimeR.state, chg: m.crimeR.txt,
-    sub: `${n.crime.total} reports · ${n.crime.previous_total} the ${days} days before`,
-    bars: pair(`Last ${days} days`, n.crime.total, fmt(n.crime.total), `${days} days before`, n.crime.previous_total, fmt(n.crime.previous_total), "fill neutral"),
-    read: `Counts this small swing from month to month: ${Math.abs(m.crimeR.d)} ${m.crimeR.d > 0 ? "more" : "fewer"} than the ${days} days before. Shown as counts only, never mapped.`,
-  },
-];
+const news = ownNews(n, 7);
+const nearby = nearbyNews(n, 4);
+const elsewhere = elsewhereNews(n, 5);
+const ev = eventPlaces(n, 14);
+const curb = curbGroups(n);
+const projects = bigProjects(n);
+const layers = mapLayers(n, projects, ev, curb);
+const svg = plate(n, layers);
+const cond = condition(n);
+const lk = lookups(n);
+
+const today = n.events?.today ?? n.generated_at.slice(0, 10);
+const dayTag = (d: string) => {
+  const rel = Math.round((Date.parse(d + "T12:00:00Z") - Date.parse(today + "T12:00:00Z")) / 86400_000);
+  return rel === 0 ? "Today" : rel === 1 ? "Tomorrow" : new Date(d + "T12:00:00Z").toLocaleDateString("en-US", { weekday: "short", timeZone: "UTC" });
+};
+const dnum = (d: string) => new Date(d + "T12:00:00Z").getUTCDate();
+const mon = (d: string) => new Date(d + "T12:00:00Z").toLocaleDateString("en-US", { month: "short", timeZone: "UTC" });
+const range = (a: string, b: string) => (a === b ? shortDate(a) : `${shortDate(a)}–${mon(b) === mon(a) ? dnum(b) : shortDate(b)}`);
+const byDay = new Map<string, typeof ev.soon>();
+for (const e of ev.soon) byDay.set(e.date, [...(byDay.get(e.date) ?? []), e]);
+const later = [...new Set(ev.later.map((e) => shortDate(e.date)))];
+
+const minorIn = layers.minor.reduce((a, m) => a + m.n, 0) + projects.length;
+const pDates = n.permits.map((p) => p.issued ?? "").filter(Boolean).sort();
+const window = pDates.length ? `${shortDate(pDates[0])}–${shortDate(pDates[pDates.length - 1])}` : `last ${n.windows.permits_days} days`;
+
+// measures
 const h = n.homes;
-const kind = n.homes?.primary ?? "house"; // condos lead where houses are rare; "all" where both are rare (Navy Yard)
-const word = kind === "all" ? "home" : kind; // how the page names the leading home type
-const other = kind === "house" ? "condo" : "house";
+const kind = h?.primary ?? "house";
+const word = kind === "all" ? "home" : kind;
+const tot = n.requests.total, ptot = n.requests.previous_total;
+const cr = n.crime;
+type M = { label: string; big: string; delta: string; prev: string; period: string; href?: string };
+const measures: M[] = [
+  { label: "311 requests", big: fmt(tot), prev: `${fmt(ptot)} the ${days} days before`, href: u("streets/"),
+    delta: `${tot < ptot ? "Down" : "Up"} ${fmt(Math.abs(tot - ptot))}${pctOk(tot, ptot) ? ` (${pct(tot, ptot)})` : ""}`, period: `Last ${days} days` },
+  { label: "Crime reports", big: fmt(cr.total), prev: `${fmt(cr.previous_total)} the ${days} days before`, href: u("about/#crime"),
+    delta: `${fmt(Math.abs(cr.total - cr.previous_total))} ${cr.total > cr.previous_total ? "more" : "fewer"}; small counts swing month to month`,
+    period: `Last ${days} days · counts only, never mapped` },
+];
 if (h) {
-  const b = h[kind];
-  const r = reading(b.median_12mo, b.median_prev_12mo);
+  const b = h[kind] ?? h.house;
   const d = b.median_12mo - b.median_prev_12mo;
-  const pct = b.median_prev_12mo ? Math.round((d / b.median_prev_12mo) * 100) : 0;
-  measures.push({
-    name: `Median ${word} price`, href: u("homes/"), state: r.state,
-    chg: `${sign(d)}${money(Math.abs(d))} (${sign(d)}${Math.abs(pct)}%)`,
-    bars: pair("Last 12 months", b.median_12mo, money(b.median_12mo), "12 months before", b.median_prev_12mo, money(b.median_prev_12mo), `fill s-${r.state}`),
-    read: `From ${b.count_12mo} ${word} sales, against ${b.count_prev_12mo} the year before.${r.state === "steady" ? " Within 5%, so steady." : ""}`,
-  });
+  measures.push({ label: `Median ${word} price`, big: money(b.median_12mo), prev: `${money(b.median_prev_12mo)} the year before`, href: u("homes/"),
+    delta: `${d < 0 ? "Down" : "Up"} ${money(Math.abs(d))}${pctOk(b.count_12mo, b.count_prev_12mo) ? ` (${pct(b.median_12mo, b.median_prev_12mo)})` : ""}`,
+    period: `Last 12 months · ${b.count_12mo} sales vs ${b.count_prev_12mo}` });
 }
-const bigCount = m.projects.length;
-measures.push({
-  name: "Building permits", href: u("projects/"), state: "mix", chg: `${n.permits.length} issued`,
-  bars: pair("Bigger projects", bigCount, fmt(bigCount), "Smaller jobs", n.permits.length - bigCount, fmt(n.permits.length - bigCount), "fill c-add"),
-  read: `${m.groups["Additions"] ?? 0} additions, ${m.groups["Demolition"] ?? 0} demolition${(m.groups["Demolition"] ?? 0) === 1 ? "" : "s"} and ${m.groups["New construction"] ?? 0} new building${(m.groups["New construction"] ?? 0) === 1 ? "" : "s"}; the rest are smaller jobs.`,
-});
+const bigN = n.permits.filter((p) => ["Additions", "Demolition", "New construction"].includes(p.group)).length;
+measures.push({ label: "Building permits", big: fmt(n.permits.length), prev: "issued in the window", href: u("projects/"),
+  delta: `${bigN} bigger, ${n.permits.length - bigN} smaller`, period: `Last ${n.windows.permits_days} days` });
 
-// condition strip: graded readings only (crime is shown as counts, not graded)
-const graded: State[] = [m.lead?.r.state, ...m.others.map((o) => o.r.state), m.reqR.state].filter(Boolean) as State[];
-if (h) graded.push(reading(h[kind].median_12mo, h[kind].median_prev_12mo).state);
-const counts = { rising: 0, easing: 0, steady: 0 } as Record<State, number>;
-graded.forEach((s) => counts[s]++);
-const condWord =
-  (counts.easing > counts.rising ? "Mostly easing" : counts.rising > counts.easing ? "Mostly rising" : "Mixed") +
-  (counts.rising === 0 ? ", with nothing rising" : `, with ${counts.rising} reading${counts.rising === 1 ? "" : "s"} rising`);
+const top311 = [...n.requests.by_type].sort((a, b) => b.count - a.count).slice(0, 8);
+const max311 = Math.max(1, ...top311.map((r) => Math.max(r.count, r.previous)));
+const groups = new Map<string, number>();
+for (const p of n.permits) groups.set(p.group, (groups.get(p.group) ?? 0) + 1);
+const grows = [...groups.entries()].sort((a, b) => b[1] - a[1]);
+const gmax = grows[0]?.[1] ?? 1;
 
-// 311 ranked table
-const top311 = n.requests.by_type.slice(0, 6);
-const max311 = Math.max(...top311.map((t) => Math.max(t.count, t.previous)), 1);
-
-// permits by type
-const present = CATS.filter((c) => m.groups[c.group]);
-const maxg = Math.max(...present.map((c) => m.groups[c.group]), 1);
-
-// reps grouped by ANC
-const ancs = [...new Set(n.smds.map((s) => s.anc))].sort();
 const st = n.streets;
 const hi = n.history;
 const fb = hi?.buildings.featured_block;
-const clip = hi?.archive.clips[0];
+const fbRef = layers.then ? (() => { const b = n.blocks!.items.find((x) => x.key === layers.then!.key)!; return pr.ref(b.lat, b.lon); })() : null;
+const decades = hi?.buildings.by_decade ?? [];
+const dmax = Math.max(1, ...decades.map((d) => d.count));
+const clipNoise = (t: string) => { const w = t.split(/\s+/); return w.filter((x) => /[^A-Za-z,.;:'\-]/.test(x) || /[a-z][A-Z]/.test(x)).length / Math.max(1, w.length); };
+const clips = [...(hi?.archive.clips ?? [])].sort((a, b) => clipNoise(a.text) - clipNoise(b.text)).slice(0, 2).sort((a, b) => a.date.localeCompare(b.date));
+
+const ancs = [...new Set(n.smds.map((s) => s.anc))].sort();
+const months = h?.by_month ?? [];
+const mvals = months.map((m) => m.median).filter(Boolean) as number[];
+const mmax = Math.max(1, ...mvals);
 ---
-<Hood n={n} page="" title={`${n.name}: news, events and what's changing`} description={`${n.name}, Washington DC: local headlines, what's on this week, and what's changing in permits, 311, homes and streets, from DC's own open data. Independent; updated nightly.`}>
-
-  <div class="row happening" id="happening">
-    <NewsList n={n} limit={6} moreHref={u("news/")} />
-    <EventList n={n} days={14} limit={8} moreHref={u("news/#events")} heading="Coming up" />
-  </div>
-
-  <section id="condition" class="cond" aria-labelledby="c-h">
-    <div>
-      <div class="c-kick">Today's condition · {asOfDay(n.generated_at)} {m.lead && <Fragment set:html={stateTag(m.lead.r.state)} />}</div>
-      <h2 class="c-head" id="c-h">{m.leadSentence}</h2>
-      <p class="c-word">{condWord}. Each reading compares the last {days} days with the {days} days before; crime is shown as counts, not graded.</p>
-      <ul class="c-strip" aria-label="Readings by state">
-        {(["rising", "easing", "steady"] as State[]).map((s) => (
-          <li class={`s-${s}`}><Fragment set:html={icon(s)} /><b class="num">{counts[s]}</b> {STATE_WORD[s].toLowerCase()}</li>
+<Hood n={n} page="" title={`${n.name}: news, events and what's changing`} description={`${n.name}, Washington DC: local headlines, what's on, live Metro and bus arrivals, trash day and schools for your block, and a map of what's changing, from public data. Independent; updated nightly.`}>
+<div class="atlas">
+<div class="spread">
+  <section id="news" aria-labelledby="h-news">
+    <div class="shd"><h2 id="h-news">Latest news</h2><span class="aside">Local outlets</span></div>
+    {news.length === 0 ? <p class="empty">No local outlet has mentioned {n.name} in the last {Math.round((n.news?.archive_days ?? 180) / 30)} months.</p> : (
+      <ol class="news">
+        {news.map((it) => (
+          <li><a class="hl" href={it.url} rel="noopener">{it.title}</a>
+            <span class="meta">{it.source} <i class="sep" aria-hidden="true">/</i> <time datetime={it.published}>{newsDate(it.published, n.generated_at)}</time></span></li>
         ))}
-      </ul>
-    </div>
-    {m.lead && (
-      <div class="c-box">
-        <a class="c-lead" href={u("streets/#service")}>
-          <div class="ph"><h2>Biggest change in 311</h2><span class="sub" style="color:var(--accent);font-weight:600">Streets →</span></div>
-          <div class="lh"><b>{leadName(m.lead.type)}</b><span class={`chg s-${m.lead.r.state}`}><Fragment set:html={icon(m.lead.r.state)} />{m.lead.r.txt}</span></div>
-          <div class="cmp" set:html={pair(`Last ${days} days`, m.lead.count, fmt(m.lead.count), `${days} days before`, m.lead.previous, fmt(m.lead.previous), `fill s-${m.lead.r.state}`)} />
-        </a>
-        {m.others.length > 0 && <>
-          <div class="also-h">Also in 311</div>
-          <ul class="also">
-            {m.others.map((o) => (
-              <li>
-                <span class={`chg s-${o.r.state} ar`}><Fragment set:html={icon(o.r.state)} /></span>
-                <span class="al">{shortType(o.type)}</span>
-                <span class="anum num"><b class="av">{o.count}</b> <span class="ap">from {o.previous}</span></span>
-                <span class={`chg s-${o.r.state} num ad`}>{o.r.txt}</span>
-              </li>
-            ))}
-          </ul>
-        </>}
+      </ol>
+    )}
+    {nearby.length > 0 && (
+      <div class="nearby">
+        <p class="subh">Nearby</p>
+        <ol class="news">
+          {nearby.map((it) => (
+            <li><a class="hl" href={it.url} rel="noopener">{it.title}</a>
+              <span class="meta"><span class="tagn">{it.hood.name}</span>{it.source} <i class="sep" aria-hidden="true">/</i> <time datetime={it.published}>{newsDate(it.published, n.generated_at)}</time></span></li>
+          ))}
+        </ol>
       </div>
+    )}
+    <p class="fine">Headlines that mention {n.name}{nearby.length > 0 && " or a neighborhood next to it"}, from local outlets checked nightly. Each links to the outlet; we never copy articles. <a href={u("news/")}>All news &amp; events</a></p>
+  </section>
+
+  <section id="events" aria-labelledby="h-events">
+    <div class="shd"><h2 id="h-events">Coming up</h2><span class="aside">Next 14 days</span></div>
+    {ev.soon.length === 0 ? <p class="empty">Nothing on the calendars we read for the next 14 days.</p> : (
+      <ol class="events">
+        {[...byDay.entries()].map(([d, list]) => (
+          <li class="day">
+            <div class="date"><span class="dow">{dayTag(d)}</span><span class="dnum">{dnum(d)}</span><span class="mon">{mon(d)}</span></div>
+            <ul>
+              {list.map((e) => {
+                const pl = e.place ? ev.places.get(e.place) : undefined;
+                const ref = pl ? pr.ref(pl.lat, pl.lon) : null;
+                return (
+                  <li data-ref={pl?.id}>
+                    <span class="evkey" aria-hidden="true">{pl?.letter ?? "·"}</span>
+                    <div><a class="et" href={e.url} rel="noopener">{e.title}</a>
+                      <span class="meta">{e.time ? e.time.replace(/:00/g, "").replace(" - ", "–") : "Time TBA"}{e.place && <> <i class="sep" aria-hidden="true">/</i> {e.place}</>}</span></div>
+                    {ref && <a class="ref" href="#map" data-go={pl!.id} aria-label={`Show on map, square ${ref}`}><span>{ref}</span></a>}
+                  </li>
+                );
+              })}
+            </ul>
+          </li>
+        ))}
+      </ol>
+    )}
+    {later.length > 0 && <p class="fine">Further out: {later.slice(0, 8).join(", ")}.</p>}
+    {n.events && n.events.links.length > 0 && (
+      <p class="alsock"><span>Also check</span> {n.events.links.map((l) => <><a href={l.url} rel="noopener">{l.name}</a>{" "}</>)}</p>
     )}
   </section>
 
-  <div class="mapgrid">
-    <section id="vitals" class="panel vitals" aria-labelledby="v-h">
-      <div class="ph" style="padding:12px 16px 0"><h2 id="v-h">Measures</h2><span class="sub">Latest period vs the one before</span></div>
-      <div class="vlist">
-        {measures.map((ms) => (
-          <a class="vital" href={ms.href}>
-            <div class="v-top"><span class="v-name">{ms.name}</span>
-              {ms.state === "mix" ? <span class="tag s-mix"><Fragment set:html={MIX_ICON} />Mix</span> : ms.state !== "neutral" && <Fragment set:html={stateTag(ms.state)} />}
-            </div>
-            {ms.sub && <div class="v-sub num">{ms.sub}</div>}
-            <div class="v-chg">
-              {ms.state === "neutral" ? <span class="chg s-neutral"><Fragment set:html={icon(ms.glyph!)} />{ms.chg}</span>
-                : ms.state === "mix" ? <span class="chg s-mix">{ms.chg}</span>
-                : <span class={`chg s-${ms.state}`}><Fragment set:html={icon(ms.state)} />{ms.chg}</span>}
-            </div>
-            <div class="cmp" set:html={ms.bars} />
-            <p class="v-read">{ms.read}</p>
-          </a>
-        ))}
-      </div>
-    </section>
+  <section id="transit" aria-labelledby="h-transit">
+    <div class="shd"><h2 id="h-transit">Getting around</h2><span class="aside">Live, from WMATA and Capital Bikeshare</span></div>
+    <TransitBoard n={n} compact />
+    <p class="fine"><a href={u("transit/")}>Every stop and dock in {n.name}</a></p>
+  </section>
 
-    <div class="mapcol"><PermitMap n={n} projects={m.projects} moreHref={u("projects/")} /></div>
-
-    <div class="projcol">
-      <ProjectList projects={m.projects} total={n.permits.length} slug={n.slug} limit={8} moreHref={u("projects/")} />
-      <section class="panel mix" aria-labelledby="mix-h">
-        <div class="ph"><h2 id="mix-h">All {n.permits.length} permits by type</h2><span class="sub">Tap to filter the map</span></div>
-        <ul>
-          {present.map((c) => (
-            <li><button type="button" class="mixrow" data-g={c.key} aria-pressed="true">
-              <Fragment set:html={glyph(c.kind, c.key)} /><span class="ml">{c.group}</span>
-              <Fragment set:html={bar(m.groups[c.group], maxg, BIG.includes(c.group) ? `fill c-${c.key}` : "fill")} />
-              <b class="num">{m.groups[c.group]}</b>
-            </button></li>
-          ))}
-        </ul>
-      </section>
+  <aside id="map" class="plate" aria-labelledby="h-map">
+    <div class="plate-h"><h2 id="h-map">The map</h2><p>Permits issued {window} <i class="sep" aria-hidden="true">/</i> this week on the street</p></div>
+    <div class="maplegend" role="group" aria-label="Map layers">
+      <button type="button" class="lg lg-permits" data-layer="permits" aria-pressed="true"><span class="sw" aria-hidden="true"></span><span class="lt">Permits</span><span class="ls">{minorIn} in {n.windows.permits_days} days</span></button>
+      <button type="button" class="lg lg-events" data-layer="events" aria-pressed="true"><span class="sw" aria-hidden="true"></span><span class="lt">Events</span><span class="ls">{ev.places.size} places</span></button>
+      <button type="button" class="lg lg-curb" data-layer="curb" aria-pressed="true"><span class="sw" aria-hidden="true"></span><span class="lt">Curb reserved</span><span class="ls">starting this week</span></button>
+      {layers.then && <button type="button" class="lg lg-then" data-layer="then" aria-pressed="true"><span class="sw" aria-hidden="true"></span><span class="lt">{layers.then.year}</span><span class="ls">featured block</span></button>}
+      <button type="button" class="lg lg-transit" data-layer="transit" aria-pressed="false"><span class="sw" aria-hidden="true"></span><span class="lt">Metro &amp; bikes</span><span class="ls">stations, docks</span></button>
+      <button type="button" class="lg lg-req" data-layer="req" aria-pressed="false"><span class="sw" aria-hidden="true"></span><span class="lt">311 requests</span><span class="ls">recent, by block</span></button>
     </div>
-  </div>
+    <Fragment set:html={svg} />
+    <p class="fine">Streets from DDOT&rsquo;s roadway blocks; squares A&ndash;{"ABCDEFGHI"[pr.COLS - 1]}, 1&ndash;{pr.ROWS} match the references in the lists. Crime is never mapped.</p>
+  </aside>
 
-  <div class="row">
-    {h ? (
-      <section id="homes" class="panel" aria-labelledby="h-h">
-        <div class="ph"><h2 id="h-h">Homes</h2><a href={u("homes/")}>Sales and prices →</a></div>
-        <div class="hero"><b class="num">{money(h[kind].median_12mo)}</b><span>median {word} price, last 12 months, from {h[kind].count_12mo} {word} sales</span></div>
-        <table class="htbl"><tbody>
-          <tr><th scope="row">Median {word}<span>last 60 days</span></th><td class="hv num">{money(h.last_60d.median)}</td><td class="hn num">{h.last_60d.count} sales</td></tr>
-          {h.last_60d.median_ppsf && <tr><th scope="row">Price per sq ft<span>last 60 days</span></th><td class="hv num">${fmt(h.last_60d.median_ppsf)}</td><td class="hn num">median</td></tr>}
-          <tr><th scope="row">Median {other}<span>12 months</span></th><td class="hv num">{money(h[other].median_12mo)}</td><td class="hn num">{h[other].count_12mo} sales</td></tr>
-          <tr><th scope="row">Sold above assessment<span>12 months</span></th><td class="hv num">{h.above_assessment_12mo.n} <small>of {h.above_assessment_12mo.of}</small></td><td class="hn num">sales</td></tr>
-        </tbody></table>
-        <a class="cta" href={u("homes/#recent")}>See every recent sale <span>Homes →</span></a>
-      </section>
-    ) : <section id="homes" class="panel"><div class="ph"><h2>Homes</h2></div><p class="note">Home sales data didn't update tonight.</p></section>}
-    {st ? (
-      <section class="panel" aria-labelledby="tr-h">
-        <div class="ph"><h2 id="tr-h">Street trees</h2><a href={u("streets/#trees")}>Tree details →</a></div>
-        <div class="hero"><b class="num">{fmt(st.trees.total)}</b><span>street trees, {st.trees.species} species</span></div>
-        <div class="stats s2">
-          <div><div class="v">{fmt(st.trees.planted_5y)}</div><div class="k">planted in the last 5 years</div></div>
-          <div><div class="v" style="color:var(--accent)">{st.trees.empty_boxes}</div><div class="k">empty tree boxes open for planting</div></div>
-        </div>
-        <a class="cta" href="https://311.dc.gov/">Ask DC to plant a tree on your block <span>DC 311 →</span></a>
-      </section>
-    ) : <section class="panel"><div class="ph"><h2>Street trees</h2></div><p class="note">Tree data didn't update tonight.</p></section>}
-  </div>
-
-  <div class="row even" id="streets">
-    <section class="panel" aria-labelledby="t-h">
-      <div class="ph"><h2 id="t-h">Top 311 requests</h2><a href={u("streets/#requests")}>All types →</a></div>
-      <div class="tbl-wrap"><table class="t311">
-        <thead><tr><th></th><th>Type · last {days} days</th><th>Now</th><th>Prior</th><th>Change</th></tr></thead>
-        <tbody>
-          {top311.map((t, i) => {
-            const r = reading(t.count, t.previous);
+  <section id="street" aria-labelledby="h-street">
+    <div class="shd"><h2 id="h-street">On the street this week</h2><span class="aside">Curb space reserved</span></div>
+    {st ? <>
+      <p class="dek">{st.curb.starting_next_7d} curb-space permits start in the next 7 days; {st.curb.active_this_week} are active this week, reserving {fmt(st.curb.reserved_ft)} ft of curb in all.</p>
+      {curb.length === 0 ? <p class="empty">No curb permits start in the next 7 days.</p> : (
+        <ul class="curb-list">
+          {curb.map((c) => {
+            const ref = c.at ? pr.ref(c.at.lat, c.at.lon) : null;
             return (
-              <tr>
-                <td class="ri num">{String(i + 1).padStart(2, "0")}</td>
-                <td class="rn"><span>{shortType(t.type)}</span>
-                  <Fragment set:html={`<svg class="rb" viewBox="0 0 100 6" preserveAspectRatio="none" aria-hidden="true"><rect class="trk" width="100" height="6"/><rect class="fill s-${r.state}" width="${((100 * t.count) / max311).toFixed(1)}" height="6"/><rect class="tick" x="${((100 * t.previous) / max311 - 0.5).toFixed(1)}" y="-2" width="1" height="10"/></svg>`} /></td>
-                <td class="rc num">{t.count}</td>
-                <td class="rp num">{t.previous}</td>
-                <td class="rd num"><span class={`chg s-${r.state}`}><Fragment set:html={icon(r.state)} />{r.txt.split(" ")[0]}</span></td>
-              </tr>
+              <li data-ref={c.id}><span class="when">{range(c.start, c.end)}</span>
+                <div><strong>{c.where}</strong><span class="meta">{c.type}{c.hours && <> <i class="sep" aria-hidden="true">/</i> {c.hours}</>}</span></div>
+                {ref ? <a class="ref" href="#map" data-go={c.id} aria-label={`Show on map, square ${ref}`}><span>{ref}</span></a> : <span class="nomap">not mapped</span>}
+              </li>
             );
           })}
-        </tbody>
-      </table></div>
-      <div class="legend"><span><i style="width:12px;height:6px;background:var(--ink-2)"></i>Last {days} days</span><span><i style="width:1.5px;height:10px;background:var(--ink)"></i>{days} days before</span><span><Fragment set:html={icon("rising")} />rising <Fragment set:html={icon("easing")} />easing <Fragment set:html={icon("steady")} />within 5%</span></div>
-    </section>
-    <div class="stack">
-      {st && (
-        <section class="panel" aria-labelledby="curb-h">
-          <div class="ph"><h2 id="curb-h">Curb space</h2><a href={u("streets/#curb")}>This week's curb permits →</a></div>
-          <div class="stats s3">
-            <div><div class="v">{st.curb.active_this_week}</div><div class="k">curb permits active this week</div></div>
-            <div><div class="v">{st.curb.starting_next_7d}</div><div class="k">starting in the next 7 days</div></div>
-            <div><div class="v">{fmt(st.curb.reserved_ft)} ft</div><div class="k">of curb reserved, about {(st.curb.reserved_ft / 5280).toFixed(1)} miles</div></div>
-          </div>
-        </section>
+        </ul>
       )}
-      <aside class="panel sponsor" aria-label="Sponsor"><small>Sponsor</small><div>Presented by <b>[Local sponsor]</b></div></aside>
+      <p class="fine">From DDOT&rsquo;s public-space occupancy permits, at hundred-block precision. <a href={u("streets/#curb")}>Streets</a></p>
+    </> : <p class="empty">Curb permits didn&rsquo;t update tonight.</p>}
+  </section>
+
+  <section id="projects" aria-labelledby="h-proj">
+    <div class="shd"><h2 id="h-proj">Bigger projects</h2><span class="aside">Last {n.windows.permits_days} days</span></div>
+    <p class="dek">{n.permits.length} permits were issued {window}. Most are trade work; {projects.length === 1 ? "this one is an addition, demolition or new building" : `these ${projects.length} are additions, demolitions or new buildings`}.</p>
+    {projects.length === 0 ? <p class="empty">No additions, demolitions or new buildings were permitted in the last {n.windows.permits_days} days.</p> : (
+      <ol class="projects">
+        {projects.map((p) => (
+          <li data-ref={p.id}><span class="pnum" aria-hidden="true">{p.num}</span>
+            <div><strong>{p.addr}</strong><span class="meta">{p.group} <i class="sep" aria-hidden="true">/</i> issued {shortDate(p.issued)}</span>
+              {(p.work || p.others > 0) && <p>{p.work}{p.others > 0 && ` Plus ${p.others} other permit${p.others > 1 ? "s" : ""} at this address.`}</p>}</div>
+            {pr.ref(p.lat, p.lon) && <a class="ref" href="#map" data-go={p.id} aria-label={`Show on map, square ${pr.ref(p.lat, p.lon)}`}><span>{pr.ref(p.lat, p.lon)}</span></a>}
+          </li>
+        ))}
+      </ol>
+    )}
+    <p class="fine"><a href={u("projects/")}>All projects and permits</a></p>
+  </section>
+</div>
+
+<section id="numbers" class="band" aria-labelledby="h-num">
+  <div class="band-grid">
+    <div><div class="shd" style="border-top:0;padding-top:0"><h2 id="h-num">Today&rsquo;s condition</h2><span class="aside">{shortDate(today)}</span></div>
+      <p class="leadtxt">{cond.lead}</p>
+      <div class="tally">
+        <div class="tbar" aria-hidden="true">{(["rising", "easing", "steady"] as const).map((k) => cond.tally[k] > 0 && <span class={`tb tb-${k}`} style={`flex:${cond.tally[k]}`}></span>)}</div>
+        <p><strong>{cond.tally.rising}</strong> rising <i class="sep" aria-hidden="true">/</i> <strong>{cond.tally.easing}</strong> easing <i class="sep" aria-hidden="true">/</i> <strong>{cond.tally.steady}</strong> steady, across the {cond.tally.rising + cond.tally.easing + cond.tally.steady} kinds of 311 request with at least 10 in either period. A change within 10% (or 2 requests) counts as steady.</p>
+      </div>
+    </div>
+    <div><div class="shd" style="border-top:0;padding-top:0"><h2>Measures</h2><span class="aside">Latest period vs the one before</span></div>
+      <dl class="measures">
+        {measures.map((m) => (
+          <div class="msr"><dt>{m.href ? <a href={m.href} style="color:inherit;text-decoration:none">{m.label}</a> : m.label}</dt><dd class="mv">{m.big}</dd><dd class="md">{m.delta}</dd><dd class="mp">{m.prev}</dd><dd class="mper">{m.period}</dd></div>
+        ))}
+      </dl>
     </div>
   </div>
+</section>
 
-  <div class="row">
-    <section id="then" class="panel" aria-labelledby="th-h">
-      <div class="ph"><h2 id="th-h">Then</h2><a href={u("then/")}>History →</a></div>
-      <div class="then">
-        {fb && (
-          <a class="thencard" href={u("then/#featured")}>
-            <div class="th-k"><span class="th-yr">{fb.year}</span>{fb.block}</div>
-            <div class="th-big">{fb.buildings} buildings, one builder</div>
-            <p>{fb.sentence}</p>
-            <span class="th-go">How {n.name} was built →</span>
-          </a>
-        )}
-        {clip ? (
-          <a class="thencard" href={u("then/#archive")}>
-            <div class="th-k"><span class="th-yr">{clip.date.slice(0, 4)}</span>A reading from 100 years ago <span class="ocr">OCR</span></div>
-            <blockquote>“{clip.text}”</blockquote>
-            <div class="th-src">{hi!.archive.paper}, {new Date(clip.date + "T12:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}, page {clip.page}. Machine-read text; may contain errors.</div>
-          </a>
-        ) : hi && (
-          <div class="thencard"><div class="th-k">100 years ago this week</div><p>{hi.archive.note}</p></div>
-        )}
+<div class="ledger">
+  <section id="homes" aria-labelledby="h-homes"><div class="shd"><h2 id="h-homes">Homes</h2><span class="aside">Sales, OTR</span></div>
+    {h ? <>
+      <div class="kv">
+        <div><span class="k">Houses</span><span class="v">{money(h.house.median_12mo)}</span><span class="s">median, {h.house.count_12mo} sales in 12 months</span></div>
+        <div><span class="k">Condos</span><span class="v">{money(h.condo.median_12mo)}</span><span class="s">median, {h.condo.count_12mo} sales in 12 months</span></div>
       </div>
-    </section>
+      {mvals.length > 0 && (
+        <div class="months" role="img" aria-label={`Monthly median ${word} price, last 12 months, from ${money(Math.min(...mvals))} to ${money(mmax)}`}>
+          {months.map((m) => {
+            const d = new Date(m.month + "-01T12:00:00Z");
+            const ml = d.toLocaleDateString("en-US", { month: "short", year: "numeric", timeZone: "UTC" });
+            return m.median
+              ? <span class="mc" title={`${ml}: ${money(m.median)}, ${m.count} sales`}><span style={`height:${Math.max(4, Math.round((m.median / mmax) * 100))}%`}></span><b>{ml.charAt(0)}</b></span>
+              : <span class="mc na" title={`${ml}: under 3 sales`}><span></span><b>{ml.charAt(0)}</b></span>;
+          })}
+        </div>
+      )}
+      <p class="fine">Monthly median {word} price; blank months had under 3 sales. Last 60 days: {money(h.last_60d.median)} median from {h.last_60d.count} sales. {h.above_assessment_12mo.n} of {h.above_assessment_12mo.of} sales in the past year closed above assessed value.</p>
+      <table class="sales"><caption>Recent sales</caption><thead><tr><th scope="col">Address</th><th scope="col">Date</th><th scope="col" class="num">Price</th></tr></thead><tbody>
+        {h.recent_sales.slice(0, 5).map((s) => (
+          <tr><td>{s.address}<small>{s.kind}{s.beds != null && `, ${s.beds} bd`}{s.sqft != null && `, ${fmt(s.sqft)} sq ft`}</small></td><td>{shortDate(s.date)}</td><td class="num">{money(s.price)}</td></tr>
+        ))}
+      </tbody></table>
+      <p class="fine">{h.area_note} <a href={u("homes/")}>Homes</a></p>
+    </> : <p class="empty">Home sales didn&rsquo;t update tonight.</p>}
+  </section>
 
-    <section id="reps" class="panel" aria-labelledby="r-h">
-      <div class="ph"><h2 id="r-h">Who represents you</h2><a href={u("representatives/")}>{n.smds.length} SMDs →</a></div>
+  <section aria-labelledby="h-311"><div class="shd"><h2 id="h-311">Top 311 requests</h2><span class="aside">Last {days} days</span></div>
+    <ul class="bars">
+      {top311.map((r) => (
+        <li><span class="bl">{reqTitle(r.type)}</span>
+          <span class="bt"><span class="bf" style={`width:${((r.count / max311) * 100).toFixed(1)}%`}></span><span class="bp" style={`left:${((r.previous / max311) * 100).toFixed(1)}%`} title={`${days} days before: ${r.previous}`}></span></span>
+          <span class="bn">{fmt(r.count)}<small> / {fmt(r.previous)}</small></span></li>
+      ))}
+    </ul>
+    <p class="fine">Last {days} days, bar; the tick and small number are the {days} days before. {fmt(n.requests.open)} requests are still open.</p>
+    <div class="shd" style="margin-top:28px"><h2>Permits by type</h2><span class="aside">{window}</span></div>
+    <ul class="bars bars-p">
+      {grows.map(([g, c]) => (
+        <li><span class="bl">{g}</span><span class="bt"><span class:list={["bf", { "bf-big": ["Additions", "Demolition", "New construction"].includes(g) }]} style={`width:${((c / gmax) * 100).toFixed(1)}%`}></span></span><span class="bn">{c}</span></li>
+      ))}
+    </ul>
+  </section>
+
+  <section id="streets" aria-labelledby="h-streets"><div class="shd"><h2 id="h-streets">Street trees</h2><span class="aside">DDOT inventory</span></div>
+    {st ? <>
+      <div class="kv">
+        <div><span class="k">Street trees</span><span class="v">{fmt(st.trees.total)}</span><span class="s">{st.trees.species} species; {fmt(st.trees.planted_5y)} planted in the last 5 years</span></div>
+        <div><span class="k">Empty tree boxes</span><span class="v">{st.trees.empty_boxes}</span><span class="s">ready to plant</span></div>
+      </div>
+      <p class="subh">Most common</p><p class="plain">{st.trees.top_species.slice(0, 5).map((s) => `${s.name} ${fmt(s.count)}`).join(", ")}</p>
+      <p class="subh">Biggest trunks</p>
+      <ul class="plainlist">{st.trees.biggest.slice(0, 4).map((b) => <li>{b.species}, {Math.round(b.dbh_in)} in across <span class="meta">{b.block}</span></li>)}</ul>
+      <p class="fine">DDOT urban forestry inventory, {shortDate(st.trees.inventory_date)}. <a href="https://311.dc.gov/">Ask DC to plant a tree</a> · <a href={u("streets/")}>Streets</a></p>
+    </> : <p class="empty">Tree data didn&rsquo;t update tonight.</p>}
+  </section>
+</div>
+
+{lk.total > 0 && (
+  <section id="lookups" class="thensec" aria-labelledby="h-lk">
+    <div class="shd" style="border-top:0;padding-top:0"><h2 id="h-lk">Around the house</h2><span class="aside">For all {lk.total} blocks; <a href={u("blocks/")}>look up your own</a></span></div>
+    <dl class="lookup">
+      {lk.trash.length > 0 && <div><dt>Trash day</dt><dd>{dayList(lk.trash, lk.total)}<small>DPW collection routes. Recycling: {dayList(lk.recycling, lk.total)}.</small></dd></div>}
+      {lk.leafZones.length > 0 && <div><dt>Leaf collection</dt><dd>{lk.leafZones.every((z) => z.done === 0) ? "Not started yet" : `${lk.leafZones.reduce((a, z) => a + z.done, 0)} of ${lk.total} blocks done`}
+        <small>{lk.leafZones.map((z) => `Zone ${z.zone} (${z.blocks} blocks)`).join(", ")}. {lk.leafZones.find((z) => z.status)?.status ?? ""} <a href="https://dpw.dc.gov/service/leaf-collection">DPW leaf collection</a></small></dd></div>}
+      <div><dt>Street sweeping</dt><dd>Check the posted signs<small>DC doesn&rsquo;t publish a current block-by-block sweeping schedule; residential sweeping runs March to October. <a href="https://dpw.dc.gov/service/street-and-alley-cleaning">DPW street cleaning</a></small></dd></div>
+      <div><dt>Snow emergency routes</dt><dd>{lk.snow.length ? lk.snow.map((s) => titleCase(s).replace(/ (Nw|Ne|Sw|Se)$/i, "")).join(", ") : "None in the neighborhood"}<small>{lk.snow.length ? "No parking on these streets once DC declares a snow emergency; cars are towed." : "Side streets are plowed after the emergency routes."}</small></dd></div>
+      {lk.schools.elementary.length > 0 && <div><dt>Public schools (zoned)</dt><dd>{lk.schools.elementary.slice(0, 3).map((s) => s.name).join(", ")}{lk.schools.elementary.length > 3 && ` and ${lk.schools.elementary.length - 3} more`}
+        <small>Elementary, depending on the block. Middle: {lk.schools.middle.map((s) => s.name).join(", ")}. High: {lk.schools.high.map((s) => s.name).join(", ")}. DCPS boundaries from 2025&ndash;26.</small></dd></div>}
+      {lk.rpp.length > 0 && <div><dt>Residential parking zone</dt><dd>Zone {lk.rpp.map(([z]) => z).join(" and ")}<small>{lk.rpp.reduce((a, [, c]) => a + c, 0)} block sides have residential permit parking.</small></dd></div>}
+    </dl>
+  </section>
+)}
+
+<section id="then" class="thensec" aria-labelledby="h-then">
+  <div class="shd" style="border-top:0;padding-top:0"><h2 id="h-then">Then</h2><span class="aside">{n.name} in the record</span></div>
+  {hi ? (
+    <div class="then-grid">
+      <div>
+        {fb && <p class="then-lead" data-ref="h1">In {fb.year}, one builder put up {fb.buildings} buildings on the {fb.block} under {fb.permits} permits.{fb.largest_permit.cost != null && ` The largest permit alone covered ${fb.largest_permit.buildings} buildings at an estimated $${fmt(fb.largest_permit.cost)}.`}
+          {fbRef && <> <a class="ref" href="#map" data-go="h1" aria-label={`Show on map, square ${fbRef}`}><span>{fbRef}</span></a></>}</p>}
+        {decades.length > 0 && <div class="decades" style={`grid-template-columns:repeat(${decades.length},1fr)`} role="img" aria-label={`Historic building permits by decade, peaking at ${fmt(dmax)}`}>
+          {decades.map((d) => <span class="dc" title={`${d.decade}s: ${fmt(d.count)} buildings`}><span style={`height:${Math.max(2, Math.round((d.count / dmax) * 100))}%`}></span><b>{String(d.decade).slice(2)}s</b></span>)}
+        </div>}
+        <p class="fine">{fmt(hi.buildings.records)} historic building permits on record, {hi.buildings.year_min}&ndash;{hi.buildings.year_max}, by decade (DC Historic Preservation Office).</p>
+      </div>
+      <div>
+        <p class="subh">This week in {hi.archive.week_label.slice(-4)}: the {hi.archive.paper}</p>
+        {clips.length === 0 ? <p class="empty">The newspaper archive couldn&rsquo;t be reached tonight; clips return with the next run. <a href={u("then/")}>More history</a></p>
+        : clips.map((c) => (
+          <blockquote><p>&ldquo;{c.text}&rdquo;</p><a href={c.url} rel="noopener">{shortDate(c.date)}, {c.date.slice(0, 4)}, page {c.page}</a></blockquote>
+        ))}
+        <p class="fine">Machine-read text from Library of Congress scans; misspellings are the scanner&rsquo;s. <a href={u("then/")}>More from the archive</a></p>
+      </div>
+    </div>
+  ) : <p class="empty">History didn&rsquo;t update tonight.</p>}
+</section>
+
+<div class="civic">
+  <section id="civic" aria-labelledby="h-civic"><div class="shd" style="border-top:0;padding-top:0"><h2 id="h-civic">Who represents you</h2></div>
+    <p class="dek">{n.name} overlaps {n.smds.length} single-member districts in {ancs.length} advisory neighborhood commission{ancs.length === 1 ? "" : "s"}. Each district elects one commissioner.</p>
+    <ul class="ancs">
       {ancs.map((anc) => {
         const rs = n.smds.filter((s) => s.anc === anc);
-        return (
-          <div class="anc">
-            <div class="anc-h"><span>ANC {anc}</span>{rs[0].url && <a href={rs[0].url}>ANC {anc} site ↗</a>}</div>
-            <ul>{rs.map((s) => <li><span class="smd num">{s.smd}</span><span>{s.commissioner ? titleCase(s.commissioner) : "Vacant"}</span></li>)}</ul>
-          </div>
-        );
+        return rs.map((s, i) => (
+          <li><span>{s.commissioner ? titleCase(s.commissioner) : <em>Vacant</em>}</span><span class="meta">{i === 0 && rs[0].url ? <a href={rs[0].url}>ANC {anc}</a> : `ANC ${anc}`} · {s.smd}</span></li>
+        ));
       })}
-      <p class="repnote">Each Single Member District elects one ANC commissioner. Names of elected officials are public record.</p>
-    </section>
-  </div>
+    </ul>
+    <p class="fine">Names of elected officials are public record. <a href={u("representatives/")}>What your ANC is discussing</a></p>
+  </section>
+  <section id="email" aria-labelledby="h-email"><div class="shd" style="border-top:0;padding-top:0"><h2 id="h-email">The weekly email</h2></div>
+    <p class="dek">One email a week: the headlines, what&rsquo;s on, and what changed on the map. No ads.</p>
+    <form class="signup" action={u("subscribe/")} method="get"><label for="em">Email address</label>
+      <input id="em" name="email" type="email" autocomplete="email" placeholder="you@example.com" required /><button type="submit">Sign up</button></form>
+    {elsewhere.length > 0 && <>
+      <p class="subh" style="margin-top:28px">Elsewhere in DC</p>
+      <ul class="citywide">
+        {elsewhere.map((it) => <li><a href={it.url} rel="noopener">{it.title}</a> <span class="meta" style="display:inline"> {it.source} · on <a href={siteUrl(it.hood.slug)}>{it.hood.name}</a></span></li>)}
+      </ul>
+    </>}
+    <p class="fine">Also here: <a href={u("jobs/")}>jobs near {n.name}</a>{n.jobs && ` (${n.jobs.jobs.length} listed)`}, <a href={u("about/")}>about the data</a>.</p>
+  </section>
+</div>
+</div>
 
-  <div class="row one" id="subscribe">
-    <section class="panel subband" aria-labelledby="s-h">
-      <div class="ph"><h2 id="s-h">Weekly email</h2><a href={u("subscribe/")}>What's in it →</a></div>
-      <div style="font-size:15px">These readings in your inbox once a week.</div>
-      <form class="subrow" action={u("subscribe/")} method="get"><input type="email" name="email" placeholder="you@example.com" aria-label="Email address" /><button type="submit">Subscribe</button></form>
-      <div class="subnote"><span>One email a week. No ads in the data.</span><a href={`/${n.slug}/permits.xml`}>Permits RSS feed</a></div>
-    </section>
-  </div>
+<script>
+  // Map layers, and the two-way link between list items and map marks.
+  const svg = document.querySelector<SVGSVGElement>("#map svg");
+  if (svg) {
+    document.querySelectorAll<HTMLButtonElement>(".lg").forEach((b) => {
+      svg.classList.toggle(`hide-${b.dataset.layer}`, b.getAttribute("aria-pressed") !== "true");
+      b.addEventListener("click", () => {
+        const on = b.getAttribute("aria-pressed") !== "true";
+        b.setAttribute("aria-pressed", String(on));
+        svg.classList.toggle(`hide-${b.dataset.layer}`, !on);
+      });
+    });
+    const layerOf: Record<string, string> = { p: "permits", e: "events", c: "curb", h: "then" };
+    const mark = (id: string, on: boolean) => {
+      svg.querySelectorAll(`[data-mk="${id}"]`).forEach((m) => m.classList.toggle("hl", on));
+      svg.classList.toggle("dim", on);
+    };
+    const ensure = (id: string) => {
+      const b = document.querySelector<HTMLButtonElement>(`.lg[data-layer="${layerOf[id.charAt(0)]}"]`);
+      if (b && b.getAttribute("aria-pressed") !== "true") b.click();
+    };
+    document.querySelectorAll<HTMLElement>("[data-ref]").forEach((el) => {
+      const id = el.dataset.ref!;
+      el.addEventListener("mouseenter", () => mark(id, true));
+      el.addEventListener("mouseleave", () => mark(id, false));
+      el.addEventListener("focusin", () => mark(id, true));
+      el.addEventListener("focusout", () => mark(id, false));
+    });
+    let timer: ReturnType<typeof setTimeout>;
+    document.querySelectorAll<HTMLAnchorElement>("a.ref").forEach((a) => {
+      a.addEventListener("click", (e) => {
+        e.preventDefault();
+        const id = a.dataset.go!;
+        ensure(id);
+        const map = document.getElementById("map")!;
+        if (getComputedStyle(map).position !== "sticky") map.scrollIntoView({ behavior: "smooth", block: "start" });
+        clearTimeout(timer); mark(id, true);
+        timer = setTimeout(() => mark(id, false), 2600);
+      });
+    });
+    svg.querySelectorAll<SVGElement>(".mk").forEach((m) => {
+      m.addEventListener("click", () => {
+        const t = document.querySelector<HTMLElement>(`[data-ref="${m.dataset.mk}"]`);
+        if (!t) return;
+        t.scrollIntoView({ behavior: "smooth", block: "center" });
+        t.classList.add("on"); setTimeout(() => t.classList.remove("on"), 2200);
+      });
+    });
+  }
+</script>
 </Hood>

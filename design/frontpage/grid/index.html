@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Petworth: news, events and what's changing</title>
+<meta name="description" content="Local headlines, events and nightly public data for Petworth, Washington, DC. Independent; not affiliated with the DC Government.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#111111; --ink-2:#5e5e5e; --rule:#111111; --hair:#d6d6d6; --fill:#f2f2f2;
+  --accent:#c43a12; --bar:#111111; --bar-2:#bdbdbd; --bg:#ffffff;
+  --gut:24px; --pad:32px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.5 "Archivo",system-ui,sans-serif;
+  font-feature-settings:"tnum" 1,"lnum" 1}
+a{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.18em;text-decoration-color:#9a9a9a}
+a:hover{color:var(--accent);text-decoration-color:currentColor}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.num{font-variant-numeric:tabular-nums lining-nums}
+.muted{color:var(--ink-2)}
+.wrap{max-width:1280px;margin:0 auto;padding:0 var(--pad)}
+.g{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gut)}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;padding:6px 10px;z-index:9}
+
+/* masthead */
+.mast{border-top:8px solid var(--ink);padding-top:20px}
+.mast .g{align-items:end}
+.mast h1{grid-column:1/8;margin:0 0 -6px;font-size:128px;line-height:.86;font-weight:700;letter-spacing:-.045em}
+.mast .tag{grid-column:8/13;max-width:30em;margin:0 0 6px;font-size:15px;line-height:1.4}
+.mast .tag strong{display:block;font-weight:600}
+.nav{margin-top:24px;border-top:1px solid var(--rule);border-bottom:1px solid var(--hair)}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;column-gap:24px}
+.nav a{display:inline-block;padding:10px 0;font-size:14px;font-weight:500;text-decoration:none}
+.nav a:hover{text-decoration:underline}
+
+/* sections */
+section{margin-top:72px}
+.sh{grid-column:1/-1;display:flex;align-items:baseline;gap:16px;border-top:2px solid var(--rule);padding-top:10px;margin-bottom:24px}
+.sh .no{font-size:13px;font-weight:600;width:28px;flex:none}
+.sh h2{margin:0;font-size:22px;line-height:1.2;font-weight:700;letter-spacing:-.01em}
+.sh .more{margin-left:auto;font-size:14px;white-space:nowrap}
+.sh .note{font-size:14px;color:var(--ink-2)}
+.cap{font-size:13px;line-height:1.45;color:var(--ink-2);margin:14px 0 0}
+h3{font-size:15px;font-weight:700;margin:0 0 12px;line-height:1.3}
+.lab{font-size:13px;color:var(--ink-2);display:block}
+
+/* news + events */
+.news{grid-column:1/8}
+.events{grid-column:9/13}
+.newslist{list-style:none;margin:0;padding:0}
+.newslist li{display:grid;grid-template-columns:92px 1fr;column-gap:var(--gut);padding:12px 0;border-bottom:1px solid var(--hair)}
+.newslist li:first-child{padding-top:0}
+.newslist time{font-size:14px;color:var(--ink-2);padding-top:3px}
+.newslist a{font-size:19px;line-height:1.3;font-weight:500;text-decoration-color:#c4c4c4}
+.newslist li:first-child a{font-size:24px;line-height:1.2;font-weight:600;letter-spacing:-.01em}
+.src{display:block;font-size:13px;color:var(--ink-2);margin-top:4px}
+.evlist{list-style:none;margin:0;padding:0}
+.evlist li{display:grid;grid-template-columns:112px 1fr;column-gap:16px;padding:12px 0;border-bottom:1px solid var(--hair)}
+.evlist li:first-child{padding-top:0}
+.day{display:flex;gap:8px;align-items:flex-start}
+.dnum{font-size:34px;line-height:.9;font-weight:600;letter-spacing:-.02em;min-width:1.25em}
+.dlab{font-size:12px;line-height:1.3;color:var(--ink-2);padding-top:1px}
+.is-today .dnum,.is-today .dlab{color:var(--accent)}
+.ev+.ev{margin-top:8px}
+.ev a{font-weight:600}
+.meta{display:block;font-size:13px;color:var(--ink-2);line-height:1.4;margin-top:2px}
+.also{font-size:14px;margin:16px 0 0;line-height:1.6}
+.also b{font-weight:600;display:block;font-size:13px;color:var(--ink-2)}
+
+/* condition */
+.cond .lead{grid-column:1/10;margin:0;font-size:34px;line-height:1.22;font-weight:400;letter-spacing:-.015em}
+.cond .lead .num{font-weight:600}
+.tally{grid-column:10/13;align-self:end;margin:0;padding:0;list-style:none;border-left:1px solid var(--rule);padding-left:20px}
+.tally .tl{font-size:13px;color:var(--ink-2);display:block;margin-bottom:4px}
+.tally li{display:flex;align-items:baseline;gap:10px;font-size:15px}
+thead th.first{padding-right:16px}
+.tally .tn{font-size:30px;font-weight:600;min-width:1.4em;text-align:right;line-height:1.15}
+.cond .cap{grid-column:1/10}
+
+/* measures */
+.measures .m{grid-column:span 3;border-left:1px solid var(--hair);padding-left:16px;min-width:0}
+.measures .sh+.m{border-left:0;padding-left:0}
+.m .big{font-size:52px;line-height:1;font-weight:600;letter-spacing:-.03em;margin:10px 0 6px;white-space:nowrap}
+.m .big small{font-size:16px;font-weight:500;letter-spacing:0;margin-left:4px;color:var(--ink-2)}
+.m .cmp{font-size:14px;margin:0 0 14px;line-height:1.45}
+.m .cmp strong{font-weight:600}
+.m .cap{margin-top:12px}
+.state{display:inline-block;font-size:12px;font-weight:600;border:1px solid var(--ink);padding:0 6px;line-height:19px;margin-left:6px;vertical-align:1px}
+.pair{display:grid;row-gap:4px}
+.pb{display:block;height:8px;background:var(--bar)}
+.pb.prev{background:var(--bar-2)}
+.key{font-size:12px;color:var(--ink-2);margin-top:6px;display:flex;gap:14px;flex-wrap:wrap}
+.key i{display:inline-block;width:10px;height:8px;margin-right:5px;background:var(--bar)}
+.key i.p{background:var(--bar-2)}
+.split{display:flex;height:8px;margin-top:2px}
+.split span{display:block;height:8px}
+.split .a{background:var(--accent)} .split .b2{background:var(--bar-2)}
+.spark{display:block;width:100%;height:auto;max-width:280px}
+.spark rect{fill:var(--bar)}
+.spark text{font-size:11px;fill:var(--ink-2);font-family:inherit}
+
+/* permits */
+.mapcol{grid-column:1/8;min-width:0}
+.bigcol{grid-column:8/13;min-width:0}
+.map{display:block;width:100%;height:auto}
+.map .grat line{stroke:#e6e6e6;stroke-width:1}
+.map .grat text{font-size:10px;fill:#8a8a8a;font-family:inherit}
+.map .bnd{fill:none;stroke:var(--ink);stroke-width:1.5}
+.map .dots circle{fill:#8c8c8c}
+.map .mk circle{fill:var(--accent);stroke:#fff;stroke-width:1.5}
+.map .mk text{fill:#fff;font-size:11px;font-weight:700;text-anchor:middle;font-family:inherit}
+.maplegend{display:flex;gap:20px;flex-wrap:wrap;font-size:13px;color:var(--ink-2);margin-top:10px}
+.maplegend i{display:inline-block;border-radius:50%;margin-right:6px;vertical-align:-1px}
+.maplegend .d{width:7px;height:7px;background:#8c8c8c;vertical-align:1px}
+.maplegend .k{width:14px;height:14px;background:var(--accent)}
+.biglist{list-style:none;margin:0;padding:0}
+.biglist li{display:grid;grid-template-columns:28px 1fr;column-gap:12px;padding:12px 0;border-bottom:1px solid var(--hair)}
+.biglist li:first-child{padding-top:0}
+.biglist .k{width:22px;height:22px;border-radius:50%;background:var(--accent);color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.bh strong{font-weight:600}
+.bh .meta{display:inline;margin-left:8px}
+.biglist p{margin:4px 0 2px;font-size:14px;line-height:1.45}
+.pid{font-size:12px;color:var(--ink-2)}
+.bytype{grid-column:1/8;margin-top:40px}
+.bytype-note{grid-column:9/13;margin-top:40px}
+
+/* tables */
+table{border-collapse:collapse;width:100%}
+th,td{text-align:left;font-weight:400;padding:7px 0;border-bottom:1px solid var(--hair);vertical-align:baseline;font-size:15px}
+thead th{font-size:12px;color:var(--ink-2);border-bottom:1px solid var(--rule);padding-top:0}
+td.num,th.num{text-align:right;padding-left:14px;white-space:nowrap}
+td.first{text-align:left;padding-left:0;padding-right:16px}
+th+th,td+th{padding-left:0}
+td.gap,th.gap{padding-left:16px}
+td.bar{width:34%;padding-left:16px;vertical-align:middle}
+td.bar .in{position:relative;display:block;height:16px}
+td.bar .in .b{position:absolute;left:0;top:4px}
+td.bar .b{display:block;height:8px;background:var(--bar)}
+td.bar .b.hl{background:var(--accent)}
+td.bar .tick{position:absolute;top:50%;width:2px;height:16px;margin-top:-8px;background:var(--bar-2)}
+.chg .arr{display:inline-block;width:1em;text-align:center}
+.pc{color:var(--ink-2)}
+.hl{color:var(--accent);font-size:.8em}
+.sub{display:block;font-size:12px;color:var(--ink-2)}
+
+/* lower grid */
+.half{grid-column:span 6;min-width:0}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:var(--gut);margin:0 0 24px;padding:0}
+.facts div{border-top:1px solid var(--hair);padding-top:8px}
+.facts dt{font-size:13px;color:var(--ink-2);line-height:1.35}
+.facts dd{margin:4px 0 0;font-size:26px;font-weight:600;letter-spacing:-.02em;line-height:1.1}
+.facts dd small{font-size:13px;font-weight:400;color:var(--ink-2);letter-spacing:0;display:block;margin-top:2px}
+.hero{display:flex;align-items:flex-end;gap:var(--gut);margin-bottom:24px;flex-wrap:wrap}
+.hero .big{font-size:52px;line-height:1;font-weight:600;letter-spacing:-.03em}
+.hero p{margin:0;font-size:14px;line-height:1.45;max-width:24em}
+.condbar{display:flex;height:12px;margin:6px 0 8px}
+.condbar span{display:block;height:12px}
+.c1{background:#111}.c2{background:#555}.c3{background:#a8a8a8}.c4{background:#dcdcdc}
+.condleg{list-style:none;margin:0 0 24px;padding:0;display:flex;flex-wrap:wrap;gap:4px 16px;font-size:13px;color:var(--ink-2)}
+.condleg i{display:inline-block;width:10px;height:10px;margin-right:6px;vertical-align:-1px}
+.condleg .num{color:var(--ink)}
+.subhead{display:flex;justify-content:space-between;align-items:baseline;gap:4px 12px;margin:0 0 10px;flex-wrap:wrap}
+.subhead h3{margin:0}
+.subhead a{font-size:14px;white-space:nowrap}
+
+/* then */
+.then .yr{grid-column:1/4;font-size:120px;line-height:.85;font-weight:700;letter-spacing:-.05em;margin:0}
+.then .fb{grid-column:4/9;min-width:0}
+.then .fb p.s{font-size:20px;line-height:1.35;margin:0 0 20px}
+.then .decades{grid-column:9/13;min-width:0}
+.declist{list-style:none;margin:0;padding:0}
+.declist li{display:grid;grid-template-columns:56px 1fr 52px;align-items:center;column-gap:10px;font-size:14px;padding:3px 0}
+.declist .db{display:block;height:8px}
+.declist .db span{display:block;height:8px;background:var(--bar)}
+.declist .num:last-child{text-align:right}
+.clips{grid-column:1/-1;list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:var(--gut)}
+.clips li{border-top:1px solid var(--rule);padding-top:12px}
+.clips blockquote{margin:0 0 10px;font-size:16px;line-height:1.5}
+.clips .meta{display:inline}
+
+/* reps + email */
+.replist{list-style:none;margin:0;padding:0}
+.replist li{display:grid;grid-template-columns:80px 1fr auto;column-gap:16px;padding:10px 0;border-bottom:1px solid var(--hair);align-items:baseline}
+.replist .anc{font-weight:700}
+.replist .smds{word-spacing:.5em}
+form.mail{display:flex;gap:0;margin-top:4px;max-width:480px}
+form.mail input{flex:1;min-width:0;font:inherit;font-size:16px;padding:11px 12px;border:1px solid var(--ink);border-right:0;border-radius:0;background:#fff;color:var(--ink)}
+form.mail button{font:inherit;font-size:15px;font-weight:600;padding:0 20px;border:1px solid var(--ink);background:var(--ink);color:#fff;border-radius:0;cursor:pointer}
+form.mail button:hover{background:var(--accent);border-color:var(--accent)}
+form.mail input:focus-visible,form.mail button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* footer */
+footer{margin-top:96px;border-top:8px solid var(--ink);padding:20px 0 48px;font-size:13px;line-height:1.55;color:var(--ink-2)}
+footer .g>div{grid-column:span 4}
+footer strong{color:var(--ink);font-weight:600}
+footer p{margin:0 0 10px}
+
+/* ---------- tablet */
+@media (max-width:1040px){
+  .mast h1{font-size:96px}
+  .news{grid-column:1/-1}.events{grid-column:1/-1;margin-top:48px}
+  .measures .m{grid-column:span 6;margin-bottom:32px}
+  .measures .m:nth-child(4){border-left:0;padding-left:0}
+  .mapcol,.bigcol,.bytype,.bytype-note{grid-column:1/-1}
+  .bigcol{margin-top:32px}
+  .half{grid-column:1/-1}
+  .half+.half{margin-top:56px}
+  .then .yr{grid-column:1/-1;font-size:96px;margin-bottom:16px}
+  .then .fb{grid-column:1/8}.then .decades{grid-column:8/13}
+  .cond .lead,.cond .cap{grid-column:1/-1}
+  .tally{grid-column:1/-1;margin-top:24px;border-left:0;padding-left:0;display:flex;gap:28px;border-top:1px solid var(--hair);padding-top:12px}
+}
+/* ---------- phone */
+@media (max-width:640px){
+  :root{--pad:16px;--gut:16px}
+  body{font-size:16px}
+  .mast{padding-top:14px}
+  .mast h1{grid-column:1/-1;font-size:64px;margin:0}
+  .mast .tag{grid-column:1/-1;margin-top:12px;font-size:14px}
+  .nav{margin-top:16px}
+  .nav ul{flex-wrap:nowrap;overflow-x:auto;column-gap:18px;scrollbar-width:none}
+  .nav ul::-webkit-scrollbar{display:none}
+  .nav li{flex:none}
+  section{margin-top:52px}
+  .sh{flex-wrap:wrap;row-gap:2px;margin-bottom:18px}
+  .sh h2{font-size:20px}
+  .sh .no{width:22px}
+  .sh .note{flex-basis:100%;padding-left:38px}
+  .newslist li{grid-template-columns:1fr;row-gap:2px}
+  .newslist time{padding-top:0;font-size:13px}
+  .newslist a{font-size:17px}
+  .newslist li:first-child a{font-size:20px}
+  .evlist li{grid-template-columns:104px 1fr}
+  .dnum{font-size:28px}
+  .cond .lead{font-size:24px;line-height:1.28}
+  .tally{gap:18px}
+  .tally li{font-size:14px;gap:6px}
+  .tally .tn{font-size:24px;min-width:0}
+  .measures .m{grid-column:span 6;border-left:0;padding-left:0;border-top:1px solid var(--rule);padding-top:10px;margin-bottom:28px}
+  .m .big{font-size:36px;margin:8px 0 4px}
+  .m h3{font-size:14px;margin:0}
+  .m .cmp{font-size:13px;margin-bottom:10px}
+  .m .state{margin:4px 0 0}
+  .m .key{font-size:11px;gap:2px 10px}
+  .spark text{font-size:16px}
+  .then .yr{font-size:72px}
+  .then .fb,.then .decades{grid-column:1/-1}
+  .then .decades{margin-top:28px}
+  .then .fb p.s{font-size:18px}
+  .clips{grid-template-columns:1fr;row-gap:24px;margin-top:32px}
+  .facts{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:16px}
+  .facts dd{font-size:22px}
+  .hide-s{display:none}
+  td.bar{width:26%;padding-left:10px}
+  th,td{font-size:14px}
+  .hero .big{font-size:44px}
+  .replist li{grid-template-columns:64px 1fr;row-gap:2px}
+  .replist li a{grid-column:2}
+  footer .g>div{grid-column:1/-1}
+  .map .mk circle{r:17px}
+  .map .mk text{font-size:18px}
+  .map .dots circle{r:5.5px}
+  .map .grat text{font-size:17px}
+  .map .bnd{stroke-width:2.5}
+  .mast .tag{max-width:none}
+  .tally .tl{flex-basis:100%;margin:0}
+  .tally{flex-wrap:wrap;row-gap:4px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="wrap mast">
+  <div class="g">
+    <h1>Petworth</h1>
+    <p class="tag"><strong>News, events and what's changing in Petworth, Washington, DC.</strong>
+    Updated nightly from public data. Data as of <time datetime="2026-10-31T23:07:36-04:00" class="num">Sat Oct 31, 2026, 11:07 PM ET</time>.</p>
+  </div>
+  <nav class="nav" aria-label="Sections"><ul><li><a href="#news">News</a></li><li><a href="#events">Coming up</a></li><li><a href="#condition">Condition</a></li><li><a href="#measures">Measures</a></li><li><a href="#permits">Permits</a></li><li><a href="#homes">Homes</a></li><li><a href="#streets">Streets</a></li><li><a href="#then">Then</a></li><li><a href="#reps">Representatives</a></li><li><a href="#email">Weekly email</a></li></ul></nav>
+</header>
+
+<main id="main" class="wrap">
+
+<section class="g" aria-labelledby="h-news" style="margin-top:40px">
+  <div class="news" id="news">
+    <div class="sh"><span class="no num">01</span><h2 id="h-news">Latest news</h2><a class="more" href="#news">All news</a></div>
+    <ol class="newslist"><li><time datetime="2026-10-30">Yesterday</time><div><a href="https://www.popville.com/2026/10/shooting-homicide-dc-park-view-near-petworth-metro/" rel="noopener">Shooting Homicide in Park View around 4pm yesterday (Thursday afternoon) not far from Petworth metro</a><span class="src">PoPville</span></div></li><li><time datetime="2026-10-29">Oct 29</time><div><a href="https://www.popville.com/2026/10/exclusive-interview-dc-mayor-bowser-past-plus-future-plans/" rel="noopener">Exclusive Interview with Mayor Bowser – A Little Walk Down Memory Lane plus a Sneak Peek into the Mayor’s Future Plans.</a><span class="src">PoPville</span></div></li><li><time datetime="2026-10-28">Oct 28</time><div><a href="https://www.popville.com/2026/10/mpd-looking-5-juveniles-dc-petworth-robbery/" rel="noopener">MPD looking for 5 Juveniles involved in a Petworth robbery around 9:45am.</a><span class="src">PoPville</span></div></li><li><time datetime="2026-09-05">Sep 5</time><div><a href="https://www.petworthnews.org/blog/cottage-corner-homecoming-26" rel="noopener">Free Homecoming community event at Lincoln’s Cottage Sept 19</a><span class="src">Petworth News</span></div></li><li><time datetime="2026-08-31">Aug 31</time><div><a href="https://washingtonian.com/guide/food/where-to-eat-ethiopian-food-around-the-dc-area-right-now/" rel="noopener">Where to Eat Ethiopian Food Around the DC Area Right Now</a><span class="src">Washingtonian</span></div></li><li><time datetime="2026-08-11">Aug 11</time><div><a href="https://www.petworthnews.org/blog/summer-time-events-the-parks" rel="noopener">Live music, dancing, fitness, and a giant book sale: The Parks at Walter Reed</a><span class="src">Petworth News</span></div></li></ol>
+    <p class="cap">Headlines from local outlets that mention Petworth. Each links to the outlet; we don't copy articles.</p>
+  </div>
+  <div class="events" id="events">
+    <div class="sh"><span class="no num">02</span><h2>Coming up</h2><span class="note">Next 14 days</span></div>
+    <ul class="evlist"><li class="is-today"><div class="day"><span class="dnum">31</span><span class="dlab">Today<br>Oct</span></div><div><div class="ev"><a href="https://www.petworthcommunitymarket.org/" rel="noopener">Petworth Community Market</a><span class="meta"><span class="num">9:00 AM–1:00 PM</span> · 4131-4101 Block 9th St NW</span></div></div></li><li class=""><div class="day"><span class="dnum">1</span><span class="dlab">Tomorrow<br>Nov</span></div><div><div class="ev"><a href="https://opendata.dc.gov/datasets/farmers-market-locations" rel="noopener">Petworth Corner Market</a><span class="meta"><span class="num">3:00 PM–8:00 PM</span> · 9th St &amp; Varnum St NW</span></div></div></li><li class=""><div class="day"><span class="dnum">7</span><span class="dlab">Sat<br>Nov</span></div><div><div class="ev"><a href="https://www.petworthcommunitymarket.org/" rel="noopener">Petworth Community Market</a><span class="meta"><span class="num">9:00 AM–1:00 PM</span> · 4131-4101 Block 9th St NW</span></div></div></li><li class=""><div class="day"><span class="dnum">8</span><span class="dlab">Sun<br>Nov</span></div><div><div class="ev"><a href="https://opendata.dc.gov/datasets/farmers-market-locations" rel="noopener">Petworth Corner Market</a><span class="meta"><span class="num">3:00 PM–8:00 PM</span> · 9th St &amp; Varnum St NW</span></div></div></li><li class=""><div class="day"><span class="dnum">14</span><span class="dlab">Sat<br>Nov</span></div><div><div class="ev"><a href="https://www.petworthcommunitymarket.org/" rel="noopener">Petworth Community Market</a><span class="meta"><span class="num">9:00 AM–1:00 PM</span> · 4131-4101 Block 9th St NW</span></div></div></li></ul>
+    <p class="also"><b>Also check</b><a href="https://dclibrary.libnet.info/events?l=Petworth%20Neighborhood%20Library" rel="noopener">Petworth Library events</a> · <a href="https://www.anc4c.com/" rel="noopener">ANC 4C meetings</a> · <a href="https://www.petworthcommunitymarket.org/" rel="noopener">Petworth Community Market</a></p>
+  </div>
+</section>
+
+<section class="g cond" id="condition" aria-labelledby="h-cond">
+  <div class="sh"><span class="no num">03</span><h2 id="h-cond">Today's condition</h2><span class="note">311 requests, last 30 days vs the 30 before</span></div>
+  <p class="lead">Rodent & vector control requests rose to <span class="num">113</span> in the last 30 days, from <span class="num">84</span>, even as all 311 requests in Petworth fell from <span class="num">1,346</span> to <span class="num">1,160</span>.</p>
+  <ul class="tally" aria-label="Request types by direction">
+    <li class="tl">Of 18 request types</li>
+    <li><span class="tn num">5</span> rising</li>
+    <li><span class="tn num">13</span> easing</li>
+    <li><span class="tn num">0</span> steady</li>
+  </ul>
+  <p class="cap">Tally covers the 18 request types with at least 20 requests in either period. Steady means a change within 5% or within 2 requests.</p>
+</section>
+
+<section class="g measures" id="measures" aria-labelledby="h-meas">
+  <div class="sh"><span class="no num">04</span><h2 id="h-meas">Measures</h2><span class="note">Latest period vs the one before</span></div>
+
+  <div class="m">
+    <h3>311 requests</h3>
+    <div class="big num">1,160</div>
+    <p class="cmp">from <span class="num">1,346</span> &middot; <strong class="num">−186 (−14%)</strong></p>
+    <div class="pair" role="img" aria-label="Last 30 days 1,160, 30 days before 1,346"><span class="pb now" style="width:86.2%"></span><span class="pb prev" style="width:100.0%"></span></div>
+    <div class="key"><span><i></i>Last 30 days</span><span><i class="p"></i>30 days before</span></div>
+    <p class="cap"><span class="num">259</span> still open.</p>
+  </div>
+
+  <div class="m">
+    <h3>Crime reports</h3>
+    <div class="big num">49</div>
+    <p class="cmp">from <span class="num">40</span> &middot; <strong class="num">+9</strong></p>
+    <div class="pair" role="img" aria-label="Last 30 days 49, 30 days before 40"><span class="pb now" style="width:100.0%"></span><span class="pb prev" style="width:81.6%"></span></div>
+    <div class="key"><span><i></i>Last 30 days</span><span><i class="p"></i>30 days before</span></div>
+    <p class="cap">Counts only, never mapped or graded. Counts this small swing from month to month. Preliminary MPD counts by DC Code offense; not FBI NIBRS totals.</p>
+  </div>
+
+  <div class="m">
+    <h3>Median house price</h3>
+    <div class="big num">$810K</div>
+    <p class="cmp">from <span class="num">$832K</span> &middot; <strong class="num">−$22K (−3%)</strong><span class="state">steady</span></p>
+    <svg class="spark" viewBox="0 -2 240 74" role="img" aria-label="Monthly median house price, Dec 2025 to Oct 2026, ranging from $625K to $925K"><rect x="1.0" y="30.1" width="18.8" height="25.9"><title>Dec 2025: median $695K from 12 sales</title></rect><rect x="22.8" y="13.0" width="18.8" height="43.0"><title>Jan 2026: median $835K from 7 sales</title></rect><rect x="44.6" y="10.3" width="18.8" height="45.7"><title>Feb 2026: median $858K from 8 sales</title></rect><rect x="66.5" y="13.0" width="18.8" height="43.0"><title>Mar 2026: median $835K from 13 sales</title></rect><rect x="88.3" y="27.1" width="18.8" height="28.9"><title>Apr 2026: median $720K from 17 sales</title></rect><rect x="110.1" y="12.4" width="18.8" height="43.6"><title>May 2026: median $840K from 15 sales</title></rect><rect x="131.9" y="12.2" width="18.8" height="43.8"><title>Jun 2026: median $842K from 16 sales</title></rect><rect x="153.7" y="10.9" width="18.8" height="45.1"><title>Jul 2026: median $852K from 16 sales</title></rect><rect x="175.5" y="24.9" width="18.8" height="31.1"><title>Aug 2026: median $738K from 10 sales</title></rect><rect x="197.4" y="2.0" width="18.8" height="54.0"><title>Sep 2026: median $925K from 9 sales</title></rect><rect x="219.2" y="38.7" width="18.8" height="17.3"><title>Oct 2026: median $625K from 12 sales</title></rect><text x="0" y="69">Dec 2025</text><text x="240" y="69" text-anchor="end">Oct 2026</text></svg>
+    <p class="cap">Last 12 months vs the 12 before, from <span class="num">145</span> and <span class="num">131</span> house sales. Bars: monthly medians, <span class="num">7&ndash;17</span> sales each, so they jump.</p>
+  </div>
+
+  <div class="m">
+    <h3>Building permits</h3>
+    <div class="big num">80</div>
+    <p class="cmp">issued, last 30 days &middot; <strong class="num">7</strong> bigger projects</p>
+    <div class="split" role="img" aria-label="7 bigger projects, 73 smaller jobs"><span class="a" style="width:8.8%"></span><span class="b2" style="width:91.2%"></span></div>
+    <div class="key"><span><i style="background:var(--accent)"></i>Bigger <span class="num">7</span></span><span><i class="p"></i>Smaller <span class="num">73</span></span></div>
+    <p class="cap"><span class="num">6</span> additions, <span class="num">1</span> demolition, <span class="num">0</span> new buildings. The permit feed carries no count for the period before.</p>
+  </div>
+</section>
+
+<section class="g" id="permits" aria-labelledby="h-perm">
+  <div class="sh"><span class="no num">05</span><h2 id="h-perm">What's being built</h2><span class="note">Permits issued, last 30 days</span><a class="more" href="#permits">All permits</a></div>
+  <div class="mapcol">
+    <svg class="map" viewBox="0 0 600 656" role="img" aria-labelledby="map-t map-d">
+<title id="map-t">Map of building permits in Petworth, last 30 days</title>
+<desc id="map-d">80 permits plotted inside the Petworth boundary. 7 bigger projects are numbered to match the list beside the map; the other 73 are small gray dots.</desc>
+<g class="grat"><line x1="92.7" y1="0" x2="92.7" y2="656"/><text x="95.7" y="652">77.025°W</text><line x1="242.1" y1="0" x2="242.1" y2="656"/><text x="245.1" y="652">77.020°W</text><line x1="391.5" y1="0" x2="391.5" y2="656"/><text x="394.5" y="652">77.015°W</text><line x1="541.0" y1="0" x2="541.0" y2="656"/><line x1="0" y1="497.1" x2="600" y2="497.1"/><text x="4" y="493.1">38.940°N</text><line x1="0" y1="304.9" x2="600" y2="304.9"/><text x="4" y="300.9">38.945°N</text><line x1="0" y1="112.8" x2="600" y2="112.8"/><text x="4" y="108.8">38.950°N</text></g>
+<path class="bnd" d="M571.2,30.9 L572.0,46.6 L573.2,65.3 L573.6,72.5 L574.0,78.8 L574.1,79.5 L574.9,93.3 L575.4,102.2 L576.4,121.6 L577.3,135.8 L578.2,152.7 L579.0,165.9 L579.7,178.0 L580.0,182.9 L579.1,203.3 L579.5,212.7 L579.7,222.5 L579.6,225.8 L579.5,230.7 L579.7,240.2 L579.2,247.8 L577.7,253.2 L576.3,258.3 L574.3,264.2 L573.3,266.0 L572.2,267.7 L571.1,269.4 L564.7,278.1 L559.8,282.6 L557.9,284.3 L555.9,285.9 L553.9,287.5 L541.0,297.8 L528.7,307.6 L518.1,315.9 L516.6,317.0 L515.1,318.2 L513.2,319.5 L510.6,321.3 L509.1,322.2 L505.8,324.1 L504.1,325.0 L502.5,325.8 L497.0,328.9 L495.7,329.8 L494.9,330.4 L493.8,331.2 L492.5,332.2 L490.7,333.8 L488.0,336.8 L485.9,339.3 L485.4,339.9 L480.2,346.0 L476.7,350.0 L476.3,350.7 L475.5,352.2 L474.9,353.7 L469.0,370.1 L468.0,372.7 L467.6,374.0 L464.0,383.9 L463.1,386.1 L461.8,389.1 L460.9,390.9 L459.7,393.0 L459.0,394.0 L457.0,397.0 L454.9,399.9 L451.9,403.7 L447.0,409.3 L441.8,414.8 L439.0,417.8 L435.6,421.6 L428.6,430.4 L415.8,446.8 L413.9,449.5 L410.3,455.2 L404.3,464.7 L402.6,467.8 L396.0,481.5 L391.2,491.7 L388.8,496.5 L385.9,502.5 L385.4,503.4 L384.8,504.3 L383.5,506.0 L378.6,511.6 L354.2,539.8 L347.9,547.0 L345.3,550.0 L335.4,561.4 L326.1,572.1 L325.2,573.1 L323.4,574.9 L321.5,576.5 L319.5,578.2 L318.5,578.9 L316.4,580.4 L313.6,582.0 L312.6,582.5 L310.1,583.7 L308.7,584.3 L300.6,587.2 L294.5,589.3 L291.4,590.3 L288.3,591.3 L279.1,594.3 L275.5,595.5 L270.9,596.8 L256.4,600.9 L254.7,601.5 L252.9,602.1 L251.4,602.4 L249.4,602.9 L248.4,603.2 L204.9,610.3 L201.0,611.0 L198.1,611.6 L183.2,616.1 L162.9,622.5 L149.8,626.6 L141.8,629.0 L121.6,635.6 L116.4,634.8 L113.2,634.3 L107.6,588.6 L104.3,561.9 L103.4,555.5 L102.8,551.6 L101.9,547.3 L101.1,543.7 L99.6,535.8 L97.3,524.9 L93.7,506.6 L89.9,487.9 L85.4,465.6 L81.3,445.1 L78.0,429.0 L77.2,424.8 L76.5,421.1 L74.0,408.7 L71.3,395.0 L69.1,384.4 L65.4,366.2 L61.5,346.6 L60.8,343.2 L60.2,340.1 L60.0,339.1 L57.7,327.7 L53.3,305.6 L52.6,302.3 L51.9,298.3 L48.1,279.5 L44.8,261.4 L42.8,250.8 L39.3,220.5 L38.4,213.5 L34.8,179.5 L34.5,176.6 L34.3,174.4 L34.0,171.5 L32.7,160.1 L32.4,157.2 L31.8,151.3 L31.4,147.7 L30.4,138.0 L28.8,122.7 L28.0,115.3 L26.5,101.9 L26.2,98.5 L25.8,95.1 L25.4,91.8 L25.1,88.4 L24.7,85.1 L24.3,81.7 L21.9,58.0 L21.4,53.4 L21.0,50.2 L20.3,43.7 L20.0,40.7 L24.8,40.8 L56.1,39.6 L76.1,38.8 L83.5,38.6 L95.0,38.3 L99.7,38.0 L103.9,37.8 L122.4,37.1 L124.6,37.1 L127.6,36.9 L130.6,36.9 L153.3,36.1 L176.2,35.1 L179.2,35.0 L186.9,34.8 L195.3,34.4 L206.9,34.1 L219.1,33.6 L245.5,32.7 L251.6,32.5 L254.6,32.3 L261.4,32.1 L272.6,31.6 L292.2,30.9 L313.5,30.1 L325.5,29.6 L336.8,29.2 L347.9,28.9 L351.8,28.7 L352.6,28.6 L353.4,28.6 L355.8,28.3 L358.3,28.2 L359.6,28.1 L364.8,27.8 L368.4,27.6 L383.1,27.0 L437.6,25.0 L440.4,24.9 L442.2,24.9 L468.3,23.8 L473.1,23.6 L501.6,22.5 L520.0,21.8 L521.2,21.7 L537.1,21.2 L556.2,20.4 L566.4,20.1 L570.6,20.0 L571.2,30.9 Z"/>
+<g class="dots"><circle cx="326.4" cy="176.2" r="3.2"/><circle cx="243.3" cy="132.8" r="3.2"/><circle cx="358.7" cy="63.6" r="3.2"/><circle cx="338.3" cy="103.2" r="3.2"/><circle cx="346.7" cy="147.0" r="3.2"/><circle cx="385.0" cy="364.9" r="3.2"/><circle cx="341.0" cy="510.5" r="3.2"/><circle cx="76.8" cy="281.5" r="3.2"/><circle cx="175.2" cy="515.1" r="3.2"/><circle cx="341.0" cy="510.5" r="3.2"/><circle cx="176.9" cy="511.3" r="3.2"/><circle cx="397.2" cy="131.2" r="3.2"/><circle cx="339.5" cy="192.3" r="3.2"/><circle cx="168.9" cy="525.9" r="3.2"/><circle cx="397.2" cy="131.2" r="3.2"/><circle cx="339.5" cy="192.3" r="3.2"/><circle cx="172.2" cy="520.5" r="3.2"/><circle cx="188.6" cy="92.4" r="3.2"/><circle cx="252.9" cy="301.9" r="3.2"/><circle cx="82.2" cy="46.3" r="3.2"/><circle cx="245.1" cy="49.4" r="3.2"/><circle cx="339.5" cy="192.3" r="3.2"/><circle cx="196.1" cy="138.5" r="3.2"/><circle cx="385.0" cy="364.9" r="3.2"/><circle cx="245.4" cy="95.9" r="3.2"/><circle cx="245.4" cy="95.9" r="3.2"/><circle cx="223.0" cy="133.9" r="3.2"/><circle cx="245.4" cy="95.9" r="3.2"/><circle cx="158.7" cy="497.8" r="3.2"/><circle cx="122.6" cy="390.2" r="3.2"/><circle cx="243.3" cy="132.8" r="3.2"/><circle cx="185.3" cy="552.8" r="3.2"/><circle cx="206.2" cy="566.6" r="3.2"/><circle cx="165.3" cy="532.0" r="3.2"/><circle cx="244.8" cy="40.2" r="3.2"/><circle cx="168.3" cy="612.4" r="3.2"/><circle cx="336.2" cy="269.6" r="3.2"/><circle cx="171.0" cy="522.4" r="3.2"/><circle cx="124.3" cy="539.3" r="3.2"/><circle cx="444.1" cy="130.9" r="3.2"/><circle cx="188.6" cy="92.4" r="3.2"/><circle cx="249.6" cy="575.5" r="3.2"/><circle cx="185.3" cy="552.8" r="3.2"/><circle cx="399.0" cy="379.9" r="3.2"/><circle cx="75.9" cy="227.3" r="3.2"/><circle cx="266.0" cy="225.4" r="3.2"/><circle cx="320.7" cy="514.4" r="3.2"/><circle cx="75.9" cy="227.3" r="3.2"/><circle cx="448.6" cy="362.2" r="3.2"/><circle cx="385.9" cy="391.8" r="3.2"/><circle cx="277.4" cy="38.2" r="3.2"/><circle cx="277.4" cy="38.2" r="3.2"/><circle cx="243.3" cy="132.8" r="3.2"/><circle cx="166.5" cy="530.1" r="3.2"/><circle cx="446.5" cy="361.8" r="3.2"/><circle cx="277.4" cy="38.2" r="3.2"/><circle cx="167.7" cy="527.8" r="3.2"/><circle cx="173.1" cy="518.6" r="3.2"/><circle cx="97.1" cy="291.9" r="3.2"/><circle cx="225.1" cy="535.9" r="3.2"/><circle cx="298.3" cy="532.0" r="3.2"/><circle cx="446.5" cy="361.8" r="3.2"/><circle cx="227.8" cy="206.9" r="3.2"/><circle cx="307.9" cy="92.0" r="3.2"/><circle cx="322.8" cy="451.3" r="3.2"/><circle cx="532.0" cy="43.6" r="3.2"/><circle cx="243.3" cy="132.8" r="3.2"/><circle cx="97.1" cy="291.9" r="3.2"/><circle cx="97.1" cy="291.9" r="3.2"/><circle cx="419.0" cy="342.6" r="3.2"/><circle cx="225.1" cy="535.9" r="3.2"/><circle cx="175.5" cy="470.2" r="3.2"/><circle cx="215.8" cy="180.4" r="3.2"/></g>
+<g class="mk"><circle cx="107.6" cy="534.7" r="10"/><text x="107.6" y="538.7">7</text><title>7. 3907 Georgia Ave NW, additions</title></g><g class="mk"><circle cx="284.8" cy="324.9" r="10"/><text x="284.8" y="328.9">6</text><title>6. 4404 New Hampshire Ave NW, demolition</title></g><g class="mk"><circle cx="104.3" cy="128.2" r="10"/><text x="104.3" y="132.2">5</text><title>5. 820 Emerson St NW, additions</title></g><g class="mk"><circle cx="214.9" cy="123.9" r="10"/><text x="214.9" y="127.9">4</text><title>4. 602 Emerson St NW, additions</title></g><g class="mk"><circle cx="54.7" cy="49.8" r="10"/><text x="54.7" y="53.8">3</text><title>3. 912 Gallatin St NW, additions</title></g><g class="mk"><circle cx="52.9" cy="74.0" r="10"/><text x="52.9" y="78.0">2</text><title>2. 919 Farragut St NW, additions</title></g><g class="mk"><circle cx="346.7" cy="147.0" r="10"/><text x="346.7" y="151.0">1</text><title>1. 314 Delafield Pl NW, additions</title></g>
+</svg>
+    <div class="maplegend"><span><i class="k"></i>Bigger project (addition, demolition, new building), numbered</span><span><i class="d"></i>Other permit</span></div>
+  </div>
+  <div class="bigcol">
+    <h3>Bigger projects <span class="muted num" style="font-weight:400">7</span></h3>
+    <ol class="biglist"><li><span class="k">1</span><div><div class="bh"><strong>314 Delafield Pl NW</strong><span class="meta">Addition · <time datetime="2026-10-27">Oct 27</time></span></div><p>Alteration of the existing two-story residential building to reconfigure the interior layout and increase the total number of dwelling units from…</p><span class="pid">B2501946</span></div></li><li><span class="k">2</span><div><div class="bh"><strong>919 Farragut St NW</strong><span class="meta">Addition · <time datetime="2026-10-27">Oct 27</time></span></div><p>Two Story Rear addition with cellar. Change of use from Single Family to Single Family with ADUNew rear Deck with Stairs to grade.Rear parking pad…</p><span class="pid">B2606799</span></div></li><li><span class="k">3</span><div><div class="bh"><strong>912 Gallatin St NW</strong><span class="meta">Addition · <time datetime="2026-10-23">Oct 23</time></span></div><p>Renovation of 3 story building + basement 14-unit apartment building. RENOVATION OF EXISTING 3 STORY PLUS BASEMENT 14 UNIT APARTMENT BUILDING TO…</p><span class="pid">B2604550</span></div></li><li><span class="k">4</span><div><div class="bh"><strong>602 Emerson St NW</strong><span class="meta">Addition · <time datetime="2026-10-21">Oct 21</time></span></div><p>The project involves replacement of existing plaster walls and ceilings with drywall to address potential lead-based paint concerns. The work is…</p><span class="pid">B2605444</span></div></li><li><span class="k">5</span><div><div class="bh"><strong>820 Emerson St NW</strong><span class="meta">Addition · <time datetime="2026-10-20">Oct 20</time></span></div><p>Revision On Permit B2506312 relocate kitchen enclose the space under existing wood frame addition replace existing pier footing with continuos…</p><span class="pid">B2601928</span></div></li><li><span class="k">6</span><div><div class="bh"><strong>4404 New Hampshire Ave NW</strong><span class="meta">Demolition · <time datetime="2026-10-13">Oct 13</time></span></div><p>Partial demolition of fire-damaged 2-story single family row dwelling with basement. Remove front porch roof, roof trusses, decking, wood floor…</p><span class="pid">D2600557</span></div></li><li><span class="k">7</span><div><div class="bh"><strong>3907 Georgia Ave NW</strong><span class="meta">Addition · <time datetime="2026-10-09">Oct 9</time></span></div><p>Revision to B2401648: Provide elevator overrun space above roof deck. Unit count reduced from 15 to 14.</p><span class="pid">B2602489</span></div></li></ol>
+  </div>
+  <div class="bytype">
+    <h3>All 80 permits by type</h3>
+    <table><tbody><tr><th scope="row">Electrical, plumbing, mechanical</th><td class="bar" aria-hidden="true"><span class="b" style="width:100.0%"></span></td><td class="num">30</td></tr><tr><th scope="row">Minor work</th><td class="bar" aria-hidden="true"><span class="b" style="width:76.7%"></span></td><td class="num">23</td></tr><tr><th scope="row">Renovation &amp; repair</th><td class="bar" aria-hidden="true"><span class="b" style="width:50.0%"></span></td><td class="num">15</td></tr><tr><th scope="row">Additions <span class=hl>●</span></th><td class="bar" aria-hidden="true"><span class="b hl" style="width:20.0%"></span></td><td class="num">6</td></tr><tr><th scope="row">Home businesses</th><td class="bar" aria-hidden="true"><span class="b" style="width:16.7%"></span></td><td class="num">5</td></tr><tr><th scope="row">Demolition <span class=hl>●</span></th><td class="bar" aria-hidden="true"><span class="b hl" style="width:3.3%"></span></td><td class="num">1</td></tr></tbody></table>
+  </div>
+  <p class="bytype-note cap">Map shows the 80 permits with coordinates inside the Petworth boundary (DC Health Planning Neighborhoods (Open Data DC)). Grid lines every 0.005&deg;, about 550 m north&ndash;south.</p>
+</section>
+
+<section class="g" aria-label="Homes and 311">
+  <div class="half" id="homes">
+    <div class="sh"><span class="no num">06</span><h2>Homes</h2><a class="more" href="#homes">Sales and prices</a></div>
+    <dl class="facts">
+      <div><dt>Median house, last 60 days</dt><dd class="num">$789K<small>21 sales</small></dd></div>
+      <div><dt>Price per sq ft, last 60 days</dt><dd class="num">$535<small>median</small></dd></div>
+      <div><dt>Median condo, 12 months</dt><dd class="num">$499K<small>44 sales</small></dd></div>
+    </dl>
+    <div class="subhead"><h3>Recent sales</h3><span class="lab">Sold above assessment, 12 months: <span class="num">93</span> of <span class="num">189</span></span></div>
+    <table>
+      <thead><tr><th class="first">Date</th><th>Address</th><th class="hide-s">Type</th><th class="num">Price</th><th class="num hide-s">vs assessed</th></tr></thead>
+      <tbody><tr><td class="num first"><time datetime="2026-10-19">Oct 19</time></td><th scope="row">5128 Kansas Ave NW</th><td class="hide-s muted">house, 3 bd</td><td class="num">$425,000</td><td class="num muted hide-s">−260K</td></tr><tr><td class="num first"><time datetime="2026-10-19">Oct 19</time></td><th scope="row">5121 New Hampshire Ave NW</th><td class="hide-s muted">house, 3 bd</td><td class="num">$474,900</td><td class="num muted hide-s">−179K</td></tr><tr><td class="num first"><time datetime="2026-10-16">Oct 16</time></td><th scope="row">318 Varnum St NW</th><td class="hide-s muted">house, 3 bd</td><td class="num">$845,000</td><td class="num muted hide-s">+47K</td></tr><tr><td class="num first"><time datetime="2026-10-15">Oct 15</time></td><th scope="row">5226 7th St NW</th><td class="hide-s muted">house, 2 bd</td><td class="num">$440,000</td><td class="num muted hide-s">−151K</td></tr><tr><td class="num first"><time datetime="2026-10-14">Oct 14</time></td><th scope="row">5011 Illinois Ave NW</th><td class="hide-s muted">house, 3 bd</td><td class="num">$410,000</td><td class="num muted hide-s">−259K</td></tr><tr><td class="num first"><time datetime="2026-10-13">Oct 13</time></td><th scope="row">5328 Kansas Ave NW</th><td class="hide-s muted">house, 4 bd</td><td class="num">$530,000</td><td class="num muted hide-s">−284K</td></tr></tbody>
+    </table>
+    <p class="cap">Sales from DC's tax records for the assessment neighborhood "Petworth", which overlaps but does not exactly match the boundary used elsewhere on this page.</p>
+  </div>
+  <div class="half" id="streets">
+    <div class="sh"><span class="no num">07</span><h2>Top 311 requests</h2><a class="more" href="#streets">All types</a></div>
+    <table>
+      <thead><tr><th>Type, last 30 days</th><th aria-hidden="true"></th><th class="num">Now</th><th class="num hide-s">Before</th><th class="num">Change</th></tr></thead>
+      <tbody><tr><th scope="row">Bulk Collection</th><td class="bar" aria-hidden="true"><span class="in"><span class="b" style="width:90.2%"></span><span class="tick" style="left:100.0%"></span></span></td><td class="num">211</td><td class="num muted hide-s">234</td><td class="num chg"><span class="arr" aria-label="easing">↓</span> −23<span class=pc> −10%</span></td></tr><tr><th scope="row">Scheduled Yard Waste</th><td class="bar" aria-hidden="true"><span class="in"><span class="b" style="width:56.4%"></span><span class="tick" style="left:71.4%"></span></span></td><td class="num">132</td><td class="num muted hide-s">167</td><td class="num chg"><span class="arr" aria-label="easing">↓</span> −35<span class=pc> −21%</span></td></tr><tr><th scope="row">Rodent &amp; vector control</th><td class="bar" aria-hidden="true"><span class="in"><span class="b" style="width:48.3%"></span><span class="tick" style="left:35.9%"></span></span></td><td class="num">113</td><td class="num muted hide-s">84</td><td class="num chg"><span class="arr" aria-label="rising">↑</span> +29</td></tr><tr><th scope="row">Parking Enforcement</th><td class="bar" aria-hidden="true"><span class="in"><span class="b" style="width:37.2%"></span><span class="tick" style="left:39.7%"></span></span></td><td class="num">87</td><td class="num muted hide-s">93</td><td class="num chg"><span class="arr" aria-label="easing">↓</span> −6</td></tr><tr><th scope="row">Illegal Dumping</th><td class="bar" aria-hidden="true"><span class="in"><span class="b" style="width:28.2%"></span><span class="tick" style="left:41.5%"></span></span></td><td class="num">66</td><td class="num muted hide-s">97</td><td class="num chg"><span class="arr" aria-label="easing">↓</span> −31</td></tr><tr><th scope="row">Missed trash collection</th><td class="bar" aria-hidden="true"><span class="in"><span class="b" style="width:27.4%"></span><span class="tick" style="left:29.1%"></span></span></td><td class="num">64</td><td class="num muted hide-s">68</td><td class="num chg"><span class="arr" aria-label="easing">↓</span> −4</td></tr><tr><th scope="row">Sanitation Enforcement</th><td class="bar" aria-hidden="true"><span class="in"><span class="b" style="width:15.8%"></span><span class="tick" style="left:20.5%"></span></span></td><td class="num">37</td><td class="num muted hide-s">48</td><td class="num chg"><span class="arr" aria-label="easing">↓</span> −11</td></tr><tr><th scope="row">Energy assistance (LIHEAP)</th><td class="bar" aria-hidden="true"><span class="in"><span class="b" style="width:15.0%"></span><span class="tick" style="left:0.0%"></span></span></td><td class="num">35</td><td class="num muted hide-s">0</td><td class="num chg"><span class="arr" aria-label="rising">↑</span> +35</td></tr></tbody>
+    </table>
+    <div class="key" style="margin-top:10px"><span><i></i>Last 30 days</span><span><i class="p" style="width:2px;height:12px;vertical-align:-2px"></i>30 days before</span><span>Percent shown only when both counts are 100 or more</span></div>
+  </div>
+</section>
+
+<section class="g" aria-label="Streets">
+  <div class="half">
+    <div class="sh"><span class="no num">08</span><h2>Curb space</h2><a class="more" href="#streets">This week's curb permits</a></div>
+    <dl class="facts">
+      <div><dt>Active this week</dt><dd class="num">115</dd></div>
+      <div><dt>Starting in the next 7 days</dt><dd class="num">17</dd></div>
+      <div><dt>Curb reserved</dt><dd class="num">14,300 ft<small>about 2.7 miles</small></dd></div>
+    </dl>
+    <h3>Starting soon</h3>
+    <table><tbody><tr><th scope="row">100 block of Emerson Street NW<span class="sub">Construction staging</span></th><td class="num">Nov 2–30</td><td class="num">44 ft</td></tr><tr><th scope="row">4200 block of 5th Street NW<span class="sub">Construction staging</span></th><td class="num">Nov 2–Dec 1</td><td class="num">44 ft</td></tr><tr><th scope="row">300 block of Allison Street NW<span class="sub">Utility &amp; DDOT work</span></th><td class="num">Nov 2–6</td><td class="num">396 ft</td></tr><tr><th scope="row">400 block of Allison Street NW<span class="sub">Utility &amp; DDOT work</span></th><td class="num">Nov 2–6</td><td class="num">264 ft</td></tr><tr><th scope="row">500 block of Allison Street NW<span class="sub">Utility &amp; DDOT work</span></th><td class="num">Nov 2–6</td><td class="num">110 ft</td></tr><tr><th scope="row">600 block of Allison Street NW<span class="sub">Utility &amp; DDOT work</span></th><td class="num">Nov 2–6</td><td class="num">154 ft</td></tr></tbody></table>
+    <p class="cap">and 11 more starting in the next 7 days.</p>
+  </div>
+  <div class="half">
+    <div class="sh"><span class="no num">09</span><h2>Street trees</h2><a class="more" href="#streets">Tree details</a></div>
+    <div class="hero"><span class="big num">3,990</span><p>street trees of <span class="num">196</span> species; <span class="num">530</span> planted in the last 5 years. <span class="num">32</span> empty tree boxes are open for planting.</p></div>
+    <span class="lab">Condition</span>
+    <div class="condbar" role="img" aria-label="Condition: Excellent 128, Good 3,319, Fair 501, Poor 38"><span class="c1" style="width:3.21%" title="Excellent: 128"></span><span class="c2" style="width:83.27%" title="Good: 3,319"></span><span class="c3" style="width:12.57%" title="Fair: 501"></span><span class="c4" style="width:0.95%" title="Poor: 38"></span></div>
+    <ul class="condleg"><li><i class="c1"></i>Excellent <span class="num">128</span></li><li><i class="c2"></i>Good <span class="num">3,319</span></li><li><i class="c3"></i>Fair <span class="num">501</span></li><li><i class="c4"></i>Poor <span class="num">38</span></li></ul>
+    <h3>Most common</h3>
+    <table><tbody><tr><th scope="row">Pin oak</th><td class="bar" aria-hidden="true"><span class="b" style="width:100.0%"></span></td><td class="num">277</td></tr><tr><th scope="row">Japanese zelkova</th><td class="bar" aria-hidden="true"><span class="b" style="width:96.8%"></span></td><td class="num">268</td></tr><tr><th scope="row">American elm</th><td class="bar" aria-hidden="true"><span class="b" style="width:68.2%"></span></td><td class="num">189</td></tr><tr><th scope="row">Scarlet oak</th><td class="bar" aria-hidden="true"><span class="b" style="width:54.2%"></span></td><td class="num">150</td></tr><tr><th scope="row">Red maple</th><td class="bar" aria-hidden="true"><span class="b" style="width:50.5%"></span></td><td class="num">140</td></tr></tbody></table>
+    <p class="cap">Largest: a red oak, <span class="num">64.2</span> in across, on the 200 block of Allison St NW. <a href="https://311.dc.gov/">Ask DC to plant a tree on your block</a>.</p>
+  </div>
+</section>
+
+<section class="g then" id="then" aria-labelledby="h-then">
+  <div class="sh"><span class="no num">10</span><h2 id="h-then">Then</h2><span class="note">How Petworth was built</span><a class="more" href="#then">History</a></div>
+  <p class="yr num" aria-hidden="true">1926</p>
+  <div class="fb">
+    <h3>400 block of Delafield Place NW</h3>
+    <p class="s">In 1926, Cafritz Const. Co. built <span class="num">62</span> buildings on this block under <span class="num">4</span> permits. The largest permit covered <span class="num">21</span> buildings at an estimated <span class="num">$105,000</span>.</p>
+  </div>
+  <div class="decades">
+    <h3>Buildings by decade built</h3>
+    <ul class="declist"><li><span class="dl num">1890s</span><span class="db"><span style="width:2.0%"></span></span><span class="num">41</span></li><li><span class="dl num">1900s</span><span class="db"><span style="width:16.3%"></span></span><span class="num">333</span></li><li><span class="dl num">1910s</span><span class="db"><span style="width:48.9%"></span></span><span class="num">1,002</span></li><li><span class="dl num">1920s</span><span class="db"><span style="width:100.0%"></span></span><span class="num">2,048</span></li><li><span class="dl num">1930s</span><span class="db"><span style="width:26.3%"></span></span><span class="num">539</span></li><li><span class="dl num">1940s</span><span class="db"><span style="width:0.4%"></span></span><span class="num">8</span></li><li><span class="dl num">1950s</span><span class="db"><span style="width:0.3%"></span></span><span class="num">6</span></li></ul>
+    <p class="cap"><span class="num">4,007</span> historic building permit records, 1892&ndash;1955.</p>
+  </div>
+  <ul class="clips" aria-label="Newspaper clips from October 31 – November 6, 1926"><li><blockquote>“Mount Pleasant moved into a tie with Central and Immanuel Baptists for second place by taking all three from Petworth Methodists.”</blockquote><a class="meta" href="https://www.loc.gov/resource/sn83045462/1926-10-31/ed-1/?sp=94" rel="noopener">Evening Star, Oct 31, 1926, page 94</a></li><li><blockquote>“Six-room brick house In finest section of Petworth. recently redecorated throughout and in excellent condition: let us show you what a remarkable buy we can offer you.”</blockquote><a class="meta" href="https://www.loc.gov/resource/sn83045462/1926-11-02/ed-1/?sp=44" rel="noopener">Evening Star, Nov 2, 1926, page 44</a></li><li><blockquote>“This splendid home faces a park and over looks Grant Circle It is two blocks irom Bt.”</blockquote><a class="meta" href="https://www.loc.gov/resource/sn83045462/1926-11-05/ed-1/?sp=53" rel="noopener">Evening Star, Nov 5, 1926, page 53</a></li></ul>
+  <p class="cap" style="grid-column:1/-1">This week 100 years ago, October 31 – November 6, 1926. Machine-read text from scanned pages at the Library of Congress; errors are the scanner's.</p>
+</section>
+
+<section class="g" aria-label="Representatives and email">
+  <div class="half" id="reps">
+    <div class="sh"><span class="no num">11</span><h2>Who represents you</h2><span class="note">6 single member districts</span></div>
+    <ul class="replist"><li><span class="anc">ANC 4C</span><span class="smds num">4C05 4C06 4C07</span><a href="https://www.anc4c.com/" rel="noopener">www.anc4c.com</a></li><li><span class="anc">ANC 4D</span><span class="smds num">4D04 4D05 4D06</span><a href="https://anc4d.org/" rel="noopener">anc4d.org</a></li></ul>
+    <p class="cap">Each single member district elects one Advisory Neighborhood Commissioner. Commissioners and meeting dates are on each ANC's site.</p>
+  </div>
+  <div class="half" id="email">
+    <div class="sh"><span class="no num">12</span><h2>Weekly email</h2></div>
+    <p style="margin:0 0 16px;font-size:18px;line-height:1.4">These readings in your inbox once a week: news, events, and what changed.</p>
+    <form class="mail" action="#" onsubmit="return false">
+      <label class="vh" for="em">Email address</label>
+      <input id="em" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <p class="cap">One email a week. Unsubscribe in one click.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap g">
+    <div><p><strong>petworth.org is independent.</strong> It is not affiliated with, endorsed by, or speaking for the DC Government.</p>
+    <p>Built every night from public data. Data as of <span class="num">Sat Oct 31, 2026, 11:07 PM ET</span>.</p></div>
+    <div><p><strong>Sources</strong><br>Permits: Open Data DC: Building Permits (DOB)<br>311: Open Data DC: 311 City Service Requests (OUC)<br>Crime: Open Data DC: Crime Incidents (MPD), counts only<br>Districts: Open Data DC: Single Member Districts 2023</p></div>
+    <div><p><strong>Data license</strong> CC BY 4.0. Numbers are as published; where a feed is missing, we say so.</p>
+    <p><a href="#">About the data</a> &middot; <a href="#">Permits RSS</a></p></div>
+  </div>
+</footer>
+</body>
+</html>

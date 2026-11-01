@@ -1,0 +1,35 @@
+---
+import Hood from "../../../layouts/Hood.astro";
+import { staticPaths, pageUrl, type Neighborhood } from "../../../lib/data";
+import { streetLabel } from "../../../lib/atlas";
+import { lookups, dayList } from "../../../lib/front";
+
+export const getStaticPaths = staticPaths;
+const { n } = Astro.props as { n: Neighborhood };
+const items = n.blocks?.items ?? [];
+const byStreet = new Map<string, typeof items>();
+for (const b of items) byStreet.set(b.street, [...(byStreet.get(b.street) ?? []), b]);
+const streets = [...byStreet.entries()].sort((a, b) => streetLabel(a[0]).localeCompare(streetLabel(b[0]), "en", { numeric: true }));
+const lk = lookups(n);
+---
+<Hood n={n} page="blocks/" title={`${n.name} block by block: trash day, schools, parking`} description={`Every block in ${n.name}, Washington DC: trash and recycling day, zoned public schools, parking zone, snow routes and what's happening on it.`}
+  heading="Your block" intro={`All ${items.length} blocks in ${n.name}. Each page shows trash and recycling day, leaf collection, zoned schools, parking, and recent permits, sales and 311 requests on that block.`}>
+  {items.length === 0 ? <p class="empty">Block data didn&rsquo;t update tonight.</p> : <>
+    <section class="panel" aria-labelledby="sum-h"><div class="ph"><h2 id="sum-h">For the whole neighborhood</h2></div>
+      <dl class="lookup">
+        <div><dt>Trash day</dt><dd>{dayList(lk.trash, lk.total)}</dd></div>
+        <div><dt>Recycling day</dt><dd>{dayList(lk.recycling, lk.total)}</dd></div>
+      </dl>
+    </section>
+    <section class="panel" aria-labelledby="all-h" style="margin-top:28px"><div class="ph"><h2 id="all-h">Every block</h2><span class="sub">{streets.length} streets</span></div>
+      <div class="blocklist">
+        {streets.map(([s, bs]) => (
+          <div style="break-inside:avoid">
+            <h3>{streetLabel(s)}</h3>
+            <ul style="list-style:none;margin:0;padding:0">{bs.sort((a, b) => a.hundred - b.hundred).map((b) => <li><a href={pageUrl(n.slug, `blocks/${b.key}/`)}>{b.hundred || "Unit"} block</a> <span class="meta" style="display:inline">{b.from && b.to ? `${b.from.replace(/ (NW|NE|SW|SE)$/, "")} to ${b.to.replace(/ (NW|NE|SW|SE)$/, "")}` : ""}</span></li>)}</ul>
+          </div>
+        ))}
+      </div>
+    </section>
+  </>}
+</Hood>

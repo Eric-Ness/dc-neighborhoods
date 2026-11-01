@@ -1,4 +1,5 @@
-// Street/address lookup index for one neighborhood: permits, recent home sales and upcoming curb permits.
+// Street/address lookup index for one neighborhood: every hundred block (to its block page), permits, recent
+// home sales and upcoming curb permits.
 // Each entry: a = address or block, k = kind, d = detail, u = link to the row on the site.
 import type { APIRoute } from "astro";
 import { staticPaths, type Neighborhood } from "../../lib/data";
@@ -10,6 +11,9 @@ export const GET: APIRoute = ({ props }) => {
   const n = (props as { n: Neighborhood }).n;
   const base = `/${n.slug}/`;
   const hits: { a: string; k: string; d: string; u: string }[] = [];
+  for (const b of n.blocks?.items ?? []) {
+    hits.push({ a: b.name.replace(/ block of /, " ").replace(/^Unit /, "1 "), k: "Block", d: `${b.name}: trash day, schools, parking`, u: `${base}blocks/${b.key}/` });
+  }
   for (const p of n.permits) {
     hits.push({ a: addr(p.address), k: `Permit · ${p.group}`, d: shortDate(p.issued), u: `${base}projects/#p${p.id}` });
   }

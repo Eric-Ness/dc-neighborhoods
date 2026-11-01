@@ -1,6 +1,8 @@
 ---
-// Shared frame for every page of a neighborhood: C5 header, search, cross-page navigation.
+// Shared frame for every page of a neighborhood: the Atlas masthead (slate title and nav), a switcher to the
+// other neighborhood sites, the street/block lookup, and the page's content.
 import Base from "./Base.astro";
+import sites from "../data/index.json";
 import { PAGES, pageUrl, type Neighborhood } from "../lib/data";
 import { asOf, ICON_SEARCH } from "../lib/c5";
 
@@ -9,37 +11,48 @@ interface Props {
   page: string; // path from PAGES, "" for the overview
   title: string;
   description: string;
-  heading?: string; // page heading under the brand on sub-pages
+  heading?: string; // page heading under the masthead on sub-pages
   intro?: string;
 }
 const { n, page, title, description, heading, intro } = Astro.props;
 const home = pageUrl(n.slug);
+const host = sites.find((s) => s.slug === n.slug)?.hosts[0] ?? `${n.slug}.org`;
+const front = page === "";
 ---
 <Base title={title} description={description} rss={`/${n.slug}/permits.xml`} generated={n.generated_at} slug={n.slug}>
-  <header><div class="wrap">
-    <div class="topbar">
-      <div class="hd">
-        <div class="brand">
-          {page === "" ? <h1>{n.name}</h1> : <a class="brand-link" href={home}>{n.name}</a>}
-          <p>News, events and what's changing in {n.name}</p>
+  <a class="skip" href="#main">Skip to the content</a>
+  <div class="topline"><div class="wrap">
+    <span><b>{host}</b> &nbsp;An independent neighborhood site</span>
+    <span>Updated nightly from public data <i aria-hidden="true">/</i> as of <time datetime={n.generated_at}>{asOf(n.generated_at)}</time></span>
+    <details class="hoods">
+      <summary>Neighborhoods</summary>
+      <ul>
+        {sites.map((x) => (
+          <li>{x.slug === n.slug ? <span aria-current="page">{x.name}</span> : <a href={`https://${x.hosts[0]}/`}>{x.name}</a>}</li>
+        ))}
+      </ul>
+    </details>
+  </div></div>
+  <header class="mast">
+    <div class="wrap">
+      {front ? <h1>{n.name}</h1> : <a class="brand-link" href={home}>{n.name}</a>}
+      <div class="tools">
+        <div class="search" data-slug={n.slug}>
+          <label class="sbox" for="q"><Fragment set:html={ICON_SEARCH} /><input id="q" type="search" placeholder="Your street or address" autocomplete="off" aria-controls="q-results" aria-describedby="q-hint" /><button type="button" id="q-go">Look up</button></label>
+          <div class="sresults" id="q-results" role="listbox" hidden></div>
         </div>
-        <div class="asof"><span class="dot" aria-hidden="true"></span>Data as of <b><time datetime={n.generated_at}>{asOf(n.generated_at)}</time></b><br />Updated nightly</div>
-      </div>
-      <div class="search" data-slug={n.slug}>
-        <label class="sbox" for="q"><Fragment set:html={ICON_SEARCH} /><input id="q" type="search" placeholder="Look up a street or address" autocomplete="off" aria-controls="q-results" aria-describedby="q-hint" /><button type="button" id="q-go">Look up</button></label>
-        <div class="shint" id="q-hint">Permits, home sales and curb permits on your street</div>
-        <div class="sresults" id="q-results" role="listbox" hidden></div>
+        <p class="shint" id="q-hint">Trash day, schools, parking and what&rsquo;s happening on your block</p>
       </div>
     </div>
-    <nav class="snav" aria-label={`${n.name} pages`}><ul>
+    <nav class="sections" aria-label={`${n.name} pages`}><div class="wrap"><ul>
       {PAGES.map((p) => (
         <li><a href={pageUrl(n.slug, p.path)} aria-current={p.path === page ? "page" : undefined}>{p.label}</a></li>
       ))}
-    </ul></nav>
-    <p id="stale" class="stale" hidden>This data is more than 3 days old. The nightly update may have failed; check the official sources.</p>
-  </div></header>
+    </ul></div></nav>
+    <p id="stale" class="stale" hidden><span class="wrap" style="display:block">This data is more than 3 days old. The nightly update may have failed; check the official sources.</span></p>
+  </header>
 
-  <main class="wrap">
+  <main id="main" class:list={["wrap", { inner: !front }]}>
     {heading && (
       <div class="pagehead">
         <h1>{heading}</h1>
@@ -50,7 +63,7 @@ const home = pageUrl(n.slug);
   </main>
 
   <div slot="footer">
-    <p>{n.name} boundary: {n.boundary.source}. <a href={pageUrl(n.slug, "about/")}>About the data, sources and privacy</a> · <a href={`/${n.slug}/permits.xml`}>Permits RSS</a> · <a href="/">Other neighborhoods</a></p>
+    <p>{n.name} boundary: {n.boundary.source}. <a href={pageUrl(n.slug, "about/")}>About the data, sources and privacy</a> · <a href={`/${n.slug}/permits.xml`}>Permits RSS</a></p>
   </div>
 
   <script>
@@ -67,14 +80,21 @@ const home = pageUrl(n.slug);
       };
       const norm = (s: string) => s.toUpperCase().replace(/\b(STREET|ST)\b/g, "ST").replace(/\b(AVENUE|AVE)\b/g, "AVE").replace(/\b(PLACE|PL)\b/g, "PL").replace(/\b(ROAD|RD)\b/g, "RD").replace(/[^A-Z0-9 ]/g, "").replace(/\s+/g, " ").trim();
       const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]!);
+      // "4317 9th St" also finds the 4300 block of 9th St.
+      const blockOf = (q: string) => q.replace(/^(\d+)(\d\d)\b/, (_, h) => `${h}00`);
       const run = async () => {
         const q = norm(input.value);
         if (q.length < 3) { out.hidden = true; return; }
         const terms = q.split(" ");
-        const hits = (await load()).filter((h) => { const t = norm(h.a); return terms.every((w) => t.includes(w)); }).slice(0, 12);
+        const bterms = blockOf(q).split(" ");
+        const all = await load();
+        const match = (h: Hit, ts: string[]) => { const t = norm(h.a); return ts.every((w) => t.includes(w)); };
+        const blocks = all.filter((h) => h.k === "Block" && (match(h, terms) || match(h, bterms)));
+        const rest = all.filter((h) => h.k !== "Block" && match(h, terms));
+        const hits = [...blocks.slice(0, 4), ...rest].slice(0, 12);
         out.innerHTML = hits.length
           ? hits.map((h) => `<a role="option" href="${h.u}"><b>${esc(h.a)}</b><span>${esc(h.k)} · ${esc(h.d)}</span></a>`).join("")
-          : `<p>Nothing on file for “${esc(input.value)}” in the last 30–60 days. Try just the street name.</p>`;
+          : `<p>Nothing found for “${esc(input.value)}”. Try just the street name.</p>`;
         out.hidden = false;
       };
       input.addEventListener("focus", load, { once: true });
@@ -83,5 +103,9 @@ const home = pageUrl(n.slug);
       input.addEventListener("keydown", (e) => { if (e.key === "Escape") out.hidden = true; });
       document.addEventListener("click", (e) => { if (!box.contains(e.target as Node)) out.hidden = true; });
     }
+    // Close the neighborhood menu on outside click or Escape.
+    const menu = document.querySelector<HTMLDetailsElement>(".hoods");
+    document.addEventListener("click", (e) => { if (menu?.open && !menu.contains(e.target as Node)) menu.open = false; });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && menu) menu.open = false; });
   </script>
 </Base>

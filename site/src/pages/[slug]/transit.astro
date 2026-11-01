@@ -1,0 +1,33 @@
+---
+import Hood from "../../layouts/Hood.astro";
+import TransitBoard from "../../components/TransitBoard.astro";
+import { staticPaths, type Neighborhood } from "../../lib/data";
+
+export const getStaticPaths = staticPaths;
+const { n } = Astro.props as { n: Neighborhood };
+const t = n.transit;
+---
+<Hood n={n} page="transit/" title={`Getting around ${n.name}: live Metro, bus and bikeshare`} description={`Live Metro train and bus arrivals and Capital Bikeshare docks in and around ${n.name}, Washington DC.`}
+  heading="Getting around" intro={`Live arrivals at the Metro stations, bus stops and bikeshare docks in and around ${n.name}. Tap “Use my location” for the stops nearest you; your location stays in your browser.`}>
+  <div class="atlas">
+    <div class="row" style="grid-template-columns:minmax(0,1fr);max-width:760px">
+      <section class="panel" aria-labelledby="live-h"><div class="ph"><h2 id="live-h">Next arrivals</h2></div>
+        <TransitBoard n={n} />
+      </section>
+    </div>
+    {t && (
+      <div class="row even">
+        <section class="panel" aria-labelledby="stops-h"><div class="ph"><h2 id="stops-h">Bus stops</h2><span class="sub">{t.bus_stops.length} stops</span></div>
+          <ul class="plainlist">{t.bus_stops.map((s) => <li>{s.name} <span class="meta">stop {s.id}</span></li>)}</ul>
+          <p class="fine">WMATA stop numbers, as on the stop sign; text the number to WMATA or use its next-arrival page.</p>
+        </section>
+        <section class="panel" aria-labelledby="docks-h"><div class="ph"><h2 id="docks-h">Bikeshare docks</h2><span class="sub">{t.bike_docks.length} stations</span></div>
+          <ul class="plainlist">{t.bike_docks.map((d) => <li>{d.name} <span class="meta">{d.capacity} docks</span></li>)}</ul>
+          <h3 class="subh">Metro</h3>
+          <ul class="plainlist">{t.stations.map((s) => <li>{s.name} <span class="meta">{s.lines.join(", ")} line{s.lines.length > 1 ? "s" : ""}{s.km_outside > 0 ? `, ${s.km_outside} km outside` : ""}</span></li>)}</ul>
+          <p class="fine">Stops, stations and docks from Open Data DC, refreshed nightly. Live times come from WMATA and Capital Bikeshare; this site is not affiliated with either.</p>
+        </section>
+      </div>
+    )}
+  </div>
+</Hood>

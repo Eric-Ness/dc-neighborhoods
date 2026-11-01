@@ -49,7 +49,7 @@ SR_FIELDS = [
 FORBIDDEN_KEYS = {"OWNER_NAME", "OWNERNAME", "OWNNAME", "OWNER", "PERMIT_APPLICANT", "APPLICANT", "INSPECTORNAME", "DETAILS", "CCN"}
 
 # Extra sections, one module each (see ingest/MODULES.md). Order is the order they run.
-MODULES = ("homes", "streets", "history", "news", "events", "jobs")
+MODULES = ("homes", "streets", "history", "news", "events", "jobs", "blocks", "transit")
 
 
 def years_in(start: float, end: float) -> list[int]:

@@ -4,20 +4,56 @@
     {
       "name": "site-preview",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["--prefix", "site", "run", "preview", "--", "--port", "4321"],
+      "runtimeArgs": [
+        "--prefix",
+        "site",
+        "run",
+        "preview",
+        "--",
+        "--port",
+        "4321"
+      ],
       "port": 4321
     },
     {
       "name": "demos-static",
       "runtimeExecutable": "python",
-      "runtimeArgs": ["-m", "http.server", "8765", "--bind", "127.0.0.1", "--directory", "demos"],
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8765",
+        "--bind",
+        "127.0.0.1",
+        "--directory",
+        "demos"
+      ],
       "port": 8765
     },
     {
       "name": "repo-static",
       "runtimeExecutable": "python",
-      "runtimeArgs": ["-m", "http.server", "8766", "--bind", "127.0.0.1"],
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8766",
+        "--bind",
+        "127.0.0.1"
+      ],
       "port": 8766
+    },
+    {
+      "name": "worker-dev",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "--yes",
+        "wrangler@4.156.0",
+        "dev",
+        "--port",
+        "8787",
+        "--ip",
+        "127.0.0.1"
+      ],
+      "port": 8787
     }
   ]
 }

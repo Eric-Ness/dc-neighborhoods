@@ -32,7 +32,7 @@ def _request(url: str, params: dict, post: bool = False, retries: int = 5) -> di
             if isinstance(data, dict) and "error" in data:
                 raise RuntimeError(f"ArcGIS error from {url}: {data['error']}")
             return data
-        except (urllib.error.URLError, TimeoutError, RuntimeError):
+        except (urllib.error.URLError, TimeoutError, ConnectionError, RuntimeError):  # incl. "connection reset by peer"
             if attempt == retries - 1:
                 raise
             # DC's servers answer "503 wait timeout" under load; give them real time (5, 10, 20, 40 s).

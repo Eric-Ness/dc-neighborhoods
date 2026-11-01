@@ -10,6 +10,8 @@
 | `ingest/news.py` | `news` (reads the previous snapshot back to keep its archive) |
 | `ingest/events.py` | `events` |
 | `ingest/jobs.py` | `jobs` (sources and exclusions in `ingest/JOBS-SOURCES.md`) |
+| `ingest/blocks.py` | `blocks`: DDOT roadway blocks as the map's streets, plus one record per hundred block with trash/recycling day, leaf collection, school zones, parking, snow route (one site page per block) |
+| `ingest/transit.py` | `transit`: Metro stations, WMATA bus stops and Capital Bikeshare docks; live arrivals come from `worker/transit.js` |
 
 ## Interface (each module)
 

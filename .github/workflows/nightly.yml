@@ -81,6 +81,21 @@ jobs:
           wranglerVersion: "4.156.0"
           command: deploy
 
+      # The live transit board (worker/transit.js) needs WMATA's key as a Worker secret. Copying the GitHub secret
+      # across each night means the key only has to be set in one place; without it the board shows bikeshare only.
+      - name: Pass the WMATA key to the Worker
+        if: env.HAS_CF_TOKEN == 'true'
+        env:
+          WMATA_API_KEY: ${{ secrets.WMATA_API_KEY }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -z "$WMATA_API_KEY" ]; then
+            echo "::notice::WMATA_API_KEY is not set, so live Metro and bus times stay off (bikeshare still works)."
+            exit 0
+          fi
+          printf '%s' "$WMATA_API_KEY" | npx --yes wrangler@4.156.0 secret put WMATA_API_KEY
+
       - name: Report a failed ingest
         if: steps.ingest.outcome != 'success'
         run: |

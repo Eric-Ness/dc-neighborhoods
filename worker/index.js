@@ -2,7 +2,9 @@
 // - petworth.org/...  -> serves site/dist/petworth/...
 // - petworth.net/...  -> 301 to https://petworth.org/...
 // - anything else (e.g. *.workers.dev previews) -> serves the multi-neighborhood site unchanged
+// - /api/transit on any of them -> live transit arrivals (worker/transit.js)
 import hoods from "../site/src/data/index.json" with { type: "json" };
+import { transit } from "./transit.js";
 
 const HOSTS = new Map();
 const REDIRECTS = new Map();
@@ -26,6 +28,8 @@ export default {
     if (target) {
       return Response.redirect(`https://${target}${url.pathname}${url.search}`, 301);
     }
+
+    if (url.pathname === "/api/transit") return transit(request, env);
 
     const slug = HOSTS.get(host);
     const isShared = url.pathname.startsWith("/_astro/") || url.pathname.startsWith("/favicon");

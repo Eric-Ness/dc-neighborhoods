@@ -90,11 +90,11 @@ const checks = {
       if (!existsSync(join(root, page))) continue;
       const html = read(page);
       const data = JSON.parse(read(`site/src/data/${h.slug}.json`));
-      assert(html.includes("Data as of"), `${h.slug}: no freshness stamp`);
+      assert(html.includes("Updated nightly from public data") && html.includes(" as of "), `${h.slug}: no freshness stamp`);
       assert(html.includes(`datetime="${data.generated_at}"`), `${h.slug}: page not built from current data`);
-      assert(html.includes("Independent project"), `${h.slug}: no independence disclaimer`);
-      // C5 shows the count in the permit-map header and the permits measure.
-      assert(html.includes(`<b id="shown">${data.permits.length}</b>`) && html.includes(`${data.permits.length} issued`), `${h.slug}: permit count ${data.permits.length} not rendered`);
+      assert(html.includes("An independent project") && html.includes("An independent neighborhood site"), `${h.slug}: no independence disclaimer`);
+      // Atlas shows the count in the projects intro and the permits measure.
+      assert(html.includes(`${data.permits.length} permits were issued`) && html.includes(`<dd class="mv">${data.permits.length}</dd>`), `${h.slug}: permit count ${data.permits.length} not rendered`);
       assert(data.permits.length > 0 && data.requests.total > 0, `${h.slug}: empty data`);
       const rss = `site/dist/${h.slug}/permits.xml`;
       assert(existsSync(join(root, rss)) && (read(rss).match(/<item>/g) ?? []).length === Math.min(100, data.permits.length), `${h.slug}: RSS item count wrong`);
@@ -273,16 +273,46 @@ checks.markers = () => {
     const d = JSON.parse(read(`site/src/data/${h.slug}.json`));
     const html = read(`site/dist/${h.slug}/index.html`);
     const big = d.permits.filter((p) => ["Demolition", "New construction", "Additions"].includes(p.group));
-    const withCoords = big.filter((p) => p.lat && p.lon);
-    const marks = [...html.matchAll(/class="mk c-\w+" data-id="p([^"]+)" data-pid="[^"]+" data-lat="([^"]+)" data-lon="([^"]+)" data-addr="([^"]+)"/g)];
-    assert(marks.length === withCoords.length, `${h.slug}: ${marks.length} markers for ${withCoords.length} mapped bigger projects`);
-    for (const [, id, lat, lon, a] of marks) {
-      const p = big.find((x) => x.id === id);
-      assert(p, `${h.slug}: marker for unknown permit ${id}`);
-      if (!p) continue;
-      assert(+lat === p.lat && +lon === p.lon, `${h.slug}: marker ${id} not at its permit's coordinates`);
-      assert(a.replace(/&amp;/g, "&") === p.address, `${h.slug}: marker ${id} address mismatch`);
+    // Atlas numbers one marker per address (the newest bigger permit there).
+    const addrs = new Set(big.filter((p) => p.lat && p.lon).map((p) => p.address));
+    const marks = [...html.matchAll(/class="proj mk" data-mk="p\d+" data-lat="([^"]+)" data-lon="([^"]+)" data-addr="([^"]*)"/g)];
+    assert(marks.length === addrs.size, `${h.slug}: ${marks.length} markers for ${addrs.size} mapped bigger-project addresses`);
+    for (const [, lat, lon, a] of marks) {
+      const address = a.replace(/&amp;/g, "&");
+      const ps = big.filter((x) => x.address === address);
+      assert(ps.length > 0, `${h.slug}: marker for unknown address ${address}`);
+      assert(ps.some((p) => +lat === p.lat && +lon === p.lon), `${h.slug}: marker at ${address} not at its permit's coordinates`);
     }
+  }
+};
+
+// Block pages, lookups, the transit board and the lead-headline rule (added with the Atlas design, 2026-11-01).
+checks.blocks = () => {
+  const CRIME = /\b(shoot\w*|shot|homicide|murder\w*|stabb\w*|robber\w*|carjack\w*|gunfire|gunman|killed|slain|assault\w*|burglar\w*)\b/i;
+  for (const h of hoods()) {
+    const d = JSON.parse(read(`site/src/data/${h.slug}.json`));
+    const items = d.blocks?.items ?? [];
+    assert(items.length >= 15, `${h.slug}: only ${items.length} blocks`);
+    let pages = 0;
+    for (const b of items) {
+      const f = `site/dist/${h.slug}/blocks/${b.key}/index.html`;
+      if (!existsSync(join(root, f))) { assert(false, `${h.slug}: block page ${b.key} not built`); continue; }
+      pages++;
+      const html = read(f);
+      assert(html.includes(`<h1>${b.name}</h1>`), `${h.slug}/${b.key}: heading missing`);
+      if (b.trash_day) assert(html.includes(`Trash pickup</th><td>${b.trash_day}`), `${h.slug}/${b.key}: trash day ${b.trash_day} not shown`);
+    }
+    const idx = JSON.parse(read(`site/dist/${h.slug}/search.json`));
+    assert(idx.filter((x) => x.k === "Block").length === items.length, `${h.slug}: search index doesn't list every block`);
+    const home = read(`site/dist/${h.slug}/index.html`);
+    assert(home.includes('id="transit"') && home.includes('class="board"'), `${h.slug}/: no transit board`);
+    assert((d.transit?.bus_stops ?? []).length > 0, `${h.slug}: no bus stops`);
+    assert(home.includes('id="lookups"'), `${h.slug}/: no lookups section`);
+    const news = home.slice(home.indexOf('id="news"'), home.indexOf('id="events"'));
+    const first = news.match(/<a class="hl" href="[^"]*"[^>]*>([^<]*)</);
+    const anyCalm = (d.news?.items ?? []).some((i) => !CRIME.test(i.title));
+    if (first && anyCalm) assert(!CRIME.test(first[1]), `${h.slug}/: a crime story leads the news: ${first[1]}`);
+    if (pages === items.length) console.log(`  ${h.slug}: ${pages} block pages`);
   }
 };
 
@@ -363,8 +393,8 @@ checks.sitenews = () => {
     for (const it of d.news?.items ?? []) assert(page.includes(`href="${unamp(it.url)}"`), `${h.slug}/news: headline missing ${it.url}`);
     for (const e of d.events?.events ?? []) assert(page.includes(`href="${unamp(e.url)}"`) && page.includes(unamp(e.title).replace(/'/g, "&#39;")) , `${h.slug}/news: event missing ${e.title} ${e.date}`);
     for (const it of (d.news?.items ?? []).slice(0, 6)) assert(home.includes(`href="${unamp(it.url)}"`), `${h.slug}/: top headline missing ${it.url}`);
-    const iH = home.indexOf('id="happening"'), iC = home.indexOf('id="condition"');
-    assert(iH > 0 && iC > iH, `${h.slug}/: news & events band is not above today's condition`);
+    const iN = home.indexOf('id="news"'), iE = home.indexOf('id="events"'), iC = home.indexOf('id="numbers"');
+    assert(iN > 0 && iE > iN && iC > iE, `${h.slug}/: news & events are not above today's condition`);
     assert(home.includes('href="/' + h.slug + '/news/"'), `${h.slug}/: no link to the news page`);
     // Every headline link opens the outlet (external), never a copy on our site.
     for (const m of page.matchAll(/<ol class="hl">([\s\S]*?)<\/ol>/g))

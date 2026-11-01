@@ -1,5 +1,7 @@
 ---
 import "../styles/c5.css";
+import "../styles/atlas-base.css";
+import "../styles/atlas.css";
 // Live neighborhoods only (ingest writes this list); each links to its own .org.
 import sites from "../data/index.json";
 
@@ -22,19 +24,19 @@ const { title, description, rss, generated, slug } = Astro.props;
     {rss && <link rel="alternate" type="application/rss+xml" title={`${title}: new permits`} href={rss} />}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' rx='4' fill='%23466f60'/><path d='M4 12V4h4.5a2.5 2.5 0 0 1 0 5H4' stroke='white' fill='none' stroke-width='1.8'/></svg>" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' rx='4' fill='%234a5b67'/><path d='M4 12V4h4.5a2.5 2.5 0 0 1 0 5H4' stroke='white' fill='none' stroke-width='1.8'/></svg>" />
   </head>
   <body>
     <slot />
     <footer><div class="wrap">
       <nav class="sites" aria-label="Other DC neighborhood sites">
-        <span>More DC neighborhoods:</span>
+        <span>DC neighborhood sites</span>
         <ul>{sites.map((x) => (
           <li>{x.slug === slug ? <span aria-current="page">{x.name}</span> : <a href={`https://${x.hosts[0]}/`}>{x.name} <small>{x.hosts[0]}</small></a>}</li>
         ))}</ul>
       </nav>
-      <p><strong>Independent project. Not affiliated with the DC Government, any Advisory Neighborhood Commission, or any Business Improvement District.</strong></p>
+      <p><strong>An independent project. Not affiliated with the DC Government, any Advisory Neighborhood Commission, or any Business Improvement District.</strong></p>
       <p>Data comes from Open Data DC (CC BY 4.0) and the Library of Congress, shown as published; it may lag or contain errors. Headlines and events link to whoever published them. Crime figures are preliminary counts. Check the official source before acting on anything here.</p>
       <slot name="footer" />
     </div></footer>

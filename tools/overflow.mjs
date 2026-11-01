@@ -27,9 +27,17 @@ const pages = [];
     else if (f === "index.html") pages.push("/" + p.slice(dist.length + 1).replace(/\\/g, "/").replace(/index\.html$/, ""));
   }
 })(dist);
+// ~2,600 block pages share one template: by default measure the 3 longest-named per neighborhood (--all for every one).
+if (!process.argv.includes("--all")) {
+  const blocks = pages.filter((p) => /\/blocks\/[^/]+\/$/.test(p));
+  const keep = new Set();
+  for (const slug of new Set(blocks.map((p) => p.split("/")[1])))
+    blocks.filter((p) => p.split("/")[1] === slug).sort((a, b) => b.length - a.length).slice(0, 3).forEach((p) => keep.add(p));
+  for (let i = pages.length - 1; i >= 0; i--) if (blocks.includes(pages[i]) && !keep.has(pages[i])) pages.splice(i, 1);
+}
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-const port = 8790 + Math.floor(Math.random() * 100);
+const port = 9300 + Math.floor(Math.random() * 400); // clear of the usual dev ports
 const server = spawn("python", ["-m", "http.server", String(port), "--bind", "127.0.0.1", "--directory", dist], { stdio: "ignore" });
 const chrome = spawn(CHROME, ["--headless=new", "--disable-gpu", "--hide-scrollbars", "--remote-debugging-port=" + (port + 1000),
   `--user-data-dir=${mkdtempSync(join(tmpdir(), "overflow-"))}`, "about:blank"], { stdio: "ignore" });
