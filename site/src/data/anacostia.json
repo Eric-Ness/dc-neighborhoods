@@ -1,7 +1,7 @@
 {
  "slug": "anacostia",
  "name": "Anacostia",
- "generated_at": "2026-11-01T23:52:18Z",
+ "generated_at": "2026-11-02T03:04:49Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1043,12 +1043,12 @@
   }
  ],
  "requests": {
-  "total": 471,
+  "total": 472,
   "previous_total": 894,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 87,
+    "count": 88,
     "previous": 112
    },
    {
@@ -1317,8 +1317,18 @@
     "previous": 6
    }
   ],
-  "open": 65,
+  "open": 66,
   "recent": [
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T00:12:48Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1400 block of HOWARD ROAD SE",
+    "lat": 38.858,
+    "lon": -76.987
+   },
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
@@ -1808,16 +1818,6 @@
     "block": "1800 block of GAINESVILLE STREET SE",
     "lat": 38.855,
     "lon": -76.978
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-28T15:53:18Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2500 block of WEST STREET SE",
-    "lat": 38.86,
-    "lon": -76.989
    }
   ]
  },
@@ -1831,24 +1831,24 @@
     "previous": 14
    },
    {
-    "offense": "MOTOR VEHICLE THEFT",
-    "count": 5,
-    "previous": 7
-   },
-   {
     "offense": "THEFT F/AUTO",
     "count": 5,
     "previous": 6
    },
    {
-    "offense": "ROBBERY",
-    "count": 2,
-    "previous": 3
+    "offense": "MOTOR VEHICLE THEFT",
+    "count": 5,
+    "previous": 7
    },
    {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
     "count": 2,
     "previous": 2
+   },
+   {
+    "offense": "ROBBERY",
+    "count": 2,
+    "previous": 3
    },
    {
     "offense": "SEX ABUSE",
@@ -1903,7 +1903,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -1918,7 +1918,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Anacostia through OTR assessment sub-areas Anacostia A and Randle Heights B, and Barry Farms in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Anacostia boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-01): 77% of the 2,603 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 78% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Anacostia through OTR assessment sub-areas Anacostia A and Randle Heights B, and Barry Farms in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Anacostia boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-02): 77% of the 2,603 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 78% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -1939,7 +1939,7 @@
    "area_parcels": 2603,
    "area_share_inside": 0.768,
    "boundary_share_in_area": 0.775,
-   "measured": "2026-11-01"
+   "measured": "2026-11-02"
   },
   "primary": "house",
   "house": {
@@ -2094,7 +2094,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2118,7 +2118,7 @@
    "starting_next_7d": 15,
    "reserved_ft": 8382,
    "long_running_90d": 22,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-01: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -2356,7 +2356,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 792
+    "closed_n": 790
    },
    {
     "type": "DC Government Information",
@@ -2398,7 +2398,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2567,7 +2567,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2845,7 +2845,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
@@ -2972,58 +2972,8 @@
    }
   ]
  },
- "jobs": {
-  "generated_at": "2026-11-01T23:52:18Z",
-  "max_age_days": 120,
-  "sources": [
-   {
-    "name": "Children's National Hospital",
-    "url": "https://childrensnational.wd108.myworkdayjobs.com/CN_Careers"
-   },
-   {
-    "name": "Sweetgreen (Greenhouse)",
-    "url": "https://boards.greenhouse.io/sweetgreen"
-   },
-   {
-    "name": "Monumental Sports & Entertainment (Greenhouse)",
-    "url": "https://boards.greenhouse.io/monumentalsports"
-   }
-  ],
-  "employers": [
-   {
-    "name": "Children's National Hospital",
-    "url": "https://childrensnational.wd108.myworkdayjobs.com/CN_Careers",
-    "state": "ok",
-    "count": 1
-   },
-   {
-    "name": "Sweetgreen (Greenhouse)",
-    "url": "https://boards.greenhouse.io/sweetgreen",
-    "state": "ok",
-    "count": 0
-   },
-   {
-    "name": "Monumental Sports & Entertainment (Greenhouse)",
-    "url": "https://boards.greenhouse.io/monumentalsports",
-    "state": "ok",
-    "count": 0
-   }
-  ],
-  "jobs": [
-   {
-    "title": "Nutritionist II",
-    "employer": "Children's National Hospital",
-    "place": "Anacostia",
-    "where": "in",
-    "note": "2101 Martin Luther King Jr Ave SE",
-    "posted": "2026-10-22",
-    "hours": null,
-    "url": "https://childrensnational.wd108.myworkdayjobs.com/CN_Careers/job/Anacostia/Nutritionist-II_R-002116"
-   }
-  ]
- },
  "blocks": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -19172,7 +19122,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

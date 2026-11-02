@@ -1,7 +1,7 @@
 {
  "slug": "friendshipheights",
  "name": "Friendship Heights",
- "generated_at": "2026-11-01T23:52:18Z",
+ "generated_at": "2026-11-02T03:04:49Z",
  "boundary": {
   "source": "ANC single-member districts 3E03 and 3E04, around the Friendship Heights Metro (Open Data DC). DC has no planning area for Friendship Heights; this overlaps the Tenleytown site.",
   "rings": [
@@ -2911,8 +2911,8 @@
   }
  ],
  "requests": {
-  "total": 451,
-  "previous_total": 551,
+  "total": 450,
+  "previous_total": 553,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
@@ -2946,8 +2946,8 @@
    },
    {
     "type": "Graffiti Removal",
-    "count": 16,
-    "previous": 26
+    "count": 14,
+    "previous": 28
    },
    {
     "type": "Tree Inspection",
@@ -3045,6 +3045,11 @@
     "previous": 0
    },
    {
+    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "count": 4,
+    "previous": 25
+   },
+   {
     "type": "DMV - Online Processing Issues",
     "count": 4,
     "previous": 0
@@ -3068,11 +3073,6 @@
     "type": "Traffic Safety Input",
     "count": 3,
     "previous": 5
-   },
-   {
-    "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 3,
-    "previous": 25
    },
    {
     "type": "Supercan - Delivery",
@@ -3135,8 +3135,18 @@
     "previous": 1
    }
   ],
-  "open": 115,
+  "open": 116,
   "recent": [
+   {
+    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "agency": "DDOT",
+    "added": "2026-11-02T02:09:20Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "WISCONSIN AVENUE NW AND CHESAPEAKE STREET NW",
+    "lat": 38.951,
+    "lon": -77.081
+   },
    {
     "type": "Scheduled Yard Waste",
     "agency": "DPW",
@@ -3626,16 +3636,6 @@
     "block": "4900 block of 41ST STREET NW",
     "lat": 38.954,
     "lon": -77.08
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-27T01:46:19Z",
-    "resolved": "2026-10-30T15:58:34Z",
-    "status": "Closed",
-    "block": "4900 block of 44TH STREET NW",
-    "lat": 38.954,
-    "lon": -77.086
    }
   ]
  },
@@ -3654,12 +3654,12 @@
     "previous": 0
    },
    {
-    "offense": "MOTOR VEHICLE THEFT",
+    "offense": "ROBBERY",
     "count": 1,
     "previous": 0
    },
    {
-    "offense": "ROBBERY",
+    "offense": "MOTOR VEHICLE THEFT",
     "count": 1,
     "previous": 0
    }
@@ -3688,7 +3688,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3703,7 +3703,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Friendship Heights through OTR assessment sub-areas Chevy Chase A and American University A in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Friendship Heights boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-01): 58% of the 2,236 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 93% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Friendship Heights through OTR assessment sub-areas Chevy Chase A and American University A in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Friendship Heights boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-02): 58% of the 2,236 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 93% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -3720,7 +3720,7 @@
    "area_parcels": 2236,
    "area_share_inside": 0.583,
    "boundary_share_in_area": 0.927,
-   "measured": "2026-11-01"
+   "measured": "2026-11-02"
   },
   "primary": "house",
   "house": {
@@ -3736,10 +3736,10 @@
    "count_prev_12mo": 14
   },
   "last_60d": {
-   "median": 1350000,
-   "count": 8,
-   "median_ppsf": 667,
-   "ppsf_count": 8
+   "median": 1300000,
+   "count": 7,
+   "median_ppsf": 691,
+   "ppsf_count": 7
   },
   "above_assessment_12mo": {
    "n": 51,
@@ -3907,20 +3907,11 @@
     "beds": 3,
     "sqft": 1572,
     "assessed": 1128030
-   },
-   {
-    "address": "3839 Livingston St NW",
-    "date": "2026-09-02",
-    "price": 2510000,
-    "kind": "house",
-    "beds": 6,
-    "sqft": 3904,
-    "assessed": 1966890
    }
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3940,11 +3931,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 29,
-   "starting_next_7d": 5,
-   "reserved_ft": 4026,
+   "active_this_week": 32,
+   "starting_next_7d": 8,
+   "reserved_ft": 4356,
    "long_running_90d": 9,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-01: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -3964,11 +3955,11 @@
     },
     {
      "type": "Lead pipe replacement",
-     "count": 11
+     "count": 12
     },
     {
      "type": "Utility & DDOT work",
-     "count": 2
+     "count": 4
     }
    ],
    "upcoming": [
@@ -4011,6 +4002,30 @@
      "end": "2026-11-07",
      "ft": 308,
      "hours": "6 am\u20137 pm"
+    },
+    {
+     "type": "Lead pipe replacement",
+     "block": "4200 block of Chesapeake Street NW",
+     "start": "2026-11-09",
+     "end": "2027-01-02",
+     "ft": 220,
+     "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "4800 block of 42nd Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 88,
+     "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "5200 block of 44th Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 22,
+     "hours": "8 am\u20134:30 pm"
     }
    ]
   },
@@ -4144,7 +4159,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4290,7 +4305,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4358,9 +4373,9 @@
    {
     "name": "ANC 3E",
     "url": "https://anc3e.org/",
-    "state": "ok",
+    "state": "error: ParseError",
     "matched": 0,
-    "fetched": 1
+    "failed": 1
    },
    {
     "name": "WTOP",
@@ -4559,7 +4574,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
@@ -4585,7 +4600,7 @@
    {
     "name": "ANC 3E meeting agendas",
     "url": "https://anc3e.org/",
-    "state": "ok"
+    "state": "error: ParseError"
    },
    {
     "name": "DC Office of ANCs meeting notices",
@@ -4610,98 +4625,8 @@
   ],
   "anc_meetings": []
  },
- "jobs": {
-  "generated_at": "2026-11-01T23:52:18Z",
-  "max_age_days": 120,
-  "sources": [
-   {
-    "name": "Children's National Hospital",
-    "url": "https://childrensnational.wd108.myworkdayjobs.com/CN_Careers"
-   },
-   {
-    "name": "American University",
-    "url": "https://american.wd1.myworkdayjobs.com/AU"
-   },
-   {
-    "name": "Sweetgreen (Greenhouse)",
-    "url": "https://boards.greenhouse.io/sweetgreen"
-   },
-   {
-    "name": "Monumental Sports & Entertainment (Greenhouse)",
-    "url": "https://boards.greenhouse.io/monumentalsports"
-   }
-  ],
-  "employers": [
-   {
-    "name": "Children's National Hospital",
-    "url": "https://childrensnational.wd108.myworkdayjobs.com/CN_Careers",
-    "state": "ok",
-    "count": 1
-   },
-   {
-    "name": "American University",
-    "url": "https://american.wd1.myworkdayjobs.com/AU",
-    "state": "ok",
-    "count": 3
-   },
-   {
-    "name": "Sweetgreen (Greenhouse)",
-    "url": "https://boards.greenhouse.io/sweetgreen",
-    "state": "ok",
-    "count": 0
-   },
-   {
-    "name": "Monumental Sports & Entertainment (Greenhouse)",
-    "url": "https://boards.greenhouse.io/monumentalsports",
-    "state": "ok",
-    "count": 0
-   }
-  ],
-  "jobs": [
-   {
-    "title": "Ambulatory Patient Care Tech - Friendship Heights - Part-time (8 hours a week)",
-    "employer": "Children's National Hospital",
-    "place": "Friendship Heights",
-    "where": "in",
-    "note": "Friendship Heights",
-    "posted": "2026-08-10",
-    "hours": null,
-    "url": "https://childrensnational.wd108.myworkdayjobs.com/CN_Careers/job/Friendship-Heights/Ambulatory-Patient-Care-Tech---Friendship-Heights---Part-time--8-hours-a-week-_R-000891"
-   },
-   {
-    "title": "Practitioner-In-Residence",
-    "employer": "American University",
-    "place": "Tenley Campus",
-    "where": "nearby",
-    "note": "4300 Nebraska Ave NW, about 0.6 mi south",
-    "posted": "2026-10-28",
-    "hours": "Full time",
-    "url": "https://american.wd1.myworkdayjobs.com/AU/job/Tenley-Campus-Washington-DC/Practitioner-In-Residence_R5134"
-   },
-   {
-    "title": "Legal Education Advisor",
-    "employer": "American University",
-    "place": "Tenley Campus",
-    "where": "nearby",
-    "note": "4300 Nebraska Ave NW, about 0.6 mi south",
-    "posted": "2026-10-22",
-    "hours": "Full time",
-    "url": "https://american.wd1.myworkdayjobs.com/AU/job/Tenley-Campus-Washington-DC/Legal-Education-Advisor_R5104"
-   },
-   {
-    "title": "Circulation Manager",
-    "employer": "American University",
-    "place": "Tenley Campus",
-    "where": "nearby",
-    "note": "4300 Nebraska Ave NW, about 0.6 mi south",
-    "posted": "2026-10-21",
-    "hours": "Full time",
-    "url": "https://american.wd1.myworkdayjobs.com/AU/job/Tenley-Campus-Washington-DC/Circulation-Manager_R5092"
-   }
-  ]
- },
  "blocks": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -19258,7 +19183,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
@@ -19469,7 +19394,36 @@
     "lon": -77.08553
    }
   ],
-  "bike_docks": []
+  "bike_docks": [
+   {
+    "id": "08254529-1f3f-11e7-bf6b-3863bb334450",
+    "name": "Fessenden St & Wisconsin Ave NW",
+    "capacity": 15,
+    "lat": 38.95481,
+    "lon": -77.08243
+   },
+   {
+    "id": "08258b3f-1f3f-11e7-bf6b-3863bb334450",
+    "name": "Friendship Hts Metro / Wisconsin Ave & Wisconsin Cir",
+    "capacity": 19,
+    "lat": 38.96176,
+    "lon": -77.086
+   },
+   {
+    "id": "082632a8-1f3f-11e7-bf6b-3863bb334450",
+    "name": "Wisconsin Ave & Brandywine St NW",
+    "capacity": 25,
+    "lat": 38.94981,
+    "lon": -77.08022
+   },
+   {
+    "id": "0826176a-1f3f-11e7-bf6b-3863bb334450",
+    "name": "Wisconsin Ave & Ingomar St NW",
+    "capacity": 19,
+    "lat": 38.95827,
+    "lon": -77.08464
+   }
+  ]
  },
  "module_errors": {}
 }

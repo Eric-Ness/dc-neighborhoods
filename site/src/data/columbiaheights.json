@@ -1,7 +1,7 @@
 {
  "slug": "columbiaheights",
  "name": "Columbia Heights",
- "generated_at": "2026-11-01T23:52:18Z",
+ "generated_at": "2026-11-02T03:04:49Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -2521,17 +2521,17 @@
   }
  ],
  "requests": {
-  "total": 1899,
-  "previous_total": 2176,
+  "total": 1903,
+  "previous_total": 2178,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 282,
+    "count": 283,
     "previous": 274
    },
    {
     "type": "Bulk Collection",
-    "count": 219,
+    "count": 220,
     "previous": 263
    },
    {
@@ -2541,12 +2541,12 @@
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 145,
-    "previous": 160
+    "count": 146,
+    "previous": 161
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 131,
+    "count": 132,
     "previous": 130
    },
    {
@@ -2581,7 +2581,7 @@
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
-    "count": 48,
+    "count": 49,
     "previous": 57
    },
    {
@@ -2620,11 +2620,6 @@
     "previous": 20
    },
    {
-    "type": "Recycling Cart Delivery",
-    "count": 18,
-    "previous": 24
-   },
-   {
     "type": "Abandoned Vehicle - On Public Property",
     "count": 18,
     "previous": 21
@@ -2633,6 +2628,11 @@
     "type": "Tree Inspection",
     "count": 18,
     "previous": 36
+   },
+   {
+    "type": "Recycling Cart Delivery",
+    "count": 17,
+    "previous": 25
    },
    {
     "type": "DOB - Vacant Private Property Inspection",
@@ -2870,8 +2870,68 @@
     "previous": 0
    }
   ],
-  "open": 410,
+  "open": 415,
   "recent": [
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-02T02:10:16Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3300 block of HOLMEAD PLACE NW",
+    "lat": 38.932,
+    "lon": -77.031
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T02:03:05Z",
+    "resolved": "2026-11-02T02:10:52Z",
+    "status": "Closed",
+    "block": "1000 block of PARK ROAD NW",
+    "lat": 38.932,
+    "lon": -77.027
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "agency": "DOH",
+    "added": "2026-11-02T01:36:14Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1000 block of KENYON STREET NW",
+    "lat": 38.93,
+    "lon": -77.027
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "agency": "DOH",
+    "added": "2026-11-02T00:21:34Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3200 block of HIATT PLACE NW",
+    "lat": 38.931,
+    "lon": -77.035
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T00:15:00Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1400 block of OGDEN STREET NW",
+    "lat": 38.935,
+    "lon": -77.035
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T00:10:31Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "700 block of IRVING STREET NW",
+    "lat": 38.929,
+    "lon": -77.025
+   },
    {
     "type": "Dockless Vehicle Parking Complaint",
     "agency": "DDOT",
@@ -3311,72 +3371,12 @@
     "block": "700 block of MORTON STREET NW",
     "lat": 38.932,
     "lon": -77.024
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-31T22:53:34Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "400 block of IRVING STREET NW",
-    "lat": 38.93,
-    "lon": -77.019
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-10-31T22:37:56Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1300 block of IRVING STREET NW",
-    "lat": 38.928,
-    "lon": -77.032
-   },
-   {
-    "type": "Sidewalk Repair",
-    "agency": "DDOT",
-    "added": "2026-10-31T22:29:44Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "3100 block of WARDER STREET NW",
-    "lat": 38.93,
-    "lon": -77.02
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T22:10:45Z",
-    "resolved": "2026-11-01T12:22:49Z",
-    "status": "Closed",
-    "block": "1300 block of PARK ROAD NW",
-    "lat": 38.931,
-    "lon": -77.031
-   },
-   {
-    "type": "Sidewalk Repair",
-    "agency": "DDOT",
-    "added": "2026-10-31T21:30:17Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "3200 block of PARK PLACE NW",
-    "lat": 38.931,
-    "lon": -77.019
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-10-31T21:27:04Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "400 block of LAMONT STREET NW",
-    "lat": 38.931,
-    "lon": -77.019
    }
   ]
  },
  "crime": {
-  "total": 112,
-  "previous_total": 124,
+  "total": 111,
+  "previous_total": 125,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
@@ -3405,8 +3405,8 @@
    },
    {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
-    "count": 3,
-    "previous": 11
+    "count": 2,
+    "previous": 12
    },
    {
     "offense": "HOMICIDE",
@@ -3498,7 +3498,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3513,7 +3513,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Columbia Heights through OTR assessment sub-areas Columbia Heights A, C and D in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Columbia Heights boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-01): 81% of the 6,121 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 91% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Columbia Heights through OTR assessment sub-areas Columbia Heights A, C and D in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Columbia Heights boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-02): 81% of the 6,121 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 91% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -3534,7 +3534,7 @@
    "area_parcels": 6121,
    "area_share_inside": 0.808,
    "boundary_share_in_area": 0.906,
-   "measured": "2026-11-01"
+   "measured": "2026-11-02"
   },
   "primary": "house",
   "house": {
@@ -3703,20 +3703,11 @@
     "beds": null,
     "sqft": null,
     "assessed": 339450
-   },
-   {
-    "address": "609 Newton Pl NW # B",
-    "date": "2026-09-02",
-    "price": 521870,
-    "kind": "condo",
-    "beds": null,
-    "sqft": null,
-    "assessed": 517580
    }
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3736,15 +3727,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 152,
-   "starting_next_7d": 22,
-   "reserved_ft": 25894,
+   "active_this_week": 155,
+   "starting_next_7d": 25,
+   "reserved_ft": 26224,
    "long_running_90d": 14,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-01: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 5
+     "count": 6
     },
     {
      "type": "Dumpsters",
@@ -3760,11 +3751,11 @@
     },
     {
      "type": "Lead pipe replacement",
-     "count": 60
+     "count": 61
     },
     {
      "type": "Utility & DDOT work",
-     "count": 14
+     "count": 15
     },
     {
      "type": "Events & reserved parking",
@@ -3947,6 +3938,30 @@
      "end": "2026-11-07",
      "ft": 308,
      "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Moving & storage",
+     "block": "3500 block of Warder Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-10",
+     "ft": 88,
+     "hours": ""
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "3100 block of 16th Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 22,
+     "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Lead pipe replacement",
+     "block": "400 block of Kenyon Street NW",
+     "start": "2026-11-09",
+     "end": "2026-12-31",
+     "ft": 220,
+     "hours": "9:30 am\u20133:30 pm"
     }
    ]
   },
@@ -4038,7 +4053,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.05,
     "city_median_days": 0.05,
-    "closed_n": 2448
+    "closed_n": 2449
    },
    {
     "type": "Trash Collection - Missed",
@@ -4080,7 +4095,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4248,7 +4263,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4764,7 +4779,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
@@ -4809,68 +4824,8 @@
   ],
   "anc_meetings": []
  },
- "jobs": {
-  "generated_at": "2026-11-01T23:52:18Z",
-  "max_age_days": 120,
-  "sources": [
-   {
-    "name": "Children's National Hospital",
-    "url": "https://childrensnational.wd108.myworkdayjobs.com/CN_Careers"
-   },
-   {
-    "name": "Sweetgreen (Greenhouse)",
-    "url": "https://boards.greenhouse.io/sweetgreen"
-   },
-   {
-    "name": "Monumental Sports & Entertainment (Greenhouse)",
-    "url": "https://boards.greenhouse.io/monumentalsports"
-   }
-  ],
-  "employers": [
-   {
-    "name": "Children's National Hospital",
-    "url": "https://childrensnational.wd108.myworkdayjobs.com/CN_Careers",
-    "state": "ok",
-    "count": 2
-   },
-   {
-    "name": "Sweetgreen (Greenhouse)",
-    "url": "https://boards.greenhouse.io/sweetgreen",
-    "state": "ok",
-    "count": 0
-   },
-   {
-    "name": "Monumental Sports & Entertainment (Greenhouse)",
-    "url": "https://boards.greenhouse.io/monumentalsports",
-    "state": "ok",
-    "count": 0
-   }
-  ],
-  "jobs": [
-   {
-    "title": "Pediatrician (CA) Primary Care Columbia Heights (PRN)",
-    "employer": "Children's National Hospital",
-    "place": "Columbia Heights",
-    "where": "in",
-    "note": "Columbia Heights",
-    "posted": "2026-09-25",
-    "hours": null,
-    "url": "https://childrensnational.wd108.myworkdayjobs.com/CN_Careers/job/Columbia-Heights/Pediatrician--CA--Primary-Care-Columbia-Heights--PRN-_R-000581"
-   },
-   {
-    "title": "LPN II - Primary Care Columbia Heights",
-    "employer": "Children's National Hospital",
-    "place": "Columbia Heights",
-    "where": "in",
-    "note": "Columbia Heights",
-    "posted": "2026-08-12",
-    "hours": null,
-    "url": "https://childrensnational.wd108.myworkdayjobs.com/CN_Careers/job/Columbia-Heights/LPN-II---Primary-Care-Columbia-Heights_R-000920"
-   }
-  ]
- },
  "blocks": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -21152,7 +21107,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

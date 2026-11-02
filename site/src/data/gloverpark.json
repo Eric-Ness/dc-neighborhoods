@@ -1,7 +1,7 @@
 {
  "slug": "gloverpark",
  "name": "Glover Park",
- "generated_at": "2026-11-01T23:52:18Z",
+ "generated_at": "2026-11-02T03:04:49Z",
  "boundary": {
   "source": "ANC 3B, the Glover Park commission (all its single-member districts, Open Data DC). DC has no planning area named Glover Park.",
   "rings": [
@@ -8654,7 +8654,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -8669,7 +8669,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Glover Park through OTR assessment neighborhoods Glover Park and Observatory Circle and sub-area Wesley Heights B in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Glover Park boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-01): 85% of the 5,031 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Glover Park through OTR assessment neighborhoods Glover Park and Observatory Circle and sub-area Wesley Heights B in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Glover Park boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-02): 85% of the 5,031 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -8690,7 +8690,7 @@
    "area_parcels": 5031,
    "area_share_inside": 0.846,
    "boundary_share_in_area": 1.0,
-   "measured": "2026-11-01"
+   "measured": "2026-11-02"
   },
   "primary": "house",
   "house": {
@@ -8962,7 +8962,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -8982,11 +8982,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 26,
-   "starting_next_7d": 6,
-   "reserved_ft": 2244,
+   "active_this_week": 27,
+   "starting_next_7d": 7,
+   "reserved_ft": 2310,
    "long_running_90d": 8,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-01: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -9006,7 +9006,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 2
+     "count": 3
     },
     {
      "type": "Events & reserved parking",
@@ -9061,6 +9061,14 @@
      "end": "2026-11-07",
      "ft": 0,
      "hours": "10 am\u201310 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "2400 block of 39th Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 66,
+     "hours": "8 am\u20134:30 pm"
     }
    ]
   },
@@ -9194,7 +9202,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -9336,7 +9344,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "archive_days": 180,
   "sources": [
    {
@@ -9599,7 +9607,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
@@ -9653,178 +9661,8 @@
    }
   ]
  },
- "jobs": {
-  "generated_at": "2026-11-01T23:52:18Z",
-  "max_age_days": 120,
-  "sources": [
-   {
-    "name": "Georgetown University",
-    "url": "https://georgetown.wd1.myworkdayjobs.com/Georgetown_Admin_Careers"
-   },
-   {
-    "name": "American University",
-    "url": "https://american.wd1.myworkdayjobs.com/AU"
-   },
-   {
-    "name": "Sweetgreen (Greenhouse)",
-    "url": "https://boards.greenhouse.io/sweetgreen"
-   },
-   {
-    "name": "Monumental Sports & Entertainment (Greenhouse)",
-    "url": "https://boards.greenhouse.io/monumentalsports"
-   }
-  ],
-  "employers": [
-   {
-    "name": "Georgetown University",
-    "url": "https://georgetown.wd1.myworkdayjobs.com/Georgetown_Admin_Careers",
-    "state": "ok",
-    "count": 11
-   },
-   {
-    "name": "American University",
-    "url": "https://american.wd1.myworkdayjobs.com/AU",
-    "state": "ok",
-    "count": 1
-   },
-   {
-    "name": "Sweetgreen (Greenhouse)",
-    "url": "https://boards.greenhouse.io/sweetgreen",
-    "state": "ok",
-    "count": 0
-   },
-   {
-    "name": "Monumental Sports & Entertainment (Greenhouse)",
-    "url": "https://boards.greenhouse.io/monumentalsports",
-    "state": "ok",
-    "count": 0
-   }
-  ],
-  "jobs": [
-   {
-    "title": "Chief of Staff & Director of Special Projects",
-    "employer": "Georgetown University",
-    "place": "2115 Wisconsin Avenue",
-    "where": "in",
-    "note": "2115 Wisconsin Ave NW",
-    "posted": "2026-10-30",
-    "hours": null,
-    "url": "https://georgetown.wd1.myworkdayjobs.com/Georgetown_Admin_Careers/job/2115-Wisconsin-Avenue/Chief-of-Staff---Director-of-Special-Projects_JR27974"
-   },
-   {
-    "title": "Director of AV Support",
-    "employer": "Georgetown University",
-    "place": "2115 Wisconsin Ave 3rd Floor",
-    "where": "in",
-    "note": "2115 Wisconsin Ave NW",
-    "posted": "2026-10-27",
-    "hours": null,
-    "url": "https://georgetown.wd1.myworkdayjobs.com/Georgetown_Admin_Careers/job/2115-Wisconsin-Ave-3rd-Floor/Director-of-AV-Support_JR26746"
-   },
-   {
-    "title": "Senior Director of Classroom, Conference Room, and Shared Space Support",
-    "employer": "Georgetown University",
-    "place": "2115 Wisconsin Ave 3rd Floor",
-    "where": "in",
-    "note": "2115 Wisconsin Ave NW",
-    "posted": "2026-10-27",
-    "hours": null,
-    "url": "https://georgetown.wd1.myworkdayjobs.com/Georgetown_Admin_Careers/job/2115-Wisconsin-Ave-3rd-Floor/Senior-Director-of-Classroom--Conference-Room--and-Shared-Space-Support_JR26745"
-   },
-   {
-    "title": "Managing Director of Development, Lombardi Comprehensive Cancer Center",
-    "employer": "Georgetown University",
-    "place": "2115 Wisconsin Avenue",
-    "where": "in",
-    "note": "2115 Wisconsin Ave NW",
-    "posted": "2026-10-26",
-    "hours": null,
-    "url": "https://georgetown.wd1.myworkdayjobs.com/Georgetown_Admin_Careers/job/2115-Wisconsin-Avenue/Managing-Director-of-Development--Lombardi-Comprehensive-Cancer-Center_JR27973"
-   },
-   {
-    "title": "Senior Payroll Specialist",
-    "employer": "American University",
-    "place": "3201 New Mexico Campus",
-    "where": "in",
-    "note": "3201 New Mexico Ave NW",
-    "posted": "2026-10-13",
-    "hours": "Full time",
-    "url": "https://american.wd1.myworkdayjobs.com/AU/job/3201-New-Mexico-Campus-Washington-DC/Senior-Payroll-Specialist_R5070"
-   },
-   {
-    "title": "Manager of Payments and Settlements",
-    "employer": "Georgetown University",
-    "place": "2115 Wisconsin Avenue",
-    "where": "in",
-    "note": "2115 Wisconsin Ave NW",
-    "posted": "2026-10-07",
-    "hours": null,
-    "url": "https://georgetown.wd1.myworkdayjobs.com/Georgetown_Admin_Careers/job/2115-Wisconsin-Avenue/Manager-of-Payments-and-Settlements_JR27775-1"
-   },
-   {
-    "title": "Director of Campus Accounting",
-    "employer": "Georgetown University",
-    "place": "2115 Wisconsin Ave G1 Floor",
-    "where": "in",
-    "note": "2115 Wisconsin Ave NW",
-    "posted": "2026-10-01",
-    "hours": null,
-    "url": "https://georgetown.wd1.myworkdayjobs.com/Georgetown_Admin_Careers/job/2115-Wisconsin-Ave-G1-Floor/Director-of-Campus-Accounting_JR26946"
-   },
-   {
-    "title": "Finance Director- Athletics & Commercial Operations",
-    "employer": "Georgetown University",
-    "place": "2115 Wisconsin Avenue",
-    "where": "in",
-    "note": "2115 Wisconsin Ave NW",
-    "posted": "2026-09-28",
-    "hours": null,
-    "url": "https://georgetown.wd1.myworkdayjobs.com/Georgetown_Admin_Careers/job/2115-Wisconsin-Avenue/Finance-Director--Athletics---Commercial-Operations_JR27643"
-   },
-   {
-    "title": "Human Resources Policy & Procedures Specialist",
-    "employer": "Georgetown University",
-    "place": "2115 Wisconsin Avenue",
-    "where": "in",
-    "note": "2115 Wisconsin Ave NW",
-    "posted": "2026-09-24",
-    "hours": null,
-    "url": "https://georgetown.wd1.myworkdayjobs.com/Georgetown_Admin_Careers/job/2115-Wisconsin-Avenue/Human-Resources-Policy---Procedures-Specialist_JR27579-1"
-   },
-   {
-    "title": "Controller",
-    "employer": "Georgetown University",
-    "place": "2121 Wisconsin Avenue",
-    "where": "in",
-    "note": "2121 Wisconsin Ave NW",
-    "posted": "2026-08-31",
-    "hours": null,
-    "url": "https://georgetown.wd1.myworkdayjobs.com/Georgetown_Admin_Careers/job/2121-Wisconsin-Avenue/Controller_JR27273"
-   },
-   {
-    "title": "University Services - Cluster 1 - Senior Finance Officer",
-    "employer": "Georgetown University",
-    "place": "2115 Wisconsin Ave G1 Floor",
-    "where": "in",
-    "note": "2115 Wisconsin Ave NW",
-    "posted": "2026-08-14",
-    "hours": null,
-    "url": "https://georgetown.wd1.myworkdayjobs.com/Georgetown_Admin_Careers/job/2115-Wisconsin-Ave-G1-Floor/University-Services---Cluster-1---Senior-Finance-Officer_JR26928"
-   },
-   {
-    "title": "Director, Planned Giving",
-    "employer": "Georgetown University",
-    "place": "2115 Wisconsin Avenue",
-    "where": "in",
-    "note": "2115 Wisconsin Ave NW",
-    "posted": "2026-07-20",
-    "hours": null,
-    "url": "https://georgetown.wd1.myworkdayjobs.com/Georgetown_Admin_Careers/job/2115-Wisconsin-Avenue/Director--Planned-Giving-Operations_JR24865"
-   }
-  ]
- },
  "blocks": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -24340,7 +24178,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

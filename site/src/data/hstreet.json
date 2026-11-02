@@ -1,7 +1,7 @@
 {
  "slug": "hstreet",
  "name": "H Street NE",
- "generated_at": "2026-11-01T23:52:18Z",
+ "generated_at": "2026-11-02T03:04:49Z",
  "boundary": {
   "source": "The six ANC single-member districts along H Street NE from 3rd to 15th Street (6A01, 6A02, 6A06, 6C04, 6C05, 6C06; Open Data DC). DC has no planning area for H Street.",
   "rings": [
@@ -4334,6 +4334,19 @@
    "smd": "6C05"
   },
   {
+   "id": "BP2700085",
+   "issued": "2026-10-06T04:00:00Z",
+   "group": "Minor work",
+   "type": "POST CARD",
+   "subtype": "BUILDING",
+   "address": "635 14TH PL NE 20002",
+   "work": "",
+   "zoning": "RF-1",
+   "lat": 38.8983,
+   "lon": -76.98441,
+   "smd": "6A06"
+  },
+  {
    "id": "P2700166",
    "issued": "2026-10-06T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -4386,19 +4399,6 @@
    "smd": "6C04"
   },
   {
-   "id": "BP2700085",
-   "issued": "2026-10-06T04:00:00Z",
-   "group": "Minor work",
-   "type": "POST CARD",
-   "subtype": "BUILDING",
-   "address": "635 14TH PL NE 20002",
-   "work": "",
-   "zoning": "RF-1",
-   "lat": 38.8983,
-   "lon": -76.98441,
-   "smd": "6A06"
-  },
-  {
    "id": "B2603383",
    "issued": "2026-10-05T04:00:00Z",
    "group": "Additions",
@@ -4439,8 +4439,8 @@
   }
  ],
  "requests": {
-  "total": 2281,
-  "previous_total": 2961,
+  "total": 2282,
+  "previous_total": 2963,
   "by_type": [
    {
     "type": "Bulk Collection",
@@ -4454,8 +4454,8 @@
    },
    {
     "type": "Parking Enforcement",
-    "count": 298,
-    "previous": 242
+    "count": 299,
+    "previous": 243
    },
    {
     "type": "Residential Parking Permit Violation",
@@ -4465,7 +4465,7 @@
    {
     "type": "Illegal Dumping",
     "count": 112,
-    "previous": 148
+    "previous": 149
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -4748,8 +4748,38 @@
     "previous": 0
    }
   ],
-  "open": 348,
+  "open": 349,
   "recent": [
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T01:37:33Z",
+    "resolved": "2026-11-02T01:46:48Z",
+    "status": "Closed",
+    "block": "600 block of 14TH PLACE NE",
+    "lat": 38.898,
+    "lon": -76.984
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-02T01:01:22Z",
+    "resolved": null,
+    "status": "Open (Duplicate)",
+    "block": "1200 block of I STREET NE",
+    "lat": 38.902,
+    "lon": -76.989
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T00:50:53Z",
+    "resolved": "2026-11-02T01:10:34Z",
+    "status": "Closed",
+    "block": "900 block of 2ND STREET NE",
+    "lat": 38.902,
+    "lon": -77.003
+   },
    {
     "type": "Tree Inspection",
     "agency": "DDOT",
@@ -5219,36 +5249,6 @@
     "block": "600 block of 15TH STREET NE",
     "lat": 38.898,
     "lon": -76.984
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "agency": "DPW",
-    "added": "2026-10-31T14:26:38Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1300 block of E STREET NE",
-    "lat": 38.896,
-    "lon": -76.987
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-10-31T13:58:52Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1200 block of MARYLAND AVENUE NE",
-    "lat": 38.898,
-    "lon": -76.989
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-31T13:58:28Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "400 block of 7TH STREET NE",
-    "lat": 38.896,
-    "lon": -76.996
    }
   ]
  },
@@ -5335,7 +5335,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -5350,7 +5350,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to H Street NE through OTR assessment sub-areas Old City 1 F, J and L in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the H Street NE boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-01): 61% of the 4,397 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 85% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to H Street NE through OTR assessment sub-areas Old City 1 F, J and L in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the H Street NE boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-02): 61% of the 4,397 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 85% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -5371,14 +5371,14 @@
    "area_parcels": 4397,
    "area_share_inside": 0.61,
    "boundary_share_in_area": 0.853,
-   "measured": "2026-11-01"
+   "measured": "2026-11-02"
   },
   "primary": "house",
   "house": {
    "median_12mo": 873500,
    "count_12mo": 95,
-   "median_prev_12mo": 890000,
-   "count_prev_12mo": 109
+   "median_prev_12mo": 889500,
+   "count_prev_12mo": 108
   },
   "condo": {
    "median_12mo": 602500,
@@ -5607,7 +5607,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -5627,11 +5627,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 134,
-   "starting_next_7d": 22,
-   "reserved_ft": 18304,
+   "active_this_week": 135,
+   "starting_next_7d": 23,
+   "reserved_ft": 18524,
    "long_running_90d": 16,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-01: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -5643,7 +5643,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 86
+     "count": 87
     },
     {
      "type": "Lead pipe replacement",
@@ -5834,6 +5834,14 @@
      "end": "2026-11-07",
      "ft": 264,
      "hours": "9 am\u20131 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "1100 block of 8th Street NE",
+     "start": "2026-11-09",
+     "end": "2026-12-08",
+     "ft": 220,
+     "hours": "7 am\u20137 pm"
     }
    ]
   },
@@ -5931,7 +5939,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 1387
+    "closed_n": 1389
    },
    {
     "type": "Trash Collection - Missed",
@@ -5967,7 +5975,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -6097,7 +6105,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "archive_days": 180,
   "sources": [
    {
@@ -6587,7 +6595,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
@@ -6656,37 +6664,8 @@
    }
   ]
  },
- "jobs": {
-  "generated_at": "2026-11-01T23:52:18Z",
-  "max_age_days": 120,
-  "sources": [
-   {
-    "name": "Sweetgreen (Greenhouse)",
-    "url": "https://boards.greenhouse.io/sweetgreen"
-   },
-   {
-    "name": "Monumental Sports & Entertainment (Greenhouse)",
-    "url": "https://boards.greenhouse.io/monumentalsports"
-   }
-  ],
-  "employers": [
-   {
-    "name": "Sweetgreen (Greenhouse)",
-    "url": "https://boards.greenhouse.io/sweetgreen",
-    "state": "ok",
-    "count": 0
-   },
-   {
-    "name": "Monumental Sports & Entertainment (Greenhouse)",
-    "url": "https://boards.greenhouse.io/monumentalsports",
-    "state": "ok",
-    "count": 0
-   }
-  ],
-  "jobs": []
- },
  "blocks": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -25432,7 +25411,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

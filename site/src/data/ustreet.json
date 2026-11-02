@@ -1,7 +1,7 @@
 {
  "slug": "ustreet",
  "name": "U Street",
- "generated_at": "2026-11-01T23:52:18Z",
+ "generated_at": "2026-11-02T03:04:49Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods: U Street/Pleasant Plains (Open Data DC), so it includes Howard University and Pleasant Plains.",
   "rings": [
@@ -1929,19 +1929,6 @@
    "smd": "1B02"
   },
   {
-   "id": "B2606406",
-   "issued": "2026-10-09T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "1827 1/2 16TH ST NW 4 20009",
-   "work": "INTERIOR RENOVATION OF AN EXISTING CONDO UNIT.",
-   "zoning": "RA-2/DC",
-   "lat": 38.91512,
-   "lon": -77.03619,
-   "smd": "2B09"
-  },
-  {
    "id": "HO2700051",
    "issued": "2026-10-09T04:00:00Z",
    "group": "Home businesses",
@@ -1953,6 +1940,19 @@
    "lat": 38.92419,
    "lon": -77.02436,
    "smd": "1E06"
+  },
+  {
+   "id": "B2606406",
+   "issued": "2026-10-09T04:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "1827 1/2 16TH ST NW 4 20009",
+   "work": "INTERIOR RENOVATION OF AN EXISTING CONDO UNIT.",
+   "zoning": "RA-2/DC",
+   "lat": 38.91512,
+   "lon": -77.03619,
+   "smd": "2B09"
   },
   {
    "id": "E2700307",
@@ -2164,13 +2164,13 @@
   }
  ],
  "requests": {
-  "total": 2703,
-  "previous_total": 3050,
+  "total": 2702,
+  "previous_total": 3054,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 400,
-    "previous": 326
+    "count": 398,
+    "previous": 328
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -2179,7 +2179,7 @@
    },
    {
     "type": "Bulk Collection",
-    "count": 224,
+    "count": 225,
     "previous": 269
    },
    {
@@ -2194,7 +2194,7 @@
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 139,
+    "count": 140,
     "previous": 119
    },
    {
@@ -2213,14 +2213,14 @@
     "previous": 79
    },
    {
-    "type": "Trash Collection - Missed",
-    "count": 75,
-    "previous": 86
-   },
-   {
     "type": "Dead Animal Collection",
     "count": 75,
     "previous": 79
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "count": 73,
+    "previous": 88
    },
    {
     "type": "Roadway Signs",
@@ -2229,7 +2229,7 @@
    },
    {
     "type": "Graffiti Removal",
-    "count": 62,
+    "count": 63,
     "previous": 137
    },
    {
@@ -2513,8 +2513,38 @@
     "previous": 13
    }
   ],
-  "open": 575,
+  "open": 577,
   "recent": [
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T01:03:34Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1900 block of 3RD STREET NW",
+    "lat": 38.916,
+    "lon": -77.016
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T01:03:26Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "700 block of HARVARD STREET NW",
+    "lat": 38.927,
+    "lon": -77.025
+   },
+   {
+    "type": "Graffiti Removal",
+    "agency": "DPW",
+    "added": "2026-11-02T00:43:42Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "300 block of OAKDALE PLACE NW",
+    "lat": 38.918,
+    "lon": -77.017
+   },
    {
     "type": "Graffiti Removal",
     "agency": "DPW",
@@ -2559,8 +2589,8 @@
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "agency": "DDOT",
     "added": "2026-11-01T23:12:31Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-02T02:10:55Z",
+    "status": "Closed",
     "block": "9TH STREET NW AND V STREET NW",
     "lat": 38.918,
     "lon": -77.024
@@ -2984,36 +3014,6 @@
     "block": "300 block of T STREET NW",
     "lat": 38.916,
     "lon": -77.016
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T15:24:17Z",
-    "resolved": "2026-10-31T18:20:55Z",
-    "status": "Closed",
-    "block": "1400 block of T STREET NW",
-    "lat": 38.916,
-    "lon": -77.033
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-31T15:23:44Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2000 block of 1/2 15TH STREET NW",
-    "lat": 38.917,
-    "lon": -77.035
-   },
-   {
-    "type": "Dead Animal Collection",
-    "agency": "DPW",
-    "added": "2026-10-31T15:21:13Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2000 block of 15TH STREET NW",
-    "lat": 38.917,
-    "lon": -77.035
    }
   ]
  },
@@ -3130,7 +3130,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3145,7 +3145,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to U Street through OTR assessment sub-areas Old City 2 F and G, LeDroit Park A and Columbia Heights E in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the U Street boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-01): 63% of the 4,964 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 75% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to U Street through OTR assessment sub-areas Old City 2 F and G, LeDroit Park A and Columbia Heights E in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the U Street boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-02): 63% of the 4,964 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 75% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -3170,14 +3170,14 @@
    "area_parcels": 4964,
    "area_share_inside": 0.634,
    "boundary_share_in_area": 0.751,
-   "measured": "2026-11-01"
+   "measured": "2026-11-02"
   },
   "primary": "house",
   "house": {
    "median_12mo": 942500,
    "count_12mo": 60,
    "median_prev_12mo": 1025000,
-   "count_prev_12mo": 60
+   "count_prev_12mo": 59
   },
   "condo": {
    "median_12mo": 555000,
@@ -3388,7 +3388,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3408,11 +3408,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 227,
-   "starting_next_7d": 45,
-   "reserved_ft": 27698,
+   "active_this_week": 231,
+   "starting_next_7d": 49,
+   "reserved_ft": 28248,
    "long_running_90d": 51,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-01: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -3424,7 +3424,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 152
+     "count": 154
     },
     {
      "type": "Lead pipe replacement",
@@ -3432,7 +3432,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 27
+     "count": 29
     },
     {
      "type": "Events & reserved parking",
@@ -3879,19 +3879,19 @@
     "type": "Sanitation Enforcement",
     "median_days": 1.04,
     "city_median_days": 1.09,
-    "closed_n": 582
+    "closed_n": 579
    },
    {
     "type": "Graffiti Removal",
     "median_days": 3.13,
     "city_median_days": 3.89,
-    "closed_n": 513
+    "closed_n": 511
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4028,7 +4028,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4780,7 +4780,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
@@ -4833,98 +4833,8 @@
   ],
   "anc_meetings": []
  },
- "jobs": {
-  "generated_at": "2026-11-01T23:52:18Z",
-  "max_age_days": 120,
-  "sources": [
-   {
-    "name": "Children's National Hospital",
-    "url": "https://childrensnational.wd108.myworkdayjobs.com/CN_Careers"
-   },
-   {
-    "name": "Sweetgreen (Greenhouse)",
-    "url": "https://boards.greenhouse.io/sweetgreen"
-   },
-   {
-    "name": "Monumental Sports & Entertainment (Greenhouse)",
-    "url": "https://boards.greenhouse.io/monumentalsports"
-   }
-  ],
-  "employers": [
-   {
-    "name": "Children's National Hospital",
-    "url": "https://childrensnational.wd108.myworkdayjobs.com/CN_Careers",
-    "state": "ok",
-    "count": 5
-   },
-   {
-    "name": "Sweetgreen (Greenhouse)",
-    "url": "https://boards.greenhouse.io/sweetgreen",
-    "state": "ok",
-    "count": 0
-   },
-   {
-    "name": "Monumental Sports & Entertainment (Greenhouse)",
-    "url": "https://boards.greenhouse.io/monumentalsports",
-    "state": "ok",
-    "count": 0
-   }
-  ],
-  "jobs": [
-   {
-    "title": "Special Police Officer",
-    "employer": "Children's National Hospital",
-    "place": "Shaw Metro",
-    "where": "in",
-    "note": "641 S St NW",
-    "posted": "2026-10-28",
-    "hours": null,
-    "url": "https://childrensnational.wd108.myworkdayjobs.com/CN_Careers/job/Shaw-Metro/Special-Police-Officer_R-002313"
-   },
-   {
-    "title": "Clinic Operations Representative, Full Time, Primary Care - Shaw Metro Tech, DC",
-    "employer": "Children's National Hospital",
-    "place": "Shaw Metro",
-    "where": "in",
-    "note": "641 S St NW",
-    "posted": "2026-10-22",
-    "hours": null,
-    "url": "https://childrensnational.wd108.myworkdayjobs.com/CN_Careers/job/Shaw-Metro/Clinic-Operations-Representative--Full-Time--Primary-Care---Shaw-Metro-Tech--DC_R-002099"
-   },
-   {
-    "title": "Medical Director Urgent Care",
-    "employer": "Children's National Hospital",
-    "place": "Shaw Metro",
-    "where": "in",
-    "note": "641 S St NW",
-    "posted": "2026-10-05",
-    "hours": null,
-    "url": "https://childrensnational.wd108.myworkdayjobs.com/CN_Careers/job/Shaw-Metro/Medical-Director-Urgent-Care_R-002057"
-   },
-   {
-    "title": "Clinical Manager I - Pediatric Urgent Care",
-    "employer": "Children's National Hospital",
-    "place": "Shaw Metro",
-    "where": "in",
-    "note": "641 S St NW",
-    "posted": "2026-09-29",
-    "hours": null,
-    "url": "https://childrensnational.wd108.myworkdayjobs.com/CN_Careers/job/Shaw-Metro/Clinical-Manager-I---Pediatric-Urgent-Care_R-000575-1"
-   },
-   {
-    "title": "Chief of General Pediatrics",
-    "employer": "Children's National Hospital",
-    "place": "Shaw Metro",
-    "where": "in",
-    "note": "641 S St NW",
-    "posted": "2026-07-31",
-    "hours": null,
-    "url": "https://childrensnational.wd108.myworkdayjobs.com/CN_Careers/job/Shaw-Metro/Chief-of-General-Pediatrics_R-000645"
-   }
-  ]
- },
  "blocks": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -27479,7 +27389,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

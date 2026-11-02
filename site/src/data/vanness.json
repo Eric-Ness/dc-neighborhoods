@@ -1,7 +1,7 @@
 {
  "slug": "vanness",
  "name": "Van Ness",
- "generated_at": "2026-11-01T23:52:18Z",
+ "generated_at": "2026-11-02T03:04:49Z",
  "boundary": {
   "source": "ANC single-member districts 3F01, 3F02 and 3F05 around the Van Ness-UDC Metro (Open Data DC). DC has no planning area named Van Ness.",
   "rings": [
@@ -3327,37 +3327,11 @@
    "lat": 38.94412,
    "lon": -77.0644,
    "smd": "3F05"
-  },
-  {
-   "id": "HO2700017",
-   "issued": "2026-10-03T04:00:00Z",
-   "group": "Home businesses",
-   "type": "HOME OCCUPATION",
-   "subtype": "NA",
-   "address": "3631 UPTON ST NW 20008",
-   "work": "",
-   "zoning": "R-1B",
-   "lat": 38.94245,
-   "lon": -77.06989,
-   "smd": "3F01"
-  },
-  {
-   "id": "BP2700037",
-   "issued": "2026-10-03T04:00:00Z",
-   "group": "Minor work",
-   "type": "POST CARD",
-   "subtype": "BUILDING",
-   "address": "4515 30TH ST NW 20008",
-   "work": "",
-   "zoning": "R-1A/FH",
-   "lat": 38.94868,
-   "lon": -77.06126,
-   "smd": "3F02"
   }
  ],
  "requests": {
-  "total": 202,
-  "previous_total": 242,
+  "total": 201,
+  "previous_total": 243,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
@@ -3366,8 +3340,8 @@
    },
    {
     "type": "Parking Enforcement",
-    "count": 36,
-    "previous": 37
+    "count": 35,
+    "previous": 38
    },
    {
     "type": "Bulk Collection",
@@ -4124,7 +4098,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -4139,7 +4113,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Van Ness through OTR assessment neighborhoods Forest Hills, Wakefield and North Cleveland Park in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Van Ness boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-01): 46% of the 3,957 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Van Ness through OTR assessment neighborhoods Forest Hills, Wakefield and North Cleveland Park in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Van Ness boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-02): 46% of the 3,957 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -4160,7 +4134,7 @@
    "area_parcels": 3957,
    "area_share_inside": 0.455,
    "boundary_share_in_area": 1.0,
-   "measured": "2026-11-01"
+   "measured": "2026-11-02"
   },
   "primary": "house",
   "house": {
@@ -4369,7 +4343,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4393,7 +4367,7 @@
    "starting_next_7d": 7,
    "reserved_ft": 4510,
    "long_running_90d": 6,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-01: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -4600,7 +4574,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4733,7 +4707,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "archive_days": 180,
   "sources": [
    {
@@ -5065,7 +5039,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
@@ -5184,138 +5158,8 @@
   ],
   "anc_meetings": []
  },
- "jobs": {
-  "generated_at": "2026-11-01T23:52:18Z",
-  "max_age_days": 120,
-  "sources": [
-   {
-    "name": "American University",
-    "url": "https://american.wd1.myworkdayjobs.com/AU"
-   },
-   {
-    "name": "Sweetgreen (Greenhouse)",
-    "url": "https://boards.greenhouse.io/sweetgreen"
-   },
-   {
-    "name": "Monumental Sports & Entertainment (Greenhouse)",
-    "url": "https://boards.greenhouse.io/monumentalsports"
-   }
-  ],
-  "employers": [
-   {
-    "name": "American University",
-    "url": "https://american.wd1.myworkdayjobs.com/AU",
-    "state": "ok",
-    "count": 9
-   },
-   {
-    "name": "Sweetgreen (Greenhouse)",
-    "url": "https://boards.greenhouse.io/sweetgreen",
-    "state": "ok",
-    "count": 0
-   },
-   {
-    "name": "Monumental Sports & Entertainment (Greenhouse)",
-    "url": "https://boards.greenhouse.io/monumentalsports",
-    "state": "ok",
-    "count": 0
-   }
-  ],
-  "jobs": [
-   {
-    "title": "Senior Administrative Assistant",
-    "employer": "American University",
-    "place": "4401 Connecticut Campus",
-    "where": "in",
-    "note": "4401 Connecticut Ave NW",
-    "posted": "2026-10-26",
-    "hours": "Full time",
-    "url": "https://american.wd1.myworkdayjobs.com/AU/job/4401-Connecticut-Campus-Washington-DC/Senior-Administrative-Assistant_R4559"
-   },
-   {
-    "title": "Senior Director of Executive Engagement",
-    "employer": "American University",
-    "place": "4401 Connecticut Campus",
-    "where": "in",
-    "note": "4401 Connecticut Ave NW",
-    "posted": "2026-10-14",
-    "hours": "Full time",
-    "url": "https://american.wd1.myworkdayjobs.com/AU/job/4401-Connecticut-Campus-Washington-DC/Senior-Director-of-Executive-Engagement_R5077-1"
-   },
-   {
-    "title": "Senior Director of Strategic Operations",
-    "employer": "American University",
-    "place": "4401 Connecticut Campus",
-    "where": "in",
-    "note": "4401 Connecticut Ave NW",
-    "posted": "2026-10-14",
-    "hours": "Full time",
-    "url": "https://american.wd1.myworkdayjobs.com/AU/job/4401-Connecticut-Campus-Washington-DC/Senior-Director-of-Strategic-Operations_R5078"
-   },
-   {
-    "title": "1A Plus Podcast Producer (Producer I)",
-    "employer": "American University",
-    "place": "4401 Connecticut Campus",
-    "where": "in",
-    "note": "4401 Connecticut Ave NW",
-    "posted": "2026-10-07",
-    "hours": "Full time",
-    "url": "https://american.wd1.myworkdayjobs.com/AU/job/4401-Connecticut-Campus-Washington-DC/XMLNAME-1A-Plus-Podcast-Producer--Producer-I-_R4939"
-   },
-   {
-    "title": "Assistant Dean of Development, SPA",
-    "employer": "American University",
-    "place": "4401 Connecticut Campus",
-    "where": "in",
-    "note": "4401 Connecticut Ave NW",
-    "posted": "2026-09-29",
-    "hours": "Full time",
-    "url": "https://american.wd1.myworkdayjobs.com/AU/job/4401-Connecticut-Campus-Washington-DC/Assistant-Dean-of-Development--SPA_R2730"
-   },
-   {
-    "title": "Senior Reporter, D.C. Politics",
-    "employer": "American University",
-    "place": "4401 Connecticut Campus",
-    "where": "in",
-    "note": "4401 Connecticut Ave NW",
-    "posted": "2026-08-11",
-    "hours": "Full time",
-    "url": "https://american.wd1.myworkdayjobs.com/AU/job/4401-Connecticut-Campus-Washington-DC/Senior-Reporter--DC-Politics_R4576"
-   },
-   {
-    "title": "Practitioner-In-Residence",
-    "employer": "American University",
-    "place": "Tenley Campus",
-    "where": "nearby",
-    "note": "4300 Nebraska Ave NW, about 0.8 mi",
-    "posted": "2026-10-28",
-    "hours": "Full time",
-    "url": "https://american.wd1.myworkdayjobs.com/AU/job/Tenley-Campus-Washington-DC/Practitioner-In-Residence_R5134"
-   },
-   {
-    "title": "Legal Education Advisor",
-    "employer": "American University",
-    "place": "Tenley Campus",
-    "where": "nearby",
-    "note": "4300 Nebraska Ave NW, about 0.8 mi",
-    "posted": "2026-10-22",
-    "hours": "Full time",
-    "url": "https://american.wd1.myworkdayjobs.com/AU/job/Tenley-Campus-Washington-DC/Legal-Education-Advisor_R5104"
-   },
-   {
-    "title": "Circulation Manager",
-    "employer": "American University",
-    "place": "Tenley Campus",
-    "where": "nearby",
-    "note": "4300 Nebraska Ave NW, about 0.8 mi",
-    "posted": "2026-10-21",
-    "hours": "Full time",
-    "url": "https://american.wd1.myworkdayjobs.com/AU/job/Tenley-Campus-Washington-DC/Circulation-Manager_R5092"
-   }
-  ]
- },
  "blocks": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -15335,7 +15179,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

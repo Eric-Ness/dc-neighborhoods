@@ -1,7 +1,7 @@
 {
  "slug": "clevelandpark",
  "name": "Cleveland Park",
- "generated_at": "2026-11-01T23:52:18Z",
+ "generated_at": "2026-11-02T03:04:49Z",
  "boundary": {
   "source": "Cleveland Park Historic District (DC Historic Preservation Office, Open Data DC). DC has no planning area named Cleveland Park.",
   "rings": [
@@ -2805,19 +2805,6 @@
    "smd": "3C05"
   },
   {
-   "id": "B2700084",
-   "issued": "2026-10-14T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "3414 PORTER ST NW 20016",
-   "work": "HISTORIC\r\n\r\nReplace garage door",
-   "zoning": "R-2",
-   "lat": 38.93711,
-   "lon": -77.06699,
-   "smd": "3C08"
-  },
-  {
    "id": "E2700432",
    "issued": "2026-10-14T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -2829,6 +2816,19 @@
    "lat": 38.93593,
    "lon": -77.06405,
    "smd": "3C05"
+  },
+  {
+   "id": "B2700084",
+   "issued": "2026-10-14T04:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "3414 PORTER ST NW 20016",
+   "work": "HISTORIC\r\n\r\nReplace garage door",
+   "zoning": "R-2",
+   "lat": 38.93711,
+   "lon": -77.06699,
+   "smd": "3C08"
   },
   {
    "id": "B2700075",
@@ -2936,18 +2936,18 @@
   }
  ],
  "requests": {
-  "total": 242,
+  "total": 244,
   "previous_total": 302,
   "by_type": [
+   {
+    "type": "Scheduled Yard Waste",
+    "count": 38,
+    "previous": 41
+   },
    {
     "type": "Bulk Collection",
     "count": 37,
     "previous": 42
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "count": 36,
-    "previous": 41
    },
    {
     "type": "Parking Enforcement",
@@ -3160,8 +3160,28 @@
     "previous": 7
    }
   ],
-  "open": 68,
+  "open": 70,
   "recent": [
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T03:03:09Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3400 block of RODMAN STREET NW",
+    "lat": 38.939,
+    "lon": -77.068
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T01:43:05Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3700 block of 35TH STREET NW",
+    "lat": 38.938,
+    "lon": -77.069
+   },
    {
     "type": "Container Removal",
     "agency": "DPW",
@@ -3641,26 +3661,6 @@
     "block": "3400 block of ORDWAY STREET NW",
     "lat": 38.936,
     "lon": -77.067
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-26T15:40:03Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3400 block of RODMAN STREET NW",
-    "lat": 38.939,
-    "lon": -77.068
-   },
-   {
-    "type": "DMV - Vehicle Registration Issues",
-    "agency": "DMV",
-    "added": "2026-10-26T15:34:59Z",
-    "resolved": "2026-10-29T20:13:18Z",
-    "status": "Closed",
-    "block": "3600 block of PORTER STREET NW",
-    "lat": 38.937,
-    "lon": -77.071
    }
   ]
  },
@@ -3702,7 +3702,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3717,7 +3717,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Cleveland Park through OTR assessment neighborhoods Cleveland Park and Forest Hills in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Cleveland Park boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-01): 33% of the 5,273 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 98% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Cleveland Park through OTR assessment neighborhoods Cleveland Park and Forest Hills in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Cleveland Park boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-02): 33% of the 5,273 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 98% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -3734,7 +3734,7 @@
    "area_parcels": 5273,
    "area_share_inside": 0.328,
    "boundary_share_in_area": 0.976,
-   "measured": "2026-11-01"
+   "measured": "2026-11-02"
   },
   "primary": "house",
   "house": {
@@ -3952,7 +3952,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3972,11 +3972,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 44,
-   "starting_next_7d": 9,
-   "reserved_ft": 7436,
+   "active_this_week": 49,
+   "starting_next_7d": 14,
+   "reserved_ft": 9174,
    "long_running_90d": 9,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-01: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -3984,7 +3984,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 21
+     "count": 25
     },
     {
      "type": "Lead pipe replacement",
@@ -3992,7 +3992,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 9
+     "count": 10
     },
     {
      "type": "Events & reserved parking",
@@ -4071,6 +4071,46 @@
      "end": "2026-11-14",
      "ft": 440,
      "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "3500 block of 35th Street NW",
+     "start": "2026-11-09",
+     "end": "2026-12-08",
+     "ft": 220,
+     "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "3500 block of 36th Street NW",
+     "start": "2026-11-09",
+     "end": "2026-12-08",
+     "ft": 176,
+     "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "3400 block of Quebec Street NW",
+     "start": "2026-11-09",
+     "end": "2026-12-08",
+     "ft": 440,
+     "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "3100 block of Rodman Street NW",
+     "start": "2026-11-09",
+     "end": "2026-12-08",
+     "ft": 880,
+     "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "3300 block of 27th Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 22,
+     "hours": "8 am\u20134:30 pm"
     }
    ]
   },
@@ -4204,7 +4244,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4359,7 +4399,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4764,7 +4804,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
@@ -4834,37 +4874,8 @@
   ],
   "anc_meetings": []
  },
- "jobs": {
-  "generated_at": "2026-11-01T23:52:18Z",
-  "max_age_days": 120,
-  "sources": [
-   {
-    "name": "Sweetgreen (Greenhouse)",
-    "url": "https://boards.greenhouse.io/sweetgreen"
-   },
-   {
-    "name": "Monumental Sports & Entertainment (Greenhouse)",
-    "url": "https://boards.greenhouse.io/monumentalsports"
-   }
-  ],
-  "employers": [
-   {
-    "name": "Sweetgreen (Greenhouse)",
-    "url": "https://boards.greenhouse.io/sweetgreen",
-    "state": "ok",
-    "count": 0
-   },
-   {
-    "name": "Monumental Sports & Entertainment (Greenhouse)",
-    "url": "https://boards.greenhouse.io/monumentalsports",
-    "state": "ok",
-    "count": 0
-   }
-  ],
-  "jobs": []
- },
  "blocks": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -16201,7 +16212,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

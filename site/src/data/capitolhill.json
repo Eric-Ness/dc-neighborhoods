@@ -1,7 +1,7 @@
 {
  "slug": "capitolhill",
  "name": "Capitol Hill",
- "generated_at": "2026-11-01T23:52:18Z",
+ "generated_at": "2026-11-02T03:04:49Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1745,6 +1745,19 @@
    "smd": "6B05"
   },
   {
+   "id": "SOL2700022",
+   "issued": "2026-10-15T04:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "SOLAR SYSTEM",
+   "address": "1324 INDEPENDENCE AVE SE 20003",
+   "work": "HISTORIC\r\n\r\nInstallation of a new, roof mounted solar photovoltaic electrical panels.",
+   "zoning": "RF-1",
+   "lat": 38.88779,
+   "lon": -76.98742,
+   "smd": "6B06"
+  },
+  {
    "id": "B2609121",
    "issued": "2026-10-15T04:00:00Z",
    "group": "Renovation & repair",
@@ -1781,19 +1794,6 @@
    "zoning": "RF-1",
    "lat": 38.88951,
    "lon": -76.98761,
-   "smd": "6B06"
-  },
-  {
-   "id": "SOL2700022",
-   "issued": "2026-10-15T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "SOLAR SYSTEM",
-   "address": "1324 INDEPENDENCE AVE SE 20003",
-   "work": "HISTORIC\r\n\r\nInstallation of a new, roof mounted solar photovoltaic electrical panels.",
-   "zoning": "RF-1",
-   "lat": 38.88779,
-   "lon": -76.98742,
    "smd": "6B06"
   },
   {
@@ -2799,12 +2799,12 @@
   }
  ],
  "requests": {
-  "total": 2588,
+  "total": 2590,
   "previous_total": 3525,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
-    "count": 642,
+    "count": 644,
     "previous": 765
    },
    {
@@ -3098,8 +3098,28 @@
     "previous": 0
    }
   ],
-  "open": 465,
+  "open": 467,
   "recent": [
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-01T23:59:33Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "200 block of 12TH STREET SE",
+    "lat": 38.886,
+    "lon": -76.99
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-01T23:53:23Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1300 block of SOUTH CAROLINA AVENUE SE",
+    "lat": 38.887,
+    "lon": -76.986
+   },
    {
     "type": "Scheduled Yard Waste",
     "agency": "DPW",
@@ -3579,26 +3599,6 @@
     "block": "200 block of 10TH STREET SE",
     "lat": 38.887,
     "lon": -76.993
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-01T14:38:33Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1200 block of WALTER STREET SE",
-    "lat": 38.887,
-    "lon": -76.989
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-01T14:26:25Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "300 block of 3RD STREET NE",
-    "lat": 38.894,
-    "lon": -77.002
    }
   ]
  },
@@ -3685,7 +3685,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3700,7 +3700,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Capitol Hill through OTR assessment sub-areas Capitol Hill A, B and C and Old City 1 M in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Capitol Hill boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-01): 88% of the 3,572 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 91% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Capitol Hill through OTR assessment sub-areas Capitol Hill A, B and C and Old City 1 M in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Capitol Hill boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-02): 88% of the 3,572 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 91% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -3725,7 +3725,7 @@
    "area_parcels": 3572,
    "area_share_inside": 0.878,
    "boundary_share_in_area": 0.912,
-   "measured": "2026-11-01"
+   "measured": "2026-11-02"
   },
   "primary": "house",
   "house": {
@@ -3737,8 +3737,8 @@
   "condo": {
    "median_12mo": 411500,
    "count_12mo": 32,
-   "median_prev_12mo": 480056,
-   "count_prev_12mo": 42
+   "median_prev_12mo": 485111,
+   "count_prev_12mo": 41
   },
   "last_60d": {
    "median": 1507500,
@@ -3966,20 +3966,11 @@
     "beds": 3,
     "sqft": 2674,
     "assessed": 1749530
-   },
-   {
-    "address": "1305 East Capitol St SE # 202",
-    "date": "2026-09-02",
-    "price": 335000,
-    "kind": "condo",
-    "beds": null,
-    "sqft": null,
-    "assessed": 368240
    }
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3999,11 +3990,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 193,
-   "starting_next_7d": 50,
-   "reserved_ft": 26686,
+   "active_this_week": 195,
+   "starting_next_7d": 52,
+   "reserved_ft": 27126,
    "long_running_90d": 41,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-01: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -4015,7 +4006,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 90
+     "count": 92
     },
     {
      "type": "Cranes",
@@ -4487,7 +4478,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4628,7 +4619,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4798,6 +4789,13 @@
   ],
   "items": [
    {
+    "title": "The Week Ahead\u2026& Some Photos from the Past Week",
+    "url": "https://capitolhillcorner.org/2026/11/01/the-week-ahead-some-photos-from-the-past-week-157/",
+    "source": "Capitol Hill Corner",
+    "published": "2026-11-02T02:57:53Z",
+    "first_seen": "2026-11-02T03:04:49Z"
+   },
+   {
     "title": "Caf\u00e9 8\u2019s Deal to Reopen Doesn\u2019t Help Neighbors \u2013 ANC6B Committee Continues Discussion Monday Night",
     "url": "https://capitolhillcorner.org/2026/11/01/cafe-8s-deal-to-reopen-doesnt-help-neighbors-anc6b-committee-continues-discussion-monday-night/",
     "source": "Capitol Hill Corner",
@@ -4851,13 +4849,6 @@
     "url": "https://capitolhillcorner.org/2026/10/28/photos-and-dueling-accounts-raise-questions-about-cafe-8-shooting/",
     "source": "Capitol Hill Corner",
     "published": "2026-10-28T18:55:19Z",
-    "first_seen": "2026-11-01T03:07:36Z"
-   },
-   {
-    "title": "The Week Ahead\u2026& Some Photos from the Past Week",
-    "url": "https://capitolhillcorner.org/2026/10/25/the-week-ahead-some-photos-from-the-past-week-156/",
-    "source": "Capitol Hill Corner",
-    "published": "2026-10-26T02:10:55Z",
     "first_seen": "2026-11-01T03:07:36Z"
    },
    {
@@ -5252,7 +5243,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
@@ -5413,37 +5404,8 @@
    }
   ]
  },
- "jobs": {
-  "generated_at": "2026-11-01T23:52:18Z",
-  "max_age_days": 120,
-  "sources": [
-   {
-    "name": "Sweetgreen (Greenhouse)",
-    "url": "https://boards.greenhouse.io/sweetgreen"
-   },
-   {
-    "name": "Monumental Sports & Entertainment (Greenhouse)",
-    "url": "https://boards.greenhouse.io/monumentalsports"
-   }
-  ],
-  "employers": [
-   {
-    "name": "Sweetgreen (Greenhouse)",
-    "url": "https://boards.greenhouse.io/sweetgreen",
-    "state": "ok",
-    "count": 0
-   },
-   {
-    "name": "Monumental Sports & Entertainment (Greenhouse)",
-    "url": "https://boards.greenhouse.io/monumentalsports",
-    "state": "ok",
-    "count": 0
-   }
-  ],
-  "jobs": []
- },
  "blocks": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -33110,7 +33072,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

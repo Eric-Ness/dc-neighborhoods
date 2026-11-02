@@ -1,7 +1,7 @@
 {
  "slug": "chinatown",
  "name": "Chinatown",
- "generated_at": "2026-11-01T23:52:18Z",
+ "generated_at": "2026-11-02T03:04:49Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -4340,28 +4340,28 @@
   }
  ],
  "requests": {
-  "total": 1780,
-  "previous_total": 1590,
+  "total": 1777,
+  "previous_total": 1592,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 474,
-    "previous": 397
+    "count": 470,
+    "previous": 402
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 407,
+    "count": 405,
     "previous": 136
    },
    {
     "type": "Sidewalk Repair",
-    "count": 125,
-    "previous": 78
+    "count": 126,
+    "previous": 77
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 86,
-    "previous": 154
+    "count": 88,
+    "previous": 153
    },
    {
     "type": "DOEE - LIHEAP",
@@ -4369,14 +4369,14 @@
     "previous": 23
    },
    {
+    "type": "DC Health Rodent & Vector Control",
+    "count": 44,
+    "previous": 39
+   },
+   {
     "type": "Bulk Collection",
     "count": 44,
     "previous": 56
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "count": 43,
-    "previous": 39
    },
    {
     "type": "Graffiti Removal",
@@ -4411,7 +4411,7 @@
    {
     "type": "Parking Meter Repair",
     "count": 22,
-    "previous": 20
+    "previous": 21
    },
    {
     "type": "Tree Inspection",
@@ -4439,6 +4439,11 @@
     "previous": 11
    },
    {
+    "type": "Public Space Inspection",
+    "count": 14,
+    "previous": 24
+   },
+   {
     "type": "Tree Planting",
     "count": 13,
     "previous": 14
@@ -4449,14 +4454,9 @@
     "previous": 10
    },
    {
-    "type": "Public Space Inspection",
-    "count": 13,
-    "previous": 24
-   },
-   {
     "type": "DMV - Vehicle Registration Issues",
     "count": 13,
-    "previous": 13
+    "previous": 12
    },
    {
     "type": "Tree Removal",
@@ -4500,18 +4500,18 @@
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 8,
+    "count": 7,
     "previous": 17
-   },
-   {
-    "type": "DOEE - Engine Idling Tips",
-    "count": 6,
-    "previous": 2
    },
    {
     "type": "Illegal Poster",
     "count": 6,
     "previous": 5
+   },
+   {
+    "type": "DOEE - Engine Idling Tips",
+    "count": 5,
+    "previous": 2
    },
    {
     "type": "DMV - Driver and Vehicle Services Refund",
@@ -4616,7 +4616,7 @@
    {
     "type": "DC Water - Customer Flooding",
     "count": 2,
-    "previous": 2
+    "previous": 1
    },
    {
     "type": "DGS - Overflowing Recycling Can",
@@ -4659,7 +4659,7 @@
     "previous": 1
    }
   ],
-  "open": 322,
+  "open": 323,
   "recent": [
    {
     "type": "Parking Enforcement",
@@ -5270,7 +5270,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -5285,7 +5285,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Chinatown through OTR assessment neighborhood Central and sub-area Old City 2 B in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Chinatown boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-01): 54% of the 8,090 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 97% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Chinatown through OTR assessment neighborhood Central and sub-area Old City 2 B in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Chinatown boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-02): 54% of the 8,090 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 97% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -5302,7 +5302,7 @@
    "area_parcels": 8090,
    "area_share_inside": 0.535,
    "boundary_share_in_area": 0.967,
-   "measured": "2026-11-01"
+   "measured": "2026-11-02"
   },
   "primary": "condo",
   "house": {
@@ -5314,12 +5314,12 @@
   "condo": {
    "median_12mo": 580000,
    "count_12mo": 237,
-   "median_prev_12mo": 560000,
-   "count_prev_12mo": 277
+   "median_prev_12mo": 555000,
+   "count_prev_12mo": 276
   },
   "last_60d": {
-   "median": 538750,
-   "count": 28,
+   "median": 550000,
+   "count": 27,
    "median_ppsf": null,
    "ppsf_count": 0
   },
@@ -5651,20 +5651,11 @@
     "beds": null,
     "sqft": null,
     "assessed": 492090
-   },
-   {
-    "address": "601 Pennsylvania Ave NW # 311",
-    "date": "2026-09-02",
-    "price": 366832,
-    "kind": "condo",
-    "beds": null,
-    "sqft": null,
-    "assessed": 396890
    }
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -5684,11 +5675,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 268,
-   "starting_next_7d": 43,
-   "reserved_ft": 21582,
+   "active_this_week": 272,
+   "starting_next_7d": 47,
+   "reserved_ft": 21648,
    "long_running_90d": 71,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-01: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -5700,7 +5691,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 201
+     "count": 202
     },
     {
      "type": "Cranes",
@@ -5712,7 +5703,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 15
+     "count": 18
     },
     {
      "type": "Events & reserved parking",
@@ -6146,9 +6137,9 @@
    },
    {
     "type": "Bulk Collection",
-    "median_days": 5.89,
+    "median_days": 5.9,
     "city_median_days": 6.92,
-    "closed_n": 311
+    "closed_n": 310
    },
    {
     "type": "Sidewalk Repair",
@@ -6172,7 +6163,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -6347,7 +6338,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "archive_days": 180,
   "sources": [
    {
@@ -7453,7 +7444,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
@@ -7646,288 +7637,8 @@
   ],
   "anc_meetings": []
  },
- "jobs": {
-  "generated_at": "2026-11-01T23:52:18Z",
-  "max_age_days": 120,
-  "sources": [
-   {
-    "name": "Sweetgreen (Greenhouse)",
-    "url": "https://boards.greenhouse.io/sweetgreen"
-   },
-   {
-    "name": "Monumental Sports & Entertainment (Greenhouse)",
-    "url": "https://boards.greenhouse.io/monumentalsports"
-   }
-  ],
-  "employers": [
-   {
-    "name": "Sweetgreen (Greenhouse)",
-    "url": "https://boards.greenhouse.io/sweetgreen",
-    "state": "ok",
-    "count": 0
-   },
-   {
-    "name": "Monumental Sports & Entertainment (Greenhouse)",
-    "url": "https://boards.greenhouse.io/monumentalsports",
-    "state": "ok",
-    "count": 25
-   }
-  ],
-  "jobs": [
-   {
-    "title": "Coordinator, Content Metadata & Distribution",
-    "employer": "Monumental Sports & Entertainment",
-    "place": "Washington, DC 20004",
-    "where": "in",
-    "note": null,
-    "posted": "2026-10-30",
-    "hours": null,
-    "url": "https://job-boards.greenhouse.io/monumentalsports/jobs/5280154007"
-   },
-   {
-    "title": "Safety Team Full Time",
-    "employer": "Monumental Sports & Entertainment",
-    "place": "Washington, DC 20004",
-    "where": "in",
-    "note": null,
-    "posted": "2026-10-27",
-    "hours": null,
-    "url": "https://job-boards.greenhouse.io/monumentalsports/jobs/5277851007"
-   },
-   {
-    "title": "Junior Videographer",
-    "employer": "Monumental Sports & Entertainment",
-    "place": "Washington, DC 20004",
-    "where": "in",
-    "note": null,
-    "posted": "2026-10-26",
-    "hours": null,
-    "url": "https://job-boards.greenhouse.io/monumentalsports/jobs/5275181007"
-   },
-   {
-    "title": "Assistant, Digital Content (Part-Time/Seasonal)",
-    "employer": "Monumental Sports & Entertainment",
-    "place": "Washington, DC 20004",
-    "where": "in",
-    "note": null,
-    "posted": "2026-10-23",
-    "hours": null,
-    "url": "https://job-boards.greenhouse.io/monumentalsports/jobs/5274430007"
-   },
-   {
-    "title": "Vice President, Global Partnerships",
-    "employer": "Monumental Sports & Entertainment",
-    "place": "Washington, DC 20004",
-    "where": "in",
-    "note": null,
-    "posted": "2026-10-22",
-    "hours": null,
-    "url": "https://job-boards.greenhouse.io/monumentalsports/jobs/5272552007"
-   },
-   {
-    "title": "Supervisor, Food Service Maintenance",
-    "employer": "Monumental Sports & Entertainment",
-    "place": "Washington, DC 20004",
-    "where": "in",
-    "note": null,
-    "posted": "2026-10-16",
-    "hours": null,
-    "url": "https://job-boards.greenhouse.io/monumentalsports/jobs/5227330007"
-   },
-   {
-    "title": "Senior Infrastructure & Platform Engineer",
-    "employer": "Monumental Sports & Entertainment",
-    "place": "Washington, DC 20004",
-    "where": "in",
-    "note": null,
-    "posted": "2026-10-15",
-    "hours": null,
-    "url": "https://job-boards.greenhouse.io/monumentalsports/jobs/5247309007"
-   },
-   {
-    "title": "Game Night Staff: Radio (Part-Time/Seasonal)",
-    "employer": "Monumental Sports & Entertainment",
-    "place": "Washington, DC 20004",
-    "where": "in",
-    "note": null,
-    "posted": "2026-10-07",
-    "hours": null,
-    "url": "https://job-boards.greenhouse.io/monumentalsports/jobs/4481666007"
-   },
-   {
-    "title": "CRM Developer, Sales Operations",
-    "employer": "Monumental Sports & Entertainment",
-    "place": "Washington, DC 20004",
-    "where": "in",
-    "note": null,
-    "posted": "2026-10-01",
-    "hours": null,
-    "url": "https://job-boards.greenhouse.io/monumentalsports/jobs/5179346007"
-   },
-   {
-    "title": "Game Night Staff: Event Engineer (Part-Time/Seasonal)",
-    "employer": "Monumental Sports & Entertainment",
-    "place": "Washington, DC 20004",
-    "where": "in",
-    "note": null,
-    "posted": "2026-09-17",
-    "hours": null,
-    "url": "https://job-boards.greenhouse.io/monumentalsports/jobs/5241327007"
-   },
-   {
-    "title": "Changeover/Conversion Day Crew (Part-Time/Seasonal)",
-    "employer": "Monumental Sports & Entertainment",
-    "place": "Washington, DC 20004",
-    "where": "in",
-    "note": null,
-    "posted": "2026-09-16",
-    "hours": null,
-    "url": "https://job-boards.greenhouse.io/monumentalsports/jobs/5193968007"
-   },
-   {
-    "title": "Changeover/Conversion Event Crew (Part-Time/Seasonal)",
-    "employer": "Monumental Sports & Entertainment",
-    "place": "Washington, DC 20004",
-    "where": "in",
-    "note": null,
-    "posted": "2026-09-16",
-    "hours": null,
-    "url": "https://job-boards.greenhouse.io/monumentalsports/jobs/5193965007"
-   },
-   {
-    "title": "Changeover/Conversion Night Crew (Part-Time/Seasonal)",
-    "employer": "Monumental Sports & Entertainment",
-    "place": "Washington, DC 20004",
-    "where": "in",
-    "note": null,
-    "posted": "2026-09-16",
-    "hours": null,
-    "url": "https://job-boards.greenhouse.io/monumentalsports/jobs/5193960007"
-   },
-   {
-    "title": "Event Staff: Executive Suites Host (Part-Time/Seasonal)",
-    "employer": "Monumental Sports & Entertainment",
-    "place": "Washington, DC 20004",
-    "where": "in",
-    "note": null,
-    "posted": "2026-09-16",
-    "hours": null,
-    "url": "https://job-boards.greenhouse.io/monumentalsports/jobs/5195127007"
-   },
-   {
-    "title": "Event Staff: Technical and Broadcast (Part-Time/Seasonal)",
-    "employer": "Monumental Sports & Entertainment",
-    "place": "Washington, DC 20004",
-    "where": "in",
-    "note": null,
-    "posted": "2026-09-16",
-    "hours": null,
-    "url": "https://job-boards.greenhouse.io/monumentalsports/jobs/4605329007"
-   },
-   {
-    "title": "Event Support Technician",
-    "employer": "Monumental Sports & Entertainment",
-    "place": "Washington, DC 20004",
-    "where": "in",
-    "note": null,
-    "posted": "2026-09-16",
-    "hours": null,
-    "url": "https://job-boards.greenhouse.io/monumentalsports/jobs/5187036007"
-   },
-   {
-    "title": "Game Night Staff: Camera Operator (Part-Time/Seasonal)",
-    "employer": "Monumental Sports & Entertainment",
-    "place": "Washington, DC 20004",
-    "where": "in",
-    "note": null,
-    "posted": "2026-09-16",
-    "hours": null,
-    "url": "https://job-boards.greenhouse.io/monumentalsports/jobs/4975681007"
-   },
-   {
-    "title": "Game Night Staff: Communications (Part-Time/Seasonal)",
-    "employer": "Monumental Sports & Entertainment",
-    "place": "Washington, DC 20004",
-    "where": "in",
-    "note": null,
-    "posted": "2026-09-16",
-    "hours": null,
-    "url": "https://job-boards.greenhouse.io/monumentalsports/jobs/4939610007"
-   },
-   {
-    "title": "Game Night Staff: Concierge (Part-Time/Seasonal)",
-    "employer": "Monumental Sports & Entertainment",
-    "place": "Washington, DC 20004",
-    "where": "in",
-    "note": null,
-    "posted": "2026-09-16",
-    "hours": null,
-    "url": "https://job-boards.greenhouse.io/monumentalsports/jobs/5205689007"
-   },
-   {
-    "title": "Game Night Staff: EVS Operator (Part-Time/Seasonal)",
-    "employer": "Monumental Sports & Entertainment",
-    "place": "Washington, DC 20004",
-    "where": "in",
-    "note": null,
-    "posted": "2026-09-16",
-    "hours": null,
-    "url": "https://job-boards.greenhouse.io/monumentalsports/jobs/4975674007"
-   },
-   {
-    "title": "Game Night Staff: Group Sales (Part-Time/Seasonal)",
-    "employer": "Monumental Sports & Entertainment",
-    "place": "Washington, DC 20004",
-    "where": "in",
-    "note": null,
-    "posted": "2026-09-16",
-    "hours": null,
-    "url": "https://job-boards.greenhouse.io/monumentalsports/jobs/4495475007"
-   },
-   {
-    "title": "Game Night Staff: Marketing Brand Ambassador (Part-Time/Seasonal)",
-    "employer": "Monumental Sports & Entertainment",
-    "place": "Washington, DC 20004",
-    "where": "in",
-    "note": null,
-    "posted": "2026-09-16",
-    "hours": null,
-    "url": "https://job-boards.greenhouse.io/monumentalsports/jobs/4511698007"
-   },
-   {
-    "title": "Game Night Staff: Membership Services (Part-Time/Seasonal)",
-    "employer": "Monumental Sports & Entertainment",
-    "place": "Washington, DC 20004",
-    "where": "in",
-    "note": null,
-    "posted": "2026-09-16",
-    "hours": null,
-    "url": "https://job-boards.greenhouse.io/monumentalsports/jobs/4477675007"
-   },
-   {
-    "title": "Game Night Staff: Technical Lead (Part-time/Seasonal)",
-    "employer": "Monumental Sports & Entertainment",
-    "place": "Washington, DC 20004",
-    "where": "in",
-    "note": null,
-    "posted": "2026-09-16",
-    "hours": null,
-    "url": "https://job-boards.greenhouse.io/monumentalsports/jobs/4980629007"
-   },
-   {
-    "title": "Internship: Sales Event Planning (Part-Time/Seasonal)",
-    "employer": "Monumental Sports & Entertainment",
-    "place": "Washington, DC 20004",
-    "where": "in",
-    "note": null,
-    "posted": "2026-09-16",
-    "hours": null,
-    "url": "https://job-boards.greenhouse.io/monumentalsports/jobs/5189905007"
-   }
-  ]
- },
  "blocks": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -35295,7 +35006,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

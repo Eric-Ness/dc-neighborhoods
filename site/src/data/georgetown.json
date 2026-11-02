@@ -1,7 +1,7 @@
 {
  "slug": "georgetown",
  "name": "Georgetown",
- "generated_at": "2026-11-01T23:52:18Z",
+ "generated_at": "2026-11-02T03:04:49Z",
  "boundary": {
   "source": "Georgetown Historic District (DC Historic Preservation Office, Open Data DC). DC's GEORGETOWN planning area covers only the western half of the neighborhood.",
   "rings": [
@@ -4767,8 +4767,8 @@
   }
  ],
  "requests": {
-  "total": 1277,
-  "previous_total": 1501,
+  "total": 1276,
+  "previous_total": 1503,
   "by_type": [
    {
     "type": "Parking Enforcement",
@@ -4777,12 +4777,12 @@
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 138,
-    "previous": 129
+    "count": 136,
+    "previous": 131
    },
    {
     "type": "Bulk Collection",
-    "count": 92,
+    "count": 93,
     "previous": 113
    },
    {
@@ -5026,8 +5026,18 @@
     "previous": 0
    }
   ],
-  "open": 314,
+  "open": 315,
   "recent": [
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T00:52:19Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1400 block of 35TH STREET NW",
+    "lat": 38.908,
+    "lon": -77.069
+   },
    {
     "type": "Scheduled Yard Waste",
     "agency": "DPW",
@@ -5517,16 +5527,6 @@
     "block": "3000 block of R STREET NW",
     "lat": 38.912,
     "lon": -77.06
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T12:29:39Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1600 block of 29TH STREET NW",
-    "lat": 38.911,
-    "lon": -77.058
    }
   ]
  },
@@ -5545,14 +5545,14 @@
     "previous": 11
    },
    {
-    "offense": "MOTOR VEHICLE THEFT",
-    "count": 2,
-    "previous": 0
-   },
-   {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
     "count": 2,
     "previous": 1
+   },
+   {
+    "offense": "MOTOR VEHICLE THEFT",
+    "count": 2,
+    "previous": 0
    },
    {
     "offense": "BURGLARY",
@@ -5618,7 +5618,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -5633,7 +5633,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Georgetown through OTR assessment neighborhood \"Georgetown\" (all sub-areas) in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Georgetown boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-01): 100% of the 3,694 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 90% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Georgetown through OTR assessment neighborhood \"Georgetown\" (all sub-areas) in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Georgetown boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-02): 100% of the 3,694 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 90% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -5646,7 +5646,7 @@
    "area_parcels": 3694,
    "area_share_inside": 1.0,
    "boundary_share_in_area": 0.902,
-   "measured": "2026-11-01"
+   "measured": "2026-11-02"
   },
   "primary": "house",
   "house": {
@@ -5833,20 +5833,11 @@
     "beds": 2,
     "sqft": 1166,
     "assessed": 1156430
-   },
-   {
-    "address": "3251 Prospect St NW # 304",
-    "date": "2026-09-02",
-    "price": 750000,
-    "kind": "condo",
-    "beds": null,
-    "sqft": null,
-    "assessed": 623760
    }
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -5866,11 +5857,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 144,
-   "starting_next_7d": 34,
-   "reserved_ft": 13662,
+   "active_this_week": 146,
+   "starting_next_7d": 36,
+   "reserved_ft": 13728,
    "long_running_90d": 59,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-01: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -5894,7 +5885,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 14
+     "count": 16
     },
     {
      "type": "Events & reserved parking",
@@ -6173,6 +6164,22 @@
      "end": "2026-11-07",
      "ft": 88,
      "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1500 block of 33rd Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 22,
+     "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1700 block of 32nd Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 44,
+     "hours": "8 am\u20134:30 pm"
     }
    ]
   },
@@ -6306,7 +6313,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -6449,7 +6456,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "archive_days": 180,
   "sources": [
    {
@@ -7461,7 +7468,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
@@ -7494,37 +7501,8 @@
   ],
   "anc_meetings": []
  },
- "jobs": {
-  "generated_at": "2026-11-01T23:52:18Z",
-  "max_age_days": 120,
-  "sources": [
-   {
-    "name": "Sweetgreen (Greenhouse)",
-    "url": "https://boards.greenhouse.io/sweetgreen"
-   },
-   {
-    "name": "Monumental Sports & Entertainment (Greenhouse)",
-    "url": "https://boards.greenhouse.io/monumentalsports"
-   }
-  ],
-  "employers": [
-   {
-    "name": "Sweetgreen (Greenhouse)",
-    "url": "https://boards.greenhouse.io/sweetgreen",
-    "state": "ok",
-    "count": 0
-   },
-   {
-    "name": "Monumental Sports & Entertainment (Greenhouse)",
-    "url": "https://boards.greenhouse.io/monumentalsports",
-    "state": "ok",
-    "count": 0
-   }
-  ],
-  "jobs": []
- },
  "blocks": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -29102,7 +29080,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-01T23:52:18Z",
+  "generated_at": "2026-11-02T03:04:49Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
