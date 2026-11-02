@@ -1,7 +1,7 @@
 {
  "slug": "noma",
  "name": "NoMa",
- "generated_at": "2026-11-02T09:22:49Z",
+ "generated_at": "2026-11-02T12:49:34Z",
  "boundary": {
   "source": "NoMa Business Improvement District boundary (Open Data DC). DC has no planning area for NoMa.",
   "rings": [
@@ -439,6 +439,19 @@
  },
  "permits": [
   {
+   "id": "E2701012",
+   "issued": "2026-10-29T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "820 1ST ST NE 20002",
+   "work": "",
+   "zoning": "D-5",
+   "lat": 38.90057,
+   "lon": -77.00781,
+   "smd": "6E07"
+  },
+  {
    "id": "FB2700006",
    "issued": "2026-10-27T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -478,17 +491,17 @@
    "smd": "6E05"
   },
   {
-   "id": "P2700457",
+   "id": "P2700455",
    "issued": "2026-10-15T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
    "type": "SUPPLEMENTAL",
    "subtype": "PLUMBING AND GAS",
-   "address": "1250 3RD ST NE 20002",
+   "address": "1200 1ST ST NE 20002",
    "work": "",
-   "zoning": "PDR-3",
-   "lat": 38.90755,
-   "lon": -77.00226,
-   "smd": "6C07"
+   "zoning": "D-5",
+   "lat": 38.90608,
+   "lon": -77.0063,
+   "smd": "6E05"
   },
   {
    "id": "P2700454",
@@ -504,17 +517,17 @@
    "smd": "6E05"
   },
   {
-   "id": "P2700455",
+   "id": "P2700457",
    "issued": "2026-10-15T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
    "type": "SUPPLEMENTAL",
    "subtype": "PLUMBING AND GAS",
-   "address": "1200 1ST ST NE 20002",
+   "address": "1250 3RD ST NE 20002",
    "work": "",
-   "zoning": "D-5",
-   "lat": 38.90608,
-   "lon": -77.0063,
-   "smd": "6E05"
+   "zoning": "PDR-3",
+   "lat": 38.90755,
+   "lon": -77.00226,
+   "smd": "6C07"
   },
   {
    "id": "E2700411",
@@ -543,19 +556,6 @@
    "smd": "6E06"
   },
   {
-   "id": "B2607026",
-   "issued": "2026-10-06T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "1248 3RD ST NE 20002",
-   "work": "adding two demising walls at the existing space to subdivide into three (3) separate spaces. Currently a White Box",
-   "zoning": "PDR-3",
-   "lat": 38.90749,
-   "lon": -77.00227,
-   "smd": "6C07"
-  },
-  {
    "id": "E2700191",
    "issued": "2026-10-06T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -567,6 +567,19 @@
    "lat": 38.90446,
    "lon": -77.00653,
    "smd": "6E06"
+  },
+  {
+   "id": "B2607026",
+   "issued": "2026-10-06T04:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "1248 3RD ST NE 20002",
+   "work": "adding two demising walls at the existing space to subdivide into three (3) separate spaces. Currently a White Box",
+   "zoning": "PDR-3",
+   "lat": 38.90749,
+   "lon": -77.00227,
+   "smd": "6C07"
   },
   {
    "id": "P2700102",
@@ -583,28 +596,28 @@
   }
  ],
  "requests": {
-  "total": 844,
-  "previous_total": 883,
+  "total": 857,
+  "previous_total": 865,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 333,
-    "previous": 277
+    "count": 339,
+    "previous": 270
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 87,
+    "count": 92,
     "previous": 3
    },
    {
-    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "type": "DMV - Drivers License/ID Issues",
     "count": 39,
-    "previous": 158
+    "previous": 20
    },
    {
-    "type": "DMV - Drivers License/ID Issues",
+    "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 38,
-    "previous": 20
+    "previous": 159
    },
    {
     "type": "Illegal Dumping",
@@ -613,18 +626,18 @@
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 33,
-    "previous": 24
+    "count": 32,
+    "previous": 23
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
-    "count": 27,
-    "previous": 24
+    "count": 29,
+    "previous": 22
    },
    {
     "type": "DC Government Information",
-    "count": 21,
-    "previous": 32
+    "count": 22,
+    "previous": 31
    },
    {
     "type": "Public Space Inspection",
@@ -633,18 +646,18 @@
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 18,
+    "count": 17,
     "previous": 25
    },
    {
     "type": "Roadway Signs",
     "count": 17,
-    "previous": 15
+    "previous": 13
    },
    {
     "type": "Dead Animal Collection",
-    "count": 14,
-    "previous": 24
+    "count": 15,
+    "previous": 23
    },
    {
     "type": "Streetlight Repair Investigation",
@@ -652,29 +665,29 @@
     "previous": 34
    },
    {
-    "type": "Roadway Repair",
+    "type": "DOEE - General Air Quality Concerns",
     "count": 13,
-    "previous": 7
+    "previous": 10
    },
    {
-    "type": "Bicycle Services",
+    "type": "Roadway Repair",
     "count": 12,
     "previous": 7
    },
    {
     "type": "Sidewalk Repair",
     "count": 12,
-    "previous": 8
+    "previous": 9
    },
    {
-    "type": "DOEE - General Air Quality Concerns",
-    "count": 12,
-    "previous": 10
+    "type": "Bicycle Services",
+    "count": 11,
+    "previous": 6
    },
    {
     "type": "DC How Am I Driving?",
     "count": 9,
-    "previous": 11
+    "previous": 10
    },
    {
     "type": "DGS - Playground Repair",
@@ -682,14 +695,14 @@
     "previous": 10
    },
    {
-    "type": "Bulk Collection",
+    "type": "Sanitation Enforcement",
     "count": 8,
     "previous": 6
    },
    {
-    "type": "Sanitation Enforcement",
+    "type": "Illegal Poster",
     "count": 7,
-    "previous": 6
+    "previous": 0
    },
    {
     "type": "Parking Meter Repair",
@@ -702,9 +715,9 @@
     "previous": 0
    },
    {
-    "type": "Tree Pruning",
+    "type": "Bulk Collection",
     "count": 6,
-    "previous": 4
+    "previous": 6
    },
    {
     "type": "Tree Removal",
@@ -712,9 +725,9 @@
     "previous": 19
    },
    {
-    "type": "Illegal Poster",
-    "count": 6,
-    "previous": 0
+    "type": "Tree Pruning",
+    "count": 5,
+    "previous": 4
    },
    {
     "type": "Residential Parking Permit Violation",
@@ -725,6 +738,11 @@
     "type": "Abandoned Bicycle",
     "count": 4,
     "previous": 3
+   },
+   {
+    "type": "Roadway Markings / Pylons",
+    "count": 4,
+    "previous": 16
    },
    {
     "type": "DMV - Appeal",
@@ -752,11 +770,6 @@
     "previous": 1
    },
    {
-    "type": "Roadway Markings / Pylons",
-    "count": 3,
-    "previous": 17
-   },
-   {
     "type": "Tree Planting",
     "count": 2,
     "previous": 0
@@ -769,7 +782,7 @@
    {
     "type": "Tree Inspection",
     "count": 2,
-    "previous": 10
+    "previous": 9
    },
    {
     "type": "Pothole",
@@ -783,12 +796,22 @@
    },
    {
     "type": "OCTFME - Down Cable Wires",
-    "count": 1,
+    "count": 2,
     "previous": 0
    }
   ],
-  "open": 113,
+  "open": 115,
   "recent": [
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T12:04:03Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1100 block of 1ST STREET NE",
+    "lat": 38.905,
+    "lon": -77.006
+   },
    {
     "type": "Streetlight Repair Investigation",
     "agency": "DDOT",
@@ -1278,31 +1301,21 @@
     "block": "Unit block of M STREET NE",
     "lat": 38.906,
     "lon": -77.007
-   },
-   {
-    "type": "DC Government Information",
-    "agency": "OUC",
-    "added": "2026-10-28T21:49:49Z",
-    "resolved": "2026-10-28T21:49:49Z",
-    "status": "Closed",
-    "block": "Unit block of M STREET NE",
-    "lat": 38.905,
-    "lon": -77.007
    }
   ]
  },
  "crime": {
-  "total": 70,
+  "total": 74,
   "previous_total": 70,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
-    "count": 39,
+    "count": 41,
     "previous": 36
    },
    {
     "offense": "THEFT F/AUTO",
-    "count": 21,
+    "count": 23,
     "previous": 11
    },
    {
@@ -1356,7 +1369,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T09:22:49Z",
+  "generated_at": "2026-11-02T12:49:34Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -1536,7 +1549,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T09:22:49Z",
+  "generated_at": "2026-11-02T12:49:34Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -1711,7 +1724,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T09:22:49Z",
+  "generated_at": "2026-11-02T12:49:34Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -1881,7 +1894,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T09:22:49Z",
+  "generated_at": "2026-11-02T12:49:34Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2209,7 +2222,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T09:22:49Z",
+  "generated_at": "2026-11-02T12:49:34Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -2279,7 +2292,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-02T09:22:49Z",
+  "generated_at": "2026-11-02T12:49:34Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -13631,7 +13644,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T09:22:49Z",
+  "generated_at": "2026-11-02T12:49:34Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
