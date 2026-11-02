@@ -429,6 +429,26 @@ checks.curated = () => {
   }
 };
 
+// Historical photos: Library of Congress items only, each with a rights statement, shown on the History page.
+checks.photos = () => {
+  const ph = JSON.parse(read("site/src/curated/photos.json"));
+  let total = 0;
+  for (const h of hoods()) {
+    const list = ph.neighborhoods?.[h.slug] ?? [];
+    const page = read(`site/dist/${h.slug}/history/index.html`);
+    for (const p of list) {
+      total++;
+      assert(/^https:\/\/www\.loc\.gov\//.test(p.item), `${h.slug}: photo record not at loc.gov: ${p.item}`);
+      assert(/^https:\/\/tile\.loc\.gov\//.test(p.image), `${h.slug}: photo image not from loc.gov: ${p.image}`);
+      assert(/no known restrictions|public domain/i.test(p.rights ?? ""), `${h.slug}: photo without a clear rights statement: ${p.title}`);
+      assert(p.place && p.title, `${h.slug}: photo missing place or title`);
+      assert(page.includes(p.image.replace(/&/g, "&amp;")), `${h.slug}/history: photo not rendered: ${p.title}`);
+    }
+  }
+  assert(total > 0, "no photos at all");
+  console.log(`  ${total} photos`);
+};
+
 // ---- ANC Decoder, openings & closings, cross-site links ----
 checks.decoder = () => {
   const sites = JSON.parse(read("site/src/data/index.json"));
