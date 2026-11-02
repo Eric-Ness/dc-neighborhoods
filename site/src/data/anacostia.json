@@ -1,7 +1,7 @@
 {
  "slug": "anacostia",
  "name": "Anacostia",
- "generated_at": "2026-11-02T12:49:34Z",
+ "generated_at": "2026-11-02T16:31:55Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1042,19 +1042,6 @@
    "smd": "8A04"
   },
   {
-   "id": "FD2600014",
-   "issued": "2026-10-05T04:00:00Z",
-   "group": "Additions",
-   "type": "CONSTRUCTION",
-   "subtype": "FOUNDATION ONLY",
-   "address": "1919 15TH ST SE 20020",
-   "work": "HISTORIC\r\n\r\nFoundation for addition to existing elementary school.",
-   "zoning": "MU-4",
-   "lat": 38.86604,
-   "lon": -76.98362,
-   "smd": "8A05"
-  },
-  {
    "id": "B2604443",
    "issued": "2026-10-05T04:00:00Z",
    "group": "New construction",
@@ -1066,31 +1053,44 @@
    "lat": 38.85461,
    "lon": -76.98623,
    "smd": "8B04"
+  },
+  {
+   "id": "FD2600014",
+   "issued": "2026-10-05T04:00:00Z",
+   "group": "Additions",
+   "type": "CONSTRUCTION",
+   "subtype": "FOUNDATION ONLY",
+   "address": "1919 15TH ST SE 20020",
+   "work": "HISTORIC\r\n\r\nFoundation for addition to existing elementary school.",
+   "zoning": "MU-4",
+   "lat": 38.86604,
+   "lon": -76.98362,
+   "smd": "8A05"
   }
  ],
  "requests": {
-  "total": 490,
-  "previous_total": 868,
+  "total": 496,
+  "previous_total": 866,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 93,
-    "previous": 109
+    "count": 91,
+    "previous": 110
    },
    {
     "type": "Parking Enforcement",
-    "count": 74,
-    "previous": 112
+    "count": 75,
+    "previous": 113
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 66,
+    "count": 68,
     "previous": 11
    },
    {
     "type": "Illegal Dumping",
-    "count": 34,
-    "previous": 30
+    "count": 35,
+    "previous": 28
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -1109,13 +1109,18 @@
    },
    {
     "type": "Recycling Collection - Missed",
-    "count": 14,
+    "count": 15,
     "previous": 13
    },
    {
     "type": "Roadway Signs",
-    "count": 12,
-    "previous": 43
+    "count": 13,
+    "previous": 41
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "count": 11,
+    "previous": 19
    },
    {
     "type": "Streetlight Repair Investigation",
@@ -1123,14 +1128,14 @@
     "previous": 16
    },
    {
-    "type": "DMV - Drivers License/ID Issues",
-    "count": 9,
-    "previous": 19
+    "type": "Scheduled Yard Waste",
+    "count": 8,
+    "previous": 30
    },
    {
     "type": "Residential Parking Permit Violation",
     "count": 8,
-    "previous": 12
+    "previous": 11
    },
    {
     "type": "DC Government Information",
@@ -1141,11 +1146,6 @@
     "type": "DC Health Rodent & Vector Control",
     "count": 8,
     "previous": 13
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "count": 7,
-    "previous": 30
    },
    {
     "type": "Supercan - Delivery",
@@ -1173,14 +1173,14 @@
     "previous": 53
    },
    {
-    "type": "Tree Pruning",
-    "count": 4,
-    "previous": 25
-   },
-   {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 4,
     "previous": 2
+   },
+   {
+    "type": "Dead Animal Collection",
+    "count": 4,
+    "previous": 7
    },
    {
     "type": "Tree Removal",
@@ -1201,11 +1201,6 @@
     "type": "Pet Waste Complaint",
     "count": 3,
     "previous": 2
-   },
-   {
-    "type": "Dead Animal Collection",
-    "count": 3,
-    "previous": 7
    },
    {
     "type": "Public Space Litter Can-Collection",
@@ -1251,6 +1246,11 @@
     "type": "Supercan - Repair",
     "count": 2,
     "previous": 4
+   },
+   {
+    "type": "Tree Pruning",
+    "count": 2,
+    "previous": 27
    },
    {
     "type": "Pothole",
@@ -1340,11 +1340,51 @@
    {
     "type": "Container Removal",
     "count": 1,
-    "previous": 6
+    "previous": 5
    }
   ],
   "open": 70,
   "recent": [
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-02T16:39:01Z",
+    "resolved": "2026-11-02T16:39:01Z",
+    "status": "Closed",
+    "block": "1500 block of ERIE STREET SE",
+    "lat": 38.857,
+    "lon": -76.984
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-02T16:13:05Z",
+    "resolved": "2026-11-02T16:13:05Z",
+    "status": "Closed",
+    "block": "2600 block of STANTON ROAD SE",
+    "lat": 38.858,
+    "lon": -76.99
+   },
+   {
+    "type": "Dead Animal Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T13:52:25Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2500 block of SAYLES PLACE SE",
+    "lat": 38.86,
+    "lon": -76.993
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T13:41:51Z",
+    "resolved": "2026-11-02T16:06:53Z",
+    "status": "Closed",
+    "block": "2600 block of BOWEN ROAD SE",
+    "lat": 38.859,
+    "lon": -76.99
+   },
    {
     "type": "DOEE - LIHEAP",
     "agency": "DOEE",
@@ -1804,46 +1844,6 @@
     "block": "1600 block of U STREET SE",
     "lat": 38.865,
     "lon": -76.981
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-28T21:54:53Z",
-    "resolved": "2026-10-28T22:23:37Z",
-    "status": "Closed",
-    "block": "2800 block of DOUGLAS PLACE SE",
-    "lat": 38.857,
-    "lon": -76.992
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-28T21:37:02Z",
-    "resolved": "2026-10-28T21:50:21Z",
-    "status": "Closed",
-    "block": "2800 block of DOUGLAS PLACE SE",
-    "lat": 38.857,
-    "lon": -76.992
-   },
-   {
-    "type": "Dead Animal Collection",
-    "agency": "DPW",
-    "added": "2026-10-28T21:18:03Z",
-    "resolved": "2026-10-31T15:41:25Z",
-    "status": "Closed",
-    "block": "1600 block of U STREET SE",
-    "lat": 38.865,
-    "lon": -76.98
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-28T20:31:59Z",
-    "resolved": "2026-10-28T21:27:05Z",
-    "status": "Closed",
-    "block": "2800 block of DOUGLAS PLACE SE",
-    "lat": 38.857,
-    "lon": -76.992
    }
   ]
  },
@@ -1929,7 +1929,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2120,7 +2120,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2374,7 +2374,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 790
+    "closed_n": 791
    },
    {
     "type": "DC Government Information",
@@ -2397,13 +2397,13 @@
    {
     "type": "Sanitation Enforcement",
     "median_days": 1.05,
-    "city_median_days": 1.09,
+    "city_median_days": 1.1,
     "closed_n": 230
    },
    {
     "type": "Illegal Dumping",
     "median_days": 3.03,
-    "city_median_days": 4.04,
+    "city_median_days": 4.03,
     "closed_n": 214
    },
    {
@@ -2416,7 +2416,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2585,7 +2585,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2863,7 +2863,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -2991,7 +2991,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -19140,7 +19140,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

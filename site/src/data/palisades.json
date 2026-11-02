@@ -1,7 +1,7 @@
 {
  "slug": "palisades",
  "name": "Palisades",
- "generated_at": "2026-11-02T12:49:34Z",
+ "generated_at": "2026-11-02T16:31:55Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods: Kent/Palisades (Open Data DC). It includes Kent and the C&O Canal parkland along the river.",
   "rings": [
@@ -10447,33 +10447,33 @@
   }
  ],
  "requests": {
-  "total": 1285,
-  "previous_total": 1360,
+  "total": 1310,
+  "previous_total": 1336,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 256,
-    "previous": 247
+    "count": 261,
+    "previous": 248
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 195,
-    "previous": 193
+    "count": 196,
+    "previous": 190
    },
    {
     "type": "Parking Enforcement",
-    "count": 77,
-    "previous": 84
+    "count": 78,
+    "previous": 82
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 71,
+    "count": 72,
     "previous": 20
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 64,
-    "previous": 55
+    "count": 71,
+    "previous": 49
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -10482,48 +10482,58 @@
    },
    {
     "type": "Roadway Signs",
-    "count": 54,
-    "previous": 27
+    "count": 50,
+    "previous": 29
    },
    {
     "type": "Tree Inspection",
-    "count": 39,
-    "previous": 67
+    "count": 41,
+    "previous": 64
    },
    {
     "type": "Container Removal",
-    "count": 37,
-    "previous": 35
+    "count": 40,
+    "previous": 34
    },
    {
     "type": "Residential Parking Permit Violation",
-    "count": 34,
-    "previous": 50
+    "count": 37,
+    "previous": 49
    },
    {
     "type": "Supercan - Delivery",
-    "count": 29,
-    "previous": 45
+    "count": 32,
+    "previous": 43
    },
    {
     "type": "Recycling Collection - Missed",
-    "count": 27,
-    "previous": 26
+    "count": 26,
+    "previous": 23
    },
    {
     "type": "Traffic Safety Input",
-    "count": 26,
+    "count": 24,
     "previous": 20
    },
    {
     "type": "Public Space Litter Can-Collection",
-    "count": 22,
-    "previous": 48
+    "count": 23,
+    "previous": 49
    },
    {
-    "type": "Missed Curbside Compost Collection",
+    "type": "Trash Cart - Delivery",
     "count": 16,
-    "previous": 19
+    "previous": 7
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "count": 15,
+    "previous": 17
+   },
+   {
+    "type": "Pothole",
+    "count": 15,
+    "previous": 26
    },
    {
     "type": "Public Space Inspection",
@@ -10531,14 +10541,14 @@
     "previous": 12
    },
    {
-    "type": "Trash Cart - Delivery",
+    "type": "Missed Curbside Compost Collection",
     "count": 14,
-    "previous": 7
+    "previous": 19
    },
    {
-    "type": "Pothole",
+    "type": "Illegal Dumping",
     "count": 14,
-    "previous": 26
+    "previous": 6
    },
    {
     "type": "Recycling Cart Delivery",
@@ -10546,24 +10556,14 @@
     "previous": 13
    },
    {
-    "type": "Tree Pruning",
-    "count": 13,
-    "previous": 10
-   },
-   {
-    "type": "DMV - Drivers License/ID Issues",
-    "count": 12,
-    "previous": 18
-   },
-   {
-    "type": "Illegal Dumping",
-    "count": 12,
-    "previous": 6
-   },
-   {
     "type": "DMV - Vehicle Registration Issues",
-    "count": 12,
-    "previous": 13
+    "count": 13,
+    "previous": 14
+   },
+   {
+    "type": "Tree Pruning",
+    "count": 11,
+    "previous": 11
    },
    {
     "type": "Trash Cart Repair",
@@ -10571,18 +10571,13 @@
     "previous": 5
    },
    {
+    "type": "Sidewalk Repair",
+    "count": 10,
+    "previous": 15
+   },
+   {
     "type": "Graffiti Removal",
     "count": 10,
-    "previous": 3
-   },
-   {
-    "type": "Sidewalk Repair",
-    "count": 9,
-    "previous": 17
-   },
-   {
-    "type": "DGS - Playground Repair",
-    "count": 8,
     "previous": 3
    },
    {
@@ -10596,19 +10591,24 @@
     "previous": 1
    },
    {
+    "type": "DGS - Playground Repair",
+    "count": 7,
+    "previous": 3
+   },
+   {
     "type": "Out of State Parking Violation (ROSA)",
     "count": 7,
-    "previous": 4
+    "previous": 3
    },
    {
     "type": "Sanitation Enforcement",
     "count": 7,
-    "previous": 25
+    "previous": 24
    },
    {
     "type": "DC Health Rodent & Vector Control",
     "count": 6,
-    "previous": 8
+    "previous": 7
    },
    {
     "type": "DOB - Illegal Construction",
@@ -10616,7 +10616,12 @@
     "previous": 2
    },
    {
-    "type": "Grass Mowing Services Missed (DGS)",
+    "type": "Illegal Poster",
+    "count": 6,
+    "previous": 3
+   },
+   {
+    "type": "DOEE - LIHEAP",
     "count": 6,
     "previous": 0
    },
@@ -10626,19 +10631,9 @@
     "previous": 18
    },
    {
-    "type": "Abandoned Vehicle - On Public Property",
-    "count": 5,
-    "previous": 3
-   },
-   {
     "type": "Dead Animal Collection",
     "count": 5,
-    "previous": 7
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "count": 5,
-    "previous": 0
+    "previous": 6
    },
    {
     "type": "Recycling Cart - Repair",
@@ -10651,9 +10646,9 @@
     "previous": 10
    },
    {
-    "type": "DMV - Online Processing Issues",
+    "type": "Abandoned Vehicle - On Public Property",
     "count": 4,
-    "previous": 6
+    "previous": 3
    },
    {
     "type": "Roadway Markings / Pylons",
@@ -10671,9 +10666,9 @@
     "previous": 3
    },
    {
-    "type": "Illegal Poster",
+    "type": "Grass Mowing Services Missed (DGS)",
     "count": 4,
-    "previous": 3
+    "previous": 0
    },
    {
     "type": "Streetlight Repair Investigation",
@@ -10683,7 +10678,17 @@
    {
     "type": "OCTFME - Down Cable Wires",
     "count": 3,
-    "previous": 15
+    "previous": 14
+   },
+   {
+    "type": "DMV - Online Processing Issues",
+    "count": 3,
+    "previous": 6
+   },
+   {
+    "type": "DC Water - Customer Flooding",
+    "count": 3,
+    "previous": 1
    },
    {
     "type": "Street Cleaning",
@@ -10704,16 +10709,6 @@
     "type": "DMV - Vehicle Title Issues",
     "count": 2,
     "previous": 0
-   },
-   {
-    "type": "DC Water - Customer Flooding",
-    "count": 2,
-    "previous": 1
-   },
-   {
-    "type": "Alley Repair",
-    "count": 2,
-    "previous": 1
    },
    {
     "type": "Tree Planting",
@@ -10751,6 +10746,11 @@
     "previous": 0
    },
    {
+    "type": "DMV - Vehicle Inspection Issues",
+    "count": 2,
+    "previous": 2
+   },
+   {
     "type": "Grass and Weeds Mowing",
     "count": 1,
     "previous": 12
@@ -10771,9 +10771,9 @@
     "previous": 0
    },
    {
-    "type": "DMV - Vehicle Inspection Issues",
+    "type": "Alley Repair",
     "count": 1,
-    "previous": 2
+    "previous": 1
    },
    {
     "type": "DMV - Hearings",
@@ -10781,8 +10781,98 @@
     "previous": 0
    }
   ],
-  "open": 329,
+  "open": 349,
   "recent": [
+   {
+    "type": "Trash Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-02T15:54:18Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4500 block of INDIAN ROCK TERRACE NW",
+    "lat": 38.911,
+    "lon": -77.088
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T15:20:25Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4700 block of RODMAN STREET NW",
+    "lat": 38.94,
+    "lon": -77.094
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T15:18:43Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4500 block of DEXTER STREET NW",
+    "lat": 38.925,
+    "lon": -77.089
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T14:58:35Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4400 block of GREENWICH PARKWAY NW",
+    "lat": 38.912,
+    "lon": -77.082
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T14:56:28Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "5000 block of CATHEDRAL AVENUE NW",
+    "lat": 38.931,
+    "lon": -77.103
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T14:55:11Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "5000 block of CATHEDRAL AVENUE NW",
+    "lat": 38.931,
+    "lon": -77.103
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T14:41:19Z",
+    "resolved": "2026-11-02T15:15:05Z",
+    "status": "Closed",
+    "block": "4300 block of CATHEDRAL AVENUE NW",
+    "lat": 38.931,
+    "lon": -77.086
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-02T13:46:04Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "5800 block of MACARTHUR BOULEVARD NW",
+    "lat": 38.935,
+    "lon": -77.111
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T13:27:45Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "5800 block of POTOMAC AVENUE NW",
+    "lat": 38.934,
+    "lon": -77.113
+   },
    {
     "type": "Scheduled Yard Waste",
     "agency": "DPW",
@@ -11067,8 +11157,8 @@
     "type": "Parking Meter Repair",
     "agency": "DDOT",
     "added": "2026-10-31T16:17:40Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-02T16:40:54Z",
+    "status": "Closed",
     "block": "4800 block of MASSACHUSETTS AVENUE NW",
     "lat": 38.945,
     "lon": -77.096
@@ -11192,96 +11282,6 @@
     "block": "5100 block of TILDEN STREET NW",
     "lat": 38.94,
     "lon": -77.101
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "agency": "DPW",
-    "added": "2026-10-30T19:05:58Z",
-    "resolved": "2026-10-31T23:41:46Z",
-    "status": "Closed",
-    "block": "3300 block of NEW MEXICO AVENUE NW",
-    "lat": 38.934,
-    "lon": -77.085
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "agency": "DPW",
-    "added": "2026-10-30T19:04:32Z",
-    "resolved": "2026-10-31T23:41:41Z",
-    "status": "Closed",
-    "block": "NEW MEXICO AVENUE NW AND LOWELL STREET NW",
-    "lat": 38.932,
-    "lon": -77.085
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-30T18:50:42Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2800 block of ARIZONA TERRACE NW",
-    "lat": 38.929,
-    "lon": -77.103
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-30T17:50:46Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "5100 block of FULTON STREET NW",
-    "lat": 38.926,
-    "lon": -77.101
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-30T17:08:50Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "5000 block of CATHEDRAL AVENUE NW",
-    "lat": 38.93,
-    "lon": -77.101
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-30T16:32:04Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "5000 block of GLENBROOK TERRACE NW",
-    "lat": 38.935,
-    "lon": -77.104
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-10-30T16:19:54Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "5200 block of CATHEDRAL AVENUE NW",
-    "lat": 38.931,
-    "lon": -77.106
-   },
-   {
-    "type": "DMV - Drivers License/ID Issues",
-    "agency": "DMV",
-    "added": "2026-10-30T16:10:32Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "5200 block of CATHEDRAL AVENUE NW",
-    "lat": 38.931,
-    "lon": -77.106
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-30T15:45:35Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "5100 block of FULTON STREET NW",
-    "lat": 38.927,
-    "lon": -77.102
    }
   ]
  },
@@ -11377,7 +11377,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -11678,7 +11678,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -11943,7 +11943,7 @@
   "trees": {
    "total": 9867,
    "species": 221,
-   "planted_5y": 1058,
+   "planted_5y": 1056,
    "empty_boxes": 76,
    "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (76). Not counted: 'Proposed' = planting scheduled (160), 'Conflict'/'Utility' = empty but blocked (362), 'Retired' = box removed (659). 'total' is boxes with status 'Plant' whose condition is not Dead.",
    "condition": {
@@ -12020,14 +12020,14 @@
   "service": [
    {
     "type": "Bulk Collection",
-    "median_days": 7.65,
+    "median_days": 7.66,
     "city_median_days": 6.92,
-    "closed_n": 1727
+    "closed_n": 1725
    },
    {
     "type": "Scheduled Yard Waste",
     "median_days": 7.52,
-    "city_median_days": 9.79,
+    "city_median_days": 9.77,
     "closed_n": 1093
    },
    {
@@ -12046,7 +12046,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.06,
     "city_median_days": 0.05,
-    "closed_n": 518
+    "closed_n": 519
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -12070,7 +12070,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -12223,7 +12223,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "archive_days": 180,
   "sources": [
    {
@@ -12515,7 +12515,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -12560,6 +12560,15 @@
     "kind": "community"
    },
    {
+    "title": "Palisades Farmers Market",
+    "place": "MacArthur Blvd and 48th Place NW",
+    "time": "9:00 AM - 1:00 PM",
+    "url": "https://palisadesdc.org/farmers-market/",
+    "source": "DC farmers market list",
+    "kind": "market",
+    "date": "2026-11-08"
+   },
+   {
     "title": "Arcadia Mobile Market at Sibley Hospital",
     "place": "5522 Loughboro Road NW",
     "time": "12:30 PM - 3:30 PM",
@@ -12578,6 +12587,15 @@
     "kind": "community"
    },
    {
+    "title": "Palisades Farmers Market",
+    "place": "MacArthur Blvd and 48th Place NW",
+    "time": "9:00 AM - 1:00 PM",
+    "url": "https://palisadesdc.org/farmers-market/",
+    "source": "DC farmers market list",
+    "kind": "market",
+    "date": "2026-11-15"
+   },
+   {
     "title": "Palisades Farmer\u2019s Market",
     "date": "2026-11-22",
     "time": "9 AM to 1 PM",
@@ -12587,6 +12605,15 @@
     "kind": "community"
    },
    {
+    "title": "Palisades Farmers Market",
+    "place": "MacArthur Blvd and 48th Place NW",
+    "time": "9:00 AM - 1:00 PM",
+    "url": "https://palisadesdc.org/farmers-market/",
+    "source": "DC farmers market list",
+    "kind": "market",
+    "date": "2026-11-22"
+   },
+   {
     "title": "Palisades Farmer\u2019s Market",
     "date": "2026-11-29",
     "time": "9 AM to 1 PM",
@@ -12594,9 +12621,7 @@
     "url": "https://palisadesdc.org/event/palisades-farmers-market/2026-11-29/",
     "source": "Palisades Citizens' Association",
     "kind": "community"
-   }
-  ],
-  "unscheduled": [
+   },
    {
     "title": "Palisades Farmers Market",
     "place": "MacArthur Blvd and 48th Place NW",
@@ -12604,9 +12629,10 @@
     "url": "https://palisadesdc.org/farmers-market/",
     "source": "DC farmers market list",
     "kind": "market",
-    "schedule": "Sundays"
+    "date": "2026-11-29"
    }
   ],
+  "unscheduled": [],
   "links": [
    {
     "name": "Palisades Library events",
@@ -12623,7 +12649,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -49929,7 +49955,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

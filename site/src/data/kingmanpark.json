@@ -1,7 +1,7 @@
 {
  "slug": "kingmanpark",
  "name": "Kingman Park",
- "generated_at": "2026-11-02T14:32:20Z",
+ "generated_at": "2026-11-02T16:31:55Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -2189,19 +2189,6 @@
    "smd": "6A04"
   },
   {
-   "id": "E2700266",
-   "issued": "2026-10-07T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "561 23RD PL NE 20002",
-   "work": "Electrical Trade Permit",
-   "zoning": "RF-1",
-   "lat": 38.89754,
-   "lon": -76.97308,
-   "smd": "7D05"
-  },
-  {
    "id": "P2700198",
    "issued": "2026-10-07T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -2291,6 +2278,19 @@
    "lat": 38.8946,
    "lon": -76.9831,
    "smd": "7D07"
+  },
+  {
+   "id": "E2700266",
+   "issued": "2026-10-07T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "561 23RD PL NE 20002",
+   "work": "Electrical Trade Permit",
+   "zoning": "RF-1",
+   "lat": 38.89754,
+   "lon": -76.97308,
+   "smd": "7D05"
   },
   {
    "id": "BP2700085",
@@ -2412,37 +2412,37 @@
  ],
  "requests": {
   "total": 2279,
-  "previous_total": 3262,
+  "previous_total": 3264,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 366,
-    "previous": 357
+    "count": 364,
+    "previous": 356
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 338,
-    "previous": 353
+    "count": 341,
+    "previous": 347
    },
    {
     "type": "Parking Enforcement",
-    "count": 232,
-    "previous": 195
+    "count": 225,
+    "previous": 202
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 155,
-    "previous": 81
+    "count": 153,
+    "previous": 82
    },
    {
     "type": "Illegal Dumping",
     "count": 135,
-    "previous": 126
+    "previous": 128
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 127,
-    "previous": 119
+    "count": 128,
+    "previous": 123
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
@@ -2451,28 +2451,28 @@
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 79,
-    "previous": 88
+    "count": 80,
+    "previous": 89
    },
    {
     "type": "Residential Parking Permit Violation",
-    "count": 67,
-    "previous": 111
+    "count": 69,
+    "previous": 109
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 57,
-    "previous": 134
+    "count": 59,
+    "previous": 136
    },
    {
     "type": "Recycling Collection - Missed",
-    "count": 48,
+    "count": 47,
     "previous": 24
    },
    {
     "type": "Tree Inspection",
     "count": 46,
-    "previous": 216
+    "previous": 217
    },
    {
     "type": "Dead Animal Collection",
@@ -2481,18 +2481,18 @@
    },
    {
     "type": "Trash Cart - Delivery",
-    "count": 36,
+    "count": 37,
     "previous": 47
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 33,
-    "previous": 3
+    "count": 35,
+    "previous": 2
    },
    {
     "type": "Roadway Signs",
-    "count": 26,
-    "previous": 34
+    "count": 28,
+    "previous": 32
    },
    {
     "type": "Public Space Litter Can-Collection",
@@ -2512,11 +2512,11 @@
    {
     "type": "Abandoned Vehicle - On Public Property",
     "count": 20,
-    "previous": 33
+    "previous": 32
    },
    {
     "type": "DC Government Information",
-    "count": 19,
+    "count": 18,
     "previous": 8
    },
    {
@@ -2525,9 +2525,14 @@
     "previous": 55
    },
    {
+    "type": "Rat Replacement Containers",
+    "count": 17,
+    "previous": 11
+   },
+   {
     "type": "DOB - Vacant Private Property Inspection",
     "count": 16,
-    "previous": 30
+    "previous": 27
    },
    {
     "type": "Container Removal",
@@ -2535,19 +2540,14 @@
     "previous": 29
    },
    {
-    "type": "Rat Replacement Containers",
-    "count": 16,
-    "previous": 11
-   },
-   {
-    "type": "Sidewalk Repair",
-    "count": 14,
-    "previous": 26
-   },
-   {
     "type": "Streetlight Repair Investigation",
     "count": 13,
     "previous": 43
+   },
+   {
+    "type": "Roadway Repair",
+    "count": 13,
+    "previous": 16
    },
    {
     "type": "Recycling Cart - Repair",
@@ -2560,9 +2560,9 @@
     "previous": 4
    },
    {
-    "type": "Roadway Repair",
-    "count": 12,
-    "previous": 17
+    "type": "Sidewalk Repair",
+    "count": 10,
+    "previous": 31
    },
    {
     "type": "DMV - Drivers License/ID Issues",
@@ -2572,7 +2572,7 @@
    {
     "type": "Supercan - Delivery",
     "count": 9,
-    "previous": 18
+    "previous": 19
    },
    {
     "type": "Abandoned Bicycle",
@@ -2592,7 +2592,7 @@
    {
     "type": "Alley Cleaning",
     "count": 8,
-    "previous": 48
+    "previous": 47
    },
    {
     "type": "Trash Cart Repair",
@@ -2607,17 +2607,22 @@
    {
     "type": "Public Space Inspection",
     "count": 7,
-    "previous": 19
+    "previous": 18
    },
    {
     "type": "Tree Removal",
     "count": 7,
-    "previous": 101
+    "previous": 100
    },
    {
     "type": "Signed Street Sweeping Missed",
     "count": 6,
     "previous": 1
+   },
+   {
+    "type": "DMV - Online Processing Issues",
+    "count": 5,
+    "previous": 2
    },
    {
     "type": "Supercan - Repair",
@@ -2645,11 +2650,6 @@
     "previous": 13
    },
    {
-    "type": "DMV - Online Processing Issues",
-    "count": 4,
-    "previous": 2
-   },
-   {
     "type": "Abandoned Vehicle - On Private Property",
     "count": 4,
     "previous": 1
@@ -2657,7 +2657,7 @@
    {
     "type": "OCTFME - Down Cable Wires",
     "count": 4,
-    "previous": 53
+    "previous": 52
    },
    {
     "type": "Roadway Markings / Pylons",
@@ -2790,8 +2790,128 @@
     "previous": 0
    }
   ],
-  "open": 414,
+  "open": 405,
   "recent": [
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T16:55:36Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "400 block of 10TH STREET NE",
+    "lat": 38.896,
+    "lon": -76.992
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T16:54:07Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "400 block of 10TH STREET NE",
+    "lat": 38.896,
+    "lon": -76.992
+   },
+   {
+    "type": "DMV - Online Processing Issues",
+    "agency": "DMV",
+    "added": "2026-11-02T16:53:23Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1600 block of E STREET NE",
+    "lat": 38.896,
+    "lon": -76.981
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-02T16:49:46Z",
+    "resolved": "2026-11-02T16:49:46Z",
+    "status": "Closed",
+    "block": "1500 block of BENNING ROAD NE",
+    "lat": 38.899,
+    "lon": -76.982
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T16:41:26Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "500 block of 24TH STREET NE",
+    "lat": 38.897,
+    "lon": -76.972
+   },
+   {
+    "type": "Residential Parking Permit Violation",
+    "agency": "DPW",
+    "added": "2026-11-02T15:44:32Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "600 block of 14TH PLACE NE",
+    "lat": 38.898,
+    "lon": -76.985
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T15:43:17Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "200 block of 15TH STREET NE",
+    "lat": 38.893,
+    "lon": -76.984
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-02T15:42:49Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of GALES STREET NE",
+    "lat": 38.898,
+    "lon": -76.979
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T15:36:39Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of 9TH STREET NE",
+    "lat": 38.89,
+    "lon": -76.993
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "agency": "DOH",
+    "added": "2026-11-02T15:30:39Z",
+    "resolved": "2026-11-02T16:15:19Z",
+    "status": "Closed",
+    "block": "1400 block of MARYLAND AVENUE NE",
+    "lat": 38.899,
+    "lon": -76.985
+   },
+   {
+    "type": "Roadway Repair",
+    "agency": "DDOT",
+    "added": "2026-11-02T15:12:22Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "1000 block of CONSTITUTION AVENUE NE",
+    "lat": 38.892,
+    "lon": -76.992
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T14:33:25Z",
+    "resolved": "2026-11-02T15:12:07Z",
+    "status": "Closed",
+    "block": "1200 block of C STREET NE",
+    "lat": 38.894,
+    "lon": -76.99
+   },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "agency": "DDOT",
@@ -2816,8 +2936,8 @@
     "type": "DC Health Rodent & Vector Control",
     "agency": "DOH",
     "added": "2026-11-02T13:57:48Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-02T15:51:28Z",
+    "status": "Closed",
     "block": "1200 block of EAST CAPITOL STREET NE",
     "lat": 38.891,
     "lon": -76.989
@@ -2866,8 +2986,8 @@
     "type": "Sanitation Enforcement",
     "agency": "DPW",
     "added": "2026-11-02T13:34:52Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-02T15:36:05Z",
+    "status": "Closed",
     "block": "1400 block of C STREET NE",
     "lat": 38.893,
     "lon": -76.985
@@ -2876,8 +2996,8 @@
     "type": "DC Health Rodent & Vector Control",
     "agency": "DOH",
     "added": "2026-11-02T13:26:49Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-02T16:05:02Z",
+    "status": "Closed",
     "block": "200 block of 14TH PLACE NE",
     "lat": 38.893,
     "lon": -76.985
@@ -2906,8 +3026,8 @@
     "type": "Sanitation Enforcement",
     "agency": "DPW",
     "added": "2026-11-02T13:06:11Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-02T16:06:05Z",
+    "status": "Closed",
     "block": "1200 block of F STREET NE",
     "lat": 38.898,
     "lon": -76.989
@@ -2976,8 +3096,8 @@
     "type": "Illegal Dumping",
     "agency": "DPW",
     "added": "2026-11-02T03:38:40Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-02T15:48:06Z",
+    "status": "Closed",
     "block": "1300 block of E STREET NE",
     "lat": 38.896,
     "lon": -76.987
@@ -3046,8 +3166,8 @@
     "type": "Tree Inspection",
     "agency": "DDOT",
     "added": "2026-11-01T23:20:40Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-02T16:46:00Z",
+    "status": "Closed",
     "block": "500 block of 14TH STREET NE",
     "lat": 38.897,
     "lon": -76.986
@@ -3066,8 +3186,8 @@
     "type": "Abandoned Vehicle - On Public Property",
     "agency": "DPW",
     "added": "2026-11-01T23:03:17Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-02T14:54:14Z",
+    "status": "Closed",
     "block": "400 block of 20TH STREET NE",
     "lat": 38.896,
     "lon": -76.976
@@ -3171,126 +3291,6 @@
     "block": "1600 block of D STREET NE",
     "lat": 38.895,
     "lon": -76.981
-   },
-   {
-    "type": "Trash Cart - Delivery",
-    "agency": "DPW",
-    "added": "2026-11-01T18:27:50Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1200 block of C STREET NE",
-    "lat": 38.893,
-    "lon": -76.99
-   },
-   {
-    "type": "Public Space Litter Can Repair",
-    "agency": "DPW",
-    "added": "2026-11-01T18:27:15Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1400 block of C STREET NE",
-    "lat": 38.894,
-    "lon": -76.985
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-01T17:57:10Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1200 block of C STREET NE",
-    "lat": 38.894,
-    "lon": -76.989
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-01T17:31:30Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "600 block of 14TH STREET NE",
-    "lat": 38.898,
-    "lon": -76.986
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-01T17:29:36Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1300 block of F STREET NE",
-    "lat": 38.898,
-    "lon": -76.987
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-01T17:18:01Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1500 block of GALES STREET NE",
-    "lat": 38.898,
-    "lon": -76.983
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-11-01T17:17:39Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "600 block of 19TH STREET NE",
-    "lat": 38.897,
-    "lon": -76.977
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-01T17:15:52Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1800 block of GALES STREET NE",
-    "lat": 38.898,
-    "lon": -76.977
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-01T17:10:46Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1000 block of C STREET NE",
-    "lat": 38.894,
-    "lon": -76.992
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-01T17:06:02Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1400 block of C STREET NE",
-    "lat": 38.894,
-    "lon": -76.985
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-01T16:56:09Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1300 block of EMERALD STREET NE",
-    "lat": 38.897,
-    "lon": -76.987
-   },
-   {
-    "type": "DOB - Illegal Construction",
-    "agency": "DOB",
-    "added": "2026-11-01T16:51:53Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1400 block of MARYLAND AVENUE NE",
-    "lat": 38.899,
-    "lon": -76.985
    }
   ]
  },
@@ -3383,7 +3383,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T14:32:20Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3722,7 +3722,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T14:32:20Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4111,14 +4111,14 @@
    {
     "type": "Scheduled Yard Waste",
     "median_days": 10.75,
-    "city_median_days": 9.79,
-    "closed_n": 2569
+    "city_median_days": 9.77,
+    "closed_n": 2567
    },
    {
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 1723
+    "closed_n": 1724
    },
    {
     "type": "Trash Collection - Missed",
@@ -4129,8 +4129,8 @@
    {
     "type": "Illegal Dumping",
     "median_days": 3.69,
-    "city_median_days": 4.04,
-    "closed_n": 986
+    "city_median_days": 4.03,
+    "closed_n": 988
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
@@ -4146,15 +4146,15 @@
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "median_days": 2.56,
+    "median_days": 2.46,
     "city_median_days": 2.79,
-    "closed_n": 653
+    "closed_n": 657
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T14:32:20Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4312,7 +4312,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T14:32:20Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4605,7 +4605,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T14:32:20Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -4694,7 +4694,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T14:32:20Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -25555,7 +25555,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T14:32:20Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

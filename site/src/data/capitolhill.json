@@ -1,7 +1,7 @@
 {
  "slug": "capitolhill",
  "name": "Capitol Hill",
- "generated_at": "2026-11-02T12:49:34Z",
+ "generated_at": "2026-11-02T16:31:55Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1901,19 +1901,6 @@
    "smd": "6B06"
   },
   {
-   "id": "E2700455",
-   "issued": "2026-10-14T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "801 PENNSYLVANIA AVE SE 20003",
-   "work": "",
-   "zoning": "MU-4/CHC",
-   "lat": 38.88364,
-   "lon": -76.99454,
-   "smd": "6B04"
-  },
-  {
    "id": "B2607814",
    "issued": "2026-10-14T04:00:00Z",
    "group": "Renovation & repair",
@@ -1951,6 +1938,19 @@
    "lat": 38.88679,
    "lon": -76.99128,
    "smd": "6B05"
+  },
+  {
+   "id": "E2700455",
+   "issued": "2026-10-14T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "801 PENNSYLVANIA AVE SE 20003",
+   "work": "",
+   "zoning": "MU-4/CHC",
+   "lat": 38.88364,
+   "lon": -76.99454,
+   "smd": "6B04"
   },
   {
    "id": "B2607240",
@@ -2838,103 +2838,93 @@
   }
  ],
  "requests": {
-  "total": 2615,
-  "previous_total": 3482,
+  "total": 2620,
+  "previous_total": 3490,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
-    "count": 646,
-    "previous": 759
+    "count": 636,
+    "previous": 760
    },
    {
     "type": "Bulk Collection",
-    "count": 413,
-    "previous": 529
+    "count": 411,
+    "previous": 535
    },
    {
     "type": "Parking Enforcement",
-    "count": 346,
-    "previous": 324
+    "count": 348,
+    "previous": 326
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 187,
+    "count": 189,
     "previous": 66
    },
    {
     "type": "Residential Parking Permit Violation",
-    "count": 100,
-    "previous": 103
+    "count": 105,
+    "previous": 102
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 73,
-    "previous": 97
+    "count": 77,
+    "previous": 95
    },
    {
     "type": "Illegal Dumping",
-    "count": 72,
-    "previous": 86
+    "count": 74,
+    "previous": 90
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 67,
-    "previous": 127
-   },
-   {
-    "type": "Tree Inspection",
-    "count": 59,
+    "count": 66,
     "previous": 128
    },
    {
+    "type": "Tree Inspection",
+    "count": 60,
+    "previous": 127
+   },
+   {
     "type": "Sanitation Enforcement",
-    "count": 55,
+    "count": 54,
     "previous": 48
    },
    {
     "type": "Roadway Signs",
-    "count": 50,
-    "previous": 28
+    "count": 48,
+    "previous": 30
    },
    {
     "type": "Trash Cart - Delivery",
     "count": 38,
-    "previous": 67
+    "previous": 66
    },
    {
     "type": "Container Removal",
     "count": 38,
-    "previous": 32
+    "previous": 33
    },
    {
     "type": "Recycling Collection - Missed",
-    "count": 29,
+    "count": 32,
     "previous": 141
    },
    {
     "type": "Dead Animal Collection",
-    "count": 27,
-    "previous": 16
+    "count": 28,
+    "previous": 15
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 25,
-    "previous": 100
-   },
-   {
-    "type": "DMV - Vehicle Registration Issues",
-    "count": 24,
-    "previous": 20
+    "count": 27,
+    "previous": 98
    },
    {
     "type": "Streetlight Repair Investigation",
-    "count": 23,
+    "count": 25,
     "previous": 31
-   },
-   {
-    "type": "Sidewalk Repair",
-    "count": 23,
-    "previous": 43
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
@@ -2943,33 +2933,38 @@
    },
    {
     "type": "DMV - Drivers License/ID Issues",
-    "count": 22,
+    "count": 23,
     "previous": 18
    },
    {
+    "type": "Sidewalk Repair",
+    "count": 22,
+    "previous": 42
+   },
+   {
+    "type": "DMV - Vehicle Registration Issues",
+    "count": 22,
+    "previous": 22
+   },
+   {
     "type": "DOEE - LIHEAP",
-    "count": 19,
+    "count": 21,
     "previous": 0
+   },
+   {
+    "type": "OCTFME - Down Cable Wires",
+    "count": 18,
+    "previous": 24
    },
    {
     "type": "Tree Planting",
     "count": 18,
-    "previous": 22
-   },
-   {
-    "type": "OCTFME - Down Cable Wires",
-    "count": 17,
-    "previous": 25
+    "previous": 21
    },
    {
     "type": "Traffic Safety Input",
     "count": 17,
-    "previous": 19
-   },
-   {
-    "type": "DC Government Information",
-    "count": 16,
-    "previous": 11
+    "previous": 18
    },
    {
     "type": "Graffiti Removal",
@@ -2979,17 +2974,22 @@
    {
     "type": "Tree Pruning",
     "count": 14,
-    "previous": 46
+    "previous": 48
+   },
+   {
+    "type": "Recycling Cart Delivery",
+    "count": 13,
+    "previous": 24
+   },
+   {
+    "type": "DC Government Information",
+    "count": 13,
+    "previous": 13
    },
    {
     "type": "Parking Meter Repair",
     "count": 12,
     "previous": 11
-   },
-   {
-    "type": "Recycling Cart Delivery",
-    "count": 12,
-    "previous": 24
    },
    {
     "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
@@ -2999,11 +2999,11 @@
    {
     "type": "Tree Removal",
     "count": 10,
-    "previous": 40
+    "previous": 39
    },
    {
     "type": "Rat Replacement Containers",
-    "count": 8,
+    "count": 9,
     "previous": 8
    },
    {
@@ -3024,12 +3024,7 @@
    {
     "type": "DC Water - Customer Flooding",
     "count": 7,
-    "previous": 4
-   },
-   {
-    "type": "Roadway Repair",
-    "count": 6,
-    "previous": 2
+    "previous": 5
    },
    {
     "type": "Abandoned Bicycle",
@@ -3042,9 +3037,9 @@
     "previous": 8
    },
    {
-    "type": "Street Cleaning",
-    "count": 4,
-    "previous": 10
+    "type": "Roadway Markings / Pylons",
+    "count": 5,
+    "previous": 0
    },
    {
     "type": "Bicycle Services",
@@ -3057,19 +3052,19 @@
     "previous": 0
    },
    {
+    "type": "Roadway Repair",
+    "count": 4,
+    "previous": 4
+   },
+   {
     "type": "Recycling Cart - Repair",
     "count": 4,
-    "previous": 10
+    "previous": 11
    },
    {
     "type": "DMV - Online Processing Issues",
     "count": 4,
     "previous": 4
-   },
-   {
-    "type": "Roadway Markings / Pylons",
-    "count": 4,
-    "previous": 0
    },
    {
     "type": "Alley Repair",
@@ -3089,7 +3084,12 @@
    {
     "type": "Alley Cleaning",
     "count": 3,
-    "previous": 15
+    "previous": 14
+   },
+   {
+    "type": "Street Cleaning",
+    "count": 2,
+    "previous": 12
    },
    {
     "type": "DGS - Overflowing Recycling Can",
@@ -3114,7 +3114,7 @@
    {
     "type": "DC How Am I Driving?",
     "count": 2,
-    "previous": 4
+    "previous": 3
    },
    {
     "type": "DGS - Playground Repair",
@@ -3124,7 +3124,7 @@
    {
     "type": "DOB - Illegal Construction",
     "count": 2,
-    "previous": 3
+    "previous": 4
    },
    {
     "type": "Vacant Lot - Public Property Only",
@@ -3137,8 +3137,238 @@
     "previous": 0
    }
   ],
-  "open": 480,
+  "open": 485,
   "recent": [
+   {
+    "type": "Residential Parking Permit Violation",
+    "agency": "DPW",
+    "added": "2026-11-02T16:23:40Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "300 block of EAST CAPITOL STREET SE",
+    "lat": 38.89,
+    "lon": -77.001
+   },
+   {
+    "type": "Dead Animal Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T16:15:43Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "300 block of SOUTH CAROLINA AVENUE SE",
+    "lat": 38.883,
+    "lon": -77.002
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T16:11:50Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "200 block of 7TH STREET SE",
+    "lat": 38.887,
+    "lon": -76.996
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T15:49:39Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "600 block of G STREET SE",
+    "lat": 38.881,
+    "lon": -76.998
+   },
+   {
+    "type": "Recycling Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-02T15:40:23Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "700 block of 4TH STREET SE",
+    "lat": 38.881,
+    "lon": -77.0
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T15:31:53Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "700 block of 9TH STREET SE",
+    "lat": 38.88,
+    "lon": -76.994
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-02T15:15:08Z",
+    "resolved": null,
+    "status": "Open (Duplicate)",
+    "block": "400 block of 2ND STREET SE",
+    "lat": 38.884,
+    "lon": -77.004
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-02T15:12:26Z",
+    "resolved": "2026-11-02T15:12:26Z",
+    "status": "Closed",
+    "block": "100 block of 15TH STREET SE",
+    "lat": 38.888,
+    "lon": -76.984
+   },
+   {
+    "type": "Roadway Markings / Pylons",
+    "agency": "DDOT",
+    "added": "2026-11-02T15:10:53Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "INDEPENDENCE AVENUE SE AND 14TH STREET SE",
+    "lat": 38.888,
+    "lon": -76.986
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "agency": "DDOT",
+    "added": "2026-11-02T15:03:41Z",
+    "resolved": "2026-11-02T15:11:13Z",
+    "status": "Closed",
+    "block": "100 block of 8TH STREET SE",
+    "lat": 38.888,
+    "lon": -76.995
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "agency": "DOH",
+    "added": "2026-11-02T14:39:34Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "600 block of NORTH CAROLINA AVENUE SE",
+    "lat": 38.886,
+    "lon": -76.998
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "agency": "DOH",
+    "added": "2026-11-02T14:35:54Z",
+    "resolved": "2026-11-02T15:33:39Z",
+    "status": "Closed",
+    "block": "100 block of 5TH STREET NE",
+    "lat": 38.892,
+    "lon": -77.0
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T14:30:10Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "600 block of SOUTH CAROLINA AVENUE SE",
+    "lat": 38.883,
+    "lon": -76.997
+   },
+   {
+    "type": "Tree Inspection",
+    "agency": "DDOT",
+    "added": "2026-11-02T13:46:46Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "200 block of D STREET SE",
+    "lat": 38.885,
+    "lon": -77.003
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T13:34:55Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "200 block of 11TH STREET SE",
+    "lat": 38.886,
+    "lon": -76.991
+   },
+   {
+    "type": "Residential Parking Permit Violation",
+    "agency": "DPW",
+    "added": "2026-11-02T13:34:26Z",
+    "resolved": "2026-11-02T16:09:17Z",
+    "status": "Closed",
+    "block": "600 block of I STREET SE",
+    "lat": 38.88,
+    "lon": -76.997
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T13:26:17Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1300 block of INDEPENDENCE AVENUE SE",
+    "lat": 38.887,
+    "lon": -76.987
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T13:08:51Z",
+    "resolved": "2026-11-02T13:39:05Z",
+    "status": "Closed",
+    "block": "200 block of D STREET SE",
+    "lat": 38.885,
+    "lon": -77.003
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "agency": "DDOT",
+    "added": "2026-11-02T12:59:20Z",
+    "resolved": "2026-11-02T13:05:59Z",
+    "status": "Closed",
+    "block": "1000 block of NORTH CAROLINA AVENUE SE",
+    "lat": 38.889,
+    "lon": -76.992
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "agency": "DDOT",
+    "added": "2026-11-02T12:58:14Z",
+    "resolved": "2026-11-02T13:05:56Z",
+    "status": "Closed",
+    "block": "1000 block of NORTH CAROLINA AVENUE SE",
+    "lat": 38.889,
+    "lon": -76.992
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T12:57:32Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "700 block of 7TH STREET SE",
+    "lat": 38.881,
+    "lon": -76.996
+   },
+   {
+    "type": "Residential Parking Permit Violation",
+    "agency": "DPW",
+    "added": "2026-11-02T12:56:58Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "200 block of EAST CAPITOL STREET NE",
+    "lat": 38.89,
+    "lon": -77.003
+   },
+   {
+    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "agency": "DDOT",
+    "added": "2026-11-02T12:45:39Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "900 block of NORTH CAROLINA AVENUE SE",
+    "lat": 38.889,
+    "lon": -76.993
+   },
    {
     "type": "Scheduled Yard Waste",
     "agency": "DPW",
@@ -3153,8 +3383,8 @@
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-11-02T12:06:11Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-02T13:15:05Z",
+    "status": "Closed",
     "block": "700 block of NORTH CAROLINA AVENUE SE",
     "lat": 38.888,
     "lon": -76.995
@@ -3173,8 +3403,8 @@
     "type": "Illegal Dumping",
     "agency": "DPW",
     "added": "2026-11-02T10:29:20Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-02T14:24:05Z",
+    "status": "Closed",
     "block": "300 block of 11TH STREET SE",
     "lat": 38.885,
     "lon": -76.991
@@ -3408,257 +3638,27 @@
     "block": "600 block of NORTH CAROLINA AVENUE SE",
     "lat": 38.887,
     "lon": -76.998
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-01T18:04:02Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "Unit block of 8TH STREET NE",
-    "lat": 38.89,
-    "lon": -76.995
-   },
-   {
-    "type": "Sidewalk Repair",
-    "agency": "DDOT",
-    "added": "2026-11-01T17:55:47Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "300 block of CONSTITUTION AVENUE NE",
-    "lat": 38.892,
-    "lon": -77.001
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-01T17:55:00Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "200 block of 9TH STREET SE",
-    "lat": 38.887,
-    "lon": -76.994
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-01T17:52:37Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "400 block of 7TH STREET SE",
-    "lat": 38.883,
-    "lon": -76.996
-   },
-   {
-    "type": "Roadway Signs",
-    "agency": "DDOT",
-    "added": "2026-11-01T17:45:46Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "600 block of G STREET SE",
-    "lat": 38.881,
-    "lon": -76.997
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-01T17:13:11Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "700 block of 10TH STREET SE",
-    "lat": 38.88,
-    "lon": -76.993
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-01T17:03:56Z",
-    "resolved": "2026-11-01T17:10:53Z",
-    "status": "Closed",
-    "block": "700 block of D STREET SE",
-    "lat": 38.885,
-    "lon": -76.995
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-01T16:34:25Z",
-    "resolved": "2026-11-01T16:41:08Z",
-    "status": "Closed",
-    "block": "1000 block of NORTH CAROLINA AVENUE SE",
-    "lat": 38.889,
-    "lon": -76.992
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-01T16:33:35Z",
-    "resolved": "2026-11-01T16:40:53Z",
-    "status": "Closed",
-    "block": "1000 block of NORTH CAROLINA AVENUE SE",
-    "lat": 38.889,
-    "lon": -76.992
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-01T16:30:02Z",
-    "resolved": "2026-11-01T16:36:17Z",
-    "status": "Closed",
-    "block": "100 block of 8TH STREET SE",
-    "lat": 38.888,
-    "lon": -76.995
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-01T16:29:35Z",
-    "resolved": "2026-11-01T16:36:14Z",
-    "status": "Closed",
-    "block": "100 block of 8TH STREET SE",
-    "lat": 38.888,
-    "lon": -76.995
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-01T16:28:48Z",
-    "resolved": "2026-11-01T16:36:10Z",
-    "status": "Closed",
-    "block": "700 block of NORTH CAROLINA AVENUE SE",
-    "lat": 38.888,
-    "lon": -76.996
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-01T16:28:10Z",
-    "resolved": "2026-11-01T16:36:07Z",
-    "status": "Closed",
-    "block": "700 block of NORTH CAROLINA AVENUE SE",
-    "lat": 38.888,
-    "lon": -76.996
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-01T16:27:44Z",
-    "resolved": "2026-11-01T16:36:04Z",
-    "status": "Closed",
-    "block": "600 block of INDEPENDENCE AVENUE SE",
-    "lat": 38.888,
-    "lon": -76.996
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-01T16:27:29Z",
-    "resolved": "2026-11-01T16:36:27Z",
-    "status": "Closed",
-    "block": "600 block of INDEPENDENCE AVENUE SE",
-    "lat": 38.888,
-    "lon": -76.996
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-01T16:27:09Z",
-    "resolved": "2026-11-01T16:36:24Z",
-    "status": "Closed",
-    "block": "600 block of INDEPENDENCE AVENUE SE",
-    "lat": 38.888,
-    "lon": -76.996
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-01T16:26:51Z",
-    "resolved": "2026-11-01T16:36:01Z",
-    "status": "Closed",
-    "block": "600 block of INDEPENDENCE AVENUE SE",
-    "lat": 38.888,
-    "lon": -76.996
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-01T16:26:27Z",
-    "resolved": "2026-11-01T16:36:21Z",
-    "status": "Closed",
-    "block": "600 block of INDEPENDENCE AVENUE SE",
-    "lat": 38.888,
-    "lon": -76.996
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-01T16:26:10Z",
-    "resolved": "2026-11-01T16:35:57Z",
-    "status": "Closed",
-    "block": "700 block of NORTH CAROLINA AVENUE SE",
-    "lat": 38.887,
-    "lon": -76.996
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-01T16:25:56Z",
-    "resolved": "2026-11-01T16:35:53Z",
-    "status": "Closed",
-    "block": "600 block of INDEPENDENCE AVENUE SE",
-    "lat": 38.888,
-    "lon": -76.996
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-01T16:25:41Z",
-    "resolved": "2026-11-01T16:30:56Z",
-    "status": "Closed",
-    "block": "700 block of NORTH CAROLINA AVENUE SE",
-    "lat": 38.887,
-    "lon": -76.996
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-01T16:25:10Z",
-    "resolved": "2026-11-01T16:30:53Z",
-    "status": "Closed",
-    "block": "600 block of INDEPENDENCE AVENUE SE",
-    "lat": 38.888,
-    "lon": -76.996
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-11-01T16:12:23Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "900 block of NORTH CAROLINA AVENUE SE",
-    "lat": 38.888,
-    "lon": -76.993
    }
   ]
  },
  "crime": {
-  "total": 40,
-  "previous_total": 35,
+  "total": 38,
+  "previous_total": 36,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
-    "count": 24,
-    "previous": 23
+    "count": 22,
+    "previous": 25
    },
    {
     "offense": "THEFT F/AUTO",
     "count": 9,
-    "previous": 9
+    "previous": 8
    },
    {
-    "offense": "BURGLARY",
+    "offense": "ASSAULT W/DANGEROUS WEAPON",
     "count": 2,
-    "previous": 0
+    "previous": 1
    },
    {
     "offense": "MOTOR VEHICLE THEFT",
@@ -3666,9 +3666,9 @@
     "previous": 2
    },
    {
-    "offense": "ASSAULT W/DANGEROUS WEAPON",
+    "offense": "BURGLARY",
     "count": 2,
-    "previous": 1
+    "previous": 0
    },
    {
     "offense": "ROBBERY",
@@ -3724,7 +3724,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -4009,7 +4009,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4444,20 +4444,20 @@
    {
     "type": "Scheduled Yard Waste",
     "median_days": 17.11,
-    "city_median_days": 9.8,
-    "closed_n": 3041
+    "city_median_days": 9.77,
+    "closed_n": 3039
    },
    {
     "type": "Bulk Collection",
     "median_days": 5.73,
     "city_median_days": 6.92,
-    "closed_n": 2565
+    "closed_n": 2563
    },
    {
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 1507
+    "closed_n": 1508
    },
    {
     "type": "Trash Collection - Missed",
@@ -4468,32 +4468,32 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 4.96,
-    "city_median_days": 5.13,
+    "city_median_days": 5.12,
     "closed_n": 666
    },
    {
     "type": "Residential Parking Permit Violation",
     "median_days": 0.09,
     "city_median_days": 0.1,
-    "closed_n": 559
+    "closed_n": 561
    },
    {
     "type": "Illegal Dumping",
-    "median_days": 3.9,
-    "city_median_days": 4.04,
-    "closed_n": 406
+    "median_days": 3.88,
+    "city_median_days": 4.03,
+    "closed_n": 409
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
     "median_days": 0.01,
     "city_median_days": 0.01,
-    "closed_n": 358
+    "closed_n": 361
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4630,11 +4630,11 @@
    ],
    "clips": [],
    "screened": 0,
-   "note": "No usable mentions in the Evening Star for October 31 \u2013 November 6, 1926 (12 matching pages searched). Some weeks a neighborhood just isn't in the paper. Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
+   "note": "The Library of Congress search could not be reached this run (HTTPError). Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
   }
  },
  "news": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4720,9 +4720,9 @@
    {
     "name": "Capitol Hill Restoration Society",
     "url": "https://www.chrs.org/",
-    "state": "error: URLError",
-    "matched": 0,
-    "failed": 1
+    "state": "ok",
+    "matched": 3,
+    "fetched": 1
    },
    {
     "name": "Hill Center",
@@ -5258,7 +5258,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -5411,7 +5411,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -33078,7 +33078,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

@@ -1,7 +1,7 @@
 {
  "slug": "stadiumarmory",
  "name": "Stadium-Armory",
- "generated_at": "2026-11-02T14:32:20Z",
+ "generated_at": "2026-11-02T16:31:55Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1035,23 +1035,23 @@
   }
  ],
  "requests": {
-  "total": 423,
-  "previous_total": 729,
+  "total": 429,
+  "previous_total": 723,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 98,
+    "count": 100,
     "previous": 283
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 79,
+    "count": 81,
     "previous": 0
    },
    {
     "type": "Tree Inspection",
     "count": 58,
-    "previous": 60
+    "previous": 57
    },
    {
     "type": "Streetlight Repair Investigation",
@@ -1060,7 +1060,7 @@
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 33,
+    "count": 34,
     "previous": 0
    },
    {
@@ -1080,7 +1080,7 @@
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 13,
+    "count": 14,
     "previous": 0
    },
    {
@@ -1091,14 +1091,24 @@
    {
     "type": "Bulk Collection",
     "count": 3,
-    "previous": 61
+    "previous": 60
    }
   ],
-  "open": 16,
+  "open": 18,
   "recent": [
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
+    "added": "2026-11-02T16:33:21Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1900 block of C STREET SE",
+    "lat": 38.885,
+    "lon": -76.977
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
     "added": "2026-10-31T22:25:37Z",
     "resolved": "2026-10-31T23:11:48Z",
     "status": "Closed",
@@ -1187,6 +1197,16 @@
     "lon": -76.973
    },
    {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-10-29T16:21:58Z",
+    "resolved": "2026-10-29T16:36:50Z",
+    "status": "Closed",
+    "block": "1900 block of MASSACHUSETTS AVENUE SE",
+    "lat": 38.885,
+    "lon": -76.973
+   },
+   {
     "type": "DMV - Drivers License/ID Issues",
     "agency": "DMV",
     "added": "2026-10-27T16:46:57Z",
@@ -1545,26 +1565,6 @@
     "block": "500 block of OKLAHOMA AVENUE NE",
     "lat": 38.896,
     "lon": -76.969
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-23T23:21:47Z",
-    "resolved": "2026-10-23T23:28:41Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-23T23:21:47Z",
-    "resolved": "2026-10-23T23:28:41Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
    },
    {
     "type": "Parking Enforcement",
@@ -1613,22 +1613,22 @@
     "previous": 3
    },
    {
-    "offense": "BURGLARY",
-    "count": 1,
-    "previous": 0
-   },
-   {
     "offense": "HOMICIDE",
     "count": 1,
     "previous": 0
    },
    {
-    "offense": "ROBBERY",
+    "offense": "BURGLARY",
+    "count": 1,
+    "previous": 0
+   },
+   {
+    "offense": "THEFT F/AUTO",
     "count": 0,
     "previous": 1
    },
    {
-    "offense": "THEFT F/AUTO",
+    "offense": "ROBBERY",
     "count": 0,
     "previous": 1
    }
@@ -1663,7 +1663,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T14:32:20Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -1850,7 +1850,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T14:32:20Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2024,7 +2024,7 @@
    {
     "type": "Illegal Dumping",
     "median_days": 4.01,
-    "city_median_days": 4.04,
+    "city_median_days": 4.03,
     "closed_n": 30
    },
    {
@@ -2042,7 +2042,7 @@
    {
     "type": "Sanitation Enforcement",
     "median_days": 2.05,
-    "city_median_days": 1.09,
+    "city_median_days": 1.1,
     "closed_n": 16
    },
    {
@@ -2061,7 +2061,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T14:32:20Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2151,7 +2151,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T14:32:20Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2519,7 +2519,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T14:32:20Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -2685,7 +2685,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-02T14:32:20Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -14189,7 +14189,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T14:32:20Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

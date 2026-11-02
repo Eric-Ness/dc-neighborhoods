@@ -1,7 +1,7 @@
 {
  "slug": "vanness",
  "name": "Van Ness",
- "generated_at": "2026-11-02T12:49:34Z",
+ "generated_at": "2026-11-02T16:31:55Z",
  "boundary": {
   "source": "ANC single-member districts 3F01, 3F02 and 3F05 around the Van Ness-UDC Metro (Open Data DC). DC has no planning area named Van Ness.",
   "rings": [
@@ -3225,6 +3225,19 @@
    "smd": "3F02"
   },
   {
+   "id": "BP2700217",
+   "issued": "2026-10-14T04:00:00Z",
+   "group": "Minor work",
+   "type": "POST CARD",
+   "subtype": "BUILDING",
+   "address": "4411 36TH ST NW 20008",
+   "work": "",
+   "zoning": "R-1B",
+   "lat": 38.94694,
+   "lon": -77.06964,
+   "smd": "3F05"
+  },
+  {
    "id": "F2600850",
    "issued": "2026-10-14T04:00:00Z",
    "group": "Renovation & repair",
@@ -3243,19 +3256,6 @@
    "group": "Electrical, plumbing & mechanical",
    "type": "SUPPLEMENTAL",
    "subtype": "ELECTRICAL",
-   "address": "4411 36TH ST NW 20008",
-   "work": "",
-   "zoning": "R-1B",
-   "lat": 38.94694,
-   "lon": -77.06964,
-   "smd": "3F05"
-  },
-  {
-   "id": "BP2700217",
-   "issued": "2026-10-14T04:00:00Z",
-   "group": "Minor work",
-   "type": "POST CARD",
-   "subtype": "BUILDING",
    "address": "4411 36TH ST NW 20008",
    "work": "",
    "zoning": "R-1B",
@@ -3369,17 +3369,17 @@
   }
  ],
  "requests": {
-  "total": 201,
-  "previous_total": 240,
+  "total": 205,
+  "previous_total": 239,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
-    "count": 43,
+    "count": 44,
     "previous": 61
    },
    {
     "type": "Parking Enforcement",
-    "count": 35,
+    "count": 37,
     "previous": 37
    },
    {
@@ -3581,10 +3581,55 @@
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 1,
     "previous": 2
+   },
+   {
+    "type": "Illegal Dumping",
+    "count": 1,
+    "previous": 4
    }
   ],
-  "open": 66,
+  "open": 68,
   "recent": [
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T16:33:51Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4400 block of 35TH STREET NW",
+    "lat": 38.947,
+    "lon": -77.067
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-02T15:45:23Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4500 block of CONNECTICUT AVENUE NW",
+    "lat": 38.948,
+    "lon": -77.066
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T15:42:46Z",
+    "resolved": "2026-11-02T17:00:14Z",
+    "status": "Closed",
+    "block": "4500 block of CONNECTICUT AVENUE NW",
+    "lat": 38.948,
+    "lon": -77.066
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T13:55:14Z",
+    "resolved": "2026-11-02T15:15:13Z",
+    "status": "Closed",
+    "block": "2900 block of UPTON STREET NW",
+    "lat": 38.942,
+    "lon": -77.061
+   },
    {
     "type": "Scheduled Yard Waste",
     "agency": "DPW",
@@ -4044,46 +4089,6 @@
     "block": "3100 block of BRANDYWINE STREET NW",
     "lat": 38.949,
     "lon": -77.064
-   },
-   {
-    "type": "Streetlight Repair Investigation",
-    "agency": "DDOT",
-    "added": "2026-10-27T18:23:24Z",
-    "resolved": "2026-10-29T01:50:58Z",
-    "status": "Closed",
-    "block": "3600 block of YUMA STREET NW",
-    "lat": 38.946,
-    "lon": -77.071
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-27T14:17:18Z",
-    "resolved": "2026-10-27T16:14:21Z",
-    "status": "Closed",
-    "block": "4500 block of CONNECTICUT AVENUE NW",
-    "lat": 38.949,
-    "lon": -77.065
-   },
-   {
-    "type": "Trash Cart Repair",
-    "agency": "DPW",
-    "added": "2026-10-27T11:08:34Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3600 block of UPTON STREET NW",
-    "lat": 38.942,
-    "lon": -77.072
-   },
-   {
-    "type": "Grass Mowing Services Missed (DGS)",
-    "agency": "DGS",
-    "added": "2026-10-26T17:54:33Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3500 block of INTERNATIONAL DRIVE NW",
-    "lat": 38.943,
-    "lon": -77.068
    }
   ]
  },
@@ -4137,7 +4142,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -4382,7 +4387,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4540,7 +4545,7 @@
    {
     "type": "Scheduled Yard Waste",
     "median_days": 7.68,
-    "city_median_days": 9.79,
+    "city_median_days": 9.77,
     "closed_n": 458
    },
    {
@@ -4553,7 +4558,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 348
+    "closed_n": 350
    },
    {
     "type": "Trash Collection - Missed",
@@ -4589,7 +4594,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4718,11 +4723,11 @@
    ],
    "clips": [],
    "screened": 0,
-   "note": "No usable mentions in the Evening Star for October 31 \u2013 November 6, 1926 (14 matching pages searched). Some weeks a neighborhood just isn't in the paper. Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
+   "note": "The Library of Congress search could not be reached this run (HTTPError). Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
   }
  },
  "news": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4783,7 +4788,7 @@
     "name": "Forest Hills Connection",
     "url": "https://foresthillsconnection.com/",
     "state": "ok",
-    "matched": 11,
+    "matched": 10,
     "fetched": 2
    },
    {
@@ -5054,7 +5059,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -5174,7 +5179,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -15194,7 +15199,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
