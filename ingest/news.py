@@ -292,6 +292,90 @@ FEEDS = {
         ("PoPville", "https://www.popville.com/feed/?paged=3", "https://www.popville.com/", "match"),
         *SHARED,
     ],
+    # Added 2026-11-02; feeds tested that day (ingest/SOURCES-LATE.md).
+    "bloomingdale": [
+        ("Eckington Civic Association", "https://eckingtoncivicassociation.com/feed/", "https://eckingtoncivicassociation.com/", "all"),
+        ("Washingtonian", "https://www.washingtonian.com/tag/bloomingdale/feed/", "https://www.washingtonian.com/", "match"),
+        ("Washingtonian", WP_SEARCH.format(base="https://www.washingtonian.com", q="bloomingdale"), "https://www.washingtonian.com/", "match"),
+        ("WTOP", "https://wtop.com/tag/bloomingdale/feed/", "https://wtop.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=2", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=3", "https://www.popville.com/", "match"),
+        *SHARED,
+    ],
+    "foggybottom": [
+        ("Foggy Bottom Association", "https://www.foggybottomassociation.org/blog-feed.xml", "https://www.foggybottomassociation.org/", "all"),
+        ("ANC 2A", "https://anc2a.org/feed/", "https://anc2a.org/", "all"),
+        ("Golden Triangle BID", "https://goldentriangledc.com/feed/", "https://goldentriangledc.com/", "all"),
+        ("GW Hatchet", "https://gwhatchet.com/feed/", "https://gwhatchet.com/", "match"),  # Crawl-delay 6; never a query string here
+        ("WTOP", "https://wtop.com/tag/foggy-bottom/feed/", "https://wtop.com/", "match"),
+        ("The DC Line", WP_SEARCH.format(base="https://thedcline.org", q="foggy+bottom"), "https://thedcline.org/", "match"),
+        ("Washingtonian", WP_SEARCH.format(base="https://www.washingtonian.com", q="foggy+bottom"), "https://www.washingtonian.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=2", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=3", "https://www.popville.com/", "match"),
+        *SHARED,
+    ],
+    "hilleast": [
+        ("Hill Rag", "https://www.hillrag.com/wp-json/wp/v2/posts?search=hill+east&per_page=20&_fields=date,title,excerpt,link", "https://www.hillrag.com/", "match"),  # Crawl-delay 20
+        ("The Hill is Home", "https://thehillishome.com/feed/", "https://thehillishome.com/", "search"),
+        ("Capitol Hill Corner", "https://www.capitolhillcorner.org/feed/", "https://www.capitolhillcorner.org/", "match"),
+        ("ANC 7D", "https://anc7d.dc.gov/rss.xml", "https://anc7d.dc.gov/", "match"),
+        ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=2", "https://www.popville.com/", "match"),
+        *SHARED,
+    ],
+    "kingmanpark": [
+        ("Hill Rag", "https://www.hillrag.com/wp-json/wp/v2/posts?search=kingman&per_page=20&_fields=date,title,excerpt,link", "https://www.hillrag.com/", "match"),  # Crawl-delay 20
+        ("ANC 7D", "https://anc7d.dc.gov/rss.xml", "https://anc7d.dc.gov/", "match"),
+        ("WTOP", "https://wtop.com/tag/kingman-island/feed/", "https://wtop.com/", "match"),
+        ("Capitol Hill Corner", "https://www.capitolhillcorner.org/feed/", "https://www.capitolhillcorner.org/", "match"),
+        ("The Hill is Home", "https://thehillishome.com/feed/", "https://thehillishome.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
+        *SHARED,
+    ],
+    "mountpleasant": [
+        ("Historic Mount Pleasant", "https://www.historicmountpleasant.org/feed/", "https://www.historicmountpleasant.org/", "all"),  # Crawl-delay 20
+        ("WTOP", "https://wtop.com/tag/mount-pleasant/feed/", "https://wtop.com/", "match"),
+        ("District Bridges", "https://districtbridges.org/feed/", "https://districtbridges.org/", "match"),
+        ("Washingtonian", WP_SEARCH.format(base="https://www.washingtonian.com", q="mount+pleasant"), "https://www.washingtonian.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=2", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=3", "https://www.popville.com/", "match"),
+        *SHARED,
+    ],
+    "stadiumarmory": [
+        ("Historic Congressional Cemetery", "https://www.congressionalcemetery.org/feed/", "https://www.congressionalcemetery.org/", "all"),
+        ("Hill Rag", "https://www.hillrag.com/wp-json/wp/v2/posts?search=rfk&per_page=20&_fields=date,title,excerpt,link", "https://www.hillrag.com/", "match"),  # Crawl-delay 20
+        ("The DC Line", WP_SEARCH.format(base="https://thedcline.org", q="rfk"), "https://thedcline.org/", "match"),  # never "search": RFK Jr.
+        ("ANC 7D", "https://anc7d.dc.gov/rss.xml", "https://anc7d.dc.gov/", "match"),
+        ("WTOP", "https://wtop.com/tag/rfk-stadium/feed/", "https://wtop.com/", "match"),
+        ("WTOP", "https://wtop.com/tag/congressional-cemetery/feed/", "https://wtop.com/", "match"),
+        ("WTOP", "https://wtop.com/tag/dc-armory/feed/", "https://wtop.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
+        *SHARED,
+    ],
+    "trinidad": [
+        ("WTOP", "https://wtop.com/tag/ivy-city/feed/", "https://wtop.com/", "match"),
+        ("WTOP", "https://wtop.com/tag/union-market/feed/", "https://wtop.com/", "match"),
+        ("WTOP", "https://wtop.com/tag/trinidad/feed/", "https://wtop.com/", "match"),
+        ("The DC Line", WP_SEARCH.format(base="https://thedcline.org", q="ivy+city"), "https://thedcline.org/", "match"),
+        ("The DC Line", WP_SEARCH.format(base="https://thedcline.org", q="union+market"), "https://thedcline.org/", "match"),
+        ("Hill Rag", "https://www.hillrag.com/wp-json/wp/v2/posts?search=trinidad&per_page=20&_fields=date,title,excerpt,link", "https://www.hillrag.com/", "match"),  # Crawl-delay 20
+        ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=2", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=3", "https://www.popville.com/", "match"),
+        *SHARED,
+    ],
+    "woodleypark": [
+        ("WTOP", "https://wtop.com/tag/woodley-park/feed/", "https://wtop.com/", "match"),
+        ("ANC 3C", "https://anc3c.dc.gov/rss.xml", "https://anc3c.dc.gov/", "match"),  # all of 3C, so filtered here
+        ("The DC Line", WP_SEARCH.format(base="https://thedcline.org", q="woodley+park"), "https://thedcline.org/", "match"),
+        ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=2", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=3", "https://www.popville.com/", "match"),
+        *SHARED,
+    ],
 }
 TERMS = {
     # Capitol Hill: never the bare name (it also means Congress); a landmark, or the name plus a neighborhood cue.
@@ -394,6 +478,43 @@ TERMS = {
         r"\bafrican\s+american\s+civil\s+war\s+(memorial|museum)\b|\btrue\s+reformer\b|\breeves\s+center\b|\bANC\s*1B\b|\bLeDroit\s+park\b|"
         r"\b1[0-6]th\s+(and|&)\s+U\b|\bpleasant\s+plains\b|\bhoward\s+university\s+hospital\b|\bbanneker\s+(rec(reation)?\s+center|pool)\b|"
         r"\bhoward\s+(university|u\.)\b(?=.{0,300}\b(campus|neighbors?|georgia\s+ave|homecoming|yardfest|U\s+street|residents)\b)", re.I | re.S),
+    # Added 2026-11-02 (ingest/SOURCES-LATE.md). Hill East and Trinidad are partly case-sensitive; bare "RFK" and bare "Trinidad" never match.
+    "bloomingdale": re.compile(
+        r"\bbloomingdale\b(?!['\u2019]s?\b)(?!,?\s+(ill|illinois|il|n\.?y|new\s+york|ny|ga|georgia|tenn|tennessee|tn|mich|michigan|mi|ind|indiana|ohio|n\.?j|new\s+jersey|fla|florida)\b)(?!\s+(road|avenue|ave|trail|township|school\s+district))|"
+        r"\beckington\b|\btruxton\s+circle\b|\bmcmillan\s+(park|reservoir|sand|filtration|site|redevelopment|project)\b|\bcrispus\s+attucks\s+park\b|"
+        r"\bbig\s+bear\s+caf|\bnorth\s+capitol\s+main\s+street\b|\bdunbar\s+high\b(?=.{0,200}\b(d\.?c|washington|NW)\b)|\bmckinley\s+tech(nology)?\b|\bharry\s+thomas\s+(sr\.?\s+)?rec|"
+        r"\bANC\s*5E\b|\b(1[5-9]|2[0-4])\d\d\s+(north\s+capitol|n\.?\s+capitol)\s+st(reet)?\b|\b\d{1,3}\s+rhode\s+island\s+ave(nue)?\.?,?\s+n\.?w\b|"
+        r"\b1[6-9]\d\d\s+(1st|first)\s+st(reet)?\.?,?\s+n\.?[we]\b", re.I | re.S),
+    "foggybottom": re.compile(
+        r"\bfoggy\s+bottom\b|\bANC\s*2A\b|\bgolden\s+triangle\s+(bid|business\s+improvement|dc|d\.c\.)\b|\bwatergate\s+(east|west|south|hotel|complex|apartments|office\s+building|residents?)\b|"
+        r"\bgw\s+(university\s+)?hospital\b|\bgeorge\s+washington\s+university\s+hospital\b|\bfarragut\s+square\b|\bwest\s+end\s+(citizens|neighborhood)\b|"
+        r"\b(gw|gwu|george\s+washington\s+university)\b(?=.{0,300}\b(foggy\s+bottom|neighbors?|residents|campus\s+plan|ANC\s*2A)\b)|"
+        r"\b(1[7-9]|2[0-5])\d\d\s+[HIKL]\s+st(reet)?\.?,?\s+n\.?w\b|\b(2[0-5])\d\d\s+pennsylvania\s+ave(nue)?\.?,?\s+n\.?w\b|\b[5-9]\d\d\s+(19th|2[0-5](st|nd|rd|th))\s+st(reet)?\.?,?\s+n\.?w\b", re.I | re.S),
+    "hilleast": re.compile(
+        r"\bHill\s+East\b|\b(?i:potomac\s+ave(nue)?\s+metro|payne\s+elementary|watkins\s+elementary|jenkins\s+row|kentucky\s+courts?)\b|"
+        r"\bANC\s*6B0?[789]\b|\b6B0[789]\b|\b(?i:1[3-7]\d\d\s+(pennsylvania|massachusetts|independence|north\s+carolina)\s+ave(nue)?\.?,?\s+(s\.?e|n\.?e)|1[3-9]th\s+(and|&)\s+(potomac|pennsylvania))\b"),
+    "kingmanpark": re.compile(
+        r"\bkingman\s+park\b|\bkingman\s+(and|&)?\s*heritage\s+islands?\b|\bkingman\s+(island|lake)\b|\bfriends\s+of\s+kingman\b|\brosedale\s+(rec(reation)?(\s+center)?|pool|community\s+center)\b|"
+        r"\bminer\s+elementary\b|\beliot[-\s]hine\b|\beastern\s+high\b(?=.{0,200}\b(d\.?c|washington|NE|ramblers|capitol\s+hill)\b)|\bmaury\s+elementary\b|\boklahoma\s+ave(nue)?\.?(\s+n\.?e\b|\s+(metro|streetcar|station))|"
+        r"\b(1[5-9]|2[0-6])\d\d\s+benning\s+r(oa)?d\.?,?\s+n\.?e\b|\brfk\s+open\s+air\s+market\b|\bANC\s*7D\b", re.I | re.S),
+    "mountpleasant": re.compile(
+        r"\b(mount|mt\.?)\s+pleasant\b|\bANC\s*1D\b|\blamont\s+(plaza|st(reet)?\s+n\.?w|park)\b|\bbancroft\s+elementary\b|\brosemount\s+center\b|\bpiney\s+branch\s+parkway\b|\bklingle\s+valley\b", re.I | re.S),
+    "stadiumarmory": re.compile(
+        r"\bRFK\s+(memorial\s+)?(stadium|campus|site|for\s+all|master\s+plan|redevelopment|festival\s+grounds|fields?|parking|lots?|development|land|project|deal|bill)\b|"
+        r"\brobert\s+f\.?\s+kennedy\s+(memorial\s+)?stadium\b|\bstadium[-\s/]armory\b|\bcongressional\s+cemetery\b|\b(d\.?c\.?|district\s+of\s+columbia)\s+armory\b|\bthe\s+armory\b(?=.{0,80}\bRFK\b)|"
+        r"\breservation\s+13\b|\b(d\.?c\.?|district)\s+jail\b|\bcorrectional\s+treatment\s+facility\b|\bdc\s+general\b|"
+        r"\bbarney\s+circle\b|\bheritage\s+island\b|\bkingman\s+(and|&)\s+heritage\b|\bANC\s*7[DF]\b|\bANC\s*6B09\b|\b\d{3,4}\s+(19th|20th|21st|22nd)\s+st(reet)?\.?,?\s+s\.?e\b", re.I | re.S),
+    "trinidad": re.compile(
+        r"\b(?i:in|near|of|around|across)\s+Trinidad\b(?!\s+(and|&)\s+Tobago)(?=.{0,200}\b(?i:d\.?c|washington|NE|northeast|neighborhood|ward\s*5|police|MPD)\b)|"
+        r"\bTrinidad\s+(?i:neighborhood|neighbors|rec(reation)?(\s+center)?|farmers\s+market|ave(nue)?)\b|\b(?i:d\.?c\.?|northeast)['\u2019]?s?\s+Trinidad\b|"
+        r"\bTrinidad\s+(?i:section|community|residents?)\b(?=.{0,100}\b(?i:d\.?c|washington|NE|northeast)\b)|"
+        r"(?i:\bivy\s+city\b|\bunion\s+market\b|\bmount\s+olivet\s+(r(oa)?d|cemetery)\b|\bmontello\s+ave|\bhecht\s+(warehouse|company|co\.?)\b|\bcrummell\s+school\b|\bokie\s+st|\bANC\s*5D\b|"
+        r"\bhechinger\s+mall\b|\bwheatley\s+(education|elementary)\b|\bspingarn\b|\blangston\s+terrace\b|\bbrowne\s+education\b|\bflorida\s+ave(nue)?\.?,?\s+n\.?e\b|"
+        r"\bgallaudet\b(?=.{0,300}\b(neighbors?|residents?|ANC|6th\s+st|florida\s+ave|union\s+market|campus\s+(plan|development|expansion))\b))", re.S),
+    "woodleypark": re.compile(
+        r"\bwoodley\s+park\b|\bwoodley\s+r(oa)?d\.?,?\s+n\.?w\b|\bwardman\s+(tower|park)\b|\bomni\s+shoreham\b|\bmaret\s+school\b|\boyster[-\s]adams\b|\bduke\s+ellington\s+bridge\b|"
+        r"\bconnecticut\s+(ave(nue)?\.?\s+)?(and|&|at)\s+calvert\b|\bcalvert\s+st(reet)?\.?,?\s+n\.?w\b|\b2[3-9]\d\d\s+calvert\s+st\b|\b2[6-9]\d\d\s+connecticut\s+ave(nue)?\b|\b3[01]\d\d\s+connecticut\s+ave(nue)?\b|"
+        r"\bANC\s*3C0?[1237]\b|\b3C0[1237]\b|\b(smithsonian['\u2019]?s?\s+)?national\s+zoo(logical\s+park)?\b(?=.{0,300}\b(neighbors?|connecticut\s+ave|woodley|ANC|residents|parking|traffic|road\s+closures?|zoolights|lights)\b)", re.I | re.S),
 }
 
 # Other cities' Chinatowns.
@@ -439,6 +560,22 @@ NOT_HERE = {
                     re.compile(r"\bANC\s*2F\b|\b(d\.?c|NW)\b|\b14th\s+st", re.I)),
     "ustreet": (re.compile(r"\bU\s+st(reet)?\.?\s*,?\s*(s\.?e|southeast)\b|\blincoln\s+theat(re|er)\b(?=.*\b(nebraska|columbus|marion|napa|decatur)\b)", re.I),
                 re.compile(r"\bU\s+st(reet)?\.?\s*,?\s*(n\.?w|northwest|corridor)\b|\b1[0-6]th\s+(and|&)\s+U\b|\bben['\u2019]?s\s+chili\s+bowl\b|\bANC\s*1B\b", re.I)),
+    "bloomingdale": (re.compile(r"\bbloomingdale['\u2019]s\b|\bbloomingdales\b|\bmacy['\u2019]?s\b|\bbloomingdale,?\s+(ill|il|illinois|n\.?y|new\s+york|ga|georgia|tn|tenn|mi|mich|fla|florida|n\.?j|nj)\b|\bdupage\b", re.I),
+                     re.compile(r"\bbloomingdale\s+(civic|farmers|neighborhood|library|community)\b|\bin\s+bloomingdale\b(?=.{0,200}\b(d\.?c|washington|NW)\b)|\beckington\b|\btruxton\b|\bmcmillan\b|\bcrispus\s+attucks\b|\bANC\s*5E\b|\b(1st|first|north\s+capitol)\s+st", re.I | re.S)),
+    "foggybottom": (re.compile(r"\bstate\s+department\b|\bdiplomat|\bsecretary\s+of\s+state\b|\bforeign\s+service\b|\bambassadors?\b|\brubio\b|\bblinken\b|\busaid\b|\bforeign\s+policy\b|\bembass", re.I),
+                    re.compile(r"\bfoggy\s+bottom\s*([-/\u2013]\s*(gwu?|west\s+end)|metro|station|association|neighborhood|farmers|news|main\s+street|residents?|walking\s+tour|campus)\b|\bfoggy\s+bottom['\u2019]s\s+(residents?|neighbors?|restaurant|rowhouse|funkstown)|\bANC\s*2A\b|\bfunkstown\b|\bWest\s+End\b", re.I)),
+    "hilleast": (re.compile(r"\bcapitol\s+hill\s+east\s+(of|side)\b", re.I), re.compile(r"\bANC\s*6B\b|\bSE\b|\bReservation\s+13\b")),
+    "kingmanpark": (re.compile(r"\bkingman,?\s+(ariz|arizona|az|kan|kansas|ks)\b|\bmohave\s+county\b|\bkingman\s+reef\b|\b(camp|rob|andrew|fred|peter|fort)\s+kingman\b", re.I),
+                    re.compile(r"\bkingman\s+(park|island|lake)\b(?=.{0,200}\b(d\.?c|washington|NE|anacostia|RFK)\b)|\bfriends\s+of\s+kingman\b", re.I | re.S)),
+    "mountpleasant": (re.compile(r"\b(mount|mt\.?)\s+pleasant,?\s+(s\.?c|south\s+carolina|mich|michigan|mi|wis|wisconsin|wi|iowa|ia|pa|pennsylvania|tx|texas|ut|utah|tenn|tennessee|tn|ny|n\.?y|new\s+york|ohio|nc|n\.?c|north\s+carolina|ontario|fla|florida|va|virginia|md|maryland)\b|"
+                                 r"\bcentral\s+michigan\s+university\b|\bcharleston\b|\bisle\s+of\s+palms\b|\bracine\b|\bmt\.?\s+pleasant\s+(pirates|high\s+school\s+football)\b|\bwestchester\b|\bvalhalla\b", re.I),
+                      re.compile(r"\b(d\.?c\.?|washington)['\u2019]?s?\s+(mount|mt\.?)\s+pleasant\b|\b(mount|mt\.?)\s+pleasant,?\s+(d\.?c|n\.?w)\b|\b(mount|mt\.?)\s+pleasant\s+(st(reet)?|neighborhood|library|farmers|main\s+street)\b|\bANC\s*1D\b|\blamont\s+st|\b16th\s+st", re.I)),
+    "stadiumarmory": (re.compile(r"\bRFK\s+Jr\b|\bKennedy\s+Jr\b|\bHHS\b|\bvaccines?\b|\bMAHA\b", re.I),
+                      re.compile(r"\bRFK\s+(memorial\s+)?(stadium|campus|site)\b|\bstadium[-\s/]armory\b|\bcongressional\s+cemetery\b|\bANC\s*7[DF]\b", re.I)),
+    "trinidad": (re.compile(r"\btobago\b|\btrinidadian\b|\bport\s+of\s+spain\b|\bcaribbean\b|\bvenezuela\b|\btrinidad,?\s+(colo|colorado|co|calif|california|ca|cuba|tx|texas)\b|\bboliv|\bunion\s+market\b.{0,60}\b(richmond|brooklyn|park\s+slope|sacramento|baltimore)\b", re.I | re.S),
+                 re.compile(r"\bANC\s*5D\b|\bivy\s+city\b|\bmontello\b|\bmount\s+olivet\b|\bTrinidad\s+(neighborhood|rec)|\bunion\s+market\s+(district|dc)\b|\b5th\s+st(reet)?\.?,?\s+n\.?e\b|\b(northeast|NE)\s+(dc|d\.c\.)\b", re.I)),
+    "woodleypark": (re.compile(r"\bencino\b|\bvan\s+nuys\b|\bsepulveda\b|\blos\s+angeles\b|\bLAPD\b|\bcricket\b|\bwoodley,?\s+(reading|berkshire|stockport|new\s+york|ny)\b", re.I),
+                    re.compile(r"\bwoodley\s+park[-\s/]+(zoo|metro|adams)|\bconnecticut\s+ave|\bANC\s*3C\b|\b(d\.?c\.?|NW)\b", re.I)),
 }
 
 # robots.txt, read the way search engines do (RFC 9309): the group naming our agent beats the "*" group, rules
@@ -446,6 +583,10 @@ NOT_HERE = {
 # parser ignores wildcards, so a rule like "Disallow: /*?" slipped through it.
 AGENT_TOKEN = USER_AGENT.split("/")[0].lower()  # "dc-neighborhoods-ingest"
 _robots: dict[str, list[tuple[bool, str]] | bool] = {}
+_delays: dict[str, float] = {}  # host -> Crawl-delay seconds
+_last_request: dict[str, float] = {}  # host -> when we last asked it for something
+_fetched: dict[str, bytes] = {}  # url -> body, for this run
+MAX_CRAWL_WAIT = 60
 
 
 def parse_robots(text: str, token: str = AGENT_TOKEN) -> list[tuple[bool, str]]:
@@ -475,6 +616,33 @@ def parse_robots(text: str, token: str = AGENT_TOKEN) -> list[tuple[bool, str]]:
     return [rule for a, r in groups if "*" in a for rule in r]
 
 
+def parse_crawl_delay(text: str, token: str = AGENT_TOKEN) -> float:
+    """Seconds asked for between requests: the group naming our agent if it sets one, else the "*" group, else 0."""
+    mine, star, agents, in_rules = None, None, [], False
+    for raw in text.splitlines():
+        line = raw.split("#", 1)[0].strip()
+        if ":" not in line:
+            continue
+        key, val = (x.strip() for x in line.split(":", 1))
+        key = key.lower()
+        if key == "user-agent":
+            if in_rules:
+                agents, in_rules = [], False
+            agents.append(val.lower())
+        elif agents:
+            in_rules = True
+            if key == "crawl-delay":
+                try:
+                    d = float(val)
+                except ValueError:
+                    continue
+                if any(x != "*" and x in token for x in agents):
+                    mine = d
+                elif "*" in agents:
+                    star = d
+    return mine if mine is not None else (star or 0.0)
+
+
 def _rule_matches(pattern: str, path: str) -> bool:
     regex = "".join(".*" if ch == "*" else re.escape(ch) for ch in pattern.rstrip("$"))
     return re.match(regex + ("$" if pattern.endswith("$") else ""), path) is not None
@@ -496,7 +664,9 @@ def allowed(url: str) -> bool:
         try:
             req = urllib.request.Request(f"{host}/robots.txt", headers={"User-Agent": USER_AGENT})
             with urllib.request.urlopen(req, timeout=20) as r:
-                _robots[host] = parse_robots(r.read().decode("utf-8", "replace"))
+                text = r.read().decode("utf-8", "replace")
+            _robots[host] = parse_robots(text)
+            _delays[host] = parse_crawl_delay(text)
         except urllib.error.HTTPError as e:
             # 401/403 means stay out; any other error (404 and so on) means there is no robots.txt.
             _robots[host] = e.code not in (401, 403)
@@ -509,10 +679,32 @@ def allowed(url: str) -> bool:
     return robots_allows(rules, path)
 
 
+class CrawlDelayed(Exception):
+    """This host asks for a longer gap between requests than one nightly run can wait out."""
+
+
 def fetch(url: str) -> bytes:
+    """One copy of each URL per run, shared by every neighborhood that reads it, with the robots.txt Crawl-delay kept
+    between requests to the same host. A delay over MAX_CRAWL_WAIT (ggwash.org asks for 50 minutes) can't be slept
+    through, so that host gets one request a run, and any other URL there waits for tomorrow."""
+    if url in _fetched:
+        return _fetched[url]
+    parts = urllib.parse.urlsplit(url)
+    host = f"{parts.scheme}://{parts.netloc}"
+    allowed(url)  # reads robots.txt, and so the delay, the first time this host is seen
+    delay = _delays.get(host, 0.0)
+    if host in _last_request and delay:
+        wait = _last_request[host] + delay - time.time()
+        if wait > MAX_CRAWL_WAIT:
+            raise CrawlDelayed(f"{host} asks for {delay:.0f}s between requests")
+        if wait > 0:
+            time.sleep(wait)
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/rss+xml, application/xml;q=0.9, */*;q=0.5"})
+    _last_request[host] = time.time()
     with urllib.request.urlopen(req, timeout=30) as r:
-        return r.read()
+        body = r.read()
+    _fetched[url] = body
+    return body
 
 
 def plain(s: str | None) -> str:

@@ -277,6 +277,90 @@
       ],
       "redirect_hosts": [],
       "enabled": true
+    },
+    {
+      "slug": "bloomingdale",
+      "name": "Bloomingdale",
+      "boundary_where": "DC_HPN_NAME='BLOOMINGDALE'",
+      "hosts": [
+        "bloomingdaledc.net"
+      ],
+      "redirect_hosts": [],
+      "enabled": true
+    },
+    {
+      "slug": "foggybottom",
+      "name": "Foggy Bottom",
+      "boundary_where": "DC_HPN_NAME='GWU'",
+      "hosts": [
+        "foggybottom.net"
+      ],
+      "redirect_hosts": [],
+      "enabled": true,
+      "boundary_source": "DC Health Planning Neighborhoods: GWU, which covers Foggy Bottom and the West End (Open Data DC)."
+    },
+    {
+      "slug": "hilleast",
+      "name": "Hill East",
+      "boundary_where": "DC_HPN_NAME='HILL EAST'",
+      "hosts": [
+        "hilleastdc.org"
+      ],
+      "redirect_hosts": [],
+      "enabled": true
+    },
+    {
+      "slug": "kingmanpark",
+      "name": "Kingman Park",
+      "boundary_where": "DC_HPN_NAME='KINGMAN PARK'",
+      "hosts": [
+        "kingmanpark.net"
+      ],
+      "redirect_hosts": [],
+      "enabled": true
+    },
+    {
+      "slug": "mountpleasant",
+      "name": "Mount Pleasant",
+      "boundary_where": "DC_HPN_NAME='MOUNT PLEASANT'",
+      "hosts": [
+        "mountpleasantdc.net"
+      ],
+      "redirect_hosts": [],
+      "enabled": true
+    },
+    {
+      "slug": "stadiumarmory",
+      "name": "Stadium-Armory",
+      "boundary_where": "DC_HPN_NAME='STADIUM ARMORY'",
+      "hosts": [
+        "stadiumarmory.org"
+      ],
+      "redirect_hosts": [],
+      "enabled": true
+    },
+    {
+      "slug": "trinidad",
+      "name": "Trinidad",
+      "boundary_where": "DC_HPN_NAME='TRINIDAD'",
+      "hosts": [
+        "trinidaddc.org"
+      ],
+      "redirect_hosts": [],
+      "enabled": true
+    },
+    {
+      "slug": "woodleypark",
+      "name": "Woodley Park",
+      "boundary_where": "SMD_ID IN ('3C01','3C02','3C03','3C07')",
+      "hosts": [
+        "woodleypark.net"
+      ],
+      "redirect_hosts": [],
+      "enabled": true,
+      "boundary_layer": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Administrative_Other_Boundaries_WebMercator/MapServer/55",
+      "boundary_parts": 4,
+      "boundary_source": "ANC single-member districts 3C01, 3C02, 3C03 and 3C07, around the Woodley Park Metro and the National Zoo (Open Data DC). DC's WOODLEY PARK planning area also takes in much of Cleveland Park, which has its own site."
     }
   ]
 }

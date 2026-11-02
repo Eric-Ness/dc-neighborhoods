@@ -222,6 +222,55 @@ HOODS = {
         "otr": [("Forest Hills", None), ("Wakefield", None), ("North Cleveland Park", None)],
         "label": "OTR assessment neighborhoods Forest Hills, Wakefield and North Cleveland Park",
     },
+    # The eight below were measured 2026-11-02 with ingest/setup_hood.py, same rule as above.
+    "bloomingdale": {
+        # LeDroit Park B and Old City 2 A (86%), Eckington A (87%) and B (51%), Brookland E (35%). The planning area runs
+        # east to the tracks, so it also takes in Eckington and Edgewood.
+        "otr": [("Ledroit Park", "B"), ("Old City 2", "A"), ("Eckington", "A"), ("Eckington", "B"), ("Brookland", "E")],
+        "label": "OTR assessment sub-areas LeDroit Park B, Old City 2 A, Eckington A and B and Brookland E",
+    },
+    "foggybottom": {
+        # Foggy Bottom is 96% inside. Central (8%) and Old City 2 D (3%) barely touch it. Mostly condos.
+        "otr": [("Foggy Bottom", None)],
+        "label": "OTR assessment neighborhood Foggy Bottom",
+        # About 5 house and 27 condo sales a year: too few for a monthly trend of either alone.
+        "primary": "all",
+    },
+    "hilleast": {
+        # Old City 1 A (91% inside), B and D (100%), C (71%). M (30%) is mostly Capitol Hill's.
+        "otr": [("Old City 1", "A"), ("Old City 1", "B"), ("Old City 1", "C"), ("Old City 1", "D")],
+        "label": "OTR assessment sub-areas Old City 1 A, B, C and D",
+    },
+    "kingmanpark": {
+        # Old City 1 H and G (100% inside), F (73%), K (58%).
+        "otr": [("Old City 1", "F"), ("Old City 1", "G"), ("Old City 1", "H"), ("Old City 1", "K")],
+        "label": "OTR assessment sub-areas Old City 1 F, G, H and K",
+    },
+    "mountpleasant": {
+        # Mount Pleasant A is 97% inside.
+        "otr": [("Mount Pleasant", "A")],
+        "label": "OTR assessment sub-area Mount Pleasant A",
+    },
+    "stadiumarmory": {
+        # Almost no homes inside (about 170 parcels): it's the RFK campus, the Armory and Congressional Cemetery. The two
+        # sub-areas touching it (8% and 5% inside) are mostly Hill East's, so these are really the rowhouses next door;
+        # the page's area note and fit figures say so.
+        "otr": [("Old City 1", "A"), ("Old City 1", "B")],
+        "label": "OTR assessment sub-areas Old City 1 A and B, the rowhouse blocks just west of the stadium grounds",
+    },
+    "trinidad": {
+        # Trinidad A, B and C and Brentwood B are all wholly inside.
+        "otr": [("Trinidad", "A"), ("Trinidad", "B"), ("Trinidad", "C"), ("Brentwood", "B")],
+        "label": "OTR assessment sub-areas Trinidad A, B and C and Brentwood B",
+    },
+    "woodleypark": {
+        # Boundary is ANC 3C01, 3C02, 3C03 and 3C07. Garfield is wholly inside; Woodley and Massachusetts Avenue Heights 79%.
+        # Observatory Circle (13%) is left out.
+        "otr": [("Garfield", None), ("Woodley", None), ("Massachusetts Avenue Heights", None)],
+        "label": "OTR assessment neighborhoods Garfield, Woodley and Massachusetts Avenue Heights",
+        # About 24 house and 21 condo sales a year, so counted together.
+        "primary": "all",
+    },
 }
 
 PERSONAL = {"OWNERNAME", "OWNNAME2", "CAREOFNAME", "ADDRESS1", "ADDRESS2", "CITYSTZIP", "MORTGAGECO", "SALE_CURR_OWNER"}

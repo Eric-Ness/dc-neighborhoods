@@ -56,7 +56,9 @@ ANCS = {"petworth": ["4C", "4D"], "tenleytown": ["3E", "3F", "3/4G"], "adamsmorg
         "anacostia": ["8A", "8B"], "clevelandpark": ["3C"], "dupontcircle": ["2B"], "hstreet": ["6A", "6C"],
         "navyyard": ["8F", "6B", "6D"],
         "brookland": ["5B", "5F", "5A"], "chinatown": ["2C", "6E"], "gloverpark": ["3B"], "lenfantplaza": ["6D"], "noma": ["6E", "5F", "6C"],
-        "palisades": ["3D"], "shaw": ["2G"], "logancircle": ["2F"], "ustreet": ["1B", "1E"], "vanness": ["3F"]}
+        "palisades": ["3D"], "shaw": ["2G"], "logancircle": ["2F"], "ustreet": ["1B", "1E"], "vanness": ["3F"],
+        "bloomingdale": ["5E", "5F"], "foggybottom": ["2A"], "hilleast": ["6B", "7D"], "kingmanpark": ["6A", "7D"], "mountpleasant": ["1D"],
+        "stadiumarmory": ["7D", "6B", "7F"], "trinidad": ["5D"], "woodleypark": ["3C"]}
 OANC_TITLE = re.compile(r"^([A-Z][a-z]+ \d{1,2}, \d{4}),?\s+ANC\s+([0-9/]+[A-Z])\s+(Special\s+)?(?:Public|Virtual|Regular) Meeting", re.I)
 ANC_ARCHIVE_DAYS = 400
 ANC_FEEDS = {"tenleytown": ("ANC 3E", "https://anc3e.org/feed/", "https://anc3e.org/"),
@@ -160,6 +162,8 @@ def season_bound(s: str | None, year: int, end: bool) -> date | None:
 
 def in_season(d: date, start: str | None, end: str | None) -> bool | None:
     """None when the season can't be read."""
+    if re.search(r"year.?round", f"{start or ''} {end or ''}", re.I):
+        return True
     a, b = season_bound(start, d.year, False), season_bound(end, d.year, True)
     if a is None or b is None:
         return None
@@ -265,6 +269,70 @@ TRIBE: dict[str, tuple[str, str, str, str | None, int]] = {
                None, 10),
     "swbid": ("Southwest BID", "https://www.swbid.org/wp-json/tribe/events/v1/events", "https://www.swbid.org/", None, 0),
 }
+
+# Added 2026-11-02 (ingest/SOURCES-LATE.md). ANC 2A's meetings come through the OANC feed.
+ANCS["bloomingdale"] = ["5E", "5F"]
+LINKS["bloomingdale"] = [
+    {"name": "Bloomingdale Civic Association calendar", "url": "https://bloomingdalecivicassociation.org/calendar-2/"},
+    {"name": "Eckington Civic Association", "url": "https://eckingtoncivicassociation.com/"},
+    {"name": "Shaw Library events", "url": "https://dclibrary.libnet.info/events?l=Shaw%20(Watha%20T.%20Daniel)%20Neighborhood%20Library"},
+    {"name": "Northwest One Library events", "url": "https://dclibrary.libnet.info/events?l=Northwest%20One%20Neighborhood%20Library"},
+]
+ANCS["foggybottom"] = ["2A", "2B", "2C"]
+LINKS["foggybottom"] = [
+    {"name": "ANC 2A meetings", "url": "https://anc2a.org/meetings/"},
+    {"name": "Foggy Bottom Association", "url": "https://www.foggybottomassociation.org/"},
+    {"name": "Golden Triangle BID", "url": "https://goldentriangledc.com/"},
+    {"name": "West End Library events", "url": "https://dclibrary.libnet.info/events?l=West%20End%20Neighborhood%20Library"},
+]
+ANCS["hilleast"] = ["6B", "7D"]
+LINKS["hilleast"] = [
+    {"name": "Southeast Library events", "url": "https://dclibrary.libnet.info/events?l=Southeast%20Neighborhood%20Library"},
+    {"name": "ANC 6B calendar", "url": "https://anc6b.org/calendar/"},
+    {"name": "ANC 7D", "url": "https://anc7d.dc.gov/"},
+    {"name": "Hill East Civic Association", "url": "https://hilleastcivicassociation.org/"},
+]
+ANCS["kingmanpark"] = ["6A", "7D"]
+LINKS["kingmanpark"] = [
+    {"name": "Rosedale Library events", "url": "https://dclibrary.libnet.info/events?l=Rosedale%20Neighborhood%20Library"},
+    {"name": "Kingman and Heritage Islands calendar", "url": "https://www.kingmanisland.com/calendar"},
+    {"name": "ANC 7D", "url": "https://anc7d.dc.gov/"},
+    {"name": "ANC 6A calendar", "url": "https://anc6a.org/community-calendar/"},
+]
+ANCS["mountpleasant"] = ["1D"]
+LINKS["mountpleasant"] = [
+    {"name": "Mt. Pleasant Library events", "url": "https://dclibrary.libnet.info/events?l=Mt.%20Pleasant%20Neighborhood%20Library"},
+    {"name": "ANC 1D meetings", "url": "https://anc1d.org/meetingcalendar"},
+    {"name": "District Bridges events", "url": "https://districtbridges.org/events/"},
+    {"name": "Mount Pleasant Village", "url": "https://mountpleasantvillage.org/events/"},
+]
+TRIBE["congcem"] = ("Historic Congressional Cemetery", "https://www.congressionalcemetery.org/wp-json/tribe/events/v1/events",
+                    "https://www.congressionalcemetery.org/", r"closed to dogs|private funeral|office closed|cemetery closed", 0)
+CALENDARS["stadiumarmory"] = ["congcem"]
+ANCS["stadiumarmory"] = ["7D", "7F", "6B"]
+LINKS["stadiumarmory"] = [
+    {"name": "ANC 7D", "url": "https://anc7d.dc.gov/"},
+    {"name": "DC Office of ANCs calendar (ANC 7F)", "url": "https://oanc.dc.gov/"},
+    {"name": "Events DC events", "url": "https://eventsdc.com/events"},
+    {"name": "Kingman and Heritage Islands calendar", "url": "https://www.kingmanisland.com/calendar"},
+]
+TRIBE["unionmarket"] = ("Union Market District", "https://unionmarketdc.com/wp-json/tribe/events/v1/events", "https://unionmarketdc.com/events/",
+                        r"freshfarm|cooking\s+class|making\s+class|mural\s+tour|gnocchi|pasta|dumpling|mozzarella|focaccia|tapas|tagliatelle|ravioli|run\s+club", 0)
+CALENDARS["trinidad"] = ["unionmarket"]
+ANCS["trinidad"] = ["5D", "5C"]
+LINKS["trinidad"] = [
+    {"name": "ANC 5D", "url": "https://www.anc5d.org/"},
+    {"name": "Union Market District events", "url": "https://unionmarketdc.com/events/"},
+    {"name": "Rosedale Library events", "url": "https://dclibrary.libnet.info/events?l=Rosedale%20Neighborhood%20Library"},
+    {"name": "Gallaudet University", "url": "https://www.gallaudet.edu/"},
+]
+ANCS["woodleypark"] = ["3C"]
+LINKS["woodleypark"] = [
+    {"name": "ANC 3C calendar", "url": "https://anc3c.dc.gov/anc-calendar"},
+    {"name": "Woodley Park Community Association", "url": "https://wpcaonline.org/"},
+    {"name": "National Zoo events", "url": "https://nationalzoo.si.edu/events"},
+    {"name": "Cleveland Park Library events", "url": "https://dclibrary.libnet.info/events?l=Cleveland%20Park%20Neighborhood%20Library"},
+]
 
 
 def tribe_time(s: str | None) -> str | None:

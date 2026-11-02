@@ -230,6 +230,71 @@ ARCHIVE = {
         "local": r"\bU\s+st|florida\s+av|georgia\s+av|vermont\s+av|seventh\s+st|eleventh|twelfth|thirteenth|fourteenth|le\s?droit|"
                  r"howard\s+place|sherman\s+av|n\.\s?w\.",
     },
+    # Added 2026-11-02 (ingest/SOURCES-LATE.md).
+    "bloomingdale": {
+        "terms": ['"Eckington"', '"North Capitol street"', "Bloomingdale", '"McMillan"'],
+        "pattern": r"eckington|bloomingdale\s+(playground|citizens|section|field|basket)|(at|the)\s+bloomingdale\b(?!\W+\d)|truxton\s+circle|"
+                   r"mcmillan\s+(park|reservoir)|filtration\s+plant|\b(1[3-9]|2[0-4])\d\d\s+north\s+capitol\s+st|north\s+capitol\s+(street\s+)?(near|and|at)\s+[p-w]\b",
+        # Bloomingdale's stock, and "Eckington as per plat", which LEGAL mostly catches.
+        "reject": r"bloomingdale['’]?s|bloomingdale\W+\d|as\s+per\s+plat|north\s+capitol\s+st(reet)?\s+(s\.\s?e|southeast)",
+        "local": r"north\s+capitol|first\s+st|rhode\s+island\s+av|florida\s+av|lincoln\s+road|t\s+st|u\s+st|n\.\s?e\.|n\.\s?w\.|market\s+site|citizens",
+    },
+    "foggybottom": {
+        # "Foggy Bottom" had 0 pages this week. GW's campus was already at 20th-21st and G.
+        "terms": ['"Washington Circle"', '"George Washington University"', '"Twenty-first street"', '"Twenty-third street"'],
+        "pattern": r"washington\s+circle|foggy\s+bottom|george\s+washington\s+univ|\b2[0-5]\d\d\s+(pa\.?|pennsylvania)\s+ave|\b(19|2[0-5])\d\d\s+[e-k]\s+st|"
+                   r"(twenty.?(first|second|third|fourth|fifth)|2[1-5](st|nd|rd|th))\s+st(reet|\.)?\s+(n\.?\s?w|northwest|and\s+(pennsylvania|virginia|new\s+hampshire|[c-l]\b)|between|near)",
+        "reject": r"foot\s*ball|eleven|touchdown|gridiron|varsity|quarterback|coach|hockey|cross.country|grif\s?fith|ursinus|colonials|sigma|fraternity",
+        "local": r"n\.\s?w\.|pennsylvania\s+av|pa\.\s+ave|new\s+hampshire|virginia\s+av|washington\s+circle|twenty|2[0-5]th|st\.?\s+paul|g\s+st|h\s+st|i\s+st",
+    },
+    "hilleast": {
+        "terms": ['"Potomac avenue"', '"Fifteenth street southeast"', '"Massachusetts avenue southeast"', '"Thirteenth street southeast"'],
+        "pattern": r"\b1[3-9]\d\d\s+(potomac|massachusetts|independence|north\s+carolina|kentucky|pennsylvania)\s+av(enue|e)?\.?\s+(s\.?\s?e|southeast)|"
+                   r"(thirteenth|fourteenth|fifteenth|sixteenth|seventeenth|eighteenth|nineteenth)\s+st(reet|\.)?\s+(s\.?\s?e|southeast)|\b\d{2,4}\s+1[3-9]th\s+st\.?\s+s\.?\s?e|"
+                   r"potomac\s+av(enue|e)?\.?\s+(s\.?\s?e|southeast)|hill\s+east",
+        "reject": r"interment|funeral|deaths?\s+reported|years\s+old",
+        "local": r"s\.\s?e\.|southeast|potomac\s+av|kentucky\s+av|massachusetts\s+av|pennsylvania\s+av|lincoln\s+park|eastern\s+high|citizens",
+    },
+    "kingmanpark": {
+        # "Kingman Lake", "Kingman Park", "Anacostia Park": 0 this week. Kingman Park wasn't built until the late 1920s.
+        "terms": ['"Eastern High School"', '"Rosedale"', '"Benning road"', '"Maryland avenue northeast"'],
+        "pattern": r"eastern\s+high|kingman\s+(lake|park)|rosedale\s+(st|playground|citizens|recreation|section)|\b(1[5-9]|2[0-5])\d\d\s+benning\s+r|"
+                   r"\b1[5-9]\d\d\s+(gales|rosedale|c|d|e|f|g|h|isherwood|maryland)\s+(st|ave)[a-z.]*\s+(n\.?\s?e|northeast)|seventeenth\s+and\s+east\s+capitol",
+        "reject": r"foot\s*ball|eleven|touchdown|gridiron|cadet|basket\s*ball|miss\s+rosedale|furlongs|terminations?|substitute|caretaker|janitor|years\s+old|interment",
+        "local": r"n\.\s?e\.|northeast|east\s+capitol|benning|maryland\s+av|rosedale|eastern\s+high|seventeenth|nineteenth",
+    },
+    "mountpleasant": {
+        # "Mt. Pleasant" also leads the rooms-for-rent classifieds and is a Maryland Grange town; Mount Pleasant No. 33 is a Masonic lodge.
+        "terms": ['"Mount Pleasant Citizens"', '"Mount Pleasant Library"', '"Mount Pleasant"', '"Irving street"'],
+        "pattern": r"mount\s+pleasant\s+(citizens|public\s+library|branch|library|street|m\.\s?e|methodist|congregational|car\s+line|section)|mt\.?\s+pleasant\s+(st|citizens|library)|"
+                   r"\b1[6-9]\d\d\s+(lamont|irving|kilbourne|kenyon|newton|harvard|hobart)\s+st|\b3[0-3]\d\d\s+(mount|mt\.?)\s+pleasant\s+st|shrine\s+of\s+the\s+sacred\s+heart",
+        "reject": r"duckpin|team\s+standings|pomona|grange|new\s+market|maryland|(mount|mt\.?)\s+pleasant,?\s+no\.?\s*\d|odd\s+fellows|masonic|frederick|a\.?m\.?i\.?\b",
+        "local": r"sixteenth|16th|seventeenth|17th|park\s+road|irving|lamont|kenyon|harvard|mount\s+pleasant\s+st|columbia\s+road|n\.\s?w\.|citizens",
+    },
+    "stadiumarmory": {
+        # 1926 here is the cemetery, the jail and Gallinger Municipal Hospital. The stadium is 35 years off, and funeral notices dominate.
+        "terms": ['"Congressional Cemetery"', '"District jail"', '"Gallinger Hospital"', '"East Capitol street"'],
+        "pattern": r"congressional\s+cemetery|district\s+jail|washington\s+asylum|gallinger\s+(municipal\s+)?hospital|jail\s+hill|\b(19|2[0-3])\d\d\s+east\s+capitol\s+st|"
+                   r"\b(19th|nineteenth|twentieth|20th)\s+(st(reet|\.)?\s+)?and\s+(b\s+st|east\s+capitol|independence)",
+        "reject": r"interment|inter\s+ment|funeral|deaths?\s+reported|remains|years\s+old|hospital\.\s",
+        "local": r"s\.\s?e\.|southeast|nineteenth|19th|east\s+capitol|anacostia|e\s+st|cemetery|chapel|commissioners|hospital",
+    },
+    "trinidad": {
+        # Bare "Trinidad" is shipping news (Maravi--Trinidad). Union Market's ancestor came later. Gallaudet College = Kendall Green.
+        "terms": ['"Ivy City"', '"Trinidad avenue"', '"Gallaudet College"', '"Mount Olivet"', '"Montello"'],
+        "pattern": r"ivy\s+city|trinidad\s+(ave|citizens|section|community|school)|gallaudet\s+college|kendall\s+green|montello\s+av|mount\s+olivet\s+(road|r\.?\s?d)|"
+                   r"\b\d{3,4}\s+(montello|trinidad|holbrook|neal|orren|queen|raum)\s+(st|av)[a-z.]*\s+n\.?\s?e",
+        "reject": r"tobago|port\s+of\s+spain|foot\s*ball|eleven|touchdown|gridiron|varsity|quarterback|coach|american\s+university\s+(at|vs)|interment|inter\s+ment|cemetery",
+        "local": r"n\.\s?e\.|northeast|florida\s+av|bladensburg|new\s+york\s+av|west\s+virginia\s+av|ivy\s+city|crummell|gallaudet|kendall\s+green|citizens",
+    },
+    "woodleypark": {
+        # Woodley Park proper only. Most reliable first; "Wardman Park" (47 pages this week) goes last so it can't eat the page budget.
+        "terms": ['"Woodley Park"', '"Connecticut avenue bridge"', '"Zoological Park"', '"Woodley road"', '"Wardman Park"'],
+        "pattern": r"woodley\s+park|\b2[6-9]\d\d\s+woodley\s+r|wardman\s+park|national\s+zoological\s+park|connecticut\s+avenue\s+bridge|\bzoo\b(?=.{0,120}(rock\s+creek|connecticut|national))|"
+                   r"\b2[3-9]\d\d\s+calvert\s+st|\b2[6-9]\d\d\s+connecticut\s+av",
+        "reject": r"cathedral|mount\s+st\.?\s+alban|john\s+eaton|tilden|cleveland\s+park|syncopating|horsem[ae]n|this\s+afternoon\s+and\s+evening",
+        "local": r"connecticut\s+av|calvert\s+st|woodley|rock\s+creek|wardman|zoo|cathedral\s+av|twenty-(sixth|seventh|eighth|ninth)|2[6-9]th\s+st",
+    },
 }
 
 # Content screening. A clip that matches any of these is skipped, never published. 1920s news and
@@ -538,13 +603,14 @@ def build_archive(slug: str, now: float) -> dict:
         section["note"] = f"The Library of Congress search could not be reached this run ({type(exc).__name__}). {base_note}"
         return section
 
-    items, seen_text, screened, fetched = [], set(), 0, 0
+    items, seen_text, screened, fetched, unread = [], set(), 0, 0, 0
     for r in results:
         if fetched >= MAX_PAGE_FETCHES or time.time() - t0 > ARCHIVE_BUDGET_S:
             break
         try:
             text = clean(page_text(r))
         except Exception:  # noqa: BLE001 - skip a page whose text will not load
+            unread += 1
             continue
         fetched += 1
         for snip, score in snippets(text, cfg["pattern"]):
@@ -586,6 +652,9 @@ def build_archive(slug: str, now: float) -> dict:
     section["screened"] = screened
     if screened:
         section["note"] += f" This week {screened} otherwise usable clip{'s were' if screened != 1 else ' was'} held back by that screen."
+    if not picked and unread:  # pages we couldn't read prove nothing, so don't call it a quiet week
+        section["note"] = f"The Library of Congress search could not be reached this run ({unread} pages would not load). {base_note}"
+        return section
     if not picked:
         section["note"] = (
             f"No usable mentions in the Evening Star for {section['week_label']} "
