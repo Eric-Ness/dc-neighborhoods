@@ -1,7 +1,7 @@
 {
  "slug": "palisades",
  "name": "Palisades",
- "generated_at": "2026-11-01T22:44:05Z",
+ "generated_at": "2026-11-01T23:52:18Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods: Kent/Palisades (Open Data DC). It includes Kent and the C&O Canal parkland along the river.",
   "rings": [
@@ -10408,12 +10408,12 @@
   }
  ],
  "requests": {
-  "total": 1276,
+  "total": 1277,
   "previous_total": 1386,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 254,
+    "count": 255,
     "previous": 243
    },
    {
@@ -10742,8 +10742,18 @@
     "previous": 1
    }
   ],
-  "open": 325,
+  "open": 326,
   "recent": [
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-01T23:08:55Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1500 block of ELLIOT PLACE NW",
+    "lat": 38.909,
+    "lon": -77.089
+   },
    {
     "type": "Scheduled Yard Waste",
     "agency": "DPW",
@@ -11233,16 +11243,6 @@
     "block": "1500 block of 44TH STREET NW",
     "lat": 38.91,
     "lon": -77.081
-   },
-   {
-    "type": "Recycling Cart - Repair",
-    "agency": "DPW",
-    "added": "2026-10-30T15:22:44Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2000 block of 48TH STREET NW",
-    "lat": 38.917,
-    "lon": -77.094
    }
   ]
  },
@@ -11343,7 +11343,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -11644,7 +11644,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -12052,7 +12052,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -12186,26 +12186,13 @@
     "\"Chain Bridge\"",
     "Palisades"
    ],
-   "clips": [
-    {
-     "date": "1926-11-02",
-     "page": 2,
-     "text": "They also include recommendations for certain changes in streets in the vicinity of Conduit road.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-02/ed-1/?sp=2"
-    },
-    {
-     "date": "1926-11-05",
-     "page": 28,
-     "text": "Central High' School Soap contain ers in shower room unsatisfactory; no ventilation system in kitchen room, which is too small; unapproved drink ing fountains. Chain Bridge Road SchoolOutdoor toilets not in sanitary condition.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-05/ed-1/?sp=28"
-    }
-   ],
+   "clips": [],
    "screened": 0,
-   "note": "Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
+   "note": "The Library of Congress search could not be reached this run (HTTPError). Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
   }
  },
  "news": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "archive_days": 180,
   "sources": [
    {
@@ -12497,7 +12484,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
@@ -12614,7 +12601,7 @@
   "anc_meetings": []
  },
  "jobs": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "max_age_days": 120,
   "sources": [
    {
@@ -12643,7 +12630,7 @@
   "jobs": []
  },
  "blocks": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -49949,7 +49936,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

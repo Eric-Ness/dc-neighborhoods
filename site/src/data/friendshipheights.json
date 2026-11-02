@@ -1,7 +1,7 @@
 {
  "slug": "friendshipheights",
  "name": "Friendship Heights",
- "generated_at": "2026-11-01T20:25:43Z",
+ "generated_at": "2026-11-01T23:52:18Z",
  "boundary": {
   "source": "ANC single-member districts 3E03 and 3E04, around the Friendship Heights Metro (Open Data DC). DC has no planning area for Friendship Heights; this overlaps the Tenleytown site.",
   "rings": [
@@ -2911,12 +2911,12 @@
   }
  ],
  "requests": {
-  "total": 453,
-  "previous_total": 549,
+  "total": 451,
+  "previous_total": 551,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
-    "count": 83,
+    "count": 84,
     "previous": 68
    },
    {
@@ -2945,14 +2945,14 @@
     "previous": 71
    },
    {
-    "type": "Tree Inspection",
-    "count": 15,
-    "previous": 16
+    "type": "Graffiti Removal",
+    "count": 16,
+    "previous": 26
    },
    {
-    "type": "Graffiti Removal",
-    "count": 15,
-    "previous": 27
+    "type": "Tree Inspection",
+    "count": 13,
+    "previous": 18
    },
    {
     "type": "Parking Enforcement",
@@ -3005,11 +3005,6 @@
     "previous": 7
    },
    {
-    "type": "Missed Curbside Compost Collection",
-    "count": 5,
-    "previous": 7
-   },
-   {
     "type": "Sidewalk Repair",
     "count": 5,
     "previous": 3
@@ -3053,6 +3048,11 @@
     "type": "DMV - Online Processing Issues",
     "count": 4,
     "previous": 0
+   },
+   {
+    "type": "Missed Curbside Compost Collection",
+    "count": 3,
+    "previous": 8
    },
    {
     "type": "Trash Cart - Delivery",
@@ -3137,6 +3137,16 @@
   ],
   "open": 115,
   "recent": [
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-01T20:53:23Z",
+    "resolved": null,
+    "status": "Open (Duplicate)",
+    "block": "5300 block of 41ST STREET NW",
+    "lat": 38.959,
+    "lon": -77.08
+   },
    {
     "type": "Scheduled Yard Waste",
     "agency": "DPW",
@@ -3626,16 +3636,6 @@
     "block": "4900 block of 44TH STREET NW",
     "lat": 38.954,
     "lon": -77.086
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-26T21:00:49Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3800 block of HARRISON STREET NW",
-    "lat": 38.957,
-    "lon": -77.076
    }
   ]
  },
@@ -3688,7 +3688,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3920,7 +3920,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4137,14 +4137,14 @@
    {
     "type": "Roadway Signs",
     "median_days": 7.76,
-    "city_median_days": 6.98,
+    "city_median_days": 6.99,
     "closed_n": 92
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4290,7 +4290,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4559,7 +4559,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
@@ -4611,7 +4611,7 @@
   "anc_meetings": []
  },
  "jobs": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "max_age_days": 120,
   "sources": [
    {
@@ -4625,6 +4625,10 @@
    {
     "name": "Sweetgreen (Greenhouse)",
     "url": "https://boards.greenhouse.io/sweetgreen"
+   },
+   {
+    "name": "Monumental Sports & Entertainment (Greenhouse)",
+    "url": "https://boards.greenhouse.io/monumentalsports"
    }
   ],
   "employers": [
@@ -4643,6 +4647,12 @@
    {
     "name": "Sweetgreen (Greenhouse)",
     "url": "https://boards.greenhouse.io/sweetgreen",
+    "state": "ok",
+    "count": 0
+   },
+   {
+    "name": "Monumental Sports & Entertainment (Greenhouse)",
+    "url": "https://boards.greenhouse.io/monumentalsports",
     "state": "ok",
     "count": 0
    }
@@ -4691,7 +4701,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -19248,7 +19258,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
@@ -19459,36 +19469,7 @@
     "lon": -77.08553
    }
   ],
-  "bike_docks": [
-   {
-    "id": "08254529-1f3f-11e7-bf6b-3863bb334450",
-    "name": "Fessenden St & Wisconsin Ave NW",
-    "capacity": 15,
-    "lat": 38.95481,
-    "lon": -77.08243
-   },
-   {
-    "id": "08258b3f-1f3f-11e7-bf6b-3863bb334450",
-    "name": "Friendship Hts Metro / Wisconsin Ave & Wisconsin Cir",
-    "capacity": 19,
-    "lat": 38.96176,
-    "lon": -77.086
-   },
-   {
-    "id": "082632a8-1f3f-11e7-bf6b-3863bb334450",
-    "name": "Wisconsin Ave & Brandywine St NW",
-    "capacity": 25,
-    "lat": 38.94981,
-    "lon": -77.08022
-   },
-   {
-    "id": "0826176a-1f3f-11e7-bf6b-3863bb334450",
-    "name": "Wisconsin Ave & Ingomar St NW",
-    "capacity": 19,
-    "lat": 38.95827,
-    "lon": -77.08464
-   }
-  ]
+  "bike_docks": []
  },
  "module_errors": {}
 }

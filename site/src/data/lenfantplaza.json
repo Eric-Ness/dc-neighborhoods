@@ -1,7 +1,7 @@
 {
  "slug": "lenfantplaza",
  "name": "L'Enfant Plaza",
- "generated_at": "2026-11-01T22:44:05Z",
+ "generated_at": "2026-11-01T23:52:18Z",
  "boundary": {
   "source": "Southwest Business Improvement District, which takes in L'Enfant Plaza and the federal blocks around it (Open Data DC). DC has no planning area for L'Enfant Plaza.",
   "rings": [
@@ -1181,19 +1181,6 @@
    "smd": "6D02"
   },
   {
-   "id": "BP2700103",
-   "issued": "2026-10-07T04:00:00Z",
-   "group": "Minor work",
-   "type": "POST CARD",
-   "subtype": "BUILDING",
-   "address": "600 6TH PL SW 20024",
-   "work": "",
-   "zoning": "R-3",
-   "lat": 38.88191,
-   "lon": -77.02069,
-   "smd": "6D01"
-  },
-  {
    "id": "EG2700105",
    "issued": "2026-10-07T04:00:00Z",
    "group": "Minor work",
@@ -1207,17 +1194,17 @@
    "smd": "6D01"
   },
   {
-   "id": "P2700165",
-   "issued": "2026-10-06T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "700 7TH ST SW 406 20024",
+   "id": "BP2700103",
+   "issued": "2026-10-07T04:00:00Z",
+   "group": "Minor work",
+   "type": "POST CARD",
+   "subtype": "BUILDING",
+   "address": "600 6TH PL SW 20024",
    "work": "",
-   "zoning": "RA-4",
-   "lat": 38.88028,
-   "lon": -77.02153,
-   "smd": "6D03"
+   "zoning": "R-3",
+   "lat": 38.88191,
+   "lon": -77.02069,
+   "smd": "6D01"
   },
   {
    "id": "E2700204",
@@ -1231,15 +1218,28 @@
    "lat": 38.88028,
    "lon": -77.02153,
    "smd": "6D03"
+  },
+  {
+   "id": "P2700165",
+   "issued": "2026-10-06T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "700 7TH ST SW 406 20024",
+   "work": "",
+   "zoning": "RA-4",
+   "lat": 38.88028,
+   "lon": -77.02153,
+   "smd": "6D03"
   }
  ],
  "requests": {
-  "total": 730,
-  "previous_total": 757,
+  "total": 731,
+  "previous_total": 756,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 191,
+    "count": 193,
     "previous": 220
    },
    {
@@ -1260,7 +1260,7 @@
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 31,
-    "previous": 53
+    "previous": 52
    },
    {
     "type": "DMV - Vehicle Registration Issues",
@@ -1428,11 +1428,6 @@
     "previous": 0
    },
    {
-    "type": "Roadway Markings / Pylons",
-    "count": 2,
-    "previous": 2
-   },
-   {
     "type": "Pet Waste Complaint",
     "count": 2,
     "previous": 0
@@ -1456,6 +1451,11 @@
     "type": "Container Removal",
     "count": 2,
     "previous": 1
+   },
+   {
+    "type": "Roadway Markings / Pylons",
+    "count": 1,
+    "previous": 2
    },
    {
     "type": "DC How Am I Driving?",
@@ -1500,6 +1500,16 @@
   ],
   "open": 128,
   "recent": [
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-01T23:45:48Z",
+    "resolved": "2026-11-01T23:50:11Z",
+    "status": "Closed",
+    "block": "Unit block of H STREET SW",
+    "lat": 38.88,
+    "lon": -77.011
+   },
    {
     "type": "Illegal Dumping",
     "agency": "DPW",
@@ -1989,16 +1999,6 @@
     "block": "500 block of D STREET SW",
     "lat": 38.885,
     "lon": -77.02
-   },
-   {
-    "type": "DMV - Drivers License/ID Issues",
-    "agency": "DMV",
-    "added": "2026-10-29T18:33:30Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "Unit block of M STREET SW",
-    "lat": 38.877,
-    "lon": -77.012
    }
   ]
  },
@@ -2068,7 +2068,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2242,7 +2242,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2642,7 +2642,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 2110
+    "closed_n": 2111
    },
    {
     "type": "DMV - Ticket Payment Dispute",
@@ -2690,7 +2690,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2792,44 +2792,13 @@
     "Southwest",
     "\"Maine avenue\""
    ],
-   "clips": [
-    {
-     "date": "1926-11-02",
-     "page": 32,
-     "text": "\u2026 to rent space to them in tlie newly established market, Mr. Ashford urged the asso ciation to include that recommenda tion with their advocation of the Southwest market site.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-02/ed-1/?sp=32"
-    },
-    {
-     "date": "1926-11-03",
-     "page": 5,
-     "text": "After live years' study Mrs. Alice P. Barney purchased and gave tree use of an old historical house for an arts and craft center In Southwest Washington.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-03/ed-1/?sp=5"
-    },
-    {
-     "date": "1926-11-03",
-     "page": 17,
-     "text": "Mrs. Mary Watts, 40 years old, 612 H Seventh street southwest and Rose Coleman, 28 years old, 614 Seventh street southwest, were knocked down by the automobile of Max Dobbin, 28 years old, 5114 Ninth street, while crossing the roadway almost in front of their homes about 10:40 o\u2019clock last night.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-03/ed-1/?sp=17"
-    },
-    {
-     "date": "1926-11-03",
-     "page": 22,
-     "text": "Marshall, who spoke in favor of the Southwest site, followed up his charges by declaring \u201cthose fellows will sign anything.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-03/ed-1/?sp=22"
-    },
-    {
-     "date": "1926-11-06",
-     "page": 2,
-     "text": "The sum of $375 was received in cash donations, ranging from pennies given by children to one gift of SIOO, during the birthday celebration of the twenty-fifth anniversary of the found ing of Neighborhood House, held in the headquarters at 470 N street southwest yesterday, it was announced by Mrs. Clara D. Nellgh, head resi dent, today.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-06/ed-1/?sp=2"
-    }
-   ],
+   "clips": [],
    "screened": 0,
-   "note": "Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
+   "note": "The Library of Congress search could not be reached this run (HTTPError). Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
   }
  },
  "news": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2965,6 +2934,41 @@
    }
   ],
   "items": [
+   {
+    "title": "Commemorating the Tenth Anniversary of the National Museum",
+    "url": "https://thesouthwester.com/2026/11/01/commemorating-the-tenth-anniversary-of-the-national-museum/",
+    "source": "The Southwester",
+    "published": "2026-11-02T00:27:35Z",
+    "first_seen": "2026-11-01T23:52:18Z"
+   },
+   {
+    "title": "Rorschach Theatre Kicks of New Season With Immersive Show Inspired by Real Events",
+    "url": "https://thesouthwester.com/2026/11/01/rorschach-theatre-kicks-of-new-season-with-immersive-show-inspired-by-real-events/",
+    "source": "The Southwester",
+    "published": "2026-11-02T00:26:21Z",
+    "first_seen": "2026-11-01T23:52:18Z"
+   },
+   {
+    "title": "From Water Samples to Sensors: How Anacostia Riverkeeper Monitors the River",
+    "url": "https://thesouthwester.com/2026/11/01/from-water-samples-to-sensors-how-anacostia-riverkeeper-monitors-the-river/",
+    "source": "The Southwester",
+    "published": "2026-11-02T00:24:34Z",
+    "first_seen": "2026-11-01T23:52:18Z"
+   },
+   {
+    "title": "How to Celebrate Your 80th Birthday: West Africa",
+    "url": "https://thesouthwester.com/2026/11/01/how-to-celebrate-your-80th-birthday-west-africa/",
+    "source": "The Southwester",
+    "published": "2026-11-02T00:23:05Z",
+    "first_seen": "2026-11-01T23:52:18Z"
+   },
+   {
+    "title": "Southwest Mutual Aid Mobilizes DC Communities",
+    "url": "https://thesouthwester.com/2026/11/01/southwest-mutual-aid-mobilizes-dc-communities/",
+    "source": "The Southwester",
+    "published": "2026-11-02T00:22:35Z",
+    "first_seen": "2026-11-01T23:52:18Z"
+   },
    {
     "title": "Mi Vida on the Wharf \u201cclosed for repairs\u201d \u2013 \u201cplan to reopen Mi Vida District Wharf in Q1 of 2027!\u201d",
     "url": "https://www.popville.com/2026/10/mi-vida-dc-wharf-closed-for-repairs/",
@@ -3280,7 +3284,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
@@ -3373,7 +3377,7 @@
   "anc_meetings": []
  },
  "jobs": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "max_age_days": 120,
   "sources": [
    {
@@ -3402,7 +3406,7 @@
   "jobs": []
  },
  "blocks": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -17034,7 +17038,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

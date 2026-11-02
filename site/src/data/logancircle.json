@@ -1,7 +1,7 @@
 {
  "slug": "logancircle",
  "name": "Logan Circle",
- "generated_at": "2026-11-01T22:44:05Z",
+ "generated_at": "2026-11-01T23:52:18Z",
  "boundary": {
   "source": "ANC 2F, the Logan Circle commission (all its single-member districts, Open Data DC). DC's LOGAN CIRCLE/SHAW planning area also covers Shaw, which has its own site.",
   "rings": [
@@ -4182,8 +4182,8 @@
   }
  ],
  "requests": {
-  "total": 1365,
-  "previous_total": 1462,
+  "total": 1364,
+  "previous_total": 1464,
   "by_type": [
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -4236,14 +4236,14 @@
     "previous": 22
    },
    {
-    "type": "Scheduled Yard Waste",
-    "count": 31,
-    "previous": 38
-   },
-   {
     "type": "Sidewalk Repair",
     "count": 29,
     "previous": 15
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "count": 29,
+    "previous": 40
    },
    {
     "type": "Sanitation Enforcement",
@@ -4316,6 +4316,11 @@
     "previous": 69
    },
    {
+    "type": "Pothole",
+    "count": 8,
+    "previous": 2
+   },
+   {
     "type": "Public Space Inspection",
     "count": 8,
     "previous": 5
@@ -4328,11 +4333,6 @@
    {
     "type": "OCTFME - Down Cable Wires",
     "count": 8,
-    "previous": 2
-   },
-   {
-    "type": "Pothole",
-    "count": 7,
     "previous": 2
    },
    {
@@ -4446,8 +4446,18 @@
     "previous": 2
    }
   ],
-  "open": 247,
+  "open": 248,
   "recent": [
+   {
+    "type": "Pothole",
+    "agency": "DDOT",
+    "added": "2026-11-01T23:13:42Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "1000 block of N STREET NW",
+    "lat": 38.907,
+    "lon": -77.027
+   },
    {
     "type": "DC Health Rodent & Vector Control",
     "agency": "DOH",
@@ -4937,16 +4947,6 @@
     "block": "1400 block of T STREET NW",
     "lat": 38.915,
     "lon": -77.034
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-10-30T15:09:04Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1400 block of SWANN STREET NW",
-    "lat": 38.915,
-    "lon": -77.034
    }
   ]
  },
@@ -5044,7 +5044,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -5375,7 +5375,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -5740,9 +5740,9 @@
    },
    {
     "type": "Trash Collection - Missed",
-    "median_days": 4.98,
+    "median_days": 4.96,
     "city_median_days": 4.17,
-    "closed_n": 576
+    "closed_n": 575
    },
    {
     "type": "Bulk Collection",
@@ -5778,7 +5778,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -5906,11 +5906,11 @@
    ],
    "clips": [],
    "screened": 0,
-   "note": "No usable mentions in the Evening Star for October 31 \u2013 November 6, 1926 (25 matching pages searched). Some weeks a neighborhood just isn't in the paper. Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
+   "note": "The Library of Congress search could not be reached this run (HTTPError). Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
   }
  },
  "news": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "archive_days": 180,
   "sources": [
    {
@@ -6394,7 +6394,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
@@ -6437,7 +6437,7 @@
   "anc_meetings": []
  },
  "jobs": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "max_age_days": 120,
   "sources": [
    {
@@ -6527,7 +6527,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -18751,7 +18751,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

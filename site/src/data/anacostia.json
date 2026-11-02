@@ -1,7 +1,7 @@
 {
  "slug": "anacostia",
  "name": "Anacostia",
- "generated_at": "2026-11-01T20:25:43Z",
+ "generated_at": "2026-11-01T23:52:18Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1043,8 +1043,8 @@
   }
  ],
  "requests": {
-  "total": 475,
-  "previous_total": 890,
+  "total": 471,
+  "previous_total": 894,
   "by_type": [
    {
     "type": "Bulk Collection",
@@ -1097,11 +1097,6 @@
     "previous": 16
    },
    {
-    "type": "Scheduled Yard Waste",
-    "count": 9,
-    "previous": 28
-   },
-   {
     "type": "DMV - Drivers License/ID Issues",
     "count": 9,
     "previous": 22
@@ -1110,6 +1105,11 @@
     "type": "DC Government Information",
     "count": 8,
     "previous": 36
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "count": 7,
+    "previous": 30
    },
    {
     "type": "Residential Parking Permit Violation",
@@ -1130,11 +1130,6 @@
     "type": "Emergency No-Parking Verification",
     "count": 6,
     "previous": 0
-   },
-   {
-    "type": "Dead Animal Collection",
-    "count": 5,
-    "previous": 5
    },
    {
     "type": "Tree Inspection",
@@ -1175,6 +1170,11 @@
     "type": "Pet Waste Complaint",
     "count": 3,
     "previous": 2
+   },
+   {
+    "type": "Dead Animal Collection",
+    "count": 3,
+    "previous": 7
    },
    {
     "type": "Public Space Litter Can-Collection",
@@ -1903,7 +1903,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2094,7 +2094,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2271,7 +2271,7 @@
   "trees": {
    "total": 2198,
    "species": 175,
-   "planted_5y": 405,
+   "planted_5y": 403,
    "empty_boxes": 36,
    "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (36). Not counted: 'Proposed' = planting scheduled (134), 'Conflict'/'Utility' = empty but blocked (57), 'Retired' = box removed (137). 'total' is boxes with status 'Plant' whose condition is not Dead.",
    "condition": {
@@ -2366,9 +2366,9 @@
    },
    {
     "type": "Trash Collection - Missed",
-    "median_days": 4.53,
+    "median_days": 4.52,
     "city_median_days": 4.17,
-    "closed_n": 428
+    "closed_n": 427
    },
    {
     "type": "Snow and Ice Removal on Public Space",
@@ -2391,14 +2391,14 @@
    {
     "type": "Roadway Signs",
     "median_days": 2.96,
-    "city_median_days": 6.98,
+    "city_median_days": 6.99,
     "closed_n": 156
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2530,7 +2530,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2808,7 +2808,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
@@ -2936,7 +2936,7 @@
   ]
  },
  "jobs": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "max_age_days": 120,
   "sources": [
    {
@@ -2946,6 +2946,10 @@
    {
     "name": "Sweetgreen (Greenhouse)",
     "url": "https://boards.greenhouse.io/sweetgreen"
+   },
+   {
+    "name": "Monumental Sports & Entertainment (Greenhouse)",
+    "url": "https://boards.greenhouse.io/monumentalsports"
    }
   ],
   "employers": [
@@ -2958,6 +2962,12 @@
    {
     "name": "Sweetgreen (Greenhouse)",
     "url": "https://boards.greenhouse.io/sweetgreen",
+    "state": "ok",
+    "count": 0
+   },
+   {
+    "name": "Monumental Sports & Entertainment (Greenhouse)",
+    "url": "https://boards.greenhouse.io/monumentalsports",
     "state": "ok",
     "count": 0
    }
@@ -2976,7 +2986,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -19125,7 +19135,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

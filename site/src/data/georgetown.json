@@ -1,7 +1,7 @@
 {
  "slug": "georgetown",
  "name": "Georgetown",
- "generated_at": "2026-11-01T20:25:43Z",
+ "generated_at": "2026-11-01T23:52:18Z",
  "boundary": {
   "source": "Georgetown Historic District (DC Historic Preservation Office, Open Data DC). DC's GEORGETOWN planning area covers only the western half of the neighborhood.",
   "rings": [
@@ -4767,28 +4767,23 @@
   }
  ],
  "requests": {
-  "total": 1278,
-  "previous_total": 1500,
+  "total": 1277,
+  "previous_total": 1501,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 222,
-    "previous": 190
+    "count": 216,
+    "previous": 194
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 133,
-    "previous": 131
+    "count": 138,
+    "previous": 129
    },
    {
     "type": "Bulk Collection",
     "count": 92,
-    "previous": 116
-   },
-   {
-    "type": "Residential Parking Permit Violation",
-    "count": 71,
-    "previous": 119
+    "previous": 113
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -4796,24 +4791,29 @@
     "previous": 59
    },
    {
-    "type": "DC Health Rodent & Vector Control",
-    "count": 60,
-    "previous": 87
+    "type": "Residential Parking Permit Violation",
+    "count": 64,
+    "previous": 117
    },
    {
     "type": "Roadway Signs",
-    "count": 58,
+    "count": 62,
     "previous": 26
    },
    {
-    "type": "Trash Collection - Missed",
-    "count": 51,
-    "previous": 35
+    "type": "DC Health Rodent & Vector Control",
+    "count": 60,
+    "previous": 86
    },
    {
     "type": "DOB - Vacant Private Property Inspection",
-    "count": 49,
+    "count": 53,
     "previous": 1
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "count": 50,
+    "previous": 37
    },
    {
     "type": "Tree Pruning",
@@ -4821,18 +4821,18 @@
     "previous": 17
    },
    {
-    "type": "Trash Cart - Delivery",
-    "count": 39,
-    "previous": 70
-   },
-   {
     "type": "Sanitation Enforcement",
     "count": 39,
     "previous": 35
    },
    {
+    "type": "Trash Cart - Delivery",
+    "count": 38,
+    "previous": 70
+   },
+   {
     "type": "Tree Planting",
-    "count": 32,
+    "count": 33,
     "previous": 2
    },
    {
@@ -4842,18 +4842,23 @@
    },
    {
     "type": "Container Removal",
-    "count": 27,
-    "previous": 29
+    "count": 25,
+    "previous": 30
    },
    {
-    "type": "Rat Replacement Containers",
-    "count": 26,
-    "previous": 61
+    "type": "Abandoned Bicycle",
+    "count": 25,
+    "previous": 3
    },
    {
     "type": "Tree Inspection",
     "count": 24,
-    "previous": 40
+    "previous": 39
+   },
+   {
+    "type": "Rat Replacement Containers",
+    "count": 24,
+    "previous": 62
    },
    {
     "type": "Sidewalk Repair",
@@ -4861,19 +4866,14 @@
     "previous": 139
    },
    {
-    "type": "Abandoned Bicycle",
-    "count": 19,
-    "previous": 3
+    "type": "Streetlight Repair Investigation",
+    "count": 17,
+    "previous": 22
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 17,
     "previous": 9
-   },
-   {
-    "type": "Streetlight Repair Investigation",
-    "count": 16,
-    "previous": 22
    },
    {
     "type": "Illegal Dumping",
@@ -4883,7 +4883,7 @@
    {
     "type": "Roadway Markings / Pylons",
     "count": 12,
-    "previous": 5
+    "previous": 4
    },
    {
     "type": "Public Space Inspection",
@@ -4896,9 +4896,9 @@
     "previous": 17
    },
    {
-    "type": "Pothole",
+    "type": "Public Space Litter Can-Collection",
     "count": 7,
-    "previous": 22
+    "previous": 14
    },
    {
     "type": "DMV - Drivers License/ID Issues",
@@ -4911,24 +4911,19 @@
     "previous": 2
    },
    {
-    "type": "Street Cleaning",
-    "count": 6,
-    "previous": 5
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "count": 6,
-    "previous": 14
-   },
-   {
     "type": "Recycling Cart Delivery",
     "count": 6,
-    "previous": 24
+    "previous": 25
    },
    {
     "type": "DOB - Illegal Construction",
     "count": 6,
     "previous": 7
+   },
+   {
+    "type": "Pothole",
+    "count": 5,
+    "previous": 23
    },
    {
     "type": "DMV - Vehicle Registration Issues",
@@ -4943,7 +4938,7 @@
    {
     "type": "Tree Removal",
     "count": 5,
-    "previous": 33
+    "previous": 32
    },
    {
     "type": "Missed Curbside Compost Collection",
@@ -4951,9 +4946,14 @@
     "previous": 11
    },
    {
+    "type": "Street Cleaning",
+    "count": 4,
+    "previous": 7
+   },
+   {
     "type": "Supercan - Delivery",
     "count": 4,
-    "previous": 4
+    "previous": 5
    },
    {
     "type": "DMV - Online Processing Issues",
@@ -5026,8 +5026,68 @@
     "previous": 0
    }
   ],
-  "open": 306,
+  "open": 314,
   "recent": [
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-01T22:03:05Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3300 block of P STREET NW",
+    "lat": 38.909,
+    "lon": -77.067
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-01T21:48:41Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3300 block of P STREET NW",
+    "lat": 38.909,
+    "lon": -77.068
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-01T21:26:41Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3000 block of CAMBRIDGE PLACE NW",
+    "lat": 38.911,
+    "lon": -77.06
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-01T21:16:12Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1600 block of 32ND STREET NW",
+    "lat": 38.913,
+    "lon": -77.064
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-01T21:11:17Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1500 block of 33RD STREET NW",
+    "lat": 38.909,
+    "lon": -77.066
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-01T21:10:31Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3000 block of Q STREET NW",
+    "lat": 38.911,
+    "lon": -77.059
+   },
    {
     "type": "Trash Cart - Delivery",
     "agency": "DPW",
@@ -5467,66 +5527,6 @@
     "block": "1600 block of 29TH STREET NW",
     "lat": 38.911,
     "lon": -77.058
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-30T22:27:22Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2900 block of N STREET NW",
-    "lat": 38.907,
-    "lon": -77.059
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-30T22:07:08Z",
-    "resolved": "2026-10-30T22:54:12Z",
-    "status": "Closed (Duplicate)",
-    "block": "3100 block of O STREET NW",
-    "lat": 38.909,
-    "lon": -77.062
-   },
-   {
-    "type": "Tree Pruning",
-    "agency": "DDOT",
-    "added": "2026-10-30T22:05:26Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "2500 block of EAST PLACE NW",
-    "lat": 38.91,
-    "lon": -77.054
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-10-30T21:59:15Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1600 block of 32ND STREET NW",
-    "lat": 38.913,
-    "lon": -77.064
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-30T21:48:51Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3000 block of CAMBRIDGE PLACE NW",
-    "lat": 38.911,
-    "lon": -77.06
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-30T21:36:40Z",
-    "resolved": "2026-10-30T22:54:12Z",
-    "status": "Closed",
-    "block": "3100 block of O STREET NW",
-    "lat": 38.909,
-    "lon": -77.062
    }
   ]
  },
@@ -5550,14 +5550,14 @@
     "previous": 0
    },
    {
-    "offense": "BURGLARY",
-    "count": 2,
-    "previous": 0
-   },
-   {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
     "count": 2,
     "previous": 1
+   },
+   {
+    "offense": "BURGLARY",
+    "count": 2,
+    "previous": 0
    },
    {
     "offense": "ROBBERY",
@@ -5618,7 +5618,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -5846,7 +5846,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -6258,7 +6258,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.05,
     "city_median_days": 0.05,
-    "closed_n": 1666
+    "closed_n": 1665
    },
    {
     "type": "Scheduled Yard Waste",
@@ -6306,7 +6306,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -6432,11 +6432,11 @@
    ],
    "clips": [],
    "screened": 0,
-   "note": "No usable mentions in the Evening Star for October 31 \u2013 November 6, 1926 (8 matching pages searched). Some weeks a neighborhood just isn't in the paper. Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
+   "note": "The Library of Congress search could not be reached this run (HTTPError). Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
   }
  },
  "news": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "archive_days": 180,
   "sources": [
    {
@@ -7448,7 +7448,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
@@ -7482,12 +7482,16 @@
   "anc_meetings": []
  },
  "jobs": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "max_age_days": 120,
   "sources": [
    {
     "name": "Sweetgreen (Greenhouse)",
     "url": "https://boards.greenhouse.io/sweetgreen"
+   },
+   {
+    "name": "Monumental Sports & Entertainment (Greenhouse)",
+    "url": "https://boards.greenhouse.io/monumentalsports"
    }
   ],
   "employers": [
@@ -7496,12 +7500,18 @@
     "url": "https://boards.greenhouse.io/sweetgreen",
     "state": "ok",
     "count": 0
+   },
+   {
+    "name": "Monumental Sports & Entertainment (Greenhouse)",
+    "url": "https://boards.greenhouse.io/monumentalsports",
+    "state": "ok",
+    "count": 0
    }
   ],
   "jobs": []
  },
  "blocks": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -29079,7 +29089,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

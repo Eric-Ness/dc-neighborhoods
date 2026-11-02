@@ -1,7 +1,7 @@
 {
  "slug": "vanness",
  "name": "Van Ness",
- "generated_at": "2026-11-01T22:44:05Z",
+ "generated_at": "2026-11-01T23:52:18Z",
  "boundary": {
   "source": "ANC single-member districts 3F01, 3F02 and 3F05 around the Van Ness-UDC Metro (Open Data DC). DC has no planning area named Van Ness.",
   "rings": [
@@ -3134,19 +3134,6 @@
    "smd": "3F02"
   },
   {
-   "id": "EA2700124",
-   "issued": "2026-10-20T04:00:00Z",
-   "group": "Other",
-   "type": "SHOP DRAWING",
-   "subtype": "ELEVATOR - ALTERATION",
-   "address": "4600 CONNECTICUT AVE NW 101 20008",
-   "work": "Replace machines, controller, traveling cable, cab panel-shell with new on Car #1, #2, #3.",
-   "zoning": "RA-4",
-   "lat": 38.95022,
-   "lon": -77.06757,
-   "smd": "3F01"
-  },
-  {
    "id": "E2700662",
    "issued": "2026-10-20T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -3157,6 +3144,19 @@
    "zoning": "R-1B",
    "lat": 38.94899,
    "lon": -77.07053,
+   "smd": "3F01"
+  },
+  {
+   "id": "EA2700124",
+   "issued": "2026-10-20T04:00:00Z",
+   "group": "Other",
+   "type": "SHOP DRAWING",
+   "subtype": "ELEVATOR - ALTERATION",
+   "address": "4600 CONNECTICUT AVE NW 101 20008",
+   "work": "Replace machines, controller, traveling cable, cab panel-shell with new on Car #1, #2, #3.",
+   "zoning": "RA-4",
+   "lat": 38.95022,
+   "lon": -77.06757,
    "smd": "3F01"
   },
   {
@@ -3356,12 +3356,12 @@
   }
  ],
  "requests": {
-  "total": 201,
+  "total": 202,
   "previous_total": 242,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
-    "count": 42,
+    "count": 43,
     "previous": 62
    },
    {
@@ -3570,8 +3570,18 @@
     "previous": 2
    }
   ],
-  "open": 65,
+  "open": 66,
   "recent": [
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T00:16:28Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2900 block of UPTON STREET NW",
+    "lat": 38.942,
+    "lon": -77.061
+   },
    {
     "type": "Scheduled Yard Waste",
     "agency": "DPW",
@@ -4061,16 +4071,6 @@
     "block": "3500 block of INTERNATIONAL DRIVE NW",
     "lat": 38.943,
     "lon": -77.068
-   },
-   {
-    "type": "DOB - Vacant Private Property Inspection",
-    "agency": "DOB",
-    "added": "2026-10-26T17:26:14Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4500 block of LINNEAN AVENUE NW",
-    "lat": 38.948,
-    "lon": -77.057
    }
   ]
  },
@@ -4124,7 +4124,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -4369,7 +4369,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4600,7 +4600,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4729,11 +4729,11 @@
    ],
    "clips": [],
    "screened": 0,
-   "note": "No usable mentions in the Evening Star for October 31 \u2013 November 6, 1926 (13 matching pages searched). Some weeks a neighborhood just isn't in the paper. Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
+   "note": "The Library of Congress search could not be reached this run (HTTPError). Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
   }
  },
  "news": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "archive_days": 180,
   "sources": [
    {
@@ -5065,7 +5065,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
@@ -5185,7 +5185,7 @@
   "anc_meetings": []
  },
  "jobs": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "max_age_days": 120,
   "sources": [
    {
@@ -5315,7 +5315,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -15335,7 +15335,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-01T22:44:05Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

@@ -1,7 +1,7 @@
 {
  "slug": "chevychase",
  "name": "Chevy Chase",
- "generated_at": "2026-11-01T20:25:43Z",
+ "generated_at": "2026-11-01T23:52:18Z",
  "boundary": {
   "source": "ANC 3/4G, the Chevy Chase DC commission (all its single-member districts, Open Data DC). DC's CHEVY CHASE planning area stops at Connecticut Avenue; this overlaps the Tenleytown site a little.",
   "rings": [
@@ -13083,18 +13083,18 @@
   }
  ],
  "requests": {
-  "total": 975,
-  "previous_total": 1073,
+  "total": 977,
+  "previous_total": 1075,
   "by_type": [
    {
     "type": "Bulk Collection",
     "count": 263,
-    "previous": 241
+    "previous": 244
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 198,
-    "previous": 219
+    "count": 199,
+    "previous": 220
    },
    {
     "type": "Trash Collection - Missed",
@@ -13103,13 +13103,13 @@
    },
    {
     "type": "Parking Enforcement",
-    "count": 50,
+    "count": 49,
     "previous": 33
    },
    {
     "type": "Recycling Collection - Missed",
     "count": 44,
-    "previous": 57
+    "previous": 56
    },
    {
     "type": "Roadway Signs",
@@ -13142,14 +13142,14 @@
     "previous": 13
    },
    {
+    "type": "Pothole",
+    "count": 13,
+    "previous": 4
+   },
+   {
     "type": "Supercan - Delivery",
     "count": 12,
     "previous": 23
-   },
-   {
-    "type": "Pothole",
-    "count": 12,
-    "previous": 4
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
@@ -13375,10 +13375,65 @@
     "type": "Public Space Litter Can Installation",
     "count": 1,
     "previous": 0
+   },
+   {
+    "type": "Public Space Litter Can Repair",
+    "count": 1,
+    "previous": 0
    }
   ],
-  "open": 241,
+  "open": 246,
   "recent": [
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-01T22:41:37Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "5600 block of 29TH STREET NW",
+    "lat": 38.965,
+    "lon": -77.059
+   },
+   {
+    "type": "Pothole",
+    "agency": "DDOT",
+    "added": "2026-11-01T22:10:18Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "3700 block of MCKINLEY STREET NW",
+    "lat": 38.965,
+    "lon": -77.075
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-01T21:50:05Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "5600 block of WESTERN AVENUE NW",
+    "lat": 38.965,
+    "lon": -77.08
+   },
+   {
+    "type": "Public Space Litter Can Repair",
+    "agency": "DPW",
+    "added": "2026-11-01T21:31:42Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3000 block of MILITARY ROAD NW",
+    "lat": 38.96,
+    "lon": -77.061
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-01T21:14:12Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3500 block of RUNNYMEDE PLACE NW",
+    "lat": 38.97,
+    "lon": -77.072
+   },
    {
     "type": "Bulk Collection",
     "agency": "DPW",
@@ -13828,56 +13883,6 @@
     "block": "6100 block of 30TH STREET NW",
     "lat": 38.971,
     "lon": -77.06
-   },
-   {
-    "type": "Container Removal",
-    "agency": "DPW",
-    "added": "2026-10-29T22:55:40Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3000 block of OLIVER STREET NW",
-    "lat": 38.967,
-    "lon": -77.058
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-29T21:35:03Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3800 block of LIVINGSTON STREET NW",
-    "lat": 38.963,
-    "lon": -77.076
-   },
-   {
-    "type": "Tree Pruning",
-    "agency": "DDOT",
-    "added": "2026-10-29T18:58:32Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "3900 block of JOCELYN STREET NW",
-    "lat": 38.96,
-    "lon": -77.079
-   },
-   {
-    "type": "Roadway Signs",
-    "agency": "DDOT",
-    "added": "2026-10-29T18:53:31Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "3900 block of MORRISON STREET NW",
-    "lat": 38.964,
-    "lon": -77.08
-   },
-   {
-    "type": "Roadway Signs",
-    "agency": "DDOT",
-    "added": "2026-10-29T18:43:29Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "3900 block of LIVINGSTON STREET NW",
-    "lat": 38.963,
-    "lon": -77.079
    }
   ]
  },
@@ -13901,14 +13906,14 @@
     "previous": 0
    },
    {
-    "offense": "MOTOR VEHICLE THEFT",
-    "count": 0,
-    "previous": 6
-   },
-   {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
     "count": 0,
     "previous": 1
+   },
+   {
+    "offense": "MOTOR VEHICLE THEFT",
+    "count": 0,
+    "previous": 6
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -13965,7 +13970,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -14287,7 +14292,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -14619,7 +14624,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -14762,7 +14767,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "archive_days": 180,
   "sources": [
    {
@@ -15137,7 +15142,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
@@ -15208,7 +15213,7 @@
   "anc_meetings": []
  },
  "jobs": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "max_age_days": 120,
   "sources": [
    {
@@ -15218,6 +15223,10 @@
    {
     "name": "Sweetgreen (Greenhouse)",
     "url": "https://boards.greenhouse.io/sweetgreen"
+   },
+   {
+    "name": "Monumental Sports & Entertainment (Greenhouse)",
+    "url": "https://boards.greenhouse.io/monumentalsports"
    }
   ],
   "employers": [
@@ -15230,6 +15239,12 @@
    {
     "name": "Sweetgreen (Greenhouse)",
     "url": "https://boards.greenhouse.io/sweetgreen",
+    "state": "ok",
+    "count": 0
+   },
+   {
+    "name": "Monumental Sports & Entertainment (Greenhouse)",
+    "url": "https://boards.greenhouse.io/monumentalsports",
     "state": "ok",
     "count": 0
    }
@@ -15268,7 +15283,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -46012,7 +46027,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

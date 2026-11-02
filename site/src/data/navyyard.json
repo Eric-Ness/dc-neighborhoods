@@ -1,7 +1,7 @@
 {
  "slug": "navyyard",
  "name": "Navy Yard",
- "generated_at": "2026-11-01T20:25:43Z",
+ "generated_at": "2026-11-01T23:52:18Z",
  "boundary": {
   "source": "Navy Yard (Capitol Riverfront) Business Improvement District boundary (Open Data DC). DC's planning area here is SW/Waterfront.",
   "rings": [
@@ -6922,18 +6922,18 @@
   }
  ],
  "requests": {
-  "total": 1113,
-  "previous_total": 1344,
+  "total": 1111,
+  "previous_total": 1351,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 550,
-    "previous": 808
+    "count": 545,
+    "previous": 812
    },
    {
     "type": "Streetlight Repair Investigation",
     "count": 61,
-    "previous": 18
+    "previous": 17
    },
    {
     "type": "Bulk Collection",
@@ -6942,7 +6942,7 @@
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 49,
+    "count": 51,
     "previous": 11
    },
    {
@@ -6952,7 +6952,7 @@
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 33,
+    "count": 35,
     "previous": 5
    },
    {
@@ -6963,7 +6963,7 @@
    {
     "type": "Roadway Signs",
     "count": 24,
-    "previous": 22
+    "previous": 23
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -6972,7 +6972,7 @@
    },
    {
     "type": "DC Government Information",
-    "count": 20,
+    "count": 21,
     "previous": 22
    },
    {
@@ -7028,7 +7028,7 @@
    {
     "type": "OCTFME - Down Cable Wires",
     "count": 7,
-    "previous": 4
+    "previous": 3
    },
    {
     "type": "Public Space Inspection",
@@ -7066,8 +7066,8 @@
     "previous": 12
    },
    {
-    "type": "Trash Cart Repair",
-    "count": 3,
+    "type": "Dead Animal Collection",
+    "count": 4,
     "previous": 0
    },
    {
@@ -7097,11 +7097,6 @@
    },
    {
     "type": "DMV - Driver and Vehicle Services Refund",
-    "count": 3,
-    "previous": 0
-   },
-   {
-    "type": "Dead Animal Collection",
     "count": 3,
     "previous": 0
    },
@@ -7146,7 +7141,7 @@
     "previous": 6
    }
   ],
-  "open": 156,
+  "open": 153,
   "recent": [
    {
     "type": "DC Health Rodent & Vector Control",
@@ -7680,14 +7675,14 @@
     "previous": 2
    },
    {
-    "offense": "SEX ABUSE",
-    "count": 0,
-    "previous": 1
-   },
-   {
     "offense": "ROBBERY",
     "count": 0,
     "previous": 3
+   },
+   {
+    "offense": "SEX ABUSE",
+    "count": 0,
+    "previous": 1
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -7744,7 +7739,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -7928,7 +7923,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -8215,7 +8210,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 2171
+    "closed_n": 2169
    },
    {
     "type": "DC Government Information",
@@ -8263,7 +8258,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -8390,7 +8385,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "archive_days": 180,
   "sources": [
    {
@@ -8940,7 +8935,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "today": "2026-11-01",
   "days_ahead": 30,
   "sources": [
@@ -9026,12 +9021,16 @@
   ]
  },
  "jobs": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "max_age_days": 120,
   "sources": [
    {
     "name": "Sweetgreen (Greenhouse)",
     "url": "https://boards.greenhouse.io/sweetgreen"
+   },
+   {
+    "name": "Monumental Sports & Entertainment (Greenhouse)",
+    "url": "https://boards.greenhouse.io/monumentalsports"
    }
   ],
   "employers": [
@@ -9040,12 +9039,18 @@
     "url": "https://boards.greenhouse.io/sweetgreen",
     "state": "ok",
     "count": 0
+   },
+   {
+    "name": "Monumental Sports & Entertainment (Greenhouse)",
+    "url": "https://boards.greenhouse.io/monumentalsports",
+    "state": "ok",
+    "count": 0
    }
   ],
   "jobs": []
  },
  "blocks": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -31943,7 +31948,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-01T20:25:43Z",
+  "generated_at": "2026-11-01T23:52:18Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
