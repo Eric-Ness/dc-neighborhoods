@@ -305,7 +305,7 @@ const mmax = Math.max(1, ...mvals);
 )}
 
 <section id="then" class="thensec" aria-labelledby="h-then">
-  <div class="shd" style="border-top:0;padding-top:0"><h2 id="h-then">Then</h2><span class="aside">{n.name} in the record</span></div>
+  <div class="shd" style="border-top:0;padding-top:0"><h2 id="h-then">History</h2><span class="aside">{n.name} in the record</span></div>
   {hi ? (
     <div class="then-grid">
       <div>
@@ -318,11 +318,11 @@ const mmax = Math.max(1, ...mvals);
       </div>
       <div>
         <p class="subh">This week in {hi.archive.week_label.slice(-4)}: the {hi.archive.paper}</p>
-        {clips.length === 0 ? <p class="empty">The newspaper archive couldn&rsquo;t be reached tonight; clips return with the next run. <a href={u("then/")}>More history</a></p>
+        {clips.length === 0 ? <p class="empty">The newspaper archive couldn&rsquo;t be reached tonight; clips return with the next run. <a href={u("history/")}>More history</a></p>
         : clips.map((c) => (
           <blockquote><p>&ldquo;{c.text}&rdquo;</p><a href={c.url} rel="noopener">{shortDate(c.date)}, {c.date.slice(0, 4)}, page {c.page}</a></blockquote>
         ))}
-        <p class="fine">Machine-read text from Library of Congress scans; misspellings are the scanner&rsquo;s. <a href={u("then/")}>More from the archive</a></p>
+        <p class="fine">Machine-read text from Library of Congress scans; misspellings are the scanner&rsquo;s. <a href={u("history/")}>More from the archive</a></p>
       </div>
     </div>
   ) : <p class="empty">History didn&rsquo;t update tonight.</p>}
@@ -351,7 +351,7 @@ const mmax = Math.max(1, ...mvals);
         {elsewhere.map((it) => <li><a href={it.url} rel="noopener">{it.title}</a> <span class="meta" style="display:inline"> {it.source} · on <a href={siteUrl(it.hood.slug)}>{it.hood.name}</a></span></li>)}
       </ul>
     </>}
-    <p class="fine">Also here: <a href={u("jobs/")}>jobs near {n.name}</a>{n.jobs && ` (${n.jobs.jobs.length} listed)`}, <a href={u("about/")}>about the data</a>.</p>
+    <p class="fine">Also here: <a href={u("about/")}>about the data</a>.</p>
   </section>
 </div>
 </div>

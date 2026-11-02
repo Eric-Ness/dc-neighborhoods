@@ -595,6 +595,25 @@ def build_archive(slug: str, now: float) -> dict:
     return section
 
 
+# loc.gov refuses requests from GitHub's cloud runners (every search fails there, while the same request from a home
+# connection succeeds), so the weekly clips are fetched ahead of time with ingest/prefetch_archive.py and committed
+# here, one file per week and neighborhood. The nightly run uses the cached week when it exists and only then tries
+# loc.gov live.
+ARCHIVE_CACHE = Path(__file__).resolve().parent / "archive_cache"
+
+
+def cached_archive(slug: str, now: float) -> dict | None:
+    start, _ = week_100_years_ago(now)
+    path = ARCHIVE_CACHE / start.isoformat() / f"{slug}.json"
+    cfg = ARCHIVE.get(slug)
+    try:
+        section = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return None
+    # A cache from older search terms is stale; fetch again rather than show clips the current rules wouldn't pick.
+    return section if cfg and section.get("terms") == cfg["terms"] else None
+
+
 # ---------------------------------------------------------------- module interface
 
 def build(geom: dict, hood: dict, now: float) -> dict:
@@ -605,7 +624,7 @@ def build(geom: dict, hood: dict, now: float) -> dict:
             {"name": "Evening Star (Washington, D.C.), Chronicling America, Library of Congress; public domain", "url": STAR_ITEM},
         ],
         "buildings": build_buildings(geom),
-        "archive": build_archive(hood["slug"], now),
+        "archive": cached_archive(hood["slug"], now) or build_archive(hood["slug"], now),
     }
 
 

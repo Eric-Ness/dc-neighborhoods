@@ -9,7 +9,7 @@ export const getStaticPaths = staticPaths;
 
 export const GET: APIRoute = ({ props }) => {
   const n = (props as { n: Neighborhood }).n;
-  const base = `/${n.slug}/`;
+  const base = "/"; // root-relative, like every link on the site
   const hits: { a: string; k: string; d: string; u: string }[] = [];
   for (const b of n.blocks?.items ?? []) {
     hits.push({ a: b.name.replace(/ block of /, " ").replace(/^Unit /, "1 "), k: "Block", d: `${b.name}: trash day, schools, parking`, u: `${base}blocks/${b.key}/` });

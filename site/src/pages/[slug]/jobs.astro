@@ -1,61 +1,11 @@
 ---
-import Hood from "../../layouts/Hood.astro";
-import { staticPaths, type Neighborhood, type Job } from "../../lib/data";
-import { newsDate } from "../../lib/c5";
+// The Jobs page was removed on 2026-11-02 (too few listings to be useful); old links land on the front page.
+import { staticPaths, pageUrl, type Neighborhood } from "../../lib/data";
 
 export const getStaticPaths = staticPaths;
 const { n } = Astro.props as { n: Neighborhood };
-const jb = n.jobs;
-const inside = (jb?.jobs ?? []).filter((j) => j.where === "in");
-const near = (jb?.jobs ?? []).filter((j) => j.where === "nearby");
-const byPlace = (list: Job[]) => {
-  const out: { key: string; employer: string; place: string; note: string | null; items: Job[] }[] = [];
-  for (const j of list) {
-    const key = `${j.employer}|${j.place}`;
-    const g = out.find((x) => x.key === key) ?? (out.push({ key, employer: j.employer, place: j.place, note: j.note, items: [] }), out[out.length - 1]);
-    g.items.push(j);
-  }
-  return out;
-};
-const posted = (d: string | null) => (d ? `Posted ${newsDate(d + "T16:00:00Z", n.generated_at)}` : "Posting date not given");
-const STATE: Record<string, string> = { ok: "Read tonight" };
+const to = pageUrl(n.slug);
 ---
-<Hood n={n} page="jobs/" title={`Jobs in and near ${n.name}`} description={`Open jobs at employers in and near ${n.name}, from their own career sites, updated nightly. Free to browse; every listing links to the employer's application.`}
-  heading="Jobs" intro={`Open jobs at employers in and near ${n.name}, read every night from the employers' own career sites. Apply on the employer's site; we don't take applications or charge anyone.`}>
-
-  {!jb ? (
-    <div class="row one"><section class="panel"><div class="ph"><h2>Jobs</h2></div><p class="note">Job listings didn't update tonight. They'll return after the next nightly run.</p></section></div>
-  ) : (<>
-    <div class="row">
-      <div class="stack">
-        <section id="in" class="panel" aria-labelledby="in-h">
-          <div class="ph"><h2 id="in-h">In {n.name}</h2><span class="sub">{inside.length} open</span></div>
-          {inside.length === 0 ? <p class="note">No employer inside {n.name} publishes open jobs in a form we can read tonight. See the jobs nearby and the note on where these come from.</p>
-          : byPlace(inside).map((g) => (
-            <div class="evd">
-              <div class="evd-h">{g.employer}<span>{g.place}{g.note && g.note !== g.place ? ` · ${g.note}` : ""}</span></div>
-              <ul class="rec">{g.items.map((j) => <li><a href={j.url} rel="noopener">{j.title}</a><span>{[j.hours, posted(j.posted)].filter(Boolean).join(" · ")}</span></li>)}</ul>
-            </div>
-          ))}
-        </section>
-        <section id="nearby" class="panel" aria-labelledby="nb-h">
-          <div class="ph"><h2 id="nb-h">Nearby</h2><span class="sub">{near.length} open, within about a mile</span></div>
-          {near.length === 0 ? <p class="note">Nothing nearby tonight.</p>
-          : byPlace(near).map((g) => (
-            <div class="evd">
-              <div class="evd-h">{g.employer}<span>{g.place}{g.note ? ` · ${g.note}` : ""}</span></div>
-              <ul class="rec">{g.items.map((j) => <li><a href={j.url} rel="noopener">{j.title}</a><span>{[j.hours, posted(j.posted)].filter(Boolean).join(" · ")}</span></li>)}</ul>
-            </div>
-          ))}
-          {near.length > 0 && <p class="hl-note">Each nearby site shows its newest postings only, so one big campus can't fill the page.</p>}
-        </section>
-      </div>
-      <section id="sources" class="panel" aria-labelledby="js-h">
-        <div class="ph"><h2 id="js-h">Where these come from</h2></div>
-        <ul class="rec">{jb.employers.map((e) => <li><a href={e.url} rel="noopener">{e.name}</a><span>{STATE[e.state] ?? "Not read tonight"} · {e.count} listed here</span></li>)}</ul>
-        <p class="note">We list only employers whose career sites publish jobs for computers to read and allow it: their robots.txt permits it and their terms don't forbid it. That leaves out Indeed, LinkedIn, Craigslist and most chain stores, and DC government jobs, which have no feed. We keep each job's title, place, date and link, never the description, and drop student-only postings.</p>
-        <p class="note">Hiring in {n.name}? If your jobs are on Greenhouse, Lever or Workday, <a href={`/${n.slug}/about/#corrections`}>tell us</a> and we'll add you. It's free.</p>
-      </section>
-    </div>
-  </>)}
-</Hood>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8" /><meta http-equiv="refresh" content={`0; url=${to}`} /><link rel="canonical" href={to} /><meta name="robots" content="noindex" /><title>{n.name}</title></head>
+<body><p><a href={to}>{n.name}</a></p></body></html>

@@ -27,6 +27,8 @@ const pages = [];
     else if (f === "index.html") pages.push("/" + p.slice(dist.length + 1).replace(/\\/g, "/").replace(/index\.html$/, ""));
   }
 })(dist);
+// /then/ and /jobs/ only forward to another page, so there's nothing to measure.
+for (let i = pages.length - 1; i >= 0; i--) if (/\/(then|jobs)\/$/.test(pages[i])) pages.splice(i, 1);
 // ~2,600 block pages share one template: by default measure the 3 longest-named per neighborhood (--all for every one).
 if (!process.argv.includes("--all")) {
   const blocks = pages.filter((p) => /\/blocks\/[^/]+\/$/.test(p));

@@ -39,6 +39,6 @@ const hasNewConstruction = projects.some((p) => p.group === "New construction");
   )}
   <div class="pfoot">
     <span><b class="num" style="color:var(--ink)">{projects.length}</b> of {total} permits · {newCount} new this week{hasNewConstruction ? "" : " · no new construction"}</span>
-    <a href={`/${slug}/permits.xml`}>Permits RSS</a>
+    <a href="/permits.xml">Permits RSS</a>
   </div>
 </section>

@@ -102,15 +102,6 @@ export interface Events {
   anc_meetings?: { anc: string; date: string; special: boolean; title: string; url: string }[];
 }
 
-export interface Job { title: string; employer: string; place: string; where: "in" | "nearby"; note: string | null; posted: string | null; hours: string | null; url: string }
-export interface Jobs {
-  generated_at: string;
-  max_age_days: number;
-  sources: Source[];
-  employers: { name: string; url: string; state: string; count: number }[];
-  jobs: Job[];
-}
-
 export interface Block {
   key: string; hundred: number; street: string; name: string; from: string; to: string;
   lat: number; lon: number; major: boolean;
@@ -165,7 +156,6 @@ export interface Neighborhood {
   history?: History;
   news?: News;
   events?: Events;
-  jobs?: Jobs;
   blocks?: Blocks;
   transit?: Transit;
 }
@@ -194,14 +184,15 @@ export const PAGES = [
   { path: "projects/", label: "Projects" },
   { path: "homes/", label: "Homes" },
   { path: "streets/", label: "Streets" },
-  { path: "then/", label: "Then" },
-  { path: "jobs/", label: "Jobs" },
+  { path: "history/", label: "History" },
   { path: "representatives/", label: "Representatives" },
   { path: "subscribe/", label: "Weekly email" },
   { path: "about/", label: "About the data" },
 ] as const;
 
-export const pageUrl = (slug: string, path = "") => `/${slug}/${path}`;
+// Links are root-relative: on petworth.org the Worker maps "/news/" onto the build's /petworth/news/ folder, so pages
+// never show the neighborhood prefix. The slug argument stays so call sites read naturally.
+export const pageUrl = (_slug: string, path = "") => `/${path}`;
 
 export function staticPaths() {
   return neighborhoods.map((n) => ({ params: { slug: n.slug }, props: { n } }));

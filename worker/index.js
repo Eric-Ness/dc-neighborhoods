@@ -33,7 +33,11 @@ export default {
 
     const slug = HOSTS.get(host);
     const isShared = url.pathname.startsWith("/_astro/") || url.pathname.startsWith("/favicon");
-    if (slug && !isShared && !url.pathname.startsWith(`/${slug}/`)) {
+    // Old or hand-typed prefixed links (petworth.org/petworth/news/) go to the clean address.
+    if (slug && (url.pathname === `/${slug}` || url.pathname.startsWith(`/${slug}/`))) {
+      return Response.redirect(`https://${host}${url.pathname.slice(slug.length + 1) || "/"}${url.search}`, 301);
+    }
+    if (slug && !isShared) {
       url.pathname = `/${slug}${url.pathname === "/" ? "/" : url.pathname}`;
       return env.ASSETS.fetch(new Request(url, request));
     }

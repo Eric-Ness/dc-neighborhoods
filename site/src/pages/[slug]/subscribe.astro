@@ -26,7 +26,7 @@ const items: { name: string; what: string; now: string; href: string }[] = [
 if (h) items.push({ name: "Homes", what: "Median house and condo prices and the newest sales.", now: `Median ${h.primary === "all" ? "home" : h.primary ?? "house"} price ${money(h[h.primary ?? "house"].median_12mo)} over 12 months; ${h.last_60d.count} sales in the last 60 days.`, href: u("homes/") });
 if (st) items.push({ name: "Streets", what: "Curb permits starting this week, street trees and how fast 311 closes requests.", now: `${st.curb.starting_next_7d} curb permits starting in the next 7 days.`, href: u("streets/") });
 items.push({ name: "Top 311 requests", what: "The request types residents filed most, ranked, with the change.", now: n.requests.by_type[0] ? `Most filed: ${shortType(n.requests.by_type[0].type)} (${fmt(n.requests.by_type[0].count)}).` : `${fmt(n.requests.total)} requests in total.`, href: u("streets/#requests") });
-if (hi) items.push({ name: "Then", what: "A block's building story and a newspaper reading from 100 years ago that week.", now: hi.buildings.featured_block ? `${hi.buildings.featured_block.year}: ${hi.buildings.featured_block.block}.` : hi.archive.week_label, href: u("then/") });
+if (hi) items.push({ name: "History", what: "A block's building story and a newspaper reading from 100 years ago that week.", now: hi.buildings.featured_block ? `${hi.buildings.featured_block.year}: ${hi.buildings.featured_block.block}.` : hi.archive.week_label, href: u("then/") });
 items.push({ name: "Who represents you", what: "Your ANC commissioners and links to their meetings.", now: `${n.smds.length} commissioners across ${ancs} ANC${ancs === 1 ? "" : "s"}.`, href: u("representatives/") });
 const rss = pageUrl(n.slug, "permits.xml");
 ---

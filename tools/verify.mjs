@@ -127,11 +127,11 @@ const checks = {
       assert(seen.at(-1) === `/${h.slug}/`, `${host}/ served ${seen.at(-1)} instead of /${h.slug}/`);
       await worker.fetch(new Request(`https://${host}/permits.xml`), env);
       assert(seen.at(-1) === `/${h.slug}/permits.xml`, `${host}/permits.xml served ${seen.at(-1)}`);
-      for (const sub of ["projects/", "homes/", "streets/", "then/", "representatives/", "subscribe/", "about/", "search.json"]) {
+      for (const sub of ["projects/", "homes/", "streets/", "history/", "representatives/", "subscribe/", "about/", "search.json"]) {
         await worker.fetch(new Request(`https://${host}/${sub}`), env);
         assert(seen.at(-1) === `/${h.slug}/${sub}`, `${host}/${sub} served ${seen.at(-1)}`);
-        await worker.fetch(new Request(`https://${host}/${h.slug}/${sub}`), env);
-        assert(seen.at(-1) === `/${h.slug}/${sub}`, `${host}/${h.slug}/${sub} (prefixed link) served ${seen.at(-1)}`);
+        const old = await worker.fetch(new Request(`https://${host}/${h.slug}/${sub}`), env);
+        assert(old.status === 301 && old.headers.get("location") === `https://${host}/${sub}`, `${host}/${h.slug}/${sub} (old prefixed link) did not 301 to /${sub}`);
       }
       await worker.fetch(new Request(`https://${host}/_astro/x.css`), env);
       assert(seen.at(-1) === "/_astro/x.css", `${host} rewrote a shared asset path`);
@@ -212,7 +212,7 @@ checks.ideademos = () => {
 };
 
 // ---------- phase 3: filled-out C5 site ----------
-const SITE_PAGES = ["", "news/", "projects/", "homes/", "streets/", "then/", "jobs/", "representatives/", "subscribe/", "about/"];
+const SITE_PAGES = ["", "news/", "projects/", "homes/", "streets/", "history/", "representatives/", "subscribe/", "about/"];
 const hoods = () => JSON.parse(read("site/src/data/index.json"));
 
 checks.datafull = () => {
@@ -255,10 +255,12 @@ checks.sitefull = () => {
       // "approx. 5,901 sf".)
       assert(!/LAYOUT C\d|lorem|\{\{/i.test(visible), `${tag}: mockup leftover in page`);
       assert(!/\bNaN\b|\bundefined\b/.test(visible), `${tag}: NaN or undefined rendered in page`);
-      for (const q of SITE_PAGES) assert(html.includes(`href="/${h.slug}/${q}"`), `${tag}: nav link to /${h.slug}/${q} missing`);
-      // every internal link on the page resolves to a built file (anchors ignored)
+      for (const q of SITE_PAGES) assert(html.includes(`href="/${q}"`), `${tag}: nav link to /${q} missing`);
+      // every internal link on the page resolves to a built file (anchors ignored). Links are root-relative on the
+      // neighborhood's own domain, which the Worker maps onto site/dist/<slug>/ (shared /_astro/ assets stay at the root).
       for (const m of html.matchAll(/href="(\/[^"#?]*)/g)) {
-        const target = m[1].endsWith("/") ? `${m[1]}index.html` : m[1];
+        const path = m[1].startsWith("/_astro/") ? m[1] : `/${h.slug}${m[1]}`;
+        const target = path.endsWith("/") ? `${path}index.html` : path;
         assert(existsSync(join(root, "site/dist", target)), `${tag}: broken internal link ${m[1]}`);
       }
     }
@@ -395,7 +397,7 @@ checks.sitenews = () => {
     for (const it of (d.news?.items ?? []).slice(0, 6)) assert(home.includes(`href="${unamp(it.url)}"`), `${h.slug}/: top headline missing ${it.url}`);
     const iN = home.indexOf('id="news"'), iE = home.indexOf('id="events"'), iC = home.indexOf('id="numbers"');
     assert(iN > 0 && iE > iN && iC > iE, `${h.slug}/: news & events are not above today's condition`);
-    assert(home.includes('href="/' + h.slug + '/news/"'), `${h.slug}/: no link to the news page`);
+    assert(home.includes('href="/news/"'), `${h.slug}/: no link to the news page`);
     // Every headline link opens the outlet (external), never a copy on our site.
     for (const m of page.matchAll(/<ol class="hl">([\s\S]*?)<\/ol>/g))
       for (const a of m[1].matchAll(/<a href="([^"]+)"/g)) assert(/^https?:\/\//.test(a[1]), `${h.slug}/news: headline link ${a[1]} is not external`);
@@ -421,7 +423,7 @@ checks.curated = () => {
       assert(/^https:\/\//.test(v.url) && v.title && v.archive, `${h.slug}: voice item incomplete ${v.title}`);
       assert(words(v.summary) <= 70, `${h.slug}: voice summary over 70 words ${v.title}`);
     }
-    const page = read(`site/dist/${h.slug}/then/index.html`);
+    const page = read(`site/dist/${h.slug}/history/index.html`);
     for (const e of s?.entries ?? []) for (const x of e.sources) assert(page.includes(`href="${x.url.replace(/&/g, "&amp;")}"`), `${h.slug}/then: source link missing for ${e.name}`);
     for (const v of vo.neighborhoods?.[h.slug] ?? []) assert(page.includes(`href="${v.url.replace(/&/g, "&amp;")}"`), `${h.slug}/then: voice link missing ${v.title}`);
   }
@@ -452,7 +454,6 @@ checks.decoder = () => {
   }
 };
 
-// ---- jobs: title/employer/place/date/link only, every job on the page, links go to the employer ----
 const JOB_KEYS = "employer,hours,note,place,posted,title,url,where";
 const jobProblems = (j) => {
   const p = [];
@@ -460,24 +461,6 @@ const jobProblems = (j) => {
   if (!/^https:\/\//.test(j.url ?? "")) p.push("url");
   if (!["in", "nearby"].includes(j.where)) p.push("where");
   return p;
-};
-checks.jobs = () => {
-  const good = { title: "t", employer: "e", place: "p", where: "in", note: null, posted: null, hours: null, url: "https://x.test/j" };
-  assert(jobProblems(good).length === 0, "control: valid job rejected");
-  assert(jobProblems({ ...good, description: "copied" }).length > 0, "control: job with a description accepted");
-  for (const h of hoods()) {
-    const d = JSON.parse(read(`site/src/data/${h.slug}.json`));
-    const jb = d.jobs;
-    assert(jb, `${h.slug}: jobs section missing (${JSON.stringify(d.module_errors ?? {})})`);
-    if (!jb) continue;
-    assert(jb.employers.some((e) => e.state === "ok"), `${h.slug}: no employer feed read`);
-    const page = read(`site/dist/${h.slug}/jobs/index.html`);
-    for (const j of jb.jobs) {
-      const p = jobProblems(j);
-      assert(!p.length, `${h.slug}: job ${j.url}: ${p.join(", ")}`);
-      assert(page.includes(`href="${j.url.replace(/&/g, "&amp;")}"`), `${h.slug}/jobs: missing ${j.title}`);
-    }
-  }
 };
 
 const name = process.argv[2];

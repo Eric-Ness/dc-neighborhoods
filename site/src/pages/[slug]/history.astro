@@ -1,0 +1,160 @@
+---
+import Hood from "../../layouts/Hood.astro";
+import StreetNames from "../../components/StreetNames.astro";
+import Voices from "../../components/Voices.astro";
+import Photos from "../../components/Photos.astro";
+import { staticPaths, pageUrl, type Neighborhood } from "../../lib/data";
+import { bar, fmt, money, shortDate } from "../../lib/c5";
+
+export const getStaticPaths = staticPaths;
+const { n } = Astro.props as { n: Neighborhood };
+const u = (p: string) => pageUrl(n.slug, p);
+const hi = n.history;
+const b = hi?.buildings;
+const fb = b?.featured_block ?? null;
+const ar = hi?.archive;
+
+const decades = b?.by_decade ?? [];
+const maxDec = Math.max(...decades.map((d) => d.count), 1);
+const peak = decades.reduce<{ decade: number; count: number } | null>((p, d) => (!p || d.count > p.count ? d : p), null);
+const maxArch = Math.max(...(b?.top_architects ?? []).map((a) => a.count), 1);
+const maxBld = Math.max(...(b?.top_builders ?? []).map((a) => a.count), 1);
+const maxFbArch = Math.max(...(fb?.architects ?? []).map((a) => a.count), 1);
+const clipDate = (d: string) => new Date(d + "T12:00:00Z").toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
+---
+<Hood n={n} page="history/" title={`${n.name} history: how it was built and what the papers said`} description={`When ${n.name}'s buildings went up, who designed and built them, and what the Evening Star printed about ${n.name} 100 years ago this week.`}
+  heading="History" intro={`How ${n.name} was built, from DC's historic building permits, and what the newspaper said about it a hundred years ago this week.`}>
+
+  {!hi ? (
+    <div class="row one"><section class="panel"><div class="ph"><h2>History</h2></div><p class="note">History data didn't update tonight. It will return after the next nightly run.</p></section></div>
+  ) : (<>
+    <div class="row">
+      <section id="buildings" class="panel" aria-labelledby="bd-h">
+        <div class="ph"><h2 id="bd-h">When it was built</h2><span class="sub">Buildings by decade of permit</span></div>
+        <div class="hero"><b class="num">{fmt(b!.records)}</b><span>historic building permit records, {b!.year_min} to {b!.year_max}</span></div>
+        <div class="vbars then-vb" role="img" aria-label={`Buildings by decade: ${decades.map((d) => `${d.decade}s ${fmt(d.count)}`).join("; ")}`}>
+          {decades.map((d) => (
+            <div title={`${d.decade}s: ${fmt(d.count)} buildings`}>
+              <i class={peak && d.decade === peak.decade ? "then-peak" : ""} style={`height:calc((100% - 44px) * ${(d.count / maxDec).toFixed(3)})`}></i>
+              <span class="then-dl">{d.decade}s</span>
+            </div>
+          ))}
+        </div>
+        <details class="then-det">
+          <summary>Counts by decade</summary>
+          <div class="dtable-wrap"><table class="dtable">
+            <thead><tr><th>Decade</th><th class="r">Buildings</th></tr></thead>
+            <tbody>{decades.map((d) => <tr><td>{d.decade}s</td><td class="r num">{fmt(d.count)}</td></tr>)}</tbody>
+          </table></div>
+        </details>
+      </section>
+      <section class="panel" aria-labelledby="pk-h">
+        <div class="ph"><h2 id="pk-h">At a glance</h2></div>
+        <div class="stats s3">
+          <div><div class="v">{fmt(b!.records)}</div><div class="k">building records</div></div>
+          <div><div class="v">{b!.year_min}–{b!.year_max}</div><div class="k">years covered</div></div>
+          {peak && <div><div class="v">{peak.decade}s</div><div class="k">busiest decade, {fmt(peak.count)} buildings</div></div>}
+        </div>
+        <p class="note">Each record is one building listed on a historic DC building permit; a single permit can cover many buildings. The busiest decade is highlighted in the chart.</p>
+      </section>
+    </div>
+
+    <div class="row even">
+      <section class="panel" aria-labelledby="ach-h">
+        <div class="ph"><h2 id="ach-h">Top architects</h2><span class="sub">Buildings designed</span></div>
+        <ul class="hbars">{b!.top_architects.map((a) => <li><span>{a.name}</span><Fragment set:html={bar(a.count, maxArch, "fill c-add")} /><b>{fmt(a.count)}</b></li>)}</ul>
+      </section>
+      <section class="panel" aria-labelledby="bl-h">
+        <div class="ph"><h2 id="bl-h">Top builders</h2><span class="sub">Buildings built</span></div>
+        <ul class="hbars">{b!.top_builders.map((a) => <li><span>{a.name}</span><Fragment set:html={bar(a.count, maxBld, "fill c-newc")} /><b>{fmt(a.count)}</b></li>)}</ul>
+      </section>
+    </div>
+
+    {fb && (
+      <div class="row one">
+        <section id="featured" class="panel" aria-labelledby="fb-h">
+          <div class="ph"><h2 id="fb-h">Featured block</h2><span class="sub">One builder, one year</span></div>
+          <div class="then-fb">
+            <div class="thencard">
+              <div class="th-k"><span class="th-yr">{fb.year}</span>{fb.block}</div>
+              <div class="th-big">{fb.buildings} buildings, one builder</div>
+              <p>{fb.sentence}</p>
+            </div>
+            <div>
+              <div class="stats then-st">
+                <div><div class="v">{fb.buildings}</div><div class="k">buildings</div></div>
+                <div><div class="v">{fb.permits}</div><div class="k">permits</div></div>
+                <div><div class="v">{fb.largest_permit.buildings}</div><div class="k">buildings on the largest permit</div></div>
+                <div><div class="v">{fb.largest_permit.cost != null ? money(fb.largest_permit.cost) : "—"}</div><div class="k">its estimated cost, in {fb.year} dollars</div></div>
+              </div>
+              <div class="then-sub">Builder</div>
+              <div class="then-bld">{fb.builder}</div>
+              {fb.architects.length > 0 && <>
+                <div class="then-sub">Architects</div>
+                <ul class="hbars">{fb.architects.map((a) => <li><span>{a.name}</span><Fragment set:html={bar(a.count, maxFbArch, "fill c-add")} /><b>{a.count}</b></li>)}</ul>
+              </>}
+            </div>
+          </div>
+        </section>
+      </div>
+    )}
+
+    <div class="row one">
+      <section id="archive" class="panel" aria-labelledby="ar-h">
+        <div class="ph"><h2 id="ar-h">100 years ago this week</h2><span class="sub">{ar!.week_label}</span></div>
+        <p class="then-lead">Mentions of {n.name} in the <i>{ar!.paper}</i>, {ar!.week_label}. Searched for {ar!.terms.join(", ")}.</p>
+        {ar!.clips.length === 0 ? <p class="note">No clips matched this week.</p> : (
+          <div class="then-clips">
+            {ar!.clips.map((c) => (
+              <article class="clip">
+                <div class="th-k"><span class="th-yr">{c.date.slice(0, 4)}</span>{clipDate(c.date)} · page {c.page} <span class="ocr">OCR</span></div>
+                <blockquote>“{c.text}”</blockquote>
+                <a class="then-go" href={c.url}>See page {c.page} at loc.gov ↗</a>
+              </article>
+            ))}
+          </div>
+        )}
+        <p class="note then-note">{ar!.note}</p>
+      </section>
+    </div>
+
+    <Photos slug={n.slug} name={n.name} />
+    <StreetNames slug={n.slug} name={n.name} />
+    <Voices slug={n.slug} name={n.name} />
+
+    <div class="row one">
+      <section class="panel" aria-labelledby="src-h">
+        <div class="ph"><h2 id="src-h">Sources</h2><a href={u("about/")}>All sources →</a></div>
+        <ul class="then-src">{hi.sources.map((s) => <li><a href={s.url}>{s.name}</a></li>)}</ul>
+        <p class="note">History data refreshed {shortDate(hi.generated_at)}.</p>
+      </section>
+    </div>
+  </>)}
+</Hood>
+
+<style is:global>
+  .then-vb{height:190px;gap:3px}
+  .then-vb i.then-peak{background:var(--c-newc)}
+  .then-vb span.then-dl{writing-mode:vertical-rl;transform:rotate(180deg);height:38px;text-align:left;font-size:10px}
+  .then-det{margin-top:12px;font-size:13.5px}
+  .then-det summary{cursor:pointer;color:var(--accent);font-weight:600;margin-bottom:8px}
+  .then-fb{display:grid;gap:14px}
+  .then-fb .thencard p{font-size:15px;line-height:1.5}
+  .then-st{grid-template-columns:1fr 1fr}
+  .then-sub{font:600 11px/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:14px 0 6px}
+  .then-bld{font-size:16px;font-weight:600}
+  .then-lead{margin:0 0 12px;color:var(--ink-2);font-size:14px}
+  .then-clips .clip{padding:14px 0}
+  .then-clips .clip:first-child{padding-top:4px}
+  .then-clips blockquote{overflow-wrap:anywhere}
+  .then-go{font-size:13px;font-weight:600;text-decoration:none}
+  .then-note{border-top:1px solid var(--line-2);padding-top:10px}
+  .then-src{margin:0;padding-left:18px;font-size:14px}
+  .then-src li{margin:4px 0;overflow-wrap:anywhere}
+  @media (min-width:720px){
+    .then-fb{grid-template-columns:1.1fr 1fr;align-items:start}
+    .then-st{grid-template-columns:1fr 1fr}
+    .then-clips{display:grid;grid-template-columns:1fr 1fr;column-gap:28px}
+    .then-clips .clip:nth-child(2){border-top:0;padding-top:4px}
+  }
+</style>

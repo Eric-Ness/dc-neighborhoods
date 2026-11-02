@@ -12,14 +12,13 @@ const days = n.windows.requests_days;
 const LABEL: Record<string, string> = { permits: "Building permits", requests: "311 requests", crime: "Crime counts", smds: "ANC districts" };
 const core = Object.entries(n.sources).filter(([k]) => k !== "license");
 const license = n.sources.license ?? "CC BY 4.0";
-type Sec = { key: "homes" | "streets" | "history" | "news" | "events" | "jobs"; label: string; page: string };
+type Sec = { key: "homes" | "streets" | "history" | "news" | "events"; label: string; page: string };
 const SECS: Sec[] = [
   { key: "news", label: "News", page: "news/" },
   { key: "events", label: "Events", page: "news/#events" },
-  { key: "jobs", label: "Jobs", page: "jobs/" },
   { key: "homes", label: "Homes", page: "homes/" },
   { key: "streets", label: "Streets", page: "streets/" },
-  { key: "history", label: "Then", page: "then/" },
+  { key: "history", label: "History", page: "history/" },
 ];
 const present = SECS.filter((s) => n[s.key]).map((s) => ({ ...s, sources: (n[s.key] as { sources: Source[] }).sources, at: (n[s.key] as { generated_at: string }).generated_at }));
 const missing = SECS.filter((s) => !n[s.key]);

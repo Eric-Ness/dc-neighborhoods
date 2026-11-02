@@ -19,7 +19,7 @@ const home = pageUrl(n.slug);
 const host = sites.find((s) => s.slug === n.slug)?.hosts[0] ?? `${n.slug}.org`;
 const front = page === "";
 ---
-<Base title={title} description={description} rss={`/${n.slug}/permits.xml`} generated={n.generated_at} slug={n.slug}>
+<Base title={title} description={description} rss="/permits.xml" generated={n.generated_at} slug={n.slug}>
   <a class="skip" href="#main">Skip to the content</a>
   <div class="topline"><div class="wrap">
     <span><b>{host}</b> &nbsp;An independent neighborhood site</span>
@@ -63,7 +63,7 @@ const front = page === "";
   </main>
 
   <div slot="footer">
-    <p>{n.name} boundary: {n.boundary.source}. <a href={pageUrl(n.slug, "about/")}>About the data, sources and privacy</a> · <a href={`/${n.slug}/permits.xml`}>Permits RSS</a></p>
+    <p>{n.name} boundary: {n.boundary.source}. <a href={pageUrl(n.slug, "about/")}>About the data, sources and privacy</a> · <a href="/permits.xml">Permits RSS</a></p>
   </div>
 
   <script>
@@ -75,7 +75,7 @@ const front = page === "";
       type Hit = { a: string; k: string; d: string; u: string };
       let index: Hit[] | null = null;
       const load = async () => {
-        if (!index) index = await fetch(`/${box.dataset.slug}/search.json`).then((r) => r.json()).catch(() => []);
+        if (!index) index = await fetch("/search.json").then((r) => r.json()).catch(() => []);
         return index!;
       };
       const norm = (s: string) => s.toUpperCase().replace(/\b(STREET|ST)\b/g, "ST").replace(/\b(AVENUE|AVE)\b/g, "AVE").replace(/\b(PLACE|PL)\b/g, "PL").replace(/\b(ROAD|RD)\b/g, "RD").replace(/[^A-Z0-9 ]/g, "").replace(/\s+/g, " ").trim();
