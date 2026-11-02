@@ -1,7 +1,7 @@
 {
  "slug": "palisades",
  "name": "Palisades",
- "generated_at": "2026-11-02T03:04:49Z",
+ "generated_at": "2026-11-02T09:22:49Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods: Kent/Palisades (Open Data DC). It includes Kent and the C&O Canal parkland along the river.",
   "rings": [
@@ -9042,6 +9042,19 @@
    "smd": "3D01"
   },
   {
+   "id": "P2700767",
+   "issued": "2026-10-26T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "2908 UNIVERSITY TER NW 20016",
+   "work": "",
+   "zoning": "R-1A/CBUT",
+   "lat": 38.92821,
+   "lon": -77.09823,
+   "smd": "3D04"
+  },
+  {
    "id": "F2700051",
    "issued": "2026-10-26T04:00:00Z",
    "group": "Renovation & repair",
@@ -9118,19 +9131,6 @@
    "lat": 38.92385,
    "lon": -77.09798,
    "smd": "3D01"
-  },
-  {
-   "id": "P2700767",
-   "issued": "2026-10-26T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "2908 UNIVERSITY TER NW 20016",
-   "work": "",
-   "zoning": "R-1A/CBUT",
-   "lat": 38.92821,
-   "lon": -77.09823,
-   "smd": "3D04"
   },
   {
    "id": "P2700738",
@@ -9276,6 +9276,19 @@
    "smd": "3D02"
   },
   {
+   "id": "E2700761",
+   "issued": "2026-10-22T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "5032 MASSACHUSETTS AVE NW 20016",
+   "work": "Electrical Trade Permit",
+   "zoning": "R-1B",
+   "lat": 38.94755,
+   "lon": -77.09965,
+   "smd": "3D03"
+  },
+  {
    "id": "M2700273",
    "issued": "2026-10-22T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -9313,19 +9326,6 @@
    "lat": 38.91609,
    "lon": -77.09698,
    "smd": "3D05"
-  },
-  {
-   "id": "E2700761",
-   "issued": "2026-10-22T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "5032 MASSACHUSETTS AVE NW 20016",
-   "work": "Electrical Trade Permit",
-   "zoning": "R-1B",
-   "lat": 38.94755,
-   "lon": -77.09965,
-   "smd": "3D03"
   },
   {
    "id": "P2700638",
@@ -10395,38 +10395,38 @@
   }
  ],
  "requests": {
-  "total": 1277,
-  "previous_total": 1386,
+  "total": 1280,
+  "previous_total": 1378,
   "by_type": [
    {
     "type": "Bulk Collection",
     "count": 255,
-    "previous": 243
+    "previous": 246
    },
    {
     "type": "Scheduled Yard Waste",
     "count": 194,
-    "previous": 196
+    "previous": 195
    },
    {
     "type": "Parking Enforcement",
-    "count": 76,
+    "count": 78,
     "previous": 87
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 66,
+    "count": 69,
     "previous": 20
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 65,
+    "count": 62,
     "previous": 68
    },
    {
     "type": "Trash Collection - Missed",
     "count": 61,
-    "previous": 65
+    "previous": 61
    },
    {
     "type": "Roadway Signs",
@@ -10436,7 +10436,7 @@
    {
     "type": "Tree Inspection",
     "count": 41,
-    "previous": 73
+    "previous": 69
    },
    {
     "type": "Container Removal",
@@ -10445,18 +10445,18 @@
    },
    {
     "type": "Residential Parking Permit Violation",
-    "count": 34,
-    "previous": 53
+    "count": 33,
+    "previous": 51
    },
    {
     "type": "Supercan - Delivery",
     "count": 28,
-    "previous": 46
+    "previous": 45
    },
    {
     "type": "Recycling Collection - Missed",
-    "count": 28,
-    "previous": 30
+    "count": 27,
+    "previous": 29
    },
    {
     "type": "Traffic Safety Input",
@@ -10481,7 +10481,7 @@
    {
     "type": "Public Space Inspection",
     "count": 14,
-    "previous": 12
+    "previous": 13
    },
    {
     "type": "Trash Cart - Delivery",
@@ -10494,14 +10494,14 @@
     "previous": 26
    },
    {
+    "type": "Recycling Cart Delivery",
+    "count": 13,
+    "previous": 13
+   },
+   {
     "type": "Tree Pruning",
     "count": 13,
     "previous": 11
-   },
-   {
-    "type": "Recycling Cart Delivery",
-    "count": 12,
-    "previous": 13
    },
    {
     "type": "Graffiti Removal",
@@ -10559,6 +10559,11 @@
     "previous": 0
    },
    {
+    "type": "Tree Removal",
+    "count": 6,
+    "previous": 18
+   },
+   {
     "type": "DC Health Rodent & Vector Control",
     "count": 6,
     "previous": 8
@@ -10567,11 +10572,6 @@
     "type": "DOB - Illegal Construction",
     "count": 6,
     "previous": 2
-   },
-   {
-    "type": "Tree Removal",
-    "count": 5,
-    "previous": 18
    },
    {
     "type": "Supercan - Repair",
@@ -10586,7 +10586,7 @@
    {
     "type": "Dead Animal Collection",
     "count": 5,
-    "previous": 6
+    "previous": 7
    },
    {
     "type": "DOEE - LIHEAP",
@@ -10601,7 +10601,7 @@
    {
     "type": "OCTFME - Down Cable Wires",
     "count": 4,
-    "previous": 14
+    "previous": 15
    },
    {
     "type": "DMV - Online Processing Issues",
@@ -10626,7 +10626,7 @@
    {
     "type": "Streetlight Repair Investigation",
     "count": 3,
-    "previous": 9
+    "previous": 8
    },
    {
     "type": "Roadway Markings / Pylons",
@@ -10689,6 +10689,11 @@
     "previous": 0
    },
    {
+    "type": "DOEE - General Air Quality Concerns",
+    "count": 2,
+    "previous": 0
+   },
+   {
     "type": "Grass and Weeds Mowing",
     "count": 1,
     "previous": 12
@@ -10709,11 +10714,6 @@
     "previous": 0
    },
    {
-    "type": "DOEE - General Air Quality Concerns",
-    "count": 1,
-    "previous": 0
-   },
-   {
     "type": "Abandoned Bicycle",
     "count": 1,
     "previous": 0
@@ -10729,8 +10729,18 @@
     "previous": 1
    }
   ],
-  "open": 326,
+  "open": 327,
   "recent": [
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T04:04:25Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "5000 block of GLENBROOK TERRACE NW",
+    "lat": 38.935,
+    "lon": -77.103
+   },
    {
     "type": "Bulk Collection",
     "agency": "DPW",
@@ -11220,22 +11230,12 @@
     "block": "5100 block of FULTON STREET NW",
     "lat": 38.927,
     "lon": -77.102
-   },
-   {
-    "type": "Trash Cart Repair",
-    "agency": "DPW",
-    "added": "2026-10-30T15:30:48Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1500 block of 44TH STREET NW",
-    "lat": 38.91,
-    "lon": -77.081
    }
   ]
  },
  "crime": {
   "total": 17,
-  "previous_total": 7,
+  "previous_total": 6,
   "by_offense": [
    {
     "offense": "THEFT F/AUTO",
@@ -11246,11 +11246,6 @@
     "offense": "THEFT/OTHER",
     "count": 7,
     "previous": 4
-   },
-   {
-    "offense": "ASSAULT W/DANGEROUS WEAPON",
-    "count": 0,
-    "previous": 1
    },
    {
     "offense": "ROBBERY",
@@ -11330,7 +11325,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -11631,7 +11626,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -11651,19 +11646,19 @@
    }
   ],
   "curb": {
-   "active_this_week": 138,
-   "starting_next_7d": 35,
-   "reserved_ft": 15906,
-   "long_running_90d": 56,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
+   "active_this_week": 135,
+   "starting_next_7d": 27,
+   "reserved_ft": 15708,
+   "long_running_90d": 55,
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 3
+     "count": 2
     },
     {
      "type": "Dumpsters",
-     "count": 13
+     "count": 12
     },
     {
      "type": "Construction staging",
@@ -11675,7 +11670,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 27
+     "count": 26
     },
     {
      "type": "Events & reserved parking",
@@ -11683,70 +11678,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Construction staging",
-     "block": "5000 block of Massachusetts Avenue NW",
-     "start": "2026-11-02",
-     "end": "2026-11-30",
-     "ft": 0,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "4700 block of Tilden Street NW",
-     "start": "2026-11-02",
-     "end": "2026-12-01",
-     "ft": 264,
-     "hours": "7 am\u20137 pm"
-    },
-    {
-     "type": "Moving & storage",
-     "block": "4400 block of Reservoir Road NW",
-     "start": "2026-11-02",
-     "end": "2026-11-02",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "5400 block of Carolina Place NW",
-     "start": "2026-11-02",
-     "end": "2026-11-03",
-     "ft": 66,
-     "hours": "7:30 am\u20133 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "4500 block of W Street NW",
-     "start": "2026-11-02",
-     "end": "2026-11-03",
-     "ft": 66,
-     "hours": "7:30 am\u20133 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "2200 block of 46th Street NW",
-     "start": "2026-11-02",
-     "end": "2026-11-03",
-     "ft": 88,
-     "hours": "7:30 am\u20133 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "5100 block of Macomb Street NW",
-     "start": "2026-11-02",
-     "end": "2026-11-03",
-     "ft": 264,
-     "hours": "7:30 am\u20133 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "5400 block of Macomb Street NW",
-     "start": "2026-11-02",
-     "end": "2026-11-04",
-     "ft": 110,
-     "hours": "7:30 am\u20133 pm"
-    },
     {
      "type": "Construction staging",
      "block": "4700 block of Sedgwick Street NW",
@@ -12047,13 +11978,13 @@
     "type": "Bulk Collection",
     "median_days": 7.65,
     "city_median_days": 6.92,
-    "closed_n": 1728
+    "closed_n": 1727
    },
    {
     "type": "Scheduled Yard Waste",
-    "median_days": 7.53,
+    "median_days": 7.52,
     "city_median_days": 9.81,
-    "closed_n": 1094
+    "closed_n": 1093
    },
    {
     "type": "Trash Collection - Missed",
@@ -12095,7 +12026,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -12248,7 +12179,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "archive_days": 180,
   "sources": [
    {
@@ -12540,8 +12471,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T03:04:49Z",
-  "today": "2026-11-01",
+  "generated_at": "2026-11-02T09:22:49Z",
+  "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
    {
@@ -12575,15 +12506,6 @@
    }
   ],
   "events": [
-   {
-    "title": "Palisades Farmer\u2019s Market",
-    "date": "2026-11-01",
-    "time": "9 AM to 1 PM",
-    "place": null,
-    "url": "https://palisadesdc.org/event/palisades-farmers-market/2026-11-01/",
-    "source": "Palisades Citizens' Association",
-    "kind": "community"
-   },
    {
     "title": "Palisades Farmer\u2019s Market",
     "date": "2026-11-08",
@@ -12657,7 +12579,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -49963,7 +49885,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

@@ -1,7 +1,7 @@
 {
  "slug": "chinatown",
  "name": "Chinatown",
- "generated_at": "2026-11-02T03:04:49Z",
+ "generated_at": "2026-11-02T09:22:49Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -3156,19 +3156,6 @@
    "smd": "6E02"
   },
   {
-   "id": "P2700331",
-   "issued": "2026-10-13T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "25 E ST NW 20001",
-   "work": "",
-   "zoning": "D-3",
-   "lat": 38.89636,
-   "lon": -77.01027,
-   "smd": "6E07"
-  },
-  {
    "id": "E2700426",
    "issued": "2026-10-13T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -3297,6 +3284,19 @@
    "lat": 38.89505,
    "lon": -77.02651,
    "smd": "2C03"
+  },
+  {
+   "id": "P2700331",
+   "issued": "2026-10-13T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "25 E ST NW 20001",
+   "work": "",
+   "zoning": "D-3",
+   "lat": 38.89636,
+   "lon": -77.01027,
+   "smd": "6E07"
   },
   {
    "id": "P2700309",
@@ -4209,6 +4209,19 @@
    "smd": "2C02"
   },
   {
+   "id": "P2700120",
+   "issued": "2026-10-05T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "1012 14TH ST NW 20005",
+   "work": "",
+   "zoning": "D-6",
+   "lat": 38.9032,
+   "lon": -77.03239,
+   "smd": "2C02"
+  },
+  {
    "id": "P2700108",
    "issued": "2026-10-05T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -4246,19 +4259,6 @@
    "lat": 38.89282,
    "lon": -77.01307,
    "smd": "6E08"
-  },
-  {
-   "id": "P2700120",
-   "issued": "2026-10-05T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "1012 14TH ST NW 20005",
-   "work": "",
-   "zoning": "D-6",
-   "lat": 38.9032,
-   "lon": -77.03239,
-   "smd": "2C02"
   },
   {
    "id": "P2700093",
@@ -4340,83 +4340,83 @@
   }
  ],
  "requests": {
-  "total": 1777,
-  "previous_total": 1592,
+  "total": 1787,
+  "previous_total": 1559,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 470,
-    "previous": 402
+    "count": 465,
+    "previous": 394
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 405,
+    "count": 410,
     "previous": 136
    },
    {
     "type": "Sidewalk Repair",
-    "count": 126,
-    "previous": 77
+    "count": 136,
+    "previous": 72
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 88,
-    "previous": 153
+    "count": 87,
+    "previous": 147
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 67,
-    "previous": 23
+    "count": 65,
+    "previous": 21
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 44,
-    "previous": 39
+    "count": 47,
+    "previous": 38
    },
    {
     "type": "Bulk Collection",
-    "count": 44,
-    "previous": 56
+    "count": 41,
+    "previous": 54
    },
    {
     "type": "Graffiti Removal",
-    "count": 42,
+    "count": 41,
     "previous": 46
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 37,
+    "count": 36,
     "previous": 36
    },
    {
-    "type": "Roadway Signs",
-    "count": 37,
-    "previous": 47
+    "type": "DMV - Drivers License/ID Issues",
+    "count": 36,
+    "previous": 21
    },
    {
-    "type": "DMV - Drivers License/ID Issues",
-    "count": 37,
-    "previous": 20
+    "type": "Roadway Signs",
+    "count": 33,
+    "previous": 46
+   },
+   {
+    "type": "Parking Meter Repair",
+    "count": 25,
+    "previous": 19
    },
    {
     "type": "Tree Pruning",
     "count": 23,
-    "previous": 47
+    "previous": 48
    },
    {
     "type": "Roadway Markings / Pylons",
     "count": 22,
-    "previous": 7
-   },
-   {
-    "type": "Parking Meter Repair",
-    "count": 22,
-    "previous": 21
+    "previous": 8
    },
    {
     "type": "Tree Inspection",
-    "count": 21,
-    "previous": 41
+    "count": 22,
+    "previous": 38
    },
    {
     "type": "Pothole",
@@ -4424,24 +4424,19 @@
     "previous": 11
    },
    {
+    "type": "Illegal Dumping",
+    "count": 19,
+    "previous": 21
+   },
+   {
     "type": "Traffic Safety Input",
     "count": 17,
     "previous": 16
    },
    {
-    "type": "Illegal Dumping",
-    "count": 16,
-    "previous": 21
-   },
-   {
     "type": "Dead Animal Collection",
-    "count": 14,
-    "previous": 11
-   },
-   {
-    "type": "Public Space Inspection",
-    "count": 14,
-    "previous": 24
+    "count": 15,
+    "previous": 10
    },
    {
     "type": "Tree Planting",
@@ -4454,44 +4449,49 @@
     "previous": 10
    },
    {
-    "type": "DMV - Vehicle Registration Issues",
+    "type": "Public Space Inspection",
     "count": 13,
-    "previous": 12
+    "previous": 23
    },
    {
     "type": "Tree Removal",
     "count": 12,
-    "previous": 32
+    "previous": 31
+   },
+   {
+    "type": "Streetlight Repair Investigation",
+    "count": 12,
+    "previous": 28
+   },
+   {
+    "type": "DMV - Vehicle Registration Issues",
+    "count": 12,
+    "previous": 12
    },
    {
     "type": "Public Space Litter Can-Collection",
     "count": 11,
-    "previous": 12
-   },
-   {
-    "type": "Streetlight Repair Investigation",
-    "count": 11,
-    "previous": 28
+    "previous": 11
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
     "count": 11,
-    "previous": 5
+    "previous": 6
    },
    {
     "type": "Residential Parking Permit Violation",
     "count": 10,
-    "previous": 19
-   },
-   {
-    "type": "DC Government Information",
-    "count": 10,
-    "previous": 28
+    "previous": 18
    },
    {
     "type": "Scheduled Yard Waste",
     "count": 9,
     "previous": 12
+   },
+   {
+    "type": "DC Government Information",
+    "count": 9,
+    "previous": 25
    },
    {
     "type": "DOB - Vacant Private Property Inspection",
@@ -4506,7 +4506,12 @@
    {
     "type": "Illegal Poster",
     "count": 6,
-    "previous": 5
+    "previous": 6
+   },
+   {
+    "type": "DMV - Driver and Vehicle Services Refund",
+    "count": 5,
+    "previous": 0
    },
    {
     "type": "DOEE - Engine Idling Tips",
@@ -4514,19 +4519,9 @@
     "previous": 2
    },
    {
-    "type": "DMV - Driver and Vehicle Services Refund",
-    "count": 4,
-    "previous": 0
-   },
-   {
     "type": "DMV - Refunds - Tickets",
     "count": 4,
     "previous": 4
-   },
-   {
-    "type": "Trash Cart - Delivery",
-    "count": 4,
-    "previous": 9
    },
    {
     "type": "Abandoned Vehicle - On Private Property",
@@ -4536,7 +4531,7 @@
    {
     "type": "Abandoned Bicycle",
     "count": 4,
-    "previous": 9
+    "previous": 8
    },
    {
     "type": "DMV - Copy of Ticket",
@@ -4561,12 +4556,22 @@
    {
     "type": "DOB - Illegal Construction",
     "count": 3,
-    "previous": 4
+    "previous": 3
    },
    {
     "type": "Test",
     "count": 3,
     "previous": 3
+   },
+   {
+    "type": "Bus Stop Issues",
+    "count": 3,
+    "previous": 14
+   },
+   {
+    "type": "Trash Cart - Delivery",
+    "count": 3,
+    "previous": 8
    },
    {
     "type": "DOEE - General Air Quality Concerns",
@@ -4576,7 +4581,7 @@
    {
     "type": "DMV - Forms, Applications, and Manuals Request",
     "count": 2,
-    "previous": 2
+    "previous": 3
    },
    {
     "type": "Public Space Litter Can Repair",
@@ -4584,12 +4589,17 @@
     "previous": 0
    },
    {
-    "type": "Bus Stop Issues",
+    "type": "Vacant Lot - Public Property Only",
     "count": 2,
-    "previous": 11
+    "previous": 1
    },
    {
     "type": "DMV - Vehicle Title Issues",
+    "count": 2,
+    "previous": 0
+   },
+   {
+    "type": "DMV - Driver Record Issues",
     "count": 2,
     "previous": 0
    },
@@ -4631,22 +4641,12 @@
    {
     "type": "DMV - Online Processing Issues",
     "count": 2,
-    "previous": 4
-   },
-   {
-    "type": "Vacant Lot - Public Property Only",
-    "count": 1,
-    "previous": 1
-   },
-   {
-    "type": "DMV - Driver Record Issues",
-    "count": 1,
-    "previous": 0
+    "previous": 5
    },
    {
     "type": "DMV - Ticket Ombudsman",
-    "count": 1,
-    "previous": 2
+    "count": 2,
+    "previous": 1
    },
    {
     "type": "Container Removal",
@@ -4659,7 +4659,7 @@
     "previous": 1
    }
   ],
-  "open": 323,
+  "open": 321,
   "recent": [
    {
     "type": "Parking Enforcement",
@@ -5164,12 +5164,12 @@
   ]
  },
  "crime": {
-  "total": 132,
+  "total": 131,
   "previous_total": 148,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
-    "count": 93,
+    "count": 92,
     "previous": 99
    },
    {
@@ -5270,7 +5270,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -5655,7 +5655,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -5675,11 +5675,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 272,
-   "starting_next_7d": 47,
-   "reserved_ft": 21648,
+   "active_this_week": 271,
+   "starting_next_7d": 38,
+   "reserved_ft": 21582,
    "long_running_90d": 71,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -5703,7 +5703,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 18
+     "count": 17
     },
     {
      "type": "Events & reserved parking",
@@ -5711,78 +5711,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Events & reserved parking",
-     "block": "600 block of New York Avenue NW",
-     "start": "2026-11-02",
-     "end": "2026-11-03",
-     "ft": 0,
-     "hours": "9:30 am\u20134 pm"
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "900 block of F Street NW",
-     "start": "2026-11-02",
-     "end": "2026-11-06",
-     "ft": 0,
-     "hours": ""
-    },
-    {
-     "type": "Construction staging",
-     "block": "1300 block of 7th Street NW",
-     "start": "2026-11-02",
-     "end": "2026-11-30",
-     "ft": 110,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "600 block of M Street NW",
-     "start": "2026-11-02",
-     "end": "2026-11-30",
-     "ft": 66,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "500 block of 13th Street NW",
-     "start": "2026-11-02",
-     "end": "2026-12-18",
-     "ft": 154,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "600 block of 13th Street NW",
-     "start": "2026-11-02",
-     "end": "2026-12-18",
-     "ft": 154,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "500 block of 8th Street NW",
-     "start": "2026-11-02",
-     "end": "2026-12-01",
-     "ft": 220,
-     "hours": ""
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "700 block of F Street NW",
-     "start": "2026-11-02",
-     "end": "2026-12-01",
-     "ft": 220,
-     "hours": ""
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "800 block of F Street NW",
-     "start": "2026-11-02",
-     "end": "2026-12-01",
-     "ft": 220,
-     "hours": ""
-    },
     {
      "type": "Events & reserved parking",
      "block": "900 block of 15th Street NW",
@@ -6030,6 +5958,62 @@
      "end": "2026-11-07",
      "ft": 220,
      "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "300 block of Indiana Avenue NW",
+     "start": "2026-11-07",
+     "end": "2026-11-08",
+     "ft": 110,
+     "hours": "4 am\u201311 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "300 block of C Street NW",
+     "start": "2026-11-07",
+     "end": "2026-11-08",
+     "ft": 0,
+     "hours": "4 am\u201311 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "800 block of G Street NW",
+     "start": "2026-11-08",
+     "end": "2026-11-08",
+     "ft": 44,
+     "hours": "7 am\u201311:59 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "100 block of E Street NW",
+     "start": "2026-11-09",
+     "end": "2026-12-24",
+     "ft": 0,
+     "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "600 block of 7th Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 22,
+     "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "700 block of Allen L Yew Place NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 22,
+     "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "800 block of 15th Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 22,
+     "hours": "8 am\u20134:30 pm"
     }
    ]
   },
@@ -6163,7 +6147,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -6338,7 +6322,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "archive_days": 180,
   "sources": [
    {
@@ -7444,8 +7428,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T03:04:49Z",
-  "today": "2026-11-01",
+  "generated_at": "2026-11-02T09:22:49Z",
+  "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
    {
@@ -7638,7 +7622,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -35006,7 +34990,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

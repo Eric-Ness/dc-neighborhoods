@@ -1,7 +1,7 @@
 {
  "slug": "clevelandpark",
  "name": "Cleveland Park",
- "generated_at": "2026-11-02T03:04:49Z",
+ "generated_at": "2026-11-02T09:22:49Z",
  "boundary": {
   "source": "Cleveland Park Historic District (DC Historic Preservation Office, Open Data DC). DC has no planning area named Cleveland Park.",
   "rings": [
@@ -2805,19 +2805,6 @@
    "smd": "3C05"
   },
   {
-   "id": "E2700432",
-   "issued": "2026-10-14T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "3209 HIGHLAND PL NW 20008",
-   "work": "",
-   "zoning": "R-1B",
-   "lat": 38.93593,
-   "lon": -77.06405,
-   "smd": "3C05"
-  },
-  {
    "id": "B2700084",
    "issued": "2026-10-14T04:00:00Z",
    "group": "Renovation & repair",
@@ -2829,6 +2816,19 @@
    "lat": 38.93711,
    "lon": -77.06699,
    "smd": "3C08"
+  },
+  {
+   "id": "E2700432",
+   "issued": "2026-10-14T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "3209 HIGHLAND PL NW 20008",
+   "work": "",
+   "zoning": "R-1B",
+   "lat": 38.93593,
+   "lon": -77.06405,
+   "smd": "3C05"
   },
   {
    "id": "B2700075",
@@ -2937,7 +2937,7 @@
  ],
  "requests": {
   "total": 244,
-  "previous_total": 302,
+  "previous_total": 301,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
@@ -2952,7 +2952,7 @@
    {
     "type": "Parking Enforcement",
     "count": 24,
-    "previous": 42
+    "previous": 41
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -3702,7 +3702,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3952,7 +3952,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3972,15 +3972,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 49,
-   "starting_next_7d": 14,
-   "reserved_ft": 9174,
+   "active_this_week": 47,
+   "starting_next_7d": 8,
+   "reserved_ft": 8932,
    "long_running_90d": 9,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 2
+     "count": 1
     },
     {
      "type": "Construction staging",
@@ -3992,7 +3992,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 10
+     "count": 9
     },
     {
      "type": "Events & reserved parking",
@@ -4000,54 +4000,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Construction staging",
-     "block": "3300 block of 36th Street NW",
-     "start": "2026-11-02",
-     "end": "2027-04-30",
-     "ft": 0,
-     "hours": ""
-    },
-    {
-     "type": "Construction staging",
-     "block": "3500 block of Macomb Street NW",
-     "start": "2026-11-02",
-     "end": "2027-04-30",
-     "ft": 0,
-     "hours": ""
-    },
-    {
-     "type": "Construction staging",
-     "block": "3500 block of Rodman Street NW",
-     "start": "2026-11-02",
-     "end": "2026-12-01",
-     "ft": 440,
-     "hours": "7 am\u20137 pm"
-    },
-    {
-     "type": "Moving & storage",
-     "block": "3600 block of 35th Street NW",
-     "start": "2026-11-02",
-     "end": "2026-11-02",
-     "ft": 176,
-     "hours": ""
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "3000 block of Tilden Street NW",
-     "start": "2026-11-02",
-     "end": "2026-11-06",
-     "ft": 132,
-     "hours": "8 am\u20133 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "3500 block of Quebec Street NW",
-     "start": "2026-11-02",
-     "end": "2026-11-06",
-     "ft": 132,
-     "hours": "8 am\u20133 pm"
-    },
     {
      "type": "Moving & storage",
      "block": "3400 block of 33rd Place NW",
@@ -4244,7 +4196,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4399,7 +4351,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4804,8 +4756,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T03:04:49Z",
-  "today": "2026-11-01",
+  "generated_at": "2026-11-02T09:22:49Z",
+  "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
    {
@@ -4875,7 +4827,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -16212,7 +16164,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

@@ -1,7 +1,7 @@
 {
  "slug": "adamsmorgan",
  "name": "Adams Morgan",
- "generated_at": "2026-11-02T03:04:49Z",
+ "generated_at": "2026-11-02T09:22:49Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1834,23 +1834,23 @@
   }
  ],
  "requests": {
-  "total": 1139,
-  "previous_total": 1691,
+  "total": 1149,
+  "previous_total": 1678,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 270,
-    "previous": 275
+    "count": 273,
+    "previous": 273
    },
    {
     "type": "Bulk Collection",
     "count": 107,
-    "previous": 116
+    "previous": 115
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 92,
-    "previous": 150
+    "count": 94,
+    "previous": 148
    },
    {
     "type": "Illegal Dumping",
@@ -1859,13 +1859,13 @@
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 52,
-    "previous": 54
+    "count": 53,
+    "previous": 53
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 46,
-    "previous": 86
+    "count": 47,
+    "previous": 84
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -1875,16 +1875,16 @@
    {
     "type": "Out of State Parking Violation (ROSA)",
     "count": 37,
-    "previous": 64
+    "previous": 65
    },
    {
     "type": "Sanitation Enforcement",
     "count": 35,
-    "previous": 72
+    "previous": 71
    },
    {
     "type": "Roadway Signs",
-    "count": 28,
+    "count": 29,
     "previous": 24
    },
    {
@@ -1905,7 +1905,7 @@
    {
     "type": "Tree Planting",
     "count": 19,
-    "previous": 38
+    "previous": 37
    },
    {
     "type": "Trash Cart - Delivery",
@@ -1920,7 +1920,7 @@
    {
     "type": "Dead Animal Collection",
     "count": 15,
-    "previous": 29
+    "previous": 28
    },
    {
     "type": "Tree Inspection",
@@ -1938,6 +1938,11 @@
     "previous": 21
    },
    {
+    "type": "Public Space Inspection",
+    "count": 11,
+    "previous": 16
+   },
+   {
     "type": "DGS - Playground Repair",
     "count": 11,
     "previous": 3
@@ -1948,24 +1953,19 @@
     "previous": 8
    },
    {
-    "type": "Public Space Inspection",
-    "count": 10,
-    "previous": 16
-   },
-   {
     "type": "Abandoned Bicycle",
     "count": 10,
-    "previous": 8
+    "previous": 9
+   },
+   {
+    "type": "Recycling Collection - Missed",
+    "count": 9,
+    "previous": 31
    },
    {
     "type": "DMV - Vehicle Registration Issues",
     "count": 9,
     "previous": 21
-   },
-   {
-    "type": "Recycling Collection - Missed",
-    "count": 8,
-    "previous": 31
    },
    {
     "type": "Recycling Cart Delivery",
@@ -1988,14 +1988,9 @@
     "previous": 4
    },
    {
-    "type": "Rat Replacement Containers",
-    "count": 6,
-    "previous": 17
-   },
-   {
     "type": "DMV - Drivers License/ID Issues",
     "count": 6,
-    "previous": 23
+    "previous": 22
    },
    {
     "type": "Traffic Safety Input",
@@ -2018,6 +2013,11 @@
     "previous": 3
    },
    {
+    "type": "Rat Replacement Containers",
+    "count": 5,
+    "previous": 17
+   },
+   {
     "type": "DC Government Information",
     "count": 5,
     "previous": 0
@@ -2028,6 +2028,11 @@
     "previous": 2
    },
    {
+    "type": "Public Space Litter Can-Collection",
+    "count": 5,
+    "previous": 14
+   },
+   {
     "type": "OCTFME - Down Cable Wires",
     "count": 4,
     "previous": 8
@@ -2036,11 +2041,6 @@
     "type": "DC How Am I Driving?",
     "count": 4,
     "previous": 6
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "count": 4,
-    "previous": 14
    },
    {
     "type": "Tree Removal",
@@ -2085,7 +2085,7 @@
    {
     "type": "DOB - Illegal Construction",
     "count": 2,
-    "previous": 8
+    "previous": 7
    },
    {
     "type": "Public Space Litter Can Repair",
@@ -2153,8 +2153,28 @@
     "previous": 1
    }
   ],
-  "open": 243,
+  "open": 247,
   "recent": [
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-02T04:00:33Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1600 block of KALORAMA ROAD NW",
+    "lat": 38.921,
+    "lon": -77.039
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T03:43:19Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2100 block of CHAMPLAIN STREET NW",
+    "lat": 38.919,
+    "lon": -77.04
+   },
    {
     "type": "DC Health Rodent & Vector Control",
     "agency": "DOH",
@@ -2634,42 +2654,22 @@
     "block": "2400 block of 18TH STREET NW",
     "lat": 38.923,
     "lon": -77.042
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-10-31T13:54:00Z",
-    "resolved": "2026-10-31T14:01:04Z",
-    "status": "Closed",
-    "block": "1700 block of COLUMBIA ROAD NW",
-    "lat": 38.923,
-    "lon": -77.042
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-10-31T13:31:02Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2300 block of ONTARIO ROAD NW",
-    "lat": 38.922,
-    "lon": -77.04
    }
   ]
  },
  "crime": {
-  "total": 40,
+  "total": 39,
   "previous_total": 41,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
     "count": 20,
-    "previous": 28
+    "previous": 27
    },
    {
     "offense": "THEFT F/AUTO",
-    "count": 13,
-    "previous": 6
+    "count": 12,
+    "previous": 7
    },
    {
     "offense": "ROBBERY",
@@ -2765,7 +2765,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3144,7 +3144,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3164,15 +3164,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 209,
-   "starting_next_7d": 101,
-   "reserved_ft": 24728,
+   "active_this_week": 200,
+   "starting_next_7d": 94,
+   "reserved_ft": 23936,
    "long_running_90d": 26,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 44
+     "count": 39
     },
     {
      "type": "Dumpsters",
@@ -3192,70 +3192,14 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 16
+     "count": 13
     },
     {
      "type": "Events & reserved parking",
-     "count": 47
+     "count": 46
     }
    ],
    "upcoming": [
-    {
-     "type": "Construction staging",
-     "block": "1900 block of 18th Street NW",
-     "start": "2026-11-02",
-     "end": "2027-04-30",
-     "ft": 176,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Moving & storage",
-     "block": "2700 block of Quarry Road NW",
-     "start": "2026-11-02",
-     "end": "2026-11-03",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Moving & storage",
-     "block": "2800 block of 18th Street NW",
-     "start": "2026-11-02",
-     "end": "2026-11-03",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Moving & storage",
-     "block": "1800 block of Belmont Road NW",
-     "start": "2026-11-02",
-     "end": "2026-11-02",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "1700 block of 20th Street NW",
-     "start": "2026-11-02",
-     "end": "2026-11-02",
-     "ft": 66,
-     "hours": "9 am\u20135 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "2000 block of Belmont Road NW",
-     "start": "2026-11-02",
-     "end": "2026-11-06",
-     "ft": 132,
-     "hours": "7:30 am\u20133 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "2400 block of 17th Street NW",
-     "start": "2026-11-02",
-     "end": "2026-11-06",
-     "ft": 132,
-     "hours": "7:30 am\u20133 pm"
-    },
     {
      "type": "Construction staging",
      "block": "1800 block of S Street NW",
@@ -3519,6 +3463,62 @@
      "end": "2026-11-08",
      "ft": 22,
      "hours": "12 am\u201310:30 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "1700 block of Florida Avenue NW",
+     "start": "2026-11-06",
+     "end": "2026-11-08",
+     "ft": 110,
+     "hours": "12 am\u201310:30 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "1700 block of Florida Avenue NW",
+     "start": "2026-11-06",
+     "end": "2026-11-08",
+     "ft": 66,
+     "hours": "12 am\u201310:30 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "1700 block of Florida Avenue NW",
+     "start": "2026-11-06",
+     "end": "2026-11-08",
+     "ft": 66,
+     "hours": "12 am\u201310:30 pm"
+    },
+    {
+     "type": "Moving & storage",
+     "block": "2200 block of Ontario Road NW",
+     "start": "2026-11-06",
+     "end": "2026-11-07",
+     "ft": 88,
+     "hours": ""
+    },
+    {
+     "type": "Moving & storage",
+     "block": "1800 block of Mintwood Place NW",
+     "start": "2026-11-06",
+     "end": "2026-11-06",
+     "ft": 88,
+     "hours": ""
+    },
+    {
+     "type": "Moving & storage",
+     "block": "2200 block of 19th Street NW",
+     "start": "2026-11-06",
+     "end": "2026-11-07",
+     "ft": 88,
+     "hours": ""
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "1700 block of Euclid Street NW",
+     "start": "2026-11-07",
+     "end": "2026-11-07",
+     "ft": 0,
+     "hours": "7 am\u20138 pm"
     }
    ]
   },
@@ -3614,9 +3614,9 @@
    },
    {
     "type": "Trash Collection - Missed",
-    "median_days": 5.44,
+    "median_days": 5.42,
     "city_median_days": 4.17,
-    "closed_n": 880
+    "closed_n": 879
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -3628,7 +3628,7 @@
     "type": "Illegal Dumping",
     "median_days": 2.97,
     "city_median_days": 4.04,
-    "closed_n": 595
+    "closed_n": 594
    },
    {
     "type": "Sanitation Enforcement",
@@ -3652,7 +3652,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3790,7 +3790,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4377,8 +4377,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T03:04:49Z",
-  "today": "2026-11-01",
+  "generated_at": "2026-11-02T09:22:49Z",
+  "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
    {
@@ -4458,7 +4458,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -21768,7 +21768,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

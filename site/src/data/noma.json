@@ -1,7 +1,7 @@
 {
  "slug": "noma",
  "name": "NoMa",
- "generated_at": "2026-11-02T03:04:49Z",
+ "generated_at": "2026-11-02T09:22:49Z",
  "boundary": {
   "source": "NoMa Business Improvement District boundary (Open Data DC). DC has no planning area for NoMa.",
   "rings": [
@@ -583,27 +583,27 @@
   }
  ],
  "requests": {
-  "total": 857,
-  "previous_total": 875,
+  "total": 844,
+  "previous_total": 883,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 345,
-    "previous": 268
+    "count": 333,
+    "previous": 277
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 86,
+    "count": 87,
     "previous": 3
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 39,
-    "previous": 162
+    "previous": 158
    },
    {
     "type": "DMV - Drivers License/ID Issues",
-    "count": 36,
+    "count": 38,
     "previous": 20
    },
    {
@@ -613,7 +613,7 @@
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 32,
+    "count": 33,
     "previous": 24
    },
    {
@@ -622,14 +622,9 @@
     "previous": 24
    },
    {
-    "type": "Streetlight Repair Investigation",
-    "count": 21,
-    "previous": 28
-   },
-   {
     "type": "DC Government Information",
-    "count": 20,
-    "previous": 31
+    "count": 21,
+    "previous": 32
    },
    {
     "type": "Public Space Inspection",
@@ -639,7 +634,7 @@
    {
     "type": "DC Health Rodent & Vector Control",
     "count": 18,
-    "previous": 26
+    "previous": 25
    },
    {
     "type": "Roadway Signs",
@@ -650,6 +645,11 @@
     "type": "Dead Animal Collection",
     "count": 14,
     "previous": 24
+   },
+   {
+    "type": "Streetlight Repair Investigation",
+    "count": 14,
+    "previous": 34
    },
    {
     "type": "Roadway Repair",
@@ -664,7 +664,7 @@
    {
     "type": "Sidewalk Repair",
     "count": 12,
-    "previous": 9
+    "previous": 8
    },
    {
     "type": "DOEE - General Air Quality Concerns",
@@ -737,11 +737,6 @@
     "previous": 2
    },
    {
-    "type": "Tree Planting",
-    "count": 3,
-    "previous": 0
-   },
-   {
     "type": "Pet Waste Complaint",
     "count": 3,
     "previous": 0
@@ -755,6 +750,16 @@
     "type": "DOB - Illegal Construction",
     "count": 3,
     "previous": 1
+   },
+   {
+    "type": "Roadway Markings / Pylons",
+    "count": 3,
+    "previous": 17
+   },
+   {
+    "type": "Tree Planting",
+    "count": 2,
+    "previous": 0
    },
    {
     "type": "DMV - Copy of Ticket",
@@ -772,13 +777,8 @@
     "previous": 5
    },
    {
-    "type": "Roadway Markings / Pylons",
-    "count": 2,
-    "previous": 17
-   },
-   {
     "type": "DMV - Online Processing Issues",
-    "count": 1,
+    "count": 2,
     "previous": 3
    },
    {
@@ -787,7 +787,7 @@
     "previous": 0
    }
   ],
-  "open": 110,
+  "open": 113,
   "recent": [
    {
     "type": "Streetlight Repair Investigation",
@@ -1293,12 +1293,12 @@
  },
  "crime": {
   "total": 70,
-  "previous_total": 71,
+  "previous_total": 70,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
     "count": 39,
-    "previous": 37
+    "previous": 36
    },
    {
     "offense": "THEFT F/AUTO",
@@ -1311,14 +1311,14 @@
     "previous": 11
    },
    {
-    "offense": "ASSAULT W/DANGEROUS WEAPON",
-    "count": 2,
-    "previous": 3
-   },
-   {
     "offense": "BURGLARY",
     "count": 2,
     "previous": 0
+   },
+   {
+    "offense": "ASSAULT W/DANGEROUS WEAPON",
+    "count": 2,
+    "previous": 3
    },
    {
     "offense": "ROBBERY",
@@ -1356,7 +1356,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -1536,7 +1536,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -1557,10 +1557,10 @@
   ],
   "curb": {
    "active_this_week": 38,
-   "starting_next_7d": 3,
+   "starting_next_7d": 0,
    "reserved_ft": 3740,
    "long_running_90d": 12,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Construction staging",
@@ -1579,32 +1579,7 @@
      "count": 1
     }
    ],
-   "upcoming": [
-    {
-     "type": "Construction staging",
-     "block": "1300 block of 3rd Street NE",
-     "start": "2026-11-02",
-     "end": "2026-12-11",
-     "ft": 154,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "300 block of N Street NE",
-     "start": "2026-11-02",
-     "end": "2026-12-11",
-     "ft": 154,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "1000 block of 3rd Street NE",
-     "start": "2026-11-02",
-     "end": "2026-12-01",
-     "ft": 440,
-     "hours": "9:30 am\u20133:30 pm"
-    }
-   ]
+   "upcoming": []
   },
   "trees": {
    "total": 1001,
@@ -1736,7 +1711,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -1906,7 +1881,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2234,8 +2209,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T03:04:49Z",
-  "today": "2026-11-01",
+  "generated_at": "2026-11-02T09:22:49Z",
+  "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
    {
@@ -2304,7 +2279,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -13656,7 +13631,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

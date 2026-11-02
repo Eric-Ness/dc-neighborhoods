@@ -1,7 +1,7 @@
 {
  "slug": "anacostia",
  "name": "Anacostia",
- "generated_at": "2026-11-02T03:04:49Z",
+ "generated_at": "2026-11-02T09:22:49Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -886,19 +886,6 @@
    "smd": "8B06"
   },
   {
-   "id": "B2606001",
-   "issued": "2026-10-14T04:00:00Z",
-   "group": "Additions",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "2620 BOWEN RD SE 20020",
-   "work": "This submission details the replacement of the existing fire alarm control panel. The existing control panel, ES-200X, will be replaced in its entirety. All existing field wirings shall remain unchanged and reconnected to the new panel. No modifications or additions to devices are performed. The existing sequence of operations for the system shall remain unchanged.",
-   "zoning": "RA-1",
-   "lat": 38.85953,
-   "lon": -76.99196,
-   "smd": "8B06"
-  },
-  {
    "id": "E2700468",
    "issued": "2026-10-14T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -923,6 +910,19 @@
    "lat": 38.86465,
    "lon": -76.98473,
    "smd": "8A05"
+  },
+  {
+   "id": "B2606001",
+   "issued": "2026-10-14T04:00:00Z",
+   "group": "Additions",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "2620 BOWEN RD SE 20020",
+   "work": "This submission details the replacement of the existing fire alarm control panel. The existing control panel, ES-200X, will be replaced in its entirety. All existing field wirings shall remain unchanged and reconnected to the new panel. No modifications or additions to devices are performed. The existing sequence of operations for the system shall remain unchanged.",
+   "zoning": "RA-1",
+   "lat": 38.85953,
+   "lon": -76.99196,
+   "smd": "8B06"
   },
   {
    "id": "M2700159",
@@ -1043,18 +1043,18 @@
   }
  ],
  "requests": {
-  "total": 472,
-  "previous_total": 894,
+  "total": 477,
+  "previous_total": 884,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 88,
-    "previous": 112
+    "count": 90,
+    "previous": 110
    },
    {
     "type": "Parking Enforcement",
     "count": 72,
-    "previous": 121
+    "previous": 116
    },
    {
     "type": "DOEE - LIHEAP",
@@ -1074,7 +1074,7 @@
    {
     "type": "Sanitation Enforcement",
     "count": 16,
-    "previous": 32
+    "previous": 31
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -1089,7 +1089,7 @@
    {
     "type": "Roadway Signs",
     "count": 11,
-    "previous": 49
+    "previous": 48
    },
    {
     "type": "Streetlight Repair Investigation",
@@ -1099,7 +1099,12 @@
    {
     "type": "DMV - Drivers License/ID Issues",
     "count": 9,
-    "previous": 22
+    "previous": 21
+   },
+   {
+    "type": "Residential Parking Permit Violation",
+    "count": 8,
+    "previous": 12
    },
    {
     "type": "DC Government Information",
@@ -1110,11 +1115,6 @@
     "type": "Scheduled Yard Waste",
     "count": 7,
     "previous": 30
-   },
-   {
-    "type": "Residential Parking Permit Violation",
-    "count": 7,
-    "previous": 12
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -1132,6 +1132,11 @@
     "previous": 0
    },
    {
+    "type": "Abandoned Vehicle - On Public Property",
+    "count": 5,
+    "previous": 34
+   },
+   {
     "type": "Tree Inspection",
     "count": 5,
     "previous": 31
@@ -1147,11 +1152,6 @@
     "previous": 25
    },
    {
-    "type": "Abandoned Vehicle - On Public Property",
-    "count": 4,
-    "previous": 34
-   },
-   {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 4,
     "previous": 2
@@ -1165,6 +1165,11 @@
     "type": "Traffic Safety Input",
     "count": 4,
     "previous": 7
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "count": 3,
+    "previous": 8
    },
    {
     "type": "Pet Waste Complaint",
@@ -1195,11 +1200,6 @@
     "type": "Grass and Weeds Mowing",
     "count": 2,
     "previous": 10
-   },
-   {
-    "type": "Out of State Parking Violation (ROSA)",
-    "count": 2,
-    "previous": 8
    },
    {
     "type": "Public Space Inspection",
@@ -1841,14 +1841,14 @@
     "previous": 7
    },
    {
-    "offense": "ASSAULT W/DANGEROUS WEAPON",
-    "count": 2,
-    "previous": 2
-   },
-   {
     "offense": "ROBBERY",
     "count": 2,
     "previous": 3
+   },
+   {
+    "offense": "ASSAULT W/DANGEROUS WEAPON",
+    "count": 2,
+    "previous": 2
    },
    {
     "offense": "SEX ABUSE",
@@ -1903,7 +1903,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2094,7 +2094,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2115,10 +2115,10 @@
   ],
   "curb": {
    "active_this_week": 73,
-   "starting_next_7d": 15,
+   "starting_next_7d": 14,
    "reserved_ft": 8382,
    "long_running_90d": 22,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -2146,14 +2146,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Construction staging",
-     "block": "2500 block of Elvans Road SE",
-     "start": "2026-11-02",
-     "end": "2026-11-06",
-     "ft": 0,
-     "hours": "7 am\u20135 pm"
-    },
     {
      "type": "Construction staging",
      "block": "1900 block of Martin Luther King Jr Avenue SE",
@@ -2380,7 +2372,7 @@
     "type": "Sanitation Enforcement",
     "median_days": 1.05,
     "city_median_days": 1.09,
-    "closed_n": 231
+    "closed_n": 230
    },
    {
     "type": "Illegal Dumping",
@@ -2398,7 +2390,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2567,7 +2559,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2845,8 +2837,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T03:04:49Z",
-  "today": "2026-11-01",
+  "generated_at": "2026-11-02T09:22:49Z",
+  "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
    {
@@ -2973,7 +2965,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -19122,7 +19114,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

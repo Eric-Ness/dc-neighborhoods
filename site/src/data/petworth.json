@@ -1,7 +1,7 @@
 {
  "slug": "petworth",
  "name": "Petworth",
- "generated_at": "2026-11-02T03:04:49Z",
+ "generated_at": "2026-11-02T09:22:49Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1976,18 +1976,18 @@
   }
  ],
  "requests": {
-  "total": 1149,
-  "previous_total": 1303,
+  "total": 1150,
+  "previous_total": 1298,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 213,
+    "count": 212,
     "previous": 236
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 147,
-    "previous": 150
+    "count": 149,
+    "previous": 148
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -2006,13 +2006,13 @@
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 53,
-    "previous": 60
+    "count": 51,
+    "previous": 57
    },
    {
     "type": "Sanitation Enforcement",
     "count": 38,
-    "previous": 46
+    "previous": 47
    },
    {
     "type": "DOEE - LIHEAP",
@@ -2022,7 +2022,7 @@
    {
     "type": "Dead Animal Collection",
     "count": 30,
-    "previous": 21
+    "previous": 20
    },
    {
     "type": "Container Removal",
@@ -2047,7 +2047,7 @@
    {
     "type": "Public Space Litter Can-Collection",
     "count": 20,
-    "previous": 15
+    "previous": 14
    },
    {
     "type": "Rat Replacement Containers",
@@ -2072,7 +2072,7 @@
    {
     "type": "Trash Cart - Delivery",
     "count": 12,
-    "previous": 10
+    "previous": 9
    },
    {
     "type": "Sidewalk Repair",
@@ -2110,19 +2110,19 @@
     "previous": 15
    },
    {
+    "type": "Supercan - Repair",
+    "count": 10,
+    "previous": 8
+   },
+   {
     "type": "Missed Curbside Compost Collection",
     "count": 9,
     "previous": 2
    },
    {
-    "type": "Supercan - Repair",
-    "count": 9,
-    "previous": 8
-   },
-   {
     "type": "Roadway Signs",
     "count": 8,
-    "previous": 14
+    "previous": 15
    },
    {
     "type": "Trash Cart Repair",
@@ -2145,6 +2145,11 @@
     "previous": 14
    },
    {
+    "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
+    "count": 6,
+    "previous": 9
+   },
+   {
     "type": "OCTFME - Down Cable Wires",
     "count": 6,
     "previous": 3
@@ -2155,14 +2160,9 @@
     "previous": 4
    },
    {
-    "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
-    "count": 5,
-    "previous": 9
-   },
-   {
     "type": "Recycling Cart - Repair",
     "count": 5,
-    "previous": 12
+    "previous": 13
    },
    {
     "type": "Public Space Inspection",
@@ -2275,8 +2275,18 @@
     "previous": 2
    }
   ],
-  "open": 272,
+  "open": 275,
   "recent": [
+   {
+    "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
+    "agency": "DPW",
+    "added": "2026-11-02T03:11:01Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4200 block of 4TH STREET NW",
+    "lat": 38.943,
+    "lon": -77.017
+   },
    {
     "type": "DOB - Vacant Private Property Inspection",
     "agency": "DOB",
@@ -2766,16 +2776,6 @@
     "block": "300 block of SHEPHERD STREET NW",
     "lat": 38.94,
     "lon": -77.016
-   },
-   {
-    "type": "Container Removal",
-    "agency": "DPW",
-    "added": "2026-10-30T19:46:21Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4700 block of 9TH STREET NW",
-    "lat": 38.948,
-    "lon": -77.026
    }
   ]
  },
@@ -2862,7 +2862,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3180,7 +3180,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3200,11 +3200,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 123,
-   "starting_next_7d": 25,
-   "reserved_ft": 15554,
+   "active_this_week": 121,
+   "starting_next_7d": 17,
+   "reserved_ft": 15268,
    "long_running_90d": 39,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -3220,11 +3220,11 @@
     },
     {
      "type": "Lead pipe replacement",
-     "count": 34
+     "count": 33
     },
     {
      "type": "Utility & DDOT work",
-     "count": 44
+     "count": 43
     },
     {
      "type": "Events & reserved parking",
@@ -3232,70 +3232,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Construction staging",
-     "block": "100 block of Emerson Street NW",
-     "start": "2026-11-02",
-     "end": "2026-11-30",
-     "ft": 44,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "4200 block of 5th Street NW",
-     "start": "2026-11-02",
-     "end": "2026-12-01",
-     "ft": 44,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "300 block of Allison Street NW",
-     "start": "2026-11-02",
-     "end": "2026-11-06",
-     "ft": 396,
-     "hours": "8 am\u20134:30 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "400 block of Allison Street NW",
-     "start": "2026-11-02",
-     "end": "2026-11-06",
-     "ft": 264,
-     "hours": "8 am\u20134:30 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "500 block of Allison Street NW",
-     "start": "2026-11-02",
-     "end": "2026-11-06",
-     "ft": 110,
-     "hours": "8 am\u20134:30 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "600 block of Allison Street NW",
-     "start": "2026-11-02",
-     "end": "2026-11-06",
-     "ft": 154,
-     "hours": "8 am\u20134:30 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "300 block of Allison Street NW",
-     "start": "2026-11-02",
-     "end": "2026-11-06",
-     "ft": 22,
-     "hours": "8 am\u20134:30 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "400 block of Allison Street NW",
-     "start": "2026-11-02",
-     "end": "2026-11-06",
-     "ft": 264,
-     "hours": "8 am\u20134:30 pm"
-    },
     {
      "type": "Moving & storage",
      "block": "700 block of Varnum Street NW",
@@ -3516,7 +3452,7 @@
     "type": "Bulk Collection",
     "median_days": 7.95,
     "city_median_days": 6.92,
-    "closed_n": 2252
+    "closed_n": 2251
    },
    {
     "type": "Trash Collection - Missed",
@@ -3564,7 +3500,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3729,7 +3665,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4056,8 +3992,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T03:04:49Z",
-  "today": "2026-11-01",
+  "generated_at": "2026-11-02T09:22:49Z",
+  "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
    {
@@ -4082,15 +4018,6 @@
    }
   ],
   "events": [
-   {
-    "title": "Petworth Corner Market",
-    "place": "9th St & Varnum St NW",
-    "time": "3:00 PM - 8:00 PM",
-    "url": "https://opendata.dc.gov/datasets/farmers-market-locations",
-    "source": "DC farmers market list",
-    "kind": "market",
-    "date": "2026-11-01"
-   },
    {
     "title": "Petworth Community Market",
     "place": "4131-4101 Block 9th St NW",
@@ -4159,7 +4086,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -26322,7 +26249,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

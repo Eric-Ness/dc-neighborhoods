@@ -1,7 +1,7 @@
 {
  "slug": "lenfantplaza",
  "name": "L'Enfant Plaza",
- "generated_at": "2026-11-02T03:04:49Z",
+ "generated_at": "2026-11-02T09:22:49Z",
  "boundary": {
   "source": "Southwest Business Improvement District, which takes in L'Enfant Plaza and the federal blocks around it (Open Data DC). DC has no planning area for L'Enfant Plaza.",
   "rings": [
@@ -1181,19 +1181,6 @@
    "smd": "6D02"
   },
   {
-   "id": "EG2700105",
-   "issued": "2026-10-07T04:00:00Z",
-   "group": "Minor work",
-   "type": "POST CARD",
-   "subtype": "ELECTRICAL - GENERAL",
-   "address": "600 6TH PL SW 20024",
-   "work": "",
-   "zoning": "R-3",
-   "lat": 38.88191,
-   "lon": -77.02069,
-   "smd": "6D01"
-  },
-  {
    "id": "BP2700103",
    "issued": "2026-10-07T04:00:00Z",
    "group": "Minor work",
@@ -1207,17 +1194,17 @@
    "smd": "6D01"
   },
   {
-   "id": "E2700204",
-   "issued": "2026-10-06T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "700 7TH ST SW 406 20024",
+   "id": "EG2700105",
+   "issued": "2026-10-07T04:00:00Z",
+   "group": "Minor work",
+   "type": "POST CARD",
+   "subtype": "ELECTRICAL - GENERAL",
+   "address": "600 6TH PL SW 20024",
    "work": "",
-   "zoning": "RA-4",
-   "lat": 38.88028,
-   "lon": -77.02153,
-   "smd": "6D03"
+   "zoning": "R-3",
+   "lat": 38.88191,
+   "lon": -77.02069,
+   "smd": "6D01"
   },
   {
    "id": "P2700165",
@@ -1231,25 +1218,38 @@
    "lat": 38.88028,
    "lon": -77.02153,
    "smd": "6D03"
+  },
+  {
+   "id": "E2700204",
+   "issued": "2026-10-06T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "700 7TH ST SW 406 20024",
+   "work": "",
+   "zoning": "RA-4",
+   "lat": 38.88028,
+   "lon": -77.02153,
+   "smd": "6D03"
   }
  ],
  "requests": {
-  "total": 728,
+  "total": 725,
   "previous_total": 759,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 191,
-    "previous": 222
+    "count": 186,
+    "previous": 223
    },
    {
     "type": "DMV - Drivers License/ID Issues",
-    "count": 78,
-    "previous": 107
+    "count": 79,
+    "previous": 106
    },
    {
     "type": "DMV - Copy of Ticket",
-    "count": 60,
+    "count": 61,
     "previous": 57
    },
    {
@@ -1289,7 +1289,7 @@
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 14,
+    "count": 13,
     "previous": 6
    },
    {
@@ -1314,7 +1314,7 @@
    },
    {
     "type": "DMV - Driver Record Issues",
-    "count": 10,
+    "count": 11,
     "previous": 2
    },
    {
@@ -1493,7 +1493,7 @@
     "previous": 4
    }
   ],
-  "open": 127,
+  "open": 126,
   "recent": [
    {
     "type": "Parking Enforcement",
@@ -2063,7 +2063,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2228,7 +2228,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2248,11 +2248,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 136,
-   "starting_next_7d": 35,
-   "reserved_ft": 21406,
+   "active_this_week": 133,
+   "starting_next_7d": 26,
+   "reserved_ft": 21010,
    "long_running_90d": 31,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Construction staging",
@@ -2264,7 +2264,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 19
+     "count": 16
     },
     {
      "type": "Events & reserved parking",
@@ -2272,78 +2272,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Construction staging",
-     "block": "200 block of 6th Street SW",
-     "start": "2026-11-02",
-     "end": "2026-12-01",
-     "ft": 110,
-     "hours": "7 am\u20137 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "300 block of 6th Street SW",
-     "start": "2026-11-02",
-     "end": "2026-12-01",
-     "ft": 220,
-     "hours": "7 am\u20137 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "400 block of C Street SW",
-     "start": "2026-11-02",
-     "end": "2026-12-01",
-     "ft": 308,
-     "hours": "7 am\u20137 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "600 block of Maryland Avenue SW",
-     "start": "2026-11-02",
-     "end": "2026-12-01",
-     "ft": 264,
-     "hours": "7 am\u20137 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "700 block of C Street SW",
-     "start": "2026-11-02",
-     "end": "2026-12-01",
-     "ft": 220,
-     "hours": "7 am\u20137 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "500 block of I Street SW",
-     "start": "2026-11-02",
-     "end": "2026-11-03",
-     "ft": 110,
-     "hours": "7:30 am\u20133 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "500 block of I Street SW",
-     "start": "2026-11-02",
-     "end": "2026-11-03",
-     "ft": 176,
-     "hours": "7:30 am\u20133 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "700 block of Maine Avenue SW",
-     "start": "2026-11-02",
-     "end": "2026-11-03",
-     "ft": 66,
-     "hours": "7:30 am\u20133 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "800 block of Maine Avenue SW",
-     "start": "2026-11-02",
-     "end": "2026-11-03",
-     "ft": 154,
-     "hours": "7:30 am\u20133 pm"
-    },
     {
      "type": "Utility & DDOT work",
      "block": "200 block of I Street SW",
@@ -2684,7 +2612,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2823,7 +2751,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2883,9 +2811,9 @@
    {
     "name": "The Southwester",
     "url": "https://thesouthwester.com/",
-    "state": "error: ParseError",
-    "matched": 0,
-    "failed": 1
+    "state": "ok",
+    "matched": 20,
+    "fetched": 1
    },
    {
     "name": "Southwest BID",
@@ -2959,6 +2887,104 @@
    }
   ],
   "items": [
+   {
+    "title": "Inside the October ANC Meeting: Stadium Roof Discussion and New Homes on M Street SW",
+    "url": "https://thesouthwester.com/2026/11/01/inside-the-october-anc-meeting-stadium-roof-discussion-and-new-homes-on-m-street-sw/",
+    "source": "The Southwester",
+    "published": "2026-11-02T01:02:11Z",
+    "first_seen": "2026-11-02T09:22:49Z"
+   },
+   {
+    "title": "Thelma D. Jones Receives 2026 Community Champion Award",
+    "url": "https://thesouthwester.com/2026/11/01/thelma-d-jones-receives-2026-community-champion-award/",
+    "source": "The Southwester",
+    "published": "2026-11-02T01:01:38Z",
+    "first_seen": "2026-11-02T09:22:49Z"
+   },
+   {
+    "title": "Breaking the Mold: How SWBID Opened the Ambassador Ranks to Women",
+    "url": "https://thesouthwester.com/2026/11/01/breaking-the-mold-how-swbid-opened-the-ambassador-ranks-to-women/",
+    "source": "The Southwester",
+    "published": "2026-11-02T01:00:07Z",
+    "first_seen": "2026-11-02T09:22:49Z"
+   },
+   {
+    "title": "Longtime President of Friends of the Southwest Library Georgine Wallace Steps Down",
+    "url": "https://thesouthwester.com/2026/11/01/longtime-president-of-friends-of-the-southwest-library-georgine-wallace-steps-down/",
+    "source": "The Southwester",
+    "published": "2026-11-02T00:59:02Z",
+    "first_seen": "2026-11-02T09:22:49Z"
+   },
+   {
+    "title": "Residents of the Lex at Waterfront Station Rally to Support Former Concierge",
+    "url": "https://thesouthwester.com/2026/11/01/residents-of-the-lex-at-waterfront-station-rally-to-support-former-concierge/",
+    "source": "The Southwester",
+    "published": "2026-11-02T00:50:49Z",
+    "first_seen": "2026-11-02T09:22:49Z"
+   },
+   {
+    "title": "Parents, Community Members Respond to Revised Modernization Plan for Amidon-Bowen Elementary",
+    "url": "https://thesouthwester.com/2026/11/01/parents-community-members-respond-to-revised-modernization-plan-for-amidon-bowen-elementary/",
+    "source": "The Southwester",
+    "published": "2026-11-02T00:49:03Z",
+    "first_seen": "2026-11-02T09:22:49Z"
+   },
+   {
+    "title": "Peer-Reviewed Study Highlights Importance of Tailored Vaccine Information",
+    "url": "https://thesouthwester.com/2026/11/01/peer-reviewed-study-highlights-importance-of-tailored-vaccine-information/",
+    "source": "The Southwester",
+    "published": "2026-11-02T00:47:48Z",
+    "first_seen": "2026-11-02T09:22:49Z"
+   },
+   {
+    "title": "How Oral Histories and Artifacts Build Intergenerational Connections",
+    "url": "https://thesouthwester.com/2026/11/01/how-oral-histories-and-artifacts-build-intergenerational-connections/",
+    "source": "The Southwester",
+    "published": "2026-11-02T00:44:58Z",
+    "first_seen": "2026-11-02T09:22:49Z"
+   },
+   {
+    "title": "New Traffic Pattern To Start on Maine Avenue as Bridge Construction Continues",
+    "url": "https://thesouthwester.com/2026/11/01/new-traffic-pattern-to-start-on-maine-avenue-as-bridge-construction-continues/",
+    "source": "The Southwester",
+    "published": "2026-11-02T00:44:07Z",
+    "first_seen": "2026-11-02T09:22:49Z"
+   },
+   {
+    "title": "Waterfront Village Class Puts the Future in Focus",
+    "url": "https://thesouthwester.com/2026/11/01/waterfront-village-class-puts-the-future-in-focus/",
+    "source": "The Southwester",
+    "published": "2026-11-02T00:43:20Z",
+    "first_seen": "2026-11-02T09:22:49Z"
+   },
+   {
+    "title": "United States Women\u2019s National Soccer Team Faces Off Against Spain at Audi Field",
+    "url": "https://thesouthwester.com/2026/11/01/united-states-womens-national-soccer-team-faces-off-against-spain-at-audi-field/",
+    "source": "The Southwester",
+    "published": "2026-11-02T00:42:42Z",
+    "first_seen": "2026-11-02T09:22:49Z"
+   },
+   {
+    "title": "For the Love of Your Library",
+    "url": "https://thesouthwester.com/2026/11/01/for-the-love-of-your-library/",
+    "source": "The Southwester",
+    "published": "2026-11-02T00:36:01Z",
+    "first_seen": "2026-11-02T09:22:49Z"
+   },
+   {
+    "title": "Read the Labels",
+    "url": "https://thesouthwester.com/2026/11/01/read-the-labels/",
+    "source": "The Southwester",
+    "published": "2026-11-02T00:34:37Z",
+    "first_seen": "2026-11-02T09:22:49Z"
+   },
+   {
+    "title": "St. Dominic Anticipates Renovation, Anniversary by Welcoming New Pastor",
+    "url": "https://thesouthwester.com/2026/11/01/st-dominic-anticipates-renovation-anniversary-by-welcoming-new-pastor/",
+    "source": "The Southwester",
+    "published": "2026-11-02T00:34:12Z",
+    "first_seen": "2026-11-02T09:22:49Z"
+   },
    {
     "title": "Commemorating the Tenth Anniversary of the National Museum",
     "url": "https://thesouthwester.com/2026/11/01/commemorating-the-tenth-anniversary-of-the-national-museum/",
@@ -3309,8 +3335,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T03:04:49Z",
-  "today": "2026-11-01",
+  "generated_at": "2026-11-02T09:22:49Z",
+  "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
    {
@@ -3402,7 +3428,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -17034,7 +17060,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

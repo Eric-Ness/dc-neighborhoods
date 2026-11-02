@@ -1,7 +1,7 @@
 {
  "slug": "friendshipheights",
  "name": "Friendship Heights",
- "generated_at": "2026-11-02T03:04:49Z",
+ "generated_at": "2026-11-02T09:22:49Z",
  "boundary": {
   "source": "ANC single-member districts 3E03 and 3E04, around the Friendship Heights Metro (Open Data DC). DC has no planning area for Friendship Heights; this overlaps the Tenleytown site.",
   "rings": [
@@ -2611,19 +2611,6 @@
    "smd": "3E03"
   },
   {
-   "id": "M2700200",
-   "issued": "2026-10-16T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "MECHANICAL",
-   "address": "3859 GRAMERCY ST NW 20016",
-   "work": "",
-   "zoning": "R-1B",
-   "lat": 38.95646,
-   "lon": -77.07684,
-   "smd": "3E04"
-  },
-  {
    "id": "P2700475",
    "issued": "2026-10-16T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -2648,6 +2635,19 @@
    "lat": 38.95623,
    "lon": -77.08057,
    "smd": "3E03"
+  },
+  {
+   "id": "M2700200",
+   "issued": "2026-10-16T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "MECHANICAL",
+   "address": "3859 GRAMERCY ST NW 20016",
+   "work": "",
+   "zoning": "R-1B",
+   "lat": 38.95646,
+   "lon": -77.07684,
+   "smd": "3E04"
   },
   {
    "id": "P2700472",
@@ -2911,18 +2911,18 @@
   }
  ],
  "requests": {
-  "total": 450,
-  "previous_total": 553,
+  "total": 454,
+  "previous_total": 545,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
-    "count": 84,
+    "count": 85,
     "previous": 68
    },
    {
     "type": "Bulk Collection",
-    "count": 82,
-    "previous": 82
+    "count": 83,
+    "previous": 80
    },
    {
     "type": "Recycling Collection - Missed",
@@ -2937,7 +2937,7 @@
    {
     "type": "Trash Collection - Missed",
     "count": 21,
-    "previous": 34
+    "previous": 33
    },
    {
     "type": "Roadway Signs",
@@ -2952,12 +2952,12 @@
    {
     "type": "Tree Inspection",
     "count": 13,
-    "previous": 18
+    "previous": 16
    },
    {
     "type": "Parking Enforcement",
     "count": 13,
-    "previous": 11
+    "previous": 10
    },
    {
     "type": "DOB - Vacant Private Property Inspection",
@@ -3005,9 +3005,14 @@
     "previous": 7
    },
    {
+    "type": "Dockless Vehicle Parking Complaint",
+    "count": 6,
+    "previous": 0
+   },
+   {
     "type": "Sidewalk Repair",
     "count": 5,
-    "previous": 3
+    "previous": 2
    },
    {
     "type": "DMV - Drivers License/ID Issues",
@@ -3040,14 +3045,9 @@
     "previous": 1
    },
    {
-    "type": "Dockless Vehicle Parking Complaint",
-    "count": 4,
-    "previous": 0
-   },
-   {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 4,
-    "previous": 25
+    "previous": 24
    },
    {
     "type": "DMV - Online Processing Issues",
@@ -3640,13 +3640,13 @@
   ]
  },
  "crime": {
-  "total": 10,
-  "previous_total": 5,
+  "total": 9,
+  "previous_total": 6,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
-    "count": 5,
-    "previous": 5
+    "count": 4,
+    "previous": 6
    },
    {
     "offense": "THEFT F/AUTO",
@@ -3688,7 +3688,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3911,7 +3911,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3932,10 +3932,10 @@
   ],
   "curb": {
    "active_this_week": 32,
-   "starting_next_7d": 8,
+   "starting_next_7d": 6,
    "reserved_ft": 4356,
    "long_running_90d": 9,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-01, newest record update 2026-11-01, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -3963,22 +3963,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Lead pipe replacement",
-     "block": "5100 block of 39th Street NW",
-     "start": "2026-11-02",
-     "end": "2026-12-05",
-     "ft": 198,
-     "hours": "7 am\u20137 pm"
-    },
-    {
-     "type": "Lead pipe replacement",
-     "block": "4100 block of Ingomar Street NW",
-     "start": "2026-11-02",
-     "end": "2026-12-26",
-     "ft": 198,
-     "hours": "7 am\u20137 pm"
-    },
     {
      "type": "Moving & storage",
      "block": "5200 block of Wisconsin Avenue NW",
@@ -4159,7 +4143,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4305,7 +4289,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4373,9 +4357,9 @@
    {
     "name": "ANC 3E",
     "url": "https://anc3e.org/",
-    "state": "error: ParseError",
+    "state": "ok",
     "matched": 0,
-    "failed": 1
+    "fetched": 1
    },
    {
     "name": "WTOP",
@@ -4574,8 +4558,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T03:04:49Z",
-  "today": "2026-11-01",
+  "generated_at": "2026-11-02T09:22:49Z",
+  "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
    {
@@ -4600,7 +4584,7 @@
    {
     "name": "ANC 3E meeting agendas",
     "url": "https://anc3e.org/",
-    "state": "error: ParseError"
+    "state": "ok"
    },
    {
     "name": "DC Office of ANCs meeting notices",
@@ -4626,7 +4610,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -19183,7 +19167,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T03:04:49Z",
+  "generated_at": "2026-11-02T09:22:49Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
@@ -19280,16 +19264,16 @@
     "lon": -77.07162
    },
    {
-    "id": "1002575",
-    "name": "Nebraska Av NW & Reno Rd NW",
-    "lat": 38.95424,
-    "lon": -77.07209
-   },
-   {
     "id": "1002566",
     "name": "Nebraska Av NW & Reno Rd NW",
     "lat": 38.95362,
     "lon": -77.0724
+   },
+   {
+    "id": "1002575",
+    "name": "Nebraska Av NW & Reno Rd NW",
+    "lat": 38.95424,
+    "lon": -77.07209
    },
    {
     "id": "2000013",
