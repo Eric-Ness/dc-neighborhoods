@@ -652,6 +652,7 @@ def build_archive(slug: str, now: float) -> dict:
     section["screened"] = screened
     if screened:
         section["note"] += f" This week {screened} otherwise usable clip{'s were' if screened != 1 else ' was'} held back by that screen."
+    unread += min(len(results), MAX_PAGE_FETCHES) - fetched - unread  # pages the time budget never reached count too
     if not picked and unread:  # pages we couldn't read prove nothing, so don't call it a quiet week
         section["note"] = f"The Library of Congress search could not be reached this run ({unread} pages would not load). {base_note}"
         return section

@@ -31,6 +31,7 @@ def main() -> int:
     only = next((a.split("=", 1)[1].split(",") for a in sys.argv if a.startswith("--only=")), None)
     config = json.loads((ROOT / "ingest" / "neighborhoods.json").read_text(encoding="utf-8"))
     slugs = [h["slug"] for h in config["neighborhoods"] if h["enabled"] and (not only or h["slug"] in only)]
+    history.ARCHIVE_BUDGET_S = 900  # no nightly clock to beat here, and loc.gov searches can take 30 s each
     now = time.time()
     for k in range(weeks):
         t = now + 7 * k * DAY
