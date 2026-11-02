@@ -18,7 +18,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 90  # 13 neighborhoods take about 35 minutes; DC retries can add more
+    timeout-minutes: 150  # 23 neighborhoods take about 60 minutes; DC retries can add more
     env:
       # Until the Cloudflare token is added as a repo secret, ingest and build still run; only deploy is skipped.
       HAS_CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
