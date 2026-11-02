@@ -1,7 +1,7 @@
 {
  "slug": "clevelandpark",
  "name": "Cleveland Park",
- "generated_at": "2026-11-02T12:49:34Z",
+ "generated_at": "2026-11-02T16:31:55Z",
  "boundary": {
   "source": "Cleveland Park Historic District (DC Historic Preservation Office, Open Data DC). DC has no planning area named Cleveland Park.",
   "rings": [
@@ -2740,19 +2740,6 @@
    "smd": "3C05"
   },
   {
-   "id": "E2700726",
-   "issued": "2026-10-22T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "3415 CONNECTICUT AVE NW 20008",
-   "work": "",
-   "zoning": "NMU-4/CP",
-   "lat": 38.93492,
-   "lon": -77.05768,
-   "smd": "3C06"
-  },
-  {
    "id": "P2700647",
    "issued": "2026-10-22T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -2764,6 +2751,19 @@
    "lat": 38.93795,
    "lon": -77.06693,
    "smd": "3C08"
+  },
+  {
+   "id": "E2700726",
+   "issued": "2026-10-22T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "3415 CONNECTICUT AVE NW 20008",
+   "work": "",
+   "zoning": "NMU-4/CP",
+   "lat": 38.93492,
+   "lon": -77.05768,
+   "smd": "3C06"
   },
   {
    "id": "P2700550",
@@ -2949,8 +2949,8 @@
   }
  ],
  "requests": {
-  "total": 244,
-  "previous_total": 300,
+  "total": 246,
+  "previous_total": 295,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
@@ -2959,12 +2959,12 @@
    },
    {
     "type": "Bulk Collection",
-    "count": 37,
-    "previous": 42
+    "count": 38,
+    "previous": 41
    },
    {
     "type": "Parking Enforcement",
-    "count": 24,
+    "count": 25,
     "previous": 41
    },
    {
@@ -2985,12 +2985,17 @@
    {
     "type": "Public Space Inspection",
     "count": 9,
-    "previous": 3
+    "previous": 2
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 8,
     "previous": 3
+   },
+   {
+    "type": "Residential Parking Permit Violation",
+    "count": 7,
+    "previous": 6
    },
    {
     "type": "Trash Collection - Missed",
@@ -3008,19 +3013,14 @@
     "previous": 7
    },
    {
-    "type": "Residential Parking Permit Violation",
-    "count": 6,
-    "previous": 6
-   },
-   {
     "type": "Public Space Litter Can-Collection",
     "count": 6,
     "previous": 0
    },
    {
     "type": "Trash Cart - Delivery",
-    "count": 5,
-    "previous": 3
+    "count": 4,
+    "previous": 4
    },
    {
     "type": "Roadway Signs",
@@ -3070,7 +3070,7 @@
    {
     "type": "Illegal Dumping",
     "count": 2,
-    "previous": 10
+    "previous": 7
    },
    {
     "type": "DMV - Drivers License/ID Issues",
@@ -3080,7 +3080,7 @@
    {
     "type": "Roadway Repair",
     "count": 2,
-    "previous": 1
+    "previous": 0
    },
    {
     "type": "Supercan - Delivery",
@@ -3173,8 +3173,38 @@
     "previous": 6
    }
   ],
-  "open": 68,
+  "open": 70,
   "recent": [
+   {
+    "type": "Residential Parking Permit Violation",
+    "agency": "DPW",
+    "added": "2026-11-02T16:30:31Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3200 block of WISCONSIN AVENUE NW",
+    "lat": 38.933,
+    "lon": -77.072
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T15:52:54Z",
+    "resolved": "2026-11-02T16:15:49Z",
+    "status": "Closed",
+    "block": "3400 block of CONNECTICUT AVENUE NW",
+    "lat": 38.935,
+    "lon": -77.059
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T12:50:02Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3500 block of QUEBEC STREET NW",
+    "lat": 38.938,
+    "lon": -77.07
+   },
    {
     "type": "Scheduled Yard Waste",
     "agency": "DPW",
@@ -3644,36 +3674,6 @@
     "block": "3400 block of NEWARK STREET NW",
     "lat": 38.934,
     "lon": -77.068
-   },
-   {
-    "type": "Trash Cart Repair",
-    "agency": "DPW",
-    "added": "2026-10-26T16:48:58Z",
-    "resolved": null,
-    "status": "Open (Duplicate)",
-    "block": "3300 block of QUEBEC PLACE NW",
-    "lat": 38.938,
-    "lon": -77.066
-   },
-   {
-    "type": "Trash Cart Repair",
-    "agency": "DPW",
-    "added": "2026-10-26T16:44:09Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3300 block of QUEBEC PLACE NW",
-    "lat": 38.938,
-    "lon": -77.066
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-26T15:53:21Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3400 block of ORDWAY STREET NW",
-    "lat": 38.936,
-    "lon": -77.067
    }
   ]
  },
@@ -3715,7 +3715,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3965,7 +3965,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4160,7 +4160,7 @@
    {
     "type": "Scheduled Yard Waste",
     "median_days": 7.96,
-    "city_median_days": 9.8,
+    "city_median_days": 9.77,
     "closed_n": 433
    },
    {
@@ -4173,12 +4173,12 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 286
+    "closed_n": 287
    },
    {
     "type": "Recycling Collection - Missed",
     "median_days": 6.06,
-    "city_median_days": 5.13,
+    "city_median_days": 5.12,
     "closed_n": 195
    },
    {
@@ -4209,7 +4209,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4364,7 +4364,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4479,7 +4479,7 @@
     "name": "PoPville",
     "url": "https://www.popville.com/",
     "state": "ok",
-    "matched": 1,
+    "matched": 0,
     "fetched": 1
    },
    {
@@ -4769,7 +4769,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -4840,7 +4840,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -16177,7 +16177,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

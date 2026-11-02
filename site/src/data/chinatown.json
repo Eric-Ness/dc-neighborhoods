@@ -1,7 +1,7 @@
 {
  "slug": "chinatown",
  "name": "Chinatown",
- "generated_at": "2026-11-02T12:49:34Z",
+ "generated_at": "2026-11-02T16:31:55Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -2740,6 +2740,19 @@
    "smd": "2C03"
   },
   {
+   "id": "P2700468",
+   "issued": "2026-10-15T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "1201 F ST NW 20004",
+   "work": "",
+   "zoning": "D-7",
+   "lat": 38.89766,
+   "lon": -77.02852,
+   "smd": "2C01"
+  },
+  {
    "id": "E2700505",
    "issued": "2026-10-15T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -2920,19 +2933,6 @@
    "lat": 38.90493,
    "lon": -77.03524,
    "smd": "2C02"
-  },
-  {
-   "id": "P2700468",
-   "issued": "2026-10-15T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "1201 F ST NW 20004",
-   "work": "",
-   "zoning": "D-7",
-   "lat": 38.89766,
-   "lon": -77.02852,
-   "smd": "2C01"
   },
   {
    "id": "E2700473",
@@ -3897,6 +3897,32 @@
    "smd": "6E01"
   },
   {
+   "id": "E2700273",
+   "issued": "2026-10-08T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "805 15TH ST NW 20005",
+   "work": "",
+   "zoning": "D-6",
+   "lat": 38.90058,
+   "lon": -77.03339,
+   "smd": "2C01"
+  },
+  {
+   "id": "E2700297",
+   "issued": "2026-10-08T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "1201 F ST NW 20004",
+   "work": "",
+   "zoning": "D-7",
+   "lat": 38.89766,
+   "lon": -77.02852,
+   "smd": "2C01"
+  },
+  {
    "id": "TN2600167",
    "issued": "2026-10-08T04:00:00Z",
    "group": "Renovation & repair",
@@ -3985,32 +4011,6 @@
    "zoning": "D-7",
    "lat": 38.89784,
    "lon": -77.02914,
-   "smd": "2C01"
-  },
-  {
-   "id": "E2700273",
-   "issued": "2026-10-08T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "805 15TH ST NW 20005",
-   "work": "",
-   "zoning": "D-6",
-   "lat": 38.90058,
-   "lon": -77.03339,
-   "smd": "2C01"
-  },
-  {
-   "id": "E2700297",
-   "issued": "2026-10-08T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "1201 F ST NW 20004",
-   "work": "",
-   "zoning": "D-7",
-   "lat": 38.89766,
-   "lon": -77.02852,
    "smd": "2C01"
   },
   {
@@ -4548,57 +4548,57 @@
   }
  ],
  "requests": {
-  "total": 1805,
-  "previous_total": 1530,
+  "total": 1820,
+  "previous_total": 1519,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 467,
-    "previous": 381
+    "count": 469,
+    "previous": 378
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 420,
-    "previous": 136
+    "count": 422,
+    "previous": 133
    },
    {
     "type": "Sidewalk Repair",
-    "count": 134,
-    "previous": 74
+    "count": 133,
+    "previous": 76
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 86,
-    "previous": 140
+    "previous": 139
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 65,
-    "previous": 19
+    "count": 67,
+    "previous": 18
    },
    {
     "type": "DC Health Rodent & Vector Control",
     "count": 48,
-    "previous": 37
+    "previous": 38
    },
    {
     "type": "Bulk Collection",
-    "count": 41,
+    "count": 42,
     "previous": 54
    },
    {
     "type": "Graffiti Removal",
     "count": 41,
-    "previous": 47
+    "previous": 45
    },
    {
     "type": "DMV - Drivers License/ID Issues",
-    "count": 37,
+    "count": 39,
     "previous": 20
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 36,
+    "count": 38,
     "previous": 37
    },
    {
@@ -4617,24 +4617,24 @@
     "previous": 19
    },
    {
+    "type": "Tree Inspection",
+    "count": 23,
+    "previous": 35
+   },
+   {
     "type": "Roadway Markings / Pylons",
     "count": 22,
     "previous": 8
    },
    {
-    "type": "Tree Inspection",
-    "count": 22,
-    "previous": 37
-   },
-   {
     "type": "Illegal Dumping",
-    "count": 19,
+    "count": 20,
     "previous": 16
    },
    {
     "type": "Pothole",
     "count": 18,
-    "previous": 12
+    "previous": 11
    },
    {
     "type": "Traffic Safety Input",
@@ -4649,12 +4649,12 @@
    {
     "type": "Public Space Inspection",
     "count": 14,
-    "previous": 26
+    "previous": 25
    },
    {
     "type": "DMV - Vehicle Registration Issues",
     "count": 14,
-    "previous": 11
+    "previous": 10
    },
    {
     "type": "Tree Planting",
@@ -4662,14 +4662,14 @@
     "previous": 14
    },
    {
+    "type": "Tree Removal",
+    "count": 13,
+    "previous": 31
+   },
+   {
     "type": "DC How Am I Driving?",
     "count": 13,
     "previous": 11
-   },
-   {
-    "type": "Tree Removal",
-    "count": 12,
-    "previous": 31
    },
    {
     "type": "Public Space Litter Can-Collection",
@@ -4689,7 +4689,7 @@
    {
     "type": "Residential Parking Permit Violation",
     "count": 10,
-    "previous": 15
+    "previous": 16
    },
    {
     "type": "Scheduled Yard Waste",
@@ -4754,7 +4754,7 @@
    {
     "type": "Bicycle Services",
     "count": 4,
-    "previous": 7
+    "previous": 8
    },
    {
     "type": "Emergency No-Parking Verification",
@@ -4769,12 +4769,12 @@
    {
     "type": "Test",
     "count": 3,
-    "previous": 3
+    "previous": 4
    },
    {
     "type": "Bus Stop Issues",
     "count": 3,
-    "previous": 14
+    "previous": 13
    },
    {
     "type": "Trash Cart - Delivery",
@@ -4785,6 +4785,16 @@
     "type": "DMV - Driver Record Issues",
     "count": 3,
     "previous": 0
+   },
+   {
+    "type": "Recycling Cart Delivery",
+    "count": 3,
+    "previous": 2
+   },
+   {
+    "type": "DMV - Ticket Ombudsman",
+    "count": 3,
+    "previous": 1
    },
    {
     "type": "DOEE - General Air Quality Concerns",
@@ -4817,11 +4827,6 @@
     "previous": 0
    },
    {
-    "type": "Recycling Cart Delivery",
-    "count": 2,
-    "previous": 2
-   },
-   {
     "type": "Public Space Litter Can Installation",
     "count": 2,
     "previous": 0
@@ -4852,11 +4857,6 @@
     "previous": 5
    },
    {
-    "type": "DMV - Ticket Ombudsman",
-    "count": 2,
-    "previous": 1
-   },
-   {
     "type": "Container Removal",
     "count": 1,
     "previous": 1
@@ -4867,8 +4867,158 @@
     "previous": 1
    }
   ],
-  "open": 321,
+  "open": 322,
   "recent": [
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T16:40:51Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1100 block of 15TH STREET NW",
+    "lat": 38.905,
+    "lon": -77.034
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-02T16:18:47Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of MASSACHUSETTS AVENUE NW",
+    "lat": 38.898,
+    "lon": -77.01
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T16:06:48Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "200 block of MASSACHUSETTS AVENUE NW",
+    "lat": 38.899,
+    "lon": -77.014
+   },
+   {
+    "type": "DMV - Ticket Ombudsman",
+    "agency": "DMV",
+    "added": "2026-11-02T15:50:28Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "500 block of 8TH STREET NW",
+    "lat": 38.897,
+    "lon": -77.023
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-02T15:37:21Z",
+    "resolved": "2026-11-02T15:37:21Z",
+    "status": "Closed",
+    "block": "200 block of K STREET NW",
+    "lat": 38.902,
+    "lon": -77.014
+   },
+   {
+    "type": "Tree Inspection",
+    "agency": "DDOT",
+    "added": "2026-11-02T15:36:10Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "100 block of F STREET NW",
+    "lat": 38.897,
+    "lon": -77.013
+   },
+   {
+    "type": "Tree Removal",
+    "agency": "DDOT",
+    "added": "2026-11-02T15:29:07Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "100 block of F STREET NW",
+    "lat": 38.897,
+    "lon": -77.013
+   },
+   {
+    "type": "Sanitation Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T15:24:34Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "EXIT 11 FROM INTERSTATE 395 SOUTHBOUND TO 3RD STREET NW",
+    "lat": 38.9,
+    "lon": -77.014
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "agency": "DMV",
+    "added": "2026-11-02T15:17:42Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "600 block of E STREET NW",
+    "lat": 38.896,
+    "lon": -77.021
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T15:06:45Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1100 block of 14TH STREET NW",
+    "lat": 38.905,
+    "lon": -77.032
+   },
+   {
+    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "agency": "DDOT",
+    "added": "2026-11-02T14:54:01Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "1200 block of PENNSYLVANIA AVENUE NW",
+    "lat": 38.896,
+    "lon": -77.029
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-02T14:23:39Z",
+    "resolved": "2026-11-02T14:23:39Z",
+    "status": "Closed",
+    "block": "1200 block of NORTH CAPITOL STREET NW",
+    "lat": 38.906,
+    "lon": -77.009
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T14:04:06Z",
+    "resolved": "2026-11-02T16:13:26Z",
+    "status": "Closed",
+    "block": "1300 block of 7TH STREET NW",
+    "lat": 38.908,
+    "lon": -77.022
+   },
+   {
+    "type": "Recycling Cart Delivery",
+    "agency": "DPW",
+    "added": "2026-11-02T13:46:35Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "400 block of M STREET NW",
+    "lat": 38.906,
+    "lon": -77.018
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T13:44:43Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "400 block of N STREET NW",
+    "lat": 38.907,
+    "lon": -77.018
+   },
    {
     "type": "DMV - Driver Record Issues",
     "agency": "DMV",
@@ -4973,8 +5123,8 @@
     "type": "Pothole",
     "agency": "DDOT",
     "added": "2026-11-01T21:09:03Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-02T13:36:06Z",
+    "status": "Closed",
     "block": "700 block of G STREET NW",
     "lat": 38.899,
     "lon": -77.023
@@ -4993,8 +5143,8 @@
     "type": "Illegal Dumping",
     "agency": "DPW",
     "added": "2026-11-01T20:09:31Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-02T14:42:10Z",
+    "status": "Closed",
     "block": "1000 block of 15TH STREET NW",
     "lat": 38.904,
     "lon": -77.034
@@ -5133,8 +5283,8 @@
     "type": "Sanitation Enforcement",
     "agency": "DPW",
     "added": "2026-10-31T19:44:33Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-02T14:09:04Z",
+    "status": "Closed",
     "block": "900 block of MASSACHUSETTS AVENUE NW",
     "lat": 38.903,
     "lon": -77.025
@@ -5218,172 +5368,22 @@
     "block": "1300 block of 7TH STREET NW",
     "lat": 38.908,
     "lon": -77.022
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-10-31T14:18:30Z",
-    "resolved": "2026-10-31T14:25:57Z",
-    "status": "Closed",
-    "block": "400 block of K STREET NW",
-    "lat": 38.902,
-    "lon": -77.016
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-10-31T13:04:54Z",
-    "resolved": "2026-10-31T13:10:56Z",
-    "status": "Closed",
-    "block": "300 block of H STREET NW",
-    "lat": 38.9,
-    "lon": -77.016
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-10-31T13:04:34Z",
-    "resolved": "2026-10-31T13:10:53Z",
-    "status": "Closed",
-    "block": "300 block of H STREET NW",
-    "lat": 38.9,
-    "lon": -77.016
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-10-31T13:04:01Z",
-    "resolved": "2026-10-31T13:10:59Z",
-    "status": "Closed",
-    "block": "300 block of H STREET NW",
-    "lat": 38.9,
-    "lon": -77.016
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-10-31T12:39:25Z",
-    "resolved": "2026-10-31T12:45:53Z",
-    "status": "Closed",
-    "block": "400 block of K STREET NW",
-    "lat": 38.902,
-    "lon": -77.016
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-10-31T12:15:02Z",
-    "resolved": "2026-10-31T12:21:00Z",
-    "status": "Closed",
-    "block": "400 block of K STREET NW",
-    "lat": 38.902,
-    "lon": -77.016
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-10-31T12:13:36Z",
-    "resolved": "2026-10-31T12:20:57Z",
-    "status": "Closed",
-    "block": "400 block of K STREET NW",
-    "lat": 38.902,
-    "lon": -77.016
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-10-31T12:13:10Z",
-    "resolved": "2026-10-31T12:20:53Z",
-    "status": "Closed",
-    "block": "1000 block of 4TH STREET NW",
-    "lat": 38.903,
-    "lon": -77.016
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T11:04:50Z",
-    "resolved": "2026-10-31T11:54:06Z",
-    "status": "Closed",
-    "block": "400 block of I STREET NW",
-    "lat": 38.901,
-    "lon": -77.017
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T03:39:13Z",
-    "resolved": "2026-10-31T04:33:04Z",
-    "status": "Closed",
-    "block": "Unit block of K STREET NW",
-    "lat": 38.903,
-    "lon": -77.01
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T00:41:51Z",
-    "resolved": "2026-10-31T17:18:05Z",
-    "status": "Closed",
-    "block": "900 block of NEW JERSEY AVENUE NW",
-    "lat": 38.902,
-    "lon": -77.013
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-10-31T00:18:36Z",
-    "resolved": "2026-10-31T00:25:53Z",
-    "status": "Closed",
-    "block": "Unit block of MASSACHUSETTS AVENUE NW",
-    "lat": 38.898,
-    "lon": -77.01
-   },
-   {
-    "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
-    "agency": "DPW",
-    "added": "2026-10-30T23:20:51Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "500 block of L STREET NW",
-    "lat": 38.904,
-    "lon": -77.019
-   },
-   {
-    "type": "Public Space Inspection",
-    "agency": "DDOT",
-    "added": "2026-10-30T22:23:37Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "300 block of K STREET NW",
-    "lat": 38.903,
-    "lon": -77.016
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-30T21:51:08Z",
-    "resolved": "2026-10-30T23:51:05Z",
-    "status": "Closed",
-    "block": "1000 block of 15TH STREET NW",
-    "lat": 38.904,
-    "lon": -77.034
    }
   ]
  },
  "crime": {
-  "total": 131,
-  "previous_total": 148,
+  "total": 129,
+  "previous_total": 149,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
-    "count": 92,
+    "count": 91,
     "previous": 100
    },
    {
     "offense": "THEFT F/AUTO",
-    "count": 14,
-    "previous": 21
+    "count": 13,
+    "previous": 22
    },
    {
     "offense": "MOTOR VEHICLE THEFT",
@@ -5478,7 +5478,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -5863,7 +5863,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -6196,7 +6196,7 @@
   "trees": {
    "total": 4379,
    "species": 136,
-   "planted_5y": 512,
+   "planted_5y": 511,
    "empty_boxes": 65,
    "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (65). Not counted: 'Proposed' = planting scheduled (32), 'Conflict'/'Utility' = empty but blocked (31), 'Retired' = box removed (190). 'total' is boxes with status 'Plant' whose condition is not Dead.",
    "condition": {
@@ -6275,7 +6275,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.05,
     "city_median_days": 0.05,
-    "closed_n": 2538
+    "closed_n": 2540
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -6311,7 +6311,7 @@
     "type": "Parking Meter Repair",
     "median_days": 0.69,
     "city_median_days": 0.79,
-    "closed_n": 243
+    "closed_n": 244
    },
    {
     "type": "Roadway Signs",
@@ -6323,7 +6323,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -6498,7 +6498,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "archive_days": 180,
   "sources": [
    {
@@ -7604,7 +7604,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -7667,6 +7667,15 @@
     "kind": "community"
    },
    {
+    "title": "FRESHFARM Mount Vernon Triangle",
+    "place": "499 I St NW",
+    "time": "9:00 AM - 1:00 PM",
+    "url": "https://www.freshfarm.org/markets",
+    "source": "DC farmers market list",
+    "kind": "market",
+    "date": "2026-11-07"
+   },
+   {
     "title": "Free Public Art Tours at Walter E. Washington Convention Center",
     "date": "2026-11-10",
     "time": "6 PM to 8 PM",
@@ -7701,6 +7710,15 @@
     "url": "https://www.mountvernontriangle.org/event/freshfarm-mvt-market-5-2-2026-04-11-2026-11-14/",
     "source": "Mount Vernon Triangle CID",
     "kind": "community"
+   },
+   {
+    "title": "FRESHFARM Mount Vernon Triangle",
+    "place": "499 I St NW",
+    "time": "9:00 AM - 1:00 PM",
+    "url": "https://www.freshfarm.org/markets",
+    "source": "DC farmers market list",
+    "kind": "market",
+    "date": "2026-11-14"
    },
    {
     "title": "Center Stage Presents: The Serpent Queen",
@@ -7748,6 +7766,15 @@
     "kind": "community"
    },
    {
+    "title": "FRESHFARM Mount Vernon Triangle",
+    "place": "499 I St NW",
+    "time": "9:00 AM - 1:00 PM",
+    "url": "https://www.freshfarm.org/markets",
+    "source": "DC farmers market list",
+    "kind": "market",
+    "date": "2026-11-21"
+   },
+   {
     "title": "FRESHFARM By the White House",
     "place": "810 Vermont Ave NW",
     "time": "11:00 AM - 2:00 PM",
@@ -7764,9 +7791,7 @@
     "url": "https://www.mountvernontriangle.org/event/freshfarm-mvt-market-5-2-2026-04-11-2026-11-28/",
     "source": "Mount Vernon Triangle CID",
     "kind": "community"
-   }
-  ],
-  "unscheduled": [
+   },
    {
     "title": "FRESHFARM Mount Vernon Triangle",
     "place": "499 I St NW",
@@ -7774,9 +7799,10 @@
     "url": "https://www.freshfarm.org/markets",
     "source": "DC farmers market list",
     "kind": "market",
-    "schedule": "Saturdays"
+    "date": "2026-11-28"
    }
   ],
+  "unscheduled": [],
   "links": [
    {
     "name": "MLK Library events",
@@ -7798,7 +7824,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -35166,7 +35192,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
@@ -35710,13 +35736,6 @@
     "lon": -77.01994
    },
    {
-    "id": "0824c772-1f3f-11e7-bf6b-3863bb334450",
-    "name": "7th & F St NW / National Portrait Gallery",
-    "capacity": 35,
-    "lat": 38.89732,
-    "lon": -77.0223
-   },
-   {
     "id": "a0d0ec92-ebda-436a-b476-7ee9a7bdb67d",
     "name": "7th & K St NW",
     "capacity": 19,
@@ -35745,11 +35764,11 @@
     "lon": -77.02277
    },
    {
-    "id": "2279835032725133600",
-    "name": "9th & F St NW",
-    "capacity": 19,
-    "lat": 38.89549,
-    "lon": -77.02638
+    "id": "0824c772-1f3f-11e7-bf6b-3863bb334450",
+    "name": "9th & F St NW / National Portrait Gallery",
+    "capacity": 35,
+    "lat": 38.89697,
+    "lon": -77.02393
    },
    {
     "id": "a10f8bfa-1324-411c-b358-3fbd94eff32b",

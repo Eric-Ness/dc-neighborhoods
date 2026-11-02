@@ -1,7 +1,7 @@
 {
  "slug": "mountpleasant",
  "name": "Mount Pleasant",
- "generated_at": "2026-11-02T14:32:20Z",
+ "generated_at": "2026-11-02T16:31:55Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1109,19 +1109,6 @@
    "smd": "1D06"
   },
   {
-   "id": "P2700841",
-   "issued": "2026-10-27T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "3442 OAKWOOD TER NW 20010",
-   "work": "",
-   "zoning": "RF-1",
-   "lat": 38.93526,
-   "lon": -77.03845,
-   "smd": "1D02"
-  },
-  {
    "id": "M2700341",
    "issued": "2026-10-27T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -1159,6 +1146,19 @@
    "lat": 38.93269,
    "lon": -77.03967,
    "smd": "1D03"
+  },
+  {
+   "id": "P2700841",
+   "issued": "2026-10-27T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "3442 OAKWOOD TER NW 20010",
+   "work": "",
+   "zoning": "RF-1",
+   "lat": 38.93526,
+   "lon": -77.03845,
+   "smd": "1D02"
   },
   {
    "id": "B2609050",
@@ -1591,23 +1591,23 @@
   }
  ],
  "requests": {
-  "total": 724,
-  "previous_total": 818,
+  "total": 727,
+  "previous_total": 816,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 158,
+    "count": 159,
     "previous": 138
    },
    {
     "type": "Bulk Collection",
-    "count": 98,
+    "count": 101,
     "previous": 115
    },
    {
     "type": "Scheduled Yard Waste",
     "count": 82,
-    "previous": 79
+    "previous": 78
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
@@ -1685,11 +1685,6 @@
     "previous": 5
    },
    {
-    "type": "Tree Inspection",
-    "count": 7,
-    "previous": 15
-   },
-   {
     "type": "Recycling Cart Delivery",
     "count": 7,
     "previous": 9
@@ -1725,6 +1720,16 @@
     "previous": 6
    },
    {
+    "type": "Tree Inspection",
+    "count": 5,
+    "previous": 15
+   },
+   {
+    "type": "Traffic Safety Input",
+    "count": 5,
+    "previous": 6
+   },
+   {
     "type": "DMV - Vehicle Registration Issues",
     "count": 5,
     "previous": 2
@@ -1737,17 +1742,12 @@
    {
     "type": "Trash Collection - Missed",
     "count": 4,
-    "previous": 17
+    "previous": 16
    },
    {
     "type": "Recycling Cart - Repair",
     "count": 4,
     "previous": 1
-   },
-   {
-    "type": "Traffic Safety Input",
-    "count": 4,
-    "previous": 6
    },
    {
     "type": "Bicycle Services",
@@ -1885,14 +1885,44 @@
     "previous": 0
    }
   ],
-  "open": 183,
+  "open": 152,
   "recent": [
+   {
+    "type": "Traffic Safety Input",
+    "agency": "DDOT",
+    "added": "2026-11-02T17:00:27Z",
+    "resolved": "2026-11-02T17:05:59Z",
+    "status": "Closed",
+    "block": "1700 block of IRVING STREET NW",
+    "lat": 38.929,
+    "lon": -77.04
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T16:34:20Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1800 block of INGLESIDE TERRACE NW",
+    "lat": 38.935,
+    "lon": -77.042
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T15:08:40Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3300 block of 19TH STREET NW",
+    "lat": 38.934,
+    "lon": -77.044
+   },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "agency": "DDOT",
     "added": "2026-11-02T14:13:31Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-02T14:35:58Z",
+    "status": "Closed",
     "block": "3600 block of 16TH STREET NW",
     "lat": 38.936,
     "lon": -77.037
@@ -1901,8 +1931,8 @@
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-11-02T14:11:23Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-02T14:45:04Z",
+    "status": "Closed",
     "block": "1800 block of IRVING STREET NW",
     "lat": 38.929,
     "lon": -77.042
@@ -1911,8 +1941,8 @@
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-11-02T14:08:18Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-02T14:57:05Z",
+    "status": "Closed",
     "block": "3300 block of BROWN STREET NW",
     "lat": 38.934,
     "lon": -77.038
@@ -2356,36 +2386,6 @@
     "block": "1700 block of KILBOURNE PLACE NW",
     "lat": 38.93,
     "lon": -77.041
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T13:34:10Z",
-    "resolved": "2026-10-31T14:00:57Z",
-    "status": "Closed",
-    "block": "3600 block of 16TH STREET NW",
-    "lat": 38.936,
-    "lon": -77.037
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-31T02:28:10Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1700 block of PARK ROAD NW",
-    "lat": 38.933,
-    "lon": -77.04
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T00:07:30Z",
-    "resolved": "2026-10-31T00:45:04Z",
-    "status": "Closed",
-    "block": "3100 block of 17TH STREET NW",
-    "lat": 38.931,
-    "lon": -77.039
    }
   ]
  },
@@ -2409,14 +2409,14 @@
     "previous": 2
    },
    {
-    "offense": "MOTOR VEHICLE THEFT",
-    "count": 1,
-    "previous": 2
-   },
-   {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
     "count": 1,
     "previous": 0
+   },
+   {
+    "offense": "MOTOR VEHICLE THEFT",
+    "count": 1,
+    "previous": 2
    },
    {
     "offense": "ROBBERY",
@@ -2472,7 +2472,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T14:32:20Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2664,7 +2664,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T14:32:20Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2912,19 +2912,19 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 1222
+    "closed_n": 1224
    },
    {
     "type": "Bulk Collection",
     "median_days": 7.88,
     "city_median_days": 6.92,
-    "closed_n": 1064
+    "closed_n": 1085
    },
    {
     "type": "Scheduled Yard Waste",
-    "median_days": 13.86,
-    "city_median_days": 9.79,
-    "closed_n": 734
+    "median_days": 13.78,
+    "city_median_days": 9.77,
+    "closed_n": 742
    },
    {
     "type": "Trash Collection - Missed",
@@ -2941,7 +2941,7 @@
    {
     "type": "Sanitation Enforcement",
     "median_days": 0.77,
-    "city_median_days": 1.09,
+    "city_median_days": 1.1,
     "closed_n": 330
    },
    {
@@ -2960,7 +2960,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T14:32:20Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3122,7 +3122,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T14:32:20Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "archive_days": 180,
   "sources": [
    {
@@ -3373,7 +3373,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T14:32:20Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -3461,7 +3461,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T14:32:20Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -9904,7 +9904,7 @@
     "trash_day": "Tuesday/Friday",
     "recycling_day": null,
     "leaf_zone": "1A",
-    "leaf_done": false,
+    "leaf_done": true,
     "schools": {
      "high": "dcps_463"
     },
@@ -12432,7 +12432,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T14:32:20Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

@@ -1,7 +1,7 @@
 {
  "slug": "gloverpark",
  "name": "Glover Park",
- "generated_at": "2026-11-02T12:49:34Z",
+ "generated_at": "2026-11-02T16:31:55Z",
  "boundary": {
   "source": "ANC 3B, the Glover Park commission (all its single-member districts, Open Data DC). DC has no planning area named Glover Park.",
   "rings": [
@@ -7853,27 +7853,27 @@
   }
  ],
  "requests": {
-  "total": 494,
-  "previous_total": 408,
+  "total": 500,
+  "previous_total": 399,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 92,
-    "previous": 77
+    "count": 96,
+    "previous": 73
    },
    {
     "type": "Parking Enforcement",
     "count": 52,
-    "previous": 29
+    "previous": 28
    },
    {
     "type": "Scheduled Yard Waste",
     "count": 45,
-    "previous": 47
+    "previous": 48
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 37,
+    "count": 38,
     "previous": 18
    },
    {
@@ -7889,15 +7889,15 @@
    {
     "type": "DMV - Drivers License/ID Issues",
     "count": 14,
-    "previous": 10
-   },
-   {
-    "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 13,
-    "previous": 5
+    "previous": 9
    },
    {
     "type": "Illegal Dumping",
+    "count": 14,
+    "previous": 5
+   },
+   {
+    "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 13,
     "previous": 5
    },
@@ -7914,12 +7914,12 @@
    {
     "type": "DMV - Online Processing Issues",
     "count": 10,
-    "previous": 1
+    "previous": 0
    },
    {
     "type": "Sanitation Enforcement",
     "count": 10,
-    "previous": 7
+    "previous": 6
    },
    {
     "type": "Trash Cart - Delivery",
@@ -7934,7 +7934,7 @@
    {
     "type": "Supercan - Delivery",
     "count": 9,
-    "previous": 7
+    "previous": 6
    },
    {
     "type": "Tree Inspection",
@@ -7949,7 +7949,7 @@
    {
     "type": "Roadway Signs",
     "count": 9,
-    "previous": 12
+    "previous": 10
    },
    {
     "type": "Graffiti Removal",
@@ -7963,7 +7963,7 @@
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
-    "count": 6,
+    "count": 7,
     "previous": 3
    },
    {
@@ -7980,11 +7980,6 @@
     "type": "Recycling Cart Delivery",
     "count": 5,
     "previous": 8
-   },
-   {
-    "type": "DOB - Illegal Construction",
-    "count": 4,
-    "previous": 5
    },
    {
     "type": "Recycling Cart - Repair",
@@ -8012,6 +8007,11 @@
     "previous": 7
    },
    {
+    "type": "OCTFME - Down Cable Wires",
+    "count": 4,
+    "previous": 6
+   },
+   {
     "type": "Out of State Parking Violation (ROSA)",
     "count": 4,
     "previous": 0
@@ -8022,9 +8022,9 @@
     "previous": 2
    },
    {
-    "type": "OCTFME - Down Cable Wires",
-    "count": 3,
-    "previous": 6
+    "type": "DOB - Illegal Construction",
+    "count": 2,
+    "previous": 7
    },
    {
     "type": "DC Government Information",
@@ -8064,7 +8064,7 @@
    {
     "type": "Dockless Vehicle Parking Complaint",
     "count": 2,
-    "previous": 5
+    "previous": 4
    },
    {
     "type": "Sidewalk Repair",
@@ -8082,8 +8082,48 @@
     "previous": 0
    }
   ],
-  "open": 115,
+  "open": 119,
   "recent": [
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T16:42:14Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2300 block of 37TH STREET NW",
+    "lat": 38.921,
+    "lon": -77.073
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T16:28:31Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2200 block of HALL PLACE NW",
+    "lat": 38.919,
+    "lon": -77.072
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T15:05:51Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2200 block of OBSERVATORY PLACE NW",
+    "lat": 38.92,
+    "lon": -77.074
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T13:53:26Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2100 block of 37TH STREET NW",
+    "lat": 38.919,
+    "lon": -77.073
+   },
    {
     "type": "Rat Replacement Containers",
     "agency": "DPW",
@@ -8178,8 +8218,8 @@
     "type": "Tree Inspection",
     "agency": "DDOT",
     "added": "2026-11-01T15:18:58Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-02T13:30:57Z",
+    "status": "Closed",
     "block": "2300 block of 39TH STREET NW",
     "lat": 38.92,
     "lon": -77.077
@@ -8543,46 +8583,6 @@
     "block": "2400 block of TUNLAW ROAD NW",
     "lat": 38.921,
     "lon": -77.074
-   },
-   {
-    "type": "Abandoned Vehicle - On Public Property",
-    "agency": "DPW",
-    "added": "2026-10-28T18:48:36Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2100 block of WISCONSIN AVENUE NW",
-    "lat": 38.918,
-    "lon": -77.069
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-28T18:33:34Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2400 block of 39TH STREET NW",
-    "lat": 38.922,
-    "lon": -77.077
-   },
-   {
-    "type": "DMV - Vehicle Registration Issues",
-    "agency": "DMV",
-    "added": "2026-10-28T17:03:27Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4000 block of TUNLAW ROAD NW",
-    "lat": 38.925,
-    "lon": -77.08
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-28T15:32:03Z",
-    "resolved": "2026-10-28T16:09:22Z",
-    "status": "Closed",
-    "block": "2200 block of HALL PLACE NW",
-    "lat": 38.919,
-    "lon": -77.072
    }
   ]
  },
@@ -8654,7 +8654,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -8953,7 +8953,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -9149,9 +9149,9 @@
    },
    {
     "type": "Scheduled Yard Waste",
-    "median_days": 8.27,
-    "city_median_days": 9.79,
-    "closed_n": 346
+    "median_days": 8.23,
+    "city_median_days": 9.77,
+    "closed_n": 344
    },
    {
     "type": "Parking Enforcement",
@@ -9186,14 +9186,14 @@
    {
     "type": "Illegal Dumping",
     "median_days": 4.42,
-    "city_median_days": 4.04,
+    "city_median_days": 4.03,
     "closed_n": 90
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -9335,7 +9335,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "archive_days": 180,
   "sources": [
    {
@@ -9598,7 +9598,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -9653,7 +9653,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -24169,7 +24169,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

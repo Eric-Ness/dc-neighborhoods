@@ -1,7 +1,7 @@
 {
  "slug": "georgetown",
  "name": "Georgetown",
- "generated_at": "2026-11-02T12:49:34Z",
+ "generated_at": "2026-11-02T16:31:55Z",
  "boundary": {
   "source": "Georgetown Historic District (DC Historic Preservation Office, Open Data DC). DC's GEORGETOWN planning area covers only the western half of the neighborhood.",
   "rings": [
@@ -4845,28 +4845,38 @@
   }
  ],
  "requests": {
-  "total": 1267,
-  "previous_total": 1493,
+  "total": 1291,
+  "previous_total": 1456,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 217,
-    "previous": 194
+    "count": 214,
+    "previous": 192
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 138,
-    "previous": 132
+    "count": 134,
+    "previous": 135
    },
    {
     "type": "Bulk Collection",
-    "count": 95,
-    "previous": 110
+    "count": 98,
+    "previous": 112
    },
    {
     "type": "Residential Parking Permit Violation",
-    "count": 66,
-    "previous": 104
+    "count": 67,
+    "previous": 101
+   },
+   {
+    "type": "Roadway Signs",
+    "count": 67,
+    "previous": 23
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "count": 67,
+    "previous": 78
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -4874,18 +4884,8 @@
     "previous": 55
    },
    {
-    "type": "Roadway Signs",
-    "count": 65,
-    "previous": 25
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "count": 61,
-    "previous": 82
-   },
-   {
     "type": "DOB - Vacant Private Property Inspection",
-    "count": 53,
+    "count": 58,
     "previous": 7
    },
    {
@@ -4895,23 +4895,23 @@
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 40,
-    "previous": 37
+    "count": 41,
+    "previous": 39
    },
    {
     "type": "Trash Cart - Delivery",
     "count": 37,
-    "previous": 69
+    "previous": 63
+   },
+   {
+    "type": "Tree Planting",
+    "count": 30,
+    "previous": 8
    },
    {
     "type": "Tree Pruning",
     "count": 30,
-    "previous": 29
-   },
-   {
-    "type": "Tree Planting",
-    "count": 27,
-    "previous": 8
+    "previous": 28
    },
    {
     "type": "Graffiti Removal",
@@ -4920,13 +4920,13 @@
    },
    {
     "type": "Container Removal",
-    "count": 25,
-    "previous": 28
+    "count": 26,
+    "previous": 27
    },
    {
     "type": "Tree Inspection",
     "count": 23,
-    "previous": 41
+    "previous": 39
    },
    {
     "type": "Abandoned Bicycle",
@@ -4935,28 +4935,33 @@
    },
    {
     "type": "Sidewalk Repair",
-    "count": 22,
-    "previous": 126
+    "count": 23,
+    "previous": 108
    },
    {
     "type": "Rat Replacement Containers",
-    "count": 22,
+    "count": 23,
     "previous": 58
    },
    {
-    "type": "Streetlight Repair Investigation",
-    "count": 17,
-    "previous": 22
+    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "count": 19,
+    "previous": 11
    },
    {
-    "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 17,
-    "previous": 11
+    "type": "Streetlight Repair Investigation",
+    "count": 16,
+    "previous": 22
    },
    {
     "type": "Illegal Dumping",
     "count": 15,
-    "previous": 19
+    "previous": 20
+   },
+   {
+    "type": "Public Space Inspection",
+    "count": 12,
+    "previous": 7
    },
    {
     "type": "Roadway Markings / Pylons",
@@ -4964,13 +4969,8 @@
     "previous": 6
    },
    {
-    "type": "Public Space Inspection",
-    "count": 10,
-    "previous": 7
-   },
-   {
     "type": "Public Space Litter Can-Collection",
-    "count": 8,
+    "count": 9,
     "previous": 8
    },
    {
@@ -4990,13 +4990,18 @@
    },
    {
     "type": "Recycling Cart Delivery",
-    "count": 6,
-    "previous": 25
+    "count": 7,
+    "previous": 24
    },
    {
     "type": "DOB - Illegal Construction",
-    "count": 6,
+    "count": 7,
     "previous": 6
+   },
+   {
+    "type": "Supercan - Delivery",
+    "count": 5,
+    "previous": 5
    },
    {
     "type": "Pothole",
@@ -5016,22 +5021,12 @@
    {
     "type": "Tree Removal",
     "count": 5,
-    "previous": 31
-   },
-   {
-    "type": "Missed Curbside Compost Collection",
-    "count": 5,
-    "previous": 11
+    "previous": 29
    },
    {
     "type": "Street Cleaning",
     "count": 4,
     "previous": 9
-   },
-   {
-    "type": "Supercan - Delivery",
-    "count": 4,
-    "previous": 5
    },
    {
     "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
@@ -5041,7 +5036,12 @@
    {
     "type": "Traffic Safety Input",
     "count": 4,
-    "previous": 8
+    "previous": 7
+   },
+   {
+    "type": "Missed Curbside Compost Collection",
+    "count": 4,
+    "previous": 11
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
@@ -5102,16 +5102,131 @@
     "type": "Abandoned Vehicle - On Private Property",
     "count": 1,
     "previous": 0
+   },
+   {
+    "type": "Public Space Litter Can Removal",
+    "count": 1,
+    "previous": 1
    }
   ],
-  "open": 321,
+  "open": 324,
   "recent": [
+   {
+    "type": "Sanitation Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T16:10:33Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2500 block of Q STREET NW",
+    "lat": 38.911,
+    "lon": -77.054
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T15:50:09Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2900 block of Q STREET NW",
+    "lat": 38.911,
+    "lon": -77.059
+   },
+   {
+    "type": "Public Space Litter Can Removal",
+    "agency": "DPW",
+    "added": "2026-11-02T15:36:14Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3000 block of Q STREET NW",
+    "lat": 38.911,
+    "lon": -77.06
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T15:25:23Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3000 block of CAMBRIDGE PLACE NW",
+    "lat": 38.911,
+    "lon": -77.06
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T15:20:38Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1500 block of 29TH STREET NW",
+    "lat": 38.91,
+    "lon": -77.058
+   },
+   {
+    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "agency": "DDOT",
+    "added": "2026-11-02T15:15:01Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "1600 block of WISCONSIN AVENUE NW",
+    "lat": 38.911,
+    "lon": -77.065
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T15:11:12Z",
+    "resolved": "2026-11-02T15:51:05Z",
+    "status": "Closed",
+    "block": "1300 block of 36TH STREET NW",
+    "lat": 38.907,
+    "lon": -77.071
+   },
+   {
+    "type": "Sidewalk Repair",
+    "agency": "DDOT",
+    "added": "2026-11-02T15:00:55Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "1000 block of WISCONSIN AVENUE NW",
+    "lat": 38.904,
+    "lon": -77.063
+   },
+   {
+    "type": "Residential Parking Permit Violation",
+    "agency": "DPW",
+    "added": "2026-11-02T13:42:16Z",
+    "resolved": "2026-11-02T16:35:51Z",
+    "status": "Closed (Duplicate)",
+    "block": "1200 block of 29TH STREET NW",
+    "lat": 38.906,
+    "lon": -77.058
+   },
+   {
+    "type": "Residential Parking Permit Violation",
+    "agency": "DPW",
+    "added": "2026-11-02T13:41:10Z",
+    "resolved": "2026-11-02T16:35:50Z",
+    "status": "Closed",
+    "block": "1200 block of 29TH STREET NW",
+    "lat": 38.906,
+    "lon": -77.058
+   },
+   {
+    "type": "DOB - Vacant Private Property Inspection",
+    "agency": "DOB",
+    "added": "2026-11-02T13:29:19Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1200 block of 34TH STREET NW",
+    "lat": 38.905,
+    "lon": -77.068
+   },
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-11-02T12:32:37Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-02T14:12:04Z",
+    "status": "Closed",
     "block": "1500 block of 31ST STREET NW",
     "lat": 38.91,
     "lon": -77.062
@@ -5495,127 +5610,17 @@
     "block": "1600 block of 31ST STREET NW",
     "lat": 38.911,
     "lon": -77.062
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-31T19:33:15Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2900 block of O STREET NW",
-    "lat": 38.908,
-    "lon": -77.059
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T19:31:24Z",
-    "resolved": "2026-10-31T20:33:04Z",
-    "status": "Closed",
-    "block": "1400 block of 31ST STREET NW",
-    "lat": 38.909,
-    "lon": -77.061
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-10-31T18:57:05Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3200 block of Q STREET NW",
-    "lat": 38.911,
-    "lon": -77.066
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T18:50:07Z",
-    "resolved": "2026-10-31T19:15:05Z",
-    "status": "Closed",
-    "block": "3400 block of O STREET NW",
-    "lat": 38.908,
-    "lon": -77.068
-   },
-   {
-    "type": "Roadway Signs",
-    "agency": "DDOT",
-    "added": "2026-10-31T18:36:11Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "3400 block of PROSPECT STREET NW",
-    "lat": 38.906,
-    "lon": -77.068
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T17:38:31Z",
-    "resolved": "2026-10-31T19:24:04Z",
-    "status": "Closed",
-    "block": "1000 block of 31ST STREET NW",
-    "lat": 38.903,
-    "lon": -77.061
-   },
-   {
-    "type": "Tree Inspection",
-    "agency": "DDOT",
-    "added": "2026-10-31T17:03:18Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "3000 block of WEST LANE KEYS NW",
-    "lat": 38.91,
-    "lon": -77.061
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-31T16:37:20Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1600 block of 32ND STREET NW",
-    "lat": 38.913,
-    "lon": -77.064
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-10-31T16:25:29Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1600 block of 35TH STREET NW",
-    "lat": 38.912,
-    "lon": -77.069
-   },
-   {
-    "type": "Residential Parking Permit Violation",
-    "agency": "DPW",
-    "added": "2026-10-31T16:04:14Z",
-    "resolved": "2026-10-31T18:28:32Z",
-    "status": "Closed",
-    "block": "3200 block of R STREET NW",
-    "lat": 38.914,
-    "lon": -77.066
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T15:26:44Z",
-    "resolved": "2026-10-31T18:22:04Z",
-    "status": "Closed",
-    "block": "3200 block of K STREET NW",
-    "lat": 38.903,
-    "lon": -77.063
    }
   ]
  },
  "crime": {
   "total": 54,
-  "previous_total": 55,
+  "previous_total": 54,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
     "count": 35,
-    "previous": 41
+    "previous": 40
    },
    {
     "offense": "THEFT F/AUTO",
@@ -5623,9 +5628,9 @@
     "previous": 11
    },
    {
-    "offense": "BURGLARY",
+    "offense": "ASSAULT W/DANGEROUS WEAPON",
     "count": 2,
-    "previous": 0
+    "previous": 1
    },
    {
     "offense": "MOTOR VEHICLE THEFT",
@@ -5633,9 +5638,9 @@
     "previous": 0
    },
    {
-    "offense": "ASSAULT W/DANGEROUS WEAPON",
+    "offense": "BURGLARY",
     "count": 2,
-    "previous": 1
+    "previous": 0
    },
    {
     "offense": "ROBBERY",
@@ -5696,7 +5701,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -5915,7 +5920,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -6276,14 +6281,14 @@
    {
     "type": "Scheduled Yard Waste",
     "median_days": 13.77,
-    "city_median_days": 9.8,
+    "city_median_days": 9.77,
     "closed_n": 1008
    },
    {
     "type": "Bulk Collection",
     "median_days": 5.79,
     "city_median_days": 6.92,
-    "closed_n": 829
+    "closed_n": 828
    },
    {
     "type": "Trash Collection - Missed",
@@ -6295,18 +6300,18 @@
     "type": "Residential Parking Permit Violation",
     "median_days": 0.12,
     "city_median_days": 0.1,
-    "closed_n": 395
+    "closed_n": 394
    },
    {
     "type": "DC Health Rodent & Vector Control",
     "median_days": 0.95,
     "city_median_days": 2.79,
-    "closed_n": 341
+    "closed_n": 342
    },
    {
     "type": "Sanitation Enforcement",
     "median_days": 0.93,
-    "city_median_days": 1.09,
+    "city_median_days": 1.1,
     "closed_n": 334
    },
    {
@@ -6319,7 +6324,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -6462,7 +6467,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "archive_days": 180,
   "sources": [
    {
@@ -6566,7 +6571,7 @@
     "name": "PoPville",
     "url": "https://www.popville.com/",
     "state": "ok",
-    "matched": 1,
+    "matched": 0,
     "fetched": 2
    },
    {
@@ -6594,7 +6599,7 @@
     "name": "Greater Greater Washington",
     "url": "https://ggwash.org/",
     "state": "ok",
-    "matched": 1,
+    "matched": 0,
     "fetched": 1
    },
    {
@@ -6620,6 +6625,13 @@
    }
   ],
   "items": [
+   {
+    "title": "Northwest Georgetown November ANC Update",
+    "url": "https://georgetownmetropolitan.com/2026/11/02/northwest-georgetown-november-anc-update-3/",
+    "source": "Georgetown Metropolitan",
+    "published": "2026-11-02T15:00:00Z",
+    "first_seen": "2026-11-02T16:31:55Z"
+   },
    {
     "title": "The Latest Dish: Openings, Openings",
     "url": "https://georgetowner.com/articles/2026/10/29/the-latest-dish-openings-openings/",
@@ -7474,7 +7486,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -7508,7 +7520,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -29086,7 +29098,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

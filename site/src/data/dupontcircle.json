@@ -1,7 +1,7 @@
 {
  "slug": "dupontcircle",
  "name": "Dupont Circle",
- "generated_at": "2026-11-02T12:49:34Z",
+ "generated_at": "2026-11-02T16:31:55Z",
  "boundary": {
   "source": "Dupont Circle Historic District (DC Historic Preservation Office, Open Data DC). DC has no planning area named Dupont Circle; this overlaps the Adams Morgan site to the north.",
   "rings": [
@@ -1781,6 +1781,19 @@
    "smd": "2B02"
   },
   {
+   "id": "B2606718",
+   "issued": "2026-10-14T04:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "1200 18TH ST NW 20036",
+   "work": "HISTORIC\r\n\r\n- RECONFIGURATION OF APPROX. 5,901.5 SF OF EXISTING A-2 RESTAURANT TENANT SPACE ON THE FIRST FLOOR, SUITE 100. RECONFIGURATION OF APPROX. 841.5 SF EXISTING STORAGE SPACE ON THE BASEMENT LEVEL.  FOR A TOTAL COMBINED RENOVATED AREA OF APPROX. 6,743 SF. \r\n- NO EXTERIOR ARCHITECTURAL WORK.",
+   "zoning": "MU-9B/DC",
+   "lat": 38.90594,
+   "lon": -77.04205,
+   "smd": "2B05"
+  },
+  {
    "id": "B2606716",
    "issued": "2026-10-14T04:00:00Z",
    "group": "Renovation & repair",
@@ -1805,19 +1818,6 @@
    "lat": 38.91393,
    "lon": -77.04458,
    "smd": "2B01"
-  },
-  {
-   "id": "B2606718",
-   "issued": "2026-10-14T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "1200 18TH ST NW 20036",
-   "work": "HISTORIC\r\n\r\n- RECONFIGURATION OF APPROX. 5,901.5 SF OF EXISTING A-2 RESTAURANT TENANT SPACE ON THE FIRST FLOOR, SUITE 100. RECONFIGURATION OF APPROX. 841.5 SF EXISTING STORAGE SPACE ON THE BASEMENT LEVEL.  FOR A TOTAL COMBINED RENOVATED AREA OF APPROX. 6,743 SF. \r\n- NO EXTERIOR ARCHITECTURAL WORK.",
-   "zoning": "MU-9B/DC",
-   "lat": 38.90594,
-   "lon": -77.04205,
-   "smd": "2B05"
   },
   {
    "id": "E2700413",
@@ -2042,18 +2042,18 @@
   }
  ],
  "requests": {
-  "total": 705,
+  "total": 709,
   "previous_total": 821,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 131,
-    "previous": 110
+    "count": 130,
+    "previous": 111
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 69,
-    "previous": 75
+    "count": 70,
+    "previous": 74
    },
    {
     "type": "Bulk Collection",
@@ -2062,13 +2062,13 @@
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 39,
+    "count": 41,
     "previous": 27
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 30,
-    "previous": 39
+    "count": 31,
+    "previous": 37
    },
    {
     "type": "Illegal Dumping",
@@ -2084,11 +2084,6 @@
     "type": "Dead Animal Collection",
     "count": 20,
     "previous": 19
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "count": 18,
-    "previous": 29
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -2119,6 +2114,11 @@
     "type": "Graffiti Removal",
     "count": 16,
     "previous": 40
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "count": 16,
+    "previous": 31
    },
    {
     "type": "Public Space Inspection",
@@ -2196,6 +2196,11 @@
     "previous": 1
    },
    {
+    "type": "Pothole",
+    "count": 6,
+    "previous": 4
+   },
+   {
     "type": "Parking Meter Repair",
     "count": 6,
     "previous": 4
@@ -2204,11 +2209,6 @@
     "type": "Tree Removal",
     "count": 6,
     "previous": 16
-   },
-   {
-    "type": "Pothole",
-    "count": 5,
-    "previous": 4
    },
    {
     "type": "DMV - Vehicle Registration Issues",
@@ -2226,6 +2226,11 @@
     "previous": 7
    },
    {
+    "type": "Bicycle Services",
+    "count": 4,
+    "previous": 5
+   },
+   {
     "type": "Trash Cart Repair",
     "count": 4,
     "previous": 2
@@ -2241,9 +2246,9 @@
     "previous": 7
    },
    {
-    "type": "Bicycle Services",
+    "type": "Bus Stop Issues",
     "count": 3,
-    "previous": 5
+    "previous": 0
    },
    {
     "type": "DC How Am I Driving?",
@@ -2254,11 +2259,6 @@
     "type": "Illegal Poster",
     "count": 3,
     "previous": 1
-   },
-   {
-    "type": "Bus Stop Issues",
-    "count": 2,
-    "previous": 0
    },
    {
     "type": "Supercan - Delivery",
@@ -2323,6 +2323,66 @@
   ],
   "open": 158,
   "recent": [
+   {
+    "type": "Pothole",
+    "agency": "DDOT",
+    "added": "2026-11-02T16:03:26Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "1600 block of CONNECTICUT AVENUE NW",
+    "lat": 38.912,
+    "lon": -77.045
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "agency": "DOH",
+    "added": "2026-11-02T15:25:58Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1800 block of SWANN STREET NW",
+    "lat": 38.915,
+    "lon": -77.042
+   },
+   {
+    "type": "Bus Stop Issues",
+    "agency": "DDOT",
+    "added": "2026-11-02T15:16:19Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "CONNECTICUT AVENUE NW AND R STREET NW",
+    "lat": 38.913,
+    "lon": -77.045
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-02T14:52:36Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1800 block of 19TH STREET NW",
+    "lat": 38.915,
+    "lon": -77.044
+   },
+   {
+    "type": "Bicycle Services",
+    "agency": "DDOT",
+    "added": "2026-11-02T14:46:11Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "1500 block of 19TH STREET NW",
+    "lat": 38.911,
+    "lon": -77.044
+   },
+   {
+    "type": "Sanitation Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T12:57:56Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of MASSACHUSETTS AVENUE NW",
+    "lat": 38.909,
+    "lon": -77.041
+   },
    {
     "type": "Recycling Cart Delivery",
     "agency": "DPW",
@@ -2407,8 +2467,8 @@
     "type": "DC Health Rodent & Vector Control",
     "agency": "DOH",
     "added": "2026-11-01T22:05:45Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-02T16:29:31Z",
+    "status": "Closed",
     "block": "1200 block of CONNECTICUT AVENUE NW",
     "lat": 38.907,
     "lon": -77.042
@@ -2747,8 +2807,8 @@
     "type": "Tree Inspection",
     "agency": "DDOT",
     "added": "2026-10-30T22:38:20Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-02T14:06:04Z",
+    "status": "Closed",
     "block": "1700 block of 20TH STREET NW",
     "lat": 38.914,
     "lon": -77.045
@@ -2762,77 +2822,17 @@
     "block": "1900 block of S STREET NW",
     "lat": 38.914,
     "lon": -77.044
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-30T21:30:53Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2000 block of O STREET NW",
-    "lat": 38.908,
-    "lon": -77.046
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-30T21:20:14Z",
-    "resolved": "2026-10-31T00:06:04Z",
-    "status": "Closed",
-    "block": "2100 block of P STREET NW",
-    "lat": 38.91,
-    "lon": -77.047
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-30T20:38:36Z",
-    "resolved": "2026-10-30T21:09:05Z",
-    "status": "Closed",
-    "block": "1700 block of MASSACHUSETTS AVENUE NW",
-    "lat": 38.908,
-    "lon": -77.04
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-30T20:20:36Z",
-    "resolved": "2026-10-30T22:08:30Z",
-    "status": "Closed",
-    "block": "1600 block of CORCORAN STREET NW",
-    "lat": 38.912,
-    "lon": -77.038
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-30T19:42:53Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1600 block of S STREET NW",
-    "lat": 38.914,
-    "lon": -77.037
-   },
-   {
-    "type": "Trash Cart - Delivery",
-    "agency": "DPW",
-    "added": "2026-10-30T19:36:21Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2100 block of N STREET NW",
-    "lat": 38.907,
-    "lon": -77.048
    }
   ]
  },
  "crime": {
   "total": 69,
-  "previous_total": 63,
+  "previous_total": 61,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
     "count": 40,
-    "previous": 34
+    "previous": 32
    },
    {
     "offense": "THEFT F/AUTO",
@@ -2908,7 +2908,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3100,7 +3100,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3550,18 +3550,18 @@
     "type": "DC Health Rodent & Vector Control",
     "median_days": 1.63,
     "city_median_days": 2.79,
-    "closed_n": 402
+    "closed_n": 404
    },
    {
     "type": "Sanitation Enforcement",
     "median_days": 0.89,
-    "city_median_days": 1.09,
+    "city_median_days": 1.1,
     "closed_n": 279
    },
    {
     "type": "Recycling Collection - Missed",
     "median_days": 4.72,
-    "city_median_days": 5.13,
+    "city_median_days": 5.12,
     "closed_n": 237
    },
    {
@@ -3573,14 +3573,14 @@
    {
     "type": "Scheduled Yard Waste",
     "median_days": 9.88,
-    "city_median_days": 9.8,
+    "city_median_days": 9.77,
     "closed_n": 217
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3722,7 +3722,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "archive_days": 180,
   "sources": [
    {
@@ -3815,7 +3815,7 @@
     "name": "PoPville",
     "url": "https://www.popville.com/",
     "state": "ok",
-    "matched": 0,
+    "matched": 1,
     "fetched": 2
    },
    {
@@ -3869,6 +3869,13 @@
    }
   ],
   "items": [
+   {
+    "title": "Dupont Public House (old Sign of the Whale space) to Finally Open Tomorrow (Tuesday) ALLEGEDLY\u2026",
+    "url": "https://www.popville.com/2026/11/dupont-public-house-old-sign-of-the-whale-space/",
+    "source": "PoPville",
+    "published": "2026-11-02T16:15:16Z",
+    "first_seen": "2026-11-02T16:31:55Z"
+   },
    {
     "title": "4 Open Houses to Tour This Weekend",
     "url": "https://washingtonian.com/2026/10/29/4-open-houses-to-tour-this-weekend/",
@@ -4386,7 +4393,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -4411,8 +4418,7 @@
     "state": "ok"
    }
   ],
-  "events": [],
-  "unscheduled": [
+  "events": [
    {
     "title": "FRESHFARM Dupont Circle",
     "place": "1600 20th St NW",
@@ -4420,9 +4426,37 @@
     "url": "https://www.freshfarm.org/markets",
     "source": "DC farmers market list",
     "kind": "market",
-    "schedule": "Sundays"
+    "date": "2026-11-08"
+   },
+   {
+    "title": "FRESHFARM Dupont Circle",
+    "place": "1600 20th St NW",
+    "time": "8:30 AM - 1:30 PM",
+    "url": "https://www.freshfarm.org/markets",
+    "source": "DC farmers market list",
+    "kind": "market",
+    "date": "2026-11-15"
+   },
+   {
+    "title": "FRESHFARM Dupont Circle",
+    "place": "1600 20th St NW",
+    "time": "8:30 AM - 1:30 PM",
+    "url": "https://www.freshfarm.org/markets",
+    "source": "DC farmers market list",
+    "kind": "market",
+    "date": "2026-11-22"
+   },
+   {
+    "title": "FRESHFARM Dupont Circle",
+    "place": "1600 20th St NW",
+    "time": "8:30 AM - 1:30 PM",
+    "url": "https://www.freshfarm.org/markets",
+    "source": "DC farmers market list",
+    "kind": "market",
+    "date": "2026-11-29"
    }
   ],
+  "unscheduled": [],
   "links": [],
   "ancs": [
    "ANC 2B"
@@ -4430,7 +4464,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -17438,7 +17472,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

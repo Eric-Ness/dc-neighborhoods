@@ -1,7 +1,7 @@
 {
  "slug": "woodleypark",
  "name": "Woodley Park",
- "generated_at": "2026-11-02T14:32:20Z",
+ "generated_at": "2026-11-02T16:31:55Z",
  "boundary": {
   "source": "ANC single-member districts 3C01, 3C02, 3C03 and 3C07, around the Woodley Park Metro and the National Zoo (Open Data DC). DC's WOODLEY PARK planning area also takes in much of Cleveland Park, which has its own site.",
   "rings": [
@@ -11593,19 +11593,6 @@
    "smd": "3C07"
   },
   {
-   "id": "P2700525",
-   "issued": "2026-10-19T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "3230 WOODLAND DR NW 20008",
-   "work": "Plumbing trade Permit",
-   "zoning": "R-1A/TS",
-   "lat": 38.92687,
-   "lon": -77.06496,
-   "smd": "3C07"
-  },
-  {
    "id": "B2700428",
    "issued": "2026-10-19T04:00:00Z",
    "group": "Renovation & repair",
@@ -11616,6 +11603,19 @@
    "zoning": "R-1B",
    "lat": 38.92945,
    "lon": -77.06123,
+   "smd": "3C07"
+  },
+  {
+   "id": "P2700525",
+   "issued": "2026-10-19T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "3230 WOODLAND DR NW 20008",
+   "work": "Plumbing trade Permit",
+   "zoning": "R-1A/TS",
+   "lat": 38.92687,
+   "lon": -77.06496,
    "smd": "3C07"
   },
   {
@@ -11712,22 +11712,22 @@
  ],
  "requests": {
   "total": 397,
-  "previous_total": 327,
+  "previous_total": 330,
   "by_type": [
    {
     "type": "Parking Enforcement",
     "count": 74,
-    "previous": 45
+    "previous": 47
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 55,
-    "previous": 41
+    "count": 53,
+    "previous": 42
    },
    {
     "type": "Bulk Collection",
     "count": 44,
-    "previous": 54
+    "previous": 55
    },
    {
     "type": "Recycling Collection - Missed",
@@ -11775,6 +11775,11 @@
     "previous": 2
    },
    {
+    "type": "Roadway Signs",
+    "count": 9,
+    "previous": 4
+   },
+   {
     "type": "Sidewalk Repair",
     "count": 9,
     "previous": 0
@@ -11783,11 +11788,6 @@
     "type": "Tree Inspection",
     "count": 9,
     "previous": 13
-   },
-   {
-    "type": "Roadway Signs",
-    "count": 8,
-    "previous": 4
    },
    {
     "type": "Pothole",
@@ -11845,6 +11845,11 @@
     "previous": 0
    },
    {
+    "type": "Abandoned Vehicle - On Public Property",
+    "count": 4,
+    "previous": 1
+   },
+   {
     "type": "DOEE - LIHEAP",
     "count": 4,
     "previous": 0
@@ -11853,11 +11858,6 @@
     "type": "DMV - Vehicle Registration Issues",
     "count": 3,
     "previous": 2
-   },
-   {
-    "type": "Abandoned Vehicle - On Public Property",
-    "count": 3,
-    "previous": 1
    },
    {
     "type": "Tree Pruning",
@@ -11925,8 +11925,38 @@
     "previous": 3
    }
   ],
-  "open": 75,
+  "open": 77,
   "recent": [
+   {
+    "type": "Roadway Signs",
+    "agency": "DDOT",
+    "added": "2026-11-02T16:01:32Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "2700 block of 27TH STREET NW",
+    "lat": 38.926,
+    "lon": -77.056
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T15:55:59Z",
+    "resolved": "2026-11-02T16:15:17Z",
+    "status": "Closed",
+    "block": "2600 block of CONNECTICUT AVENUE NW",
+    "lat": 38.925,
+    "lon": -77.052
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T15:45:04Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2800 block of 29TH STREET NW",
+    "lat": 38.928,
+    "lon": -77.057
+   },
    {
     "type": "Parking Meter Repair",
     "agency": "DDOT",
@@ -12396,42 +12426,12 @@
     "block": "2800 block of 29TH STREET NW",
     "lat": 38.927,
     "lon": -77.057
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-27T15:55:57Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2800 block of 27TH STREET NW",
-    "lat": 38.927,
-    "lon": -77.056
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-27T15:24:55Z",
-    "resolved": "2026-10-27T15:24:55Z",
-    "status": "Closed",
-    "block": "2300 block of CATHEDRAL AVENUE NW",
-    "lat": 38.928,
-    "lon": -77.053
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-27T13:10:08Z",
-    "resolved": "2026-10-27T13:10:08Z",
-    "status": "Closed",
-    "block": "2900 block of CONNECTICUT AVENUE NW",
-    "lat": 38.928,
-    "lon": -77.054
    }
   ]
  },
  "crime": {
   "total": 24,
-  "previous_total": 14,
+  "previous_total": 13,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
@@ -12441,7 +12441,7 @@
    {
     "offense": "THEFT F/AUTO",
     "count": 5,
-    "previous": 5
+    "previous": 4
    },
    {
     "offense": "MOTOR VEHICLE THEFT",
@@ -12490,7 +12490,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T14:32:20Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -12651,7 +12651,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T14:32:20Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -12843,7 +12843,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 366
+    "closed_n": 367
    },
    {
     "type": "Bulk Collection",
@@ -12854,7 +12854,7 @@
    {
     "type": "Scheduled Yard Waste",
     "median_days": 7.25,
-    "city_median_days": 9.78,
+    "city_median_days": 9.77,
     "closed_n": 295
    },
    {
@@ -12891,7 +12891,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T14:32:20Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -13050,7 +13050,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T14:32:20Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "archive_days": 180,
   "sources": [
    {
@@ -13342,7 +13342,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T14:32:20Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -13430,7 +13430,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T14:32:20Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -30209,7 +30209,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T14:32:20Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

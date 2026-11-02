@@ -1,7 +1,7 @@
 {
  "slug": "petworth",
  "name": "Petworth",
- "generated_at": "2026-11-02T12:49:34Z",
+ "generated_at": "2026-11-02T16:31:55Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -2015,12 +2015,12 @@
   }
  ],
  "requests": {
-  "total": 1153,
-  "previous_total": 1287,
+  "total": 1152,
+  "previous_total": 1283,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 215,
+    "count": 217,
     "previous": 235
    },
    {
@@ -2030,43 +2030,48 @@
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 113,
-    "previous": 81
+    "count": 111,
+    "previous": 82
    },
    {
     "type": "Parking Enforcement",
-    "count": 80,
-    "previous": 94
+    "count": 79,
+    "previous": 96
    },
    {
     "type": "Illegal Dumping",
-    "count": 61,
+    "count": 62,
     "previous": 91
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 51,
+    "count": 52,
     "previous": 53
    },
    {
     "type": "Sanitation Enforcement",
     "count": 38,
-    "previous": 46
+    "previous": 43
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 35,
+    "count": 36,
     "previous": 0
    },
    {
     "type": "Dead Animal Collection",
-    "count": 30,
-    "previous": 21
+    "count": 29,
+    "previous": 20
    },
    {
     "type": "Container Removal",
-    "count": 25,
-    "previous": 43
+    "count": 24,
+    "previous": 44
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "count": 21,
+    "previous": 16
    },
    {
     "type": "Recycling Collection - Missed",
@@ -2074,19 +2079,14 @@
     "previous": 19
    },
    {
+    "type": "Residential Parking Permit Violation",
+    "count": 21,
+    "previous": 27
+   },
+   {
     "type": "Tree Inspection",
     "count": 20,
     "previous": 22
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "count": 20,
-    "previous": 16
-   },
-   {
-    "type": "Residential Parking Permit Violation",
-    "count": 20,
-    "previous": 27
    },
    {
     "type": "Rat Replacement Containers",
@@ -2114,11 +2114,6 @@
     "previous": 9
    },
    {
-    "type": "Out of State Parking Violation (ROSA)",
-    "count": 12,
-    "previous": 15
-   },
-   {
     "type": "Sidewalk Repair",
     "count": 12,
     "previous": 9
@@ -2127,6 +2122,11 @@
     "type": "DMV - Drivers License/ID Issues",
     "count": 11,
     "previous": 10
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "count": 11,
+    "previous": 14
    },
    {
     "type": "Recycling Cart Delivery",
@@ -2141,7 +2141,7 @@
    {
     "type": "Tree Pruning",
     "count": 10,
-    "previous": 14
+    "previous": 13
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
@@ -2161,17 +2161,12 @@
    {
     "type": "Roadway Signs",
     "count": 8,
-    "previous": 15
+    "previous": 16
    },
    {
     "type": "Trash Cart Repair",
     "count": 8,
     "previous": 23
-   },
-   {
-    "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 7,
-    "previous": 7
    },
    {
     "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
@@ -2186,7 +2181,7 @@
    {
     "type": "DC Government Information",
     "count": 7,
-    "previous": 14
+    "previous": 15
    },
    {
     "type": "OCTFME - Down Cable Wires",
@@ -2194,19 +2189,24 @@
     "previous": 3
    },
    {
-    "type": "DGS - Playground Repair",
+    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "count": 6,
+    "previous": 8
+   },
+   {
+    "type": "DMV - Vehicle Registration Issues",
     "count": 5,
-    "previous": 5
+    "previous": 7
    },
    {
     "type": "Recycling Cart - Repair",
     "count": 5,
-    "previous": 13
+    "previous": 12
    },
    {
     "type": "Public Space Inspection",
     "count": 5,
-    "previous": 6
+    "previous": 5
    },
    {
     "type": "Traffic Safety Input",
@@ -2214,19 +2214,24 @@
     "previous": 6
    },
    {
-    "type": "DMV - Vehicle Registration Issues",
-    "count": 4,
-    "previous": 8
-   },
-   {
     "type": "Graffiti Removal",
     "count": 4,
     "previous": 2
    },
    {
+    "type": "DGS - Playground Repair",
+    "count": 3,
+    "previous": 5
+   },
+   {
     "type": "DMV - Online Processing Issues",
     "count": 3,
     "previous": 2
+   },
+   {
+    "type": "Roadway Repair",
+    "count": 3,
+    "previous": 1
    },
    {
     "type": "Roadway Markings / Pylons",
@@ -2241,22 +2246,12 @@
    {
     "type": "Bicycle Services",
     "count": 2,
-    "previous": 4
-   },
-   {
-    "type": "Roadway Repair",
-    "count": 2,
-    "previous": 1
+    "previous": 3
    },
    {
     "type": "Illegal Poster",
     "count": 2,
     "previous": 3
-   },
-   {
-    "type": "Alley Cleaning",
-    "count": 1,
-    "previous": 27
    },
    {
     "type": "DOEE - Report Construction Erosion Runoff",
@@ -2314,8 +2309,88 @@
     "previous": 2
    }
   ],
-  "open": 272,
+  "open": 245,
   "recent": [
+   {
+    "type": "DMV - Vehicle Registration Issues",
+    "agency": "DMV",
+    "added": "2026-11-02T15:09:37Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "500 block of CRITTENDEN STREET NW",
+    "lat": 38.947,
+    "lon": -77.021
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-02T14:58:31Z",
+    "resolved": "2026-11-02T14:58:31Z",
+    "status": "Closed",
+    "block": "5000 block of 1ST STREET NW",
+    "lat": 38.951,
+    "lon": -77.012
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T14:52:32Z",
+    "resolved": "2026-11-02T14:59:11Z",
+    "status": "Closed",
+    "block": "500 block of UPSHUR STREET NW",
+    "lat": 38.942,
+    "lon": -77.019
+   },
+   {
+    "type": "Supercan - Delivery",
+    "agency": "DPW",
+    "added": "2026-11-02T14:50:34Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "400 block of BUCHANAN STREET NW",
+    "lat": 38.946,
+    "lon": -77.018
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T14:44:34Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "200 block of UPSHUR STREET NW",
+    "lat": 38.942,
+    "lon": -77.014
+   },
+   {
+    "type": "Residential Parking Permit Violation",
+    "agency": "DPW",
+    "added": "2026-11-02T14:11:35Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "600 block of ALLISON STREET NW",
+    "lat": 38.945,
+    "lon": -77.021
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T13:59:16Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "700 block of VARNUM STREET NW",
+    "lat": 38.943,
+    "lon": -77.023
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-02T13:39:55Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3700 block of NEW HAMPSHIRE AVENUE NW",
+    "lat": 38.937,
+    "lon": -77.024
+   },
    {
     "type": "Bulk Collection",
     "agency": "DPW",
@@ -2580,8 +2655,8 @@
     "type": "Recycling Collection - Missed",
     "agency": "DPW",
     "added": "2026-10-31T21:27:30Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-02T13:12:17Z",
+    "status": "Closed",
     "block": "700 block of UPSHUR STREET NW",
     "lat": 38.942,
     "lon": -77.023
@@ -2735,86 +2810,6 @@
     "block": "800 block of SHEPHERD STREET NW",
     "lat": 38.94,
     "lon": -77.025
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-31T13:17:24Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3900 block of ILLINOIS AVENUE NW",
-    "lat": 38.94,
-    "lon": -77.017
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-31T12:55:35Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "700 block of WEBSTER STREET NW",
-    "lat": 38.944,
-    "lon": -77.023
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T12:37:39Z",
-    "resolved": "2026-11-02T12:18:13Z",
-    "status": "Closed",
-    "block": "7TH STREET NW AND WEBSTER STREET NW",
-    "lat": 38.944,
-    "lon": -77.022
-   },
-   {
-    "type": "Tree Pruning",
-    "agency": "DDOT",
-    "added": "2026-10-31T01:29:42Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "Unit block of FARRAGUT PLACE NW",
-    "lat": 38.951,
-    "lon": -77.01
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-31T00:05:47Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4500 block of 5TH STREET NW",
-    "lat": 38.946,
-    "lon": -77.02
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-10-30T22:08:54Z",
-    "resolved": "2026-10-30T22:15:58Z",
-    "status": "Closed",
-    "block": "4000 block of GEORGIA AVENUE NW",
-    "lat": 38.94,
-    "lon": -77.025
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-10-30T22:07:29Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4100 block of 3RD STREET NW",
-    "lat": 38.941,
-    "lon": -77.016
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-30T21:14:21Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "5000 block of 3RD STREET NW",
-    "lat": 38.951,
-    "lon": -77.016
    }
   ]
  },
@@ -2901,7 +2896,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3219,7 +3214,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3489,9 +3484,9 @@
   "service": [
    {
     "type": "Bulk Collection",
-    "median_days": 7.95,
+    "median_days": 7.94,
     "city_median_days": 6.92,
-    "closed_n": 2249
+    "closed_n": 2278
    },
    {
     "type": "Trash Collection - Missed",
@@ -3501,27 +3496,27 @@
    },
    {
     "type": "Scheduled Yard Waste",
-    "median_days": 11.73,
-    "city_median_days": 9.8,
-    "closed_n": 1119
+    "median_days": 11.15,
+    "city_median_days": 9.77,
+    "closed_n": 1116
    },
    {
     "type": "Parking Enforcement",
     "median_days": 0.05,
     "city_median_days": 0.05,
-    "closed_n": 969
+    "closed_n": 970
    },
    {
     "type": "Recycling Collection - Missed",
     "median_days": 4.05,
-    "city_median_days": 5.13,
-    "closed_n": 805
+    "city_median_days": 5.12,
+    "closed_n": 807
    },
    {
     "type": "Illegal Dumping",
     "median_days": 3.93,
-    "city_median_days": 4.04,
-    "closed_n": 715
+    "city_median_days": 4.03,
+    "closed_n": 714
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -3532,14 +3527,14 @@
    {
     "type": "Sanitation Enforcement",
     "median_days": 0.89,
-    "city_median_days": 1.09,
+    "city_median_days": 1.1,
     "closed_n": 488
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3704,7 +3699,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4031,7 +4026,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -4125,7 +4120,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -26288,7 +26283,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

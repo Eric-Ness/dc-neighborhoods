@@ -1,7 +1,7 @@
 {
  "slug": "logancircle",
  "name": "Logan Circle",
- "generated_at": "2026-11-02T12:49:34Z",
+ "generated_at": "2026-11-02T16:31:55Z",
  "boundary": {
   "source": "ANC 2F, the Logan Circle commission (all its single-member districts, Open Data DC). DC's LOGAN CIRCLE/SHAW planning area also covers Shaw, which has its own site.",
   "rings": [
@@ -3453,19 +3453,6 @@
  },
  "permits": [
   {
-   "id": "E2700972",
-   "issued": "2026-10-29T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "1317 RHODE ISLAND AVE NW 202 20005",
-   "work": "",
-   "zoning": "RA-2",
-   "lat": 38.90939,
-   "lon": -77.03134,
-   "smd": "2F03"
-  },
-  {
    "id": "P2700932",
    "issued": "2026-10-29T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -3497,6 +3484,19 @@
    "group": "Electrical, plumbing & mechanical",
    "type": "SUPPLEMENTAL",
    "subtype": "MECHANICAL",
+   "address": "1317 RHODE ISLAND AVE NW 202 20005",
+   "work": "",
+   "zoning": "RA-2",
+   "lat": 38.90939,
+   "lon": -77.03134,
+   "smd": "2F03"
+  },
+  {
+   "id": "E2700972",
+   "issued": "2026-10-29T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
    "address": "1317 RHODE ISLAND AVE NW 202 20005",
    "work": "",
    "zoning": "RA-2",
@@ -4234,43 +4234,43 @@
   }
  ],
  "requests": {
-  "total": 1359,
-  "previous_total": 1440,
+  "total": 1363,
+  "previous_total": 1434,
   "by_type": [
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 333,
-    "previous": 237
+    "count": 329,
+    "previous": 240
    },
    {
     "type": "Parking Enforcement",
-    "count": 258,
-    "previous": 170
+    "count": 257,
+    "previous": 173
    },
    {
     "type": "Illegal Dumping",
-    "count": 76,
-    "previous": 53
+    "count": 77,
+    "previous": 51
    },
    {
     "type": "Bulk Collection",
-    "count": 72,
-    "previous": 44
+    "count": 73,
+    "previous": 43
    },
    {
     "type": "Public Space Litter Can-Collection",
-    "count": 57,
-    "previous": 51
+    "count": 58,
+    "previous": 50
    },
    {
     "type": "DC Health Rodent & Vector Control",
     "count": 55,
-    "previous": 67
+    "previous": 66
    },
    {
     "type": "Graffiti Removal",
     "count": 48,
-    "previous": 137
+    "previous": 135
    },
    {
     "type": "Residential Parking Permit Violation",
@@ -4284,12 +4284,12 @@
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 34,
+    "count": 36,
     "previous": 26
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 29,
+    "count": 30,
     "previous": 39
    },
    {
@@ -4304,12 +4304,12 @@
    },
    {
     "type": "DMV - Vehicle Registration Issues",
-    "count": 18,
-    "previous": 9
+    "count": 19,
+    "previous": 10
    },
    {
     "type": "Sidewalk Repair",
-    "count": 18,
+    "count": 19,
     "previous": 22
    },
    {
@@ -4335,12 +4335,12 @@
    {
     "type": "Dead Animal Collection",
     "count": 13,
-    "previous": 41
+    "previous": 40
    },
    {
     "type": "Tree Inspection",
     "count": 12,
-    "previous": 40
+    "previous": 39
    },
    {
     "type": "Rat Replacement Containers",
@@ -4365,7 +4365,7 @@
    {
     "type": "Tree Pruning",
     "count": 8,
-    "previous": 66
+    "previous": 67
    },
    {
     "type": "Pothole",
@@ -4381,6 +4381,11 @@
     "type": "OCTFME - Down Cable Wires",
     "count": 7,
     "previous": 2
+   },
+   {
+    "type": "Tree Removal",
+    "count": 6,
+    "previous": 29
    },
    {
     "type": "DC How Am I Driving?",
@@ -4400,12 +4405,7 @@
    {
     "type": "Tree Planting",
     "count": 5,
-    "previous": 47
-   },
-   {
-    "type": "Tree Removal",
-    "count": 5,
-    "previous": 29
+    "previous": 45
    },
    {
     "type": "Roadway Repair",
@@ -4415,7 +4415,7 @@
    {
     "type": "DOB - Vacant Private Property Inspection",
     "count": 4,
-    "previous": 14
+    "previous": 12
    },
    {
     "type": "Trash Cart - Delivery",
@@ -4498,8 +4498,38 @@
     "previous": 2
    }
   ],
-  "open": 235,
+  "open": 222,
   "recent": [
+   {
+    "type": "Tree Removal",
+    "agency": "DDOT",
+    "added": "2026-11-02T16:30:00Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "1400 block of CHURCH STREET NW",
+    "lat": 38.91,
+    "lon": -77.033
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T14:12:34Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1800 block of 15TH STREET NW",
+    "lat": 38.915,
+    "lon": -77.034
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-02T13:40:59Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1100 block of R STREET NW",
+    "lat": 38.913,
+    "lon": -77.028
+   },
    {
     "type": "Dockless Vehicle Parking Complaint",
     "agency": "DDOT",
@@ -4514,8 +4544,8 @@
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-11-02T12:48:18Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-02T13:42:05Z",
+    "status": "Closed",
     "block": "1500 block of 12TH STREET NW",
     "lat": 38.91,
     "lon": -77.028
@@ -4524,8 +4554,8 @@
     "type": "Sanitation Enforcement",
     "agency": "DPW",
     "added": "2026-11-02T12:42:04Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-02T15:24:05Z",
+    "status": "Closed",
     "block": "1100 block of RHODE ISLAND AVENUE NW",
     "lat": 38.91,
     "lon": -77.028
@@ -4564,8 +4594,8 @@
     "type": "DC Health Rodent & Vector Control",
     "agency": "DOH",
     "added": "2026-11-02T02:25:01Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-02T15:51:49Z",
+    "status": "Closed",
     "block": "1500 block of VERMONT AVENUE NW",
     "lat": 38.911,
     "lon": -77.029
@@ -4781,6 +4811,26 @@
     "lon": -77.031
    },
    {
+    "type": "Sidewalk Repair",
+    "agency": "DDOT",
+    "added": "2026-10-31T19:43:17Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "Unit block of LOGAN CIRCLE NW",
+    "lat": 38.91,
+    "lon": -77.031
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-10-31T17:12:48Z",
+    "resolved": "2026-10-31T17:25:16Z",
+    "status": "Closed",
+    "block": "1400 block of T STREET NW",
+    "lat": 38.916,
+    "lon": -77.033
+   },
+   {
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-10-31T17:12:48Z",
@@ -4913,6 +4963,16 @@
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
+    "added": "2026-10-31T12:08:49Z",
+    "resolved": "2026-10-31T13:32:24Z",
+    "status": "Closed",
+    "block": "1200 block of 13TH STREET NW",
+    "lat": 38.907,
+    "lon": -77.029
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
     "added": "2026-10-31T10:21:05Z",
     "resolved": "2026-10-31T10:25:25Z",
     "status": "Closed",
@@ -4939,72 +4999,12 @@
     "block": "1600 block of 14TH STREET NW",
     "lat": 38.911,
     "lon": -77.032
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T07:10:46Z",
-    "resolved": "2026-10-31T07:26:17Z",
-    "status": "Closed",
-    "block": "1600 block of 14TH STREET NW",
-    "lat": 38.911,
-    "lon": -77.032
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T01:47:40Z",
-    "resolved": "2026-10-31T02:23:51Z",
-    "status": "Closed",
-    "block": "1400 block of RHODE ISLAND AVENUE NW",
-    "lat": 38.909,
-    "lon": -77.034
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T01:47:40Z",
-    "resolved": "2026-10-31T02:23:51Z",
-    "status": "Closed",
-    "block": "1400 block of RHODE ISLAND AVENUE NW",
-    "lat": 38.909,
-    "lon": -77.034
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-30T22:19:17Z",
-    "resolved": "2026-10-30T23:13:32Z",
-    "status": "Closed",
-    "block": "1300 block of VERMONT AVENUE NW",
-    "lat": 38.909,
-    "lon": -77.03
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-30T22:19:17Z",
-    "resolved": "2026-10-30T23:13:32Z",
-    "status": "Closed",
-    "block": "1300 block of VERMONT AVENUE NW",
-    "lat": 38.909,
-    "lon": -77.03
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-30T22:12:12Z",
-    "resolved": "2026-10-31T00:57:04Z",
-    "status": "Closed",
-    "block": "1300 block of VERMONT AVENUE NW",
-    "lat": 38.909,
-    "lon": -77.03
    }
   ]
  },
  "crime": {
   "total": 43,
-  "previous_total": 35,
+  "previous_total": 34,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
@@ -5014,7 +5014,7 @@
    {
     "offense": "THEFT F/AUTO",
     "count": 12,
-    "previous": 12
+    "previous": 11
    },
    {
     "offense": "MOTOR VEHICLE THEFT",
@@ -5022,14 +5022,14 @@
     "previous": 4
    },
    {
-    "offense": "BURGLARY",
-    "count": 3,
-    "previous": 0
-   },
-   {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
     "count": 3,
     "previous": 1
+   },
+   {
+    "offense": "BURGLARY",
+    "count": 3,
+    "previous": 0
    },
    {
     "offense": "ROBBERY",
@@ -5096,7 +5096,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -5418,7 +5418,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -5741,7 +5741,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 1169
+    "closed_n": 1170
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -5759,7 +5759,7 @@
     "type": "Bulk Collection",
     "median_days": 5.63,
     "city_median_days": 6.92,
-    "closed_n": 547
+    "closed_n": 546
    },
    {
     "type": "Graffiti Removal",
@@ -5769,27 +5769,27 @@
    },
    {
     "type": "Illegal Dumping",
-    "median_days": 2.95,
-    "city_median_days": 4.04,
-    "closed_n": 288
+    "median_days": 2.96,
+    "city_median_days": 4.03,
+    "closed_n": 290
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "median_days": 2.89,
+    "median_days": 2.9,
     "city_median_days": 2.79,
-    "closed_n": 271
+    "closed_n": 274
    },
    {
     "type": "Sanitation Enforcement",
     "median_days": 0.96,
-    "city_median_days": 1.09,
+    "city_median_days": 1.1,
     "closed_n": 267
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -5934,7 +5934,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "archive_days": 180,
   "sources": [
    {
@@ -6418,7 +6418,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -6461,7 +6461,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -18685,7 +18685,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T12:49:34Z",
+  "generated_at": "2026-11-02T16:31:55Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
