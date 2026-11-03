@@ -34,6 +34,7 @@ const maxOff = Math.max(...n.crime.by_offense.map((o) => Math.max(o.count, o.pre
       <div class="ph"><h2 id="in-h">Independent</h2></div>
       <div class="prose about-prose">
         <p><b>This site is independent.</b> It is not affiliated with the DC Government, any Advisory Neighborhood Commission, or any Business Improvement District, and no agency reviews it before publication.</p>
+        <p>Built and run by Eric Ness, a long-time DC resident and programmer. It's a one-person project, not affiliated with any government agency, commission or business group.</p>
         <p>We show the data as DC publishes it, with the comparison and context needed to read it. We don't take positions on projects, candidates or policy. Where the data is thin or imperfect, we say so on the page.</p>
       </div>
     </section>
@@ -105,7 +106,7 @@ const maxOff = Math.max(...n.crime.by_offense.map((o) => Math.max(o.count, o.pre
     <section id="boundary" class="panel" aria-labelledby="bo-h">
       <div class="ph"><h2 id="bo-h">The {n.name} boundary</h2></div>
       <div class="prose about-prose">
-        <p>{n.name} has no official legal boundary. This site uses the area defined in <b>{n.boundary.source}</b>. Permits, 311 requests and crime counts are included when their location falls inside that outline.</p>
+        <p>{n.name} has no official legal boundary. This site uses the area defined in <b>{n.boundary.source.replace(/\.$/, "")}</b>. Permits, 311 requests and crime counts are included when their location falls inside that outline.</p>
         {n.homes && <p>Home sales are the exception: DC's tax records have no coordinates, so sales are matched by tax assessment neighborhood instead. <a href={u("homes/#area")}>How well the two areas line up →</a></p>}
         <p>Some of the ANC districts that cover the area extend past it.</p>
       </div>

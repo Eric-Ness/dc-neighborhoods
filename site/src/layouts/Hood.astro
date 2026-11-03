@@ -63,7 +63,7 @@ const front = page === "";
   </main>
 
   <div slot="footer">
-    <p>{n.name} boundary: {n.boundary.source}. <a href={pageUrl(n.slug, "about/")}>About the data, sources and privacy</a> · <a href="/permits.xml">Permits RSS</a></p>
+    <p>{n.name} boundary: {n.boundary.source.replace(/\.$/, "")}. <a href={pageUrl(n.slug, "about/")}>About the data, sources and privacy</a> · <a href="/permits.xml">Permits RSS</a></p>
   </div>
 
   <script>

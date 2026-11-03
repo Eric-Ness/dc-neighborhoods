@@ -78,18 +78,6 @@ const rss = pageUrl(n.slug, "permits.xml");
       </section>
     </div>
   </div>
-
-  <div class="row even">
-    <section class="panel" aria-labelledby="sp-h">
-      <div class="ph"><h2 id="sp-h">Sponsor policy</h2></div>
-      <ul class="sub-promise">
-        <li><b>One sponsor per email,</b> clearly labeled "Sponsor".</li>
-        <li><b>Never inside the data.</b> A sponsor never appears in a chart, table or reading, and never changes what we report.</li>
-        <li><b>No sponsored stories.</b> The sponsor gets one labeled line, nothing more.</li>
-      </ul>
-    </section>
-    <aside class="panel sponsor" aria-label="Example sponsor slot"><small>Sponsor</small><div>Presented by <b>[Local sponsor]</b></div><span class="sub-ex">This is how the one sponsor line looks, set apart from the data.</span></aside>
-  </div>
 </Hood>
 
 <script is:inline>
@@ -112,6 +100,5 @@ const rss = pageUrl(n.slug, "permits.xml");
   .sub-promise li:first-child{border-top:0;padding-top:0}
   .sub-promise b{color:var(--ink)}
   .sub-p{margin:0;font-size:14px;color:var(--ink-2)}
-  .sub-ex{font-size:12.5px;color:var(--muted)}
   @media (min-width:1024px){.sub-msg{grid-column:2}}
 </style>
