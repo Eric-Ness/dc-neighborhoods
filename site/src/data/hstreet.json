@@ -1,7 +1,7 @@
 {
  "slug": "hstreet",
  "name": "H Street NE",
- "generated_at": "2026-11-03T01:47:04Z",
+ "generated_at": "2026-11-03T02:34:05Z",
  "boundary": {
   "source": "The six ANC single-member districts along H Street NE from 3rd to 15th Street (6A01, 6A02, 6A06, 6C04, 6C05, 6C06; Open Data DC). DC has no planning area for H Street.",
   "rings": [
@@ -3632,19 +3632,6 @@
    "smd": "6A01"
   },
   {
-   "id": "B2700447",
-   "issued": "2026-10-21T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "510 15TH ST NE 20002",
-   "work": "The installation of a 18KW Generac Generator with a 200 amp Automatic Transfer switch",
-   "zoning": "RF-1",
-   "lat": 38.89648,
-   "lon": -76.98387,
-   "smd": "6A06"
-  },
-  {
    "id": "E2700669",
    "issued": "2026-10-21T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -3682,6 +3669,19 @@
    "lat": 38.89755,
    "lon": -76.99687,
    "smd": "6C05"
+  },
+  {
+   "id": "B2700447",
+   "issued": "2026-10-21T04:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "510 15TH ST NE 20002",
+   "work": "The installation of a 18KW Generac Generator with a 200 amp Automatic Transfer switch",
+   "zoning": "RF-1",
+   "lat": 38.89648,
+   "lon": -76.98387,
+   "smd": "6A06"
   },
   {
    "id": "E2600949-EXT-1",
@@ -4466,52 +4466,57 @@
  ],
  "requests": {
   "total": 2293,
-  "previous_total": 2942,
+  "previous_total": 2946,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 380,
+    "count": 382,
     "previous": 391
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 316,
-    "previous": 375
+    "count": 313,
+    "previous": 376
    },
    {
     "type": "Parking Enforcement",
     "count": 294,
-    "previous": 266
+    "previous": 265
    },
    {
     "type": "Residential Parking Permit Violation",
-    "count": 216,
-    "previous": 275
+    "count": 218,
+    "previous": 274
    },
    {
     "type": "Illegal Dumping",
-    "count": 115,
-    "previous": 149
+    "count": 116,
+    "previous": 152
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 94,
-    "previous": 100
+    "count": 92,
+    "previous": 102
    },
    {
     "type": "Trash Collection - Missed",
     "count": 90,
-    "previous": 95
+    "previous": 96
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 83,
-    "previous": 113
+    "count": 85,
+    "previous": 115
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 60,
-    "previous": 60
+    "count": 59,
+    "previous": 61
+   },
+   {
+    "type": "DOB - Vacant Private Property Inspection",
+    "count": 43,
+    "previous": 34
    },
    {
     "type": "Trash Cart - Delivery",
@@ -4519,24 +4524,19 @@
     "previous": 42
    },
    {
-    "type": "DOB - Vacant Private Property Inspection",
-    "count": 41,
-    "previous": 34
-   },
-   {
-    "type": "Dead Animal Collection",
-    "count": 38,
-    "previous": 46
-   },
-   {
     "type": "DOEE - LIHEAP",
     "count": 38,
     "previous": 0
    },
    {
+    "type": "Dead Animal Collection",
+    "count": 37,
+    "previous": 46
+   },
+   {
     "type": "Tree Inspection",
     "count": 31,
-    "previous": 108
+    "previous": 107
    },
    {
     "type": "Tree Planting",
@@ -4566,11 +4566,11 @@
    {
     "type": "Roadway Signs",
     "count": 21,
-    "previous": 27
+    "previous": 26
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 19,
+    "count": 18,
     "previous": 49
    },
    {
@@ -4582,6 +4582,11 @@
     "type": "Abandoned Vehicle - On Public Property",
     "count": 16,
     "previous": 28
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "count": 16,
+    "previous": 12
    },
    {
     "type": "Sidewalk Repair",
@@ -4599,11 +4604,6 @@
     "previous": 15
    },
    {
-    "type": "DMV - Drivers License/ID Issues",
-    "count": 15,
-    "previous": 12
-   },
-   {
     "type": "Recycling Cart Delivery",
     "count": 14,
     "previous": 33
@@ -4614,14 +4614,14 @@
     "previous": 17
    },
    {
+    "type": "Public Space Litter Can-Collection",
+    "count": 14,
+    "previous": 13
+   },
+   {
     "type": "Traffic Safety Input",
     "count": 13,
     "previous": 8
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "count": 13,
-    "previous": 14
    },
    {
     "type": "Rat Replacement Containers",
@@ -4641,7 +4641,7 @@
    {
     "type": "Tree Pruning",
     "count": 8,
-    "previous": 33
+    "previous": 34
    },
    {
     "type": "Public Space Litter Can Repair",
@@ -4686,7 +4686,7 @@
    {
     "type": "Tree Removal",
     "count": 4,
-    "previous": 31
+    "previous": 30
    },
    {
     "type": "Pothole",
@@ -4709,11 +4709,6 @@
     "previous": 18
    },
    {
-    "type": "Vacant Lot - Public Property Only",
-    "count": 4,
-    "previous": 0
-   },
-   {
     "type": "Alley Cleaning",
     "count": 3,
     "previous": 40
@@ -4722,11 +4717,6 @@
     "type": "Street Cleaning",
     "count": 3,
     "previous": 16
-   },
-   {
-    "type": "Resident Parking Permit",
-    "count": 2,
-    "previous": 2
    },
    {
     "type": "Illegal Poster",
@@ -4740,6 +4730,11 @@
    },
    {
     "type": "Snow and Ice Removal on Public Space",
+    "count": 2,
+    "previous": 0
+   },
+   {
+    "type": "Vacant Lot - Public Property Only",
     "count": 2,
     "previous": 0
    },
@@ -4764,13 +4759,28 @@
     "previous": 0
    },
    {
+    "type": "Resident Parking Permit",
+    "count": 1,
+    "previous": 2
+   },
+   {
     "type": "Emergency No-Parking Verification",
     "count": 1,
     "previous": 4
    }
   ],
-  "open": 392,
+  "open": 394,
   "recent": [
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-03T02:01:08Z",
+    "resolved": "2026-11-03T02:10:43Z",
+    "status": "Closed",
+    "block": "1100 block of 7TH STREET NE",
+    "lat": 38.905,
+    "lon": -76.996
+   },
    {
     "type": "Bulk Collection",
     "agency": "DPW",
@@ -5260,16 +5270,6 @@
     "block": "700 block of 3RD STREET NE",
     "lat": 38.899,
     "lon": -77.002
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-11-02T13:11:57Z",
-    "resolved": "2026-11-02T17:12:05Z",
-    "status": "Closed",
-    "block": "500 block of 6TH STREET NE",
-    "lat": 38.897,
-    "lon": -76.999
    }
   ]
  },
@@ -5293,14 +5293,14 @@
     "previous": 13
    },
    {
-    "offense": "ROBBERY",
-    "count": 4,
-    "previous": 5
-   },
-   {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
     "count": 4,
     "previous": 3
+   },
+   {
+    "offense": "ROBBERY",
+    "count": 4,
+    "previous": 5
    },
    {
     "offense": "BURGLARY",
@@ -5356,7 +5356,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -5628,7 +5628,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -5872,7 +5872,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 1389
+    "closed_n": 1390
    },
    {
     "type": "Trash Collection - Missed",
@@ -5908,7 +5908,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -6038,7 +6038,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "archive_days": 180,
   "sources": [
    {
@@ -6528,7 +6528,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -6624,7 +6624,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -25370,7 +25370,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

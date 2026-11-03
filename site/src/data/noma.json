@@ -1,7 +1,7 @@
 {
  "slug": "noma",
  "name": "NoMa",
- "generated_at": "2026-11-03T01:47:04Z",
+ "generated_at": "2026-11-03T02:34:05Z",
  "boundary": {
   "source": "NoMa Business Improvement District boundary (Open Data DC). DC has no planning area for NoMa.",
   "rings": [
@@ -596,13 +596,13 @@
   }
  ],
  "requests": {
-  "total": 917,
-  "previous_total": 832,
+  "total": 908,
+  "previous_total": 840,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 365,
-    "previous": 256
+    "count": 359,
+    "previous": 261
    },
    {
     "type": "DOEE - LIHEAP",
@@ -631,8 +631,8 @@
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
-    "count": 31,
-    "previous": 22
+    "count": 28,
+    "previous": 25
    },
    {
     "type": "DC Government Information",
@@ -805,7 +805,7 @@
     "previous": 0
    }
   ],
-  "open": 116,
+  "open": 115,
   "recent": [
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -821,8 +821,8 @@
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-11-02T21:08:13Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-03T02:11:35Z",
+    "status": "Closed",
     "block": "200 block of L STREET NE",
     "lat": 38.904,
     "lon": -77.003
@@ -1329,14 +1329,14 @@
     "previous": 11
    },
    {
-    "offense": "BURGLARY",
-    "count": 2,
-    "previous": 0
-   },
-   {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
     "count": 2,
     "previous": 3
+   },
+   {
+    "offense": "BURGLARY",
+    "count": 2,
+    "previous": 0
    },
    {
     "offense": "ROBBERY",
@@ -1374,7 +1374,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -1554,7 +1554,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -1681,7 +1681,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 1636
+    "closed_n": 1637
    },
    {
     "type": "DC Government Information",
@@ -1704,7 +1704,7 @@
    {
     "type": "Roadway Signs",
     "median_days": 10.85,
-    "city_median_days": 7.0,
+    "city_median_days": 6.99,
     "closed_n": 119
    },
    {
@@ -1729,7 +1729,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -1899,7 +1899,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2234,7 +2234,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -2304,7 +2304,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -13656,7 +13656,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

@@ -1,7 +1,7 @@
 {
  "slug": "palisades",
  "name": "Palisades",
- "generated_at": "2026-11-03T01:47:04Z",
+ "generated_at": "2026-11-03T02:34:05Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods: Kent/Palisades (Open Data DC). It includes Kent and the C&O Canal parkland along the river.",
   "rings": [
@@ -9315,19 +9315,6 @@
    "smd": "3D07"
   },
   {
-   "id": "E2700752",
-   "issued": "2026-10-22T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "1437 44TH ST NW 20007",
-   "work": "",
-   "zoning": "R-1B",
-   "lat": 38.90794,
-   "lon": -77.0802,
-   "smd": "3D07"
-  },
-  {
    "id": "P2700640",
    "issued": "2026-10-22T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -9430,6 +9417,19 @@
    "lat": 38.9327,
    "lon": -77.10036,
    "smd": "3D02"
+  },
+  {
+   "id": "E2700752",
+   "issued": "2026-10-22T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "1437 44TH ST NW 20007",
+   "work": "",
+   "zoning": "R-1B",
+   "lat": 38.90794,
+   "lon": -77.0802,
+   "smd": "3D07"
   },
   {
    "id": "BP2700333",
@@ -10434,8 +10434,8 @@
   }
  ],
  "requests": {
-  "total": 1330,
-  "previous_total": 1324,
+  "total": 1328,
+  "previous_total": 1326,
   "by_type": [
    {
     "type": "Bulk Collection",
@@ -10538,11 +10538,6 @@
     "previous": 14
    },
    {
-    "type": "Missed Curbside Compost Collection",
-    "count": 12,
-    "previous": 19
-   },
-   {
     "type": "Recycling Cart Delivery",
     "count": 12,
     "previous": 13
@@ -10566,6 +10561,11 @@
     "type": "Graffiti Removal",
     "count": 10,
     "previous": 2
+   },
+   {
+    "type": "Missed Curbside Compost Collection",
+    "count": 10,
+    "previous": 21
    },
    {
     "type": "Roadway Repair",
@@ -11364,7 +11364,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -11647,7 +11647,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -12047,7 +12047,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -12200,7 +12200,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "archive_days": 180,
   "sources": [
    {
@@ -12492,7 +12492,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -12626,7 +12626,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -49932,7 +49932,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

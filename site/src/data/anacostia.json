@@ -1,7 +1,7 @@
 {
  "slug": "anacostia",
  "name": "Anacostia",
- "generated_at": "2026-11-03T01:47:04Z",
+ "generated_at": "2026-11-03T02:34:05Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1042,19 +1042,6 @@
    "smd": "8A04"
   },
   {
-   "id": "B2604443",
-   "issued": "2026-10-05T04:00:00Z",
-   "group": "New construction",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "2401 ELVANS RD SE 20020",
-   "work": "\u001aREVISION TO BUILDING PERMIT NO. B2508183 TO REMOVE THE SURFACE PARKING.\r\nTHE HOUSE LAYOUT REMAINS UNCHANGED\u001a\r\n\r\nNEW CONSTRUCTION OF A SINGLE FAMILY THREE-STORY RESIDENTIAL ROW DWELLING\r\nFENCE, PORCH, MECHANICAL DUCT WORK, ELECTRICAL, PLUMBING, SPRINKLER AS PER PLANS.",
-   "zoning": "R-3",
-   "lat": 38.85461,
-   "lon": -76.98623,
-   "smd": "8B04"
-  },
-  {
    "id": "FD2600014",
    "issued": "2026-10-05T04:00:00Z",
    "group": "Additions",
@@ -1066,15 +1053,28 @@
    "lat": 38.86604,
    "lon": -76.98362,
    "smd": "8A05"
+  },
+  {
+   "id": "B2604443",
+   "issued": "2026-10-05T04:00:00Z",
+   "group": "New construction",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "2401 ELVANS RD SE 20020",
+   "work": "\u001aREVISION TO BUILDING PERMIT NO. B2508183 TO REMOVE THE SURFACE PARKING.\r\nTHE HOUSE LAYOUT REMAINS UNCHANGED\u001a\r\n\r\nNEW CONSTRUCTION OF A SINGLE FAMILY THREE-STORY RESIDENTIAL ROW DWELLING\r\nFENCE, PORCH, MECHANICAL DUCT WORK, ELECTRICAL, PLUMBING, SPRINKLER AS PER PLANS.",
+   "zoning": "R-3",
+   "lat": 38.85461,
+   "lon": -76.98623,
+   "smd": "8B04"
   }
  ],
  "requests": {
-  "total": 504,
+  "total": 505,
   "previous_total": 859,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 88,
+    "count": 89,
     "previous": 113
    },
    {
@@ -1343,8 +1343,18 @@
     "previous": 4
    }
   ],
-  "open": 65,
+  "open": 66,
   "recent": [
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-03T02:15:31Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2300 block of HUNTER PLACE SE",
+    "lat": 38.858,
+    "lon": -76.986
+   },
    {
     "type": "Residential Parking Permit Violation",
     "agency": "DPW",
@@ -1834,16 +1844,6 @@
     "block": "2300 block of GREEN STREET SE",
     "lat": 38.862,
     "lon": -76.981
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-29T14:44:22Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2300 block of CHESTER STREET SE",
-    "lat": 38.862,
-    "lon": -76.988
    }
   ]
  },
@@ -1857,14 +1857,14 @@
     "previous": 15
    },
    {
-    "offense": "MOTOR VEHICLE THEFT",
-    "count": 5,
-    "previous": 7
-   },
-   {
     "offense": "THEFT F/AUTO",
     "count": 5,
     "previous": 6
+   },
+   {
+    "offense": "MOTOR VEHICLE THEFT",
+    "count": 5,
+    "previous": 7
    },
    {
     "offense": "ROBBERY",
@@ -1929,7 +1929,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2120,7 +2120,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2409,14 +2409,14 @@
    {
     "type": "Roadway Signs",
     "median_days": 2.96,
-    "city_median_days": 7.0,
+    "city_median_days": 6.99,
     "closed_n": 156
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2585,7 +2585,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2863,7 +2863,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -2991,7 +2991,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -19140,7 +19140,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

@@ -1,7 +1,7 @@
 {
  "slug": "lenfantplaza",
  "name": "L'Enfant Plaza",
- "generated_at": "2026-11-03T01:47:04Z",
+ "generated_at": "2026-11-03T02:34:05Z",
  "boundary": {
   "source": "Southwest Business Improvement District, which takes in L'Enfant Plaza and the federal blocks around it (Open Data DC). DC has no planning area for L'Enfant Plaza.",
   "rings": [
@@ -1181,19 +1181,6 @@
    "smd": "6D02"
   },
   {
-   "id": "HO2700066",
-   "issued": "2026-10-12T04:00:00Z",
-   "group": "Home businesses",
-   "type": "HOME OCCUPATION",
-   "subtype": "NA",
-   "address": "555 E ST SW 1109 20024",
-   "work": "",
-   "zoning": "D-5",
-   "lat": 38.88341,
-   "lon": -77.01942,
-   "smd": "6D02"
-  },
-  {
    "id": "E2700367",
    "issued": "2026-10-12T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -1204,6 +1191,19 @@
    "zoning": "RF-1",
    "lat": 38.88203,
    "lon": -77.0146,
+   "smd": "6D02"
+  },
+  {
+   "id": "HO2700066",
+   "issued": "2026-10-12T04:00:00Z",
+   "group": "Home businesses",
+   "type": "HOME OCCUPATION",
+   "subtype": "NA",
+   "address": "555 E ST SW 1109 20024",
+   "work": "",
+   "zoning": "D-5",
+   "lat": 38.88341,
+   "lon": -77.01942,
    "smd": "6D02"
   },
   {
@@ -1273,8 +1273,8 @@
   }
  ],
  "requests": {
-  "total": 760,
-  "previous_total": 741,
+  "total": 759,
+  "previous_total": 742,
   "by_type": [
    {
     "type": "Parking Enforcement",
@@ -1342,11 +1342,6 @@
     "previous": 4
    },
    {
-    "type": "Dockless Vehicle Parking Complaint",
-    "count": 11,
-    "previous": 7
-   },
-   {
     "type": "Illegal Dumping",
     "count": 11,
     "previous": 8
@@ -1355,6 +1350,11 @@
     "type": "DMV - Driver Record Issues",
     "count": 11,
     "previous": 2
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "count": 10,
+    "previous": 8
    },
    {
     "type": "DMV - Forms, Applications, and Manuals Request",
@@ -1527,14 +1527,14 @@
     "previous": 0
    }
   ],
-  "open": 136,
+  "open": 135,
   "recent": [
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-11-03T01:28:29Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-03T01:51:05Z",
+    "status": "Closed",
     "block": "Unit block of SUTTON SQUARE SW",
     "lat": 38.879,
     "lon": -77.024
@@ -2097,7 +2097,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2262,7 +2262,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2626,7 +2626,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 2113
+    "closed_n": 2114
    },
    {
     "type": "DMV - Ticket Payment Dispute",
@@ -2674,7 +2674,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2813,7 +2813,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "archive_days": 180,
   "sources": [
    {
@@ -3397,7 +3397,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -3490,7 +3490,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -17122,7 +17122,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

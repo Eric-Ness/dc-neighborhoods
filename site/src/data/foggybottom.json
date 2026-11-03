@@ -1,7 +1,7 @@
 {
  "slug": "foggybottom",
  "name": "Foggy Bottom",
- "generated_at": "2026-11-03T01:47:04Z",
+ "generated_at": "2026-11-03T02:34:05Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods: GWU, which covers Foggy Bottom and the West End (Open Data DC).",
   "rings": [
@@ -3471,6 +3471,19 @@
    "smd": "2A08"
   },
   {
+   "id": "P2700212",
+   "issued": "2026-10-08T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "1701 RHODE ISLAND AVE NW 20036",
+   "work": "",
+   "zoning": "MU-1/DC",
+   "lat": 38.90672,
+   "lon": -77.03903,
+   "smd": "2B05"
+  },
+  {
    "id": "P2700261",
    "issued": "2026-10-08T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -3528,19 +3541,6 @@
    "group": "Electrical, plumbing & mechanical",
    "type": "SUPPLEMENTAL",
    "subtype": "ELECTRICAL",
-   "address": "1701 RHODE ISLAND AVE NW 20036",
-   "work": "",
-   "zoning": "MU-1/DC",
-   "lat": 38.90672,
-   "lon": -77.03903,
-   "smd": "2B05"
-  },
-  {
-   "id": "P2700212",
-   "issued": "2026-10-08T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
    "address": "1701 RHODE ISLAND AVE NW 20036",
    "work": "",
    "zoning": "MU-1/DC",
@@ -4093,14 +4093,14 @@
     "previous": 1
    }
   ],
-  "open": 160,
+  "open": 154,
   "recent": [
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-11-03T01:07:55Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-03T02:03:14Z",
+    "status": "Closed",
     "block": "1100 block of 19TH STREET NW",
     "lat": 38.905,
     "lon": -77.044
@@ -4219,8 +4219,8 @@
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-11-03T00:37:33Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-03T01:57:05Z",
+    "status": "Closed",
     "block": "700 block of 24TH STREET NW",
     "lat": 38.899,
     "lon": -77.051
@@ -4379,8 +4379,8 @@
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "agency": "DDOT",
     "added": "2026-11-02T16:23:37Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-03T02:20:53Z",
+    "status": "Closed",
     "block": "20TH STREET NW AND E STREET NW",
     "lat": 38.895,
     "lon": -77.045
@@ -4519,8 +4519,8 @@
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "agency": "DDOT",
     "added": "2026-11-02T14:15:40Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-03T02:00:57Z",
+    "status": "Closed",
     "block": "2200 block of I STREET NW",
     "lat": 38.901,
     "lon": -77.049
@@ -4549,8 +4549,8 @@
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "agency": "DDOT",
     "added": "2026-11-02T14:11:31Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-03T01:50:54Z",
+    "status": "Closed",
     "block": "20TH STREET NW AND K STREET NW",
     "lat": 38.903,
     "lon": -77.045
@@ -4559,8 +4559,8 @@
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "agency": "DDOT",
     "added": "2026-11-02T14:07:38Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-03T02:00:54Z",
+    "status": "Closed",
     "block": "2300 block of I STREET NW",
     "lat": 38.901,
     "lon": -77.05
@@ -4598,13 +4598,13 @@
   ]
  },
  "crime": {
-  "total": 63,
-  "previous_total": 74,
+  "total": 62,
+  "previous_total": 75,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
-    "count": 37,
-    "previous": 42
+    "count": 36,
+    "previous": 43
    },
    {
     "offense": "THEFT F/AUTO",
@@ -4612,14 +4612,14 @@
     "previous": 20
    },
    {
-    "offense": "ROBBERY",
-    "count": 3,
-    "previous": 5
-   },
-   {
     "offense": "MOTOR VEHICLE THEFT",
     "count": 3,
     "previous": 1
+   },
+   {
+    "offense": "ROBBERY",
+    "count": 3,
+    "previous": 5
    },
    {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
@@ -4685,7 +4685,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -4847,7 +4847,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -5155,13 +5155,13 @@
     "type": "Parking Enforcement",
     "median_days": 0.06,
     "city_median_days": 0.05,
-    "closed_n": 1724
+    "closed_n": 1726
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
-    "median_days": 0.27,
+    "median_days": 0.29,
     "city_median_days": 0.22,
-    "closed_n": 464
+    "closed_n": 468
    },
    {
     "type": "Parking Meter Repair",
@@ -5203,7 +5203,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -5377,7 +5377,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "archive_days": 180,
   "sources": [
    {
@@ -6367,7 +6367,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -6457,7 +6457,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -26207,7 +26207,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

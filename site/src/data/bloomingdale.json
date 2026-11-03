@@ -1,7 +1,7 @@
 {
  "slug": "bloomingdale",
  "name": "Bloomingdale",
- "generated_at": "2026-11-03T01:47:04Z",
+ "generated_at": "2026-11-03T02:34:05Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -2413,8 +2413,8 @@
   }
  ],
  "requests": {
-  "total": 2399,
-  "previous_total": 2579,
+  "total": 2401,
+  "previous_total": 2578,
   "by_type": [
    {
     "type": "Bulk Collection",
@@ -2424,7 +2424,7 @@
    {
     "type": "DC Health Rodent & Vector Control",
     "count": 266,
-    "previous": 216
+    "previous": 215
    },
    {
     "type": "Parking Enforcement",
@@ -2463,7 +2463,7 @@
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
-    "count": 64,
+    "count": 65,
     "previous": 85
    },
    {
@@ -2513,7 +2513,7 @@
    },
    {
     "type": "Sidewalk Repair",
-    "count": 26,
+    "count": 27,
     "previous": 10
    },
    {
@@ -2742,8 +2742,28 @@
     "previous": 2
    }
   ],
-  "open": 553,
+  "open": 555,
   "recent": [
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-03T02:41:50Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of 1ST STREET NW",
+    "lat": 38.913,
+    "lon": -77.012
+   },
+   {
+    "type": "Sidewalk Repair",
+    "agency": "DDOT",
+    "added": "2026-11-03T02:31:26Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "100 block of W STREET NW",
+    "lat": 38.919,
+    "lon": -77.012
+   },
    {
     "type": "Public Space Litter Can-Collection",
     "agency": "DPW",
@@ -3223,26 +3243,6 @@
     "block": "Unit block of R STREET NW",
     "lat": 38.912,
     "lon": -77.01
-   },
-   {
-    "type": "DOB - Vacant Private Property Inspection",
-    "agency": "DOB",
-    "added": "2026-11-02T12:12:12Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "Unit block of R STREET NW",
-    "lat": 38.912,
-    "lon": -77.01
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-11-02T12:07:53Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2700 block of NORTH CAPITOL STREET NE",
-    "lat": 38.925,
-    "lon": -77.009
    }
   ]
  },
@@ -3261,12 +3261,12 @@
     "previous": 6
    },
    {
-    "offense": "BURGLARY",
+    "offense": "MOTOR VEHICLE THEFT",
     "count": 4,
     "previous": 5
    },
    {
-    "offense": "MOTOR VEHICLE THEFT",
+    "offense": "BURGLARY",
     "count": 4,
     "previous": 5
    },
@@ -3341,7 +3341,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3711,7 +3711,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4111,7 +4111,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4281,7 +4281,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4524,7 +4524,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -4613,7 +4613,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -24153,7 +24153,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T02:34:05Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
