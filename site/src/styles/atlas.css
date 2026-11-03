@@ -181,3 +181,17 @@ ul.photos .pc{margin-top:6px;font:400 13.5px/1.4 var(--sans);color:var(--ink2)}
 ul.photos .pp{font-weight:600;color:var(--ink)}
 ul.photos .pt{display:block;margin-top:2px;font:400 14px/1.35 var(--serif);color:var(--ink);text-decoration:none}
 ul.photos .pt:hover{text-decoration:underline}
+
+/* Rules stop at the content edge: the rows that carry them lose the gutter padding and are inset instead. */
+.topline,nav.sections,footer{border:0;background:none}
+.topline>.wrap,nav.sections>.wrap,footer>.wrap{padding-left:0;padding-right:0;width:calc(100% - 80px);max-width:1200px}
+.topline>.wrap{border-bottom:1px solid var(--rule)}
+nav.sections>.wrap{border-top:3px solid var(--slate);border-bottom:1px solid var(--rule)}
+footer>.wrap{border-top:1px solid var(--ink)}
+@media (max-width:760px){.topline>.wrap,nav.sections>.wrap,footer>.wrap{width:calc(100% - 32px)}}
+
+.totop{position:fixed;right:24px;bottom:24px;z-index:10;display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:var(--slate);color:#fff;text-decoration:none}
+.totop:hover{background:var(--ink)}
+.totop[hidden]{display:none}
+@media (max-width:760px){.totop{right:16px;bottom:16px}}
+@media print{.totop{display:none}}

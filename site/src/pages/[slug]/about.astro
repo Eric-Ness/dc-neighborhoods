@@ -114,7 +114,7 @@ const maxOff = Math.max(...n.crime.by_offense.map((o) => Math.max(o.count, o.pre
       <section id="corrections" class="panel" aria-labelledby="co-h">
         <div class="ph"><h2 id="co-h">Corrections</h2></div>
         <p class="about-p">Spotted a mistake? Tell us what page and figure, and what the official source says. We check it against the source and fix what is wrong.</p>
-        <p class="about-mail num">corrections@[domain]</p>
+        <p class="about-mail num"><a href={`mailto:eric.ness@nulllabs.com?subject=${encodeURIComponent(`Correction: ${n.name}`)}`}>eric.ness@nulllabs.com</a></p>
       </section>
       <section id="license" class="panel" aria-labelledby="li-h">
         <div class="ph"><h2 id="li-h">License</h2></div>

@@ -27,7 +27,7 @@ const front = page === "";
     <details class="hoods">
       <summary>Neighborhoods</summary>
       <ul>
-        {sites.map((x) => (
+        {[...sites].sort((x, y) => x.name.localeCompare(y.name)).map((x) => (
           <li>{x.slug === n.slug ? <span aria-current="page">{x.name}</span> : <a href={`https://${x.hosts[0]}/`}>{x.name}</a>}</li>
         ))}
       </ul>
