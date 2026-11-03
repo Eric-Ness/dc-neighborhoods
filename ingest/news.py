@@ -376,6 +376,44 @@ FEEDS = {
         ("PoPville", "https://www.popville.com/feed/?paged=3", "https://www.popville.com/", "match"),
         *SHARED,
     ],
+    "brightwood": [
+        ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=2", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=3", "https://www.popville.com/", "match"),
+        ("ANC 4A", "https://anc4a.dc.gov/rss.xml", "https://anc4a.dc.gov/", "match"),
+        ("WTOP", "https://wtop.com/tag/brightwood-park/feed/", "https://wtop.com/", "match"),
+        ("The DC Line", WP_SEARCH.format(base="https://thedcline.org", q="brightwood"), "https://thedcline.org/", "match"),
+        *SHARED,
+    ],
+    "takoma": [
+        ("ANC 4B", "https://anc4b.com/feed/", "https://anc4b.com/", "all"),
+        ("Main Street Takoma", "https://mainstreettakoma.org/feed/", "https://mainstreettakoma.org/", "match"),  # both sides of the line
+        ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=2", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=3", "https://www.popville.com/", "match"),
+        ("Petworth News", "https://www.petworthnews.org/blog?format=rss", "https://www.petworthnews.org/", "match"),
+        ("WTOP", "https://wtop.com/tag/takoma/feed/", "https://wtop.com/", "all"),
+        ("WTOP", "https://wtop.com/tag/the-parks-at-walter-reed/feed/", "https://wtop.com/", "match"),
+        ("WTOP", "https://wtop.com/tag/shepherd-park/feed/", "https://wtop.com/", "match"),
+        ("ANC 4A", "https://anc4a.dc.gov/rss.xml", "https://anc4a.dc.gov/", "match"),
+        *SHARED,
+    ],
+    "congressheights": [
+        ("East of the River", "https://eastoftheriverdcnews.com/wp-json/wp/v2/posts?per_page=20&_fields=date,title,excerpt,link", "https://eastoftheriverdcnews.com/", "match"),  # Crawl-delay 10
+        ("Congress Heights on the Rise", "https://www.congressheightsontherise.com/blog?format=rss", "https://www.congressheightsontherise.com/", "match"),  # never "all": about 7 posts a day, mostly citywide
+        ("Washington Informer", "https://www.washingtoninformer.com/tag/congress-heights/feed/", "https://www.washingtoninformer.com/", "match"),
+        ("Washington Informer", "https://www.washingtoninformer.com/tag/ward-8/feed/", "https://www.washingtoninformer.com/", "match"),
+        ("WTOP", "https://wtop.com/tag/congress-heights/feed/", "https://wtop.com/", "match"),
+        ("WTOP", "https://wtop.com/tag/st-elizabeths/feed/", "https://wtop.com/", "match"),
+        ("WTOP", "https://wtop.com/tag/ballou-high-school/feed/", "https://wtop.com/", "match"),
+        ("The DC Line", WP_SEARCH.format(base="https://thedcline.org", q="congress+heights"), "https://thedcline.org/", "match"),
+        ("The DC Line", WP_SEARCH.format(base="https://thedcline.org", q="st.+elizabeths"), "https://thedcline.org/", "match"),
+        ("ANC 8E", "https://anc8e.dc.gov/rss.xml", "https://anc8e.dc.gov/", "match"),
+        ("Prospering Places", "https://chctdc.org/feed/", "https://prosperingplaces.org/", "match"),
+        ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=2", "https://www.popville.com/", "match"),
+        *SHARED,
+    ],
 }
 TERMS = {
     # Capitol Hill: never the bare name (it also means Congress); a landmark, or the name plus a neighborhood cue.
@@ -515,6 +553,19 @@ TERMS = {
         r"\bwoodley\s+park\b|\bwoodley\s+r(oa)?d\.?,?\s+n\.?w\b|\bwardman\s+(tower|park)\b|\bomni\s+shoreham\b|\bmaret\s+school\b|\boyster[-\s]adams\b|\bduke\s+ellington\s+bridge\b|"
         r"\bconnecticut\s+(ave(nue)?\.?\s+)?(and|&|at)\s+calvert\b|\bcalvert\s+st(reet)?\.?,?\s+n\.?w\b|\b2[3-9]\d\d\s+calvert\s+st\b|\b2[6-9]\d\d\s+connecticut\s+ave(nue)?\b|\b3[01]\d\d\s+connecticut\s+ave(nue)?\b|"
         r"\bANC\s*3C0?[1237]\b|\b3C0[1237]\b|\b(smithsonian['\u2019]?s?\s+)?national\s+zoo(logical\s+park)?\b(?=.{0,300}\b(neighbors?|connecticut\s+ave|woodley|ANC|residents|parking|traffic|road\s+closures?|zoolights|lights)\b)", re.I | re.S),
+    "brightwood": re.compile(
+        r"\bbrightwood\b(?!\s+(college|capital|career|hospital|golf|forest))|"
+        r"\bkennedy\s+st(reet)?\b|\buptown\s+main\s+street\b|\bfort\s+stevens\b|\bemery\s+(heights\s+)?(rec|community|park)|"
+        r"\bmissouri\s+ave(nue)?\.?(,?\s+n\.?w\b|\s+(and|&|at)\s+(georgia|14th|16th|riggs|kansas))|\bgeorgia\s+(ave(nue)?\.?\s+)?(and|&|at)\s+(missouri|kennedy|sheridan|peabody|rittenhouse)\b|"
+        r"\b(5[4-9]|6[0-7])\d\d\s+(block\s+of\s+)?georgia\s+ave(nue)?\b|\btruesdell\b|\bupper\s+georgia\s+ave|\bANC\s*4A0?[4-7]\b|\bANC\s*4B05\b|\bANC\s*4D0?[1-3]\b|\b4A0[4-7]\b|\b4B05\b|\b4D0[1-3]\b|\bANC\s*4A\b", re.I|re.S),
+    "takoma": re.compile(
+        r"\btakoma\s+(dc|d\.c\.|metro|station|library|neighborhood\s+library|theat(re|er)|education\s+campus|rec(reation)?(\s+center)?|community\s+center|aquatic|central|park\s+dc|park,?\s+d\.?c)\b|\btakoma\s*\(takoma\s+park\)|"
+        r"\b(dc|d\.c\.)['\u2019]?s\s+takoma\b|\btakoma\b(?!\s+park\b)(?!\s+academy\b)(?![-\s]langley\b)(?=.{0,200}\b(d\.?c|washington|nw|n\.w|northwest|ward\s*4|mpd|red\s+line)\b)|\bin\s+takoma\b(?!\s+park\b)|"
+        r"\b(carroll|cedar|aspen|butternut|blair|laurel|maple|willow)\s+(st(reet)?|r(oa)?d|ave(nue)?)\.?,?\s+n\.?w\b|\bpiney\s+branch\s+r(oa)?d\.?,?\s+n\.?w\b|\b6[89]\d\d\s+4th\s+st(reet)?\.?,?\s+n\.?w\b|"
+        r"\bshepherd\s+park\b|\bshepherd\s+elementary\b|\bjuanita\s+(e\.?\s+)?thornton\b|\bcolonial\s+village\b(?=.{0,200}\b(n\.?w|d\.?c|16th|shepherd)\b)|\bnorth\s+portal\b|\bportal\s+dr(ive)?\b|\btifereth\s+israel\b|\bwashington\s+ethical\s+society\b|"
+        r"\b(the\s+)?parks\s+at\s+walter\s+reed\b|\b(former|old)\s+walter\s+reed\b|\bwalter\s+reed\s+(campus|site|redevelopment|development)\b|\bdown\s+in\s+the\s+reeds\b|"
+        r"\b(6[89]|7\d|8[01])\d\d\s+(block\s+of\s+)?georgia\s+ave(nue)?\b|\b7[0-9]\d\d\s+(block\s+of\s+)?(1[2-6]th)\s+st(reet)?\b|\bANC\s*4A0?[1-3]\b|\bANC\s*4B0?[1-4]\b|\b4A0[1-3]\b|\b4B0[1-4]\b|\bANC\s*4B\b", re.I|re.S),
+    "congressheights": re.compile(r"\bcongress\s+heights\b(?!\s+on\s+the\s+rise)|\bshipley\s+terrace\b|\b(st\.?|saint)\s+elizabeths?\s+(east|campus|hospital|west)\b|\bst\.?\s+e['\u2019]?s\s+(east|campus)\b|\b(st\.?|saint)\s+elizabeth['\u2019]?s\b(?=.{0,200}\b(d\.?c\.?|southeast|SE|ward\s*8|bowser|patients?|ICE)\b)|\bdc['\u2019]s\s+st\.?\s+elizabeth|\bentertainment\s+(and|&)\s+sports\s+arena\b|\bcedar\s+hill\s+(regional|urgent|hospital|medical)\b|\bballou\s+(high|senior|stay|sr)\b|\bmalcolm\s+x\s+(elementary|opportunity|avenue|ave)\b|\bsimon\s+elementary\b|\bhart\s+middle\b|\bhendley\s+elementary\b|\bfletcher[-\s]johnson\b|\boxon\s+run\b|\bparklands[-\s]turner\b|\bparklands\s+(library|community)\b|\bTHEARC\b|\bfort\s+greble\b|\bdestination\s+congress\s+heights\b|\bsoul\s+of\s+the\s+city\b|\bANC\s*8[CE]\b|\b8[CE]0[1-9]\b|\b(2[7-9]|3[0-7])\d\d\s+(martin\s+luther\s+king|MLK)(\s+jr\.?)?\s+(ave(nue)?)\.?,?\s+s\.?e\b|\b([4-9]\d\d|1[0-5]\d\d)\s+alabama\s+ave(nue)?\.?,?\s+s\.?e\b|\b\d{3,4}\s+mississippi\s+ave(nue)?\.?,?\s+s\.?e\b|\bwashington\s+highlands\b|\bbellevue\s+(community|library|neighborhood|anc)\b|\bbellevue\b(?=.{0,200}\b(d\.?c\.?|SW|SE|ward\s*8|southeast|southwest|ANC)\b)", re.I | re.S),
 }
 
 # Other cities' Chinatowns.
@@ -576,6 +627,14 @@ NOT_HERE = {
                  re.compile(r"\bANC\s*5D\b|\bivy\s+city\b|\bmontello\b|\bmount\s+olivet\b|\bTrinidad\s+(neighborhood|rec)|\bunion\s+market\s+(district|dc)\b|\b5th\s+st(reet)?\.?,?\s+n\.?e\b|\b(northeast|NE)\s+(dc|d\.c\.)\b", re.I)),
     "woodleypark": (re.compile(r"\bencino\b|\bvan\s+nuys\b|\bsepulveda\b|\blos\s+angeles\b|\bLAPD\b|\bcricket\b|\bwoodley,?\s+(reading|berkshire|stockport|new\s+york|ny)\b", re.I),
                     re.compile(r"\bwoodley\s+park[-\s/]+(zoo|metro|adams)|\bconnecticut\s+ave|\bANC\s*3C\b|\b(d\.?c\.?|NW)\b", re.I)),
+    # 4A01-03 meetings are Takoma's, and the ANC feed re-dates meetings from past years.
+    "brightwood": (re.compile(r"^\W*4A0[1-3]\b|^[A-Z][a-z]+\s+\d{1,2},\s+20(?:1\d|2[0-5])\b|\\bbrightwood,?\\s+(ore|oregon|or|va|virginia|ind|indiana|mass|massachusetts|mi|mich|michigan|ma|n\.?c|il|ill|nj|n\.j|ohio|ga)\b|\bindianapolis\b|\bspringfield\b|\bmt\.?\s+hood\b|\bmount\s+hood\b|\bfort\s+stevens,?\s+(state\s+park|ore|oregon)\b|\bfort\s+stevens\s+state\s+park\b|\bastoria\b|\bhammond,?\s+ore|\bkennedy\s+st(reet)?\b.{0,60}\b(boston|dorchester|quincy|brooklyn|queens|baltimore|hyattsville|bronx|alexandria,?\s+va)\b|\bjersey\s+city\b", re.I|re.S),
+                   re.compile(r"^(?!\W*4A0[1-3]\b)(?![A-Z][a-z]+\s+\d{1,2},\s+20(?:1\d|2[0-5])\b).*?(?:\\bbrightwood\\s+park\\b|\\bANC\\s*4[AD]\\b|\\bgeorgia\\s+ave|\\bward\\s*4\\b|\\bkennedy\\s+st(reet)?\\.?,?\\s+n\\.?w\\b|\\b(d\\.?c\\.?|NW)\\b.{0,30}\\bbrightwood\\b|\\bbrightwood\\b.{0,60}\\b(NW|northwest\\s+(dc|d\\.c\\.))\\b)", re.S)),
+    # ANC 4B's paperwork posts would crowd out everything else; the meetings themselves stay.
+    "takoma": (re.compile(r"^\W*(?:meeting\s+materials|minutes)\b|^[A-Z][a-z]+\s+\d{1,2},\s+20(?:1\d|2[0-5])\b|\\btakoma\\s+park,?\\s+(md|maryland|city|council|police|mayor|middle|elementary|folk)\b|\bmaryland\b|\bmd\.|\bmontgomery\s+(county|co\.?)\b|\bmoco\b|\bsilver\s+spring\b|\btakoma[-\s]langley\b|\bpurple\s+line\b|\bprince\s+george|\bwalter\s+reed\s+(national\s+military|medical\s+center|army\s+medical|bethesda)\b|\bbethesda\b|\bsligo\s+creek\b|\bshepherd\s+park\b.{0,40}\b(ky|ga|mo|iowa|ohio|tx|texas|pa|nc|n\.c|mich)\b|\bshepherd\s+university\b|\bshepherdstown\b", re.I|re.S),
+               re.compile(r"^(?!\W*(?:meeting\s+materials|minutes)\b)(?![A-Z][a-z]+\s+\d{1,2},\s+20(?:1\d|2[0-5])\b).*?(?:\\btakoma\\s+(dc|d\\.c\\.|metro\\s+(station\\s+)?(lot|development|site)|library|rec(reation)?\s+center|education\s+campus|theat(re|er))\b(?!\s*\|)|\b(dc|d\.c\.)['\u2019]?s\s+takoma\b|\b(carroll|cedar|aspen|blair)\s+(st(reet)?|r(oa)?d)\.?,?\s+n\.?w\b|\bANC\s*4[AB]\b|\bward\s*4\b|\bshepherd\s+park\b(?=.{0,200}\b(d\.?c|nw|ward\s*4)\b)|\bparks\s+at\s+walter\s+reed\b)", re.I|re.S)),
+    "congressheights": (re.compile(r"^\W*(?:(?:home|building)\s+)?(?:for\s+sale|short\s+sale|coming\s+soon|price\s+reduction|open\s+house)\b|^DC\s+Fresh\s+Finds\b|\bboston\b|\bbrighton\b|\byoungstown\b|\bdayton\b|\bdhs\s+headquarters\b(?!.{0,200}\bcongress\s+heights\b)|\bmount\s+st\.?\s+elizabeth|\bbellevue,?\s+(wash|washington|wa|neb|nebraska|ne|ky|kentucky|tenn|ohio|idaho|iowa)\b|\bseattle\b|\bking\s+county\b|\bbellevue\s+hospital\b|\bmanhattan\b|\bnew\s+york\b|\bvs\.?\s|\bpoints\b.{0,80}\brebounds\b|\bwashington\s+highlands?,?\s+(n\.?y|new\s+york)\b", re.I | re.S),
+        re.compile(r"^(?!(?i:\W*(?:(?:home|building)\s+)?(?:for\s+sale|short\s+sale|coming\s+soon|price\s+reduction|open\s+house)\b|DC\s+Fresh\s+Finds\b)).*?(?:\bcongress\s+heights\b|\bANC\s*8[CE]\b|\bcedar\s+hill\s+regional\b|\b(st\.?|saint)\s+elizabeths\s+(east|campus)\b.{0,200}\b(ward\s*8|southeast|SE|bowser|ANC)\b)", re.I | re.S)),
 }
 
 # robots.txt, read the way search engines do (RFC 9309): the group naming our agent beats the "*" group, rules

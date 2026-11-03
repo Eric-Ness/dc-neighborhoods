@@ -59,7 +59,7 @@ ANCS = {"petworth": ["4C", "4D"], "tenleytown": ["3E", "3F", "3/4G"], "adamsmorg
         "palisades": ["3D"], "shaw": ["2G"], "logancircle": ["2F"], "ustreet": ["1B", "1E"], "vanness": ["3F"],
         "bloomingdale": ["5E", "5F"], "foggybottom": ["2A"], "hilleast": ["6B", "7D"], "kingmanpark": ["6A", "7D"], "mountpleasant": ["1D"],
         "stadiumarmory": ["7D", "6B", "7F"], "trinidad": ["5D"], "woodleypark": ["3C"]}
-OANC_TITLE = re.compile(r"^([A-Z][a-z]+ \d{1,2}, \d{4}),?\s+ANC\s+([0-9/]+[A-Z])\s+(Special\s+)?(?:Public|Virtual|Regular) Meeting", re.I)
+OANC_TITLE = re.compile(r"^([A-Z][a-z]+ \d{1,2}, \d{4}),?\s+(?:ANC\s+)?([0-9/]+[A-Z])\s+(?:In[-\s]Person\s+)?(Special\s+)?(?:(?:Public|Virtual|Regular)\s+)?Meeting", re.I)
 ANC_ARCHIVE_DAYS = 400
 ANC_FEEDS = {"tenleytown": ("ANC 3E", "https://anc3e.org/feed/", "https://anc3e.org/"),
              "friendshipheights": ("ANC 3E", "https://anc3e.org/feed/", "https://anc3e.org/")}
@@ -335,6 +335,48 @@ LINKS["woodleypark"] = [
 ]
 
 
+ANCS["brightwood"] = ["4A", "4B", "4D"]
+LINKS["brightwood"] = [
+    {"name": "ANC 4A", "url": "https://anc4a.dc.gov/"},
+    {"name": "ANC 4D", "url": "https://anc4d.org/"},
+    {"name": "Uptown Main Street (Kennedy Street)", "url": "https://www.uptownmainstreet.org/news-events"},
+    {"name": "Petworth Library events", "url": "https://dclibrary.libnet.info/events?l=Petworth%20Neighborhood%20Library"},
+]
+ANCS["congressheights"] = ["8C", "8E"]
+LINKS["congressheights"] = [
+    {"name": "ANC 8C calendar", "url": "https://www.anc8c.org/calendar"},
+    {"name": "ANC 8E", "url": "https://anc8e.dc.gov/"},
+    {"name": "Parklands-Turner Library events", "url": "https://dclibrary.libnet.info/events?l=Parklands-Turner%20Neighborhood%20Library"},
+    {"name": "Congress Heights on the Rise", "url": "https://www.congressheightsontherise.com/"},
+]
+ANCS["takoma"] = ["4A", "4B"]
+LINKS["takoma"] = [
+    {"name": "Takoma Library events", "url": "https://dclibrary.libnet.info/events?l=Takoma%20Park%20Neighborhood%20Library"},
+    {"name": "The Parks at Walter Reed events", "url": "https://theparksdc.com/events/"},
+    {"name": "ANC 4B", "url": "https://anc4b.com/"},
+    {"name": "Shepherd Park Citizens Association", "url": "https://www.shepherdpark.org/"},
+    {"name": "Historic Takoma", "url": "https://www.historictakoma.org/"},
+]
+TRIBE["bca"] = ("Brightwood Community Association", "https://brightwoodcommunity.org/wp-json/tribe/events/v1/events", "https://brightwoodcommunity.org/calendar/", None, 10)
+CALENDARS["brightwood"] = ["bca"]
+TRIBE["bbar"] = ("Building Bridges Across the River", "https://buildingbridgesdc.org/wp-json/tribe/events/v1/events", "https://buildingbridgesdc.org/",
+                 r"^volunteer\b|union\s+temple|hopkins\s+garden", 0)
+CALENDARS["congressheights"] = ["bbar"]
+TRIBE["mainstreettakoma"] = ("Main Street Takoma", "https://mainstreettakoma.org/wp-json/tribe/events/v1/events", "https://mainstreettakoma.org/events/",
+                             r"flatfoot|\btap\b|tap\s+class|woof\s+clinic|whittier\s+farm\s+stand|\bclass(es)?\b|pilates|workshop", 0)
+CALENDARS["takoma"] = ["mainstreettakoma"]
+# Calendars that straddle the DC line: keep only events at a DC venue.
+TRIBE_DC_ONLY = {"mainstreettakoma"}
+MAX_TRIBE_PAGES = 6
+
+
+def dc_venue(v: dict) -> bool:
+    """Venue data is typed in by hand, so any one of state, city or a DC quadrant in the address will do."""
+    state = (v.get("state") or v.get("stateprovince") or "").strip().upper().replace(".", "")
+    city = (v.get("city") or "").strip().lower()
+    return state in ("DC", "DISTRICT OF COLUMBIA") or city == "washington" or bool(re.search(r"\b(NW|NE|SE|SW)\b\.?\s*$", news.plain(v.get("address")) or ""))
+
+
 def tribe_time(s: str | None) -> str | None:
     """'2026-12-04 19:00:00' -> '7 PM'."""
     m = re.match(r"\d{4}-\d\d-\d\d (\d\d):(\d\d)", s or "")
@@ -350,12 +392,19 @@ def build_tribe(key: str, today: date) -> tuple[list[dict], str]:
     url = f"{api}?start_date={today.isoformat()}&end_date={end.isoformat()}&per_page=50"
     if not news.allowed(url):
         return [], "skipped: robots.txt"
-    if delay:
-        time.sleep(delay)
-    try:
-        rows = json.loads(news.fetch(url)).get("events") or []
-    except Exception as e:
-        return [], f"error: {type(e).__name__}"
+    rows, page_no, pages = [], 1, 1
+    while page_no <= min(pages, MAX_TRIBE_PAGES):
+        if delay:
+            time.sleep(delay)
+        try:
+            data = json.loads(news.fetch(url + (f"&page={page_no}" if page_no > 1 else "")))
+        except Exception as e:
+            if rows:  # keep the pages we have
+                break
+            return [], f"error: {type(e).__name__}"
+        rows += data.get("events") or []
+        pages = data.get("total_pages") or 1
+        page_no += 1
     out = []
     for r in rows:
         title = html.unescape(r.get("title") or "").strip()
@@ -366,6 +415,8 @@ def build_tribe(key: str, today: date) -> tuple[list[dict], str]:
         if not title or (skip and re.search(skip, title, re.I)) or not (today <= d <= end):
             continue
         v = r.get("venue") if isinstance(r.get("venue"), dict) else {}
+        if key in TRIBE_DC_ONLY and not dc_venue(v):
+            continue
         place = ", ".join(x for x in (news.plain(v.get("venue")), news.plain(v.get("address"))) if x) or None
         s, e = (None, None) if r.get("all_day") else (tribe_time(r.get("start_date")), tribe_time(r.get("end_date")))
         out.append({"title": title, "date": d.isoformat(), "time": f"{s} to {e}" if s and e and s != e else s,

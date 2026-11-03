@@ -295,6 +295,25 @@ ARCHIVE = {
         "reject": r"cathedral|mount\s+st\.?\s+alban|john\s+eaton|tilden|cleveland\s+park|syncopating|horsem[ae]n|this\s+afternoon\s+and\s+evening",
         "local": r"connecticut\s+av|calvert\s+st|woodley|rock\s+creek|wardman|zoo|cathedral\s+av|twenty-(sixth|seventh|eighth|ninth)|2[6-9]th\s+st",
     },
+    "brightwood": {
+        "terms": ['"Brightwood"', '"Brightwood Park"', '"Fort Stevens"'],
+        "pattern": r"brightwood\s+(park|citizens|heights|school|section|avenue|community|hotel|m\.\s?e|methodist|baptist|car\s+line|branch)|(at|in|of)\s+brightwood\b|fort\s+stevens|\b(5[4-9]|6[0-7])\d\d\s+georgia\s+av",
+        "reject": r"fleetwood\s+laboratories|brightwood\s*,?\s*(mass|va\b|n\.\s?c|ind|ore|pa\b)|springfield|foot\s*ball|eleven|touchdown|gridiron|offensive|cog\s+in|interment|funeral|years\s+old",
+        "local": r"georgia\s+av|fourteenth|14th|missouri\s+av|kennedy\s+st|n\.\s?w\.|citizens|sherman\s+av|rock\s+creek\s+church|emory",
+    },
+    "takoma": {
+        "terms": ['"Takoma Park"', '"Walter Reed"', '"Shepherd Park"'],
+        "pattern": r"takoma(\s+park)?,?\s+d\.?\s?c|takoma\s+(park\s+)?(citizens|library|branch|school|section|baptist|presbyterian|lutheran)|shepherd\s+park|walter\s+reed\s+(general\s+)?hospital(?=.{0,200}(georgia|concert|band|visit|patients|red\s+cross|entertain|ward|soldier))|takoma\s+park",
+        "reject": r"slightly\s+injured|automobile\s+of|dining\s+room\s+suite|address\s+box|takoma\s+park,?\s+md|maryland|montgomery\s+county|silver\s+spring|sligo|foot\s*ball|eleven|touchdown|gridiron|interment|funeral|years\s+old|tacoma|duckpin|sanitarium|washington\s+missionary",
+        "local": r"georgia\s+av|butternut|cedar\s+st|carroll|blair\s+road|n\.\s?w\.|citizens|fourth\s+st|piney\s+branch|sixteenth",
+    },
+    "congressheights": {
+        # In 1926 this is the subdivision and the government hospital. Nichols avenue is now MLK Ave.
+        "terms": ['"St. Elizabeth\'s"', "Congress Heights", '"Nichols avenue"'],
+        "pattern": r"congress\s+heights|st\.?\s+elizabeth.?s\s+(hospital|asylum|grounds)?|\b(2[7-9]|3\d)\d\d\s+nichols\s+av|shepherd\s+park(way)?\b(?=.{0,120}(s\.\s?e|s\.\s?w|nichols|bellevue))",
+        "reject": r"departed\s+this\s+life|interment|inter\s+ment|funeral|deaths?\s+reported|\b\d+\s+years(\s+old)?\b|patient|insane|n\.\s?j\.|new\s+jersey|convent\s+station|ohio|boston|massachusetts|foot\s*ball|eleven|gridiron|touchdown",
+        "local": r"nichols\s+av|alabama\s+av|s\.\s?e\.|southeast|congress\s+heights|anacostia|citizens|randle|portland\s+st|fourth\s+st",
+    },
 }
 
 # Content screening. A clip that matches any of these is skipped, never published. 1920s news and

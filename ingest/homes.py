@@ -271,6 +271,24 @@ HOODS = {
         # About 24 house and 21 condo sales a year, so counted together.
         "primary": "all",
     },
+    "brightwood": {
+        # Boundary is ANC 4A04-07, 4B05 and 4D01-03. Brightwood A is 87% inside, Brightwood C 51% (the rest is on the Takoma
+        # site's side) and Petworth B 44%, which holds Kennedy Street and Brightwood Park and is shared with the Petworth site.
+        "otr": [("Brightwood", "A"), ("Brightwood", "C"), ("Petworth", "B")],
+        "label": "OTR assessment sub-areas Brightwood A and C and Petworth B",
+    },
+    "congressheights": {
+        # Boundary is ANC 8C02-04, 8C06-08 and 8E03-05. Congress Heights B is 79% inside, Randle Heights D 67%, Randle Heights C 42%.
+        # Congress Heights C (27% inside) is mostly Washington Highlands, so it's left out.
+        "otr": [("Congress Heights", "B"), ("Randle Heights", "D"), ("Randle Heights", "C")],
+        "label": "OTR assessment sub-areas Congress Heights B and Randle Heights C and D",
+    },
+    "takoma": {
+        # Boundary is ANC 4A01-03 and 4B01-04. Shepherd Park, Colonial Village and Brightwood B and D are wholly inside. Brightwood C
+        # splits about evenly with the Brightwood site and goes there. OTR's own "Takoma" area is mostly off this boundary (13% inside).
+        "otr": [("Shepherd Park", None), ("Colonial Village", None), ("Brightwood", "B"), ("Brightwood", "D")],
+        "label": "OTR assessment neighborhoods Shepherd Park and Colonial Village and sub-areas Brightwood B and D",
+    },
 }
 
 PERSONAL = {"OWNERNAME", "OWNNAME2", "CAREOFNAME", "ADDRESS1", "ADDRESS2", "CITYSTZIP", "MORTGAGECO", "SALE_CURR_OWNER"}

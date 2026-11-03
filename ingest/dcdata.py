@@ -68,15 +68,28 @@ def boundary(layer_url: str, where: str, parts: int = 1) -> dict:
     return {"rings": rings, "spatialReference": {"wkid": 4326}}
 
 
+MAX_QUERY_VERTICES = 3000
+
+
 def hood_boundary(config: dict, hood: dict) -> dict:
     """The polygon for one entry of ingest/neighborhoods.json. A neighborhood may override the default layer
     (DC Health Planning Neighborhoods) when DC has no planning area for it, as with Friendship Heights."""
     return boundary(hood.get("boundary_layer", config["boundary_layer"]), hood["boundary_where"], hood.get("boundary_parts", 1))
 
 
+def _thin(geometry: dict) -> dict:
+    """DC's address layer refuses very detailed polygons (seen at about 3,300 vertices), so drop vertices evenly past
+    the limit. Vertices on SMD boundaries sit metres apart, so this doesn't move what falls inside."""
+    total = sum(len(r) for r in geometry["rings"])
+    if total <= MAX_QUERY_VERTICES:
+        return geometry
+    step = total // MAX_QUERY_VERTICES + 1
+    return {**geometry, "rings": [r[:-1][::step] + [r[0]] for r in geometry["rings"]]}
+
+
 def _spatial(geometry: dict) -> dict:
     return {
-        "geometry": json.dumps(geometry),
+        "geometry": json.dumps(_thin(geometry)),
         "geometryType": "esriGeometryPolygon",
         "inSR": 4326,
         "outSR": 4326,

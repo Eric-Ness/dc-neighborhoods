@@ -361,6 +361,39 @@
       "boundary_layer": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Administrative_Other_Boundaries_WebMercator/MapServer/55",
       "boundary_parts": 4,
       "boundary_source": "ANC single-member districts 3C01, 3C02, 3C03 and 3C07, around the Woodley Park Metro and the National Zoo (Open Data DC). DC's WOODLEY PARK planning area also takes in much of Cleveland Park, which has its own site."
+    },
+    {
+      "slug": "brightwood",
+      "name": "Brightwood",
+      "boundary_where": "SMD_ID IN ('4A04','4A05','4A06','4A07','4B05','4D01','4D02','4D03')",
+      "hosts": ["brightwooddc.net"],
+      "redirect_hosts": [],
+      "enabled": true,
+      "boundary_layer": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Administrative_Other_Boundaries_WebMercator/MapServer/55",
+      "boundary_parts": 8,
+      "boundary_source": "ANC single-member districts 4A04, 4A05, 4A06, 4A07, 4B05, 4D01, 4D02 and 4D03, along upper Georgia Avenue and Kennedy Street (Open Data DC). It takes in Brightwood and Brightwood Park; DC's BRIGHTWOOD planning area also holds central Takoma, which has its own site."
+    },
+    {
+      "slug": "congressheights",
+      "name": "Congress Heights",
+      "boundary_where": "SMD_ID IN ('8C02','8C03','8C04','8C06','8C07','8C08','8E03','8E04','8E05')",
+      "hosts": ["congressheights.org"],
+      "redirect_hosts": [],
+      "enabled": true,
+      "boundary_layer": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Administrative_Other_Boundaries_WebMercator/MapServer/55",
+      "boundary_parts": 9,
+      "boundary_source": "ANC single-member districts 8C02, 8C03, 8C04, 8C06, 8C07, 8C08, 8E03, 8E04 and 8E05, around the Congress Heights Metro, St. Elizabeths East and THEARC (Open Data DC). DC's CONGRESS HEIGHTS/SHIPLEY planning area leaves out the Metro station and the arena."
+    },
+    {
+      "slug": "takoma",
+      "name": "Takoma",
+      "boundary_where": "SMD_ID IN ('4A01','4A02','4A03','4B01','4B02','4B03','4B04')",
+      "hosts": ["takomadc.org"],
+      "redirect_hosts": [],
+      "enabled": true,
+      "boundary_layer": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Administrative_Other_Boundaries_WebMercator/MapServer/55",
+      "boundary_parts": 7,
+      "boundary_source": "ANC single-member districts 4A01, 4A02, 4A03, 4B01, 4B02, 4B03 and 4B04, the DC side of Takoma plus Shepherd Park and the Parks at Walter Reed (Open Data DC). Takoma Park, Maryland, is not included. DC's planning areas split this ground: Takoma Metro falls in BRIGHTWOOD, not SHEPHERD PARK."
     }
   ]
 }

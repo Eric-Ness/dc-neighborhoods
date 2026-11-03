@@ -42,7 +42,7 @@ nav.sections a[aria-current="page"]{text-decoration:underline;text-decoration-th
 .hoods summary::after{content:" ▾";font-size:11px}
 .hoods[open] summary::after{content:" ▴"}
 .hoods ul{position:absolute;right:0;top:calc(100% + 8px);z-index:20;list-style:none;margin:0;padding:8px 0;background:#fff;
-  border:1px solid var(--ink);min-width:260px;columns:2;column-gap:0;box-shadow:0 8px 24px rgba(15,37,51,.12)}
+  border:1px solid var(--ink);min-width:510px;columns:3;column-gap:0;box-shadow:0 8px 24px rgba(15,37,51,.12)}
 .hoods li{break-inside:avoid}
 .hoods li a,.hoods li span{display:block;padding:5px 14px;color:var(--ink);text-decoration:none;white-space:nowrap}
 .hoods li a:hover{background:var(--land)}
@@ -85,7 +85,7 @@ footer p{margin:0 0 8px;max-width:900px}
   .mast .brand-link{font-size:64px}
   .mast.small h1,.mast.small .brand-link{font-size:44px}
   .pagehead h1{font-size:30px}
-  .hoods ul{right:auto;left:0;min-width:240px}
+  .hoods ul{right:auto;left:0;min-width:240px;columns:2}
 }
 
 /* --- front page additions --- */
