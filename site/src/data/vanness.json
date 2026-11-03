@@ -1,7 +1,7 @@
 {
  "slug": "vanness",
  "name": "Van Ness",
- "generated_at": "2026-11-03T02:34:05Z",
+ "generated_at": "2026-11-03T09:19:24Z",
  "boundary": {
   "source": "ANC single-member districts 3F01, 3F02 and 3F05 around the Van Ness-UDC Metro (Open Data DC). DC has no planning area named Van Ness.",
   "rings": [
@@ -3225,19 +3225,6 @@
    "smd": "3F02"
   },
   {
-   "id": "BP2700217",
-   "issued": "2026-10-14T04:00:00Z",
-   "group": "Minor work",
-   "type": "POST CARD",
-   "subtype": "BUILDING",
-   "address": "4411 36TH ST NW 20008",
-   "work": "",
-   "zoning": "R-1B",
-   "lat": 38.94694,
-   "lon": -77.06964,
-   "smd": "3F05"
-  },
-  {
    "id": "F2600850",
    "issued": "2026-10-14T04:00:00Z",
    "group": "Renovation & repair",
@@ -3256,6 +3243,19 @@
    "group": "Electrical, plumbing & mechanical",
    "type": "SUPPLEMENTAL",
    "subtype": "ELECTRICAL",
+   "address": "4411 36TH ST NW 20008",
+   "work": "",
+   "zoning": "R-1B",
+   "lat": 38.94694,
+   "lon": -77.06964,
+   "smd": "3F05"
+  },
+  {
+   "id": "BP2700217",
+   "issued": "2026-10-14T04:00:00Z",
+   "group": "Minor work",
+   "type": "POST CARD",
+   "subtype": "BUILDING",
    "address": "4411 36TH ST NW 20008",
    "work": "",
    "zoning": "R-1B",
@@ -3369,12 +3369,12 @@
   }
  ],
  "requests": {
-  "total": 210,
-  "previous_total": 239,
+  "total": 211,
+  "previous_total": 238,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
-    "count": 46,
+    "count": 47,
     "previous": 61
    },
    {
@@ -3385,7 +3385,7 @@
    {
     "type": "Bulk Collection",
     "count": 34,
-    "previous": 24
+    "previous": 23
    },
    {
     "type": "Graffiti Removal",
@@ -3588,8 +3588,18 @@
     "previous": 4
    }
   ],
-  "open": 67,
+  "open": 68,
   "recent": [
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-03T03:04:02Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3500 block of CHESAPEAKE STREET NW",
+    "lat": 38.951,
+    "lon": -77.069
+   },
    {
     "type": "Bulk Collection",
     "agency": "DPW",
@@ -4079,16 +4089,6 @@
     "block": "FOREST HILLS PLAYGROUND",
     "lat": 38.95,
     "lon": -77.065
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "agency": "DPW",
-    "added": "2026-10-28T20:13:10Z",
-    "resolved": "2026-10-29T09:11:48Z",
-    "status": "Closed",
-    "block": "FOREST HILLS PARK",
-    "lat": 38.95,
-    "lon": -77.065
    }
   ]
  },
@@ -4142,7 +4142,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-03T02:34:05Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -4387,7 +4387,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-03T02:34:05Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4407,14 +4407,18 @@
    }
   ],
   "curb": {
-   "active_this_week": 30,
-   "starting_next_7d": 5,
-   "reserved_ft": 4598,
-   "long_running_90d": 6,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
+   "active_this_week": 33,
+   "starting_next_7d": 8,
+   "reserved_ft": 5962,
+   "long_running_90d": 7,
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
+     "count": 1
+    },
+    {
+     "type": "Dumpsters",
      "count": 1
     },
     {
@@ -4427,7 +4431,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 8
+     "count": 10
     },
     {
      "type": "Events & reserved parking",
@@ -4466,6 +4470,30 @@
      "end": "2026-11-05",
      "ft": 88,
      "hours": "7:30 am\u20133 pm"
+    },
+    {
+     "type": "Dumpsters",
+     "block": "3600 block of Alton Place NW",
+     "start": "2026-11-05",
+     "end": "2027-04-30",
+     "ft": 44,
+     "hours": ""
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "3500 block of Appleton Street NW",
+     "start": "2026-11-05",
+     "end": "2026-11-21",
+     "ft": 880,
+     "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "3600 block of Chesapeake Street NW",
+     "start": "2026-11-05",
+     "end": "2026-11-21",
+     "ft": 440,
+     "hours": "7 am\u20135 pm"
     },
     {
      "type": "Events & reserved parking",
@@ -4606,7 +4634,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-03T02:34:05Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4752,7 +4780,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-03T02:34:05Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "archive_days": 180,
   "sources": [
    {
@@ -5084,8 +5112,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-03T02:34:05Z",
-  "today": "2026-11-02",
+  "generated_at": "2026-11-03T09:19:24Z",
+  "today": "2026-11-03",
   "days_ahead": 30,
   "sources": [
    {
@@ -5204,7 +5232,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-03T02:34:05Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -15224,7 +15252,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-03T02:34:05Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

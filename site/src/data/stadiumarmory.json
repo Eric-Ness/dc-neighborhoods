@@ -1,7 +1,7 @@
 {
  "slug": "stadiumarmory",
  "name": "Stadium-Armory",
- "generated_at": "2026-11-03T02:34:05Z",
+ "generated_at": "2026-11-03T09:19:24Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -995,6 +995,19 @@
  },
  "permits": [
   {
+   "id": "D2400359-EXT-2",
+   "issued": "2026-10-15T04:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "PERMIT",
+   "address": "1900 MASSACHUSETTS AVE SE 20003",
+   "work": "",
+   "zoning": "HE-3",
+   "lat": 38.88514,
+   "lon": -76.97307,
+   "smd": "7F07"
+  },
+  {
    "id": "BCIV2600134",
    "issued": "2026-10-15T04:00:00Z",
    "group": "Renovation & repair",
@@ -1019,29 +1032,16 @@
    "lat": 38.88514,
    "lon": -76.97307,
    "smd": "7F07"
-  },
-  {
-   "id": "D2400359-EXT-2",
-   "issued": "2026-10-15T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "PERMIT",
-   "address": "1900 MASSACHUSETTS AVE SE 20003",
-   "work": "",
-   "zoning": "HE-3",
-   "lat": 38.88514,
-   "lon": -76.97307,
-   "smd": "7F07"
   }
  ],
  "requests": {
-  "total": 444,
-  "previous_total": 702,
+  "total": 437,
+  "previous_total": 621,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 106,
-    "previous": 278
+    "count": 103,
+    "previous": 259
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -1050,8 +1050,8 @@
    },
    {
     "type": "Tree Inspection",
-    "count": 60,
-    "previous": 54
+    "count": 59,
+    "previous": 47
    },
    {
     "type": "Streetlight Repair Investigation",
@@ -1059,12 +1059,12 @@
     "previous": 0
    },
    {
-    "type": "Illegal Dumping",
-    "count": 36,
+    "type": "DOEE - LIHEAP",
+    "count": 35,
     "previous": 0
    },
    {
-    "type": "DOEE - LIHEAP",
+    "type": "Illegal Dumping",
     "count": 35,
     "previous": 0
    },
@@ -1075,7 +1075,7 @@
    },
    {
     "type": "DMV - Vehicle Registration Issues",
-    "count": 26,
+    "count": 25,
     "previous": 0
    },
    {
@@ -1085,13 +1085,13 @@
    },
    {
     "type": "DMV - Drivers License/ID Issues",
-    "count": 7,
+    "count": 6,
     "previous": 0
    },
    {
     "type": "Bulk Collection",
     "count": 3,
-    "previous": 59
+    "previous": 54
    }
   ],
   "open": 17,
@@ -1287,26 +1287,6 @@
     "lon": -76.977
    },
    {
-    "type": "DMV - Drivers License/ID Issues",
-    "agency": "DMV",
-    "added": "2026-10-27T16:46:57Z",
-    "resolved": "2026-10-29T20:45:25Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-27T11:36:16Z",
-    "resolved": "2026-10-27T13:48:01Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-10-27T11:36:16Z",
@@ -1447,104 +1427,124 @@
     "lon": -76.977
    },
    {
-    "type": "Parking Enforcement",
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-10-26T12:49:56Z",
+    "resolved": "2026-10-26T12:49:56Z",
+    "status": "Closed",
+    "block": "1900 block of C STREET SE",
+    "lat": 38.885,
+    "lon": -76.977
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-10-26T12:49:56Z",
+    "resolved": "2026-10-26T12:49:56Z",
+    "status": "Closed",
+    "block": "1900 block of C STREET SE",
+    "lat": 38.885,
+    "lon": -76.977
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-10-26T12:49:56Z",
+    "resolved": "2026-10-26T12:49:56Z",
+    "status": "Closed",
+    "block": "1900 block of C STREET SE",
+    "lat": 38.885,
+    "lon": -76.977
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-10-26T12:49:56Z",
+    "resolved": "2026-10-26T12:49:56Z",
+    "status": "Closed",
+    "block": "1900 block of C STREET SE",
+    "lat": 38.885,
+    "lon": -76.977
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-10-26T12:49:56Z",
+    "resolved": "2026-10-26T12:49:56Z",
+    "status": "Closed",
+    "block": "1900 block of C STREET SE",
+    "lat": 38.885,
+    "lon": -76.977
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-10-26T12:49:56Z",
+    "resolved": "2026-10-26T12:49:56Z",
+    "status": "Closed",
+    "block": "1900 block of C STREET SE",
+    "lat": 38.885,
+    "lon": -76.977
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-10-26T12:49:56Z",
+    "resolved": "2026-10-26T12:49:56Z",
+    "status": "Closed",
+    "block": "1900 block of C STREET SE",
+    "lat": 38.885,
+    "lon": -76.977
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-10-26T12:49:56Z",
+    "resolved": "2026-10-26T12:49:56Z",
+    "status": "Closed",
+    "block": "1900 block of C STREET SE",
+    "lat": 38.885,
+    "lon": -76.977
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-10-26T12:49:56Z",
+    "resolved": "2026-10-26T12:49:56Z",
+    "status": "Closed",
+    "block": "1900 block of C STREET SE",
+    "lat": 38.885,
+    "lon": -76.977
+   },
+   {
+    "type": "Illegal Dumping",
     "agency": "DPW",
-    "added": "2026-10-27T01:56:34Z",
-    "resolved": "2026-10-27T04:45:15Z",
+    "added": "2026-10-26T12:34:30Z",
+    "resolved": "2026-10-27T13:30:05Z",
     "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
+    "block": "500 block of OKLAHOMA AVENUE NE",
+    "lat": 38.896,
+    "lon": -76.969
    },
    {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-26T12:49:56Z",
-    "resolved": "2026-10-26T12:49:56Z",
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-10-26T12:34:30Z",
+    "resolved": "2026-10-27T13:30:05Z",
     "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
+    "block": "500 block of OKLAHOMA AVENUE NE",
+    "lat": 38.896,
+    "lon": -76.969
    },
    {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-26T12:49:56Z",
-    "resolved": "2026-10-26T12:49:56Z",
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-10-26T12:34:30Z",
+    "resolved": "2026-10-27T13:30:05Z",
     "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-26T12:49:56Z",
-    "resolved": "2026-10-26T12:49:56Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-26T12:49:56Z",
-    "resolved": "2026-10-26T12:49:56Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-26T12:49:56Z",
-    "resolved": "2026-10-26T12:49:56Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-26T12:49:56Z",
-    "resolved": "2026-10-26T12:49:56Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-26T12:49:56Z",
-    "resolved": "2026-10-26T12:49:56Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-26T12:49:56Z",
-    "resolved": "2026-10-26T12:49:56Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-26T12:49:56Z",
-    "resolved": "2026-10-26T12:49:56Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
+    "block": "500 block of OKLAHOMA AVENUE NE",
+    "lat": 38.896,
+    "lon": -76.969
    },
    {
     "type": "Illegal Dumping",
@@ -1613,22 +1613,22 @@
     "previous": 3
    },
    {
-    "offense": "HOMICIDE",
-    "count": 1,
-    "previous": 0
-   },
-   {
     "offense": "BURGLARY",
     "count": 1,
     "previous": 0
    },
    {
-    "offense": "THEFT F/AUTO",
+    "offense": "HOMICIDE",
+    "count": 1,
+    "previous": 0
+   },
+   {
+    "offense": "ROBBERY",
     "count": 0,
     "previous": 1
    },
    {
-    "offense": "ROBBERY",
+    "offense": "THEFT F/AUTO",
     "count": 0,
     "previous": 1
    }
@@ -1663,7 +1663,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-03T02:34:05Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -1850,7 +1850,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-03T02:34:05Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -1874,7 +1874,7 @@
    "starting_next_7d": 4,
    "reserved_ft": 2090,
    "long_running_90d": 5,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -2048,7 +2048,7 @@
    {
     "type": "Dead Animal Collection",
     "median_days": 1.16,
-    "city_median_days": 1.72,
+    "city_median_days": 1.71,
     "closed_n": 12
    },
    {
@@ -2061,7 +2061,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-03T02:34:05Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2151,7 +2151,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-03T02:34:05Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2526,8 +2526,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-03T02:34:05Z",
-  "today": "2026-11-02",
+  "generated_at": "2026-11-03T09:19:24Z",
+  "today": "2026-11-03",
   "days_ahead": 30,
   "sources": [
    {
@@ -2692,7 +2692,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-03T02:34:05Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -14196,7 +14196,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-03T02:34:05Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

@@ -1,7 +1,7 @@
 {
  "slug": "mountpleasant",
  "name": "Mount Pleasant",
- "generated_at": "2026-11-03T02:34:05Z",
+ "generated_at": "2026-11-03T09:19:24Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1109,19 +1109,6 @@
    "smd": "1D06"
   },
   {
-   "id": "P2700841",
-   "issued": "2026-10-27T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "3442 OAKWOOD TER NW 20010",
-   "work": "",
-   "zoning": "RF-1",
-   "lat": 38.93526,
-   "lon": -77.03845,
-   "smd": "1D02"
-  },
-  {
    "id": "M2700341",
    "issued": "2026-10-27T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -1159,6 +1146,19 @@
    "lat": 38.93269,
    "lon": -77.03967,
    "smd": "1D03"
+  },
+  {
+   "id": "P2700841",
+   "issued": "2026-10-27T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "3442 OAKWOOD TER NW 20010",
+   "work": "",
+   "zoning": "RF-1",
+   "lat": 38.93526,
+   "lon": -77.03845,
+   "smd": "1D02"
   },
   {
    "id": "B2609050",
@@ -1591,13 +1591,13 @@
   }
  ],
  "requests": {
-  "total": 735,
-  "previous_total": 801,
+  "total": 732,
+  "previous_total": 776,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 164,
-    "previous": 139
+    "count": 160,
+    "previous": 136
    },
    {
     "type": "Bulk Collection",
@@ -1606,53 +1606,48 @@
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 79,
+    "count": 77,
     "previous": 78
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 36,
-    "previous": 52
+    "count": 35,
+    "previous": 51
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
-    "count": 32,
-    "previous": 58
+    "count": 34,
+    "previous": 54
    },
    {
     "type": "Illegal Dumping",
-    "count": 31,
-    "previous": 24
+    "count": 33,
+    "previous": 23
    },
    {
     "type": "Graffiti Removal",
-    "count": 19,
+    "count": 20,
     "previous": 13
    },
    {
     "type": "Container Removal",
-    "count": 17,
+    "count": 16,
     "previous": 12
+   },
+   {
+    "type": "Roadway Signs",
+    "count": 16,
+    "previous": 16
+   },
+   {
+    "type": "DOB - Vacant Private Property Inspection",
+    "count": 15,
+    "previous": 7
    },
    {
     "type": "Dead Animal Collection",
     "count": 15,
     "previous": 8
-   },
-   {
-    "type": "Roadway Signs",
-    "count": 15,
-    "previous": 16
-   },
-   {
-    "type": "DOB - Vacant Private Property Inspection",
-    "count": 14,
-    "previous": 7
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "count": 14,
-    "previous": 5
    },
    {
     "type": "Sanitation Enforcement",
@@ -1661,13 +1656,18 @@
    },
    {
     "type": "Tree Removal",
-    "count": 13,
-    "previous": 25
+    "count": 14,
+    "previous": 19
    },
    {
     "type": "Residential Parking Permit Violation",
-    "count": 11,
+    "count": 12,
     "previous": 9
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "count": 11,
+    "previous": 4
    },
    {
     "type": "Public Space Litter Can-Collection",
@@ -1676,13 +1676,8 @@
    },
    {
     "type": "Supercan - Delivery",
-    "count": 10,
-    "previous": 13
-   },
-   {
-    "type": "Pothole",
     "count": 9,
-    "previous": 1
+    "previous": 13
    },
    {
     "type": "Tree Pruning",
@@ -1690,8 +1685,13 @@
     "previous": 5
    },
    {
-    "type": "Recycling Cart Delivery",
+    "type": "Pothole",
     "count": 8,
+    "previous": 1
+   },
+   {
+    "type": "Recycling Cart Delivery",
+    "count": 7,
     "previous": 9
    },
    {
@@ -1707,12 +1707,17 @@
    {
     "type": "Abandoned Vehicle - On Public Property",
     "count": 6,
-    "previous": 11
+    "previous": 10
    },
    {
     "type": "Trash Cart - Delivery",
     "count": 6,
     "previous": 6
+   },
+   {
+    "type": "DMV - Vehicle Registration Issues",
+    "count": 6,
+    "previous": 2
    },
    {
     "type": "Tree Planting",
@@ -1722,7 +1727,7 @@
    {
     "type": "Tree Inspection",
     "count": 5,
-    "previous": 14
+    "previous": 13
    },
    {
     "type": "Missed Curbside Compost Collection",
@@ -1730,9 +1735,9 @@
     "previous": 1
    },
    {
-    "type": "DMV - Vehicle Registration Issues",
+    "type": "Public Space Inspection",
     "count": 5,
-    "previous": 2
+    "previous": 3
    },
    {
     "type": "Streetlight Repair Investigation",
@@ -1748,11 +1753,6 @@
     "type": "Traffic Safety Input",
     "count": 4,
     "previous": 6
-   },
-   {
-    "type": "Public Space Inspection",
-    "count": 4,
-    "previous": 3
    },
    {
     "type": "Sidewalk Repair",
@@ -1890,8 +1890,28 @@
     "previous": 0
    }
   ],
-  "open": 152,
+  "open": 153,
   "recent": [
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-03T03:40:16Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1800 block of NEWTON STREET NW",
+    "lat": 38.934,
+    "lon": -77.043
+   },
+   {
+    "type": "Pothole",
+    "agency": "DDOT",
+    "added": "2026-11-03T03:16:09Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "2000 block of ROSEMOUNT AVENUE NW",
+    "lat": 38.933,
+    "lon": -77.047
+   },
    {
     "type": "DOB - Vacant Private Property Inspection",
     "agency": "DOB",
@@ -2371,26 +2391,6 @@
     "block": "3200 block of MOUNT PLEASANT STREET NW",
     "lat": 38.931,
     "lon": -77.038
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "agency": "DPW",
-    "added": "2026-11-01T01:47:49Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3100 block of MOUNT PLEASANT STREET NW",
-    "lat": 38.931,
-    "lon": -77.038
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-01T01:30:39Z",
-    "resolved": "2026-11-01T03:26:22Z",
-    "status": "Closed (Duplicate)",
-    "block": "3100 block of 18TH STREET NW",
-    "lat": 38.931,
-    "lon": -77.042
    }
   ]
  },
@@ -2414,14 +2414,14 @@
     "previous": 2
    },
    {
-    "offense": "ASSAULT W/DANGEROUS WEAPON",
-    "count": 1,
-    "previous": 0
-   },
-   {
     "offense": "MOTOR VEHICLE THEFT",
     "count": 1,
     "previous": 2
+   },
+   {
+    "offense": "ASSAULT W/DANGEROUS WEAPON",
+    "count": 1,
+    "previous": 0
    },
    {
     "offense": "ROBBERY",
@@ -2477,7 +2477,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-03T02:34:05Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2669,7 +2669,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-03T02:34:05Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2689,15 +2689,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 58,
-   "starting_next_7d": 16,
-   "reserved_ft": 8250,
+   "active_this_week": 54,
+   "starting_next_7d": 14,
+   "reserved_ft": 7964,
    "long_running_90d": 7,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 6
+     "count": 5
     },
     {
      "type": "Dumpsters",
@@ -2705,7 +2705,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 29
+     "count": 27
     },
     {
      "type": "Lead pipe replacement",
@@ -2713,38 +2713,14 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 10
+     "count": 11
     },
     {
      "type": "Events & reserved parking",
-     "count": 6
+     "count": 4
     }
    ],
    "upcoming": [
-    {
-     "type": "Events & reserved parking",
-     "block": "3400 block of Brown Street NW",
-     "start": "2026-11-03",
-     "end": "2026-11-03",
-     "ft": 66,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "3400 block of Mount Pleasant Street NW",
-     "start": "2026-11-03",
-     "end": "2026-11-04",
-     "ft": 66,
-     "hours": "7:30 am\u20133 pm"
-    },
-    {
-     "type": "Moving & storage",
-     "block": "1600 block of Monroe Street NW",
-     "start": "2026-11-03",
-     "end": "2026-11-03",
-     "ft": 88,
-     "hours": ""
-    },
     {
      "type": "Moving & storage",
      "block": "1600 block of Park Road NW",
@@ -2832,6 +2808,14 @@
      "end": "2026-11-13",
      "ft": 22,
      "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1700 block of Newton Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 132,
+     "hours": "7:30 am\u20133 pm"
     },
     {
      "type": "Events & reserved parking",
@@ -2933,19 +2917,19 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 1228
+    "closed_n": 1224
    },
    {
     "type": "Bulk Collection",
     "median_days": 7.88,
     "city_median_days": 6.92,
-    "closed_n": 1084
+    "closed_n": 1082
    },
    {
     "type": "Scheduled Yard Waste",
-    "median_days": 13.78,
+    "median_days": 13.77,
     "city_median_days": 9.76,
-    "closed_n": 742
+    "closed_n": 741
    },
    {
     "type": "Trash Collection - Missed",
@@ -2981,7 +2965,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-03T02:34:05Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3143,7 +3127,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-03T02:34:05Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "archive_days": 180,
   "sources": [
    {
@@ -3394,8 +3378,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-03T02:34:05Z",
-  "today": "2026-11-02",
+  "generated_at": "2026-11-03T09:19:24Z",
+  "today": "2026-11-03",
   "days_ahead": 30,
   "sources": [
    {
@@ -3482,7 +3466,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-03T02:34:05Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -12453,7 +12437,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-03T02:34:05Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

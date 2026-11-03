@@ -1,7 +1,7 @@
 {
  "slug": "chevychase",
  "name": "Chevy Chase",
- "generated_at": "2026-11-03T02:34:05Z",
+ "generated_at": "2026-11-03T09:19:24Z",
  "boundary": {
   "source": "ANC 3/4G, the Chevy Chase DC commission (all its single-member districts, Open Data DC). DC's CHEVY CHASE planning area stops at Connecticut Avenue; this overlaps the Tenleytown site a little.",
   "rings": [
@@ -12289,19 +12289,6 @@
    "smd": "3/4G06"
   },
   {
-   "id": "M2700274",
-   "issued": "2026-10-22T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "MECHANICAL",
-   "address": "5914 BROAD BRANCH RD NW 20015",
-   "work": "",
-   "zoning": "R-1B",
-   "lat": 38.96811,
-   "lon": -77.06974,
-   "smd": "3/4G05"
-  },
-  {
    "id": "P2700663",
    "issued": "2026-10-22T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -12313,6 +12300,19 @@
    "lat": 38.95993,
    "lon": -77.05772,
    "smd": "3/4G03"
+  },
+  {
+   "id": "M2700274",
+   "issued": "2026-10-22T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "MECHANICAL",
+   "address": "5914 BROAD BRANCH RD NW 20015",
+   "work": "",
+   "zoning": "R-1B",
+   "lat": 38.96811,
+   "lon": -77.06974,
+   "smd": "3/4G05"
   },
   {
    "id": "HO2700138",
@@ -13162,22 +13162,22 @@
  ],
  "requests": {
   "total": 995,
-  "previous_total": 1050,
+  "previous_total": 1040,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 264,
-    "previous": 240
+    "count": 263,
+    "previous": 238
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 210,
-    "previous": 217
+    "count": 211,
+    "previous": 218
    },
    {
     "type": "Trash Collection - Missed",
     "count": 94,
-    "previous": 154
+    "previous": 151
    },
    {
     "type": "Parking Enforcement",
@@ -13186,7 +13186,7 @@
    },
    {
     "type": "Recycling Collection - Missed",
-    "count": 44,
+    "count": 43,
     "previous": 53
    },
    {
@@ -13195,19 +13195,24 @@
     "previous": 10
    },
    {
-    "type": "Tree Pruning",
-    "count": 17,
-    "previous": 12
-   },
-   {
     "type": "Tree Inspection",
     "count": 16,
-    "previous": 35
+    "previous": 34
+   },
+   {
+    "type": "Tree Pruning",
+    "count": 16,
+    "previous": 13
    },
    {
     "type": "Recycling Cart Delivery",
     "count": 15,
-    "previous": 6
+    "previous": 5
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "count": 15,
+    "previous": 9
    },
    {
     "type": "Pothole",
@@ -13215,14 +13220,9 @@
     "previous": 4
    },
    {
-    "type": "Dockless Vehicle Parking Complaint",
-    "count": 13,
-    "previous": 9
-   },
-   {
     "type": "DC Health Rodent & Vector Control",
     "count": 12,
-    "previous": 14
+    "previous": 15
    },
    {
     "type": "Supercan - Delivery",
@@ -13232,12 +13232,12 @@
    {
     "type": "Abandoned Vehicle - On Public Property",
     "count": 12,
-    "previous": 12
+    "previous": 11
    },
    {
     "type": "Missed Curbside Compost Collection",
     "count": 10,
-    "previous": 28
+    "previous": 27
    },
    {
     "type": "Illegal Dumping",
@@ -13255,9 +13255,9 @@
     "previous": 5
    },
    {
-    "type": "DMV - Drivers License/ID Issues",
+    "type": "Graffiti Removal",
     "count": 9,
-    "previous": 9
+    "previous": 10
    },
    {
     "type": "OCTFME - Down Cable Wires",
@@ -13275,9 +13275,9 @@
     "previous": 5
    },
    {
-    "type": "Graffiti Removal",
+    "type": "DMV - Drivers License/ID Issues",
     "count": 8,
-    "previous": 10
+    "previous": 9
    },
    {
     "type": "Streetlight Repair Investigation",
@@ -13300,6 +13300,11 @@
     "previous": 9
    },
    {
+    "type": "Public Space Inspection",
+    "count": 6,
+    "previous": 2
+   },
+   {
     "type": "DGS - Playground Repair",
     "count": 6,
     "previous": 3
@@ -13310,22 +13315,17 @@
     "previous": 12
    },
    {
-    "type": "Sanitation Enforcement",
-    "count": 5,
-    "previous": 3
-   },
-   {
     "type": "DGS - Overflowing Recycling Can",
     "count": 5,
     "previous": 1
    },
    {
-    "type": "Public Space Inspection",
-    "count": 5,
-    "previous": 2
+    "type": "Abandoned Vehicle - On Private Property",
+    "count": 4,
+    "previous": 3
    },
    {
-    "type": "Abandoned Vehicle - On Private Property",
+    "type": "Sanitation Enforcement",
     "count": 4,
     "previous": 3
    },
@@ -13352,7 +13352,7 @@
    {
     "type": "Tree Removal",
     "count": 3,
-    "previous": 6
+    "previous": 4
    },
    {
     "type": "DMV - Vehicle Inspection Issues",
@@ -13460,7 +13460,7 @@
     "previous": 0
    }
   ],
-  "open": 223,
+  "open": 224,
   "recent": [
    {
     "type": "Scheduled Yard Waste",
@@ -14048,7 +14048,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-03T02:34:05Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -14352,7 +14352,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-03T02:34:05Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -14372,15 +14372,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 80,
-   "starting_next_7d": 9,
-   "reserved_ft": 10956,
+   "active_this_week": 88,
+   "starting_next_7d": 20,
+   "reserved_ft": 12232,
    "long_running_90d": 18,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 5
+     "count": 3
     },
     {
      "type": "Dumpsters",
@@ -14396,18 +14396,14 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 21
+     "count": 30
+    },
+    {
+     "type": "Events & reserved parking",
+     "count": 1
     }
    ],
    "upcoming": [
-    {
-     "type": "Moving & storage",
-     "block": "5400 block of Connecticut Avenue NW",
-     "start": "2026-11-03",
-     "end": "2026-11-03",
-     "ft": 88,
-     "hours": ""
-    },
     {
      "type": "Moving & storage",
      "block": "3400 block of Oliver Street NW",
@@ -14463,6 +14459,102 @@
      "end": "2026-11-09",
      "ft": 88,
      "hours": ""
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "3200 block of Stephenson Place NW",
+     "start": "2026-11-09",
+     "end": "2026-12-08",
+     "ft": 88,
+     "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "3800 block of Morrison Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 132,
+     "hours": "7:30 am\u20133 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "3200 block of Arcadia Place NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 132,
+     "hours": "7:30 am\u20133 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "6600 block of 32nd Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 132,
+     "hours": "7:30 am\u20133 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "5400 block of Chevy Chase Parkway NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 132,
+     "hours": "7:30 am\u20133 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "3300 block of Runnymede Place NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 132,
+     "hours": "7:30 am\u20133 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "3200 block of Arcadia Place NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 132,
+     "hours": "7:30 am\u20133 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "2700 block of Mckinley Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 132,
+     "hours": "7:30 am\u20133 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "3000 block of Chestnut Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 132,
+     "hours": "7:30 am\u20133 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "5500 block of Utah Avenue NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 132,
+     "hours": "7:30 am\u20133 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "3100 block of Dogwood Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 132,
+     "hours": "7:30 am\u20133 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "6100 block of 32nd Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 132,
+     "hours": "8 am\u20133 pm"
     },
     {
      "type": "Construction staging",
@@ -14556,13 +14648,13 @@
     "type": "Bulk Collection",
     "median_days": 7.92,
     "city_median_days": 6.92,
-    "closed_n": 2255
+    "closed_n": 2254
    },
    {
     "type": "Trash Collection - Missed",
     "median_days": 2.84,
     "city_median_days": 4.16,
-    "closed_n": 1769
+    "closed_n": 1766
    },
    {
     "type": "Scheduled Yard Waste",
@@ -14574,7 +14666,7 @@
     "type": "Recycling Collection - Missed",
     "median_days": 3.2,
     "city_median_days": 5.12,
-    "closed_n": 842
+    "closed_n": 841
    },
    {
     "type": "Parking Enforcement",
@@ -14604,7 +14696,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-03T02:34:05Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -14766,7 +14858,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-03T02:34:05Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "archive_days": 180,
   "sources": [
    {
@@ -14852,9 +14944,9 @@
    {
     "name": "District Bridges",
     "url": "https://districtbridges.org/",
-    "state": "ok",
+    "state": "error: TimeoutError",
     "matched": 0,
-    "fetched": 1
+    "failed": 1
    },
    {
     "name": "WTOP",
@@ -15141,8 +15233,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-03T02:34:05Z",
-  "today": "2026-11-02",
+  "generated_at": "2026-11-03T09:19:24Z",
+  "today": "2026-11-03",
   "days_ahead": 30,
   "sources": [
    {
@@ -15212,7 +15304,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-03T02:34:05Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -45956,7 +46048,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-03T02:34:05Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
