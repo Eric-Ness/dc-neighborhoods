@@ -1,7 +1,7 @@
 {
  "slug": "dupontcircle",
  "name": "Dupont Circle",
- "generated_at": "2026-11-02T16:31:55Z",
+ "generated_at": "2026-11-02T23:21:22Z",
  "boundary": {
   "source": "Dupont Circle Historic District (DC Historic Preservation Office, Open Data DC). DC has no planning area named Dupont Circle; this overlaps the Adams Morgan site to the north.",
   "rings": [
@@ -2042,22 +2042,22 @@
   }
  ],
  "requests": {
-  "total": 709,
+  "total": 713,
   "previous_total": 821,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 130,
+    "count": 131,
     "previous": 111
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 70,
+    "count": 71,
     "previous": 74
    },
    {
     "type": "Bulk Collection",
-    "count": 49,
+    "count": 50,
     "previous": 56
    },
    {
@@ -2068,12 +2068,7 @@
    {
     "type": "Sanitation Enforcement",
     "count": 31,
-    "previous": 37
-   },
-   {
-    "type": "Illegal Dumping",
-    "count": 28,
-    "previous": 32
+    "previous": 35
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -2081,14 +2076,24 @@
     "previous": 30
    },
    {
+    "type": "Illegal Dumping",
+    "count": 26,
+    "previous": 34
+   },
+   {
     "type": "Dead Animal Collection",
-    "count": 20,
+    "count": 21,
     "previous": 19
    },
    {
-    "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 17,
-    "previous": 39
+    "type": "Sidewalk Repair",
+    "count": 18,
+    "previous": 14
+   },
+   {
+    "type": "Tree Pruning",
+    "count": 18,
+    "previous": 24
    },
    {
     "type": "Tree Inspection",
@@ -2101,16 +2106,6 @@
     "previous": 17
    },
    {
-    "type": "Sidewalk Repair",
-    "count": 17,
-    "previous": 14
-   },
-   {
-    "type": "Tree Pruning",
-    "count": 17,
-    "previous": 25
-   },
-   {
     "type": "Graffiti Removal",
     "count": 16,
     "previous": 40
@@ -2121,14 +2116,14 @@
     "previous": 31
    },
    {
-    "type": "Public Space Inspection",
-    "count": 11,
-    "previous": 16
+    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "count": 15,
+    "previous": 40
    },
    {
-    "type": "Recycling Collection - Missed",
-    "count": 10,
-    "previous": 18
+    "type": "Public Space Litter Can-Collection",
+    "count": 11,
+    "previous": 1
    },
    {
     "type": "DOB - Illegal Construction",
@@ -2141,14 +2136,14 @@
     "previous": 10
    },
    {
-    "type": "Public Space Litter Can-Collection",
+    "type": "Public Space Inspection",
     "count": 10,
-    "previous": 1
+    "previous": 17
    },
    {
     "type": "Abandoned Bicycle",
     "count": 10,
-    "previous": 3
+    "previous": 2
    },
    {
     "type": "DMV - Drivers License/ID Issues",
@@ -2158,7 +2153,12 @@
    {
     "type": "DOB - Vacant Private Property Inspection",
     "count": 8,
-    "previous": 10
+    "previous": 8
+   },
+   {
+    "type": "Recycling Collection - Missed",
+    "count": 8,
+    "previous": 20
    },
    {
     "type": "Recycling Cart Delivery",
@@ -2176,6 +2176,11 @@
     "previous": 6
    },
    {
+    "type": "Out of State Parking Violation (ROSA)",
+    "count": 7,
+    "previous": 1
+   },
+   {
     "type": "Streetlight Repair Investigation",
     "count": 7,
     "previous": 4
@@ -2189,11 +2194,6 @@
     "type": "Rat Replacement Containers",
     "count": 6,
     "previous": 16
-   },
-   {
-    "type": "Out of State Parking Violation (ROSA)",
-    "count": 6,
-    "previous": 1
    },
    {
     "type": "Pothole",
@@ -2211,6 +2211,16 @@
     "previous": 16
    },
    {
+    "type": "Bicycle Services",
+    "count": 5,
+    "previous": 5
+   },
+   {
+    "type": "Emergency No-Parking Verification",
+    "count": 5,
+    "previous": 4
+   },
+   {
     "type": "DMV - Vehicle Registration Issues",
     "count": 5,
     "previous": 5
@@ -2226,19 +2236,9 @@
     "previous": 7
    },
    {
-    "type": "Bicycle Services",
-    "count": 4,
-    "previous": 5
-   },
-   {
     "type": "Trash Cart Repair",
     "count": 4,
     "previous": 2
-   },
-   {
-    "type": "Emergency No-Parking Verification",
-    "count": 4,
-    "previous": 4
    },
    {
     "type": "Container Removal",
@@ -2319,10 +2319,95 @@
     "type": "DC Government Information",
     "count": 1,
     "previous": 2
+   },
+   {
+    "type": "DGS-Exterior Lighting on DC Gov Property",
+    "count": 1,
+    "previous": 0
    }
   ],
-  "open": 158,
+  "open": 161,
   "recent": [
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T23:17:27Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1600 block of P STREET NW",
+    "lat": 38.91,
+    "lon": -77.038
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T22:47:24Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1800 block of R STREET NW",
+    "lat": 38.913,
+    "lon": -77.043
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "agency": "DOH",
+    "added": "2026-11-02T22:12:04Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of CORCORAN STREET NW",
+    "lat": 38.912,
+    "lon": -77.039
+   },
+   {
+    "type": "Bicycle Services",
+    "agency": "DDOT",
+    "added": "2026-11-02T21:34:31Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "1500 block of 19TH STREET NW",
+    "lat": 38.911,
+    "lon": -77.044
+   },
+   {
+    "type": "DGS-Exterior Lighting on DC Gov Property",
+    "agency": "DGS",
+    "added": "2026-11-02T17:58:23Z",
+    "resolved": "2026-11-02T18:53:07Z",
+    "status": "Closed",
+    "block": "1600 block of P STREET NW",
+    "lat": 38.91,
+    "lon": -77.038
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-02T17:06:31Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2000 block of HILLYER PLACE NW",
+    "lat": 38.912,
+    "lon": -77.046
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T16:51:40Z",
+    "resolved": "2026-11-02T18:35:38Z",
+    "status": "Closed",
+    "block": "2100 block of P STREET NW",
+    "lat": 38.91,
+    "lon": -77.047
+   },
+   {
+    "type": "Emergency No-Parking Verification",
+    "agency": "DPW",
+    "added": "2026-11-02T16:46:16Z",
+    "resolved": "2026-11-02T16:52:11Z",
+    "status": "Closed",
+    "block": "1800 block of 17TH STREET NW",
+    "lat": 38.915,
+    "lon": -77.038
+   },
    {
     "type": "Pothole",
     "agency": "DDOT",
@@ -2627,8 +2712,8 @@
     "type": "Abandoned Vehicle - On Public Property",
     "agency": "DPW",
     "added": "2026-10-31T20:12:52Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-02T17:06:05Z",
+    "status": "Closed",
     "block": "2000 block of HILLYER PLACE NW",
     "lat": 38.912,
     "lon": -77.046
@@ -2657,8 +2742,8 @@
     "type": "Trash Collection - Missed",
     "agency": "DPW",
     "added": "2026-10-31T17:17:39Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-02T20:11:36Z",
+    "status": "Closed",
     "block": "1800 block of S STREET NW",
     "lat": 38.914,
     "lon": -77.042
@@ -2742,91 +2827,11 @@
     "block": "1600 block of P STREET NW",
     "lat": 38.91,
     "lon": -77.038
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T04:02:59Z",
-    "resolved": "2026-10-31T04:18:52Z",
-    "status": "Closed",
-    "block": "1700 block of P STREET NW",
-    "lat": 38.909,
-    "lon": -77.039
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T03:51:48Z",
-    "resolved": "2026-10-31T05:27:05Z",
-    "status": "Closed",
-    "block": "1700 block of N STREET NW",
-    "lat": 38.907,
-    "lon": -77.041
-   },
-   {
-    "type": "Rat Replacement Containers",
-    "agency": "DPW",
-    "added": "2026-10-31T01:24:54Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2000 block of HILLYER PLACE NW",
-    "lat": 38.912,
-    "lon": -77.046
-   },
-   {
-    "type": "Emergency No-Parking Verification",
-    "agency": "DPW",
-    "added": "2026-10-31T00:17:58Z",
-    "resolved": "2026-10-31T00:19:21Z",
-    "status": "Closed",
-    "block": "1500 block of 18TH STREET NW",
-    "lat": 38.91,
-    "lon": -77.042
-   },
-   {
-    "type": "DC Government Information",
-    "agency": "OUC",
-    "added": "2026-10-30T22:55:05Z",
-    "resolved": "2026-10-30T22:55:05Z",
-    "status": "Closed",
-    "block": "1600 block of CORCORAN STREET NW",
-    "lat": 38.912,
-    "lon": -77.038
-   },
-   {
-    "type": "Container Removal",
-    "agency": "DPW",
-    "added": "2026-10-30T22:39:00Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1800 block of R STREET NW",
-    "lat": 38.913,
-    "lon": -77.043
-   },
-   {
-    "type": "Tree Inspection",
-    "agency": "DDOT",
-    "added": "2026-10-30T22:38:20Z",
-    "resolved": "2026-11-02T14:06:04Z",
-    "status": "Closed",
-    "block": "1700 block of 20TH STREET NW",
-    "lat": 38.914,
-    "lon": -77.045
-   },
-   {
-    "type": "Recycling Cart Delivery",
-    "agency": "DPW",
-    "added": "2026-10-30T22:09:06Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1900 block of S STREET NW",
-    "lat": 38.914,
-    "lon": -77.044
    }
   ]
  },
  "crime": {
-  "total": 69,
+  "total": 68,
   "previous_total": 61,
   "by_offense": [
    {
@@ -2836,7 +2841,7 @@
    },
    {
     "offense": "THEFT F/AUTO",
-    "count": 22,
+    "count": 21,
     "previous": 20
    },
    {
@@ -2908,7 +2913,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3100,7 +3105,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3453,7 +3458,7 @@
   "trees": {
    "total": 1848,
    "species": 114,
-   "planted_5y": 219,
+   "planted_5y": 217,
    "empty_boxes": 27,
    "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (27). Not counted: 'Proposed' = planting scheduled (1), 'Conflict'/'Utility' = empty but blocked (3), 'Retired' = box removed (82). 'total' is boxes with status 'Plant' whose condition is not Dead.",
    "condition": {
@@ -3532,13 +3537,13 @@
     "type": "Parking Enforcement",
     "median_days": 0.03,
     "city_median_days": 0.05,
-    "closed_n": 1023
+    "closed_n": 1024
    },
    {
     "type": "Trash Collection - Missed",
     "median_days": 4.03,
-    "city_median_days": 4.17,
-    "closed_n": 577
+    "city_median_days": 4.16,
+    "closed_n": 578
    },
    {
     "type": "Bulk Collection",
@@ -3549,7 +3554,7 @@
    {
     "type": "DC Health Rodent & Vector Control",
     "median_days": 1.63,
-    "city_median_days": 2.79,
+    "city_median_days": 2.8,
     "closed_n": 404
    },
    {
@@ -3573,14 +3578,14 @@
    {
     "type": "Scheduled Yard Waste",
     "median_days": 9.88,
-    "city_median_days": 9.77,
+    "city_median_days": 9.76,
     "closed_n": 217
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3722,7 +3727,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "archive_days": 180,
   "sources": [
    {
@@ -3815,7 +3820,7 @@
     "name": "PoPville",
     "url": "https://www.popville.com/",
     "state": "ok",
-    "matched": 1,
+    "matched": 2,
     "fetched": 2
    },
    {
@@ -3869,6 +3874,13 @@
    }
   ],
   "items": [
+   {
+    "title": "Checking in on the Dupont Circle Deckover \u2013 MAJOR PROGRESS!",
+    "url": "https://www.popville.com/2026/11/checking-dc-dupont-circle-deckover-major-progress/",
+    "source": "PoPville",
+    "published": "2026-11-02T18:15:00Z",
+    "first_seen": "2026-11-02T23:21:22Z"
+   },
    {
     "title": "Dupont Public House (old Sign of the Whale space) to Finally Open Tomorrow (Tuesday) ALLEGEDLY\u2026",
     "url": "https://www.popville.com/2026/11/dupont-public-house-old-sign-of-the-whale-space/",
@@ -4393,7 +4405,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -4464,7 +4476,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -17472,7 +17484,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

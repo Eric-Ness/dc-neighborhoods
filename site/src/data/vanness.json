@@ -1,7 +1,7 @@
 {
  "slug": "vanness",
  "name": "Van Ness",
- "generated_at": "2026-11-02T16:31:55Z",
+ "generated_at": "2026-11-02T23:21:22Z",
  "boundary": {
   "source": "ANC single-member districts 3F01, 3F02 and 3F05 around the Van Ness-UDC Metro (Open Data DC). DC has no planning area named Van Ness.",
   "rings": [
@@ -3369,22 +3369,22 @@
   }
  ],
  "requests": {
-  "total": 205,
+  "total": 210,
   "previous_total": 239,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
-    "count": 44,
+    "count": 46,
     "previous": 61
    },
    {
     "type": "Parking Enforcement",
-    "count": 37,
+    "count": 38,
     "previous": 37
    },
    {
     "type": "Bulk Collection",
-    "count": 33,
+    "count": 34,
     "previous": 24
    },
    {
@@ -3408,6 +3408,11 @@
     "previous": 3
    },
    {
+    "type": "Supercan - Delivery",
+    "count": 4,
+    "previous": 7
+   },
+   {
     "type": "Roadway Signs",
     "count": 4,
     "previous": 9
@@ -3426,11 +3431,6 @@
     "type": "Missed Curbside Compost Collection",
     "count": 3,
     "previous": 3
-   },
-   {
-    "type": "Supercan - Delivery",
-    "count": 3,
-    "previous": 7
    },
    {
     "type": "Public Space Inspection",
@@ -3588,8 +3588,58 @@
     "previous": 4
    }
   ],
-  "open": 68,
+  "open": 67,
   "recent": [
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T21:34:12Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2900 block of UPTON STREET NW",
+    "lat": 38.942,
+    "lon": -77.06
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T21:17:11Z",
+    "resolved": "2026-11-02T21:48:06Z",
+    "status": "Closed",
+    "block": "3000 block of VAN NESS STREET NW",
+    "lat": 38.944,
+    "lon": -77.061
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T19:58:02Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3500 block of BRANDYWINE STREET NW",
+    "lat": 38.949,
+    "lon": -77.068
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T17:27:22Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3500 block of BRANDYWINE STREET NW",
+    "lat": 38.949,
+    "lon": -77.069
+   },
+   {
+    "type": "Supercan - Delivery",
+    "agency": "DPW",
+    "added": "2026-11-02T17:13:03Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4300 block of RENO ROAD NW",
+    "lat": 38.946,
+    "lon": -77.071
+   },
    {
     "type": "Scheduled Yard Waste",
     "agency": "DPW",
@@ -3754,8 +3804,8 @@
     "type": "DGS - Overflowing Recycling Can",
     "agency": "DGS",
     "added": "2026-10-30T19:43:21Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-02T19:04:15Z",
+    "status": "Closed",
     "block": "FOREST HILLS PARK",
     "lat": 38.95,
     "lon": -77.065
@@ -3764,8 +3814,8 @@
     "type": "DGS - Overflowing Recycling Can",
     "agency": "DGS",
     "added": "2026-10-30T19:39:22Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-02T22:12:28Z",
+    "status": "Closed",
     "block": "FOREST HILLS PARK",
     "lat": 38.95,
     "lon": -77.065
@@ -3874,8 +3924,8 @@
     "type": "Graffiti Removal",
     "agency": "DPW",
     "added": "2026-10-29T18:20:16Z",
-    "resolved": null,
-    "status": "Open (Duplicate)",
+    "resolved": "2026-11-02T18:41:02Z",
+    "status": "Closed (Duplicate)",
     "block": "4200 block of CONNECTICUT AVENUE NW",
     "lat": 38.945,
     "lon": -77.065
@@ -3884,8 +3934,8 @@
     "type": "Graffiti Removal",
     "agency": "DPW",
     "added": "2026-10-29T18:18:22Z",
-    "resolved": null,
-    "status": "Open (Duplicate)",
+    "resolved": "2026-11-02T18:41:02Z",
+    "status": "Closed (Duplicate)",
     "block": "4200 block of CONNECTICUT AVENUE NW",
     "lat": 38.945,
     "lon": -77.065
@@ -3894,8 +3944,8 @@
     "type": "Graffiti Removal",
     "agency": "DPW",
     "added": "2026-10-29T18:12:41Z",
-    "resolved": null,
-    "status": "Open (Duplicate)",
+    "resolved": "2026-11-02T18:41:02Z",
+    "status": "Closed (Duplicate)",
     "block": "4200 block of CONNECTICUT AVENUE NW",
     "lat": 38.945,
     "lon": -77.065
@@ -4004,8 +4054,8 @@
     "type": "Bicycle Services",
     "agency": "DDOT",
     "added": "2026-10-28T20:22:19Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-02T22:00:55Z",
+    "status": "Closed",
     "block": "FOREST HILLS PLAYGROUND",
     "lat": 38.95,
     "lon": -77.065
@@ -4039,56 +4089,6 @@
     "block": "FOREST HILLS PARK",
     "lat": 38.95,
     "lon": -77.065
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-10-28T20:11:25Z",
-    "resolved": "2026-10-29T12:05:07Z",
-    "status": "Closed",
-    "block": "FOREST HILLS PLAYGROUND",
-    "lat": 38.95,
-    "lon": -77.065
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-10-28T20:09:02Z",
-    "resolved": "2026-10-29T12:07:35Z",
-    "status": "Closed",
-    "block": "FOREST HILLS PLAYGROUND",
-    "lat": 38.95,
-    "lon": -77.065
-   },
-   {
-    "type": "Roadway Signs",
-    "agency": "DDOT",
-    "added": "2026-10-28T19:57:37Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "4600 block of CONNECTICUT AVENUE NW",
-    "lat": 38.95,
-    "lon": -77.068
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-28T19:17:23Z",
-    "resolved": "2026-10-28T19:45:06Z",
-    "status": "Closed",
-    "block": "4200 block of CONNECTICUT AVENUE NW",
-    "lat": 38.944,
-    "lon": -77.063
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-27T22:02:02Z",
-    "resolved": "2026-10-27T22:54:05Z",
-    "status": "Closed",
-    "block": "3100 block of BRANDYWINE STREET NW",
-    "lat": 38.949,
-    "lon": -77.064
    }
   ]
  },
@@ -4142,7 +4142,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -4387,7 +4387,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4545,25 +4545,25 @@
    {
     "type": "Scheduled Yard Waste",
     "median_days": 7.68,
-    "city_median_days": 9.77,
+    "city_median_days": 9.76,
     "closed_n": 458
    },
    {
     "type": "Bulk Collection",
     "median_days": 7.76,
     "city_median_days": 6.92,
-    "closed_n": 381
+    "closed_n": 379
    },
    {
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 350
+    "closed_n": 351
    },
    {
     "type": "Trash Collection - Missed",
     "median_days": 8.0,
-    "city_median_days": 4.17,
+    "city_median_days": 4.16,
     "closed_n": 196
    },
    {
@@ -4581,20 +4581,20 @@
    {
     "type": "Roadway Signs",
     "median_days": 40.01,
-    "city_median_days": 6.99,
+    "city_median_days": 7.0,
     "closed_n": 42
    },
    {
     "type": "Pothole",
     "median_days": 3.56,
-    "city_median_days": 3.61,
+    "city_median_days": 3.6,
     "closed_n": 40
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4721,13 +4721,26 @@
     "\"Van Ness street\"",
     "\"Forest Hills\""
    ],
-   "clips": [],
+   "clips": [
+    {
+     "date": "1926-11-04",
+     "page": 3,
+     "text": "\u2026 were injured last night when the automo j bile in which thA- were riding was j struck by a street car and thrown i against a tree at Connecticut avenue land Van Ness street.",
+     "url": "https://www.loc.gov/resource/sn83045462/1926-11-04/ed-1/?sp=3"
+    },
+    {
+     "date": "1926-11-06",
+     "page": 39,
+     "text": "Drive out Connecticut ave. to Van Ness st., west to 58th st., north one block on 38th to Warren st., or Wisconsin ave. to War ren. east on Warren to 38th st. Any Broker or Owner.",
+     "url": "https://www.loc.gov/resource/sn83045462/1926-11-06/ed-1/?sp=39"
+    }
+   ],
    "screened": 0,
-   "note": "The Library of Congress search could not be reached this run (HTTPError). Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
+   "note": "Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
   }
  },
  "news": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "archive_days": 180,
   "sources": [
    {
@@ -5059,7 +5072,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -5179,7 +5192,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -15199,7 +15212,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

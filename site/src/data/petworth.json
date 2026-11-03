@@ -1,7 +1,7 @@
 {
  "slug": "petworth",
  "name": "Petworth",
- "generated_at": "2026-11-02T16:31:55Z",
+ "generated_at": "2026-11-02T23:21:22Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -2015,28 +2015,28 @@
   }
  ],
  "requests": {
-  "total": 1152,
-  "previous_total": 1283,
+  "total": 1156,
+  "previous_total": 1291,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 217,
-    "previous": 235
+    "count": 218,
+    "previous": 236
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 149,
-    "previous": 144
+    "count": 151,
+    "previous": 146
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 111,
-    "previous": 82
+    "count": 109,
+    "previous": 86
    },
    {
     "type": "Parking Enforcement",
-    "count": 79,
-    "previous": 96
+    "count": 76,
+    "previous": 98
    },
    {
     "type": "Illegal Dumping",
@@ -2045,27 +2045,27 @@
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 52,
+    "count": 53,
     "previous": 53
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 38,
-    "previous": 43
+    "count": 39,
+    "previous": 42
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 36,
+    "count": 37,
     "previous": 0
    },
    {
     "type": "Dead Animal Collection",
-    "count": 29,
+    "count": 30,
     "previous": 20
    },
    {
     "type": "Container Removal",
-    "count": 24,
+    "count": 23,
     "previous": 44
    },
    {
@@ -2089,14 +2089,14 @@
     "previous": 22
    },
    {
+    "type": "Supercan - Delivery",
+    "count": 19,
+    "previous": 32
+   },
+   {
     "type": "Rat Replacement Containers",
     "count": 19,
     "previous": 13
-   },
-   {
-    "type": "Supercan - Delivery",
-    "count": 16,
-    "previous": 32
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -2126,7 +2126,12 @@
    {
     "type": "Out of State Parking Violation (ROSA)",
     "count": 11,
-    "previous": 14
+    "previous": 12
+   },
+   {
+    "type": "Abandoned Vehicle - On Public Property",
+    "count": 11,
+    "previous": 16
    },
    {
     "type": "Recycling Cart Delivery",
@@ -2144,11 +2149,6 @@
     "previous": 13
    },
    {
-    "type": "Abandoned Vehicle - On Public Property",
-    "count": 10,
-    "previous": 16
-   },
-   {
     "type": "Supercan - Repair",
     "count": 10,
     "previous": 8
@@ -2159,24 +2159,24 @@
     "previous": 2
    },
    {
-    "type": "Roadway Signs",
+    "type": "DOB - Vacant Private Property Inspection",
     "count": 8,
-    "previous": 16
+    "previous": 11
    },
    {
     "type": "Trash Cart Repair",
     "count": 8,
-    "previous": 23
+    "previous": 24
+   },
+   {
+    "type": "Roadway Signs",
+    "count": 7,
+    "previous": 16
    },
    {
     "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
     "count": 7,
     "previous": 8
-   },
-   {
-    "type": "DOB - Vacant Private Property Inspection",
-    "count": 7,
-    "previous": 11
    },
    {
     "type": "DC Government Information",
@@ -2219,11 +2219,6 @@
     "previous": 2
    },
    {
-    "type": "DGS - Playground Repair",
-    "count": 3,
-    "previous": 5
-   },
-   {
     "type": "DMV - Online Processing Issues",
     "count": 3,
     "previous": 2
@@ -2249,13 +2244,18 @@
     "previous": 3
    },
    {
+    "type": "DGS - Playground Repair",
+    "count": 2,
+    "previous": 6
+   },
+   {
     "type": "Illegal Poster",
     "count": 2,
     "previous": 3
    },
    {
-    "type": "DOEE - Report Construction Erosion Runoff",
-    "count": 1,
+    "type": "DOB - Illegal Construction",
+    "count": 2,
     "previous": 2
    },
    {
@@ -2302,15 +2302,170 @@
     "type": "DC How Am I Driving?",
     "count": 1,
     "previous": 0
+   }
+  ],
+  "open": 240,
+  "recent": [
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T23:06:12Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4300 block of NEW HAMPSHIRE AVENUE NW",
+    "lat": 38.944,
+    "lon": -77.019
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T22:56:41Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4600 block of 9TH STREET NW",
+    "lat": 38.947,
+    "lon": -77.025
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T21:45:50Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "200 block of UPSHUR STREET NW",
+    "lat": 38.942,
+    "lon": -77.014
+   },
+   {
+    "type": "Supercan - Delivery",
+    "agency": "DPW",
+    "added": "2026-11-02T21:31:51Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "5000 block of 7TH STREET NW",
+    "lat": 38.952,
+    "lon": -77.022
+   },
+   {
+    "type": "Dead Animal Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T20:51:49Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "800 block of GALLATIN STREET NW",
+    "lat": 38.952,
+    "lon": -77.025
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T20:45:57Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4900 block of 4TH STREET NW",
+    "lat": 38.951,
+    "lon": -77.018
    },
    {
     "type": "DOB - Illegal Construction",
-    "count": 1,
-    "previous": 2
-   }
-  ],
-  "open": 245,
-  "recent": [
+    "agency": "DOB",
+    "added": "2026-11-02T20:19:55Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "800 block of ALLISON STREET NW",
+    "lat": 38.945,
+    "lon": -77.024
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-02T20:04:04Z",
+    "resolved": "2026-11-02T20:04:04Z",
+    "status": "Closed",
+    "block": "5000 block of 1ST STREET NW",
+    "lat": 38.951,
+    "lon": -77.012
+   },
+   {
+    "type": "Abandoned Vehicle - On Public Property",
+    "agency": "DPW",
+    "added": "2026-11-02T19:55:40Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4900 block of 1ST STREET NW",
+    "lat": 38.95,
+    "lon": -77.013
+   },
+   {
+    "type": "DOB - Vacant Private Property Inspection",
+    "agency": "DOB",
+    "added": "2026-11-02T19:02:22Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "800 block of ALLISON STREET NW",
+    "lat": 38.945,
+    "lon": -77.024
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T18:57:38Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4900 block of 3RD STREET NW",
+    "lat": 38.951,
+    "lon": -77.016
+   },
+   {
+    "type": "Supercan - Delivery",
+    "agency": "DPW",
+    "added": "2026-11-02T17:52:36Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "900 block of DECATUR STREET NW",
+    "lat": 38.948,
+    "lon": -77.026
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T17:43:50Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "600 block of FARRAGUT STREET NW",
+    "lat": 38.951,
+    "lon": -77.021
+   },
+   {
+    "type": "Supercan - Delivery",
+    "agency": "DPW",
+    "added": "2026-11-02T17:41:42Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "5000 block of 7TH STREET NW",
+    "lat": 38.952,
+    "lon": -77.022
+   },
+   {
+    "type": "Trash Cart Repair",
+    "agency": "DPW",
+    "added": "2026-11-02T17:37:36Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "5000 block of 7TH STREET NW",
+    "lat": 38.952,
+    "lon": -77.022
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T16:29:50Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "500 block of ROCK CREEK CHURCH ROAD NW",
+    "lat": 38.937,
+    "lon": -77.02
+   },
    {
     "type": "DMV - Vehicle Registration Issues",
     "agency": "DMV",
@@ -2365,8 +2520,8 @@
     "type": "Residential Parking Permit Violation",
     "agency": "DPW",
     "added": "2026-11-02T14:11:35Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-02T16:49:19Z",
+    "status": "Closed",
     "block": "600 block of ALLISON STREET NW",
     "lat": 38.945,
     "lon": -77.021
@@ -2650,177 +2805,17 @@
     "block": "4000 block of MARLBORO PLACE NW",
     "lat": 38.941,
     "lon": -77.016
-   },
-   {
-    "type": "Recycling Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-10-31T21:27:30Z",
-    "resolved": "2026-11-02T13:12:17Z",
-    "status": "Closed",
-    "block": "700 block of UPSHUR STREET NW",
-    "lat": 38.942,
-    "lon": -77.023
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-31T20:14:59Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "5000 block of ILLINOIS AVENUE NW",
-    "lat": 38.951,
-    "lon": -77.025
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-31T19:34:44Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "900 block of DELAFIELD PLACE NW",
-    "lat": 38.949,
-    "lon": -77.026
-   },
-   {
-    "type": "Container Removal",
-    "agency": "DPW",
-    "added": "2026-10-31T18:43:31Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "400 block of RANDOLPH STREET NW",
-    "lat": 38.939,
-    "lon": -77.018
-   },
-   {
-    "type": "Supercan - Repair",
-    "agency": "DPW",
-    "added": "2026-10-31T18:38:45Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "400 block of RANDOLPH STREET NW",
-    "lat": 38.939,
-    "lon": -77.018
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-31T18:19:37Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "300 block of TAYLOR STREET NW",
-    "lat": 38.941,
-    "lon": -77.016
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T17:58:02Z",
-    "resolved": "2026-10-31T18:54:11Z",
-    "status": "Closed",
-    "block": "4300 block of GEORGIA AVENUE NW",
-    "lat": 38.944,
-    "lon": -77.026
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-31T17:40:55Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "600 block of GALLATIN STREET NW",
-    "lat": 38.952,
-    "lon": -77.02
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-31T17:26:58Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "Unit block of FARRAGUT PLACE NW",
-    "lat": 38.951,
-    "lon": -77.01
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-31T17:06:07Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4500 block of 4TH STREET NW",
-    "lat": 38.946,
-    "lon": -77.018
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T16:59:56Z",
-    "resolved": "2026-10-31T18:31:29Z",
-    "status": "Closed",
-    "block": "4100 block of 7TH STREET NW",
-    "lat": 38.941,
-    "lon": -77.022
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-31T16:59:48Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4800 block of ILLINOIS AVENUE NW",
-    "lat": 38.949,
-    "lon": -77.023
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-10-31T16:21:13Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "900 block of ALLISON STREET NW",
-    "lat": 38.945,
-    "lon": -77.026
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-31T14:51:00Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "500 block of SHEPHERD STREET NW",
-    "lat": 38.94,
-    "lon": -77.02
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T14:48:28Z",
-    "resolved": "2026-10-31T16:51:17Z",
-    "status": "Canceled",
-    "block": "8TH STREET NW AND VARNUM STREET NW",
-    "lat": 38.943,
-    "lon": -77.023
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-10-31T13:56:17Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "800 block of SHEPHERD STREET NW",
-    "lat": 38.94,
-    "lon": -77.025
    }
   ]
  },
  "crime": {
   "total": 53,
-  "previous_total": 37,
+  "previous_total": 36,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
     "count": 31,
-    "previous": 15
+    "previous": 14
    },
    {
     "offense": "THEFT F/AUTO",
@@ -2838,14 +2833,14 @@
     "previous": 5
    },
    {
-    "offense": "HOMICIDE",
-    "count": 1,
-    "previous": 0
-   },
-   {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
     "count": 1,
     "previous": 2
+   },
+   {
+    "offense": "HOMICIDE",
+    "count": 1,
+    "previous": 0
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -2896,7 +2891,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3214,7 +3209,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3486,25 +3481,25 @@
     "type": "Bulk Collection",
     "median_days": 7.94,
     "city_median_days": 6.92,
-    "closed_n": 2278
+    "closed_n": 2285
    },
    {
     "type": "Trash Collection - Missed",
-    "median_days": 3.71,
-    "city_median_days": 4.17,
-    "closed_n": 1182
+    "median_days": 3.72,
+    "city_median_days": 4.16,
+    "closed_n": 1183
    },
    {
     "type": "Scheduled Yard Waste",
-    "median_days": 11.15,
-    "city_median_days": 9.77,
-    "closed_n": 1116
+    "median_days": 11.14,
+    "city_median_days": 9.76,
+    "closed_n": 1117
    },
    {
     "type": "Parking Enforcement",
     "median_days": 0.05,
     "city_median_days": 0.05,
-    "closed_n": 970
+    "closed_n": 969
    },
    {
     "type": "Recycling Collection - Missed",
@@ -3520,9 +3515,9 @@
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "median_days": 2.05,
-    "city_median_days": 2.79,
-    "closed_n": 692
+    "median_days": 2.06,
+    "city_median_days": 2.8,
+    "closed_n": 696
    },
    {
     "type": "Sanitation Enforcement",
@@ -3534,7 +3529,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3699,7 +3694,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4026,7 +4021,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -4120,7 +4115,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -26283,7 +26278,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

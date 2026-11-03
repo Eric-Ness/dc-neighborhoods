@@ -1,7 +1,7 @@
 {
  "slug": "lenfantplaza",
  "name": "L'Enfant Plaza",
- "generated_at": "2026-11-02T16:31:55Z",
+ "generated_at": "2026-11-02T23:21:22Z",
  "boundary": {
   "source": "Southwest Business Improvement District, which takes in L'Enfant Plaza and the federal blocks around it (Open Data DC). DC has no planning area for L'Enfant Plaza.",
   "rings": [
@@ -1025,19 +1025,6 @@
    "smd": "6D02"
   },
   {
-   "id": "D2700038",
-   "issued": "2026-10-27T04:00:00Z",
-   "group": "Demolition",
-   "type": "CONSTRUCTION",
-   "subtype": "DEMOLITION",
-   "address": "98 DISTRICT SQ SW 20024",
-   "work": "CFA\r\nMI VIDA RESTAURANT IS LOCATED AT THE WHARF IN WASHINGTON, DC. THE EXISTING\r\nRESTAURANT IS APPROXIMATELY 8,128 SF AND CONSISTS OF TWO LEVELS PLUS A MEZZANINE.\r\nDUE TO RECENT FLOODING, SELECTIVE DEMOLITION IS REQUIRED TO REMOVE WATER-DAMAGED\r\nMATERIALS, FINISHES, FIXTURE, EQUIPMENT AND ASSOCIATED COMPONENTS. THE AREA\r\nIMPACTED BY THE FLOOD DAMAGE REPRESENTS LESS THAN 50% OF THE OVERALL RESTAURA",
-   "zoning": "MU-12",
-   "lat": 38.87992,
-   "lon": -77.02577,
-   "smd": "6D01"
-  },
-  {
    "id": "SOL2602780",
    "issued": "2026-10-27T04:00:00Z",
    "group": "Renovation & repair",
@@ -1049,6 +1036,19 @@
    "lat": 38.88028,
    "lon": -77.01712,
    "smd": "6D05"
+  },
+  {
+   "id": "D2700038",
+   "issued": "2026-10-27T04:00:00Z",
+   "group": "Demolition",
+   "type": "CONSTRUCTION",
+   "subtype": "DEMOLITION",
+   "address": "98 DISTRICT SQ SW 20024",
+   "work": "CFA\r\nMI VIDA RESTAURANT IS LOCATED AT THE WHARF IN WASHINGTON, DC. THE EXISTING\r\nRESTAURANT IS APPROXIMATELY 8,128 SF AND CONSISTS OF TWO LEVELS PLUS A MEZZANINE.\r\nDUE TO RECENT FLOODING, SELECTIVE DEMOLITION IS REQUIRED TO REMOVE WATER-DAMAGED\r\nMATERIALS, FINISHES, FIXTURE, EQUIPMENT AND ASSOCIATED COMPONENTS. THE AREA\r\nIMPACTED BY THE FLOOD DAMAGE REPRESENTS LESS THAN 50% OF THE OVERALL RESTAURA",
+   "zoning": "MU-12",
+   "lat": 38.87992,
+   "lon": -77.02577,
+   "smd": "6D01"
   },
   {
    "id": "HO2700159",
@@ -1181,19 +1181,6 @@
    "smd": "6D02"
   },
   {
-   "id": "HO2700066",
-   "issued": "2026-10-12T04:00:00Z",
-   "group": "Home businesses",
-   "type": "HOME OCCUPATION",
-   "subtype": "NA",
-   "address": "555 E ST SW 1109 20024",
-   "work": "",
-   "zoning": "D-5",
-   "lat": 38.88341,
-   "lon": -77.01942,
-   "smd": "6D02"
-  },
-  {
    "id": "E2700367",
    "issued": "2026-10-12T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -1204,6 +1191,19 @@
    "zoning": "RF-1",
    "lat": 38.88203,
    "lon": -77.0146,
+   "smd": "6D02"
+  },
+  {
+   "id": "HO2700066",
+   "issued": "2026-10-12T04:00:00Z",
+   "group": "Home businesses",
+   "type": "HOME OCCUPATION",
+   "subtype": "NA",
+   "address": "555 E ST SW 1109 20024",
+   "work": "",
+   "zoning": "D-5",
+   "lat": 38.88341,
+   "lon": -77.01942,
    "smd": "6D02"
   },
   {
@@ -1273,27 +1273,27 @@
   }
  ],
  "requests": {
-  "total": 740,
-  "previous_total": 737,
+  "total": 758,
+  "previous_total": 741,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 192,
+    "count": 190,
     "previous": 219
    },
    {
     "type": "DMV - Drivers License/ID Issues",
-    "count": 87,
-    "previous": 103
+    "count": 95,
+    "previous": 102
    },
    {
     "type": "DMV - Copy of Ticket",
-    "count": 66,
+    "count": 69,
     "previous": 53
    },
    {
     "type": "DMV - Vehicle Title Issues",
-    "count": 33,
+    "count": 35,
     "previous": 25
    },
    {
@@ -1303,7 +1303,7 @@
    },
    {
     "type": "DMV - Ticket Payment Dispute",
-    "count": 28,
+    "count": 30,
     "previous": 46
    },
    {
@@ -1312,44 +1312,44 @@
     "previous": 32
    },
    {
+    "type": "DMV - Hearings",
+    "count": 27,
+    "previous": 17
+   },
+   {
     "type": "Trash Collection - Missed",
     "count": 26,
     "previous": 0
    },
    {
     "type": "DMV - Online Processing Issues",
-    "count": 25,
+    "count": 26,
     "previous": 11
    },
    {
-    "type": "DMV - Hearings",
-    "count": 25,
-    "previous": 17
-   },
-   {
     "type": "DC Health Rodent & Vector Control",
-    "count": 13,
+    "count": 15,
     "previous": 6
    },
    {
     "type": "DMV - Refunds - Tickets",
-    "count": 13,
+    "count": 14,
     "previous": 18
    },
    {
-    "type": "Illegal Dumping",
-    "count": 12,
-    "previous": 7
-   },
-   {
     "type": "DMV - Driver and Vehicle Services Refund",
-    "count": 12,
+    "count": 13,
     "previous": 4
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
     "count": 11,
-    "previous": 6
+    "previous": 7
+   },
+   {
+    "type": "Illegal Dumping",
+    "count": 11,
+    "previous": 8
    },
    {
     "type": "DMV - Driver Record Issues",
@@ -1392,24 +1392,14 @@
     "previous": 5
    },
    {
-    "type": "Bulk Collection",
-    "count": 5,
-    "previous": 12
-   },
-   {
     "type": "DOEE - LIHEAP",
-    "count": 5,
+    "count": 6,
     "previous": 1
    },
    {
-    "type": "DOEE - General Air Quality Concerns",
-    "count": 4,
-    "previous": 0
-   },
-   {
-    "type": "Parking Meter Repair",
-    "count": 4,
-    "previous": 6
+    "type": "Bulk Collection",
+    "count": 5,
+    "previous": 12
    },
    {
     "type": "DC Dog Park Maintenance (DGS)",
@@ -1442,11 +1432,6 @@
     "previous": 2
    },
    {
-    "type": "Dead Animal Collection",
-    "count": 3,
-    "previous": 3
-   },
-   {
     "type": "DGS - Playground Repair",
     "count": 3,
     "previous": 0
@@ -1462,9 +1447,19 @@
     "previous": 4
    },
    {
+    "type": "DOEE - General Air Quality Concerns",
+    "count": 3,
+    "previous": 1
+   },
+   {
     "type": "Tree Pruning",
     "count": 3,
     "previous": 4
+   },
+   {
+    "type": "Parking Meter Repair",
+    "count": 3,
+    "previous": 7
    },
    {
     "type": "Pothole",
@@ -1477,6 +1472,11 @@
     "previous": 0
    },
    {
+    "type": "Dead Animal Collection",
+    "count": 2,
+    "previous": 4
+   },
+   {
     "type": "Abandoned Bicycle",
     "count": 2,
     "previous": 1
@@ -1485,6 +1485,11 @@
     "type": "Container Removal",
     "count": 2,
     "previous": 1
+   },
+   {
+    "type": "Residential Parking Permit Violation",
+    "count": 2,
+    "previous": 4
    },
    {
     "type": "Pet Waste Complaint",
@@ -1525,21 +1530,256 @@
     "type": "DMV - Adjudication Supervisor",
     "count": 1,
     "previous": 0
+   }
+  ],
+  "open": 135,
+  "recent": [
+   {
+    "type": "DMV - Copy of Ticket",
+    "agency": "DMV",
+    "added": "2026-11-02T21:53:49Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "900 block of L'ENFANT PLAZA SW",
+    "lat": 38.884,
+    "lon": -77.025
+   },
+   {
+    "type": "DMV - Ticket Payment Dispute",
+    "agency": "DMV",
+    "added": "2026-11-02T21:24:39Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of M STREET SW",
+    "lat": 38.877,
+    "lon": -77.012
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "agency": "DOH",
+    "added": "2026-11-02T20:38:31Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "600 block of G STREET SW",
+    "lat": 38.881,
+    "lon": -77.021
+   },
+   {
+    "type": "DMV - Refunds - Tickets",
+    "agency": "DMV",
+    "added": "2026-11-02T20:25:44Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "900 block of L'ENFANT PLAZA SW",
+    "lat": 38.884,
+    "lon": -77.025
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "agency": "DMV",
+    "added": "2026-11-02T20:08:41Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of M STREET SW",
+    "lat": 38.877,
+    "lon": -77.012
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "agency": "DMV",
+    "added": "2026-11-02T20:07:20Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of M STREET SW",
+    "lat": 38.877,
+    "lon": -77.012
+   },
+   {
+    "type": "DMV - Vehicle Title Issues",
+    "agency": "DMV",
+    "added": "2026-11-02T19:36:07Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of M STREET SW",
+    "lat": 38.877,
+    "lon": -77.012
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "agency": "DMV",
+    "added": "2026-11-02T19:28:58Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of M STREET SW",
+    "lat": 38.877,
+    "lon": -77.012
+   },
+   {
+    "type": "DMV - Driver and Vehicle Services Refund",
+    "agency": "DMV",
+    "added": "2026-11-02T19:19:55Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "900 block of L'ENFANT PLAZA SW",
+    "lat": 38.884,
+    "lon": -77.025
+   },
+   {
+    "type": "DMV - Copy of Ticket",
+    "agency": "DMV",
+    "added": "2026-11-02T18:51:59Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "900 block of L'ENFANT PLAZA SW",
+    "lat": 38.884,
+    "lon": -77.025
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "agency": "DMV",
+    "added": "2026-11-02T18:48:01Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "900 block of L'ENFANT PLAZA SW",
+    "lat": 38.884,
+    "lon": -77.025
+   },
+   {
+    "type": "DMV - Ticket Payment Dispute",
+    "agency": "DMV",
+    "added": "2026-11-02T18:42:47Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of M STREET SW",
+    "lat": 38.877,
+    "lon": -77.012
+   },
+   {
+    "type": "DMV - Hearings",
+    "agency": "DMV",
+    "added": "2026-11-02T18:35:25Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "900 block of L'ENFANT PLAZA SW",
+    "lat": 38.884,
+    "lon": -77.025
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "agency": "DMV",
+    "added": "2026-11-02T18:30:48Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of M STREET SW",
+    "lat": 38.877,
+    "lon": -77.012
    },
    {
     "type": "Residential Parking Permit Violation",
-    "count": 1,
-    "previous": 4
-   }
-  ],
-  "open": 126,
-  "recent": [
+    "agency": "DPW",
+    "added": "2026-11-02T17:59:19Z",
+    "resolved": "2026-11-02T18:32:22Z",
+    "status": "Closed",
+    "block": "Unit block of H STREET SW",
+    "lat": 38.88,
+    "lon": -77.011
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "agency": "DMV",
+    "added": "2026-11-02T17:40:49Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of M STREET SW",
+    "lat": 38.877,
+    "lon": -77.012
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "agency": "DMV",
+    "added": "2026-11-02T17:40:23Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "300 block of 12TH STREET SW",
+    "lat": 38.886,
+    "lon": -77.028
+   },
+   {
+    "type": "DMV - Online Processing Issues",
+    "agency": "DMV",
+    "added": "2026-11-02T17:36:36Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of M STREET SW",
+    "lat": 38.877,
+    "lon": -77.012
+   },
+   {
+    "type": "DMV - Copy of Ticket",
+    "agency": "DMV",
+    "added": "2026-11-02T17:24:08Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of M STREET SW",
+    "lat": 38.877,
+    "lon": -77.012
+   },
+   {
+    "type": "DMV - Vehicle Title Issues",
+    "agency": "DMV",
+    "added": "2026-11-02T17:19:24Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of M STREET SW",
+    "lat": 38.877,
+    "lon": -77.012
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "agency": "DDOT",
+    "added": "2026-11-02T17:16:06Z",
+    "resolved": "2026-11-02T17:26:03Z",
+    "status": "Closed",
+    "block": "800 block of 9TH STREET SW",
+    "lat": 38.881,
+    "lon": -77.024
+   },
+   {
+    "type": "DMV - Hearings",
+    "agency": "DMV",
+    "added": "2026-11-02T17:09:25Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "900 block of L'ENFANT PLAZA SW",
+    "lat": 38.884,
+    "lon": -77.025
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "agency": "DMV",
+    "added": "2026-11-02T16:54:49Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of M STREET SW",
+    "lat": 38.877,
+    "lon": -77.012
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-02T16:42:41Z",
+    "resolved": "2026-11-02T16:42:41Z",
+    "status": "Closed",
+    "block": "Unit block of H STREET SW",
+    "lat": 38.88,
+    "lon": -77.011
+   },
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-11-02T16:36:53Z",
-    "resolved": null,
-    "status": "Open (Duplicate)",
+    "resolved": "2026-11-02T18:31:27Z",
+    "status": "Closed (Duplicate)",
     "block": "300 block of D STREET SW",
     "lat": 38.885,
     "lon": -77.017
@@ -1548,8 +1788,8 @@
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-11-02T16:35:24Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-02T18:31:26Z",
+    "status": "Closed",
     "block": "300 block of D STREET SW",
     "lat": 38.885,
     "lon": -77.017
@@ -1793,257 +2033,17 @@
     "block": "CANAL STREET SW AND M STREET SW",
     "lat": 38.876,
     "lon": -77.013
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T06:45:47Z",
-    "resolved": "2026-10-31T07:16:01Z",
-    "status": "Closed",
-    "block": "500 block of WATER STREET SW",
-    "lat": 38.876,
-    "lon": -77.021
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T04:20:56Z",
-    "resolved": "2026-10-31T05:24:05Z",
-    "status": "Closed",
-    "block": "Unit block of PARKER ROW SW",
-    "lat": 38.877,
-    "lon": -77.022
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-30T22:22:20Z",
-    "resolved": "2026-10-31T00:30:02Z",
-    "status": "Closed",
-    "block": "500 block of WATER STREET SW",
-    "lat": 38.876,
-    "lon": -77.021
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-30T20:24:59Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "800 block of 6TH STREET SW",
-    "lat": 38.88,
-    "lon": -77.02
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-30T20:23:24Z",
-    "resolved": "2026-10-30T20:23:24Z",
-    "status": "Closed (Duplicate)",
-    "block": "500 block of WATER STREET SW",
-    "lat": 38.876,
-    "lon": -77.021
-   },
-   {
-    "type": "DMV - Refunds - Tickets",
-    "agency": "DMV",
-    "added": "2026-10-30T18:56:49Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "900 block of L'ENFANT PLAZA SW",
-    "lat": 38.884,
-    "lon": -77.025
-   },
-   {
-    "type": "DMV - Ticket Payment Dispute",
-    "agency": "DMV",
-    "added": "2026-10-30T18:42:45Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "900 block of L'ENFANT PLAZA SW",
-    "lat": 38.884,
-    "lon": -77.025
-   },
-   {
-    "type": "DMV - Drivers License/ID Issues",
-    "agency": "DMV",
-    "added": "2026-10-30T18:33:15Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "Unit block of M STREET SW",
-    "lat": 38.877,
-    "lon": -77.012
-   },
-   {
-    "type": "DMV - Vehicle Registration Issues",
-    "agency": "DMV",
-    "added": "2026-10-30T18:26:51Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "Unit block of M STREET SW",
-    "lat": 38.877,
-    "lon": -77.012
-   },
-   {
-    "type": "DMV - Copy of Ticket",
-    "agency": "DMV",
-    "added": "2026-10-30T18:18:34Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "900 block of L'ENFANT PLAZA SW",
-    "lat": 38.884,
-    "lon": -77.025
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-10-30T17:53:59Z",
-    "resolved": "2026-11-02T16:05:57Z",
-    "status": "Closed",
-    "block": "300 block of M STREET SW",
-    "lat": 38.877,
-    "lon": -77.018
-   },
-   {
-    "type": "DMV - Vehicle Registration Issues",
-    "agency": "DMV",
-    "added": "2026-10-30T17:53:59Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "Unit block of M STREET SW",
-    "lat": 38.877,
-    "lon": -77.012
-   },
-   {
-    "type": "DMV - Drivers License/ID Issues",
-    "agency": "DMV",
-    "added": "2026-10-30T17:50:02Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "Unit block of M STREET SW",
-    "lat": 38.877,
-    "lon": -77.012
-   },
-   {
-    "type": "DMV - Vehicle Title Issues",
-    "agency": "DMV",
-    "added": "2026-10-30T17:41:53Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "Unit block of M STREET SW",
-    "lat": 38.877,
-    "lon": -77.012
-   },
-   {
-    "type": "DMV - Drivers License/ID Issues",
-    "agency": "DMV",
-    "added": "2026-10-30T17:13:43Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "700 block of 3RD STREET SW",
-    "lat": 38.881,
-    "lon": -77.015
-   },
-   {
-    "type": "DMV - Copy of Ticket",
-    "agency": "DMV",
-    "added": "2026-10-30T16:21:16Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "900 block of L'ENFANT PLAZA SW",
-    "lat": 38.884,
-    "lon": -77.025
-   },
-   {
-    "type": "DMV - Refunds - Tickets",
-    "agency": "DMV",
-    "added": "2026-10-30T16:04:15Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "900 block of L'ENFANT PLAZA SW",
-    "lat": 38.884,
-    "lon": -77.025
-   },
-   {
-    "type": "DMV - Copy of Ticket",
-    "agency": "DMV",
-    "added": "2026-10-30T16:03:16Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "900 block of L'ENFANT PLAZA SW",
-    "lat": 38.884,
-    "lon": -77.025
-   },
-   {
-    "type": "DMV - Drivers License/ID Issues",
-    "agency": "DMV",
-    "added": "2026-10-30T15:58:55Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "Unit block of M STREET SW",
-    "lat": 38.877,
-    "lon": -77.012
-   },
-   {
-    "type": "DMV - Online Processing Issues",
-    "agency": "DMV",
-    "added": "2026-10-30T15:56:17Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "Unit block of M STREET SW",
-    "lat": 38.877,
-    "lon": -77.012
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-30T14:54:12Z",
-    "resolved": "2026-10-30T15:18:12Z",
-    "status": "Closed",
-    "block": "300 block of I STREET SW",
-    "lat": 38.88,
-    "lon": -77.016
-   },
-   {
-    "type": "DMV - Refunds - Tickets",
-    "agency": "DMV",
-    "added": "2026-10-30T12:52:33Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "900 block of L'ENFANT PLAZA SW",
-    "lat": 38.884,
-    "lon": -77.025
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-30T12:15:46Z",
-    "resolved": "2026-11-02T14:15:30Z",
-    "status": "Closed",
-    "block": "600 block of 7TH STREET SW",
-    "lat": 38.882,
-    "lon": -77.022
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-30T11:57:01Z",
-    "resolved": "2026-10-30T12:33:05Z",
-    "status": "Closed",
-    "block": "700 block of 3RD STREET SW",
-    "lat": 38.88,
-    "lon": -77.015
    }
   ]
  },
  "crime": {
-  "total": 29,
-  "previous_total": 24,
+  "total": 27,
+  "previous_total": 26,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
-    "count": 14,
-    "previous": 11
+    "count": 12,
+    "previous": 13
    },
    {
     "offense": "THEFT F/AUTO",
@@ -2102,7 +2102,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2267,7 +2267,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2524,7 +2524,7 @@
   "trees": {
    "total": 2345,
    "species": 153,
-   "planted_5y": 290,
+   "planted_5y": 287,
    "empty_boxes": 12,
    "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (12). Not counted: 'Proposed' = planting scheduled (51), 'Conflict'/'Utility' = empty but blocked (28), 'Retired' = box removed (371). 'total' is boxes with status 'Plant' whose condition is not Dead.",
    "condition": {
@@ -2609,19 +2609,19 @@
     "type": "DMV - Ticket Payment Dispute",
     "median_days": 8.9,
     "city_median_days": 8.87,
-    "closed_n": 527
+    "closed_n": 528
    },
    {
     "type": "DMV - Drivers License/ID Issues",
-    "median_days": 8.02,
+    "median_days": 8.01,
     "city_median_days": 8.01,
-    "closed_n": 492
+    "closed_n": 498
    },
    {
     "type": "DMV - Copy of Ticket",
     "median_days": 7.86,
     "city_median_days": 7.9,
-    "closed_n": 327
+    "closed_n": 328
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -2633,7 +2633,7 @@
     "type": "DMV - Vehicle Title Issues",
     "median_days": 8.11,
     "city_median_days": 8.27,
-    "closed_n": 156
+    "closed_n": 157
    },
    {
     "type": "DMV - Hearings",
@@ -2651,7 +2651,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2790,7 +2790,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "archive_days": 180,
   "sources": [
    {
@@ -3374,7 +3374,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -3467,7 +3467,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -17099,7 +17099,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

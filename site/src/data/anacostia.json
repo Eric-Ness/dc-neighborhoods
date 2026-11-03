@@ -1,7 +1,7 @@
 {
  "slug": "anacostia",
  "name": "Anacostia",
- "generated_at": "2026-11-02T16:31:55Z",
+ "generated_at": "2026-11-02T23:21:22Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1069,27 +1069,32 @@
   }
  ],
  "requests": {
-  "total": 496,
-  "previous_total": 866,
+  "total": 501,
+  "previous_total": 863,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 91,
-    "previous": 110
+    "count": 88,
+    "previous": 113
    },
    {
     "type": "Parking Enforcement",
-    "count": 75,
+    "count": 76,
     "previous": 113
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 68,
+    "count": 71,
     "previous": 11
    },
    {
     "type": "Illegal Dumping",
     "count": 35,
+    "previous": 27
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "count": 19,
     "previous": 28
    },
    {
@@ -1098,18 +1103,13 @@
     "previous": 2
    },
    {
-    "type": "Trash Collection - Missed",
-    "count": 18,
-    "previous": 30
-   },
-   {
     "type": "Sanitation Enforcement",
     "count": 16,
     "previous": 31
    },
    {
     "type": "Recycling Collection - Missed",
-    "count": 15,
+    "count": 16,
     "previous": 13
    },
    {
@@ -1135,7 +1135,7 @@
    {
     "type": "Residential Parking Permit Violation",
     "count": 8,
-    "previous": 11
+    "previous": 10
    },
    {
     "type": "DC Government Information",
@@ -1148,24 +1148,24 @@
     "previous": 13
    },
    {
+    "type": "Emergency No-Parking Verification",
+    "count": 7,
+    "previous": 0
+   },
+   {
     "type": "Supercan - Delivery",
     "count": 6,
     "previous": 18
    },
    {
-    "type": "Emergency No-Parking Verification",
+    "type": "Tree Inspection",
     "count": 6,
-    "previous": 0
+    "previous": 31
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
     "count": 5,
     "previous": 33
-   },
-   {
-    "type": "Tree Inspection",
-    "count": 5,
-    "previous": 31
    },
    {
     "type": "DOB - Vacant Private Property Inspection",
@@ -1340,11 +1340,71 @@
    {
     "type": "Container Removal",
     "count": 1,
-    "previous": 5
+    "previous": 4
    }
   ],
-  "open": 70,
+  "open": 68,
   "recent": [
+   {
+    "type": "Emergency No-Parking Verification",
+    "agency": "DPW",
+    "added": "2026-11-02T19:32:00Z",
+    "resolved": "2026-11-02T19:33:23Z",
+    "status": "Closed",
+    "block": "1100 block of U STREET SE",
+    "lat": 38.866,
+    "lon": -76.988
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-02T19:22:32Z",
+    "resolved": "2026-11-02T19:22:32Z",
+    "status": "Closed",
+    "block": "2400 block of MARTIN LUTHER KING JR AVENUE SE",
+    "lat": 38.862,
+    "lon": -76.993
+   },
+   {
+    "type": "Tree Inspection",
+    "agency": "DDOT",
+    "added": "2026-11-02T18:49:58Z",
+    "resolved": "2026-11-02T20:20:58Z",
+    "status": "Closed",
+    "block": "2400 block of 17TH STREET SE",
+    "lat": 38.857,
+    "lon": -76.98
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-02T18:27:36Z",
+    "resolved": "2026-11-02T18:27:36Z",
+    "status": "Closed",
+    "block": "2400 block of MARTIN LUTHER KING JR AVENUE SE",
+    "lat": 38.862,
+    "lon": -76.993
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-02T18:08:49Z",
+    "resolved": "2026-11-02T18:08:49Z",
+    "status": "Closed",
+    "block": "2400 block of ELVANS ROAD SE",
+    "lat": 38.854,
+    "lon": -76.985
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T16:49:26Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1500 block of U STREET SE",
+    "lat": 38.866,
+    "lon": -76.982
+   },
    {
     "type": "DOEE - LIHEAP",
     "agency": "DOEE",
@@ -1784,77 +1844,17 @@
     "block": "1200 block of MORRIS ROAD SE",
     "lat": 38.863,
     "lon": -76.991
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-10-29T13:50:31Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1200 block of MORRIS ROAD SE",
-    "lat": 38.863,
-    "lon": -76.991
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-29T13:09:41Z",
-    "resolved": "2026-10-29T13:09:41Z",
-    "status": "Closed",
-    "block": "2400 block of MARTIN LUTHER KING JR AVENUE SE",
-    "lat": 38.862,
-    "lon": -76.993
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-10-29T13:02:22Z",
-    "resolved": "2026-10-29T16:30:06Z",
-    "status": "Closed",
-    "block": "1200 block of MORRIS ROAD SE",
-    "lat": 38.863,
-    "lon": -76.991
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-29T13:00:23Z",
-    "resolved": "2026-10-30T15:24:07Z",
-    "status": "Closed",
-    "block": "2200 block of CHESTER STREET SE",
-    "lat": 38.864,
-    "lon": -76.987
-   },
-   {
-    "type": "Alley Repair",
-    "agency": "DDOT",
-    "added": "2026-10-29T12:57:42Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "2200 block of CHESTER STREET SE",
-    "lat": 38.864,
-    "lon": -76.987
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-10-28T22:17:10Z",
-    "resolved": "2026-10-29T10:41:39Z",
-    "status": "Closed",
-    "block": "1600 block of U STREET SE",
-    "lat": 38.865,
-    "lon": -76.981
    }
   ]
  },
  "crime": {
-  "total": 25,
-  "previous_total": 36,
+  "total": 24,
+  "previous_total": 37,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
-    "count": 9,
-    "previous": 14
+    "count": 8,
+    "previous": 15
    },
    {
     "offense": "THEFT F/AUTO",
@@ -1929,7 +1929,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2120,7 +2120,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2366,9 +2366,9 @@
   "service": [
    {
     "type": "Bulk Collection",
-    "median_days": 6.13,
+    "median_days": 6.11,
     "city_median_days": 6.92,
-    "closed_n": 926
+    "closed_n": 924
    },
    {
     "type": "Parking Enforcement",
@@ -2385,7 +2385,7 @@
    {
     "type": "Trash Collection - Missed",
     "median_days": 4.52,
-    "city_median_days": 4.17,
+    "city_median_days": 4.16,
     "closed_n": 427
    },
    {
@@ -2409,14 +2409,14 @@
    {
     "type": "Roadway Signs",
     "median_days": 2.96,
-    "city_median_days": 6.99,
+    "city_median_days": 7.0,
     "closed_n": 156
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2585,7 +2585,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2863,7 +2863,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -2991,7 +2991,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -19140,7 +19140,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
