@@ -1,7 +1,7 @@
 {
  "slug": "noma",
  "name": "NoMa",
- "generated_at": "2026-11-02T23:21:22Z",
+ "generated_at": "2026-11-03T01:47:04Z",
  "boundary": {
   "source": "NoMa Business Improvement District boundary (Open Data DC). DC has no planning area for NoMa.",
   "rings": [
@@ -596,27 +596,27 @@
   }
  ],
  "requests": {
-  "total": 907,
-  "previous_total": 836,
+  "total": 917,
+  "previous_total": 832,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 361,
-    "previous": 258
+    "count": 365,
+    "previous": 256
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 106,
+    "count": 110,
     "previous": 3
    },
    {
     "type": "DMV - Drivers License/ID Issues",
-    "count": 40,
+    "count": 39,
     "previous": 20
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 37,
+    "count": 38,
     "previous": 153
    },
    {
@@ -627,11 +627,11 @@
    {
     "type": "Dockless Vehicle Parking Complaint",
     "count": 32,
-    "previous": 23
+    "previous": 20
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
-    "count": 30,
+    "count": 31,
     "previous": 22
    },
    {
@@ -661,7 +661,7 @@
    },
    {
     "type": "Streetlight Repair Investigation",
-    "count": 14,
+    "count": 15,
     "previous": 33
    },
    {
@@ -671,7 +671,7 @@
    },
    {
     "type": "Roadway Repair",
-    "count": 12,
+    "count": 11,
     "previous": 7
    },
    {
@@ -692,7 +692,7 @@
    {
     "type": "DGS - Playground Repair",
     "count": 8,
-    "previous": 10
+    "previous": 9
    },
    {
     "type": "Sanitation Enforcement",
@@ -707,17 +707,17 @@
    {
     "type": "Tree Removal",
     "count": 8,
-    "previous": 18
+    "previous": 19
+   },
+   {
+    "type": "Illegal Poster",
+    "count": 8,
+    "previous": 0
    },
    {
     "type": "Parking Meter Repair",
     "count": 8,
     "previous": 1
-   },
-   {
-    "type": "Illegal Poster",
-    "count": 7,
-    "previous": 0
    },
    {
     "type": "Bus Stop Issues",
@@ -728,11 +728,6 @@
     "type": "Tree Pruning",
     "count": 5,
     "previous": 3
-   },
-   {
-    "type": "Residential Parking Permit Violation",
-    "count": 4,
-    "previous": 4
    },
    {
     "type": "Abandoned Bicycle",
@@ -747,7 +742,7 @@
    {
     "type": "Roadway Markings / Pylons",
     "count": 4,
-    "previous": 16
+    "previous": 17
    },
    {
     "type": "DMV - Appeal",
@@ -758,6 +753,16 @@
     "type": "Abandoned Vehicle - On Public Property",
     "count": 3,
     "previous": 2
+   },
+   {
+    "type": "Tree Planting",
+    "count": 3,
+    "previous": 0
+   },
+   {
+    "type": "Residential Parking Permit Violation",
+    "count": 3,
+    "previous": 4
    },
    {
     "type": "Pet Waste Complaint",
@@ -773,11 +778,6 @@
     "type": "DOB - Illegal Construction",
     "count": 3,
     "previous": 1
-   },
-   {
-    "type": "Tree Planting",
-    "count": 2,
-    "previous": 0
    },
    {
     "type": "DMV - Copy of Ticket",
@@ -805,7 +805,7 @@
     "previous": 0
    }
   ],
-  "open": 121,
+  "open": 116,
   "recent": [
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -1131,8 +1131,8 @@
     "type": "Illegal Dumping",
     "agency": "DPW",
     "added": "2026-10-30T15:29:30Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-03T00:06:53Z",
+    "status": "Closed",
     "block": "100 block of M STREET NE",
     "lat": 38.906,
     "lon": -77.004
@@ -1329,14 +1329,14 @@
     "previous": 11
    },
    {
-    "offense": "ASSAULT W/DANGEROUS WEAPON",
-    "count": 2,
-    "previous": 3
-   },
-   {
     "offense": "BURGLARY",
     "count": 2,
     "previous": 0
+   },
+   {
+    "offense": "ASSAULT W/DANGEROUS WEAPON",
+    "count": 2,
+    "previous": 3
    },
    {
     "offense": "ROBBERY",
@@ -1374,7 +1374,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -1389,7 +1389,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to NoMa through OTR assessment sub-area Eckington B in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the NoMa boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-02): 28% of the 1,744 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 64% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to NoMa through OTR assessment sub-area Eckington B in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the NoMa boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-03): 28% of the 1,744 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 64% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -1402,7 +1402,7 @@
    "area_parcels": 1744,
    "area_share_inside": 0.283,
    "boundary_share_in_area": 0.642,
-   "measured": "2026-11-02"
+   "measured": "2026-11-03"
   },
   "primary": "all",
   "all": {
@@ -1554,7 +1554,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -1578,7 +1578,7 @@
    "starting_next_7d": 0,
    "reserved_ft": 3740,
    "long_running_90d": 12,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Construction staging",
@@ -1691,9 +1691,9 @@
    },
    {
     "type": "Illegal Dumping",
-    "median_days": 0.58,
-    "city_median_days": 4.03,
-    "closed_n": 192
+    "median_days": 0.77,
+    "city_median_days": 4.04,
+    "closed_n": 193
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -1729,7 +1729,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -1899,7 +1899,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2234,7 +2234,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -2304,7 +2304,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -13656,7 +13656,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

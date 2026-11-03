@@ -1,7 +1,7 @@
 {
  "slug": "dupontcircle",
  "name": "Dupont Circle",
- "generated_at": "2026-11-02T23:21:22Z",
+ "generated_at": "2026-11-03T01:47:04Z",
  "boundary": {
   "source": "Dupont Circle Historic District (DC Historic Preservation Office, Open Data DC). DC has no planning area named Dupont Circle; this overlaps the Adams Morgan site to the north.",
   "rings": [
@@ -2002,19 +2002,6 @@
    "smd": "2B05"
   },
   {
-   "id": "E2700196",
-   "issued": "2026-10-06T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "1833 19TH ST NW 20009",
-   "work": "",
-   "zoning": "RA-2/DC",
-   "lat": 38.9153,
-   "lon": -77.04315,
-   "smd": "2B08"
-  },
-  {
    "id": "M2700069",
    "issued": "2026-10-06T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -2026,6 +2013,19 @@
    "lat": 38.9132,
    "lon": -77.03796,
    "smd": "2B03"
+  },
+  {
+   "id": "E2700196",
+   "issued": "2026-10-06T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "1833 19TH ST NW 20009",
+   "work": "",
+   "zoning": "RA-2/DC",
+   "lat": 38.9153,
+   "lon": -77.04315,
+   "smd": "2B08"
   },
   {
    "id": "E2700108",
@@ -2042,17 +2042,17 @@
   }
  ],
  "requests": {
-  "total": 713,
-  "previous_total": 821,
+  "total": 720,
+  "previous_total": 813,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 131,
-    "previous": 111
+    "count": 133,
+    "previous": 110
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 71,
+    "count": 73,
     "previous": 74
    },
    {
@@ -2071,14 +2071,14 @@
     "previous": 35
    },
    {
+    "type": "Illegal Dumping",
+    "count": 27,
+    "previous": 34
+   },
+   {
     "type": "Dockless Vehicle Parking Complaint",
     "count": 26,
     "previous": 30
-   },
-   {
-    "type": "Illegal Dumping",
-    "count": 26,
-    "previous": 34
    },
    {
     "type": "Dead Animal Collection",
@@ -2093,12 +2093,12 @@
    {
     "type": "Tree Pruning",
     "count": 18,
-    "previous": 24
+    "previous": 22
    },
    {
     "type": "Tree Inspection",
     "count": 17,
-    "previous": 31
+    "previous": 29
    },
    {
     "type": "Roadway Signs",
@@ -2108,7 +2108,7 @@
    {
     "type": "Graffiti Removal",
     "count": 16,
-    "previous": 40
+    "previous": 38
    },
    {
     "type": "Scheduled Yard Waste",
@@ -2161,6 +2161,11 @@
     "previous": 20
    },
    {
+    "type": "Streetlight Repair Investigation",
+    "count": 8,
+    "previous": 4
+   },
+   {
     "type": "Recycling Cart Delivery",
     "count": 8,
     "previous": 3
@@ -2179,11 +2184,6 @@
     "type": "Out of State Parking Violation (ROSA)",
     "count": 7,
     "previous": 1
-   },
-   {
-    "type": "Streetlight Repair Investigation",
-    "count": 7,
-    "previous": 4
    },
    {
     "type": "Trash Cart - Delivery",
@@ -2208,7 +2208,7 @@
    {
     "type": "Tree Removal",
     "count": 6,
-    "previous": 16
+    "previous": 15
    },
    {
     "type": "Bicycle Services",
@@ -2261,6 +2261,11 @@
     "previous": 1
    },
    {
+    "type": "OCTFME - Down Cable Wires",
+    "count": 2,
+    "previous": 0
+   },
+   {
     "type": "Supercan - Delivery",
     "count": 2,
     "previous": 0
@@ -2274,11 +2279,6 @@
     "type": "DGS - Playground Repair",
     "count": 2,
     "previous": 3
-   },
-   {
-    "type": "OCTFME - Down Cable Wires",
-    "count": 1,
-    "previous": 0
    },
    {
     "type": "DGS - Overflowing Recycling Can",
@@ -2326,8 +2326,38 @@
     "previous": 0
    }
   ],
-  "open": 161,
+  "open": 165,
   "recent": [
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "agency": "DOH",
+    "added": "2026-11-03T01:31:11Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1800 block of P STREET NW",
+    "lat": 38.91,
+    "lon": -77.042
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-03T00:39:40Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of MASSACHUSETTS AVENUE NW",
+    "lat": 38.908,
+    "lon": -77.039
+   },
+   {
+    "type": "Streetlight Repair Investigation",
+    "agency": "DDOT",
+    "added": "2026-11-02T23:28:40Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "1700 block of CORCORAN STREET NW",
+    "lat": 38.912,
+    "lon": -77.041
+   },
    {
     "type": "Public Space Litter Can-Collection",
     "agency": "DPW",
@@ -2797,42 +2827,12 @@
     "block": "1700 block of S STREET NW",
     "lat": 38.914,
     "lon": -77.04
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-10-31T14:07:16Z",
-    "resolved": "2026-10-31T14:15:56Z",
-    "status": "Closed",
-    "block": "1700 block of S STREET NW",
-    "lat": 38.914,
-    "lon": -77.04
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-31T13:50:24Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1700 block of MASSACHUSETTS AVENUE NW",
-    "lat": 38.908,
-    "lon": -77.039
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T12:28:17Z",
-    "resolved": "2026-10-31T17:32:44Z",
-    "status": "Closed",
-    "block": "1600 block of P STREET NW",
-    "lat": 38.91,
-    "lon": -77.038
    }
   ]
  },
  "crime": {
-  "total": 68,
-  "previous_total": 61,
+  "total": 67,
+  "previous_total": 62,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
@@ -2841,8 +2841,8 @@
    },
    {
     "offense": "THEFT F/AUTO",
-    "count": 21,
-    "previous": 20
+    "count": 20,
+    "previous": 21
    },
    {
     "offense": "MOTOR VEHICLE THEFT",
@@ -2855,14 +2855,14 @@
     "previous": 1
    },
    {
-    "offense": "HOMICIDE",
-    "count": 1,
-    "previous": 0
-   },
-   {
     "offense": "ROBBERY",
     "count": 1,
     "previous": 6
+   },
+   {
+    "offense": "HOMICIDE",
+    "count": 1,
+    "previous": 0
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -2913,7 +2913,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2928,7 +2928,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Dupont Circle through OTR assessment sub-area Old City 2 D in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Dupont Circle boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-02): 78% of the 4,031 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 73% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Dupont Circle through OTR assessment sub-area Old City 2 D in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Dupont Circle boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-03): 78% of the 4,031 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 73% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -2941,7 +2941,7 @@
    "area_parcels": 4031,
    "area_share_inside": 0.784,
    "boundary_share_in_area": 0.731,
-   "measured": "2026-11-02"
+   "measured": "2026-11-03"
   },
   "primary": "condo",
   "house": {
@@ -3105,7 +3105,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3125,15 +3125,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 106,
-   "starting_next_7d": 37,
-   "reserved_ft": 10406,
+   "active_this_week": 108,
+   "starting_next_7d": 39,
+   "reserved_ft": 10494,
    "long_running_90d": 25,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 14
+     "count": 15
     },
     {
      "type": "Dumpsters",
@@ -3153,7 +3153,7 @@
     },
     {
      "type": "Events & reserved parking",
-     "count": 35
+     "count": 36
     }
    ],
    "upcoming": [
@@ -3452,6 +3452,22 @@
      "end": "2026-11-13",
      "ft": 22,
      "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "1700 block of S Street NW",
+     "start": "2026-11-10",
+     "end": "2026-11-12",
+     "ft": 88,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Moving & storage",
+     "block": "2000 block of Hillyer Place NW",
+     "start": "2026-11-10",
+     "end": "2026-11-11",
+     "ft": 0,
+     "hours": ""
     }
    ]
   },
@@ -3585,7 +3601,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3727,7 +3743,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4405,7 +4421,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -4476,7 +4492,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -17484,7 +17500,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

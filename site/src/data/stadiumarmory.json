@@ -1,7 +1,7 @@
 {
  "slug": "stadiumarmory",
  "name": "Stadium-Armory",
- "generated_at": "2026-11-02T23:21:22Z",
+ "generated_at": "2026-11-03T01:47:04Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1035,13 +1035,13 @@
   }
  ],
  "requests": {
-  "total": 433,
-  "previous_total": 720,
+  "total": 440,
+  "previous_total": 706,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 101,
-    "previous": 283
+    "count": 104,
+    "previous": 280
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -1050,12 +1050,17 @@
    },
    {
     "type": "Tree Inspection",
-    "count": 58,
-    "previous": 57
+    "count": 59,
+    "previous": 53
    },
    {
     "type": "Streetlight Repair Investigation",
     "count": 46,
+    "previous": 0
+   },
+   {
+    "type": "Illegal Dumping",
+    "count": 36,
     "previous": 0
    },
    {
@@ -1064,13 +1069,8 @@
     "previous": 0
    },
    {
-    "type": "Illegal Dumping",
-    "count": 35,
-    "previous": 0
-   },
-   {
     "type": "OCTFME - Down Cable Wires",
-    "count": 29,
+    "count": 30,
     "previous": 0
    },
    {
@@ -1085,13 +1085,13 @@
    },
    {
     "type": "DMV - Drivers License/ID Issues",
-    "count": 6,
+    "count": 7,
     "previous": 0
    },
    {
     "type": "Bulk Collection",
     "count": 3,
-    "previous": 60
+    "previous": 59
    }
   ],
   "open": 17,
@@ -1137,12 +1137,12 @@
     "lon": -76.978
    },
    {
-    "type": "Bulk Collection",
+    "type": "Parking Enforcement",
     "agency": "DPW",
-    "added": "2026-10-31T19:19:52Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1800 block of POTOMAC AVENUE SE",
+    "added": "2026-10-31T22:25:37Z",
+    "resolved": "2026-10-31T23:11:48Z",
+    "status": "Closed",
+    "block": "1800 block of E STREET SE",
     "lat": 38.883,
     "lon": -76.978
    },
@@ -1167,6 +1167,16 @@
     "lon": -76.978
    },
    {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-10-31T19:19:52Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1800 block of POTOMAC AVENUE SE",
+    "lat": 38.883,
+    "lon": -76.978
+   },
+   {
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-10-29T16:21:58Z",
@@ -1277,6 +1287,16 @@
     "lon": -76.977
    },
    {
+    "type": "DMV - Drivers License/ID Issues",
+    "agency": "DMV",
+    "added": "2026-10-27T16:46:57Z",
+    "resolved": "2026-10-29T20:45:25Z",
+    "status": "Closed",
+    "block": "1900 block of C STREET SE",
+    "lat": 38.885,
+    "lon": -76.977
+   },
+   {
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-10-27T11:36:16Z",
@@ -1417,184 +1437,164 @@
     "lon": -76.977
    },
    {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-26T12:49:56Z",
-    "resolved": "2026-10-26T12:49:56Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-26T12:49:56Z",
-    "resolved": "2026-10-26T12:49:56Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-26T12:49:56Z",
-    "resolved": "2026-10-26T12:49:56Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-26T12:49:56Z",
-    "resolved": "2026-10-26T12:49:56Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-26T12:49:56Z",
-    "resolved": "2026-10-26T12:49:56Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-26T12:49:56Z",
-    "resolved": "2026-10-26T12:49:56Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-26T12:49:56Z",
-    "resolved": "2026-10-26T12:49:56Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-26T12:49:56Z",
-    "resolved": "2026-10-26T12:49:56Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-26T12:49:56Z",
-    "resolved": "2026-10-26T12:49:56Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-10-26T12:34:30Z",
-    "resolved": "2026-10-27T13:30:05Z",
-    "status": "Closed",
-    "block": "500 block of OKLAHOMA AVENUE NE",
-    "lat": 38.896,
-    "lon": -76.969
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-10-26T12:34:30Z",
-    "resolved": "2026-10-27T13:30:05Z",
-    "status": "Closed",
-    "block": "500 block of OKLAHOMA AVENUE NE",
-    "lat": 38.896,
-    "lon": -76.969
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-10-26T12:34:30Z",
-    "resolved": "2026-10-27T13:30:05Z",
-    "status": "Closed",
-    "block": "500 block of OKLAHOMA AVENUE NE",
-    "lat": 38.896,
-    "lon": -76.969
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-10-26T12:34:30Z",
-    "resolved": "2026-10-27T13:30:05Z",
-    "status": "Closed",
-    "block": "500 block of OKLAHOMA AVENUE NE",
-    "lat": 38.896,
-    "lon": -76.969
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-10-26T12:34:30Z",
-    "resolved": "2026-10-27T13:30:05Z",
-    "status": "Closed",
-    "block": "500 block of OKLAHOMA AVENUE NE",
-    "lat": 38.896,
-    "lon": -76.969
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-10-26T12:34:30Z",
-    "resolved": "2026-10-27T13:30:05Z",
-    "status": "Closed",
-    "block": "500 block of OKLAHOMA AVENUE NE",
-    "lat": 38.896,
-    "lon": -76.969
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-10-26T12:34:30Z",
-    "resolved": "2026-10-27T13:30:05Z",
-    "status": "Closed",
-    "block": "500 block of OKLAHOMA AVENUE NE",
-    "lat": 38.896,
-    "lon": -76.969
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-10-26T12:34:30Z",
-    "resolved": "2026-10-27T13:30:05Z",
-    "status": "Closed",
-    "block": "500 block of OKLAHOMA AVENUE NE",
-    "lat": 38.896,
-    "lon": -76.969
-   },
-   {
     "type": "Parking Enforcement",
     "agency": "DPW",
-    "added": "2026-10-23T23:21:47Z",
-    "resolved": "2026-10-23T23:28:41Z",
+    "added": "2026-10-27T01:56:34Z",
+    "resolved": "2026-10-27T04:45:15Z",
     "status": "Closed",
     "block": "1900 block of C STREET SE",
     "lat": 38.885,
     "lon": -76.977
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-10-26T12:49:56Z",
+    "resolved": "2026-10-26T12:49:56Z",
+    "status": "Closed",
+    "block": "1900 block of C STREET SE",
+    "lat": 38.885,
+    "lon": -76.977
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-10-26T12:49:56Z",
+    "resolved": "2026-10-26T12:49:56Z",
+    "status": "Closed",
+    "block": "1900 block of C STREET SE",
+    "lat": 38.885,
+    "lon": -76.977
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-10-26T12:49:56Z",
+    "resolved": "2026-10-26T12:49:56Z",
+    "status": "Closed",
+    "block": "1900 block of C STREET SE",
+    "lat": 38.885,
+    "lon": -76.977
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-10-26T12:49:56Z",
+    "resolved": "2026-10-26T12:49:56Z",
+    "status": "Closed",
+    "block": "1900 block of C STREET SE",
+    "lat": 38.885,
+    "lon": -76.977
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-10-26T12:49:56Z",
+    "resolved": "2026-10-26T12:49:56Z",
+    "status": "Closed",
+    "block": "1900 block of C STREET SE",
+    "lat": 38.885,
+    "lon": -76.977
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-10-26T12:49:56Z",
+    "resolved": "2026-10-26T12:49:56Z",
+    "status": "Closed",
+    "block": "1900 block of C STREET SE",
+    "lat": 38.885,
+    "lon": -76.977
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-10-26T12:49:56Z",
+    "resolved": "2026-10-26T12:49:56Z",
+    "status": "Closed",
+    "block": "1900 block of C STREET SE",
+    "lat": 38.885,
+    "lon": -76.977
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-10-26T12:49:56Z",
+    "resolved": "2026-10-26T12:49:56Z",
+    "status": "Closed",
+    "block": "1900 block of C STREET SE",
+    "lat": 38.885,
+    "lon": -76.977
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-10-26T12:49:56Z",
+    "resolved": "2026-10-26T12:49:56Z",
+    "status": "Closed",
+    "block": "1900 block of C STREET SE",
+    "lat": 38.885,
+    "lon": -76.977
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-10-26T12:34:30Z",
+    "resolved": "2026-10-27T13:30:05Z",
+    "status": "Closed",
+    "block": "500 block of OKLAHOMA AVENUE NE",
+    "lat": 38.896,
+    "lon": -76.969
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-10-26T12:34:30Z",
+    "resolved": "2026-10-27T13:30:05Z",
+    "status": "Closed",
+    "block": "500 block of OKLAHOMA AVENUE NE",
+    "lat": 38.896,
+    "lon": -76.969
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-10-26T12:34:30Z",
+    "resolved": "2026-10-27T13:30:05Z",
+    "status": "Closed",
+    "block": "500 block of OKLAHOMA AVENUE NE",
+    "lat": 38.896,
+    "lon": -76.969
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-10-26T12:34:30Z",
+    "resolved": "2026-10-27T13:30:05Z",
+    "status": "Closed",
+    "block": "500 block of OKLAHOMA AVENUE NE",
+    "lat": 38.896,
+    "lon": -76.969
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-10-26T12:34:30Z",
+    "resolved": "2026-10-27T13:30:05Z",
+    "status": "Closed",
+    "block": "500 block of OKLAHOMA AVENUE NE",
+    "lat": 38.896,
+    "lon": -76.969
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-10-26T12:34:30Z",
+    "resolved": "2026-10-27T13:30:05Z",
+    "status": "Closed",
+    "block": "500 block of OKLAHOMA AVENUE NE",
+    "lat": 38.896,
+    "lon": -76.969
    }
   ]
  },
@@ -1613,22 +1613,22 @@
     "previous": 3
    },
    {
-    "offense": "HOMICIDE",
-    "count": 1,
-    "previous": 0
-   },
-   {
     "offense": "BURGLARY",
     "count": 1,
     "previous": 0
    },
    {
-    "offense": "THEFT F/AUTO",
+    "offense": "HOMICIDE",
+    "count": 1,
+    "previous": 0
+   },
+   {
+    "offense": "ROBBERY",
     "count": 0,
     "previous": 1
    },
    {
-    "offense": "ROBBERY",
+    "offense": "THEFT F/AUTO",
     "count": 0,
     "previous": 1
    }
@@ -1663,7 +1663,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -1678,7 +1678,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Stadium-Armory through OTR assessment sub-areas Old City 1 A and B, the rowhouse blocks just west of the stadium grounds in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Stadium-Armory boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-02): 7% of the 2,431 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Stadium-Armory through OTR assessment sub-areas Old City 1 A and B, the rowhouse blocks just west of the stadium grounds in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Stadium-Armory boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-03): 7% of the 2,431 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -1695,7 +1695,7 @@
    "area_parcels": 2431,
    "area_share_inside": 0.07,
    "boundary_share_in_area": 1.0,
-   "measured": "2026-11-02"
+   "measured": "2026-11-03"
   },
   "primary": "house",
   "house": {
@@ -1850,7 +1850,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -1874,7 +1874,7 @@
    "starting_next_7d": 4,
    "reserved_ft": 2090,
    "long_running_90d": 5,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -2030,7 +2030,7 @@
    {
     "type": "Pothole",
     "median_days": 6.41,
-    "city_median_days": 3.6,
+    "city_median_days": 3.61,
     "closed_n": 24
    },
    {
@@ -2061,7 +2061,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2151,7 +2151,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2526,7 +2526,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -2692,7 +2692,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -14196,7 +14196,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

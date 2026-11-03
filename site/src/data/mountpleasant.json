@@ -1,7 +1,7 @@
 {
  "slug": "mountpleasant",
  "name": "Mount Pleasant",
- "generated_at": "2026-11-02T23:21:22Z",
+ "generated_at": "2026-11-03T01:47:04Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1591,12 +1591,12 @@
   }
  ],
  "requests": {
-  "total": 732,
-  "previous_total": 802,
+  "total": 735,
+  "previous_total": 801,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 162,
+    "count": 164,
     "previous": 139
    },
    {
@@ -1636,12 +1636,22 @@
    },
    {
     "type": "Dead Animal Collection",
-    "count": 16,
+    "count": 15,
     "previous": 8
    },
    {
-    "type": "Dockless Vehicle Parking Complaint",
+    "type": "Roadway Signs",
     "count": 15,
+    "previous": 16
+   },
+   {
+    "type": "DOB - Vacant Private Property Inspection",
+    "count": 14,
+    "previous": 7
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "count": 14,
     "previous": 5
    },
    {
@@ -1650,19 +1660,9 @@
     "previous": 23
    },
    {
-    "type": "Roadway Signs",
-    "count": 14,
-    "previous": 16
-   },
-   {
     "type": "Tree Removal",
     "count": 13,
     "previous": 25
-   },
-   {
-    "type": "DOB - Vacant Private Property Inspection",
-    "count": 12,
-    "previous": 7
    },
    {
     "type": "Residential Parking Permit Violation",
@@ -1722,7 +1722,12 @@
    {
     "type": "Tree Inspection",
     "count": 5,
-    "previous": 15
+    "previous": 14
+   },
+   {
+    "type": "Missed Curbside Compost Collection",
+    "count": 5,
+    "previous": 1
    },
    {
     "type": "DMV - Vehicle Registration Issues",
@@ -1740,19 +1745,9 @@
     "previous": 16
    },
    {
-    "type": "Recycling Cart - Repair",
-    "count": 4,
-    "previous": 1
-   },
-   {
     "type": "Traffic Safety Input",
     "count": 4,
     "previous": 6
-   },
-   {
-    "type": "Missed Curbside Compost Collection",
-    "count": 4,
-    "previous": 1
    },
    {
     "type": "Public Space Inspection",
@@ -1768,6 +1763,11 @@
     "type": "DC Government Information",
     "count": 3,
     "previous": 3
+   },
+   {
+    "type": "Recycling Cart - Repair",
+    "count": 3,
+    "previous": 1
    },
    {
     "type": "Bicycle Services",
@@ -1890,8 +1890,48 @@
     "previous": 0
    }
   ],
-  "open": 150,
+  "open": 154,
   "recent": [
+   {
+    "type": "DOB - Vacant Private Property Inspection",
+    "agency": "DOB",
+    "added": "2026-11-03T01:25:07Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3000 block of MOUNT PLEASANT STREET NW",
+    "lat": 38.928,
+    "lon": -77.038
+   },
+   {
+    "type": "DOB - Vacant Private Property Inspection",
+    "agency": "DOB",
+    "added": "2026-11-03T01:23:44Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of KENYON STREET NW",
+    "lat": 38.929,
+    "lon": -77.04
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-03T01:22:32Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2000 block of ROSEMOUNT AVENUE NW",
+    "lat": 38.933,
+    "lon": -77.047
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-03T01:10:40Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1600 block of KENYON STREET NW",
+    "lat": 38.93,
+    "lon": -77.038
+   },
    {
     "type": "FEMS - Fire Safety Inspection",
     "agency": "FEMS",
@@ -2351,46 +2391,6 @@
     "block": "3100 block of 18TH STREET NW",
     "lat": 38.931,
     "lon": -77.042
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "agency": "DPW",
-    "added": "2026-11-01T01:30:04Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1600 block of LAMONT STREET NW",
-    "lat": 38.931,
-    "lon": -77.039
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-01T01:28:52Z",
-    "resolved": "2026-11-01T03:26:21Z",
-    "status": "Closed",
-    "block": "3100 block of 18TH STREET NW",
-    "lat": 38.931,
-    "lon": -77.042
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-01T01:27:16Z",
-    "resolved": "2026-11-01T03:29:46Z",
-    "status": "Closed",
-    "block": "3300 block of 18TH STREET NW",
-    "lat": 38.933,
-    "lon": -77.041
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-01T00:06:23Z",
-    "resolved": "2026-11-01T01:57:05Z",
-    "status": "Closed",
-    "block": "3400 block of BROWN STREET NW",
-    "lat": 38.934,
-    "lon": -77.038
    }
   ]
  },
@@ -2477,7 +2477,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2492,7 +2492,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Mount Pleasant through OTR assessment sub-area Mount Pleasant A in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Mount Pleasant boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-02): 97% of the 1,797 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 89% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Mount Pleasant through OTR assessment sub-area Mount Pleasant A in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Mount Pleasant boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-03): 97% of the 1,797 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 89% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -2505,7 +2505,7 @@
    "area_parcels": 1797,
    "area_share_inside": 0.971,
    "boundary_share_in_area": 0.89,
-   "measured": "2026-11-02"
+   "measured": "2026-11-03"
   },
   "primary": "house",
   "house": {
@@ -2669,7 +2669,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2689,15 +2689,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 56,
-   "starting_next_7d": 14,
-   "reserved_ft": 8074,
+   "active_this_week": 58,
+   "starting_next_7d": 16,
+   "reserved_ft": 8250,
    "long_running_90d": 7,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 5
+     "count": 6
     },
     {
      "type": "Dumpsters",
@@ -2717,7 +2717,7 @@
     },
     {
      "type": "Events & reserved parking",
-     "count": 5
+     "count": 6
     }
    ],
    "upcoming": [
@@ -2832,6 +2832,22 @@
      "end": "2026-11-13",
      "ft": 22,
      "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "3300 block of 17th Street NW",
+     "start": "2026-11-10",
+     "end": "2026-11-11",
+     "ft": 88,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Moving & storage",
+     "block": "1600 block of Kenyon Street NW",
+     "start": "2026-11-10",
+     "end": "2026-11-10",
+     "ft": 88,
+     "hours": ""
     }
    ]
   },
@@ -2965,7 +2981,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3127,7 +3143,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "archive_days": 180,
   "sources": [
    {
@@ -3378,7 +3394,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -3466,7 +3482,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -12437,7 +12453,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

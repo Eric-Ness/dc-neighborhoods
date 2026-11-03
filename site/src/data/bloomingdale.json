@@ -1,7 +1,7 @@
 {
  "slug": "bloomingdale",
  "name": "Bloomingdale",
- "generated_at": "2026-11-02T23:21:22Z",
+ "generated_at": "2026-11-03T01:47:04Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -2413,23 +2413,23 @@
   }
  ],
  "requests": {
-  "total": 2394,
+  "total": 2399,
   "previous_total": 2579,
   "by_type": [
    {
     "type": "Bulk Collection",
     "count": 345,
-    "previous": 360
+    "previous": 359
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 265,
-    "previous": 215
+    "count": 266,
+    "previous": 216
    },
    {
     "type": "Parking Enforcement",
-    "count": 236,
-    "previous": 258
+    "count": 234,
+    "previous": 259
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -2443,12 +2443,12 @@
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 122,
+    "count": 123,
     "previous": 69
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 106,
+    "count": 108,
     "previous": 120
    },
    {
@@ -2468,7 +2468,7 @@
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 59,
+    "count": 61,
     "previous": 2
    },
    {
@@ -2478,7 +2478,7 @@
    },
    {
     "type": "Recycling Cart - Repair",
-    "count": 43,
+    "count": 42,
     "previous": 33
    },
    {
@@ -2493,7 +2493,7 @@
    },
    {
     "type": "DMV - Drivers License/ID Issues",
-    "count": 32,
+    "count": 33,
     "previous": 22
    },
    {
@@ -2513,7 +2513,7 @@
    },
    {
     "type": "Sidewalk Repair",
-    "count": 25,
+    "count": 26,
     "previous": 10
    },
    {
@@ -2527,6 +2527,11 @@
     "previous": 40
    },
    {
+    "type": "Public Space Litter Can-Collection",
+    "count": 22,
+    "previous": 35
+   },
+   {
     "type": "DC Government Information",
     "count": 20,
     "previous": 13
@@ -2538,13 +2543,8 @@
    },
    {
     "type": "Rat Replacement Containers",
-    "count": 19,
+    "count": 18,
     "previous": 47
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "count": 19,
-    "previous": 35
    },
    {
     "type": "Tree Pruning",
@@ -2559,7 +2559,7 @@
    {
     "type": "Tree Inspection",
     "count": 16,
-    "previous": 60
+    "previous": 58
    },
    {
     "type": "Roadway Signs",
@@ -2573,8 +2573,8 @@
    },
    {
     "type": "Recycling Cart Delivery",
-    "count": 15,
-    "previous": 30
+    "count": 14,
+    "previous": 31
    },
    {
     "type": "Streetlight Repair Investigation",
@@ -2602,14 +2602,14 @@
     "previous": 5
    },
    {
-    "type": "Supercan - Repair",
-    "count": 8,
-    "previous": 8
-   },
-   {
     "type": "Graffiti Removal",
     "count": 7,
     "previous": 33
+   },
+   {
+    "type": "Supercan - Repair",
+    "count": 7,
+    "previous": 8
    },
    {
     "type": "OCTFME - Down Cable Wires",
@@ -2742,8 +2742,68 @@
     "previous": 2
    }
   ],
-  "open": 549,
+  "open": 553,
   "recent": [
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-03T01:39:56Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of 1ST STREET NW",
+    "lat": 38.913,
+    "lon": -77.012
+   },
+   {
+    "type": "Sidewalk Repair",
+    "agency": "DDOT",
+    "added": "2026-11-03T01:34:30Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "200 block of R STREET NW",
+    "lat": 38.913,
+    "lon": -77.014
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "agency": "DMV",
+    "added": "2026-11-03T01:31:42Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "100 block of P STREET NW",
+    "lat": 38.91,
+    "lon": -77.014
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-03T01:13:10Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "200 block of BATES STREET NW",
+    "lat": 38.911,
+    "lon": -77.014
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-03T00:53:20Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of N STREET NW",
+    "lat": 38.907,
+    "lon": -77.012
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-03T00:52:33Z",
+    "resolved": null,
+    "status": "Open (Duplicate)",
+    "block": "1300 block of 1ST STREET NW",
+    "lat": 38.907,
+    "lon": -77.012
+   },
    {
     "type": "Dead Animal Collection",
     "agency": "DPW",
@@ -2943,6 +3003,26 @@
     "block": "300 block of BRYANT STREET NE",
     "lat": 38.921,
     "lon": -77.001
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-02T17:11:12Z",
+    "resolved": "2026-11-02T17:11:12Z",
+    "status": "Closed",
+    "block": "300 block of BRYANT STREET NE",
+    "lat": 38.921,
+    "lon": -77.001
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-02T16:48:49Z",
+    "resolved": "2026-11-02T16:48:49Z",
+    "status": "Closed",
+    "block": "Unit block of BATES STREET NW",
+    "lat": 38.911,
+    "lon": -77.011
    },
    {
     "type": "DOEE - LIHEAP",
@@ -3163,86 +3243,6 @@
     "block": "2700 block of NORTH CAPITOL STREET NE",
     "lat": 38.925,
     "lon": -77.009
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-11-02T12:07:53Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2700 block of NORTH CAPITOL STREET NE",
-    "lat": 38.925,
-    "lon": -77.009
-   },
-   {
-    "type": "Container Removal",
-    "agency": "DPW",
-    "added": "2026-11-02T11:58:43Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "Unit block of QUINCY PLACE NW",
-    "lat": 38.912,
-    "lon": -77.01
-   },
-   {
-    "type": "Container Removal",
-    "agency": "DPW",
-    "added": "2026-11-02T11:58:43Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "Unit block of QUINCY PLACE NW",
-    "lat": 38.912,
-    "lon": -77.01
-   },
-   {
-    "type": "Residential Parking Permit Violation",
-    "agency": "DPW",
-    "added": "2026-11-02T04:49:16Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "100 block of RANDOLPH PLACE NW",
-    "lat": 38.914,
-    "lon": -77.013
-   },
-   {
-    "type": "Residential Parking Permit Violation",
-    "agency": "DPW",
-    "added": "2026-11-02T04:49:16Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "100 block of RANDOLPH PLACE NW",
-    "lat": 38.914,
-    "lon": -77.013
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-02T04:47:54Z",
-    "resolved": "2026-11-02T04:55:53Z",
-    "status": "Closed",
-    "block": "100 block of RANDOLPH PLACE NW",
-    "lat": 38.914,
-    "lon": -77.013
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-02T04:47:54Z",
-    "resolved": "2026-11-02T04:55:53Z",
-    "status": "Closed",
-    "block": "100 block of RANDOLPH PLACE NW",
-    "lat": 38.914,
-    "lon": -77.013
-   },
-   {
-    "type": "Residential Parking Permit Violation",
-    "agency": "DPW",
-    "added": "2026-11-02T04:47:14Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "100 block of RANDOLPH PLACE NW",
-    "lat": 38.913,
-    "lon": -77.013
    }
   ]
  },
@@ -3261,12 +3261,12 @@
     "previous": 6
    },
    {
-    "offense": "MOTOR VEHICLE THEFT",
+    "offense": "BURGLARY",
     "count": 4,
     "previous": 5
    },
    {
-    "offense": "BURGLARY",
+    "offense": "MOTOR VEHICLE THEFT",
     "count": 4,
     "previous": 5
    },
@@ -3341,7 +3341,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3356,7 +3356,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Bloomingdale through OTR assessment sub-areas LeDroit Park B, Old City 2 A, Eckington A and B and Brookland E in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Bloomingdale boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-02): 61% of the 6,905 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 90% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Bloomingdale through OTR assessment sub-areas LeDroit Park B, Old City 2 A, Eckington A and B and Brookland E in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Bloomingdale boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-03): 61% of the 6,905 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 90% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -3385,7 +3385,7 @@
    "area_parcels": 6905,
    "area_share_inside": 0.607,
    "boundary_share_in_area": 0.901,
-   "measured": "2026-11-02"
+   "measured": "2026-11-03"
   },
   "primary": "house",
   "house": {
@@ -3401,10 +3401,10 @@
    "count_prev_12mo": 74
   },
   "last_60d": {
-   "median": 855000,
-   "count": 19,
-   "median_ppsf": 569,
-   "ppsf_count": 19
+   "median": 860000,
+   "count": 18,
+   "median_ppsf": 575,
+   "ppsf_count": 18
   },
   "above_assessment_12mo": {
    "n": 113,
@@ -3707,20 +3707,11 @@
     "beds": 3,
     "sqft": 1807,
     "assessed": 957710
-   },
-   {
-    "address": "3218 8th St NE",
-    "date": "2026-09-03",
-    "price": 620000,
-    "kind": "house",
-    "beds": 3,
-    "sqft": 1120,
-    "assessed": 581820
    }
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3740,15 +3731,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 188,
-   "starting_next_7d": 25,
-   "reserved_ft": 28732,
+   "active_this_week": 190,
+   "starting_next_7d": 27,
+   "reserved_ft": 28908,
    "long_running_90d": 29,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 8
+     "count": 10
     },
     {
      "type": "Dumpsters",
@@ -3971,6 +3962,22 @@
      "end": "2026-12-08",
      "ft": 88,
      "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Moving & storage",
+     "block": "2400 block of 1st Street NW",
+     "start": "2026-11-10",
+     "end": "2026-11-11",
+     "ft": 88,
+     "hours": ""
+    },
+    {
+     "type": "Moving & storage",
+     "block": "Unit block of Randolph Place NW",
+     "start": "2026-11-10",
+     "end": "2026-11-11",
+     "ft": 88,
+     "hours": ""
     }
    ]
   },
@@ -4104,7 +4111,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4274,7 +4281,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4517,7 +4524,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -4606,7 +4613,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -24146,7 +24153,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

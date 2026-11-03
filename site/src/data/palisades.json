@@ -1,7 +1,7 @@
 {
  "slug": "palisades",
  "name": "Palisades",
- "generated_at": "2026-11-02T23:21:22Z",
+ "generated_at": "2026-11-03T01:47:04Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods: Kent/Palisades (Open Data DC). It includes Kent and the C&O Canal parkland along the river.",
   "rings": [
@@ -10431,38 +10431,25 @@
    "lat": 38.92776,
    "lon": -77.08685,
    "smd": "3D01"
-  },
-  {
-   "id": "E2700106",
-   "issued": "2026-10-04T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "4461 WESTOVER PL NW 20016",
-   "work": "",
-   "zoning": "RA-1",
-   "lat": 38.93466,
-   "lon": -77.08618,
-   "smd": "3A04"
   }
  ],
  "requests": {
-  "total": 1325,
-  "previous_total": 1326,
+  "total": 1330,
+  "previous_total": 1324,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 256,
-    "previous": 245
+    "count": 264,
+    "previous": 246
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 197,
-    "previous": 187
+    "count": 198,
+    "previous": 188
    },
    {
     "type": "Parking Enforcement",
-    "count": 79,
+    "count": 77,
     "previous": 79
    },
    {
@@ -10478,22 +10465,22 @@
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 62,
-    "previous": 73
+    "previous": 77
    },
    {
     "type": "Roadway Signs",
-    "count": 50,
+    "count": 51,
     "previous": 29
    },
    {
     "type": "Container Removal",
     "count": 44,
-    "previous": 33
+    "previous": 32
    },
    {
     "type": "Tree Inspection",
     "count": 41,
-    "previous": 64
+    "previous": 60
    },
    {
     "type": "Residential Parking Permit Violation",
@@ -10502,8 +10489,13 @@
    },
    {
     "type": "Supercan - Delivery",
-    "count": 33,
+    "count": 32,
     "previous": 43
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "count": 30,
+    "previous": 55
    },
    {
     "type": "Recycling Collection - Missed",
@@ -10511,14 +10503,9 @@
     "previous": 20
    },
    {
-    "type": "Public Space Litter Can-Collection",
-    "count": 28,
-    "previous": 55
-   },
-   {
     "type": "Traffic Safety Input",
     "count": 20,
-    "previous": 21
+    "previous": 19
    },
    {
     "type": "DMV - Drivers License/ID Issues",
@@ -10541,11 +10528,6 @@
     "previous": 5
    },
    {
-    "type": "Recycling Cart Delivery",
-    "count": 13,
-    "previous": 13
-   },
-   {
     "type": "Tree Pruning",
     "count": 13,
     "previous": 11
@@ -10559,6 +10541,11 @@
     "type": "Missed Curbside Compost Collection",
     "count": 12,
     "previous": 19
+   },
+   {
+    "type": "Recycling Cart Delivery",
+    "count": 12,
+    "previous": 13
    },
    {
     "type": "Trash Cart Repair",
@@ -10628,7 +10615,7 @@
    {
     "type": "Tree Removal",
     "count": 5,
-    "previous": 18
+    "previous": 17
    },
    {
     "type": "Parking Meter Repair",
@@ -10661,16 +10648,6 @@
     "previous": 3
    },
    {
-    "type": "Roadway Markings / Pylons",
-    "count": 4,
-    "previous": 1
-   },
-   {
-    "type": "DOB - Vacant Private Property Inspection",
-    "count": 4,
-    "previous": 2
-   },
-   {
     "type": "DC Government Information",
     "count": 4,
     "previous": 3
@@ -10686,9 +10663,14 @@
     "previous": 14
    },
    {
-    "type": "DMV - Online Processing Issues",
+    "type": "Roadway Markings / Pylons",
     "count": 3,
-    "previous": 6
+    "previous": 1
+   },
+   {
+    "type": "DOB - Vacant Private Property Inspection",
+    "count": 3,
+    "previous": 2
    },
    {
     "type": "Street Cleaning",
@@ -10704,6 +10686,11 @@
     "type": "DMV - Copy of Ticket",
     "count": 2,
     "previous": 0
+   },
+   {
+    "type": "DMV - Online Processing Issues",
+    "count": 2,
+    "previous": 6
    },
    {
     "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
@@ -10781,8 +10768,28 @@
     "previous": 1
    }
   ],
-  "open": 365,
+  "open": 370,
   "recent": [
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-03T01:04:37Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1500 block of FOXHALL ROAD NW",
+    "lat": 38.909,
+    "lon": -77.082
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-03T00:44:14Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4700 block of MACARTHUR BOULEVARD NW",
+    "lat": 38.914,
+    "lon": -77.092
+   },
    {
     "type": "Roadway Signs",
     "agency": "DDOT",
@@ -11196,12 +11203,32 @@
    {
     "type": "Bulk Collection",
     "agency": "DPW",
+    "added": "2026-11-01T14:53:11Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4900 block of LOUGHBORO ROAD NW",
+    "lat": 38.932,
+    "lon": -77.098
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
     "added": "2026-11-01T12:29:42Z",
     "resolved": null,
     "status": "Open",
     "block": "5200 block of MACARTHUR TERRACE NW",
     "lat": 38.928,
     "lon": -77.105
+   },
+   {
+    "type": "Roadway Signs",
+    "agency": "DDOT",
+    "added": "2026-11-01T03:52:00Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "4400 block of WESTOVER PLACE NW",
+    "lat": 38.935,
+    "lon": -77.086
    },
    {
     "type": "Roadway Signs",
@@ -11226,62 +11253,22 @@
    {
     "type": "Scheduled Yard Waste",
     "agency": "DPW",
+    "added": "2026-10-31T21:29:17Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2300 block of NEBRASKA AVENUE NW",
+    "lat": 38.922,
+    "lon": -77.1
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
     "added": "2026-10-31T21:15:13Z",
     "resolved": null,
     "status": "Open",
     "block": "5000 block of VAN NESS STREET NW",
     "lat": 38.943,
     "lon": -77.1
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-10-31T19:32:24Z",
-    "resolved": "2026-11-02T18:44:03Z",
-    "status": "Closed",
-    "block": "3100 block of 44TH STREET NW",
-    "lat": 38.932,
-    "lon": -77.086
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-10-31T19:32:24Z",
-    "resolved": "2026-11-02T18:44:03Z",
-    "status": "Closed",
-    "block": "3100 block of 44TH STREET NW",
-    "lat": 38.932,
-    "lon": -77.086
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-31T19:05:34Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "5100 block of SHERIER PLACE NW",
-    "lat": 38.925,
-    "lon": -77.103
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-31T19:05:34Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "5100 block of SHERIER PLACE NW",
-    "lat": 38.925,
-    "lon": -77.103
-   },
-   {
-    "type": "Parking Meter Repair",
-    "agency": "DDOT",
-    "added": "2026-10-31T16:17:40Z",
-    "resolved": "2026-11-02T16:40:54Z",
-    "status": "Closed",
-    "block": "4800 block of MASSACHUSETTS AVENUE NW",
-    "lat": 38.945,
-    "lon": -77.096
    }
   ]
  },
@@ -11377,7 +11364,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -11392,7 +11379,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Palisades through OTR assessment neighborhoods Palisades and Foxhall and sub-areas Wesley Heights A and B, Spring Valley B, Berkley A and Kent B and C in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Palisades boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-02): 100% of the 4,991 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 76% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Palisades through OTR assessment neighborhoods Palisades and Foxhall and sub-areas Wesley Heights A and B, Spring Valley B, Berkley A and Kent B and C in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Palisades boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-03): 100% of the 4,991 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 76% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -11433,7 +11420,7 @@
    "area_parcels": 4991,
    "area_share_inside": 1.0,
    "boundary_share_in_area": 0.755,
-   "measured": "2026-11-02"
+   "measured": "2026-11-03"
   },
   "primary": "house",
   "house": {
@@ -11450,9 +11437,9 @@
   },
   "last_60d": {
    "median": 1550000,
-   "count": 13,
-   "median_ppsf": 769,
-   "ppsf_count": 13
+   "count": 11,
+   "median_ppsf": 679,
+   "ppsf_count": 11
   },
   "above_assessment_12mo": {
    "n": 115,
@@ -11656,29 +11643,11 @@
     "beds": null,
     "sqft": null,
     "assessed": 902680
-   },
-   {
-    "address": "5225 Sherier Pl NW",
-    "date": "2026-09-03",
-    "price": 1020000,
-    "kind": "house",
-    "beds": 2,
-    "sqft": 1326,
-    "assessed": 1090680
-   },
-   {
-    "address": "2930 Chain Bridge Rd NW",
-    "date": "2026-09-03",
-    "price": 11000000,
-    "kind": "house",
-    "beds": 3,
-    "sqft": 1981,
-    "assessed": 2475950
    }
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -11698,11 +11667,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 135,
-   "starting_next_7d": 26,
-   "reserved_ft": 15708,
-   "long_running_90d": 55,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
+   "active_this_week": 136,
+   "starting_next_7d": 27,
+   "reserved_ft": 15774,
+   "long_running_90d": 56,
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -11714,7 +11683,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 85
+     "count": 86
     },
     {
      "type": "Lead pipe replacement",
@@ -11937,6 +11906,14 @@
      "end": "2027-05-07",
      "ft": 0,
      "hours": ""
+    },
+    {
+     "type": "Construction staging",
+     "block": "4900 block of Upton Street NW",
+     "start": "2026-11-10",
+     "end": "2027-05-08",
+     "ft": 66,
+     "hours": ""
     }
    ]
   },
@@ -12063,14 +12040,14 @@
    {
     "type": "Pothole",
     "median_days": 3.89,
-    "city_median_days": 3.6,
+    "city_median_days": 3.61,
     "closed_n": 283
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -12223,7 +12200,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "archive_days": 180,
   "sources": [
    {
@@ -12515,7 +12492,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -12649,7 +12626,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -49955,7 +49932,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
