@@ -1,7 +1,7 @@
 {
  "slug": "foggybottom",
  "name": "Foggy Bottom",
- "generated_at": "2026-11-02T16:31:55Z",
+ "generated_at": "2026-11-02T23:21:22Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods: GWU, which covers Foggy Bottom and the West End (Open Data DC).",
   "rings": [
@@ -3862,28 +3862,28 @@
   }
  ],
  "requests": {
-  "total": 693,
-  "previous_total": 837,
+  "total": 698,
+  "previous_total": 828,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 231,
-    "previous": 206
+    "count": 237,
+    "previous": 203
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 70,
-    "previous": 153
+    "previous": 150
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 48,
-    "previous": 54
+    "count": 47,
+    "previous": 55
    },
    {
     "type": "Roadway Signs",
-    "count": 40,
-    "previous": 37
+    "count": 41,
+    "previous": 36
    },
    {
     "type": "Graffiti Removal",
@@ -3898,7 +3898,7 @@
    {
     "type": "Tree Planting",
     "count": 20,
-    "previous": 36
+    "previous": 35
    },
    {
     "type": "Sanitation Enforcement",
@@ -3907,8 +3907,8 @@
    },
    {
     "type": "Parking Meter Repair",
-    "count": 19,
-    "previous": 22
+    "count": 20,
+    "previous": 23
    },
    {
     "type": "DMV - Drivers License/ID Issues",
@@ -3918,12 +3918,12 @@
    {
     "type": "Sidewalk Repair",
     "count": 16,
-    "previous": 21
+    "previous": 23
    },
    {
     "type": "Illegal Dumping",
     "count": 14,
-    "previous": 26
+    "previous": 27
    },
    {
     "type": "Tree Inspection",
@@ -3941,29 +3941,24 @@
     "previous": 9
    },
    {
+    "type": "Public Space Inspection",
+    "count": 9,
+    "previous": 21
+   },
+   {
     "type": "Dead Animal Collection",
     "count": 8,
     "previous": 14
    },
    {
-    "type": "Streetlight Repair Investigation",
-    "count": 8,
-    "previous": 3
-   },
-   {
-    "type": "Public Space Inspection",
-    "count": 8,
-    "previous": 23
-   },
-   {
     "type": "Traffic Safety Input",
     "count": 7,
-    "previous": 12
+    "previous": 10
    },
    {
-    "type": "DOB - Illegal Construction",
-    "count": 6,
-    "previous": 0
+    "type": "Streetlight Repair Investigation",
+    "count": 7,
+    "previous": 3
    },
    {
     "type": "Tree Removal",
@@ -3973,7 +3968,7 @@
    {
     "type": "Public Space Litter Can-Collection",
     "count": 6,
-    "previous": 2
+    "previous": 3
    },
    {
     "type": "Recycling Cart Delivery",
@@ -3991,9 +3986,14 @@
     "previous": 2
    },
    {
-    "type": "Bulk Collection",
-    "count": 3,
-    "previous": 19
+    "type": "DOB - Illegal Construction",
+    "count": 4,
+    "previous": 0
+   },
+   {
+    "type": "DMV - Online Processing Issues",
+    "count": 4,
+    "previous": 0
    },
    {
     "type": "Roadway Markings / Pylons",
@@ -4018,17 +4018,12 @@
    {
     "type": "DC Government Information",
     "count": 3,
-    "previous": 3
+    "previous": 4
    },
    {
     "type": "Scheduled Yard Waste",
     "count": 3,
-    "previous": 6
-   },
-   {
-    "type": "DMV - Online Processing Issues",
-    "count": 3,
-    "previous": 0
+    "previous": 5
    },
    {
     "type": "Recycling Collection - Missed",
@@ -4038,12 +4033,7 @@
    {
     "type": "Residential Parking Permit Violation",
     "count": 2,
-    "previous": 4
-   },
-   {
-    "type": "Public Space Litter Can Repair",
-    "count": 2,
-    "previous": 0
+    "previous": 3
    },
    {
     "type": "DMV - Vehicle Title Issues",
@@ -4076,9 +4066,19 @@
     "previous": 2
    },
    {
+    "type": "Bulk Collection",
+    "count": 2,
+    "previous": 18
+   },
+   {
     "type": "Trash Cart - Delivery",
     "count": 1,
-    "previous": 3
+    "previous": 2
+   },
+   {
+    "type": "Public Space Litter Can Repair",
+    "count": 1,
+    "previous": 0
    },
    {
     "type": "DMV - Vehicle Registration Issues",
@@ -4099,10 +4099,85 @@
     "type": "DOEE - General Air Quality Concerns",
     "count": 1,
     "previous": 0
+   },
+   {
+    "type": "Grass Mowing Services Missed (DGS)",
+    "count": 1,
+    "previous": 1
    }
   ],
-  "open": 167,
+  "open": 144,
   "recent": [
+   {
+    "type": "Tree Pruning",
+    "agency": "DDOT",
+    "added": "2026-11-03T00:26:47Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "500 block of 22ND STREET NW",
+    "lat": 38.897,
+    "lon": -77.049
+   },
+   {
+    "type": "Grass Mowing Services Missed (DGS)",
+    "agency": "DGS",
+    "added": "2026-11-03T00:25:50Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "22ND STREET NW AND VIRGINIA AVENUE NW",
+    "lat": 38.896,
+    "lon": -77.049
+   },
+   {
+    "type": "Tree Pruning",
+    "agency": "DDOT",
+    "added": "2026-11-03T00:24:30Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "E STREET NW AND 21ST STREET NW",
+    "lat": 38.896,
+    "lon": -77.047
+   },
+   {
+    "type": "Roadway Signs",
+    "agency": "DDOT",
+    "added": "2026-11-03T00:16:42Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "2100 block of E STREET NW",
+    "lat": 38.896,
+    "lon": -77.047
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "agency": "DOH",
+    "added": "2026-11-02T23:48:45Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1800 block of PENNSYLVANIA AVENUE NW",
+    "lat": 38.9,
+    "lon": -77.042
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T21:50:03Z",
+    "resolved": "2026-11-02T23:48:06Z",
+    "status": "Closed",
+    "block": "1300 block of 19TH STREET NW",
+    "lat": 38.907,
+    "lon": -77.044
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T21:05:15Z",
+    "resolved": "2026-11-02T21:42:05Z",
+    "status": "Closed",
+    "block": "1600 block of RHODE ISLAND AVENUE NW",
+    "lat": 38.907,
+    "lon": -77.037
+   },
    {
     "type": "Sidewalk Repair",
     "agency": "DDOT",
@@ -4137,8 +4212,8 @@
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "agency": "DDOT",
     "added": "2026-11-02T16:18:33Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-02T23:20:59Z",
+    "status": "Closed",
     "block": "19TH STREET NW AND K STREET NW",
     "lat": 38.903,
     "lon": -77.043
@@ -4197,8 +4272,8 @@
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "agency": "DDOT",
     "added": "2026-11-02T14:44:46Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-02T22:40:59Z",
+    "status": "Closed",
     "block": "19TH STREET NW AND I STREET NW",
     "lat": 38.901,
     "lon": -77.043
@@ -4247,8 +4322,8 @@
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "agency": "DDOT",
     "added": "2026-11-02T14:34:11Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-02T19:21:01Z",
+    "status": "Closed",
     "block": "23RD STREET NW AND G STREET NW",
     "lat": 38.898,
     "lon": -77.05
@@ -4277,8 +4352,8 @@
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "agency": "DDOT",
     "added": "2026-11-02T14:12:59Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-02T19:20:56Z",
+    "status": "Closed",
     "block": "2300 block of G STREET NW",
     "lat": 38.899,
     "lon": -77.051
@@ -4327,8 +4402,8 @@
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "agency": "DDOT",
     "added": "2026-11-02T14:03:56Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-02T20:00:54Z",
+    "status": "Closed",
     "block": "600 block of 17TH STREET NW",
     "lat": 38.898,
     "lon": -77.04
@@ -4357,8 +4432,8 @@
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "agency": "DDOT",
     "added": "2026-11-02T13:57:25Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-03T00:00:55Z",
+    "status": "Closed",
     "block": "1900 block of I STREET NW",
     "lat": 38.901,
     "lon": -77.045
@@ -4367,8 +4442,8 @@
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "agency": "DDOT",
     "added": "2026-11-02T13:56:33Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-02T22:40:54Z",
+    "status": "Closed",
     "block": "1900 block of I STREET NW",
     "lat": 38.901,
     "lon": -77.044
@@ -4532,87 +4607,17 @@
     "block": "1100 block of 20TH STREET NW",
     "lat": 38.904,
     "lon": -77.045
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-01T13:36:45Z",
-    "resolved": "2026-11-01T13:45:58Z",
-    "status": "Closed",
-    "block": "500 block of 22ND STREET NW",
-    "lat": 38.897,
-    "lon": -77.049
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-01T13:35:29Z",
-    "resolved": "2026-11-01T13:40:57Z",
-    "status": "Closed",
-    "block": "500 block of 22ND STREET NW",
-    "lat": 38.897,
-    "lon": -77.049
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-01T13:34:43Z",
-    "resolved": "2026-11-01T13:40:53Z",
-    "status": "Closed",
-    "block": "2100 block of F STREET NW",
-    "lat": 38.898,
-    "lon": -77.049
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-01T13:33:32Z",
-    "resolved": "2026-11-01T13:41:00Z",
-    "status": "Closed",
-    "block": "2100 block of F STREET NW",
-    "lat": 38.898,
-    "lon": -77.047
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-01T05:13:30Z",
-    "resolved": "2026-11-01T05:23:47Z",
-    "status": "Closed",
-    "block": "1800 block of JEFFERSON PLACE NW",
-    "lat": 38.906,
-    "lon": -77.043
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-01T04:15:42Z",
-    "resolved": "2026-11-01T04:27:41Z",
-    "status": "Closed",
-    "block": "2000 block of M STREET NW",
-    "lat": 38.905,
-    "lon": -77.046
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-01T01:29:21Z",
-    "resolved": "2026-11-01T02:48:06Z",
-    "status": "Closed",
-    "block": "2500 block of QUEEN ANNES LANE NW",
-    "lat": 38.902,
-    "lon": -77.054
    }
   ]
  },
  "crime": {
-  "total": 65,
-  "previous_total": 72,
+  "total": 64,
+  "previous_total": 73,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
-    "count": 38,
-    "previous": 41
+    "count": 37,
+    "previous": 42
    },
    {
     "offense": "THEFT F/AUTO",
@@ -4693,7 +4698,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -4855,7 +4860,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -5163,13 +5168,13 @@
     "type": "Parking Enforcement",
     "median_days": 0.06,
     "city_median_days": 0.05,
-    "closed_n": 1721
+    "closed_n": 1723
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "median_days": 0.27,
     "city_median_days": 0.22,
-    "closed_n": 455
+    "closed_n": 462
    },
    {
     "type": "Parking Meter Repair",
@@ -5180,7 +5185,7 @@
    {
     "type": "Sidewalk Repair",
     "median_days": 32.89,
-    "city_median_days": 46.2,
+    "city_median_days": 46.19,
     "closed_n": 163
    },
    {
@@ -5192,26 +5197,26 @@
    {
     "type": "Illegal Dumping",
     "median_days": 2.46,
-    "city_median_days": 4.03,
+    "city_median_days": 4.04,
     "closed_n": 147
    },
    {
     "type": "Bulk Collection",
-    "median_days": 5.84,
+    "median_days": 5.87,
     "city_median_days": 6.92,
-    "closed_n": 141
+    "closed_n": 140
    },
    {
     "type": "DC Health Rodent & Vector Control",
     "median_days": 1.12,
-    "city_median_days": 2.79,
+    "city_median_days": 2.8,
     "closed_n": 140
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -5385,7 +5390,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "archive_days": 180,
   "sources": [
    {
@@ -5565,6 +5570,13 @@
    }
   ],
   "items": [
+   {
+    "title": "Yo, Recessions is Turning 30!! \u201cResilience & Karaoke: DC\u2019s Recessions Bar Celebrates a Milestone\u201d \u2013 Two Day Party Later this month!!",
+    "url": "https://www.popville.com/2026/11/dc-recessions-turning-30-party/",
+    "source": "PoPville",
+    "published": "2026-11-02T20:25:48Z",
+    "first_seen": "2026-11-02T23:21:22Z"
+   },
    {
     "title": "Power outage hits Foggy Bottom, leaving campus, neighborhood buildings without electricity",
     "url": "https://gwhatchet.com/2026/11/02/power-outage-hits-foggy-bottom-leaving-campus-neighborhood-buildings-without-electricity/",
@@ -6368,7 +6380,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -6458,7 +6470,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -26208,7 +26220,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

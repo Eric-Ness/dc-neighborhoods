@@ -1,7 +1,7 @@
 {
  "slug": "clevelandpark",
  "name": "Cleveland Park",
- "generated_at": "2026-11-02T16:31:55Z",
+ "generated_at": "2026-11-02T23:21:22Z",
  "boundary": {
   "source": "Cleveland Park Historic District (DC Historic Preservation Office, Open Data DC). DC has no planning area named Cleveland Park.",
   "rings": [
@@ -2949,27 +2949,27 @@
   }
  ],
  "requests": {
-  "total": 246,
-  "previous_total": 295,
+  "total": 249,
+  "previous_total": 298,
   "by_type": [
+   {
+    "type": "Bulk Collection",
+    "count": 39,
+    "previous": 41
+   },
    {
     "type": "Scheduled Yard Waste",
     "count": 38,
-    "previous": 41
-   },
-   {
-    "type": "Bulk Collection",
-    "count": 38,
-    "previous": 41
+    "previous": 42
    },
    {
     "type": "Parking Enforcement",
-    "count": 25,
-    "previous": 41
+    "count": 24,
+    "previous": 42
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 14,
+    "count": 15,
     "previous": 11
    },
    {
@@ -2994,7 +2994,7 @@
    },
    {
     "type": "Residential Parking Permit Violation",
-    "count": 7,
+    "count": 8,
     "previous": 6
    },
    {
@@ -3088,6 +3088,11 @@
     "previous": 2
    },
    {
+    "type": "DC Government Information",
+    "count": 2,
+    "previous": 1
+   },
+   {
     "type": "DMV - Online Processing Issues",
     "count": 2,
     "previous": 0
@@ -3095,11 +3100,6 @@
    {
     "type": "Trash Cart Repair",
     "count": 2,
-    "previous": 0
-   },
-   {
-    "type": "DOEE - Report Construction Erosion Runoff",
-    "count": 1,
     "previous": 0
    },
    {
@@ -3116,11 +3116,6 @@
     "type": "DGS - Overflowing Recycling Can",
     "count": 1,
     "previous": 2
-   },
-   {
-    "type": "DC Government Information",
-    "count": 1,
-    "previous": 1
    },
    {
     "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
@@ -3171,16 +3166,81 @@
     "type": "Container Removal",
     "count": 1,
     "previous": 6
+   },
+   {
+    "type": "Recycling Collection - Missed",
+    "count": 1,
+    "previous": 1
    }
   ],
-  "open": 70,
+  "open": 73,
   "recent": [
    {
     "type": "Residential Parking Permit Violation",
     "agency": "DPW",
-    "added": "2026-11-02T16:30:31Z",
+    "added": "2026-11-02T21:02:30Z",
     "resolved": null,
     "status": "Open",
+    "block": "3000 block of SEDGWICK STREET NW",
+    "lat": 38.94,
+    "lon": -77.063
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T18:47:04Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3400 block of NEWARK STREET NW",
+    "lat": 38.935,
+    "lon": -77.067
+   },
+   {
+    "type": "DC Government Information",
+    "agency": "OUC",
+    "added": "2026-11-02T17:50:54Z",
+    "resolved": "2026-11-02T17:50:54Z",
+    "status": "Closed",
+    "block": "3600 block of CONNECTICUT AVENUE NW",
+    "lat": 38.938,
+    "lon": -77.058
+   },
+   {
+    "type": "Recycling Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-02T17:05:30Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3500 block of MACOMB STREET NW",
+    "lat": 38.933,
+    "lon": -77.069
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T17:04:12Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3500 block of MACOMB STREET NW",
+    "lat": 38.933,
+    "lon": -77.069
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "agency": "DOH",
+    "added": "2026-11-02T17:03:21Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3500 block of PORTER STREET NW",
+    "lat": 38.937,
+    "lon": -77.07
+   },
+   {
+    "type": "Residential Parking Permit Violation",
+    "agency": "DPW",
+    "added": "2026-11-02T16:30:31Z",
+    "resolved": "2026-11-02T17:53:56Z",
+    "status": "Closed",
     "block": "3200 block of WISCONSIN AVENUE NW",
     "lat": 38.933,
     "lon": -77.072
@@ -3614,77 +3674,17 @@
     "block": "3400 block of 33RD PLACE NW",
     "lat": 38.936,
     "lon": -77.065
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-26T20:33:36Z",
-    "resolved": "2026-10-30T12:33:33Z",
-    "status": "Closed",
-    "block": "3400 block of LOWELL STREET NW",
-    "lat": 38.932,
-    "lon": -77.068
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-26T18:41:44Z",
-    "resolved": "2026-10-26T18:43:09Z",
-    "status": "Closed",
-    "block": "3600 block of 34TH STREET NW",
-    "lat": 38.938,
-    "lon": -77.066
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-26T18:31:53Z",
-    "resolved": "2026-10-30T12:33:08Z",
-    "status": "Closed",
-    "block": "3600 block of ORDWAY STREET NW",
-    "lat": 38.936,
-    "lon": -77.072
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-10-26T18:25:40Z",
-    "resolved": "2026-10-27T12:30:26Z",
-    "status": "Closed",
-    "block": "3400 block of 34TH PLACE NW",
-    "lat": 38.935,
-    "lon": -77.068
-   },
-   {
-    "type": "Recycling Cart Delivery",
-    "agency": "DPW",
-    "added": "2026-10-26T17:37:28Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3300 block of ROSS PLACE NW",
-    "lat": 38.934,
-    "lon": -77.061
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-10-26T17:34:52Z",
-    "resolved": "2026-10-27T12:30:00Z",
-    "status": "Closed",
-    "block": "3400 block of NEWARK STREET NW",
-    "lat": 38.934,
-    "lon": -77.068
    }
   ]
  },
  "crime": {
   "total": 17,
-  "previous_total": 7,
+  "previous_total": 6,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
     "count": 14,
-    "previous": 5
+    "previous": 4
    },
    {
     "offense": "THEFT F/AUTO",
@@ -3715,7 +3715,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3965,7 +3965,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4160,7 +4160,7 @@
    {
     "type": "Scheduled Yard Waste",
     "median_days": 7.96,
-    "city_median_days": 9.77,
+    "city_median_days": 9.76,
     "closed_n": 433
    },
    {
@@ -4184,7 +4184,7 @@
    {
     "type": "Trash Collection - Missed",
     "median_days": 12.83,
-    "city_median_days": 4.17,
+    "city_median_days": 4.16,
     "closed_n": 178
    },
    {
@@ -4202,14 +4202,14 @@
    {
     "type": "Pothole",
     "median_days": 3.06,
-    "city_median_days": 3.61,
+    "city_median_days": 3.6,
     "closed_n": 69
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4364,7 +4364,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4507,7 +4507,7 @@
     "name": "Greater Greater Washington",
     "url": "https://ggwash.org/",
     "state": "ok",
-    "matched": 0,
+    "matched": 2,
     "fetched": 1
    },
    {
@@ -4533,6 +4533,20 @@
    }
   ],
   "items": [
+   {
+    "title": "Events: Building a better Ward 3 and RFK for all",
+    "url": "https://ggwash.org/view/105393/events-oct-6-oct-19-2026-ward-3-happy-hour",
+    "source": "Greater Greater Washington",
+    "published": "2026-11-02T18:30:00Z",
+    "first_seen": "2026-11-02T23:21:22Z"
+   },
+   {
+    "title": "Garden apartments hold fascinating local history, future promise",
+    "url": "https://ggwash.org/view/105381/garden-apartments-offer-fascinating-local-history-hold-future-promise",
+    "source": "Greater Greater Washington",
+    "published": "2026-11-02T17:03:00Z",
+    "first_seen": "2026-11-02T23:21:22Z"
+   },
    {
     "title": "\u201cDoes DC allow filming inside polling places? Some voters might be deterred\u2026\u201d",
     "url": "https://www.popville.com/2026/10/does-dc-allow-filming-inside-polling-places-some-voters-might-be-deterred/",
@@ -4769,7 +4783,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -4840,7 +4854,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -16177,7 +16191,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

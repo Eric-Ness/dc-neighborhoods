@@ -1,7 +1,7 @@
 {
  "slug": "chevychase",
  "name": "Chevy Chase",
- "generated_at": "2026-11-02T16:31:55Z",
+ "generated_at": "2026-11-02T23:21:22Z",
  "boundary": {
   "source": "ANC 3/4G, the Chevy Chase DC commission (all its single-member districts, Open Data DC). DC's CHEVY CHASE planning area stops at Connecticut Avenue; this overlaps the Tenleytown site a little.",
   "rings": [
@@ -13161,33 +13161,33 @@
   }
  ],
  "requests": {
-  "total": 986,
-  "previous_total": 1054,
+  "total": 994,
+  "previous_total": 1051,
   "by_type": [
    {
     "type": "Bulk Collection",
     "count": 263,
-    "previous": 241
+    "previous": 240
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 208,
-    "previous": 220
+    "count": 209,
+    "previous": 219
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 92,
-    "previous": 157
+    "count": 94,
+    "previous": 154
    },
    {
     "type": "Parking Enforcement",
-    "count": 48,
+    "count": 51,
     "previous": 36
    },
    {
     "type": "Recycling Collection - Missed",
-    "count": 43,
-    "previous": 54
+    "count": 44,
+    "previous": 53
    },
    {
     "type": "Roadway Signs",
@@ -13197,22 +13197,17 @@
    {
     "type": "Tree Pruning",
     "count": 17,
-    "previous": 11
+    "previous": 12
    },
    {
     "type": "Tree Inspection",
     "count": 16,
-    "previous": 34
+    "previous": 35
    },
    {
     "type": "Recycling Cart Delivery",
     "count": 15,
     "previous": 6
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "count": 14,
-    "previous": 10
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -13223,6 +13218,11 @@
     "type": "Pothole",
     "count": 13,
     "previous": 4
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "count": 13,
+    "previous": 9
    },
    {
     "type": "Supercan - Delivery",
@@ -13240,17 +13240,17 @@
     "previous": 28
    },
    {
+    "type": "Illegal Dumping",
+    "count": 10,
+    "previous": 5
+   },
+   {
     "type": "Container Removal",
     "count": 9,
-    "previous": 8
+    "previous": 9
    },
    {
-    "type": "Dead Animal Collection",
-    "count": 9,
-    "previous": 11
-   },
-   {
-    "type": "Illegal Dumping",
+    "type": "Sidewalk Repair",
     "count": 9,
     "previous": 5
    },
@@ -13265,9 +13265,9 @@
     "previous": 5
    },
    {
-    "type": "Sidewalk Repair",
+    "type": "Dead Animal Collection",
     "count": 8,
-    "previous": 5
+    "previous": 11
    },
    {
     "type": "Traffic Safety Input",
@@ -13282,7 +13282,7 @@
    {
     "type": "Streetlight Repair Investigation",
     "count": 7,
-    "previous": 3
+    "previous": 4
    },
    {
     "type": "DOB - Vacant Private Property Inspection",
@@ -13302,7 +13302,7 @@
    {
     "type": "DGS - Playground Repair",
     "count": 6,
-    "previous": 4
+    "previous": 3
    },
    {
     "type": "DMV - Vehicle Registration Issues",
@@ -13325,6 +13325,11 @@
     "previous": 2
    },
    {
+    "type": "Abandoned Vehicle - On Private Property",
+    "count": 4,
+    "previous": 3
+   },
+   {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 4,
     "previous": 6
@@ -13337,11 +13342,6 @@
    {
     "type": "Trash Cart - Delivery",
     "count": 4,
-    "previous": 3
-   },
-   {
-    "type": "Abandoned Vehicle - On Private Property",
-    "count": 3,
     "previous": 3
    },
    {
@@ -13460,8 +13460,138 @@
     "previous": 0
    }
   ],
-  "open": 234,
+  "open": 223,
   "recent": [
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T23:21:34Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2700 block of UNICORN LANE NW",
+    "lat": 38.974,
+    "lon": -77.054
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T22:23:11Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "6800 block of OREGON AVENUE NW",
+    "lat": 38.98,
+    "lon": -77.053
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T21:42:43Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "5500 block of 30TH PLACE NW",
+    "lat": 38.964,
+    "lon": -77.063
+   },
+   {
+    "type": "Container Removal",
+    "agency": "DPW",
+    "added": "2026-11-02T20:40:32Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "7100 block of WESTERN AVENUE NW",
+    "lat": 38.983,
+    "lon": -77.057
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-02T20:26:28Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "7100 block of WESTERN AVENUE NW",
+    "lat": 38.983,
+    "lon": -77.057
+   },
+   {
+    "type": "Recycling Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-02T19:54:10Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3300 block of MILITARY ROAD NW",
+    "lat": 38.961,
+    "lon": -77.067
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-02T19:45:25Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3000 block of BIRCH STREET NW",
+    "lat": 38.979,
+    "lon": -77.053
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T19:33:30Z",
+    "resolved": null,
+    "status": "Open (Duplicate)",
+    "block": "5300 block of 28TH STREET NW",
+    "lat": 38.96,
+    "lon": -77.058
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T19:32:45Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "5300 block of 28TH STREET NW",
+    "lat": 38.96,
+    "lon": -77.058
+   },
+   {
+    "type": "Sidewalk Repair",
+    "agency": "DDOT",
+    "added": "2026-11-02T19:27:25Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "6400 block of BARNABY STREET NW",
+    "lat": 38.974,
+    "lon": -77.064
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T19:26:23Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "6500 block of 32ND STREET NW",
+    "lat": 38.975,
+    "lon": -77.061
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T17:54:18Z",
+    "resolved": "2026-11-02T20:39:04Z",
+    "status": "Closed",
+    "block": "5300 block of CONNECTICUT AVENUE NW",
+    "lat": 38.959,
+    "lon": -77.072
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T17:42:32Z",
+    "resolved": "2026-11-02T18:42:11Z",
+    "status": "Closed",
+    "block": "3600 block of KANAWHA STREET NW",
+    "lat": 38.96,
+    "lon": -77.069
+   },
    {
     "type": "Trash Collection - Missed",
     "agency": "DPW",
@@ -13626,8 +13756,8 @@
     "type": "Pothole",
     "agency": "DDOT",
     "added": "2026-11-01T22:10:18Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-02T18:46:05Z",
+    "status": "Closed",
     "block": "3700 block of MCKINLEY STREET NW",
     "lat": 38.965,
     "lon": -77.075
@@ -13831,136 +13961,6 @@
     "block": "6300 block of 33RD STREET NW",
     "lat": 38.973,
     "lon": -77.067
-   },
-   {
-    "type": "Pothole",
-    "agency": "DDOT",
-    "added": "2026-10-30T22:28:25Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "3600 block of MILITARY ROAD NW",
-    "lat": 38.961,
-    "lon": -77.07
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-30T22:21:15Z",
-    "resolved": "2026-10-30T22:28:44Z",
-    "status": "Closed",
-    "block": "5400 block of 31ST STREET NW",
-    "lat": 38.961,
-    "lon": -77.062
-   },
-   {
-    "type": "Trash Cart - Delivery",
-    "agency": "DPW",
-    "added": "2026-10-30T21:52:21Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3400 block of MCKINLEY STREET NW",
-    "lat": 38.965,
-    "lon": -77.068
-   },
-   {
-    "type": "Recycling Cart Delivery",
-    "agency": "DPW",
-    "added": "2026-10-30T21:16:40Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3400 block of PATTERSON STREET NW",
-    "lat": 38.967,
-    "lon": -77.07
-   },
-   {
-    "type": "Public Space Inspection",
-    "agency": "DDOT",
-    "added": "2026-10-30T20:31:58Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "5300 block of 32ND STREET NW",
-    "lat": 38.959,
-    "lon": -77.065
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-30T20:16:41Z",
-    "resolved": "2026-10-30T22:54:05Z",
-    "status": "Closed",
-    "block": "5600 block of CONNECTICUT AVENUE NW",
-    "lat": 38.965,
-    "lon": -77.076
-   },
-   {
-    "type": "Trash Cart - Delivery",
-    "agency": "DPW",
-    "added": "2026-10-30T19:18:30Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "5500 block of UTAH AVENUE NW",
-    "lat": 38.965,
-    "lon": -77.056
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-30T19:17:58Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3800 block of MORRISON STREET NW",
-    "lat": 38.964,
-    "lon": -77.076
-   },
-   {
-    "type": "Trash Cart - Delivery",
-    "agency": "DPW",
-    "added": "2026-10-30T19:14:47Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "5700 block of UTAH AVENUE NW",
-    "lat": 38.966,
-    "lon": -77.059
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-30T19:04:45Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "6300 block of 31ST STREET NW",
-    "lat": 38.974,
-    "lon": -77.059
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-30T18:58:58Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3300 block of STUYVESANT PLACE NW",
-    "lat": 38.972,
-    "lon": -77.071
-   },
-   {
-    "type": "Tree Inspection",
-    "agency": "DDOT",
-    "added": "2026-10-30T18:28:06Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "5900 block of 31ST PLACE NW",
-    "lat": 38.968,
-    "lon": -77.063
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-30T18:18:12Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2800 block of MILITARY ROAD NW",
-    "lat": 38.961,
-    "lon": -77.058
    }
   ]
  },
@@ -14048,7 +14048,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -14352,7 +14352,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -14469,7 +14469,7 @@
   "trees": {
    "total": 7089,
    "species": 213,
-   "planted_5y": 1046,
+   "planted_5y": 1045,
    "empty_boxes": 122,
    "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (122). Not counted: 'Proposed' = planting scheduled (174), 'Conflict'/'Utility' = empty but blocked (242), 'Retired' = box removed (604). 'total' is boxes with status 'Plant' whose condition is not Dead.",
    "condition": {
@@ -14548,43 +14548,43 @@
     "type": "Bulk Collection",
     "median_days": 7.92,
     "city_median_days": 6.92,
-    "closed_n": 2242
+    "closed_n": 2255
    },
    {
     "type": "Trash Collection - Missed",
     "median_days": 2.84,
-    "city_median_days": 4.17,
+    "city_median_days": 4.16,
     "closed_n": 1769
    },
    {
     "type": "Scheduled Yard Waste",
-    "median_days": 9.01,
-    "city_median_days": 9.77,
-    "closed_n": 1722
+    "median_days": 9.0,
+    "city_median_days": 9.76,
+    "closed_n": 1720
    },
    {
     "type": "Recycling Collection - Missed",
-    "median_days": 3.18,
+    "median_days": 3.2,
     "city_median_days": 5.12,
-    "closed_n": 840
+    "closed_n": 842
    },
    {
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 307
+    "closed_n": 309
    },
    {
     "type": "Pothole",
-    "median_days": 5.37,
-    "city_median_days": 3.61,
-    "closed_n": 277
+    "median_days": 5.31,
+    "city_median_days": 3.6,
+    "closed_n": 279
    },
    {
     "type": "Tree Inspection",
     "median_days": 0.63,
     "city_median_days": 0.61,
-    "closed_n": 200
+    "closed_n": 201
    },
    {
     "type": "Snow and Ice Removal on Public Space",
@@ -14596,7 +14596,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -14758,7 +14758,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "archive_days": 180,
   "sources": [
    {
@@ -15133,7 +15133,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -15204,7 +15204,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -45948,7 +45948,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

@@ -1,7 +1,7 @@
 {
  "slug": "logancircle",
  "name": "Logan Circle",
- "generated_at": "2026-11-02T16:31:55Z",
+ "generated_at": "2026-11-02T23:21:22Z",
  "boundary": {
   "source": "ANC 2F, the Logan Circle commission (all its single-member districts, Open Data DC). DC's LOGAN CIRCLE/SHAW planning area also covers Shaw, which has its own site.",
   "rings": [
@@ -3453,6 +3453,19 @@
  },
  "permits": [
   {
+   "id": "E2700972",
+   "issued": "2026-10-29T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "1317 RHODE ISLAND AVE NW 202 20005",
+   "work": "",
+   "zoning": "RA-2",
+   "lat": 38.90939,
+   "lon": -77.03134,
+   "smd": "2F03"
+  },
+  {
    "id": "P2700932",
    "issued": "2026-10-29T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -3484,19 +3497,6 @@
    "group": "Electrical, plumbing & mechanical",
    "type": "SUPPLEMENTAL",
    "subtype": "MECHANICAL",
-   "address": "1317 RHODE ISLAND AVE NW 202 20005",
-   "work": "",
-   "zoning": "RA-2",
-   "lat": 38.90939,
-   "lon": -77.03134,
-   "smd": "2F03"
-  },
-  {
-   "id": "E2700972",
-   "issued": "2026-10-29T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
    "address": "1317 RHODE ISLAND AVE NW 202 20005",
    "work": "",
    "zoning": "RA-2",
@@ -4234,48 +4234,48 @@
   }
  ],
  "requests": {
-  "total": 1363,
-  "previous_total": 1434,
+  "total": 1386,
+  "previous_total": 1417,
   "by_type": [
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 329,
-    "previous": 240
+    "count": 332,
+    "previous": 241
    },
    {
     "type": "Parking Enforcement",
-    "count": 257,
-    "previous": 173
+    "count": 261,
+    "previous": 176
    },
    {
     "type": "Illegal Dumping",
-    "count": 77,
+    "count": 78,
     "previous": 51
    },
    {
     "type": "Bulk Collection",
-    "count": 73,
-    "previous": 43
+    "count": 75,
+    "previous": 42
    },
    {
     "type": "Public Space Litter Can-Collection",
-    "count": 58,
-    "previous": 50
+    "count": 65,
+    "previous": 49
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 55,
-    "previous": 66
+    "count": 53,
+    "previous": 67
    },
    {
     "type": "Graffiti Removal",
-    "count": 48,
-    "previous": 135
+    "count": 47,
+    "previous": 129
    },
    {
     "type": "Residential Parking Permit Violation",
-    "count": 47,
-    "previous": 39
+    "count": 45,
+    "previous": 37
    },
    {
     "type": "Trash Collection - Missed",
@@ -4284,17 +4284,17 @@
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 36,
+    "count": 39,
     "previous": 26
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 30,
-    "previous": 39
+    "count": 32,
+    "previous": 38
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 27,
+    "count": 26,
     "previous": 57
    },
    {
@@ -4303,14 +4303,14 @@
     "previous": 37
    },
    {
+    "type": "Sidewalk Repair",
+    "count": 22,
+    "previous": 22
+   },
+   {
     "type": "DMV - Vehicle Registration Issues",
     "count": 19,
     "previous": 10
-   },
-   {
-    "type": "Sidewalk Repair",
-    "count": 19,
-    "previous": 22
    },
    {
     "type": "Traffic Safety Input",
@@ -4320,27 +4320,27 @@
    {
     "type": "Container Removal",
     "count": 16,
-    "previous": 9
-   },
-   {
-    "type": "Out of State Parking Violation (ROSA)",
-    "count": 15,
-    "previous": 6
+    "previous": 8
    },
    {
     "type": "DMV - Drivers License/ID Issues",
-    "count": 14,
+    "count": 15,
     "previous": 18
    },
    {
     "type": "Dead Animal Collection",
-    "count": 13,
+    "count": 15,
     "previous": 40
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "count": 14,
+    "previous": 5
    },
    {
     "type": "Tree Inspection",
     "count": 12,
-    "previous": 39
+    "previous": 37
    },
    {
     "type": "Rat Replacement Containers",
@@ -4353,6 +4353,11 @@
     "previous": 0
    },
    {
+    "type": "Tree Pruning",
+    "count": 9,
+    "previous": 62
+   },
+   {
     "type": "Illegal Poster",
     "count": 8,
     "previous": 0
@@ -4363,11 +4368,6 @@
     "previous": 13
    },
    {
-    "type": "Tree Pruning",
-    "count": 8,
-    "previous": 67
-   },
-   {
     "type": "Pothole",
     "count": 8,
     "previous": 2
@@ -4375,7 +4375,7 @@
    {
     "type": "Public Space Inspection",
     "count": 8,
-    "previous": 5
+    "previous": 4
    },
    {
     "type": "OCTFME - Down Cable Wires",
@@ -4405,7 +4405,7 @@
    {
     "type": "Tree Planting",
     "count": 5,
-    "previous": 45
+    "previous": 44
    },
    {
     "type": "Roadway Repair",
@@ -4428,12 +4428,12 @@
     "previous": 5
    },
    {
-    "type": "Streetlight Repair Investigation",
-    "count": 2,
+    "type": "Emergency No-Parking Verification",
+    "count": 3,
     "previous": 2
    },
    {
-    "type": "Emergency No-Parking Verification",
+    "type": "Streetlight Repair Investigation",
     "count": 2,
     "previous": 2
    },
@@ -4498,8 +4498,188 @@
     "previous": 2
    }
   ],
-  "open": 222,
+  "open": 229,
   "recent": [
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T23:34:36Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1200 block of 13TH STREET NW",
+    "lat": 38.907,
+    "lon": -77.029
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T23:29:59Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1800 block of 14TH STREET NW",
+    "lat": 38.915,
+    "lon": -77.032
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T23:27:29Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of 14TH STREET NW",
+    "lat": 38.913,
+    "lon": -77.032
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T23:26:06Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of 14TH STREET NW",
+    "lat": 38.913,
+    "lon": -77.032
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T23:25:28Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1300 block of CORCORAN STREET NW",
+    "lat": 38.912,
+    "lon": -77.032
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T23:22:53Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1500 block of 14TH STREET NW",
+    "lat": 38.91,
+    "lon": -77.032
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T23:21:51Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1400 block of P STREET NW",
+    "lat": 38.91,
+    "lon": -77.033
+   },
+   {
+    "type": "Emergency No-Parking Verification",
+    "agency": "DPW",
+    "added": "2026-11-02T22:32:29Z",
+    "resolved": "2026-11-02T22:33:42Z",
+    "status": "Closed",
+    "block": "1400 block of RHODE ISLAND AVENUE NW",
+    "lat": 38.908,
+    "lon": -77.033
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T22:30:04Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "15TH STREET NW AND R STREET NW",
+    "lat": 38.913,
+    "lon": -77.035
+   },
+   {
+    "type": "Dead Animal Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T22:17:34Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1200 block of VERMONT AVENUE NW",
+    "lat": 38.907,
+    "lon": -77.032
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T20:53:30Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1400 block of Q STREET NW",
+    "lat": 38.911,
+    "lon": -77.034
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T20:01:44Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1400 block of 14TH STREET NW",
+    "lat": 38.909,
+    "lon": -77.032
+   },
+   {
+    "type": "Sidewalk Repair",
+    "agency": "DDOT",
+    "added": "2026-11-02T19:51:51Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "1100 block of P STREET NW",
+    "lat": 38.909,
+    "lon": -77.028
+   },
+   {
+    "type": "Sidewalk Repair",
+    "agency": "DDOT",
+    "added": "2026-11-02T18:49:45Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "1300 block of RIGGS STREET NW",
+    "lat": 38.913,
+    "lon": -77.031
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T17:51:39Z",
+    "resolved": "2026-11-02T18:37:17Z",
+    "status": "Closed",
+    "block": "1400 block of P STREET NW",
+    "lat": 38.909,
+    "lon": -77.032
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-02T17:51:11Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1500 block of KINGMAN PLACE NW",
+    "lat": 38.91,
+    "lon": -77.031
+   },
+   {
+    "type": "Dead Animal Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T17:50:03Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1500 block of KINGMAN PLACE NW",
+    "lat": 38.91,
+    "lon": -77.031
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T17:40:48Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1600 block of 15TH STREET NW",
+    "lat": 38.911,
+    "lon": -77.034
+   },
    {
     "type": "Tree Removal",
     "agency": "DDOT",
@@ -4774,8 +4954,8 @@
     "type": "Dead Animal Collection",
     "agency": "DPW",
     "added": "2026-10-31T23:40:08Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-02T19:43:27Z",
+    "status": "Closed",
     "block": "1100 block of 13TH STREET NW",
     "lat": 38.905,
     "lon": -77.029
@@ -4819,186 +4999,6 @@
     "block": "Unit block of LOGAN CIRCLE NW",
     "lat": 38.91,
     "lon": -77.031
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T17:12:48Z",
-    "resolved": "2026-10-31T17:25:16Z",
-    "status": "Closed",
-    "block": "1400 block of T STREET NW",
-    "lat": 38.916,
-    "lon": -77.033
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T17:12:48Z",
-    "resolved": "2026-10-31T17:25:16Z",
-    "status": "Closed",
-    "block": "1400 block of T STREET NW",
-    "lat": 38.916,
-    "lon": -77.033
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T16:42:49Z",
-    "resolved": "2026-10-31T17:17:11Z",
-    "status": "Closed",
-    "block": "1400 block of T STREET NW",
-    "lat": 38.916,
-    "lon": -77.033
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T15:24:17Z",
-    "resolved": "2026-10-31T18:20:55Z",
-    "status": "Closed",
-    "block": "1400 block of T STREET NW",
-    "lat": 38.916,
-    "lon": -77.033
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T14:44:54Z",
-    "resolved": "2026-10-31T15:38:22Z",
-    "status": "Closed",
-    "block": "1400 block of T STREET NW",
-    "lat": 38.916,
-    "lon": -77.033
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T14:39:48Z",
-    "resolved": "2026-10-31T16:21:15Z",
-    "status": "Closed",
-    "block": "1200 block of O STREET NW",
-    "lat": 38.909,
-    "lon": -77.029
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-10-31T14:29:12Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1500 block of 12TH STREET NW",
-    "lat": 38.91,
-    "lon": -77.028
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-10-31T14:23:34Z",
-    "resolved": "2026-10-31T14:30:53Z",
-    "status": "Closed",
-    "block": "1300 block of P STREET NW",
-    "lat": 38.91,
-    "lon": -77.031
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T14:07:41Z",
-    "resolved": "2026-10-31T16:53:52Z",
-    "status": "Closed",
-    "block": "1400 block of CORCORAN STREET NW",
-    "lat": 38.912,
-    "lon": -77.033
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T13:07:25Z",
-    "resolved": "2026-10-31T13:40:36Z",
-    "status": "Closed",
-    "block": "1500 block of 15TH STREET NW",
-    "lat": 38.911,
-    "lon": -77.034
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T13:07:25Z",
-    "resolved": "2026-10-31T13:40:36Z",
-    "status": "Closed",
-    "block": "1500 block of 15TH STREET NW",
-    "lat": 38.911,
-    "lon": -77.034
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T12:33:07Z",
-    "resolved": "2026-10-31T12:35:59Z",
-    "status": "Closed",
-    "block": "1300 block of R STREET NW",
-    "lat": 38.912,
-    "lon": -77.031
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T12:33:07Z",
-    "resolved": "2026-10-31T12:35:59Z",
-    "status": "Closed",
-    "block": "1300 block of R STREET NW",
-    "lat": 38.912,
-    "lon": -77.031
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T12:08:49Z",
-    "resolved": "2026-10-31T13:32:24Z",
-    "status": "Closed",
-    "block": "1200 block of 13TH STREET NW",
-    "lat": 38.907,
-    "lon": -77.029
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T12:08:49Z",
-    "resolved": "2026-10-31T13:32:24Z",
-    "status": "Closed",
-    "block": "1200 block of 13TH STREET NW",
-    "lat": 38.907,
-    "lon": -77.029
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T10:21:05Z",
-    "resolved": "2026-10-31T10:25:25Z",
-    "status": "Closed",
-    "block": "1900 block of 14TH STREET NW",
-    "lat": 38.916,
-    "lon": -77.032
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T10:21:05Z",
-    "resolved": "2026-10-31T10:25:25Z",
-    "status": "Closed",
-    "block": "1900 block of 14TH STREET NW",
-    "lat": 38.916,
-    "lon": -77.032
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T07:10:46Z",
-    "resolved": "2026-10-31T07:26:17Z",
-    "status": "Closed",
-    "block": "1600 block of 14TH STREET NW",
-    "lat": 38.911,
-    "lon": -77.032
    }
   ]
  },
@@ -5096,7 +5096,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -5418,7 +5418,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -5663,7 +5663,7 @@
   "trees": {
    "total": 1475,
    "species": 98,
-   "planted_5y": 177,
+   "planted_5y": 172,
    "empty_boxes": 16,
    "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (16). Not counted: 'Proposed' = planting scheduled (10), 'Conflict'/'Utility' = empty but blocked (9), 'Retired' = box removed (55). 'total' is boxes with status 'Plant' whose condition is not Dead.",
    "condition": {
@@ -5752,20 +5752,20 @@
    {
     "type": "Trash Collection - Missed",
     "median_days": 4.96,
-    "city_median_days": 4.17,
+    "city_median_days": 4.16,
     "closed_n": 575
    },
    {
     "type": "Bulk Collection",
     "median_days": 5.63,
     "city_median_days": 6.92,
-    "closed_n": 546
+    "closed_n": 545
    },
    {
     "type": "Graffiti Removal",
     "median_days": 3.96,
-    "city_median_days": 3.9,
-    "closed_n": 305
+    "city_median_days": 3.92,
+    "closed_n": 306
    },
    {
     "type": "Illegal Dumping",
@@ -5775,9 +5775,9 @@
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "median_days": 2.9,
-    "city_median_days": 2.79,
-    "closed_n": 274
+    "median_days": 2.92,
+    "city_median_days": 2.8,
+    "closed_n": 277
    },
    {
     "type": "Sanitation Enforcement",
@@ -5789,7 +5789,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -5934,7 +5934,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "archive_days": 180,
   "sources": [
    {
@@ -6418,7 +6418,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -6461,7 +6461,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -18685,7 +18685,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

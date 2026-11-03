@@ -1,7 +1,7 @@
 {
  "slug": "noma",
  "name": "NoMa",
- "generated_at": "2026-11-02T16:31:55Z",
+ "generated_at": "2026-11-02T23:21:22Z",
  "boundary": {
   "source": "NoMa Business Improvement District boundary (Open Data DC). DC has no planning area for NoMa.",
   "rings": [
@@ -596,38 +596,38 @@
   }
  ],
  "requests": {
-  "total": 874,
-  "previous_total": 856,
+  "total": 907,
+  "previous_total": 836,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 346,
-    "previous": 268
+    "count": 361,
+    "previous": 258
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 100,
+    "count": 106,
     "previous": 3
    },
    {
     "type": "DMV - Drivers License/ID Issues",
-    "count": 39,
+    "count": 40,
     "previous": 20
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 36,
-    "previous": 155
+    "count": 37,
+    "previous": 153
+   },
+   {
+    "type": "Illegal Dumping",
+    "count": 33,
+    "previous": 27
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
     "count": 32,
     "previous": 23
-   },
-   {
-    "type": "Illegal Dumping",
-    "count": 31,
-    "previous": 28
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
@@ -637,22 +637,22 @@
    {
     "type": "DC Government Information",
     "count": 23,
-    "previous": 28
+    "previous": 27
    },
    {
     "type": "Public Space Inspection",
-    "count": 19,
+    "count": 20,
     "previous": 8
    },
    {
     "type": "Roadway Signs",
-    "count": 18,
-    "previous": 13
+    "count": 20,
+    "previous": 12
    },
    {
     "type": "DC Health Rodent & Vector Control",
     "count": 17,
-    "previous": 25
+    "previous": 26
    },
    {
     "type": "Dead Animal Collection",
@@ -660,14 +660,14 @@
     "previous": 22
    },
    {
+    "type": "Streetlight Repair Investigation",
+    "count": 14,
+    "previous": 33
+   },
+   {
     "type": "DOEE - General Air Quality Concerns",
     "count": 14,
     "previous": 10
-   },
-   {
-    "type": "Streetlight Repair Investigation",
-    "count": 13,
-    "previous": 33
    },
    {
     "type": "Roadway Repair",
@@ -677,16 +677,16 @@
    {
     "type": "Bicycle Services",
     "count": 11,
-    "previous": 6
+    "previous": 7
    },
    {
     "type": "Sidewalk Repair",
     "count": 11,
-    "previous": 9
+    "previous": 10
    },
    {
     "type": "DC How Am I Driving?",
-    "count": 9,
+    "count": 10,
     "previous": 10
    },
    {
@@ -705,24 +705,24 @@
     "previous": 7
    },
    {
+    "type": "Tree Removal",
+    "count": 8,
+    "previous": 18
+   },
+   {
+    "type": "Parking Meter Repair",
+    "count": 8,
+    "previous": 1
+   },
+   {
     "type": "Illegal Poster",
     "count": 7,
     "previous": 0
    },
    {
-    "type": "Parking Meter Repair",
-    "count": 7,
-    "previous": 2
-   },
-   {
     "type": "Bus Stop Issues",
     "count": 7,
     "previous": 0
-   },
-   {
-    "type": "Tree Removal",
-    "count": 6,
-    "previous": 19
    },
    {
     "type": "Tree Pruning",
@@ -732,17 +732,17 @@
    {
     "type": "Residential Parking Permit Violation",
     "count": 4,
-    "previous": 5
+    "previous": 4
    },
    {
     "type": "Abandoned Bicycle",
     "count": 4,
-    "previous": 3
+    "previous": 2
    },
    {
     "type": "DMV - Online Processing Issues",
     "count": 4,
-    "previous": 3
+    "previous": 2
    },
    {
     "type": "Roadway Markings / Pylons",
@@ -767,7 +767,7 @@
    {
     "type": "DMV - Vehicle Registration Issues",
     "count": 3,
-    "previous": 2
+    "previous": 3
    },
    {
     "type": "DOB - Illegal Construction",
@@ -782,7 +782,7 @@
    {
     "type": "DMV - Copy of Ticket",
     "count": 2,
-    "previous": 2
+    "previous": 1
    },
    {
     "type": "Tree Inspection",
@@ -792,7 +792,7 @@
    {
     "type": "Pothole",
     "count": 2,
-    "previous": 5
+    "previous": 4
    },
    {
     "type": "OCTFME - Down Cable Wires",
@@ -805,8 +805,98 @@
     "previous": 0
    }
   ],
-  "open": 113,
+  "open": 121,
   "recent": [
+   {
+    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "agency": "DDOT",
+    "added": "2026-11-02T22:52:39Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "NEW YORK AVENUE NE AND FLORIDA AVENUE NE",
+    "lat": 38.909,
+    "lon": -77.005
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T21:08:13Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "200 block of L STREET NE",
+    "lat": 38.904,
+    "lon": -77.003
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-02T19:21:49Z",
+    "resolved": "2026-11-02T19:21:49Z",
+    "status": "Closed",
+    "block": "1000 block of 1ST STREET NE",
+    "lat": 38.903,
+    "lon": -77.005
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-02T19:21:32Z",
+    "resolved": "2026-11-02T19:21:32Z",
+    "status": "Closed",
+    "block": "Unit block of P STREET NE",
+    "lat": 38.91,
+    "lon": -77.008
+   },
+   {
+    "type": "Public Space Inspection",
+    "agency": "DDOT",
+    "added": "2026-11-02T19:07:57Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "200 block of FLORIDA AVENUE NE",
+    "lat": 38.908,
+    "lon": -77.002
+   },
+   {
+    "type": "Tree Removal",
+    "agency": "DDOT",
+    "added": "2026-11-02T18:58:57Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "1100 block of 1ST STREET NE",
+    "lat": 38.904,
+    "lon": -77.006
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T18:02:01Z",
+    "resolved": "2026-11-02T20:17:27Z",
+    "status": "Closed",
+    "block": "300 block of N STREET NE",
+    "lat": 38.907,
+    "lon": -77.001
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-02T17:33:57Z",
+    "resolved": "2026-11-02T17:33:57Z",
+    "status": "Closed",
+    "block": "1600 block of ECKINGTON PLACE NE",
+    "lat": 38.912,
+    "lon": -77.004
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-02T17:30:27Z",
+    "resolved": "2026-11-02T17:30:27Z",
+    "status": "Closed",
+    "block": "200 block of Q STREET NE",
+    "lat": 38.911,
+    "lon": -77.003
+   },
    {
     "type": "DMV - Online Processing Issues",
     "agency": "DMV",
@@ -1216,107 +1306,17 @@
     "block": "100 block of Q STREET NE",
     "lat": 38.911,
     "lon": -77.004
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-29T13:51:41Z",
-    "resolved": "2026-10-29T13:51:41Z",
-    "status": "Closed",
-    "block": "Unit block of M STREET NE",
-    "lat": 38.905,
-    "lon": -77.007
-   },
-   {
-    "type": "Residential Parking Permit Violation",
-    "agency": "DPW",
-    "added": "2026-10-29T13:22:04Z",
-    "resolved": "2026-10-29T15:13:19Z",
-    "status": "Closed",
-    "block": "200 block of FLORIDA AVENUE NE",
-    "lat": 38.909,
-    "lon": -77.003
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-29T13:06:22Z",
-    "resolved": "2026-10-29T13:10:23Z",
-    "status": "Closed",
-    "block": "300 block of N STREET NE",
-    "lat": 38.907,
-    "lon": -77.001
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-29T12:57:56Z",
-    "resolved": "2026-10-29T13:21:04Z",
-    "status": "Closed",
-    "block": "1200 block of 4TH STREET NE",
-    "lat": 38.906,
-    "lon": -77.001
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-29T12:36:06Z",
-    "resolved": "2026-10-29T12:36:06Z",
-    "status": "Closed",
-    "block": "200 block of Q STREET NE",
-    "lat": 38.911,
-    "lon": -77.003
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-29T12:29:16Z",
-    "resolved": "2026-10-29T12:29:16Z",
-    "status": "Closed",
-    "block": "100 block of Q STREET NE",
-    "lat": 38.911,
-    "lon": -77.004
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-29T08:10:24Z",
-    "resolved": "2026-10-29T12:00:07Z",
-    "status": "Closed",
-    "block": "200 block of FLORIDA AVENUE NE",
-    "lat": 38.909,
-    "lon": -77.003
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-29T07:55:17Z",
-    "resolved": "2026-10-29T12:00:15Z",
-    "status": "Closed",
-    "block": "200 block of FLORIDA AVENUE NE",
-    "lat": 38.909,
-    "lon": -77.003
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-29T05:37:05Z",
-    "resolved": "2026-10-29T06:35:37Z",
-    "status": "Closed",
-    "block": "100 block of Q STREET NE",
-    "lat": 38.911,
-    "lon": -77.004
    }
   ]
  },
  "crime": {
-  "total": 74,
+  "total": 72,
   "previous_total": 70,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
-    "count": 41,
-    "previous": 36
+    "count": 39,
+    "previous": 37
    },
    {
     "offense": "THEFT F/AUTO",
@@ -1341,7 +1341,7 @@
    {
     "offense": "ROBBERY",
     "count": 1,
-    "previous": 9
+    "previous": 8
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -1374,7 +1374,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -1554,7 +1554,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -1681,7 +1681,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 1635
+    "closed_n": 1636
    },
    {
     "type": "DC Government Information",
@@ -1704,7 +1704,7 @@
    {
     "type": "Roadway Signs",
     "median_days": 10.85,
-    "city_median_days": 6.99,
+    "city_median_days": 7.0,
     "closed_n": 119
    },
    {
@@ -1729,7 +1729,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -1899,7 +1899,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "archive_days": 180,
   "sources": [
    {
@@ -1981,7 +1981,7 @@
     "name": "PoPville",
     "url": "https://www.popville.com/",
     "state": "ok",
-    "matched": 4,
+    "matched": 1,
     "fetched": 3
    },
    {
@@ -2009,7 +2009,7 @@
     "name": "Greater Greater Washington",
     "url": "https://ggwash.org/",
     "state": "ok",
-    "matched": 1,
+    "matched": 0,
     "fetched": 1
    },
    {
@@ -2234,7 +2234,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -2304,7 +2304,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -11247,7 +11247,7 @@
     "trash_day": null,
     "recycling_day": null,
     "leaf_zone": "6A",
-    "leaf_done": false,
+    "leaf_done": true,
     "schools": {
      "elementary": "dcps_332",
      "middle": "dcps_332",
@@ -11290,7 +11290,7 @@
     "trash_day": null,
     "recycling_day": null,
     "leaf_zone": "6A",
-    "leaf_done": false,
+    "leaf_done": true,
     "schools": {
      "elementary": "dcps_332",
      "middle": "dcps_332",
@@ -11333,7 +11333,7 @@
     "trash_day": null,
     "recycling_day": null,
     "leaf_zone": "6A",
-    "leaf_done": false,
+    "leaf_done": true,
     "schools": {
      "elementary": "dcps_332",
      "middle": "dcps_332",
@@ -11376,7 +11376,7 @@
     "trash_day": null,
     "recycling_day": null,
     "leaf_zone": "6A",
-    "leaf_done": false,
+    "leaf_done": true,
     "schools": {
      "elementary": "dcps_332",
      "middle": "dcps_332",
@@ -11634,7 +11634,7 @@
     "trash_day": null,
     "recycling_day": null,
     "leaf_zone": "6A",
-    "leaf_done": false,
+    "leaf_done": true,
     "schools": {
      "elementary": "dcps_339",
      "middle": "dcps_428",
@@ -11677,7 +11677,7 @@
     "trash_day": null,
     "recycling_day": null,
     "leaf_zone": "6A",
-    "leaf_done": false,
+    "leaf_done": true,
     "schools": {
      "elementary": "dcps_332",
      "middle": "dcps_332",
@@ -11720,7 +11720,7 @@
     "trash_day": null,
     "recycling_day": null,
     "leaf_zone": "6A",
-    "leaf_done": false,
+    "leaf_done": true,
     "schools": {
      "elementary": "dcps_332",
      "middle": "dcps_332",
@@ -11978,7 +11978,7 @@
     "trash_day": "Monday/Thursday",
     "recycling_day": "Thursday",
     "leaf_zone": "6A",
-    "leaf_done": false,
+    "leaf_done": true,
     "schools": {
      "elementary": "dcps_339",
      "middle": "dcps_428",
@@ -12549,7 +12549,7 @@
     "trash_day": null,
     "recycling_day": "Tuesday",
     "leaf_zone": "6A",
-    "leaf_done": false,
+    "leaf_done": true,
     "schools": {
      "elementary": "dcps_332",
      "middle": "dcps_332",
@@ -12592,7 +12592,7 @@
     "trash_day": null,
     "recycling_day": "Tuesday",
     "leaf_zone": "6A",
-    "leaf_done": false,
+    "leaf_done": true,
     "schools": {
      "elementary": "dcps_332",
      "middle": "dcps_332",
@@ -12678,7 +12678,7 @@
     "trash_day": null,
     "recycling_day": null,
     "leaf_zone": "6A",
-    "leaf_done": false,
+    "leaf_done": true,
     "schools": {
      "elementary": "dcps_332",
      "middle": "dcps_332",
@@ -12721,7 +12721,7 @@
     "trash_day": null,
     "recycling_day": null,
     "leaf_zone": "6A",
-    "leaf_done": false,
+    "leaf_done": true,
     "schools": {
      "elementary": "dcps_332",
      "middle": "dcps_332",
@@ -12764,7 +12764,7 @@
     "trash_day": null,
     "recycling_day": null,
     "leaf_zone": "6A",
-    "leaf_done": false,
+    "leaf_done": true,
     "schools": {
      "elementary": "dcps_332",
      "middle": "dcps_332",
@@ -12850,7 +12850,7 @@
     "trash_day": null,
     "recycling_day": null,
     "leaf_zone": "6A",
-    "leaf_done": false,
+    "leaf_done": true,
     "schools": {
      "elementary": "dcps_332",
      "middle": "dcps_332",
@@ -12893,7 +12893,7 @@
     "trash_day": null,
     "recycling_day": null,
     "leaf_zone": "6A",
-    "leaf_done": false,
+    "leaf_done": true,
     "schools": {
      "elementary": "dcps_332",
      "middle": "dcps_332",
@@ -13022,7 +13022,7 @@
     "trash_day": null,
     "recycling_day": null,
     "leaf_zone": "6A",
-    "leaf_done": false,
+    "leaf_done": true,
     "schools": {
      "elementary": "dcps_332",
      "middle": "dcps_332",
@@ -13065,7 +13065,7 @@
     "trash_day": null,
     "recycling_day": null,
     "leaf_zone": "6A",
-    "leaf_done": false,
+    "leaf_done": true,
     "schools": {
      "elementary": "dcps_332",
      "middle": "dcps_332",
@@ -13460,7 +13460,7 @@
     "trash_day": null,
     "recycling_day": null,
     "leaf_zone": "6A",
-    "leaf_done": false,
+    "leaf_done": true,
     "schools": {
      "elementary": "dcps_332",
      "middle": "dcps_332",
@@ -13503,7 +13503,7 @@
     "trash_day": null,
     "recycling_day": null,
     "leaf_zone": "6A",
-    "leaf_done": false,
+    "leaf_done": true,
     "schools": {
      "elementary": "dcps_332",
      "middle": "dcps_332",
@@ -13656,7 +13656,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

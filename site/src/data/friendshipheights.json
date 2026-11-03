@@ -1,7 +1,7 @@
 {
  "slug": "friendshipheights",
  "name": "Friendship Heights",
- "generated_at": "2026-11-02T16:31:55Z",
+ "generated_at": "2026-11-02T23:21:22Z",
  "boundary": {
   "source": "ANC single-member districts 3E03 and 3E04, around the Friendship Heights Metro (Open Data DC). DC has no planning area for Friendship Heights; this overlaps the Tenleytown site.",
   "rings": [
@@ -2937,13 +2937,13 @@
   }
  ],
  "requests": {
-  "total": 461,
-  "previous_total": 538,
+  "total": 470,
+  "previous_total": 528,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
     "count": 85,
-    "previous": 67
+    "previous": 65
    },
    {
     "type": "Bulk Collection",
@@ -2952,23 +2952,28 @@
    },
    {
     "type": "Tree Pruning",
-    "count": 27,
+    "count": 29,
     "previous": 29
    },
    {
     "type": "Recycling Collection - Missed",
     "count": 25,
-    "previous": 7
+    "previous": 6
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 21,
-    "previous": 31
+    "count": 22,
+    "previous": 29
    },
    {
     "type": "Roadway Signs",
-    "count": 17,
+    "count": 18,
     "previous": 70
+   },
+   {
+    "type": "Streetlight Repair Investigation",
+    "count": 14,
+    "previous": 2
    },
    {
     "type": "Sanitation Enforcement",
@@ -2991,11 +2996,6 @@
     "previous": 29
    },
    {
-    "type": "Streetlight Repair Investigation",
-    "count": 13,
-    "previous": 2
-   },
-   {
     "type": "DOB - Vacant Private Property Inspection",
     "count": 12,
     "previous": 6
@@ -3007,7 +3007,7 @@
    },
    {
     "type": "Tree Planting",
-    "count": 10,
+    "count": 11,
     "previous": 28
    },
    {
@@ -3019,6 +3019,11 @@
     "type": "Tree Removal",
     "count": 9,
     "previous": 10
+   },
+   {
+    "type": "Sidewalk Repair",
+    "count": 8,
+    "previous": 2
    },
    {
     "type": "Illegal Dumping",
@@ -3034,11 +3039,6 @@
     "type": "Pothole",
     "count": 6,
     "previous": 7
-   },
-   {
-    "type": "Sidewalk Repair",
-    "count": 6,
-    "previous": 2
    },
    {
     "type": "DMV - Drivers License/ID Issues",
@@ -3063,7 +3063,7 @@
    {
     "type": "Container Removal",
     "count": 4,
-    "previous": 3
+    "previous": 2
    },
    {
     "type": "Supercan - Repair",
@@ -3073,7 +3073,7 @@
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 4,
-    "previous": 21
+    "previous": 20
    },
    {
     "type": "DMV - Online Processing Issues",
@@ -3083,7 +3083,12 @@
    {
     "type": "Missed Curbside Compost Collection",
     "count": 3,
-    "previous": 8
+    "previous": 6
+   },
+   {
+    "type": "Parking Meter Repair",
+    "count": 3,
+    "previous": 4
    },
    {
     "type": "Trash Cart - Delivery",
@@ -3109,11 +3114,6 @@
     "type": "Out of State Parking Violation (ROSA)",
     "count": 2,
     "previous": 3
-   },
-   {
-    "type": "Parking Meter Repair",
-    "count": 2,
-    "previous": 4
    },
    {
     "type": "Dead Animal Collection",
@@ -3156,8 +3156,48 @@
     "previous": 1
    }
   ],
-  "open": 124,
+  "open": 121,
   "recent": [
+   {
+    "type": "Parking Meter Repair",
+    "agency": "DDOT",
+    "added": "2026-11-02T20:44:31Z",
+    "resolved": "2026-11-02T20:50:57Z",
+    "status": "Closed",
+    "block": "4300 block of HARRISON STREET NW",
+    "lat": 38.957,
+    "lon": -77.085
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-02T19:52:35Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3900 block of INGOMAR STREET NW",
+    "lat": 38.958,
+    "lon": -77.079
+   },
+   {
+    "type": "Sidewalk Repair",
+    "agency": "DDOT",
+    "added": "2026-11-02T18:56:43Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "5400 block of WESTERN AVENUE NW",
+    "lat": 38.961,
+    "lon": -77.084
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T18:21:15Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4100 block of JENIFER STREET NW",
+    "lat": 38.959,
+    "lon": -77.081
+   },
    {
     "type": "Sanitation Enforcement",
     "agency": "DPW",
@@ -3502,8 +3542,8 @@
     "type": "Recycling Collection - Missed",
     "agency": "DPW",
     "added": "2026-10-29T13:13:28Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-02T20:11:23Z",
+    "status": "Closed",
     "block": "4100 block of GARRISON STREET NW",
     "lat": 38.956,
     "lon": -77.081
@@ -3617,46 +3657,6 @@
     "block": "5100 block of 41ST STREET NW",
     "lat": 38.956,
     "lon": -77.081
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-27T20:03:17Z",
-    "resolved": "2026-10-30T16:30:13Z",
-    "status": "Closed",
-    "block": "3900 block of INGOMAR STREET NW",
-    "lat": 38.958,
-    "lon": -77.077
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-27T19:58:59Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4300 block of FESSENDEN STREET NW",
-    "lat": 38.955,
-    "lon": -77.086
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-27T19:34:37Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3900 block of HUNTINGTON STREET NW",
-    "lat": 38.957,
-    "lon": -77.079
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "agency": "DPW",
-    "added": "2026-10-27T18:28:08Z",
-    "resolved": "2026-10-28T03:11:54Z",
-    "status": "Closed",
-    "block": "42ND STREET NW AND FESSENDEN STREET NW",
-    "lat": 38.955,
-    "lon": -77.082
    }
   ]
  },
@@ -3675,12 +3675,12 @@
     "previous": 0
    },
    {
-    "offense": "MOTOR VEHICLE THEFT",
+    "offense": "ROBBERY",
     "count": 1,
     "previous": 0
    },
    {
-    "offense": "ROBBERY",
+    "offense": "MOTOR VEHICLE THEFT",
     "count": 1,
     "previous": 0
    }
@@ -3709,7 +3709,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3932,7 +3932,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4037,7 +4037,7 @@
   "trees": {
    "total": 2206,
    "species": 159,
-   "planted_5y": 279,
+   "planted_5y": 276,
    "empty_boxes": 55,
    "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (55). Not counted: 'Proposed' = planting scheduled (15), 'Conflict'/'Utility' = empty but blocked (72), 'Retired' = box removed (90). 'total' is boxes with status 'Plant' whose condition is not Dead.",
    "condition": {
@@ -4121,20 +4121,20 @@
    {
     "type": "Scheduled Yard Waste",
     "median_days": 7.92,
-    "city_median_days": 9.77,
+    "city_median_days": 9.76,
     "closed_n": 521
    },
    {
     "type": "Trash Collection - Missed",
     "median_days": 7.75,
-    "city_median_days": 4.17,
+    "city_median_days": 4.16,
     "closed_n": 469
    },
    {
     "type": "Recycling Collection - Missed",
-    "median_days": 6.09,
+    "median_days": 6.08,
     "city_median_days": 5.12,
-    "closed_n": 333
+    "closed_n": 334
    },
    {
     "type": "Parking Enforcement",
@@ -4151,20 +4151,20 @@
    {
     "type": "Pothole",
     "median_days": 3.04,
-    "city_median_days": 3.61,
+    "city_median_days": 3.6,
     "closed_n": 100
    },
    {
     "type": "Roadway Signs",
     "median_days": 7.76,
-    "city_median_days": 6.99,
+    "city_median_days": 7.0,
     "closed_n": 92
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4310,7 +4310,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4579,7 +4579,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -4631,7 +4631,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -19188,7 +19188,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T16:31:55Z",
+  "generated_at": "2026-11-02T23:21:22Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
