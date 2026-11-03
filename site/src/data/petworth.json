@@ -1,7 +1,7 @@
 {
  "slug": "petworth",
  "name": "Petworth",
- "generated_at": "2026-11-02T23:21:22Z",
+ "generated_at": "2026-11-03T01:47:04Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1999,38 +1999,25 @@
    "lat": 38.9407,
    "lon": -77.02223,
    "smd": "4C06"
-  },
-  {
-   "id": "HO2700018",
-   "issued": "2026-10-04T04:00:00Z",
-   "group": "Home businesses",
-   "type": "HOME OCCUPATION",
-   "subtype": "NA",
-   "address": "4713 KANSAS AVE NW 20011",
-   "work": "",
-   "zoning": "R-3",
-   "lat": 38.94824,
-   "lon": -77.02088,
-   "smd": "4D06"
   }
  ],
  "requests": {
-  "total": 1156,
-  "previous_total": 1291,
+  "total": 1157,
+  "previous_total": 1287,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 218,
-    "previous": 236
+    "count": 215,
+    "previous": 240
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 151,
-    "previous": 146
+    "count": 148,
+    "previous": 147
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 109,
+    "count": 111,
     "previous": 86
    },
    {
@@ -2045,13 +2032,13 @@
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 53,
-    "previous": 53
+    "count": 55,
+    "previous": 54
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 39,
-    "previous": 42
+    "count": 40,
+    "previous": 40
    },
    {
     "type": "DOEE - LIHEAP",
@@ -2060,13 +2047,18 @@
    },
    {
     "type": "Dead Animal Collection",
-    "count": 30,
-    "previous": 20
+    "count": 29,
+    "previous": 19
    },
    {
     "type": "Container Removal",
-    "count": 23,
+    "count": 22,
     "previous": 44
+   },
+   {
+    "type": "Residential Parking Permit Violation",
+    "count": 22,
+    "previous": 27
    },
    {
     "type": "Public Space Litter Can-Collection",
@@ -2079,18 +2071,13 @@
     "previous": 19
    },
    {
-    "type": "Residential Parking Permit Violation",
-    "count": 21,
-    "previous": 27
-   },
-   {
     "type": "Tree Inspection",
     "count": 20,
-    "previous": 22
+    "previous": 20
    },
    {
     "type": "Supercan - Delivery",
-    "count": 19,
+    "count": 20,
     "previous": 32
    },
    {
@@ -2109,6 +2096,11 @@
     "previous": 1
    },
    {
+    "type": "DMV - Drivers License/ID Issues",
+    "count": 12,
+    "previous": 10
+   },
+   {
     "type": "Trash Cart - Delivery",
     "count": 12,
     "previous": 9
@@ -2117,11 +2109,6 @@
     "type": "Sidewalk Repair",
     "count": 12,
     "previous": 9
-   },
-   {
-    "type": "DMV - Drivers License/ID Issues",
-    "count": 11,
-    "previous": 10
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
@@ -2176,7 +2163,7 @@
    {
     "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
     "count": 7,
-    "previous": 8
+    "previous": 7
    },
    {
     "type": "DC Government Information",
@@ -2191,7 +2178,7 @@
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 6,
-    "previous": 8
+    "previous": 7
    },
    {
     "type": "DMV - Vehicle Registration Issues",
@@ -2236,7 +2223,7 @@
    {
     "type": "Tree Removal",
     "count": 2,
-    "previous": 8
+    "previous": 6
    },
    {
     "type": "Bicycle Services",
@@ -2247,6 +2234,11 @@
     "type": "DGS - Playground Repair",
     "count": 2,
     "previous": 6
+   },
+   {
+    "type": "DMV - Refunds - Tickets",
+    "count": 2,
+    "previous": 1
    },
    {
     "type": "Illegal Poster",
@@ -2274,11 +2266,6 @@
     "previous": 4
    },
    {
-    "type": "DMV - Refunds - Tickets",
-    "count": 1,
-    "previous": 1
-   },
-   {
     "type": "Abandoned Vehicle - On Private Property",
     "count": 1,
     "previous": 1
@@ -2304,8 +2291,18 @@
     "previous": 0
    }
   ],
-  "open": 240,
+  "open": 241,
   "recent": [
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "agency": "DOH",
+    "added": "2026-11-02T23:16:54Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "800 block of EMERSON STREET NW",
+    "lat": 38.95,
+    "lon": -77.024
+   },
    {
     "type": "Bulk Collection",
     "agency": "DPW",
@@ -2330,8 +2327,8 @@
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-11-02T21:45:50Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-02T23:51:05Z",
+    "status": "Closed",
     "block": "200 block of UPSHUR STREET NW",
     "lat": 38.942,
     "lon": -77.014
@@ -2795,22 +2792,12 @@
     "block": "4000 block of MARLBORO PLACE NW",
     "lat": 38.94,
     "lon": -77.016
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T23:02:38Z",
-    "resolved": "2026-11-01T01:12:04Z",
-    "status": "Closed",
-    "block": "4000 block of MARLBORO PLACE NW",
-    "lat": 38.941,
-    "lon": -77.016
    }
   ]
  },
  "crime": {
-  "total": 53,
-  "previous_total": 36,
+  "total": 52,
+  "previous_total": 37,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
@@ -2839,8 +2826,8 @@
    },
    {
     "offense": "HOMICIDE",
-    "count": 1,
-    "previous": 0
+    "count": 0,
+    "previous": 1
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -2891,7 +2878,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2906,7 +2893,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Petworth through OTR assessment neighborhood \"Petworth\" (all sub-areas) in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Petworth boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-02): 61% of the 6,430 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 93% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Petworth through OTR assessment neighborhood \"Petworth\" (all sub-areas) in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Petworth boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-03): 61% of the 6,430 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 93% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -2919,7 +2906,7 @@
    "area_parcels": 6430,
    "area_share_inside": 0.608,
    "boundary_share_in_area": 0.93,
-   "measured": "2026-11-02"
+   "measured": "2026-11-03"
   },
   "primary": "house",
   "house": {
@@ -3196,20 +3183,11 @@
     "beds": 3,
     "sqft": 1488,
     "assessed": 638470
-   },
-   {
-    "address": "415 Varnum St NW # 2",
-    "date": "2026-09-03",
-    "price": 645000,
-    "kind": "condo",
-    "beds": null,
-    "sqft": null,
-    "assessed": 594670
    }
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3233,7 +3211,7 @@
    "starting_next_7d": 17,
    "reserved_ft": 15268,
    "long_running_90d": 39,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -3499,7 +3477,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.05,
     "city_median_days": 0.05,
-    "closed_n": 969
+    "closed_n": 970
    },
    {
     "type": "Recycling Collection - Missed",
@@ -3510,7 +3488,7 @@
    {
     "type": "Illegal Dumping",
     "median_days": 3.93,
-    "city_median_days": 4.03,
+    "city_median_days": 4.04,
     "closed_n": 714
    },
    {
@@ -3529,7 +3507,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3694,7 +3672,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4021,7 +3999,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -4115,7 +4093,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -26278,7 +26256,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

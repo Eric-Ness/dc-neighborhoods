@@ -1,7 +1,7 @@
 {
  "slug": "navyyard",
  "name": "Navy Yard",
- "generated_at": "2026-11-02T23:21:22Z",
+ "generated_at": "2026-11-03T01:47:04Z",
  "boundary": {
   "source": "Navy Yard (Capitol Riverfront) Business Improvement District boundary (Open Data DC). DC's planning area here is SW/Waterfront.",
   "rings": [
@@ -6948,13 +6948,13 @@
   }
  ],
  "requests": {
-  "total": 1209,
-  "previous_total": 1282,
+  "total": 1210,
+  "previous_total": 1285,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 584,
-    "previous": 782
+    "count": 586,
+    "previous": 786
    },
    {
     "type": "Bulk Collection",
@@ -6962,18 +6962,18 @@
     "previous": 80
    },
    {
+    "type": "DOEE - LIHEAP",
+    "count": 64,
+    "previous": 11
+   },
+   {
     "type": "Streetlight Repair Investigation",
     "count": 63,
     "previous": 16
    },
    {
-    "type": "DOEE - LIHEAP",
-    "count": 63,
-    "previous": 11
-   },
-   {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 47,
+    "count": 46,
     "previous": 8
    },
    {
@@ -6983,13 +6983,13 @@
    },
    {
     "type": "DMV - Drivers License/ID Issues",
-    "count": 33,
+    "count": 34,
     "previous": 49
    },
    {
     "type": "Roadway Signs",
-    "count": 30,
-    "previous": 20
+    "count": 31,
+    "previous": 19
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -7002,14 +7002,14 @@
     "previous": 10
    },
    {
-    "type": "Residential Parking Permit Violation",
-    "count": 21,
-    "previous": 23
-   },
-   {
     "type": "Sidewalk Repair",
     "count": 20,
     "previous": 7
+   },
+   {
+    "type": "Residential Parking Permit Violation",
+    "count": 20,
+    "previous": 23
    },
    {
     "type": "DC Government Information",
@@ -7018,7 +7018,7 @@
    },
    {
     "type": "Container Removal",
-    "count": 16,
+    "count": 18,
     "previous": 7
    },
    {
@@ -7032,14 +7032,14 @@
     "previous": 9
    },
    {
-    "type": "Abandoned Vehicle - On Public Property",
-    "count": 15,
-    "previous": 31
-   },
-   {
     "type": "Graffiti Removal",
     "count": 12,
     "previous": 3
+   },
+   {
+    "type": "Abandoned Vehicle - On Public Property",
+    "count": 12,
+    "previous": 31
    },
    {
     "type": "Trash Collection - Missed",
@@ -7048,7 +7048,7 @@
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 9,
+    "count": 8,
     "previous": 15
    },
    {
@@ -7087,14 +7087,19 @@
     "previous": 5
    },
    {
-    "type": "Recycling Cart Delivery",
-    "count": 5,
-    "previous": 10
-   },
-   {
     "type": "DC How Am I Driving?",
     "count": 4,
     "previous": 6
+   },
+   {
+    "type": "DOB - Illegal Construction",
+    "count": 4,
+    "previous": 0
+   },
+   {
+    "type": "Recycling Cart Delivery",
+    "count": 4,
+    "previous": 10
    },
    {
     "type": "Roadway Repair",
@@ -7113,11 +7118,6 @@
    },
    {
     "type": "DMV - Forms, Applications, and Manuals Request",
-    "count": 3,
-    "previous": 0
-   },
-   {
-    "type": "DOB - Illegal Construction",
     "count": 3,
     "previous": 0
    },
@@ -7167,8 +7167,18 @@
     "previous": 4
    }
   ],
-  "open": 173,
+  "open": 176,
   "recent": [
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-03T00:16:07Z",
+    "resolved": "2026-11-03T01:27:05Z",
+    "status": "Closed",
+    "block": "800 block of NEW JERSEY AVENUE SE",
+    "lat": 38.88,
+    "lon": -77.006
+   },
    {
     "type": "Bulk Collection",
     "agency": "DPW",
@@ -7658,16 +7668,6 @@
     "block": "1100 block of 5TH STREET SE",
     "lat": 38.877,
     "lon": -76.999
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-10-30T11:32:40Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "300 block of L STREET SE",
-    "lat": 38.878,
-    "lon": -77.002
    }
   ]
  },
@@ -7691,24 +7691,24 @@
     "previous": 2
    },
    {
-    "offense": "MOTOR VEHICLE THEFT",
-    "count": 2,
-    "previous": 6
-   },
-   {
     "offense": "BURGLARY",
     "count": 2,
     "previous": 2
    },
    {
-    "offense": "SEX ABUSE",
-    "count": 0,
-    "previous": 1
+    "offense": "MOTOR VEHICLE THEFT",
+    "count": 2,
+    "previous": 6
    },
    {
     "offense": "ROBBERY",
     "count": 0,
     "previous": 3
+   },
+   {
+    "offense": "SEX ABUSE",
+    "count": 0,
+    "previous": 1
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -7765,7 +7765,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -7780,7 +7780,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Navy Yard through OTR assessment sub-areas Old City 1 E and Washington Navy Yard in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Navy Yard boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-02): 86% of the 1,330 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Navy Yard through OTR assessment sub-areas Old City 1 E and Washington Navy Yard in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Navy Yard boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-03): 86% of the 1,330 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -7797,7 +7797,7 @@
    "area_parcels": 1330,
    "area_share_inside": 0.857,
    "boundary_share_in_area": 1.0,
-   "measured": "2026-11-02"
+   "measured": "2026-11-03"
   },
   "primary": "all",
   "all": {
@@ -7949,7 +7949,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -7969,15 +7969,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 64,
-   "starting_next_7d": 10,
-   "reserved_ft": 7942,
+   "active_this_week": 65,
+   "starting_next_7d": 11,
+   "reserved_ft": 8074,
    "long_running_90d": 11,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Construction staging",
-     "count": 20
+     "count": 21
     },
     {
      "type": "Lead pipe replacement",
@@ -8072,6 +8072,14 @@
      "end": "2026-11-07",
      "ft": 88,
      "hours": "7 am\u201311:59 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "1000 block of 7th Street SE",
+     "start": "2026-11-10",
+     "end": "2026-12-31",
+     "ft": 132,
+     "hours": "7 am\u20137 pm"
     }
    ]
   },
@@ -8156,7 +8164,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 2172
+    "closed_n": 2173
    },
    {
     "type": "DC Government Information",
@@ -8197,14 +8205,14 @@
    {
     "type": "Illegal Dumping",
     "median_days": 3.92,
-    "city_median_days": 4.03,
+    "city_median_days": 4.04,
     "closed_n": 68
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -8344,7 +8352,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "archive_days": 180,
   "sources": [
    {
@@ -8894,7 +8902,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -8980,7 +8988,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -31878,7 +31886,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

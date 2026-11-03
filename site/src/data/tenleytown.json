@@ -1,7 +1,7 @@
 {
  "slug": "tenleytown",
  "name": "Tenleytown",
- "generated_at": "2026-11-02T23:21:22Z",
+ "generated_at": "2026-11-03T01:47:04Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -2743,27 +2743,27 @@
   }
  ],
  "requests": {
-  "total": 1739,
-  "previous_total": 2211,
+  "total": 1746,
+  "previous_total": 2205,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
-    "count": 373,
-    "previous": 353
+    "count": 377,
+    "previous": 352
    },
    {
     "type": "Bulk Collection",
     "count": 357,
-    "previous": 351
+    "previous": 352
    },
    {
     "type": "Roadway Signs",
-    "count": 108,
+    "count": 109,
     "previous": 207
    },
    {
     "type": "Parking Enforcement",
-    "count": 98,
+    "count": 99,
     "previous": 54
    },
    {
@@ -2779,7 +2779,7 @@
    {
     "type": "Recycling Collection - Missed",
     "count": 44,
-    "previous": 77
+    "previous": 75
    },
    {
     "type": "Residential Parking Permit Violation",
@@ -2794,7 +2794,12 @@
    {
     "type": "Tree Planting",
     "count": 37,
-    "previous": 124
+    "previous": 123
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "count": 36,
+    "previous": 33
    },
    {
     "type": "Graffiti Removal",
@@ -2802,13 +2807,8 @@
     "previous": 63
    },
    {
-    "type": "DC Health Rodent & Vector Control",
-    "count": 34,
-    "previous": 33
-   },
-   {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 33,
+    "count": 34,
     "previous": 11
    },
    {
@@ -2819,7 +2819,7 @@
    {
     "type": "Tree Removal",
     "count": 23,
-    "previous": 45
+    "previous": 44
    },
    {
     "type": "Container Removal",
@@ -2872,14 +2872,14 @@
     "previous": 18
    },
    {
-    "type": "Traffic Safety Input",
-    "count": 13,
-    "previous": 9
-   },
-   {
     "type": "Public Space Litter Can-Collection",
     "count": 12,
     "previous": 2
+   },
+   {
+    "type": "Traffic Safety Input",
+    "count": 12,
+    "previous": 9
    },
    {
     "type": "DMV - Drivers License/ID Issues",
@@ -2949,12 +2949,12 @@
    {
     "type": "Abandoned Vehicle - On Public Property",
     "count": 5,
-    "previous": 9
+    "previous": 8
    },
    {
     "type": "Illegal Poster",
     "count": 5,
-    "previous": 8
+    "previous": 7
    },
    {
     "type": "DMV - Forms, Applications, and Manuals Request",
@@ -2987,11 +2987,6 @@
     "previous": 3
    },
    {
-    "type": "Alley Repair",
-    "count": 3,
-    "previous": 3
-   },
-   {
     "type": "DMV - Driver and Vehicle Services Refund",
     "count": 3,
     "previous": 1
@@ -3015,6 +3010,11 @@
     "type": "Pet Waste Complaint",
     "count": 2,
     "previous": 0
+   },
+   {
+    "type": "Alley Repair",
+    "count": 2,
+    "previous": 3
    },
    {
     "type": "Public Space Litter Can Installation",
@@ -3689,7 +3689,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3704,7 +3704,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Tenleytown through OTR assessment neighborhoods \"American University\" (all), \"Chevy Chase\" sub-area A, \"North Cleveland Park\" and \"Wakefield\" in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Tenleytown boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-02): 98% of the 6,119 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Tenleytown through OTR assessment neighborhoods \"American University\" (all), \"Chevy Chase\" sub-area A, \"North Cleveland Park\" and \"Wakefield\" in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Tenleytown boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-03): 98% of the 6,119 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -3729,7 +3729,7 @@
    "area_parcels": 6119,
    "area_share_inside": 0.978,
    "boundary_share_in_area": 1.0,
-   "measured": "2026-11-02"
+   "measured": "2026-11-03"
   },
   "primary": "house",
   "house": {
@@ -3746,9 +3746,9 @@
   },
   "last_60d": {
    "median": 1400000,
-   "count": 17,
-   "median_ppsf": 801,
-   "ppsf_count": 17
+   "count": 15,
+   "median_ppsf": 754,
+   "ppsf_count": 15
   },
   "above_assessment_12mo": {
    "n": 125,
@@ -4006,29 +4006,11 @@
     "beds": 5,
     "sqft": 1998,
     "assessed": 1428440
-   },
-   {
-    "address": "4631 49th St NW",
-    "date": "2026-09-03",
-    "price": 3450000,
-    "kind": "house",
-    "beds": 6,
-    "sqft": 3710,
-    "assessed": 1146340
-   },
-   {
-    "address": "4501 Garrison St NW",
-    "date": "2026-09-03",
-    "price": 1300000,
-    "kind": "house",
-    "beds": 3,
-    "sqft": 1572,
-    "assessed": 1128030
    }
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4048,11 +4030,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 165,
-   "starting_next_7d": 27,
-   "reserved_ft": 21890,
-   "long_running_90d": 45,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
+   "active_this_week": 167,
+   "starting_next_7d": 29,
+   "reserved_ft": 22066,
+   "long_running_90d": 46,
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -4064,11 +4046,11 @@
     },
     {
      "type": "Construction staging",
-     "count": 66
+     "count": 67
     },
     {
      "type": "Cranes",
-     "count": 1
+     "count": 2
     },
     {
      "type": "Lead pipe replacement",
@@ -4299,6 +4281,22 @@
      "end": "2026-11-13",
      "ft": 132,
      "hours": "8 am\u20133 pm"
+    },
+    {
+     "type": "Cranes",
+     "block": "3900 block of Huntington Street NW",
+     "start": "2026-11-10",
+     "end": "2026-11-10",
+     "ft": 176,
+     "hours": "8 am\u20134 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "3900 block of Warren Street NW",
+     "start": "2026-11-10",
+     "end": "2027-05-08",
+     "ft": 0,
+     "hours": "9:30 am\u20133:30 pm"
     }
    ]
   },
@@ -4419,7 +4417,7 @@
    {
     "type": "Pothole",
     "median_days": 4.19,
-    "city_median_days": 3.6,
+    "city_median_days": 3.61,
     "closed_n": 350
    },
    {
@@ -4432,7 +4430,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4591,7 +4589,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "archive_days": 180,
   "sources": [
    {
@@ -5097,7 +5095,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -5237,7 +5235,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -47245,7 +47243,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

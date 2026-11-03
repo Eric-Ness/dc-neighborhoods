@@ -1,7 +1,7 @@
 {
  "slug": "gloverpark",
  "name": "Glover Park",
- "generated_at": "2026-11-02T23:21:22Z",
+ "generated_at": "2026-11-03T01:47:04Z",
  "boundary": {
   "source": "ANC 3B, the Glover Park commission (all its single-member districts, Open Data DC). DC has no planning area named Glover Park.",
   "rings": [
@@ -7853,8 +7853,8 @@
   }
  ],
  "requests": {
-  "total": 511,
-  "previous_total": 405,
+  "total": 512,
+  "previous_total": 404,
   "by_type": [
    {
     "type": "Bulk Collection",
@@ -7887,14 +7887,14 @@
     "previous": 28
    },
    {
+    "type": "DMV - Vehicle Registration Issues",
+    "count": 15,
+    "previous": 7
+   },
+   {
     "type": "DMV - Drivers License/ID Issues",
     "count": 14,
     "previous": 9
-   },
-   {
-    "type": "DMV - Vehicle Registration Issues",
-    "count": 14,
-    "previous": 7
    },
    {
     "type": "Illegal Dumping",
@@ -7929,7 +7929,7 @@
    {
     "type": "Tree Inspection",
     "count": 9,
-    "previous": 10
+    "previous": 9
    },
    {
     "type": "Supercan - Repair",
@@ -8654,7 +8654,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -8669,7 +8669,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Glover Park through OTR assessment neighborhoods Glover Park and Observatory Circle and sub-area Wesley Heights B in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Glover Park boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-02): 85% of the 5,031 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Glover Park through OTR assessment neighborhoods Glover Park and Observatory Circle and sub-area Wesley Heights B in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Glover Park boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-03): 85% of the 5,031 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -8690,7 +8690,7 @@
    "area_parcels": 5031,
    "area_share_inside": 0.846,
    "boundary_share_in_area": 1.0,
-   "measured": "2026-11-02"
+   "measured": "2026-11-03"
   },
   "primary": "house",
   "house": {
@@ -8940,20 +8940,11 @@
     "beds": null,
     "sqft": null,
     "assessed": 259800
-   },
-   {
-    "address": "2320 Wisconsin Ave NW # 216",
-    "date": "2026-09-03",
-    "price": 465000,
-    "kind": "condo",
-    "beds": null,
-    "sqft": null,
-    "assessed": 400450
    }
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -8977,7 +8968,7 @@
    "starting_next_7d": 7,
    "reserved_ft": 2310,
    "long_running_90d": 8,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -9186,14 +9177,14 @@
    {
     "type": "Illegal Dumping",
     "median_days": 4.42,
-    "city_median_days": 4.03,
+    "city_median_days": 4.04,
     "closed_n": 90
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -9335,7 +9326,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "archive_days": 180,
   "sources": [
    {
@@ -9598,7 +9589,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -9653,7 +9644,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -24169,7 +24160,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

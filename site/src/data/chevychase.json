@@ -1,7 +1,7 @@
 {
  "slug": "chevychase",
  "name": "Chevy Chase",
- "generated_at": "2026-11-02T23:21:22Z",
+ "generated_at": "2026-11-03T01:47:04Z",
  "boundary": {
   "source": "ANC 3/4G, the Chevy Chase DC commission (all its single-member districts, Open Data DC). DC's CHEVY CHASE planning area stops at Connecticut Avenue; this overlaps the Tenleytown site a little.",
   "rings": [
@@ -13161,18 +13161,18 @@
   }
  ],
  "requests": {
-  "total": 994,
-  "previous_total": 1051,
+  "total": 995,
+  "previous_total": 1050,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 263,
+    "count": 264,
     "previous": 240
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 209,
-    "previous": 219
+    "count": 210,
+    "previous": 217
    },
    {
     "type": "Trash Collection - Missed",
@@ -13192,7 +13192,7 @@
    {
     "type": "Roadway Signs",
     "count": 25,
-    "previous": 9
+    "previous": 10
    },
    {
     "type": "Tree Pruning",
@@ -13210,11 +13210,6 @@
     "previous": 6
    },
    {
-    "type": "DC Health Rodent & Vector Control",
-    "count": 13,
-    "previous": 14
-   },
-   {
     "type": "Pothole",
     "count": 13,
     "previous": 4
@@ -13223,6 +13218,11 @@
     "type": "Dockless Vehicle Parking Complaint",
     "count": 13,
     "previous": 9
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "count": 12,
+    "previous": 14
    },
    {
     "type": "Supercan - Delivery",
@@ -13463,11 +13463,21 @@
   "open": 223,
   "recent": [
    {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T23:48:42Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2800 block of RITTENHOUSE STREET NW",
+    "lat": 38.97,
+    "lon": -77.059
+   },
+   {
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-11-02T23:21:34Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-03T00:45:05Z",
+    "status": "Closed",
     "block": "2700 block of UNICORN LANE NW",
     "lat": 38.974,
     "lon": -77.054
@@ -13951,16 +13961,6 @@
     "block": "2700 block of UNICORN LANE NW",
     "lat": 38.975,
     "lon": -77.054
-   },
-   {
-    "type": "Abandoned Vehicle - On Public Property",
-    "agency": "DPW",
-    "added": "2026-10-31T13:05:21Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "6300 block of 33RD STREET NW",
-    "lat": 38.973,
-    "lon": -77.067
    }
   ]
  },
@@ -13984,14 +13984,14 @@
     "previous": 0
    },
    {
-    "offense": "ASSAULT W/DANGEROUS WEAPON",
-    "count": 0,
-    "previous": 1
-   },
-   {
     "offense": "MOTOR VEHICLE THEFT",
     "count": 0,
     "previous": 6
+   },
+   {
+    "offense": "ASSAULT W/DANGEROUS WEAPON",
+    "count": 0,
+    "previous": 1
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -14048,7 +14048,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -14063,7 +14063,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Chevy Chase through OTR assessment neighborhoods \"Chevy Chase\" (all sub-areas) and \"Hawthorne\" in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Chevy Chase boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-02): 80% of the 5,679 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Chevy Chase through OTR assessment neighborhoods \"Chevy Chase\" (all sub-areas) and \"Hawthorne\" in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Chevy Chase boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-03): 80% of the 5,679 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -14080,7 +14080,7 @@
    "area_parcels": 5679,
    "area_share_inside": 0.801,
    "boundary_share_in_area": 1.0,
-   "measured": "2026-11-02"
+   "measured": "2026-11-03"
   },
   "primary": "house",
   "house": {
@@ -14352,7 +14352,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -14372,11 +14372,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 79,
-   "starting_next_7d": 8,
+   "active_this_week": 80,
+   "starting_next_7d": 9,
    "reserved_ft": 10956,
    "long_running_90d": 18,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -14388,7 +14388,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 21
+     "count": 22
     },
     {
      "type": "Lead pipe replacement",
@@ -14463,6 +14463,14 @@
      "end": "2026-11-09",
      "ft": 88,
      "hours": ""
+    },
+    {
+     "type": "Construction staging",
+     "block": "6100 block of Nebraska Avenue NW",
+     "start": "2026-11-10",
+     "end": "2026-11-30",
+     "ft": 0,
+     "hours": "9 am\u20133 pm"
     }
    ]
   },
@@ -14572,12 +14580,12 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 309
+    "closed_n": 310
    },
    {
     "type": "Pothole",
     "median_days": 5.31,
-    "city_median_days": 3.6,
+    "city_median_days": 3.61,
     "closed_n": 279
    },
    {
@@ -14596,7 +14604,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -14758,7 +14766,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "archive_days": 180,
   "sources": [
    {
@@ -15133,7 +15141,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -15204,7 +15212,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -45948,7 +45956,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

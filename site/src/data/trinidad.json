@@ -1,7 +1,7 @@
 {
  "slug": "trinidad",
  "name": "Trinidad",
- "generated_at": "2026-11-02T23:21:22Z",
+ "generated_at": "2026-11-03T01:47:04Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1077,19 +1077,6 @@
    "smd": "5D03"
   },
   {
-   "id": "R2400095",
-   "issued": "2026-10-28T04:00:00Z",
-   "group": "Demolition",
-   "type": "CONSTRUCTION",
-   "subtype": "RAZE",
-   "address": "2225 M ST NE 20002",
-   "work": "To raze an existing 2-story semi-detached dwelling.",
-   "zoning": "RA-2",
-   "lat": 38.90545,
-   "lon": -76.97219,
-   "smd": "5D09"
-  },
-  {
    "id": "E2700967",
    "issued": "2026-10-28T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -1179,6 +1166,19 @@
    "lat": 38.90157,
    "lon": -76.9857,
    "smd": "5D03"
+  },
+  {
+   "id": "R2400095",
+   "issued": "2026-10-28T04:00:00Z",
+   "group": "Demolition",
+   "type": "CONSTRUCTION",
+   "subtype": "RAZE",
+   "address": "2225 M ST NE 20002",
+   "work": "To raze an existing 2-story semi-detached dwelling.",
+   "zoning": "RA-2",
+   "lat": 38.90545,
+   "lon": -76.97219,
+   "smd": "5D09"
   },
   {
    "id": "B2503622",
@@ -1506,17 +1506,17 @@
    "smd": "5D03"
   },
   {
-   "id": "E2700581",
+   "id": "B2700150",
    "issued": "2026-10-19T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "1132 NEAL ST NE 20002",
-   "work": "",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "1727 CAPITOL AVE NE 20002",
+   "work": "PERMIT REVISION TO B2604849.   REPLACED DAMAGED PLYWOOD SHEATHING WITH NEW IN SAME LOCATION, REPLACED ANY DAMAGED STUDS DUE TO ROT AND TERMITE DAMAGE.  INSTALL BLDG WARP AND 8\" HORIZONTAL SIDING.",
    "zoning": "RF-1",
-   "lat": 38.90531,
-   "lon": -76.99019,
-   "smd": "5D03"
+   "lat": 38.91058,
+   "lon": -76.98662,
+   "smd": "5D05"
   },
   {
    "id": "DK2600472",
@@ -1558,19 +1558,6 @@
    "smd": "5D05"
   },
   {
-   "id": "B2700150",
-   "issued": "2026-10-19T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "1727 CAPITOL AVE NE 20002",
-   "work": "PERMIT REVISION TO B2604849.   REPLACED DAMAGED PLYWOOD SHEATHING WITH NEW IN SAME LOCATION, REPLACED ANY DAMAGED STUDS DUE TO ROT AND TERMITE DAMAGE.  INSTALL BLDG WARP AND 8\" HORIZONTAL SIDING.",
-   "zoning": "RF-1",
-   "lat": 38.91058,
-   "lon": -76.98662,
-   "smd": "5D05"
-  },
-  {
    "id": "P2700562",
    "issued": "2026-10-19T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -1595,6 +1582,19 @@
    "lat": 38.91219,
    "lon": -76.9867,
    "smd": "5D02"
+  },
+  {
+   "id": "E2700581",
+   "issued": "2026-10-19T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "1132 NEAL ST NE 20002",
+   "work": "",
+   "zoning": "RF-1",
+   "lat": 38.90531,
+   "lon": -76.99019,
+   "smd": "5D03"
   },
   {
    "id": "P2700501",
@@ -1936,73 +1936,73 @@
   }
  ],
  "requests": {
-  "total": 2603,
-  "previous_total": 3259,
+  "total": 2627,
+  "previous_total": 3225,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 446,
-    "previous": 517
+    "count": 452,
+    "previous": 514
    },
    {
     "type": "Illegal Dumping",
     "count": 331,
-    "previous": 257
+    "previous": 253
    },
    {
     "type": "Bulk Collection",
     "count": 213,
-    "previous": 287
+    "previous": 282
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 158,
+    "count": 160,
     "previous": 42
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 137,
-    "previous": 198
+    "count": 141,
+    "previous": 194
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 128,
-    "previous": 161
+    "count": 130,
+    "previous": 160
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 118,
+    "count": 119,
     "previous": 15
    },
    {
     "type": "Residential Parking Permit Violation",
-    "count": 104,
+    "count": 100,
     "previous": 80
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
-    "count": 66,
-    "previous": 95
+    "count": 71,
+    "previous": 93
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 56,
-    "previous": 109
-   },
-   {
-    "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 49,
-    "previous": 118
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "count": 47,
-    "previous": 131
+    "count": 55,
+    "previous": 111
    },
    {
     "type": "Graffiti Removal",
-    "count": 47,
-    "previous": 59
+    "count": 49,
+    "previous": 58
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "count": 48,
+    "previous": 138
+   },
+   {
+    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "count": 46,
+    "previous": 116
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
@@ -2011,12 +2011,12 @@
    },
    {
     "type": "Trash Cart Repair",
-    "count": 36,
-    "previous": 81
+    "count": 37,
+    "previous": 88
    },
    {
     "type": "Supercan - Delivery",
-    "count": 36,
+    "count": 35,
     "previous": 60
    },
    {
@@ -2026,73 +2026,73 @@
    },
    {
     "type": "Sidewalk Repair",
-    "count": 31,
-    "previous": 13
+    "count": 32,
+    "previous": 15
    },
    {
     "type": "Roadway Signs",
-    "count": 31,
-    "previous": 58
+    "count": 32,
+    "previous": 53
    },
    {
     "type": "Tree Pruning",
-    "count": 29,
+    "count": 31,
     "previous": 37
    },
    {
     "type": "Streetlight Repair Investigation",
     "count": 29,
-    "previous": 42
+    "previous": 43
    },
    {
     "type": "Recycling Collection - Missed",
-    "count": 23,
+    "count": 22,
     "previous": 30
    },
    {
     "type": "DOB - Vacant Private Property Inspection",
     "count": 22,
-    "previous": 22
+    "previous": 21
    },
    {
     "type": "Tree Inspection",
     "count": 21,
-    "previous": 75
+    "previous": 66
+   },
+   {
+    "type": "Pothole",
+    "count": 17,
+    "previous": 0
+   },
+   {
+    "type": "Rat Replacement Containers",
+    "count": 17,
+    "previous": 23
    },
    {
     "type": "OCTFME - Down Cable Wires",
-    "count": 17,
-    "previous": 22
+    "count": 16,
+    "previous": 21
    },
    {
     "type": "Container Removal",
     "count": 16,
-    "previous": 12
+    "previous": 13
+   },
+   {
+    "type": "Roadway Markings / Pylons",
+    "count": 16,
+    "previous": 5
    },
    {
     "type": "DMV - Online Processing Issues",
     "count": 16,
-    "previous": 10
-   },
-   {
-    "type": "Rat Replacement Containers",
-    "count": 16,
-    "previous": 23
+    "previous": 9
    },
    {
     "type": "Illegal Poster",
     "count": 16,
-    "previous": 9
-   },
-   {
-    "type": "Pothole",
-    "count": 15,
-    "previous": 0
-   },
-   {
-    "type": "Roadway Markings / Pylons",
-    "count": 15,
-    "previous": 5
+    "previous": 6
    },
    {
     "type": "Recycling Cart - Repair",
@@ -2100,14 +2100,24 @@
     "previous": 13
    },
    {
+    "type": "Trash Cart - Delivery",
+    "count": 14,
+    "previous": 1
+   },
+   {
+    "type": "DC Government Information",
+    "count": 14,
+    "previous": 41
+   },
+   {
     "type": "Traffic Safety Input",
     "count": 14,
-    "previous": 8
+    "previous": 7
    },
    {
     "type": "DC How Am I Driving?",
     "count": 14,
-    "previous": 18
+    "previous": 19
    },
    {
     "type": "Alley Repair",
@@ -2115,29 +2125,24 @@
     "previous": 33
    },
    {
-    "type": "Trash Cart - Delivery",
-    "count": 13,
-    "previous": 1
-   },
-   {
-    "type": "DC Government Information",
-    "count": 13,
-    "previous": 43
-   },
-   {
     "type": "Dead Animal Collection",
-    "count": 12,
-    "previous": 21
+    "count": 13,
+    "previous": 22
    },
    {
     "type": "DMV - Vehicle Registration Issues",
     "count": 12,
-    "previous": 38
+    "previous": 37
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "count": 11,
+    "previous": 24
    },
    {
     "type": "DOB - Illegal Construction",
     "count": 11,
-    "previous": 5
+    "previous": 4
    },
    {
     "type": "Bicycle Services",
@@ -2150,14 +2155,9 @@
     "previous": 26
    },
    {
-    "type": "Public Space Litter Can-Collection",
-    "count": 10,
-    "previous": 26
-   },
-   {
     "type": "Tree Removal",
     "count": 10,
-    "previous": 26
+    "previous": 22
    },
    {
     "type": "Public Space Inspection",
@@ -2167,7 +2167,7 @@
    {
     "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
     "count": 10,
-    "previous": 12
+    "previous": 11
    },
    {
     "type": "Pet Waste Complaint",
@@ -2180,19 +2180,19 @@
     "previous": 7
    },
    {
-    "type": "DMV - Driver and Vehicle Services Refund",
+    "type": "Missed Curbside Compost Collection",
     "count": 7,
     "previous": 3
    },
    {
-    "type": "Missed Curbside Compost Collection",
-    "count": 7,
-    "previous": 2
+    "type": "DMV - Driver and Vehicle Services Refund",
+    "count": 6,
+    "previous": 4
    },
    {
     "type": "Signed Street Sweeping Missed",
     "count": 6,
-    "previous": 12
+    "previous": 15
    },
    {
     "type": "Parking Meter Repair",
@@ -2207,7 +2207,7 @@
    {
     "type": "DGS - Playground Repair",
     "count": 4,
-    "previous": 4
+    "previous": 5
    },
    {
     "type": "Emergency No-Parking Verification",
@@ -2257,16 +2257,36 @@
    {
     "type": "DOEE - General Air Quality Concerns",
     "count": 2,
-    "previous": 9
+    "previous": 8
    },
    {
     "type": "Supercan - Repair",
     "count": 2,
-    "previous": 3
+    "previous": 2
    }
   ],
-  "open": 589,
+  "open": 599,
   "recent": [
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "agency": "DDOT",
+    "added": "2026-11-03T01:40:23Z",
+    "resolved": "2026-11-03T01:45:56Z",
+    "status": "Closed",
+    "block": "19TH STREET NE AND MARYLAND AVENUE NE",
+    "lat": 38.903,
+    "lon": -76.976
+   },
+   {
+    "type": "Sanitation Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-03T01:38:56Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "19TH STREET NE AND MARYLAND AVENUE NE",
+    "lat": 38.903,
+    "lon": -76.976
+   },
    {
     "type": "Scheduled Yard Waste",
     "agency": "DPW",
@@ -2746,26 +2766,6 @@
     "block": "1100 block of OATES STREET NE",
     "lat": 38.906,
     "lon": -76.99
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-01T17:00:05Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1300 block of WEST VIRGINIA AVENUE NE",
-    "lat": 38.906,
-    "lon": -76.991
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-11-01T15:22:31Z",
-    "resolved": null,
-    "status": "Open (Duplicate)",
-    "block": "1200 block of RAUM STREET NE",
-    "lat": 38.909,
-    "lon": -76.985
    }
   ]
  },
@@ -2789,14 +2789,14 @@
     "previous": 25
    },
    {
-    "offense": "BURGLARY",
-    "count": 8,
-    "previous": 5
-   },
-   {
     "offense": "ROBBERY",
     "count": 8,
     "previous": 9
+   },
+   {
+    "offense": "BURGLARY",
+    "count": 8,
+    "previous": 5
    },
    {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
@@ -2869,7 +2869,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2884,7 +2884,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Trinidad through OTR assessment sub-areas Trinidad A, B and C and Brentwood B in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Trinidad boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-02): 100% of the 3,538 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 94% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Trinidad through OTR assessment sub-areas Trinidad A, B and C and Brentwood B in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Trinidad boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-03): 100% of the 3,538 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 94% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -2909,7 +2909,7 @@
    "area_parcels": 3538,
    "area_share_inside": 1.0,
    "boundary_share_in_area": 0.942,
-   "measured": "2026-11-02"
+   "measured": "2026-11-03"
   },
   "primary": "house",
   "house": {
@@ -3078,20 +3078,11 @@
     "beds": 2,
     "sqft": 840,
     "assessed": 467320
-   },
-   {
-    "address": "1420 Staples St NE # 1",
-    "date": "2026-09-03",
-    "price": 485000,
-    "kind": "condo",
-    "beds": null,
-    "sqft": null,
-    "assessed": 527830
    }
   ]
  },
  "streets": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3115,7 +3106,7 @@
    "starting_next_7d": 15,
    "reserved_ft": 17446,
    "long_running_90d": 20,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-02: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -3395,7 +3386,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3544,7 +3535,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4106,7 +4097,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "today": "2026-11-02",
   "days_ahead": 30,
   "sources": [
@@ -4411,7 +4402,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -30004,7 +29995,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-02T23:21:22Z",
+  "generated_at": "2026-11-03T01:47:04Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
