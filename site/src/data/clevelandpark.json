@@ -1,7 +1,7 @@
 {
  "slug": "clevelandpark",
  "name": "Cleveland Park",
- "generated_at": "2026-11-03T01:47:04Z",
+ "generated_at": "2026-11-03T09:19:24Z",
  "boundary": {
   "source": "Cleveland Park Historic District (DC Historic Preservation Office, Open Data DC). DC has no planning area named Cleveland Park.",
   "rings": [
@@ -2950,7 +2950,7 @@
  ],
  "requests": {
   "total": 249,
-  "previous_total": 297,
+  "previous_total": 292,
   "by_type": [
    {
     "type": "Bulk Collection",
@@ -2980,7 +2980,7 @@
    {
     "type": "Tree Inspection",
     "count": 10,
-    "previous": 11
+    "previous": 10
    },
    {
     "type": "Public Space Inspection",
@@ -3050,7 +3050,7 @@
    {
     "type": "Tree Removal",
     "count": 3,
-    "previous": 2
+    "previous": 0
    },
    {
     "type": "Recycling Cart Delivery",
@@ -3065,7 +3065,7 @@
    {
     "type": "Dead Animal Collection",
     "count": 3,
-    "previous": 2
+    "previous": 1
    },
    {
     "type": "Illegal Dumping",
@@ -3715,7 +3715,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3965,7 +3965,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3985,16 +3985,12 @@
    }
   ],
   "curb": {
-   "active_this_week": 47,
-   "starting_next_7d": 8,
-   "reserved_ft": 8932,
+   "active_this_week": 46,
+   "starting_next_7d": 7,
+   "reserved_ft": 8844,
    "long_running_90d": 9,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
    "by_type": [
-    {
-     "type": "Moving & storage",
-     "count": 1
-    },
     {
      "type": "Construction staging",
      "count": 25
@@ -4013,14 +4009,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Moving & storage",
-     "block": "3400 block of 33rd Place NW",
-     "start": "2026-11-03",
-     "end": "2026-11-03",
-     "ft": 88,
-     "hours": ""
-    },
     {
      "type": "Utility & DDOT work",
      "block": "3400 block of Ordway Street NW",
@@ -4209,7 +4197,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4364,7 +4352,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4450,9 +4438,9 @@
    {
     "name": "District Bridges",
     "url": "https://districtbridges.org/",
-    "state": "ok",
-    "matched": 1,
-    "fetched": 1
+    "state": "error: TimeoutError",
+    "matched": 0,
+    "failed": 1
    },
    {
     "name": "WTOP",
@@ -4783,8 +4771,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-03T01:47:04Z",
-  "today": "2026-11-02",
+  "generated_at": "2026-11-03T09:19:24Z",
+  "today": "2026-11-03",
   "days_ahead": 30,
   "sources": [
    {
@@ -4854,7 +4842,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -16191,7 +16179,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

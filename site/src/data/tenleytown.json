@@ -1,7 +1,7 @@
 {
  "slug": "tenleytown",
  "name": "Tenleytown",
- "generated_at": "2026-11-03T01:47:04Z",
+ "generated_at": "2026-11-03T09:19:24Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -2743,88 +2743,93 @@
   }
  ],
  "requests": {
-  "total": 1746,
-  "previous_total": 2205,
+  "total": 1768,
+  "previous_total": 2172,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
-    "count": 377,
-    "previous": 352
+    "count": 385,
+    "previous": 342
    },
    {
     "type": "Bulk Collection",
-    "count": 357,
-    "previous": 352
+    "count": 365,
+    "previous": 345
    },
    {
     "type": "Roadway Signs",
-    "count": 109,
-    "previous": 207
+    "count": 110,
+    "previous": 213
    },
    {
     "type": "Parking Enforcement",
     "count": 99,
-    "previous": 54
+    "previous": 56
    },
    {
     "type": "Tree Pruning",
-    "count": 67,
-    "previous": 113
+    "count": 66,
+    "previous": 103
    },
    {
     "type": "Trash Collection - Missed",
     "count": 53,
-    "previous": 88
+    "previous": 87
    },
    {
     "type": "Recycling Collection - Missed",
-    "count": 44,
-    "previous": 75
+    "count": 48,
+    "previous": 71
+   },
+   {
+    "type": "Graffiti Removal",
+    "count": 40,
+    "previous": 65
    },
    {
     "type": "Residential Parking Permit Violation",
     "count": 39,
-    "previous": 73
+    "previous": 74
    },
    {
     "type": "Tree Inspection",
-    "count": 37,
-    "previous": 76
+    "count": 38,
+    "previous": 75
    },
    {
     "type": "Tree Planting",
     "count": 37,
-    "previous": 123
+    "previous": 119
    },
    {
     "type": "DC Health Rodent & Vector Control",
     "count": 36,
-    "previous": 33
-   },
-   {
-    "type": "Graffiti Removal",
-    "count": 36,
-    "previous": 63
+    "previous": 32
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 34,
+    "count": 36,
     "previous": 11
    },
    {
     "type": "Dead Animal Collection",
-    "count": 26,
+    "count": 28,
     "previous": 17
+   },
+   {
+    "type": "Container Removal",
+    "count": 23,
+    "previous": 15
    },
    {
     "type": "Tree Removal",
     "count": 23,
-    "previous": 44
+    "previous": 42
    },
    {
-    "type": "Container Removal",
-    "count": 22,
-    "previous": 15
+    "type": "Sanitation Enforcement",
+    "count": 19,
+    "previous": 19
    },
    {
     "type": "Streetlight Repair Investigation",
@@ -2832,19 +2837,9 @@
     "previous": 10
    },
    {
-    "type": "Sanitation Enforcement",
-    "count": 18,
-    "previous": 19
-   },
-   {
-    "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 18,
-    "previous": 73
-   },
-   {
     "type": "Missed Curbside Compost Collection",
     "count": 17,
-    "previous": 44
+    "previous": 43
    },
    {
     "type": "DMV - Vehicle Registration Issues",
@@ -2852,14 +2847,14 @@
     "previous": 14
    },
    {
+    "type": "DOB - Vacant Private Property Inspection",
+    "count": 16,
+    "previous": 31
+   },
+   {
     "type": "Sidewalk Repair",
     "count": 16,
     "previous": 15
-   },
-   {
-    "type": "DOB - Vacant Private Property Inspection",
-    "count": 15,
-    "previous": 32
    },
    {
     "type": "Parking Meter Repair",
@@ -2867,19 +2862,19 @@
     "previous": 7
    },
    {
-    "type": "OCTFME - Down Cable Wires",
+    "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 15,
+    "previous": 74
+   },
+   {
+    "type": "OCTFME - Down Cable Wires",
+    "count": 13,
     "previous": 18
    },
    {
     "type": "Public Space Litter Can-Collection",
     "count": 12,
     "previous": 2
-   },
-   {
-    "type": "Traffic Safety Input",
-    "count": 12,
-    "previous": 9
    },
    {
     "type": "DMV - Drivers License/ID Issues",
@@ -2889,12 +2884,17 @@
    {
     "type": "Illegal Dumping",
     "count": 11,
-    "previous": 14
+    "previous": 13
    },
    {
     "type": "Supercan - Delivery",
     "count": 11,
-    "previous": 35
+    "previous": 32
+   },
+   {
+    "type": "Traffic Safety Input",
+    "count": 11,
+    "previous": 10
    },
    {
     "type": "Recycling Cart Delivery",
@@ -2904,12 +2904,17 @@
    {
     "type": "Public Space Inspection",
     "count": 10,
-    "previous": 11
+    "previous": 12
    },
    {
     "type": "Pothole",
     "count": 10,
     "previous": 13
+   },
+   {
+    "type": "Trash Cart Repair",
+    "count": 9,
+    "previous": 11
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
@@ -2922,24 +2927,9 @@
     "previous": 5
    },
    {
-    "type": "Trash Cart Repair",
-    "count": 8,
-    "previous": 10
-   },
-   {
-    "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
-    "count": 7,
-    "previous": 7
-   },
-   {
     "type": "DMV - Online Processing Issues",
     "count": 7,
     "previous": 1
-   },
-   {
-    "type": "Recycling Cart - Repair",
-    "count": 6,
-    "previous": 5
    },
    {
     "type": "DC Government Information",
@@ -2948,8 +2938,13 @@
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
-    "count": 5,
+    "count": 6,
     "previous": 8
+   },
+   {
+    "type": "Recycling Cart - Repair",
+    "count": 5,
+    "previous": 5
    },
    {
     "type": "Illegal Poster",
@@ -2957,19 +2952,14 @@
     "previous": 7
    },
    {
-    "type": "DMV - Forms, Applications, and Manuals Request",
-    "count": 4,
-    "previous": 4
+    "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
+    "count": 5,
+    "previous": 9
    },
    {
     "type": "Supercan - Repair",
     "count": 4,
     "previous": 6
-   },
-   {
-    "type": "Roadway Markings / Pylons",
-    "count": 4,
-    "previous": 3
    },
    {
     "type": "Resident Parking Permit",
@@ -2987,6 +2977,16 @@
     "previous": 3
    },
    {
+    "type": "DMV - Forms, Applications, and Manuals Request",
+    "count": 3,
+    "previous": 4
+   },
+   {
+    "type": "Roadway Markings / Pylons",
+    "count": 3,
+    "previous": 3
+   },
+   {
     "type": "DMV - Driver and Vehicle Services Refund",
     "count": 3,
     "previous": 1
@@ -2999,7 +2999,7 @@
    {
     "type": "Bus Stop Issues",
     "count": 3,
-    "previous": 2
+    "previous": 1
    },
    {
     "type": "Rat Replacement Containers",
@@ -3025,11 +3025,6 @@
     "type": "DGS - Overflowing Recycling Can",
     "count": 2,
     "previous": 5
-   },
-   {
-    "type": "Abandoned Vehicle - On Private Property",
-    "count": 2,
-    "previous": 0
    },
    {
     "type": "Public Space Litter Can Repair",
@@ -3062,6 +3057,11 @@
     "previous": 2
    },
    {
+    "type": "Abandoned Vehicle - On Private Property",
+    "count": 1,
+    "previous": 0
+   },
+   {
     "type": "Grass Mowing Services Missed (DGS)",
     "count": 1,
     "previous": 2
@@ -3072,8 +3072,28 @@
     "previous": 0
    }
   ],
-  "open": 449,
+  "open": 458,
   "recent": [
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-03T03:04:02Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3500 block of CHESAPEAKE STREET NW",
+    "lat": 38.951,
+    "lon": -77.069
+   },
+   {
+    "type": "Trash Cart Repair",
+    "agency": "DPW",
+    "added": "2026-11-03T02:08:09Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "5300 block of BELT ROAD NW",
+    "lat": 38.96,
+    "lon": -77.081
+   },
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
@@ -3553,26 +3573,6 @@
     "block": "4400 block of 42ND STREET NW",
     "lat": 38.947,
     "lon": -77.082
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-01T20:53:23Z",
-    "resolved": null,
-    "status": "Open (Duplicate)",
-    "block": "5300 block of 41ST STREET NW",
-    "lat": 38.959,
-    "lon": -77.08
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-01T20:38:54Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3600 block of APPLETON STREET NW",
-    "lat": 38.949,
-    "lon": -77.071
    }
   ]
  },
@@ -3689,7 +3689,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -4010,7 +4010,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4030,15 +4030,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 167,
-   "starting_next_7d": 29,
-   "reserved_ft": 22066,
-   "long_running_90d": 46,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
+   "active_this_week": 168,
+   "starting_next_7d": 36,
+   "reserved_ft": 23452,
+   "long_running_90d": 47,
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 8
+     "count": 6
     },
     {
      "type": "Dumpsters",
@@ -4046,7 +4046,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 67
+     "count": 66
     },
     {
      "type": "Cranes",
@@ -4058,7 +4058,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 35
+     "count": 39
     },
     {
      "type": "Events & reserved parking",
@@ -4066,30 +4066,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Utility & DDOT work",
-     "block": "4600 block of Asbury Place NW",
-     "start": "2026-11-03",
-     "end": "2026-11-04",
-     "ft": 110,
-     "hours": "7:30 am\u20133 pm"
-    },
-    {
-     "type": "Moving & storage",
-     "block": "5400 block of Connecticut Avenue NW",
-     "start": "2026-11-03",
-     "end": "2026-11-03",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "4200 block of 46th Street NW",
-     "start": "2026-11-03",
-     "end": "2026-11-04",
-     "ft": 110,
-     "hours": "7:30 am\u20133 pm"
-    },
     {
      "type": "Moving & storage",
      "block": "3500 block of Yuma Street NW",
@@ -4148,6 +4124,22 @@
     },
     {
      "type": "Utility & DDOT work",
+     "block": "3700 block of Warren Street NW",
+     "start": "2026-11-04",
+     "end": "2026-11-05",
+     "ft": 176,
+     "hours": "7:30 am\u20132:30 am"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "3700 block of Alton Place NW",
+     "start": "2026-11-04",
+     "end": "2026-11-05",
+     "ft": 132,
+     "hours": "7:30 am\u20132:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
      "block": "4400 block of 42nd Street NW",
      "start": "2026-11-05",
      "end": "2026-11-06",
@@ -4171,12 +4163,44 @@
      "hours": "7 am\u20137 pm"
     },
     {
+     "type": "Dumpsters",
+     "block": "3600 block of Alton Place NW",
+     "start": "2026-11-05",
+     "end": "2027-04-30",
+     "ft": 44,
+     "hours": ""
+    },
+    {
      "type": "Moving & storage",
      "block": "5200 block of Wisconsin Avenue NW",
      "start": "2026-11-05",
      "end": "2026-11-05",
      "ft": 44,
      "hours": ""
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "3500 block of Appleton Street NW",
+     "start": "2026-11-05",
+     "end": "2026-11-21",
+     "ft": 880,
+     "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "3700 block of Alton Place NW",
+     "start": "2026-11-05",
+     "end": "2026-11-21",
+     "ft": 440,
+     "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "3600 block of Chesapeake Street NW",
+     "start": "2026-11-05",
+     "end": "2026-11-21",
+     "ft": 440,
+     "hours": "7 am\u20135 pm"
     },
     {
      "type": "Moving & storage",
@@ -4225,6 +4249,14 @@
      "end": "2026-11-07",
      "ft": 88,
      "hours": ""
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "4600 block of Van Ness Street NW",
+     "start": "2026-11-07",
+     "end": "2026-11-07",
+     "ft": 88,
+     "hours": "7 am\u20135 pm"
     },
     {
      "type": "Lead pipe replacement",
@@ -4283,6 +4315,22 @@
      "hours": "8 am\u20133 pm"
     },
     {
+     "type": "Utility & DDOT work",
+     "block": "3800 block of Morrison Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 132,
+     "hours": "7:30 am\u20133 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "4700 block of Reno Road NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 132,
+     "hours": "8 am\u20133 pm"
+    },
+    {
      "type": "Cranes",
      "block": "3900 block of Huntington Street NW",
      "start": "2026-11-10",
@@ -4297,6 +4345,14 @@
      "end": "2027-05-08",
      "ft": 0,
      "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Moving & storage",
+     "block": "4300 block of Fessenden Street NW",
+     "start": "2026-11-10",
+     "end": "2026-11-10",
+     "ft": 88,
+     "hours": ""
     }
    ]
   },
@@ -4386,9 +4442,9 @@
    },
    {
     "type": "Scheduled Yard Waste",
-    "median_days": 7.85,
+    "median_days": 7.84,
     "city_median_days": 9.76,
-    "closed_n": 2760
+    "closed_n": 2756
    },
    {
     "type": "Trash Collection - Missed",
@@ -4406,7 +4462,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 736
+    "closed_n": 734
    },
    {
     "type": "Tree Inspection",
@@ -4423,14 +4479,14 @@
    {
     "type": "Roadway Signs",
     "median_days": 7.08,
-    "city_median_days": 7.0,
+    "city_median_days": 6.99,
     "closed_n": 348
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4589,7 +4645,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "archive_days": 180,
   "sources": [
    {
@@ -5095,8 +5151,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-03T01:47:04Z",
-  "today": "2026-11-02",
+  "generated_at": "2026-11-03T09:19:24Z",
+  "today": "2026-11-03",
   "days_ahead": 30,
   "sources": [
    {
@@ -5235,7 +5291,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -47243,7 +47299,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

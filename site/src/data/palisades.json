@@ -1,7 +1,7 @@
 {
  "slug": "palisades",
  "name": "Palisades",
- "generated_at": "2026-11-03T01:47:04Z",
+ "generated_at": "2026-11-03T09:19:24Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods: Kent/Palisades (Open Data DC). It includes Kent and the C&O Canal parkland along the river.",
   "rings": [
@@ -9315,19 +9315,6 @@
    "smd": "3D07"
   },
   {
-   "id": "E2700752",
-   "issued": "2026-10-22T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "1437 44TH ST NW 20007",
-   "work": "",
-   "zoning": "R-1B",
-   "lat": 38.90794,
-   "lon": -77.0802,
-   "smd": "3D07"
-  },
-  {
    "id": "P2700640",
    "issued": "2026-10-22T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -9430,6 +9417,19 @@
    "lat": 38.9327,
    "lon": -77.10036,
    "smd": "3D02"
+  },
+  {
+   "id": "E2700752",
+   "issued": "2026-10-22T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "1437 44TH ST NW 20007",
+   "work": "",
+   "zoning": "R-1B",
+   "lat": 38.90794,
+   "lon": -77.0802,
+   "smd": "3D07"
   },
   {
    "id": "BP2700333",
@@ -10434,28 +10434,28 @@
   }
  ],
  "requests": {
-  "total": 1330,
-  "previous_total": 1324,
+  "total": 1348,
+  "previous_total": 1296,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 264,
-    "previous": 246
+    "count": 279,
+    "previous": 245
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 198,
-    "previous": 188
-   },
-   {
-    "type": "Parking Enforcement",
-    "count": 77,
-    "previous": 79
+    "count": 209,
+    "previous": 181
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 76,
-    "previous": 43
+    "count": 75,
+    "previous": 42
+   },
+   {
+    "type": "Parking Enforcement",
+    "count": 74,
+    "previous": 77
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -10464,68 +10464,68 @@
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 62,
-    "previous": 77
+    "count": 61,
+    "previous": 76
    },
    {
     "type": "Roadway Signs",
-    "count": 51,
-    "previous": 29
+    "count": 50,
+    "previous": 28
    },
    {
     "type": "Container Removal",
-    "count": 44,
-    "previous": 32
+    "count": 45,
+    "previous": 31
    },
    {
     "type": "Tree Inspection",
-    "count": 41,
-    "previous": 60
+    "count": 40,
+    "previous": 57
    },
    {
     "type": "Residential Parking Permit Violation",
-    "count": 38,
+    "count": 37,
     "previous": 47
    },
    {
     "type": "Supercan - Delivery",
-    "count": 32,
-    "previous": 43
+    "count": 33,
+    "previous": 46
    },
    {
     "type": "Public Space Litter Can-Collection",
-    "count": 30,
-    "previous": 55
+    "count": 31,
+    "previous": 52
    },
    {
     "type": "Recycling Collection - Missed",
-    "count": 28,
-    "previous": 20
+    "count": 26,
+    "previous": 19
    },
    {
     "type": "Traffic Safety Input",
     "count": 20,
-    "previous": 19
+    "previous": 18
    },
    {
     "type": "DMV - Drivers License/ID Issues",
-    "count": 17,
+    "count": 18,
     "previous": 17
    },
    {
     "type": "Pothole",
-    "count": 16,
-    "previous": 25
-   },
-   {
-    "type": "Trash Cart - Delivery",
-    "count": 14,
-    "previous": 7
+    "count": 15,
+    "previous": 26
    },
    {
     "type": "Illegal Dumping",
     "count": 14,
     "previous": 5
+   },
+   {
+    "type": "Trash Cart - Delivery",
+    "count": 13,
+    "previous": 7
    },
    {
     "type": "Tree Pruning",
@@ -10538,19 +10538,19 @@
     "previous": 14
    },
    {
-    "type": "Missed Curbside Compost Collection",
-    "count": 12,
-    "previous": 19
-   },
-   {
     "type": "Recycling Cart Delivery",
     "count": 12,
     "previous": 13
    },
    {
     "type": "Trash Cart Repair",
+    "count": 12,
+    "previous": 4
+   },
+   {
+    "type": "Sidewalk Repair",
     "count": 11,
-    "previous": 5
+    "previous": 14
    },
    {
     "type": "Public Space Inspection",
@@ -10558,14 +10558,14 @@
     "previous": 14
    },
    {
-    "type": "Sidewalk Repair",
-    "count": 10,
-    "previous": 15
-   },
-   {
     "type": "Graffiti Removal",
     "count": 10,
     "previous": 2
+   },
+   {
+    "type": "Missed Curbside Compost Collection",
+    "count": 10,
+    "previous": 22
    },
    {
     "type": "Roadway Repair",
@@ -10573,34 +10573,34 @@
     "previous": 6
    },
    {
+    "type": "DC Health Rodent & Vector Control",
+    "count": 8,
+    "previous": 7
+   },
+   {
     "type": "Out of State Parking Violation (ROSA)",
     "count": 8,
     "previous": 3
    },
    {
-    "type": "DC Health Rodent & Vector Control",
+    "type": "Sanitation Enforcement",
     "count": 7,
-    "previous": 7
+    "previous": 22
    },
    {
     "type": "DGS - Playground Repair",
-    "count": 7,
+    "count": 6,
     "previous": 3
+   },
+   {
+    "type": "Dead Animal Collection",
+    "count": 6,
+    "previous": 6
    },
    {
     "type": "DOB - Illegal Construction",
     "count": 6,
     "previous": 2
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "count": 6,
-    "previous": 24
-   },
-   {
-    "type": "Illegal Poster",
-    "count": 6,
-    "previous": 3
    },
    {
     "type": "DOEE - LIHEAP",
@@ -10615,17 +10615,12 @@
    {
     "type": "Tree Removal",
     "count": 5,
-    "previous": 17
+    "previous": 13
    },
    {
     "type": "Parking Meter Repair",
     "count": 5,
-    "previous": 3
-   },
-   {
-    "type": "Dead Animal Collection",
-    "count": 5,
-    "previous": 6
+    "previous": 4
    },
    {
     "type": "Grass Mowing Services Missed (DGS)",
@@ -10633,9 +10628,14 @@
     "previous": 0
    },
    {
+    "type": "Illegal Poster",
+    "count": 5,
+    "previous": 3
+   },
+   {
     "type": "Streetlight Repair Investigation",
     "count": 4,
-    "previous": 7
+    "previous": 5
    },
    {
     "type": "Supercan - Repair",
@@ -10668,11 +10668,6 @@
     "previous": 1
    },
    {
-    "type": "DOB - Vacant Private Property Inspection",
-    "count": 3,
-    "previous": 2
-   },
-   {
     "type": "Street Cleaning",
     "count": 2,
     "previous": 7
@@ -10680,7 +10675,7 @@
    {
     "type": "Grass and Weeds Mowing",
     "count": 2,
-    "previous": 12
+    "previous": 10
    },
    {
     "type": "DMV - Copy of Ticket",
@@ -10691,6 +10686,11 @@
     "type": "DMV - Online Processing Issues",
     "count": 2,
     "previous": 6
+   },
+   {
+    "type": "DOB - Vacant Private Property Inspection",
+    "count": 2,
+    "previous": 2
    },
    {
     "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
@@ -10768,7 +10768,7 @@
     "previous": 1
    }
   ],
-  "open": 370,
+  "open": 381,
   "recent": [
    {
     "type": "Bulk Collection",
@@ -11001,6 +11001,16 @@
     "lon": -77.089
    },
    {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-01T23:08:55Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1500 block of ELLIOT PLACE NW",
+    "lat": 38.909,
+    "lon": -77.089
+   },
+   {
     "type": "Scheduled Yard Waste",
     "agency": "DPW",
     "added": "2026-11-01T22:11:14Z",
@@ -11041,6 +11051,26 @@
     "lon": -77.1
    },
    {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-01T21:07:18Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2300 block of NEBRASKA AVENUE NW",
+    "lat": 38.922,
+    "lon": -77.1
+   },
+   {
+    "type": "Tree Pruning",
+    "agency": "DDOT",
+    "added": "2026-11-01T20:57:11Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "3200 block of 44TH STREET NW",
+    "lat": 38.933,
+    "lon": -77.087
+   },
+   {
     "type": "Tree Pruning",
     "agency": "DDOT",
     "added": "2026-11-01T20:57:11Z",
@@ -11059,6 +11089,26 @@
     "block": "4300 block of CATHEDRAL AVENUE NW",
     "lat": 38.931,
     "lon": -77.086
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-01T20:02:30Z",
+    "resolved": "2026-11-01T20:06:05Z",
+    "status": "Closed",
+    "block": "4300 block of CATHEDRAL AVENUE NW",
+    "lat": 38.931,
+    "lon": -77.086
+   },
+   {
+    "type": "Roadway Signs",
+    "agency": "DDOT",
+    "added": "2026-11-01T19:50:36Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "4400 block of SALEM LANE NW",
+    "lat": 38.912,
+    "lon": -77.085
    },
    {
     "type": "Roadway Signs",
@@ -11083,12 +11133,42 @@
    {
     "type": "Scheduled Yard Waste",
     "agency": "DPW",
+    "added": "2026-11-01T19:45:16Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "5000 block of CATHEDRAL AVENUE NW",
+    "lat": 38.93,
+    "lon": -77.1
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
     "added": "2026-11-01T19:18:39Z",
     "resolved": null,
     "status": "Open",
     "block": "2800 block of HURST TERRACE NW",
     "lat": 38.928,
     "lon": -77.101
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-01T19:18:39Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2800 block of HURST TERRACE NW",
+    "lat": 38.928,
+    "lon": -77.101
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-01T17:54:08Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "NEW MEXICO AVENUE NW AND GARFIELD STREET NW",
+    "lat": 38.928,
+    "lon": -77.083
    },
    {
     "type": "Public Space Litter Can-Collection",
@@ -11109,6 +11189,26 @@
     "block": "4400 block of GREENWICH PARKWAY NW",
     "lat": 38.912,
     "lon": -77.084
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-01T17:47:07Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4400 block of GREENWICH PARKWAY NW",
+    "lat": 38.912,
+    "lon": -77.084
+   },
+   {
+    "type": "Roadway Signs",
+    "agency": "DDOT",
+    "added": "2026-11-01T17:45:33Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "4600 block of CLARK PLACE NW",
+    "lat": 38.909,
+    "lon": -77.09
    },
    {
     "type": "Roadway Signs",
@@ -11133,6 +11233,26 @@
    {
     "type": "Bulk Collection",
     "agency": "DPW",
+    "added": "2026-11-01T17:03:47Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2800 block of CHAIN BRIDGE ROAD NW",
+    "lat": 38.928,
+    "lon": -77.096
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-01T16:51:03Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4200 block of 50TH STREET NW",
+    "lat": 38.944,
+    "lon": -77.098
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
     "added": "2026-11-01T16:51:03Z",
     "resolved": null,
     "status": "Open",
@@ -11149,126 +11269,6 @@
     "block": "4200 block of FORDHAM ROAD NW",
     "lat": 38.944,
     "lon": -77.095
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-01T15:41:01Z",
-    "resolved": "2026-11-01T15:50:57Z",
-    "status": "Closed",
-    "block": "4500 block of KLINGLE STREET NW",
-    "lat": 38.931,
-    "lon": -77.089
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-01T15:29:14Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4700 block of RESERVOIR ROAD NW",
-    "lat": 38.915,
-    "lon": -77.092
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-01T15:21:40Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4700 block of RESERVOIR ROAD NW",
-    "lat": 38.915,
-    "lon": -77.092
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-01T14:54:52Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "5000 block of HURST TERRACE NW",
-    "lat": 38.929,
-    "lon": -77.1
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-01T14:53:11Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4900 block of LOUGHBORO ROAD NW",
-    "lat": 38.932,
-    "lon": -77.098
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-01T14:53:11Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4900 block of LOUGHBORO ROAD NW",
-    "lat": 38.932,
-    "lon": -77.098
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-01T12:29:42Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "5200 block of MACARTHUR TERRACE NW",
-    "lat": 38.928,
-    "lon": -77.105
-   },
-   {
-    "type": "Roadway Signs",
-    "agency": "DDOT",
-    "added": "2026-11-01T03:52:00Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "4400 block of WESTOVER PLACE NW",
-    "lat": 38.935,
-    "lon": -77.086
-   },
-   {
-    "type": "Roadway Signs",
-    "agency": "DDOT",
-    "added": "2026-11-01T03:52:00Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "4400 block of WESTOVER PLACE NW",
-    "lat": 38.935,
-    "lon": -77.086
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-31T21:29:17Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2300 block of NEBRASKA AVENUE NW",
-    "lat": 38.922,
-    "lon": -77.1
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-31T21:29:17Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2300 block of NEBRASKA AVENUE NW",
-    "lat": 38.922,
-    "lon": -77.1
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-31T21:15:13Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "5000 block of VAN NESS STREET NW",
-    "lat": 38.943,
-    "lon": -77.1
    }
   ]
  },
@@ -11364,7 +11364,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -11647,7 +11647,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -11667,11 +11667,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 136,
+   "active_this_week": 131,
    "starting_next_7d": 27,
-   "reserved_ft": 15774,
+   "reserved_ft": 14938,
    "long_running_90d": 56,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -11683,7 +11683,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 86
+     "count": 83
     },
     {
      "type": "Lead pipe replacement",
@@ -11691,7 +11691,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 26
+     "count": 24
     },
     {
      "type": "Events & reserved parking",
@@ -11699,30 +11699,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Construction staging",
-     "block": "2200 block of 49th Street NW",
-     "start": "2026-11-03",
-     "end": "2026-12-02",
-     "ft": 0,
-     "hours": ""
-    },
-    {
-     "type": "Construction staging",
-     "block": "4900 block of Ashby Street NW",
-     "start": "2026-11-03",
-     "end": "2026-12-02",
-     "ft": 44,
-     "hours": ""
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "5400 block of Cathedral Avenue NW",
-     "start": "2026-11-03",
-     "end": "2026-11-04",
-     "ft": 220,
-     "hours": "7:30 am\u20133 pm"
-    },
     {
      "type": "Lead pipe replacement",
      "block": "5200 block of Sherier Place NW",
@@ -11828,6 +11804,14 @@
      "hours": "7 am\u20137 pm"
     },
     {
+     "type": "Utility & DDOT work",
+     "block": "5500 block of Carolina Place NW",
+     "start": "2026-11-05",
+     "end": "2026-11-06",
+     "ft": 264,
+     "hours": "7:30 am\u20133 pm"
+    },
+    {
      "type": "Events & reserved parking",
      "block": "4900 block of Eskridge Terrace NW",
      "start": "2026-11-06",
@@ -11850,6 +11834,14 @@
      "end": "2026-11-09",
      "ft": 440,
      "hours": "7:30 am\u20133 pm"
+    },
+    {
+     "type": "Moving & storage",
+     "block": "4200 block of 48th Place NW",
+     "start": "2026-11-06",
+     "end": "2026-11-06",
+     "ft": 88,
+     "hours": ""
     },
     {
      "type": "Construction staging",
@@ -11906,6 +11898,14 @@
      "end": "2027-05-07",
      "ft": 0,
      "hours": ""
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "4400 block of Macarthur Boulevard NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 132,
+     "hours": "8 am\u20133 pm"
     },
     {
      "type": "Construction staging",
@@ -11999,13 +11999,13 @@
     "type": "Bulk Collection",
     "median_days": 7.66,
     "city_median_days": 6.92,
-    "closed_n": 1724
+    "closed_n": 1723
    },
    {
     "type": "Trash Collection - Missed",
     "median_days": 4.02,
     "city_median_days": 4.16,
-    "closed_n": 1093
+    "closed_n": 1092
    },
    {
     "type": "Scheduled Yard Waste",
@@ -12015,9 +12015,9 @@
    },
    {
     "type": "Recycling Collection - Missed",
-    "median_days": 12.22,
+    "median_days": 12.24,
     "city_median_days": 5.12,
-    "closed_n": 652
+    "closed_n": 650
    },
    {
     "type": "Parking Enforcement",
@@ -12047,7 +12047,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -12200,7 +12200,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "archive_days": 180,
   "sources": [
    {
@@ -12492,8 +12492,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-03T01:47:04Z",
-  "today": "2026-11-02",
+  "generated_at": "2026-11-03T09:19:24Z",
+  "today": "2026-11-03",
   "days_ahead": 30,
   "sources": [
    {
@@ -12626,7 +12626,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -49932,7 +49932,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

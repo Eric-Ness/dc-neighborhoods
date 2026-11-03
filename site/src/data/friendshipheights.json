@@ -1,7 +1,7 @@
 {
  "slug": "friendshipheights",
  "name": "Friendship Heights",
- "generated_at": "2026-11-03T01:47:04Z",
+ "generated_at": "2026-11-03T09:19:24Z",
  "boundary": {
   "source": "ANC single-member districts 3E03 and 3E04, around the Friendship Heights Metro (Open Data DC). DC has no planning area for Friendship Heights; this overlaps the Tenleytown site.",
   "rings": [
@@ -2546,19 +2546,6 @@
    "smd": "3E04"
   },
   {
-   "id": "E2700748",
-   "issued": "2026-10-22T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "5315 43RD ST NW 20015",
-   "work": "",
-   "zoning": "R-2",
-   "lat": 38.95973,
-   "lon": -77.08353,
-   "smd": "3E04"
-  },
-  {
    "id": "B2700568",
    "issued": "2026-10-22T04:00:00Z",
    "group": "Renovation & repair",
@@ -2569,6 +2556,19 @@
    "zoning": "R-2",
    "lat": 38.96003,
    "lon": -77.08055,
+   "smd": "3E04"
+  },
+  {
+   "id": "E2700748",
+   "issued": "2026-10-22T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "5315 43RD ST NW 20015",
+   "work": "",
+   "zoning": "R-2",
+   "lat": 38.95973,
+   "lon": -77.08353,
    "smd": "3E04"
   },
   {
@@ -2793,6 +2793,19 @@
    "smd": "3E03"
   },
   {
+   "id": "PP2700130",
+   "issued": "2026-10-08T04:00:00Z",
+   "group": "Minor work",
+   "type": "POST CARD",
+   "subtype": "PLUMBING",
+   "address": "5100 39TH ST NW 20016",
+   "work": "",
+   "zoning": "R-1B",
+   "lat": 38.95635,
+   "lon": -77.07745,
+   "smd": "3E04"
+  },
+  {
    "id": "E2700308",
    "issued": "2026-10-08T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -2829,19 +2842,6 @@
    "zoning": "MU-7B",
    "lat": 38.95967,
    "lon": -77.08557,
-   "smd": "3E04"
-  },
-  {
-   "id": "PP2700130",
-   "issued": "2026-10-08T04:00:00Z",
-   "group": "Minor work",
-   "type": "POST CARD",
-   "subtype": "PLUMBING",
-   "address": "5100 39TH ST NW 20016",
-   "work": "",
-   "zoning": "R-1B",
-   "lat": 38.95635,
-   "lon": -77.07745,
    "smd": "3E04"
   },
   {
@@ -2937,18 +2937,18 @@
   }
  ],
  "requests": {
-  "total": 470,
-  "previous_total": 528,
+  "total": 473,
+  "previous_total": 526,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
-    "count": 85,
+    "count": 87,
     "previous": 65
    },
    {
     "type": "Bulk Collection",
-    "count": 83,
-    "previous": 81
+    "count": 85,
+    "previous": 80
    },
    {
     "type": "Tree Pruning",
@@ -2963,7 +2963,7 @@
    {
     "type": "Trash Collection - Missed",
     "count": 22,
-    "previous": 29
+    "previous": 27
    },
    {
     "type": "Roadway Signs",
@@ -3028,7 +3028,7 @@
    {
     "type": "Illegal Dumping",
     "count": 7,
-    "previous": 1
+    "previous": 0
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -3106,11 +3106,6 @@
     "previous": 5
    },
    {
-    "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
-    "count": 2,
-    "previous": 3
-   },
-   {
     "type": "Out of State Parking Violation (ROSA)",
     "count": 2,
     "previous": 3
@@ -3154,10 +3149,25 @@
     "type": "DMV - Vehicle Registration Issues",
     "count": 1,
     "previous": 1
+   },
+   {
+    "type": "Trash Cart Repair",
+    "count": 1,
+    "previous": 4
    }
   ],
-  "open": 121,
+  "open": 120,
   "recent": [
+   {
+    "type": "Trash Cart Repair",
+    "agency": "DPW",
+    "added": "2026-11-03T02:08:09Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "5300 block of BELT ROAD NW",
+    "lat": 38.96,
+    "lon": -77.081
+   },
    {
     "type": "Parking Meter Repair",
     "agency": "DDOT",
@@ -3647,16 +3657,6 @@
     "block": "WESTERN AVENUE NW AND RIVER ROAD NW",
     "lat": 38.956,
     "lon": -77.091
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-27T22:07:59Z",
-    "resolved": "2026-10-30T15:59:04Z",
-    "status": "Closed",
-    "block": "5100 block of 41ST STREET NW",
-    "lat": 38.956,
-    "lon": -77.081
    }
   ]
  },
@@ -3709,7 +3709,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3923,7 +3923,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3943,15 +3943,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 33,
-   "starting_next_7d": 7,
-   "reserved_ft": 4532,
+   "active_this_week": 34,
+   "starting_next_7d": 8,
+   "reserved_ft": 4620,
    "long_running_90d": 9,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 2
+     "count": 3
     },
     {
      "type": "Dumpsters",
@@ -4030,6 +4030,14 @@
      "end": "2026-11-10",
      "ft": 176,
      "hours": "8 am\u20134 pm"
+    },
+    {
+     "type": "Moving & storage",
+     "block": "4300 block of Fessenden Street NW",
+     "start": "2026-11-10",
+     "end": "2026-11-10",
+     "ft": 88,
+     "hours": ""
     }
    ]
   },
@@ -4119,9 +4127,9 @@
    },
    {
     "type": "Scheduled Yard Waste",
-    "median_days": 7.92,
+    "median_days": 7.91,
     "city_median_days": 9.76,
-    "closed_n": 521
+    "closed_n": 519
    },
    {
     "type": "Trash Collection - Missed",
@@ -4156,14 +4164,14 @@
    {
     "type": "Roadway Signs",
     "median_days": 7.76,
-    "city_median_days": 7.0,
+    "city_median_days": 6.99,
     "closed_n": 92
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4309,7 +4317,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4578,8 +4586,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-03T01:47:04Z",
-  "today": "2026-11-02",
+  "generated_at": "2026-11-03T09:19:24Z",
+  "today": "2026-11-03",
   "days_ahead": 30,
   "sources": [
    {
@@ -4630,7 +4638,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -19187,7 +19195,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

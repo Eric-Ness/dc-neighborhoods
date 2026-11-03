@@ -1,7 +1,7 @@
 {
  "slug": "lenfantplaza",
  "name": "L'Enfant Plaza",
- "generated_at": "2026-11-03T01:47:04Z",
+ "generated_at": "2026-11-03T09:19:24Z",
  "boundary": {
   "source": "Southwest Business Improvement District, which takes in L'Enfant Plaza and the federal blocks around it (Open Data DC). DC has no planning area for L'Enfant Plaza.",
   "rings": [
@@ -1273,13 +1273,13 @@
   }
  ],
  "requests": {
-  "total": 760,
-  "previous_total": 741,
+  "total": 757,
+  "previous_total": 727,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 192,
-    "previous": 218
+    "count": 191,
+    "previous": 215
    },
    {
     "type": "DMV - Drivers License/ID Issues",
@@ -1288,28 +1288,33 @@
    },
    {
     "type": "DMV - Copy of Ticket",
-    "count": 70,
+    "count": 68,
     "previous": 53
    },
    {
     "type": "DMV - Vehicle Title Issues",
-    "count": 35,
+    "count": 37,
     "previous": 25
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 32,
-    "previous": 52
+    "count": 33,
+    "previous": 49
    },
    {
     "type": "DMV - Ticket Payment Dispute",
-    "count": 30,
+    "count": 32,
     "previous": 46
    },
    {
     "type": "DMV - Vehicle Registration Issues",
     "count": 28,
-    "previous": 32
+    "previous": 30
+   },
+   {
+    "type": "DMV - Online Processing Issues",
+    "count": 27,
+    "previous": 11
    },
    {
     "type": "DMV - Hearings",
@@ -1318,13 +1323,13 @@
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 26,
+    "count": 23,
     "previous": 0
    },
    {
-    "type": "DMV - Online Processing Issues",
-    "count": 26,
-    "previous": 11
+    "type": "DMV - Driver and Vehicle Services Refund",
+    "count": 16,
+    "previous": 4
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -1337,29 +1342,19 @@
     "previous": 18
    },
    {
-    "type": "DMV - Driver and Vehicle Services Refund",
-    "count": 13,
-    "previous": 4
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "count": 11,
-    "previous": 7
-   },
-   {
     "type": "Illegal Dumping",
     "count": 11,
     "previous": 8
    },
    {
-    "type": "DMV - Driver Record Issues",
+    "type": "DMV - Forms, Applications, and Manuals Request",
     "count": 11,
-    "previous": 2
+    "previous": 5
    },
    {
-    "type": "DMV - Forms, Applications, and Manuals Request",
+    "type": "DMV - Driver Record Issues",
     "count": 10,
-    "previous": 5
+    "previous": 2
    },
    {
     "type": "Roadway Signs",
@@ -1367,24 +1362,24 @@
     "previous": 3
    },
    {
-    "type": "DMV - eTIMS Ticket Alert Services Issues",
-    "count": 7,
-    "previous": 4
+    "type": "Dockless Vehicle Parking Complaint",
+    "count": 9,
+    "previous": 8
    },
    {
     "type": "Traffic Safety Input",
     "count": 6,
-    "previous": 4
+    "previous": 3
    },
    {
-    "type": "Trash Cart - Delivery",
+    "type": "DMV - eTIMS Ticket Alert Services Issues",
     "count": 6,
-    "previous": 3
+    "previous": 4
    },
    {
     "type": "Tree Inspection",
     "count": 6,
-    "previous": 8
+    "previous": 4
    },
    {
     "type": "DC Government Information",
@@ -1392,14 +1387,19 @@
     "previous": 5
    },
    {
+    "type": "Bulk Collection",
+    "count": 6,
+    "previous": 12
+   },
+   {
     "type": "DOEE - LIHEAP",
     "count": 6,
     "previous": 1
    },
    {
-    "type": "Bulk Collection",
+    "type": "Trash Cart - Delivery",
     "count": 5,
-    "previous": 12
+    "previous": 3
    },
    {
     "type": "DC Dog Park Maintenance (DGS)",
@@ -1410,6 +1410,11 @@
     "type": "Sanitation Enforcement",
     "count": 4,
     "previous": 2
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "count": 4,
+    "previous": 9
    },
    {
     "type": "DMV - Vehicle Inspection Issues",
@@ -1432,26 +1437,6 @@
     "previous": 2
    },
    {
-    "type": "DGS - Playground Repair",
-    "count": 3,
-    "previous": 0
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "count": 3,
-    "previous": 9
-   },
-   {
-    "type": "Roadway Repair",
-    "count": 3,
-    "previous": 4
-   },
-   {
-    "type": "DOEE - General Air Quality Concerns",
-    "count": 3,
-    "previous": 1
-   },
-   {
     "type": "Tree Pruning",
     "count": 3,
     "previous": 4
@@ -1467,9 +1452,19 @@
     "previous": 0
    },
    {
-    "type": "Recycling Collection - Missed",
+    "type": "DGS - Playground Repair",
     "count": 2,
     "previous": 0
+   },
+   {
+    "type": "Roadway Repair",
+    "count": 2,
+    "previous": 4
+   },
+   {
+    "type": "DOEE - General Air Quality Concerns",
+    "count": 2,
+    "previous": 1
    },
    {
     "type": "Dead Animal Collection",
@@ -1490,6 +1485,11 @@
     "type": "Residential Parking Permit Violation",
     "count": 2,
     "previous": 4
+   },
+   {
+    "type": "Recycling Collection - Missed",
+    "count": 1,
+    "previous": 0
    },
    {
     "type": "DC How Am I Driving?",
@@ -1527,14 +1527,34 @@
     "previous": 0
    }
   ],
-  "open": 136,
+  "open": 133,
   "recent": [
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
+    "added": "2026-11-03T04:24:13Z",
+    "resolved": "2026-11-03T04:33:08Z",
+    "status": "Closed",
+    "block": "600 block of H STREET SW",
+    "lat": 38.881,
+    "lon": -77.021
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-03T03:42:06Z",
+    "resolved": "2026-11-03T04:13:35Z",
+    "status": "Closed",
+    "block": "Unit block of PARKER ROW SW",
+    "lat": 38.877,
+    "lon": -77.022
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
     "added": "2026-11-03T01:28:29Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-03T01:51:05Z",
+    "status": "Closed",
     "block": "Unit block of SUTTON SQUARE SW",
     "lat": 38.879,
     "lon": -77.024
@@ -2008,26 +2028,6 @@
     "block": "300 block of G STREET SW",
     "lat": 38.882,
     "lon": -77.016
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T19:05:30Z",
-    "resolved": "2026-11-02T13:03:04Z",
-    "status": "Closed",
-    "block": "4TH STREET SW AND M STREET SW",
-    "lat": 38.876,
-    "lon": -77.018
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T18:43:50Z",
-    "resolved": "2026-10-31T18:51:06Z",
-    "status": "Closed",
-    "block": "Unit block of PARKER ROW SW",
-    "lat": 38.877,
-    "lon": -77.022
    }
   ]
  },
@@ -2097,7 +2097,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2262,7 +2262,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2282,11 +2282,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 136,
-   "starting_next_7d": 29,
-   "reserved_ft": 21054,
+   "active_this_week": 130,
+   "starting_next_7d": 28,
+   "reserved_ft": 20218,
    "long_running_90d": 32,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Dumpsters",
@@ -2294,7 +2294,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 98
+     "count": 94
     },
     {
      "type": "Cranes",
@@ -2302,38 +2302,14 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 16
+     "count": 12
     },
     {
      "type": "Events & reserved parking",
-     "count": 13
+     "count": 15
     }
    ],
    "upcoming": [
-    {
-     "type": "Utility & DDOT work",
-     "block": "200 block of I Street SW",
-     "start": "2026-11-03",
-     "end": "2026-11-04",
-     "ft": 88,
-     "hours": "7:30 am\u20133 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "400 block of E Street SW",
-     "start": "2026-11-03",
-     "end": "2026-11-04",
-     "ft": 66,
-     "hours": "7:30 am\u20133 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "700 block of G Street SW",
-     "start": "2026-11-03",
-     "end": "2026-11-04",
-     "ft": 66,
-     "hours": "7:30 am\u20133 pm"
-    },
     {
      "type": "Construction staging",
      "block": "300 block of 3rd Street SW",
@@ -2359,20 +2335,20 @@
      "hours": "9:30 am\u20133:30 pm"
     },
     {
-     "type": "Cranes",
-     "block": "1200 block of Maine Avenue SW",
-     "start": "2026-11-06",
-     "end": "2026-11-07",
-     "ft": 22,
-     "hours": "10 am\u201311 pm"
+     "type": "Events & reserved parking",
+     "block": "800 block of Maine Avenue SW",
+     "start": "2026-11-04",
+     "end": "2026-11-12",
+     "ft": 220,
+     "hours": ""
     },
     {
-     "type": "Cranes",
-     "block": "1100 block of Maine Avenue SW",
-     "start": "2026-11-06",
-     "end": "2026-11-07",
-     "ft": 22,
-     "hours": "10 am\u201311 pm"
+     "type": "Events & reserved parking",
+     "block": "900 block of Maine Avenue SW",
+     "start": "2026-11-04",
+     "end": "2026-11-12",
+     "ft": 396,
+     "hours": ""
     },
     {
      "type": "Cranes",
@@ -2389,6 +2365,22 @@
      "end": "2026-11-07",
      "ft": 242,
      "hours": "10 pm\u201312 am"
+    },
+    {
+     "type": "Cranes",
+     "block": "1200 block of Maine Avenue SW",
+     "start": "2026-11-06",
+     "end": "2026-11-07",
+     "ft": 22,
+     "hours": "10 am\u201311 pm"
+    },
+    {
+     "type": "Cranes",
+     "block": "1100 block of Maine Avenue SW",
+     "start": "2026-11-06",
+     "end": "2026-11-07",
+     "ft": 22,
+     "hours": "10 am\u201311 pm"
     },
     {
      "type": "Events & reserved parking",
@@ -2455,6 +2447,14 @@
      "hours": "7 am\u20137 pm"
     },
     {
+     "type": "Events & reserved parking",
+     "block": "400 block of L'Enfant Plaza SW",
+     "start": "2026-11-07",
+     "end": "2026-11-07",
+     "ft": 44,
+     "hours": "7 am\u201311:59 pm"
+    },
+    {
      "type": "Cranes",
      "block": "1100 block of Maine Avenue SW",
      "start": "2026-11-07",
@@ -2469,14 +2469,6 @@
      "end": "2026-11-08",
      "ft": 440,
      "hours": "11 pm\u201310 pm"
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "400 block of L'Enfant Plaza SW",
-     "start": "2026-11-07",
-     "end": "2026-11-07",
-     "ft": 44,
-     "hours": "7 am\u201311:59 pm"
     },
     {
      "type": "Events & reserved parking",
@@ -2527,19 +2519,19 @@
      "hours": "7 am\u201311:59 pm"
     },
     {
-     "type": "Dumpsters",
-     "block": "500 block of G Street SW",
-     "start": "2026-11-10",
-     "end": "2026-11-20",
-     "ft": 44,
-     "hours": ""
-    },
-    {
      "type": "Construction staging",
      "block": "1100 block of Maine Avenue SW",
      "start": "2026-11-10",
      "end": "2027-05-08",
      "ft": 0,
+     "hours": ""
+    },
+    {
+     "type": "Dumpsters",
+     "block": "500 block of G Street SW",
+     "start": "2026-11-10",
+     "end": "2026-11-20",
+     "ft": 44,
      "hours": ""
     }
    ]
@@ -2626,7 +2618,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 2113
+    "closed_n": 2116
    },
    {
     "type": "DMV - Ticket Payment Dispute",
@@ -2674,7 +2666,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2813,7 +2805,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "archive_days": 180,
   "sources": [
    {
@@ -3397,8 +3389,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-03T01:47:04Z",
-  "today": "2026-11-02",
+  "generated_at": "2026-11-03T09:19:24Z",
+  "today": "2026-11-03",
   "days_ahead": 30,
   "sources": [
    {
@@ -3467,6 +3459,15 @@
     "source": "DC farmers market list",
     "kind": "market",
     "date": "2026-11-28"
+   },
+   {
+    "title": "Jingle Block Rock 2026",
+    "date": "2026-12-02",
+    "time": "5 PM to 7 PM",
+    "place": "Waterfront Station, 399 M St SW",
+    "url": "https://swbid.org/event/jingle-block-rock-2026/",
+    "source": "Southwest BID",
+    "kind": "community"
    }
   ],
   "unscheduled": [],
@@ -3490,7 +3491,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -17122,7 +17123,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

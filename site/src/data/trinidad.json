@@ -1,7 +1,7 @@
 {
  "slug": "trinidad",
  "name": "Trinidad",
- "generated_at": "2026-11-03T01:47:04Z",
+ "generated_at": "2026-11-03T09:19:24Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1077,6 +1077,19 @@
    "smd": "5D03"
   },
   {
+   "id": "R2400095",
+   "issued": "2026-10-28T04:00:00Z",
+   "group": "Demolition",
+   "type": "CONSTRUCTION",
+   "subtype": "RAZE",
+   "address": "2225 M ST NE 20002",
+   "work": "To raze an existing 2-story semi-detached dwelling.",
+   "zoning": "RA-2",
+   "lat": 38.90545,
+   "lon": -76.97219,
+   "smd": "5D09"
+  },
+  {
    "id": "E2700967",
    "issued": "2026-10-28T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -1166,19 +1179,6 @@
    "lat": 38.90157,
    "lon": -76.9857,
    "smd": "5D03"
-  },
-  {
-   "id": "R2400095",
-   "issued": "2026-10-28T04:00:00Z",
-   "group": "Demolition",
-   "type": "CONSTRUCTION",
-   "subtype": "RAZE",
-   "address": "2225 M ST NE 20002",
-   "work": "To raze an existing 2-story semi-detached dwelling.",
-   "zoning": "RA-2",
-   "lat": 38.90545,
-   "lon": -76.97219,
-   "smd": "5D09"
   },
   {
    "id": "B2503622",
@@ -1506,17 +1506,17 @@
    "smd": "5D03"
   },
   {
-   "id": "B2700150",
+   "id": "E2700581",
    "issued": "2026-10-19T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "1727 CAPITOL AVE NE 20002",
-   "work": "PERMIT REVISION TO B2604849.   REPLACED DAMAGED PLYWOOD SHEATHING WITH NEW IN SAME LOCATION, REPLACED ANY DAMAGED STUDS DUE TO ROT AND TERMITE DAMAGE.  INSTALL BLDG WARP AND 8\" HORIZONTAL SIDING.",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "1132 NEAL ST NE 20002",
+   "work": "",
    "zoning": "RF-1",
-   "lat": 38.91058,
-   "lon": -76.98662,
-   "smd": "5D05"
+   "lat": 38.90531,
+   "lon": -76.99019,
+   "smd": "5D03"
   },
   {
    "id": "DK2600472",
@@ -1558,6 +1558,19 @@
    "smd": "5D05"
   },
   {
+   "id": "B2700150",
+   "issued": "2026-10-19T04:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "1727 CAPITOL AVE NE 20002",
+   "work": "PERMIT REVISION TO B2604849.   REPLACED DAMAGED PLYWOOD SHEATHING WITH NEW IN SAME LOCATION, REPLACED ANY DAMAGED STUDS DUE TO ROT AND TERMITE DAMAGE.  INSTALL BLDG WARP AND 8\" HORIZONTAL SIDING.",
+   "zoning": "RF-1",
+   "lat": 38.91058,
+   "lon": -76.98662,
+   "smd": "5D05"
+  },
+  {
    "id": "P2700562",
    "issued": "2026-10-19T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -1582,19 +1595,6 @@
    "lat": 38.91219,
    "lon": -76.9867,
    "smd": "5D02"
-  },
-  {
-   "id": "E2700581",
-   "issued": "2026-10-19T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "1132 NEAL ST NE 20002",
-   "work": "",
-   "zoning": "RF-1",
-   "lat": 38.90531,
-   "lon": -76.99019,
-   "smd": "5D03"
   },
   {
    "id": "P2700501",
@@ -1936,163 +1936,168 @@
   }
  ],
  "requests": {
-  "total": 2627,
-  "previous_total": 3225,
+  "total": 2690,
+  "previous_total": 3117,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 452,
-    "previous": 514
+    "count": 441,
+    "previous": 497
    },
    {
     "type": "Illegal Dumping",
-    "count": 331,
-    "previous": 253
+    "count": 343,
+    "previous": 260
    },
    {
     "type": "Bulk Collection",
-    "count": 213,
-    "previous": 282
+    "count": 225,
+    "previous": 275
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 160,
-    "previous": 42
+    "count": 150,
+    "previous": 44
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 141,
-    "previous": 194
+    "count": 142,
+    "previous": 179
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 130,
-    "previous": 160
+    "count": 136,
+    "previous": 145
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 119,
+    "count": 131,
     "previous": 15
    },
    {
     "type": "Residential Parking Permit Violation",
-    "count": 100,
-    "previous": 80
-   },
-   {
-    "type": "Out of State Parking Violation (ROSA)",
-    "count": 71,
-    "previous": 93
+    "count": 94,
+    "previous": 79
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 55,
-    "previous": 111
+    "count": 66,
+    "previous": 102
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "count": 63,
+    "previous": 81
    },
    {
     "type": "Graffiti Removal",
-    "count": 49,
-    "previous": 58
+    "count": 62,
+    "previous": 55
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 48,
-    "previous": 138
+    "count": 52,
+    "previous": 144
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 46,
-    "previous": 116
+    "count": 51,
+    "previous": 122
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
-    "count": 45,
-    "previous": 49
+    "count": 50,
+    "previous": 50
    },
    {
     "type": "Trash Cart Repair",
-    "count": 37,
-    "previous": 88
-   },
-   {
-    "type": "Supercan - Delivery",
-    "count": 35,
-    "previous": 60
-   },
-   {
-    "type": "DMV - Drivers License/ID Issues",
-    "count": 33,
-    "previous": 28
-   },
-   {
-    "type": "Sidewalk Repair",
-    "count": 32,
-    "previous": 15
+    "count": 40,
+    "previous": 91
    },
    {
     "type": "Roadway Signs",
+    "count": 37,
+    "previous": 52
+   },
+   {
+    "type": "Sidewalk Repair",
+    "count": 33,
+    "previous": 15
+   },
+   {
+    "type": "Supercan - Delivery",
+    "count": 33,
+    "previous": 59
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
     "count": 32,
-    "previous": 53
+    "previous": 29
    },
    {
     "type": "Tree Pruning",
-    "count": 31,
-    "previous": 37
-   },
-   {
-    "type": "Streetlight Repair Investigation",
     "count": 29,
-    "previous": 43
+    "previous": 38
    },
    {
     "type": "Recycling Collection - Missed",
-    "count": 22,
-    "previous": 30
+    "count": 27,
+    "previous": 26
    },
    {
-    "type": "DOB - Vacant Private Property Inspection",
-    "count": 22,
-    "previous": 21
+    "type": "Streetlight Repair Investigation",
+    "count": 26,
+    "previous": 44
    },
    {
     "type": "Tree Inspection",
-    "count": 21,
-    "previous": 66
-   },
-   {
-    "type": "Pothole",
-    "count": 17,
-    "previous": 0
-   },
-   {
-    "type": "Rat Replacement Containers",
-    "count": 17,
-    "previous": 23
+    "count": 25,
+    "previous": 60
    },
    {
     "type": "OCTFME - Down Cable Wires",
-    "count": 16,
+    "count": 21,
+    "previous": 19
+   },
+   {
+    "type": "Pothole",
+    "count": 20,
+    "previous": 0
+   },
+   {
+    "type": "DOB - Vacant Private Property Inspection",
+    "count": 20,
     "previous": 21
    },
    {
-    "type": "Container Removal",
+    "type": "DMV - Online Processing Issues",
+    "count": 17,
+    "previous": 8
+   },
+   {
+    "type": "Illegal Poster",
+    "count": 17,
+    "previous": 6
+   },
+   {
+    "type": "DC Government Information",
     "count": 16,
-    "previous": 13
+    "previous": 44
    },
    {
     "type": "Roadway Markings / Pylons",
     "count": 16,
-    "previous": 5
+    "previous": 4
    },
    {
-    "type": "DMV - Online Processing Issues",
-    "count": 16,
-    "previous": 9
+    "type": "Trash Cart - Delivery",
+    "count": 15,
+    "previous": 1
    },
    {
-    "type": "Illegal Poster",
-    "count": 16,
-    "previous": 6
+    "type": "Container Removal",
+    "count": 15,
+    "previous": 13
    },
    {
     "type": "Recycling Cart - Repair",
@@ -2100,49 +2105,34 @@
     "previous": 13
    },
    {
-    "type": "Trash Cart - Delivery",
-    "count": 14,
-    "previous": 1
+    "type": "Rat Replacement Containers",
+    "count": 15,
+    "previous": 21
    },
    {
-    "type": "DC Government Information",
+    "type": "Alley Repair",
     "count": 14,
-    "previous": 41
+    "previous": 26
+   },
+   {
+    "type": "Dead Animal Collection",
+    "count": 14,
+    "previous": 18
    },
    {
     "type": "Traffic Safety Input",
     "count": 14,
-    "previous": 7
-   },
-   {
-    "type": "DC How Am I Driving?",
-    "count": 14,
-    "previous": 19
-   },
-   {
-    "type": "Alley Repair",
-    "count": 13,
-    "previous": 33
-   },
-   {
-    "type": "Dead Animal Collection",
-    "count": 13,
-    "previous": 22
+    "previous": 9
    },
    {
     "type": "DMV - Vehicle Registration Issues",
-    "count": 12,
-    "previous": 37
+    "count": 13,
+    "previous": 32
    },
    {
     "type": "Public Space Litter Can-Collection",
     "count": 11,
-    "previous": 24
-   },
-   {
-    "type": "DOB - Illegal Construction",
-    "count": 11,
-    "previous": 4
+    "previous": 22
    },
    {
     "type": "Bicycle Services",
@@ -2150,64 +2140,74 @@
     "previous": 2
    },
    {
-    "type": "Recycling Cart Delivery",
+    "type": "DC How Am I Driving?",
     "count": 11,
-    "previous": 26
+    "previous": 15
    },
    {
-    "type": "Tree Removal",
+    "type": "Recycling Cart Delivery",
+    "count": 11,
+    "previous": 23
+   },
+   {
+    "type": "DOB - Illegal Construction",
     "count": 10,
-    "previous": 22
+    "previous": 4
    },
    {
     "type": "Public Space Inspection",
     "count": 10,
-    "previous": 3
+    "previous": 2
    },
    {
     "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
     "count": 10,
-    "previous": 11
+    "previous": 12
    },
    {
-    "type": "Pet Waste Complaint",
-    "count": 8,
-    "previous": 5
+    "type": "Tree Removal",
+    "count": 9,
+    "previous": 18
    },
    {
     "type": "Roadway Repair",
+    "count": 9,
+    "previous": 6
+   },
+   {
+    "type": "DMV - Driver and Vehicle Services Refund",
     "count": 8,
-    "previous": 7
+    "previous": 3
+   },
+   {
+    "type": "Pet Waste Complaint",
+    "count": 7,
+    "previous": 6
    },
    {
     "type": "Missed Curbside Compost Collection",
     "count": 7,
-    "previous": 3
-   },
-   {
-    "type": "DMV - Driver and Vehicle Services Refund",
-    "count": 6,
-    "previous": 4
-   },
-   {
-    "type": "Signed Street Sweeping Missed",
-    "count": 6,
-    "previous": 15
-   },
-   {
-    "type": "Parking Meter Repair",
-    "count": 4,
     "previous": 2
    },
    {
     "type": "Bus Stop Issues",
-    "count": 4,
+    "count": 6,
     "previous": 0
+   },
+   {
+    "type": "Signed Street Sweeping Missed",
+    "count": 6,
+    "previous": 16
+   },
+   {
+    "type": "Parking Meter Repair",
+    "count": 5,
+    "previous": 2
    },
    {
     "type": "DGS - Playground Repair",
     "count": 4,
-    "previous": 5
+    "previous": 4
    },
    {
     "type": "Emergency No-Parking Verification",
@@ -2215,39 +2215,34 @@
     "previous": 0
    },
    {
-    "type": "Public Space Litter Can Repair",
+    "type": "DMV - Forms, Applications, and Manuals Request",
     "count": 3,
+    "previous": 0
+   },
+   {
+    "type": "Public Space Litter Can Repair",
+    "count": 2,
     "previous": 2
    },
    {
     "type": "Vacant Lot - Public Property Only",
-    "count": 3,
-    "previous": 5
-   },
-   {
-    "type": "Neighborhood Clean-Up",
-    "count": 3,
-    "previous": 0
-   },
-   {
-    "type": "Abandoned Bicycle",
-    "count": 3,
-    "previous": 4
-   },
-   {
-    "type": "DOEE - Report Construction Erosion Runoff",
-    "count": 3,
-    "previous": 0
-   },
-   {
-    "type": "DMV - Forms, Applications, and Manuals Request",
     "count": 2,
-    "previous": 0
+    "previous": 5
    },
    {
     "type": "DMV - Vehicle Title Issues",
     "count": 2,
-    "previous": 2
+    "previous": 3
+   },
+   {
+    "type": "Neighborhood Clean-Up",
+    "count": 2,
+    "previous": 0
+   },
+   {
+    "type": "Abandoned Bicycle",
+    "count": 2,
+    "previous": 5
    },
    {
     "type": "DGS - Overflowing Recycling Can",
@@ -2255,9 +2250,14 @@
     "previous": 0
    },
    {
+    "type": "DOEE - Report Construction Erosion Runoff",
+    "count": 2,
+    "previous": 0
+   },
+   {
     "type": "DOEE - General Air Quality Concerns",
     "count": 2,
-    "previous": 8
+    "previous": 6
    },
    {
     "type": "Supercan - Repair",
@@ -2265,8 +2265,38 @@
     "previous": 2
    }
   ],
-  "open": 599,
+  "open": 651,
   "recent": [
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-03T04:05:15Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1200 block of QUEEN STREET NE",
+    "lat": 38.907,
+    "lon": -76.987
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-03T02:55:53Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1100 block of MONTELLO AVENUE NE",
+    "lat": 38.903,
+    "lon": -76.99
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "agency": "DDOT",
+    "added": "2026-11-03T02:20:33Z",
+    "resolved": "2026-11-03T02:25:54Z",
+    "status": "Closed",
+    "block": "1300 block of CHILDRESS STREET NE",
+    "lat": 38.906,
+    "lon": -76.982
+   },
    {
     "type": "Dockless Vehicle Parking Complaint",
     "agency": "DDOT",
@@ -2286,6 +2316,16 @@
     "block": "19TH STREET NE AND MARYLAND AVENUE NE",
     "lat": 38.903,
     "lon": -76.976
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T23:03:20Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1400 block of WEST VIRGINIA AVENUE NE",
+    "lat": 38.906,
+    "lon": -76.99
    },
    {
     "type": "Scheduled Yard Waste",
@@ -2338,6 +2378,16 @@
     "lon": -76.984
    },
    {
+    "type": "Pothole",
+    "agency": "DDOT",
+    "added": "2026-11-02T21:01:01Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "1600 block of TRINIDAD AVENUE NE",
+    "lat": 38.906,
+    "lon": -76.984
+   },
+   {
     "type": "Bulk Collection",
     "agency": "DPW",
     "added": "2026-11-02T20:43:18Z",
@@ -2346,6 +2396,26 @@
     "block": "1200 block of 18TH PLACE NE",
     "lat": 38.907,
     "lon": -76.977
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T20:43:18Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1200 block of 18TH PLACE NE",
+    "lat": 38.907,
+    "lon": -76.977
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-02T20:34:15Z",
+    "resolved": "2026-11-02T20:34:15Z",
+    "status": "Closed",
+    "block": "1200 block of STAPLES STREET NE",
+    "lat": 38.902,
+    "lon": -76.985
    },
    {
     "type": "DOEE - LIHEAP",
@@ -2368,6 +2438,26 @@
     "lon": -76.992
    },
    {
+    "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
+    "agency": "DPW",
+    "added": "2026-11-02T20:03:02Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1100 block of MORSE STREET NE",
+    "lat": 38.904,
+    "lon": -76.992
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-02T19:37:56Z",
+    "resolved": "2026-11-02T19:37:56Z",
+    "status": "Closed",
+    "block": "1600 block of MARYLAND AVENUE NE",
+    "lat": 38.902,
+    "lon": -76.98
+   },
+   {
     "type": "DOEE - LIHEAP",
     "agency": "DOEE",
     "added": "2026-11-02T19:37:56Z",
@@ -2388,6 +2478,16 @@
     "lon": -76.988
    },
    {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-02T19:32:42Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1200 block of NEAL STREET NE",
+    "lat": 38.904,
+    "lon": -76.988
+   },
+   {
     "type": "DOEE - LIHEAP",
     "agency": "DOEE",
     "added": "2026-11-02T18:51:19Z",
@@ -2396,6 +2496,26 @@
     "block": "1600 block of WEST VIRGINIA AVENUE NE",
     "lat": 38.909,
     "lon": -76.987
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-02T18:51:19Z",
+    "resolved": "2026-11-02T18:51:19Z",
+    "status": "Closed",
+    "block": "1600 block of WEST VIRGINIA AVENUE NE",
+    "lat": 38.909,
+    "lon": -76.987
+   },
+   {
+    "type": "Supercan - Delivery",
+    "agency": "DPW",
+    "added": "2026-11-02T18:49:45Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1200 block of OWEN PLACE NE",
+    "lat": 38.905,
+    "lon": -76.986
    },
    {
     "type": "Supercan - Delivery",
@@ -2420,12 +2540,42 @@
    {
     "type": "DOEE - LIHEAP",
     "agency": "DOEE",
+    "added": "2026-11-02T18:26:37Z",
+    "resolved": "2026-11-02T18:26:37Z",
+    "status": "Closed",
+    "block": "2100 block of I STREET NE",
+    "lat": 38.903,
+    "lon": -76.973
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
     "added": "2026-11-02T17:40:08Z",
     "resolved": "2026-11-02T17:40:08Z",
     "status": "Closed",
     "block": "2100 block of MARYLAND AVENUE NE",
     "lat": 38.904,
     "lon": -76.973
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-02T17:40:08Z",
+    "resolved": "2026-11-02T17:40:08Z",
+    "status": "Closed",
+    "block": "2100 block of MARYLAND AVENUE NE",
+    "lat": 38.904,
+    "lon": -76.973
+   },
+   {
+    "type": "Graffiti Removal",
+    "agency": "DPW",
+    "added": "2026-11-02T17:29:13Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1000 block of FLORIDA AVENUE NE",
+    "lat": 38.904,
+    "lon": -76.993
    },
    {
     "type": "Graffiti Removal",
@@ -2448,6 +2598,16 @@
     "lon": -76.973
    },
    {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-02T17:25:58Z",
+    "resolved": "2026-11-02T17:25:58Z",
+    "status": "Closed",
+    "block": "1100 block of 21ST PLACE NE",
+    "lat": 38.905,
+    "lon": -76.973
+   },
+   {
     "type": "Graffiti Removal",
     "agency": "DPW",
     "added": "2026-11-02T17:11:31Z",
@@ -2456,6 +2616,26 @@
     "block": "1200 block of MONTELLO AVENUE NE",
     "lat": 38.904,
     "lon": -76.989
+   },
+   {
+    "type": "Graffiti Removal",
+    "agency": "DPW",
+    "added": "2026-11-02T17:11:31Z",
+    "resolved": null,
+    "status": "Open (Duplicate)",
+    "block": "1200 block of MONTELLO AVENUE NE",
+    "lat": 38.904,
+    "lon": -76.989
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-02T16:46:39Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1800 block of CAPITOL AVENUE NE",
+    "lat": 38.911,
+    "lon": -76.985
    },
    {
     "type": "Scheduled Yard Waste",
@@ -2478,6 +2658,16 @@
     "lon": -76.978
    },
    {
+    "type": "DMV - Online Processing Issues",
+    "agency": "DMV",
+    "added": "2026-11-02T16:25:52Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1000 block of 18TH STREET NE",
+    "lat": 38.903,
+    "lon": -76.978
+   },
+   {
     "type": "DOEE - LIHEAP",
     "agency": "DOEE",
     "added": "2026-11-02T16:02:56Z",
@@ -2486,6 +2676,26 @@
     "block": "1600 block of LYMAN PLACE NE",
     "lat": 38.905,
     "lon": -76.979
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-02T16:02:56Z",
+    "resolved": "2026-11-02T16:02:56Z",
+    "status": "Closed",
+    "block": "1600 block of LYMAN PLACE NE",
+    "lat": 38.905,
+    "lon": -76.979
+   },
+   {
+    "type": "Sanitation Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T15:56:02Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1500 block of BENNING ROAD NE",
+    "lat": 38.9,
+    "lon": -76.981
    },
    {
     "type": "Sanitation Enforcement",
@@ -2508,6 +2718,26 @@
     "lon": -76.984
    },
    {
+    "type": "DOB - Illegal Construction",
+    "agency": "DOB",
+    "added": "2026-11-02T15:37:55Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1200 block of REAR SIMMS PLACE NE",
+    "lat": 38.909,
+    "lon": -76.984
+   },
+   {
+    "type": "Sanitation Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T15:10:23Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1200 block of 18TH PLACE NE",
+    "lat": 38.906,
+    "lon": -76.977
+   },
+   {
     "type": "Sanitation Enforcement",
     "agency": "DPW",
     "added": "2026-11-02T15:10:23Z",
@@ -2528,250 +2758,20 @@
     "lon": -77.002
    },
    {
-    "type": "Residential Parking Permit Violation",
-    "agency": "DPW",
-    "added": "2026-11-02T14:55:39Z",
-    "resolved": "2026-11-02T16:58:55Z",
-    "status": "Closed",
-    "block": "1700 block of HOLBROOK STREET NE",
-    "lat": 38.907,
-    "lon": -76.981
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-02T14:53:26Z",
-    "resolved": "2026-11-02T14:53:26Z",
-    "status": "Closed",
-    "block": "800 block of 20TH STREET NE",
-    "lat": 38.902,
-    "lon": -76.975
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-02T14:38:12Z",
-    "resolved": "2026-11-02T14:38:12Z",
-    "status": "Closed",
-    "block": "1100 block of TRINIDAD AVENUE NE",
-    "lat": 38.902,
-    "lon": -76.987
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-11-02T14:32:49Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1200 block of SIMMS PLACE NE",
-    "lat": 38.909,
-    "lon": -76.984
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-02T14:16:27Z",
-    "resolved": "2026-11-02T14:25:53Z",
-    "status": "Closed",
-    "block": "1200 block of 16TH STREET NE",
-    "lat": 38.906,
-    "lon": -76.981
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-02T14:15:20Z",
-    "resolved": "2026-11-02T14:15:20Z",
-    "status": "Closed",
-    "block": "1700 block of MONTELLO AVENUE NE",
-    "lat": 38.91,
-    "lon": -76.985
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-02T13:50:23Z",
-    "resolved": "2026-11-02T13:50:23Z",
-    "status": "Closed",
-    "block": "1300 block of QUEEN STREET NE",
-    "lat": 38.905,
-    "lon": -76.983
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-11-02T13:40:26Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1100 block of HOLBROOK TERRACE NE",
-    "lat": 38.908,
-    "lon": -76.988
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-02T13:33:51Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "800 block of 21ST STREET NE",
-    "lat": 38.9,
-    "lon": -76.974
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-11-02T13:03:46Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1900 block of CAPITOL AVENUE NE",
-    "lat": 38.913,
-    "lon": -76.984
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "agency": "DPW",
-    "added": "2026-11-02T12:53:09Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "900 block of BLADENSBURG ROAD NE",
-    "lat": 38.902,
-    "lon": -76.982
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-02T12:37:40Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1200 block of MORSE STREET NE",
-    "lat": 38.902,
-    "lon": -76.987
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-02T12:03:17Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1200 block of ORREN STREET NE",
-    "lat": 38.903,
-    "lon": -76.986
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-02T11:49:05Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1200 block of OATES STREET NE",
-    "lat": 38.904,
-    "lon": -76.986
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-02T00:17:57Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1200 block of OATES STREET NE",
-    "lat": 38.904,
-    "lon": -76.986
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-11-01T23:08:34Z",
-    "resolved": null,
-    "status": "Open (Duplicate)",
-    "block": "1200 block of RAUM STREET NE",
-    "lat": 38.909,
-    "lon": -76.985
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-01T21:37:51Z",
-    "resolved": "2026-11-01T21:41:35Z",
+    "type": "DC Government Information",
+    "agency": "OUC",
+    "added": "2026-11-02T15:03:09Z",
+    "resolved": "2026-11-02T15:03:09Z",
     "status": "Closed",
     "block": "300 block of FLORIDA AVENUE NE",
     "lat": 38.908,
     "lon": -77.002
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-01T21:16:47Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1300 block of TRINIDAD AVENUE NE",
-    "lat": 38.904,
-    "lon": -76.986
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-01T21:02:02Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1400 block of MONTELLO AVENUE NE",
-    "lat": 38.906,
-    "lon": -76.988
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-01T20:23:53Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1100 block of HOLBROOK TERRACE NE",
-    "lat": 38.908,
-    "lon": -76.988
-   },
-   {
-    "type": "Trash Cart Repair",
-    "agency": "DPW",
-    "added": "2026-11-01T20:13:54Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1300 block of TRINIDAD AVENUE NE",
-    "lat": 38.904,
-    "lon": -76.986
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-01T20:06:02Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1300 block of WEST VIRGINIA AVENUE NE",
-    "lat": 38.906,
-    "lon": -76.99
-   },
-   {
-    "type": "Tree Pruning",
-    "agency": "DDOT",
-    "added": "2026-11-01T19:43:56Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "1300 block of WEST VIRGINIA AVENUE NE",
-    "lat": 38.906,
-    "lon": -76.991
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-01T17:58:28Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1100 block of OATES STREET NE",
-    "lat": 38.906,
-    "lon": -76.99
    }
   ]
  },
  "crime": {
-  "total": 71,
-  "previous_total": 94,
+  "total": 70,
+  "previous_total": 95,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
@@ -2795,8 +2795,8 @@
    },
    {
     "offense": "BURGLARY",
-    "count": 8,
-    "previous": 5
+    "count": 7,
+    "previous": 6
    },
    {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
@@ -2869,7 +2869,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3082,7 +3082,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3102,11 +3102,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 99,
-   "starting_next_7d": 15,
-   "reserved_ft": 17446,
+   "active_this_week": 107,
+   "starting_next_7d": 22,
+   "reserved_ft": 18150,
    "long_running_90d": 20,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -3118,15 +3118,15 @@
     },
     {
      "type": "Construction staging",
-     "count": 34
+     "count": 37
     },
     {
      "type": "Lead pipe replacement",
-     "count": 36
+     "count": 37
     },
     {
      "type": "Utility & DDOT work",
-     "count": 22
+     "count": 26
     },
     {
      "type": "Events & reserved parking",
@@ -3135,20 +3135,28 @@
    ],
    "upcoming": [
     {
-     "type": "Utility & DDOT work",
-     "block": "1200 block of Simms Place NE",
+     "type": "Construction staging",
+     "block": "1100 block of Morse Street NE",
      "start": "2026-11-03",
-     "end": "2026-11-04",
-     "ft": 66,
-     "hours": "7:30 am\u20133 pm"
+     "end": "2026-12-02",
+     "ft": 154,
+     "hours": "9 am\u20133:30 pm"
     },
     {
-     "type": "Utility & DDOT work",
-     "block": "1700 block of Lang Place NE",
+     "type": "Construction staging",
+     "block": "1500 block of Trinidad Avenue NE",
      "start": "2026-11-03",
-     "end": "2026-11-05",
-     "ft": 132,
-     "hours": "8 am\u20133 pm"
+     "end": "2026-12-19",
+     "ft": 66,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "1500 block of Trinidad Avenue NE",
+     "start": "2026-11-03",
+     "end": "2026-12-19",
+     "ft": 66,
+     "hours": "9:30 am\u20133:30 pm"
     },
     {
      "type": "Moving & storage",
@@ -3165,6 +3173,14 @@
      "end": "2026-11-13",
      "ft": 220,
      "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Lead pipe replacement",
+     "block": "1200 block of Meigs Place NE",
+     "start": "2026-11-03",
+     "end": "2026-12-23",
+     "ft": 616,
+     "hours": "7 am\u20137 pm"
     },
     {
      "type": "Construction staging",
@@ -3253,6 +3269,46 @@
      "end": "2026-12-26",
      "ft": 220,
      "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1200 block of Holbrook Street NE",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 132,
+     "hours": "7:30 am\u20133 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1600 block of Lang Place NE",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 132,
+     "hours": "7:30 am\u20133 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "800 block of 21st Street NE",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 132,
+     "hours": "7:30 am\u20133 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1300 block of 4th Street NE",
+     "start": "2026-11-09",
+     "end": "2026-11-20",
+     "ft": 220,
+     "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "2000 block of West Virginia Avenue NE",
+     "start": "2026-11-10",
+     "end": "2026-12-09",
+     "ft": 154,
+     "hours": "9:30 am\u20133:30 pm"
     }
    ]
   },
@@ -3338,7 +3394,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.05,
     "city_median_days": 0.05,
-    "closed_n": 2144
+    "closed_n": 2140
    },
    {
     "type": "Bulk Collection",
@@ -3380,13 +3436,13 @@
     "type": "Scheduled Yard Waste",
     "median_days": 12.92,
     "city_median_days": 9.76,
-    "closed_n": 368
+    "closed_n": 367
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3535,7 +3591,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4097,8 +4153,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-03T01:47:04Z",
-  "today": "2026-11-02",
+  "generated_at": "2026-11-03T09:19:24Z",
+  "today": "2026-11-03",
   "days_ahead": 30,
   "sources": [
    {
@@ -4402,7 +4458,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -29995,7 +30051,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

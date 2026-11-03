@@ -1,7 +1,7 @@
 {
  "slug": "anacostia",
  "name": "Anacostia",
- "generated_at": "2026-11-03T01:47:04Z",
+ "generated_at": "2026-11-03T09:19:24Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1042,19 +1042,6 @@
    "smd": "8A04"
   },
   {
-   "id": "B2604443",
-   "issued": "2026-10-05T04:00:00Z",
-   "group": "New construction",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "2401 ELVANS RD SE 20020",
-   "work": "\u001aREVISION TO BUILDING PERMIT NO. B2508183 TO REMOVE THE SURFACE PARKING.\r\nTHE HOUSE LAYOUT REMAINS UNCHANGED\u001a\r\n\r\nNEW CONSTRUCTION OF A SINGLE FAMILY THREE-STORY RESIDENTIAL ROW DWELLING\r\nFENCE, PORCH, MECHANICAL DUCT WORK, ELECTRICAL, PLUMBING, SPRINKLER AS PER PLANS.",
-   "zoning": "R-3",
-   "lat": 38.85461,
-   "lon": -76.98623,
-   "smd": "8B04"
-  },
-  {
    "id": "FD2600014",
    "issued": "2026-10-05T04:00:00Z",
    "group": "Additions",
@@ -1066,21 +1053,34 @@
    "lat": 38.86604,
    "lon": -76.98362,
    "smd": "8A05"
+  },
+  {
+   "id": "B2604443",
+   "issued": "2026-10-05T04:00:00Z",
+   "group": "New construction",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "2401 ELVANS RD SE 20020",
+   "work": "\u001aREVISION TO BUILDING PERMIT NO. B2508183 TO REMOVE THE SURFACE PARKING.\r\nTHE HOUSE LAYOUT REMAINS UNCHANGED\u001a\r\n\r\nNEW CONSTRUCTION OF A SINGLE FAMILY THREE-STORY RESIDENTIAL ROW DWELLING\r\nFENCE, PORCH, MECHANICAL DUCT WORK, ELECTRICAL, PLUMBING, SPRINKLER AS PER PLANS.",
+   "zoning": "R-3",
+   "lat": 38.85461,
+   "lon": -76.98623,
+   "smd": "8B04"
   }
  ],
  "requests": {
-  "total": 504,
-  "previous_total": 859,
+  "total": 520,
+  "previous_total": 833,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 88,
-    "previous": 113
+    "count": 91,
+    "previous": 110
    },
    {
     "type": "Parking Enforcement",
-    "count": 78,
-    "previous": 113
+    "count": 81,
+    "previous": 111
    },
    {
     "type": "DOEE - LIHEAP",
@@ -1089,13 +1089,13 @@
    },
    {
     "type": "Illegal Dumping",
-    "count": 35,
+    "count": 37,
     "previous": 27
    },
    {
     "type": "Trash Collection - Missed",
     "count": 19,
-    "previous": 28
+    "previous": 27
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -1104,13 +1104,13 @@
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 16,
+    "count": 17,
     "previous": 31
    },
    {
     "type": "Recycling Collection - Missed",
     "count": 16,
-    "previous": 13
+    "previous": 9
    },
    {
     "type": "Roadway Signs",
@@ -1119,23 +1119,23 @@
    },
    {
     "type": "DMV - Drivers License/ID Issues",
-    "count": 11,
+    "count": 12,
     "previous": 19
    },
    {
     "type": "Streetlight Repair Investigation",
     "count": 11,
-    "previous": 16
+    "previous": 15
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "count": 9,
+    "previous": 29
    },
    {
     "type": "Residential Parking Permit Violation",
     "count": 9,
     "previous": 10
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "count": 8,
-    "previous": 29
    },
    {
     "type": "DC Government Information",
@@ -1160,7 +1160,7 @@
    {
     "type": "Tree Inspection",
     "count": 6,
-    "previous": 29
+    "previous": 23
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
@@ -1168,12 +1168,17 @@
     "previous": 33
    },
    {
+    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "count": 5,
+    "previous": 2
+   },
+   {
     "type": "DOB - Vacant Private Property Inspection",
     "count": 5,
     "previous": 53
    },
    {
-    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "type": "Pet Waste Complaint",
     "count": 4,
     "previous": 2
    },
@@ -1185,7 +1190,7 @@
    {
     "type": "Tree Removal",
     "count": 4,
-    "previous": 5
+    "previous": 4
    },
    {
     "type": "Traffic Safety Input",
@@ -1196,11 +1201,6 @@
     "type": "Out of State Parking Violation (ROSA)",
     "count": 3,
     "previous": 8
-   },
-   {
-    "type": "Pet Waste Complaint",
-    "count": 3,
-    "previous": 2
    },
    {
     "type": "Public Space Litter Can-Collection",
@@ -1228,6 +1228,21 @@
     "previous": 0
    },
    {
+    "type": "DGS - Playground Repair",
+    "count": 2,
+    "previous": 6
+   },
+   {
+    "type": "DC Water - Customer Flooding",
+    "count": 2,
+    "previous": 1
+   },
+   {
+    "type": "Illegal Poster",
+    "count": 2,
+    "previous": 0
+   },
+   {
     "type": "Public Space Inspection",
     "count": 2,
     "previous": 6
@@ -1245,17 +1260,17 @@
    {
     "type": "Supercan - Repair",
     "count": 2,
-    "previous": 4
+    "previous": 3
    },
    {
     "type": "Tree Pruning",
     "count": 2,
-    "previous": 27
+    "previous": 26
    },
    {
     "type": "Pothole",
     "count": 2,
-    "previous": 3
+    "previous": 2
    },
    {
     "type": "DOB - Illegal Construction",
@@ -1270,21 +1285,6 @@
    {
     "type": "Alley Repair",
     "count": 2,
-    "previous": 0
-   },
-   {
-    "type": "DGS - Playground Repair",
-    "count": 1,
-    "previous": 6
-   },
-   {
-    "type": "DC Water - Customer Flooding",
-    "count": 1,
-    "previous": 1
-   },
-   {
-    "type": "Illegal Poster",
-    "count": 1,
     "previous": 0
    },
    {
@@ -1340,11 +1340,21 @@
    {
     "type": "Container Removal",
     "count": 1,
-    "previous": 4
+    "previous": 3
    }
   ],
-  "open": 65,
+  "open": 66,
   "recent": [
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-03T02:15:31Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2300 block of HUNTER PLACE SE",
+    "lat": 38.858,
+    "lon": -76.986
+   },
    {
     "type": "Residential Parking Permit Violation",
     "agency": "DPW",
@@ -1834,16 +1844,6 @@
     "block": "2300 block of GREEN STREET SE",
     "lat": 38.862,
     "lon": -76.981
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-29T14:44:22Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2300 block of CHESTER STREET SE",
-    "lat": 38.862,
-    "lon": -76.988
    }
   ]
  },
@@ -1857,14 +1857,14 @@
     "previous": 15
    },
    {
-    "offense": "MOTOR VEHICLE THEFT",
-    "count": 5,
-    "previous": 7
-   },
-   {
     "offense": "THEFT F/AUTO",
     "count": 5,
     "previous": 6
+   },
+   {
+    "offense": "MOTOR VEHICLE THEFT",
+    "count": 5,
+    "previous": 7
    },
    {
     "offense": "ROBBERY",
@@ -1929,7 +1929,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2120,7 +2120,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2140,11 +2140,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 73,
-   "starting_next_7d": 14,
-   "reserved_ft": 8382,
+   "active_this_week": 76,
+   "starting_next_7d": 16,
+   "reserved_ft": 9042,
    "long_running_90d": 22,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-02, newest record update 2026-11-02, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -2164,7 +2164,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 11
+     "count": 14
     },
     {
      "type": "Events & reserved parking",
@@ -2173,12 +2173,28 @@
    ],
    "upcoming": [
     {
-     "type": "Construction staging",
-     "block": "1900 block of Martin Luther King Jr Avenue SE",
-     "start": "2026-11-03",
-     "end": "2026-12-01",
-     "ft": 132,
-     "hours": "9:30 am\u20133:30 pm"
+     "type": "Utility & DDOT work",
+     "block": "1200 block of Pleasant Street SE",
+     "start": "2026-11-04",
+     "end": "2026-11-13",
+     "ft": 220,
+     "hours": "8 am\u20135 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1300 block of Maple View Place SE",
+     "start": "2026-11-04",
+     "end": "2026-11-13",
+     "ft": 220,
+     "hours": "8 am\u20135 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1200 block of Maple View Place SE",
+     "start": "2026-11-04",
+     "end": "2026-11-13",
+     "ft": 220,
+     "hours": "8 am\u20135 pm"
     },
     {
      "type": "Moving & storage",
@@ -2374,7 +2390,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 791
+    "closed_n": 790
    },
    {
     "type": "DC Government Information",
@@ -2409,14 +2425,14 @@
    {
     "type": "Roadway Signs",
     "median_days": 2.96,
-    "city_median_days": 7.0,
+    "city_median_days": 6.99,
     "closed_n": 156
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2585,7 +2601,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2863,8 +2879,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-03T01:47:04Z",
-  "today": "2026-11-02",
+  "generated_at": "2026-11-03T09:19:24Z",
+  "today": "2026-11-03",
   "days_ahead": 30,
   "sources": [
    {
@@ -2991,7 +3007,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -19140,7 +19156,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-03T01:47:04Z",
+  "generated_at": "2026-11-03T09:19:24Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
