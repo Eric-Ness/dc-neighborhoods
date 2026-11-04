@@ -1,7 +1,7 @@
 {
  "slug": "gloverpark",
  "name": "Glover Park",
- "generated_at": "2026-11-04T01:56:36Z",
+ "generated_at": "2026-11-04T09:19:23Z",
  "boundary": {
   "source": "ANC 3B, the Glover Park commission (all its single-member districts, Open Data DC). DC has no planning area named Glover Park.",
   "rings": [
@@ -7827,12 +7827,12 @@
   }
  ],
  "requests": {
-  "total": 542,
-  "previous_total": 341,
+  "total": 543,
+  "previous_total": 338,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 98,
+    "count": 97,
     "previous": 72
    },
    {
@@ -7842,7 +7842,7 @@
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 55,
+    "count": 56,
     "previous": 44
    },
    {
@@ -7857,7 +7857,7 @@
    },
    {
     "type": "DMV - Vehicle Registration Issues",
-    "count": 19,
+    "count": 20,
     "previous": 7
    },
    {
@@ -8066,7 +8066,7 @@
     "previous": 0
    }
   ],
-  "open": 132,
+  "open": 134,
   "recent": [
    {
     "type": "DC Health Rodent & Vector Control",
@@ -8549,6 +8549,16 @@
     "lon": -77.077
    },
    {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-10-30T20:26:39Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2300 block of 39TH STREET NW",
+    "lat": 38.92,
+    "lon": -77.077
+   },
+   {
     "type": "DMV - Vehicle Registration Issues",
     "agency": "DMV",
     "added": "2026-10-30T20:13:27Z",
@@ -8557,16 +8567,6 @@
     "block": "2500 block of WISCONSIN AVENUE NW",
     "lat": 38.923,
     "lon": -77.074
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "agency": "DPW",
-    "added": "2026-10-30T19:05:58Z",
-    "resolved": "2026-10-31T23:41:46Z",
-    "status": "Closed",
-    "block": "3300 block of NEW MEXICO AVENUE NW",
-    "lat": 38.934,
-    "lon": -77.085
    }
   ]
  },
@@ -8638,7 +8638,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -8937,7 +8937,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -8957,11 +8957,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 28,
-   "starting_next_7d": 6,
-   "reserved_ft": 2354,
+   "active_this_week": 30,
+   "starting_next_7d": 10,
+   "reserved_ft": 2530,
    "long_running_90d": 8,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -8981,7 +8981,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 4
+     "count": 6
     },
     {
      "type": "Events & reserved parking",
@@ -8989,14 +8989,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Moving & storage",
-     "block": "2300 block of 41st Street NW",
-     "start": "2026-11-04",
-     "end": "2026-11-04",
-     "ft": 88,
-     "hours": ""
-    },
     {
      "type": "Events & reserved parking",
      "block": "2200 block of 39th Place NW",
@@ -9022,6 +9014,22 @@
      "hours": ""
     },
     {
+     "type": "Moving & storage",
+     "block": "2600 block of 39th Street NW",
+     "start": "2026-11-07",
+     "end": "2026-11-07",
+     "ft": 88,
+     "hours": ""
+    },
+    {
+     "type": "Moving & storage",
+     "block": "2400 block of Huidekoper Place NW",
+     "start": "2026-11-07",
+     "end": "2026-11-07",
+     "ft": 88,
+     "hours": ""
+    },
+    {
      "type": "Utility & DDOT work",
      "block": "2400 block of 39th Street NW",
      "start": "2026-11-09",
@@ -9036,6 +9044,30 @@
      "end": "2026-11-13",
      "ft": 44,
      "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "3700 block of Benton Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-10",
+     "ft": 88,
+     "hours": "7:30 am\u20133 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "2200 block of Hall Place NW",
+     "start": "2026-11-09",
+     "end": "2026-11-10",
+     "ft": 66,
+     "hours": "7:30 am\u20133 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "3800 block of Benton Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-10",
+     "ft": 88,
+     "hours": "7:30 am\u20133 pm"
     }
    ]
   },
@@ -9121,7 +9153,7 @@
     "type": "Bulk Collection",
     "median_days": 8.04,
     "city_median_days": 6.92,
-    "closed_n": 701
+    "closed_n": 700
    },
    {
     "type": "Scheduled Yard Waste",
@@ -9138,7 +9170,7 @@
    {
     "type": "Trash Collection - Missed",
     "median_days": 11.97,
-    "city_median_days": 4.15,
+    "city_median_days": 4.14,
     "closed_n": 242
    },
    {
@@ -9169,7 +9201,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -9311,7 +9343,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "archive_days": 180,
   "sources": [
    {
@@ -9574,8 +9606,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T01:56:36Z",
-  "today": "2026-11-03",
+  "generated_at": "2026-11-04T09:19:23Z",
+  "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
    {
@@ -9629,7 +9661,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -24145,7 +24177,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

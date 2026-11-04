@@ -1,7 +1,7 @@
 {
  "slug": "noma",
  "name": "NoMa",
- "generated_at": "2026-11-04T01:56:36Z",
+ "generated_at": "2026-11-04T09:19:23Z",
  "boundary": {
   "source": "NoMa Business Improvement District boundary (Open Data DC). DC has no planning area for NoMa.",
   "rings": [
@@ -597,16 +597,16 @@
  ],
  "requests": {
   "total": 969,
-  "previous_total": 776,
+  "previous_total": 775,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 377,
-    "previous": 244
+    "count": 378,
+    "previous": 243
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 128,
+    "count": 129,
     "previous": 1
    },
    {
@@ -626,7 +626,7 @@
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
-    "count": 30,
+    "count": 31,
     "previous": 25
    },
    {
@@ -637,7 +637,7 @@
    {
     "type": "DC Government Information",
     "count": 24,
-    "previous": 30
+    "previous": 31
    },
    {
     "type": "Roadway Signs",
@@ -666,7 +666,7 @@
    },
    {
     "type": "Dead Animal Collection",
-    "count": 15,
+    "count": 14,
     "previous": 21
    },
    {
@@ -690,11 +690,6 @@
     "previous": 10
    },
    {
-    "type": "DGS - Playground Repair",
-    "count": 10,
-    "previous": 6
-   },
-   {
     "type": "Bulk Collection",
     "count": 10,
     "previous": 6
@@ -708,6 +703,11 @@
     "type": "Parking Meter Repair",
     "count": 10,
     "previous": 1
+   },
+   {
+    "type": "DGS - Playground Repair",
+    "count": 8,
+    "previous": 6
    },
    {
     "type": "Tree Removal",
@@ -815,8 +815,18 @@
     "previous": 0
    }
   ],
-  "open": 123,
+  "open": 124,
   "recent": [
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-04T04:31:57Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1100 block of 1ST STREET NE",
+    "lat": 38.905,
+    "lon": -77.006
+   },
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
@@ -1188,6 +1198,16 @@
     "lon": -77.008
    },
    {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-01T17:15:47Z",
+    "resolved": "2026-11-01T18:37:19Z",
+    "status": "Closed",
+    "block": "Unit block of FLORIDA AVENUE NE",
+    "lat": 38.91,
+    "lon": -77.008
+   },
+   {
     "type": "DGS - Playground Repair",
     "agency": "DGS",
     "added": "2026-11-01T15:41:22Z",
@@ -1296,26 +1316,6 @@
     "block": "100 block of Q STREET NE",
     "lat": 38.911,
     "lon": -77.004
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-31T14:51:45Z",
-    "resolved": "2026-10-31T14:51:45Z",
-    "status": "Closed",
-    "block": "200 block of Q STREET NE",
-    "lat": 38.911,
-    "lon": -77.003
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-31T14:51:45Z",
-    "resolved": "2026-10-31T14:51:45Z",
-    "status": "Closed",
-    "block": "200 block of Q STREET NE",
-    "lat": 38.911,
-    "lon": -77.003
    }
   ]
  },
@@ -1384,7 +1384,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -1564,7 +1564,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -1584,12 +1584,16 @@
    }
   ],
   "curb": {
-   "active_this_week": 38,
-   "starting_next_7d": 0,
-   "reserved_ft": 3740,
+   "active_this_week": 39,
+   "starting_next_7d": 1,
+   "reserved_ft": 3828,
    "long_running_90d": 12,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
    "by_type": [
+    {
+     "type": "Moving & storage",
+     "count": 1
+    },
     {
      "type": "Construction staging",
      "count": 32
@@ -1607,7 +1611,16 @@
      "count": 1
     }
    ],
-   "upcoming": []
+   "upcoming": [
+    {
+     "type": "Moving & storage",
+     "block": "100 block of R Street NE",
+     "start": "2026-11-06",
+     "end": "2026-11-07",
+     "ft": 88,
+     "hours": ""
+    }
+   ]
   },
   "trees": {
    "total": 1001,
@@ -1714,7 +1727,7 @@
    {
     "type": "Roadway Signs",
     "median_days": 10.85,
-    "city_median_days": 6.99,
+    "city_median_days": 6.98,
     "closed_n": 119
    },
    {
@@ -1739,7 +1752,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -1909,7 +1922,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2244,8 +2257,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T01:56:36Z",
-  "today": "2026-11-03",
+  "generated_at": "2026-11-04T09:19:23Z",
+  "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
    {
@@ -2314,7 +2327,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -13666,7 +13679,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

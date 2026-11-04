@@ -1,7 +1,7 @@
 {
  "slug": "woodleypark",
  "name": "Woodley Park",
- "generated_at": "2026-11-04T01:56:36Z",
+ "generated_at": "2026-11-04T09:19:23Z",
  "boundary": {
   "source": "ANC single-member districts 3C01, 3C02, 3C03 and 3C07, around the Woodley Park Metro and the National Zoo (Open Data DC). DC's WOODLEY PARK planning area also takes in much of Cleveland Park, which has its own site.",
   "rings": [
@@ -11712,17 +11712,17 @@
  ],
  "requests": {
   "total": 435,
-  "previous_total": 283,
+  "previous_total": 280,
   "by_type": [
    {
     "type": "Parking Enforcement",
     "count": 77,
-    "previous": 42
+    "previous": 40
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 60,
-    "previous": 42
+    "count": 61,
+    "previous": 41
    },
    {
     "type": "Bulk Collection",
@@ -11732,7 +11732,7 @@
    {
     "type": "Recycling Collection - Missed",
     "count": 21,
-    "previous": 6
+    "previous": 5
    },
    {
     "type": "Residential Parking Permit Violation",
@@ -11760,11 +11760,6 @@
     "previous": 10
    },
    {
-    "type": "Streetlight Repair Investigation",
-    "count": 11,
-    "previous": 3
-   },
-   {
     "type": "DMV - Drivers License/ID Issues",
     "count": 11,
     "previous": 5
@@ -11785,9 +11780,19 @@
     "previous": 9
    },
    {
+    "type": "Streetlight Repair Investigation",
+    "count": 9,
+    "previous": 5
+   },
+   {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 8,
     "previous": 15
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "count": 8,
+    "previous": 0
    },
    {
     "type": "Graffiti Removal",
@@ -11803,11 +11808,6 @@
     "type": "Pothole",
     "count": 7,
     "previous": 3
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "count": 7,
-    "previous": 0
    },
    {
     "type": "Dead Animal Collection",
@@ -12495,7 +12495,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -12656,7 +12656,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -12677,10 +12677,10 @@
   ],
   "curb": {
    "active_this_week": 35,
-   "starting_next_7d": 9,
+   "starting_next_7d": 7,
    "reserved_ft": 3630,
    "long_running_90d": 13,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -12708,22 +12708,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Construction staging",
-     "block": "2800 block of Cathedral Avenue NW",
-     "start": "2026-11-04",
-     "end": "2026-12-03",
-     "ft": 220,
-     "hours": "7 am\u20137 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "3000 block of Cleveland Avenue NW",
-     "start": "2026-11-04",
-     "end": "2026-11-05",
-     "ft": 88,
-     "hours": "7:30 am\u20133 pm"
-    },
     {
      "type": "Events & reserved parking",
      "block": "2700 block of 34th Street NW",
@@ -12881,13 +12865,13 @@
    {
     "type": "Trash Collection - Missed",
     "median_days": 10.48,
-    "city_median_days": 4.15,
+    "city_median_days": 4.14,
     "closed_n": 240
    },
    {
     "type": "Recycling Collection - Missed",
     "median_days": 4.89,
-    "city_median_days": 5.05,
+    "city_median_days": 5.03,
     "closed_n": 129
    },
    {
@@ -12899,7 +12883,7 @@
    {
     "type": "Tree Inspection",
     "median_days": 0.21,
-    "city_median_days": 0.61,
+    "city_median_days": 0.62,
     "closed_n": 86
    },
    {
@@ -12912,7 +12896,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -13071,7 +13055,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "archive_days": 180,
   "sources": [
    {
@@ -13370,8 +13354,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T01:56:36Z",
-  "today": "2026-11-03",
+  "generated_at": "2026-11-04T09:19:23Z",
+  "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
    {
@@ -13458,7 +13442,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -30237,7 +30221,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

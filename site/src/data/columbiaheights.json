@@ -1,7 +1,7 @@
 {
  "slug": "columbiaheights",
  "name": "Columbia Heights",
- "generated_at": "2026-11-04T01:56:36Z",
+ "generated_at": "2026-11-04T09:19:23Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1506,6 +1506,32 @@
    "smd": "1E01"
   },
   {
+   "id": "HO2700129",
+   "issued": "2026-10-23T04:00:00Z",
+   "group": "Home businesses",
+   "type": "HOME OCCUPATION",
+   "subtype": "NA",
+   "address": "1352 OTIS PL NW 20010",
+   "work": "Home Office - Music Production with Incidental Sales",
+   "zoning": "RF-1",
+   "lat": 38.93439,
+   "lon": -77.03157,
+   "smd": "1A04"
+  },
+  {
+   "id": "P2700686",
+   "issued": "2026-10-23T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "3606 NEW HAMPSHIRE AVE NW 20010",
+   "work": "Plumbing trade Permit",
+   "zoning": "RF-1",
+   "lat": 38.93434,
+   "lon": -77.02608,
+   "smd": "1A07"
+  },
+  {
    "id": "P2700678",
    "issued": "2026-10-23T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -1608,32 +1634,6 @@
    "lat": 38.9279,
    "lon": -77.0238,
    "smd": "1E04"
-  },
-  {
-   "id": "HO2700129",
-   "issued": "2026-10-23T04:00:00Z",
-   "group": "Home businesses",
-   "type": "HOME OCCUPATION",
-   "subtype": "NA",
-   "address": "1352 OTIS PL NW 20010",
-   "work": "Home Office - Music Production with Incidental Sales",
-   "zoning": "RF-1",
-   "lat": 38.93439,
-   "lon": -77.03157,
-   "smd": "1A04"
-  },
-  {
-   "id": "P2700686",
-   "issued": "2026-10-23T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "3606 NEW HAMPSHIRE AVE NW 20010",
-   "work": "Plumbing trade Permit",
-   "zoning": "RF-1",
-   "lat": 38.93434,
-   "lon": -77.02608,
-   "smd": "1A07"
   },
   {
    "id": "PP2700346",
@@ -2573,28 +2573,28 @@
   }
  ],
  "requests": {
-  "total": 1936,
-  "previous_total": 2047,
+  "total": 1943,
+  "previous_total": 2048,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 278,
-    "previous": 270
+    "count": 283,
+    "previous": 267
    },
    {
     "type": "Bulk Collection",
-    "count": 211,
-    "previous": 257
+    "count": 209,
+    "previous": 259
    },
    {
     "type": "Illegal Dumping",
     "count": 157,
-    "previous": 142
+    "previous": 143
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 140,
-    "previous": 158
+    "count": 139,
+    "previous": 157
    },
    {
     "type": "Scheduled Yard Waste",
@@ -2604,12 +2604,12 @@
    {
     "type": "Trash Collection - Missed",
     "count": 88,
-    "previous": 144
+    "previous": 143
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 77,
-    "previous": 79
+    "count": 76,
+    "previous": 80
    },
    {
     "type": "DOEE - LIHEAP",
@@ -2619,7 +2619,7 @@
    {
     "type": "Dead Animal Collection",
     "count": 63,
-    "previous": 64
+    "previous": 63
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -2628,22 +2628,22 @@
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
-    "count": 56,
-    "previous": 47
+    "count": 61,
+    "previous": 46
    },
    {
     "type": "Recycling Collection - Missed",
-    "count": 54,
+    "count": 57,
     "previous": 59
    },
    {
     "type": "Public Space Litter Can-Collection",
-    "count": 49,
+    "count": 50,
     "previous": 45
    },
    {
     "type": "Trash Cart - Delivery",
-    "count": 47,
+    "count": 46,
     "previous": 64
    },
    {
@@ -2658,13 +2658,13 @@
    },
    {
     "type": "Graffiti Removal",
-    "count": 27,
+    "count": 26,
     "previous": 19
    },
    {
     "type": "Roadway Signs",
-    "count": 25,
-    "previous": 15
+    "count": 24,
+    "previous": 16
    },
    {
     "type": "Sidewalk Repair",
@@ -2682,11 +2682,6 @@
     "previous": 31
    },
    {
-    "type": "Tree Pruning",
-    "count": 17,
-    "previous": 7
-   },
-   {
     "type": "DMV - Drivers License/ID Issues",
     "count": 16,
     "previous": 16
@@ -2694,12 +2689,17 @@
    {
     "type": "Recycling Cart Delivery",
     "count": 16,
-    "previous": 24
+    "previous": 25
+   },
+   {
+    "type": "Tree Pruning",
+    "count": 16,
+    "previous": 7
    },
    {
     "type": "DC Government Information",
     "count": 15,
-    "previous": 8
+    "previous": 10
    },
    {
     "type": "Tree Planting",
@@ -2709,12 +2709,12 @@
    {
     "type": "DOB - Vacant Private Property Inspection",
     "count": 14,
-    "previous": 14
+    "previous": 13
    },
    {
     "type": "Container Removal",
     "count": 13,
-    "previous": 31
+    "previous": 32
    },
    {
     "type": "DGS - Playground Repair",
@@ -2739,7 +2739,7 @@
    {
     "type": "Trash Cart Repair",
     "count": 11,
-    "previous": 16
+    "previous": 17
    },
    {
     "type": "DMV - Vehicle Registration Issues",
@@ -2762,14 +2762,14 @@
     "previous": 49
    },
    {
+    "type": "Supercan - Delivery",
+    "count": 8,
+    "previous": 3
+   },
+   {
     "type": "Traffic Safety Input",
     "count": 7,
     "previous": 6
-   },
-   {
-    "type": "Supercan - Delivery",
-    "count": 7,
-    "previous": 3
    },
    {
     "type": "Missed Curbside Compost Collection",
@@ -2819,7 +2819,7 @@
    {
     "type": "Tree Removal",
     "count": 3,
-    "previous": 10
+    "previous": 9
    },
    {
     "type": "Bicycle Services",
@@ -2917,8 +2917,128 @@
     "previous": 0
    }
   ],
-  "open": 321,
+  "open": 331,
   "recent": [
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T04:39:31Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1300 block of COLUMBIA ROAD NW",
+    "lat": 38.928,
+    "lon": -77.03
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T03:11:22Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1400 block of MERIDIAN PLACE NW",
+    "lat": 38.933,
+    "lon": -77.034
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T02:58:42Z",
+    "resolved": "2026-11-04T04:11:18Z",
+    "status": "Closed",
+    "block": "3300 block of WARDER STREET NW",
+    "lat": 38.931,
+    "lon": -77.02
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T02:42:29Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "15TH STREET NW AND HARVARD STREET NW",
+    "lat": 38.926,
+    "lon": -77.035
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-04T02:11:39Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "900 block of COLUMBIA ROAD NW",
+    "lat": 38.928,
+    "lon": -77.027
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-04T02:05:31Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "700 block of HOBART PLACE NW",
+    "lat": 38.927,
+    "lon": -77.025
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T01:56:45Z",
+    "resolved": "2026-11-04T02:04:15Z",
+    "status": "Closed",
+    "block": "1000 block of HARVARD STREET NW",
+    "lat": 38.927,
+    "lon": -77.026
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T01:55:56Z",
+    "resolved": "2026-11-04T02:05:39Z",
+    "status": "Closed",
+    "block": "1000 block of PARK ROAD NW",
+    "lat": 38.932,
+    "lon": -77.027
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-04T01:54:39Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1400 block of PERRY PLACE NW",
+    "lat": 38.936,
+    "lon": -77.034
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-04T01:53:52Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1400 block of MERIDIAN PLACE NW",
+    "lat": 38.934,
+    "lon": -77.034
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-04T01:52:50Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1400 block of NEWTON STREET NW",
+    "lat": 38.933,
+    "lon": -77.035
+   },
+   {
+    "type": "Recycling Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-04T01:50:11Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "700 block of IRVING STREET NW",
+    "lat": 38.929,
+    "lon": -77.024
+   },
    {
     "type": "Dead Animal Collection",
     "agency": "DPW",
@@ -3298,132 +3418,12 @@
     "block": "700 block of COLUMBIA ROAD NW",
     "lat": 38.928,
     "lon": -77.024
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-03T15:46:56Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "700 block of HARVARD STREET NW",
-    "lat": 38.927,
-    "lon": -77.023
-   },
-   {
-    "type": "Pothole",
-    "agency": "DDOT",
-    "added": "2026-11-03T15:44:51Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "700 block of HARVARD STREET NW",
-    "lat": 38.927,
-    "lon": -77.024
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-11-03T15:44:00Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "400 block of MANOR PLACE NW",
-    "lat": 38.934,
-    "lon": -77.019
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "agency": "DPW",
-    "added": "2026-11-03T15:42:24Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2900 block of GEORGIA AVENUE NW",
-    "lat": 38.927,
-    "lon": -77.023
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-11-03T15:41:30Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3600 block of GEORGIA AVENUE NW",
-    "lat": 38.936,
-    "lon": -77.024
-   },
-   {
-    "type": "Dead Animal Collection",
-    "agency": "DPW",
-    "added": "2026-11-03T15:39:11Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "700 block of QUEBEC PLACE NW",
-    "lat": 38.936,
-    "lon": -77.024
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-11-03T15:13:26Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3200 block of WARDER STREET NW",
-    "lat": 38.931,
-    "lon": -77.02
-   },
-   {
-    "type": "Tree Pruning",
-    "agency": "DDOT",
-    "added": "2026-11-03T15:02:19Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "3200 block of PARK PLACE NW",
-    "lat": 38.931,
-    "lon": -77.019
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-03T14:52:45Z",
-    "resolved": "2026-11-03T16:03:40Z",
-    "status": "Closed",
-    "block": "1400 block of HARVARD STREET NW",
-    "lat": 38.927,
-    "lon": -77.034
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-03T14:40:46Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1300 block of OAK STREET NW",
-    "lat": 38.934,
-    "lon": -77.032
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-11-03T14:31:04Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "600 block of OTIS PLACE NW",
-    "lat": 38.935,
-    "lon": -77.02
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-03T14:19:17Z",
-    "resolved": "2026-11-03T16:21:47Z",
-    "status": "Closed (Duplicate)",
-    "block": "1400 block of PARK ROAD NW",
-    "lat": 38.931,
-    "lon": -77.035
    }
   ]
  },
  "crime": {
-  "total": 116,
-  "previous_total": 121,
+  "total": 114,
+  "previous_total": 122,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
@@ -3432,18 +3432,18 @@
    },
    {
     "offense": "THEFT F/AUTO",
-    "count": 25,
-    "previous": 16
-   },
-   {
-    "offense": "ROBBERY",
-    "count": 6,
-    "previous": 7
+    "count": 24,
+    "previous": 17
    },
    {
     "offense": "MOTOR VEHICLE THEFT",
     "count": 6,
     "previous": 13
+   },
+   {
+    "offense": "ROBBERY",
+    "count": 5,
+    "previous": 8
    },
    {
     "offense": "BURGLARY",
@@ -3453,7 +3453,7 @@
    {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
     "count": 3,
-    "previous": 11
+    "previous": 10
    },
    {
     "offense": "HOMICIDE",
@@ -3545,7 +3545,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3754,7 +3754,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3774,11 +3774,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 143,
-   "starting_next_7d": 24,
-   "reserved_ft": 24332,
+   "active_this_week": 137,
+   "starting_next_7d": 26,
+   "reserved_ft": 23364,
    "long_running_90d": 14,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -3790,7 +3790,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 53
+     "count": 51
     },
     {
      "type": "Cranes",
@@ -3798,11 +3798,11 @@
     },
     {
      "type": "Lead pipe replacement",
-     "count": 63
+     "count": 60
     },
     {
      "type": "Utility & DDOT work",
-     "count": 13
+     "count": 12
     },
     {
      "type": "Events & reserved parking",
@@ -3810,30 +3810,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Construction staging",
-     "block": "3300 block of Georgia Avenue NW",
-     "start": "2026-11-04",
-     "end": "2026-12-03",
-     "ft": 154,
-     "hours": ""
-    },
-    {
-     "type": "Construction staging",
-     "block": "700 block of Morton Street NW",
-     "start": "2026-11-04",
-     "end": "2026-12-03",
-     "ft": 154,
-     "hours": ""
-    },
-    {
-     "type": "Construction staging",
-     "block": "700 block of Lamont Street NW",
-     "start": "2026-11-04",
-     "end": "2026-12-03",
-     "ft": 154,
-     "hours": ""
-    },
     {
      "type": "Construction staging",
      "block": "700 block of Hobart Place NW",
@@ -3963,6 +3939,14 @@
      "hours": "8 am\u20134:30 pm"
     },
     {
+     "type": "Construction staging",
+     "block": "2900 block of 11th Street NW",
+     "start": "2026-11-09",
+     "end": "2026-12-31",
+     "ft": 220,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
      "type": "Lead pipe replacement",
      "block": "400 block of Kenyon Street NW",
      "start": "2026-11-09",
@@ -3987,6 +3971,14 @@
      "hours": "7:30 am\u20133 pm"
     },
     {
+     "type": "Utility & DDOT work",
+     "block": "700 block of Otis Place NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 132,
+     "hours": "7:30 am\u20133 pm"
+    },
+    {
      "type": "Moving & storage",
      "block": "1500 block of Newton Street NW",
      "start": "2026-11-11",
@@ -4001,6 +3993,30 @@
      "end": "2026-11-12",
      "ft": 88,
      "hours": ""
+    },
+    {
+     "type": "Construction staging",
+     "block": "2900 block of Sherman Avenue NW",
+     "start": "2026-11-11",
+     "end": "2026-12-10",
+     "ft": 242,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "2900 block of Sherman Avenue NW",
+     "start": "2026-11-11",
+     "end": "2026-12-10",
+     "ft": 88,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "2900 block of Sherman Avenue NW",
+     "start": "2026-11-11",
+     "end": "2026-12-10",
+     "ft": 132,
+     "hours": "9:30 am\u20133:30 pm"
     }
    ]
   },
@@ -4097,19 +4113,19 @@
    {
     "type": "Trash Collection - Missed",
     "median_days": 7.58,
-    "city_median_days": 4.15,
+    "city_median_days": 4.14,
     "closed_n": 1799
    },
    {
     "type": "Illegal Dumping",
     "median_days": 3.36,
     "city_median_days": 4.04,
-    "closed_n": 1417
+    "closed_n": 1413
    },
    {
     "type": "Recycling Collection - Missed",
     "median_days": 5.19,
-    "city_median_days": 5.05,
+    "city_median_days": 5.03,
     "closed_n": 1135
    },
    {
@@ -4128,13 +4144,13 @@
     "type": "Sanitation Enforcement",
     "median_days": 1.02,
     "city_median_days": 1.1,
-    "closed_n": 850
+    "closed_n": 849
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4302,7 +4318,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4839,8 +4855,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T01:56:36Z",
-  "today": "2026-11-03",
+  "generated_at": "2026-11-04T09:19:23Z",
+  "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
    {
@@ -4957,7 +4973,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -21239,7 +21255,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

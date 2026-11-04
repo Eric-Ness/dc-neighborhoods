@@ -1,7 +1,7 @@
 {
  "slug": "navyyard",
  "name": "Navy Yard",
- "generated_at": "2026-11-04T01:56:36Z",
+ "generated_at": "2026-11-04T09:19:23Z",
  "boundary": {
   "source": "Navy Yard (Capitol Riverfront) Business Improvement District boundary (Open Data DC). DC's planning area here is SW/Waterfront.",
   "rings": [
@@ -6948,13 +6948,13 @@
   }
  ],
  "requests": {
-  "total": 1304,
-  "previous_total": 1172,
+  "total": 1300,
+  "previous_total": 1169,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 618,
-    "previous": 730
+    "count": 615,
+    "previous": 731
    },
    {
     "type": "DOEE - LIHEAP",
@@ -6963,13 +6963,13 @@
    },
    {
     "type": "Bulk Collection",
-    "count": 72,
+    "count": 71,
     "previous": 72
    },
    {
     "type": "Streetlight Repair Investigation",
     "count": 69,
-    "previous": 15
+    "previous": 14
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -6983,13 +6983,13 @@
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 36,
+    "count": 37,
     "previous": 4
    },
    {
     "type": "Roadway Signs",
     "count": 31,
-    "previous": 20
+    "previous": 19
    },
    {
     "type": "Recycling Collection - Missed",
@@ -7013,7 +7013,7 @@
    },
    {
     "type": "Sidewalk Repair",
-    "count": 18,
+    "count": 19,
     "previous": 8
    },
    {
@@ -7027,11 +7027,6 @@
     "previous": 29
    },
    {
-    "type": "Graffiti Removal",
-    "count": 15,
-    "previous": 3
-   },
-   {
     "type": "Traffic Safety Input",
     "count": 15,
     "previous": 8
@@ -7040,6 +7035,11 @@
     "type": "Container Removal",
     "count": 15,
     "previous": 4
+   },
+   {
+    "type": "Graffiti Removal",
+    "count": 14,
+    "previous": 3
    },
    {
     "type": "Trash Collection - Missed",
@@ -7053,8 +7053,8 @@
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 10,
-    "previous": 15
+    "count": 9,
+    "previous": 14
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
@@ -7139,7 +7139,7 @@
    {
     "type": "Bicycle Services",
     "count": 3,
-    "previous": 4
+    "previous": 3
    },
    {
     "type": "Pothole",
@@ -7765,7 +7765,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -7949,7 +7949,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -7969,11 +7969,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 62,
-   "starting_next_7d": 5,
-   "reserved_ft": 7810,
+   "active_this_week": 54,
+   "starting_next_7d": 2,
+   "reserved_ft": 6424,
    "long_running_90d": 11,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Construction staging",
@@ -7989,34 +7989,10 @@
     },
     {
      "type": "Events & reserved parking",
-     "count": 26
+     "count": 18
     }
    ],
    "upcoming": [
-    {
-     "type": "Construction staging",
-     "block": "100 block of V Street SW",
-     "start": "2026-11-04",
-     "end": "2026-12-02",
-     "ft": 0,
-     "hours": ""
-    },
-    {
-     "type": "Construction staging",
-     "block": "1900 block of 2nd Street SW",
-     "start": "2026-11-04",
-     "end": "2026-12-02",
-     "ft": 198,
-     "hours": ""
-    },
-    {
-     "type": "Construction staging",
-     "block": "1900 block of Half Street SW",
-     "start": "2026-11-04",
-     "end": "2026-12-02",
-     "ft": 176,
-     "hours": ""
-    },
     {
      "type": "Events & reserved parking",
      "block": "200 block of Tingey Street SE",
@@ -8144,15 +8120,15 @@
    },
    {
     "type": "Recycling Collection - Missed",
-    "median_days": 2.01,
-    "city_median_days": 5.05,
-    "closed_n": 82
+    "median_days": 1.91,
+    "city_median_days": 5.03,
+    "closed_n": 76
    },
    {
     "type": "Residential Parking Permit Violation",
     "median_days": 0.1,
     "city_median_days": 0.1,
-    "closed_n": 77
+    "closed_n": 76
    },
    {
     "type": "Illegal Dumping",
@@ -8164,7 +8140,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -8304,7 +8280,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "archive_days": 180,
   "sources": [
    {
@@ -8854,8 +8830,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T01:56:36Z",
-  "today": "2026-11-03",
+  "generated_at": "2026-11-04T09:19:23Z",
+  "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
    {
@@ -8940,7 +8916,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -31838,7 +31814,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

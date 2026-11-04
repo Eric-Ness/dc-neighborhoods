@@ -1,7 +1,7 @@
 {
  "slug": "congressheights",
  "name": "Congress Heights",
- "generated_at": "2026-11-04T01:56:36Z",
+ "generated_at": "2026-11-04T09:19:23Z",
  "boundary": {
   "source": "ANC single-member districts 8C02, 8C03, 8C04, 8C06, 8C07, 8C08, 8E03, 8E04 and 8E05, around the Congress Heights Metro, St. Elizabeths East and THEARC (Open Data DC). DC's CONGRESS HEIGHTS/SHIPLEY planning area leaves out the Metro station and the arena.",
   "rings": [
@@ -13136,6 +13136,19 @@
    "smd": "8C07"
   },
   {
+   "id": "M2700388",
+   "issued": "2026-10-29T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "MECHANICAL",
+   "address": "3718 4TH ST SE 20032",
+   "work": "Mechanical trade Permit",
+   "zoning": "RF-1",
+   "lat": 38.83758,
+   "lon": -77.00032,
+   "smd": "8C04"
+  },
+  {
    "id": "P2700925",
    "issued": "2026-10-29T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -13316,19 +13329,6 @@
    "lat": 38.84975,
    "lon": -76.98125,
    "smd": "8C08"
-  },
-  {
-   "id": "M2700388",
-   "issued": "2026-10-29T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "MECHANICAL",
-   "address": "3718 4TH ST SE 20032",
-   "work": "Mechanical trade Permit",
-   "zoning": "RF-1",
-   "lat": 38.83758,
-   "lon": -77.00032,
-   "smd": "8C04"
   },
   {
    "id": "E2700855",
@@ -13852,18 +13852,18 @@
   }
  ],
  "requests": {
-  "total": 2033,
+  "total": 2031,
   "previous_total": 2009,
   "by_type": [
    {
     "type": "DC Government Information",
-    "count": 1190,
-    "previous": 1104
+    "count": 1189,
+    "previous": 1106
    },
    {
     "type": "Bulk Collection",
-    "count": 133,
-    "previous": 142
+    "count": 132,
+    "previous": 141
    },
    {
     "type": "DOEE - LIHEAP",
@@ -13882,8 +13882,8 @@
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 43,
-    "previous": 46
+    "count": 42,
+    "previous": 47
    },
    {
     "type": "Residential Parking Permit Violation",
@@ -13891,14 +13891,14 @@
     "previous": 20
    },
    {
+    "type": "Out of State Parking Violation (ROSA)",
+    "count": 25,
+    "previous": 21
+   },
+   {
     "type": "Illegal Dumping",
     "count": 25,
     "previous": 29
-   },
-   {
-    "type": "Out of State Parking Violation (ROSA)",
-    "count": 24,
-    "previous": 20
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
@@ -13913,7 +13913,7 @@
    {
     "type": "DMV - Vehicle Registration Issues",
     "count": 19,
-    "previous": 23
+    "previous": 22
    },
    {
     "type": "Dead Animal Collection",
@@ -14113,7 +14113,7 @@
    {
     "type": "Graffiti Removal",
     "count": 1,
-    "previous": 3
+    "previous": 2
    },
    {
     "type": "Illegal Poster",
@@ -14687,7 +14687,7 @@
  },
  "crime": {
   "total": 37,
-  "previous_total": 35,
+  "previous_total": 34,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
@@ -14705,14 +14705,14 @@
     "previous": 3
    },
    {
+    "offense": "MOTOR VEHICLE THEFT",
+    "count": 3,
+    "previous": 8
+   },
+   {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
     "count": 3,
     "previous": 7
-   },
-   {
-    "offense": "MOTOR VEHICLE THEFT",
-    "count": 3,
-    "previous": 9
    },
    {
     "offense": "THEFT F/AUTO",
@@ -14792,7 +14792,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -15037,7 +15037,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -15057,11 +15057,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 126,
+   "active_this_week": 124,
    "starting_next_7d": 10,
-   "reserved_ft": 23276,
+   "reserved_ft": 23034,
    "long_running_90d": 34,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Dumpsters",
@@ -15073,11 +15073,11 @@
     },
     {
      "type": "Lead pipe replacement",
-     "count": 23
+     "count": 22
     },
     {
      "type": "Utility & DDOT work",
-     "count": 38
+     "count": 37
     }
    ],
    "upcoming": [
@@ -15245,24 +15245,24 @@
     "type": "DC Government Information",
     "median_days": 0.0,
     "city_median_days": 0.0,
-    "closed_n": 10496
+    "closed_n": 10491
    },
    {
     "type": "Bulk Collection",
     "median_days": 6.02,
     "city_median_days": 6.92,
-    "closed_n": 1532
+    "closed_n": 1531
    },
    {
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 1016
+    "closed_n": 1015
    },
    {
     "type": "Trash Collection - Missed",
     "median_days": 3.3,
-    "city_median_days": 4.15,
+    "city_median_days": 4.14,
     "closed_n": 767
    },
    {
@@ -15280,20 +15280,20 @@
    {
     "type": "Abandoned Vehicle - On Public Property",
     "median_days": 2.57,
-    "city_median_days": 3.0,
+    "city_median_days": 2.99,
     "closed_n": 289
    },
    {
     "type": "Recycling Collection - Missed",
     "median_days": 3.82,
-    "city_median_days": 5.05,
+    "city_median_days": 5.03,
     "closed_n": 255
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -15417,7 +15417,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "archive_days": 180,
   "sources": [
    {
@@ -15718,8 +15718,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T01:56:36Z",
-  "today": "2026-11-03",
+  "generated_at": "2026-11-04T09:19:23Z",
+  "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
    {
@@ -15896,6 +15896,15 @@
     "source": "DC farmers market list",
     "kind": "market",
     "date": "2026-11-28"
+   },
+   {
+    "title": "What\u2019s Next Series: Jim Clyburn",
+    "date": "2026-12-03",
+    "time": "6:30 PM to 8:30 PM",
+    "place": "THEARC BLACK BOX, 1801 Mississippi Ave.",
+    "url": "https://buildingbridgesdc.org/event/whats-next-series-jim-clyburn/",
+    "source": "Building Bridges Across the River",
+    "kind": "community"
    }
   ],
   "unscheduled": [],
@@ -15924,7 +15933,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -40457,7 +40466,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

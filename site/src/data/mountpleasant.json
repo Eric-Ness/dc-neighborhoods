@@ -1,7 +1,7 @@
 {
  "slug": "mountpleasant",
  "name": "Mount Pleasant",
- "generated_at": "2026-11-04T01:56:36Z",
+ "generated_at": "2026-11-04T09:19:23Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1369,19 +1369,6 @@
    "smd": "1D06"
   },
   {
-   "id": "B2700100",
-   "issued": "2026-10-19T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "1761 HOBART ST NW 20009",
-   "work": "Historic\r\nRevision to issued building permit B2603207. Remove and replace the existing window in the second floor hall bath. Keep the existing head height, match the existing window width, and lower the sill to match the existing primary bedroom windows. No other change to the approved scope of work.",
-   "zoning": "RF-1",
-   "lat": 38.92838,
-   "lon": -77.04187,
-   "smd": "1D05"
-  },
-  {
    "id": "P2700549",
    "issued": "2026-10-19T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -1393,6 +1380,19 @@
    "lat": 38.93448,
    "lon": -77.03724,
    "smd": "1D06"
+  },
+  {
+   "id": "B2700100",
+   "issued": "2026-10-19T04:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "1761 HOBART ST NW 20009",
+   "work": "Historic\r\nRevision to issued building permit B2603207. Remove and replace the existing window in the second floor hall bath. Keep the existing head height, match the existing window width, and lower the sill to match the existing primary bedroom windows. No other change to the approved scope of work.",
+   "zoning": "RF-1",
+   "lat": 38.92838,
+   "lon": -77.04187,
+   "smd": "1D05"
   },
   {
    "id": "HO2700094",
@@ -1643,33 +1643,33 @@
   }
  ],
  "requests": {
-  "total": 749,
-  "previous_total": 754,
+  "total": 751,
+  "previous_total": 753,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 163,
+    "count": 164,
     "previous": 135
    },
    {
     "type": "Bulk Collection",
-    "count": 105,
+    "count": 106,
     "previous": 110
    },
    {
     "type": "Scheduled Yard Waste",
     "count": 79,
-    "previous": 78
-   },
-   {
-    "type": "Illegal Dumping",
-    "count": 33,
-    "previous": 23
+    "previous": 76
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
-    "count": 32,
+    "count": 33,
     "previous": 53
+   },
+   {
+    "type": "Illegal Dumping",
+    "count": 32,
+    "previous": 23
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -1717,9 +1717,9 @@
     "previous": 4
    },
    {
-    "type": "Dockless Vehicle Parking Complaint",
-    "count": 11,
-    "previous": 3
+    "type": "Residential Parking Permit Violation",
+    "count": 12,
+    "previous": 8
    },
    {
     "type": "Public Space Litter Can-Collection",
@@ -1727,9 +1727,9 @@
     "previous": 12
    },
    {
-    "type": "Residential Parking Permit Violation",
-    "count": 11,
-    "previous": 8
+    "type": "Dockless Vehicle Parking Complaint",
+    "count": 10,
+    "previous": 4
    },
    {
     "type": "Supercan - Delivery",
@@ -1942,8 +1942,28 @@
     "previous": 0
    }
   ],
-  "open": 157,
+  "open": 158,
   "recent": [
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T02:48:19Z",
+    "resolved": "2026-11-04T04:21:03Z",
+    "status": "Closed",
+    "block": "3300 block of MOUNT PLEASANT STREET NW",
+    "lat": 38.934,
+    "lon": -77.04
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-04T02:26:17Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3100 block of ADAMS MILL ROAD NW",
+    "lat": 38.931,
+    "lon": -77.045
+   },
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
@@ -2423,26 +2443,6 @@
     "block": "3300 block of 18TH STREET NW",
     "lat": 38.934,
     "lon": -77.042
-   },
-   {
-    "type": "Traffic Lights and Pedestrian Walk Signals",
-    "agency": "DDOT",
-    "added": "2026-11-02T14:00:15Z",
-    "resolved": "2026-11-02T18:11:05Z",
-    "status": "Closed",
-    "block": "16TH STREET NW AND PARK ROAD NW",
-    "lat": 38.932,
-    "lon": -77.036
-   },
-   {
-    "type": "Roadway Signs",
-    "agency": "DDOT",
-    "added": "2026-11-02T12:29:15Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "1800 block of LAMONT STREET NW",
-    "lat": 38.931,
-    "lon": -77.041
    }
   ]
  },
@@ -2529,7 +2529,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2721,7 +2721,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2741,15 +2741,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 54,
-   "starting_next_7d": 13,
-   "reserved_ft": 7964,
+   "active_this_week": 60,
+   "starting_next_7d": 20,
+   "reserved_ft": 9108,
    "long_running_90d": 7,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 5
+     "count": 4
     },
     {
      "type": "Dumpsters",
@@ -2757,7 +2757,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 27
+     "count": 32
     },
     {
      "type": "Lead pipe replacement",
@@ -2765,22 +2765,14 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 11
+     "count": 12
     },
     {
      "type": "Events & reserved parking",
-     "count": 4
+     "count": 5
     }
    ],
    "upcoming": [
-    {
-     "type": "Utility & DDOT work",
-     "block": "1600 block of Hobart Street NW",
-     "start": "2026-11-04",
-     "end": "2026-11-05",
-     "ft": 88,
-     "hours": "7:30 am\u20133 pm"
-    },
     {
      "type": "Utility & DDOT work",
      "block": "1700 block of Kilbourne Place NW",
@@ -2854,12 +2846,76 @@
      "hours": "8 am\u20134:30 pm"
     },
     {
+     "type": "Construction staging",
+     "block": "3400 block of Brown Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-30",
+     "ft": 66,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
      "type": "Utility & DDOT work",
      "block": "1700 block of Newton Street NW",
      "start": "2026-11-09",
      "end": "2026-11-13",
      "ft": 132,
      "hours": "7:30 am\u20133 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "1800 block of Kilbourne Place NW",
+     "start": "2026-11-09",
+     "end": "2026-12-08",
+     "ft": 88,
+     "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "3100 block of 18th Street NW",
+     "start": "2026-11-09",
+     "end": "2026-12-31",
+     "ft": 220,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1600 block of Kenyon Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 132,
+     "hours": "7:30 am\u20133 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "3100 block of 17th Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 132,
+     "hours": "7:30 am\u20133 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "1600 block of Irving Street NW",
+     "start": "2026-11-09",
+     "end": "2026-12-31",
+     "ft": 220,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "1800 block of Irving Street NW",
+     "start": "2026-11-09",
+     "end": "2026-12-31",
+     "ft": 220,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "1800 block of Irving Street NW",
+     "start": "2026-11-09",
+     "end": "2026-12-31",
+     "ft": 220,
+     "hours": "9:30 am\u20133:30 pm"
     },
     {
      "type": "Events & reserved parking",
@@ -2978,20 +3034,20 @@
    {
     "type": "Trash Collection - Missed",
     "median_days": 10.88,
-    "city_median_days": 4.15,
+    "city_median_days": 4.14,
     "closed_n": 449
    },
    {
     "type": "Recycling Collection - Missed",
     "median_days": 6.96,
-    "city_median_days": 5.05,
+    "city_median_days": 5.03,
     "closed_n": 367
    },
    {
     "type": "Sanitation Enforcement",
-    "median_days": 0.77,
+    "median_days": 0.76,
     "city_median_days": 1.1,
-    "closed_n": 326
+    "closed_n": 324
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -3009,7 +3065,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3171,7 +3227,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "archive_days": 180,
   "sources": [
    {
@@ -3429,8 +3485,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T01:56:36Z",
-  "today": "2026-11-03",
+  "generated_at": "2026-11-04T09:19:23Z",
+  "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
    {
@@ -3517,7 +3573,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -12488,7 +12544,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

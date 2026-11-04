@@ -1,7 +1,7 @@
 {
  "slug": "adamsmorgan",
  "name": "Adams Morgan",
- "generated_at": "2026-11-04T01:56:36Z",
+ "generated_at": "2026-11-04T09:19:23Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1378,19 +1378,6 @@
    "smd": "2B01"
   },
   {
-   "id": "P2700598",
-   "issued": "2026-10-20T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "2812 ADAMS MILL RD NW 20009",
-   "work": "",
-   "zoning": "RA-2",
-   "lat": 38.92658,
-   "lon": -77.04395,
-   "smd": "1C04"
-  },
-  {
    "id": "EA2602610",
    "issued": "2026-10-20T04:00:00Z",
    "group": "Other",
@@ -1454,6 +1441,19 @@
    "lat": 38.91093,
    "lon": -77.04267,
    "smd": "2B07"
+  },
+  {
+   "id": "P2700598",
+   "issued": "2026-10-20T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "2812 ADAMS MILL RD NW 20009",
+   "work": "",
+   "zoning": "RA-2",
+   "lat": 38.92658,
+   "lon": -77.04395,
+   "smd": "1C04"
   },
   {
    "id": "E2700570",
@@ -1782,13 +1782,13 @@
   }
  ],
  "requests": {
-  "total": 1295,
-  "previous_total": 1431,
+  "total": 1314,
+  "previous_total": 1422,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 292,
-    "previous": 259
+    "count": 295,
+    "previous": 257
    },
    {
     "type": "Bulk Collection",
@@ -1798,27 +1798,32 @@
    {
     "type": "DC Health Rodent & Vector Control",
     "count": 108,
-    "previous": 137
+    "previous": 136
    },
    {
     "type": "Illegal Dumping",
-    "count": 81,
+    "count": 82,
     "previous": 62
    },
    {
     "type": "Trash Collection - Missed",
     "count": 58,
-    "previous": 71
+    "previous": 68
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 57,
+    "count": 58,
     "previous": 59
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 44,
+    "count": 45,
     "previous": 52
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "count": 36,
+    "previous": 54
    },
    {
     "type": "Roadway Signs",
@@ -1831,19 +1836,19 @@
     "previous": 32
    },
    {
-    "type": "Out of State Parking Violation (ROSA)",
-    "count": 28,
-    "previous": 54
-   },
-   {
     "type": "Sidewalk Repair",
     "count": 27,
     "previous": 27
    },
    {
     "type": "Graffiti Removal",
-    "count": 25,
+    "count": 26,
     "previous": 54
+   },
+   {
+    "type": "Dead Animal Collection",
+    "count": 23,
+    "previous": 28
    },
    {
     "type": "Tree Pruning",
@@ -1854,11 +1859,6 @@
     "type": "Tree Planting",
     "count": 21,
     "previous": 33
-   },
-   {
-    "type": "Dead Animal Collection",
-    "count": 21,
-    "previous": 28
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -1878,12 +1878,12 @@
    {
     "type": "Tree Inspection",
     "count": 16,
-    "previous": 30
+    "previous": 29
    },
    {
     "type": "Trash Cart - Delivery",
     "count": 16,
-    "previous": 22
+    "previous": 23
    },
    {
     "type": "DGS - Playground Repair",
@@ -1906,6 +1906,11 @@
     "previous": 8
    },
    {
+    "type": "Public Space Litter Can-Collection",
+    "count": 10,
+    "previous": 8
+   },
+   {
     "type": "DMV - Vehicle Registration Issues",
     "count": 9,
     "previous": 17
@@ -1919,11 +1924,6 @@
     "type": "Abandoned Bicycle",
     "count": 9,
     "previous": 6
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "count": 9,
-    "previous": 10
    },
    {
     "type": "Recycling Cart Delivery",
@@ -1953,7 +1953,7 @@
    {
     "type": "Residential Parking Permit Violation",
     "count": 7,
-    "previous": 20
+    "previous": 21
    },
    {
     "type": "Traffic Safety Input",
@@ -1981,14 +1981,14 @@
     "previous": 11
    },
    {
+    "type": "DC Government Information",
+    "count": 6,
+    "previous": 0
+   },
+   {
     "type": "Missed Curbside Compost Collection",
     "count": 6,
     "previous": 1
-   },
-   {
-    "type": "DC Government Information",
-    "count": 5,
-    "previous": 0
    },
    {
     "type": "Roadway Repair",
@@ -2111,14 +2111,154 @@
     "previous": 1
    }
   ],
-  "open": 240,
+  "open": 252,
   "recent": [
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T02:46:50Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1800 block of 17TH STREET NW",
+    "lat": 38.915,
+    "lon": -77.039
+   },
+   {
+    "type": "Sanitation Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T02:44:52Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "16TH STREET NW AND COLUMBIA ROAD NW",
+    "lat": 38.927,
+    "lon": -77.036
+   },
+   {
+    "type": "Graffiti Removal",
+    "agency": "DPW",
+    "added": "2026-11-04T02:43:28Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "MOZART PLACE NW AND COLUMBIA ROAD NW",
+    "lat": 38.926,
+    "lon": -77.038
+   },
+   {
+    "type": "DC Government Information",
+    "agency": "OUC",
+    "added": "2026-11-04T02:36:11Z",
+    "resolved": "2026-11-04T02:36:11Z",
+    "status": "Closed",
+    "block": "1900 block of COLUMBIA ROAD NW",
+    "lat": 38.918,
+    "lon": -77.045
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T02:29:03Z",
+    "resolved": "2026-11-04T02:59:47Z",
+    "status": "Closed (Duplicate)",
+    "block": "1900 block of COLUMBIA ROAD NW",
+    "lat": 38.918,
+    "lon": -77.045
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-04T02:24:27Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3000 block of MOUNT PLEASANT STREET NW",
+    "lat": 38.927,
+    "lon": -77.037
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-04T02:22:13Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of LANIER PLACE NW",
+    "lat": 38.924,
+    "lon": -77.042
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-04T02:20:53Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2500 block of MOZART PLACE NW",
+    "lat": 38.924,
+    "lon": -77.038
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-04T02:19:52Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2000 block of 17TH STREET NW",
+    "lat": 38.918,
+    "lon": -77.038
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-04T02:18:42Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of KALORAMA ROAD NW",
+    "lat": 38.921,
+    "lon": -77.039
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-04T02:15:02Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2500 block of ONTARIO ROAD NW",
+    "lat": 38.924,
+    "lon": -77.04
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-04T02:13:40Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1600 block of FULLER STREET NW",
+    "lat": 38.925,
+    "lon": -77.037
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-04T02:12:49Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1600 block of HARVARD STREET NW",
+    "lat": 38.927,
+    "lon": -77.037
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T01:56:23Z",
+    "resolved": "2026-11-04T02:59:46Z",
+    "status": "Closed",
+    "block": "1900 block of COLUMBIA ROAD NW",
+    "lat": 38.918,
+    "lon": -77.045
+   },
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-11-04T00:00:41Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-04T01:44:52Z",
+    "status": "Closed",
     "block": "1900 block of COLUMBIA ROAD NW",
     "lat": 38.918,
     "lon": -77.045
@@ -2472,146 +2612,6 @@
     "block": "2400 block of ONTARIO ROAD NW",
     "lat": 38.921,
     "lon": -77.04
-   },
-   {
-    "type": "Out of State Parking Violation (ROSA)",
-    "agency": "DPW",
-    "added": "2026-11-03T01:21:08Z",
-    "resolved": "2026-11-03T06:51:31Z",
-    "status": "Closed",
-    "block": "1700 block of LANIER PLACE NW",
-    "lat": 38.924,
-    "lon": -77.042
-   },
-   {
-    "type": "Roadway Signs",
-    "agency": "DDOT",
-    "added": "2026-11-03T01:12:52Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "1600 block of HARVARD STREET NW",
-    "lat": 38.927,
-    "lon": -77.04
-   },
-   {
-    "type": "Out of State Parking Violation (ROSA)",
-    "agency": "DPW",
-    "added": "2026-11-03T01:06:15Z",
-    "resolved": "2026-11-03T07:11:50Z",
-    "status": "Closed",
-    "block": "1600 block of KALORAMA ROAD NW",
-    "lat": 38.922,
-    "lon": -77.038
-   },
-   {
-    "type": "Out of State Parking Violation (ROSA)",
-    "agency": "DPW",
-    "added": "2026-11-03T01:02:42Z",
-    "resolved": "2026-11-03T06:18:09Z",
-    "status": "Closed",
-    "block": "1600 block of HARVARD STREET NW",
-    "lat": 38.927,
-    "lon": -77.037
-   },
-   {
-    "type": "Out of State Parking Violation (ROSA)",
-    "agency": "DPW",
-    "added": "2026-11-03T01:01:01Z",
-    "resolved": "2026-11-03T07:05:38Z",
-    "status": "Closed",
-    "block": "1600 block of FULLER STREET NW",
-    "lat": 38.925,
-    "lon": -77.037
-   },
-   {
-    "type": "Out of State Parking Violation (ROSA)",
-    "agency": "DPW",
-    "added": "2026-11-03T00:59:18Z",
-    "resolved": "2026-11-03T07:01:20Z",
-    "status": "Closed",
-    "block": "2500 block of MOZART PLACE NW",
-    "lat": 38.924,
-    "lon": -77.038
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-03T00:55:34Z",
-    "resolved": "2026-11-03T01:01:13Z",
-    "status": "Closed",
-    "block": "1800 block of ONTARIO PLACE NW",
-    "lat": 38.925,
-    "lon": -77.044
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-03T00:22:37Z",
-    "resolved": "2026-11-03T00:30:54Z",
-    "status": "Closed",
-    "block": "2300 block of 17TH STREET NW",
-    "lat": 38.921,
-    "lon": -77.039
-   },
-   {
-    "type": "Emergency No-Parking Verification",
-    "agency": "DPW",
-    "added": "2026-11-02T23:17:59Z",
-    "resolved": "2026-11-02T23:19:01Z",
-    "status": "Closed",
-    "block": "2000 block of 17TH STREET NW",
-    "lat": 38.918,
-    "lon": -77.038
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-02T22:47:24Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1800 block of R STREET NW",
-    "lat": 38.913,
-    "lon": -77.043
-   },
-   {
-    "type": "Emergency No-Parking Verification",
-    "agency": "DPW",
-    "added": "2026-11-02T22:44:19Z",
-    "resolved": "2026-11-02T22:45:26Z",
-    "status": "Closed",
-    "block": "1900 block of 16TH STREET NW",
-    "lat": 38.916,
-    "lon": -77.037
-   },
-   {
-    "type": "Traffic Safety Input",
-    "agency": "DDOT",
-    "added": "2026-11-02T22:19:27Z",
-    "resolved": "2026-11-02T22:25:54Z",
-    "status": "Closed",
-    "block": "2400 block of 18TH STREET NW",
-    "lat": 38.921,
-    "lon": -77.042
-   },
-   {
-    "type": "Roadway Signs",
-    "agency": "DDOT",
-    "added": "2026-11-02T22:13:19Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "CALVERT STREET NW AND CLIFFBOURNE PLACE NW",
-    "lat": 38.923,
-    "lon": -77.045
-   },
-   {
-    "type": "Bicycle Services",
-    "agency": "DDOT",
-    "added": "2026-11-02T21:34:31Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "1500 block of 19TH STREET NW",
-    "lat": 38.911,
-    "lon": -77.044
    }
   ]
  },
@@ -2635,14 +2635,14 @@
     "previous": 2
    },
    {
-    "offense": "ASSAULT W/DANGEROUS WEAPON",
-    "count": 2,
-    "previous": 0
-   },
-   {
     "offense": "MOTOR VEHICLE THEFT",
     "count": 2,
     "previous": 5
+   },
+   {
+    "offense": "ASSAULT W/DANGEROUS WEAPON",
+    "count": 2,
+    "previous": 0
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -2723,7 +2723,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3111,7 +3111,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3131,15 +3131,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 207,
-   "starting_next_7d": 99,
-   "reserved_ft": 24662,
+   "active_this_week": 204,
+   "starting_next_7d": 104,
+   "reserved_ft": 24728,
    "long_running_90d": 26,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 39
+     "count": 36
     },
     {
      "type": "Dumpsters",
@@ -3147,7 +3147,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 96
+     "count": 93
     },
     {
      "type": "Cranes",
@@ -3155,41 +3155,25 @@
     },
     {
      "type": "Lead pipe replacement",
-     "count": 5
+     "count": 6
     },
     {
      "type": "Utility & DDOT work",
-     "count": 16
+     "count": 17
     },
     {
      "type": "Events & reserved parking",
-     "count": 47
+     "count": 48
     }
    ],
    "upcoming": [
     {
-     "type": "Moving & storage",
-     "block": "1700 block of Swann Street NW",
-     "start": "2026-11-04",
-     "end": "2026-11-04",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Moving & storage",
+     "type": "Lead pipe replacement",
      "block": "2300 block of Champlain Street NW",
      "start": "2026-11-04",
-     "end": "2026-11-04",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Moving & storage",
-     "block": "2300 block of Champlain Street NW",
-     "start": "2026-11-04",
-     "end": "2026-11-05",
-     "ft": 88,
-     "hours": ""
+     "end": "2027-01-02",
+     "ft": 418,
+     "hours": "7 am\u20137 pm"
     },
     {
      "type": "Moving & storage",
@@ -3280,6 +3264,14 @@
      "hours": "7:30 am\u20133 pm"
     },
     {
+     "type": "Events & reserved parking",
+     "block": "2300 block of Champlain Street NW",
+     "start": "2026-11-05",
+     "end": "2026-11-06",
+     "ft": 132,
+     "hours": ""
+    },
+    {
      "type": "Moving & storage",
      "block": "2500 block of Cliffbourne Place NW",
      "start": "2026-11-05",
@@ -3302,14 +3294,6 @@
      "end": "2026-11-07",
      "ft": 88,
      "hours": ""
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "1600 block of Crescent Place NW",
-     "start": "2026-11-06",
-     "end": "2026-11-06",
-     "ft": 88,
-     "hours": "7 am\u201311:59 pm"
     },
     {
      "type": "Moving & storage",
@@ -3382,6 +3366,14 @@
      "end": "2026-11-08",
      "ft": 66,
      "hours": "12 am\u201310:30 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "1600 block of Crescent Place NW",
+     "start": "2026-11-06",
+     "end": "2026-11-06",
+     "ft": 88,
+     "hours": "7 am\u201311:59 pm"
     },
     {
      "type": "Moving & storage",
@@ -3486,6 +3478,14 @@
      "end": "2026-11-07",
      "ft": 0,
      "hours": "7 am\u20138 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "2400 block of 18th Street NW",
+     "start": "2026-11-07",
+     "end": "2026-11-07",
+     "ft": 0,
+     "hours": "7 am\u20138 pm"
     }
    ]
   },
@@ -3582,7 +3582,7 @@
    {
     "type": "Trash Collection - Missed",
     "median_days": 5.47,
-    "city_median_days": 4.15,
+    "city_median_days": 4.14,
     "closed_n": 883
    },
    {
@@ -3612,14 +3612,14 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 5.24,
-    "city_median_days": 5.05,
-    "closed_n": 394
+    "city_median_days": 5.03,
+    "closed_n": 393
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3782,7 +3782,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4383,8 +4383,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T01:56:36Z",
-  "today": "2026-11-03",
+  "generated_at": "2026-11-04T09:19:23Z",
+  "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
    {
@@ -4464,7 +4464,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -21774,7 +21774,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

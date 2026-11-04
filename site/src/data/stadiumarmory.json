@@ -1,7 +1,7 @@
 {
  "slug": "stadiumarmory",
  "name": "Stadium-Armory",
- "generated_at": "2026-11-04T01:56:36Z",
+ "generated_at": "2026-11-04T09:19:23Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1035,13 +1035,13 @@
   }
  ],
  "requests": {
-  "total": 459,
-  "previous_total": 478,
+  "total": 465,
+  "previous_total": 471,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 111,
-    "previous": 213
+    "count": 113,
+    "previous": 211
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -1060,17 +1060,17 @@
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 37,
+    "count": 38,
     "previous": 0
    },
    {
     "type": "Illegal Dumping",
-    "count": 36,
+    "count": 38,
     "previous": 0
    },
    {
     "type": "OCTFME - Down Cable Wires",
-    "count": 30,
+    "count": 31,
     "previous": 0
    },
    {
@@ -1139,6 +1139,16 @@
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
+    "added": "2026-11-02T16:33:21Z",
+    "resolved": "2026-11-02T17:38:28Z",
+    "status": "Closed",
+    "block": "1900 block of C STREET SE",
+    "lat": 38.885,
+    "lon": -76.977
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
     "added": "2026-10-31T22:25:37Z",
     "resolved": "2026-10-31T23:11:48Z",
     "status": "Closed",
@@ -1167,12 +1177,12 @@
     "lon": -76.978
    },
    {
-    "type": "Bulk Collection",
+    "type": "Parking Enforcement",
     "agency": "DPW",
-    "added": "2026-10-31T19:19:52Z",
-    "resolved": "2026-11-03T15:39:41Z",
+    "added": "2026-10-31T22:25:37Z",
+    "resolved": "2026-10-31T23:11:48Z",
     "status": "Closed",
-    "block": "1800 block of POTOMAC AVENUE SE",
+    "block": "1800 block of E STREET SE",
     "lat": 38.883,
     "lon": -76.978
    },
@@ -1207,6 +1217,16 @@
     "lon": -76.978
    },
    {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-10-31T19:19:52Z",
+    "resolved": "2026-11-03T15:39:41Z",
+    "status": "Closed",
+    "block": "1800 block of POTOMAC AVENUE SE",
+    "lat": 38.883,
+    "lon": -76.978
+   },
+   {
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-10-29T16:21:58Z",
@@ -1575,26 +1595,6 @@
     "block": "1900 block of C STREET SE",
     "lat": 38.885,
     "lon": -76.977
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-26T12:49:56Z",
-    "resolved": "2026-10-26T12:49:56Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-10-26T12:34:30Z",
-    "resolved": "2026-10-27T13:30:05Z",
-    "status": "Closed",
-    "block": "500 block of OKLAHOMA AVENUE NE",
-    "lat": 38.896,
-    "lon": -76.969
    }
   ]
  },
@@ -1613,22 +1613,22 @@
     "previous": 4
    },
    {
-    "offense": "HOMICIDE",
-    "count": 1,
-    "previous": 0
-   },
-   {
     "offense": "BURGLARY",
     "count": 1,
     "previous": 0
    },
    {
-    "offense": "ROBBERY",
+    "offense": "HOMICIDE",
+    "count": 1,
+    "previous": 0
+   },
+   {
+    "offense": "THEFT F/AUTO",
     "count": 0,
     "previous": 1
    },
    {
-    "offense": "THEFT F/AUTO",
+    "offense": "ROBBERY",
     "count": 0,
     "previous": 1
    }
@@ -1663,7 +1663,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -1850,7 +1850,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -1874,7 +1874,7 @@
    "starting_next_7d": 4,
    "reserved_ft": 2090,
    "long_running_90d": 5,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -2013,7 +2013,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.05,
     "city_median_days": 0.05,
-    "closed_n": 158
+    "closed_n": 157
    },
    {
     "type": "DC Government Information",
@@ -2054,14 +2054,14 @@
    {
     "type": "Tree Inspection",
     "median_days": 1.07,
-    "city_median_days": 0.61,
+    "city_median_days": 0.62,
     "closed_n": 11
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2151,7 +2151,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2526,8 +2526,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T01:56:36Z",
-  "today": "2026-11-03",
+  "generated_at": "2026-11-04T09:19:23Z",
+  "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
    {
@@ -2641,6 +2641,15 @@
     "url": "https://congressionalcemetery.org/event/introductory-tour/2026-11-29/",
     "source": "Historic Congressional Cemetery",
     "kind": "community"
+   },
+   {
+    "title": "Death Cafe at Congressional Cemetery",
+    "date": "2026-12-03",
+    "time": "6 PM to 7:30 PM",
+    "place": "Historic Congressional Cemetery, 1801 E Street, Southeast",
+    "url": "https://congressionalcemetery.org/event/death-cafe-at-congressional-cemetery-4/2026-12-03/",
+    "source": "Historic Congressional Cemetery",
+    "kind": "community"
    }
   ],
   "unscheduled": [],
@@ -2692,7 +2701,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -14196,7 +14205,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

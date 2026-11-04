@@ -1,7 +1,7 @@
 {
  "slug": "brightwood",
  "name": "Brightwood",
- "generated_at": "2026-11-04T01:56:36Z",
+ "generated_at": "2026-11-04T09:19:23Z",
  "boundary": {
   "source": "ANC single-member districts 4A04, 4A05, 4A06, 4A07, 4B05, 4D01, 4D02 and 4D03, along upper Georgia Avenue and Kennedy Street (Open Data DC). It takes in Brightwood and Brightwood Park; DC's BRIGHTWOOD planning area also holds central Takoma, which has its own site.",
   "rings": [
@@ -7271,63 +7271,58 @@
   }
  ],
  "requests": {
-  "total": 1422,
-  "previous_total": 1356,
+  "total": 1432,
+  "previous_total": 1339,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 263,
-    "previous": 198
+    "count": 260,
+    "previous": 197
    },
    {
     "type": "Parking Enforcement",
-    "count": 194,
-    "previous": 191
+    "count": 197,
+    "previous": 186
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 121,
+    "count": 126,
     "previous": 86
    },
    {
     "type": "Scheduled Yard Waste",
     "count": 108,
-    "previous": 75
+    "previous": 76
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 82,
+    "count": 81,
     "previous": 60
    },
    {
     "type": "Illegal Dumping",
-    "count": 59,
+    "count": 60,
     "previous": 84
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 56,
-    "previous": 45
+    "count": 57,
+    "previous": 44
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 35,
-    "previous": 32
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "count": 32,
-    "previous": 2
+    "count": 39,
+    "previous": 27
    },
    {
     "type": "DOB - Vacant Private Property Inspection",
-    "count": 31,
+    "count": 30,
     "previous": 18
    },
    {
     "type": "DMV - Vehicle Registration Issues",
     "count": 30,
-    "previous": 13
+    "previous": 12
    },
    {
     "type": "Roadway Signs",
@@ -7341,8 +7336,13 @@
    },
    {
     "type": "Graffiti Removal",
-    "count": 29,
+    "count": 30,
     "previous": 20
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "count": 30,
+    "previous": 2
    },
    {
     "type": "Residential Parking Permit Violation",
@@ -7356,18 +7356,18 @@
    },
    {
     "type": "Public Space Inspection",
-    "count": 19,
+    "count": 20,
     "previous": 12
    },
    {
     "type": "Container Removal",
     "count": 16,
-    "previous": 23
+    "previous": 24
    },
    {
     "type": "DC Government Information",
     "count": 16,
-    "previous": 11
+    "previous": 10
    },
    {
     "type": "Rat Replacement Containers",
@@ -7375,14 +7375,14 @@
     "previous": 10
    },
    {
+    "type": "Recycling Collection - Missed",
+    "count": 15,
+    "previous": 38
+   },
+   {
     "type": "Dead Animal Collection",
     "count": 15,
     "previous": 21
-   },
-   {
-    "type": "Recycling Collection - Missed",
-    "count": 14,
-    "previous": 39
    },
    {
     "type": "Illegal Poster",
@@ -7397,7 +7397,7 @@
    {
     "type": "Tree Pruning",
     "count": 10,
-    "previous": 33
+    "previous": 31
    },
    {
     "type": "Vacant Lot - Public Property Only",
@@ -7407,7 +7407,7 @@
    {
     "type": "Trash Cart - Delivery",
     "count": 10,
-    "previous": 8
+    "previous": 7
    },
    {
     "type": "Tree Inspection",
@@ -7545,7 +7545,7 @@
     "previous": 0
    }
   ],
-  "open": 238,
+  "open": 242,
   "recent": [
    {
     "type": "Sidewalk Repair",
@@ -7938,6 +7938,16 @@
     "lon": -77.036
    },
    {
+    "type": "Graffiti Removal",
+    "agency": "DPW",
+    "added": "2026-11-02T14:26:49Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "6200 block of 16TH STREET NW",
+    "lat": 38.966,
+    "lon": -77.036
+   },
+   {
     "type": "Supercan - Delivery",
     "agency": "DPW",
     "added": "2026-11-02T14:15:06Z",
@@ -7946,6 +7956,26 @@
     "block": "6200 block of PINEY BRANCH ROAD NW",
     "lat": 38.965,
     "lon": -77.029
+   },
+   {
+    "type": "Supercan - Delivery",
+    "agency": "DPW",
+    "added": "2026-11-02T14:15:06Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "6200 block of PINEY BRANCH ROAD NW",
+    "lat": 38.965,
+    "lon": -77.029
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T14:04:57Z",
+    "resolved": "2026-11-02T16:47:15Z",
+    "status": "Closed",
+    "block": "1400 block of SOMERSET PLACE NW",
+    "lat": 38.967,
+    "lon": -77.035
    },
    {
     "type": "Parking Enforcement",
@@ -7978,6 +8008,26 @@
     "lon": -77.03
    },
    {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T13:08:58Z",
+    "resolved": "2026-11-02T14:30:06Z",
+    "status": "Closed",
+    "block": "6200 block of 13TH STREET NW",
+    "lat": 38.966,
+    "lon": -77.03
+   },
+   {
+    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "agency": "DDOT",
+    "added": "2026-11-02T12:41:38Z",
+    "resolved": "2026-11-02T18:51:18Z",
+    "status": "Closed",
+    "block": "6300 block of 16TH STREET NW",
+    "lat": 38.966,
+    "lon": -77.037
+   },
+   {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "agency": "DDOT",
     "added": "2026-11-02T12:41:38Z",
@@ -7996,56 +8046,6 @@
     "block": "500 block of KENNEDY STREET NW",
     "lat": 38.957,
     "lon": -77.02
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-11-02T12:33:23Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "500 block of KENNEDY STREET NW",
-    "lat": 38.957,
-    "lon": -77.02
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-11-02T04:43:35Z",
-    "resolved": "2026-11-02T19:40:29Z",
-    "status": "Closed",
-    "block": "800 block of LONGFELLOW STREET NW",
-    "lat": 38.958,
-    "lon": -77.025
-   },
-   {
-    "type": "Traffic Lights and Pedestrian Walk Signals",
-    "agency": "DDOT",
-    "added": "2026-11-02T01:02:13Z",
-    "resolved": "2026-11-02T07:50:54Z",
-    "status": "Closed",
-    "block": "500 block of MISSOURI AVENUE NW",
-    "lat": 38.958,
-    "lon": -77.02
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-02T00:00:11Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1300 block of RITTENHOUSE STREET NW",
-    "lat": 38.966,
-    "lon": -77.033
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-01T20:12:46Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1400 block of WHITTIER STREET NW",
-    "lat": 38.971,
-    "lon": -77.035
    }
   ]
  },
@@ -8064,14 +8064,14 @@
     "previous": 8
    },
    {
-    "offense": "ROBBERY",
-    "count": 4,
-    "previous": 3
-   },
-   {
     "offense": "THEFT F/AUTO",
     "count": 4,
     "previous": 5
+   },
+   {
+    "offense": "ROBBERY",
+    "count": 4,
+    "previous": 3
    },
    {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
@@ -8144,7 +8144,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -8398,7 +8398,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -8418,11 +8418,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 98,
-   "starting_next_7d": 8,
-   "reserved_ft": 25322,
+   "active_this_week": 96,
+   "starting_next_7d": 7,
+   "reserved_ft": 25410,
    "long_running_90d": 8,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -8430,7 +8430,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 13
+     "count": 14
     },
     {
      "type": "Lead pipe replacement",
@@ -8438,30 +8438,14 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 59
+     "count": 57
     },
     {
      "type": "Events & reserved parking",
-     "count": 4
+     "count": 3
     }
    ],
    "upcoming": [
-    {
-     "type": "Construction staging",
-     "block": "800 block of Tuckerman Street NW",
-     "start": "2026-11-04",
-     "end": "2026-12-19",
-     "ft": 88,
-     "hours": "7 am\u20137 pm"
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "600 block of Kennedy Street NW",
-     "start": "2026-11-04",
-     "end": "2026-11-04",
-     "ft": 220,
-     "hours": "9 am\u20135 pm"
-    },
     {
      "type": "Events & reserved parking",
      "block": "600 block of Kennedy Street NW",
@@ -8509,6 +8493,14 @@
      "end": "2026-11-13",
      "ft": 132,
      "hours": "7:30 am\u20133 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1300 block of Sheridan Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-28",
+     "ft": 660,
+     "hours": "7 am\u20135 pm"
     }
    ]
   },
@@ -8594,7 +8586,7 @@
     "type": "Bulk Collection",
     "median_days": 7.82,
     "city_median_days": 6.92,
-    "closed_n": 1353
+    "closed_n": 1351
    },
    {
     "type": "Parking Enforcement",
@@ -8605,7 +8597,7 @@
    {
     "type": "Trash Collection - Missed",
     "median_days": 2.95,
-    "city_median_days": 4.15,
+    "city_median_days": 4.14,
     "closed_n": 671
    },
    {
@@ -8635,14 +8627,14 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 5.15,
-    "city_median_days": 5.05,
+    "city_median_days": 5.03,
     "closed_n": 297
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -8766,7 +8758,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "archive_days": 180,
   "sources": [
    {
@@ -9083,8 +9075,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T01:56:36Z",
-  "today": "2026-11-03",
+  "generated_at": "2026-11-04T09:19:23Z",
+  "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
    {
@@ -9164,7 +9156,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -32332,7 +32324,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

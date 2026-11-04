@@ -1,7 +1,7 @@
 {
  "slug": "brookland",
  "name": "Brookland",
- "generated_at": "2026-11-04T01:56:36Z",
+ "generated_at": "2026-11-04T09:19:23Z",
  "boundary": {
   "source": "ANC single-member districts 5B02-5B06 (the Brookland commission's core), 5F02 (Monroe Street Market, the Arts Walk, Dance Place) and 5A04 (Catholic University and the Basilica), Open Data DC. DC has no planning area named Brookland.",
   "rings": [
@@ -8085,17 +8085,17 @@
    "smd": "5B04"
   },
   {
-   "id": "PP2700323",
+   "id": "P2700569",
    "issued": "2026-10-20T04:00:00Z",
-   "group": "Minor work",
-   "type": "POST CARD",
-   "subtype": "PLUMBING",
-   "address": "1323 QUINCY ST NE 20017",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "1011 VARNUM ST NE 20017",
    "work": "",
-   "zoning": "R-1B",
-   "lat": 38.93697,
-   "lon": -76.98757,
-   "smd": "5B02"
+   "zoning": "R-2",
+   "lat": 38.94269,
+   "lon": -76.99155,
+   "smd": "5B05"
   },
   {
    "id": "E2700621",
@@ -8111,17 +8111,17 @@
    "smd": "5B05"
   },
   {
-   "id": "P2700569",
+   "id": "PP2700323",
    "issued": "2026-10-20T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "1011 VARNUM ST NE 20017",
+   "group": "Minor work",
+   "type": "POST CARD",
+   "subtype": "PLUMBING",
+   "address": "1323 QUINCY ST NE 20017",
    "work": "",
-   "zoning": "R-2",
-   "lat": 38.94269,
-   "lon": -76.99155,
-   "smd": "5B05"
+   "zoning": "R-1B",
+   "lat": 38.93697,
+   "lon": -76.98757,
+   "smd": "5B02"
   },
   {
    "id": "SOL2700066",
@@ -8684,43 +8684,43 @@
   }
  ],
  "requests": {
-  "total": 2059,
-  "previous_total": 2160,
+  "total": 2062,
+  "previous_total": 2154,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
     "count": 266,
-    "previous": 286
+    "previous": 287
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 264,
+    "count": 261,
     "previous": 38
    },
    {
     "type": "Bulk Collection",
-    "count": 242,
-    "previous": 247
+    "count": 245,
+    "previous": 246
    },
    {
     "type": "Parking Enforcement",
     "count": 184,
-    "previous": 149
+    "previous": 148
    },
    {
     "type": "Public Space Litter Can-Collection",
-    "count": 110,
-    "previous": 91
+    "count": 107,
+    "previous": 94
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 89,
+    "count": 92,
     "previous": 55
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 79,
-    "previous": 223
+    "count": 80,
+    "previous": 216
    },
    {
     "type": "Dead Animal Collection",
@@ -8729,8 +8729,8 @@
    },
    {
     "type": "Illegal Dumping",
-    "count": 49,
-    "previous": 55
+    "count": 47,
+    "previous": 56
    },
    {
     "type": "Residential Parking Permit Violation",
@@ -8739,32 +8739,27 @@
    },
    {
     "type": "Tree Inspection",
-    "count": 39,
-    "previous": 60
+    "count": 40,
+    "previous": 61
    },
    {
     "type": "Supercan - Delivery",
     "count": 39,
-    "previous": 24
+    "previous": 23
    },
    {
     "type": "Recycling Collection - Missed",
-    "count": 37,
-    "previous": 44
+    "count": 38,
+    "previous": 43
    },
    {
     "type": "Sanitation Enforcement",
     "count": 34,
-    "previous": 74
-   },
-   {
-    "type": "Sidewalk Repair",
-    "count": 32,
-    "previous": 38
+    "previous": 73
    },
    {
     "type": "OCTFME - Down Cable Wires",
-    "count": 32,
+    "count": 34,
     "previous": 20
    },
    {
@@ -8778,14 +8773,19 @@
     "previous": 3
    },
    {
+    "type": "Sidewalk Repair",
+    "count": 30,
+    "previous": 40
+   },
+   {
     "type": "Pet Waste Complaint",
-    "count": 29,
+    "count": 28,
     "previous": 4
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 25,
-    "previous": 43
+    "previous": 42
    },
    {
     "type": "Recycling Cart Delivery",
@@ -8795,27 +8795,27 @@
    {
     "type": "Container Removal",
     "count": 22,
-    "previous": 28
+    "previous": 26
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
     "count": 22,
-    "previous": 15
+    "previous": 14
    },
    {
-    "type": "Public Space Litter Can Repair",
-    "count": 17,
-    "previous": 6
+    "type": "Public Space Inspection",
+    "count": 18,
+    "previous": 8
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
     "count": 16,
-    "previous": 11
+    "previous": 10
    },
    {
     "type": "DMV - Drivers License/ID Issues",
     "count": 16,
-    "previous": 9
+    "previous": 10
    },
    {
     "type": "Traffic Safety Input",
@@ -8823,14 +8823,9 @@
     "previous": 19
    },
    {
-    "type": "Public Space Inspection",
-    "count": 16,
-    "previous": 8
-   },
-   {
-    "type": "Tree Pruning",
-    "count": 14,
-    "previous": 38
+    "type": "Public Space Litter Can Repair",
+    "count": 15,
+    "previous": 6
    },
    {
     "type": "Tree Removal",
@@ -8843,13 +8838,18 @@
     "previous": 8
    },
    {
+    "type": "Tree Pruning",
+    "count": 13,
+    "previous": 39
+   },
+   {
     "type": "Roadway Repair",
-    "count": 11,
+    "count": 12,
     "previous": 6
    },
    {
     "type": "DC Government Information",
-    "count": 11,
+    "count": 12,
     "previous": 7
    },
    {
@@ -8865,22 +8865,22 @@
    {
     "type": "Streetlight Repair Investigation",
     "count": 10,
-    "previous": 9
+    "previous": 11
    },
    {
     "type": "Pothole",
-    "count": 10,
+    "count": 9,
     "previous": 16
+   },
+   {
+    "type": "DMV - Vehicle Registration Issues",
+    "count": 9,
+    "previous": 18
    },
    {
     "type": "DGS - Playground Repair",
     "count": 8,
     "previous": 9
-   },
-   {
-    "type": "DMV - Vehicle Registration Issues",
-    "count": 8,
-    "previous": 18
    },
    {
     "type": "Graffiti Removal",
@@ -8900,7 +8900,7 @@
    {
     "type": "Rat Replacement Containers",
     "count": 5,
-    "previous": 18
+    "previous": 19
    },
    {
     "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
@@ -8911,6 +8911,11 @@
     "type": "DOEE - General Air Quality Concerns",
     "count": 4,
     "previous": 0
+   },
+   {
+    "type": "DOB - Vacant Private Property Inspection",
+    "count": 4,
+    "previous": 55
    },
    {
     "type": "DMV - Vehicle Inspection Issues",
@@ -8936,11 +8941,6 @@
     "type": "DMV - Online Processing Issues",
     "count": 3,
     "previous": 2
-   },
-   {
-    "type": "DOB - Vacant Private Property Inspection",
-    "count": 3,
-    "previous": 55
    },
    {
     "type": "DOB - Illegal Construction",
@@ -8975,7 +8975,7 @@
    {
     "type": "Illegal Poster",
     "count": 2,
-    "previous": 10
+    "previous": 9
    },
    {
     "type": "DMV - Hearings",
@@ -8995,7 +8995,7 @@
    {
     "type": "Tree Planting",
     "count": 2,
-    "previous": 51
+    "previous": 52
    },
    {
     "type": "DOEE - Report Construction Erosion Runoff",
@@ -9008,14 +9008,14 @@
     "previous": 0
    },
    {
+    "type": "DMV - Copy of Ticket",
+    "count": 2,
+    "previous": 2
+   },
+   {
     "type": "Residential Snow Hero (ServeDC)",
     "count": 1,
     "previous": 0
-   },
-   {
-    "type": "DMV - Copy of Ticket",
-    "count": 1,
-    "previous": 2
    },
    {
     "type": "Abandoned Vehicle - On Private Property",
@@ -9023,7 +9023,7 @@
     "previous": 2
    }
   ],
-  "open": 390,
+  "open": 393,
   "recent": [
    {
     "type": "Public Space Litter Can-Collection",
@@ -9621,7 +9621,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -9960,7 +9960,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -9980,15 +9980,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 242,
-   "starting_next_7d": 34,
-   "reserved_ft": 44110,
+   "active_this_week": 239,
+   "starting_next_7d": 29,
+   "reserved_ft": 43142,
    "long_running_90d": 69,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 2
+     "count": 3
     },
     {
      "type": "Dumpsters",
@@ -9996,92 +9996,28 @@
     },
     {
      "type": "Construction staging",
-     "count": 135
+     "count": 138
     },
     {
      "type": "Lead pipe replacement",
-     "count": 22
+     "count": 21
     },
     {
      "type": "Utility & DDOT work",
-     "count": 73
+     "count": 71
     },
     {
      "type": "Events & reserved parking",
-     "count": 7
+     "count": 3
     }
    ],
    "upcoming": [
-    {
-     "type": "Construction staging",
-     "block": "1400 block of Jackson Street NE",
-     "start": "2026-11-04",
-     "end": "2026-12-03",
-     "ft": 286,
-     "hours": "7 am\u20137 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "1300 block of Monroe Street NE",
-     "start": "2026-11-04",
-     "end": "2026-12-03",
-     "ft": 220,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "4200 block of 12th Street NE",
-     "start": "2026-11-04",
-     "end": "2026-12-03",
-     "ft": 154,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "4200 block of 12th Street NE",
-     "start": "2026-11-04",
-     "end": "2026-12-03",
-     "ft": 132,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "1300 block of Otis Street NE",
-     "start": "2026-11-04",
-     "end": "2026-12-03",
-     "ft": 242,
-     "hours": "7 am\u20137 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "2700 block of 12th Street NE",
-     "start": "2026-11-04",
-     "end": "2026-12-03",
-     "ft": 132,
-     "hours": "9:30 am\u20133:30 pm"
-    },
     {
      "type": "Construction staging",
      "block": "1400 block of Franklin Street NE",
      "start": "2026-11-04",
      "end": "2026-12-03",
      "ft": 220,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "1400 block of Brentwood Road NE",
-     "start": "2026-11-04",
-     "end": "2026-11-05",
-     "ft": 66,
-     "hours": "7:30 am\u20133 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "3700 block of 13th Street NE",
-     "start": "2026-11-06",
-     "end": "2026-12-05",
-     "ft": 264,
      "hours": "9:30 am\u20133:30 pm"
     },
     {
@@ -10099,6 +10035,14 @@
      "end": "2026-11-06",
      "ft": 88,
      "hours": "8:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "3700 block of 13th Street NE",
+     "start": "2026-11-06",
+     "end": "2026-12-05",
+     "ft": 264,
+     "hours": "9:30 am\u20133:30 pm"
     },
     {
      "type": "Moving & storage",
@@ -10197,6 +10141,14 @@
      "hours": ""
     },
     {
+     "type": "Construction staging",
+     "block": "600 block of Franklin Street NE",
+     "start": "2026-11-09",
+     "end": "2026-12-31",
+     "ft": 220,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
      "type": "Utility & DDOT work",
      "block": "2000 block of Monroe Street NE",
      "start": "2026-11-09",
@@ -10259,6 +10211,14 @@
      "end": "2026-12-09",
      "ft": 220,
      "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Moving & storage",
+     "block": "4100 block of 12th Street NE",
+     "start": "2026-11-10",
+     "end": "2026-11-10",
+     "ft": 88,
+     "hours": ""
     },
     {
      "type": "Construction staging",
@@ -10368,18 +10328,18 @@
     "type": "Bulk Collection",
     "median_days": 7.71,
     "city_median_days": 6.92,
-    "closed_n": 1851
+    "closed_n": 1849
    },
    {
     "type": "Scheduled Yard Waste",
-    "median_days": 13.11,
+    "median_days": 13.09,
     "city_median_days": 9.71,
-    "closed_n": 1638
+    "closed_n": 1636
    },
    {
     "type": "Trash Collection - Missed",
     "median_days": 4.78,
-    "city_median_days": 4.15,
+    "city_median_days": 4.14,
     "closed_n": 1074
    },
    {
@@ -10391,7 +10351,7 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 4.92,
-    "city_median_days": 5.05,
+    "city_median_days": 5.03,
     "closed_n": 398
    },
    {
@@ -10416,7 +10376,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -10581,7 +10541,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "archive_days": 180,
   "sources": [
    {
@@ -10964,8 +10924,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T01:56:36Z",
-  "today": "2026-11-03",
+  "generated_at": "2026-11-04T09:19:23Z",
+  "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
    {
@@ -11068,7 +11028,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -47095,7 +47055,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

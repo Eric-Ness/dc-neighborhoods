@@ -1,7 +1,7 @@
 {
  "slug": "dupontcircle",
  "name": "Dupont Circle",
- "generated_at": "2026-11-04T01:56:36Z",
+ "generated_at": "2026-11-04T09:19:23Z",
  "boundary": {
   "source": "Dupont Circle Historic District (DC Historic Preservation Office, Open Data DC). DC has no planning area named Dupont Circle; this overlaps the Adams Morgan site to the north.",
   "rings": [
@@ -2042,13 +2042,13 @@
   }
  ],
  "requests": {
-  "total": 769,
-  "previous_total": 721,
+  "total": 773,
+  "previous_total": 713,
   "by_type": [
    {
     "type": "Parking Enforcement",
     "count": 142,
-    "previous": 96
+    "previous": 94
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -2067,13 +2067,13 @@
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 34,
+    "count": 35,
     "previous": 32
    },
    {
     "type": "Illegal Dumping",
     "count": 28,
-    "previous": 31
+    "previous": 30
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -2092,7 +2092,7 @@
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 20,
+    "count": 21,
     "previous": 28
    },
    {
@@ -2116,14 +2116,14 @@
     "previous": 19
    },
    {
-    "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 15,
-    "previous": 37
+    "type": "Abandoned Bicycle",
+    "count": 17,
+    "previous": 2
    },
    {
-    "type": "Abandoned Bicycle",
+    "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 15,
-    "previous": 2
+    "previous": 36
    },
    {
     "type": "Public Space Litter Can-Collection",
@@ -2138,7 +2138,7 @@
    {
     "type": "Recycling Collection - Missed",
     "count": 10,
-    "previous": 16
+    "previous": 15
    },
    {
     "type": "DOB - Illegal Construction",
@@ -2153,7 +2153,7 @@
    {
     "type": "Public Space Inspection",
     "count": 10,
-    "previous": 14
+    "previous": 13
    },
    {
     "type": "Streetlight Repair Investigation",
@@ -2233,7 +2233,7 @@
    {
     "type": "Abandoned Vehicle - On Public Property",
     "count": 4,
-    "previous": 6
+    "previous": 5
    },
    {
     "type": "Container Removal",
@@ -2283,7 +2283,7 @@
    {
     "type": "DOB - Vacant Private Property Inspection",
     "count": 2,
-    "previous": 13
+    "previous": 12
    },
    {
     "type": "DGS - Playground Repair",
@@ -2326,7 +2326,7 @@
     "previous": 0
    }
   ],
-  "open": 162,
+  "open": 163,
   "recent": [
    {
     "type": "Rat Replacement Containers",
@@ -2552,8 +2552,8 @@
     "type": "Streetlight Repair Investigation",
     "agency": "DDOT",
     "added": "2026-11-02T23:28:40Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-04T04:01:02Z",
+    "status": "Closed",
     "block": "1700 block of CORCORAN STREET NW",
     "lat": 38.912,
     "lon": -77.041
@@ -2832,12 +2832,12 @@
  },
  "crime": {
   "total": 65,
-  "previous_total": 65,
+  "previous_total": 64,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
     "count": 38,
-    "previous": 35
+    "previous": 34
    },
    {
     "offense": "THEFT F/AUTO",
@@ -2855,14 +2855,14 @@
     "previous": 1
    },
    {
-    "offense": "HOMICIDE",
-    "count": 1,
-    "previous": 0
-   },
-   {
     "offense": "ROBBERY",
     "count": 1,
     "previous": 6
+   },
+   {
+    "offense": "HOMICIDE",
+    "count": 1,
+    "previous": 0
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -2913,7 +2913,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3114,7 +3114,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3134,15 +3134,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 103,
-   "starting_next_7d": 38,
-   "reserved_ft": 10230,
+   "active_this_week": 100,
+   "starting_next_7d": 36,
+   "reserved_ft": 9834,
    "long_running_90d": 25,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 15
+     "count": 12
     },
     {
      "type": "Dumpsters",
@@ -3158,62 +3158,14 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 8
+     "count": 10
     },
     {
      "type": "Events & reserved parking",
-     "count": 35
+     "count": 33
     }
    ],
    "upcoming": [
-    {
-     "type": "Moving & storage",
-     "block": "1700 block of Swann Street NW",
-     "start": "2026-11-04",
-     "end": "2026-11-04",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Construction staging",
-     "block": "1700 block of Church Street NW",
-     "start": "2026-11-04",
-     "end": "2026-12-19",
-     "ft": 88,
-     "hours": "7 am\u20137 pm"
-    },
-    {
-     "type": "Moving & storage",
-     "block": "1700 block of N Street NW",
-     "start": "2026-11-04",
-     "end": "2026-11-04",
-     "ft": 154,
-     "hours": ""
-    },
-    {
-     "type": "Lead pipe replacement",
-     "block": "2100 block of Newport Place NW",
-     "start": "2026-11-04",
-     "end": "2026-12-02",
-     "ft": 396,
-     "hours": "7 am\u20137 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "1600 block of P Street NW",
-     "start": "2026-11-04",
-     "end": "2026-11-05",
-     "ft": 66,
-     "hours": "7:30 am\u20133 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "1700 block of P Street NW",
-     "start": "2026-11-04",
-     "end": "2026-11-05",
-     "ft": 66,
-     "hours": "7:30 am\u20133 pm"
-    },
     {
      "type": "Lead pipe replacement",
      "block": "2100 block of Q Street NW",
@@ -3269,22 +3221,6 @@
      "end": "2026-12-06",
      "ft": 88,
      "hours": ""
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "1800 block of New Hampshire Avenue NW",
-     "start": "2026-11-07",
-     "end": "2026-11-07",
-     "ft": 88,
-     "hours": "7 am\u201311:59 pm"
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "1600 block of 21st Street NW",
-     "start": "2026-11-07",
-     "end": "2026-11-07",
-     "ft": 0,
-     "hours": "7 am\u201311:59 pm"
     },
     {
      "type": "Moving & storage",
@@ -3400,6 +3336,22 @@
     },
     {
      "type": "Events & reserved parking",
+     "block": "1800 block of New Hampshire Avenue NW",
+     "start": "2026-11-07",
+     "end": "2026-11-07",
+     "ft": 88,
+     "hours": "7 am\u201311:59 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "1600 block of 21st Street NW",
+     "start": "2026-11-07",
+     "end": "2026-11-07",
+     "ft": 0,
+     "hours": "7 am\u201311:59 pm"
+    },
+    {
+     "type": "Events & reserved parking",
      "block": "2200 block of P Street NW",
      "start": "2026-11-07",
      "end": "2026-11-07",
@@ -3437,6 +3389,38 @@
      "end": "2026-11-13",
      "ft": 22,
      "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1700 block of New Hampshire Avenue NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 132,
+     "hours": "7:30 am\u20133 pm"
+    },
+    {
+     "type": "Moving & storage",
+     "block": "1900 block of S Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-09",
+     "ft": 88,
+     "hours": ""
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1600 block of P Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-10",
+     "ft": 110,
+     "hours": "7:30 am\u20133 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1800 block of S Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-10",
+     "ft": 88,
+     "hours": "7:30 am\u20133 pm"
     },
     {
      "type": "Events & reserved parking",
@@ -3559,7 +3543,7 @@
    {
     "type": "Trash Collection - Missed",
     "median_days": 4.03,
-    "city_median_days": 4.15,
+    "city_median_days": 4.14,
     "closed_n": 578
    },
    {
@@ -3583,7 +3567,7 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 4.72,
-    "city_median_days": 5.05,
+    "city_median_days": 5.03,
     "closed_n": 237
    },
    {
@@ -3594,15 +3578,15 @@
    },
    {
     "type": "Scheduled Yard Waste",
-    "median_days": 9.88,
+    "median_days": 9.51,
     "city_median_days": 9.71,
-    "closed_n": 217
+    "closed_n": 216
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3744,7 +3728,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4429,8 +4413,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T01:56:36Z",
-  "today": "2026-11-03",
+  "generated_at": "2026-11-04T09:19:23Z",
+  "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
    {
@@ -4500,7 +4484,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -17508,7 +17492,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

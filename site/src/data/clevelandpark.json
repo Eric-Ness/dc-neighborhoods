@@ -1,7 +1,7 @@
 {
  "slug": "clevelandpark",
  "name": "Cleveland Park",
- "generated_at": "2026-11-04T01:56:36Z",
+ "generated_at": "2026-11-04T09:19:23Z",
  "boundary": {
   "source": "Cleveland Park Historic District (DC Historic Preservation Office, Open Data DC). DC has no planning area named Cleveland Park.",
   "rings": [
@@ -2688,19 +2688,6 @@
    "smd": "3C05"
   },
   {
-   "id": "F2600663",
-   "issued": "2026-10-28T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "FENCE",
-   "address": "3306 ORDWAY ST NW 20008",
-   "work": "Historic-\r\n\r\nHave the existing fence at backyard replaced - keep exactly same heigh , same material , same locations only have the damage fence replaced",
-   "zoning": "R-1B",
-   "lat": 38.93615,
-   "lon": -77.06512,
-   "smd": "3C05"
-  },
-  {
    "id": "M2700358",
    "issued": "2026-10-28T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -2712,6 +2699,19 @@
    "lat": 38.93658,
    "lon": -77.06091,
    "smd": "3C06"
+  },
+  {
+   "id": "F2600663",
+   "issued": "2026-10-28T04:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "FENCE",
+   "address": "3306 ORDWAY ST NW 20008",
+   "work": "Historic-\r\n\r\nHave the existing fence at backyard replaced - keep exactly same heigh , same material , same locations only have the damage fence replaced",
+   "zoning": "R-1B",
+   "lat": 38.93615,
+   "lon": -77.06512,
+   "smd": "3C05"
   },
   {
    "id": "M2700329",
@@ -2910,13 +2910,13 @@
   }
  ],
  "requests": {
-  "total": 255,
-  "previous_total": 278,
+  "total": 254,
+  "previous_total": 279,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 41,
-    "previous": 40
+    "count": 40,
+    "previous": 41
    },
    {
     "type": "Scheduled Yard Waste",
@@ -3681,7 +3681,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3931,7 +3931,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3951,11 +3951,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 46,
-   "starting_next_7d": 7,
-   "reserved_ft": 8844,
+   "active_this_week": 45,
+   "starting_next_7d": 8,
+   "reserved_ft": 8470,
    "long_running_90d": 9,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Construction staging",
@@ -3963,26 +3963,18 @@
     },
     {
      "type": "Lead pipe replacement",
-     "count": 9
+     "count": 8
     },
     {
      "type": "Utility & DDOT work",
-     "count": 9
+     "count": 11
     },
     {
      "type": "Events & reserved parking",
-     "count": 3
+     "count": 1
     }
    ],
    "upcoming": [
-    {
-     "type": "Utility & DDOT work",
-     "block": "3400 block of Ordway Street NW",
-     "start": "2026-11-04",
-     "end": "2026-11-11",
-     "ft": 660,
-     "hours": "7 am\u20135 pm"
-    },
     {
      "type": "Utility & DDOT work",
      "block": "3400 block of Lowell Street NW",
@@ -3990,6 +3982,22 @@
      "end": "2026-11-14",
      "ft": 440,
      "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "3200 block of 36th Street NW",
+     "start": "2026-11-06",
+     "end": "2026-11-20",
+     "ft": 220,
+     "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "3500 block of Rodman Street NW",
+     "start": "2026-11-07",
+     "end": "2026-11-07",
+     "ft": 220,
+     "hours": "7 am\u20133 pm"
     },
     {
      "type": "Construction staging",
@@ -4121,7 +4129,7 @@
     "type": "Bulk Collection",
     "median_days": 7.91,
     "city_median_days": 6.92,
-    "closed_n": 370
+    "closed_n": 369
    },
    {
     "type": "Parking Enforcement",
@@ -4132,13 +4140,13 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 6.02,
-    "city_median_days": 5.05,
+    "city_median_days": 5.03,
     "closed_n": 196
    },
    {
     "type": "Trash Collection - Missed",
     "median_days": 12.93,
-    "city_median_days": 4.15,
+    "city_median_days": 4.14,
     "closed_n": 176
    },
    {
@@ -4163,7 +4171,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4318,7 +4326,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4737,8 +4745,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T01:56:36Z",
-  "today": "2026-11-03",
+  "generated_at": "2026-11-04T09:19:23Z",
+  "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
    {
@@ -4808,7 +4816,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -16145,7 +16153,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

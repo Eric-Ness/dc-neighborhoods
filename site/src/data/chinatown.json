@@ -1,7 +1,7 @@
 {
  "slug": "chinatown",
  "name": "Chinatown",
- "generated_at": "2026-11-04T01:56:36Z",
+ "generated_at": "2026-11-04T09:19:23Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -4587,33 +4587,33 @@
   }
  ],
  "requests": {
-  "total": 1903,
-  "previous_total": 1429,
+  "total": 1917,
+  "previous_total": 1417,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 474,
+    "count": 478,
     "previous": 363
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 467,
-    "previous": 126
+    "count": 474,
+    "previous": 111
    },
    {
     "type": "Sidewalk Repair",
-    "count": 110,
-    "previous": 69
+    "count": 109,
+    "previous": 72
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 89,
-    "previous": 16
+    "count": 91,
+    "previous": 15
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 78,
-    "previous": 127
+    "count": 79,
+    "previous": 130
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -4622,7 +4622,7 @@
    },
    {
     "type": "Bulk Collection",
-    "count": 50,
+    "count": 51,
     "previous": 52
    },
    {
@@ -4633,12 +4633,12 @@
    {
     "type": "DMV - Drivers License/ID Issues",
     "count": 45,
-    "previous": 22
+    "previous": 23
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 32,
-    "previous": 33
+    "count": 33,
+    "previous": 34
    },
    {
     "type": "Parking Meter Repair",
@@ -4646,14 +4646,14 @@
     "previous": 19
    },
    {
+    "type": "Graffiti Removal",
+    "count": 31,
+    "previous": 45
+   },
+   {
     "type": "Tree Pruning",
     "count": 31,
     "previous": 51
-   },
-   {
-    "type": "Graffiti Removal",
-    "count": 30,
-    "previous": 47
    },
    {
     "type": "Illegal Dumping",
@@ -4661,19 +4661,14 @@
     "previous": 17
    },
    {
-    "type": "Roadway Markings / Pylons",
-    "count": 20,
-    "previous": 8
-   },
-   {
     "type": "Pothole",
-    "count": 20,
+    "count": 21,
     "previous": 10
    },
    {
-    "type": "Traffic Safety Input",
+    "type": "Roadway Markings / Pylons",
     "count": 20,
-    "previous": 16
+    "previous": 8
    },
    {
     "type": "Dead Animal Collection",
@@ -4681,9 +4676,9 @@
     "previous": 10
    },
    {
-    "type": "Tree Inspection",
+    "type": "Traffic Safety Input",
     "count": 18,
-    "previous": 25
+    "previous": 15
    },
    {
     "type": "DC How Am I Driving?",
@@ -4691,14 +4686,19 @@
     "previous": 9
    },
    {
+    "type": "Tree Inspection",
+    "count": 16,
+    "previous": 24
+   },
+   {
     "type": "Public Space Inspection",
-    "count": 15,
-    "previous": 26
+    "count": 16,
+    "previous": 28
    },
    {
     "type": "DMV - Vehicle Registration Issues",
     "count": 14,
-    "previous": 8
+    "previous": 9
    },
    {
     "type": "Public Space Litter Can-Collection",
@@ -4708,7 +4708,7 @@
    {
     "type": "Streetlight Repair Investigation",
     "count": 13,
-    "previous": 17
+    "previous": 16
    },
    {
     "type": "DC Government Information",
@@ -4746,12 +4746,12 @@
     "previous": 14
    },
    {
-    "type": "DMV - Copy of Ticket",
-    "count": 7,
+    "type": "DMV - Refunds - Tickets",
+    "count": 6,
     "previous": 3
    },
    {
-    "type": "DMV - Refunds - Tickets",
+    "type": "DMV - Copy of Ticket",
     "count": 6,
     "previous": 3
    },
@@ -4796,6 +4796,11 @@
     "previous": 2
    },
    {
+    "type": "Recycling Cart Delivery",
+    "count": 4,
+    "previous": 1
+   },
+   {
     "type": "Public Space Litter Can Repair",
     "count": 3,
     "previous": 0
@@ -4814,11 +4819,6 @@
     "type": "DMV - Driver Record Issues",
     "count": 3,
     "previous": 0
-   },
-   {
-    "type": "Recycling Cart Delivery",
-    "count": 3,
-    "previous": 1
    },
    {
     "type": "Bicycle Services",
@@ -4848,7 +4848,7 @@
    {
     "type": "DOB - Illegal Construction",
     "count": 2,
-    "previous": 5
+    "previous": 4
    },
    {
     "type": "Abandoned Vehicle - On Private Property",
@@ -4911,8 +4911,28 @@
     "previous": 0
    }
   ],
-  "open": 316,
+  "open": 315,
   "recent": [
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T03:50:00Z",
+    "resolved": "2026-11-04T03:59:39Z",
+    "status": "Closed",
+    "block": "Unit block of K STREET NW",
+    "lat": 38.903,
+    "lon": -77.01
+   },
+   {
+    "type": "Public Space Inspection",
+    "agency": "DDOT",
+    "added": "2026-11-04T03:38:47Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "1400 block of K STREET NW",
+    "lat": 38.903,
+    "lon": -77.032
+   },
    {
     "type": "Tree Pruning",
     "agency": "DDOT",
@@ -4957,8 +4977,8 @@
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-11-04T00:00:40Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-04T02:39:04Z",
+    "status": "Closed",
     "block": "1300 block of 7TH STREET NW",
     "lat": 38.908,
     "lon": -77.022
@@ -5392,42 +5412,22 @@
     "block": "1200 block of MASSACHUSETTS AVENUE NW",
     "lat": 38.904,
     "lon": -77.029
-   },
-   {
-    "type": "Roadway Signs",
-    "agency": "DDOT",
-    "added": "2026-11-03T14:25:07Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "1200 block of L STREET NW",
-    "lat": 38.904,
-    "lon": -77.029
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-03T14:18:24Z",
-    "resolved": "2026-11-03T14:18:24Z",
-    "status": "Closed",
-    "block": "900 block of NEW JERSEY AVENUE NW",
-    "lat": 38.902,
-    "lon": -77.013
    }
   ]
  },
  "crime": {
-  "total": 132,
-  "previous_total": 149,
+  "total": 130,
+  "previous_total": 148,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
-    "count": 94,
-    "previous": 98
+    "count": 92,
+    "previous": 99
    },
    {
     "offense": "THEFT F/AUTO",
     "count": 14,
-    "previous": 22
+    "previous": 20
    },
    {
     "offense": "MOTOR VEHICLE THEFT",
@@ -5522,7 +5522,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -5934,7 +5934,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -5954,11 +5954,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 281,
-   "starting_next_7d": 55,
-   "reserved_ft": 23804,
-   "long_running_90d": 71,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
+   "active_this_week": 276,
+   "starting_next_7d": 58,
+   "reserved_ft": 23738,
+   "long_running_90d": 68,
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -5970,7 +5970,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 201
+     "count": 194
     },
     {
      "type": "Cranes",
@@ -5982,7 +5982,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 18
+     "count": 20
     },
     {
      "type": "Events & reserved parking",
@@ -5991,68 +5991,20 @@
    ],
    "upcoming": [
     {
-     "type": "Events & reserved parking",
-     "block": "500 block of 1st Street NW",
-     "start": "2026-11-04",
-     "end": "2026-11-04",
-     "ft": 44,
-     "hours": "7 am\u201311:59 pm"
-    },
-    {
      "type": "Construction staging",
-     "block": "1000 block of New Jersey Avenue NW",
+     "block": "300 block of C Street NW",
      "start": "2026-11-04",
      "end": "2026-12-03",
-     "ft": 198,
+     "ft": 88,
      "hours": "9:30 am\u20133:30 pm"
     },
     {
      "type": "Construction staging",
-     "block": "200 block of New York Avenue NW",
+     "block": "400 block of 4th Street NW",
      "start": "2026-11-04",
      "end": "2026-12-03",
-     "ft": 0,
+     "ft": 154,
      "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "1200 block of New Jersey Avenue NW",
-     "start": "2026-11-04",
-     "end": "2026-12-03",
-     "ft": 0,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "1200 block of New Jersey Avenue NW",
-     "start": "2026-11-04",
-     "end": "2026-12-03",
-     "ft": 0,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "1300 block of New Jersey Avenue NW",
-     "start": "2026-11-04",
-     "end": "2026-12-03",
-     "ft": 198,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "400 block of M Street NW",
-     "start": "2026-11-04",
-     "end": "2026-11-05",
-     "ft": 110,
-     "hours": "7:30 am\u20133 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "600 block of O Street NW",
-     "start": "2026-11-04",
-     "end": "2026-11-05",
-     "ft": 66,
-     "hours": "7:30 am\u20133 pm"
     },
     {
      "type": "Events & reserved parking",
@@ -6069,14 +6021,6 @@
      "end": "2026-11-20",
      "ft": 0,
      "hours": ""
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "1200 block of New York Avenue NW",
-     "start": "2026-11-05",
-     "end": "2026-11-05",
-     "ft": 0,
-     "hours": "7 am\u201311:59 pm"
     },
     {
      "type": "Events & reserved parking",
@@ -6101,6 +6045,22 @@
      "end": "2026-11-06",
      "ft": 88,
      "hours": ""
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "1200 block of New York Avenue NW",
+     "start": "2026-11-05",
+     "end": "2026-11-05",
+     "ft": 0,
+     "hours": "7 am\u201311:59 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "1500 block of M Street NW",
+     "start": "2026-11-05",
+     "end": "2026-11-05",
+     "ft": 220,
+     "hours": "8 am\u20132 pm"
     },
     {
      "type": "Events & reserved parking",
@@ -6143,6 +6103,22 @@
      "hours": ""
     },
     {
+     "type": "Construction staging",
+     "block": "300 block of C Street NW",
+     "start": "2026-11-06",
+     "end": "2026-12-05",
+     "ft": 264,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "500 block of 12th Street NW",
+     "start": "2026-11-06",
+     "end": "2026-11-06",
+     "ft": 0,
+     "hours": "1 am\u201311:59 pm"
+    },
+    {
      "type": "Utility & DDOT work",
      "block": "1200 block of F Street NW",
      "start": "2026-11-06",
@@ -6151,20 +6127,20 @@
      "hours": "9:30 am\u20133:30 pm"
     },
     {
+     "type": "Events & reserved parking",
+     "block": "800 block of 8th Street NW",
+     "start": "2026-11-06",
+     "end": "2026-11-06",
+     "ft": 44,
+     "hours": "8 am\u20133 pm"
+    },
+    {
      "type": "Cranes",
      "block": "600 block of 7th Street NW",
      "start": "2026-11-07",
      "end": "2026-11-07",
      "ft": 0,
      "hours": "7 am\u20137 pm"
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "800 block of G Street NW",
-     "start": "2026-11-07",
-     "end": "2026-11-07",
-     "ft": 44,
-     "hours": "7 am\u201311:59 pm"
     },
     {
      "type": "Events & reserved parking",
@@ -6189,6 +6165,14 @@
      "end": "2026-11-07",
      "ft": 88,
      "hours": ""
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "800 block of G Street NW",
+     "start": "2026-11-07",
+     "end": "2026-11-07",
+     "ft": 44,
+     "hours": "7 am\u201311:59 pm"
     },
     {
      "type": "Cranes",
@@ -6228,7 +6212,7 @@
      "start": "2026-11-07",
      "end": "2026-11-07",
      "ft": 198,
-     "hours": "8 am\u20135 pm"
+     "hours": "6 am\u20135 pm"
     },
     {
      "type": "Events & reserved parking",
@@ -6253,6 +6237,14 @@
      "end": "2026-11-08",
      "ft": 0,
      "hours": "4 am\u201311 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "1200 block of Pennsylvania Avenue NW",
+     "start": "2026-11-07",
+     "end": "2026-11-07",
+     "ft": 88,
+     "hours": "3 pm\u201311 pm"
     },
     {
      "type": "Events & reserved parking",
@@ -6309,6 +6301,14 @@
      "end": "2026-11-13",
      "ft": 22,
      "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "1300 block of 7th Street NW",
+     "start": "2026-11-09",
+     "end": "2026-12-04",
+     "ft": 110,
+     "hours": "9:30 am\u20133:30 pm"
     }
    ]
   },
@@ -6394,7 +6394,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.05,
     "city_median_days": 0.05,
-    "closed_n": 2552
+    "closed_n": 2551
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -6423,7 +6423,7 @@
    {
     "type": "Sidewalk Repair",
     "median_days": 35.82,
-    "city_median_days": 46.14,
+    "city_median_days": 46.12,
     "closed_n": 303
    },
    {
@@ -6434,15 +6434,15 @@
    },
    {
     "type": "Roadway Signs",
-    "median_days": 16.02,
-    "city_median_days": 6.99,
-    "closed_n": 229
+    "median_days": 15.52,
+    "city_median_days": 6.98,
+    "closed_n": 228
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -6617,7 +6617,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "archive_days": 180,
   "sources": [
    {
@@ -7730,8 +7730,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T01:56:36Z",
-  "today": "2026-11-03",
+  "generated_at": "2026-11-04T09:19:23Z",
+  "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
    {
@@ -7926,6 +7926,15 @@
     "source": "DC farmers market list",
     "kind": "market",
     "date": "2026-11-28"
+   },
+   {
+    "title": "Writers of Washington Presents: Common Sense Take 2",
+    "date": "2026-12-03",
+    "time": "6 PM to 7:30 PM",
+    "place": "D.C. Bar, 901 4th Street NW",
+    "url": "https://www.mountvernontriangle.org/event/writers-of-washington-presents-common-sense-take-2/",
+    "source": "Mount Vernon Triangle CID",
+    "kind": "community"
    }
   ],
   "unscheduled": [],
@@ -7950,7 +7959,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -35318,7 +35327,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

@@ -1,7 +1,7 @@
 {
  "slug": "petworth",
  "name": "Petworth",
- "generated_at": "2026-11-04T01:56:36Z",
+ "generated_at": "2026-11-04T09:19:23Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -2041,28 +2041,28 @@
   }
  ],
  "requests": {
-  "total": 1177,
-  "previous_total": 1226,
+  "total": 1178,
+  "previous_total": 1221,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 208,
-    "previous": 240
+    "count": 206,
+    "previous": 238
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 131,
-    "previous": 148
+    "count": 132,
+    "previous": 150
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 115,
+    "count": 116,
     "previous": 91
    },
    {
     "type": "Parking Enforcement",
-    "count": 74,
-    "previous": 99
+    "count": 73,
+    "previous": 96
    },
    {
     "type": "Illegal Dumping",
@@ -2072,12 +2072,12 @@
    {
     "type": "Trash Collection - Missed",
     "count": 60,
-    "previous": 52
+    "previous": 53
    },
    {
     "type": "Sanitation Enforcement",
     "count": 43,
-    "previous": 41
+    "previous": 40
    },
    {
     "type": "DOEE - LIHEAP",
@@ -2092,7 +2092,7 @@
    {
     "type": "Public Space Litter Can-Collection",
     "count": 27,
-    "previous": 18
+    "previous": 17
    },
    {
     "type": "Recycling Collection - Missed",
@@ -2115,6 +2115,11 @@
     "previous": 39
    },
    {
+    "type": "Tree Inspection",
+    "count": 21,
+    "previous": 15
+   },
+   {
     "type": "Rat Replacement Containers",
     "count": 21,
     "previous": 16
@@ -2123,11 +2128,6 @@
     "type": "Dockless Vehicle Parking Complaint",
     "count": 21,
     "previous": 1
-   },
-   {
-    "type": "Tree Inspection",
-    "count": 20,
-    "previous": 15
    },
    {
     "type": "DMV - Drivers License/ID Issues",
@@ -2212,7 +2212,7 @@
    {
     "type": "Roadway Signs",
     "count": 6,
-    "previous": 18
+    "previous": 17
    },
    {
     "type": "DMV - Vehicle Registration Issues",
@@ -2318,10 +2318,25 @@
     "type": "DC How Am I Driving?",
     "count": 1,
     "previous": 0
+   },
+   {
+    "type": "Tree Planting",
+    "count": 1,
+    "previous": 4
    }
   ],
-  "open": 244,
+  "open": 243,
   "recent": [
+   {
+    "type": "Tree Planting",
+    "agency": "DDOT",
+    "added": "2026-11-04T04:11:45Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "4200 block of 8TH STREET NW",
+    "lat": 38.942,
+    "lon": -77.024
+   },
    {
     "type": "DC Health Rodent & Vector Control",
     "agency": "DOH",
@@ -2416,8 +2431,8 @@
     "type": "Tree Inspection",
     "agency": "DDOT",
     "added": "2026-11-03T18:01:58Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-04T04:00:57Z",
+    "status": "Closed",
     "block": "4600 block of 8TH STREET NW",
     "lat": 38.946,
     "lon": -77.024
@@ -2646,8 +2661,8 @@
     "type": "Tree Inspection",
     "agency": "DDOT",
     "added": "2026-11-03T01:36:39Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-04T04:15:57Z",
+    "status": "Closed",
     "block": "4200 block of 8TH STREET NW",
     "lat": 38.942,
     "lon": -77.024
@@ -2811,16 +2826,6 @@
     "block": "5000 block of 7TH STREET NW",
     "lat": 38.952,
     "lon": -77.022
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-02T16:29:50Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "500 block of ROCK CREEK CHURCH ROAD NW",
-    "lat": 38.937,
-    "lon": -77.02
    }
   ]
  },
@@ -2907,7 +2912,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3216,7 +3221,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3236,15 +3241,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 120,
-   "starting_next_7d": 17,
-   "reserved_ft": 15224,
+   "active_this_week": 119,
+   "starting_next_7d": 16,
+   "reserved_ft": 15136,
    "long_running_90d": 39,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 5
+     "count": 4
     },
     {
      "type": "Dumpsters",
@@ -3268,14 +3273,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Moving & storage",
-     "block": "700 block of Varnum Street NW",
-     "start": "2026-11-04",
-     "end": "2026-11-04",
-     "ft": 88,
-     "hours": ""
-    },
     {
      "type": "Lead pipe replacement",
      "block": "500 block of Taylor Street NW",
@@ -3488,12 +3485,12 @@
     "type": "Bulk Collection",
     "median_days": 7.95,
     "city_median_days": 6.92,
-    "closed_n": 2272
+    "closed_n": 2270
    },
    {
     "type": "Trash Collection - Missed",
     "median_days": 3.72,
-    "city_median_days": 4.15,
+    "city_median_days": 4.14,
     "closed_n": 1183
    },
    {
@@ -3511,7 +3508,7 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 4.05,
-    "city_median_days": 5.05,
+    "city_median_days": 5.03,
     "closed_n": 806
    },
    {
@@ -3536,7 +3533,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3701,7 +3698,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4035,8 +4032,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T01:56:36Z",
-  "today": "2026-11-03",
+  "generated_at": "2026-11-04T09:19:23Z",
+  "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
    {
@@ -4129,7 +4126,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -26292,7 +26289,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

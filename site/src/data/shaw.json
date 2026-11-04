@@ -1,7 +1,7 @@
 {
  "slug": "shaw",
  "name": "Shaw",
- "generated_at": "2026-11-04T01:56:36Z",
+ "generated_at": "2026-11-04T09:19:23Z",
  "boundary": {
   "source": "ANC 2G, the Shaw commission (all its single-member districts, Open Data DC). DC's LOGAN CIRCLE/SHAW planning area also covers Logan Circle, which has its own site.",
   "rings": [
@@ -2590,19 +2590,6 @@
    "smd": "2G05"
   },
   {
-   "id": "E2701072",
-   "issued": "2026-10-30T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "505 S ST NW 20001",
-   "work": "",
-   "zoning": "RF-1",
-   "lat": 38.91426,
-   "lon": -77.01925,
-   "smd": "2G01"
-  },
-  {
    "id": "B2204740-EXT-1",
    "issued": "2026-10-30T04:00:00Z",
    "group": "Renovation & repair",
@@ -2614,6 +2601,19 @@
    "lat": 38.9106,
    "lon": -77.02114,
    "smd": "2G03"
+  },
+  {
+   "id": "E2701072",
+   "issued": "2026-10-30T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "505 S ST NW 20001",
+   "work": "",
+   "zoning": "RF-1",
+   "lat": 38.91426,
+   "lon": -77.01925,
+   "smd": "2G01"
   },
   {
    "id": "E2700983",
@@ -2629,19 +2629,6 @@
    "smd": "2G03"
   },
   {
-   "id": "P2700906",
-   "issued": "2026-10-28T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "1200 5TH ST NW 20001",
-   "work": "Plumbing trade Permit",
-   "zoning": "RA-2",
-   "lat": 38.90589,
-   "lon": -77.01956,
-   "smd": "2G05"
-  },
-  {
    "id": "B2405120",
    "issued": "2026-10-28T04:00:00Z",
    "group": "Additions",
@@ -2653,6 +2640,19 @@
    "lat": 38.90903,
    "lon": -77.02572,
    "smd": "2G02"
+  },
+  {
+   "id": "P2700906",
+   "issued": "2026-10-28T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "1200 5TH ST NW 20001",
+   "work": "Plumbing trade Permit",
+   "zoning": "RA-2",
+   "lat": 38.90589,
+   "lon": -77.01956,
+   "smd": "2G05"
   },
   {
    "id": "FD2600018",
@@ -2785,6 +2785,19 @@
    "smd": "2G05"
   },
   {
+   "id": "E2700687",
+   "issued": "2026-10-21T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "909 O ST NW 20001",
+   "work": "",
+   "zoning": "MU-4",
+   "lat": 38.90878,
+   "lon": -77.02443,
+   "smd": "2G02"
+  },
+  {
    "id": "HO2700136",
    "issued": "2026-10-21T04:00:00Z",
    "group": "Home businesses",
@@ -2822,19 +2835,6 @@
    "lat": 38.90454,
    "lon": -77.01798,
    "smd": "2G06"
-  },
-  {
-   "id": "E2700687",
-   "issued": "2026-10-21T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "909 O ST NW 20001",
-   "work": "",
-   "zoning": "MU-4",
-   "lat": 38.90878,
-   "lon": -77.02443,
-   "smd": "2G02"
   },
   {
    "id": "HO2700118",
@@ -3085,13 +3085,13 @@
   }
  ],
  "requests": {
-  "total": 1596,
-  "previous_total": 1418,
+  "total": 1607,
+  "previous_total": 1408,
   "by_type": [
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 442,
-    "previous": 366
+    "count": 445,
+    "previous": 363
    },
    {
     "type": "Parking Enforcement",
@@ -3100,8 +3100,8 @@
    },
    {
     "type": "Bulk Collection",
-    "count": 121,
-    "previous": 133
+    "count": 117,
+    "previous": 131
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -3110,13 +3110,13 @@
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 53,
+    "count": 56,
     "previous": 69
    },
    {
     "type": "Illegal Dumping",
-    "count": 52,
-    "previous": 52
+    "count": 53,
+    "previous": 50
    },
    {
     "type": "Graffiti Removal",
@@ -3130,8 +3130,13 @@
    },
    {
     "type": "Dead Animal Collection",
-    "count": 31,
+    "count": 30,
     "previous": 28
+   },
+   {
+    "type": "Sidewalk Repair",
+    "count": 30,
+    "previous": 15
    },
    {
     "type": "Container Removal",
@@ -3139,14 +3144,14 @@
     "previous": 13
    },
    {
+    "type": "Residential Parking Permit Violation",
+    "count": 29,
+    "previous": 26
+   },
+   {
     "type": "DOEE - LIHEAP",
     "count": 29,
     "previous": 5
-   },
-   {
-    "type": "Residential Parking Permit Violation",
-    "count": 28,
-    "previous": 27
    },
    {
     "type": "Public Space Litter Can-Collection",
@@ -3159,9 +3164,9 @@
     "previous": 10
    },
    {
-    "type": "Sidewalk Repair",
-    "count": 27,
-    "previous": 15
+    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "count": 23,
+    "previous": 65
    },
    {
     "type": "Trash Collection - Missed",
@@ -3169,14 +3174,9 @@
     "previous": 47
    },
    {
-    "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 22,
-    "previous": 62
-   },
-   {
     "type": "Trash Cart - Delivery",
-    "count": 18,
-    "previous": 28
+    "count": 19,
+    "previous": 25
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
@@ -3189,24 +3189,24 @@
     "previous": 3
    },
    {
+    "type": "Recycling Collection - Missed",
+    "count": 13,
+    "previous": 10
+   },
+   {
     "type": "Tree Inspection",
     "count": 13,
     "previous": 28
    },
    {
+    "type": "Roadway Signs",
+    "count": 13,
+    "previous": 9
+   },
+   {
     "type": "Abandoned Vehicle - On Public Property",
     "count": 13,
     "previous": 8
-   },
-   {
-    "type": "Roadway Signs",
-    "count": 12,
-    "previous": 10
-   },
-   {
-    "type": "Recycling Collection - Missed",
-    "count": 10,
-    "previous": 10
    },
    {
     "type": "Roadway Markings / Pylons",
@@ -3216,12 +3216,12 @@
    {
     "type": "Tree Pruning",
     "count": 9,
-    "previous": 10
+    "previous": 9
    },
    {
     "type": "Recycling Cart Delivery",
     "count": 9,
-    "previous": 10
+    "previous": 9
    },
    {
     "type": "DC Dog Park Maintenance (DGS)",
@@ -3259,11 +3259,6 @@
     "previous": 2
    },
    {
-    "type": "DMV - Drivers License/ID Issues",
-    "count": 5,
-    "previous": 12
-   },
-   {
     "type": "DGS - Overflowing Recycling Can",
     "count": 5,
     "previous": 0
@@ -3279,12 +3274,22 @@
     "previous": 0
    },
    {
+    "type": "Bicycle Services",
+    "count": 4,
+    "previous": 0
+   },
+   {
     "type": "DOB - Illegal Construction",
     "count": 4,
     "previous": 4
    },
    {
     "type": "DC Government Information",
+    "count": 4,
+    "previous": 11
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
     "count": 4,
     "previous": 12
    },
@@ -3299,14 +3304,9 @@
     "previous": 2
    },
    {
-    "type": "Bicycle Services",
-    "count": 3,
-    "previous": 0
-   },
-   {
     "type": "Tree Removal",
     "count": 3,
-    "previous": 7
+    "previous": 6
    },
    {
     "type": "DOB - Vacant Private Property Inspection",
@@ -3344,11 +3344,6 @@
     "previous": 10
    },
    {
-    "type": "FEMS - Smoke Alarm Application",
-    "count": 2,
-    "previous": 0
-   },
-   {
     "type": "Public Space Inspection",
     "count": 2,
     "previous": 9
@@ -3356,7 +3351,7 @@
    {
     "type": "DGS - Playground Repair",
     "count": 2,
-    "previous": 2
+    "previous": 1
    },
    {
     "type": "Tree Planting",
@@ -3389,6 +3384,11 @@
     "previous": 0
    },
    {
+    "type": "FEMS - Smoke Alarm Application",
+    "count": 1,
+    "previous": 0
+   },
+   {
     "type": "DMV - Refunds - Tickets",
     "count": 1,
     "previous": 0
@@ -3404,8 +3404,58 @@
     "previous": 1
    }
   ],
-  "open": 318,
+  "open": 322,
   "recent": [
+   {
+    "type": "Recycling Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-04T04:11:24Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of 6TH STREET NW",
+    "lat": 38.914,
+    "lon": -77.02
+   },
+   {
+    "type": "Recycling Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-04T04:10:19Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of 6TH STREET NW",
+    "lat": 38.914,
+    "lon": -77.02
+   },
+   {
+    "type": "Recycling Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-04T02:25:14Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1600 block of 6TH STREET NW",
+    "lat": 38.912,
+    "lon": -77.02
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "agency": "DDOT",
+    "added": "2026-11-04T02:15:53Z",
+    "resolved": "2026-11-04T02:25:54Z",
+    "status": "Closed",
+    "block": "900 block of R STREET NW",
+    "lat": 38.912,
+    "lon": -77.025
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "agency": "DDOT",
+    "added": "2026-11-04T02:13:59Z",
+    "resolved": "2026-11-04T02:20:54Z",
+    "status": "Closed",
+    "block": "1400 block of NEW JERSEY AVENUE NW",
+    "lat": 38.909,
+    "lon": -77.017
+   },
    {
     "type": "Dockless Vehicle Parking Complaint",
     "agency": "DDOT",
@@ -3430,8 +3480,8 @@
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-11-04T00:00:40Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-04T02:39:04Z",
+    "status": "Closed",
     "block": "1300 block of 7TH STREET NW",
     "lat": 38.908,
     "lon": -77.022
@@ -3855,62 +3905,12 @@
     "block": "1400 block of 10TH STREET NW",
     "lat": 38.909,
     "lon": -77.026
-   },
-   {
-    "type": "Tree Pruning",
-    "agency": "DDOT",
-    "added": "2026-11-03T06:51:23Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "10TH STREET NW AND O STREET NW",
-    "lat": 38.909,
-    "lon": -77.026
-   },
-   {
-    "type": "Abandoned Bicycle",
-    "agency": "DPW",
-    "added": "2026-11-03T06:42:38Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "10TH STREET NW AND N STREET NW",
-    "lat": 38.907,
-    "lon": -77.026
-   },
-   {
-    "type": "Graffiti Removal",
-    "agency": "DPW",
-    "added": "2026-11-03T06:18:56Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "10TH STREET NW AND N STREET NW",
-    "lat": 38.907,
-    "lon": -77.026
-   },
-   {
-    "type": "Graffiti Removal",
-    "agency": "DPW",
-    "added": "2026-11-03T06:14:41Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "10TH STREET NW AND M STREET NW",
-    "lat": 38.906,
-    "lon": -77.026
-   },
-   {
-    "type": "Graffiti Removal",
-    "agency": "DPW",
-    "added": "2026-11-03T06:13:08Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "10TH STREET NW AND MASSACHUSETTS AVENUE NW",
-    "lat": 38.904,
-    "lon": -77.026
    }
   ]
  },
  "crime": {
-  "total": 40,
-  "previous_total": 39,
+  "total": 39,
+  "previous_total": 40,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
@@ -3919,8 +3919,8 @@
    },
    {
     "offense": "THEFT F/AUTO",
-    "count": 12,
-    "previous": 5
+    "count": 11,
+    "previous": 6
    },
    {
     "offense": "MOTOR VEHICLE THEFT",
@@ -3933,12 +3933,12 @@
     "previous": 2
    },
    {
-    "offense": "ASSAULT W/DANGEROUS WEAPON",
+    "offense": "BURGLARY",
     "count": 1,
     "previous": 3
    },
    {
-    "offense": "BURGLARY",
+    "offense": "ASSAULT W/DANGEROUS WEAPON",
     "count": 1,
     "previous": 3
    },
@@ -3996,7 +3996,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -4189,7 +4189,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4209,15 +4209,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 116,
-   "starting_next_7d": 37,
-   "reserved_ft": 13156,
+   "active_this_week": 111,
+   "starting_next_7d": 28,
+   "reserved_ft": 11924,
    "long_running_90d": 20,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 2
+     "count": 3
     },
     {
      "type": "Dumpsters",
@@ -4225,7 +4225,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 74
+     "count": 70
     },
     {
      "type": "Cranes",
@@ -4237,7 +4237,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 16
+     "count": 14
     },
     {
      "type": "Events & reserved parking",
@@ -4245,94 +4245,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Construction staging",
-     "block": "1200 block of New Jersey Avenue NW",
-     "start": "2026-11-04",
-     "end": "2026-12-03",
-     "ft": 0,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "1200 block of New Jersey Avenue NW",
-     "start": "2026-11-04",
-     "end": "2026-12-03",
-     "ft": 0,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "1300 block of New Jersey Avenue NW",
-     "start": "2026-11-04",
-     "end": "2026-12-03",
-     "ft": 198,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "1400 block of 4th Street NW",
-     "start": "2026-11-04",
-     "end": "2026-12-03",
-     "ft": 110,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "1400 block of New Jersey Avenue NW",
-     "start": "2026-11-04",
-     "end": "2026-12-03",
-     "ft": 110,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "400 block of P Street NW",
-     "start": "2026-11-04",
-     "end": "2026-12-03",
-     "ft": 0,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "1500 block of New Jersey Avenue NW",
-     "start": "2026-11-04",
-     "end": "2026-12-03",
-     "ft": 176,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "400 block of M Street NW",
-     "start": "2026-11-04",
-     "end": "2026-11-05",
-     "ft": 110,
-     "hours": "7:30 am\u20133 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "600 block of O Street NW",
-     "start": "2026-11-04",
-     "end": "2026-11-05",
-     "ft": 66,
-     "hours": "7:30 am\u20133 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "700 block of Q Street NW",
-     "start": "2026-11-04",
-     "end": "2026-11-05",
-     "ft": 66,
-     "hours": "7:30 am\u20133 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "1500 block of New Jersey Avenue NW",
-     "start": "2026-11-04",
-     "end": "2026-11-05",
-     "ft": 66,
-     "hours": "7:30 am\u20133 pm"
-    },
     {
      "type": "Construction staging",
      "block": "700 block of Q Street NW",
@@ -4510,6 +4422,14 @@
      "hours": "9:30 am\u20133:30 pm"
     },
     {
+     "type": "Utility & DDOT work",
+     "block": "500 block of N Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-10",
+     "ft": 66,
+     "hours": "7:30 am\u20133 pm"
+    },
+    {
      "type": "Construction staging",
      "block": "1600 block of New Jersey Avenue NW",
      "start": "2026-11-10",
@@ -4530,6 +4450,14 @@
      "block": "1400 block of Columbia Street NW",
      "start": "2026-11-10",
      "end": "2026-11-10",
+     "ft": 88,
+     "hours": ""
+    },
+    {
+     "type": "Moving & storage",
+     "block": "1500 block of 6th Street NW",
+     "start": "2026-11-10",
+     "end": "2026-11-11",
      "ft": 88,
      "hours": ""
     },
@@ -4625,24 +4553,24 @@
     "type": "Dockless Vehicle Parking Complaint",
     "median_days": 0.01,
     "city_median_days": 0.01,
-    "closed_n": 1255
+    "closed_n": 1257
    },
    {
     "type": "Parking Enforcement",
     "median_days": 0.06,
     "city_median_days": 0.05,
-    "closed_n": 1128
+    "closed_n": 1127
    },
    {
     "type": "Bulk Collection",
     "median_days": 5.77,
     "city_median_days": 6.92,
-    "closed_n": 991
+    "closed_n": 990
    },
    {
     "type": "Trash Collection - Missed",
     "median_days": 3.99,
-    "city_median_days": 4.15,
+    "city_median_days": 4.14,
     "closed_n": 547
    },
    {
@@ -4673,7 +4601,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4810,7 +4738,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "archive_days": 180,
   "sources": [
    {
@@ -5173,8 +5101,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T01:56:36Z",
-  "today": "2026-11-03",
+  "generated_at": "2026-11-04T09:19:23Z",
+  "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
    {
@@ -5220,7 +5148,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -21240,7 +21168,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

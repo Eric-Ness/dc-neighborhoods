@@ -1,7 +1,7 @@
 {
  "slug": "anacostia",
  "name": "Anacostia",
- "generated_at": "2026-11-04T01:56:36Z",
+ "generated_at": "2026-11-04T09:19:23Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1043,18 +1043,18 @@
   }
  ],
  "requests": {
-  "total": 580,
-  "previous_total": 747,
+  "total": 589,
+  "previous_total": 733,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 104,
-    "previous": 98
+    "count": 105,
+    "previous": 96
    },
    {
     "type": "Parking Enforcement",
     "count": 86,
-    "previous": 101
+    "previous": 97
    },
    {
     "type": "DOEE - LIHEAP",
@@ -1063,7 +1063,7 @@
    },
    {
     "type": "Illegal Dumping",
-    "count": 40,
+    "count": 44,
     "previous": 26
    },
    {
@@ -1083,8 +1083,8 @@
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 17,
-    "previous": 30
+    "count": 19,
+    "previous": 29
    },
    {
     "type": "Residential Parking Permit Violation",
@@ -1119,7 +1119,7 @@
    {
     "type": "Streetlight Repair Investigation",
     "count": 11,
-    "previous": 14
+    "previous": 13
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -1128,13 +1128,13 @@
    },
    {
     "type": "Tree Inspection",
-    "count": 8,
+    "count": 9,
     "previous": 23
    },
    {
     "type": "Supercan - Delivery",
     "count": 7,
-    "previous": 17
+    "previous": 16
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
@@ -1154,7 +1154,7 @@
    {
     "type": "Out of State Parking Violation (ROSA)",
     "count": 5,
-    "previous": 7
+    "previous": 6
    },
    {
     "type": "DOB - Vacant Private Property Inspection",
@@ -1185,6 +1185,11 @@
     "type": "Public Space Inspection",
     "count": 3,
     "previous": 4
+   },
+   {
+    "type": "Graffiti Removal",
+    "count": 3,
+    "previous": 1
    },
    {
     "type": "Public Space Litter Can-Collection",
@@ -1222,11 +1227,6 @@
     "previous": 0
    },
    {
-    "type": "Graffiti Removal",
-    "count": 2,
-    "previous": 1
-   },
-   {
     "type": "DOEE - Report Construction Erosion Runoff",
     "count": 2,
     "previous": 0
@@ -1234,7 +1234,7 @@
    {
     "type": "Supercan - Repair",
     "count": 2,
-    "previous": 3
+    "previous": 1
    },
    {
     "type": "Tree Pruning",
@@ -1317,8 +1317,18 @@
     "previous": 3
    }
   ],
-  "open": 63,
+  "open": 64,
   "recent": [
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T01:45:43Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1500 block of ERIE STREET SE",
+    "lat": 38.857,
+    "lon": -76.984
+   },
    {
     "type": "Residential Parking Permit Violation",
     "agency": "DPW",
@@ -1808,22 +1818,12 @@
     "block": "1900 block of MARTIN LUTHER KING JR AVENUE SE",
     "lat": 38.867,
     "lon": -76.989
-   },
-   {
-    "type": "Alley Repair",
-    "agency": "DDOT",
-    "added": "2026-10-30T19:34:42Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "1300 block of VALLEY PLACE SE",
-    "lat": 38.863,
-    "lon": -76.987
    }
   ]
  },
  "crime": {
   "total": 28,
-  "previous_total": 35,
+  "previous_total": 34,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
@@ -1833,7 +1833,7 @@
    {
     "offense": "MOTOR VEHICLE THEFT",
     "count": 6,
-    "previous": 6
+    "previous": 5
    },
    {
     "offense": "THEFT F/AUTO",
@@ -1903,7 +1903,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2103,7 +2103,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2123,11 +2123,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 76,
-   "starting_next_7d": 16,
-   "reserved_ft": 9042,
+   "active_this_week": 77,
+   "starting_next_7d": 19,
+   "reserved_ft": 9394,
    "long_running_90d": 22,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -2139,7 +2139,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 31
+     "count": 29
     },
     {
      "type": "Lead pipe replacement",
@@ -2147,7 +2147,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 14
+     "count": 17
     },
     {
      "type": "Events & reserved parking",
@@ -2282,6 +2282,30 @@
      "end": "2026-11-08",
      "ft": 220,
      "hours": "4 am\u201311 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1300 block of Valley Place SE",
+     "start": "2026-11-09",
+     "end": "2026-11-20",
+     "ft": 220,
+     "hours": "8 am\u20135 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "2300 block of High Street SE",
+     "start": "2026-11-09",
+     "end": "2026-11-20",
+     "ft": 220,
+     "hours": "8 am\u20135 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "2200 block of Mount View Place SE",
+     "start": "2026-11-09",
+     "end": "2026-11-20",
+     "ft": 220,
+     "hours": "8 am\u20135 pm"
     }
    ]
   },
@@ -2367,7 +2391,7 @@
     "type": "Bulk Collection",
     "median_days": 6.08,
     "city_median_days": 6.92,
-    "closed_n": 933
+    "closed_n": 932
    },
    {
     "type": "Parking Enforcement",
@@ -2384,7 +2408,7 @@
    {
     "type": "Trash Collection - Missed",
     "median_days": 4.49,
-    "city_median_days": 4.15,
+    "city_median_days": 4.14,
     "closed_n": 428
    },
    {
@@ -2408,14 +2432,14 @@
    {
     "type": "Roadway Signs",
     "median_days": 2.96,
-    "city_median_days": 6.99,
+    "city_median_days": 6.98,
     "closed_n": 156
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2584,7 +2608,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2862,8 +2886,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T01:56:36Z",
-  "today": "2026-11-03",
+  "generated_at": "2026-11-04T09:19:23Z",
+  "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
    {
@@ -2990,7 +3014,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -19139,7 +19163,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

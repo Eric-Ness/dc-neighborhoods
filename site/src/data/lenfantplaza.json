@@ -1,7 +1,7 @@
 {
  "slug": "lenfantplaza",
  "name": "L'Enfant Plaza",
- "generated_at": "2026-11-04T01:56:36Z",
+ "generated_at": "2026-11-04T09:19:23Z",
  "boundary": {
   "source": "Southwest Business Improvement District, which takes in L'Enfant Plaza and the federal blocks around it (Open Data DC). DC has no planning area for L'Enfant Plaza.",
   "rings": [
@@ -1312,13 +1312,13 @@
   }
  ],
  "requests": {
-  "total": 771,
-  "previous_total": 663,
+  "total": 772,
+  "previous_total": 660,
   "by_type": [
    {
     "type": "Parking Enforcement",
     "count": 210,
-    "previous": 203
+    "previous": 202
    },
    {
     "type": "DMV - Drivers License/ID Issues",
@@ -1352,7 +1352,7 @@
    },
    {
     "type": "DMV - Online Processing Issues",
-    "count": 26,
+    "count": 27,
     "previous": 11
    },
    {
@@ -1438,7 +1438,7 @@
    {
     "type": "DMV - eTIMS Ticket Alert Services Issues",
     "count": 5,
-    "previous": 4
+    "previous": 3
    },
    {
     "type": "DMV - Vehicle Inspection Issues",
@@ -1473,7 +1473,7 @@
    {
     "type": "Roadway Repair",
     "count": 3,
-    "previous": 4
+    "previous": 3
    },
    {
     "type": "DOEE - General Air Quality Concerns",
@@ -2136,7 +2136,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2301,7 +2301,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2321,11 +2321,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 139,
-   "starting_next_7d": 37,
-   "reserved_ft": 20746,
+   "active_this_week": 136,
+   "starting_next_7d": 34,
+   "reserved_ft": 20526,
    "long_running_90d": 32,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Dumpsters",
@@ -2341,7 +2341,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 12
+     "count": 9
     },
     {
      "type": "Events & reserved parking",
@@ -2349,30 +2349,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Construction staging",
-     "block": "300 block of 3rd Street SW",
-     "start": "2026-11-04",
-     "end": "2026-12-03",
-     "ft": 176,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "400 block of 3rd Street SW",
-     "start": "2026-11-04",
-     "end": "2026-12-03",
-     "ft": 484,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "400 block of 3rd Street SW",
-     "start": "2026-11-04",
-     "end": "2026-12-03",
-     "ft": 176,
-     "hours": "9:30 am\u20133:30 pm"
-    },
     {
      "type": "Events & reserved parking",
      "block": "800 block of Maine Avenue SW",
@@ -2729,7 +2705,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 2124
+    "closed_n": 2123
    },
    {
     "type": "DMV - Ticket Payment Dispute",
@@ -2777,7 +2753,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2916,7 +2892,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "archive_days": 180,
   "sources": [
    {
@@ -3507,8 +3483,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T01:56:36Z",
-  "today": "2026-11-03",
+  "generated_at": "2026-11-04T09:19:23Z",
+  "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
    {
@@ -3609,7 +3585,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -17241,7 +17217,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

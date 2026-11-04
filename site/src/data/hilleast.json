@@ -1,7 +1,7 @@
 {
  "slug": "hilleast",
  "name": "Hill East",
- "generated_at": "2026-11-04T01:56:36Z",
+ "generated_at": "2026-11-04T09:19:23Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -872,19 +872,6 @@
    "smd": "7D09"
   },
   {
-   "id": "E2701009",
-   "issued": "2026-10-29T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "278 15TH ST SE 20003",
-   "work": "",
-   "zoning": "MU-4",
-   "lat": 38.88562,
-   "lon": -76.98335,
-   "smd": "7D10"
-  },
-  {
    "id": "E2701044",
    "issued": "2026-10-29T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -935,6 +922,19 @@
    "lat": 38.88818,
    "lon": -76.98104,
    "smd": "7D09"
+  },
+  {
+   "id": "E2701009",
+   "issued": "2026-10-29T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "278 15TH ST SE 20003",
+   "work": "",
+   "zoning": "MU-4",
+   "lat": 38.88562,
+   "lon": -76.98335,
+   "smd": "7D10"
   },
   {
    "id": "E2700954",
@@ -1236,19 +1236,6 @@
    "smd": "7D10"
   },
   {
-   "id": "P2700494",
-   "issued": "2026-10-16T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "1615 D ST SE 20003",
-   "work": "",
-   "zoning": "RF-1",
-   "lat": 38.88393,
-   "lon": -76.98161,
-   "smd": "7D10"
-  },
-  {
    "id": "E2700529",
    "issued": "2026-10-16T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -1259,6 +1246,19 @@
    "zoning": "RF-1",
    "lat": 38.88392,
    "lon": -76.97838,
+   "smd": "7D10"
+  },
+  {
+   "id": "P2700494",
+   "issued": "2026-10-16T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "1615 D ST SE 20003",
+   "work": "",
+   "zoning": "RF-1",
+   "lat": 38.88393,
+   "lon": -76.98161,
    "smd": "7D10"
   },
   {
@@ -1548,11 +1548,11 @@
    "smd": "6B09"
   },
   {
-   "id": "EG2700123",
+   "id": "BP2700122",
    "issued": "2026-10-07T04:00:00Z",
    "group": "Minor work",
    "type": "POST CARD",
-   "subtype": "ELECTRICAL - GENERAL",
+   "subtype": "BUILDING",
    "address": "117 17TH ST SE 1 20003",
    "work": "",
    "zoning": "RF-1",
@@ -1626,17 +1626,30 @@
    "smd": "7D10"
   },
   {
-   "id": "BP2700122",
+   "id": "EG2700123",
    "issued": "2026-10-07T04:00:00Z",
    "group": "Minor work",
    "type": "POST CARD",
-   "subtype": "BUILDING",
+   "subtype": "ELECTRICAL - GENERAL",
    "address": "117 17TH ST SE 1 20003",
    "work": "",
    "zoning": "RF-1",
    "lat": 38.88818,
    "lon": -76.98104,
    "smd": "7D09"
+  },
+  {
+   "id": "E2700195",
+   "issued": "2026-10-06T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "1529 K ST SE 20003",
+   "work": "Electrical Trade Permit",
+   "zoning": "RA-2",
+   "lat": 38.87822,
+   "lon": -76.98245,
+   "smd": "6B08"
   },
   {
    "id": "E2700175",
@@ -1663,19 +1676,6 @@
    "lat": 38.88077,
    "lon": -76.98745,
    "smd": "6B09"
-  },
-  {
-   "id": "E2700195",
-   "issued": "2026-10-06T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "1529 K ST SE 20003",
-   "work": "Electrical Trade Permit",
-   "zoning": "RA-2",
-   "lat": 38.87822,
-   "lon": -76.98245,
-   "smd": "6B08"
   },
   {
    "id": "P2700162",
@@ -1705,48 +1705,48 @@
   }
  ],
  "requests": {
-  "total": 1114,
-  "previous_total": 1580,
+  "total": 1129,
+  "previous_total": 1549,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
-    "count": 225,
-    "previous": 287
+    "count": 229,
+    "previous": 288
    },
    {
     "type": "Bulk Collection",
-    "count": 181,
-    "previous": 283
+    "count": 182,
+    "previous": 277
    },
    {
     "type": "Parking Enforcement",
-    "count": 100,
-    "previous": 131
+    "count": 104,
+    "previous": 125
    },
    {
     "type": "Illegal Dumping",
-    "count": 46,
-    "previous": 62
+    "count": 47,
+    "previous": 64
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "count": 44,
+    "previous": 48
    },
    {
     "type": "Trash Collection - Missed",
     "count": 41,
-    "previous": 79
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "count": 40,
-    "previous": 46
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "count": 38,
-    "previous": 50
+    "previous": 80
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 37,
+    "count": 40,
     "previous": 11
+   },
+   {
+    "type": "Sanitation Enforcement",
+    "count": 39,
+    "previous": 51
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
@@ -1755,22 +1755,17 @@
    },
    {
     "type": "Residential Parking Permit Violation",
-    "count": 27,
+    "count": 29,
     "previous": 42
    },
    {
-    "type": "Vacant Lot - Public Property Only",
-    "count": 26,
-    "previous": 0
-   },
-   {
     "type": "Streetlight Repair Investigation",
-    "count": 22,
-    "previous": 12
+    "count": 23,
+    "previous": 11
    },
    {
     "type": "Trash Cart - Delivery",
-    "count": 22,
+    "count": 23,
     "previous": 16
    },
    {
@@ -1779,9 +1774,9 @@
     "previous": 81
    },
    {
-    "type": "Recycling Collection - Missed",
-    "count": 17,
-    "previous": 42
+    "type": "Vacant Lot - Public Property Only",
+    "count": 20,
+    "previous": 0
    },
    {
     "type": "Supercan - Delivery",
@@ -1789,14 +1784,14 @@
     "previous": 9
    },
    {
+    "type": "Recycling Collection - Missed",
+    "count": 16,
+    "previous": 39
+   },
+   {
     "type": "Container Removal",
     "count": 16,
     "previous": 25
-   },
-   {
-    "type": "OCTFME - Down Cable Wires",
-    "count": 14,
-    "previous": 18
    },
    {
     "type": "Public Space Litter Can-Collection",
@@ -1809,24 +1804,29 @@
     "previous": 7
    },
    {
-    "type": "DMV - Drivers License/ID Issues",
-    "count": 11,
-    "previous": 2
-   },
-   {
-    "type": "Graffiti Removal",
-    "count": 11,
-    "previous": 0
-   },
-   {
-    "type": "Tree Pruning",
-    "count": 11,
+    "type": "OCTFME - Down Cable Wires",
+    "count": 13,
     "previous": 16
    },
    {
     "type": "Roadway Signs",
+    "count": 11,
+    "previous": 16
+   },
+   {
+    "type": "Tree Pruning",
+    "count": 11,
+    "previous": 15
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
     "count": 10,
-    "previous": 17
+    "previous": 2
+   },
+   {
+    "type": "Graffiti Removal",
+    "count": 10,
+    "previous": 0
    },
    {
     "type": "Dead Animal Collection",
@@ -1834,14 +1834,14 @@
     "previous": 11
    },
    {
-    "type": "Public Space Inspection",
+    "type": "Traffic Safety Input",
     "count": 9,
-    "previous": 16
+    "previous": 5
    },
    {
-    "type": "Traffic Safety Input",
-    "count": 7,
-    "previous": 5
+    "type": "Public Space Inspection",
+    "count": 9,
+    "previous": 13
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
@@ -1851,12 +1851,7 @@
    {
     "type": "DMV - Vehicle Registration Issues",
     "count": 7,
-    "previous": 8
-   },
-   {
-    "type": "Tree Planting",
-    "count": 7,
-    "previous": 3
+    "previous": 9
    },
    {
     "type": "Recycling Cart Delivery",
@@ -1871,10 +1866,15 @@
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 6,
-    "previous": 11
+    "previous": 8
    },
    {
     "type": "Sidewalk Repair",
+    "count": 6,
+    "previous": 2
+   },
+   {
+    "type": "Tree Planting",
     "count": 6,
     "previous": 3
    },
@@ -1884,14 +1884,14 @@
     "previous": 3
    },
    {
+    "type": "Recycling Cart - Repair",
+    "count": 4,
+    "previous": 3
+   },
+   {
     "type": "Tree Removal",
     "count": 4,
     "previous": 19
-   },
-   {
-    "type": "DGS - Playground Repair",
-    "count": 4,
-    "previous": 3
    },
    {
     "type": "Trash Cart Repair",
@@ -1899,19 +1899,19 @@
     "previous": 2
    },
    {
-    "type": "Recycling Cart - Repair",
+    "type": "Pothole",
     "count": 3,
     "previous": 3
    },
    {
-    "type": "Pothole",
-    "count": 3,
-    "previous": 4
-   },
-   {
     "type": "Roadway Repair",
     "count": 3,
-    "previous": 10
+    "previous": 9
+   },
+   {
+    "type": "DGS - Playground Repair",
+    "count": 3,
+    "previous": 3
    },
    {
     "type": "Rat Replacement Containers",
@@ -1926,7 +1926,7 @@
    {
     "type": "DOB - Illegal Construction",
     "count": 2,
-    "previous": 10
+    "previous": 8
    },
    {
     "type": "Public Space Litter Can Repair",
@@ -1949,6 +1949,11 @@
     "previous": 6
    },
    {
+    "type": "DMV - Forms, Applications, and Manuals Request",
+    "count": 2,
+    "previous": 0
+   },
+   {
     "type": "Bicycle Services",
     "count": 1,
     "previous": 2
@@ -1967,11 +1972,6 @@
     "type": "DOEE - Report Construction Erosion Runoff",
     "count": 1,
     "previous": 4
-   },
-   {
-    "type": "DMV - Forms, Applications, and Manuals Request",
-    "count": 1,
-    "previous": 0
    },
    {
     "type": "Abandoned Vehicle - On Private Property",
@@ -2004,7 +2004,7 @@
     "previous": 2
    }
   ],
-  "open": 205,
+  "open": 207,
   "recent": [
    {
     "type": "Scheduled Yard Waste",
@@ -2509,7 +2509,7 @@
   ]
  },
  "crime": {
-  "total": 33,
+  "total": 32,
   "previous_total": 22,
   "by_offense": [
    {
@@ -2520,22 +2520,22 @@
    {
     "offense": "THEFT F/AUTO",
     "count": 12,
-    "previous": 8
+    "previous": 7
    },
    {
     "offense": "MOTOR VEHICLE THEFT",
-    "count": 4,
-    "previous": 3
-   },
-   {
-    "offense": "ROBBERY",
-    "count": 1,
-    "previous": 3
+    "count": 3,
+    "previous": 4
    },
    {
     "offense": "BURGLARY",
     "count": 1,
     "previous": 0
+   },
+   {
+    "offense": "ROBBERY",
+    "count": 1,
+    "previous": 3
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -2574,7 +2574,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2823,7 +2823,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2843,15 +2843,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 74,
+   "active_this_week": 72,
    "starting_next_7d": 13,
-   "reserved_ft": 8954,
+   "reserved_ft": 8910,
    "long_running_90d": 9,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 9
+     "count": 6
     },
     {
      "type": "Dumpsters",
@@ -2859,7 +2859,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 27
+     "count": 30
     },
     {
      "type": "Lead pipe replacement",
@@ -2867,45 +2867,29 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 12
+     "count": 11
     },
     {
      "type": "Events & reserved parking",
-     "count": 7
+     "count": 6
     }
    ],
    "upcoming": [
     {
-     "type": "Moving & storage",
-     "block": "1200 block of 1/2 D Street SE",
+     "type": "Construction staging",
+     "block": "400 block of 12th Street SE",
      "start": "2026-11-04",
-     "end": "2026-11-05",
-     "ft": 88,
-     "hours": ""
+     "end": "2026-12-26",
+     "ft": 132,
+     "hours": "7 am\u20137 pm"
     },
     {
-     "type": "Events & reserved parking",
-     "block": "500 block of 1/2 13th Street SE",
+     "type": "Construction staging",
+     "block": "300 block of 16th Street SE",
      "start": "2026-11-04",
-     "end": "2026-11-04",
-     "ft": 22,
-     "hours": "7 am\u20135 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "1300 block of D Street SE",
-     "start": "2026-11-04",
-     "end": "2026-11-05",
-     "ft": 66,
-     "hours": "7:30 am\u20133 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "1400 block of C Street SE",
-     "start": "2026-11-04",
-     "end": "2026-11-05",
-     "ft": 66,
-     "hours": "7:30 am\u20133 pm"
+     "end": "2026-12-02",
+     "ft": 44,
+     "hours": "9:30 am\u20133:30 pm"
     },
     {
      "type": "Construction staging",
@@ -2957,10 +2941,26 @@
     },
     {
      "type": "Moving & storage",
+     "block": "1300 block of K Street SE",
+     "start": "2026-11-07",
+     "end": "2026-11-08",
+     "ft": 88,
+     "hours": ""
+    },
+    {
+     "type": "Moving & storage",
      "block": "700 block of 13th Street SE",
      "start": "2026-11-07",
      "end": "2026-11-08",
      "ft": 88,
+     "hours": ""
+    },
+    {
+     "type": "Construction staging",
+     "block": "1800 block of Rear Independence Avenue SE",
+     "start": "2026-11-08",
+     "end": "2026-11-21",
+     "ft": 66,
      "hours": ""
     },
     {
@@ -3069,7 +3069,7 @@
     "type": "Scheduled Yard Waste",
     "median_days": 8.94,
     "city_median_days": 9.71,
-    "closed_n": 1862
+    "closed_n": 1861
    },
    {
     "type": "Parking Enforcement",
@@ -3079,15 +3079,15 @@
    },
    {
     "type": "Trash Collection - Missed",
-    "median_days": 3.89,
-    "city_median_days": 4.15,
-    "closed_n": 723
+    "median_days": 3.83,
+    "city_median_days": 4.14,
+    "closed_n": 706
    },
    {
     "type": "Illegal Dumping",
     "median_days": 4.07,
     "city_median_days": 4.04,
-    "closed_n": 395
+    "closed_n": 394
    },
    {
     "type": "Residential Parking Permit Violation",
@@ -3103,15 +3103,15 @@
    },
    {
     "type": "Recycling Collection - Missed",
-    "median_days": 2.87,
-    "city_median_days": 5.05,
-    "closed_n": 269
+    "median_days": 2.85,
+    "city_median_days": 5.03,
+    "closed_n": 266
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3251,7 +3251,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "archive_days": 180,
   "sources": [
    {
@@ -3495,8 +3495,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T01:56:36Z",
-  "today": "2026-11-03",
+  "generated_at": "2026-11-04T09:19:23Z",
+  "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
    {
@@ -3569,7 +3569,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -21702,7 +21702,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T01:56:36Z",
+  "generated_at": "2026-11-04T09:19:23Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
