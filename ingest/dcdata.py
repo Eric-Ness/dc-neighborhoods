@@ -18,7 +18,11 @@ SEARCH_API = "https://opendata.dc.gov/api/search/v1/collections/dataset/items"
 USER_AGENT = "dc-neighborhoods-ingest/0.1 (+https://petworth.org)"
 
 
-def _request(url: str, params: dict, post: bool = False, retries: int = 5) -> dict:
+class BoundaryRefused(RuntimeError):
+    """DC's address layer refuses some multi-part boundaries outright (400) while taking each part alone."""
+
+
+def _request(url: str, params: dict, post: bool = False, retries: int = 5, multipart: bool = False) -> dict:
     body = urllib.parse.urlencode(params).encode()
     for attempt in range(retries):
         try:
@@ -30,8 +34,12 @@ def _request(url: str, params: dict, post: bool = False, retries: int = 5) -> di
                 data = json.load(resp)
             # ArcGIS reports many failures as HTTP 200 with an "error" object.
             if isinstance(data, dict) and "error" in data:
+                if multipart and data["error"].get("code") == 400:
+                    raise BoundaryRefused(f"ArcGIS refused the boundary at {url}: {data['error']}")
                 raise RuntimeError(f"ArcGIS error from {url}: {data['error']}")
             return data
+        except BoundaryRefused:
+            raise  # waiting won't change this answer; the caller asks one part at a time instead
         except (urllib.error.URLError, TimeoutError, ConnectionError, RuntimeError):  # incl. "connection reset by peer"
             if attempt == retries - 1:
                 raise
@@ -97,18 +105,6 @@ def _spatial(geometry: dict) -> dict:
     }
 
 
-def _whole_tries(geometry: dict) -> int:
-    """DC's address layer refuses some multi-part boundaries outright (400) while taking each part alone. Asking once
-    keeps that from costing the full retry wait, since the fallback is then to ask one part at a time."""
-    return 1 if len(geometry["rings"]) > 1 else 5
-
-
-def _one_part_at_a_time(geometry: dict) -> list[dict]:
-    if len(geometry["rings"]) < 2:
-        return []
-    return [{**geometry, "rings": [r]} for r in geometry["rings"]]
-
-
 def query_features(layer_url: str, geometry: dict, where: str, fields: list[str], order_by: str | None = None) -> list[dict]:
     """Page through every matching feature inside geometry, returning attribute dicts."""
     rows: list[dict] = []
@@ -126,12 +122,9 @@ def query_features(layer_url: str, geometry: dict, where: str, fields: list[str]
         if order_by:
             params["orderByFields"] = order_by
         try:
-            data = _request(f"{layer_url}/query", params, post=True, retries=_whole_tries(geometry))
-        except RuntimeError:
-            parts = _one_part_at_a_time(geometry)
-            if not parts:
-                raise
-            return _combine(layer_url, parts, where, fields, order_by)
+            data = _request(f"{layer_url}/query", params, post=True, multipart=len(geometry["rings"]) > 1)
+        except BoundaryRefused:
+            return _combine(layer_url, [{**geometry, "rings": [r]} for r in geometry["rings"]], where, fields, order_by)
         batch = [f["attributes"] for f in data.get("features", [])]
         rows.extend(batch)
         if not data.get("exceededTransferLimit") or not batch:
@@ -169,15 +162,12 @@ def count_by(layer_url: str, geometry: dict, where: str, field: str) -> dict[str
                 **_spatial(geometry),
             },
             post=True,
-            retries=_whole_tries(geometry),
+            multipart=len(geometry["rings"]) > 1,
         )
-    except RuntimeError:
-        parts = _one_part_at_a_time(geometry)
-        if not parts:
-            raise
+    except BoundaryRefused:
         totals: dict[str, int] = {}
-        for part in parts:
-            for k, v in count_by(layer_url, part, where, field).items():
+        for r in geometry["rings"]:
+            for k, v in count_by(layer_url, {**geometry, "rings": [r]}, where, field).items():
                 totals[k] = totals.get(k, 0) + v
         return totals
     out: dict[str, int] = {}

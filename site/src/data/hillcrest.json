@@ -1,7 +1,7 @@
 {
  "slug": "hillcrest",
  "name": "Hillcrest",
- "generated_at": "2026-11-04T16:44:57Z",
+ "generated_at": "2026-11-04T18:44:54Z",
  "boundary": {
   "source": "ANC single-member districts 7B02, 7B03, 7B05, 7B06, 8B02 and 8B05, about the same ground as DC's NAYLOR/HILLCREST planning area (Open Data DC). Hillcrest Heights, Maryland, is not included.",
   "rings": [
@@ -9281,22 +9281,22 @@
  ],
  "requests": {
   "total": 795,
-  "previous_total": 711,
+  "previous_total": 718,
   "by_type": [
    {
     "type": "Bulk Collection",
     "count": 133,
-    "previous": 111
+    "previous": 112
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "count": 83,
+    "previous": 6
    },
    {
     "type": "Parking Enforcement",
     "count": 82,
     "previous": 73
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "count": 78,
-    "previous": 6
    },
    {
     "type": "Scheduled Yard Waste",
@@ -9310,13 +9310,13 @@
    },
    {
     "type": "Illegal Dumping",
-    "count": 36,
+    "count": 38,
     "previous": 19
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 35,
-    "previous": 27
+    "count": 33,
+    "previous": 29
    },
    {
     "type": "Sanitation Enforcement",
@@ -9324,14 +9324,14 @@
     "previous": 13
    },
    {
-    "type": "Out of State Parking Violation (ROSA)",
-    "count": 20,
-    "previous": 7
-   },
-   {
     "type": "Recycling Collection - Missed",
     "count": 20,
     "previous": 31
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "count": 19,
+    "previous": 7
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
@@ -9375,12 +9375,12 @@
    },
    {
     "type": "Tree Inspection",
-    "count": 10,
+    "count": 11,
     "previous": 32
    },
    {
     "type": "Trash Cart - Delivery",
-    "count": 9,
+    "count": 10,
     "previous": 6
    },
    {
@@ -9414,11 +9414,6 @@
     "previous": 8
    },
    {
-    "type": "Streetlight Repair Investigation",
-    "count": 6,
-    "previous": 5
-   },
-   {
     "type": "Pothole",
     "count": 6,
     "previous": 12
@@ -9436,20 +9431,10 @@
    {
     "type": "Tree Removal",
     "count": 5,
-    "previous": 13
+    "previous": 12
    },
    {
     "type": "Recycling Cart - Repair",
-    "count": 4,
-    "previous": 0
-   },
-   {
-    "type": "Abandoned Vehicle - On Private Property",
-    "count": 4,
-    "previous": 5
-   },
-   {
-    "type": "DC How Am I Driving?",
     "count": 4,
     "previous": 0
    },
@@ -9462,6 +9447,11 @@
     "type": "Public Space Inspection",
     "count": 4,
     "previous": 8
+   },
+   {
+    "type": "Streetlight Repair Investigation",
+    "count": 4,
+    "previous": 7
    },
    {
     "type": "Public Space Litter Can-Collection",
@@ -9492,6 +9482,16 @@
     "type": "DMV - Hearings",
     "count": 2,
     "previous": 0
+   },
+   {
+    "type": "DC How Am I Driving?",
+    "count": 2,
+    "previous": 2
+   },
+   {
+    "type": "Abandoned Vehicle - On Private Property",
+    "count": 2,
+    "previous": 7
    },
    {
     "type": "DOEE - Report Construction Erosion Runoff",
@@ -9574,8 +9574,98 @@
     "previous": 0
    }
   ],
-  "open": 166,
+  "open": 163,
   "recent": [
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-04T18:41:26Z",
+    "resolved": "2026-11-04T18:41:26Z",
+    "status": "Closed",
+    "block": "3100 block of NAYLOR ROAD SE",
+    "lat": 38.852,
+    "lon": -76.963
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-04T18:38:03Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2100 block of 28TH STREET SE",
+    "lat": 38.865,
+    "lon": -76.969
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-04T17:58:26Z",
+    "resolved": "2026-11-04T17:58:26Z",
+    "status": "Closed",
+    "block": "3800 block of V STREET SE",
+    "lat": 38.865,
+    "lon": -76.951
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-04T17:53:48Z",
+    "resolved": "2026-11-04T17:53:48Z",
+    "status": "Closed",
+    "block": "3000 block of 30TH STREET SE",
+    "lat": 38.852,
+    "lon": -76.965
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-04T17:48:18Z",
+    "resolved": "2026-11-04T17:48:18Z",
+    "status": "Closed",
+    "block": "2200 block of TOWN CENTER DRIVE SE",
+    "lat": 38.861,
+    "lon": -76.968
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T17:30:11Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2900 block of FORT BAKER DRIVE SE",
+    "lat": 38.863,
+    "lon": -76.966
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-04T17:23:16Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2800 block of 28TH STREET SE",
+    "lat": 38.856,
+    "lon": -76.969
+   },
+   {
+    "type": "Trash Cart - Delivery",
+    "agency": "DPW",
+    "added": "2026-11-04T16:55:49Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2000 block of 36TH STREET SE",
+    "lat": 38.864,
+    "lon": -76.957
+   },
+   {
+    "type": "Tree Inspection",
+    "agency": "DDOT",
+    "added": "2026-11-04T16:51:52Z",
+    "resolved": "2026-11-04T18:00:56Z",
+    "status": "Closed",
+    "block": "3300 block of HIGHVIEW TERRACE SE",
+    "lat": 38.857,
+    "lon": -76.957
+   },
    {
     "type": "DOEE - LIHEAP",
     "agency": "DOEE",
@@ -9939,6 +10029,16 @@
    {
     "type": "DOEE - LIHEAP",
     "agency": "DOEE",
+    "added": "2026-11-02T19:32:11Z",
+    "resolved": "2026-11-02T19:32:11Z",
+    "status": "Closed",
+    "block": "3000 block of 30TH STREET SE",
+    "lat": 38.852,
+    "lon": -76.965
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
     "added": "2026-11-02T19:26:59Z",
     "resolved": "2026-11-02T19:26:59Z",
     "status": "Closed",
@@ -9975,106 +10075,6 @@
     "block": "2500 block of ALABAMA AVENUE SE",
     "lat": 38.858,
     "lon": -76.969
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-11-02T19:14:51Z",
-    "resolved": "2026-11-03T13:40:00Z",
-    "status": "Closed",
-    "block": "2200 block of 31ST STREET SE",
-    "lat": 38.862,
-    "lon": -76.963
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-11-02T19:14:51Z",
-    "resolved": "2026-11-03T13:40:00Z",
-    "status": "Closed",
-    "block": "2200 block of 31ST STREET SE",
-    "lat": 38.862,
-    "lon": -76.963
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-02T19:12:46Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2200 block of 31ST STREET SE",
-    "lat": 38.862,
-    "lon": -76.963
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-02T19:12:46Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2200 block of 31ST STREET SE",
-    "lat": 38.862,
-    "lon": -76.963
-   },
-   {
-    "type": "DC Government Information",
-    "agency": "OUC",
-    "added": "2026-11-02T18:35:31Z",
-    "resolved": "2026-11-02T18:35:31Z",
-    "status": "Closed",
-    "block": "2100 block of SUITLAND TERRACE SE",
-    "lat": 38.864,
-    "lon": -76.949
-   },
-   {
-    "type": "DC Government Information",
-    "agency": "OUC",
-    "added": "2026-11-02T18:35:31Z",
-    "resolved": "2026-11-02T18:35:31Z",
-    "status": "Closed",
-    "block": "2100 block of SUITLAND TERRACE SE",
-    "lat": 38.864,
-    "lon": -76.949
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-02T18:22:48Z",
-    "resolved": "2026-11-02T18:22:48Z",
-    "status": "Closed",
-    "block": "1800 block of 29TH STREET SE",
-    "lat": 38.868,
-    "lon": -76.965
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-02T18:22:48Z",
-    "resolved": "2026-11-02T18:22:48Z",
-    "status": "Closed",
-    "block": "1800 block of 29TH STREET SE",
-    "lat": 38.868,
-    "lon": -76.965
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-02T17:50:44Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2600 block of R STREET SE",
-    "lat": 38.87,
-    "lon": -76.97
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-02T17:50:44Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2600 block of R STREET SE",
-    "lat": 38.87,
-    "lon": -76.97
    }
   ]
  },
@@ -10161,7 +10161,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T16:44:57Z",
+  "generated_at": "2026-11-04T18:44:54Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -10348,7 +10348,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T16:44:57Z",
+  "generated_at": "2026-11-04T18:44:54Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -10523,7 +10523,7 @@
    {
     "type": "Trash Collection - Missed",
     "median_days": 2.75,
-    "city_median_days": 4.09,
+    "city_median_days": 4.08,
     "closed_n": 487
    },
    {
@@ -10560,7 +10560,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T16:44:57Z",
+  "generated_at": "2026-11-04T18:44:54Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -10680,7 +10680,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T16:44:57Z",
+  "generated_at": "2026-11-04T18:44:54Z",
   "archive_days": 180,
   "sources": [
    {
@@ -10800,9 +10800,9 @@
    {
     "name": "Greater Greater Washington",
     "url": "https://ggwash.org/",
-    "state": "error: HTTPError",
-    "matched": 0,
-    "failed": 1
+    "state": "ok",
+    "matched": 1,
+    "fetched": 1
    },
    {
     "name": "Mayor's office",
@@ -10827,6 +10827,13 @@
    }
   ],
   "items": [
+   {
+    "title": "Garden apartments hold fascinating local history, future promise",
+    "url": "https://ggwash.org/view/105381/garden-apartments-offer-fascinating-local-history-hold-future-promise",
+    "source": "Greater Greater Washington",
+    "published": "2026-11-02T17:03:00Z",
+    "first_seen": "2026-11-04T18:44:54Z"
+   },
    {
     "title": "On Citywide Listening Tour, Democratic Mayoral Nominee Janeese Lewis George Provides Platform for Education Discussion",
     "url": "https://www.washingtoninformer.com/dc-residents-demand-school-reform/",
@@ -10873,7 +10880,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T16:44:57Z",
+  "generated_at": "2026-11-04T18:44:54Z",
   "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
@@ -10935,7 +10942,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-04T16:44:57Z",
+  "generated_at": "2026-11-04T18:44:54Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -33112,7 +33119,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T16:44:57Z",
+  "generated_at": "2026-11-04T18:44:54Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

@@ -1,7 +1,7 @@
 {
  "slug": "bellevue",
  "name": "Bellevue",
- "generated_at": "2026-11-04T16:44:57Z",
+ "generated_at": "2026-11-04T18:44:54Z",
  "boundary": {
   "source": "ANC single-member districts 8D01, 8D03, 8D05, 8D06, 8E07, 8E08 and 8E09, the homes in DC's BELLEVUE planning area (Open Data DC). 8D04 is left out: it is mostly the empty land at DC's southern tip.",
   "rings": [
@@ -8481,13 +8481,13 @@
   }
  ],
  "requests": {
-  "total": 640,
-  "previous_total": 647,
+  "total": 636,
+  "previous_total": 657,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 118,
-    "previous": 124
+    "count": 115,
+    "previous": 126
    },
    {
     "type": "DOEE - LIHEAP",
@@ -8496,18 +8496,18 @@
    },
    {
     "type": "Parking Enforcement",
-    "count": 78,
-    "previous": 87
-   },
-   {
-    "type": "Illegal Dumping",
-    "count": 37,
-    "previous": 32
+    "count": 76,
+    "previous": 89
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 34,
+    "count": 36,
     "previous": 29
+   },
+   {
+    "type": "Illegal Dumping",
+    "count": 34,
+    "previous": 35
    },
    {
     "type": "DC Government Information",
@@ -8520,6 +8520,11 @@
     "previous": 22
    },
    {
+    "type": "Abandoned Vehicle - On Public Property",
+    "count": 21,
+    "previous": 59
+   },
+   {
     "type": "Out of State Parking Violation (ROSA)",
     "count": 19,
     "previous": 21
@@ -8528,11 +8533,6 @@
     "type": "Residential Parking Permit Violation",
     "count": 19,
     "previous": 24
-   },
-   {
-    "type": "Abandoned Vehicle - On Public Property",
-    "count": 18,
-    "previous": 59
    },
    {
     "type": "DMV - Drivers License/ID Issues",
@@ -8546,18 +8546,13 @@
    },
    {
     "type": "Dead Animal Collection",
-    "count": 11,
+    "count": 12,
     "previous": 5
    },
    {
     "type": "Tree Inspection",
     "count": 10,
     "previous": 11
-   },
-   {
-    "type": "Supercan - Delivery",
-    "count": 10,
-    "previous": 19
    },
    {
     "type": "DOB - Vacant Private Property Inspection",
@@ -8573,6 +8568,11 @@
     "type": "Roadway Signs",
     "count": 8,
     "previous": 10
+   },
+   {
+    "type": "Supercan - Delivery",
+    "count": 7,
+    "previous": 22
    },
    {
     "type": "Signed Street Sweeping Missed",
@@ -8605,6 +8605,11 @@
     "previous": 0
    },
    {
+    "type": "Pothole",
+    "count": 4,
+    "previous": 8
+   },
+   {
     "type": "Roadway Repair",
     "count": 3,
     "previous": 0
@@ -8623,11 +8628,6 @@
     "type": "DMV - Vehicle Registration Issues",
     "count": 3,
     "previous": 2
-   },
-   {
-    "type": "Pothole",
-    "count": 3,
-    "previous": 8
    },
    {
     "type": "Streetlight Repair Investigation",
@@ -8690,8 +8690,78 @@
     "previous": 0
    }
   ],
-  "open": 74,
+  "open": 75,
   "recent": [
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T18:18:22Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of MISSISSIPPI AVENUE SE",
+    "lat": 38.832,
+    "lon": -77.007
+   },
+   {
+    "type": "Abandoned Vehicle - On Public Property",
+    "agency": "DPW",
+    "added": "2026-11-04T17:38:50Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "8TH STREET SE AND CHESAPEAKE STREET SE",
+    "lat": 38.829,
+    "lon": -76.994
+   },
+   {
+    "type": "Pothole",
+    "agency": "DDOT",
+    "added": "2026-11-04T17:31:29Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "300 block of LIVINGSTON TERRACE SE",
+    "lat": 38.827,
+    "lon": -77.001
+   },
+   {
+    "type": "Abandoned Vehicle - On Public Property",
+    "agency": "DPW",
+    "added": "2026-11-04T17:27:38Z",
+    "resolved": "2026-11-04T18:24:05Z",
+    "status": "Closed",
+    "block": "4000 block of 3RD STREET SE",
+    "lat": 38.83,
+    "lon": -77.002
+   },
+   {
+    "type": "Sanitation Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T17:24:55Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4200 block of 7TH STREET SE",
+    "lat": 38.829,
+    "lon": -76.997
+   },
+   {
+    "type": "Abandoned Vehicle - On Public Property",
+    "agency": "DPW",
+    "added": "2026-11-04T17:19:35Z",
+    "resolved": "2026-11-04T18:15:06Z",
+    "status": "Closed",
+    "block": "400 block of BRANDYWINE STREET SE",
+    "lat": 38.83,
+    "lon": -77.0
+   },
+   {
+    "type": "Sanitation Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T16:47:24Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3700 block of MARTIN LUTHER KING JR AVENUE SE",
+    "lat": 38.836,
+    "lon": -77.007
+   },
    {
     "type": "DOEE - LIHEAP",
     "agency": "DOEE",
@@ -8766,8 +8836,8 @@
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-11-04T14:29:41Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-04T17:59:37Z",
+    "status": "Closed",
     "block": "4200 block of SOUTH CAPITOL TERRACE SW",
     "lat": 38.827,
     "lon": -77.008
@@ -9121,82 +9191,12 @@
     "block": "4200 block of 4TH STREET SE",
     "lat": 38.827,
     "lon": -77.0
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-31T21:37:11Z",
-    "resolved": "2026-11-03T14:42:47Z",
-    "status": "Closed",
-    "block": "400 block of BRANDYWINE STREET SE",
-    "lat": 38.83,
-    "lon": -77.0
-   },
-   {
-    "type": "Abandoned Vehicle - On Public Property",
-    "agency": "DPW",
-    "added": "2026-10-31T20:53:39Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "600 block of BRANDYWINE STREET SE",
-    "lat": 38.83,
-    "lon": -76.998
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-10-31T20:02:53Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3900 block of MARTIN LUTHER KING JR AVENUE SW",
-    "lat": 38.833,
-    "lon": -77.009
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T19:32:05Z",
-    "resolved": "2026-10-31T21:03:10Z",
-    "status": "Closed",
-    "block": "600 block of BRANDYWINE STREET SE",
-    "lat": 38.83,
-    "lon": -76.997
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T17:40:14Z",
-    "resolved": "2026-10-31T19:00:05Z",
-    "status": "Closed",
-    "block": "Unit block of MISSISSIPPI AVENUE SE",
-    "lat": 38.832,
-    "lon": -77.007
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-31T17:32:26Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "Unit block of ELMIRA STREET SW",
-    "lat": 38.826,
-    "lon": -77.009
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-10-31T16:01:55Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "100 block of CHESAPEAKE STREET SW",
-    "lat": 38.829,
-    "lon": -77.009
    }
   ]
  },
  "crime": {
   "total": 37,
-  "previous_total": 37,
+  "previous_total": 36,
   "by_offense": [
    {
     "offense": "THEFT F/AUTO",
@@ -9211,12 +9211,12 @@
    {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
     "count": 6,
-    "previous": 5
+    "previous": 4
    },
    {
-    "offense": "BURGLARY",
+    "offense": "MOTOR VEHICLE THEFT",
     "count": 3,
-    "previous": 4
+    "previous": 7
    },
    {
     "offense": "ROBBERY",
@@ -9224,9 +9224,9 @@
     "previous": 5
    },
    {
-    "offense": "MOTOR VEHICLE THEFT",
+    "offense": "BURGLARY",
     "count": 3,
-    "previous": 7
+    "previous": 4
    },
    {
     "offense": "SEX ABUSE",
@@ -9293,7 +9293,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T16:44:57Z",
+  "generated_at": "2026-11-04T18:44:54Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -9471,7 +9471,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T16:44:57Z",
+  "generated_at": "2026-11-04T18:44:54Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -9609,7 +9609,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 634
+    "closed_n": 635
    },
    {
     "type": "DC Government Information",
@@ -9620,7 +9620,7 @@
    {
     "type": "Trash Collection - Missed",
     "median_days": 3.71,
-    "city_median_days": 4.09,
+    "city_median_days": 4.08,
     "closed_n": 323
    },
    {
@@ -9643,15 +9643,15 @@
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
-    "median_days": 2.99,
+    "median_days": 2.98,
     "city_median_days": 3.0,
-    "closed_n": 192
+    "closed_n": 195
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T16:44:57Z",
+  "generated_at": "2026-11-04T18:44:54Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -9774,7 +9774,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T16:44:57Z",
+  "generated_at": "2026-11-04T18:44:54Z",
   "archive_days": 180,
   "sources": [
    {
@@ -9905,9 +9905,9 @@
    {
     "name": "Greater Greater Washington",
     "url": "https://ggwash.org/",
-    "state": "error: HTTPError",
+    "state": "ok",
     "matched": 0,
-    "failed": 1
+    "fetched": 1
    },
    {
     "name": "Mayor's office",
@@ -9960,7 +9960,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T16:44:57Z",
+  "generated_at": "2026-11-04T18:44:54Z",
   "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
@@ -10036,7 +10036,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T16:44:57Z",
+  "generated_at": "2026-11-04T18:44:54Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -27133,7 +27133,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T16:44:57Z",
+  "generated_at": "2026-11-04T18:44:54Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
