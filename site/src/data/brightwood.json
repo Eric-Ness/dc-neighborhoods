@@ -1,7 +1,7 @@
 {
  "slug": "brightwood",
  "name": "Brightwood",
- "generated_at": "2026-11-03T16:23:51Z",
+ "generated_at": "2026-11-03T17:31:02Z",
  "boundary": {
   "source": "ANC single-member districts 4A04, 4A05, 4A06, 4A07, 4B05, 4D01, 4D02 and 4D03, along upper Georgia Avenue and Kennedy Street (Open Data DC). It takes in Brightwood and Brightwood Park; DC's BRIGHTWOOD planning area also holds central Takoma, which has its own site.",
   "rings": [
@@ -7311,17 +7311,17 @@
  ],
  "requests": {
   "total": 1398,
-  "previous_total": 1371,
+  "previous_total": 1365,
   "by_type": [
    {
     "type": "Bulk Collection",
     "count": 252,
-    "previous": 198
+    "previous": 201
    },
    {
     "type": "Parking Enforcement",
-    "count": 196,
-    "previous": 194
+    "count": 197,
+    "previous": 193
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -7330,8 +7330,8 @@
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 107,
-    "previous": 74
+    "count": 106,
+    "previous": 75
    },
    {
     "type": "Trash Collection - Missed",
@@ -7341,17 +7341,17 @@
    {
     "type": "Sanitation Enforcement",
     "count": 58,
-    "previous": 44
+    "previous": 43
    },
    {
     "type": "Illegal Dumping",
     "count": 58,
-    "previous": 86
+    "previous": 84
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 34,
-    "previous": 36
+    "previous": 34
    },
    {
     "type": "DOB - Vacant Private Property Inspection",
@@ -7359,19 +7359,14 @@
     "previous": 18
    },
    {
-    "type": "Dockless Vehicle Parking Complaint",
-    "count": 30,
-    "previous": 4
-   },
-   {
-    "type": "Graffiti Removal",
-    "count": 30,
-    "previous": 19
-   },
-   {
     "type": "DOEE - LIHEAP",
     "count": 30,
     "previous": 2
+   },
+   {
+    "type": "DMV - Vehicle Registration Issues",
+    "count": 29,
+    "previous": 13
    },
    {
     "type": "Roadway Signs",
@@ -7379,9 +7374,14 @@
     "previous": 28
    },
    {
-    "type": "DMV - Vehicle Registration Issues",
-    "count": 28,
-    "previous": 13
+    "type": "Dockless Vehicle Parking Complaint",
+    "count": 29,
+    "previous": 4
+   },
+   {
+    "type": "Graffiti Removal",
+    "count": 29,
+    "previous": 20
    },
    {
     "type": "Residential Parking Permit Violation",
@@ -7390,7 +7390,7 @@
    },
    {
     "type": "Supercan - Delivery",
-    "count": 20,
+    "count": 21,
     "previous": 31
    },
    {
@@ -7481,7 +7481,7 @@
    {
     "type": "Sidewalk Repair",
     "count": 6,
-    "previous": 15
+    "previous": 14
    },
    {
     "type": "Recycling Cart Delivery",
@@ -7506,7 +7506,7 @@
    {
     "type": "Streetlight Repair Investigation",
     "count": 6,
-    "previous": 10
+    "previous": 9
    },
    {
     "type": "Tree Planting",
@@ -7584,8 +7584,28 @@
     "previous": 0
    }
   ],
-  "open": 230,
+  "open": 228,
   "recent": [
+   {
+    "type": "DMV - Vehicle Registration Issues",
+    "agency": "DMV",
+    "added": "2026-11-03T17:36:15Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1300 block of TEWKESBURY PLACE NW",
+    "lat": 38.968,
+    "lon": -77.033
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-03T17:01:17Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1400 block of WHITTIER STREET NW",
+    "lat": 38.971,
+    "lon": -77.035
+   },
    {
     "type": "Trash Collection - Missed",
     "agency": "DPW",
@@ -8065,26 +8085,6 @@
     "block": "13TH STREET NW AND MISSOURI AVENUE NW",
     "lat": 38.962,
     "lon": -77.03
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T21:58:10Z",
-    "resolved": "2026-10-31T22:21:05Z",
-    "status": "Closed",
-    "block": "1500 block of VAN BUREN STREET NW",
-    "lat": 38.97,
-    "lon": -77.036
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T21:58:10Z",
-    "resolved": "2026-10-31T22:21:05Z",
-    "status": "Closed",
-    "block": "1500 block of VAN BUREN STREET NW",
-    "lat": 38.97,
-    "lon": -77.036
    }
   ]
  },
@@ -8183,7 +8183,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-03T16:23:51Z",
+  "generated_at": "2026-11-03T17:31:02Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -8446,7 +8446,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-03T16:23:51Z",
+  "generated_at": "2026-11-03T17:31:02Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -8500,7 +8500,7 @@
      "start": "2026-11-04",
      "end": "2026-12-19",
      "ft": 88,
-     "hours": "7 am–7 pm"
+     "hours": "7 am\u20137 pm"
     },
     {
      "type": "Events & reserved parking",
@@ -8508,7 +8508,7 @@
      "start": "2026-11-04",
      "end": "2026-11-04",
      "ft": 220,
-     "hours": "9 am–5 pm"
+     "hours": "9 am\u20135 pm"
     },
     {
      "type": "Events & reserved parking",
@@ -8516,7 +8516,7 @@
      "start": "2026-11-07",
      "end": "2026-11-07",
      "ft": 220,
-     "hours": "9 am–5 pm"
+     "hours": "9 am\u20135 pm"
     },
     {
      "type": "Utility & DDOT work",
@@ -8524,7 +8524,7 @@
      "start": "2026-11-09",
      "end": "2026-11-13",
      "ft": 22,
-     "hours": "8 am–4:30 pm"
+     "hours": "8 am\u20134:30 pm"
     },
     {
      "type": "Utility & DDOT work",
@@ -8532,7 +8532,7 @@
      "start": "2026-11-09",
      "end": "2026-11-13",
      "ft": 308,
-     "hours": "8 am–4:30 pm"
+     "hours": "8 am\u20134:30 pm"
     },
     {
      "type": "Events & reserved parking",
@@ -8540,7 +8540,7 @@
      "start": "2026-11-09",
      "end": "2026-12-08",
      "ft": 88,
-     "hours": "7 am–7 pm"
+     "hours": "7 am\u20137 pm"
     },
     {
      "type": "Moving & storage",
@@ -8556,7 +8556,7 @@
      "start": "2026-11-09",
      "end": "2026-11-13",
      "ft": 132,
-     "hours": "7:30 am–3 pm"
+     "hours": "7:30 am\u20133 pm"
     }
    ]
   },
@@ -8642,7 +8642,7 @@
     "type": "Bulk Collection",
     "median_days": 7.81,
     "city_median_days": 6.92,
-    "closed_n": 1356
+    "closed_n": 1354
    },
    {
     "type": "Parking Enforcement",
@@ -8654,12 +8654,12 @@
     "type": "Trash Collection - Missed",
     "median_days": 2.95,
     "city_median_days": 4.15,
-    "closed_n": 670
+    "closed_n": 671
    },
    {
     "type": "Scheduled Yard Waste",
     "median_days": 9.8,
-    "city_median_days": 9.72,
+    "city_median_days": 9.71,
     "closed_n": 461
    },
    {
@@ -8683,14 +8683,14 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 5.15,
-    "city_median_days": 5.11,
+    "city_median_days": 5.08,
     "closed_n": 297
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-03T16:23:51Z",
+  "generated_at": "2026-11-03T17:31:02Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -8799,7 +8799,7 @@
    }
   },
   "archive": {
-   "week_label": "October 31 – November 6, 1926",
+   "week_label": "October 31 \u2013 November 6, 1926",
    "week_start": "1926-10-31",
    "week_end": "1926-11-06",
    "paper": "Evening Star",
@@ -8814,7 +8814,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-03T16:23:51Z",
+  "generated_at": "2026-11-03T17:31:02Z",
   "archive_days": 180,
   "sources": [
    {
@@ -8875,8 +8875,8 @@
     "name": "PoPville",
     "url": "https://www.popville.com/",
     "state": "ok",
-    "matched": 8,
-    "fetched": 30
+    "matched": 0,
+    "fetched": 3
    },
    {
     "name": "ANC 4A",
@@ -8951,42 +8951,42 @@
   ],
   "items": [
    {
-    "title": "Cantina Paraiso is listed at “temporarily closed” on Google, Not Looking Good.",
+    "title": "Cantina Paraiso is listed at \u201ctemporarily closed\u201d on Google, Not Looking Good.",
     "url": "https://www.popville.com/2026/10/dc-cantina-paraiso-listed-temporarily-closed-google/",
     "source": "PoPville",
     "published": "2026-10-27T16:15:18Z",
     "first_seen": "2026-11-03T16:23:51Z"
    },
    {
-    "title": "We’ve Hit Peak Stink Ginkgo Berry Bombs but there is light at the end of the tunnel",
+    "title": "We\u2019ve Hit Peak Stink Ginkgo Berry Bombs but there is light at the end of the tunnel",
     "url": "https://www.popville.com/2026/10/weve-hit-peak-stink-ginkgo-berry-bombs/",
     "source": "PoPville",
     "published": "2026-10-20T19:00:22Z",
     "first_seen": "2026-11-03T16:23:51Z"
    },
    {
-    "title": "Yesterday in Driving Dangerously – Crazy Crash on Georgia",
+    "title": "Yesterday in Driving Dangerously \u2013 Crazy Crash on Georgia",
     "url": "https://www.popville.com/2026/10/yesterday-in-driving-dangerously-crazy-crash-on-georgia/",
     "source": "PoPville",
     "published": "2026-10-06T16:30:08Z",
     "first_seen": "2026-11-03T16:23:51Z"
    },
    {
-    "title": "Update: The Practical Cyclist is coming soon! Looks Like a New Bike Shop is coming to Manor Park/Brightwood in the late Ms. Vanilla Beane’s old millinery spot.",
+    "title": "Update: The Practical Cyclist is coming soon! Looks Like a New Bike Shop is coming to Manor Park/Brightwood in the late Ms. Vanilla Beane\u2019s old millinery spot.",
     "url": "https://www.popville.com/2026/10/new-bike-shop-coming-dc-manor-park-brightwood/",
     "source": "PoPville",
     "published": "2026-10-05T15:15:07Z",
     "first_seen": "2026-11-03T16:23:51Z"
    },
    {
-    "title": "DDOT’s Cool Corridors Pilot Has Begun in Brightwood!",
+    "title": "DDOT\u2019s Cool Corridors Pilot Has Begun in Brightwood!",
     "url": "https://www.popville.com/2026/10/ddots-cool-corridors-pilot-dc-brightwood/",
     "source": "PoPville",
     "published": "2026-10-01T17:05:06Z",
     "first_seen": "2026-11-03T16:23:51Z"
    },
    {
-    "title": "Archeological Finds Vol. 124 – Office NEW Washington Sun – “The Washington Sun was a weekly newspaper that started in the mid 1960s”",
+    "title": "Archeological Finds Vol. 124 \u2013 Office NEW Washington Sun \u2013 \u201cThe Washington Sun was a weekly newspaper that started in the mid 1960s\u201d",
     "url": "https://www.popville.com/2026/09/archeological-finds-vol-124-office-new-washington-sun-the-washington-sun-was-a-weekly-newspaper-that-started-in-the-mid-1960s/",
     "source": "PoPville",
     "published": "2026-09-17T13:15:35Z",
@@ -9000,7 +9000,7 @@
     "first_seen": "2026-11-03T16:23:51Z"
    },
    {
-    "title": "Yo!! Hai Má (2 Moms) Banh Mi (and egg rolls!) Pop Up Thursdays 6-9pm at Neptune Room!!",
+    "title": "Yo!! Hai M\u00e1 (2 Moms) Banh Mi (and egg rolls!) Pop Up Thursdays 6-9pm at Neptune Room!!",
     "url": "https://www.popville.com/2026/09/hai-ma-2-moms-banh-mi-pop-up-thursdays-dc-neptune-room/",
     "source": "PoPville",
     "published": "2026-09-03T15:15:38Z",
@@ -9131,7 +9131,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-03T16:23:51Z",
+  "generated_at": "2026-11-03T17:31:02Z",
   "today": "2026-11-03",
   "days_ahead": 30,
   "sources": [
@@ -9212,7 +9212,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-03T16:23:51Z",
+  "generated_at": "2026-11-03T17:31:02Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -9246,9 +9246,9 @@
   "lookup_errors": [],
   "leaf_status": {
    "4A": "The first pass for Leaf collection in Section A will begin on Monday, November 2, 2026. Section A should have their leaves raked to the tree box or curbside by Sunday, November 1, 2026.",
-   "4C": "We have not reached your section yet. Each section will receive two weekends’ notice of when to rake your leaves to the tree box or curb. Please check back on Friday for an update on our collection schedule.",
-   "4B": "We have not reached your section yet. Each section will receive two weekends’ notice of when to rake your leaves to the tree box or curb. Please check back on Friday for an update on our collection schedule.",
-   "4D": "We have not reached your section yet. Each section will receive two weekends’ notice of when to rake your leaves to the tree box or curb. Please check back on Friday for an update on our collection schedule."
+   "4C": "We have not reached your section yet. Each section will receive two weekends\u2019 notice of when to rake your leaves to the tree box or curb. Please check back on Friday for an update on our collection schedule.",
+   "4B": "We have not reached your section yet. Each section will receive two weekends\u2019 notice of when to rake your leaves to the tree box or curb. Please check back on Friday for an update on our collection schedule.",
+   "4D": "We have not reached your section yet. Each section will receive two weekends\u2019 notice of when to rake your leaves to the tree box or curb. Please check back on Friday for an update on our collection schedule."
   },
   "schools": {
    "dcps_420.0": {
@@ -32380,7 +32380,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-03T16:23:51Z",
+  "generated_at": "2026-11-03T17:31:02Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
