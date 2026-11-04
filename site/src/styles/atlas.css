@@ -47,6 +47,8 @@ nav.sections a[aria-current="page"]{text-decoration:underline;text-decoration-th
 .hoods li a,.hoods li span{display:block;padding:5px 14px;color:var(--ink);text-decoration:none;white-space:nowrap}
 .hoods li a:hover{background:var(--land)}
 .hoods li span{color:var(--ink3)}
+.hoods li.hoods-map{column-span:all;border-bottom:1px solid var(--rule2);margin-bottom:6px}
+.hoods li.hoods-map a{color:var(--link);font-weight:600;padding-bottom:9px}
 
 /* search in the masthead */
 .search{position:relative}

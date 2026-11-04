@@ -1,0 +1,133 @@
+---
+// Citywide map of the neighborhood sites, the same on every site apart from marking the one you're on.
+// The shapes come from ingest/build_map.py. Without JS every shape and list entry is still a plain link.
+import Hood from "../../layouts/Hood.astro";
+import { staticPaths, type Neighborhood } from "../../lib/data";
+import map from "../../data/map.json";
+
+export const getStaticPaths = staticPaths;
+const { n } = Astro.props as { n: Neighborhood };
+const byName = [...map.sites].sort((x, y) => x.name.localeCompare(y.name));
+const here = map.sites.find((s) => s.slug === n.slug);
+---
+<Hood n={n} page="map/" title={`Neighborhood map: ${n.name}`} description={`A map of the ${map.sites.length} Washington, DC neighborhoods with their own independent site.`}
+  heading="Find your neighborhood"
+  intro={`${map.sites.length} DC neighborhoods have a site of their own, with local news, events, permits, history and who represents you, updated every night.`}>
+  <div class="dcm-layout">
+    <div class="dcm-col">
+      <svg class="dcmap" viewBox={`0 0 ${map.width} ${map.height}`} role="group" aria-label="Map of Washington, DC showing the neighborhoods that have a site">
+        <g class="m-areas">{map.areas.map((a) => <path d={a.d} data-area={a.name} />)}</g>
+        <g class="m-sites">{map.sites.map((s) => (
+          <a href={`https://${s.host}/`} data-name={s.name} data-host={s.host} aria-label={`${s.name}, ${s.host}`} class={s.slug === n.slug ? "here" : undefined}><path d={s.d} /></a>
+        ))}</g>
+        <g class="m-glabels" aria-hidden="true">{map.areas.filter((a) => a.label).map((a) => <text x={a.label![0]} y={a.label![1]}>{a.name}</text>)}</g>
+        <g class="m-labels" aria-hidden="true">{map.sites.map((s) => <text x={s.label[0]} y={s.label[1]}>{s.name}</text>)}</g>
+      </svg>
+      <div class="dcm-key">
+        <span><i style="background:var(--ribbon);border:1px solid #2f7f88"></i>This site</span>
+        <span><i style="background:#a9d0d3;border:1px solid #2f7f88"></i>Has a site</span>
+        <span><i style="background:#e7ecee"></i>No site yet</span>
+      </div>
+      <div class="dcm-card" id="dcm-card" aria-live="polite">
+        <div class="k" id="mc-k">You&rsquo;re on</div>
+        <div class="n" id="mc-n">{n.name}</div>
+        <div class="h" id="mc-h">{here ? "Each shape opens that neighborhood's site." : ""}</div>
+      </div>
+    </div>
+    <aside class="dcm-side">
+      <h2>All {map.sites.length} sites</h2>
+      <ul>{byName.map((s) => <li><a href={`https://${s.host}/`} data-for={s.name}>{s.name}</a></li>)}</ul>
+      <p class="dcm-note">Boundaries are approximate and some overlap, because neighborhoods do. Gray areas don&rsquo;t have a site yet.</p>
+    </aside>
+  </div>
+
+  <style is:global>
+    .dcm-layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:48px;align-items:start;margin-top:8px}
+    .dcm-col{position:relative}
+    .dcmap{display:block;width:100%;height:auto}
+    .m-areas path{fill:#e7ecee;stroke:#fff;stroke-width:1.5}
+    .m-sites path{fill:#a9d0d3;stroke:#2f7f88;stroke-width:1.2;transition:fill .12s}
+    .m-sites a{cursor:pointer;outline:none}
+    .m-sites a.here path{fill:var(--ribbon)}
+    .m-sites a.on path,.m-sites a:focus-visible path{fill:var(--link);stroke:var(--ink);stroke-width:2}
+    .m-labels text{font:600 14.5px var(--sans);fill:var(--ink);text-anchor:middle;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-opacity:.8;pointer-events:none}
+    .m-glabels text{font:italic 400 13px var(--serif);fill:var(--ink3);text-anchor:middle;pointer-events:none}
+    /* DC is a diamond, so the corners of the map are empty: the readout and key sit there, always in view. */
+    .dcm-card{position:absolute;top:0;right:0;width:31%;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);padding:12px 0 14px;min-height:92px;background:#fff}
+    .dcm-card .k{font:600 12px/1.2 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--ink3)}
+    .dcm-card .n{margin-top:6px;font:500 28px/1.1 var(--serif);letter-spacing:-.01em}
+    .dcm-card .h{margin-top:4px;font:500 15px/1.3 var(--sans)}
+    .dcm-card .h a{text-decoration:none;font-weight:600}
+    .dcm-card .h a:hover{text-decoration:underline}
+    .dcm-key{position:absolute;left:0;bottom:0;display:flex;flex-direction:column;gap:6px;font:400 14px/1.3 var(--sans);color:var(--ink2)}
+    .dcm-key i{display:inline-block;width:14px;height:14px;margin-right:6px;vertical-align:-2px}
+    .dcm-side{position:sticky;top:20px}
+    .dcm-side h2{margin:0 0 8px;font:600 12px/1.2 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}
+    .dcm-side ul{margin:0;padding:0;list-style:none;columns:2;column-gap:16px;font:500 15px/1.3 var(--sans)}
+    .dcm-side li{break-inside:avoid}
+    .dcm-side li a{display:block;padding:4px 0;color:var(--ink);text-decoration:none}
+    .dcm-side li a:hover,.dcm-side li a.on{color:var(--link);text-decoration:underline}
+    .dcm-note{margin:18px 0 0;padding-top:12px;border-top:1px solid var(--rule2);font:400 14px/1.45 var(--sans);color:var(--ink2)}
+    @media (max-width:1000px){
+      .dcm-layout{grid-template-columns:minmax(0,1fr);gap:24px}
+      .dcm-side{position:static}
+      .dcm-side ul{columns:3}
+    }
+    @media (max-width:760px){
+      /* Names would be too small to read at phone width: tap a shape, or use the list. */
+      .m-labels,.m-glabels{display:none}
+      .dcm-key{position:static;flex-direction:row;flex-wrap:wrap;gap:6px 16px;margin-top:12px}
+      .dcm-card{position:sticky;top:auto;bottom:0;right:auto;width:auto;z-index:2;margin-top:12px;min-height:0;padding:10px 0 12px}
+      .dcm-card .n{font-size:24px}
+      .dcm-side ul{columns:2}
+    }
+  </style>
+  <script is:inline>
+    (function () {
+      var shapes = {}, list = {}, on = null, before = null, touch = false;
+      document.querySelectorAll(".m-sites a").forEach(function (a) { shapes[a.dataset.name] = a; });
+      document.querySelectorAll(".dcm-side li a").forEach(function (a) { list[a.dataset.for] = a; });
+      var k = document.getElementById("mc-k"), n = document.getElementById("mc-n"), h = document.getElementById("mc-h");
+      function clear() {
+        if (on) { shapes[on].classList.remove("on"); list[on].classList.remove("on"); on = null; }
+      }
+      function pick(name) {
+        clear();
+        on = name;
+        shapes[name].classList.add("on");
+        list[name].classList.add("on");
+        var host = shapes[name].dataset.host;
+        k.textContent = "Has a site";
+        n.textContent = name;
+        h.textContent = "";
+        var a = document.createElement("a");
+        a.href = "https://" + host + "/";
+        a.textContent = host + " →";
+        h.appendChild(a);
+      }
+      function gray(name) {
+        clear();
+        k.textContent = "No site yet";
+        n.textContent = name;
+        h.textContent = "";
+      }
+      // Noted before the tap's focus event picks the shape, so the click can tell a first tap from a second.
+      document.addEventListener("pointerdown", function (e) { touch = e.pointerType !== "mouse"; before = on; }, true);
+      Object.keys(shapes).forEach(function (name) {
+        var a = shapes[name];
+        a.addEventListener("pointerenter", function (e) { if (e.pointerType === "mouse") pick(name); });
+        a.addEventListener("focus", function () { pick(name); });
+        // On a touchscreen the first tap names the place, and the second opens it.
+        a.addEventListener("click", function (e) {
+          if (touch && before !== name) { e.preventDefault(); pick(name); }
+        });
+        list[name].addEventListener("pointerenter", function (e) { if (e.pointerType === "mouse") pick(name); });
+        list[name].addEventListener("focus", function () { pick(name); });
+      });
+      document.querySelectorAll(".m-areas path").forEach(function (p) {
+        p.addEventListener("pointerenter", function (e) { if (e.pointerType === "mouse") gray(p.dataset.area); });
+        p.addEventListener("click", function () { gray(p.dataset.area); });
+      });
+    })();
+  </script>
+</Hood>

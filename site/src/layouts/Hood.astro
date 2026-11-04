@@ -27,6 +27,7 @@ const front = page === "";
     <details class="hoods">
       <summary>Neighborhoods</summary>
       <ul>
+        <li class="hoods-map"><a href={pageUrl(n.slug, "map/")}>See them all on a map</a></li>
         {[...sites].sort((x, y) => x.name.localeCompare(y.name)).map((x) => (
           <li>{x.slug === n.slug ? <span aria-current="page">{x.name}</span> : <a href={`https://${x.hosts[0]}/`}>{x.name}</a>}</li>
         ))}

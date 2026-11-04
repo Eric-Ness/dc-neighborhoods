@@ -82,7 +82,9 @@ const checks = {
   },
 
   site() {
-    const index = JSON.parse(read("site/src/data/index.json"));
+    const index = JSON.parse(read("site/src/data/index.json"));
+    const onMap = new Set(JSON.parse(read("site/src/data/map.json")).sites.map((s) => s.slug));
+    for (const h of index) assert(onMap.has(h.slug), `${h.slug} is not on the map: run python ingest/build_map.py`);
     assert(index.length >= 2, "expected at least 2 neighborhoods");
     for (const h of index) {
       const page = `site/dist/${h.slug}/index.html`;
@@ -212,7 +214,7 @@ checks.ideademos = () => {
 };
 
 // ---------- phase 3: filled-out C5 site ----------
-const SITE_PAGES = ["", "news/", "projects/", "homes/", "streets/", "history/", "representatives/", "subscribe/", "about/"];
+const SITE_PAGES = ["", "news/", "projects/", "homes/", "streets/", "history/", "representatives/", "subscribe/", "about/", "map/"];
 const hoods = () => JSON.parse(read("site/src/data/index.json"));
 
 checks.datafull = () => {

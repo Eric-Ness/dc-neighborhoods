@@ -188,6 +188,7 @@ export const PAGES = [
   { path: "representatives/", label: "Representatives" },
   { path: "subscribe/", label: "Weekly email" },
   { path: "about/", label: "About the data" },
+  { path: "map/", label: "DC map" },
 ] as const;
 
 // Links are root-relative: on petworth.org the Worker maps "/news/" onto the build's /petworth/news/ folder, so pages
