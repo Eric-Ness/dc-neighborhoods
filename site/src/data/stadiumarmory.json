@@ -1,7 +1,7 @@
 {
  "slug": "stadiumarmory",
  "name": "Stadium-Armory",
- "generated_at": "2026-11-04T09:19:23Z",
+ "generated_at": "2026-11-04T19:08:57Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -995,19 +995,6 @@
  },
  "permits": [
   {
-   "id": "R2400140-EXT-1",
-   "issued": "2026-10-15T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "PERMIT",
-   "address": "1900 MASSACHUSETTS AVE SE 20003",
-   "work": "",
-   "zoning": "HE-3",
-   "lat": 38.88514,
-   "lon": -76.97307,
-   "smd": "7F07"
-  },
-  {
    "id": "D2400359-EXT-2",
    "issued": "2026-10-15T04:00:00Z",
    "group": "Renovation & repair",
@@ -1032,50 +1019,53 @@
    "lat": 38.88987,
    "lon": -76.97294,
    "smd": "7D05"
+  },
+  {
+   "id": "R2400140-EXT-1",
+   "issued": "2026-10-15T04:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "PERMIT",
+   "address": "1900 MASSACHUSETTS AVE SE 20003",
+   "work": "",
+   "zoning": "HE-3",
+   "lat": 38.88514,
+   "lon": -76.97307,
+   "smd": "7F07"
   }
  ],
  "requests": {
-  "total": 465,
-  "previous_total": 471,
+  "total": 393,
+  "previous_total": 514,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 113,
-    "previous": 211
+    "count": 120,
+    "previous": 193
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 85,
+    "count": 88,
     "previous": 0
    },
    {
-    "type": "Tree Inspection",
-    "count": 60,
-    "previous": 38
-   },
-   {
     "type": "Streetlight Repair Investigation",
-    "count": 48,
+    "count": 50,
     "previous": 0
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 38,
+    "count": 40,
     "previous": 0
    },
    {
     "type": "Illegal Dumping",
-    "count": 38,
-    "previous": 0
-   },
-   {
-    "type": "OCTFME - Down Cable Wires",
-    "count": 31,
+    "count": 39,
     "previous": 0
    },
    {
     "type": "DMV - Vehicle Registration Issues",
-    "count": 26,
+    "count": 27,
     "previous": 0
    },
    {
@@ -1085,18 +1075,28 @@
    },
    {
     "type": "DMV - Drivers License/ID Issues",
-    "count": 7,
+    "count": 8,
     "previous": 0
    },
    {
     "type": "Bulk Collection",
-    "count": 4,
-    "previous": 44
+    "count": 6,
+    "previous": 41
    }
   ],
-  "open": 15,
+  "open": 16,
   "recent": [
    {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T14:47:05Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1800 block of POTOMAC AVENUE SE",
+    "lat": 38.883,
+    "lon": -76.978
+   },
+   {
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-11-03T14:03:04Z",
@@ -1119,6 +1119,16 @@
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
+    "added": "2026-11-03T14:03:04Z",
+    "resolved": "2026-11-03T17:20:49Z",
+    "status": "Closed",
+    "block": "1900 block of MASSACHUSETTS AVENUE SE",
+    "lat": 38.885,
+    "lon": -76.973
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
     "added": "2026-11-02T16:33:21Z",
     "resolved": "2026-11-02T17:38:28Z",
     "status": "Closed",
@@ -1227,6 +1237,16 @@
     "lon": -76.978
    },
    {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-10-31T19:19:52Z",
+    "resolved": "2026-11-03T15:39:41Z",
+    "status": "Closed",
+    "block": "1800 block of POTOMAC AVENUE SE",
+    "lat": 38.883,
+    "lon": -76.978
+   },
+   {
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-10-29T16:21:58Z",
@@ -1357,6 +1377,26 @@
     "lon": -76.977
    },
    {
+    "type": "DMV - Drivers License/ID Issues",
+    "agency": "DMV",
+    "added": "2026-10-27T16:46:57Z",
+    "resolved": "2026-10-29T20:45:25Z",
+    "status": "Closed",
+    "block": "1900 block of C STREET SE",
+    "lat": 38.885,
+    "lon": -76.977
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-10-27T11:36:16Z",
+    "resolved": "2026-10-27T13:48:01Z",
+    "status": "Closed",
+    "block": "1900 block of C STREET SE",
+    "lat": 38.885,
+    "lon": -76.977
+   },
+   {
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-10-27T11:36:16Z",
@@ -1517,60 +1557,10 @@
     "lon": -76.977
    },
    {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-26T12:49:56Z",
-    "resolved": "2026-10-26T12:49:56Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-26T12:49:56Z",
-    "resolved": "2026-10-26T12:49:56Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-26T12:49:56Z",
-    "resolved": "2026-10-26T12:49:56Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-26T12:49:56Z",
-    "resolved": "2026-10-26T12:49:56Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-26T12:49:56Z",
-    "resolved": "2026-10-26T12:49:56Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-26T12:49:56Z",
-    "resolved": "2026-10-26T12:49:56Z",
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-10-27T01:56:34Z",
+    "resolved": "2026-10-27T04:45:15Z",
     "status": "Closed",
     "block": "1900 block of C STREET SE",
     "lat": 38.885,
@@ -1663,7 +1653,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -1850,7 +1840,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2061,7 +2051,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2151,7 +2141,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2220,7 +2210,7 @@
     "name": "Historic Congressional Cemetery",
     "url": "https://www.congressionalcemetery.org/",
     "state": "ok",
-    "matched": 7,
+    "matched": 8,
     "fetched": 1
    },
    {
@@ -2309,6 +2299,13 @@
    }
   ],
   "items": [
+   {
+    "title": "The American Soundtrack: Francis Scala, John Philip Sousa, and the United States Marine Band",
+    "url": "https://congressionalcemetery.org/blog/the-american-soundtrack/",
+    "source": "Historic Congressional Cemetery",
+    "published": "2026-11-04T15:40:59Z",
+    "first_seen": "2026-11-04T19:08:57Z"
+   },
    {
     "title": "Events: Building a better Ward 3 and RFK for all",
     "url": "https://ggwash.org/view/105393/events-oct-6-oct-19-2026-ward-3-happy-hour",
@@ -2526,7 +2523,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
@@ -2701,7 +2698,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -14205,7 +14202,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

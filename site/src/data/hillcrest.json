@@ -1,7 +1,7 @@
 {
  "slug": "hillcrest",
  "name": "Hillcrest",
- "generated_at": "2026-11-04T18:44:54Z",
+ "generated_at": "2026-11-04T19:08:57Z",
  "boundary": {
   "source": "ANC single-member districts 7B02, 7B03, 7B05, 7B06, 8B02 and 8B05, about the same ground as DC's NAYLOR/HILLCREST planning area (Open Data DC). Hillcrest Heights, Maryland, is not included.",
   "rings": [
@@ -9280,17 +9280,17 @@
   }
  ],
  "requests": {
-  "total": 795,
-  "previous_total": 718,
+  "total": 797,
+  "previous_total": 720,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 133,
+    "count": 134,
     "previous": 112
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 83,
+    "count": 85,
     "previous": 6
    },
    {
@@ -9310,7 +9310,7 @@
    },
    {
     "type": "Illegal Dumping",
-    "count": 38,
+    "count": 39,
     "previous": 19
    },
    {
@@ -9479,11 +9479,6 @@
     "previous": 3
    },
    {
-    "type": "DMV - Hearings",
-    "count": 2,
-    "previous": 0
-   },
-   {
     "type": "DC How Am I Driving?",
     "count": 2,
     "previous": 2
@@ -9574,8 +9569,48 @@
     "previous": 0
    }
   ],
-  "open": 163,
+  "open": 165,
   "recent": [
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-04T19:39:46Z",
+    "resolved": "2026-11-04T19:39:46Z",
+    "status": "Closed",
+    "block": "2800 block of HARTFORD STREET SE",
+    "lat": 38.855,
+    "lon": -76.967
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-04T19:24:58Z",
+    "resolved": "2026-11-04T19:24:58Z",
+    "status": "Closed",
+    "block": "2600 block of 30TH STREET SE",
+    "lat": 38.858,
+    "lon": -76.965
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-04T19:13:43Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3300 block of ERIE STREET SE",
+    "lat": 38.856,
+    "lon": -76.957
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T19:10:26Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3300 block of ERIE STREET SE",
+    "lat": 38.856,
+    "lon": -76.957
+   },
    {
     "type": "DOEE - LIHEAP",
     "agency": "DOEE",
@@ -10035,46 +10070,6 @@
     "block": "3000 block of 30TH STREET SE",
     "lat": 38.852,
     "lon": -76.965
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-02T19:26:59Z",
-    "resolved": "2026-11-02T19:26:59Z",
-    "status": "Closed",
-    "block": "3900 block of SOUTHERN AVENUE SE",
-    "lat": 38.863,
-    "lon": -76.948
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-02T19:26:59Z",
-    "resolved": "2026-11-02T19:26:59Z",
-    "status": "Closed",
-    "block": "3900 block of SOUTHERN AVENUE SE",
-    "lat": 38.863,
-    "lon": -76.948
-   },
-   {
-    "type": "Roadway Signs",
-    "agency": "DDOT",
-    "added": "2026-11-02T19:14:53Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "2500 block of ALABAMA AVENUE SE",
-    "lat": 38.858,
-    "lon": -76.969
-   },
-   {
-    "type": "Roadway Signs",
-    "agency": "DDOT",
-    "added": "2026-11-02T19:14:53Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "2500 block of ALABAMA AVENUE SE",
-    "lat": 38.858,
-    "lon": -76.969
    }
   ]
  },
@@ -10161,7 +10156,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T18:44:54Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -10348,7 +10343,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T18:44:54Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -10560,7 +10555,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T18:44:54Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -10680,7 +10675,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T18:44:54Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "archive_days": 180,
   "sources": [
    {
@@ -10800,9 +10795,9 @@
    {
     "name": "Greater Greater Washington",
     "url": "https://ggwash.org/",
-    "state": "ok",
-    "matched": 1,
-    "fetched": 1
+    "state": "error: HTTPError",
+    "matched": 0,
+    "failed": 1
    },
    {
     "name": "Mayor's office",
@@ -10880,7 +10875,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T18:44:54Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
@@ -10942,7 +10937,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-04T18:44:54Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -33119,7 +33114,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T18:44:54Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

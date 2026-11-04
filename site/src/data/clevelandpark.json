@@ -1,7 +1,7 @@
 {
  "slug": "clevelandpark",
  "name": "Cleveland Park",
- "generated_at": "2026-11-04T09:19:23Z",
+ "generated_at": "2026-11-04T19:08:57Z",
  "boundary": {
   "source": "Cleveland Park Historic District (DC Historic Preservation Office, Open Data DC). DC has no planning area named Cleveland Park.",
   "rings": [
@@ -2675,6 +2675,32 @@
  },
  "permits": [
   {
+   "id": "B2608702",
+   "issued": "2026-11-02T05:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "3500 CONNECTICUT AVE NW 20008",
+   "work": "HISTORIC\r\n\r\nInterior Nonstructural demolition (Applied under alteration and repair as the demo applications are not processing correctly) of the space.",
+   "zoning": "NMU-4/CP",
+   "lat": 38.93573,
+   "lon": -77.05894,
+   "smd": "3C06"
+  },
+  {
+   "id": "B2700789",
+   "issued": "2026-11-02T05:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "3427 PORTER ST NW 20016",
+   "work": "Replacement of a triple window in front attic of home and replacement of a single window on side 1st floor of home. New windows to fit into existing openings with no modifications of shapes or sizes. The windows in the attic are the Pella Reserve to be consistent with a historic profile.",
+   "zoning": "R-2",
+   "lat": 38.93753,
+   "lon": -77.06767,
+   "smd": "3C08"
+  },
+  {
    "id": "B2700017",
    "issued": "2026-10-29T04:00:00Z",
    "group": "Renovation & repair",
@@ -2805,6 +2831,19 @@
    "smd": "3C05"
   },
   {
+   "id": "P2700383",
+   "issued": "2026-10-14T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "3209 HIGHLAND PL NW 20008",
+   "work": "",
+   "zoning": "R-1B",
+   "lat": 38.93593,
+   "lon": -77.06405,
+   "smd": "3C05"
+  },
+  {
    "id": "B2700084",
    "issued": "2026-10-14T04:00:00Z",
    "group": "Renovation & repair",
@@ -2844,19 +2883,6 @@
    "smd": "3C05"
   },
   {
-   "id": "P2700383",
-   "issued": "2026-10-14T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "3209 HIGHLAND PL NW 20008",
-   "work": "",
-   "zoning": "R-1B",
-   "lat": 38.93593,
-   "lon": -77.06405,
-   "smd": "3C05"
-  },
-  {
    "id": "BH2608988",
    "issued": "2026-10-13T04:00:00Z",
    "group": "Renovation & repair",
@@ -2870,19 +2896,6 @@
    "smd": "3C08"
   },
   {
-   "id": "P2700260",
-   "issued": "2026-10-08T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "2735 MACOMB ST NW 20008",
-   "work": "Plumbing trade Permit",
-   "zoning": "RA-1",
-   "lat": 38.9337,
-   "lon": -77.05554,
-   "smd": "3C06"
-  },
-  {
    "id": "M2700125",
    "issued": "2026-10-08T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -2890,6 +2903,19 @@
    "subtype": "MECHANICAL",
    "address": "2735 MACOMB ST NW 20008",
    "work": "Mechanical trade Permit",
+   "zoning": "RA-1",
+   "lat": 38.9337,
+   "lon": -77.05554,
+   "smd": "3C06"
+  },
+  {
+   "id": "P2700260",
+   "issued": "2026-10-08T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "2735 MACOMB ST NW 20008",
+   "work": "Plumbing trade Permit",
    "zoning": "RA-1",
    "lat": 38.9337,
    "lon": -77.05554,
@@ -2910,23 +2936,23 @@
   }
  ],
  "requests": {
-  "total": 254,
-  "previous_total": 279,
+  "total": 243,
+  "previous_total": 285,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 40,
-    "previous": 41
+    "count": 39,
+    "previous": 40
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 38,
-    "previous": 41
+    "count": 39,
+    "previous": 40
    },
    {
     "type": "Parking Enforcement",
-    "count": 24,
-    "previous": 41
+    "count": 21,
+    "previous": 44
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -2935,18 +2961,13 @@
    },
    {
     "type": "Graffiti Removal",
-    "count": 11,
-    "previous": 9
-   },
-   {
-    "type": "Tree Inspection",
     "count": 10,
     "previous": 10
    },
    {
-    "type": "Public Space Inspection",
+    "type": "Tree Inspection",
     "count": 9,
-    "previous": 2
+    "previous": 11
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -2957,6 +2978,11 @@
     "type": "Residential Parking Permit Violation",
     "count": 8,
     "previous": 5
+   },
+   {
+    "type": "Public Space Inspection",
+    "count": 8,
+    "previous": 3
    },
    {
     "type": "Trash Collection - Missed",
@@ -2976,12 +3002,7 @@
    {
     "type": "Dockless Vehicle Parking Complaint",
     "count": 5,
-    "previous": 8
-   },
-   {
-    "type": "Trash Cart - Delivery",
-    "count": 4,
-    "previous": 4
+    "previous": 7
    },
    {
     "type": "Roadway Signs",
@@ -2999,16 +3020,6 @@
     "previous": 9
    },
    {
-    "type": "Sidewalk Repair",
-    "count": 3,
-    "previous": 5
-   },
-   {
-    "type": "Tree Pruning",
-    "count": 3,
-    "previous": 5
-   },
-   {
     "type": "Tree Removal",
     "count": 3,
     "previous": 0
@@ -3016,7 +3027,7 @@
    {
     "type": "Supercan - Delivery",
     "count": 3,
-    "previous": 2
+    "previous": 1
    },
    {
     "type": "Recycling Cart Delivery",
@@ -3034,14 +3045,24 @@
     "previous": 1
    },
    {
-    "type": "Illegal Dumping",
+    "type": "DMV - Drivers License/ID Issues",
+    "count": 2,
+    "previous": 1
+   },
+   {
+    "type": "Trash Cart - Delivery",
     "count": 2,
     "previous": 6
    },
    {
-    "type": "DMV - Drivers License/ID Issues",
+    "type": "Sidewalk Repair",
     "count": 2,
-    "previous": 1
+    "previous": 6
+   },
+   {
+    "type": "Tree Pruning",
+    "count": 2,
+    "previous": 6
    },
    {
     "type": "Roadway Repair",
@@ -3069,11 +3090,6 @@
     "previous": 6
    },
    {
-    "type": "Resident Parking Permit",
-    "count": 1,
-    "previous": 0
-   },
-   {
     "type": "DOB - Illegal Construction",
     "count": 1,
     "previous": 1
@@ -3096,7 +3112,12 @@
    {
     "type": "Parking Meter Repair",
     "count": 1,
-    "previous": 3
+    "previous": 2
+   },
+   {
+    "type": "Illegal Dumping",
+    "count": 1,
+    "previous": 7
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
@@ -3137,10 +3158,35 @@
     "type": "Pothole",
     "count": 1,
     "previous": 4
+   },
+   {
+    "type": "DGS - Playground Repair",
+    "count": 1,
+    "previous": 1
    }
   ],
-  "open": 68,
+  "open": 65,
   "recent": [
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-04T18:48:51Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2900 block of NEWARK STREET NW",
+    "lat": 38.935,
+    "lon": -77.06
+   },
+   {
+    "type": "DGS - Playground Repair",
+    "agency": "DGS",
+    "added": "2026-11-04T16:20:39Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "IDAHO AVENUE NW AND QUEBEC STREET NW",
+    "lat": 38.938,
+    "lon": -77.071
+   },
    {
     "type": "Traffic Safety Input",
     "agency": "DDOT",
@@ -3620,42 +3666,27 @@
     "block": "3700 block of PORTER STREET NW",
     "lat": 38.938,
     "lon": -77.073
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-27T20:31:12Z",
-    "resolved": "2026-10-27T22:03:06Z",
-    "status": "Closed",
-    "block": "3400 block of WOODLEY ROAD NW",
-    "lat": 38.932,
-    "lon": -77.067
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-27T19:07:54Z",
-    "resolved": "2026-10-30T12:34:57Z",
-    "status": "Closed",
-    "block": "3400 block of NEWARK STREET NW",
-    "lat": 38.935,
-    "lon": -77.067
    }
   ]
  },
  "crime": {
-  "total": 17,
+  "total": 18,
   "previous_total": 6,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
-    "count": 14,
-    "previous": 4
+    "count": 15,
+    "previous": 3
    },
    {
     "offense": "THEFT F/AUTO",
-    "count": 3,
-    "previous": 1
+    "count": 2,
+    "previous": 2
+   },
+   {
+    "offense": "BURGLARY",
+    "count": 1,
+    "previous": 0
    },
    {
     "offense": "MOTOR VEHICLE THEFT",
@@ -3681,7 +3712,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3717,8 +3748,8 @@
   },
   "primary": "house",
   "house": {
-   "median_12mo": 2259700,
-   "count_12mo": 68,
+   "median_12mo": 2269400,
+   "count_12mo": 69,
    "median_prev_12mo": 1910000,
    "count_prev_12mo": 42
   },
@@ -3729,14 +3760,14 @@
    "count_prev_12mo": 82
   },
   "last_60d": {
-   "median": 1546944,
-   "count": 8,
-   "median_ppsf": 623,
-   "ppsf_count": 8
+   "median": 1768888,
+   "count": 9,
+   "median_ppsf": 682,
+   "ppsf_count": 9
   },
   "above_assessment_12mo": {
-   "n": 85,
-   "of": 148
+   "n": 86,
+   "of": 149
   },
   "by_month": [
    {
@@ -3791,8 +3822,8 @@
    },
    {
     "month": "2026-10",
-    "median": 1882500,
-    "count": 4
+    "median": 2650000,
+    "count": 5
    },
    {
     "month": "2026-11",
@@ -3802,6 +3833,15 @@
   ],
   "by_month_basis": "houses only; calendar months, the last one in progress; median null when under 3 sales",
   "recent_sales": [
+   {
+    "address": "3119 38th St NW",
+    "date": "2026-10-22",
+    "price": 6800000,
+    "kind": "house",
+    "beds": 7,
+    "sqft": 5492,
+    "assessed": 5444020
+   },
    {
     "address": "4111 Connecticut Ave NW Apt 302",
     "date": "2026-10-20",
@@ -3853,7 +3893,7 @@
     "price": 2650000,
     "kind": "house",
     "beds": 6,
-    "sqft": 2276,
+    "sqft": 2576,
     "assessed": 1881040
    },
    {
@@ -3931,7 +3971,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3952,7 +3992,7 @@
   ],
   "curb": {
    "active_this_week": 45,
-   "starting_next_7d": 8,
+   "starting_next_7d": 7,
    "reserved_ft": 8470,
    "long_running_90d": 9,
    "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
@@ -3975,14 +4015,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Utility & DDOT work",
-     "block": "3400 block of Lowell Street NW",
-     "start": "2026-11-04",
-     "end": "2026-11-14",
-     "ft": 440,
-     "hours": "7 am\u20135 pm"
-    },
     {
      "type": "Utility & DDOT work",
      "block": "3200 block of 36th Street NW",
@@ -4122,14 +4154,14 @@
    {
     "type": "Scheduled Yard Waste",
     "median_days": 7.94,
-    "city_median_days": 9.71,
+    "city_median_days": 9.67,
     "closed_n": 437
    },
    {
     "type": "Bulk Collection",
     "median_days": 7.91,
     "city_median_days": 6.92,
-    "closed_n": 369
+    "closed_n": 368
    },
    {
     "type": "Parking Enforcement",
@@ -4140,14 +4172,14 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 6.02,
-    "city_median_days": 5.03,
+    "city_median_days": 4.97,
     "closed_n": 196
    },
    {
     "type": "Trash Collection - Missed",
-    "median_days": 12.93,
-    "city_median_days": 4.14,
-    "closed_n": 176
+    "median_days": 13.0,
+    "city_median_days": 4.08,
+    "closed_n": 175
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -4171,7 +4203,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4326,7 +4358,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4413,7 +4445,7 @@
     "name": "District Bridges",
     "url": "https://districtbridges.org/",
     "state": "ok",
-    "matched": 1,
+    "matched": 2,
     "fetched": 1
    },
    {
@@ -4495,6 +4527,13 @@
    }
   ],
   "items": [
+   {
+    "title": "From International Development to Cleveland Park",
+    "url": "https://districtbridges.org/from-international-development-to-cleveland-park/",
+    "source": "District Bridges",
+    "published": "2026-11-04T15:32:28Z",
+    "first_seen": "2026-11-04T19:08:57Z"
+   },
    {
     "title": "Events: Building a better Ward 3 and RFK for all",
     "url": "https://ggwash.org/view/105393/events-oct-6-oct-19-2026-ward-3-happy-hour",
@@ -4745,7 +4784,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
@@ -4816,7 +4855,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -16153,7 +16192,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

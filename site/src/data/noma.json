@@ -1,7 +1,7 @@
 {
  "slug": "noma",
  "name": "NoMa",
- "generated_at": "2026-11-04T09:19:23Z",
+ "generated_at": "2026-11-04T19:08:57Z",
  "boundary": {
   "source": "NoMa Business Improvement District boundary (Open Data DC). DC has no planning area for NoMa.",
   "rings": [
@@ -439,6 +439,19 @@
  },
  "permits": [
   {
+   "id": "E2701123",
+   "issued": "2026-11-02T05:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "999 NORTH CAPITOL ST NE 20002",
+   "work": "",
+   "zoning": "D-5",
+   "lat": 38.90201,
+   "lon": -77.00845,
+   "smd": "6E07"
+  },
+  {
    "id": "E2701064",
    "issued": "2026-10-30T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -504,19 +517,6 @@
    "smd": "6E05"
   },
   {
-   "id": "P2700454",
-   "issued": "2026-10-15T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "1200 1ST ST NE 20002",
-   "work": "",
-   "zoning": "D-5",
-   "lat": 38.90608,
-   "lon": -77.0063,
-   "smd": "6E05"
-  },
-  {
    "id": "P2700457",
    "issued": "2026-10-15T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -528,6 +528,19 @@
    "lat": 38.90755,
    "lon": -77.00226,
    "smd": "6C07"
+  },
+  {
+   "id": "P2700454",
+   "issued": "2026-10-15T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "1200 1ST ST NE 20002",
+   "work": "",
+   "zoning": "D-5",
+   "lat": 38.90608,
+   "lon": -77.0063,
+   "smd": "6E05"
   },
   {
    "id": "P2700455",
@@ -596,53 +609,53 @@
   }
  ],
  "requests": {
-  "total": 969,
-  "previous_total": 775,
+  "total": 964,
+  "previous_total": 777,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 378,
-    "previous": 243
+    "count": 380,
+    "previous": 246
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 129,
+    "count": 133,
     "previous": 1
    },
    {
     "type": "DMV - Drivers License/ID Issues",
-    "count": 38,
-    "previous": 20
+    "count": 37,
+    "previous": 21
    },
    {
     "type": "Illegal Dumping",
-    "count": 36,
+    "count": 35,
     "previous": 20
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 34,
-    "previous": 141
+    "previous": 137
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
-    "count": 31,
+    "count": 32,
     "previous": 25
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 28,
-    "previous": 26
-   },
-   {
-    "type": "DC Government Information",
-    "count": 24,
-    "previous": 31
+    "count": 30,
+    "previous": 27
    },
    {
     "type": "Roadway Signs",
     "count": 22,
-    "previous": 12
+    "previous": 11
+   },
+   {
+    "type": "DC Government Information",
+    "count": 21,
+    "previous": 32
    },
    {
     "type": "Public Space Inspection",
@@ -656,33 +669,28 @@
    },
    {
     "type": "Streetlight Repair Investigation",
-    "count": 17,
-    "previous": 30
+    "count": 18,
+    "previous": 31
    },
    {
     "type": "DOEE - General Air Quality Concerns",
     "count": 16,
-    "previous": 8
-   },
-   {
-    "type": "Dead Animal Collection",
-    "count": 14,
-    "previous": 21
+    "previous": 7
    },
    {
     "type": "Roadway Repair",
-    "count": 14,
+    "count": 15,
     "previous": 5
-   },
-   {
-    "type": "Sidewalk Repair",
-    "count": 14,
-    "previous": 9
    },
    {
     "type": "Bicycle Services",
     "count": 13,
-    "previous": 7
+    "previous": 6
+   },
+   {
+    "type": "Sidewalk Repair",
+    "count": 13,
+    "previous": 9
    },
    {
     "type": "DC How Am I Driving?",
@@ -690,9 +698,14 @@
     "previous": 10
    },
    {
+    "type": "Parking Meter Repair",
+    "count": 11,
+    "previous": 1
+   },
+   {
     "type": "Bulk Collection",
     "count": 10,
-    "previous": 6
+    "previous": 5
    },
    {
     "type": "Illegal Poster",
@@ -700,32 +713,32 @@
     "previous": 0
    },
    {
-    "type": "Parking Meter Repair",
-    "count": 10,
-    "previous": 1
-   },
-   {
-    "type": "DGS - Playground Repair",
-    "count": 8,
-    "previous": 6
-   },
-   {
     "type": "Tree Removal",
     "count": 8,
-    "previous": 16
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "count": 7,
-    "previous": 6
+    "previous": 15
    },
    {
     "type": "Bus Stop Issues",
-    "count": 7,
+    "count": 8,
     "previous": 0
    },
    {
+    "type": "Sanitation Enforcement",
+    "count": 6,
+    "previous": 5
+   },
+   {
+    "type": "Dead Animal Collection",
+    "count": 6,
+    "previous": 27
+   },
+   {
     "type": "Tree Pruning",
+    "count": 5,
+    "previous": 3
+   },
+   {
+    "type": "Residential Parking Permit Violation",
     "count": 5,
     "previous": 3
    },
@@ -735,11 +748,6 @@
     "previous": 3
    },
    {
-    "type": "Residential Parking Permit Violation",
-    "count": 4,
-    "previous": 4
-   },
-   {
     "type": "DMV - Online Processing Issues",
     "count": 4,
     "previous": 2
@@ -747,7 +755,12 @@
    {
     "type": "Roadway Markings / Pylons",
     "count": 4,
-    "previous": 16
+    "previous": 15
+   },
+   {
+    "type": "DGS - Playground Repair",
+    "count": 4,
+    "previous": 10
    },
    {
     "type": "DMV - Appeal",
@@ -765,14 +778,14 @@
     "previous": 0
    },
    {
-    "type": "DOB - Illegal Construction",
+    "type": "DMV - Copy of Ticket",
     "count": 3,
     "previous": 1
    },
    {
-    "type": "DMV - Copy of Ticket",
+    "type": "Tree Inspection",
     "count": 3,
-    "previous": 1
+    "previous": 8
    },
    {
     "type": "Pet Waste Complaint",
@@ -785,9 +798,9 @@
     "previous": 3
    },
    {
-    "type": "Tree Inspection",
+    "type": "DOB - Illegal Construction",
     "count": 2,
-    "previous": 8
+    "previous": 1
    },
    {
     "type": "Pothole",
@@ -815,8 +828,118 @@
     "previous": 0
    }
   ],
-  "open": 124,
+  "open": 123,
   "recent": [
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-04T18:34:54Z",
+    "resolved": "2026-11-04T18:34:54Z",
+    "status": "Closed",
+    "block": "200 block of Q STREET NE",
+    "lat": 38.911,
+    "lon": -77.003
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T18:23:44Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1500 block of NORTH CAPITOL STREET NE",
+    "lat": 38.91,
+    "lon": -77.009
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T18:04:31Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "100 block of Q STREET NE",
+    "lat": 38.911,
+    "lon": -77.004
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T16:06:29Z",
+    "resolved": "2026-11-04T16:36:12Z",
+    "status": "Closed",
+    "block": "100 block of Q STREET NE",
+    "lat": 38.911,
+    "lon": -77.004
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T15:06:25Z",
+    "resolved": "2026-11-04T15:30:06Z",
+    "status": "Closed",
+    "block": "200 block of L STREET NE",
+    "lat": 38.904,
+    "lon": -77.003
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-04T14:15:13Z",
+    "resolved": "2026-11-04T14:15:13Z",
+    "status": "Closed",
+    "block": "200 block of Q STREET NE",
+    "lat": 38.911,
+    "lon": -77.003
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "agency": "DDOT",
+    "added": "2026-11-04T12:28:01Z",
+    "resolved": "2026-11-04T12:35:56Z",
+    "status": "Closed",
+    "block": "300 block of NEW YORK AVENUE NE",
+    "lat": 38.909,
+    "lon": -77.004
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T12:27:25Z",
+    "resolved": "2026-11-04T13:21:05Z",
+    "status": "Closed",
+    "block": "1100 block of 1ST STREET NE",
+    "lat": 38.905,
+    "lon": -77.006
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "agency": "DDOT",
+    "added": "2026-11-04T12:27:19Z",
+    "resolved": "2026-11-04T12:35:59Z",
+    "status": "Closed",
+    "block": "100 block of NEW YORK AVENUE NE",
+    "lat": 38.909,
+    "lon": -77.005
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T05:40:39Z",
+    "resolved": "2026-11-04T06:56:11Z",
+    "status": "Closed",
+    "block": "1100 block of 1ST STREET NE",
+    "lat": 38.905,
+    "lon": -77.006
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-04T05:39:32Z",
+    "resolved": "2026-11-04T09:32:22Z",
+    "status": "Closed",
+    "block": "1100 block of 1ST STREET NE",
+    "lat": 38.904,
+    "lon": -77.007
+   },
    {
     "type": "Out of State Parking Violation (ROSA)",
     "agency": "DPW",
@@ -1158,6 +1281,26 @@
     "lon": -77.006
    },
    {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-02T12:04:03Z",
+    "resolved": "2026-11-02T14:45:27Z",
+    "status": "Closed",
+    "block": "1100 block of 1ST STREET NE",
+    "lat": 38.905,
+    "lon": -77.006
+   },
+   {
+    "type": "Streetlight Repair Investigation",
+    "agency": "DDOT",
+    "added": "2026-11-02T00:05:43Z",
+    "resolved": "2026-11-02T13:50:59Z",
+    "status": "Closed",
+    "block": "1000 block of 1ST STREET NE",
+    "lat": 38.903,
+    "lon": -77.006
+   },
+   {
     "type": "Streetlight Repair Investigation",
     "agency": "DDOT",
     "added": "2026-11-02T00:05:43Z",
@@ -1180,153 +1323,23 @@
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
-    "added": "2026-11-01T21:10:41Z",
-    "resolved": "2026-11-01T21:32:35Z",
-    "status": "Closed",
-    "block": "100 block of Q STREET NE",
-    "lat": 38.911,
-    "lon": -77.004
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-01T17:15:47Z",
-    "resolved": "2026-11-01T18:37:19Z",
+    "added": "2026-11-01T23:04:37Z",
+    "resolved": "2026-11-01T23:09:26Z",
     "status": "Closed",
     "block": "Unit block of FLORIDA AVENUE NE",
     "lat": 38.91,
     "lon": -77.008
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-01T17:15:47Z",
-    "resolved": "2026-11-01T18:37:19Z",
-    "status": "Closed",
-    "block": "Unit block of FLORIDA AVENUE NE",
-    "lat": 38.91,
-    "lon": -77.008
-   },
-   {
-    "type": "DGS - Playground Repair",
-    "agency": "DGS",
-    "added": "2026-11-01T15:41:22Z",
-    "resolved": "2026-11-02T14:29:10Z",
-    "status": "Closed",
-    "block": "200 block of HARRY THOMAS WAY NE",
-    "lat": 38.911,
-    "lon": -77.002
-   },
-   {
-    "type": "DGS - Playground Repair",
-    "agency": "DGS",
-    "added": "2026-11-01T15:41:22Z",
-    "resolved": "2026-11-02T14:29:10Z",
-    "status": "Closed",
-    "block": "200 block of HARRY THOMAS WAY NE",
-    "lat": 38.911,
-    "lon": -77.002
-   },
-   {
-    "type": "Bus Stop Issues",
-    "agency": "DDOT",
-    "added": "2026-11-01T14:32:30Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "1500 block of NORTH CAPITOL STREET NE",
-    "lat": 38.91,
-    "lon": -77.009
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-01T00:23:20Z",
-    "resolved": "2026-11-01T04:23:46Z",
-    "status": "Closed",
-    "block": "Unit block of FLORIDA AVENUE NE",
-    "lat": 38.91,
-    "lon": -77.008
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-01T00:23:20Z",
-    "resolved": "2026-11-01T04:23:46Z",
-    "status": "Closed",
-    "block": "Unit block of FLORIDA AVENUE NE",
-    "lat": 38.91,
-    "lon": -77.008
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-10-31T19:15:58Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "100 block of HARRY THOMAS WAY NE",
-    "lat": 38.911,
-    "lon": -77.002
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-10-31T19:15:58Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "100 block of HARRY THOMAS WAY NE",
-    "lat": 38.911,
-    "lon": -77.002
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-31T17:30:09Z",
-    "resolved": "2026-10-31T17:30:09Z",
-    "status": "Closed",
-    "block": "Unit block of H STREET NW",
-    "lat": 38.9,
-    "lon": -77.011
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-31T17:30:09Z",
-    "resolved": "2026-10-31T17:30:09Z",
-    "status": "Closed",
-    "block": "Unit block of H STREET NW",
-    "lat": 38.9,
-    "lon": -77.011
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T15:46:05Z",
-    "resolved": "2026-10-31T18:23:37Z",
-    "status": "Closed",
-    "block": "100 block of Q STREET NE",
-    "lat": 38.911,
-    "lon": -77.004
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T15:46:05Z",
-    "resolved": "2026-10-31T18:23:37Z",
-    "status": "Closed",
-    "block": "100 block of Q STREET NE",
-    "lat": 38.911,
-    "lon": -77.004
    }
   ]
  },
  "crime": {
-  "total": 73,
-  "previous_total": 74,
+  "total": 75,
+  "previous_total": 71,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
-    "count": 39,
-    "previous": 38
+    "count": 41,
+    "previous": 37
    },
    {
     "offense": "THEFT F/AUTO",
@@ -1336,7 +1349,7 @@
    {
     "offense": "MOTOR VEHICLE THEFT",
     "count": 4,
-    "previous": 13
+    "previous": 11
    },
    {
     "offense": "BURGLARY",
@@ -1384,7 +1397,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -1417,7 +1430,7 @@
   "primary": "all",
   "all": {
    "median_12mo": 675000,
-   "count_12mo": 47,
+   "count_12mo": 48,
    "median_prev_12mo": 719000,
    "count_prev_12mo": 45
   },
@@ -1428,20 +1441,20 @@
    "count_prev_12mo": 17
   },
   "condo": {
-   "median_12mo": 597500,
-   "count_12mo": 24,
+   "median_12mo": 596000,
+   "count_12mo": 25,
    "median_prev_12mo": 649900,
    "count_prev_12mo": 28
   },
   "last_60d": {
-   "median": 724500,
-   "count": 6,
+   "median": 654000,
+   "count": 7,
    "median_ppsf": 619,
    "ppsf_count": 4
   },
   "above_assessment_12mo": {
    "n": 21,
-   "of": 47
+   "of": 48
   },
   "by_month": [
    {
@@ -1497,7 +1510,7 @@
    {
     "month": "2026-10",
     "median": null,
-    "count": 1
+    "count": 2
    },
    {
     "month": "2026-11",
@@ -1507,6 +1520,15 @@
   ],
   "by_month_basis": "houses and condos together; calendar months, the last one in progress; median null when under 3 sales",
   "recent_sales": [
+   {
+    "address": "50 Florida Ave NE # 524",
+    "date": "2026-10-22",
+    "price": 380000,
+    "kind": "condo",
+    "beds": null,
+    "sqft": null,
+    "assessed": 399310
+   },
    {
     "address": "26 Todd Pl NE # 1",
     "date": "2026-10-07",
@@ -1564,7 +1586,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -1704,7 +1726,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 1641
+    "closed_n": 1643
    },
    {
     "type": "DC Government Information",
@@ -1726,15 +1748,15 @@
    },
    {
     "type": "Roadway Signs",
-    "median_days": 10.85,
-    "city_median_days": 6.98,
-    "closed_n": 119
+    "median_days": 10.83,
+    "city_median_days": 7.0,
+    "closed_n": 118
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
     "median_days": 0.01,
     "city_median_days": 0.01,
-    "closed_n": 97
+    "closed_n": 99
    },
    {
     "type": "DMV - Drivers License/ID Issues",
@@ -1752,7 +1774,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -1922,7 +1944,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2257,7 +2279,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
@@ -2327,7 +2349,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -13679,7 +13701,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

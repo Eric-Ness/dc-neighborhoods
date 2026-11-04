@@ -1,7 +1,7 @@
 {
  "slug": "ustreet",
  "name": "U Street",
- "generated_at": "2026-11-04T09:19:23Z",
+ "generated_at": "2026-11-04T19:08:57Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods: U Street/Pleasant Plains (Open Data DC), so it includes Howard University and Pleasant Plains.",
   "rings": [
@@ -1227,11 +1227,11 @@
  },
  "permits": [
   {
-   "id": "E2701058",
-   "issued": "2026-10-30T04:00:00Z",
+   "id": "M2700433",
+   "issued": "2026-11-02T05:00:00Z",
    "group": "Electrical, plumbing & mechanical",
    "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
+   "subtype": "MECHANICAL",
    "address": "1301 U ST NW 20009",
    "work": "",
    "zoning": "ARTS-4",
@@ -1251,6 +1251,19 @@
    "lat": 38.91867,
    "lon": -77.02485,
    "smd": "1B04"
+  },
+  {
+   "id": "E2701058",
+   "issued": "2026-10-30T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "1301 U ST NW 20009",
+   "work": "",
+   "zoning": "ARTS-4",
+   "lat": 38.91729,
+   "lon": -77.03052,
+   "smd": "1B08"
   },
   {
    "id": "E2700979",
@@ -1305,19 +1318,6 @@
    "smd": "1B09"
   },
   {
-   "id": "B2608990",
-   "issued": "2026-10-28T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "507 T ST NW 20001",
-   "work": "Historic\r\n\r\nAlteration Level 2 - Interior renovation. Replacement in kind of finished, fixtures, and equipment. Selective demolition. New bathroom on level 2.",
-   "zoning": "RF-1",
-   "lat": 38.916,
-   "lon": -77.01885,
-   "smd": "1B01"
-  },
-  {
    "id": "AH2700111",
    "issued": "2026-10-28T04:00:00Z",
    "group": "Renovation & repair",
@@ -1331,17 +1331,17 @@
    "smd": "1E07"
   },
   {
-   "id": "AH2700112",
+   "id": "E2700942",
    "issued": "2026-10-28T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "MISCELLANEOUS",
-   "address": "2250 8TH ST NW 20001",
-   "work": "Afterhours for work at 2250 8th St NW. Monday through Saturdays, 5PM-5AM from November 2026 to\nDecember 2026. B2401838. Includes Concrete Placement and Finishing. ANC Support letter included with this application.",
-   "zoning": "MU-10",
-   "lat": 38.91985,
-   "lon": -77.02339,
-   "smd": "1E07"
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "2805 SHERMAN AVE NW 20001",
+   "work": "",
+   "zoning": "RF-1",
+   "lat": 38.92611,
+   "lon": -77.02556,
+   "smd": "1E05"
   },
   {
    "id": "AH2700110",
@@ -1370,30 +1370,30 @@
    "smd": "1E07"
   },
   {
-   "id": "E2700942",
+   "id": "B2608990",
    "issued": "2026-10-28T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "2805 SHERMAN AVE NW 20001",
-   "work": "",
-   "zoning": "RF-1",
-   "lat": 38.92611,
-   "lon": -77.02556,
-   "smd": "1E05"
-  },
-  {
-   "id": "P2600746-EXT-1",
-   "issued": "2026-10-27T04:00:00Z",
    "group": "Renovation & repair",
    "type": "CONSTRUCTION",
-   "subtype": "PERMIT",
-   "address": "2010 15TH ST NW 20009",
-   "work": "",
-   "zoning": "RA-2",
-   "lat": 38.9174,
-   "lon": -77.03481,
-   "smd": "1B07"
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "507 T ST NW 20001",
+   "work": "Historic\r\n\r\nAlteration Level 2 - Interior renovation. Replacement in kind of finished, fixtures, and equipment. Selective demolition. New bathroom on level 2.",
+   "zoning": "RF-1",
+   "lat": 38.916,
+   "lon": -77.01885,
+   "smd": "1B01"
+  },
+  {
+   "id": "AH2700112",
+   "issued": "2026-10-28T04:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "MISCELLANEOUS",
+   "address": "2250 8TH ST NW 20001",
+   "work": "Afterhours for work at 2250 8th St NW. Monday through Saturdays, 5PM-5AM from November 2026 to\nDecember 2026. B2401838. Includes Concrete Placement and Finishing. ANC Support letter included with this application.",
+   "zoning": "MU-10",
+   "lat": 38.91985,
+   "lon": -77.02339,
+   "smd": "1E07"
   },
   {
    "id": "B2502311-EXT-1",
@@ -1409,30 +1409,17 @@
    "smd": "1B07"
   },
   {
-   "id": "M2700319",
-   "issued": "2026-10-26T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "MECHANICAL",
-   "address": "1830 11TH ST NW 5 20001",
+   "id": "P2600746-EXT-1",
+   "issued": "2026-10-27T04:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "PERMIT",
+   "address": "2010 15TH ST NW 20009",
    "work": "",
-   "zoning": "MU-4",
-   "lat": 38.91519,
-   "lon": -77.02732,
-   "smd": "1B02"
-  },
-  {
-   "id": "EN2700091",
-   "issued": "2026-10-26T04:00:00Z",
-   "group": "Other",
-   "type": "SHOP DRAWING",
-   "subtype": "ELEVATOR - NEW",
-   "address": "421 T ST NW 20001",
-   "work": "HISTORIC\r\n\r\nINSTALL ONE(1) VPL-EL--60 VERTICAL PLATFORM LIFT/UNIT#1",
-   "zoning": "RF-1",
-   "lat": 38.91606,
-   "lon": -77.01805,
-   "smd": "1B01"
+   "zoning": "RA-2",
+   "lat": 38.9174,
+   "lon": -77.03481,
+   "smd": "1B07"
   },
   {
    "id": "BH2700478",
@@ -1448,6 +1435,19 @@
    "smd": "1B08"
   },
   {
+   "id": "M2700319",
+   "issued": "2026-10-26T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "MECHANICAL",
+   "address": "1830 11TH ST NW 5 20001",
+   "work": "",
+   "zoning": "MU-4",
+   "lat": 38.91519,
+   "lon": -77.02732,
+   "smd": "1B02"
+  },
+  {
    "id": "B2700459",
    "issued": "2026-10-26T04:00:00Z",
    "group": "Renovation & repair",
@@ -1459,6 +1459,19 @@
    "lat": 38.91984,
    "lon": -77.02998,
    "smd": "1B04"
+  },
+  {
+   "id": "EN2700091",
+   "issued": "2026-10-26T04:00:00Z",
+   "group": "Other",
+   "type": "SHOP DRAWING",
+   "subtype": "ELEVATOR - NEW",
+   "address": "421 T ST NW 20001",
+   "work": "HISTORIC\r\n\r\nINSTALL ONE(1) VPL-EL--60 VERTICAL PLATFORM LIFT/UNIT#1",
+   "zoning": "RF-1",
+   "lat": 38.91606,
+   "lon": -77.01805,
+   "smd": "1B01"
   },
   {
    "id": "B2607587",
@@ -1487,6 +1500,19 @@
    "smd": "1E05"
   },
   {
+   "id": "P2700643",
+   "issued": "2026-10-22T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "2039 NEW HAMPSHIRE AVE NW, APT# 305 20009",
+   "work": "",
+   "zoning": "RA-4",
+   "lat": 38.91787,
+   "lon": -77.03537,
+   "smd": "1B07"
+  },
+  {
    "id": "E2700731",
    "issued": "2026-10-22T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -1513,17 +1539,17 @@
    "smd": "1B03"
   },
   {
-   "id": "P2700643",
-   "issued": "2026-10-22T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "2039 NEW HAMPSHIRE AVE NW, APT# 305 20009",
-   "work": "",
-   "zoning": "RA-4",
-   "lat": 38.91787,
-   "lon": -77.03537,
-   "smd": "1B07"
+   "id": "EN2700092",
+   "issued": "2026-10-21T04:00:00Z",
+   "group": "Other",
+   "type": "SHOP DRAWING",
+   "subtype": "ELEVATOR - NEW",
+   "address": "421 T ST NW 20001",
+   "work": "Historic\r\nINSTALL ONE(1) VPL-UL-60 VERTICAL PLATFORM LIFT/UNIT#2",
+   "zoning": "RF-1",
+   "lat": 38.91606,
+   "lon": -77.01805,
+   "smd": "1B01"
   },
   {
    "id": "P2700621",
@@ -1539,17 +1565,17 @@
    "smd": "1A10"
   },
   {
-   "id": "EN2700092",
+   "id": "E2700666",
    "issued": "2026-10-21T04:00:00Z",
-   "group": "Other",
-   "type": "SHOP DRAWING",
-   "subtype": "ELEVATOR - NEW",
-   "address": "421 T ST NW 20001",
-   "work": "Historic\r\nINSTALL ONE(1) VPL-UL-60 VERTICAL PLATFORM LIFT/UNIT#2",
-   "zoning": "RF-1",
-   "lat": 38.91606,
-   "lon": -77.01805,
-   "smd": "1B01"
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "2251 SHERMAN AVE NW 20001",
+   "work": "",
+   "zoning": "RA-5",
+   "lat": 38.92031,
+   "lon": -77.02465,
+   "smd": "1E06"
   },
   {
    "id": "M2700267",
@@ -1565,19 +1591,6 @@
    "smd": "1B03"
   },
   {
-   "id": "E2700666",
-   "issued": "2026-10-21T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "2251 SHERMAN AVE NW 20001",
-   "work": "",
-   "zoning": "RA-5",
-   "lat": 38.92031,
-   "lon": -77.02465,
-   "smd": "1E06"
-  },
-  {
    "id": "B2609462",
    "issued": "2026-10-21T04:00:00Z",
    "group": "Renovation & repair",
@@ -1589,32 +1602,6 @@
    "lat": 38.91787,
    "lon": -77.03537,
    "smd": "1B07"
-  },
-  {
-   "id": "B2607663",
-   "issued": "2026-10-20T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "2251 SHERMAN AVE NW 20001",
-   "work": "Replace existing smoke detectors with heat detectors",
-   "zoning": "RA-5",
-   "lat": 38.92031,
-   "lon": -77.02465,
-   "smd": "1E06"
-  },
-  {
-   "id": "HO2700116",
-   "issued": "2026-10-20T04:00:00Z",
-   "group": "Home businesses",
-   "type": "HOME OCCUPATION",
-   "subtype": "NA",
-   "address": "1924 8TH ST NW 412 20001",
-   "work": "",
-   "zoning": "ARTS-2",
-   "lat": 38.91654,
-   "lon": -77.02321,
-   "smd": "1B02"
   },
   {
    "id": "B2607621",
@@ -1630,17 +1617,30 @@
    "smd": "1B01"
   },
   {
-   "id": "M2700233",
-   "issued": "2026-10-19T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "MECHANICAL",
-   "address": "1930 11TH ST NW 20001",
+   "id": "HO2700116",
+   "issued": "2026-10-20T04:00:00Z",
+   "group": "Home businesses",
+   "type": "HOME OCCUPATION",
+   "subtype": "NA",
+   "address": "1924 8TH ST NW 412 20001",
    "work": "",
-   "zoning": "RF-1",
+   "zoning": "ARTS-2",
    "lat": 38.91654,
-   "lon": -77.02729,
+   "lon": -77.02321,
    "smd": "1B02"
+  },
+  {
+   "id": "B2607663",
+   "issued": "2026-10-20T04:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "2251 SHERMAN AVE NW 20001",
+   "work": "Replace existing smoke detectors with heat detectors",
+   "zoning": "RA-5",
+   "lat": 38.92031,
+   "lon": -77.02465,
+   "smd": "1E06"
   },
   {
    "id": "E2700618",
@@ -1654,6 +1654,19 @@
    "lat": 38.916,
    "lon": -77.01885,
    "smd": "1B01"
+  },
+  {
+   "id": "M2700233",
+   "issued": "2026-10-19T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "MECHANICAL",
+   "address": "1930 11TH ST NW 20001",
+   "work": "",
+   "zoning": "RF-1",
+   "lat": 38.91654,
+   "lon": -77.02729,
+   "smd": "1B02"
   },
   {
    "id": "B2500472-EXT-1",
@@ -1695,30 +1708,17 @@
    "smd": "1E05"
   },
   {
-   "id": "HO2700060",
+   "id": "E2700541",
    "issued": "2026-10-16T04:00:00Z",
-   "group": "Home businesses",
-   "type": "HOME OCCUPATION",
-   "subtype": "NA",
-   "address": "1817 16TH ST NW 20009",
-   "work": "Home Office of Licensed Professional - Architect",
-   "zoning": "RA-2/DC",
-   "lat": 38.91473,
-   "lon": -77.03616,
-   "smd": "2B09"
-  },
-  {
-   "id": "B2605571",
-   "issued": "2026-10-16T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "1007 FAIRMONT ST NW 20001",
-   "work": "Revision to the building per inspectors request for changes to the gas service",
-   "zoning": "RF-1",
-   "lat": 38.92498,
-   "lon": -77.02607,
-   "smd": "1A10"
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "2041 GEORGIA AVE NW 20060",
+   "work": "",
+   "zoning": "PDR-3",
+   "lat": 38.9178,
+   "lon": -77.02092,
+   "smd": "1B01"
   },
   {
    "id": "E2700514",
@@ -1732,6 +1732,19 @@
    "lat": 38.91729,
    "lon": -77.03052,
    "smd": "1B08"
+  },
+  {
+   "id": "HO2700060",
+   "issued": "2026-10-16T04:00:00Z",
+   "group": "Home businesses",
+   "type": "HOME OCCUPATION",
+   "subtype": "NA",
+   "address": "1817 16TH ST NW 20009",
+   "work": "Home Office of Licensed Professional - Architect",
+   "zoning": "RA-2/DC",
+   "lat": 38.91473,
+   "lon": -77.03616,
+   "smd": "2B09"
   },
   {
    "id": "E2700534",
@@ -1760,30 +1773,17 @@
    "smd": "1B02"
   },
   {
-   "id": "E2700541",
+   "id": "B2605571",
    "issued": "2026-10-16T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "2041 GEORGIA AVE NW 20060",
-   "work": "",
-   "zoning": "PDR-3",
-   "lat": 38.9178,
-   "lon": -77.02092,
-   "smd": "1B01"
-  },
-  {
-   "id": "SOL2602790",
-   "issued": "2026-10-15T04:00:00Z",
    "group": "Renovation & repair",
    "type": "CONSTRUCTION",
-   "subtype": "SOLAR SYSTEM",
-   "address": "1825 8TH ST NW 20001",
-   "work": "Historic\r\n\r\n52kW Roof-Mounted Solar Photovoltaic System",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "1007 FAIRMONT ST NW 20001",
+   "work": "Revision to the building per inspectors request for changes to the gas service",
    "zoning": "RF-1",
-   "lat": 38.91506,
-   "lon": -77.02262,
-   "smd": "1B02"
+   "lat": 38.92498,
+   "lon": -77.02607,
+   "smd": "1A10"
   },
   {
    "id": "B2605592",
@@ -1799,17 +1799,17 @@
    "smd": "1B02"
   },
   {
-   "id": "P2700470",
+   "id": "SOL2602790",
    "issued": "2026-10-15T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "2570 SHERMAN AVE NW 20001",
-   "work": "",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "SOLAR SYSTEM",
+   "address": "1825 8TH ST NW 20001",
+   "work": "Historic\r\n\r\n52kW Roof-Mounted Solar Photovoltaic System",
    "zoning": "RF-1",
-   "lat": 38.92345,
-   "lon": -77.02569,
-   "smd": "1B03"
+   "lat": 38.91506,
+   "lon": -77.02262,
+   "smd": "1B02"
   },
   {
    "id": "SOL2602707",
@@ -1825,69 +1825,17 @@
    "smd": "1B02"
   },
   {
-   "id": "BP2700211",
-   "issued": "2026-10-14T04:00:00Z",
-   "group": "Minor work",
-   "type": "POST CARD",
-   "subtype": "BUILDING",
-   "address": "2250 8TH ST NW 20001",
+   "id": "P2700470",
+   "issued": "2026-10-15T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "2570 SHERMAN AVE NW 20001",
    "work": "",
-   "zoning": "MU-10",
-   "lat": 38.91985,
-   "lon": -77.02339,
-   "smd": "1E07"
-  },
-  {
-   "id": "B2607622",
-   "issued": "2026-10-14T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "601 FAIRMONT ST NW 20059",
-   "work": "COOK HALL IS UNDERGOING LIMITED ARCHITECTURAL MODIFICATIONS TO SUPPORT MECHANICAL SYSTEM UPGRADES. WORK INCLUDES NEW SHAFTS FOR DUCTWORK AND PIPING, LOCALIZED DEMOLITION, AND\r\nPATCHING/RESTORATION OF AFFECTED FINISHES. NO CHANGES TO USE, LAYOUT, OR OCCUPANCY ARE PROPOSED",
-   "zoning": "RA-2",
-   "lat": 38.92518,
-   "lon": -77.02171,
-   "smd": "1E05"
-  },
-  {
-   "id": "B2607189",
-   "issued": "2026-10-14T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "2250 8TH ST NW 20001",
-   "work": "(1) 2x Wide Trailer",
-   "zoning": "MU-10",
-   "lat": 38.91985,
-   "lon": -77.02339,
-   "smd": "1E07"
-  },
-  {
-   "id": "FD2300018-EXT-3",
-   "issued": "2026-10-14T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "PERMIT",
-   "address": "2250 8TH ST NW",
-   "work": "",
-   "zoning": "MU-10",
-   "lat": 38.91985,
-   "lon": -77.02339,
-   "smd": "1E07"
-  },
-  {
-   "id": "HO2700088",
-   "issued": "2026-10-14T04:00:00Z",
-   "group": "Home businesses",
-   "type": "HOME OCCUPATION",
-   "subtype": "NA",
-   "address": "929 FLORIDA AVE NW 5002 20001",
-   "work": "",
-   "zoning": "MU-10",
-   "lat": 38.9187,
-   "lon": -77.0242,
-   "smd": "1B04"
+   "zoning": "RF-1",
+   "lat": 38.92345,
+   "lon": -77.02569,
+   "smd": "1B03"
   },
   {
    "id": "E2601864-EXT-1",
@@ -1916,6 +1864,58 @@
    "smd": "1E05"
   },
   {
+   "id": "FD2300018-EXT-3",
+   "issued": "2026-10-14T04:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "PERMIT",
+   "address": "2250 8TH ST NW",
+   "work": "",
+   "zoning": "MU-10",
+   "lat": 38.91985,
+   "lon": -77.02339,
+   "smd": "1E07"
+  },
+  {
+   "id": "BP2700211",
+   "issued": "2026-10-14T04:00:00Z",
+   "group": "Minor work",
+   "type": "POST CARD",
+   "subtype": "BUILDING",
+   "address": "2250 8TH ST NW 20001",
+   "work": "",
+   "zoning": "MU-10",
+   "lat": 38.91985,
+   "lon": -77.02339,
+   "smd": "1E07"
+  },
+  {
+   "id": "B2607622",
+   "issued": "2026-10-14T04:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "601 FAIRMONT ST NW 20059",
+   "work": "COOK HALL IS UNDERGOING LIMITED ARCHITECTURAL MODIFICATIONS TO SUPPORT MECHANICAL SYSTEM UPGRADES. WORK INCLUDES NEW SHAFTS FOR DUCTWORK AND PIPING, LOCALIZED DEMOLITION, AND\r\nPATCHING/RESTORATION OF AFFECTED FINISHES. NO CHANGES TO USE, LAYOUT, OR OCCUPANCY ARE PROPOSED",
+   "zoning": "RA-2",
+   "lat": 38.92518,
+   "lon": -77.02171,
+   "smd": "1E05"
+  },
+  {
+   "id": "HO2700088",
+   "issued": "2026-10-14T04:00:00Z",
+   "group": "Home businesses",
+   "type": "HOME OCCUPATION",
+   "subtype": "NA",
+   "address": "929 FLORIDA AVE NW 5002 20001",
+   "work": "",
+   "zoning": "MU-10",
+   "lat": 38.9187,
+   "lon": -77.0242,
+   "smd": "1B04"
+  },
+  {
    "id": "SH2300044-EXT-3",
    "issued": "2026-10-14T04:00:00Z",
    "group": "Renovation & repair",
@@ -1929,30 +1929,17 @@
    "smd": "1E07"
   },
   {
-   "id": "M2700157",
-   "issued": "2026-10-13T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "MECHANICAL",
-   "address": "1405 W ST NW 203 20009",
-   "work": "",
-   "zoning": "ARTS-3",
-   "lat": 38.91932,
-   "lon": -77.03247,
-   "smd": "1B05"
-  },
-  {
-   "id": "P2700333",
-   "issued": "2026-10-13T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "1509 S ST NW 20009",
-   "work": "",
-   "zoning": "RF-1/DC",
-   "lat": 38.91428,
-   "lon": -77.03504,
-   "smd": "2B09"
+   "id": "B2607189",
+   "issued": "2026-10-14T04:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "2250 8TH ST NW 20001",
+   "work": "(1) 2x Wide Trailer",
+   "zoning": "MU-10",
+   "lat": 38.91985,
+   "lon": -77.02339,
+   "smd": "1E07"
   },
   {
    "id": "B2608113",
@@ -1968,6 +1955,32 @@
    "smd": "1B02"
   },
   {
+   "id": "P2700349",
+   "issued": "2026-10-13T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "1904 14TH ST NW 20009",
+   "work": "",
+   "zoning": "ARTS-3",
+   "lat": 38.91576,
+   "lon": -77.03218,
+   "smd": "2F01"
+  },
+  {
+   "id": "P2700333",
+   "issued": "2026-10-13T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "1509 S ST NW 20009",
+   "work": "",
+   "zoning": "RF-1/DC",
+   "lat": 38.91428,
+   "lon": -77.03504,
+   "smd": "2B09"
+  },
+  {
    "id": "B2609132",
    "issued": "2026-10-13T04:00:00Z",
    "group": "Additions",
@@ -1981,17 +1994,17 @@
    "smd": "2F01"
   },
   {
-   "id": "P2700349",
+   "id": "M2700157",
    "issued": "2026-10-13T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
    "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "1904 14TH ST NW 20009",
+   "subtype": "MECHANICAL",
+   "address": "1405 W ST NW 203 20009",
    "work": "",
    "zoning": "ARTS-3",
-   "lat": 38.91576,
-   "lon": -77.03218,
-   "smd": "2F01"
+   "lat": 38.91932,
+   "lon": -77.03247,
+   "smd": "1B05"
   },
   {
    "id": "B2606406",
@@ -2033,17 +2046,17 @@
    "smd": "2F01"
   },
   {
-   "id": "E2700259",
+   "id": "M2700088",
    "issued": "2026-10-07T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
    "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "1225 T ST NW 20009",
+   "subtype": "MECHANICAL",
+   "address": "618 HARVARD ST NW 20001",
    "work": "",
    "zoning": "RF-1",
-   "lat": 38.9158,
-   "lon": -77.02902,
-   "smd": "1B08"
+   "lat": 38.92722,
+   "lon": -77.02227,
+   "smd": "1E05"
   },
   {
    "id": "E2700265",
@@ -2059,30 +2072,17 @@
    "smd": "5E03"
   },
   {
-   "id": "P2700179",
+   "id": "B2608830",
    "issued": "2026-10-07T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "1920 14TH ST NW 20009",
-   "work": "",
-   "zoning": "ARTS-4",
-   "lat": 38.91632,
-   "lon": -77.03222,
-   "smd": "2F01"
-  },
-  {
-   "id": "M2700088",
-   "issued": "2026-10-07T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "MECHANICAL",
-   "address": "618 HARVARD ST NW 20001",
-   "work": "",
-   "zoning": "RF-1",
-   "lat": 38.92722,
-   "lon": -77.02227,
-   "smd": "1E05"
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "2250 11TH ST NW 20001",
+   "work": "Permit to repair / replace existing roof in like kind",
+   "zoning": "RA-2",
+   "lat": 38.92047,
+   "lon": -77.02733,
+   "smd": "1B03"
   },
   {
    "id": "M2700086",
@@ -2098,17 +2098,17 @@
    "smd": "1E05"
   },
   {
-   "id": "B2608830",
+   "id": "P2700179",
    "issued": "2026-10-07T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "2250 11TH ST NW 20001",
-   "work": "Permit to repair / replace existing roof in like kind",
-   "zoning": "RA-2",
-   "lat": 38.92047,
-   "lon": -77.02733,
-   "smd": "1B03"
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "1920 14TH ST NW 20009",
+   "work": "",
+   "zoning": "ARTS-4",
+   "lat": 38.91632,
+   "lon": -77.03222,
+   "smd": "2F01"
   },
   {
    "id": "P2700201",
@@ -2121,6 +2121,19 @@
    "zoning": "RF-1",
    "lat": 38.91523,
    "lon": -77.02988,
+   "smd": "1B08"
+  },
+  {
+   "id": "E2700259",
+   "issued": "2026-10-07T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "1225 T ST NW 20009",
+   "work": "",
+   "zoning": "RF-1",
+   "lat": 38.9158,
+   "lon": -77.02902,
    "smd": "1B08"
   },
   {
@@ -2177,138 +2190,128 @@
   }
  ],
  "requests": {
-  "total": 2839,
-  "previous_total": 2875,
+  "total": 2802,
+  "previous_total": 2892,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 394,
-    "previous": 337
+    "count": 379,
+    "previous": 352
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 289,
-    "previous": 324
+    "count": 283,
+    "previous": 329
    },
    {
     "type": "Bulk Collection",
-    "count": 252,
-    "previous": 237
+    "count": 244,
+    "previous": 248
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 200,
-    "previous": 201
+    "count": 213,
+    "previous": 214
    },
    {
     "type": "Illegal Dumping",
-    "count": 172,
-    "previous": 203
+    "count": 161,
+    "previous": 201
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 151,
-    "previous": 114
+    "count": 147,
+    "previous": 116
    },
    {
     "type": "Public Space Litter Can-Collection",
-    "count": 111,
-    "previous": 74
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "count": 107,
-    "previous": 126
+    "count": 114,
+    "previous": 68
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 106,
-    "previous": 75
+    "count": 108,
+    "previous": 78
+   },
+   {
+    "type": "Sanitation Enforcement",
+    "count": 105,
+    "previous": 126
    },
    {
     "type": "Residential Parking Permit Violation",
-    "count": 100,
-    "previous": 43
+    "count": 103,
+    "previous": 45
    },
    {
     "type": "Dead Animal Collection",
-    "count": 84,
-    "previous": 67
+    "count": 86,
+    "previous": 75
    },
    {
     "type": "Roadway Signs",
-    "count": 71,
+    "count": 72,
     "previous": 48
    },
    {
+    "type": "Sidewalk Repair",
+    "count": 57,
+    "previous": 59
+   },
+   {
     "type": "Out of State Parking Violation (ROSA)",
-    "count": 64,
-    "previous": 38
+    "count": 57,
+    "previous": 39
    },
    {
     "type": "Graffiti Removal",
-    "count": 58,
-    "previous": 139
-   },
-   {
-    "type": "Sidewalk Repair",
-    "count": 52,
-    "previous": 73
-   },
-   {
-    "type": "Container Removal",
-    "count": 44,
-    "previous": 30
+    "count": 55,
+    "previous": 143
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 44,
-    "previous": 63
+    "count": 46,
+    "previous": 62
+   },
+   {
+    "type": "Container Removal",
+    "count": 43,
+    "previous": 31
    },
    {
     "type": "Trash Cart - Delivery",
-    "count": 43,
-    "previous": 58
+    "count": 40,
+    "previous": 55
    },
    {
     "type": "Trash Cart Repair",
-    "count": 36,
+    "count": 39,
     "previous": 12
    },
    {
-    "type": "Recycling Collection - Missed",
+    "type": "DMV - Drivers License/ID Issues",
     "count": 29,
-    "previous": 19
+    "previous": 16
    },
    {
-    "type": "DMV - Drivers License/ID Issues",
+    "type": "Recycling Collection - Missed",
     "count": 28,
     "previous": 19
    },
    {
-    "type": "Tree Inspection",
-    "count": 26,
-    "previous": 42
+    "type": "Rat Replacement Containers",
+    "count": 24,
+    "previous": 35
    },
    {
     "type": "Streetlight Repair Investigation",
-    "count": 26,
-    "previous": 11
+    "count": 24,
+    "previous": 10
    },
    {
-    "type": "Recycling Cart Delivery",
+    "type": "Tree Inspection",
     "count": 23,
-    "previous": 16
-   },
-   {
-    "type": "Rat Replacement Containers",
-    "count": 21,
     "previous": 37
-   },
-   {
-    "type": "Tree Pruning",
-    "count": 21,
-    "previous": 42
    },
    {
     "type": "DMV - Vehicle Registration Issues",
@@ -2317,8 +2320,18 @@
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 19,
+    "count": 20,
     "previous": 1
+   },
+   {
+    "type": "Recycling Cart Delivery",
+    "count": 19,
+    "previous": 17
+   },
+   {
+    "type": "Tree Pruning",
+    "count": 18,
+    "previous": 41
    },
    {
     "type": "DOB - Illegal Construction",
@@ -2328,12 +2341,17 @@
    {
     "type": "DC Government Information",
     "count": 15,
-    "previous": 16
+    "previous": 19
    },
    {
     "type": "DGS - Playground Repair",
+    "count": 14,
+    "previous": 9
+   },
+   {
+    "type": "Public Space Inspection",
     "count": 13,
-    "previous": 11
+    "previous": 12
    },
    {
     "type": "Abandoned Bicycle",
@@ -2346,49 +2364,39 @@
     "previous": 0
    },
    {
-    "type": "Public Space Inspection",
-    "count": 12,
-    "previous": 13
+    "type": "Recycling Cart - Repair",
+    "count": 11,
+    "previous": 8
    },
    {
-    "type": "Illegal Poster",
+    "type": "DOB - Vacant Private Property Inspection",
     "count": 11,
-    "previous": 11
+    "previous": 33
    },
    {
     "type": "Roadway Repair",
-    "count": 10,
+    "count": 9,
     "previous": 2
    },
    {
+    "type": "Illegal Poster",
+    "count": 9,
+    "previous": 10
+   },
+   {
     "type": "Tree Planting",
-    "count": 10,
+    "count": 9,
     "previous": 38
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
-    "count": 10,
+    "count": 8,
     "previous": 11
-   },
-   {
-    "type": "DOB - Vacant Private Property Inspection",
-    "count": 10,
-    "previous": 33
-   },
-   {
-    "type": "Traffic Safety Input",
-    "count": 8,
-    "previous": 10
-   },
-   {
-    "type": "DMV - Online Processing Issues",
-    "count": 8,
-    "previous": 0
    },
    {
     "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
     "count": 8,
-    "previous": 10
+    "previous": 9
    },
    {
     "type": "DGS-Exterior Lighting",
@@ -2396,14 +2404,29 @@
     "previous": 0
    },
    {
-    "type": "Recycling Cart - Repair",
-    "count": 6,
-    "previous": 8
+    "type": "Parking Meter Repair",
+    "count": 8,
+    "previous": 4
    },
    {
-    "type": "Roadway Markings / Pylons",
+    "type": "DMV - Online Processing Issues",
+    "count": 7,
+    "previous": 0
+   },
+   {
+    "type": "Traffic Safety Input",
     "count": 6,
-    "previous": 15
+    "previous": 11
+   },
+   {
+    "type": "Tree Removal",
+    "count": 6,
+    "previous": 57
+   },
+   {
+    "type": "Emergency No-Parking Verification",
+    "count": 6,
+    "previous": 0
    },
    {
     "type": "Grass Mowing Services Missed (DGS)",
@@ -2413,22 +2436,12 @@
    {
     "type": "DGS - Overflowing Recycling Can",
     "count": 6,
-    "previous": 6
+    "previous": 7
    },
    {
-    "type": "Parking Meter Repair",
-    "count": 6,
-    "previous": 4
-   },
-   {
-    "type": "Tree Removal",
+    "type": "Roadway Markings / Pylons",
     "count": 5,
-    "previous": 56
-   },
-   {
-    "type": "Emergency No-Parking Verification",
-    "count": 5,
-    "previous": 0
+    "previous": 14
    },
    {
     "type": "Alley Repair",
@@ -2437,18 +2450,13 @@
    },
    {
     "type": "Signed Street Sweeping Missed",
-    "count": 3,
-    "previous": 4
+    "count": 4,
+    "previous": 2
    },
    {
     "type": "Supercan - Delivery",
     "count": 3,
     "previous": 0
-   },
-   {
-    "type": "Alley Cleaning",
-    "count": 2,
-    "previous": 32
    },
    {
     "type": "DOEE - General Air Quality Concerns",
@@ -2463,7 +2471,7 @@
    {
     "type": "DC How Am I Driving?",
     "count": 2,
-    "previous": 8
+    "previous": 7
    },
    {
     "type": "DMV - Vehicle Title Issues",
@@ -2473,7 +2481,7 @@
    {
     "type": "Public Space Litter Can Repair",
     "count": 2,
-    "previous": 7
+    "previous": 6
    },
    {
     "type": "Pet Waste Complaint",
@@ -2481,43 +2489,43 @@
     "previous": 2
    },
    {
-    "type": "Public Space Litter Can Installation",
-    "count": 2,
-    "previous": 0
-   },
-   {
-    "type": "311Force Reported Issues",
-    "count": 2,
-    "previous": 0
-   },
-   {
-    "type": "DMV - Driver and Vehicle Services Refund",
-    "count": 2,
-    "previous": 0
-   },
-   {
     "type": "Missed Curbside Compost Collection",
     "count": 2,
-    "previous": 15
+    "previous": 16
    },
    {
     "type": "Bicycle Services",
     "count": 2,
-    "previous": 12
+    "previous": 10
    },
    {
     "type": "OCTFME - Down Cable Wires",
     "count": 2,
-    "previous": 6
-   },
-   {
-    "type": "DMV - Forms, Applications, and Manuals Request",
-    "count": 2,
-    "previous": 2
+    "previous": 4
    },
    {
     "type": "Bus Stop Issues",
     "count": 2,
+    "previous": 2
+   },
+   {
+    "type": "Public Space Litter Can Installation",
+    "count": 1,
+    "previous": 0
+   },
+   {
+    "type": "311Force Reported Issues",
+    "count": 1,
+    "previous": 0
+   },
+   {
+    "type": "DMV - Driver and Vehicle Services Refund",
+    "count": 1,
+    "previous": 0
+   },
+   {
+    "type": "DMV - Forms, Applications, and Manuals Request",
+    "count": 1,
     "previous": 2
    },
    {
@@ -2531,14 +2539,304 @@
     "previous": 0
    }
   ],
-  "open": 561,
+  "open": 559,
   "recent": [
+   {
+    "type": "Roadway Signs",
+    "agency": "DDOT",
+    "added": "2026-11-04T19:42:21Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2100 block of 2ND STREET NW",
+    "lat": 38.92,
+    "lon": -77.015
+   },
+   {
+    "type": "Roadway Signs",
+    "agency": "DDOT",
+    "added": "2026-11-04T19:36:03Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "2100 block of 2ND STREET NW",
+    "lat": 38.92,
+    "lon": -77.015
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-04T19:18:41Z",
+    "resolved": "2026-11-04T19:18:41Z",
+    "status": "Closed",
+    "block": "900 block of FLORIDA AVENUE NW",
+    "lat": 38.92,
+    "lon": -77.025
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "agency": "DMV",
+    "added": "2026-11-04T19:15:25Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1900 block of 9 1/2 STREET NW",
+    "lat": 38.917,
+    "lon": -77.025
+   },
+   {
+    "type": "Recycling Cart - Repair",
+    "agency": "DPW",
+    "added": "2026-11-04T19:08:44Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "900 block of T STREET NW",
+    "lat": 38.915,
+    "lon": -77.025
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "agency": "DMV",
+    "added": "2026-11-04T18:34:33Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2300 block of 11TH STREET NW",
+    "lat": 38.921,
+    "lon": -77.026
+   },
+   {
+    "type": "Rat Replacement Containers",
+    "agency": "DPW",
+    "added": "2026-11-04T18:22:59Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "500 block of HARVARD STREET NW",
+    "lat": 38.927,
+    "lon": -77.022
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-04T18:11:15Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "600 block of FLORIDA AVENUE NW",
+    "lat": 38.916,
+    "lon": -77.021
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T17:48:01Z",
+    "resolved": "2026-11-04T17:50:03Z",
+    "status": "Closed",
+    "block": "1500 block of S STREET NW",
+    "lat": 38.914,
+    "lon": -77.035
+   },
+   {
+    "type": "Sidewalk Repair",
+    "agency": "DDOT",
+    "added": "2026-11-04T17:34:47Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "2000 block of 11TH STREET NW",
+    "lat": 38.918,
+    "lon": -77.027
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "agency": "DOH",
+    "added": "2026-11-04T17:30:28Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1900 block of 2ND STREET NW",
+    "lat": 38.917,
+    "lon": -77.015
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-04T17:22:25Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1000 block of GIRARD STREET NW",
+    "lat": 38.926,
+    "lon": -77.026
+   },
+   {
+    "type": "Container Removal",
+    "agency": "DPW",
+    "added": "2026-11-04T16:51:28Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2000 block of 4TH STREET NW",
+    "lat": 38.918,
+    "lon": -77.017
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-04T16:46:48Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1300 block of WALLACH PLACE NW",
+    "lat": 38.916,
+    "lon": -77.03
+   },
+   {
+    "type": "Dead Animal Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T16:19:59Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1900 block of 12TH STREET NW",
+    "lat": 38.916,
+    "lon": -77.028
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-04T16:08:29Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "700 block of GIRARD STREET NW",
+    "lat": 38.926,
+    "lon": -77.024
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T16:06:45Z",
+    "resolved": "2026-11-04T16:45:06Z",
+    "status": "Closed",
+    "block": "2000 block of 15TH STREET NW",
+    "lat": 38.917,
+    "lon": -77.034
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T15:53:05Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1500 block of S STREET NW",
+    "lat": 38.914,
+    "lon": -77.035
+   },
+   {
+    "type": "Trash Cart Repair",
+    "agency": "DPW",
+    "added": "2026-11-04T15:40:40Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1900 block of 4TH STREET NW",
+    "lat": 38.916,
+    "lon": -77.018
+   },
+   {
+    "type": "Container Removal",
+    "agency": "DPW",
+    "added": "2026-11-04T15:02:15Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1900 block of 6TH STREET NW",
+    "lat": 38.916,
+    "lon": -77.02
+   },
+   {
+    "type": "Graffiti Removal",
+    "agency": "DPW",
+    "added": "2026-11-04T14:58:13Z",
+    "resolved": null,
+    "status": "Open (Duplicate)",
+    "block": "700 block of FLORIDA AVENUE NW",
+    "lat": 38.917,
+    "lon": -77.022
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "agency": "DOH",
+    "added": "2026-11-04T14:56:40Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1100 block of S STREET NW",
+    "lat": 38.914,
+    "lon": -77.027
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T14:27:27Z",
+    "resolved": "2026-11-04T14:54:06Z",
+    "status": "Closed",
+    "block": "1500 block of CAROLINE STREET NW",
+    "lat": 38.916,
+    "lon": -77.035
+   },
+   {
+    "type": "Recycling Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-04T14:19:10Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "700 block of GRESHAM PLACE NW",
+    "lat": 38.927,
+    "lon": -77.024
+   },
+   {
+    "type": "Trash Cart - Delivery",
+    "agency": "DPW",
+    "added": "2026-11-04T14:08:43Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1900 block of 3RD STREET NW",
+    "lat": 38.917,
+    "lon": -77.016
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-04T13:55:42Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "700 block of GIRARD STREET NW",
+    "lat": 38.926,
+    "lon": -77.024
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T13:51:00Z",
+    "resolved": "2026-11-04T14:54:13Z",
+    "status": "Closed",
+    "block": "2000 block of 10TH STREET NW",
+    "lat": 38.918,
+    "lon": -77.026
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "agency": "DOH",
+    "added": "2026-11-04T12:02:55Z",
+    "resolved": "2026-11-04T16:55:15Z",
+    "status": "Closed",
+    "block": "2200 block of 12TH STREET NW",
+    "lat": 38.921,
+    "lon": -77.028
+   },
+   {
+    "type": "DOB - Illegal Construction",
+    "agency": "DOB",
+    "added": "2026-11-04T06:15:31Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1300 block of T STREET NW",
+    "lat": 38.915,
+    "lon": -77.03
+   },
    {
     "type": "DC Health Rodent & Vector Control",
     "agency": "DOH",
     "added": "2026-11-04T03:05:56Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-04T15:57:04Z",
+    "status": "Closed",
     "block": "2700 block of SHERMAN AVENUE NW",
     "lat": 38.926,
     "lon": -77.025
@@ -2557,8 +2855,8 @@
     "type": "Out of State Parking Violation (ROSA)",
     "agency": "DPW",
     "added": "2026-11-04T02:16:49Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-04T07:41:19Z",
+    "status": "Closed",
     "block": "700 block of EUCLID STREET NW",
     "lat": 38.924,
     "lon": -77.024
@@ -2567,8 +2865,8 @@
     "type": "Out of State Parking Violation (ROSA)",
     "agency": "DPW",
     "added": "2026-11-04T02:10:45Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-04T07:38:06Z",
+    "status": "Closed",
     "block": "2000 block of 13TH STREET NW",
     "lat": 38.918,
     "lon": -77.03
@@ -2577,8 +2875,8 @@
     "type": "Out of State Parking Violation (ROSA)",
     "agency": "DPW",
     "added": "2026-11-04T02:04:28Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-04T07:36:07Z",
+    "status": "Closed",
     "block": "500 block of GRESHAM PLACE NW",
     "lat": 38.927,
     "lon": -77.022
@@ -2587,8 +2885,8 @@
     "type": "Out of State Parking Violation (ROSA)",
     "agency": "DPW",
     "added": "2026-11-04T02:03:25Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-04T08:23:03Z",
+    "status": "Closed",
     "block": "2000 block of 15TH STREET NW",
     "lat": 38.918,
     "lon": -77.035
@@ -2677,8 +2975,8 @@
     "type": "Illegal Dumping",
     "agency": "DPW",
     "added": "2026-11-04T00:25:25Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-04T16:01:17Z",
+    "status": "Closed",
     "block": "2000 block of 14TH STREET NW",
     "lat": 38.917,
     "lon": -77.032
@@ -2742,317 +3040,27 @@
     "block": "1400 block of S STREET NW",
     "lat": 38.914,
     "lon": -77.033
-   },
-   {
-    "type": "Recycling Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-11-03T21:29:31Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "200 block of T STREET NW",
-    "lat": 38.916,
-    "lon": -77.015
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-11-03T21:21:12Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "200 block of T STREET NW",
-    "lat": 38.916,
-    "lon": -77.015
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-11-03T21:13:13Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1500 block of SWANN STREET NW",
-    "lat": 38.915,
-    "lon": -77.036
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-03T21:11:00Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "700 block of HARVARD STREET NW",
-    "lat": 38.927,
-    "lon": -77.024
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-11-03T20:57:56Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1900 block of 15TH STREET NW",
-    "lat": 38.916,
-    "lon": -77.035
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-11-03T20:55:44Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1400 block of SWANN STREET NW",
-    "lat": 38.915,
-    "lon": -77.034
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-11-03T20:48:12Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1500 block of T STREET NW",
-    "lat": 38.916,
-    "lon": -77.035
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-11-03T20:38:21Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1500 block of CAROLINE STREET NW",
-    "lat": 38.916,
-    "lon": -77.035
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-03T20:28:03Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "700 block of GRESHAM PLACE NW",
-    "lat": 38.927,
-    "lon": -77.025
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-03T20:24:34Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1400 block of FLORIDA AVENUE NW",
-    "lat": 38.92,
-    "lon": -77.033
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-11-03T20:23:12Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1400 block of SWANN STREET NW",
-    "lat": 38.915,
-    "lon": -77.033
-   },
-   {
-    "type": "Roadway Signs",
-    "agency": "DDOT",
-    "added": "2026-11-03T20:21:06Z",
-    "resolved": "2026-11-03T20:30:57Z",
-    "status": "Closed",
-    "block": "1800 block of 2ND STREET NW",
-    "lat": 38.914,
-    "lon": -77.014
-   },
-   {
-    "type": "Public Space Inspection",
-    "agency": "DDOT",
-    "added": "2026-11-03T20:07:51Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "600 block of GRESHAM PLACE NW",
-    "lat": 38.927,
-    "lon": -77.022
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-11-03T19:51:38Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1400 block of W STREET NW",
-    "lat": 38.919,
-    "lon": -77.033
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-11-03T19:50:35Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "800 block of EUCLID STREET NW",
-    "lat": 38.924,
-    "lon": -77.024
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-03T19:28:54Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1500 block of SWANN STREET NW",
-    "lat": 38.915,
-    "lon": -77.036
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-03T19:13:36Z",
-    "resolved": "2026-11-03T19:13:36Z",
-    "status": "Closed",
-    "block": "700 block of GRESHAM PLACE NW",
-    "lat": 38.926,
-    "lon": -77.023
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-11-03T19:09:48Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1000 block of GIRARD STREET NW",
-    "lat": 38.926,
-    "lon": -77.026
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-11-03T18:57:25Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1900 block of 3RD STREET NW",
-    "lat": 38.917,
-    "lon": -77.016
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-03T18:47:23Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1400 block of 1/2 FLORIDA AVENUE NW",
-    "lat": 38.92,
-    "lon": -77.033
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-03T18:16:19Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2000 block of 15TH STREET NW",
-    "lat": 38.918,
-    "lon": -77.035
-   },
-   {
-    "type": "DMV - Vehicle Registration Issues",
-    "agency": "DMV",
-    "added": "2026-11-03T18:14:47Z",
-    "resolved": "2026-11-03T21:30:23Z",
-    "status": "Closed",
-    "block": "1300 block of U STREET NW",
-    "lat": 38.917,
-    "lon": -77.03
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-03T18:00:13Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2000 block of 5TH STREET NW",
-    "lat": 38.917,
-    "lon": -77.019
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-03T17:12:59Z",
-    "resolved": "2026-11-03T17:12:59Z",
-    "status": "Closed",
-    "block": "1200 block of T STREET NW",
-    "lat": 38.915,
-    "lon": -77.029
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "agency": "DPW",
-    "added": "2026-11-03T17:07:40Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "300 block of OAKDALE PLACE NW",
-    "lat": 38.918,
-    "lon": -77.016
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-03T16:56:05Z",
-    "resolved": "2026-11-03T16:56:05Z",
-    "status": "Closed",
-    "block": "1900 block of 4TH STREET NW",
-    "lat": 38.916,
-    "lon": -77.018
-   },
-   {
-    "type": "DMV - Vehicle Registration Issues",
-    "agency": "DMV",
-    "added": "2026-11-03T16:46:59Z",
-    "resolved": "2026-11-03T20:48:47Z",
-    "status": "Closed",
-    "block": "200 block of V STREET NW",
-    "lat": 38.919,
-    "lon": -77.015
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-03T16:30:18Z",
-    "resolved": "2026-11-03T16:30:18Z",
-    "status": "Closed",
-    "block": "900 block of FLORIDA AVENUE NW",
-    "lat": 38.92,
-    "lon": -77.025
-   },
-   {
-    "type": "Residential Parking Permit Violation",
-    "agency": "DPW",
-    "added": "2026-11-03T16:25:18Z",
-    "resolved": "2026-11-03T16:27:41Z",
-    "status": "Closed",
-    "block": "1100 block of FLORIDA AVENUE NW",
-    "lat": 38.921,
-    "lon": -77.028
    }
   ]
  },
  "crime": {
-  "total": 120,
+  "total": 125,
   "previous_total": 118,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
-    "count": 55,
+    "count": 57,
     "previous": 67
    },
    {
     "offense": "THEFT F/AUTO",
-    "count": 40,
-    "previous": 33
+    "count": 42,
+    "previous": 34
    },
    {
     "offense": "ROBBERY",
-    "count": 9,
-    "previous": 5
+    "count": 10,
+    "previous": 4
    },
    {
     "offense": "MOTOR VEHICLE THEFT",
@@ -3061,12 +3069,12 @@
    },
    {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
-    "count": 7,
+    "count": 8,
     "previous": 4
    },
    {
     "offense": "BURGLARY",
-    "count": 1,
+    "count": 0,
     "previous": 2
    }
   ],
@@ -3148,7 +3156,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3406,7 +3414,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3427,7 +3435,7 @@
   ],
   "curb": {
    "active_this_week": 230,
-   "starting_next_7d": 47,
+   "starting_next_7d": 45,
    "reserved_ft": 29546,
    "long_running_90d": 55,
    "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
@@ -3458,22 +3466,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Construction staging",
-     "block": "700 block of Euclid Street NW",
-     "start": "2026-11-04",
-     "end": "2026-12-03",
-     "ft": 286,
-     "hours": ""
-    },
-    {
-     "type": "Lead pipe replacement",
-     "block": "2000 block of Vermont Avenue NW",
-     "start": "2026-11-04",
-     "end": "2027-01-02",
-     "ft": 242,
-     "hours": "9:30 am\u20133:30 pm"
-    },
     {
      "type": "Construction staging",
      "block": "1800 block of 9th Street NW",
@@ -3777,6 +3769,22 @@
      "end": "2026-12-10",
      "ft": 154,
      "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "2700 block of Sherman Avenue NW",
+     "start": "2026-11-11",
+     "end": "2026-12-10",
+     "ft": 264,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "2800 block of Sherman Avenue NW",
+     "start": "2026-11-11",
+     "end": "2026-12-10",
+     "ft": 242,
+     "hours": "9:30 am\u20133:30 pm"
     }
    ]
   },
@@ -3861,55 +3869,55 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 1793
+    "closed_n": 1794
    },
    {
     "type": "Bulk Collection",
     "median_days": 7.78,
     "city_median_days": 6.92,
-    "closed_n": 1565
+    "closed_n": 1566
    },
    {
     "type": "Trash Collection - Missed",
-    "median_days": 4.79,
-    "city_median_days": 4.14,
-    "closed_n": 1061
+    "median_days": 4.75,
+    "city_median_days": 4.08,
+    "closed_n": 1055
    },
    {
     "type": "Illegal Dumping",
     "median_days": 2.9,
     "city_median_days": 4.04,
-    "closed_n": 859
+    "closed_n": 861
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "median_days": 2.63,
+    "median_days": 2.62,
     "city_median_days": 2.8,
-    "closed_n": 828
+    "closed_n": 832
    },
    {
     "type": "Scheduled Yard Waste",
-    "median_days": 13.07,
-    "city_median_days": 9.71,
-    "closed_n": 737
+    "median_days": 13.05,
+    "city_median_days": 9.67,
+    "closed_n": 735
    },
    {
     "type": "Sanitation Enforcement",
-    "median_days": 1.04,
+    "median_days": 1.03,
     "city_median_days": 1.1,
-    "closed_n": 577
+    "closed_n": 582
    },
    {
     "type": "Graffiti Removal",
     "median_days": 3.21,
-    "city_median_days": 3.96,
-    "closed_n": 516
+    "city_median_days": 4.03,
+    "closed_n": 515
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4077,7 +4085,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4181,7 +4189,7 @@
     "name": "PoPville",
     "url": "https://www.popville.com/",
     "state": "ok",
-    "matched": 7,
+    "matched": 6,
     "fetched": 3
    },
    {
@@ -4850,7 +4858,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
@@ -4904,7 +4912,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -23209,7 +23217,7 @@
     "trash_day": "Tuesday/Friday",
     "recycling_day": "Tuesday",
     "leaf_zone": "1D",
-    "leaf_done": false,
+    "leaf_done": true,
     "schools": {
      "elementary": "dcps_224",
      "middle": "dcps_454",
@@ -24683,7 +24691,7 @@
     "trash_day": "Tuesday/Friday",
     "recycling_day": "Tuesday",
     "leaf_zone": "1D",
-    "leaf_done": false,
+    "leaf_done": true,
     "schools": {
      "elementary": "dcps_224",
      "middle": "dcps_454",
@@ -24726,7 +24734,7 @@
     "trash_day": "Tuesday/Friday",
     "recycling_day": "Tuesday",
     "leaf_zone": "1D",
-    "leaf_done": false,
+    "leaf_done": true,
     "schools": {
      "elementary": "dcps_224",
      "middle": "dcps_454",
@@ -24769,7 +24777,7 @@
     "trash_day": "Tuesday/Friday",
     "recycling_day": "Tuesday",
     "leaf_zone": "1D",
-    "leaf_done": false,
+    "leaf_done": true,
     "schools": {
      "elementary": "dcps_239",
      "middle": "dcps_454",
@@ -27459,7 +27467,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

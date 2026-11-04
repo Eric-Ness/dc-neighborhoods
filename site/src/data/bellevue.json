@@ -1,7 +1,7 @@
 {
  "slug": "bellevue",
  "name": "Bellevue",
- "generated_at": "2026-11-04T18:44:54Z",
+ "generated_at": "2026-11-04T19:08:57Z",
  "boundary": {
   "source": "ANC single-member districts 8D01, 8D03, 8D05, 8D06, 8E07, 8E08 and 8E09, the homes in DC's BELLEVUE planning area (Open Data DC). 8D04 is left out: it is mostly the empty land at DC's southern tip.",
   "rings": [
@@ -8481,17 +8481,17 @@
   }
  ],
  "requests": {
-  "total": 636,
+  "total": 640,
   "previous_total": 657,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 115,
+    "count": 116,
     "previous": 126
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 106,
+    "count": 110,
     "previous": 9
    },
    {
@@ -8505,14 +8505,14 @@
     "previous": 29
    },
    {
-    "type": "Illegal Dumping",
+    "type": "DC Government Information",
     "count": 34,
-    "previous": 35
+    "previous": 30
    },
    {
-    "type": "DC Government Information",
-    "count": 33,
-    "previous": 31
+    "type": "Illegal Dumping",
+    "count": 34,
+    "previous": 34
    },
    {
     "type": "Scheduled Yard Waste",
@@ -8535,18 +8535,18 @@
     "previous": 24
    },
    {
-    "type": "DMV - Drivers License/ID Issues",
-    "count": 17,
-    "previous": 22
-   },
-   {
     "type": "Recycling Collection - Missed",
     "count": 17,
     "previous": 5
    },
    {
+    "type": "DMV - Drivers License/ID Issues",
+    "count": 14,
+    "previous": 25
+   },
+   {
     "type": "Dead Animal Collection",
-    "count": 12,
+    "count": 13,
     "previous": 5
    },
    {
@@ -8562,7 +8562,7 @@
    {
     "type": "Trash Collection - Missed",
     "count": 9,
-    "previous": 24
+    "previous": 23
    },
    {
     "type": "Roadway Signs",
@@ -8690,8 +8690,58 @@
     "previous": 0
    }
   ],
-  "open": 75,
+  "open": 76,
   "recent": [
+   {
+    "type": "Dead Animal Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T20:09:01Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "600 block of ATLANTIC STREET SE",
+    "lat": 38.831,
+    "lon": -76.997
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-04T19:44:42Z",
+    "resolved": "2026-11-04T19:44:42Z",
+    "status": "Closed",
+    "block": "Unit block of MISSISSIPPI AVENUE SE",
+    "lat": 38.832,
+    "lon": -77.007
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-04T19:33:06Z",
+    "resolved": "2026-11-04T19:33:06Z",
+    "status": "Closed",
+    "block": "4600 block of MARTIN LUTHER KING JR AVENUE SW",
+    "lat": 38.822,
+    "lon": -77.01
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-04T19:14:36Z",
+    "resolved": "2026-11-04T19:14:36Z",
+    "status": "Closed",
+    "block": "4300 block of 3RD STREET SE",
+    "lat": 38.828,
+    "lon": -77.003
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T18:48:34Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "500 block of CHESAPEAKE STREET SE",
+    "lat": 38.829,
+    "lon": -76.999
+   },
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
@@ -8756,8 +8806,8 @@
     "type": "Sanitation Enforcement",
     "agency": "DPW",
     "added": "2026-11-04T16:47:24Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-04T19:09:04Z",
+    "status": "Closed",
     "block": "3700 block of MARTIN LUTHER KING JR AVENUE SE",
     "lat": 38.836,
     "lon": -77.007
@@ -9141,56 +9191,6 @@
     "block": "800 block of MARJORIE COURT SE",
     "lat": 38.831,
     "lon": -76.992
-   },
-   {
-    "type": "Dead Animal Collection",
-    "agency": "DPW",
-    "added": "2026-11-01T17:40:36Z",
-    "resolved": "2026-11-02T19:43:58Z",
-    "status": "Closed",
-    "block": "600 block of ATLANTIC STREET SE",
-    "lat": 38.831,
-    "lon": -76.997
-   },
-   {
-    "type": "Dead Animal Collection",
-    "agency": "DPW",
-    "added": "2026-11-01T16:48:01Z",
-    "resolved": "2026-11-02T19:43:53Z",
-    "status": "Closed",
-    "block": "Unit block of DANBURY STREET SE",
-    "lat": 38.828,
-    "lon": -77.006
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-01T15:02:29Z",
-    "resolved": "2026-11-02T18:30:06Z",
-    "status": "Closed",
-    "block": "4000 block of MARTIN LUTHER KING JR AVENUE SW",
-    "lat": 38.831,
-    "lon": -77.01
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-01T15:01:58Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3900 block of MARTIN LUTHER KING JR AVENUE SW",
-    "lat": 38.833,
-    "lon": -77.009
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-01T12:53:19Z",
-    "resolved": "2026-11-01T12:53:19Z",
-    "status": "Closed",
-    "block": "4200 block of 4TH STREET SE",
-    "lat": 38.827,
-    "lon": -77.0
    }
   ]
  },
@@ -9219,14 +9219,14 @@
     "previous": 7
    },
    {
-    "offense": "ROBBERY",
-    "count": 3,
-    "previous": 5
-   },
-   {
     "offense": "BURGLARY",
     "count": 3,
     "previous": 4
+   },
+   {
+    "offense": "ROBBERY",
+    "count": 3,
+    "previous": 5
    },
    {
     "offense": "SEX ABUSE",
@@ -9293,7 +9293,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T18:44:54Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -9471,7 +9471,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T18:44:54Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -9627,7 +9627,7 @@
     "type": "Sanitation Enforcement",
     "median_days": 1.86,
     "city_median_days": 1.1,
-    "closed_n": 220
+    "closed_n": 221
    },
    {
     "type": "Illegal Dumping",
@@ -9651,7 +9651,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T18:44:54Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -9774,7 +9774,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T18:44:54Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "archive_days": 180,
   "sources": [
    {
@@ -9905,9 +9905,9 @@
    {
     "name": "Greater Greater Washington",
     "url": "https://ggwash.org/",
-    "state": "ok",
+    "state": "error: HTTPError",
     "matched": 0,
-    "fetched": 1
+    "failed": 1
    },
    {
     "name": "Mayor's office",
@@ -9960,7 +9960,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T18:44:54Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
@@ -10036,7 +10036,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T18:44:54Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -27133,7 +27133,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T18:44:54Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

@@ -1,7 +1,7 @@
 {
  "slug": "vanness",
  "name": "Van Ness",
- "generated_at": "2026-11-04T09:19:23Z",
+ "generated_at": "2026-11-04T19:08:57Z",
  "boundary": {
   "source": "ANC single-member districts 3F01, 3F02 and 3F05 around the Van Ness-UDC Metro (Open Data DC). DC has no planning area named Van Ness.",
   "rings": [
@@ -3043,6 +3043,19 @@
  },
  "permits": [
   {
+   "id": "E2701168",
+   "issued": "2026-11-02T05:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "2916 CHESAPEAKE ST NW 20008",
+   "work": "",
+   "zoning": "R-1A/FH",
+   "lat": 38.95051,
+   "lon": -77.05862,
+   "smd": "3F02"
+  },
+  {
    "id": "E2701106",
    "issued": "2026-10-31T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -3069,6 +3082,19 @@
    "smd": "3F01"
   },
   {
+   "id": "E2701006",
+   "issued": "2026-10-29T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "4501 CONNECTICUT AVE NW 20008",
+   "work": "",
+   "zoning": "RA-4",
+   "lat": 38.9485,
+   "lon": -77.06519,
+   "smd": "3F02"
+  },
+  {
    "id": "B2600767",
    "issued": "2026-10-29T04:00:00Z",
    "group": "New construction",
@@ -3093,19 +3119,6 @@
    "lat": 38.94412,
    "lon": -77.0644,
    "smd": "3F05"
-  },
-  {
-   "id": "E2701006",
-   "issued": "2026-10-29T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "4501 CONNECTICUT AVE NW 20008",
-   "work": "",
-   "zoning": "RA-4",
-   "lat": 38.9485,
-   "lon": -77.06519,
-   "smd": "3F02"
   },
   {
    "id": "E2700899",
@@ -3173,19 +3186,6 @@
    "smd": "3F01"
   },
   {
-   "id": "P2700661",
-   "issued": "2026-10-22T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "2941 UPTON ST NW 20008",
-   "work": "",
-   "zoning": "R-2",
-   "lat": 38.94228,
-   "lon": -77.06061,
-   "smd": "3F05"
-  },
-  {
    "id": "HO2700148",
    "issued": "2026-10-22T04:00:00Z",
    "group": "Home businesses",
@@ -3197,6 +3197,19 @@
    "lat": 38.9485,
    "lon": -77.06519,
    "smd": "3F02"
+  },
+  {
+   "id": "P2700661",
+   "issued": "2026-10-22T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "2941 UPTON ST NW 20008",
+   "work": "",
+   "zoning": "R-2",
+   "lat": 38.94228,
+   "lon": -77.06061,
+   "smd": "3F05"
   },
   {
    "id": "E2700662",
@@ -3251,17 +3264,17 @@
    "smd": "3F02"
   },
   {
-   "id": "BP2700217",
+   "id": "F2600850",
    "issued": "2026-10-14T04:00:00Z",
-   "group": "Minor work",
-   "type": "POST CARD",
-   "subtype": "BUILDING",
-   "address": "4411 36TH ST NW 20008",
-   "work": "",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "FENCE",
+   "address": "4620 36TH ST NW 20008",
+   "work": "INSTALL FENCE",
    "zoning": "R-1B",
-   "lat": 38.94694,
-   "lon": -77.06964,
-   "smd": "3F05"
+   "lat": 38.95044,
+   "lon": -77.07009,
+   "smd": "3F01"
   },
   {
    "id": "E2700459",
@@ -3277,17 +3290,17 @@
    "smd": "3F05"
   },
   {
-   "id": "F2600850",
+   "id": "BP2700217",
    "issued": "2026-10-14T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "FENCE",
-   "address": "4620 36TH ST NW 20008",
-   "work": "INSTALL FENCE",
+   "group": "Minor work",
+   "type": "POST CARD",
+   "subtype": "BUILDING",
+   "address": "4411 36TH ST NW 20008",
+   "work": "",
    "zoning": "R-1B",
-   "lat": 38.95044,
-   "lon": -77.07009,
-   "smd": "3F01"
+   "lat": 38.94694,
+   "lon": -77.06964,
+   "smd": "3F05"
   },
   {
    "id": "B2607862",
@@ -3369,17 +3382,17 @@
   }
  ],
  "requests": {
-  "total": 216,
-  "previous_total": 235,
+  "total": 220,
+  "previous_total": 231,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
     "count": 47,
-    "previous": 62
+    "previous": 59
    },
    {
     "type": "Parking Enforcement",
-    "count": 40,
+    "count": 43,
     "previous": 35
    },
    {
@@ -3399,8 +3412,8 @@
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 8,
-    "previous": 1
+    "count": 7,
+    "previous": 2
    },
    {
     "type": "Recycling Collection - Missed",
@@ -3426,6 +3439,11 @@
     "type": "Out of State Parking Violation (ROSA)",
     "count": 3,
     "previous": 0
+   },
+   {
+    "type": "Abandoned Vehicle - On Public Property",
+    "count": 3,
+    "previous": 1
    },
    {
     "type": "Missed Curbside Compost Collection",
@@ -3458,11 +3476,6 @@
     "previous": 1
    },
    {
-    "type": "Abandoned Vehicle - On Public Property",
-    "count": 2,
-    "previous": 1
-   },
-   {
     "type": "Tree Inspection",
     "count": 2,
     "previous": 9
@@ -3484,6 +3497,11 @@
    },
    {
     "type": "Dead Animal Collection",
+    "count": 2,
+    "previous": 0
+   },
+   {
+    "type": "DOEE - LIHEAP",
     "count": 2,
     "previous": 0
    },
@@ -3533,11 +3551,6 @@
     "previous": 0
    },
    {
-    "type": "DOEE - LIHEAP",
-    "count": 1,
-    "previous": 0
-   },
-   {
     "type": "DOB - Vacant Private Property Inspection",
     "count": 1,
     "previous": 1
@@ -3583,8 +3596,68 @@
     "previous": 4
    }
   ],
-  "open": 68,
+  "open": 71,
   "recent": [
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T19:41:19Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2900 block of UPTON STREET NW",
+    "lat": 38.942,
+    "lon": -77.061
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T18:39:27Z",
+    "resolved": "2026-11-04T19:17:28Z",
+    "status": "Closed",
+    "block": "2900 block of UPTON STREET NW",
+    "lat": 38.942,
+    "lon": -77.061
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-04T17:34:38Z",
+    "resolved": "2026-11-04T17:34:38Z",
+    "status": "Closed",
+    "block": "4600 block of CONNECTICUT AVENUE NW",
+    "lat": 38.95,
+    "lon": -77.066
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T13:53:32Z",
+    "resolved": "2026-11-04T14:57:07Z",
+    "status": "Closed",
+    "block": "2900 block of UPTON STREET NW",
+    "lat": 38.942,
+    "lon": -77.061
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-04T11:44:40Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3600 block of VEAZEY STREET NW",
+    "lat": 38.944,
+    "lon": -77.071
+   },
+   {
+    "type": "Abandoned Vehicle - On Public Property",
+    "agency": "DPW",
+    "added": "2026-11-04T11:42:07Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "32ND STREET NW AND BRANDYWINE STREET NW",
+    "lat": 38.95,
+    "lon": -77.064
+   },
    {
     "type": "Trash Collection - Missed",
     "agency": "DPW",
@@ -4024,72 +4097,12 @@
     "block": "4200 block of CONNECTICUT AVENUE NW",
     "lat": 38.945,
     "lon": -77.065
-   },
-   {
-    "type": "Graffiti Removal",
-    "agency": "DPW",
-    "added": "2026-10-29T18:12:41Z",
-    "resolved": "2026-11-02T18:41:02Z",
-    "status": "Closed (Duplicate)",
-    "block": "4200 block of CONNECTICUT AVENUE NW",
-    "lat": 38.945,
-    "lon": -77.065
-   },
-   {
-    "type": "Graffiti Removal",
-    "agency": "DPW",
-    "added": "2026-10-29T18:11:08Z",
-    "resolved": null,
-    "status": "Open (Duplicate)",
-    "block": "4200 block of CONNECTICUT AVENUE NW",
-    "lat": 38.944,
-    "lon": -77.063
-   },
-   {
-    "type": "Graffiti Removal",
-    "agency": "DPW",
-    "added": "2026-10-29T17:38:00Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4200 block of CONNECTICUT AVENUE NW",
-    "lat": 38.943,
-    "lon": -77.063
-   },
-   {
-    "type": "DMV - Driver and Vehicle Services Refund",
-    "agency": "DMV",
-    "added": "2026-10-29T17:21:58Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4500 block of CONNECTICUT AVENUE NW",
-    "lat": 38.949,
-    "lon": -77.067
-   },
-   {
-    "type": "DMV - Vehicle Registration Issues",
-    "agency": "DMV",
-    "added": "2026-10-29T14:17:22Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4600 block of CONNECTICUT AVENUE NW",
-    "lat": 38.95,
-    "lon": -77.068
-   },
-   {
-    "type": "DMV - Adjudication Supervisor",
-    "agency": "DMV",
-    "added": "2026-10-29T14:09:42Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4600 block of CONNECTICUT AVENUE NW",
-    "lat": 38.95,
-    "lon": -77.066
    }
   ]
  },
  "crime": {
   "total": 12,
-  "previous_total": 12,
+  "previous_total": 10,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
@@ -4100,11 +4113,6 @@
     "offense": "THEFT F/AUTO",
     "count": 3,
     "previous": 1
-   },
-   {
-    "offense": "SEX ABUSE",
-    "count": 0,
-    "previous": 2
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -4137,7 +4145,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -4177,8 +4185,8 @@
   },
   "primary": "house",
   "house": {
-   "median_12mo": 1870000,
-   "count_12mo": 69,
+   "median_12mo": 1855000,
+   "count_12mo": 70,
    "median_prev_12mo": 1800000,
    "count_prev_12mo": 51
   },
@@ -4189,14 +4197,14 @@
    "count_prev_12mo": 44
   },
   "last_60d": {
-   "median": 1399250,
-   "count": 10,
-   "median_ppsf": 729,
-   "ppsf_count": 10
+   "median": 1368500,
+   "count": 11,
+   "median_ppsf": 717,
+   "ppsf_count": 11
   },
   "above_assessment_12mo": {
    "n": 66,
-   "of": 106
+   "of": 107
   },
   "by_month": [
    {
@@ -4251,8 +4259,8 @@
    },
    {
     "month": "2026-10",
-    "median": 1372500,
-    "count": 6
+    "median": 1315000,
+    "count": 7
    },
    {
     "month": "2026-11",
@@ -4267,9 +4275,18 @@
     "date": "2026-10-22",
     "price": 1430000,
     "kind": "house",
-    "beds": 3,
+    "beds": 4,
     "sqft": 1614,
     "assessed": 1337690
+   },
+   {
+    "address": "3728 Albemarle St NW",
+    "date": "2026-10-22",
+    "price": 1234000,
+    "kind": "house",
+    "beds": 3,
+    "sqft": 1720,
+    "assessed": 1297540
    },
    {
     "address": "4205 38th St NW",
@@ -4277,7 +4294,7 @@
     "price": 1315000,
     "kind": "house",
     "beds": 3,
-    "sqft": 1806,
+    "sqft": 1985,
     "assessed": 1368680
    },
    {
@@ -4400,7 +4417,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4421,7 +4438,7 @@
   ],
   "curb": {
    "active_this_week": 32,
-   "starting_next_7d": 5,
+   "starting_next_7d": 4,
    "reserved_ft": 5742,
    "long_running_90d": 7,
    "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
@@ -4452,14 +4469,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Moving & storage",
-     "block": "3500 block of Yuma Street NW",
-     "start": "2026-11-04",
-     "end": "2026-11-05",
-     "ft": 88,
-     "hours": ""
-    },
     {
      "type": "Dumpsters",
      "block": "3600 block of Alton Place NW",
@@ -4573,9 +4582,9 @@
   "service": [
    {
     "type": "Scheduled Yard Waste",
-    "median_days": 7.68,
-    "city_median_days": 9.71,
-    "closed_n": 458
+    "median_days": 7.67,
+    "city_median_days": 9.67,
+    "closed_n": 456
    },
    {
     "type": "Bulk Collection",
@@ -4587,18 +4596,18 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 353
+    "closed_n": 354
    },
    {
     "type": "Trash Collection - Missed",
     "median_days": 8.14,
-    "city_median_days": 4.14,
+    "city_median_days": 4.08,
     "closed_n": 195
    },
    {
     "type": "Recycling Collection - Missed",
     "median_days": 4.03,
-    "city_median_days": 5.03,
+    "city_median_days": 4.97,
     "closed_n": 189
    },
    {
@@ -4610,7 +4619,7 @@
    {
     "type": "Roadway Signs",
     "median_days": 41.07,
-    "city_median_days": 6.98,
+    "city_median_days": 7.0,
     "closed_n": 41
    },
    {
@@ -4623,7 +4632,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4769,7 +4778,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "archive_days": 180,
   "sources": [
    {
@@ -5108,7 +5117,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
@@ -5228,7 +5237,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -15248,7 +15257,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T09:19:23Z",
+  "generated_at": "2026-11-04T19:08:57Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
