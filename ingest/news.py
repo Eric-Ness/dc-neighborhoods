@@ -61,6 +61,7 @@ SHARED = [
     ("Washington City Paper", "https://washingtoncitypaper.com/feed/", "https://washingtoncitypaper.com/", "match"),
     ("WTOP", "https://wtop.com/local/dc/feed/", "https://wtop.com/", "match"),
     ("WAMU", "https://wamu.org/feed/", "https://wamu.org/", "match"),
+    ("DC News Now", "https://www.dcnewsnow.com/news/local-news/washington-dc/feed/", "https://www.dcnewsnow.com/", "match"),
     ("51st", "https://51st.news/rss/", "https://51st.news/", "match"),
     ("Greater Greater Washington", "https://ggwash.org/rss", "https://ggwash.org/", "match"),
     ("Mayor's office", "https://mayor.dc.gov/rss.xml", "https://mayor.dc.gov/newsroom", "match"),
