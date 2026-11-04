@@ -1,7 +1,7 @@
 {
  "slug": "lenfantplaza",
  "name": "L'Enfant Plaza",
- "generated_at": "2026-11-04T19:08:57Z",
+ "generated_at": "2026-11-04T22:06:56Z",
  "boundary": {
   "source": "Southwest Business Improvement District, which takes in L'Enfant Plaza and the federal blocks around it (Open Data DC). DC has no planning area for L'Enfant Plaza.",
   "rings": [
@@ -1325,17 +1325,17 @@
   }
  ],
  "requests": {
-  "total": 784,
-  "previous_total": 673,
+  "total": 780,
+  "previous_total": 678,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 210,
-    "previous": 205
+    "count": 207,
+    "previous": 206
    },
    {
     "type": "DMV - Drivers License/ID Issues",
-    "count": 98,
+    "count": 99,
     "previous": 94
    },
    {
@@ -1345,18 +1345,18 @@
    },
    {
     "type": "DMV - Vehicle Title Issues",
-    "count": 37,
-    "previous": 23
+    "count": 36,
+    "previous": 24
+   },
+   {
+    "type": "DMV - Vehicle Registration Issues",
+    "count": 35,
+    "previous": 29
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 34,
     "previous": 27
-   },
-   {
-    "type": "DMV - Vehicle Registration Issues",
-    "count": 34,
-    "previous": 29
    },
    {
     "type": "DMV - Ticket Payment Dispute",
@@ -1375,18 +1375,18 @@
    },
    {
     "type": "DMV - Refunds - Tickets",
-    "count": 19,
+    "count": 20,
     "previous": 17
+   },
+   {
+    "type": "DMV - Driver and Vehicle Services Refund",
+    "count": 18,
+    "previous": 1
    },
    {
     "type": "Roadway Signs",
     "count": 18,
     "previous": 3
-   },
-   {
-    "type": "DMV - Driver and Vehicle Services Refund",
-    "count": 17,
-    "previous": 1
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -1395,8 +1395,8 @@
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 13,
-    "previous": 1
+    "count": 12,
+    "previous": 2
    },
    {
     "type": "DMV - Driver Record Issues",
@@ -1419,11 +1419,6 @@
     "previous": 9
    },
    {
-    "type": "DC Government Information",
-    "count": 7,
-    "previous": 5
-   },
-   {
     "type": "Bulk Collection",
     "count": 7,
     "previous": 12
@@ -1432,6 +1427,11 @@
     "type": "Trash Cart - Delivery",
     "count": 6,
     "previous": 3
+   },
+   {
+    "type": "DC Government Information",
+    "count": 6,
+    "previous": 5
    },
    {
     "type": "Sidewalk Repair",
@@ -1484,11 +1484,6 @@
     "previous": 3
    },
    {
-    "type": "DOEE - General Air Quality Concerns",
-    "count": 3,
-    "previous": 1
-   },
-   {
     "type": "Streetlight Repair Investigation",
     "count": 3,
     "previous": 2
@@ -1519,6 +1514,11 @@
     "previous": 1
    },
    {
+    "type": "DOEE - General Air Quality Concerns",
+    "count": 2,
+    "previous": 2
+   },
+   {
     "type": "DC How Am I Driving?",
     "count": 2,
     "previous": 3
@@ -1537,11 +1537,6 @@
     "type": "Residential Parking Permit Violation",
     "count": 2,
     "previous": 4
-   },
-   {
-    "type": "Recycling Collection - Missed",
-    "count": 1,
-    "previous": 0
    },
    {
     "type": "DGS - Playground Repair",
@@ -1579,8 +1574,48 @@
     "previous": 0
    }
   ],
-  "open": 144,
+  "open": 146,
   "recent": [
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "agency": "DMV",
+    "added": "2026-11-04T21:24:40Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of M STREET SW",
+    "lat": 38.877,
+    "lon": -77.012
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "agency": "DMV",
+    "added": "2026-11-04T20:24:17Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of M STREET SW",
+    "lat": 38.877,
+    "lon": -77.012
+   },
+   {
+    "type": "DMV - Vehicle Registration Issues",
+    "agency": "DMV",
+    "added": "2026-11-04T19:46:00Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of M STREET SW",
+    "lat": 38.877,
+    "lon": -77.012
+   },
+   {
+    "type": "DMV - Driver and Vehicle Services Refund",
+    "agency": "DMV",
+    "added": "2026-11-04T19:32:41Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of M STREET SW",
+    "lat": 38.877,
+    "lon": -77.012
+   },
    {
     "type": "DMV - Driver and Vehicle Services Refund",
     "agency": "DMV",
@@ -1605,8 +1640,8 @@
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "agency": "DDOT",
     "added": "2026-11-04T18:25:35Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-04T21:00:54Z",
+    "status": "Closed",
     "block": "Unit block of DISTRICT SQUARE SW",
     "lat": 38.88,
     "lon": -77.025
@@ -1735,8 +1770,8 @@
     "type": "DMV - Copy of Ticket",
     "agency": "DMV",
     "added": "2026-11-04T16:16:11Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-04T20:32:24Z",
+    "status": "Closed",
     "block": "Unit block of M STREET SW",
     "lat": 38.877,
     "lon": -77.012
@@ -2040,46 +2075,6 @@
     "block": "Unit block of M STREET SW",
     "lat": 38.877,
     "lon": -77.012
-   },
-   {
-    "type": "DMV - Drivers License/ID Issues",
-    "agency": "DMV",
-    "added": "2026-11-03T15:24:03Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "Unit block of M STREET SW",
-    "lat": 38.877,
-    "lon": -77.012
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-03T14:45:54Z",
-    "resolved": "2026-11-03T15:48:05Z",
-    "status": "Closed",
-    "block": "300 block of G STREET SW",
-    "lat": 38.882,
-    "lon": -77.016
-   },
-   {
-    "type": "DMV - Ticket Payment Dispute",
-    "agency": "DMV",
-    "added": "2026-11-03T14:13:36Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "Unit block of M STREET SW",
-    "lat": 38.877,
-    "lon": -77.012
-   },
-   {
-    "type": "Dead Animal Collection",
-    "agency": "DPW",
-    "added": "2026-11-03T14:10:20Z",
-    "resolved": "2026-11-04T17:43:41Z",
-    "status": "Closed",
-    "block": "EXIT 7 FROM INTERSTATE 395 SOUTHBOUND TO INTERSTATE 695 EASTBOUND",
-    "lat": 38.885,
-    "lon": -77.013
    }
   ]
  },
@@ -2149,7 +2144,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2314,7 +2309,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2702,7 +2697,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 2123
+    "closed_n": 2121
    },
    {
     "type": "DMV - Ticket Payment Dispute",
@@ -2713,20 +2708,20 @@
    {
     "type": "DMV - Drivers License/ID Issues",
     "median_days": 8.01,
-    "city_median_days": 8.01,
+    "city_median_days": 8.0,
     "closed_n": 503
    },
    {
     "type": "DMV - Copy of Ticket",
     "median_days": 7.86,
     "city_median_days": 7.89,
-    "closed_n": 335
+    "closed_n": 336
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
-    "median_days": 0.27,
+    "median_days": 0.26,
     "city_median_days": 0.22,
-    "closed_n": 261
+    "closed_n": 262
    },
    {
     "type": "DMV - Vehicle Title Issues",
@@ -2750,7 +2745,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2889,7 +2884,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2915,6 +2910,10 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/"
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/"
    },
    {
     "name": "51st",
@@ -2984,6 +2983,13 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/",
     "state": "ok",
     "matched": 0,
     "fetched": 1
@@ -3480,7 +3486,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
@@ -3582,7 +3588,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -17214,7 +17220,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

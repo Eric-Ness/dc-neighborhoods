@@ -1,7 +1,7 @@
 {
  "slug": "woodleypark",
  "name": "Woodley Park",
- "generated_at": "2026-11-04T19:08:57Z",
+ "generated_at": "2026-11-04T22:06:56Z",
  "boundary": {
   "source": "ANC single-member districts 3C01, 3C02, 3C03 and 3C07, around the Woodley Park Metro and the National Zoo (Open Data DC). DC's WOODLEY PARK planning area also takes in much of Cleveland Park, which has its own site.",
   "rings": [
@@ -11737,8 +11737,8 @@
   }
  ],
  "requests": {
-  "total": 429,
-  "previous_total": 289,
+  "total": 420,
+  "previous_total": 297,
   "by_type": [
    {
     "type": "Parking Enforcement",
@@ -11747,13 +11747,13 @@
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 65,
-    "previous": 40
+    "count": 63,
+    "previous": 41
    },
    {
     "type": "Bulk Collection",
-    "count": 47,
-    "previous": 50
+    "count": 43,
+    "previous": 54
    },
    {
     "type": "Recycling Collection - Missed",
@@ -11776,13 +11776,13 @@
     "previous": 0
    },
    {
-    "type": "DC Health Rodent & Vector Control",
-    "count": 12,
-    "previous": 8
-   },
-   {
     "type": "Trash Collection - Missed",
     "count": 12,
+    "previous": 10
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "count": 10,
     "previous": 10
    },
    {
@@ -11806,6 +11806,11 @@
     "previous": 5
    },
    {
+    "type": "Graffiti Removal",
+    "count": 8,
+    "previous": 4
+   },
+   {
     "type": "Out of State Parking Violation (ROSA)",
     "count": 8,
     "previous": 3
@@ -11814,11 +11819,6 @@
     "type": "DOEE - LIHEAP",
     "count": 8,
     "previous": 0
-   },
-   {
-    "type": "Graffiti Removal",
-    "count": 7,
-    "previous": 4
    },
    {
     "type": "Supercan - Delivery",
@@ -11838,7 +11838,7 @@
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 6,
-    "previous": 17
+    "previous": 16
    },
    {
     "type": "Grass Mowing Services Missed (DGS)",
@@ -11859,11 +11859,6 @@
     "type": "DMV - Vehicle Registration Issues",
     "count": 5,
     "previous": 2
-   },
-   {
-    "type": "Missed Curbside Compost Collection",
-    "count": 4,
-    "previous": 3
    },
    {
     "type": "Recycling Cart Delivery",
@@ -11899,6 +11894,11 @@
     "type": "Tree Removal",
     "count": 2,
     "previous": 0
+   },
+   {
+    "type": "Missed Curbside Compost Collection",
+    "count": 2,
+    "previous": 5
    },
    {
     "type": "Emergency No-Parking Verification",
@@ -11956,7 +11956,7 @@
     "previous": 6
    }
   ],
-  "open": 73,
+  "open": 72,
   "recent": [
    {
     "type": "Scheduled Yard Waste",
@@ -12462,7 +12462,7 @@
  },
  "crime": {
   "total": 25,
-  "previous_total": 13,
+  "previous_total": 12,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
@@ -12472,7 +12472,7 @@
    {
     "offense": "THEFT F/AUTO",
     "count": 6,
-    "previous": 4
+    "previous": 3
    },
    {
     "offense": "MOTOR VEHICLE THEFT",
@@ -12521,7 +12521,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -12682,7 +12682,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -12891,13 +12891,13 @@
    {
     "type": "Trash Collection - Missed",
     "median_days": 10.48,
-    "city_median_days": 4.08,
+    "city_median_days": 4.06,
     "closed_n": 240
    },
    {
     "type": "Recycling Collection - Missed",
     "median_days": 4.89,
-    "city_median_days": 4.97,
+    "city_median_days": 4.95,
     "closed_n": 129
    },
    {
@@ -12922,7 +12922,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -13081,7 +13081,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "archive_days": 180,
   "sources": [
    {
@@ -13107,6 +13107,10 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/"
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/"
    },
    {
     "name": "51st",
@@ -13176,6 +13180,13 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/",
     "state": "ok",
     "matched": 0,
     "fetched": 1
@@ -13380,7 +13391,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
@@ -13468,7 +13479,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -30247,7 +30258,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

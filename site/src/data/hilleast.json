@@ -1,7 +1,7 @@
 {
  "slug": "hilleast",
  "name": "Hill East",
- "generated_at": "2026-11-04T19:08:57Z",
+ "generated_at": "2026-11-04T22:06:56Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1705,33 +1705,38 @@
   }
  ],
  "requests": {
-  "total": 1136,
-  "previous_total": 1513,
+  "total": 1138,
+  "previous_total": 1509,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
-    "count": 237,
-    "previous": 286
+    "count": 238,
+    "previous": 283
    },
    {
     "type": "Bulk Collection",
-    "count": 192,
-    "previous": 272
+    "count": 190,
+    "previous": 277
    },
    {
     "type": "Parking Enforcement",
     "count": 98,
-    "previous": 129
+    "previous": 128
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 45,
-    "previous": 81
+    "count": 46,
+    "previous": 79
    },
    {
     "type": "DC Health Rodent & Vector Control",
     "count": 41,
-    "previous": 47
+    "previous": 48
+   },
+   {
+    "type": "Sanitation Enforcement",
+    "count": 41,
+    "previous": 49
    },
    {
     "type": "Illegal Dumping",
@@ -1740,18 +1745,8 @@
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 40,
-    "previous": 13
-   },
-   {
-    "type": "Sanitation Enforcement",
     "count": 39,
-    "previous": 49
-   },
-   {
-    "type": "Out of State Parking Violation (ROSA)",
-    "count": 30,
-    "previous": 42
+    "previous": 13
    },
    {
     "type": "Residential Parking Permit Violation",
@@ -1759,14 +1754,24 @@
     "previous": 37
    },
    {
+    "type": "Out of State Parking Violation (ROSA)",
+    "count": 29,
+    "previous": 43
+   },
+   {
     "type": "Trash Cart - Delivery",
     "count": 25,
-    "previous": 18
+    "previous": 17
    },
    {
     "type": "Recycling Collection - Missed",
     "count": 20,
     "previous": 33
+   },
+   {
+    "type": "Tree Inspection",
+    "count": 20,
+    "previous": 79
    },
    {
     "type": "Streetlight Repair Investigation",
@@ -1779,19 +1784,14 @@
     "previous": 8
    },
    {
+    "type": "DOEE - LIHEAP",
+    "count": 18,
+    "previous": 5
+   },
+   {
     "type": "Container Removal",
     "count": 17,
     "previous": 24
-   },
-   {
-    "type": "Tree Inspection",
-    "count": 17,
-    "previous": 80
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "count": 17,
-    "previous": 6
    },
    {
     "type": "OCTFME - Down Cable Wires",
@@ -1801,7 +1801,7 @@
    {
     "type": "Public Space Litter Can-Collection",
     "count": 14,
-    "previous": 30
+    "previous": 29
    },
    {
     "type": "Vacant Lot - Public Property Only",
@@ -1849,11 +1849,6 @@
     "previous": 4
    },
    {
-    "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 7,
-    "previous": 8
-   },
-   {
     "type": "Missed Curbside Compost Collection",
     "count": 7,
     "previous": 3
@@ -1887,6 +1882,11 @@
     "type": "Recycling Cart - Repair",
     "count": 5,
     "previous": 5
+   },
+   {
+    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "count": 5,
+    "previous": 9
    },
    {
     "type": "Trash Cart Repair",
@@ -1956,7 +1956,7 @@
    {
     "type": "DOB - Vacant Private Property Inspection",
     "count": 2,
-    "previous": 4
+    "previous": 5
    },
    {
     "type": "DMV - Forms, Applications, and Manuals Request",
@@ -1996,7 +1996,7 @@
    {
     "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
     "count": 1,
-    "previous": 4
+    "previous": 3
    },
    {
     "type": "DMV - Vehicle Inspection Issues",
@@ -2004,14 +2004,84 @@
     "previous": 0
    }
   ],
-  "open": 212,
+  "open": 217,
   "recent": [
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T22:22:18Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "400 block of 17TH STREET SE",
+    "lat": 38.883,
+    "lon": -76.981
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T22:18:43Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1500 block of FREEDOM WAY SE",
+    "lat": 38.88,
+    "lon": -76.983
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-04T21:04:24Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of MASSACHUSETTS AVENUE SE",
+    "lat": 38.885,
+    "lon": -76.979
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T20:54:30Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of 18TH STREET SE",
+    "lat": 38.889,
+    "lon": -76.979
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-04T20:49:13Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1300 block of PENNSYLVANIA AVENUE SE",
+    "lat": 38.882,
+    "lon": -76.988
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T20:07:31Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "400 block of 15TH STREET SE",
+    "lat": 38.883,
+    "lon": -76.983
+   },
+   {
+    "type": "Sanitation Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T19:52:40Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1600 block of G STREET SE",
+    "lat": 38.881,
+    "lon": -76.981
+   },
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-11-04T19:40:35Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-04T20:12:14Z",
+    "status": "Closed",
     "block": "700 block of 11TH STREET SE",
     "lat": 38.881,
     "lon": -76.991
@@ -2040,8 +2110,8 @@
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-11-04T19:05:03Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-04T20:12:06Z",
+    "status": "Closed",
     "block": "700 block of 11TH STREET SE",
     "lat": 38.881,
     "lon": -76.991
@@ -2435,76 +2505,6 @@
     "block": "400 block of KENTUCKY AVENUE SE",
     "lat": 38.883,
     "lon": -76.984
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-11-03T12:49:52Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1300 block of L STREET SE",
-    "lat": 38.878,
-    "lon": -76.988
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-03T11:50:19Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1300 block of SOUTH CAROLINA AVENUE SE",
-    "lat": 38.886,
-    "lon": -76.987
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-11-03T02:09:02Z",
-    "resolved": "2026-11-03T15:49:10Z",
-    "status": "Closed",
-    "block": "1300 block of SOUTH CAROLINA AVENUE SE",
-    "lat": 38.886,
-    "lon": -76.988
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-03T01:40:43Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1700 block of A STREET SE",
-    "lat": 38.888,
-    "lon": -76.979
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-03T00:38:59Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1600 block of H STREET SE",
-    "lat": 38.88,
-    "lon": -76.982
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-02T23:53:31Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1200 block of G STREET SE",
-    "lat": 38.881,
-    "lon": -76.99
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-02T23:22:55Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "700 block of 12TH STREET SE",
-    "lat": 38.879,
-    "lon": -76.99
    }
   ]
  },
@@ -2574,7 +2574,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2823,7 +2823,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3059,18 +3059,18 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 924
+    "closed_n": 926
    },
    {
     "type": "Trash Collection - Missed",
-    "median_days": 3.6,
-    "city_median_days": 4.08,
-    "closed_n": 689
+    "median_days": 3.59,
+    "city_median_days": 4.06,
+    "closed_n": 685
    },
    {
     "type": "Illegal Dumping",
     "median_days": 4.08,
-    "city_median_days": 4.04,
+    "city_median_days": 4.03,
     "closed_n": 393
    },
    {
@@ -3088,14 +3088,14 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 2.83,
-    "city_median_days": 4.97,
+    "city_median_days": 4.95,
     "closed_n": 264
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3235,7 +3235,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "archive_days": 180,
   "sources": [
    {
@@ -3269,6 +3269,10 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/"
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/"
    },
    {
     "name": "51st",
@@ -3352,6 +3356,13 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/",
     "state": "ok",
     "matched": 0,
     "fetched": 1
@@ -3479,7 +3490,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
@@ -3553,7 +3564,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -21686,7 +21697,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

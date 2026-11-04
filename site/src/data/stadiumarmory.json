@@ -1,7 +1,7 @@
 {
  "slug": "stadiumarmory",
  "name": "Stadium-Armory",
- "generated_at": "2026-11-04T19:08:57Z",
+ "generated_at": "2026-11-04T22:06:56Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1035,57 +1035,67 @@
   }
  ],
  "requests": {
-  "total": 393,
-  "previous_total": 514,
+  "total": 423,
+  "previous_total": 516,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 120,
-    "previous": 193
+    "count": 131,
+    "previous": 192
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 88,
+    "count": 93,
     "previous": 0
    },
    {
     "type": "Streetlight Repair Investigation",
-    "count": 50,
+    "count": 52,
     "previous": 0
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 40,
+    "count": 43,
     "previous": 0
    },
    {
     "type": "Illegal Dumping",
-    "count": 39,
+    "count": 42,
     "previous": 0
    },
    {
     "type": "DMV - Vehicle Registration Issues",
-    "count": 27,
+    "count": 28,
     "previous": 0
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 15,
+    "count": 17,
     "previous": 0
    },
    {
     "type": "DMV - Drivers License/ID Issues",
-    "count": 8,
+    "count": 9,
     "previous": 0
    },
    {
     "type": "Bulk Collection",
-    "count": 6,
-    "previous": 41
+    "count": 8,
+    "previous": 40
    }
   ],
-  "open": 16,
+  "open": 19,
   "recent": [
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T14:47:05Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1800 block of POTOMAC AVENUE SE",
+    "lat": 38.883,
+    "lon": -76.978
+   },
    {
     "type": "Bulk Collection",
     "agency": "DPW",
@@ -1129,6 +1139,16 @@
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
+    "added": "2026-11-03T14:03:04Z",
+    "resolved": "2026-11-03T17:20:49Z",
+    "status": "Closed",
+    "block": "1900 block of MASSACHUSETTS AVENUE SE",
+    "lat": 38.885,
+    "lon": -76.973
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
     "added": "2026-11-02T16:33:21Z",
     "resolved": "2026-11-02T17:38:28Z",
     "status": "Closed",
@@ -1159,6 +1179,16 @@
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
+    "added": "2026-11-02T16:33:21Z",
+    "resolved": "2026-11-02T17:38:28Z",
+    "status": "Closed",
+    "block": "1900 block of C STREET SE",
+    "lat": 38.885,
+    "lon": -76.977
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
     "added": "2026-10-31T22:25:37Z",
     "resolved": "2026-10-31T23:11:48Z",
     "status": "Closed",
@@ -1197,12 +1227,12 @@
     "lon": -76.978
    },
    {
-    "type": "Bulk Collection",
+    "type": "Parking Enforcement",
     "agency": "DPW",
-    "added": "2026-10-31T19:19:52Z",
-    "resolved": "2026-11-03T15:39:41Z",
+    "added": "2026-10-31T22:25:37Z",
+    "resolved": "2026-10-31T23:11:48Z",
     "status": "Closed",
-    "block": "1800 block of POTOMAC AVENUE SE",
+    "block": "1800 block of E STREET SE",
     "lat": 38.883,
     "lon": -76.978
    },
@@ -1247,6 +1277,26 @@
     "lon": -76.978
    },
    {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-10-31T19:19:52Z",
+    "resolved": "2026-11-03T15:39:41Z",
+    "status": "Closed",
+    "block": "1800 block of POTOMAC AVENUE SE",
+    "lat": 38.883,
+    "lon": -76.978
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-10-31T19:19:52Z",
+    "resolved": "2026-11-03T15:39:41Z",
+    "status": "Closed",
+    "block": "1800 block of POTOMAC AVENUE SE",
+    "lat": 38.883,
+    "lon": -76.978
+   },
+   {
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-10-29T16:21:58Z",
@@ -1307,6 +1357,26 @@
     "lon": -76.973
    },
    {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-10-29T16:21:58Z",
+    "resolved": "2026-10-29T16:36:50Z",
+    "status": "Closed",
+    "block": "1900 block of MASSACHUSETTS AVENUE SE",
+    "lat": 38.885,
+    "lon": -76.973
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-10-29T16:21:58Z",
+    "resolved": "2026-10-29T16:36:50Z",
+    "status": "Closed",
+    "block": "1900 block of MASSACHUSETTS AVENUE SE",
+    "lat": 38.885,
+    "lon": -76.973
+   },
+   {
     "type": "DMV - Drivers License/ID Issues",
     "agency": "DMV",
     "added": "2026-10-27T16:46:57Z",
@@ -1387,6 +1457,26 @@
     "lon": -76.977
    },
    {
+    "type": "DMV - Drivers License/ID Issues",
+    "agency": "DMV",
+    "added": "2026-10-27T16:46:57Z",
+    "resolved": "2026-10-29T20:45:25Z",
+    "status": "Closed",
+    "block": "1900 block of C STREET SE",
+    "lat": 38.885,
+    "lon": -76.977
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-10-27T11:36:16Z",
+    "resolved": "2026-10-27T13:48:01Z",
+    "status": "Closed",
+    "block": "1900 block of C STREET SE",
+    "lat": 38.885,
+    "lon": -76.977
+   },
+   {
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-10-27T11:36:16Z",
@@ -1491,96 +1581,6 @@
     "agency": "DPW",
     "added": "2026-10-27T01:56:34Z",
     "resolved": "2026-10-27T04:45:15Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-27T01:56:34Z",
-    "resolved": "2026-10-27T04:45:15Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-27T01:56:34Z",
-    "resolved": "2026-10-27T04:45:15Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-27T01:56:34Z",
-    "resolved": "2026-10-27T04:45:15Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-27T01:56:34Z",
-    "resolved": "2026-10-27T04:45:15Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-27T01:56:34Z",
-    "resolved": "2026-10-27T04:45:15Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-27T01:56:34Z",
-    "resolved": "2026-10-27T04:45:15Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-27T01:56:34Z",
-    "resolved": "2026-10-27T04:45:15Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-26T12:49:56Z",
-    "resolved": "2026-10-26T12:49:56Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-26T12:49:56Z",
-    "resolved": "2026-10-26T12:49:56Z",
     "status": "Closed",
     "block": "1900 block of C STREET SE",
     "lat": 38.885,
@@ -1653,7 +1653,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -1840,7 +1840,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2014,7 +2014,7 @@
    {
     "type": "Illegal Dumping",
     "median_days": 4.01,
-    "city_median_days": 4.04,
+    "city_median_days": 4.03,
     "closed_n": 30
    },
    {
@@ -2051,7 +2051,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2141,7 +2141,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2175,6 +2175,10 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/"
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/"
    },
    {
     "name": "51st",
@@ -2258,6 +2262,13 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/",
     "state": "ok",
     "matched": 0,
     "fetched": 1
@@ -2523,7 +2534,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
@@ -2698,7 +2709,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -14202,7 +14213,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

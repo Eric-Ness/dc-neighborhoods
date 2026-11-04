@@ -1,7 +1,7 @@
 {
  "slug": "gloverpark",
  "name": "Glover Park",
- "generated_at": "2026-11-04T19:08:57Z",
+ "generated_at": "2026-11-04T22:06:56Z",
  "boundary": {
   "source": "ANC 3B, the Glover Park commission (all its single-member districts, Open Data DC). DC has no planning area named Glover Park.",
   "rings": [
@@ -7828,21 +7828,21 @@
  ],
  "requests": {
   "total": 534,
-  "previous_total": 344,
+  "previous_total": 345,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 97,
-    "previous": 72
+    "count": 98,
+    "previous": 70
    },
    {
     "type": "Parking Enforcement",
-    "count": 57,
+    "count": 58,
     "previous": 24
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 55,
+    "count": 54,
     "previous": 46
    },
    {
@@ -7862,8 +7862,8 @@
    },
    {
     "type": "Public Space Litter Can-Collection",
-    "count": 17,
-    "previous": 28
+    "count": 14,
+    "previous": 31
    },
    {
     "type": "Illegal Dumping",
@@ -7901,14 +7901,14 @@
     "previous": 10
    },
    {
+    "type": "Supercan - Repair",
+    "count": 10,
+    "previous": 1
+   },
+   {
     "type": "Container Removal",
     "count": 10,
     "previous": 9
-   },
-   {
-    "type": "Supercan - Repair",
-    "count": 9,
-    "previous": 1
    },
    {
     "type": "Graffiti Removal",
@@ -7951,14 +7951,14 @@
     "previous": 0
    },
    {
+    "type": "Recycling Cart Delivery",
+    "count": 6,
+    "previous": 7
+   },
+   {
     "type": "Recycling Collection - Missed",
     "count": 5,
     "previous": 6
-   },
-   {
-    "type": "Recycling Cart Delivery",
-    "count": 5,
-    "previous": 7
    },
    {
     "type": "Pothole",
@@ -8066,8 +8066,28 @@
     "previous": 0
    }
   ],
-  "open": 139,
+  "open": 142,
   "recent": [
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T21:35:58Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3800 block of W STREET NW",
+    "lat": 38.919,
+    "lon": -77.077
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T20:29:14Z",
+    "resolved": "2026-11-04T20:53:23Z",
+    "status": "Closed",
+    "block": "CALVERT STREET NW AND 40TH STREET NW",
+    "lat": 38.923,
+    "lon": -77.079
+   },
    {
     "type": "Bulk Collection",
     "agency": "DPW",
@@ -8499,6 +8519,26 @@
     "lon": -77.075
    },
    {
+    "type": "Recycling Cart Delivery",
+    "agency": "DPW",
+    "added": "2026-11-01T12:11:08Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2300 block of HUIDEKOPER PLACE NW",
+    "lat": 38.92,
+    "lon": -77.075
+   },
+   {
+    "type": "Supercan - Repair",
+    "agency": "DPW",
+    "added": "2026-11-01T12:09:02Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2300 block of HUIDEKOPER PLACE NW",
+    "lat": 38.92,
+    "lon": -77.075
+   },
+   {
     "type": "Supercan - Repair",
     "agency": "DPW",
     "added": "2026-11-01T12:09:02Z",
@@ -8527,46 +8567,6 @@
     "block": "3700 block of BENTON STREET NW",
     "lat": 38.921,
     "lon": -77.075
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-10-31T20:23:03Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3600 block of CALVERT STREET NW",
-    "lat": 38.922,
-    "lon": -77.071
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-10-31T20:23:03Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3600 block of CALVERT STREET NW",
-    "lat": 38.922,
-    "lon": -77.071
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-31T19:41:32Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2300 block of 37TH STREET NW",
-    "lat": 38.921,
-    "lon": -77.073
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-31T19:41:32Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2300 block of 37TH STREET NW",
-    "lat": 38.921,
-    "lon": -77.073
    }
   ]
  },
@@ -8638,7 +8638,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -8937,7 +8937,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -9165,12 +9165,12 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 280
+    "closed_n": 281
    },
    {
     "type": "Trash Collection - Missed",
     "median_days": 11.97,
-    "city_median_days": 4.08,
+    "city_median_days": 4.06,
     "closed_n": 242
    },
    {
@@ -9194,14 +9194,14 @@
    {
     "type": "Illegal Dumping",
     "median_days": 4.42,
-    "city_median_days": 4.04,
+    "city_median_days": 4.03,
     "closed_n": 88
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -9343,7 +9343,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "archive_days": 180,
   "sources": [
    {
@@ -9369,6 +9369,10 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/"
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/"
    },
    {
     "name": "51st",
@@ -9438,6 +9442,13 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/",
     "state": "ok",
     "matched": 0,
     "fetched": 1
@@ -9606,7 +9617,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
@@ -9661,7 +9672,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -24177,7 +24188,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

@@ -1,7 +1,7 @@
 {
  "slug": "friendshipheights",
  "name": "Friendship Heights",
- "generated_at": "2026-11-04T19:08:57Z",
+ "generated_at": "2026-11-04T22:06:56Z",
  "boundary": {
   "source": "ANC single-member districts 3E03 and 3E04, around the Friendship Heights Metro (Open Data DC). DC has no planning area for Friendship Heights; this overlaps the Tenleytown site.",
   "rings": [
@@ -2976,18 +2976,18 @@
   }
  ],
  "requests": {
-  "total": 491,
-  "previous_total": 502,
+  "total": 481,
+  "previous_total": 508,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
-    "count": 94,
-    "previous": 61
+    "count": 89,
+    "previous": 67
    },
    {
     "type": "Bulk Collection",
     "count": 85,
-    "previous": 77
+    "previous": 75
    },
    {
     "type": "Tree Pruning",
@@ -2995,19 +2995,19 @@
     "previous": 28
    },
    {
-    "type": "Recycling Collection - Missed",
-    "count": 25,
-    "previous": 5
+    "type": "Trash Collection - Missed",
+    "count": 22,
+    "previous": 29
    },
    {
-    "type": "Trash Collection - Missed",
+    "type": "Recycling Collection - Missed",
     "count": 21,
-    "previous": 29
+    "previous": 9
    },
    {
     "type": "Roadway Signs",
     "count": 18,
-    "previous": 68
+    "previous": 67
    },
    {
     "type": "Streetlight Repair Investigation",
@@ -3020,14 +3020,9 @@
     "previous": 15
    },
    {
-    "type": "DOB - Vacant Private Property Inspection",
-    "count": 13,
-    "previous": 6
-   },
-   {
     "type": "Sanitation Enforcement",
     "count": 13,
-    "previous": 8
+    "previous": 7
    },
    {
     "type": "Parking Enforcement",
@@ -3043,6 +3038,11 @@
     "type": "Residential Parking Permit Violation",
     "count": 13,
     "previous": 22
+   },
+   {
+    "type": "DOB - Vacant Private Property Inspection",
+    "count": 11,
+    "previous": 8
    },
    {
     "type": "Tree Planting",
@@ -3062,7 +3062,7 @@
    {
     "type": "Tree Removal",
     "count": 9,
-    "previous": 9
+    "previous": 8
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -3082,7 +3082,7 @@
    {
     "type": "Roadway Markings / Pylons",
     "count": 5,
-    "previous": 3
+    "previous": 2
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -3196,8 +3196,8 @@
     "type": "DMV - Vehicle Registration Issues",
     "agency": "DMV",
     "added": "2026-11-04T18:09:36Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-04T19:48:47Z",
+    "status": "Closed",
     "block": "3800 block of GARRISON STREET NW",
     "lat": 38.956,
     "lon": -77.075
@@ -3709,12 +3709,12 @@
     "previous": 0
    },
    {
-    "offense": "MOTOR VEHICLE THEFT",
+    "offense": "ROBBERY",
     "count": 1,
     "previous": 0
    },
    {
-    "offense": "ROBBERY",
+    "offense": "MOTOR VEHICLE THEFT",
     "count": 1,
     "previous": 0
    }
@@ -3743,7 +3743,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3966,7 +3966,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4185,13 +4185,13 @@
    {
     "type": "Trash Collection - Missed",
     "median_days": 7.21,
-    "city_median_days": 4.08,
+    "city_median_days": 4.06,
     "closed_n": 467
    },
    {
     "type": "Recycling Collection - Missed",
     "median_days": 6.08,
-    "city_median_days": 4.97,
+    "city_median_days": 4.95,
     "closed_n": 334
    },
    {
@@ -4215,14 +4215,14 @@
    {
     "type": "Roadway Signs",
     "median_days": 7.76,
-    "city_median_days": 7.0,
-    "closed_n": 92
+    "city_median_days": 7.01,
+    "closed_n": 93
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4368,7 +4368,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4402,6 +4402,10 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/"
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/"
    },
    {
     "name": "51st",
@@ -4464,9 +4468,8 @@
    {
     "name": "Washingtonian",
     "url": "https://www.washingtonian.com/",
-    "state": "ok",
-    "matched": 1,
-    "fetched": 1
+    "state": "skipped: robots.txt",
+    "matched": 0
    },
    {
     "name": "PoPville",
@@ -4485,6 +4488,13 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/",
     "state": "ok",
     "matched": 0,
     "fetched": 1
@@ -4644,7 +4654,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
@@ -4696,7 +4706,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -19253,7 +19263,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

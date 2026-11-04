@@ -1,7 +1,7 @@
 {
  "slug": "mountpleasant",
  "name": "Mount Pleasant",
- "generated_at": "2026-11-04T19:08:57Z",
+ "generated_at": "2026-11-04T22:06:56Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1683,22 +1683,22 @@
  ],
  "requests": {
   "total": 756,
-  "previous_total": 749,
+  "previous_total": 753,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 165,
-    "previous": 135
+    "count": 164,
+    "previous": 136
    },
    {
     "type": "Bulk Collection",
-    "count": 106,
-    "previous": 111
+    "count": 105,
+    "previous": 112
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 77,
-    "previous": 79
+    "count": 76,
+    "previous": 80
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
@@ -1707,8 +1707,8 @@
    },
    {
     "type": "Illegal Dumping",
-    "count": 32,
-    "previous": 23
+    "count": 33,
+    "previous": 24
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -1737,7 +1737,7 @@
    },
    {
     "type": "Tree Removal",
-    "count": 15,
+    "count": 16,
     "previous": 17
    },
    {
@@ -1747,7 +1747,7 @@
    },
    {
     "type": "Tree Pruning",
-    "count": 13,
+    "count": 14,
     "previous": 4
    },
    {
@@ -1981,8 +1981,48 @@
     "previous": 0
    }
   ],
-  "open": 160,
+  "open": 161,
   "recent": [
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-04T22:26:29Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of 1/2 PARK ROAD NW",
+    "lat": 38.933,
+    "lon": -77.04
+   },
+   {
+    "type": "Tree Removal",
+    "agency": "DDOT",
+    "added": "2026-11-04T21:26:42Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "1700 block of LAMONT STREET NW",
+    "lat": 38.932,
+    "lon": -77.041
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-04T21:22:43Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of KILBOURNE PLACE NW",
+    "lat": 38.931,
+    "lon": -77.039
+   },
+   {
+    "type": "Tree Pruning",
+    "agency": "DDOT",
+    "added": "2026-11-04T21:19:49Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "1700 block of KILBOURNE PLACE NW",
+    "lat": 38.931,
+    "lon": -77.04
+   },
    {
     "type": "Bicycle Services",
     "agency": "DDOT",
@@ -2442,52 +2482,12 @@
     "block": "1600 block of KENYON STREET NW",
     "lat": 38.93,
     "lon": -77.038
-   },
-   {
-    "type": "FEMS - Fire Safety Inspection",
-    "agency": "FEMS",
-    "added": "2026-11-03T00:01:02Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3300 block of MOUNT PLEASANT STREET NW",
-    "lat": 38.933,
-    "lon": -77.04
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-02T23:00:15Z",
-    "resolved": "2026-11-02T23:05:55Z",
-    "status": "Closed",
-    "block": "1700 block of LAMONT STREET NW",
-    "lat": 38.932,
-    "lon": -77.041
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-02T22:18:21Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1800 block of INGLESIDE TERRACE NW",
-    "lat": 38.935,
-    "lon": -77.043
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-11-02T22:04:48Z",
-    "resolved": "2026-11-03T14:36:04Z",
-    "status": "Closed",
-    "block": "1700 block of PARK ROAD NW",
-    "lat": 38.933,
-    "lon": -77.04
    }
   ]
  },
  "crime": {
-  "total": 27,
-  "previous_total": 23,
+  "total": 26,
+  "previous_total": 24,
   "by_offense": [
    {
     "offense": "THEFT F/AUTO",
@@ -2496,8 +2496,8 @@
    },
    {
     "offense": "THEFT/OTHER",
-    "count": 9,
-    "previous": 15
+    "count": 8,
+    "previous": 16
    },
    {
     "offense": "BURGLARY",
@@ -2568,7 +2568,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2760,7 +2760,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3073,14 +3073,14 @@
    {
     "type": "Trash Collection - Missed",
     "median_days": 10.88,
-    "city_median_days": 4.08,
-    "closed_n": 449
+    "city_median_days": 4.06,
+    "closed_n": 448
    },
    {
     "type": "Recycling Collection - Missed",
-    "median_days": 7.0,
-    "city_median_days": 4.97,
-    "closed_n": 365
+    "median_days": 7.01,
+    "city_median_days": 4.95,
+    "closed_n": 364
    },
    {
     "type": "Sanitation Enforcement",
@@ -3104,7 +3104,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3266,7 +3266,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "archive_days": 180,
   "sources": [
    {
@@ -3296,6 +3296,10 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/"
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/"
    },
    {
     "name": "51st",
@@ -3351,9 +3355,8 @@
    {
     "name": "Washingtonian",
     "url": "https://www.washingtonian.com/",
-    "state": "ok",
-    "matched": 1,
-    "fetched": 1
+    "state": "skipped: robots.txt",
+    "matched": 0
    },
    {
     "name": "PoPville",
@@ -3372,6 +3375,13 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/",
     "state": "ok",
     "matched": 0,
     "fetched": 1
@@ -3524,7 +3534,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
@@ -3612,7 +3622,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -12583,7 +12593,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

@@ -1,7 +1,7 @@
 {
  "slug": "dupontcircle",
  "name": "Dupont Circle",
- "generated_at": "2026-11-04T19:08:57Z",
+ "generated_at": "2026-11-04T22:06:56Z",
  "boundary": {
   "source": "Dupont Circle Historic District (DC Historic Preservation Office, Open Data DC). DC has no planning area named Dupont Circle; this overlaps the Adams Morgan site to the north.",
   "rings": [
@@ -2094,8 +2094,8 @@
   }
  ],
  "requests": {
-  "total": 764,
-  "previous_total": 709,
+  "total": 768,
+  "previous_total": 708,
   "by_type": [
    {
     "type": "Parking Enforcement",
@@ -2105,17 +2105,17 @@
    {
     "type": "DC Health Rodent & Vector Control",
     "count": 77,
-    "previous": 78
+    "previous": 77
    },
    {
     "type": "Bulk Collection",
-    "count": 47,
+    "count": 49,
     "previous": 47
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 41,
-    "previous": 30
+    "count": 39,
+    "previous": 32
    },
    {
     "type": "Sanitation Enforcement",
@@ -2124,7 +2124,7 @@
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 31,
+    "count": 32,
     "previous": 21
    },
    {
@@ -2158,14 +2158,14 @@
     "previous": 20
    },
    {
+    "type": "Tree Inspection",
+    "count": 18,
+    "previous": 18
+   },
+   {
     "type": "Abandoned Bicycle",
     "count": 18,
     "previous": 2
-   },
-   {
-    "type": "Tree Inspection",
-    "count": 17,
-    "previous": 18
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -2175,7 +2175,7 @@
    {
     "type": "Roadway Signs",
     "count": 13,
-    "previous": 19
+    "previous": 18
    },
    {
     "type": "Public Space Litter Can-Collection",
@@ -2184,7 +2184,7 @@
    },
    {
     "type": "DOB - Illegal Construction",
-    "count": 10,
+    "count": 11,
     "previous": 0
    },
    {
@@ -2203,6 +2203,11 @@
     "previous": 4
    },
    {
+    "type": "Parking Meter Repair",
+    "count": 9,
+    "previous": 3
+   },
+   {
     "type": "Recycling Cart Delivery",
     "count": 9,
     "previous": 2
@@ -2218,11 +2223,6 @@
     "previous": 15
    },
    {
-    "type": "Parking Meter Repair",
-    "count": 8,
-    "previous": 3
-   },
-   {
     "type": "Trash Cart - Delivery",
     "count": 8,
     "previous": 6
@@ -2235,7 +2235,7 @@
    {
     "type": "Rat Replacement Containers",
     "count": 7,
-    "previous": 16
+    "previous": 15
    },
    {
     "type": "Emergency No-Parking Verification",
@@ -2378,8 +2378,48 @@
     "previous": 0
    }
   ],
-  "open": 146,
+  "open": 147,
   "recent": [
+   {
+    "type": "Tree Inspection",
+    "agency": "DDOT",
+    "added": "2026-11-04T21:00:20Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "1700 block of 21ST STREET NW",
+    "lat": 38.913,
+    "lon": -77.047
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T20:16:46Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of SWANN STREET NW",
+    "lat": 38.915,
+    "lon": -77.039
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "agency": "DDOT",
+    "added": "2026-11-04T20:07:34Z",
+    "resolved": "2026-11-04T20:16:18Z",
+    "status": "Closed",
+    "block": "1600 block of MASSACHUSETTS AVENUE NW",
+    "lat": 38.907,
+    "lon": -77.038
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T20:01:04Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of NEW HAMPSHIRE AVENUE NW",
+    "lat": 38.913,
+    "lon": -77.04
+   },
    {
     "type": "DC Health Rodent & Vector Control",
     "agency": "DOH",
@@ -2564,8 +2604,8 @@
     "type": "Trash Collection - Missed",
     "agency": "DPW",
     "added": "2026-11-03T14:13:54Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-04T21:11:30Z",
+    "status": "Closed",
     "block": "1600 block of S STREET NW",
     "lat": 38.914,
     "lon": -77.037
@@ -2634,8 +2674,8 @@
     "type": "Illegal Dumping",
     "agency": "DPW",
     "added": "2026-11-03T00:39:40Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-04T22:01:32Z",
+    "status": "Closed",
     "block": "1700 block of MASSACHUSETTS AVENUE NW",
     "lat": 38.908,
     "lon": -77.039
@@ -2839,46 +2879,6 @@
     "block": "1200 block of 18TH STREET NW",
     "lat": 38.906,
     "lon": -77.042
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "agency": "DPW",
-    "added": "2026-11-01T22:23:00Z",
-    "resolved": "2026-11-03T05:13:06Z",
-    "status": "Closed",
-    "block": "1200 block of 18TH STREET NW",
-    "lat": 38.906,
-    "lon": -77.042
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-01T22:17:04Z",
-    "resolved": "2026-11-03T17:15:20Z",
-    "status": "Closed",
-    "block": "1200 block of 18TH STREET NW",
-    "lat": 38.906,
-    "lon": -77.042
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-01T22:10:23Z",
-    "resolved": "2026-11-03T17:15:14Z",
-    "status": "Closed",
-    "block": "1200 block of CONNECTICUT AVENUE NW",
-    "lat": 38.907,
-    "lon": -77.042
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-11-01T22:05:45Z",
-    "resolved": "2026-11-02T16:29:31Z",
-    "status": "Closed",
-    "block": "1200 block of CONNECTICUT AVENUE NW",
-    "lat": 38.907,
-    "lon": -77.042
    }
   ]
  },
@@ -2965,7 +2965,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3175,7 +3175,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3596,8 +3596,8 @@
    {
     "type": "Trash Collection - Missed",
     "median_days": 3.95,
-    "city_median_days": 4.08,
-    "closed_n": 566
+    "city_median_days": 4.06,
+    "closed_n": 565
    },
    {
     "type": "Bulk Collection",
@@ -3620,7 +3620,7 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 4.72,
-    "city_median_days": 4.97,
+    "city_median_days": 4.95,
     "closed_n": 237
    },
    {
@@ -3639,7 +3639,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3781,7 +3781,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "archive_days": 180,
   "sources": [
    {
@@ -3811,6 +3811,10 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/"
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/"
    },
    {
     "name": "51st",
@@ -3866,15 +3870,14 @@
    {
     "name": "Washingtonian",
     "url": "https://www.washingtonian.com/",
-    "state": "ok",
-    "matched": 3,
-    "fetched": 1
+    "state": "skipped: robots.txt",
+    "matched": 0
    },
    {
     "name": "PoPville",
     "url": "https://www.popville.com/",
     "state": "ok",
-    "matched": 3,
+    "matched": 4,
     "fetched": 2
    },
    {
@@ -3887,6 +3890,13 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/",
     "state": "ok",
     "matched": 0,
     "fetched": 1
@@ -3928,6 +3938,13 @@
    }
   ],
   "items": [
+   {
+    "title": "JUST IN: An End of an Era coming to Floriana on 17th Street!! Last Day will be December 31, 2026",
+    "url": "https://www.popville.com/2026/11/just-in-an-end-of-an-era-coming-to-floriana-on-17th-street/",
+    "source": "PoPville",
+    "published": "2026-11-04T20:25:41Z",
+    "first_seen": "2026-11-04T22:06:56Z"
+   },
    {
     "title": "Get an Early Start on Festive Fun With These Holiday Activities",
     "url": "https://washingtonian.com/2026/11/04/get-an-early-start-on-festive-fun-with-these-holiday-activities/",
@@ -4473,7 +4490,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
@@ -4544,7 +4561,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -17552,7 +17569,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

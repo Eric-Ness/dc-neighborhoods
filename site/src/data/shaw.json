@@ -1,7 +1,7 @@
 {
  "slug": "shaw",
  "name": "Shaw",
- "generated_at": "2026-11-04T19:08:57Z",
+ "generated_at": "2026-11-04T22:06:56Z",
  "boundary": {
   "source": "ANC 2G, the Shaw commission (all its single-member districts, Open Data DC). DC's LOGAN CIRCLE/SHAW planning area also covers Logan Circle, which has its own site.",
   "rings": [
@@ -3163,23 +3163,23 @@
   }
  ],
  "requests": {
-  "total": 1628,
-  "previous_total": 1395,
+  "total": 1621,
+  "previous_total": 1403,
   "by_type": [
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 461,
-    "previous": 358
+    "count": 457,
+    "previous": 361
    },
    {
     "type": "Parking Enforcement",
-    "count": 277,
+    "count": 276,
     "previous": 132
    },
    {
     "type": "Bulk Collection",
-    "count": 116,
-    "previous": 131
+    "count": 114,
+    "previous": 132
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -3193,13 +3193,13 @@
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 55,
-    "previous": 64
+    "count": 52,
+    "previous": 66
    },
    {
     "type": "Graffiti Removal",
-    "count": 45,
-    "previous": 35
+    "count": 43,
+    "previous": 37
    },
    {
     "type": "Sanitation Enforcement",
@@ -3209,7 +3209,7 @@
    {
     "type": "Residential Parking Permit Violation",
     "count": 31,
-    "previous": 26
+    "previous": 25
    },
    {
     "type": "DOEE - LIHEAP",
@@ -3257,18 +3257,23 @@
     "previous": 70
    },
    {
-    "type": "Recycling Collection - Missed",
-    "count": 15,
+    "type": "Out of State Parking Violation (ROSA)",
+    "count": 17,
     "previous": 10
    },
    {
-    "type": "Out of State Parking Violation (ROSA)",
+    "type": "Recycling Collection - Missed",
     "count": 15,
     "previous": 10
    },
    {
     "type": "Roadway Signs",
     "count": 14,
+    "previous": 9
+   },
+   {
+    "type": "Tree Pruning",
+    "count": 13,
     "previous": 9
    },
    {
@@ -3280,11 +3285,6 @@
     "type": "Abandoned Vehicle - On Public Property",
     "count": 13,
     "previous": 7
-   },
-   {
-    "type": "Tree Pruning",
-    "count": 12,
-    "previous": 9
    },
    {
     "type": "Trash Cart Repair",
@@ -3322,14 +3322,14 @@
     "previous": 2
    },
    {
+    "type": "DC Government Information",
+    "count": 6,
+    "previous": 9
+   },
+   {
     "type": "Illegal Poster",
     "count": 6,
     "previous": 2
-   },
-   {
-    "type": "DC Government Information",
-    "count": 5,
-    "previous": 9
    },
    {
     "type": "DC Dog Park Maintenance (DGS)",
@@ -3350,6 +3350,11 @@
     "type": "DOB - Illegal Construction",
     "count": 4,
     "previous": 4
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "count": 4,
+    "previous": 12
    },
    {
     "type": "DOEE - Report Construction Erosion Runoff",
@@ -3387,11 +3392,6 @@
     "previous": 3
    },
    {
-    "type": "DMV - Drivers License/ID Issues",
-    "count": 3,
-    "previous": 12
-   },
-   {
     "type": "Parking Meter Repair",
     "count": 3,
     "previous": 3
@@ -3424,7 +3424,7 @@
    {
     "type": "Public Space Inspection",
     "count": 2,
-    "previous": 9
+    "previous": 10
    },
    {
     "type": "DGS - Playground Repair",
@@ -3487,8 +3487,28 @@
     "previous": 0
    }
   ],
-  "open": 274,
+  "open": 265,
   "recent": [
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "agency": "DMV",
+    "added": "2026-11-04T21:16:29Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "400 block of Q STREET NW",
+    "lat": 38.911,
+    "lon": -77.018
+   },
+   {
+    "type": "DC Government Information",
+    "agency": "OUC",
+    "added": "2026-11-04T19:49:50Z",
+    "resolved": "2026-11-04T19:49:50Z",
+    "status": "Closed",
+    "block": "1200 block of 7TH STREET NW",
+    "lat": 38.906,
+    "lon": -77.022
+   },
    {
     "type": "Trash Collection - Missed",
     "agency": "DPW",
@@ -3503,8 +3523,8 @@
     "type": "Roadway Signs",
     "agency": "DDOT",
     "added": "2026-11-04T17:58:00Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-04T20:16:05Z",
+    "status": "Closed",
     "block": "1200 block of 4TH STREET NW",
     "lat": 38.906,
     "lon": -77.016
@@ -3783,8 +3803,8 @@
     "type": "Trash Collection - Missed",
     "agency": "DPW",
     "added": "2026-11-03T22:57:52Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-04T21:12:33Z",
+    "status": "Closed",
     "block": "1700 block of 9TH STREET NW",
     "lat": 38.914,
     "lon": -77.024
@@ -3968,26 +3988,6 @@
     "block": "1600 block of 5TH STREET NW",
     "lat": 38.912,
     "lon": -77.019
-   },
-   {
-    "type": "Trash Cart - Delivery",
-    "agency": "DPW",
-    "added": "2026-11-03T20:46:47Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1700 block of NEW JERSEY AVENUE NW",
-    "lat": 38.913,
-    "lon": -77.018
-   },
-   {
-    "type": "Graffiti Removal",
-    "agency": "DPW",
-    "added": "2026-11-03T20:45:59Z",
-    "resolved": "2026-11-04T17:11:02Z",
-    "status": "Closed (Duplicate)",
-    "block": "900 block of R STREET NW",
-    "lat": 38.913,
-    "lon": -77.024
    }
   ]
  },
@@ -4016,14 +4016,14 @@
     "previous": 2
    },
    {
-    "offense": "BURGLARY",
-    "count": 1,
-    "previous": 2
-   },
-   {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
     "count": 1,
     "previous": 3
+   },
+   {
+    "offense": "BURGLARY",
+    "count": 1,
+    "previous": 2
    },
    {
     "offense": "SEX ABUSE",
@@ -4079,7 +4079,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -4272,7 +4272,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4652,9 +4652,9 @@
    },
    {
     "type": "Trash Collection - Missed",
-    "median_days": 3.92,
-    "city_median_days": 4.08,
-    "closed_n": 536
+    "median_days": 3.91,
+    "city_median_days": 4.06,
+    "closed_n": 534
    },
    {
     "type": "Scheduled Yard Waste",
@@ -4670,9 +4670,9 @@
    },
    {
     "type": "Illegal Dumping",
-    "median_days": 3.64,
-    "city_median_days": 4.04,
-    "closed_n": 403
+    "median_days": 3.63,
+    "city_median_days": 4.03,
+    "closed_n": 407
    },
    {
     "type": "Sanitation Enforcement",
@@ -4684,7 +4684,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4821,7 +4821,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4847,6 +4847,10 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/"
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/"
    },
    {
     "name": "51st",
@@ -4916,6 +4920,13 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/",
     "state": "ok",
     "matched": 0,
     "fetched": 1
@@ -5184,7 +5195,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
@@ -5231,7 +5242,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -21251,7 +21262,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

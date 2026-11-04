@@ -1,7 +1,7 @@
 {
  "slug": "petworth",
  "name": "Petworth",
- "generated_at": "2026-11-04T19:08:57Z",
+ "generated_at": "2026-11-04T22:06:56Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -2041,13 +2041,13 @@
   }
  ],
  "requests": {
-  "total": 1171,
-  "previous_total": 1239,
+  "total": 1176,
+  "previous_total": 1247,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 201,
-    "previous": 249
+    "count": 200,
+    "previous": 250
    },
    {
     "type": "Scheduled Yard Waste",
@@ -2056,13 +2056,13 @@
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 111,
-    "previous": 91
+    "count": 110,
+    "previous": 92
    },
    {
     "type": "Parking Enforcement",
-    "count": 73,
-    "previous": 100
+    "count": 72,
+    "previous": 101
    },
    {
     "type": "Illegal Dumping",
@@ -2071,18 +2071,18 @@
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 60,
+    "count": 61,
     "previous": 53
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "count": 41,
-    "previous": 42
    },
    {
     "type": "DOEE - LIHEAP",
     "count": 41,
     "previous": 0
+   },
+   {
+    "type": "Sanitation Enforcement",
+    "count": 38,
+    "previous": 44
    },
    {
     "type": "Dead Animal Collection",
@@ -2097,7 +2097,7 @@
    {
     "type": "Public Space Litter Can-Collection",
     "count": 26,
-    "previous": 17
+    "previous": 16
    },
    {
     "type": "Recycling Collection - Missed",
@@ -2105,19 +2105,19 @@
     "previous": 18
    },
    {
-    "type": "Supercan - Delivery",
-    "count": 22,
-    "previous": 34
+    "type": "Container Removal",
+    "count": 23,
+    "previous": 41
    },
    {
     "type": "Rat Replacement Containers",
-    "count": 22,
-    "previous": 17
+    "count": 21,
+    "previous": 18
    },
    {
-    "type": "Container Removal",
+    "type": "Supercan - Delivery",
     "count": 21,
-    "previous": 41
+    "previous": 35
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -2130,9 +2130,19 @@
     "previous": 15
    },
    {
+    "type": "Trash Cart Repair",
+    "count": 16,
+    "previous": 24
+   },
+   {
     "type": "Recycling Cart Delivery",
-    "count": 15,
+    "count": 14,
     "previous": 11
+   },
+   {
+    "type": "Trash Cart - Delivery",
+    "count": 13,
+    "previous": 8
    },
    {
     "type": "Abandoned Bicycle",
@@ -2145,11 +2155,6 @@
     "previous": 13
    },
    {
-    "type": "Trash Cart - Delivery",
-    "count": 12,
-    "previous": 8
-   },
-   {
     "type": "Abandoned Vehicle - On Public Property",
     "count": 12,
     "previous": 13
@@ -2160,14 +2165,14 @@
     "previous": 7
    },
    {
+    "type": "Supercan - Repair",
+    "count": 12,
+    "previous": 8
+   },
+   {
     "type": "Out of State Parking Violation (ROSA)",
     "count": 11,
     "previous": 10
-   },
-   {
-    "type": "Supercan - Repair",
-    "count": 11,
-    "previous": 8
    },
    {
     "type": "Streetlight Repair Investigation",
@@ -2180,14 +2185,14 @@
     "previous": 13
    },
    {
-    "type": "Trash Cart Repair",
-    "count": 9,
-    "previous": 24
+    "type": "Recycling Cart - Repair",
+    "count": 8,
+    "previous": 12
    },
    {
-    "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
+    "type": "Roadway Signs",
     "count": 8,
-    "previous": 8
+    "previous": 18
    },
    {
     "type": "DC Government Information",
@@ -2195,24 +2200,19 @@
     "previous": 14
    },
    {
-    "type": "Missed Curbside Compost Collection",
-    "count": 7,
-    "previous": 3
-   },
-   {
     "type": "DOB - Vacant Private Property Inspection",
     "count": 7,
     "previous": 9
    },
    {
-    "type": "Recycling Cart - Repair",
-    "count": 6,
-    "previous": 12
+    "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
+    "count": 7,
+    "previous": 9
    },
    {
-    "type": "Roadway Signs",
+    "type": "Missed Curbside Compost Collection",
     "count": 6,
-    "previous": 18
+    "previous": 4
    },
    {
     "type": "Public Space Inspection",
@@ -2325,8 +2325,168 @@
     "previous": 4
    }
   ],
-  "open": 238,
+  "open": 248,
   "recent": [
+   {
+    "type": "Trash Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-04T21:30:11Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4900 block of 7TH STREET NW",
+    "lat": 38.95,
+    "lon": -77.022
+   },
+   {
+    "type": "Recycling Cart - Repair",
+    "agency": "DPW",
+    "added": "2026-11-04T20:53:36Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "400 block of RANDOLPH STREET NW",
+    "lat": 38.939,
+    "lon": -77.019
+   },
+   {
+    "type": "Trash Cart Repair",
+    "agency": "DPW",
+    "added": "2026-11-04T20:50:25Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "400 block of QUINCY STREET NW",
+    "lat": 38.938,
+    "lon": -77.019
+   },
+   {
+    "type": "Supercan - Repair",
+    "agency": "DPW",
+    "added": "2026-11-04T20:45:55Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "400 block of QUINCY STREET NW",
+    "lat": 38.938,
+    "lon": -77.018
+   },
+   {
+    "type": "Trash Cart Repair",
+    "agency": "DPW",
+    "added": "2026-11-04T20:29:39Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "400 block of QUINCY STREET NW",
+    "lat": 38.938,
+    "lon": -77.018
+   },
+   {
+    "type": "Trash Cart Repair",
+    "agency": "DPW",
+    "added": "2026-11-04T20:28:44Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "400 block of QUINCY STREET NW",
+    "lat": 38.938,
+    "lon": -77.018
+   },
+   {
+    "type": "Trash Cart Repair",
+    "agency": "DPW",
+    "added": "2026-11-04T20:27:45Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "400 block of QUINCY STREET NW",
+    "lat": 38.938,
+    "lon": -77.018
+   },
+   {
+    "type": "Trash Cart Repair",
+    "agency": "DPW",
+    "added": "2026-11-04T20:20:14Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "400 block of RANDOLPH STREET NW",
+    "lat": 38.939,
+    "lon": -77.018
+   },
+   {
+    "type": "Recycling Cart - Repair",
+    "agency": "DPW",
+    "added": "2026-11-04T20:19:30Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "400 block of RANDOLPH STREET NW",
+    "lat": 38.939,
+    "lon": -77.018
+   },
+   {
+    "type": "Trash Cart Repair",
+    "agency": "DPW",
+    "added": "2026-11-04T20:17:13Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "400 block of QUINCY STREET NW",
+    "lat": 38.938,
+    "lon": -77.018
+   },
+   {
+    "type": "Container Removal",
+    "agency": "DPW",
+    "added": "2026-11-04T20:11:34Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3800 block of 4TH STREET NW",
+    "lat": 38.938,
+    "lon": -77.017
+   },
+   {
+    "type": "Trash Cart Repair",
+    "agency": "DPW",
+    "added": "2026-11-04T20:05:57Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "400 block of RANDOLPH STREET NW",
+    "lat": 38.939,
+    "lon": -77.018
+   },
+   {
+    "type": "Container Removal",
+    "agency": "DPW",
+    "added": "2026-11-04T20:03:44Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "400 block of QUINCY STREET NW",
+    "lat": 38.938,
+    "lon": -77.018
+   },
+   {
+    "type": "Roadway Signs",
+    "agency": "DDOT",
+    "added": "2026-11-04T19:45:56Z",
+    "resolved": "2026-11-04T20:10:59Z",
+    "status": "Closed",
+    "block": "4500 block of 7TH STREET NW",
+    "lat": 38.946,
+    "lon": -77.022
+   },
+   {
+    "type": "Roadway Signs",
+    "agency": "DDOT",
+    "added": "2026-11-04T19:09:27Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "600 block of GALLATIN STREET NW",
+    "lat": 38.952,
+    "lon": -77.02
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-04T18:58:43Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "5000 block of 5TH STREET NW",
+    "lat": 38.952,
+    "lon": -77.019
+   },
    {
     "type": "Scheduled Yard Waste",
     "agency": "DPW",
@@ -2341,8 +2501,8 @@
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-11-04T18:19:21Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-04T20:00:15Z",
+    "status": "Closed",
     "block": "4500 block of 7TH STREET NW",
     "lat": 38.946,
     "lon": -77.022
@@ -2531,8 +2691,8 @@
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-11-04T13:36:42Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-04T19:57:36Z",
+    "status": "Closed",
     "block": "7TH STREET NW AND VARNUM STREET NW",
     "lat": 38.943,
     "lon": -77.022
@@ -2666,166 +2826,6 @@
     "block": "600 block of GALLATIN STREET NW",
     "lat": 38.952,
     "lon": -77.021
-   },
-   {
-    "type": "Tree Inspection",
-    "agency": "DDOT",
-    "added": "2026-11-03T18:01:58Z",
-    "resolved": "2026-11-04T04:00:57Z",
-    "status": "Closed",
-    "block": "4600 block of 8TH STREET NW",
-    "lat": 38.946,
-    "lon": -77.024
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-03T17:46:15Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4800 block of KANSAS AVENUE NW",
-    "lat": 38.949,
-    "lon": -77.02
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-11-03T17:02:42Z",
-    "resolved": "2026-11-04T18:09:21Z",
-    "status": "Closed",
-    "block": "4800 block of KANSAS AVENUE NW",
-    "lat": 38.95,
-    "lon": -77.021
-   },
-   {
-    "type": "DMV - Drivers License/ID Issues",
-    "agency": "DMV",
-    "added": "2026-11-03T16:57:32Z",
-    "resolved": "2026-11-03T20:53:07Z",
-    "status": "Closed",
-    "block": "600 block of EMERSON STREET NW",
-    "lat": 38.95,
-    "lon": -77.021
-   },
-   {
-    "type": "DC Government Information",
-    "agency": "OUC",
-    "added": "2026-11-03T16:32:53Z",
-    "resolved": "2026-11-03T16:32:53Z",
-    "status": "Closed",
-    "block": "400 block of RANDOLPH STREET NW",
-    "lat": 38.939,
-    "lon": -77.019
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-11-03T15:15:03Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4100 block of NEW HAMPSHIRE AVENUE NW",
-    "lat": 38.942,
-    "lon": -77.021
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-11-03T14:50:04Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4700 block of NEW HAMPSHIRE AVENUE NW",
-    "lat": 38.948,
-    "lon": -77.016
-   },
-   {
-    "type": "DGS - Playground Repair",
-    "agency": "DGS",
-    "added": "2026-11-03T14:27:17Z",
-    "resolved": "2026-11-04T13:40:02Z",
-    "status": "Closed",
-    "block": "4100 block of 8TH STREET NW",
-    "lat": 38.941,
-    "lon": -77.024
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-03T14:22:38Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "900 block of DECATUR STREET NW",
-    "lat": 38.948,
-    "lon": -77.026
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-11-03T13:25:01Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4700 block of 3RD STREET NW",
-    "lat": 38.948,
-    "lon": -77.016
-   },
-   {
-    "type": "Supercan - Delivery",
-    "agency": "DPW",
-    "added": "2026-11-03T13:22:01Z",
-    "resolved": null,
-    "status": "Open (Duplicate)",
-    "block": "800 block of EMERSON STREET NW",
-    "lat": 38.95,
-    "lon": -77.025
-   },
-   {
-    "type": "Supercan - Delivery",
-    "agency": "DPW",
-    "added": "2026-11-03T13:16:55Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "800 block of EMERSON STREET NW",
-    "lat": 38.95,
-    "lon": -77.025
-   },
-   {
-    "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
-    "agency": "DPW",
-    "added": "2026-11-03T13:08:34Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "800 block of EMERSON STREET NW",
-    "lat": 38.95,
-    "lon": -77.025
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-03T12:58:41Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "700 block of QUINCY STREET NW",
-    "lat": 38.937,
-    "lon": -77.023
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-03T12:36:23Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4600 block of 4TH STREET NW",
-    "lat": 38.947,
-    "lon": -77.018
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-11-03T12:33:35Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4300 block of NEW HAMPSHIRE AVENUE NW",
-    "lat": 38.944,
-    "lon": -77.019
    }
   ]
  },
@@ -2912,7 +2912,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3221,7 +3221,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3406,7 +3406,7 @@
   "trees": {
    "total": 3990,
    "species": 196,
-   "planted_5y": 530,
+   "planted_5y": 529,
    "empty_boxes": 32,
    "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (32). Not counted: 'Proposed' = planting scheduled (2), 'Conflict'/'Utility' = empty but blocked (40), 'Retired' = box removed (241). 'total' is boxes with status 'Plant' whose condition is not Dead.",
    "condition": {
@@ -3485,12 +3485,12 @@
     "type": "Bulk Collection",
     "median_days": 7.96,
     "city_median_days": 6.92,
-    "closed_n": 2264
+    "closed_n": 2262
    },
    {
     "type": "Trash Collection - Missed",
     "median_days": 3.72,
-    "city_median_days": 4.08,
+    "city_median_days": 4.06,
     "closed_n": 1183
    },
    {
@@ -3503,25 +3503,25 @@
     "type": "Parking Enforcement",
     "median_days": 0.05,
     "city_median_days": 0.05,
-    "closed_n": 973
+    "closed_n": 974
    },
    {
     "type": "Recycling Collection - Missed",
     "median_days": 4.05,
-    "city_median_days": 4.97,
+    "city_median_days": 4.95,
     "closed_n": 806
    },
    {
     "type": "Illegal Dumping",
     "median_days": 3.93,
-    "city_median_days": 4.04,
+    "city_median_days": 4.03,
     "closed_n": 713
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "median_days": 2.05,
+    "median_days": 2.06,
     "city_median_days": 2.8,
-    "closed_n": 699
+    "closed_n": 701
    },
    {
     "type": "Sanitation Enforcement",
@@ -3533,7 +3533,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3698,7 +3698,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "archive_days": 180,
   "sources": [
    {
@@ -3728,6 +3728,10 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/"
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/"
    },
    {
     "name": "51st",
@@ -3783,9 +3787,8 @@
    {
     "name": "Washingtonian",
     "url": "https://www.washingtonian.com/",
-    "state": "ok",
-    "matched": 1,
-    "fetched": 1
+    "state": "skipped: robots.txt",
+    "matched": 0
    },
    {
     "name": "Washington City Paper",
@@ -3804,6 +3807,13 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/",
     "state": "ok",
     "matched": 0,
     "fetched": 1
@@ -4032,7 +4042,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
@@ -4126,7 +4136,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -26289,7 +26299,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

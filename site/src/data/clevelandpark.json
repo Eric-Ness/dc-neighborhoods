@@ -1,7 +1,7 @@
 {
  "slug": "clevelandpark",
  "name": "Cleveland Park",
- "generated_at": "2026-11-04T19:08:57Z",
+ "generated_at": "2026-11-04T22:06:56Z",
  "boundary": {
   "source": "Cleveland Park Historic District (DC Historic Preservation Office, Open Data DC). DC has no planning area named Cleveland Park.",
   "rings": [
@@ -2936,23 +2936,23 @@
   }
  ],
  "requests": {
-  "total": 243,
-  "previous_total": 285,
+  "total": 241,
+  "previous_total": 286,
   "by_type": [
-   {
-    "type": "Bulk Collection",
-    "count": 39,
-    "previous": 40
-   },
    {
     "type": "Scheduled Yard Waste",
     "count": 39,
-    "previous": 40
+    "previous": 39
+   },
+   {
+    "type": "Bulk Collection",
+    "count": 37,
+    "previous": 42
    },
    {
     "type": "Parking Enforcement",
-    "count": 21,
-    "previous": 44
+    "count": 20,
+    "previous": 45
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -3090,6 +3090,11 @@
     "previous": 6
    },
    {
+    "type": "Pothole",
+    "count": 2,
+    "previous": 4
+   },
+   {
     "type": "DOB - Illegal Construction",
     "count": 1,
     "previous": 1
@@ -3155,18 +3160,23 @@
     "previous": 1
    },
    {
-    "type": "Pothole",
-    "count": 1,
-    "previous": 4
-   },
-   {
     "type": "DGS - Playground Repair",
     "count": 1,
     "previous": 1
    }
   ],
-  "open": 65,
+  "open": 66,
   "recent": [
+   {
+    "type": "Pothole",
+    "agency": "DDOT",
+    "added": "2026-11-04T21:00:44Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "3400 block of PORTER STREET NW",
+    "lat": 38.938,
+    "lon": -77.067
+   },
    {
     "type": "Scheduled Yard Waste",
     "agency": "DPW",
@@ -3656,16 +3666,6 @@
     "block": "3700 block of 35TH STREET NW",
     "lat": 38.938,
     "lon": -77.068
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "agency": "DPW",
-    "added": "2026-10-28T12:43:50Z",
-    "resolved": "2026-10-29T08:41:59Z",
-    "status": "Closed",
-    "block": "3700 block of PORTER STREET NW",
-    "lat": 38.938,
-    "lon": -77.073
    }
   ]
  },
@@ -3712,7 +3712,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3971,7 +3971,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4172,13 +4172,13 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 6.02,
-    "city_median_days": 4.97,
+    "city_median_days": 4.95,
     "closed_n": 196
    },
    {
     "type": "Trash Collection - Missed",
     "median_days": 13.0,
-    "city_median_days": 4.08,
+    "city_median_days": 4.06,
     "closed_n": 175
    },
    {
@@ -4203,7 +4203,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4358,7 +4358,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4396,6 +4396,10 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/"
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/"
    },
    {
     "name": "51st",
@@ -4444,9 +4448,9 @@
    {
     "name": "District Bridges",
     "url": "https://districtbridges.org/",
-    "state": "ok",
-    "matched": 2,
-    "fetched": 1
+    "state": "error: TimeoutError",
+    "matched": 0,
+    "failed": 1
    },
    {
     "name": "WTOP",
@@ -4465,9 +4469,8 @@
    {
     "name": "Washingtonian",
     "url": "https://www.washingtonian.com/",
-    "state": "ok",
-    "matched": 1,
-    "fetched": 1
+    "state": "skipped: robots.txt",
+    "matched": 0
    },
    {
     "name": "PoPville",
@@ -4486,6 +4489,13 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/",
     "state": "ok",
     "matched": 0,
     "fetched": 1
@@ -4784,7 +4794,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
@@ -4855,7 +4865,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -16192,7 +16202,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

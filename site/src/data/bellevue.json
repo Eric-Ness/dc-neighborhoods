@@ -1,7 +1,7 @@
 {
  "slug": "bellevue",
  "name": "Bellevue",
- "generated_at": "2026-11-04T19:08:57Z",
+ "generated_at": "2026-11-04T22:06:56Z",
  "boundary": {
   "source": "ANC single-member districts 8D01, 8D03, 8D05, 8D06, 8E07, 8E08 and 8E09, the homes in DC's BELLEVUE planning area (Open Data DC). 8D04 is left out: it is mostly the empty land at DC's southern tip.",
   "rings": [
@@ -8481,28 +8481,33 @@
   }
  ],
  "requests": {
-  "total": 640,
-  "previous_total": 657,
+  "total": 642,
+  "previous_total": 658,
   "by_type": [
    {
     "type": "Bulk Collection",
     "count": 116,
-    "previous": 126
+    "previous": 124
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 110,
+    "count": 111,
     "previous": 9
    },
    {
     "type": "Parking Enforcement",
-    "count": 76,
-    "previous": 89
+    "count": 74,
+    "previous": 92
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 36,
+    "count": 37,
     "previous": 29
+   },
+   {
+    "type": "Illegal Dumping",
+    "count": 35,
+    "previous": 34
    },
    {
     "type": "DC Government Information",
@@ -8510,13 +8515,8 @@
     "previous": 30
    },
    {
-    "type": "Illegal Dumping",
-    "count": 34,
-    "previous": 34
-   },
-   {
     "type": "Scheduled Yard Waste",
-    "count": 23,
+    "count": 25,
     "previous": 22
    },
    {
@@ -8526,13 +8526,13 @@
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
-    "count": 19,
+    "count": 20,
     "previous": 21
    },
    {
     "type": "Residential Parking Permit Violation",
     "count": 19,
-    "previous": 24
+    "previous": 22
    },
    {
     "type": "Recycling Collection - Missed",
@@ -8550,11 +8550,6 @@
     "previous": 5
    },
    {
-    "type": "Tree Inspection",
-    "count": 10,
-    "previous": 11
-   },
-   {
     "type": "DOB - Vacant Private Property Inspection",
     "count": 10,
     "previous": 8
@@ -8568,6 +8563,11 @@
     "type": "Roadway Signs",
     "count": 8,
     "previous": 10
+   },
+   {
+    "type": "Tree Inspection",
+    "count": 7,
+    "previous": 14
    },
    {
     "type": "Supercan - Delivery",
@@ -8585,6 +8585,11 @@
     "previous": 5
    },
    {
+    "type": "Public Space Litter Can-Collection",
+    "count": 5,
+    "previous": 0
+   },
+   {
     "type": "Tree Pruning",
     "count": 4,
     "previous": 1
@@ -8598,11 +8603,6 @@
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 4,
     "previous": 17
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "count": 4,
-    "previous": 0
    },
    {
     "type": "Pothole",
@@ -8622,7 +8622,7 @@
    {
     "type": "DC Health Rodent & Vector Control",
     "count": 3,
-    "previous": 4
+    "previous": 3
    },
    {
     "type": "DMV - Vehicle Registration Issues",
@@ -8690,8 +8690,48 @@
     "previous": 0
    }
   ],
-  "open": 76,
+  "open": 77,
   "recent": [
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-04T21:45:03Z",
+    "resolved": "2026-11-04T21:45:03Z",
+    "status": "Closed",
+    "block": "Unit block of ATLANTIC STREET SE",
+    "lat": 38.831,
+    "lon": -77.006
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-04T21:24:36Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "800 block of H R DRIVE SE",
+    "lat": 38.83,
+    "lon": -76.993
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-04T20:57:36Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "100 block of DARRINGTON STREET SW",
+    "lat": 38.827,
+    "lon": -77.01
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-04T20:55:19Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4100 block of MARTIN LUTHER KING JR AVENUE SW",
+    "lat": 38.829,
+    "lon": -77.012
+   },
    {
     "type": "Dead Animal Collection",
     "agency": "DPW",
@@ -8746,8 +8786,8 @@
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-11-04T18:18:22Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-04T20:34:52Z",
+    "status": "Closed",
     "block": "Unit block of MISSISSIPPI AVENUE SE",
     "lat": 38.832,
     "lon": -77.007
@@ -9151,46 +9191,6 @@
     "block": "4000 block of MARTIN LUTHER KING JR AVENUE SW",
     "lat": 38.83,
     "lon": -77.011
-   },
-   {
-    "type": "Tree Pruning",
-    "agency": "DDOT",
-    "added": "2026-11-02T14:12:50Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "600 block of FORRESTER STREET SE",
-    "lat": 38.825,
-    "lon": -76.998
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-02T13:35:11Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "Unit block of BRANDYWINE STREET SW",
-    "lat": 38.829,
-    "lon": -77.011
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-02T13:04:09Z",
-    "resolved": "2026-11-02T13:04:09Z",
-    "status": "Closed",
-    "block": "4300 block of 3RD STREET SE",
-    "lat": 38.828,
-    "lon": -77.003
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-01T17:48:02Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "800 block of MARJORIE COURT SE",
-    "lat": 38.831,
-    "lon": -76.992
    }
   ]
  },
@@ -9293,7 +9293,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -9471,7 +9471,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -9603,13 +9603,13 @@
     "type": "Bulk Collection",
     "median_days": 6.67,
     "city_median_days": 6.92,
-    "closed_n": 840
+    "closed_n": 839
    },
    {
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 635
+    "closed_n": 636
    },
    {
     "type": "DC Government Information",
@@ -9620,7 +9620,7 @@
    {
     "type": "Trash Collection - Missed",
     "median_days": 3.71,
-    "city_median_days": 4.08,
+    "city_median_days": 4.06,
     "closed_n": 323
    },
    {
@@ -9631,9 +9631,9 @@
    },
    {
     "type": "Illegal Dumping",
-    "median_days": 4.1,
-    "city_median_days": 4.04,
-    "closed_n": 211
+    "median_days": 4.09,
+    "city_median_days": 4.03,
+    "closed_n": 212
    },
    {
     "type": "Snow and Ice Removal on Public Space",
@@ -9644,14 +9644,14 @@
    {
     "type": "Abandoned Vehicle - On Public Property",
     "median_days": 2.98,
-    "city_median_days": 3.0,
+    "city_median_days": 3.01,
     "closed_n": 195
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -9774,7 +9774,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "archive_days": 180,
   "sources": [
    {
@@ -9808,6 +9808,10 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/"
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/"
    },
    {
     "name": "51st",
@@ -9896,6 +9900,13 @@
     "fetched": 1
    },
    {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
     "name": "51st",
     "url": "https://51st.news/",
     "state": "ok",
@@ -9960,7 +9971,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
@@ -10036,7 +10047,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -27133,7 +27144,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

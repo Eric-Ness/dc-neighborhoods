@@ -1,7 +1,7 @@
 {
  "slug": "vanness",
  "name": "Van Ness",
- "generated_at": "2026-11-04T19:08:57Z",
+ "generated_at": "2026-11-04T22:06:56Z",
  "boundary": {
   "source": "ANC single-member districts 3F01, 3F02 and 3F05 around the Van Ness-UDC Metro (Open Data DC). DC has no planning area named Van Ness.",
   "rings": [
@@ -3382,12 +3382,12 @@
   }
  ],
  "requests": {
-  "total": 220,
-  "previous_total": 231,
+  "total": 221,
+  "previous_total": 232,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
-    "count": 47,
+    "count": 48,
     "previous": 59
    },
    {
@@ -3397,8 +3397,8 @@
    },
    {
     "type": "Bulk Collection",
-    "count": 33,
-    "previous": 23
+    "count": 32,
+    "previous": 24
    },
    {
     "type": "Graffiti Removal",
@@ -3496,6 +3496,11 @@
     "previous": 9
    },
    {
+    "type": "DMV - Drivers License/ID Issues",
+    "count": 2,
+    "previous": 5
+   },
+   {
     "type": "Dead Animal Collection",
     "count": 2,
     "previous": 0
@@ -3529,11 +3534,6 @@
     "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
     "count": 1,
     "previous": 0
-   },
-   {
-    "type": "DMV - Drivers License/ID Issues",
-    "count": 1,
-    "previous": 5
    },
    {
     "type": "DC How Am I Driving?",
@@ -3596,14 +3596,34 @@
     "previous": 4
    }
   ],
-  "open": 71,
+  "open": 72,
   "recent": [
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "agency": "DMV",
+    "added": "2026-11-04T20:32:14Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3000 block of ALBEMARLE STREET NW",
+    "lat": 38.948,
+    "lon": -77.062
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-04T20:27:09Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2900 block of BRANDYWINE STREET NW",
+    "lat": 38.95,
+    "lon": -77.061
+   },
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-11-04T19:41:19Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-04T20:42:05Z",
+    "status": "Closed",
     "block": "2900 block of UPTON STREET NW",
     "lat": 38.942,
     "lon": -77.061
@@ -4077,26 +4097,6 @@
     "block": "4500 block of CONNECTICUT AVENUE NW",
     "lat": 38.949,
     "lon": -77.067
-   },
-   {
-    "type": "Graffiti Removal",
-    "agency": "DPW",
-    "added": "2026-10-29T18:20:16Z",
-    "resolved": "2026-11-02T18:41:02Z",
-    "status": "Closed (Duplicate)",
-    "block": "4200 block of CONNECTICUT AVENUE NW",
-    "lat": 38.945,
-    "lon": -77.065
-   },
-   {
-    "type": "Graffiti Removal",
-    "agency": "DPW",
-    "added": "2026-10-29T18:18:22Z",
-    "resolved": "2026-11-02T18:41:02Z",
-    "status": "Closed (Duplicate)",
-    "block": "4200 block of CONNECTICUT AVENUE NW",
-    "lat": 38.945,
-    "lon": -77.065
    }
   ]
  },
@@ -4145,7 +4145,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -4417,7 +4417,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4596,18 +4596,18 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 354
+    "closed_n": 355
    },
    {
     "type": "Trash Collection - Missed",
     "median_days": 8.14,
-    "city_median_days": 4.08,
+    "city_median_days": 4.06,
     "closed_n": 195
    },
    {
     "type": "Recycling Collection - Missed",
     "median_days": 4.03,
-    "city_median_days": 4.97,
+    "city_median_days": 4.95,
     "closed_n": 189
    },
    {
@@ -4618,9 +4618,9 @@
    },
    {
     "type": "Roadway Signs",
-    "median_days": 41.07,
-    "city_median_days": 7.0,
-    "closed_n": 41
+    "median_days": 43.95,
+    "city_median_days": 7.01,
+    "closed_n": 43
    },
    {
     "type": "Pothole",
@@ -4632,7 +4632,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4778,7 +4778,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4804,6 +4804,10 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/"
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/"
    },
    {
     "name": "51st",
@@ -4873,6 +4877,13 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/",
     "state": "ok",
     "matched": 0,
     "fetched": 1
@@ -5117,7 +5128,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
@@ -5237,7 +5248,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -15257,7 +15268,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

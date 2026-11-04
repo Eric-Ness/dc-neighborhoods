@@ -1,7 +1,7 @@
 {
  "slug": "hillcrest",
  "name": "Hillcrest",
- "generated_at": "2026-11-04T19:08:57Z",
+ "generated_at": "2026-11-04T22:06:56Z",
  "boundary": {
   "source": "ANC single-member districts 7B02, 7B03, 7B05, 7B06, 8B02 and 8B05, about the same ground as DC's NAYLOR/HILLCREST planning area (Open Data DC). Hillcrest Heights, Maryland, is not included.",
   "rings": [
@@ -9280,13 +9280,18 @@
   }
  ],
  "requests": {
-  "total": 797,
-  "previous_total": 720,
+  "total": 778,
+  "previous_total": 743,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 134,
-    "previous": 112
+    "count": 133,
+    "previous": 114
+   },
+   {
+    "type": "Parking Enforcement",
+    "count": 85,
+    "previous": 73
    },
    {
     "type": "DOEE - LIHEAP",
@@ -9294,29 +9299,24 @@
     "previous": 6
    },
    {
-    "type": "Parking Enforcement",
-    "count": 82,
-    "previous": 73
+    "type": "Trash Collection - Missed",
+    "count": 45,
+    "previous": 69
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 49,
-    "previous": 58
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "count": 47,
-    "previous": 67
+    "count": 43,
+    "previous": 63
    },
    {
     "type": "Illegal Dumping",
-    "count": 39,
-    "previous": 19
+    "count": 37,
+    "previous": 21
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 33,
-    "previous": 29
+    "count": 31,
+    "previous": 31
    },
    {
     "type": "Sanitation Enforcement",
@@ -9330,13 +9330,13 @@
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
-    "count": 19,
-    "previous": 7
+    "count": 17,
+    "previous": 9
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
-    "count": 18,
-    "previous": 17
+    "count": 16,
+    "previous": 19
    },
    {
     "type": "Roadway Repair",
@@ -9350,7 +9350,7 @@
    },
    {
     "type": "DC Government Information",
-    "count": 14,
+    "count": 15,
     "previous": 26
    },
    {
@@ -9424,19 +9424,9 @@
     "previous": 2
    },
    {
-    "type": "Supercan - Repair",
-    "count": 5,
-    "previous": 1
-   },
-   {
     "type": "Tree Removal",
     "count": 5,
     "previous": 12
-   },
-   {
-    "type": "Recycling Cart - Repair",
-    "count": 4,
-    "previous": 0
    },
    {
     "type": "DMV - Online Processing Issues",
@@ -9452,6 +9442,11 @@
     "type": "Streetlight Repair Investigation",
     "count": 4,
     "previous": 7
+   },
+   {
+    "type": "Supercan - Repair",
+    "count": 3,
+    "previous": 3
    },
    {
     "type": "Public Space Litter Can-Collection",
@@ -9472,11 +9467,6 @@
     "type": "Roadway Markings / Pylons",
     "count": 3,
     "previous": 2
-   },
-   {
-    "type": "Alley Cleaning",
-    "count": 2,
-    "previous": 3
    },
    {
     "type": "DC How Am I Driving?",
@@ -9544,6 +9534,11 @@
     "previous": 0
    },
    {
+    "type": "Recycling Cart - Repair",
+    "count": 2,
+    "previous": 2
+   },
+   {
     "type": "Dockless Vehicle Parking Complaint",
     "count": 2,
     "previous": 3
@@ -9571,6 +9566,46 @@
   ],
   "open": 165,
   "recent": [
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T22:37:13Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2600 block of 30TH STREET SE",
+    "lat": 38.86,
+    "lon": -76.965
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T21:28:19Z",
+    "resolved": "2026-11-04T21:53:34Z",
+    "status": "Closed (Duplicate)",
+    "block": "2000 block of BRANCH AVENUE SE",
+    "lat": 38.865,
+    "lon": -76.959
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T21:28:13Z",
+    "resolved": "2026-11-04T21:53:33Z",
+    "status": "Closed",
+    "block": "2000 block of BRANCH AVENUE SE",
+    "lat": 38.865,
+    "lon": -76.959
+   },
+   {
+    "type": "DC Government Information",
+    "agency": "OUC",
+    "added": "2026-11-04T21:17:00Z",
+    "resolved": "2026-11-04T21:17:00Z",
+    "status": "Closed",
+    "block": "2700 block of KNOX TERRACE SE",
+    "lat": 38.853,
+    "lon": -76.968
+   },
    {
     "type": "DOEE - LIHEAP",
     "agency": "DOEE",
@@ -10030,46 +10065,6 @@
     "block": "1800 block of 29TH STREET SE",
     "lat": 38.868,
     "lon": -76.965
-   },
-   {
-    "type": "Roadway Markings / Pylons",
-    "agency": "DDOT",
-    "added": "2026-11-02T20:49:37Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "2500 block of ALABAMA AVENUE SE",
-    "lat": 38.858,
-    "lon": -76.969
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-02T20:35:49Z",
-    "resolved": "2026-11-02T20:51:13Z",
-    "status": "Closed",
-    "block": "2500 block of ALABAMA AVENUE SE",
-    "lat": 38.858,
-    "lon": -76.969
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-02T19:32:11Z",
-    "resolved": "2026-11-02T19:32:11Z",
-    "status": "Closed",
-    "block": "3000 block of 30TH STREET SE",
-    "lat": 38.852,
-    "lon": -76.965
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-02T19:32:11Z",
-    "resolved": "2026-11-02T19:32:11Z",
-    "status": "Closed",
-    "block": "3000 block of 30TH STREET SE",
-    "lat": 38.852,
-    "lon": -76.965
    }
   ]
  },
@@ -10156,7 +10151,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -10343,7 +10338,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -10513,19 +10508,19 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 568
+    "closed_n": 569
    },
    {
     "type": "Trash Collection - Missed",
     "median_days": 2.75,
-    "city_median_days": 4.08,
+    "city_median_days": 4.06,
     "closed_n": 487
    },
    {
     "type": "DC Government Information",
     "median_days": 0.0,
     "city_median_days": 0.0,
-    "closed_n": 413
+    "closed_n": 414
    },
    {
     "type": "Scheduled Yard Waste",
@@ -10536,7 +10531,7 @@
    {
     "type": "Illegal Dumping",
     "median_days": 6.06,
-    "city_median_days": 4.04,
+    "city_median_days": 4.03,
     "closed_n": 270
    },
    {
@@ -10555,7 +10550,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -10675,7 +10670,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "archive_days": 180,
   "sources": [
    {
@@ -10705,6 +10700,10 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/"
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/"
    },
    {
     "name": "51st",
@@ -10781,6 +10780,13 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/",
     "state": "ok",
     "matched": 0,
     "fetched": 1
@@ -10875,7 +10881,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
@@ -10937,7 +10943,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -33114,7 +33120,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

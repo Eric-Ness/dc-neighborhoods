@@ -1,7 +1,7 @@
 {
  "slug": "anacostia",
  "name": "Anacostia",
- "generated_at": "2026-11-04T19:08:57Z",
+ "generated_at": "2026-11-04T22:06:56Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1056,13 +1056,13 @@
   }
  ],
  "requests": {
-  "total": 594,
-  "previous_total": 728,
+  "total": 598,
+  "previous_total": 729,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 105,
-    "previous": 97
+    "count": 106,
+    "previous": 99
    },
    {
     "type": "Parking Enforcement",
@@ -1071,7 +1071,7 @@
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 77,
+    "count": 80,
     "previous": 8
    },
    {
@@ -1086,7 +1086,7 @@
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 20,
+    "count": 21,
     "previous": 24
    },
    {
@@ -1145,9 +1145,9 @@
     "previous": 21
    },
    {
-    "type": "Abandoned Vehicle - On Public Property",
+    "type": "Out of State Parking Violation (ROSA)",
     "count": 7,
-    "previous": 26
+    "previous": 5
    },
    {
     "type": "Emergency No-Parking Verification",
@@ -1155,14 +1155,14 @@
     "previous": 0
    },
    {
-    "type": "Out of State Parking Violation (ROSA)",
-    "count": 6,
-    "previous": 5
-   },
-   {
     "type": "Dead Animal Collection",
     "count": 6,
     "previous": 6
+   },
+   {
+    "type": "Abandoned Vehicle - On Public Property",
+    "count": 5,
+    "previous": 28
    },
    {
     "type": "Supercan - Delivery",
@@ -1252,7 +1252,7 @@
    {
     "type": "Tree Pruning",
     "count": 2,
-    "previous": 24
+    "previous": 22
    },
    {
     "type": "DOB - Illegal Construction",
@@ -1320,8 +1320,78 @@
     "previous": 3
    }
   ],
-  "open": 66,
+  "open": 70,
   "recent": [
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-04T20:58:36Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2200 block of HUNTER PLACE SE",
+    "lat": 38.86,
+    "lon": -76.984
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T20:35:53Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2300 block of CHESTER STREET SE",
+    "lat": 38.862,
+    "lon": -76.988
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-04T20:15:46Z",
+    "resolved": "2026-11-04T20:15:46Z",
+    "status": "Closed",
+    "block": "2500 block of POMEROY ROAD SE",
+    "lat": 38.855,
+    "lon": -76.99
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T19:57:21Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of FRANKFORD STREET SE",
+    "lat": 38.856,
+    "lon": -76.98
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-04T19:52:01Z",
+    "resolved": "2026-11-04T19:52:01Z",
+    "status": "Closed",
+    "block": "2500 block of POMEROY ROAD SE",
+    "lat": 38.855,
+    "lon": -76.991
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-04T19:32:55Z",
+    "resolved": "2026-11-04T19:32:55Z",
+    "status": "Closed",
+    "block": "1400 block of CEDAR STREET SE",
+    "lat": 38.861,
+    "lon": -76.985
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-04T19:31:42Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1200 block of MORRIS ROAD SE",
+    "lat": 38.863,
+    "lon": -76.991
+   },
    {
     "type": "Sidewalk Repair",
     "agency": "DDOT",
@@ -1751,82 +1821,12 @@
     "block": "2400 block of 17TH STREET SE",
     "lat": 38.857,
     "lon": -76.98
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-02T18:27:36Z",
-    "resolved": "2026-11-02T18:27:36Z",
-    "status": "Closed",
-    "block": "2400 block of MARTIN LUTHER KING JR AVENUE SE",
-    "lat": 38.862,
-    "lon": -76.993
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-02T18:08:49Z",
-    "resolved": "2026-11-02T18:08:49Z",
-    "status": "Closed",
-    "block": "2400 block of ELVANS ROAD SE",
-    "lat": 38.854,
-    "lon": -76.985
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-02T16:49:26Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1500 block of U STREET SE",
-    "lat": 38.866,
-    "lon": -76.982
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-02T16:39:01Z",
-    "resolved": "2026-11-02T16:39:01Z",
-    "status": "Closed",
-    "block": "1500 block of ERIE STREET SE",
-    "lat": 38.857,
-    "lon": -76.984
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-02T16:13:05Z",
-    "resolved": "2026-11-02T16:13:05Z",
-    "status": "Closed",
-    "block": "2600 block of STANTON ROAD SE",
-    "lat": 38.858,
-    "lon": -76.99
-   },
-   {
-    "type": "Dead Animal Collection",
-    "agency": "DPW",
-    "added": "2026-11-02T13:52:25Z",
-    "resolved": "2026-11-04T17:42:26Z",
-    "status": "Closed",
-    "block": "2500 block of SAYLES PLACE SE",
-    "lat": 38.86,
-    "lon": -76.993
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-02T13:41:51Z",
-    "resolved": "2026-11-02T16:06:53Z",
-    "status": "Closed",
-    "block": "2600 block of BOWEN ROAD SE",
-    "lat": 38.859,
-    "lon": -76.99
    }
   ]
  },
  "crime": {
-  "total": 28,
-  "previous_total": 34,
+  "total": 27,
+  "previous_total": 35,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
@@ -1835,8 +1835,8 @@
    },
    {
     "offense": "MOTOR VEHICLE THEFT",
-    "count": 6,
-    "previous": 5
+    "count": 5,
+    "previous": 6
    },
    {
     "offense": "THEFT F/AUTO",
@@ -1906,7 +1906,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2106,7 +2106,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2387,7 +2387,7 @@
    {
     "type": "Trash Collection - Missed",
     "median_days": 4.49,
-    "city_median_days": 4.08,
+    "city_median_days": 4.06,
     "closed_n": 428
    },
    {
@@ -2405,20 +2405,20 @@
    {
     "type": "Illegal Dumping",
     "median_days": 3.12,
-    "city_median_days": 4.04,
+    "city_median_days": 4.03,
     "closed_n": 217
    },
    {
     "type": "Roadway Signs",
     "median_days": 2.96,
-    "city_median_days": 7.0,
+    "city_median_days": 7.01,
     "closed_n": 156
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2587,7 +2587,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2613,6 +2613,10 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/"
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/"
    },
    {
     "name": "51st",
@@ -2682,6 +2686,13 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/",
     "state": "ok",
     "matched": 0,
     "fetched": 1
@@ -2865,7 +2876,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
@@ -2993,7 +3004,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -19142,7 +19153,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

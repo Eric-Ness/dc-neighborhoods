@@ -1,7 +1,7 @@
 {
  "slug": "navyyard",
  "name": "Navy Yard",
- "generated_at": "2026-11-04T19:08:57Z",
+ "generated_at": "2026-11-04T22:06:56Z",
  "boundary": {
   "source": "Navy Yard (Capitol Riverfront) Business Improvement District boundary (Open Data DC). DC's planning area here is SW/Waterfront.",
   "rings": [
@@ -6948,23 +6948,23 @@
   }
  ],
  "requests": {
-  "total": 1108,
-  "previous_total": 1170,
+  "total": 1106,
+  "previous_total": 1174,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 534,
-    "previous": 724
+    "count": 533,
+    "previous": 726
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 62,
+    "count": 63,
     "previous": 8
    },
    {
     "type": "Bulk Collection",
     "count": 60,
-    "previous": 73
+    "previous": 72
    },
    {
     "type": "Streetlight Repair Investigation",
@@ -6973,7 +6973,7 @@
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 41,
+    "count": 42,
     "previous": 11
    },
    {
@@ -6989,7 +6989,7 @@
    {
     "type": "Roadway Signs",
     "count": 24,
-    "previous": 21
+    "previous": 20
    },
    {
     "type": "Recycling Collection - Missed",
@@ -7002,9 +7002,9 @@
     "previous": 20
    },
    {
-    "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 19,
-    "previous": 10
+    "type": "DMV - Vehicle Registration Issues",
+    "count": 17,
+    "previous": 13
    },
    {
     "type": "Sidewalk Repair",
@@ -7012,14 +7012,9 @@
     "previous": 8
    },
    {
-    "type": "DMV - Vehicle Registration Issues",
+    "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 16,
     "previous": 13
-   },
-   {
-    "type": "Traffic Safety Input",
-    "count": 15,
-    "previous": 8
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
@@ -7037,24 +7032,24 @@
     "previous": 22
    },
    {
+    "type": "Traffic Safety Input",
+    "count": 14,
+    "previous": 8
+   },
+   {
     "type": "Graffiti Removal",
     "count": 12,
     "previous": 2
    },
    {
+    "type": "Scheduled Yard Waste",
+    "count": 9,
+    "previous": 13
+   },
+   {
     "type": "Public Space Inspection",
     "count": 9,
-    "previous": 10
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "count": 8,
-    "previous": 11
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "count": 8,
-    "previous": 13
+    "previous": 9
    },
    {
     "type": "OCTFME - Down Cable Wires",
@@ -7068,8 +7063,13 @@
    },
    {
     "type": "Roadway Markings / Pylons",
-    "count": 6,
+    "count": 5,
     "previous": 3
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "count": 5,
+    "previous": 14
    },
    {
     "type": "Sanitation Enforcement",
@@ -7082,9 +7082,19 @@
     "previous": 8
    },
    {
+    "type": "Dead Animal Collection",
+    "count": 5,
+    "previous": 0
+   },
+   {
     "type": "DC How Am I Driving?",
     "count": 4,
     "previous": 5
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "count": 4,
+    "previous": 2
    },
    {
     "type": "Roadway Repair",
@@ -7093,11 +7103,6 @@
    },
    {
     "type": "DMV - Driver and Vehicle Services Refund",
-    "count": 4,
-    "previous": 0
-   },
-   {
-    "type": "Dead Animal Collection",
     "count": 4,
     "previous": 0
    },
@@ -7127,11 +7132,6 @@
     "previous": 4
    },
    {
-    "type": "Public Space Litter Can-Collection",
-    "count": 3,
-    "previous": 2
-   },
-   {
     "type": "Bicycle Services",
     "count": 3,
     "previous": 4
@@ -7158,12 +7158,32 @@
    },
    {
     "type": "Illegal Dumping",
-    "count": 1,
-    "previous": 11
+    "count": 2,
+    "previous": 12
    }
   ],
   "open": 148,
   "recent": [
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T21:01:40Z",
+    "resolved": "2026-11-04T22:06:05Z",
+    "status": "Closed",
+    "block": "800 block of NEW JERSEY AVENUE SE",
+    "lat": 38.88,
+    "lon": -77.007
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-04T20:43:36Z",
+    "resolved": "2026-11-04T21:59:39Z",
+    "status": "Closed (Duplicate)",
+    "block": "1000 block of NEW JERSEY AVENUE SE",
+    "lat": 38.878,
+    "lon": -77.005
+   },
    {
     "type": "Dockless Vehicle Parking Complaint",
     "agency": "DDOT",
@@ -7388,8 +7408,8 @@
     "type": "Illegal Dumping",
     "agency": "DPW",
     "added": "2026-11-02T15:43:42Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-04T21:59:39Z",
+    "status": "Closed",
     "block": "1000 block of NEW JERSEY AVENUE SE",
     "lat": 38.878,
     "lon": -77.005
@@ -7643,37 +7663,17 @@
     "block": "300 block of I STREET SE",
     "lat": 38.879,
     "lon": -77.001
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T16:12:17Z",
-    "resolved": "2026-10-31T16:22:29Z",
-    "status": "Closed",
-    "block": "900 block of NEW JERSEY AVENUE SE",
-    "lat": 38.879,
-    "lon": -77.005
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T16:06:44Z",
-    "resolved": "2026-10-31T18:29:27Z",
-    "status": "Closed",
-    "block": "1300 block of BOWYER STREET SE",
-    "lat": 38.875,
-    "lon": -76.999
    }
   ]
  },
  "crime": {
   "total": 47,
-  "previous_total": 53,
+  "previous_total": 51,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
     "count": 23,
-    "previous": 19
+    "previous": 18
    },
    {
     "offense": "THEFT F/AUTO",
@@ -7683,7 +7683,7 @@
    {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
     "count": 5,
-    "previous": 2
+    "previous": 1
    },
    {
     "offense": "MOTOR VEHICLE THEFT",
@@ -7760,7 +7760,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -7944,7 +7944,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -8087,7 +8087,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 2168
+    "closed_n": 2169
    },
    {
     "type": "DC Government Information",
@@ -8110,7 +8110,7 @@
    {
     "type": "DMV - Drivers License/ID Issues",
     "median_days": 8.0,
-    "city_median_days": 8.01,
+    "city_median_days": 8.0,
     "closed_n": 110
    },
    {
@@ -8122,20 +8122,20 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 1.87,
-    "city_median_days": 4.97,
+    "city_median_days": 4.95,
     "closed_n": 74
    },
    {
     "type": "Illegal Dumping",
-    "median_days": 4.01,
-    "city_median_days": 4.04,
-    "closed_n": 67
+    "median_days": 3.92,
+    "city_median_days": 4.03,
+    "closed_n": 68
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -8275,7 +8275,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "archive_days": 180,
   "sources": [
    {
@@ -8305,6 +8305,10 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/"
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/"
    },
    {
     "name": "51st",
@@ -8346,9 +8350,8 @@
    {
     "name": "Washingtonian",
     "url": "https://www.washingtonian.com/",
-    "state": "ok",
-    "matched": 3,
-    "fetched": 2
+    "state": "skipped: robots.txt",
+    "matched": 0
    },
    {
     "name": "The Hill is Home",
@@ -8381,6 +8384,13 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/",
     "state": "ok",
     "matched": 0,
     "fetched": 1
@@ -8825,7 +8835,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "today": "2026-11-04",
   "days_ahead": 30,
   "sources": [
@@ -8911,7 +8921,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -31809,7 +31819,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-04T22:06:56Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
