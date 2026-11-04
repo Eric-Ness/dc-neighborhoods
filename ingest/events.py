@@ -342,6 +342,27 @@ LINKS["brightwood"] = [
     {"name": "Uptown Main Street (Kennedy Street)", "url": "https://www.uptownmainstreet.org/news-events"},
     {"name": "Petworth Library events", "url": "https://dclibrary.libnet.info/events?l=Petworth%20Neighborhood%20Library"},
 ]
+ANCS["deanwood"] = ["7C"]
+LINKS["deanwood"] = [
+    {"name": "Deanwood Library events", "url": "https://dclibrary.libnet.info/events?l=Deanwood%20Neighborhood%20Library"},
+    {"name": "DC Office of ANCs calendar (ANC 7C)", "url": "https://oanc.dc.gov/"},
+]
+ANCS["hillcrest"] = ["7B", "8B"]
+LINKS["hillcrest"] = [
+    {"name": "Francis A. Gregory Library events", "url": "https://dclibrary.libnet.info/events?l=Francis%20A.%20Gregory%20Neighborhood%20Library"},
+    {"name": "ANC 8B", "url": "https://anc8b.dc.gov/"},
+]
+ANCS["bellevue"] = ["8D", "8E"]
+LINKS["bellevue"] = [
+    {"name": "Bellevue Library events", "url": "https://dclibrary.libnet.info/events?l=William%20O.%20Lockridge%2FBellevue%20Neighborhood%20Library"},
+    {"name": "ANC 8E", "url": "https://anc8e.dc.gov/"},
+    {"name": "DC Office of ANCs calendar", "url": "https://oanc.dc.gov/"},
+]
+ANCS["16thstreetheights"] = ["4E"]
+LINKS["16thstreetheights"] = [
+    {"name": "ANC 4E", "url": "https://anc4e.dc.gov/"},
+    {"name": "DC Office of ANCs calendar", "url": "https://oanc.dc.gov/"},
+]
 ANCS["congressheights"] = ["8C", "8E"]
 LINKS["congressheights"] = [
     {"name": "ANC 8C calendar", "url": "https://www.anc8c.org/calendar"},

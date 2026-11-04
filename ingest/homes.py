@@ -277,6 +277,26 @@ HOODS = {
         "otr": [("Brightwood", "A"), ("Brightwood", "C"), ("Petworth", "B")],
         "label": "OTR assessment sub-areas Brightwood A and C and Petworth B",
     },
+    "deanwood": {
+        # Boundary is ANC 7C. Deanwood A is only 30% inside, so it's left out.
+        "otr": [("Deanwood", "B"), ("Deanwood", "C"), ("Deanwood", "D"), ("Deanwood", "E")],
+        "label": "OTR assessment sub-areas Deanwood B, C, D and E",
+    },
+    "hillcrest": {
+        # Hillcrest C is wholly inside and A 44%. Randle Heights B (32% inside) mostly belongs to its neighbors.
+        "otr": [("Hillcrest", "A"), ("Hillcrest", "C")],
+        "label": "OTR assessment sub-areas Hillcrest A and C",
+    },
+    "bellevue": {
+        # Boundary is 8D01, 8D03, 8D05, 8D06, 8E07-09. Congress Heights A is 89% inside and C 51%; B goes to the Congress Heights site.
+        "otr": [("Congress Heights", "A"), ("Congress Heights", "C")],
+        "label": "OTR assessment sub-areas Congress Heights A and C",
+    },
+    "16thstreetheights": {
+        # Boundary is all of ANC 4E. Crestwood and 16th Street Heights A and B are wholly inside, C 87%.
+        "otr": [("16th Street Heights", "A"), ("16th Street Heights", "B"), ("16th Street Heights", "C"), ("Crestwood", None)],
+        "label": "OTR assessment sub-areas 16th Street Heights A, B and C and Crestwood",
+    },
     "congressheights": {
         # Boundary is ANC 8C02-04, 8C06-08 and 8E03-05. Congress Heights B is 79% inside, Randle Heights D 67%, Randle Heights C 42%.
         # Congress Heights C (27% inside) is mostly Washington Highlands, so it's left out.
@@ -598,8 +618,10 @@ def check(section: dict) -> list[str]:
     if not a.get("of") or a.get("n", -1) < 0 or a["n"] > a["of"]:
         errors.append(f"above_assessment_12mo inconsistent: {a}")
     months = [m for m in section["by_month"] if m.get("median") is not None]
-    if len(section["by_month"]) != 12 or len(months) < 6:
-        errors.append(f"by_month has {len(months)} months with a median (need >= 6 of 12)")
+    # A month needs 3 sales for a median, so a thin market legitimately leaves most months blank.
+    need = 6 if section[section.get("primary", "house")]["count_12mo"] >= 60 else 1
+    if len(section["by_month"]) != 12 or len(months) < need:
+        errors.append(f"by_month has {len(months)} months with a median (need >= {need} of 12)")
     for m in months:
         plausible(f"by_month {m['month']}", m["median"])
     if not section["recent_sales"]:

@@ -307,6 +307,32 @@ ARCHIVE = {
         "reject": r"slightly\s+injured|automobile\s+of|dining\s+room\s+suite|address\s+box|takoma\s+park,?\s+md|maryland|montgomery\s+county|silver\s+spring|sligo|foot\s*ball|eleven|touchdown|gridiron|interment|funeral|years\s+old|tacoma|duckpin|sanitarium|washington\s+missionary",
         "local": r"georgia\s+av|butternut|cedar\s+st|carroll|blair\s+road|n\.\s?w\.|citizens|fourth\s+st|piney\s+branch|sixteenth",
     },
+    "deanwood": {
+        "terms": ["Deanwood", "Burrville", '"Suburban Gardens"'],
+        "pattern": r"deanwood|burrville|suburban\s+gardens",
+        "reject": r"departed\s+this\s+life|interment|inter\s+ment|funeral|deaths?\s+reported|\b\d+\s+years(\s+old)?\b",
+        "local": r"deanwood|burrville|suburban\s+gardens|n\.\s?e\.|citizens",
+    },
+    "hillcrest": {
+        # "Randle Highlands" is the 1926 name; a bare "Hillcrest" is often the orphan asylum near Mount Vernon Seminary.
+        "terms": ['"Randle Highlands"', "Hillcrest", '"Naylor road"'],
+        "pattern": r"randle\s+high|naylor\s+road|hillcrest(?=.{0,120}(s\.\s?e|southeast|randle|naylor|anacostia))",
+        "reject": r"orphan|asylum|seminary|departed\s+this\s+life|interment|inter\s+ment|funeral|deaths?\s+reported|\b\d+\s+years(\s+old)?\b",
+        "local": r"randle|naylor|s\.\s?e\.|southeast|citizens|anacostia",
+    },
+    "bellevue": {
+        "terms": ["Bellevue", '"South Capitol street"'],
+        "pattern": r"bellevue(?=.{0,120}(s\.\s?e|s\.\s?w|south\s+capitol|anacostia|congress\s+heights|nichols|citizens))",
+        "reject": r"hospital|new\s+york|departed\s+this\s+life|interment|inter\s+ment|funeral|deaths?\s+reported|\b\d+\s+years(\s+old)?\b",
+        "local": r"bellevue|south\s+capitol|s\.\s?e\.|southeast|anacostia",
+    },
+    "16thstreetheights": {
+        # The 1926 name is often "Sixteenth Street Highlands".
+        "terms": ['"Sixteenth Street Heights"', '"Sixteenth Street Highlands"', '"Colorado avenue"'],
+        "pattern": r"sixteenth\s+street\s+(heights|highlands)|colorado\s+avenue(?=.{0,80}(n\.\s?w|northwest|sixteenth|fourteenth|georgia))",
+        "reject": r"departed\s+this\s+life|interment|inter\s+ment|funeral|deaths?\s+reported|\b\d+\s+years(\s+old)?\b",
+        "local": r"sixteenth\s+street|colorado\s+av|n\.\s?w\.|citizens",
+    },
     "congressheights": {
         # In 1926 this is the subdivision and the government hospital. Nichols avenue is now MLK Ave.
         "terms": ['"St. Elizabeth\'s"', "Congress Heights", '"Nichols avenue"'],

@@ -394,6 +394,58 @@
       "boundary_layer": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Administrative_Other_Boundaries_WebMercator/MapServer/55",
       "boundary_parts": 7,
       "boundary_source": "ANC single-member districts 4A01, 4A02, 4A03, 4B01, 4B02, 4B03 and 4B04, the DC side of Takoma plus Shepherd Park and the Parks at Walter Reed (Open Data DC). Takoma Park, Maryland, is not included. DC's planning areas split this ground: Takoma Metro falls in BRIGHTWOOD, not SHEPHERD PARK."
+    },
+    {
+      "slug": "deanwood",
+      "name": "Deanwood",
+      "boundary_where": "SMD_ID IN ('7C01','7C02','7C03','7C04','7C05','7C06','7C07','7C08','7C09')",
+      "hosts": [
+        "deanwooddc.net"
+      ],
+      "redirect_hosts": [],
+      "enabled": false,
+      "boundary_layer": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Administrative_Other_Boundaries_WebMercator/MapServer/55",
+      "boundary_parts": 9,
+      "boundary_source": "ANC 7C, single-member districts 7C01 through 7C09, the commission that holds Deanwood (Open Data DC). DC has no planning area named Deanwood; most of this ground is its LINCOLN HEIGHTS area."
+    },
+    {
+      "slug": "hillcrest",
+      "name": "Hillcrest",
+      "boundary_where": "SMD_ID IN ('7B02','7B03','7B05','7B06','8B02','8B05')",
+      "hosts": [
+        "hillcrestdc.org"
+      ],
+      "redirect_hosts": [],
+      "enabled": false,
+      "boundary_layer": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Administrative_Other_Boundaries_WebMercator/MapServer/55",
+      "boundary_parts": 6,
+      "boundary_source": "ANC single-member districts 7B02, 7B03, 7B05, 7B06, 8B02 and 8B05, about the same ground as DC's NAYLOR/HILLCREST planning area (Open Data DC). Hillcrest Heights, Maryland, is not included."
+    },
+    {
+      "slug": "bellevue",
+      "name": "Bellevue",
+      "boundary_where": "SMD_ID IN ('8D01','8D03','8D05','8D06','8E07','8E08','8E09')",
+      "hosts": [
+        "bellevuedc.org"
+      ],
+      "redirect_hosts": [],
+      "enabled": false,
+      "boundary_layer": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Administrative_Other_Boundaries_WebMercator/MapServer/55",
+      "boundary_parts": 7,
+      "boundary_source": "ANC single-member districts 8D01, 8D03, 8D05, 8D06, 8E07, 8E08 and 8E09, the homes in DC's BELLEVUE planning area (Open Data DC). 8D04 is left out: it is mostly the empty land at DC's southern tip."
+    },
+    {
+      "slug": "16thstreetheights",
+      "name": "16th Street Heights",
+      "boundary_where": "SMD_ID IN ('4E01','4E02','4E03','4E04','4E05','4E06')",
+      "hosts": [
+        "16thstreetheights.org"
+      ],
+      "redirect_hosts": [],
+      "enabled": false,
+      "boundary_layer": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Administrative_Other_Boundaries_WebMercator/MapServer/55",
+      "boundary_parts": 6,
+      "boundary_source": "ANC 4E, single-member districts 4E01 through 4E06, including Crestwood west of 16th Street (Open Data DC). DC's 16TH ST HEIGHTS planning area also runs south into Petworth, which has its own site."
     }
   ]
 }

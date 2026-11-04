@@ -179,7 +179,7 @@ export function titleCase(s: string): string {
 export const PAGES = [
   { path: "", label: "Overview" },
   { path: "news/", label: "News & events" },
-  { path: "transit/", label: "Getting around" },
+  { path: "transit/", label: "Transit" },
   { path: "blocks/", label: "Your block" },
   { path: "projects/", label: "Projects" },
   { path: "homes/", label: "Homes" },

@@ -97,6 +97,18 @@ def _spatial(geometry: dict) -> dict:
     }
 
 
+def _whole_tries(geometry: dict) -> int:
+    """DC's address layer refuses some multi-part boundaries outright (400) while taking each part alone. Asking once
+    keeps that from costing the full retry wait, since the fallback is then to ask one part at a time."""
+    return 1 if len(geometry["rings"]) > 1 else 5
+
+
+def _one_part_at_a_time(geometry: dict) -> list[dict]:
+    if len(geometry["rings"]) < 2:
+        return []
+    return [{**geometry, "rings": [r]} for r in geometry["rings"]]
+
+
 def query_features(layer_url: str, geometry: dict, where: str, fields: list[str], order_by: str | None = None) -> list[dict]:
     """Page through every matching feature inside geometry, returning attribute dicts."""
     rows: list[dict] = []
@@ -113,7 +125,13 @@ def query_features(layer_url: str, geometry: dict, where: str, fields: list[str]
         }
         if order_by:
             params["orderByFields"] = order_by
-        data = _request(f"{layer_url}/query", params, post=True)
+        try:
+            data = _request(f"{layer_url}/query", params, post=True, retries=_whole_tries(geometry))
+        except RuntimeError:
+            parts = _one_part_at_a_time(geometry)
+            if not parts:
+                raise
+            return _combine(layer_url, parts, where, fields, order_by)
         batch = [f["attributes"] for f in data.get("features", [])]
         rows.extend(batch)
         if not data.get("exceededTransferLimit") or not batch:
@@ -121,20 +139,47 @@ def query_features(layer_url: str, geometry: dict, where: str, fields: list[str]
         offset += len(batch)
 
 
+def _combine(layer_url: str, parts: list[dict], where: str, fields: list[str], order_by: str | None) -> list[dict]:
+    """The parts share edges, so a record exactly on one can come back twice."""
+    rows, seen = [], set()
+    for part in parts:
+        for row in query_features(layer_url, part, where, fields, order_by):
+            key = json.dumps(row, sort_keys=True)
+            if key not in seen:
+                seen.add(key)
+                rows.append(row)
+    for term in reversed((order_by or "").split(",")):
+        if term.strip():
+            name, *way = term.split()
+            rows.sort(key=lambda r: (r.get(name) is None, r.get(name)), reverse=bool(way) and way[0].upper() == "DESC")
+    return rows
+
+
 def count_by(layer_url: str, geometry: dict, where: str, field: str) -> dict[str, int]:
     """Server-side GROUP BY count, so individual records never leave DC's servers."""
     stats = [{"statisticType": "count", "onStatisticField": "OBJECTID", "outStatisticFieldName": "n"}]
-    data = _request(
-        f"{layer_url}/query",
-        {
-            "where": where,
-            "groupByFieldsForStatistics": field,
-            "outStatistics": json.dumps(stats),
-            "f": "json",
-            **_spatial(geometry),
-        },
-        post=True,
-    )
+    try:
+        data = _request(
+            f"{layer_url}/query",
+            {
+                "where": where,
+                "groupByFieldsForStatistics": field,
+                "outStatistics": json.dumps(stats),
+                "f": "json",
+                **_spatial(geometry),
+            },
+            post=True,
+            retries=_whole_tries(geometry),
+        )
+    except RuntimeError:
+        parts = _one_part_at_a_time(geometry)
+        if not parts:
+            raise
+        totals: dict[str, int] = {}
+        for part in parts:
+            for k, v in count_by(layer_url, part, where, field).items():
+                totals[k] = totals.get(k, 0) + v
+        return totals
     out: dict[str, int] = {}
     for f in data.get("features", []):
         # Some DC servers uppercase outStatisticFieldName, so match keys case-insensitively.

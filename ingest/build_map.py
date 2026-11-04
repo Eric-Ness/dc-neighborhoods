@@ -27,10 +27,10 @@ NUDGE = {
     "Friendship Heights": (-6, -16), "Tenleytown": (10, 14),
     "Mount Pleasant": (-42, 0), "Columbia Heights": (28, 0),
     "Dupont Circle": (-20, 0), "Logan Circle": (12, -16),
-    "Chinatown": (-16, 0),
+    "Chinatown": (-16, 0), "Eastland Gardens": (-40, -6),
 }
 # Planning areas that stay unlabeled because their name would land on top of a site's.
-NO_LABEL = {"DC Medical Center", "Edgewood", "Saint Elizabeths", "Cathedral Heights", "South Columbia Heights"}
+NO_LABEL = {"DC Medical Center", "Edgewood", "Saint Elizabeths", "Cathedral Heights", "South Columbia Heights", "Bellevue"}
 
 
 def area_name(raw):

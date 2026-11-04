@@ -398,6 +398,45 @@ FEEDS = {
         ("ANC 4A", "https://anc4a.dc.gov/rss.xml", "https://anc4a.dc.gov/", "match"),
         *SHARED,
     ],
+    "deanwood": [
+        ("East of the River", "https://eastoftheriverdcnews.com/wp-json/wp/v2/posts?per_page=20&_fields=date,title,excerpt,link", "https://eastoftheriverdcnews.com/", "match"),
+        ("Congress Heights on the Rise", "https://www.congressheightsontherise.com/blog?format=rss", "https://www.congressheightsontherise.com/", "match"),
+        ("Washington Informer", "https://www.washingtoninformer.com/tag/deanwood/feed/", "https://www.washingtoninformer.com/", "match"),
+        ("Washington Informer", "https://www.washingtoninformer.com/tag/ward-7/feed/", "https://www.washingtoninformer.com/", "match"),
+        ("WTOP", "https://wtop.com/tag/deanwood/feed/", "https://wtop.com/", "match"),
+        ("WTOP", "https://wtop.com/tag/ward-7/feed/", "https://wtop.com/", "match"),
+        ("The DC Line", WP_SEARCH.format(base="https://thedcline.org", q="deanwood"), "https://thedcline.org/", "match"),
+        ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=2", "https://www.popville.com/", "match"),
+        *SHARED,
+    ],
+    "hillcrest": [
+        ("East of the River", "https://eastoftheriverdcnews.com/wp-json/wp/v2/posts?per_page=20&_fields=date,title,excerpt,link", "https://eastoftheriverdcnews.com/", "match"),
+        ("Congress Heights on the Rise", "https://www.congressheightsontherise.com/blog?format=rss", "https://www.congressheightsontherise.com/", "match"),
+        ("Washington Informer", "https://www.washingtoninformer.com/tag/ward-7/feed/", "https://www.washingtoninformer.com/", "match"),
+        ("WTOP", "https://wtop.com/tag/hillcrest/feed/", "https://wtop.com/", "match"),
+        ("WTOP", "https://wtop.com/tag/ward-7/feed/", "https://wtop.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=2", "https://www.popville.com/", "match"),
+        *SHARED,
+    ],
+    "bellevue": [
+        ("East of the River", "https://eastoftheriverdcnews.com/wp-json/wp/v2/posts?per_page=20&_fields=date,title,excerpt,link", "https://eastoftheriverdcnews.com/", "match"),
+        ("Congress Heights on the Rise", "https://www.congressheightsontherise.com/blog?format=rss", "https://www.congressheightsontherise.com/", "match"),
+        ("Washington Informer", "https://www.washingtoninformer.com/tag/ward-8/feed/", "https://www.washingtoninformer.com/", "match"),
+        ("WTOP", "https://wtop.com/tag/ward-8/feed/", "https://wtop.com/", "match"),
+        ("The DC Line", WP_SEARCH.format(base="https://thedcline.org", q="bellevue"), "https://thedcline.org/", "match"),
+        ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=2", "https://www.popville.com/", "match"),
+        *SHARED,
+    ],
+    "16thstreetheights": [
+        ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=2", "https://www.popville.com/", "match"),
+        ("Washingtonian", WP_SEARCH.format(base="https://www.washingtonian.com", q="16th+street+heights"), "https://www.washingtonian.com/", "match"),
+        ("The DC Line", WP_SEARCH.format(base="https://thedcline.org", q="16th+street+heights"), "https://thedcline.org/", "match"),
+        *SHARED,
+    ],
     "congressheights": [
         ("East of the River", "https://eastoftheriverdcnews.com/wp-json/wp/v2/posts?per_page=20&_fields=date,title,excerpt,link", "https://eastoftheriverdcnews.com/", "match"),  # Crawl-delay 10
         ("Congress Heights on the Rise", "https://www.congressheightsontherise.com/blog?format=rss", "https://www.congressheightsontherise.com/", "match"),  # never "all": about 7 posts a day, mostly citywide
@@ -565,6 +604,11 @@ TERMS = {
         r"\bshepherd\s+park\b|\bshepherd\s+elementary\b|\bjuanita\s+(e\.?\s+)?thornton\b|\bcolonial\s+village\b(?=.{0,200}\b(n\.?w|d\.?c|16th|shepherd)\b)|\bnorth\s+portal\b|\bportal\s+dr(ive)?\b|\btifereth\s+israel\b|\bwashington\s+ethical\s+society\b|"
         r"\b(the\s+)?parks\s+at\s+walter\s+reed\b|\b(former|old)\s+walter\s+reed\b|\bwalter\s+reed\s+(campus|site|redevelopment|development)\b|\bdown\s+in\s+the\s+reeds\b|"
         r"\b(6[89]|7\d|8[01])\d\d\s+(block\s+of\s+)?georgia\s+ave(nue)?\b|\b7[0-9]\d\d\s+(block\s+of\s+)?(1[2-6]th)\s+st(reet)?\b|\bANC\s*4A0?[1-3]\b|\bANC\s*4B0?[1-4]\b|\b4A0[1-3]\b|\b4B0[1-4]\b|\bANC\s*4B\b", re.I|re.S),
+    "deanwood": re.compile(r"\bdeanwood\b(?!\s+(road|rd|drive|dr|court|ct|lane|ln|way|park,?\s+(va|virginia)))|\bmarshall\s+heights\b|\bburrville\b|\bcapitol\s+view\s+(library|neighborhood)\b|\blincoln\s+heights\b(?=.{0,300}\b(d\.?c\.?|NE|northeast|ward\s*7|new\s+communities|richardson|washington|50th\s+st)\b)|\brichardson\s+dwellings\b|\beast\s+capitol\s+dwellings\b|\bnew\s+communities\b(?=.{0,200}\b(lincoln\s+heights|deanwood)\b)|\bnannie\s+helen\s+burroughs\b|\bmarvin\s+gaye\s+(park|recreation)\b|\bwatts\s+branch\b|\bstrand\s+theat(er|re)\b(?=.{0,200}\b(deanwood|NE|northeast|nannie|ward\s*7)\b)|\bron\s+brown\s+(college|high|prep|hs)\b|\b(h\.?\s?d\.?|h\s+d)\s+woodson\b|\bkelly\s+miller\s+(middle|ms|market|school)\b|\bdrew\s+elementary\b|\baiton\s+elementary\b|\bburrville\s+elementary\b|\bplummer\s+elementary\b|\bdavis\s+elementary\b(?=.{0,200}\b(d\.?c\.?|SE|ward\s*7)\b)|\bdeanwood\s+heights\b|\bANC\s*7[CE]\b|\b7[CE]0[1-9]\b|\bsheriff\s+r(oa)?d\.?,?\s+n\.?e\b|\b4[3-9]\d\d\s+minnesota\s+ave(nue)?\.?,?\s+n\.?e\b|\bdivision\s+ave(nue)?\.?,?\s+(n\.?e|s\.?e)\b|\b(4[4-9]|5\d|6[01])(th|st|nd|rd)\s+st(reet)?\.?,?\s+n\.?e\b|\b(4[6-9]|5\d)\d\d\s+(east\s+capitol\s+st(reet)?|benning\s+r(oa)?d|central\s+ave(nue)?)\b", re.I | re.S),
+    "hillcrest": re.compile(r"\b(?i:in|of|near|around)\s+Hillcrest\b(?!\s+[Hh]eights)(?=.{0,300}\b(?i:d\.?c\.?|SE|southeast|ward\s*7|washington|naylor|skyland|ANC)\b)|\bHillcrest\s+(?i:rec(reation)?(\s+center)?|community\s+civic|civic\s+association|day|children['\u2019]?s\s+center|neighborhood)\b(?=.{0,300}\b(?i:d\.?c\.?|SE|southeast|ward\s*7|washington|denver|naylor|ANC|civic)\b)|\bHillcrest\s+(?i:community\s+civic|civic\s+association)\b|\bHillcrest\s+(?i:rec(reation)?\s+center)\b|(?i:\bHillcrest\s+dr(ive)?\.?,?\s+s\.?e\b|\bward\s*7['\u2019]?s\s+hillcrest\b|\b(d\.?c\.?|southeast)['\u2019]?s?\s+hillcrest\b|\bnaylor\s+gardens\b|\bnaylor\s+r(oa)?d\.?,?\s+s\.?e\b|\b\d{4}\s+naylor\s+r(oa)?d\b|\bHillcrest\s+(indoor|aquatic|resident|neighborhood)|\bskyland\s+(town|workforce|shopping|development|walmart|plaza|center)\b|\bskyland\b(?=.{0,200}\b(d\.?c\.?|ward\s*7|ward\s*8|SE|southeast|bowser|gray)\b)|\bfairfax\s+village\b|\bsummit\s+park\b(?=.{0,200}\b(d\.?c\.?|SE|southeast|ward\s*7)\b)|\bpenn\s+branch\b|\brandle\s+highlands\b|\bfort\s+davis\b(?=.{0,200}\b(d\.?c\.?|SE|southeast|ward\s*7|rec)\b)|\bfrancis\s+a?\.?\s*gregory\b|\banne\s+beers\b|\bbeers\s+elementary\b|\bstanton\s+elementary\b|\bgarfield\s+elementary\b|\bANC\s*7B\b|\b7B0[1-9]\b|\b(2[5-9]|3\d)\d\d\s+pennsylvania\s+ave(nue)?\.?,?\s+s\.?e\b|\b(2[89]|3[0-7])\d\d\s+alabama\s+ave(nue)?\.?,?\s+s\.?e\b|\b\d{3,4}\s+branch\s+ave(nue)?\.?,?\s+s\.?e\b|\bfort\s+dupont\s+(park|ice|arena|summer)\b|\bfort\s+dupont\b(?=.{0,200}\b(d\.?c\.?|SE|southeast|ward\s*7|ice)\b))", re.S),
+    # Bellevue is a common place name, so it needs a DC cue. Washington Highlands is the area's other everyday name.
+    "bellevue": re.compile(r"\bbellevue\b(?=.{0,120}\b(d\.?c\.?|SE|southeast|ward\s*8|library|lockridge|south\s+capitol|atlantic\s+st)\b)|\b(d\.?c\.?|SE|southeast|ward\s*8)\b.{0,60}\bbellevue\b|\bwashington\s+highlands\b|\b(william\s+o\.?\s+)?lockridge\b.{0,40}\blibrary\b|\bANC\s*8D\b|\b8D0[13568]\b|\b8E0[789]\b", re.I | re.S),
+    "16thstreetheights": re.compile(r"\b(16th|sixteenth)\s+st(reet|\.)?\s+heights\b|\bANC\s*4E\b|\b4E0[1-6]\b|\bhamilton\s+rec(reation)?\b|\bcarter\s+barron\b|\bfreshfarm\s+uptown\b|\bcolorado\s+ave(nue)?\.?,?\s+n\.?w\b|\bbrightwood\s+education\s+campus\b|\b(4[6-9]|5[0-5])\d\d\s+16th\s+st(reet)?\.?,?\s+n\.?w\b", re.I | re.S),
     "congressheights": re.compile(r"\bcongress\s+heights\b(?!\s+on\s+the\s+rise)|\bshipley\s+terrace\b|\b(st\.?|saint)\s+elizabeths?\s+(east|campus|hospital|west)\b|\bst\.?\s+e['\u2019]?s\s+(east|campus)\b|\b(st\.?|saint)\s+elizabeth['\u2019]?s\b(?=.{0,200}\b(d\.?c\.?|southeast|SE|ward\s*8|bowser|patients?|ICE)\b)|\bdc['\u2019]s\s+st\.?\s+elizabeth|\bentertainment\s+(and|&)\s+sports\s+arena\b|\bcedar\s+hill\s+(regional|urgent|hospital|medical)\b|\bballou\s+(high|senior|stay|sr)\b|\bmalcolm\s+x\s+(elementary|opportunity|avenue|ave)\b|\bsimon\s+elementary\b|\bhart\s+middle\b|\bhendley\s+elementary\b|\bfletcher[-\s]johnson\b|\boxon\s+run\b|\bparklands[-\s]turner\b|\bparklands\s+(library|community)\b|\bTHEARC\b|\bfort\s+greble\b|\bdestination\s+congress\s+heights\b|\bsoul\s+of\s+the\s+city\b|\bANC\s*8[CE]\b|\b8[CE]0[1-9]\b|\b(2[7-9]|3[0-7])\d\d\s+(martin\s+luther\s+king|MLK)(\s+jr\.?)?\s+(ave(nue)?)\.?,?\s+s\.?e\b|\b([4-9]\d\d|1[0-5]\d\d)\s+alabama\s+ave(nue)?\.?,?\s+s\.?e\b|\b\d{3,4}\s+mississippi\s+ave(nue)?\.?,?\s+s\.?e\b|\bwashington\s+highlands\b|\bbellevue\s+(community|library|neighborhood|anc)\b|\bbellevue\b(?=.{0,200}\b(d\.?c\.?|SW|SE|ward\s*8|southeast|southwest|ANC)\b)", re.I | re.S),
 }
 
@@ -633,6 +677,14 @@ NOT_HERE = {
     # ANC 4B's paperwork posts would crowd out everything else; the meetings themselves stay.
     "takoma": (re.compile(r"^\W*(?:meeting\s+materials|minutes)\b|^[A-Z][a-z]+\s+\d{1,2},\s+20(?:1\d|2[0-5])\b|\\btakoma\\s+park,?\\s+(md|maryland|city|council|police|mayor|middle|elementary|folk)\b|\bmaryland\b|\bmd\.|\bmontgomery\s+(county|co\.?)\b|\bmoco\b|\bsilver\s+spring\b|\btakoma[-\s]langley\b|\bpurple\s+line\b|\bprince\s+george|\bwalter\s+reed\s+(national\s+military|medical\s+center|army\s+medical|bethesda)\b|\bbethesda\b|\bsligo\s+creek\b|\bshepherd\s+park\b.{0,40}\b(ky|ga|mo|iowa|ohio|tx|texas|pa|nc|n\.c|mich)\b|\bshepherd\s+university\b|\bshepherdstown\b", re.I|re.S),
                re.compile(r"^(?!\W*(?:meeting\s+materials|minutes)\b)(?![A-Z][a-z]+\s+\d{1,2},\s+20(?:1\d|2[0-5])\b).*?(?:\\btakoma\\s+(dc|d\\.c\\.|metro\\s+(station\\s+)?(lot|development|site)|library|rec(reation)?\s+center|education\s+campus|theat(re|er))\b(?!\s*\|)|\b(dc|d\.c\.)['\u2019]?s\s+takoma\b|\b(carroll|cedar|aspen|blair)\s+(st(reet)?|r(oa)?d)\.?,?\s+n\.?w\b|\bANC\s*4[AB]\b|\bward\s*4\b|\bshepherd\s+park\b(?=.{0,200}\b(d\.?c|nw|ward\s*4)\b)|\bparks\s+at\s+walter\s+reed\b)", re.I|re.S)),
+    "deanwood": (re.compile(r"^\W*(?:(?:home|building)\s+)?(?:for\s+sale|short\s+sale|coming\s+soon|price\s+reduction|open\s+house)\b|^DC\s+Fresh\s+Finds\b|\bdeanwood,?\s+(perth|western\s+australia|wa\b|oregon|portland|va\b|virginia|md\b|maryland)|\bperth\b|\baustralia\b|\bportland\b|\blincoln\s+heights,?\s+(ohio|los\s+angeles|l\.?a\.?|calif|n\.?c)\b|\bcincinnati\b|\blos\s+angeles\b|\bLAPD\b|\bmarshall\s+heights,?\s+(mo|tx|texas)\b", re.I),
+    re.compile(r"^(?!(?i:\W*(?:(?:home|building)\s+)?(?:for\s+sale|short\s+sale|coming\s+soon|price\s+reduction|open\s+house)\b|DC\s+Fresh\s+Finds\b)).*?(?:\b(D\.?C\.?|NE|Northeast)\b|\b[Ww]ard\s*7\b|\bANC\s*7[CE]\b)", re.S)),
+    "hillcrest": (re.compile(r"^\W*(?:(?:home|building)\s+)?(?:for\s+sale|short\s+sale|coming\s+soon|price\s+reduction|open\s+house)\b|^DC\s+Fresh\s+Finds\b|\bnaylor\s+r(oa)?d\s+(metro|station)\b|\bhillcrest\s+heights\b|\bprince\s+george['\u2019]?s\b|\btemple\s+hills\b|\bsan\s+diego\b|\blos\s+angeles\b|\bhillcrest\s+(country\s+club|hospital|high\s+school|medical|elementary|baptist)\b|\btulsa\b|\bcleveland\b|\butah\b|\bdallas\b|\bfort\s+du\s?pont,?\s+(de|del|delaware)\b|\bdelaware\s+city\b|\bskyland,?\s+(n\.?c|north\s+carolina|va|virginia|shenandoah)\b|\bskyline\s+drive\b|\bshenandoah\b|\bsummit,?\s+n\.?j\b", re.I | re.S),
+    re.compile(r"^(?!(?i:\W*(?:(?:home|building)\s+)?(?:for\s+sale|short\s+sale|coming\s+soon|price\s+reduction|open\s+house)\b|DC\s+Fresh\s+Finds\b)).*?(?:\bANC\s*7B\b|\bnaylor\s+(gardens|r(oa)?d)\b|\bHillcrest\s+(rec|civic|community\s+civic)|\b(D\.?C\.?|SE)\b(?!-area)|\b[Ww]ard\s*7\b|\bskyland\s+town\b)", re.S)),
+    "bellevue": (re.compile(r"^\W*(?:(?:home|building)\s+)?(?:for\s+sale|short\s+sale|coming\s+soon|price\s+reduction|open\s+house)\b|^DC\s+Fresh\s+Finds\b|\bbellevue,?\s+(wash|wa\b|neb|ne\b|ky\b|kentucky|ohio|idaho|iowa|tenn|pa\b|mich)|\bbellevue\s+(hospital|college|university|square|arts)\b|\bseattle\b|\bomaha\b", re.I),
+        re.compile(r"(?!)")),
+    "16thstreetheights": (re.compile(r"^\W*(?:(?:home|building)\s+)?(?:for\s+sale|short\s+sale|coming\s+soon|price\s+reduction|open\s+house)\b|^DC\s+Fresh\s+Finds\b", re.I),
+        re.compile(r"(?!)")),
     "congressheights": (re.compile(r"^\W*(?:(?:home|building)\s+)?(?:for\s+sale|short\s+sale|coming\s+soon|price\s+reduction|open\s+house)\b|^DC\s+Fresh\s+Finds\b|\bboston\b|\bbrighton\b|\byoungstown\b|\bdayton\b|\bdhs\s+headquarters\b(?!.{0,200}\bcongress\s+heights\b)|\bmount\s+st\.?\s+elizabeth|\bbellevue,?\s+(wash|washington|wa|neb|nebraska|ne|ky|kentucky|tenn|ohio|idaho|iowa)\b|\bseattle\b|\bking\s+county\b|\bbellevue\s+hospital\b|\bmanhattan\b|\bnew\s+york\b|\bvs\.?\s|\bpoints\b.{0,80}\brebounds\b|\bwashington\s+highlands?,?\s+(n\.?y|new\s+york)\b", re.I | re.S),
         re.compile(r"^(?!(?i:\W*(?:(?:home|building)\s+)?(?:for\s+sale|short\s+sale|coming\s+soon|price\s+reduction|open\s+house)\b|DC\s+Fresh\s+Finds\b)).*?(?:\bcongress\s+heights\b|\bANC\s*8[CE]\b|\bcedar\s+hill\s+regional\b|\b(st\.?|saint)\s+elizabeths\s+(east|campus)\b.{0,200}\b(ward\s*8|southeast|SE|bowser|ANC)\b)", re.I | re.S)),
 }
@@ -974,8 +1026,7 @@ def check(section: dict) -> list[str]:
     ok = [o for o in section["outlets"] if o["state"] in ("ok", "partial")]
     if len(ok) < len(section["outlets"]) / 2:
         errors.append(f"news: only {len(ok)} of {len(section['outlets'])} outlets fetched")
-    if not section["items"]:
-        errors.append("news: no headlines")
+    # No headlines isn't a failure: some neighborhoods go months unmentioned, and the outlet count above catches a real outage.
     for it in section["items"]:
         if not (it.get("url", "").startswith("http") and it.get("title") and it.get("source") and it.get("published")):
             errors.append(f"news: incomplete item {it.get('url')}")

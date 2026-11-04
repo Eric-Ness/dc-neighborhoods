@@ -370,7 +370,7 @@ checks.newsdata = () => {
       assert(Math.abs(Date.parse(sec.generated_at) - now) < 30 * 60 * 1000, `${tag}: ${k} not from this run`);
     const ok = nw.outlets.filter((o) => o.state === "ok" || o.state === "partial");
     assert(ok.length >= nw.outlets.length / 2, `${tag}: only ${ok.length}/${nw.outlets.length} outlets read`);
-    assert(nw.items.length > 0, `${tag}: no headlines`);
+    // No headlines is allowed: some neighborhoods go months unmentioned, and those front pages lead with public data.
     for (const it of nw.items) { const p = newsItemProblems(it, now, nw.archive_days); assert(!p.length, `${tag}: news item ${it.url}: ${p.join(", ")}`); }
     assert(new Set(nw.items.map((i) => i.url)).size === nw.items.length, `${tag}: duplicate headline urls`);
     assert(nw.items.every((it, i) => i === 0 || nw.items[i - 1].published >= it.published), `${tag}: headlines not newest first`);

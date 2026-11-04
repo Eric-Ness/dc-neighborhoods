@@ -10,7 +10,7 @@ import { fmt, money, newsDate, shortDate, titleCase } from "../../lib/c5";
 import { plate, projection } from "../../lib/atlas";
 import {
   ownNews, nearbyNews, elsewhereNews, eventPlaces, curbGroups, bigProjects, mapLayers, condition, lookups, dayList,
-  reqTitle, pct, pctOk,
+  reqLabel, reqTitle, pct, pctOk,
 } from "../../lib/front";
 
 export const getStaticPaths = staticPaths;
@@ -92,10 +92,51 @@ const ancs = [...new Set(n.smds.map((s) => s.anc))].sort();
 const months = h?.by_month ?? [];
 const mvals = months.map((m) => m.median).filter(Boolean) as number[];
 const mmax = Math.max(1, ...mvals);
+
+// Where local outlets rarely write about a neighborhood, the page leads with what DC's records say this week.
+const dataFirst = news.length < 3;
+const topReq = top311[0];
+const leadHomes = h ? h[kind] ?? h.house : null;
+const pulse: { big: string; text: string; href: string; link: string }[] = [
+  { big: fmt(n.permits.length), text: `building permit${n.permits.length === 1 ? "" : "s"} in the last ${n.windows.permits_days} days${bigN === 0 ? ", all smaller jobs" : bigN === 1 ? ", 1 of them a bigger project" : `, ${bigN} of them bigger projects`}`, href: u("projects/"), link: "See them" },
+  ...(st ? [{ big: fmt(st.curb.starting_next_7d), text: `curb-space permit${st.curb.starting_next_7d === 1 ? "" : "s"} starting in the next 7 days`, href: u("streets/#curb"), link: "Where" }] : []),
+  ...(leadHomes ? [{ big: money(leadHomes.median_12mo), text: `median ${word} price, from ${leadHomes.count_12mo} sales in the past year`, href: u("homes/"), link: "Recent sales" }] : []),
+  { big: fmt(tot), text: `311 requests in the last ${days} days, ${fmt(Math.abs(tot - ptot))} ${tot < ptot ? "fewer" : "more"} than the ${days} days before${topReq ? `. Most common: ${reqLabel(topReq.type)}` : ""}`, href: u("streets/"), link: "Details" },
+];
 ---
 <Hood n={n} page="" title={`${n.name}: news, events and what's changing`} description={`${n.name}, Washington DC: local headlines, what's on, live Metro and bus arrivals, trash day and schools for your block, and a map of what's changing, from public data. Independent; updated nightly.`}>
 <div class="atlas">
 <div class="spread">
+  {dataFirst ? (
+  <section id="news" aria-labelledby="h-news">
+    <div class="shd"><h2 id="h-news">This week in {n.name}</h2><span class="aside">From DC&rsquo;s public records</span></div>
+    <ul class="pulse">
+      {pulse.map((x) => <li><span class="pv">{x.big}</span><span class="pt">{x.text}. <a href={x.href}>{x.link}</a></span></li>)}
+    </ul>
+    <p class="blockcta"><strong>On your block:</strong> trash day, schools, parking and what&rsquo;s nearby, for all {lk.total} blocks. <a href={u("blocks/")}>Look up your block</a></p>
+    {news.length > 0 && <>
+      <p class="subh">In the news</p>
+      <ol class="news">
+        {news.map((it) => (
+          <li><a class="hl" href={it.url} rel="noopener">{it.title}</a>
+            <span class="meta">{it.source} <i class="sep" aria-hidden="true">/</i> <time datetime={it.published}>{newsDate(it.published, n.generated_at)}</time></span></li>
+        ))}
+      </ol>
+    </>}
+    {nearby.length > 0 && (
+      <div class="nearby">
+        <p class="subh">Nearby</p>
+        <ol class="news">
+          {nearby.map((it) => (
+            <li><a class="hl" href={it.url} rel="noopener">{it.title}</a>
+              <span class="meta"><span class="tagn">{it.hood.name}</span>{it.source} <i class="sep" aria-hidden="true">/</i> <time datetime={it.published}>{newsDate(it.published, n.generated_at)}</time></span></li>
+          ))}
+        </ol>
+      </div>
+    )}
+    <p class="fine">{(news.length > 0 || nearby.length > 0) && "Headlines link to whoever published them; we never copy articles. "}<a href={u("news/")}>All news &amp; events</a></p>
+  </section>
+  ) : (
   <section id="news" aria-labelledby="h-news">
     <div class="shd"><h2 id="h-news">Latest news</h2><span class="aside">Local outlets</span></div>
     {news.length === 0 ? <p class="empty">No local outlet has mentioned {n.name} in the last {Math.round((n.news?.archive_days ?? 180) / 30)} months.</p> : (
@@ -119,6 +160,7 @@ const mmax = Math.max(1, ...mvals);
     )}
     <p class="fine">Headlines that mention {n.name}{nearby.length > 0 && " or a neighborhood next to it"}, from local outlets checked nightly. Each links to the outlet; we never copy articles. <a href={u("news/")}>All news &amp; events</a></p>
   </section>
+  )}
 
   <section id="events" aria-labelledby="h-events">
     <div class="shd"><h2 id="h-events">Coming up</h2><span class="aside">Next 14 days</span></div>
@@ -174,7 +216,7 @@ const mmax = Math.max(1, ...mvals);
   <section id="street" aria-labelledby="h-street">
     <div class="shd"><h2 id="h-street">On the street this week</h2><span class="aside">Curb space reserved</span></div>
     {st ? <>
-      <p class="dek">{st.curb.starting_next_7d} curb-space permits start in the next 7 days; {st.curb.active_this_week} are active this week, reserving {fmt(st.curb.reserved_ft)} ft of curb in all.</p>
+      <p class="dek">{st.curb.starting_next_7d} curb-space permit{st.curb.starting_next_7d === 1 ? " starts" : "s start"} in the next 7 days; {st.curb.active_this_week} are active this week, reserving {fmt(st.curb.reserved_ft)} ft of curb in all.</p>
       {curb.length === 0 ? <p class="empty">No curb permits start in the next 7 days.</p> : (
         <ul class="curb-list">
           {curb.map((c) => {
@@ -318,7 +360,7 @@ const mmax = Math.max(1, ...mvals);
       </div>
       <div>
         <p class="subh">This week in {hi.archive.week_label.slice(-4)}: the {hi.archive.paper}</p>
-        {clips.length === 0 ? <p class="empty">The newspaper archive couldn&rsquo;t be reached tonight; clips return with the next run. <a href={u("history/")}>More history</a></p>
+        {clips.length === 0 ? <p class="empty">{/could not be reached/.test(hi.archive.note) ? "The newspaper archive couldn’t be reached tonight; clips return with the next run." : `No usable mentions of ${n.name} in the ${hi.archive.paper} this week. Some weeks a neighborhood just isn’t in the paper.`} <a href={u("history/")}>More history</a></p>
         : clips.map((c) => (
           <blockquote><p>&ldquo;{c.text}&rdquo;</p><a href={c.url} rel="noopener">{shortDate(c.date)}, {c.date.slice(0, 4)}, page {c.page}</a></blockquote>
         ))}
