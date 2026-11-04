@@ -1,7 +1,7 @@
 {
  "slug": "anacostia",
  "name": "Anacostia",
- "generated_at": "2026-11-03T17:31:02Z",
+ "generated_at": "2026-11-04T01:56:36Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1040,56 +1040,30 @@
    "lat": 38.86431,
    "lon": -76.98222,
    "smd": "8A04"
-  },
-  {
-   "id": "FD2600014",
-   "issued": "2026-10-05T04:00:00Z",
-   "group": "Additions",
-   "type": "CONSTRUCTION",
-   "subtype": "FOUNDATION ONLY",
-   "address": "1919 15TH ST SE 20020",
-   "work": "HISTORIC\r\n\r\nFoundation for addition to existing elementary school.",
-   "zoning": "MU-4",
-   "lat": 38.86604,
-   "lon": -76.98362,
-   "smd": "8A05"
-  },
-  {
-   "id": "B2604443",
-   "issued": "2026-10-05T04:00:00Z",
-   "group": "New construction",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "2401 ELVANS RD SE 20020",
-   "work": "\u001aREVISION TO BUILDING PERMIT NO. B2508183 TO REMOVE THE SURFACE PARKING.\r\nTHE HOUSE LAYOUT REMAINS UNCHANGED\u001a\r\n\r\nNEW CONSTRUCTION OF A SINGLE FAMILY THREE-STORY RESIDENTIAL ROW DWELLING\r\nFENCE, PORCH, MECHANICAL DUCT WORK, ELECTRICAL, PLUMBING, SPRINKLER AS PER PLANS.",
-   "zoning": "R-3",
-   "lat": 38.85461,
-   "lon": -76.98623,
-   "smd": "8B04"
   }
  ],
  "requests": {
-  "total": 562,
-  "previous_total": 764,
+  "total": 580,
+  "previous_total": 747,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 97,
-    "previous": 100
+    "count": 104,
+    "previous": 98
    },
    {
     "type": "Parking Enforcement",
     "count": 86,
-    "previous": 105
+    "previous": 101
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 71,
+    "count": 73,
     "previous": 9
    },
    {
     "type": "Illegal Dumping",
-    "count": 39,
+    "count": 40,
     "previous": 26
    },
    {
@@ -1104,18 +1078,23 @@
    },
    {
     "type": "Recycling Collection - Missed",
-    "count": 18,
-    "previous": 9
+    "count": 19,
+    "previous": 8
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 16,
-    "previous": 31
+    "count": 17,
+    "previous": 30
+   },
+   {
+    "type": "Residential Parking Permit Violation",
+    "count": 14,
+    "previous": 9
    },
    {
     "type": "DMV - Drivers License/ID Issues",
     "count": 13,
-    "previous": 18
+    "previous": 17
    },
    {
     "type": "Roadway Signs",
@@ -1123,19 +1102,24 @@
     "previous": 40
    },
    {
-    "type": "Residential Parking Permit Violation",
-    "count": 12,
-    "previous": 9
-   },
-   {
     "type": "Scheduled Yard Waste",
     "count": 11,
     "previous": 24
    },
    {
+    "type": "DC Government Information",
+    "count": 11,
+    "previous": 36
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "count": 11,
+    "previous": 11
+   },
+   {
     "type": "Streetlight Repair Investigation",
     "count": 11,
-    "previous": 15
+    "previous": 14
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -1143,14 +1127,9 @@
     "previous": 2
    },
    {
-    "type": "DC Government Information",
-    "count": 10,
-    "previous": 36
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "count": 10,
-    "previous": 11
+    "type": "Tree Inspection",
+    "count": 8,
+    "previous": 23
    },
    {
     "type": "Supercan - Delivery",
@@ -1160,12 +1139,7 @@
    {
     "type": "Abandoned Vehicle - On Public Property",
     "count": 7,
-    "previous": 31
-   },
-   {
-    "type": "Tree Inspection",
-    "count": 7,
-    "previous": 23
+    "previous": 30
    },
    {
     "type": "Emergency No-Parking Verification",
@@ -1178,14 +1152,14 @@
     "previous": 6
    },
    {
+    "type": "Out of State Parking Violation (ROSA)",
+    "count": 5,
+    "previous": 7
+   },
+   {
     "type": "DOB - Vacant Private Property Inspection",
     "count": 5,
     "previous": 53
-   },
-   {
-    "type": "Out of State Parking Violation (ROSA)",
-    "count": 4,
-    "previous": 7
    },
    {
     "type": "Pet Waste Complaint",
@@ -1315,7 +1289,7 @@
    {
     "type": "DMV - Vehicle Registration Issues",
     "count": 1,
-    "previous": 4
+    "previous": 3
    },
    {
     "type": "Emergency - Power Outage/Wires Down",
@@ -1343,8 +1317,98 @@
     "previous": 3
    }
   ],
-  "open": 62,
+  "open": 63,
   "recent": [
+   {
+    "type": "Residential Parking Permit Violation",
+    "agency": "DPW",
+    "added": "2026-11-04T01:16:23Z",
+    "resolved": "2026-11-04T01:31:03Z",
+    "status": "Closed",
+    "block": "2200 block of HUNTER PLACE SE",
+    "lat": 38.86,
+    "lon": -76.984
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-04T00:20:56Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2200 block of HUNTER PLACE SE",
+    "lat": 38.86,
+    "lon": -76.984
+   },
+   {
+    "type": "Residential Parking Permit Violation",
+    "agency": "DPW",
+    "added": "2026-11-03T22:04:25Z",
+    "resolved": "2026-11-04T00:28:06Z",
+    "status": "Closed",
+    "block": "2200 block of HUNTER PLACE SE",
+    "lat": 38.86,
+    "lon": -76.984
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-03T19:42:44Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1200 block of U STREET SE",
+    "lat": 38.866,
+    "lon": -76.988
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-03T19:05:44Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1600 block of 1/2 BUTLER STREET SE",
+    "lat": 38.861,
+    "lon": -76.984
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-03T19:04:27Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2400 block of BRYAN PLACE SE",
+    "lat": 38.858,
+    "lon": -76.988
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-03T18:58:42Z",
+    "resolved": "2026-11-03T18:58:42Z",
+    "status": "Closed",
+    "block": "2500 block of ELVANS ROAD SE",
+    "lat": 38.855,
+    "lon": -76.992
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-03T18:49:13Z",
+    "resolved": "2026-11-03T18:49:13Z",
+    "status": "Closed",
+    "block": "1400 block of CEDAR STREET SE",
+    "lat": 38.862,
+    "lon": -76.986
+   },
+   {
+    "type": "Sanitation Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-03T18:06:30Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1800 block of MARION BARRY AVENUE SE",
+    "lat": 38.865,
+    "lon": -76.978
+   },
    {
     "type": "Supercan - Delivery",
     "agency": "DPW",
@@ -1369,8 +1433,8 @@
     "type": "Residential Parking Permit Violation",
     "agency": "DPW",
     "added": "2026-11-03T16:59:08Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-03T23:39:11Z",
+    "status": "Closed",
     "block": "1100 block of U STREET SE",
     "lat": 38.866,
     "lon": -76.988
@@ -1399,8 +1463,8 @@
     "type": "DMV - Drivers License/ID Issues",
     "agency": "DMV",
     "added": "2026-11-03T15:28:34Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-03T20:17:36Z",
+    "status": "Closed",
     "block": "2600 block of BOWEN ROAD SE",
     "lat": 38.859,
     "lon": -76.991
@@ -1754,96 +1818,6 @@
     "block": "1300 block of VALLEY PLACE SE",
     "lat": 38.863,
     "lon": -76.987
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-30T17:28:04Z",
-    "resolved": "2026-10-30T17:28:04Z",
-    "status": "Closed",
-    "block": "2400 block of ELVANS ROAD SE",
-    "lat": 38.854,
-    "lon": -76.986
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-30T16:58:56Z",
-    "resolved": "2026-10-30T20:37:59Z",
-    "status": "Closed",
-    "block": "2300 block of GAINESVILLE STREET SE",
-    "lat": 38.855,
-    "lon": -76.983
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-10-30T16:54:26Z",
-    "resolved": "2026-11-03T14:10:38Z",
-    "status": "Closed",
-    "block": "1100 block of CHICAGO STREET SE",
-    "lat": 38.864,
-    "lon": -76.992
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-30T15:05:27Z",
-    "resolved": "2026-10-30T15:05:27Z",
-    "status": "Closed",
-    "block": "2600 block of DOUGLAS PLACE SE",
-    "lat": 38.857,
-    "lon": -76.991
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-30T14:48:39Z",
-    "resolved": "2026-10-30T14:48:39Z",
-    "status": "Closed",
-    "block": "2600 block of DOUGLAS PLACE SE",
-    "lat": 38.857,
-    "lon": -76.991
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-30T14:01:24Z",
-    "resolved": "2026-10-30T16:03:48Z",
-    "status": "Closed",
-    "block": "2300 block of PITTS PLACE SE",
-    "lat": 38.859,
-    "lon": -76.986
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-30T13:50:13Z",
-    "resolved": "2026-10-30T13:50:13Z",
-    "status": "Closed",
-    "block": "2400 block of MARTIN LUTHER KING JR AVENUE SE",
-    "lat": 38.862,
-    "lon": -76.993
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-10-30T12:06:06Z",
-    "resolved": "2026-10-31T20:41:44Z",
-    "status": "Closed",
-    "block": "1400 block of HOWARD ROAD SE",
-    "lat": 38.859,
-    "lon": -76.988
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-30T11:22:04Z",
-    "resolved": "2026-10-30T11:22:04Z",
-    "status": "Closed",
-    "block": "2400 block of POMEROY ROAD SE",
-    "lat": 38.855,
-    "lon": -76.987
    }
   ]
  },
@@ -1929,7 +1903,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -1944,7 +1918,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Anacostia through OTR assessment sub-areas Anacostia A and Randle Heights B, and Barry Farms in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Anacostia boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-03): 77% of the 2,603 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 78% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Anacostia through OTR assessment sub-areas Anacostia A and Randle Heights B, and Barry Farms in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Anacostia boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-04): 77% of the 2,603 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 78% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -1965,7 +1939,7 @@
    "area_parcels": 2603,
    "area_share_inside": 0.768,
    "boundary_share_in_area": 0.775,
-   "measured": "2026-11-03"
+   "measured": "2026-11-04"
   },
   "primary": "house",
   "house": {
@@ -2129,7 +2103,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2153,7 +2127,7 @@
    "starting_next_7d": 16,
    "reserved_ft": 9042,
    "long_running_90d": 22,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -2428,20 +2402,20 @@
    {
     "type": "Illegal Dumping",
     "median_days": 3.12,
-    "city_median_days": 4.03,
+    "city_median_days": 4.04,
     "closed_n": 217
    },
    {
     "type": "Roadway Signs",
     "median_days": 2.96,
-    "city_median_days": 6.98,
+    "city_median_days": 6.99,
     "closed_n": 156
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2610,7 +2584,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2719,9 +2693,9 @@
    {
     "name": "Greater Greater Washington",
     "url": "https://ggwash.org/",
-    "state": "ok",
+    "state": "error: HTTPError",
     "matched": 0,
-    "fetched": 1
+    "failed": 1
    },
    {
     "name": "Mayor's office",
@@ -2888,7 +2862,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "today": "2026-11-03",
   "days_ahead": 30,
   "sources": [
@@ -3016,7 +2990,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -19165,7 +19139,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

@@ -1,7 +1,7 @@
 {
  "slug": "dupontcircle",
  "name": "Dupont Circle",
- "generated_at": "2026-11-03T17:31:02Z",
+ "generated_at": "2026-11-04T01:56:36Z",
  "boundary": {
   "source": "Dupont Circle Historic District (DC Historic Preservation Office, Open Data DC). DC has no planning area named Dupont Circle; this overlaps the Adams Morgan site to the north.",
   "rings": [
@@ -2015,19 +2015,6 @@
    "smd": "2B08"
   },
   {
-   "id": "M2700069",
-   "issued": "2026-10-06T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "MECHANICAL",
-   "address": "1630 RIGGS PL NW 20009",
-   "work": "",
-   "zoning": "RA-2/DC",
-   "lat": 38.9132,
-   "lon": -77.03796,
-   "smd": "2B03"
-  },
-  {
    "id": "AH2700023",
    "issued": "2026-10-06T04:00:00Z",
    "group": "Renovation & repair",
@@ -2041,37 +2028,32 @@
    "smd": "2B05"
   },
   {
-   "id": "E2700108",
-   "issued": "2026-10-05T04:00:00Z",
+   "id": "M2700069",
+   "issued": "2026-10-06T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
    "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "1300 CONNECTICUT AVE NW 20036",
+   "subtype": "MECHANICAL",
+   "address": "1630 RIGGS PL NW 20009",
    "work": "",
-   "zoning": "MU-9B/DC",
-   "lat": 38.90753,
-   "lon": -77.0427,
-   "smd": "2B05"
+   "zoning": "RA-2/DC",
+   "lat": 38.9132,
+   "lon": -77.03796,
+   "smd": "2B03"
   }
  ],
  "requests": {
-  "total": 765,
-  "previous_total": 725,
+  "total": 769,
+  "previous_total": 721,
   "by_type": [
    {
     "type": "Parking Enforcement",
     "count": 142,
-    "previous": 104
+    "previous": 96
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 83,
-    "previous": 71
-   },
-   {
-    "type": "Bulk Collection",
-    "count": 47,
-    "previous": 51
+    "count": 82,
+    "previous": 72
    },
    {
     "type": "Trash Collection - Missed",
@@ -2079,8 +2061,13 @@
     "previous": 26
    },
    {
+    "type": "Bulk Collection",
+    "count": 45,
+    "previous": 54
+   },
+   {
     "type": "Sanitation Enforcement",
-    "count": 33,
+    "count": 34,
     "previous": 32
    },
    {
@@ -2095,8 +2082,8 @@
    },
    {
     "type": "Dead Animal Collection",
-    "count": 23,
-    "previous": 17
+    "count": 24,
+    "previous": 19
    },
    {
     "type": "Sidewalk Repair",
@@ -2104,19 +2091,19 @@
     "previous": 14
    },
    {
-    "type": "Tree Pruning",
-    "count": 19,
-    "previous": 20
-   },
-   {
     "type": "Scheduled Yard Waste",
-    "count": 19,
-    "previous": 29
+    "count": 20,
+    "previous": 28
    },
    {
     "type": "Graffiti Removal",
-    "count": 18,
+    "count": 19,
     "previous": 36
+   },
+   {
+    "type": "Tree Pruning",
+    "count": 19,
+    "previous": 20
    },
    {
     "type": "Roadway Signs",
@@ -2134,14 +2121,14 @@
     "previous": 37
    },
    {
+    "type": "Abandoned Bicycle",
+    "count": 15,
+    "previous": 2
+   },
+   {
     "type": "Public Space Litter Can-Collection",
     "count": 12,
     "previous": 1
-   },
-   {
-    "type": "Abandoned Bicycle",
-    "count": 12,
-    "previous": 2
    },
    {
     "type": "DMV - Drivers License/ID Issues",
@@ -2179,19 +2166,19 @@
     "previous": 2
    },
    {
-    "type": "Roadway Markings / Pylons",
-    "count": 7,
-    "previous": 6
-   },
-   {
     "type": "Out of State Parking Violation (ROSA)",
-    "count": 7,
+    "count": 8,
     "previous": 1
    },
    {
     "type": "Parking Meter Repair",
+    "count": 8,
+    "previous": 3
+   },
+   {
+    "type": "Rat Replacement Containers",
     "count": 7,
-    "previous": 4
+    "previous": 16
    },
    {
     "type": "Emergency No-Parking Verification",
@@ -2209,11 +2196,6 @@
     "previous": 6
    },
    {
-    "type": "Rat Replacement Containers",
-    "count": 6,
-    "previous": 16
-   },
-   {
     "type": "Pothole",
     "count": 6,
     "previous": 4
@@ -2229,6 +2211,11 @@
     "previous": 1
    },
    {
+    "type": "Roadway Markings / Pylons",
+    "count": 5,
+    "previous": 8
+   },
+   {
     "type": "Bicycle Services",
     "count": 5,
     "previous": 5
@@ -2242,11 +2229,6 @@
     "type": "Residential Parking Permit Violation",
     "count": 5,
     "previous": 6
-   },
-   {
-    "type": "DOB - Vacant Private Property Inspection",
-    "count": 4,
-    "previous": 11
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
@@ -2289,19 +2271,24 @@
     "previous": 1
    },
    {
+    "type": "Recycling Cart - Repair",
+    "count": 2,
+    "previous": 0
+   },
+   {
     "type": "Traffic Safety Input",
     "count": 2,
     "previous": 6
    },
    {
+    "type": "DOB - Vacant Private Property Inspection",
+    "count": 2,
+    "previous": 13
+   },
+   {
     "type": "DGS - Playground Repair",
     "count": 2,
     "previous": 2
-   },
-   {
-    "type": "Recycling Cart - Repair",
-    "count": 1,
-    "previous": 0
    },
    {
     "type": "Signed Street Sweeping Missed",
@@ -2339,14 +2326,94 @@
     "previous": 0
    }
   ],
-  "open": 165,
+  "open": 162,
   "recent": [
+   {
+    "type": "Rat Replacement Containers",
+    "agency": "DPW",
+    "added": "2026-11-03T23:15:52Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of CHURCH STREET NW",
+    "lat": 38.91,
+    "lon": -77.041
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-03T22:57:34Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of P STREET NW",
+    "lat": 38.91,
+    "lon": -77.039
+   },
+   {
+    "type": "Sanitation Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-03T21:32:33Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2000 block of O STREET NW",
+    "lat": 38.909,
+    "lon": -77.046
+   },
+   {
+    "type": "Parking Meter Repair",
+    "agency": "DDOT",
+    "added": "2026-11-03T21:03:40Z",
+    "resolved": "2026-11-03T21:10:57Z",
+    "status": "Closed",
+    "block": "1700 block of N STREET NW",
+    "lat": 38.907,
+    "lon": -77.041
+   },
+   {
+    "type": "Dead Animal Collection",
+    "agency": "DPW",
+    "added": "2026-11-03T20:56:04Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of 20TH STREET NW",
+    "lat": 38.914,
+    "lon": -77.045
+   },
+   {
+    "type": "Graffiti Removal",
+    "agency": "DPW",
+    "added": "2026-11-03T20:52:25Z",
+    "resolved": null,
+    "status": "Open (Duplicate)",
+    "block": "1600 block of R STREET NW",
+    "lat": 38.913,
+    "lon": -77.038
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-03T20:34:56Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of SWANN STREET NW",
+    "lat": 38.915,
+    "lon": -77.041
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-03T20:04:52Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1800 block of SWANN STREET NW",
+    "lat": 38.915,
+    "lon": -77.043
+   },
    {
     "type": "Emergency No-Parking Verification",
     "agency": "DPW",
     "added": "2026-11-03T17:25:55Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-03T17:35:02Z",
+    "status": "Closed",
     "block": "1600 block of 18TH STREET NW",
     "lat": 38.911,
     "lon": -77.042
@@ -2575,8 +2642,8 @@
     "type": "Pothole",
     "agency": "DDOT",
     "added": "2026-11-02T16:03:26Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-03T17:56:05Z",
+    "status": "Closed",
     "block": "1600 block of CONNECTICUT AVENUE NW",
     "lat": 38.912,
     "lon": -77.045
@@ -2745,8 +2812,8 @@
     "type": "Sanitation Enforcement",
     "agency": "DPW",
     "added": "2026-11-01T21:21:53Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-03T17:45:11Z",
+    "status": "Closed",
     "block": "1300 block of 22ND STREET NW",
     "lat": 38.908,
     "lon": -77.049
@@ -2760,97 +2827,17 @@
     "block": "1600 block of RIGGS PLACE NW",
     "lat": 38.913,
     "lon": -77.038
-   },
-   {
-    "type": "Sidewalk Repair",
-    "agency": "DDOT",
-    "added": "2026-11-01T17:58:55Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "1800 block of NEW HAMPSHIRE AVENUE NW",
-    "lat": 38.914,
-    "lon": -77.039
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-01T15:47:12Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1800 block of RIGGS PLACE NW",
-    "lat": 38.913,
-    "lon": -77.042
-   },
-   {
-    "type": "DC How Am I Driving?",
-    "agency": "ORM",
-    "added": "2026-11-01T14:52:27Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1600 block of 18TH STREET NW",
-    "lat": 38.912,
-    "lon": -77.042
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-01T13:04:03Z",
-    "resolved": "2026-11-01T18:46:51Z",
-    "status": "Closed",
-    "block": "1600 block of P STREET NW",
-    "lat": 38.91,
-    "lon": -77.038
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-01T05:13:30Z",
-    "resolved": "2026-11-01T05:23:47Z",
-    "status": "Closed",
-    "block": "1800 block of JEFFERSON PLACE NW",
-    "lat": 38.906,
-    "lon": -77.043
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-01T01:28:00Z",
-    "resolved": "2026-11-01T01:33:29Z",
-    "status": "Closed (Duplicate)",
-    "block": "1800 block of SWANN STREET NW",
-    "lat": 38.915,
-    "lon": -77.043
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-01T00:05:30Z",
-    "resolved": "2026-11-01T01:33:29Z",
-    "status": "Closed",
-    "block": "1800 block of SWANN STREET NW",
-    "lat": 38.915,
-    "lon": -77.043
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-31T22:42:01Z",
-    "resolved": "2026-11-01T00:42:05Z",
-    "status": "Closed",
-    "block": "1500 block of 22ND STREET NW",
-    "lat": 38.91,
-    "lon": -77.049
    }
   ]
  },
  "crime": {
-  "total": 66,
-  "previous_total": 64,
+  "total": 65,
+  "previous_total": 65,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
-    "count": 39,
-    "previous": 34
+    "count": 38,
+    "previous": 35
    },
    {
     "offense": "THEFT F/AUTO",
@@ -2926,7 +2913,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2941,7 +2928,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Dupont Circle through OTR assessment sub-area Old City 2 D in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Dupont Circle boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-03): 78% of the 4,031 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 73% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Dupont Circle through OTR assessment sub-area Old City 2 D in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Dupont Circle boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-04): 78% of the 4,031 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 73% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -2954,7 +2941,7 @@
    "area_parcels": 4031,
    "area_share_inside": 0.784,
    "boundary_share_in_area": 0.731,
-   "measured": "2026-11-03"
+   "measured": "2026-11-04"
   },
   "primary": "condo",
   "house": {
@@ -2964,10 +2951,10 @@
    "count_prev_12mo": 17
   },
   "condo": {
-   "median_12mo": 470000,
-   "count_12mo": 109,
-   "median_prev_12mo": 408870,
-   "count_prev_12mo": 126
+   "median_12mo": 472500,
+   "count_12mo": 108,
+   "median_prev_12mo": 410000,
+   "count_prev_12mo": 127
   },
   "last_60d": {
    "median": 631000,
@@ -2976,8 +2963,8 @@
    "ppsf_count": 0
   },
   "above_assessment_12mo": {
-   "n": 62,
-   "of": 121
+   "n": 61,
+   "of": 120
   },
   "by_month": [
    {
@@ -3127,7 +3114,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3147,15 +3134,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 102,
-   "starting_next_7d": 37,
-   "reserved_ft": 10142,
+   "active_this_week": 103,
+   "starting_next_7d": 38,
+   "reserved_ft": 10230,
    "long_running_90d": 25,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 14
+     "count": 15
     },
     {
      "type": "Dumpsters",
@@ -3474,6 +3461,14 @@
      "end": "2026-11-10",
      "ft": 88,
      "hours": ""
+    },
+    {
+     "type": "Moving & storage",
+     "block": "1400 block of 17th Street NW",
+     "start": "2026-11-11",
+     "end": "2026-11-11",
+     "ft": 88,
+     "hours": ""
     }
    ]
   },
@@ -3559,7 +3554,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.03,
     "city_median_days": 0.05,
-    "closed_n": 1021
+    "closed_n": 1020
    },
    {
     "type": "Trash Collection - Missed",
@@ -3571,24 +3566,24 @@
     "type": "Bulk Collection",
     "median_days": 5.8,
     "city_median_days": 6.92,
-    "closed_n": 481
+    "closed_n": 480
    },
    {
     "type": "DC Health Rodent & Vector Control",
     "median_days": 1.63,
     "city_median_days": 2.8,
-    "closed_n": 404
+    "closed_n": 406
    },
    {
     "type": "Sanitation Enforcement",
-    "median_days": 0.89,
+    "median_days": 0.91,
     "city_median_days": 1.1,
-    "closed_n": 281
+    "closed_n": 283
    },
    {
     "type": "Recycling Collection - Missed",
     "median_days": 4.72,
-    "city_median_days": 5.08,
+    "city_median_days": 5.05,
     "closed_n": 237
    },
    {
@@ -3607,7 +3602,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3749,7 +3744,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "archive_days": 180,
   "sources": [
    {
@@ -3842,7 +3837,7 @@
     "name": "PoPville",
     "url": "https://www.popville.com/",
     "state": "ok",
-    "matched": 2,
+    "matched": 3,
     "fetched": 2
    },
    {
@@ -3869,9 +3864,9 @@
    {
     "name": "Greater Greater Washington",
     "url": "https://ggwash.org/",
-    "state": "ok",
+    "state": "error: HTTPError",
     "matched": 0,
-    "fetched": 1
+    "failed": 1
    },
    {
     "name": "Mayor's office",
@@ -3896,6 +3891,13 @@
    }
   ],
   "items": [
+   {
+    "title": "Anyone Know What was Filming on Swann Street?!?",
+    "url": "https://www.popville.com/2026/11/anyone-know-what-was-filming-dc-swann-street/",
+    "source": "PoPville",
+    "published": "2026-11-03T19:35:32Z",
+    "first_seen": "2026-11-04T01:56:36Z"
+   },
    {
     "title": "Checking in on the Dupont Circle Deckover \u2013 MAJOR PROGRESS!",
     "url": "https://www.popville.com/2026/11/checking-dc-dupont-circle-deckover-major-progress/",
@@ -4427,7 +4429,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "today": "2026-11-03",
   "days_ahead": 30,
   "sources": [
@@ -4498,7 +4500,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -17506,7 +17508,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

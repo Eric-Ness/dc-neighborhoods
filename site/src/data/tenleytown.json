@@ -1,7 +1,7 @@
 {
  "slug": "tenleytown",
  "name": "Tenleytown",
- "generated_at": "2026-11-03T17:31:02Z",
+ "generated_at": "2026-11-04T01:56:36Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -2818,50 +2818,11 @@
    "lat": 38.95491,
    "lon": -77.07844,
    "smd": "3E04"
-  },
-  {
-   "id": "F2600953",
-   "issued": "2026-10-05T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "FENCE",
-   "address": "3800 GARRISON ST NW 20016",
-   "work": "We will be replacing existing fencing with  ~15LF of 6ft tall tounge/groove paneled fencing in the back of the property.  Installing ~ 139 LF of  5ft tall tounge/groove panel fencing around the left side yard.  And, installing 4 matching gates in various places around the yard - all within the owners property boundry.",
-   "zoning": "R-1B",
-   "lat": 38.9553,
-   "lon": -77.07487,
-   "smd": "3E04"
-  },
-  {
-   "id": "E2700131",
-   "issued": "2026-10-05T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "3830 LIVINGSTON ST NW 20015",
-   "work": "",
-   "zoning": "R-2",
-   "lat": 38.96289,
-   "lon": -77.07688,
-   "smd": "3/4G06"
-  },
-  {
-   "id": "E2700146",
-   "issued": "2026-10-05T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "4200 CONNECTICUT AVE NW 20008",
-   "work": "",
-   "zoning": "R-1B",
-   "lat": 38.94412,
-   "lon": -77.0644,
-   "smd": "3F05"
   }
  ],
  "requests": {
-  "total": 1822,
-  "previous_total": 2101,
+  "total": 1819,
+  "previous_total": 2114,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
@@ -2870,18 +2831,18 @@
    },
    {
     "type": "Bulk Collection",
-    "count": 374,
-    "previous": 343
+    "count": 370,
+    "previous": 349
+   },
+   {
+    "type": "Parking Enforcement",
+    "count": 109,
+    "previous": 51
    },
    {
     "type": "Roadway Signs",
     "count": 109,
-    "previous": 207
-   },
-   {
-    "type": "Parking Enforcement",
-    "count": 107,
-    "previous": 52
+    "previous": 208
    },
    {
     "type": "Tree Pruning",
@@ -2890,33 +2851,33 @@
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 60,
-    "previous": 84
+    "count": 62,
+    "previous": 83
    },
    {
     "type": "Recycling Collection - Missed",
-    "count": 55,
+    "count": 56,
     "previous": 64
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 46,
-    "previous": 12
+    "count": 44,
+    "previous": 14
    },
    {
     "type": "Residential Parking Permit Violation",
     "count": 42,
-    "previous": 67
-   },
-   {
-    "type": "Tree Inspection",
-    "count": 40,
-    "previous": 75
+    "previous": 65
    },
    {
     "type": "Graffiti Removal",
     "count": 40,
-    "previous": 67
+    "previous": 68
+   },
+   {
+    "type": "Tree Inspection",
+    "count": 37,
+    "previous": 78
    },
    {
     "type": "Tree Planting",
@@ -2945,13 +2906,18 @@
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 21,
+    "count": 20,
     "previous": 21
    },
    {
     "type": "DMV - Vehicle Registration Issues",
-    "count": 18,
+    "count": 19,
     "previous": 13
+   },
+   {
+    "type": "Sidewalk Repair",
+    "count": 19,
+    "previous": 14
    },
    {
     "type": "DOB - Vacant Private Property Inspection",
@@ -2969,24 +2935,19 @@
     "previous": 9
    },
    {
-    "type": "Sidewalk Repair",
-    "count": 17,
-    "previous": 14
+    "type": "Parking Meter Repair",
+    "count": 16,
+    "previous": 7
    },
    {
-    "type": "Parking Meter Repair",
+    "type": "Public Space Litter Can-Collection",
     "count": 15,
-    "previous": 7
+    "previous": 2
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 15,
-    "previous": 70
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "count": 14,
-    "previous": 2
+    "previous": 71
    },
    {
     "type": "DMV - Drivers License/ID Issues",
@@ -3014,12 +2975,12 @@
     "previous": 8
    },
    {
-    "type": "Illegal Dumping",
-    "count": 10,
-    "previous": 14
+    "type": "Pothole",
+    "count": 11,
+    "previous": 13
    },
    {
-    "type": "Pothole",
+    "type": "Illegal Dumping",
     "count": 10,
     "previous": 13
    },
@@ -3032,11 +2993,6 @@
     "type": "Trash Cart Repair",
     "count": 8,
     "previous": 10
-   },
-   {
-    "type": "Out of State Parking Violation (ROSA)",
-    "count": 7,
-    "previous": 9
    },
    {
     "type": "Trash Cart - Delivery",
@@ -3062,6 +3018,11 @@
     "type": "Recycling Cart - Repair",
     "count": 5,
     "previous": 5
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "count": 5,
+    "previous": 10
    },
    {
     "type": "Supercan - Repair",
@@ -3112,11 +3073,6 @@
     "type": "Bus Stop Issues",
     "count": 3,
     "previous": 1
-   },
-   {
-    "type": "Rat Replacement Containers",
-    "count": 2,
-    "previous": 2
    },
    {
     "type": "Alley Repair",
@@ -3189,8 +3145,148 @@
     "previous": 0
    }
   ],
-  "open": 411,
+  "open": 416,
   "recent": [
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-04T00:37:56Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4400 block of SEDGWICK STREET NW",
+    "lat": 38.941,
+    "lon": -77.088
+   },
+   {
+    "type": "Pothole",
+    "agency": "DDOT",
+    "added": "2026-11-03T23:10:19Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "3700 block of ALTON PLACE NW",
+    "lat": 38.947,
+    "lon": -77.072
+   },
+   {
+    "type": "DMV - Vehicle Registration Issues",
+    "agency": "DMV",
+    "added": "2026-11-03T22:03:08Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4100 block of WISCONSIN AVENUE NW",
+    "lat": 38.943,
+    "lon": -77.076
+   },
+   {
+    "type": "Parking Meter Repair",
+    "agency": "DDOT",
+    "added": "2026-11-03T20:56:49Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "4100 block of RIVER ROAD NW",
+    "lat": 38.949,
+    "lon": -77.081
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-03T20:44:46Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "5300 block of 42ND STREET NW",
+    "lat": 38.96,
+    "lon": -77.082
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-03T20:40:42Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4100 block of HARRISON STREET NW",
+    "lat": 38.957,
+    "lon": -77.081
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-03T19:49:14Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4200 block of 37TH STREET NW",
+    "lat": 38.944,
+    "lon": -77.072
+   },
+   {
+    "type": "Tree Inspection",
+    "agency": "DDOT",
+    "added": "2026-11-03T18:49:01Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "5400 block of WESTERN AVENUE NW",
+    "lat": 38.963,
+    "lon": -77.083
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-03T18:47:50Z",
+    "resolved": "2026-11-03T22:41:36Z",
+    "status": "Closed",
+    "block": "3900 block of NORTHAMPTON STREET NW",
+    "lat": 38.966,
+    "lon": -77.077
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-03T18:01:00Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4700 block of DAVENPORT STREET NW",
+    "lat": 38.952,
+    "lon": -77.093
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-03T17:55:58Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "DAVENPORT STREET NW AND 41ST STREET NW",
+    "lat": 38.952,
+    "lon": -77.08
+   },
+   {
+    "type": "Sidewalk Repair",
+    "agency": "DDOT",
+    "added": "2026-11-03T17:44:20Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "4500 block of ALBEMARLE STREET NW",
+    "lat": 38.948,
+    "lon": -77.09
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-03T17:26:51Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4500 block of RENO ROAD NW",
+    "lat": 38.949,
+    "lon": -77.073
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-03T17:21:53Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4400 block of CHESAPEAKE STREET NW",
+    "lat": 38.951,
+    "lon": -77.087
+   },
    {
     "type": "Scheduled Yard Waste",
     "agency": "DPW",
@@ -3225,8 +3321,8 @@
     "type": "Tree Inspection",
     "agency": "DDOT",
     "added": "2026-11-03T16:42:46Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-03T18:46:11Z",
+    "status": "Closed",
     "block": "5400 block of 42ND STREET NW",
     "lat": 38.963,
     "lon": -77.082
@@ -3235,8 +3331,8 @@
     "type": "DMV - Vehicle Registration Issues",
     "agency": "DMV",
     "added": "2026-11-03T15:58:50Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-03T20:32:03Z",
+    "status": "Closed",
     "block": "4700 block of WINDOM PLACE NW",
     "lat": 38.946,
     "lon": -77.094
@@ -3550,146 +3646,6 @@
     "block": "4800 block of RENO ROAD NW",
     "lat": 38.953,
     "lon": -77.072
-   },
-   {
-    "type": "Sidewalk Repair",
-    "agency": "DDOT",
-    "added": "2026-11-02T18:56:43Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "5400 block of WESTERN AVENUE NW",
-    "lat": 38.961,
-    "lon": -77.084
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-02T18:21:15Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4100 block of JENIFER STREET NW",
-    "lat": 38.959,
-    "lon": -77.081
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-02T17:43:00Z",
-    "resolved": "2026-11-02T18:42:54Z",
-    "status": "Closed",
-    "block": "4300 block of 45TH STREET NW",
-    "lat": 38.946,
-    "lon": -77.088
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-02T17:27:22Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3500 block of BRANDYWINE STREET NW",
-    "lat": 38.949,
-    "lon": -77.069
-   },
-   {
-    "type": "Supercan - Delivery",
-    "agency": "DPW",
-    "added": "2026-11-02T17:13:03Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4300 block of RENO ROAD NW",
-    "lat": 38.946,
-    "lon": -77.071
-   },
-   {
-    "type": "Residential Parking Permit Violation",
-    "agency": "DPW",
-    "added": "2026-11-02T17:12:19Z",
-    "resolved": "2026-11-02T18:04:55Z",
-    "status": "Closed",
-    "block": "4700 block of WINDOM PLACE NW",
-    "lat": 38.946,
-    "lon": -77.094
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-02T16:33:51Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4400 block of 35TH STREET NW",
-    "lat": 38.947,
-    "lon": -77.067
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-02T16:12:39Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4600 block of CHESAPEAKE STREET NW",
-    "lat": 38.951,
-    "lon": -77.091
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-11-02T15:45:23Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4500 block of CONNECTICUT AVENUE NW",
-    "lat": 38.948,
-    "lon": -77.066
-   },
-   {
-    "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
-    "agency": "DPW",
-    "added": "2026-11-02T15:45:07Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3800 block of ALTON PLACE NW",
-    "lat": 38.947,
-    "lon": -77.076
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-02T15:45:04Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4300 block of VAN NESS STREET NW",
-    "lat": 38.943,
-    "lon": -77.085
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-02T15:42:46Z",
-    "resolved": "2026-11-02T17:00:14Z",
-    "status": "Closed",
-    "block": "4500 block of CONNECTICUT AVENUE NW",
-    "lat": 38.948,
-    "lon": -77.066
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-02T15:38:58Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4300 block of ELLICOTT STREET NW",
-    "lat": 38.953,
-    "lon": -77.086
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-02T15:35:14Z",
-    "resolved": "2026-11-02T16:39:06Z",
-    "status": "Closed",
-    "block": "4300 block of 45TH STREET NW",
-    "lat": 38.946,
-    "lon": -77.088
    }
   ]
  },
@@ -3806,7 +3762,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3821,7 +3777,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Tenleytown through OTR assessment neighborhoods \"American University\" (all), \"Chevy Chase\" sub-area A, \"North Cleveland Park\" and \"Wakefield\" in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Tenleytown boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-03): 98% of the 6,119 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Tenleytown through OTR assessment neighborhoods \"American University\" (all), \"Chevy Chase\" sub-area A, \"North Cleveland Park\" and \"Wakefield\" in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Tenleytown boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-04): 98% of the 6,119 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -3846,7 +3802,7 @@
    "area_parcels": 6119,
    "area_share_inside": 0.978,
    "boundary_share_in_area": 1.0,
-   "measured": "2026-11-03"
+   "measured": "2026-11-04"
   },
   "primary": "house",
   "house": {
@@ -4154,7 +4110,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4174,15 +4130,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 168,
-   "starting_next_7d": 34,
-   "reserved_ft": 23452,
+   "active_this_week": 169,
+   "starting_next_7d": 35,
+   "reserved_ft": 23540,
    "long_running_90d": 47,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 6
+     "count": 7
     },
     {
      "type": "Dumpsters",
@@ -4481,6 +4437,14 @@
      "end": "2026-11-10",
      "ft": 88,
      "hours": ""
+    },
+    {
+     "type": "Moving & storage",
+     "block": "4400 block of Faraday Place NW",
+     "start": "2026-11-11",
+     "end": "2026-11-11",
+     "ft": 88,
+     "hours": ""
     }
    ]
   },
@@ -4566,13 +4530,13 @@
     "type": "Bulk Collection",
     "median_days": 7.76,
     "city_median_days": 6.92,
-    "closed_n": 2962
+    "closed_n": 2960
    },
    {
     "type": "Scheduled Yard Waste",
     "median_days": 7.83,
     "city_median_days": 9.71,
-    "closed_n": 2791
+    "closed_n": 2790
    },
    {
     "type": "Trash Collection - Missed",
@@ -4582,21 +4546,21 @@
    },
    {
     "type": "Recycling Collection - Missed",
-    "median_days": 4.25,
-    "city_median_days": 5.08,
-    "closed_n": 1259
+    "median_days": 4.24,
+    "city_median_days": 5.05,
+    "closed_n": 1258
    },
    {
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 734
+    "closed_n": 735
    },
    {
     "type": "Tree Inspection",
-    "median_days": 0.64,
+    "median_days": 0.63,
     "city_median_days": 0.61,
-    "closed_n": 361
+    "closed_n": 362
    },
    {
     "type": "Pothole",
@@ -4606,15 +4570,15 @@
    },
    {
     "type": "Roadway Signs",
-    "median_days": 7.08,
-    "city_median_days": 6.98,
-    "closed_n": 348
+    "median_days": 7.21,
+    "city_median_days": 6.99,
+    "closed_n": 349
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4773,7 +4737,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4904,9 +4868,9 @@
    {
     "name": "Greater Greater Washington",
     "url": "https://ggwash.org/",
-    "state": "ok",
+    "state": "error: HTTPError",
     "matched": 0,
-    "fetched": 1
+    "failed": 1
    },
    {
     "name": "Mayor's office",
@@ -5279,7 +5243,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "today": "2026-11-03",
   "days_ahead": 30,
   "sources": [
@@ -5419,7 +5383,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -47427,7 +47391,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

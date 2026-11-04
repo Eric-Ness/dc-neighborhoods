@@ -1,7 +1,7 @@
 {
  "slug": "mountpleasant",
  "name": "Mount Pleasant",
- "generated_at": "2026-11-03T17:31:02Z",
+ "generated_at": "2026-11-04T01:56:36Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1640,95 +1640,56 @@
    "lat": 38.93345,
    "lon": -77.03755,
    "smd": "1D06"
-  },
-  {
-   "id": "B2607020",
-   "issued": "2026-10-05T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "1613 HARVARD ST NW 401 20009",
-   "work": "HISTORIC\r\n\r\nWork consists of interior renovation of one existing residential bathroom, including selective demolition, replacement of plumbing and electrical fixtures, installation of new wall, floor, and ceiling finishes, and installation of new bathroom fixtures.  All work shall be performed in accordance with applicable local building codes and permit requirements.",
-   "zoning": "RA-4",
-   "lat": 38.92732,
-   "lon": -77.03733,
-   "smd": "1D05"
-  },
-  {
-   "id": "P2700112",
-   "issued": "2026-10-05T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "1738 HOBART ST NW 20009",
-   "work": "",
-   "zoning": "RF-1",
-   "lat": 38.92781,
-   "lon": -77.04126,
-   "smd": "1D05"
-  },
-  {
-   "id": "M2700051",
-   "issued": "2026-10-05T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "MECHANICAL",
-   "address": "1656 IRVING ST NW 20010",
-   "work": "",
-   "zoning": "RF-1",
-   "lat": 38.9286,
-   "lon": -77.03861,
-   "smd": "1D05"
   }
  ],
  "requests": {
-  "total": 745,
+  "total": 749,
   "previous_total": 754,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 160,
+    "count": 163,
     "previous": 135
    },
    {
     "type": "Bulk Collection",
-    "count": 104,
-    "previous": 109
+    "count": 105,
+    "previous": 110
    },
    {
     "type": "Scheduled Yard Waste",
     "count": 79,
-    "previous": 77
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "count": 34,
-    "previous": 49
+    "previous": 78
    },
    {
     "type": "Illegal Dumping",
-    "count": 34,
+    "count": 33,
     "previous": 23
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
     "count": 32,
-    "previous": 54
+    "previous": 53
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "count": 31,
+    "previous": 51
    },
    {
     "type": "Graffiti Removal",
-    "count": 21,
+    "count": 22,
     "previous": 12
+   },
+   {
+    "type": "Sanitation Enforcement",
+    "count": 16,
+    "previous": 23
    },
    {
     "type": "Container Removal",
     "count": 16,
-    "previous": 12
-   },
-   {
-    "type": "DOB - Vacant Private Property Inspection",
-    "count": 15,
-    "previous": 7
+    "previous": 11
    },
    {
     "type": "Dead Animal Collection",
@@ -1736,19 +1697,19 @@
     "previous": 8
    },
    {
-    "type": "Sanitation Enforcement",
-    "count": 15,
-    "previous": 23
-   },
-   {
-    "type": "Roadway Signs",
-    "count": 15,
-    "previous": 16
-   },
-   {
     "type": "Tree Removal",
     "count": 15,
     "previous": 19
+   },
+   {
+    "type": "DOB - Vacant Private Property Inspection",
+    "count": 14,
+    "previous": 8
+   },
+   {
+    "type": "Roadway Signs",
+    "count": 14,
+    "previous": 15
    },
    {
     "type": "Tree Pruning",
@@ -1758,17 +1719,17 @@
    {
     "type": "Dockless Vehicle Parking Complaint",
     "count": 11,
-    "previous": 4
+    "previous": 3
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "count": 11,
+    "previous": 12
    },
    {
     "type": "Residential Parking Permit Violation",
     "count": 11,
     "previous": 8
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "count": 10,
-    "previous": 12
    },
    {
     "type": "Supercan - Delivery",
@@ -1801,6 +1762,11 @@
     "previous": 10
    },
    {
+    "type": "Trash Collection - Missed",
+    "count": 6,
+    "previous": 16
+   },
+   {
     "type": "Rat Replacement Containers",
     "count": 6,
     "previous": 3
@@ -1809,11 +1775,6 @@
     "type": "Trash Cart - Delivery",
     "count": 6,
     "previous": 6
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "count": 5,
-    "previous": 16
    },
    {
     "type": "Missed Curbside Compost Collection",
@@ -1846,6 +1807,16 @@
     "previous": 3
    },
    {
+    "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
+    "count": 4,
+    "previous": 4
+   },
+   {
+    "type": "Abandoned Bicycle",
+    "count": 4,
+    "previous": 2
+   },
+   {
     "type": "Sidewalk Repair",
     "count": 4,
     "previous": 2
@@ -1867,16 +1838,6 @@
    },
    {
     "type": "Roadway Markings / Pylons",
-    "count": 3,
-    "previous": 2
-   },
-   {
-    "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
-    "count": 3,
-    "previous": 4
-   },
-   {
-    "type": "Abandoned Bicycle",
     "count": 3,
     "previous": 2
    },
@@ -1981,8 +1942,98 @@
     "previous": 0
    }
   ],
-  "open": 156,
+  "open": 157,
   "recent": [
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T01:51:15Z",
+    "resolved": "2026-11-04T02:06:18Z",
+    "status": "Closed",
+    "block": "2000 block of ROSEMOUNT AVENUE NW",
+    "lat": 38.933,
+    "lon": -77.047
+   },
+   {
+    "type": "Abandoned Bicycle",
+    "agency": "DPW",
+    "added": "2026-11-04T00:08:05Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3100 block of MOUNT PLEASANT STREET NW",
+    "lat": 38.929,
+    "lon": -77.037
+   },
+   {
+    "type": "Graffiti Removal",
+    "agency": "DPW",
+    "added": "2026-11-04T00:05:03Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3100 block of MOUNT PLEASANT STREET NW",
+    "lat": 38.929,
+    "lon": -77.037
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-03T23:01:24Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3200 block of 19TH STREET NW",
+    "lat": 38.932,
+    "lon": -77.044
+   },
+   {
+    "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
+    "agency": "DPW",
+    "added": "2026-11-03T21:47:26Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1800 block of KENYON STREET NW",
+    "lat": 38.93,
+    "lon": -77.042
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-03T19:20:48Z",
+    "resolved": "2026-11-03T19:54:04Z",
+    "status": "Closed",
+    "block": "3200 block of ADAMS MILL ROAD NW",
+    "lat": 38.932,
+    "lon": -77.046
+   },
+   {
+    "type": "Sanitation Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-03T18:56:39Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of PARK ROAD NW",
+    "lat": 38.933,
+    "lon": -77.04
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-03T18:22:41Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1800 block of NEWTON STREET NW",
+    "lat": 38.934,
+    "lon": -77.042
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-03T18:14:35Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1800 block of INGLESIDE TERRACE NW",
+    "lat": 38.935,
+    "lon": -77.043
+   },
    {
     "type": "DC Health Rodent & Vector Control",
     "agency": "DOH",
@@ -2157,8 +2208,8 @@
     "type": "Pothole",
     "agency": "DDOT",
     "added": "2026-11-03T03:16:09Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-03T17:55:56Z",
+    "status": "Closed",
     "block": "2000 block of ROSEMOUNT AVENUE NW",
     "lat": 38.933,
     "lon": -77.047
@@ -2392,96 +2443,6 @@
     "block": "1800 block of LAMONT STREET NW",
     "lat": 38.931,
     "lon": -77.041
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "agency": "DPW",
-    "added": "2026-11-02T05:37:42Z",
-    "resolved": "2026-11-03T04:42:28Z",
-    "status": "Closed (Duplicate)",
-    "block": "1600 block of LAMONT STREET NW",
-    "lat": 38.931,
-    "lon": -77.039
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-02T01:19:57Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1800 block of IRVING STREET NW",
-    "lat": 38.929,
-    "lon": -77.042
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-02T01:17:14Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3400 block of OAKWOOD TERRACE NW",
-    "lat": 38.935,
-    "lon": -77.038
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-01T23:34:11Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1600 block of HOBART STREET NW",
-    "lat": 38.928,
-    "lon": -77.037
-   },
-   {
-    "type": "Out of State Parking Violation (ROSA)",
-    "agency": "DPW",
-    "added": "2026-11-01T22:59:52Z",
-    "resolved": "2026-11-02T09:03:15Z",
-    "status": "Closed",
-    "block": "3300 block of 17TH STREET NW",
-    "lat": 38.933,
-    "lon": -77.039
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-01T20:34:58Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1600 block of OAK STREET NW",
-    "lat": 38.936,
-    "lon": -77.037
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-01T20:31:06Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1600 block of OAK STREET NW",
-    "lat": 38.936,
-    "lon": -77.037
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-01T20:26:04Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1800 block of IRVING STREET NW",
-    "lat": 38.929,
-    "lon": -77.043
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-01T20:01:58Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3100 block of ADAMS MILL ROAD NW",
-    "lat": 38.931,
-    "lon": -77.045
    }
   ]
  },
@@ -2568,7 +2529,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2583,7 +2544,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Mount Pleasant through OTR assessment sub-area Mount Pleasant A in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Mount Pleasant boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-03): 97% of the 1,797 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 89% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Mount Pleasant through OTR assessment sub-area Mount Pleasant A in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Mount Pleasant boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-04): 97% of the 1,797 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 89% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -2596,7 +2557,7 @@
    "area_parcels": 1797,
    "area_share_inside": 0.971,
    "boundary_share_in_area": 0.89,
-   "measured": "2026-11-03"
+   "measured": "2026-11-04"
   },
   "primary": "house",
   "house": {
@@ -2760,7 +2721,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2784,7 +2745,7 @@
    "starting_next_7d": 13,
    "reserved_ft": 7964,
    "long_running_90d": 7,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -3000,13 +2961,13 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 1226
+    "closed_n": 1227
    },
    {
     "type": "Bulk Collection",
     "median_days": 7.88,
     "city_median_days": 6.92,
-    "closed_n": 1079
+    "closed_n": 1078
    },
    {
     "type": "Scheduled Yard Waste",
@@ -3023,7 +2984,7 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 6.96,
-    "city_median_days": 5.08,
+    "city_median_days": 5.05,
     "closed_n": 367
    },
    {
@@ -3048,7 +3009,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3210,7 +3171,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "archive_days": 180,
   "sources": [
    {
@@ -3303,7 +3264,7 @@
     "name": "PoPville",
     "url": "https://www.popville.com/",
     "state": "ok",
-    "matched": 0,
+    "matched": 1,
     "fetched": 3
    },
    {
@@ -3330,9 +3291,9 @@
    {
     "name": "Greater Greater Washington",
     "url": "https://ggwash.org/",
-    "state": "ok",
+    "state": "error: HTTPError",
     "matched": 0,
-    "fetched": 1
+    "failed": 1
    },
    {
     "name": "Mayor's office",
@@ -3357,6 +3318,13 @@
    }
   ],
   "items": [
+   {
+    "title": "\u201cWas that a Drone over Mount Pleasant last night? Did you see it?\u201d",
+    "url": "https://www.popville.com/2026/11/drone-over-mount-pleasant-monday-night/",
+    "source": "PoPville",
+    "published": "2026-11-03T17:45:39Z",
+    "first_seen": "2026-11-04T01:56:36Z"
+   },
    {
     "title": "PROTECT THE BRIDGE: Stop Community Navigation from losing funding in FY27",
     "url": "https://districtbridges.org/protect-the-bridge-stop-community-navigation-from-losing-funding-in-fy27/",
@@ -3461,7 +3429,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "today": "2026-11-03",
   "days_ahead": 30,
   "sources": [
@@ -3549,7 +3517,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -12520,7 +12488,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

@@ -1,7 +1,7 @@
 {
  "slug": "vanness",
  "name": "Van Ness",
- "generated_at": "2026-11-03T17:31:02Z",
+ "generated_at": "2026-11-04T01:56:36Z",
  "boundary": {
   "source": "ANC single-member districts 3F01, 3F02 and 3F05 around the Van Ness-UDC Metro (Open Data DC). DC has no planning area named Van Ness.",
   "rings": [
@@ -3366,37 +3366,11 @@
    "lat": 38.94412,
    "lon": -77.0644,
    "smd": "3F05"
-  },
-  {
-   "id": "E2700133",
-   "issued": "2026-10-05T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "4731 30TH ST NW 20008",
-   "work": "",
-   "zoning": "R-1A/FH",
-   "lat": 38.95147,
-   "lon": -77.06139,
-   "smd": "3F02"
-  },
-  {
-   "id": "E2700146",
-   "issued": "2026-10-05T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "4200 CONNECTICUT AVE NW 20008",
-   "work": "",
-   "zoning": "R-1B",
-   "lat": 38.94412,
-   "lon": -77.0644,
-   "smd": "3F05"
   }
  ],
  "requests": {
   "total": 216,
-  "previous_total": 234,
+  "previous_total": 235,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
@@ -3419,14 +3393,14 @@
     "previous": 1
    },
    {
+    "type": "Trash Collection - Missed",
+    "count": 9,
+    "previous": 15
+   },
+   {
     "type": "DC Health Rodent & Vector Control",
     "count": 8,
     "previous": 1
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "count": 8,
-    "previous": 15
    },
    {
     "type": "Recycling Collection - Missed",
@@ -3524,11 +3498,6 @@
     "previous": 1
    },
    {
-    "type": "Rat Replacement Containers",
-    "count": 1,
-    "previous": 1
-   },
-   {
     "type": "DGS - Playground Repair",
     "count": 1,
     "previous": 1
@@ -3614,8 +3583,18 @@
     "previous": 4
    }
   ],
-  "open": 69,
+  "open": 68,
   "recent": [
+   {
+    "type": "Trash Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-03T19:49:14Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4200 block of 37TH STREET NW",
+    "lat": 38.944,
+    "lon": -77.072
+   },
    {
     "type": "DMV - Online Processing Issues",
     "agency": "DMV",
@@ -4105,16 +4084,6 @@
     "block": "4600 block of CONNECTICUT AVENUE NW",
     "lat": 38.95,
     "lon": -77.066
-   },
-   {
-    "type": "Graffiti Removal",
-    "agency": "DPW",
-    "added": "2026-10-29T12:54:24Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3500 block of INTERNATIONAL PLACE NW",
-    "lat": 38.943,
-    "lon": -77.065
    }
   ]
  },
@@ -4168,7 +4137,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -4183,7 +4152,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Van Ness through OTR assessment neighborhoods Forest Hills, Wakefield and North Cleveland Park in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Van Ness boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-03): 46% of the 3,957 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Van Ness through OTR assessment neighborhoods Forest Hills, Wakefield and North Cleveland Park in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Van Ness boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-04): 46% of the 3,957 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -4204,7 +4173,7 @@
    "area_parcels": 3957,
    "area_share_inside": 0.455,
    "boundary_share_in_area": 1.0,
-   "measured": "2026-11-03"
+   "measured": "2026-11-04"
   },
   "primary": "house",
   "house": {
@@ -4431,7 +4400,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4455,7 +4424,7 @@
    "starting_next_7d": 7,
    "reserved_ft": 5962,
    "long_running_90d": 7,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -4644,9 +4613,9 @@
    },
    {
     "type": "Recycling Collection - Missed",
-    "median_days": 4.04,
-    "city_median_days": 5.08,
-    "closed_n": 190
+    "median_days": 4.03,
+    "city_median_days": 5.05,
+    "closed_n": 189
    },
    {
     "type": "Tree Inspection",
@@ -4656,9 +4625,9 @@
    },
    {
     "type": "Roadway Signs",
-    "median_days": 40.01,
-    "city_median_days": 6.98,
-    "closed_n": 42
+    "median_days": 41.07,
+    "city_median_days": 6.99,
+    "closed_n": 41
    },
    {
     "type": "Pothole",
@@ -4670,7 +4639,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4816,7 +4785,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4925,9 +4894,9 @@
    {
     "name": "Greater Greater Washington",
     "url": "https://ggwash.org/",
-    "state": "ok",
+    "state": "error: HTTPError",
     "matched": 0,
-    "fetched": 1
+    "failed": 1
    },
    {
     "name": "Mayor's office",
@@ -5155,7 +5124,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "today": "2026-11-03",
   "days_ahead": 30,
   "sources": [
@@ -5275,7 +5244,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -15295,7 +15264,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

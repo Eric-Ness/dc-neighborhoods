@@ -1,7 +1,7 @@
 {
  "slug": "lenfantplaza",
  "name": "L'Enfant Plaza",
- "generated_at": "2026-11-03T17:31:02Z",
+ "generated_at": "2026-11-04T01:56:36Z",
  "boundary": {
   "source": "Southwest Business Improvement District, which takes in L'Enfant Plaza and the federal blocks around it (Open Data DC). DC has no planning area for L'Enfant Plaza.",
   "rings": [
@@ -1012,19 +1012,6 @@
    "smd": "6D02"
   },
   {
-   "id": "B2605204",
-   "issued": "2026-10-29T04:00:00Z",
-   "group": "Additions",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "507 G ST SW 20024",
-   "work": "Demolition of sun porch and replace-in-kind with screened porch. No new mechanical or plumbing. Repair front steps and replace-in-kind front railing. Front brick tuck pointing and addition of new outdoor GCFI outlet.",
-   "zoning": "R-3",
-   "lat": 38.88148,
-   "lon": -77.01917,
-   "smd": "6D01"
-  },
-  {
    "id": "E2700993",
    "issued": "2026-10-29T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -1048,6 +1035,19 @@
    "zoning": "R-3",
    "lat": 38.88207,
    "lon": -77.02218,
+   "smd": "6D01"
+  },
+  {
+   "id": "B2605204",
+   "issued": "2026-10-29T04:00:00Z",
+   "group": "Additions",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "507 G ST SW 20024",
+   "work": "Demolition of sun porch and replace-in-kind with screened porch. No new mechanical or plumbing. Repair front steps and replace-in-kind front railing. Front brick tuck pointing and addition of new outdoor GCFI outlet.",
+   "zoning": "R-3",
+   "lat": 38.88148,
+   "lon": -77.01917,
    "smd": "6D01"
   },
   {
@@ -1312,22 +1312,22 @@
   }
  ],
  "requests": {
-  "total": 765,
-  "previous_total": 670,
+  "total": 771,
+  "previous_total": 663,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 206,
-    "previous": 211
+    "count": 210,
+    "previous": 203
    },
    {
     "type": "DMV - Drivers License/ID Issues",
-    "count": 97,
+    "count": 96,
     "previous": 92
    },
    {
     "type": "DMV - Copy of Ticket",
-    "count": 65,
+    "count": 64,
     "previous": 51
    },
    {
@@ -1342,7 +1342,7 @@
    },
    {
     "type": "DMV - Vehicle Registration Issues",
-    "count": 30,
+    "count": 32,
     "previous": 29
    },
    {
@@ -1367,13 +1367,13 @@
    },
    {
     "type": "DMV - Refunds - Tickets",
-    "count": 16,
+    "count": 17,
     "previous": 17
    },
    {
-    "type": "Trash Collection - Missed",
-    "count": 15,
-    "previous": 0
+    "type": "DMV - Driver and Vehicle Services Refund",
+    "count": 16,
+    "previous": 1
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -1381,9 +1381,9 @@
     "previous": 6
    },
    {
-    "type": "DMV - Driver and Vehicle Services Refund",
-    "count": 15,
-    "previous": 1
+    "type": "Trash Collection - Missed",
+    "count": 14,
+    "previous": 0
    },
    {
     "type": "DMV - Driver Record Issues",
@@ -1402,7 +1402,7 @@
    },
    {
     "type": "DMV - Forms, Applications, and Manuals Request",
-    "count": 7,
+    "count": 8,
     "previous": 5
    },
    {
@@ -1416,6 +1416,16 @@
     "previous": 12
    },
    {
+    "type": "Traffic Safety Input",
+    "count": 6,
+    "previous": 3
+   },
+   {
+    "type": "Trash Cart - Delivery",
+    "count": 6,
+    "previous": 3
+   },
+   {
     "type": "Sidewalk Repair",
     "count": 6,
     "previous": 2
@@ -1426,24 +1436,9 @@
     "previous": 1
    },
    {
-    "type": "Scheduled Yard Waste",
-    "count": 5,
-    "previous": 9
-   },
-   {
-    "type": "Traffic Safety Input",
-    "count": 5,
-    "previous": 3
-   },
-   {
     "type": "DMV - eTIMS Ticket Alert Services Issues",
     "count": 5,
     "previous": 4
-   },
-   {
-    "type": "Trash Cart - Delivery",
-    "count": 5,
-    "previous": 3
    },
    {
     "type": "DMV - Vehicle Inspection Issues",
@@ -1456,9 +1451,9 @@
     "previous": 4
    },
    {
-    "type": "Bicycle Services",
+    "type": "Scheduled Yard Waste",
     "count": 4,
-    "previous": 3
+    "previous": 10
    },
    {
     "type": "Abandoned Bicycle",
@@ -1489,6 +1484,11 @@
     "type": "Streetlight Repair Investigation",
     "count": 3,
     "previous": 2
+   },
+   {
+    "type": "Bicycle Services",
+    "count": 3,
+    "previous": 3
    },
    {
     "type": "Tree Pruning",
@@ -1569,9 +1569,69 @@
   "open": 139,
   "recent": [
    {
-    "type": "DMV - Copy of Ticket",
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T01:14:26Z",
+    "resolved": "2026-11-04T01:57:05Z",
+    "status": "Closed",
+    "block": "Unit block of PARKER ROW SW",
+    "lat": 38.877,
+    "lon": -77.022
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T00:40:02Z",
+    "resolved": "2026-11-04T01:27:21Z",
+    "status": "Closed",
+    "block": "500 block of WATER STREET SW",
+    "lat": 38.876,
+    "lon": -77.021
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T00:06:14Z",
+    "resolved": "2026-11-04T01:34:25Z",
+    "status": "Closed",
+    "block": "Unit block of H STREET SW",
+    "lat": 38.88,
+    "lon": -77.011
+   },
+   {
+    "type": "Traffic Safety Input",
+    "agency": "DDOT",
+    "added": "2026-11-03T23:34:07Z",
+    "resolved": "2026-11-03T23:40:55Z",
+    "status": "Closed",
+    "block": "1400 block of INDEPENDENCE AVENUE SW",
+    "lat": 38.887,
+    "lon": -77.03
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-03T22:12:22Z",
+    "resolved": "2026-11-03T23:00:06Z",
+    "status": "Closed",
+    "block": "400 block of I STREET SW",
+    "lat": 38.88,
+    "lon": -77.018
+   },
+   {
+    "type": "DMV - Vehicle Registration Issues",
     "agency": "DMV",
-    "added": "2026-11-03T17:05:26Z",
+    "added": "2026-11-03T22:12:08Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of M STREET SW",
+    "lat": 38.877,
+    "lon": -77.012
+   },
+   {
+    "type": "DMV - Refunds - Tickets",
+    "agency": "DMV",
+    "added": "2026-11-03T21:34:16Z",
     "resolved": null,
     "status": "Open",
     "block": "900 block of L'ENFANT PLAZA SW",
@@ -1581,9 +1641,69 @@
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
-    "added": "2026-11-03T16:49:28Z",
+    "added": "2026-11-03T21:31:03Z",
+    "resolved": "2026-11-03T22:42:05Z",
+    "status": "Closed",
+    "block": "500 block of WATER STREET SW",
+    "lat": 38.876,
+    "lon": -77.021
+   },
+   {
+    "type": "DMV - Copy of Ticket",
+    "agency": "DMV",
+    "added": "2026-11-03T19:14:35Z",
     "resolved": null,
     "status": "Open",
+    "block": "900 block of L'ENFANT PLAZA SW",
+    "lat": 38.884,
+    "lon": -77.025
+   },
+   {
+    "type": "DMV - Copy of Ticket",
+    "agency": "DMV",
+    "added": "2026-11-03T18:44:58Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of M STREET SW",
+    "lat": 38.877,
+    "lon": -77.012
+   },
+   {
+    "type": "DMV - Forms, Applications, and Manuals Request",
+    "agency": "DMV",
+    "added": "2026-11-03T18:12:05Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of M STREET SW",
+    "lat": 38.877,
+    "lon": -77.012
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "agency": "DMV",
+    "added": "2026-11-03T18:04:21Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of M STREET SW",
+    "lat": 38.877,
+    "lon": -77.012
+   },
+   {
+    "type": "DMV - Copy of Ticket",
+    "agency": "DMV",
+    "added": "2026-11-03T17:05:26Z",
+    "resolved": "2026-11-03T21:14:15Z",
+    "status": "Closed",
+    "block": "900 block of L'ENFANT PLAZA SW",
+    "lat": 38.884,
+    "lon": -77.025
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-03T16:49:28Z",
+    "resolved": "2026-11-03T22:44:20Z",
+    "status": "Closed",
     "block": "Unit block of BLAIR ALLEY SW",
     "lat": 38.88,
     "lon": -77.026
@@ -1947,126 +2067,6 @@
     "block": "Unit block of M STREET SW",
     "lat": 38.877,
     "lon": -77.012
-   },
-   {
-    "type": "DMV - Vehicle Title Issues",
-    "agency": "DMV",
-    "added": "2026-11-02T17:19:24Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "Unit block of M STREET SW",
-    "lat": 38.877,
-    "lon": -77.012
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-02T17:16:06Z",
-    "resolved": "2026-11-02T17:26:03Z",
-    "status": "Closed",
-    "block": "800 block of 9TH STREET SW",
-    "lat": 38.881,
-    "lon": -77.024
-   },
-   {
-    "type": "DMV - Hearings",
-    "agency": "DMV",
-    "added": "2026-11-02T17:09:25Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "900 block of L'ENFANT PLAZA SW",
-    "lat": 38.884,
-    "lon": -77.025
-   },
-   {
-    "type": "DMV - Drivers License/ID Issues",
-    "agency": "DMV",
-    "added": "2026-11-02T16:54:49Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "Unit block of M STREET SW",
-    "lat": 38.877,
-    "lon": -77.012
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-02T16:42:41Z",
-    "resolved": "2026-11-02T16:42:41Z",
-    "status": "Closed",
-    "block": "Unit block of H STREET SW",
-    "lat": 38.88,
-    "lon": -77.011
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-02T16:36:53Z",
-    "resolved": "2026-11-02T18:31:27Z",
-    "status": "Closed (Duplicate)",
-    "block": "300 block of D STREET SW",
-    "lat": 38.885,
-    "lon": -77.017
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-02T16:35:24Z",
-    "resolved": "2026-11-02T18:31:26Z",
-    "status": "Closed",
-    "block": "300 block of D STREET SW",
-    "lat": 38.885,
-    "lon": -77.017
-   },
-   {
-    "type": "DMV - Drivers License/ID Issues",
-    "agency": "DMV",
-    "added": "2026-11-02T16:13:05Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "Unit block of M STREET SW",
-    "lat": 38.877,
-    "lon": -77.012
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-11-02T15:40:23Z",
-    "resolved": "2026-11-03T17:27:04Z",
-    "status": "Closed",
-    "block": "400 block of E STREET SW",
-    "lat": 38.883,
-    "lon": -77.018
-   },
-   {
-    "type": "DMV - Online Processing Issues",
-    "agency": "DMV",
-    "added": "2026-11-02T15:37:58Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "Unit block of M STREET SW",
-    "lat": 38.877,
-    "lon": -77.012
-   },
-   {
-    "type": "DMV - Copy of Ticket",
-    "agency": "DMV",
-    "added": "2026-11-02T15:26:19Z",
-    "resolved": "2026-11-03T16:17:20Z",
-    "status": "Closed",
-    "block": "900 block of L'ENFANT PLAZA SW",
-    "lat": 38.884,
-    "lon": -77.025
-   },
-   {
-    "type": "DMV - Copy of Ticket",
-    "agency": "DMV",
-    "added": "2026-11-02T15:23:40Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "Unit block of M STREET SW",
-    "lat": 38.877,
-    "lon": -77.012
    }
   ]
  },
@@ -2136,7 +2136,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2151,7 +2151,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to L'Enfant Plaza through OTR assessment neighborhood R. L. A. SW in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the L'Enfant Plaza boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-03): 69% of the 2,911 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to L'Enfant Plaza through OTR assessment neighborhood R. L. A. SW in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the L'Enfant Plaza boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-04): 69% of the 2,911 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -2164,7 +2164,7 @@
    "area_parcels": 2911,
    "area_share_inside": 0.687,
    "boundary_share_in_area": 1.0,
-   "measured": "2026-11-03"
+   "measured": "2026-11-04"
   },
   "primary": "condo",
   "house": {
@@ -2174,10 +2174,10 @@
    "count_prev_12mo": 7
   },
   "condo": {
-   "median_12mo": 467500,
-   "count_12mo": 58,
-   "median_prev_12mo": 612000,
-   "count_prev_12mo": 88
+   "median_12mo": 475000,
+   "count_12mo": 57,
+   "median_prev_12mo": 600000,
+   "count_prev_12mo": 89
   },
   "last_60d": {
    "median": 625000,
@@ -2187,7 +2187,7 @@
   },
   "above_assessment_12mo": {
    "n": 32,
-   "of": 69
+   "of": 68
   },
   "by_month": [
    {
@@ -2301,7 +2301,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2321,11 +2321,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 130,
-   "starting_next_7d": 28,
-   "reserved_ft": 20218,
+   "active_this_week": 139,
+   "starting_next_7d": 37,
+   "reserved_ft": 20746,
    "long_running_90d": 32,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Dumpsters",
@@ -2333,7 +2333,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 94
+     "count": 102
     },
     {
      "type": "Cranes",
@@ -2345,7 +2345,7 @@
     },
     {
      "type": "Events & reserved parking",
-     "count": 15
+     "count": 16
     }
    ],
    "upcoming": [
@@ -2572,6 +2572,78 @@
      "end": "2026-11-20",
      "ft": 44,
      "hours": ""
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "900 block of Maine Avenue SW",
+     "start": "2026-11-11",
+     "end": "2026-11-11",
+     "ft": 0,
+     "hours": "7 am\u201311:59 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "400 block of 4th Street SW",
+     "start": "2026-11-11",
+     "end": "2026-12-10",
+     "ft": 132,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "400 block of 4th Street SW",
+     "start": "2026-11-11",
+     "end": "2026-12-10",
+     "ft": 0,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "400 block of 4th Street SW",
+     "start": "2026-11-11",
+     "end": "2026-12-10",
+     "ft": 88,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "400 block of 4th Street SW",
+     "start": "2026-11-11",
+     "end": "2026-12-10",
+     "ft": 66,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "300 block of C Street SW",
+     "start": "2026-11-11",
+     "end": "2026-12-10",
+     "ft": 0,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "200 block of 4th Street SW",
+     "start": "2026-11-11",
+     "end": "2026-12-10",
+     "ft": 176,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "300 block of 4th Street SW",
+     "start": "2026-11-11",
+     "end": "2026-12-10",
+     "ft": 66,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "300 block of Independence Avenue SW",
+     "start": "2026-11-11",
+     "end": "2026-12-10",
+     "ft": 0,
+     "hours": "9:30 am\u20133:30 pm"
     }
    ]
   },
@@ -2657,7 +2729,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 2120
+    "closed_n": 2124
    },
    {
     "type": "DMV - Ticket Payment Dispute",
@@ -2667,15 +2739,15 @@
    },
    {
     "type": "DMV - Drivers License/ID Issues",
-    "median_days": 8.01,
+    "median_days": 8.02,
     "city_median_days": 8.01,
-    "closed_n": 499
+    "closed_n": 500
    },
    {
     "type": "DMV - Copy of Ticket",
     "median_days": 7.86,
     "city_median_days": 7.89,
-    "closed_n": 332
+    "closed_n": 333
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -2687,13 +2759,13 @@
     "type": "DMV - Vehicle Title Issues",
     "median_days": 8.11,
     "city_median_days": 8.26,
-    "closed_n": 157
+    "closed_n": 158
    },
    {
     "type": "DMV - Hearings",
-    "median_days": 7.85,
-    "city_median_days": 7.95,
-    "closed_n": 143
+    "median_days": 7.88,
+    "city_median_days": 7.96,
+    "closed_n": 144
    },
    {
     "type": "DC Government Information",
@@ -2705,7 +2777,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2844,7 +2916,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2933,7 +3005,7 @@
     "name": "Washington City Paper",
     "url": "https://washingtoncitypaper.com/",
     "state": "ok",
-    "matched": 0,
+    "matched": 1,
     "fetched": 1
    },
    {
@@ -2953,9 +3025,9 @@
    {
     "name": "Greater Greater Washington",
     "url": "https://ggwash.org/",
-    "state": "ok",
+    "state": "error: HTTPError",
     "matched": 0,
-    "fetched": 1
+    "failed": 1
    },
    {
     "name": "Mayor's office",
@@ -2980,6 +3052,13 @@
    }
   ],
   "items": [
+   {
+    "title": "Are You Now Or Have You Ever Been? Revisits the Red Scare of the McCarthy Era",
+    "url": "https://washingtoncitypaper.com/article/794373/are-you-now-or-have-you-ever-been-revisits-the-red-scare-of-the-mccarthy-era/",
+    "source": "Washington City Paper",
+    "published": "2026-11-03T19:25:20Z",
+    "first_seen": "2026-11-04T01:56:36Z"
+   },
    {
     "title": "Inside the October ANC Meeting: Stadium Roof Discussion and New Homes on M Street SW",
     "url": "https://thesouthwester.com/2026/11/01/inside-the-october-anc-meeting-stadium-roof-discussion-and-new-homes-on-m-street-sw/",
@@ -3428,7 +3507,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "today": "2026-11-03",
   "days_ahead": 30,
   "sources": [
@@ -3530,7 +3609,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -17162,7 +17241,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

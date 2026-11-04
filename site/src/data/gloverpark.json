@@ -1,7 +1,7 @@
 {
  "slug": "gloverpark",
  "name": "Glover Park",
- "generated_at": "2026-11-03T17:31:02Z",
+ "generated_at": "2026-11-04T01:56:36Z",
  "boundary": {
   "source": "ANC 3B, the Glover Park commission (all its single-member districts, Open Data DC). DC has no planning area named Glover Park.",
   "rings": [
@@ -7722,19 +7722,6 @@
    "smd": "3B06"
   },
   {
-   "id": "HO2700053",
-   "issued": "2026-10-09T04:00:00Z",
-   "group": "Home businesses",
-   "type": "HOME OCCUPATION",
-   "subtype": "NA",
-   "address": "4100 W ST NW 312 20007",
-   "work": "",
-   "zoning": "RA-1",
-   "lat": 38.91927,
-   "lon": -77.08179,
-   "smd": "3B03"
-  },
-  {
    "id": "P2700274",
    "issued": "2026-10-09T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -7758,6 +7745,19 @@
    "zoning": "RA-1",
    "lat": 38.92207,
    "lon": -77.08166,
+   "smd": "3B03"
+  },
+  {
+   "id": "HO2700053",
+   "issued": "2026-10-09T04:00:00Z",
+   "group": "Home businesses",
+   "type": "HOME OCCUPATION",
+   "subtype": "NA",
+   "address": "4100 W ST NW 312 20007",
+   "work": "",
+   "zoning": "RA-1",
+   "lat": 38.91927,
+   "lon": -77.08179,
    "smd": "3B03"
   },
   {
@@ -7824,62 +7824,10 @@
    "lat": 38.92478,
    "lon": -77.07355,
    "smd": "3B01"
-  },
-  {
-   "id": "HO2700024",
-   "issued": "2026-10-05T04:00:00Z",
-   "group": "Home businesses",
-   "type": "HOME OCCUPATION",
-   "subtype": "NA",
-   "address": "2218 OBSERVATORY PL NW 20007",
-   "work": "",
-   "zoning": "R-3",
-   "lat": 38.91972,
-   "lon": -77.07429,
-   "smd": "3B05"
-  },
-  {
-   "id": "E2700137",
-   "issued": "2026-10-05T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "2217 40TH PL NW 201 20007",
-   "work": "",
-   "zoning": "RA-1",
-   "lat": 38.91981,
-   "lon": -77.07951,
-   "smd": "3B05"
-  },
-  {
-   "id": "M2700053",
-   "issued": "2026-10-05T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "MECHANICAL",
-   "address": "3836 FULTON ST NW 20007",
-   "work": "",
-   "zoning": "R-2",
-   "lat": 38.92596,
-   "lon": -77.07651,
-   "smd": "3B04"
-  },
-  {
-   "id": "E2700138",
-   "issued": "2026-10-05T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "2217 40TH PL NW 20007",
-   "work": "",
-   "zoning": "RA-1",
-   "lat": 38.91981,
-   "lon": -77.07951,
-   "smd": "3B05"
   }
  ],
  "requests": {
-  "total": 539,
+  "total": 542,
   "previous_total": 341,
   "by_type": [
    {
@@ -7899,7 +7847,7 @@
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 41,
+    "count": 42,
     "previous": 16
    },
    {
@@ -7908,14 +7856,14 @@
     "previous": 3
    },
    {
+    "type": "DMV - Vehicle Registration Issues",
+    "count": 19,
+    "previous": 7
+   },
+   {
     "type": "Public Space Litter Can-Collection",
     "count": 18,
     "previous": 28
-   },
-   {
-    "type": "DMV - Vehicle Registration Issues",
-    "count": 18,
-    "previous": 7
    },
    {
     "type": "DMV - Drivers License/ID Issues",
@@ -7928,14 +7876,14 @@
     "previous": 5
    },
    {
+    "type": "DMV - Online Processing Issues",
+    "count": 13,
+    "previous": 0
+   },
+   {
     "type": "Dead Animal Collection",
     "count": 13,
     "previous": 2
-   },
-   {
-    "type": "DMV - Online Processing Issues",
-    "count": 12,
-    "previous": 0
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -7953,11 +7901,6 @@
     "previous": 0
    },
    {
-    "type": "Sanitation Enforcement",
-    "count": 10,
-    "previous": 6
-   },
-   {
     "type": "Roadway Signs",
     "count": 10,
     "previous": 10
@@ -7968,9 +7911,9 @@
     "previous": 9
    },
    {
-    "type": "Tree Inspection",
-    "count": 8,
-    "previous": 4
+    "type": "Sanitation Enforcement",
+    "count": 9,
+    "previous": 6
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
@@ -7991,6 +7934,11 @@
     "type": "Trash Collection - Missed",
     "count": 8,
     "previous": 4
+   },
+   {
+    "type": "Tree Inspection",
+    "count": 7,
+    "previous": 5
    },
    {
     "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
@@ -8106,10 +8054,60 @@
     "type": "Illegal Poster",
     "count": 1,
     "previous": 0
+   },
+   {
+    "type": "DMV - Copy of Ticket",
+    "count": 1,
+    "previous": 0
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "count": 1,
+    "previous": 0
    }
   ],
   "open": 132,
   "recent": [
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "agency": "DOH",
+    "added": "2026-11-04T01:40:46Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2300 block of 40TH PLACE NW",
+    "lat": 38.922,
+    "lon": -77.08
+   },
+   {
+    "type": "DMV - Copy of Ticket",
+    "agency": "DMV",
+    "added": "2026-11-03T22:00:16Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2200 block of WISCONSIN AVENUE NW",
+    "lat": 38.92,
+    "lon": -77.071
+   },
+   {
+    "type": "DMV - Vehicle Registration Issues",
+    "agency": "DMV",
+    "added": "2026-11-03T18:23:18Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2400 block of 41ST STREET NW",
+    "lat": 38.922,
+    "lon": -77.081
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-03T18:00:11Z",
+    "resolved": "2026-11-03T18:00:11Z",
+    "status": "Closed",
+    "block": "4100 block of DAVIS PLACE NW",
+    "lat": 38.924,
+    "lon": -77.081
+   },
    {
     "type": "DMV - Vehicle Registration Issues",
     "agency": "DMV",
@@ -8569,46 +8567,6 @@
     "block": "3300 block of NEW MEXICO AVENUE NW",
     "lat": 38.934,
     "lon": -77.085
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "agency": "DPW",
-    "added": "2026-10-30T19:04:32Z",
-    "resolved": "2026-10-31T23:41:41Z",
-    "status": "Closed",
-    "block": "NEW MEXICO AVENUE NW AND LOWELL STREET NW",
-    "lat": 38.932,
-    "lon": -77.085
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-10-30T17:13:43Z",
-    "resolved": "2026-10-30T17:54:11Z",
-    "status": "Closed",
-    "block": "3900 block of A WATSON PLACE NW",
-    "lat": 38.928,
-    "lon": -77.079
-   },
-   {
-    "type": "DMV - Online Processing Issues",
-    "agency": "DMV",
-    "added": "2026-10-30T15:07:08Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2200 block of 38TH STREET NW",
-    "lat": 38.92,
-    "lon": -77.076
-   },
-   {
-    "type": "DMV - Online Processing Issues",
-    "agency": "DMV",
-    "added": "2026-10-30T15:07:08Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2200 block of 38TH STREET NW",
-    "lat": 38.92,
-    "lon": -77.076
    }
   ]
  },
@@ -8680,7 +8638,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -8695,7 +8653,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Glover Park through OTR assessment neighborhoods Glover Park and Observatory Circle and sub-area Wesley Heights B in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Glover Park boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-03): 85% of the 5,031 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Glover Park through OTR assessment neighborhoods Glover Park and Observatory Circle and sub-area Wesley Heights B in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Glover Park boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-04): 85% of the 5,031 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -8716,7 +8674,7 @@
    "area_parcels": 5031,
    "area_share_inside": 0.846,
    "boundary_share_in_area": 1.0,
-   "measured": "2026-11-03"
+   "measured": "2026-11-04"
   },
   "primary": "house",
   "house": {
@@ -8979,7 +8937,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -9003,7 +8961,7 @@
    "starting_next_7d": 6,
    "reserved_ft": 2354,
    "long_running_90d": 8,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-03: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-03, newest record update 2026-11-03, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -9198,20 +9156,20 @@
    {
     "type": "Rodent Inspection and Treatment",
     "median_days": 2.52,
-    "city_median_days": 1.72,
+    "city_median_days": 1.73,
     "closed_n": 100
    },
    {
     "type": "Illegal Dumping",
     "median_days": 4.53,
-    "city_median_days": 4.03,
+    "city_median_days": 4.04,
     "closed_n": 89
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -9353,7 +9311,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "archive_days": 180,
   "sources": [
    {
@@ -9462,9 +9420,9 @@
    {
     "name": "Greater Greater Washington",
     "url": "https://ggwash.org/",
-    "state": "ok",
+    "state": "error: HTTPError",
     "matched": 0,
-    "fetched": 1
+    "failed": 1
    },
    {
     "name": "Mayor's office",
@@ -9616,7 +9574,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "today": "2026-11-03",
   "days_ahead": 30,
   "sources": [
@@ -9671,7 +9629,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -24187,7 +24145,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-03T17:31:02Z",
+  "generated_at": "2026-11-04T01:56:36Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
