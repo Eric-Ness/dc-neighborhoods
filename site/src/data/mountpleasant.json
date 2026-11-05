@@ -1,7 +1,7 @@
 {
  "slug": "mountpleasant",
  "name": "Mount Pleasant",
- "generated_at": "2026-11-04T22:06:56Z",
+ "generated_at": "2026-11-05T09:19:54Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1640,70 +1640,31 @@
    "lat": 38.9295,
    "lon": -77.03938,
    "smd": "1D05"
-  },
-  {
-   "id": "E2700202",
-   "issued": "2026-10-06T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "1626 NEWTON ST NW 20010",
-   "work": "",
-   "zoning": "RF-1",
-   "lat": 38.93345,
-   "lon": -77.03755,
-   "smd": "1D06"
-  },
-  {
-   "id": "P2700161",
-   "issued": "2026-10-06T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "1626 NEWTON ST NW 20010",
-   "work": "",
-   "zoning": "RF-1",
-   "lat": 38.93345,
-   "lon": -77.03755,
-   "smd": "1D06"
-  },
-  {
-   "id": "M2700073",
-   "issued": "2026-10-06T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "MECHANICAL",
-   "address": "1626 NEWTON ST NW 20010",
-   "work": "",
-   "zoning": "RF-1",
-   "lat": 38.93345,
-   "lon": -77.03755,
-   "smd": "1D06"
   }
  ],
  "requests": {
-  "total": 756,
-  "previous_total": 753,
+  "total": 761,
+  "previous_total": 756,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 164,
+    "count": 166,
     "previous": 136
    },
    {
     "type": "Bulk Collection",
-    "count": 105,
+    "count": 106,
     "previous": 112
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 76,
+    "count": 78,
     "previous": 80
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
-    "count": 34,
-    "previous": 53
+    "count": 35,
+    "previous": 55
    },
    {
     "type": "Illegal Dumping",
@@ -1712,8 +1673,8 @@
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 32,
-    "previous": 50
+    "count": 31,
+    "previous": 51
    },
    {
     "type": "Graffiti Removal",
@@ -1721,14 +1682,14 @@
     "previous": 12
    },
    {
+    "type": "Sanitation Enforcement",
+    "count": 17,
+    "previous": 23
+   },
+   {
     "type": "Roadway Signs",
     "count": 17,
     "previous": 15
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "count": 16,
-    "previous": 23
    },
    {
     "type": "Container Removal",
@@ -1766,18 +1727,18 @@
     "previous": 9
    },
    {
-    "type": "Dockless Vehicle Parking Complaint",
-    "count": 10,
-    "previous": 4
-   },
-   {
     "type": "Supercan - Delivery",
     "count": 10,
     "previous": 13
    },
    {
+    "type": "Dockless Vehicle Parking Complaint",
+    "count": 9,
+    "previous": 5
+   },
+   {
     "type": "Tree Planting",
-    "count": 10,
+    "count": 9,
     "previous": 6
    },
    {
@@ -1792,7 +1753,7 @@
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 6,
+    "count": 7,
     "previous": 16
    },
    {
@@ -1981,8 +1942,98 @@
     "previous": 0
    }
   ],
-  "open": 161,
+  "open": 168,
   "recent": [
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-05T02:46:32Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1800 block of KILBOURNE PLACE NW",
+    "lat": 38.931,
+    "lon": -77.042
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-05T02:15:57Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3200 block of WALBRIDGE PLACE NW",
+    "lat": 38.932,
+    "lon": -77.045
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-05T01:46:34Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1600 block of LAMONT STREET NW",
+    "lat": 38.931,
+    "lon": -77.038
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-05T01:32:29Z",
+    "resolved": "2026-11-05T02:06:05Z",
+    "status": "Closed",
+    "block": "1600 block of PARK ROAD NW",
+    "lat": 38.932,
+    "lon": -77.037
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-05T01:26:16Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2000 block of ROSEMOUNT AVENUE NW",
+    "lat": 38.933,
+    "lon": -77.047
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-05T01:15:26Z",
+    "resolved": "2026-11-05T01:42:04Z",
+    "status": "Closed",
+    "block": "1600 block of IRVING STREET NW",
+    "lat": 38.928,
+    "lon": -77.038
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-05T01:15:05Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1600 block of KENYON STREET NW",
+    "lat": 38.93,
+    "lon": -77.038
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-05T00:28:46Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3300 block of BROWN STREET NW",
+    "lat": 38.933,
+    "lon": -77.038
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-04T23:02:11Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of KILBOURNE PLACE NW",
+    "lat": 38.931,
+    "lon": -77.04
+   },
    {
     "type": "Illegal Dumping",
     "agency": "DPW",
@@ -2392,96 +2443,6 @@
     "block": "3300 block of 17TH STREET NW",
     "lat": 38.933,
     "lon": -77.039
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-03T13:21:12Z",
-    "resolved": "2026-11-03T14:39:05Z",
-    "status": "Closed",
-    "block": "1800 block of LAMONT STREET NW",
-    "lat": 38.931,
-    "lon": -77.042
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-03T13:02:20Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3300 block of 19TH STREET NW",
-    "lat": 38.934,
-    "lon": -77.044
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-11-03T12:33:11Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1600 block of HARVARD STREET NW",
-    "lat": 38.927,
-    "lon": -77.039
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-03T03:40:16Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1800 block of NEWTON STREET NW",
-    "lat": 38.934,
-    "lon": -77.043
-   },
-   {
-    "type": "Pothole",
-    "agency": "DDOT",
-    "added": "2026-11-03T03:16:09Z",
-    "resolved": "2026-11-03T17:55:56Z",
-    "status": "Closed",
-    "block": "2000 block of ROSEMOUNT AVENUE NW",
-    "lat": 38.933,
-    "lon": -77.047
-   },
-   {
-    "type": "DOB - Vacant Private Property Inspection",
-    "agency": "DOB",
-    "added": "2026-11-03T01:25:07Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3000 block of MOUNT PLEASANT STREET NW",
-    "lat": 38.928,
-    "lon": -77.038
-   },
-   {
-    "type": "DOB - Vacant Private Property Inspection",
-    "agency": "DOB",
-    "added": "2026-11-03T01:23:44Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1700 block of KENYON STREET NW",
-    "lat": 38.929,
-    "lon": -77.04
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-03T01:22:32Z",
-    "resolved": "2026-11-03T02:09:06Z",
-    "status": "Closed",
-    "block": "2000 block of ROSEMOUNT AVENUE NW",
-    "lat": 38.933,
-    "lon": -77.047
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-03T01:10:40Z",
-    "resolved": "2026-11-03T02:03:05Z",
-    "status": "Closed",
-    "block": "1600 block of KENYON STREET NW",
-    "lat": 38.93,
-    "lon": -77.038
    }
   ]
  },
@@ -2568,7 +2529,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T22:06:56Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2583,7 +2544,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Mount Pleasant through OTR assessment sub-area Mount Pleasant A in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Mount Pleasant boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-04): 97% of the 1,797 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 89% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Mount Pleasant through OTR assessment sub-area Mount Pleasant A in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Mount Pleasant boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-05): 97% of the 1,797 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 89% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -2596,7 +2557,7 @@
    "area_parcels": 1797,
    "area_share_inside": 0.971,
    "boundary_share_in_area": 0.89,
-   "measured": "2026-11-04"
+   "measured": "2026-11-05"
   },
   "primary": "house",
   "house": {
@@ -2760,7 +2721,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T22:06:56Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2780,15 +2741,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 60,
+   "active_this_week": 61,
    "starting_next_7d": 20,
    "reserved_ft": 9108,
    "long_running_90d": 7,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-05: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 4
+     "count": 5
     },
     {
      "type": "Dumpsters",
@@ -2796,7 +2757,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 32
+     "count": 33
     },
     {
      "type": "Lead pipe replacement",
@@ -2804,7 +2765,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 12
+     "count": 11
     },
     {
      "type": "Events & reserved parking",
@@ -2813,18 +2774,10 @@
    ],
    "upcoming": [
     {
-     "type": "Utility & DDOT work",
-     "block": "1700 block of Kilbourne Place NW",
-     "start": "2026-11-05",
-     "end": "2026-11-06",
-     "ft": 66,
-     "hours": "7:30 am\u20133 pm"
-    },
-    {
      "type": "Moving & storage",
-     "block": "1600 block of Lamont Street NW",
-     "start": "2026-11-05",
-     "end": "2026-11-05",
+     "block": "1600 block of Park Road NW",
+     "start": "2026-11-06",
+     "end": "2026-11-07",
      "ft": 88,
      "hours": ""
     },
@@ -2957,6 +2910,14 @@
      "hours": "9:30 am\u20133:30 pm"
     },
     {
+     "type": "Moving & storage",
+     "block": "1600 block of Kenyon Street NW",
+     "start": "2026-11-10",
+     "end": "2026-11-10",
+     "ft": 88,
+     "hours": ""
+    },
+    {
      "type": "Events & reserved parking",
      "block": "3300 block of 17th Street NW",
      "start": "2026-11-10",
@@ -2966,9 +2927,9 @@
     },
     {
      "type": "Moving & storage",
-     "block": "1600 block of Kenyon Street NW",
-     "start": "2026-11-10",
-     "end": "2026-11-10",
+     "block": "1600 block of Hobart Street NW",
+     "start": "2026-11-11",
+     "end": "2026-11-12",
      "ft": 88,
      "hours": ""
     }
@@ -3056,7 +3017,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 1230
+    "closed_n": 1231
    },
    {
     "type": "Bulk Collection",
@@ -3067,7 +3028,7 @@
    {
     "type": "Scheduled Yard Waste",
     "median_days": 13.77,
-    "city_median_days": 9.67,
+    "city_median_days": 9.66,
     "closed_n": 740
    },
    {
@@ -3078,9 +3039,9 @@
    },
    {
     "type": "Recycling Collection - Missed",
-    "median_days": 7.01,
-    "city_median_days": 4.95,
-    "closed_n": 364
+    "median_days": 7.02,
+    "city_median_days": 4.94,
+    "closed_n": 363
    },
    {
     "type": "Sanitation Enforcement",
@@ -3104,7 +3065,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T22:06:56Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3266,7 +3227,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T22:06:56Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "archive_days": 180,
   "sources": [
    {
@@ -3355,8 +3316,9 @@
    {
     "name": "Washingtonian",
     "url": "https://www.washingtonian.com/",
-    "state": "skipped: robots.txt",
-    "matched": 0
+    "state": "ok",
+    "matched": 1,
+    "fetched": 1
    },
    {
     "name": "PoPville",
@@ -3534,8 +3496,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T22:06:56Z",
-  "today": "2026-11-04",
+  "generated_at": "2026-11-05T09:19:54Z",
+  "today": "2026-11-05",
   "days_ahead": 30,
   "sources": [
    {
@@ -3622,7 +3584,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T22:06:56Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -12593,7 +12555,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T22:06:56Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

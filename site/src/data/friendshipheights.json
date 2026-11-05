@@ -1,7 +1,7 @@
 {
  "slug": "friendshipheights",
  "name": "Friendship Heights",
- "generated_at": "2026-11-04T22:06:56Z",
+ "generated_at": "2026-11-05T09:19:54Z",
  "boundary": {
   "source": "ANC single-member districts 3E03 and 3E04, around the Friendship Heights Metro (Open Data DC). DC has no planning area for Friendship Heights; this overlaps the Tenleytown site.",
   "rings": [
@@ -2598,19 +2598,6 @@
    "smd": "3E04"
   },
   {
-   "id": "B2700568",
-   "issued": "2026-10-22T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "5328 41ST ST NW 20015",
-   "work": "REMOVE AND REPLACE 16 WINDOWS, RENEWAL by ANDERSEN , NO STRUCTURAL CHANGES, NO WIDENING OF EXISTING OPENINGS",
-   "zoning": "R-2",
-   "lat": 38.96003,
-   "lon": -77.08055,
-   "smd": "3E04"
-  },
-  {
    "id": "E2700748",
    "issued": "2026-10-22T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -2621,6 +2608,19 @@
    "zoning": "R-2",
    "lat": 38.95973,
    "lon": -77.08353,
+   "smd": "3E04"
+  },
+  {
+   "id": "B2700568",
+   "issued": "2026-10-22T04:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "5328 41ST ST NW 20015",
+   "work": "REMOVE AND REPLACE 16 WINDOWS, RENEWAL by ANDERSEN , NO STRUCTURAL CHANGES, NO WIDENING OF EXISTING OPENINGS",
+   "zoning": "R-2",
+   "lat": 38.96003,
+   "lon": -77.08055,
    "smd": "3E04"
   },
   {
@@ -2936,19 +2936,6 @@
    "smd": "3E03"
   },
   {
-   "id": "B2700180",
-   "issued": "2026-10-07T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "5246 42ND ST NW 20015",
-   "work": "REMOVE AND REPLACE 4 WINDOWS, RENEWAL by ANDERSEN, NO STRUCTURAL CHANGES, NO WIDENING OF EXISTING OPENINGS",
-   "zoning": "R-2",
-   "lat": 38.95886,
-   "lon": -77.08225,
-   "smd": "3E04"
-  },
-  {
    "id": "GF2700107",
    "issued": "2026-10-07T04:00:00Z",
    "group": "Minor work",
@@ -2962,32 +2949,32 @@
    "smd": "3E03"
   },
   {
-   "id": "P2700147",
-   "issued": "2026-10-06T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "3959 FESSENDEN ST NW 20016",
-   "work": "",
-   "zoning": "R-1B",
-   "lat": 38.95491,
-   "lon": -77.07844,
+   "id": "B2700180",
+   "issued": "2026-10-07T04:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "5246 42ND ST NW 20015",
+   "work": "REMOVE AND REPLACE 4 WINDOWS, RENEWAL by ANDERSEN, NO STRUCTURAL CHANGES, NO WIDENING OF EXISTING OPENINGS",
+   "zoning": "R-2",
+   "lat": 38.95886,
+   "lon": -77.08225,
    "smd": "3E04"
   }
  ],
  "requests": {
-  "total": 481,
-  "previous_total": 508,
+  "total": 473,
+  "previous_total": 514,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
-    "count": 89,
-    "previous": 67
+    "count": 91,
+    "previous": 65
    },
    {
     "type": "Bulk Collection",
-    "count": 85,
-    "previous": 75
+    "count": 81,
+    "previous": 79
    },
    {
     "type": "Tree Pruning",
@@ -2996,18 +2983,18 @@
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 22,
-    "previous": 29
-   },
-   {
-    "type": "Recycling Collection - Missed",
-    "count": 21,
-    "previous": 9
+    "count": 20,
+    "previous": 31
    },
    {
     "type": "Roadway Signs",
-    "count": 18,
-    "previous": 67
+    "count": 19,
+    "previous": 65
+   },
+   {
+    "type": "Recycling Collection - Missed",
+    "count": 17,
+    "previous": 13
    },
    {
     "type": "Streetlight Repair Investigation",
@@ -3040,14 +3027,14 @@
     "previous": 22
    },
    {
-    "type": "DOB - Vacant Private Property Inspection",
-    "count": 11,
-    "previous": 8
-   },
-   {
     "type": "Tree Planting",
     "count": 11,
-    "previous": 26
+    "previous": 25
+   },
+   {
+    "type": "Sidewalk Repair",
+    "count": 10,
+    "previous": 2
    },
    {
     "type": "Public Space Litter Can-Collection",
@@ -3055,14 +3042,14 @@
     "previous": 0
    },
    {
-    "type": "Sidewalk Repair",
-    "count": 9,
-    "previous": 2
-   },
-   {
     "type": "Tree Removal",
     "count": 9,
     "previous": 8
+   },
+   {
+    "type": "DOB - Vacant Private Property Inspection",
+    "count": 9,
+    "previous": 10
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -3152,7 +3139,7 @@
    {
     "type": "Dead Animal Collection",
     "count": 2,
-    "previous": 4
+    "previous": 3
    },
    {
     "type": "Abandoned Vehicle - On Private Property",
@@ -3190,8 +3177,18 @@
     "previous": 4
    }
   ],
-  "open": 102,
+  "open": 104,
   "recent": [
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-05T04:34:44Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4800 block of 43RD PLACE NW",
+    "lat": 38.953,
+    "lon": -77.085
+   },
    {
     "type": "DMV - Vehicle Registration Issues",
     "agency": "DMV",
@@ -3681,16 +3678,6 @@
     "block": "3900 block of HUNTINGTON STREET NW",
     "lat": 38.957,
     "lon": -77.078
-   },
-   {
-    "type": "Tree Inspection",
-    "agency": "DDOT",
-    "added": "2026-10-29T16:20:55Z",
-    "resolved": "2026-10-29T17:06:09Z",
-    "status": "Closed",
-    "block": "3900 block of HUNTINGTON STREET NW",
-    "lat": 38.958,
-    "lon": -77.079
    }
   ]
  },
@@ -3743,7 +3730,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T22:06:56Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3758,7 +3745,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Friendship Heights through OTR assessment sub-areas Chevy Chase A and American University A in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Friendship Heights boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-04): 58% of the 2,236 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 93% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Friendship Heights through OTR assessment sub-areas Chevy Chase A and American University A in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Friendship Heights boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-05): 58% of the 2,236 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 93% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -3775,7 +3762,7 @@
    "area_parcels": 2236,
    "area_share_inside": 0.583,
    "boundary_share_in_area": 0.927,
-   "measured": "2026-11-04"
+   "measured": "2026-11-05"
   },
   "primary": "house",
   "house": {
@@ -3966,7 +3953,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T22:06:56Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3990,7 +3977,7 @@
    "starting_next_7d": 9,
    "reserved_ft": 5302,
    "long_running_90d": 9,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-05: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -4018,14 +4005,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Moving & storage",
-     "block": "5200 block of Wisconsin Avenue NW",
-     "start": "2026-11-05",
-     "end": "2026-11-05",
-     "ft": 44,
-     "hours": ""
-    },
     {
      "type": "Moving & storage",
      "block": "5100 block of 44th Street NW",
@@ -4088,6 +4067,14 @@
      "start": "2026-11-11",
      "end": "2026-11-11",
      "ft": 88,
+     "hours": ""
+    },
+    {
+     "type": "Moving & storage",
+     "block": "5200 block of Wisconsin Avenue NW",
+     "start": "2026-11-12",
+     "end": "2026-11-12",
+     "ft": 44,
      "hours": ""
     }
    ]
@@ -4179,7 +4166,7 @@
    {
     "type": "Scheduled Yard Waste",
     "median_days": 7.88,
-    "city_median_days": 9.67,
+    "city_median_days": 9.66,
     "closed_n": 526
    },
    {
@@ -4191,7 +4178,7 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 6.08,
-    "city_median_days": 4.95,
+    "city_median_days": 4.94,
     "closed_n": 334
    },
    {
@@ -4222,7 +4209,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T22:06:56Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4368,7 +4355,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T22:06:56Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4468,8 +4455,9 @@
    {
     "name": "Washingtonian",
     "url": "https://www.washingtonian.com/",
-    "state": "skipped: robots.txt",
-    "matched": 0
+    "state": "ok",
+    "matched": 1,
+    "fetched": 1
    },
    {
     "name": "PoPville",
@@ -4654,8 +4642,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T22:06:56Z",
-  "today": "2026-11-04",
+  "generated_at": "2026-11-05T09:19:54Z",
+  "today": "2026-11-05",
   "days_ahead": 30,
   "sources": [
    {
@@ -4706,7 +4694,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T22:06:56Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -19263,7 +19251,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T22:06:56Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

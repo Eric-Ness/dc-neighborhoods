@@ -1,7 +1,7 @@
 {
  "slug": "gloverpark",
  "name": "Glover Park",
- "generated_at": "2026-11-04T22:06:56Z",
+ "generated_at": "2026-11-05T09:19:54Z",
  "boundary": {
   "source": "ANC 3B, the Glover Park commission (all its single-member districts, Open Data DC). DC has no planning area named Glover Park.",
   "rings": [
@@ -7811,43 +7811,30 @@
    "lat": 38.92015,
    "lon": -77.0758,
    "smd": "3B05"
-  },
-  {
-   "id": "EA2602652",
-   "issued": "2026-10-06T04:00:00Z",
-   "group": "Other",
-   "type": "SHOP DRAWING",
-   "subtype": "ELEVATOR - ALTERATION",
-   "address": "2700 WISCONSIN AVE NW 20007",
-   "work": "Elevators 1 and 2: Modernization including new microprocessor based control system, hoist machines & motors, rope\r\ngrippers, hoist ropes w/wedge shackles, roller guides for car & countweight, hall & car fixtures, and car and hoistway door\r\nequipment.",
-   "zoning": "RA-4",
-   "lat": 38.92478,
-   "lon": -77.07355,
-   "smd": "3B01"
   }
  ],
  "requests": {
   "total": 534,
-  "previous_total": 345,
+  "previous_total": 346,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 98,
-    "previous": 70
+    "count": 96,
+    "previous": 72
    },
    {
     "type": "Parking Enforcement",
     "count": 58,
-    "previous": 24
+    "previous": 25
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 54,
+    "count": 56,
     "previous": 46
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 42,
+    "count": 41,
     "previous": 17
    },
    {
@@ -7857,12 +7844,12 @@
    },
    {
     "type": "DMV - Vehicle Registration Issues",
-    "count": 20,
+    "count": 19,
     "previous": 7
    },
    {
     "type": "Public Space Litter Can-Collection",
-    "count": 14,
+    "count": 16,
     "previous": 31
    },
    {
@@ -7881,14 +7868,14 @@
     "previous": 2
    },
    {
+    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "count": 13,
+    "previous": 5
+   },
+   {
     "type": "Trash Cart - Delivery",
     "count": 12,
     "previous": 1
-   },
-   {
-    "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 12,
-    "previous": 5
    },
    {
     "type": "DMV - Online Processing Issues",
@@ -7926,14 +7913,9 @@
     "previous": 4
    },
    {
-    "type": "Abandoned Vehicle - On Public Property",
-    "count": 7,
-    "previous": 3
-   },
-   {
     "type": "Sanitation Enforcement",
     "count": 7,
-    "previous": 6
+    "previous": 5
    },
    {
     "type": "Tree Inspection",
@@ -7949,6 +7931,11 @@
     "type": "Missed Curbside Compost Collection",
     "count": 6,
     "previous": 0
+   },
+   {
+    "type": "Abandoned Vehicle - On Public Property",
+    "count": 6,
+    "previous": 4
    },
    {
     "type": "Recycling Cart Delivery",
@@ -7968,7 +7955,7 @@
    {
     "type": "Tree Removal",
     "count": 4,
-    "previous": 4
+    "previous": 3
    },
    {
     "type": "Public Space Inspection",
@@ -8066,8 +8053,38 @@
     "previous": 0
    }
   ],
-  "open": 142,
+  "open": 145,
   "recent": [
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-05T01:49:27Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2300 block of HUIDEKOPER PLACE NW",
+    "lat": 38.92,
+    "lon": -77.075
+   },
+   {
+    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "agency": "DDOT",
+    "added": "2026-11-04T23:29:24Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "4100 block of MASSACHUSETTS AVENUE NW",
+    "lat": 38.934,
+    "lon": -77.082
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T22:53:56Z",
+    "resolved": "2026-11-04T23:25:23Z",
+    "status": "Closed",
+    "block": "3900 block of TUNLAW ROAD NW",
+    "lat": 38.926,
+    "lon": -77.078
+   },
    {
     "type": "Bulk Collection",
     "agency": "DPW",
@@ -8451,6 +8468,26 @@
    {
     "type": "Public Space Litter Can-Collection",
     "agency": "DPW",
+    "added": "2026-11-01T17:54:08Z",
+    "resolved": "2026-11-03T05:12:56Z",
+    "status": "Closed",
+    "block": "NEW MEXICO AVENUE NW AND GARFIELD STREET NW",
+    "lat": 38.928,
+    "lon": -77.083
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-01T17:49:54Z",
+    "resolved": "2026-11-03T05:12:51Z",
+    "status": "Closed",
+    "block": "2800 block of NEW MEXICO AVENUE NW",
+    "lat": 38.927,
+    "lon": -77.08
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
     "added": "2026-11-01T17:49:54Z",
     "resolved": "2026-11-03T05:12:51Z",
     "status": "Closed",
@@ -8509,63 +8546,13 @@
     "lon": -77.075
    },
    {
-    "type": "Recycling Cart Delivery",
+    "type": "Scheduled Yard Waste",
     "agency": "DPW",
-    "added": "2026-11-01T12:11:08Z",
+    "added": "2026-11-01T12:34:57Z",
     "resolved": null,
     "status": "Open",
-    "block": "2300 block of HUIDEKOPER PLACE NW",
-    "lat": 38.92,
-    "lon": -77.075
-   },
-   {
-    "type": "Recycling Cart Delivery",
-    "agency": "DPW",
-    "added": "2026-11-01T12:11:08Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2300 block of HUIDEKOPER PLACE NW",
-    "lat": 38.92,
-    "lon": -77.075
-   },
-   {
-    "type": "Supercan - Repair",
-    "agency": "DPW",
-    "added": "2026-11-01T12:09:02Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2300 block of HUIDEKOPER PLACE NW",
-    "lat": 38.92,
-    "lon": -77.075
-   },
-   {
-    "type": "Supercan - Repair",
-    "agency": "DPW",
-    "added": "2026-11-01T12:09:02Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2300 block of HUIDEKOPER PLACE NW",
-    "lat": 38.92,
-    "lon": -77.075
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-01T01:56:48Z",
-    "resolved": null,
-    "status": "Open (Duplicate)",
-    "block": "3700 block of BENTON STREET NW",
-    "lat": 38.921,
-    "lon": -77.075
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-01T01:56:48Z",
-    "resolved": null,
-    "status": "Open (Duplicate)",
-    "block": "3700 block of BENTON STREET NW",
-    "lat": 38.921,
+    "block": "3800 block of BEECHER STREET NW",
+    "lat": 38.922,
     "lon": -77.075
    }
   ]
@@ -8638,7 +8625,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T22:06:56Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -8653,7 +8640,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Glover Park through OTR assessment neighborhoods Glover Park and Observatory Circle and sub-area Wesley Heights B in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Glover Park boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-04): 85% of the 5,031 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Glover Park through OTR assessment neighborhoods Glover Park and Observatory Circle and sub-area Wesley Heights B in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Glover Park boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-05): 85% of the 5,031 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -8674,14 +8661,14 @@
    "area_parcels": 5031,
    "area_share_inside": 0.846,
    "boundary_share_in_area": 1.0,
-   "measured": "2026-11-04"
+   "measured": "2026-11-05"
   },
   "primary": "house",
   "house": {
    "median_12mo": 1500000,
    "count_12mo": 47,
    "median_prev_12mo": 1365000,
-   "count_prev_12mo": 59
+   "count_prev_12mo": 58
   },
   "condo": {
    "median_12mo": 399450,
@@ -8937,7 +8924,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T22:06:56Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -8961,7 +8948,7 @@
    "starting_next_7d": 10,
    "reserved_ft": 2530,
    "long_running_90d": 8,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-05: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -9158,14 +9145,14 @@
    {
     "type": "Scheduled Yard Waste",
     "median_days": 8.16,
-    "city_median_days": 9.67,
+    "city_median_days": 9.66,
     "closed_n": 342
    },
    {
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 281
+    "closed_n": 282
    },
    {
     "type": "Trash Collection - Missed",
@@ -9188,7 +9175,7 @@
    {
     "type": "Rodent Inspection and Treatment",
     "median_days": 2.52,
-    "city_median_days": 1.74,
+    "city_median_days": 1.75,
     "closed_n": 100
    },
    {
@@ -9201,7 +9188,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T22:06:56Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -9343,7 +9330,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T22:06:56Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "archive_days": 180,
   "sources": [
    {
@@ -9617,8 +9604,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T22:06:56Z",
-  "today": "2026-11-04",
+  "generated_at": "2026-11-05T09:19:54Z",
+  "today": "2026-11-05",
   "days_ahead": 30,
   "sources": [
    {
@@ -9672,7 +9659,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-04T22:06:56Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -24188,7 +24175,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T22:06:56Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
