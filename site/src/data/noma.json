@@ -1,7 +1,7 @@
 {
  "slug": "noma",
  "name": "NoMa",
- "generated_at": "2026-11-06T09:19:38Z",
+ "generated_at": "2026-11-06T16:59:01Z",
  "boundary": {
   "source": "NoMa Business Improvement District boundary (Open Data DC). DC has no planning area for NoMa.",
   "rings": [
@@ -478,19 +478,6 @@
    "smd": "6E07"
   },
   {
-   "id": "HO2700183",
-   "issued": "2026-10-27T04:00:00Z",
-   "group": "Home businesses",
-   "type": "HOME OCCUPATION",
-   "subtype": "NA",
-   "address": "130 M ST NE 20002",
-   "work": "",
-   "zoning": "D-5",
-   "lat": 38.9059,
-   "lon": -77.00497,
-   "smd": "6E06"
-  },
-  {
    "id": "FB2700006",
    "issued": "2026-10-27T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -501,6 +488,19 @@
    "zoning": "D-5",
    "lat": 38.9078,
    "lon": -77.00316,
+   "smd": "6E06"
+  },
+  {
+   "id": "HO2700183",
+   "issued": "2026-10-27T04:00:00Z",
+   "group": "Home businesses",
+   "type": "HOME OCCUPATION",
+   "subtype": "NA",
+   "address": "130 M ST NE 20002",
+   "work": "",
+   "zoning": "D-5",
+   "lat": 38.9059,
+   "lon": -77.00497,
    "smd": "6E06"
   },
   {
@@ -570,212 +570,217 @@
   }
  ],
  "requests": {
-  "total": 1003,
-  "previous_total": 753,
+  "total": 430,
+  "previous_total": 382,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 382,
-    "previous": 250
+    "count": 163,
+    "previous": 128
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 146,
+    "count": 65,
     "previous": 1
-   },
-   {
-    "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 41,
-    "previous": 116
-   },
-   {
-    "type": "DMV - Drivers License/ID Issues",
-    "count": 36,
-    "previous": 22
    },
    {
     "type": "Illegal Dumping",
-    "count": 35,
-    "previous": 22
+    "count": 16,
+    "previous": 15
+   },
+   {
+    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "count": 16,
+    "previous": 51
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "count": 15,
+    "previous": 10
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
-    "count": 34,
-    "previous": 23
+    "count": 14,
+    "previous": 11
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 28,
-    "previous": 31
-   },
-   {
-    "type": "Roadway Signs",
-    "count": 21,
-    "previous": 11
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "count": 20,
-    "previous": 21
-   },
-   {
-    "type": "DC Government Information",
-    "count": 20,
-    "previous": 32
-   },
-   {
-    "type": "Streetlight Repair Investigation",
-    "count": 20,
-    "previous": 31
-   },
-   {
-    "type": "DOEE - General Air Quality Concerns",
-    "count": 18,
-    "previous": 7
-   },
-   {
-    "type": "Public Space Inspection",
-    "count": 17,
-    "previous": 11
-   },
-   {
-    "type": "Roadway Repair",
-    "count": 15,
-    "previous": 5
-   },
-   {
-    "type": "Bicycle Services",
-    "count": 14,
-    "previous": 6
-   },
-   {
-    "type": "Sidewalk Repair",
     "count": 13,
-    "previous": 8
-   },
-   {
-    "type": "Parking Meter Repair",
-    "count": 13,
-    "previous": 1
-   },
-   {
-    "type": "DC How Am I Driving?",
-    "count": 12,
-    "previous": 8
-   },
-   {
-    "type": "Bulk Collection",
-    "count": 11,
-    "previous": 5
-   },
-   {
-    "type": "Bus Stop Issues",
-    "count": 11,
-    "previous": 0
-   },
-   {
-    "type": "Tree Removal",
-    "count": 10,
     "previous": 12
    },
    {
-    "type": "Illegal Poster",
+    "type": "Roadway Signs",
     "count": 10,
+    "previous": 7
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "count": 8,
+    "previous": 11
+   },
+   {
+    "type": "DC Government Information",
+    "count": 8,
+    "previous": 12
+   },
+   {
+    "type": "DOEE - General Air Quality Concerns",
+    "count": 8,
+    "previous": 4
+   },
+   {
+    "type": "Streetlight Repair Investigation",
+    "count": 7,
+    "previous": 13
+   },
+   {
+    "type": "Public Space Inspection",
+    "count": 6,
+    "previous": 5
+   },
+   {
+    "type": "Sidewalk Repair",
+    "count": 6,
+    "previous": 4
+   },
+   {
+    "type": "Parking Meter Repair",
+    "count": 6,
+    "previous": 1
+   },
+   {
+    "type": "Roadway Repair",
+    "count": 5,
+    "previous": 3
+   },
+   {
+    "type": "Bulk Collection",
+    "count": 5,
+    "previous": 3
+   },
+   {
+    "type": "Bicycle Services",
+    "count": 5,
+    "previous": 3
+   },
+   {
+    "type": "Tree Removal",
+    "count": 5,
+    "previous": 7
+   },
+   {
+    "type": "DC How Am I Driving?",
+    "count": 4,
+    "previous": 5
+   },
+   {
+    "type": "Illegal Poster",
+    "count": 4,
     "previous": 0
    },
    {
-    "type": "Tree Pruning",
-    "count": 6,
-    "previous": 2
+    "type": "Bus Stop Issues",
+    "count": 4,
+    "previous": 0
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 6,
-    "previous": 6
-   },
-   {
-    "type": "Abandoned Bicycle",
-    "count": 6,
+    "count": 3,
     "previous": 3
    },
    {
     "type": "DMV - Online Processing Issues",
-    "count": 6,
-    "previous": 2
+    "count": 3,
+    "previous": 1
+   },
+   {
+    "type": "Tree Pruning",
+    "count": 2,
+    "previous": 1
    },
    {
     "type": "Residential Parking Permit Violation",
-    "count": 5,
-    "previous": 3
+    "count": 2,
+    "previous": 2
    },
    {
     "type": "Dead Animal Collection",
-    "count": 5,
-    "previous": 24
+    "count": 2,
+    "previous": 12
+   },
+   {
+    "type": "Abandoned Bicycle",
+    "count": 2,
+    "previous": 1
    },
    {
     "type": "Roadway Markings / Pylons",
-    "count": 4,
-    "previous": 13
+    "count": 2,
+    "previous": 7
    },
    {
     "type": "DGS - Playground Repair",
-    "count": 4,
-    "previous": 10
+    "count": 2,
+    "previous": 7
    },
    {
-    "type": "Abandoned Vehicle - On Public Property",
-    "count": 3,
-    "previous": 1
-   },
-   {
-    "type": "Tree Planting",
-    "count": 3,
-    "previous": 0
-   },
-   {
-    "type": "Pet Waste Complaint",
-    "count": 3,
-    "previous": 0
-   },
-   {
-    "type": "DMV - Copy of Ticket",
-    "count": 3,
-    "previous": 1
-   },
-   {
-    "type": "Tree Inspection",
-    "count": 3,
-    "previous": 8
-   },
-   {
-    "type": "Pothole",
-    "count": 3,
+    "type": "Graffiti Removal",
+    "count": 2,
     "previous": 4
-   },
-   {
-    "type": "DMV - Vehicle Registration Issues",
-    "count": 2,
-    "previous": 3
-   },
-   {
-    "type": "DOB - Illegal Construction",
-    "count": 2,
-    "previous": 1
-   },
-   {
-    "type": "OCTFME - Down Cable Wires",
-    "count": 2,
-    "previous": 0
-   },
-   {
-    "type": "DMV - Driver and Vehicle Services Refund",
-    "count": 2,
-    "previous": 0
    },
    {
     "type": "Trash Cart Repair",
     "count": 2,
+    "previous": 0
+   },
+   {
+    "type": "Abandoned Vehicle - On Public Property",
+    "count": 1,
+    "previous": 1
+   },
+   {
+    "type": "Tree Planting",
+    "count": 1,
+    "previous": 0
+   },
+   {
+    "type": "Pet Waste Complaint",
+    "count": 1,
+    "previous": 0
+   },
+   {
+    "type": "DMV - Vehicle Registration Issues",
+    "count": 1,
+    "previous": 1
+   },
+   {
+    "type": "DOB - Illegal Construction",
+    "count": 1,
+    "previous": 1
+   },
+   {
+    "type": "DMV - Copy of Ticket",
+    "count": 1,
+    "previous": 1
+   },
+   {
+    "type": "Tree Inspection",
+    "count": 1,
+    "previous": 5
+   },
+   {
+    "type": "Pothole",
+    "count": 1,
+    "previous": 2
+   },
+   {
+    "type": "OCTFME - Down Cable Wires",
+    "count": 1,
+    "previous": 0
+   },
+   {
+    "type": "DMV - Driver and Vehicle Services Refund",
+    "count": 1,
     "previous": 0
    },
    {
@@ -791,7 +796,7 @@
    {
     "type": "Traffic Safety Input",
     "count": 1,
-    "previous": 13
+    "previous": 8
    },
    {
     "type": "Public Space Litter Can-Collection",
@@ -802,15 +807,100 @@
     "type": "DMV - Vehicle Title Issues",
     "count": 1,
     "previous": 2
+   }
+  ],
+  "open": 58,
+  "recent": [
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-06T16:37:18Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "200 block of FLORIDA AVENUE NE",
+    "lat": 38.909,
+    "lon": -77.003
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-06T15:55:47Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of P STREET NE",
+    "lat": 38.909,
+    "lon": -77.006
    },
    {
     "type": "Graffiti Removal",
-    "count": 1,
-    "previous": 7
-   }
-  ],
-  "open": 128,
-  "recent": [
+    "agency": "DPW",
+    "added": "2026-11-06T15:37:56Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of PORTER STREET NE",
+    "lat": 38.911,
+    "lon": -77.008
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-06T14:19:20Z",
+    "resolved": "2026-11-06T15:15:05Z",
+    "status": "Closed",
+    "block": "Unit block of K STREET NE",
+    "lat": 38.903,
+    "lon": -77.009
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-06T14:18:13Z",
+    "resolved": "2026-11-06T15:21:05Z",
+    "status": "Closed",
+    "block": "200 block of K STREET NE",
+    "lat": 38.903,
+    "lon": -77.003
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-06T14:11:55Z",
+    "resolved": "2026-11-06T14:11:55Z",
+    "status": "Closed",
+    "block": "1200 block of 3RD STREET NE",
+    "lat": 38.907,
+    "lon": -77.002
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-06T13:49:04Z",
+    "resolved": "2026-11-06T13:49:04Z",
+    "status": "Closed",
+    "block": "200 block of K STREET NE",
+    "lat": 38.903,
+    "lon": -77.003
+   },
+   {
+    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "agency": "DDOT",
+    "added": "2026-11-06T13:09:32Z",
+    "resolved": "2026-11-06T14:05:58Z",
+    "status": "Closed",
+    "block": "H STREET NW AND 1ST STREET NW",
+    "lat": 38.9,
+    "lon": -77.012
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-06T12:38:50Z",
+    "resolved": "2026-11-06T13:27:10Z",
+    "status": "Closed",
+    "block": "Unit block of M STREET NE",
+    "lat": 38.905,
+    "lon": -77.006
+   },
    {
     "type": "Illegal Dumping",
     "agency": "DPW",
@@ -945,8 +1035,8 @@
     "type": "Public Space Litter Can-Collection",
     "agency": "DPW",
     "added": "2026-11-05T16:55:02Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-06T10:11:34Z",
+    "status": "Closed",
     "block": "1600 block of ECKINGTON PLACE NE",
     "lat": 38.912,
     "lon": -77.004
@@ -1025,8 +1115,8 @@
     "type": "Illegal Dumping",
     "agency": "DPW",
     "added": "2026-11-05T09:09:24Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-06T16:01:21Z",
+    "status": "Closed",
     "block": "1300 block of 2ND STREET NE",
     "lat": 38.908,
     "lon": -77.003
@@ -1220,116 +1310,3506 @@
     "block": "1600 block of ECKINGTON PLACE NE",
     "lat": 38.912,
     "lon": -77.004
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-03T21:59:01Z",
-    "resolved": "2026-11-03T21:59:01Z",
-    "status": "Closed",
-    "block": "1200 block of 3RD STREET NE",
-    "lat": 38.907,
-    "lon": -77.002
-   },
-   {
-    "type": "Tree Removal",
-    "agency": "DDOT",
-    "added": "2026-11-03T21:15:43Z",
-    "resolved": "2026-11-05T15:31:12Z",
-    "status": "Closed",
-    "block": "300 block of M STREET NE",
-    "lat": 38.906,
-    "lon": -77.002
-   },
-   {
-    "type": "Leaf  Collection Missed",
-    "agency": "DPW",
-    "added": "2026-11-03T19:54:03Z",
-    "resolved": "2026-11-03T21:55:20Z",
-    "status": "Closed",
-    "block": "800 block of NORTH CAPITOL STREET NE",
-    "lat": 38.901,
-    "lon": -77.008
-   },
-   {
-    "type": "Parking Meter Repair",
-    "agency": "DDOT",
-    "added": "2026-11-03T18:30:37Z",
-    "resolved": "2026-11-03T18:36:00Z",
-    "status": "Closed",
-    "block": "Unit block of G STREET NE",
-    "lat": 38.899,
-    "lon": -77.008
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-03T18:22:51Z",
-    "resolved": "2026-11-03T20:53:58Z",
-    "status": "Closed",
-    "block": "1200 block of 3RD STREET NE",
-    "lat": 38.906,
-    "lon": -77.002
-   },
-   {
-    "type": "DMV - Drivers License/ID Issues",
-    "agency": "DMV",
-    "added": "2026-11-03T18:11:34Z",
-    "resolved": "2026-11-03T21:26:01Z",
-    "status": "Closed",
-    "block": "200 block of FLORIDA AVENUE NE",
-    "lat": 38.909,
-    "lon": -77.003
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-11-03T17:48:49Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "200 block of K STREET NE",
-    "lat": 38.903,
-    "lon": -77.003
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-03T16:53:55Z",
-    "resolved": "2026-11-03T22:43:08Z",
-    "status": "Closed",
-    "block": "300 block of N STREET NE",
-    "lat": 38.907,
-    "lon": -77.001
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-03T16:15:48Z",
-    "resolved": "2026-11-03T16:15:48Z",
-    "status": "Closed",
-    "block": "1000 block of 1ST STREET NE",
-    "lat": 38.903,
-    "lon": -77.005
    }
-  ]
+  ],
+  "mapped": {
+   "types": [
+    "Parking Enforcement",
+    "Illegal Dumping",
+    "Graffiti Removal",
+    "DOEE - LIHEAP",
+    "Traffic Lights and Pedestrian Walk Signals",
+    "Trash Cart Repair",
+    "Dockless Vehicle Parking Complaint",
+    "Bulk Collection",
+    "Parking Meter Repair",
+    "DMV - Vehicle Title Issues",
+    "Public Space Litter Can-Collection",
+    "Roadway Signs",
+    "Traffic Safety Input",
+    "Sidewalk Repair",
+    "DOEE - General Air Quality Concerns",
+    "Sanitation Enforcement",
+    "Out of State Parking Violation (ROSA)",
+    "Tree Removal",
+    "Leaf  Collection Missed",
+    "DMV - Drivers License/ID Issues",
+    "Trash Collection - Missed",
+    "Public Space Inspection",
+    "DMV - Online Processing Issues",
+    "DMV - Driver and Vehicle Services Refund",
+    "Streetlight Repair Investigation",
+    "DGS - Playground Repair",
+    "Bus Stop Issues",
+    "DC Health Rodent & Vector Control",
+    "Illegal Poster",
+    "Residential Parking Permit Violation",
+    "DC Government Information",
+    "Bicycle Services",
+    "OCTFME - Down Cable Wires",
+    "Roadway Markings / Pylons",
+    "Pothole",
+    "Abandoned Bicycle",
+    "Tree Inspection",
+    "DC How Am I Driving?",
+    "DMV - Copy of Ticket",
+    "Roadway Repair",
+    "Dead Animal Collection",
+    "DOB - Illegal Construction",
+    "DMV - Vehicle Registration Issues",
+    "Pet Waste Complaint",
+    "Tree Pruning",
+    "Tree Planting",
+    "Abandoned Vehicle - On Public Property"
+   ],
+   "blocks": [
+    {
+     "block": "200 block of FLORIDA AVENUE NE",
+     "lat": 38.909,
+     "lon": -77.003,
+     "r": [
+      [
+       0,
+       "2026-11-06",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-11-05",
+       "2026-11-05",
+       0
+      ],
+      [
+       19,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ],
+      [
+       0,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       29,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       0,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       0,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       0,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       0,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       35,
+       "2026-10-23",
+       "2026-10-27",
+       0
+      ],
+      [
+       24,
+       "2026-10-23",
+       "2026-10-28",
+       0
+      ],
+      [
+       16,
+       "2026-10-23",
+       "2026-10-26",
+       0
+      ],
+      [
+       3,
+       "2026-10-21",
+       "2026-10-21",
+       0
+      ],
+      [
+       44,
+       "2026-10-11",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of P STREET NE",
+     "lat": 38.909,
+     "lon": -77.006,
+     "r": [
+      [
+       1,
+       "2026-11-06",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of PORTER STREET NE",
+     "lat": 38.911,
+     "lon": -77.008,
+     "r": [
+      [
+       2,
+       "2026-11-06",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of K STREET NE",
+     "lat": 38.903,
+     "lon": -77.009,
+     "r": [
+      [
+       0,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       0,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "200 block of K STREET NE",
+     "lat": 38.903,
+     "lon": -77.003,
+     "r": [
+      [
+       0,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       3,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       20,
+       "2026-11-03",
+       null,
+       1
+      ],
+      [
+       11,
+       "2026-10-28",
+       null,
+       1
+      ],
+      [
+       3,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       6,
+       "2026-10-26",
+       "2026-10-26",
+       0
+      ],
+      [
+       3,
+       "2026-10-26",
+       "2026-10-26",
+       0
+      ],
+      [
+       3,
+       "2026-10-26",
+       "2026-10-26",
+       0
+      ],
+      [
+       3,
+       "2026-10-23",
+       "2026-10-23",
+       0
+      ],
+      [
+       6,
+       "2026-10-08",
+       "2026-10-08",
+       0
+      ],
+      [
+       6,
+       "2026-10-08",
+       "2026-10-08",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1200 block of 3RD STREET NE",
+     "lat": 38.907,
+     "lon": -77.002,
+     "r": [
+      [
+       3,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       9,
+       "2026-11-05",
+       null,
+       1
+      ],
+      [
+       3,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ],
+      [
+       3,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ],
+      [
+       19,
+       "2026-11-03",
+       "2026-11-04",
+       0
+      ],
+      [
+       11,
+       "2026-10-30",
+       null,
+       1
+      ],
+      [
+       3,
+       "2026-10-21",
+       "2026-10-21",
+       0
+      ],
+      [
+       11,
+       "2026-10-20",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       1,
+       "2026-10-13",
+       "2026-10-13",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "H STREET NW AND 1ST STREET NW",
+     "lat": 38.9,
+     "lon": -77.012,
+     "r": [
+      [
+       4,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of M STREET NE",
+     "lat": 38.905,
+     "lon": -77.006,
+     "r": [
+      [
+       0,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       16,
+       "2026-10-21",
+       "2026-10-21",
+       0
+      ],
+      [
+       37,
+       "2026-10-20",
+       null,
+       1
+      ],
+      [
+       16,
+       "2026-10-15",
+       "2026-10-15",
+       0
+      ],
+      [
+       0,
+       "2026-10-13",
+       "2026-10-13",
+       0
+      ],
+      [
+       0,
+       "2026-10-09",
+       "2026-10-09",
+       0
+      ],
+      [
+       16,
+       "2026-10-09",
+       "2026-10-09",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of P STREET NE",
+     "lat": 38.91,
+     "lon": -77.008,
+     "r": [
+      [
+       1,
+       "2026-11-06",
+       null,
+       1
+      ],
+      [
+       3,
+       "2026-11-02",
+       "2026-11-02",
+       0
+      ],
+      [
+       3,
+       "2026-11-02",
+       "2026-11-02",
+       0
+      ],
+      [
+       0,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       36,
+       "2026-10-22",
+       "2026-10-23",
+       0
+      ],
+      [
+       1,
+       "2026-10-17",
+       "2026-10-29",
+       0
+      ],
+      [
+       29,
+       "2026-10-13",
+       "2026-10-18",
+       0
+      ],
+      [
+       30,
+       "2026-10-13",
+       "2026-10-13",
+       0
+      ],
+      [
+       1,
+       "2026-10-09",
+       "2026-10-29",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "300 block of M STREET NE",
+     "lat": 38.906,
+     "lon": -77.002,
+     "r": [
+      [
+       0,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       17,
+       "2026-11-03",
+       "2026-11-05",
+       0
+      ],
+      [
+       27,
+       "2026-10-19",
+       "2026-10-19",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of FLORIDA AVENUE NE",
+     "lat": 38.91,
+     "lon": -77.008,
+     "r": [
+      [
+       1,
+       "2026-11-06",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-11-01",
+       "2026-11-01",
+       0
+      ],
+      [
+       0,
+       "2026-11-01",
+       "2026-11-01",
+       0
+      ],
+      [
+       0,
+       "2026-11-01",
+       "2026-11-01",
+       0
+      ],
+      [
+       13,
+       "2026-10-30",
+       null,
+       1
+      ],
+      [
+       1,
+       "2026-10-23",
+       "2026-11-03",
+       0
+      ],
+      [
+       3,
+       "2026-10-23",
+       "2026-10-23",
+       0
+      ],
+      [
+       3,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ],
+      [
+       13,
+       "2026-10-22",
+       null,
+       1
+      ],
+      [
+       3,
+       "2026-10-21",
+       "2026-10-21",
+       0
+      ],
+      [
+       13,
+       "2026-10-16",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of PORTER STREET NE",
+     "lat": 38.911,
+     "lon": -77.007,
+     "r": [
+      [
+       5,
+       "2026-11-05",
+       null,
+       1
+      ],
+      [
+       5,
+       "2026-11-05",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "1600 block of ECKINGTON PLACE NE",
+     "lat": 38.912,
+     "lon": -77.004,
+     "r": [
+      [
+       6,
+       "2026-11-05",
+       "2026-11-05",
+       0
+      ],
+      [
+       10,
+       "2026-11-05",
+       "2026-11-06",
+       0
+      ],
+      [
+       3,
+       "2026-11-05",
+       "2026-11-05",
+       0
+      ],
+      [
+       11,
+       "2026-11-05",
+       null,
+       1
+      ],
+      [
+       6,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ],
+      [
+       3,
+       "2026-11-02",
+       "2026-11-02",
+       0
+      ],
+      [
+       19,
+       "2026-10-27",
+       "2026-10-29",
+       0
+      ],
+      [
+       6,
+       "2026-10-25",
+       "2026-10-25",
+       0
+      ],
+      [
+       0,
+       "2026-10-12",
+       "2026-10-12",
+       0
+      ],
+      [
+       0,
+       "2026-10-09",
+       "2026-10-09",
+       0
+      ],
+      [
+       0,
+       "2026-10-08",
+       "2026-10-08",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of M STREET NE",
+     "lat": 38.906,
+     "lon": -77.008,
+     "r": [
+      [
+       7,
+       "2026-11-05",
+       null,
+       1
+      ],
+      [
+       3,
+       "2026-11-05",
+       "2026-11-05",
+       0
+      ],
+      [
+       3,
+       "2026-11-05",
+       "2026-11-05",
+       0
+      ],
+      [
+       22,
+       "2026-10-27",
+       "2026-10-30",
+       0
+      ],
+      [
+       3,
+       "2026-10-26",
+       "2026-10-26",
+       0
+      ],
+      [
+       3,
+       "2026-10-26",
+       "2026-10-26",
+       0
+      ],
+      [
+       3,
+       "2026-10-21",
+       "2026-10-21",
+       0
+      ],
+      [
+       3,
+       "2026-10-21",
+       "2026-10-21",
+       0
+      ],
+      [
+       3,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       0,
+       "2026-10-16",
+       "2026-10-16",
+       0
+      ],
+      [
+       30,
+       "2026-10-16",
+       "2026-10-16",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of FLORIDA AVENUE NE",
+     "lat": 38.91,
+     "lon": -77.007,
+     "r": [
+      [
+       2,
+       "2026-11-05",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of G STREET NE",
+     "lat": 38.899,
+     "lon": -77.008,
+     "r": [
+      [
+       8,
+       "2026-11-05",
+       null,
+       1
+      ],
+      [
+       8,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ],
+      [
+       8,
+       "2026-10-28",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "900 block of 2ND STREET NE",
+     "lat": 38.901,
+     "lon": -77.004,
+     "r": [
+      [
+       0,
+       "2026-11-05",
+       "2026-11-05",
+       0
+      ],
+      [
+       0,
+       "2026-10-19",
+       "2026-10-19",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1100 block of 2ND STREET NE",
+     "lat": 38.904,
+     "lon": -77.003,
+     "r": [
+      [
+       0,
+       "2026-11-05",
+       "2026-11-05",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1ST STREET NE AND N STREET NE",
+     "lat": 38.907,
+     "lon": -77.006,
+     "r": [
+      [
+       0,
+       "2026-11-05",
+       "2026-11-06",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "200 block of HARRY THOMAS WAY NE",
+     "lat": 38.911,
+     "lon": -77.002,
+     "r": [
+      [
+       12,
+       "2026-11-05",
+       "2026-11-05",
+       0
+      ],
+      [
+       25,
+       "2026-11-01",
+       "2026-11-02",
+       0
+      ],
+      [
+       14,
+       "2026-10-23",
+       "2026-10-26",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of NEW YORK AVENUE NE",
+     "lat": 38.908,
+     "lon": -77.009,
+     "r": [
+      [
+       13,
+       "2026-11-05",
+       null,
+       1
+      ],
+      [
+       27,
+       "2026-10-23",
+       "2026-10-27",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1100 block of 1ST STREET NE",
+     "lat": 38.905,
+     "lon": -77.006,
+     "r": [
+      [
+       0,
+       "2026-11-05",
+       "2026-11-05",
+       0
+      ],
+      [
+       0,
+       "2026-11-04",
+       "2026-11-04",
+       0
+      ],
+      [
+       0,
+       "2026-11-04",
+       "2026-11-04",
+       0
+      ],
+      [
+       16,
+       "2026-11-04",
+       "2026-11-05",
+       0
+      ],
+      [
+       0,
+       "2026-11-02",
+       "2026-11-02",
+       0
+      ],
+      [
+       0,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       16,
+       "2026-10-27",
+       "2026-10-27",
+       0
+      ],
+      [
+       0,
+       "2026-10-19",
+       "2026-10-19",
+       0
+      ],
+      [
+       0,
+       "2026-10-16",
+       "2026-10-16",
+       0
+      ],
+      [
+       0,
+       "2026-10-14",
+       "2026-10-14",
+       0
+      ],
+      [
+       19,
+       "2026-10-14",
+       "2026-10-23",
+       0
+      ],
+      [
+       0,
+       "2026-10-13",
+       "2026-10-13",
+       0
+      ],
+      [
+       16,
+       "2026-10-12",
+       "2026-10-13",
+       0
+      ],
+      [
+       0,
+       "2026-10-10",
+       "2026-10-10",
+       0
+      ],
+      [
+       0,
+       "2026-10-09",
+       "2026-10-09",
+       0
+      ],
+      [
+       0,
+       "2026-10-07",
+       "2026-10-07",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1300 block of 2ND STREET NE",
+     "lat": 38.908,
+     "lon": -77.003,
+     "r": [
+      [
+       1,
+       "2026-11-05",
+       "2026-11-06",
+       0
+      ],
+      [
+       0,
+       "2026-11-02",
+       "2026-11-02",
+       0
+      ],
+      [
+       0,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ],
+      [
+       0,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       31,
+       "2026-10-14",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-10-14",
+       "2026-10-18",
+       0
+      ],
+      [
+       0,
+       "2026-10-08",
+       "2026-10-08",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "100 block of FLORIDA AVENUE NE",
+     "lat": 38.909,
+     "lon": -77.004,
+     "r": [
+      [
+       0,
+       "2026-11-05",
+       "2026-11-05",
+       0
+      ],
+      [
+       0,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ],
+      [
+       30,
+       "2026-10-27",
+       "2026-10-27",
+       0
+      ],
+      [
+       0,
+       "2026-10-12",
+       "2026-10-12",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "100 block of Q STREET NE",
+     "lat": 38.911,
+     "lon": -77.004,
+     "r": [
+      [
+       0,
+       "2026-11-05",
+       "2026-11-05",
+       0
+      ],
+      [
+       0,
+       "2026-11-04",
+       "2026-11-04",
+       0
+      ],
+      [
+       0,
+       "2026-11-04",
+       "2026-11-04",
+       0
+      ],
+      [
+       22,
+       "2026-11-02",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-11-01",
+       "2026-11-01",
+       0
+      ],
+      [
+       0,
+       "2026-10-31",
+       "2026-10-31",
+       0
+      ],
+      [
+       0,
+       "2026-10-30",
+       "2026-10-30",
+       0
+      ],
+      [
+       3,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       3,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       0,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       0,
+       "2026-10-28",
+       "2026-10-29",
+       0
+      ],
+      [
+       0,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       0,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       3,
+       "2026-10-27",
+       "2026-10-27",
+       0
+      ],
+      [
+       30,
+       "2026-10-26",
+       "2026-10-26",
+       0
+      ],
+      [
+       3,
+       "2026-10-26",
+       "2026-10-26",
+       0
+      ],
+      [
+       3,
+       "2026-10-24",
+       "2026-10-24",
+       0
+      ],
+      [
+       0,
+       "2026-10-24",
+       "2026-10-24",
+       0
+      ],
+      [
+       0,
+       "2026-10-21",
+       "2026-10-22",
+       0
+      ],
+      [
+       0,
+       "2026-10-21",
+       "2026-10-21",
+       0
+      ],
+      [
+       0,
+       "2026-10-21",
+       "2026-10-21",
+       0
+      ],
+      [
+       0,
+       "2026-10-20",
+       "2026-10-21",
+       0
+      ],
+      [
+       0,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       3,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       0,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       30,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       0,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       0,
+       "2026-10-19",
+       "2026-10-20",
+       0
+      ],
+      [
+       0,
+       "2026-10-19",
+       "2026-10-19",
+       0
+      ],
+      [
+       0,
+       "2026-10-16",
+       "2026-10-16",
+       0
+      ],
+      [
+       0,
+       "2026-10-14",
+       "2026-10-15",
+       0
+      ],
+      [
+       0,
+       "2026-10-14",
+       "2026-10-14",
+       0
+      ],
+      [
+       0,
+       "2026-10-13",
+       "2026-10-14",
+       0
+      ],
+      [
+       0,
+       "2026-10-11",
+       "2026-10-11",
+       0
+      ],
+      [
+       0,
+       "2026-10-10",
+       "2026-10-10",
+       0
+      ],
+      [
+       0,
+       "2026-10-09",
+       "2026-10-09",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "700 block of NORTH CAPITOL STREET NE",
+     "lat": 38.899,
+     "lon": -77.008,
+     "r": [
+      [
+       14,
+       "2026-11-04",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of N STREET NE",
+     "lat": 38.907,
+     "lon": -77.008,
+     "r": [
+      [
+       15,
+       "2026-11-04",
+       "2026-11-05",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "200 block of Q STREET NE",
+     "lat": 38.911,
+     "lon": -77.003,
+     "r": [
+      [
+       3,
+       "2026-11-04",
+       "2026-11-04",
+       0
+      ],
+      [
+       3,
+       "2026-11-04",
+       "2026-11-04",
+       0
+      ],
+      [
+       3,
+       "2026-11-02",
+       "2026-11-02",
+       0
+      ],
+      [
+       3,
+       "2026-10-31",
+       "2026-10-31",
+       0
+      ],
+      [
+       3,
+       "2026-10-30",
+       "2026-10-30",
+       0
+      ],
+      [
+       0,
+       "2026-10-30",
+       "2026-10-30",
+       0
+      ],
+      [
+       3,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       3,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       3,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       3,
+       "2026-10-27",
+       "2026-10-27",
+       0
+      ],
+      [
+       0,
+       "2026-10-27",
+       "2026-10-27",
+       0
+      ],
+      [
+       3,
+       "2026-10-27",
+       "2026-10-27",
+       0
+      ],
+      [
+       0,
+       "2026-10-26",
+       "2026-10-26",
+       0
+      ],
+      [
+       3,
+       "2026-10-26",
+       "2026-10-26",
+       0
+      ],
+      [
+       3,
+       "2026-10-26",
+       "2026-10-26",
+       0
+      ],
+      [
+       3,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ],
+      [
+       3,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ],
+      [
+       3,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ],
+      [
+       3,
+       "2026-10-21",
+       "2026-10-21",
+       0
+      ],
+      [
+       6,
+       "2026-10-17",
+       "2026-10-17",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1500 block of NORTH CAPITOL STREET NE",
+     "lat": 38.91,
+     "lon": -77.009,
+     "r": [
+      [
+       0,
+       "2026-11-04",
+       "2026-11-04",
+       0
+      ],
+      [
+       0,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ],
+      [
+       26,
+       "2026-11-01",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "200 block of L STREET NE",
+     "lat": 38.904,
+     "lon": -77.003,
+     "r": [
+      [
+       0,
+       "2026-11-04",
+       "2026-11-04",
+       0
+      ],
+      [
+       0,
+       "2026-11-02",
+       "2026-11-03",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "300 block of NEW YORK AVENUE NE",
+     "lat": 38.909,
+     "lon": -77.004,
+     "r": [
+      [
+       6,
+       "2026-11-04",
+       "2026-11-04",
+       0
+      ],
+      [
+       1,
+       "2026-10-19",
+       "2026-10-20",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "100 block of NEW YORK AVENUE NE",
+     "lat": 38.909,
+     "lon": -77.005,
+     "r": [
+      [
+       6,
+       "2026-11-04",
+       "2026-11-04",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1100 block of 1ST STREET NE",
+     "lat": 38.904,
+     "lon": -77.007,
+     "r": [
+      [
+       16,
+       "2026-11-04",
+       "2026-11-04",
+       0
+      ],
+      [
+       16,
+       "2026-10-27",
+       "2026-10-27",
+       0
+      ],
+      [
+       19,
+       "2026-10-22",
+       "2026-11-02",
+       0
+      ],
+      [
+       0,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ],
+      [
+       16,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ],
+      [
+       38,
+       "2026-10-21",
+       "2026-10-29",
+       0
+      ],
+      [
+       16,
+       "2026-10-21",
+       "2026-10-21",
+       0
+      ],
+      [
+       0,
+       "2026-10-14",
+       "2026-10-14",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of P STREET NE",
+     "lat": 38.91,
+     "lon": -77.009,
+     "r": [
+      [
+       0,
+       "2026-11-03",
+       "2026-11-04",
+       0
+      ],
+      [
+       13,
+       "2026-10-15",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "800 block of NORTH CAPITOL STREET NE",
+     "lat": 38.901,
+     "lon": -77.008,
+     "r": [
+      [
+       18,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ],
+      [
+       7,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       8,
+       "2026-10-21",
+       "2026-10-21",
+       0
+      ],
+      [
+       7,
+       "2026-10-10",
+       "2026-10-10",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1200 block of 3RD STREET NE",
+     "lat": 38.906,
+     "lon": -77.002,
+     "r": [
+      [
+       0,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ],
+      [
+       0,
+       "2026-10-30",
+       "2026-10-30",
+       0
+      ],
+      [
+       0,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       0,
+       "2026-10-24",
+       "2026-10-24",
+       0
+      ],
+      [
+       0,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ],
+      [
+       0,
+       "2026-10-15",
+       "2026-10-15",
+       0
+      ],
+      [
+       19,
+       "2026-10-09",
+       "2026-10-20",
+       0
+      ],
+      [
+       0,
+       "2026-10-08",
+       "2026-10-08",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "300 block of N STREET NE",
+     "lat": 38.907,
+     "lon": -77.001,
+     "r": [
+      [
+       0,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ],
+      [
+       0,
+       "2026-11-02",
+       "2026-11-02",
+       0
+      ],
+      [
+       0,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       0,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       0,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       11,
+       "2026-10-26",
+       "2026-10-30",
+       0
+      ],
+      [
+       0,
+       "2026-10-23",
+       "2026-10-23",
+       0
+      ],
+      [
+       3,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ],
+      [
+       0,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       3,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       3,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       19,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       0,
+       "2026-10-13",
+       "2026-10-13",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1000 block of 1ST STREET NE",
+     "lat": 38.903,
+     "lon": -77.005,
+     "r": [
+      [
+       3,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ],
+      [
+       3,
+       "2026-11-02",
+       "2026-11-02",
+       0
+      ],
+      [
+       3,
+       "2026-10-30",
+       "2026-10-30",
+       0
+      ],
+      [
+       3,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       40,
+       "2026-10-18",
+       "2026-10-19",
+       0
+      ],
+      [
+       19,
+       "2026-10-13",
+       "2026-10-20",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "200 block of M STREET NE",
+     "lat": 38.906,
+     "lon": -77.003,
+     "r": [
+      [
+       0,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "NORTH CAPITOL STREET AND G STREET NW",
+     "lat": 38.899,
+     "lon": -77.009,
+     "r": [
+      [
+       4,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "NEW YORK AVENUE NE AND FLORIDA AVENUE NE",
+     "lat": 38.909,
+     "lon": -77.005,
+     "r": [
+      [
+       4,
+       "2026-11-02",
+       "2026-11-03",
+       0
+      ],
+      [
+       28,
+       "2026-10-20",
+       "2026-10-22",
+       0
+      ],
+      [
+       4,
+       "2026-10-14",
+       "2026-10-14",
+       0
+      ],
+      [
+       4,
+       "2026-10-14",
+       "2026-10-14",
+       0
+      ],
+      [
+       4,
+       "2026-10-14",
+       "2026-10-14",
+       0
+      ],
+      [
+       4,
+       "2026-10-14",
+       "2026-10-14",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "200 block of FLORIDA AVENUE NE",
+     "lat": 38.908,
+     "lon": -77.002,
+     "r": [
+      [
+       21,
+       "2026-11-02",
+       null,
+       1
+      ],
+      [
+       21,
+       "2026-10-23",
+       null,
+       1
+      ],
+      [
+       11,
+       "2026-10-20",
+       "2026-10-22",
+       0
+      ],
+      [
+       4,
+       "2026-10-17",
+       "2026-10-18",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1100 block of 1ST STREET NE",
+     "lat": 38.904,
+     "lon": -77.006,
+     "r": [
+      [
+       17,
+       "2026-11-02",
+       "2026-11-05",
+       0
+      ],
+      [
+       0,
+       "2026-10-18",
+       "2026-10-18",
+       0
+      ],
+      [
+       0,
+       "2026-10-13",
+       "2026-10-13",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of PIERCE STREET NE",
+     "lat": 38.904,
+     "lon": -77.008,
+     "r": [
+      [
+       22,
+       "2026-11-02",
+       null,
+       1
+      ],
+      [
+       23,
+       "2026-11-02",
+       "2026-11-05",
+       0
+      ],
+      [
+       27,
+       "2026-10-26",
+       "2026-10-27",
+       0
+      ],
+      [
+       27,
+       "2026-10-26",
+       "2026-10-27",
+       0
+      ],
+      [
+       0,
+       "2026-10-16",
+       "2026-10-16",
+       0
+      ],
+      [
+       0,
+       "2026-10-14",
+       "2026-10-14",
+       0
+      ],
+      [
+       0,
+       "2026-10-14",
+       "2026-10-14",
+       0
+      ],
+      [
+       0,
+       "2026-10-09",
+       "2026-10-09",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1000 block of 1ST STREET NE",
+     "lat": 38.903,
+     "lon": -77.006,
+     "r": [
+      [
+       24,
+       "2026-11-02",
+       "2026-11-02",
+       0
+      ],
+      [
+       0,
+       "2026-10-28",
+       "2026-10-28",
+       1
+      ],
+      [
+       0,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       0,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "100 block of HARRY THOMAS WAY NE",
+     "lat": 38.911,
+     "lon": -77.002,
+     "r": [
+      [
+       27,
+       "2026-10-31",
+       "2026-11-04",
+       0
+      ],
+      [
+       25,
+       "2026-10-31",
+       "2026-10-31",
+       0
+      ],
+      [
+       0,
+       "2026-10-30",
+       "2026-10-30",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of H STREET NW",
+     "lat": 38.9,
+     "lon": -77.011,
+     "r": [
+      [
+       3,
+       "2026-10-31",
+       "2026-10-31",
+       0
+      ],
+      [
+       3,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       19,
+       "2026-10-27",
+       "2026-11-05",
+       0
+      ],
+      [
+       19,
+       "2026-10-21",
+       "2026-10-29",
+       0
+      ],
+      [
+       0,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       19,
+       "2026-10-14",
+       "2026-10-22",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1500 block of HARRY THOMAS WAY NE",
+     "lat": 38.912,
+     "lon": -77.002,
+     "r": [
+      [
+       14,
+       "2026-10-31",
+       "2026-11-06",
+       0
+      ],
+      [
+       0,
+       "2026-10-30",
+       "2026-10-30",
+       0
+      ],
+      [
+       14,
+       "2026-10-28",
+       "2026-10-29",
+       0
+      ],
+      [
+       14,
+       "2026-10-27",
+       "2026-10-29",
+       0
+      ],
+      [
+       14,
+       "2026-10-22",
+       "2026-10-27",
+       0
+      ],
+      [
+       14,
+       "2026-10-20",
+       "2026-10-27",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "200 block of L STREET NE",
+     "lat": 38.903,
+     "lon": -77.003,
+     "r": [
+      [
+       0,
+       "2026-10-30",
+       "2026-10-30",
+       0
+      ],
+      [
+       0,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ],
+      [
+       0,
+       "2026-10-18",
+       "2026-10-18",
+       0
+      ],
+      [
+       0,
+       "2026-10-10",
+       "2026-10-10",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "100 block of Q STREET NE",
+     "lat": 38.911,
+     "lon": -77.006,
+     "r": [
+      [
+       0,
+       "2026-10-30",
+       "2026-10-30",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "100 block of M STREET NE",
+     "lat": 38.906,
+     "lon": -77.004,
+     "r": [
+      [
+       1,
+       "2026-10-30",
+       "2026-11-03",
+       0
+      ],
+      [
+       4,
+       "2026-10-11",
+       "2026-10-13",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1300 block of 2ND STREET NE",
+     "lat": 38.908,
+     "lon": -77.004,
+     "r": [
+      [
+       11,
+       "2026-10-30",
+       "2026-11-02",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1500 block of ECKINGTON PLACE NE",
+     "lat": 38.91,
+     "lon": -77.006,
+     "r": [
+      [
+       1,
+       "2026-10-29",
+       "2026-11-03",
+       0
+      ],
+      [
+       37,
+       "2026-10-10",
+       "2026-10-23",
+       0
+      ],
+      [
+       37,
+       "2026-10-08",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "MASSACHUSETTS AVENUE NE AND NORTH CAPITOL STREET",
+     "lat": 38.897,
+     "lon": -77.009,
+     "r": [
+      [
+       28,
+       "2026-10-29",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "1300 block of 2ND STREET NE",
+     "lat": 38.907,
+     "lon": -77.003,
+     "r": [
+      [
+       0,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of MASSACHUSETTS AVENUE NW",
+     "lat": 38.898,
+     "lon": -77.01,
+     "r": [
+      [
+       6,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       0,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of M STREET NE",
+     "lat": 38.905,
+     "lon": -77.007,
+     "r": [
+      [
+       3,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       3,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       30,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       30,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       16,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       0,
+       "2026-10-16",
+       "2026-10-16",
+       0
+      ],
+      [
+       0,
+       "2026-10-07",
+       "2026-10-07",
+       1
+      ]
+     ]
+    },
+    {
+     "block": "1200 block of 4TH STREET NE",
+     "lat": 38.906,
+     "lon": -77.001,
+     "r": [
+      [
+       0,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       0,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       0,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       0,
+       "2026-10-16",
+       "2026-10-16",
+       0
+      ],
+      [
+       0,
+       "2026-10-15",
+       "2026-10-15",
+       0
+      ],
+      [
+       0,
+       "2026-10-13",
+       "2026-10-13",
+       0
+      ],
+      [
+       45,
+       "2026-10-09",
+       "2026-10-15",
+       0
+      ],
+      [
+       0,
+       "2026-10-09",
+       "2026-10-09",
+       0
+      ],
+      [
+       0,
+       "2026-10-08",
+       "2026-10-08",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "100 block of L STREET NE",
+     "lat": 38.904,
+     "lon": -77.005,
+     "r": [
+      [
+       17,
+       "2026-10-28",
+       "2026-10-29",
+       0
+      ],
+      [
+       33,
+       "2026-10-27",
+       null,
+       1
+      ],
+      [
+       34,
+       "2026-10-25",
+       "2026-10-27",
+       0
+      ],
+      [
+       0,
+       "2026-10-09",
+       "2026-10-09",
+       0
+      ],
+      [
+       0,
+       "2026-10-09",
+       "2026-10-09",
+       0
+      ],
+      [
+       0,
+       "2026-10-08",
+       "2026-10-08",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of M STREET NE",
+     "lat": 38.906,
+     "lon": -77.007,
+     "r": [
+      [
+       16,
+       "2026-10-28",
+       "2026-10-29",
+       0
+      ],
+      [
+       16,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       0,
+       "2026-10-27",
+       "2026-10-27",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "100 block of M STREET NE",
+     "lat": 38.906,
+     "lon": -77.005,
+     "r": [
+      [
+       0,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       0,
+       "2026-10-27",
+       "2026-10-27",
+       0
+      ],
+      [
+       0,
+       "2026-10-27",
+       "2026-10-27",
+       0
+      ],
+      [
+       0,
+       "2026-10-23",
+       "2026-10-23",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "900 block of NORTH CAPITOL STREET NE",
+     "lat": 38.902,
+     "lon": -77.008,
+     "r": [
+      [
+       1,
+       "2026-10-28",
+       "2026-10-29",
+       0
+      ],
+      [
+       7,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       39,
+       "2026-10-13",
+       null,
+       1
+      ],
+      [
+       7,
+       "2026-10-10",
+       "2026-10-10",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "MAMIE PEANUT JOHNSON PLAZA",
+     "lat": 38.909,
+     "lon": -77.005,
+     "r": [
+      [
+       31,
+       "2026-10-28",
+       "2026-11-04",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of K STREET NE",
+     "lat": 38.902,
+     "lon": -77.006,
+     "r": [
+      [
+       0,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "100 block of Q STREET NE",
+     "lat": 38.911,
+     "lon": -77.005,
+     "r": [
+      [
+       15,
+       "2026-10-28",
+       "2026-10-29",
+       0
+      ],
+      [
+       43,
+       "2026-10-15",
+       "2026-10-15",
+       0
+      ],
+      [
+       15,
+       "2026-10-14",
+       "2026-10-15",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1ST STREET NE AND NEW YORK AVENUE NE",
+     "lat": 38.908,
+     "lon": -77.006,
+     "r": [
+      [
+       28,
+       "2026-10-28",
+       null,
+       1
+      ],
+      [
+       1,
+       "2026-10-20",
+       "2026-10-23",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of K STREET NE",
+     "lat": 38.902,
+     "lon": -77.007,
+     "r": [
+      [
+       0,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "N STREET NE AND 1ST STREET NE",
+     "lat": 38.907,
+     "lon": -77.006,
+     "r": [
+      [
+       32,
+       "2026-10-27",
+       "2026-10-27",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "100 block of K STREET NE",
+     "lat": 38.903,
+     "lon": -77.005,
+     "r": [
+      [
+       19,
+       "2026-10-27",
+       "2026-11-05",
+       0
+      ],
+      [
+       39,
+       "2026-10-10",
+       null,
+       1
+      ],
+      [
+       39,
+       "2026-10-09",
+       null,
+       1
+      ],
+      [
+       21,
+       "2026-10-07",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "100 block of K STREET NE",
+     "lat": 38.902,
+     "lon": -77.006,
+     "r": [
+      [
+       33,
+       "2026-10-27",
+       null,
+       1
+      ],
+      [
+       26,
+       "2026-10-25",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "1000 block of NORTH CAPITOL STREET NE",
+     "lat": 38.903,
+     "lon": -77.009,
+     "r": [
+      [
+       0,
+       "2026-10-27",
+       "2026-10-27",
+       0
+      ],
+      [
+       35,
+       "2026-10-21",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "100 block of M STREET NE",
+     "lat": 38.905,
+     "lon": -77.005,
+     "r": [
+      [
+       14,
+       "2026-10-27",
+       "2026-10-29",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "300 block of N STREET NE",
+     "lat": 38.907,
+     "lon": -77.002,
+     "r": [
+      [
+       11,
+       "2026-10-26",
+       "2026-10-30",
+       0
+      ],
+      [
+       0,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1100 block of DELAWARE AVENUE NE",
+     "lat": 38.905,
+     "lon": -77.003,
+     "r": [
+      [
+       17,
+       "2026-10-26",
+       "2026-10-29",
+       0
+      ],
+      [
+       6,
+       "2026-10-09",
+       "2026-10-09",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of NEW YORK AVENUE NE",
+     "lat": 38.908,
+     "lon": -77.007,
+     "r": [
+      [
+       0,
+       "2026-10-26",
+       "2026-10-26",
+       0
+      ],
+      [
+       1,
+       "2026-10-23",
+       "2026-10-29",
+       0
+      ],
+      [
+       0,
+       "2026-10-23",
+       "2026-10-23",
+       0
+      ],
+      [
+       0,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ],
+      [
+       27,
+       "2026-10-10",
+       "2026-10-19",
+       0
+      ],
+      [
+       39,
+       "2026-10-10",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "NORTH CAPITOL STREET AND FLORIDA AVENUE NE",
+     "lat": 38.911,
+     "lon": -77.009,
+     "r": [
+      [
+       4,
+       "2026-10-26",
+       "2026-10-26",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1500 block of HARRY THOMAS WAY NE",
+     "lat": 38.912,
+     "lon": -77.003,
+     "r": [
+      [
+       8,
+       "2026-10-24",
+       null,
+       1
+      ],
+      [
+       19,
+       "2026-10-16",
+       "2026-10-27",
+       0
+      ],
+      [
+       19,
+       "2026-10-15",
+       "2026-10-26",
+       0
+      ],
+      [
+       46,
+       "2026-10-07",
+       "2026-10-08",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "700 block of NORTH CAPITOL STREET NE",
+     "lat": 38.9,
+     "lon": -77.009,
+     "r": [
+      [
+       26,
+       "2026-10-24",
+       null,
+       1
+      ],
+      [
+       26,
+       "2026-10-24",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of M STREET NE",
+     "lat": 38.905,
+     "lon": -77.008,
+     "r": [
+      [
+       1,
+       "2026-10-24",
+       null,
+       1
+      ],
+      [
+       11,
+       "2026-10-16",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of K STREET NE",
+     "lat": 38.903,
+     "lon": -77.007,
+     "r": [
+      [
+       24,
+       "2026-10-23",
+       "2026-10-23",
+       0
+      ],
+      [
+       0,
+       "2026-10-21",
+       "2026-10-21",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "MBT MILE NUMBER 1.0",
+     "lat": 38.911,
+     "lon": -77.002,
+     "r": [
+      [
+       27,
+       "2026-10-23",
+       "2026-11-01",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "MASSACHUSETTS AVENUE NW AND G STREET NW",
+     "lat": 38.898,
+     "lon": -77.011,
+     "r": [
+      [
+       8,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of L STREET NE",
+     "lat": 38.904,
+     "lon": -77.008,
+     "r": [
+      [
+       3,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ],
+      [
+       3,
+       "2026-10-19",
+       "2026-10-19",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "200 block of FLORIDA AVENUE NE",
+     "lat": 38.908,
+     "lon": -77.003,
+     "r": [
+      [
+       31,
+       "2026-10-22",
+       "2026-10-23",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "200 block of R STREET NE",
+     "lat": 38.912,
+     "lon": -77.002,
+     "r": [
+      [
+       6,
+       "2026-10-21",
+       "2026-10-21",
+       0
+      ],
+      [
+       24,
+       "2026-10-21",
+       "2026-10-22",
+       0
+      ],
+      [
+       24,
+       "2026-10-20",
+       "2026-10-21",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "NEW YORK AVENUE NE AND 1ST STREET NE",
+     "lat": 38.908,
+     "lon": -77.006,
+     "r": [
+      [
+       28,
+       "2026-10-21",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "NORTH CAPITOL STREET NE AND NEW YORK AVENUE NE",
+     "lat": 38.907,
+     "lon": -77.009,
+     "r": [
+      [
+       37,
+       "2026-10-21",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of M STREET NE",
+     "lat": 38.905,
+     "lon": -77.009,
+     "r": [
+      [
+       3,
+       "2026-10-21",
+       "2026-10-21",
+       0
+      ],
+      [
+       0,
+       "2026-10-16",
+       "2026-10-16",
+       0
+      ],
+      [
+       30,
+       "2026-10-08",
+       "2026-10-08",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1200 block of B 3RD STREET NE",
+     "lat": 38.907,
+     "lon": -77.002,
+     "r": [
+      [
+       0,
+       "2026-10-21",
+       "2026-10-21",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "NORTH CAPITOL STREET AND G PLACE NE",
+     "lat": 38.9,
+     "lon": -77.009,
+     "r": [
+      [
+       4,
+       "2026-10-21",
+       "2026-10-21",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of FLORIDA AVENUE NE",
+     "lat": 38.911,
+     "lon": -77.009,
+     "r": [
+      [
+       39,
+       "2026-10-21",
+       null,
+       1
+      ],
+      [
+       21,
+       "2026-10-21",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "2ND STREET NE AND FLORIDA AVENUE NE",
+     "lat": 38.908,
+     "lon": -77.003,
+     "r": [
+      [
+       4,
+       "2026-10-21",
+       "2026-10-21",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "300 block of FLORIDA AVENUE NE",
+     "lat": 38.907,
+     "lon": -77.002,
+     "r": [
+      [
+       0,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       13,
+       "2026-10-11",
+       "2026-10-20",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of K STREET NE",
+     "lat": 38.902,
+     "lon": -77.008,
+     "r": [
+      [
+       0,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1100 block of NORTH CAPITOL STREET NE",
+     "lat": 38.904,
+     "lon": -77.008,
+     "r": [
+      [
+       0,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1200 block of 1ST STREET NE",
+     "lat": 38.906,
+     "lon": -77.006,
+     "r": [
+      [
+       3,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       3,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       3,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       3,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       3,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       6,
+       "2026-10-11",
+       "2026-10-11",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "NEW YORK AVENUE NE AND NORTH CAPITOL STREET NE",
+     "lat": 38.907,
+     "lon": -77.009,
+     "r": [
+      [
+       40,
+       "2026-10-20",
+       "2026-10-22",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of H STREET NW",
+     "lat": 38.9,
+     "lon": -77.012,
+     "r": [
+      [
+       0,
+       "2026-10-19",
+       "2026-10-19",
+       0
+      ],
+      [
+       0,
+       "2026-10-16",
+       "2026-10-16",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "K STREET NE AND 2ND STREET NE",
+     "lat": 38.903,
+     "lon": -77.004,
+     "r": [
+      [
+       1,
+       "2026-10-19",
+       "2026-11-03",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1ST STREET NE AND G STREET NE",
+     "lat": 38.899,
+     "lon": -77.007,
+     "r": [
+      [
+       21,
+       "2026-10-19",
+       "2026-10-20",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of PATTERSON STREET NE",
+     "lat": 38.907,
+     "lon": -77.007,
+     "r": [
+      [
+       0,
+       "2026-10-18",
+       "2026-10-18",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of P STREET NE",
+     "lat": 38.909,
+     "lon": -77.007,
+     "r": [
+      [
+       11,
+       "2026-10-17",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "3RD STREET NE AND L STREET NE",
+     "lat": 38.904,
+     "lon": -77.002,
+     "r": [
+      [
+       0,
+       "2026-10-17",
+       "2026-10-17",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "100 block of N STREET NE",
+     "lat": 38.907,
+     "lon": -77.005,
+     "r": [
+      [
+       0,
+       "2026-10-16",
+       "2026-10-16",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3RD STREET NE AND R STREET NE",
+     "lat": 38.913,
+     "lon": -77.002,
+     "r": [
+      [
+       41,
+       "2026-10-16",
+       "2026-10-21",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1200 block of 1ST STREET NE",
+     "lat": 38.907,
+     "lon": -77.005,
+     "r": [
+      [
+       17,
+       "2026-10-15",
+       "2026-10-16",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "200 block of R STREET NE",
+     "lat": 38.912,
+     "lon": -77.003,
+     "r": [
+      [
+       42,
+       "2026-10-15",
+       "2026-10-16",
+       0
+      ],
+      [
+       0,
+       "2026-10-09",
+       "2026-10-09",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "900 block of 2ND STREET NE",
+     "lat": 38.902,
+     "lon": -77.004,
+     "r": [
+      [
+       21,
+       "2026-10-15",
+       "2026-10-19",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1ST STREET NE AND K STREET NE",
+     "lat": 38.903,
+     "lon": -77.006,
+     "r": [
+      [
+       4,
+       "2026-10-15",
+       "2026-10-15",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "FLORIDA AVENUE NE AND NEW YORK AVENUE NE",
+     "lat": 38.909,
+     "lon": -77.005,
+     "r": [
+      [
+       4,
+       "2026-10-14",
+       "2026-10-14",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of PATTERSON STREET NE",
+     "lat": 38.907,
+     "lon": -77.008,
+     "r": [
+      [
+       19,
+       "2026-10-14",
+       "2026-10-19",
+       1
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of NEW YORK AVENUE NE",
+     "lat": 38.909,
+     "lon": -77.007,
+     "r": [
+      [
+       44,
+       "2026-10-14",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "1000 block of 2ND STREET NE",
+     "lat": 38.903,
+     "lon": -77.003,
+     "r": [
+      [
+       0,
+       "2026-10-12",
+       "2026-10-13",
+       0
+      ],
+      [
+       31,
+       "2026-10-12",
+       "2026-10-15",
+       0
+      ],
+      [
+       0,
+       "2026-10-09",
+       "2026-10-09",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "200 block of M STREET NE",
+     "lat": 38.905,
+     "lon": -77.003,
+     "r": [
+      [
+       0,
+       "2026-10-12",
+       "2026-10-13",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "MASSACHUSETTS AVENUE NW AND MASSACHUSETTS AVENUE NE",
+     "lat": 38.897,
+     "lon": -77.009,
+     "r": [
+      [
+       4,
+       "2026-10-12",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "FLORIDA AVENUE NE AND P STREET NE",
+     "lat": 38.91,
+     "lon": -77.007,
+     "r": [
+      [
+       4,
+       "2026-10-12",
+       "2026-10-12",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "K STREET NE AND 1ST STREET NE",
+     "lat": 38.903,
+     "lon": -77.006,
+     "r": [
+      [
+       24,
+       "2026-10-11",
+       "2026-10-12",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "100 block of HARRY THOMAS WAY NE",
+     "lat": 38.91,
+     "lon": -77.002,
+     "r": [
+      [
+       31,
+       "2026-10-11",
+       "2026-10-21",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "R STREET NE AND HARRY THOMAS WAY NE",
+     "lat": 38.913,
+     "lon": -77.002,
+     "r": [
+      [
+       24,
+       "2026-10-09",
+       "2026-10-09",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "800 block of NEW JERSEY AVENUE NW",
+     "lat": 38.901,
+     "lon": -77.013,
+     "r": [
+      [
+       0,
+       "2026-10-09",
+       "2026-10-09",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1100 block of 3RD STREET NE",
+     "lat": 38.904,
+     "lon": -77.002,
+     "r": [
+      [
+       0,
+       "2026-10-08",
+       "2026-10-08",
+       0
+      ],
+      [
+       27,
+       "2026-10-07",
+       "2026-10-08",
+       0
+      ]
+     ]
+    }
+   ]
+  }
  },
  "crime": {
-  "total": 71,
-  "previous_total": 73,
+  "total": 76,
+  "previous_total": 74,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
-    "count": 40,
-    "previous": 38
+    "count": 42,
+    "previous": 39
    },
    {
     "offense": "THEFT F/AUTO",
-    "count": 22,
+    "count": 23,
     "previous": 12
    },
    {
     "offense": "MOTOR VEHICLE THEFT",
-    "count": 4,
+    "count": 5,
     "previous": 11
    },
    {
@@ -1338,14 +4818,14 @@
     "previous": 0
    },
    {
+    "offense": "ASSAULT W/DANGEROUS WEAPON",
+    "count": 2,
+    "previous": 4
+   },
+   {
     "offense": "ROBBERY",
     "count": 1,
     "previous": 8
-   },
-   {
-    "offense": "ASSAULT W/DANGEROUS WEAPON",
-    "count": 1,
-    "previous": 4
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -1378,7 +4858,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-06T09:19:38Z",
+  "generated_at": "2026-11-06T16:59:01Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -1567,7 +5047,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-06T09:19:38Z",
+  "generated_at": "2026-11-06T16:59:01Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -1588,7 +5068,7 @@
   ],
   "curb": {
    "active_this_week": 39,
-   "starting_next_7d": 1,
+   "starting_next_7d": 0,
    "reserved_ft": 3498,
    "long_running_90d": 12,
    "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
@@ -1610,16 +5090,7 @@
      "count": 4
     }
    ],
-   "upcoming": [
-    {
-     "type": "Moving & storage",
-     "block": "100 block of R Street NE",
-     "start": "2026-11-06",
-     "end": "2026-11-07",
-     "ft": 88,
-     "hours": ""
-    }
-   ]
+   "upcoming": []
   },
   "trees": {
    "total": 1001,
@@ -1703,7 +5174,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 1648
+    "closed_n": 1649
    },
    {
     "type": "DC Government Information",
@@ -1713,15 +5184,15 @@
    },
    {
     "type": "Illegal Dumping",
-    "median_days": 0.81,
-    "city_median_days": 4.02,
-    "closed_n": 195
+    "median_days": 0.82,
+    "city_median_days": 4.0,
+    "closed_n": 196
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
-    "median_days": 0.23,
+    "median_days": 0.22,
     "city_median_days": 0.22,
-    "closed_n": 156
+    "closed_n": 157
    },
    {
     "type": "Roadway Signs",
@@ -1745,13 +5216,13 @@
     "type": "DOEE - LIHEAP",
     "median_days": 0.0,
     "city_median_days": 0.0,
-    "closed_n": 80
+    "closed_n": 82
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-06T09:19:38Z",
+  "generated_at": "2026-11-06T16:59:01Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -1921,7 +5392,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T09:19:38Z",
+  "generated_at": "2026-11-06T16:59:01Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2007,7 +5478,7 @@
     "name": "PoPville",
     "url": "https://www.popville.com/",
     "state": "ok",
-    "matched": 3,
+    "matched": 2,
     "fetched": 3
    },
    {
@@ -2281,7 +5752,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-06T09:19:38Z",
+  "generated_at": "2026-11-06T16:59:01Z",
   "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
@@ -2351,7 +5822,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-06T09:19:38Z",
+  "generated_at": "2026-11-06T16:59:01Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -13703,7 +17174,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-06T09:19:38Z",
+  "generated_at": "2026-11-06T16:59:01Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

@@ -1,7 +1,7 @@
 {
  "slug": "vanness",
  "name": "Van Ness",
- "generated_at": "2026-11-06T09:19:38Z",
+ "generated_at": "2026-11-06T16:59:01Z",
  "boundary": {
   "source": "ANC single-member districts 3F01, 3F02 and 3F05 around the Van Ness-UDC Metro (Open Data DC). DC has no planning area named Van Ness.",
   "rings": [
@@ -3173,19 +3173,6 @@
    "smd": "3F01"
   },
   {
-   "id": "HO2700148",
-   "issued": "2026-10-22T04:00:00Z",
-   "group": "Home businesses",
-   "type": "HOME OCCUPATION",
-   "subtype": "NA",
-   "address": "4501 CONNECTICUT AVE NW 317 20008",
-   "work": "",
-   "zoning": "RA-4",
-   "lat": 38.9485,
-   "lon": -77.06519,
-   "smd": "3F02"
-  },
-  {
    "id": "E2700736",
    "issued": "2026-10-22T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -3212,17 +3199,17 @@
    "smd": "3F05"
   },
   {
-   "id": "E2700662",
-   "issued": "2026-10-20T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "3609 APPLETON ST NW 20008",
+   "id": "HO2700148",
+   "issued": "2026-10-22T04:00:00Z",
+   "group": "Home businesses",
+   "type": "HOME OCCUPATION",
+   "subtype": "NA",
+   "address": "4501 CONNECTICUT AVE NW 317 20008",
    "work": "",
-   "zoning": "R-1B",
-   "lat": 38.94899,
-   "lon": -77.07053,
-   "smd": "3F01"
+   "zoning": "RA-4",
+   "lat": 38.9485,
+   "lon": -77.06519,
+   "smd": "3F02"
   },
   {
    "id": "EA2700124",
@@ -3235,6 +3222,19 @@
    "zoning": "RA-4",
    "lat": 38.95022,
    "lon": -77.06757,
+   "smd": "3F01"
+  },
+  {
+   "id": "E2700662",
+   "issued": "2026-10-20T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "3609 APPLETON ST NW 20008",
+   "work": "",
+   "zoning": "R-1B",
+   "lat": 38.94899,
+   "lon": -77.07053,
    "smd": "3F01"
   },
   {
@@ -3264,19 +3264,6 @@
    "smd": "3F02"
   },
   {
-   "id": "F2600850",
-   "issued": "2026-10-14T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "FENCE",
-   "address": "4620 36TH ST NW 20008",
-   "work": "INSTALL FENCE",
-   "zoning": "R-1B",
-   "lat": 38.95044,
-   "lon": -77.07009,
-   "smd": "3F01"
-  },
-  {
    "id": "BP2700217",
    "issued": "2026-10-14T04:00:00Z",
    "group": "Minor work",
@@ -3288,6 +3275,19 @@
    "lat": 38.94694,
    "lon": -77.06964,
    "smd": "3F05"
+  },
+  {
+   "id": "F2600850",
+   "issued": "2026-10-14T04:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "FENCE",
+   "address": "4620 36TH ST NW 20008",
+   "work": "INSTALL FENCE",
+   "zoning": "R-1B",
+   "lat": 38.95044,
+   "lon": -77.07009,
+   "smd": "3F01"
   },
   {
    "id": "E2700459",
@@ -3316,19 +3316,6 @@
    "smd": "3F01"
   },
   {
-   "id": "P2700267",
-   "issued": "2026-10-09T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "3566 ALTON PL NW 20008",
-   "work": "",
-   "zoning": "R-1B",
-   "lat": 38.94686,
-   "lon": -77.06945,
-   "smd": "3F05"
-  },
-  {
    "id": "EG2700146",
    "issued": "2026-10-09T04:00:00Z",
    "group": "Minor work",
@@ -3340,6 +3327,19 @@
    "lat": 38.94816,
    "lon": -77.06824,
    "smd": "3F01"
+  },
+  {
+   "id": "P2700267",
+   "issued": "2026-10-09T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "3566 ALTON PL NW 20008",
+   "work": "",
+   "zoning": "R-1B",
+   "lat": 38.94686,
+   "lon": -77.06945,
+   "smd": "3F05"
   },
   {
    "id": "SB2600218",
@@ -3369,13 +3369,13 @@
   }
  ],
  "requests": {
-  "total": 227,
-  "previous_total": 237,
+  "total": 221,
+  "previous_total": 239,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
-    "count": 48,
-    "previous": 58
+    "count": 47,
+    "previous": 57
    },
    {
     "type": "Parking Enforcement",
@@ -3384,13 +3384,13 @@
    },
    {
     "type": "Bulk Collection",
-    "count": 33,
-    "previous": 25
+    "count": 31,
+    "previous": 27
    },
    {
     "type": "Graffiti Removal",
     "count": 12,
-    "previous": 1
+    "previous": 0
    },
    {
     "type": "Trash Collection - Missed",
@@ -3403,19 +3403,9 @@
     "previous": 2
    },
    {
-    "type": "Recycling Collection - Missed",
-    "count": 5,
-    "previous": 3
-   },
-   {
     "type": "Roadway Signs",
     "count": 5,
     "previous": 9
-   },
-   {
-    "type": "Out of State Parking Violation (ROSA)",
-    "count": 4,
-    "previous": 0
    },
    {
     "type": "Supercan - Delivery",
@@ -3423,9 +3413,14 @@
     "previous": 7
    },
    {
-    "type": "Streetlight Repair Investigation",
+    "type": "Recycling Collection - Missed",
+    "count": 4,
+    "previous": 4
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
     "count": 3,
-    "previous": 0
+    "previous": 1
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
@@ -3476,6 +3471,11 @@
     "type": "Tree Pruning",
     "count": 2,
     "previous": 9
+   },
+   {
+    "type": "Streetlight Repair Investigation",
+    "count": 2,
+    "previous": 1
    },
    {
     "type": "DMV - Drivers License/ID Issues",
@@ -3578,7 +3578,7 @@
     "previous": 4
    }
   ],
-  "open": 67,
+  "open": 64,
   "recent": [
    {
     "type": "Bulk Collection",
@@ -3634,8 +3634,8 @@
     "type": "Out of State Parking Violation (ROSA)",
     "agency": "DPW",
     "added": "2026-11-05T15:55:03Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-06T08:07:37Z",
+    "status": "Closed",
     "block": "3100 block of BRANDYWINE STREET NW",
     "lat": 38.949,
     "lon": -77.063
@@ -4080,7 +4080,2094 @@
     "lat": 38.949,
     "lon": -77.069
    }
-  ]
+  ],
+  "mapped": {
+   "types": [
+    "Bulk Collection",
+    "Graffiti Removal",
+    "Parking Enforcement",
+    "Trash Collection - Missed",
+    "Out of State Parking Violation (ROSA)",
+    "Roadway Signs",
+    "Scheduled Yard Waste",
+    "DMV - Drivers License/ID Issues",
+    "DOEE - LIHEAP",
+    "Abandoned Vehicle - On Public Property",
+    "DMV - Online Processing Issues",
+    "Recycling Collection - Missed",
+    "Supercan - Delivery",
+    "Illegal Dumping",
+    "Tree Pruning",
+    "DGS - Overflowing Recycling Can",
+    "DMV - Vehicle Registration Issues",
+    "DC Health Rodent & Vector Control",
+    "Traffic Lights and Pedestrian Walk Signals",
+    "DMV - Driver and Vehicle Services Refund",
+    "DMV - Adjudication Supervisor",
+    "Dockless Vehicle Parking Complaint",
+    "Bicycle Services",
+    "Public Space Litter Can-Collection",
+    "Streetlight Repair Investigation",
+    "Trash Cart Repair",
+    "Grass Mowing Services Missed (DGS)",
+    "DOB - Vacant Private Property Inspection",
+    "Sidewalk Repair",
+    "Container Removal",
+    "Tree Inspection",
+    "Roadway Repair",
+    "Parking Meter Repair",
+    "Public Space Litter Can Repair",
+    "Missed Curbside Compost Collection",
+    "Dead Animal Collection",
+    "DMV - Forms, Applications, and Manuals Request",
+    "DC How Am I Driving?",
+    "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
+    "Public Space Inspection",
+    "Residential Parking Permit Violation"
+   ],
+   "blocks": [
+    {
+     "block": "3600 block of VEAZEY STREET NW",
+     "lat": 38.944,
+     "lon": -77.071,
+     "r": [
+      [
+       0,
+       "2026-11-06",
+       null,
+       1
+      ],
+      [
+       3,
+       "2026-11-05",
+       null,
+       1
+      ],
+      [
+       6,
+       "2026-11-04",
+       null,
+       1
+      ],
+      [
+       11,
+       "2026-11-03",
+       "2026-11-05",
+       0
+      ],
+      [
+       3,
+       "2026-11-03",
+       "2026-11-05",
+       0
+      ],
+      [
+       0,
+       "2026-10-29",
+       "2026-11-05",
+       0
+      ],
+      [
+       0,
+       "2026-10-23",
+       "2026-10-30",
+       0
+      ],
+      [
+       11,
+       "2026-10-22",
+       "2026-10-23",
+       0
+      ],
+      [
+       6,
+       "2026-10-08",
+       "2026-10-13",
+       0
+      ],
+      [
+       0,
+       "2026-10-08",
+       "2026-10-13",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3100 block of ALBEMARLE STREET NW",
+     "lat": 38.948,
+     "lon": -77.064,
+     "r": [
+      [
+       1,
+       "2026-11-05",
+       null,
+       1
+      ],
+      [
+       5,
+       "2026-11-05",
+       null,
+       1
+      ],
+      [
+       2,
+       "2026-10-24",
+       "2026-10-24",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4200 block of CONNECTICUT AVENUE NW",
+     "lat": 38.944,
+     "lon": -77.063,
+     "r": [
+      [
+       1,
+       "2026-11-05",
+       null,
+       1
+      ],
+      [
+       1,
+       "2026-10-29",
+       null,
+       1
+      ],
+      [
+       2,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       2,
+       "2026-10-23",
+       "2026-10-23",
+       0
+      ],
+      [
+       2,
+       "2026-10-21",
+       "2026-10-21",
+       0
+      ],
+      [
+       2,
+       "2026-10-14",
+       "2026-10-14",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4000 block of CONNECTICUT AVENUE NW",
+     "lat": 38.942,
+     "lon": -77.062,
+     "r": [
+      [
+       2,
+       "2026-11-05",
+       "2026-11-05",
+       0
+      ],
+      [
+       2,
+       "2026-11-04",
+       "2026-11-05",
+       0
+      ],
+      [
+       31,
+       "2026-10-22",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "3600 block of VAN NESS STREET NW",
+     "lat": 38.943,
+     "lon": -77.071,
+     "r": [
+      [
+       3,
+       "2026-11-05",
+       null,
+       1
+      ],
+      [
+       3,
+       "2026-11-03",
+       "2026-11-05",
+       0
+      ],
+      [
+       0,
+       "2026-10-26",
+       "2026-10-30",
+       0
+      ],
+      [
+       3,
+       "2026-10-23",
+       "2026-10-27",
+       0
+      ],
+      [
+       0,
+       "2026-10-17",
+       "2026-10-26",
+       0
+      ],
+      [
+       0,
+       "2026-10-17",
+       "2026-10-26",
+       0
+      ],
+      [
+       0,
+       "2026-10-17",
+       "2026-10-26",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3100 block of BRANDYWINE STREET NW",
+     "lat": 38.949,
+     "lon": -77.063,
+     "r": [
+      [
+       4,
+       "2026-11-05",
+       "2026-11-06",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4700 block of 29TH PLACE NW",
+     "lat": 38.951,
+     "lon": -77.061,
+     "r": [
+      [
+       0,
+       "2026-11-05",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "UPTON STREET NW AND CONNECTICUT AVENUE NW",
+     "lat": 38.942,
+     "lon": -77.062,
+     "r": [
+      [
+       2,
+       "2026-11-05",
+       "2026-11-06",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3500 block of BRANDYWINE STREET NW",
+     "lat": 38.95,
+     "lon": -77.069,
+     "r": [
+      [
+       2,
+       "2026-11-05",
+       "2026-11-05",
+       0
+      ],
+      [
+       30,
+       "2026-10-23",
+       "2026-10-26",
+       0
+      ],
+      [
+       0,
+       "2026-10-13",
+       "2026-10-19",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3100 block of DAVENPORT STREET NW",
+     "lat": 38.952,
+     "lon": -77.065,
+     "r": [
+      [
+       6,
+       "2026-11-05",
+       null,
+       1
+      ],
+      [
+       6,
+       "2026-10-15",
+       "2026-10-20",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3000 block of ALBEMARLE STREET NW",
+     "lat": 38.948,
+     "lon": -77.062,
+     "r": [
+      [
+       7,
+       "2026-11-04",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "2900 block of BRANDYWINE STREET NW",
+     "lat": 38.95,
+     "lon": -77.061,
+     "r": [
+      [
+       6,
+       "2026-11-04",
+       null,
+       1
+      ],
+      [
+       6,
+       "2026-10-09",
+       "2026-10-13",
+       0
+      ],
+      [
+       11,
+       "2026-10-08",
+       "2026-10-10",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "2900 block of UPTON STREET NW",
+     "lat": 38.942,
+     "lon": -77.061,
+     "r": [
+      [
+       2,
+       "2026-11-04",
+       "2026-11-04",
+       0
+      ],
+      [
+       2,
+       "2026-11-04",
+       "2026-11-04",
+       0
+      ],
+      [
+       2,
+       "2026-11-04",
+       "2026-11-04",
+       0
+      ],
+      [
+       2,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ],
+      [
+       2,
+       "2026-11-02",
+       "2026-11-02",
+       0
+      ],
+      [
+       6,
+       "2026-11-02",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-11-01",
+       "2026-11-05",
+       0
+      ],
+      [
+       0,
+       "2026-10-29",
+       "2026-11-05",
+       0
+      ],
+      [
+       6,
+       "2026-10-26",
+       "2026-11-03",
+       0
+      ],
+      [
+       2,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       0,
+       "2026-10-08",
+       "2026-10-19",
+       0
+      ],
+      [
+       6,
+       "2026-10-07",
+       "2026-10-13",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4600 block of CONNECTICUT AVENUE NW",
+     "lat": 38.95,
+     "lon": -77.066,
+     "r": [
+      [
+       8,
+       "2026-11-04",
+       "2026-11-04",
+       0
+      ],
+      [
+       20,
+       "2026-10-29",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "32ND STREET NW AND BRANDYWINE STREET NW",
+     "lat": 38.95,
+     "lon": -77.064,
+     "r": [
+      [
+       9,
+       "2026-11-04",
+       "2026-11-05",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4200 block of 37TH STREET NW",
+     "lat": 38.944,
+     "lon": -77.072,
+     "r": [
+      [
+       3,
+       "2026-11-03",
+       "2026-11-05",
+       0
+      ],
+      [
+       6,
+       "2026-10-12",
+       "2026-10-20",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4600 block of CONNECTICUT AVENUE NW",
+     "lat": 38.95,
+     "lon": -77.067,
+     "r": [
+      [
+       10,
+       "2026-11-03",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "4700 block of CONNECTICUT AVENUE NW",
+     "lat": 38.951,
+     "lon": -77.068,
+     "r": [
+      [
+       2,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ],
+      [
+       17,
+       "2026-10-30",
+       "2026-10-30",
+       0
+      ],
+      [
+       2,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       2,
+       "2026-10-24",
+       "2026-10-24",
+       0
+      ],
+      [
+       2,
+       "2026-10-23",
+       "2026-10-23",
+       0
+      ],
+      [
+       33,
+       "2026-10-22",
+       null,
+       1
+      ],
+      [
+       2,
+       "2026-10-21",
+       "2026-10-21",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4300 block of RENO ROAD NW",
+     "lat": 38.946,
+     "lon": -77.072,
+     "r": [
+      [
+       6,
+       "2026-11-03",
+       null,
+       1
+      ],
+      [
+       17,
+       "2026-10-11",
+       "2026-10-22",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3500 block of CHESAPEAKE STREET NW",
+     "lat": 38.951,
+     "lon": -77.069,
+     "r": [
+      [
+       6,
+       "2026-11-03",
+       null,
+       1
+      ],
+      [
+       2,
+       "2026-10-19",
+       "2026-10-19",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "2900 block of UPTON STREET NW",
+     "lat": 38.942,
+     "lon": -77.06,
+     "r": [
+      [
+       0,
+       "2026-11-02",
+       "2026-11-05",
+       0
+      ],
+      [
+       6,
+       "2026-10-25",
+       "2026-11-03",
+       0
+      ],
+      [
+       6,
+       "2026-10-24",
+       "2026-10-27",
+       0
+      ],
+      [
+       6,
+       "2026-10-14",
+       "2026-10-20",
+       0
+      ],
+      [
+       6,
+       "2026-10-13",
+       "2026-10-20",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3000 block of VAN NESS STREET NW",
+     "lat": 38.944,
+     "lon": -77.061,
+     "r": [
+      [
+       2,
+       "2026-11-02",
+       "2026-11-02",
+       0
+      ],
+      [
+       2,
+       "2026-11-01",
+       "2026-11-01",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3500 block of BRANDYWINE STREET NW",
+     "lat": 38.949,
+     "lon": -77.068,
+     "r": [
+      [
+       6,
+       "2026-11-02",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "3500 block of BRANDYWINE STREET NW",
+     "lat": 38.949,
+     "lon": -77.069,
+     "r": [
+      [
+       6,
+       "2026-11-02",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-10-22",
+       "2026-10-26",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4300 block of RENO ROAD NW",
+     "lat": 38.946,
+     "lon": -77.071,
+     "r": [
+      [
+       12,
+       "2026-11-02",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "4400 block of 35TH STREET NW",
+     "lat": 38.947,
+     "lon": -77.067,
+     "r": [
+      [
+       6,
+       "2026-11-02",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "4500 block of CONNECTICUT AVENUE NW",
+     "lat": 38.948,
+     "lon": -77.066,
+     "r": [
+      [
+       13,
+       "2026-11-02",
+       null,
+       1
+      ],
+      [
+       2,
+       "2026-11-02",
+       "2026-11-02",
+       0
+      ],
+      [
+       18,
+       "2026-10-30",
+       "2026-10-30",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3600 block of APPLETON STREET NW",
+     "lat": 38.949,
+     "lon": -77.071,
+     "r": [
+      [
+       6,
+       "2026-11-01",
+       null,
+       1
+      ],
+      [
+       6,
+       "2026-10-10",
+       "2026-10-13",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4600 block of RENO ROAD NW",
+     "lat": 38.95,
+     "lon": -77.072,
+     "r": [
+      [
+       0,
+       "2026-11-01",
+       "2026-11-05",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3600 block of VAN NESS STREET NW",
+     "lat": 38.943,
+     "lon": -77.07,
+     "r": [
+      [
+       6,
+       "2026-10-31",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "3600 block of UPTON STREET NW",
+     "lat": 38.942,
+     "lon": -77.07,
+     "r": [
+      [
+       6,
+       "2026-10-31",
+       null,
+       1
+      ],
+      [
+       6,
+       "2026-10-31",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "3600 block of ALTON PLACE NW",
+     "lat": 38.947,
+     "lon": -77.072,
+     "r": [
+      [
+       14,
+       "2026-10-31",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "4500 block of 30TH STREET NW",
+     "lat": 38.949,
+     "lon": -77.062,
+     "r": [
+      [
+       6,
+       "2026-10-31",
+       null,
+       1
+      ],
+      [
+       6,
+       "2026-10-16",
+       "2026-10-20",
+       0
+      ],
+      [
+       0,
+       "2026-10-16",
+       "2026-10-26",
+       0
+      ],
+      [
+       34,
+       "2026-10-08",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "3500 block of APPLETON STREET NW",
+     "lat": 38.949,
+     "lon": -77.069,
+     "r": [
+      [
+       6,
+       "2026-10-31",
+       null,
+       1
+      ],
+      [
+       6,
+       "2026-10-18",
+       "2026-10-27",
+       0
+      ],
+      [
+       6,
+       "2026-10-10",
+       "2026-10-13",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3500 block of ALBEMARLE STREET NW",
+     "lat": 38.948,
+     "lon": -77.067,
+     "r": [
+      [
+       2,
+       "2026-10-31",
+       "2026-10-31",
+       0
+      ],
+      [
+       2,
+       "2026-10-10",
+       "2026-10-10",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "FOREST HILLS PARK",
+     "lat": 38.95,
+     "lon": -77.065,
+     "r": [
+      [
+       15,
+       "2026-10-30",
+       "2026-11-02",
+       0
+      ],
+      [
+       15,
+       "2026-10-30",
+       "2026-11-02",
+       0
+      ],
+      [
+       23,
+       "2026-10-28",
+       "2026-10-29",
+       0
+      ],
+      [
+       23,
+       "2026-10-24",
+       "2026-10-27",
+       0
+      ],
+      [
+       2,
+       "2026-10-08",
+       "2026-10-08",
+       0
+      ],
+      [
+       9,
+       "2026-10-08",
+       "2026-10-15",
+       0
+      ],
+      [
+       40,
+       "2026-10-08",
+       "2026-10-08",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3600 block of YUMA STREET NW",
+     "lat": 38.946,
+     "lon": -77.071,
+     "r": [
+      [
+       2,
+       "2026-10-30",
+       "2026-10-30",
+       0
+      ],
+      [
+       24,
+       "2026-10-27",
+       "2026-10-29",
+       0
+      ],
+      [
+       2,
+       "2026-10-13",
+       "2026-10-13",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4500 block of CONNECTICUT AVENUE NW",
+     "lat": 38.949,
+     "lon": -77.065,
+     "r": [
+      [
+       10,
+       "2026-10-30",
+       null,
+       1
+      ],
+      [
+       16,
+       "2026-10-30",
+       null,
+       1
+      ],
+      [
+       2,
+       "2026-10-27",
+       "2026-10-27",
+       0
+      ],
+      [
+       2,
+       "2026-10-16",
+       "2026-10-16",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3100 block of DAVENPORT STREET NW",
+     "lat": 38.952,
+     "lon": -77.064,
+     "r": [
+      [
+       6,
+       "2026-10-30",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-10-26",
+       "2026-10-30",
+       0
+      ],
+      [
+       6,
+       "2026-10-23",
+       "2026-10-27",
+       0
+      ],
+      [
+       0,
+       "2026-10-20",
+       "2026-10-26",
+       0
+      ],
+      [
+       6,
+       "2026-10-16",
+       "2026-10-20",
+       0
+      ],
+      [
+       6,
+       "2026-10-09",
+       "2026-10-13",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4500 block of RENO ROAD NW",
+     "lat": 38.949,
+     "lon": -77.072,
+     "r": [
+      [
+       5,
+       "2026-10-29",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "4500 block of CONNECTICUT AVENUE NW",
+     "lat": 38.949,
+     "lon": -77.067,
+     "r": [
+      [
+       5,
+       "2026-10-29",
+       null,
+       1
+      ],
+      [
+       19,
+       "2026-10-29",
+       "2026-11-05",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4200 block of CONNECTICUT AVENUE NW",
+     "lat": 38.945,
+     "lon": -77.065,
+     "r": [
+      [
+       1,
+       "2026-10-29",
+       "2026-11-02",
+       1
+      ],
+      [
+       1,
+       "2026-10-29",
+       "2026-11-02",
+       1
+      ],
+      [
+       1,
+       "2026-10-29",
+       "2026-11-02",
+       1
+      ],
+      [
+       1,
+       "2026-10-15",
+       "2026-11-02",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4200 block of CONNECTICUT AVENUE NW",
+     "lat": 38.943,
+     "lon": -77.063,
+     "r": [
+      [
+       1,
+       "2026-10-29",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "4600 block of CONNECTICUT AVENUE NW",
+     "lat": 38.95,
+     "lon": -77.068,
+     "r": [
+      [
+       16,
+       "2026-10-29",
+       "2026-11-05",
+       0
+      ],
+      [
+       5,
+       "2026-10-28",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "3500 block of INTERNATIONAL PLACE NW",
+     "lat": 38.943,
+     "lon": -77.065,
+     "r": [
+      [
+       1,
+       "2026-10-29",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "3500 block of INTERNATIONAL COURT NW",
+     "lat": 38.943,
+     "lon": -77.068,
+     "r": [
+      [
+       1,
+       "2026-10-29",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "4500 block of 29TH STREET NW",
+     "lat": 38.949,
+     "lon": -77.058,
+     "r": [
+      [
+       6,
+       "2026-10-29",
+       "2026-11-03",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4300 block of CONNECTICUT AVENUE NW",
+     "lat": 38.946,
+     "lon": -77.065,
+     "r": [
+      [
+       21,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       32,
+       "2026-10-22",
+       null,
+       1
+      ],
+      [
+       5,
+       "2026-10-15",
+       null,
+       1
+      ],
+      [
+       2,
+       "2026-10-13",
+       "2026-10-13",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "FOREST HILLS PLAYGROUND",
+     "lat": 38.95,
+     "lon": -77.065,
+     "r": [
+      [
+       22,
+       "2026-10-28",
+       "2026-11-02",
+       0
+      ],
+      [
+       1,
+       "2026-10-28",
+       null,
+       1
+      ],
+      [
+       23,
+       "2026-10-28",
+       "2026-10-29",
+       1
+      ],
+      [
+       17,
+       "2026-10-28",
+       "2026-10-29",
+       0
+      ],
+      [
+       17,
+       "2026-10-28",
+       "2026-10-29",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3100 block of BRANDYWINE STREET NW",
+     "lat": 38.949,
+     "lon": -77.064,
+     "r": [
+      [
+       2,
+       "2026-10-27",
+       "2026-10-27",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3600 block of UPTON STREET NW",
+     "lat": 38.942,
+     "lon": -77.072,
+     "r": [
+      [
+       25,
+       "2026-10-27",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "3500 block of INTERNATIONAL DRIVE NW",
+     "lat": 38.943,
+     "lon": -77.068,
+     "r": [
+      [
+       26,
+       "2026-10-26",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "4500 block of LINNEAN AVENUE NW",
+     "lat": 38.948,
+     "lon": -77.057,
+     "r": [
+      [
+       27,
+       "2026-10-26",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "2900 block of VAN NESS STREET NW",
+     "lat": 38.943,
+     "lon": -77.061,
+     "r": [
+      [
+       2,
+       "2026-10-26",
+       "2026-10-26",
+       0
+      ],
+      [
+       8,
+       "2026-10-23",
+       "2026-10-23",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3100 block of ELLICOTT STREET NW",
+     "lat": 38.953,
+     "lon": -77.063,
+     "r": [
+      [
+       6,
+       "2026-10-26",
+       "2026-11-03",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4100 block of CONNECTICUT AVENUE NW",
+     "lat": 38.942,
+     "lon": -77.062,
+     "r": [
+      [
+       28,
+       "2026-10-25",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "2900 block of TILDEN STREET NW",
+     "lat": 38.941,
+     "lon": -77.059,
+     "r": [
+      [
+       9,
+       "2026-10-25",
+       "2026-11-03",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4600 block of 36TH STREET NW",
+     "lat": 38.95,
+     "lon": -77.07,
+     "r": [
+      [
+       0,
+       "2026-10-24",
+       "2026-10-30",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3600 block of ALTON PLACE NW",
+     "lat": 38.947,
+     "lon": -77.071,
+     "r": [
+      [
+       29,
+       "2026-10-24",
+       "2026-11-06",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4400 block of CONNECTICUT AVENUE NW",
+     "lat": 38.947,
+     "lon": -77.066,
+     "r": [
+      [
+       2,
+       "2026-10-24",
+       "2026-10-24",
+       0
+      ],
+      [
+       2,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       2,
+       "2026-10-16",
+       "2026-10-16",
+       0
+      ],
+      [
+       32,
+       "2026-10-09",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "3500 block of APPLETON STREET NW",
+     "lat": 38.949,
+     "lon": -77.067,
+     "r": [
+      [
+       2,
+       "2026-10-24",
+       "2026-10-24",
+       0
+      ],
+      [
+       2,
+       "2026-10-17",
+       "2026-10-17",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3600 block of ALBEMARLE STREET NW",
+     "lat": 38.948,
+     "lon": -77.071,
+     "r": [
+      [
+       16,
+       "2026-10-23",
+       "2026-10-29",
+       0
+      ],
+      [
+       2,
+       "2026-10-16",
+       "2026-10-16",
+       0
+      ],
+      [
+       6,
+       "2026-10-13",
+       "2026-10-20",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4700 block of 29TH PLACE NW",
+     "lat": 38.95,
+     "lon": -77.06,
+     "r": [
+      [
+       29,
+       "2026-10-23",
+       "2026-11-06",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "2900 block of ALBEMARLE STREET NW",
+     "lat": 38.948,
+     "lon": -77.06,
+     "r": [
+      [
+       0,
+       "2026-10-23",
+       "2026-10-30",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3500 block of APPLETON STREET NW",
+     "lat": 38.949,
+     "lon": -77.068,
+     "r": [
+      [
+       0,
+       "2026-10-22",
+       "2026-10-26",
+       0
+      ],
+      [
+       36,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       2,
+       "2026-10-08",
+       "2026-10-08",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3000 block of GRANT ROAD NW",
+     "lat": 38.951,
+     "lon": -77.063,
+     "r": [
+      [
+       6,
+       "2026-10-22",
+       "2026-10-27",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "CUMBERLAND STREET NW AND CONNECTICUT AVENUE NW",
+     "lat": 38.951,
+     "lon": -77.068,
+     "r": [
+      [
+       17,
+       "2026-10-22",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "3500 block of ALBEMARLE STREET NW",
+     "lat": 38.948,
+     "lon": -77.069,
+     "r": [
+      [
+       34,
+       "2026-10-21",
+       null,
+       1
+      ],
+      [
+       34,
+       "2026-10-14",
+       "2026-10-15",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3600 block of VEAZEY STREET NW",
+     "lat": 38.944,
+     "lon": -77.072,
+     "r": [
+      [
+       0,
+       "2026-10-21",
+       "2026-10-26",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3600 block of WARREN STREET NW",
+     "lat": 38.945,
+     "lon": -77.071,
+     "r": [
+      [
+       0,
+       "2026-10-21",
+       "2026-10-26",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3500 block of CHESAPEAKE STREET NW",
+     "lat": 38.95,
+     "lon": -77.069,
+     "r": [
+      [
+       35,
+       "2026-10-20",
+       "2026-10-21",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "36TH STREET NW AND CHESAPEAKE STREET NW",
+     "lat": 38.951,
+     "lon": -77.07,
+     "r": [
+      [
+       35,
+       "2026-10-20",
+       "2026-10-21",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "2900 block of BRANDYWINE STREET NW",
+     "lat": 38.949,
+     "lon": -77.059,
+     "r": [
+      [
+       6,
+       "2026-10-20",
+       "2026-10-27",
+       0
+      ],
+      [
+       6,
+       "2026-10-09",
+       "2026-10-13",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4600 block of 30TH STREET NW",
+     "lat": 38.951,
+     "lon": -77.061,
+     "r": [
+      [
+       0,
+       "2026-10-20",
+       "2026-10-26",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4300 block of RENO ROAD NW",
+     "lat": 38.945,
+     "lon": -77.071,
+     "r": [
+      [
+       0,
+       "2026-10-20",
+       "2026-10-26",
+       0
+      ],
+      [
+       0,
+       "2026-10-13",
+       "2026-10-19",
+       0
+      ],
+      [
+       0,
+       "2026-10-08",
+       "2026-10-13",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4500 block of CONNECTICUT AVENUE NW",
+     "lat": 38.949,
+     "lon": -77.066,
+     "r": [
+      [
+       4,
+       "2026-10-20",
+       "2026-10-21",
+       0
+      ],
+      [
+       17,
+       "2026-10-10",
+       "2026-10-13",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3500 block of CHESAPEAKE STREET NW",
+     "lat": 38.951,
+     "lon": -77.07,
+     "r": [
+      [
+       3,
+       "2026-10-19",
+       "2026-10-22",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "36TH STREET NW AND ALTON PLACE NW",
+     "lat": 38.947,
+     "lon": -77.07,
+     "r": [
+      [
+       37,
+       "2026-10-19",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "4500 block of 36TH STREET NW",
+     "lat": 38.949,
+     "lon": -77.07,
+     "r": [
+      [
+       6,
+       "2026-10-19",
+       "2026-10-27",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4700 block of 29TH PLACE NW",
+     "lat": 38.951,
+     "lon": -77.06,
+     "r": [
+      [
+       7,
+       "2026-10-19",
+       "2026-10-28",
+       0
+      ],
+      [
+       12,
+       "2026-10-08",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "4400 block of CONNECTICUT AVENUE NW",
+     "lat": 38.948,
+     "lon": -77.066,
+     "r": [
+      [
+       2,
+       "2026-10-19",
+       "2026-10-19",
+       0
+      ],
+      [
+       2,
+       "2026-10-08",
+       "2026-10-08",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3100 block of CHESAPEAKE STREET NW",
+     "lat": 38.95,
+     "lon": -77.063,
+     "r": [
+      [
+       6,
+       "2026-10-17",
+       "2026-10-20",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4600 block of 30TH STREET NW",
+     "lat": 38.95,
+     "lon": -77.061,
+     "r": [
+      [
+       6,
+       "2026-10-17",
+       "2026-10-20",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "CHESAPEAKE STREET NW AND CONNECTICUT AVENUE NW",
+     "lat": 38.951,
+     "lon": -77.067,
+     "r": [
+      [
+       24,
+       "2026-10-16",
+       "2026-10-21",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4500 block of 29TH STREET NW",
+     "lat": 38.949,
+     "lon": -77.059,
+     "r": [
+      [
+       38,
+       "2026-10-16",
+       null,
+       1
+      ],
+      [
+       6,
+       "2026-10-16",
+       "2026-10-20",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3600 block of WARREN STREET NW",
+     "lat": 38.945,
+     "lon": -77.072,
+     "r": [
+      [
+       0,
+       "2026-10-15",
+       "2026-10-19",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4200 block of CONNECTICUT AVENUE NW",
+     "lat": 38.944,
+     "lon": -77.064,
+     "r": [
+      [
+       1,
+       "2026-10-15",
+       "2026-11-02",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3100 block of APPLETON STREET NW",
+     "lat": 38.949,
+     "lon": -77.063,
+     "r": [
+      [
+       3,
+       "2026-10-14",
+       "2026-10-15",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3500 block of ALTON PLACE NW",
+     "lat": 38.947,
+     "lon": -77.068,
+     "r": [
+      [
+       0,
+       "2026-10-14",
+       "2026-10-19",
+       0
+      ],
+      [
+       10,
+       "2026-10-08",
+       "2026-10-13",
+       0
+      ],
+      [
+       4,
+       "2026-10-07",
+       "2026-10-08",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3600 block of WINDOM PLACE NW",
+     "lat": 38.945,
+     "lon": -77.072,
+     "r": [
+      [
+       6,
+       "2026-10-13",
+       "2026-10-20",
+       0
+      ],
+      [
+       17,
+       "2026-10-08",
+       "2026-10-22",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4500 block of 32ND STREET NW",
+     "lat": 38.949,
+     "lon": -77.064,
+     "r": [
+      [
+       3,
+       "2026-10-13",
+       "2026-10-14",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4300 block of 37TH STREET NW",
+     "lat": 38.945,
+     "lon": -77.072,
+     "r": [
+      [
+       12,
+       "2026-10-13",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "YUMA STREET NW AND CONNECTICUT AVENUE NW",
+     "lat": 38.947,
+     "lon": -77.065,
+     "r": [
+      [
+       14,
+       "2026-10-13",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "3500 block of YUMA STREET NW",
+     "lat": 38.947,
+     "lon": -77.069,
+     "r": [
+      [
+       12,
+       "2026-10-13",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "2900 block of CHESAPEAKE STREET NW",
+     "lat": 38.95,
+     "lon": -77.059,
+     "r": [
+      [
+       3,
+       "2026-10-13",
+       "2026-10-14",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "2900 block of UPTON STREET NW",
+     "lat": 38.942,
+     "lon": -77.059,
+     "r": [
+      [
+       6,
+       "2026-10-12",
+       "2026-10-20",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "CONNECTICUT AVENUE NW AND TILDEN STREET NW",
+     "lat": 38.941,
+     "lon": -77.062,
+     "r": [
+      [
+       31,
+       "2026-10-12",
+       "2026-10-19",
+       0
+      ],
+      [
+       39,
+       "2026-10-11",
+       null,
+       1
+      ],
+      [
+       39,
+       "2026-10-11",
+       null,
+       1
+      ],
+      [
+       39,
+       "2026-10-10",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "2900 block of BRANDYWINE STREET NW",
+     "lat": 38.95,
+     "lon": -77.06,
+     "r": [
+      [
+       11,
+       "2026-10-09",
+       "2026-10-10",
+       0
+      ],
+      [
+       3,
+       "2026-10-08",
+       "2026-10-09",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "ALBEMARLE STREET NW AND RENO ROAD NW",
+     "lat": 38.948,
+     "lon": -77.073,
+     "r": [
+      [
+       30,
+       "2026-10-09",
+       "2026-10-09",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4300 block of 36TH STREET NW",
+     "lat": 38.946,
+     "lon": -77.07,
+     "r": [
+      [
+       6,
+       "2026-10-09",
+       "2026-10-13",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4400 block of CONNECTICUT AVENUE NW",
+     "lat": 38.947,
+     "lon": -77.065,
+     "r": [
+      [
+       2,
+       "2026-10-08",
+       "2026-10-08",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "2900 block of TILDEN STREET NW",
+     "lat": 38.941,
+     "lon": -77.06,
+     "r": [
+      [
+       6,
+       "2026-10-07",
+       "2026-10-13",
+       0
+      ],
+      [
+       0,
+       "2026-10-07",
+       "2026-10-13",
+       0
+      ]
+     ]
+    }
+   ]
+  }
  },
  "crime": {
   "total": 12,
@@ -4127,7 +6214,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-06T09:19:38Z",
+  "generated_at": "2026-11-06T16:59:01Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -4167,26 +6254,26 @@
   },
   "primary": "house",
   "house": {
-   "median_12mo": 1840000,
-   "count_12mo": 69,
+   "median_12mo": 1820000,
+   "count_12mo": 72,
    "median_prev_12mo": 1800000,
    "count_prev_12mo": 51
   },
   "condo": {
-   "median_12mo": 319500,
-   "count_12mo": 36,
-   "median_prev_12mo": 385000,
-   "count_prev_12mo": 45
+   "median_12mo": 320000,
+   "count_12mo": 37,
+   "median_prev_12mo": 386000,
+   "count_prev_12mo": 44
   },
   "last_60d": {
-   "median": 1368500,
-   "count": 11,
-   "median_ppsf": 717,
-   "ppsf_count": 11
+   "median": 1399250,
+   "count": 14,
+   "median_ppsf": 724,
+   "ppsf_count": 14
   },
   "above_assessment_12mo": {
-   "n": 64,
-   "of": 105
+   "n": 67,
+   "of": 109
   },
   "by_month": [
    {
@@ -4241,8 +6328,8 @@
    },
    {
     "month": "2026-10",
-    "median": 1315000,
-    "count": 7
+    "median": 1372500,
+    "count": 10
    },
    {
     "month": "2026-11",
@@ -4252,6 +6339,42 @@
   ],
   "by_month_basis": "houses only; calendar months, the last one in progress; median null when under 3 sales",
   "recent_sales": [
+   {
+    "address": "4430 Grant Rd NW",
+    "date": "2026-10-29",
+    "price": 760000,
+    "kind": "house",
+    "beds": 3,
+    "sqft": 1408,
+    "assessed": 1030050
+   },
+   {
+    "address": "4111 Connecticut Ave NW Ph 604",
+    "date": "2026-10-27",
+    "price": 780000,
+    "kind": "condo",
+    "beds": null,
+    "sqft": null,
+    "assessed": 755520
+   },
+   {
+    "address": "3620 Yuma St NW",
+    "date": "2026-10-27",
+    "price": 1537500,
+    "kind": "house",
+    "beds": 3,
+    "sqft": 1620,
+    "assessed": 1467000
+   },
+   {
+    "address": "5148 Linnean Ter NW",
+    "date": "2026-10-26",
+    "price": 3000000,
+    "kind": "house",
+    "beds": 3,
+    "sqft": 2784,
+    "assessed": 1808030
+   },
    {
     "address": "3819 Veazey St NW",
     "date": "2026-10-22",
@@ -4399,7 +6522,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-06T09:19:38Z",
+  "generated_at": "2026-11-06T16:59:01Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4536,32 +6659,32 @@
   "service": [
    {
     "type": "Scheduled Yard Waste",
-    "median_days": 7.67,
-    "city_median_days": 9.63,
-    "closed_n": 456
+    "median_days": 7.66,
+    "city_median_days": 9.59,
+    "closed_n": 455
    },
    {
     "type": "Bulk Collection",
-    "median_days": 7.74,
+    "median_days": 7.76,
     "city_median_days": 6.91,
-    "closed_n": 380
+    "closed_n": 378
    },
    {
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 357
+    "closed_n": 355
    },
    {
     "type": "Trash Collection - Missed",
-    "median_days": 7.74,
-    "city_median_days": 4.01,
-    "closed_n": 198
+    "median_days": 7.87,
+    "city_median_days": 3.98,
+    "closed_n": 197
    },
    {
     "type": "Recycling Collection - Missed",
     "median_days": 3.98,
-    "city_median_days": 4.85,
+    "city_median_days": 4.78,
     "closed_n": 187
    },
    {
@@ -4572,9 +6695,9 @@
    },
    {
     "type": "Roadway Signs",
-    "median_days": 54.54,
+    "median_days": 65.13,
     "city_median_days": 7.01,
-    "closed_n": 44
+    "closed_n": 43
    },
    {
     "type": "Pothole",
@@ -4586,7 +6709,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-06T09:19:38Z",
+  "generated_at": "2026-11-06T16:59:01Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4732,7 +6855,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T09:19:38Z",
+  "generated_at": "2026-11-06T16:59:01Z",
   "archive_days": 180,
   "sources": [
    {
@@ -5082,7 +7205,7 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-06T09:19:38Z",
+  "generated_at": "2026-11-06T16:59:01Z",
   "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
@@ -5211,7 +7334,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-06T09:19:38Z",
+  "generated_at": "2026-11-06T16:59:01Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -15231,7 +17354,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-06T09:19:38Z",
+  "generated_at": "2026-11-06T16:59:01Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
