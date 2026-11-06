@@ -23,19 +23,23 @@ const cfg = {
 };
 ---
 {!t ? <p class="empty">Transit stops didn&rsquo;t update tonight.</p> : (
-  <div class="board" data-cfg={JSON.stringify(cfg)} aria-live="polite">
+  <div class:list={["board", { wide: !compact }]} data-cfg={JSON.stringify(cfg)} aria-live="polite">
+    <div class="b-rail">
     {stations.map((s) => (
       <div class="stn" data-station={s.name}>
         <h3>{s.lines.map((l) => <span class={`ln ln-${l}`} title={`${l} line`}></span>)} {s.name}{s.km_outside > 0 && <span class="muted">{s.km_outside < 1 ? `${Math.round(s.km_outside * 1000)} m` : `${s.km_outside} km`} outside</span>}</h3>
         <ul class="rail"><li><span class="muted">Loading live trains…</span><b></b></li></ul>
       </div>
     ))}
+    </div>
+    <div class="b-more">
     <p class="bus-h">Buses <span class="muted" style="text-transform:none;letter-spacing:0;font-weight:400" data-where>near {stations[0]?.km_outside === 0 ? stations[0].name : `the middle of ${n.name}`}</span></p>
     <div class="buses"><p class="muted">Loading live buses…</p></div>
     <p class="bus-h">Capital Bikeshare</p>
     <ul class="bikes"><li><span class="muted">Loading docks…</span><b></b></li></ul>
     <button type="button" class="near">Use my location</button>
     <p class="note" data-status>Arrival times are WMATA&rsquo;s predictions and refresh every 30 seconds. Not affiliated with WMATA or Capital Bikeshare.</p>
+    </div>
   </div>
 )}
 

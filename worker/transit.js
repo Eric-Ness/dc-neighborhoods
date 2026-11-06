@@ -1,4 +1,5 @@
 // GET /api/transit?rail=<station names, |-separated>&stops=<WMATA stop ids>&docks=<bikeshare station ids>
+//                  &bbox=<west,south,east,north> (buses on the road inside a neighborhood-sized box)
 // Live arrivals for the transit board on our own pages. WMATA's key stays here (env.WMATA_API_KEY, a Worker
 // secret); every upstream answer is cached ~30 s, so traffic to the sites never multiplies calls to WMATA.
 // WMATA's terms allow showing the data in our own site but not redistributing it, so only our pages may call
@@ -7,8 +8,10 @@
 const WMATA = "https://api.wmata.com";
 const GBFS_STATUS = "https://gbfs.lyft.com/gbfs/1.1/dca-cabi/en/station_status.json";
 const TTL = 30;           // seconds, predictions and dock status
+const POS_TTL = 15;       // seconds, bus positions (one citywide answer for every site)
 const STATIONS_TTL = 86400;
 const MAX = { rail: 3, stops: 6, docks: 6 };
+const MAX_BOX = 0.1;      // degrees per side: a neighborhood plus its edges, never the whole region
 
 const json = (body, status = 200, extra = {}) =>
   new Response(JSON.stringify(body), {
@@ -45,7 +48,10 @@ export async function transit(request, env) {
   const rail = (url.searchParams.get("rail") || "").split("|").map((s) => s.trim()).filter(Boolean).slice(0, MAX.rail);
   const stops = (url.searchParams.get("stops") || "").split(",").filter((s) => /^\d{4,8}$/.test(s)).slice(0, MAX.stops);
   const docks = (url.searchParams.get("docks") || "").split(",").filter((s) => /^[\w-]{1,64}$/.test(s)).slice(0, MAX.docks);
-  const out = { rail: null, bus: null, bikes: null, alerts: [] };
+  const box = (url.searchParams.get("bbox") || "").split(",").map(Number);
+  const boxOk = box.length === 4 && box.every(Number.isFinite) && box[2] > box[0] && box[3] > box[1]
+    && box[2] - box[0] <= MAX_BOX && box[3] - box[1] <= MAX_BOX;
+  const out = { rail: null, bus: null, bikes: null, positions: null, alerts: [] };
   const key = env.WMATA_API_KEY;
   const wh = key ? { api_key: key } : null;
 
@@ -86,6 +92,20 @@ export async function transit(request, env) {
         return { stop: id, preds: (p.Predictions || []).map((x) => ({ route: x.RouteID, dir: x.DirectionText, min: x.Minutes })) };
       } catch { return { stop: id, preds: [] }; }
     })).then((r) => { out.bus = r; }));
+  }
+  if (wh && boxOk) {
+    // One citywide answer, cached, serves every neighborhood's box.
+    tasks.push(cached(`${WMATA}/Bus.svc/json/jBusPositions`, POS_TTL, wh).then((p) => {
+      const all = p.BusPositions || [];
+      // Report times are Eastern with no zone; age is measured against the newest report in the feed.
+      const t = (b) => Date.parse(`${b.DateTime}Z`);
+      const newest = Math.max(...all.map(t).filter(Number.isFinite));
+      out.positions = all
+        .filter((b) => b.Lon >= box[0] && b.Lon <= box[2] && b.Lat >= box[1] && b.Lat <= box[3] && b.RouteID)
+        .map((b) => ({ route: b.RouteID, to: b.TripHeadsign || "", dir: b.DirectionText || "",
+          lat: Math.round(b.Lat * 1e5) / 1e5, lon: Math.round(b.Lon * 1e5) / 1e5, age: Math.max(0, Math.round((newest - t(b)) / 1000)) }))
+        .slice(0, 150);
+    }).catch(() => { out.positions = null; }));
   }
   if (docks.length) {
     tasks.push(cached(GBFS_STATUS, TTL).then((g) => {

@@ -1,6 +1,7 @@
 ---
 import Hood from "../../layouts/Hood.astro";
 import TransitBoard from "../../components/TransitBoard.astro";
+import BusMap from "../../components/BusMap.astro";
 import { staticPaths, type Neighborhood } from "../../lib/data";
 
 export const getStaticPaths = staticPaths;
@@ -10,7 +11,10 @@ const t = n.transit;
 <Hood n={n} page="transit/" title={`Getting around ${n.name}: live Metro, bus and bikeshare`} description={`Live Metro train and bus arrivals and Capital Bikeshare docks in and around ${n.name}, Washington DC.`}
   heading="Getting around" intro={`Live arrivals at the Metro stations, bus stops and bikeshare docks in and around ${n.name}. Tap “Use my location” for the stops nearest you; your location stays in your browser.`}>
   <div class="atlas">
-    <div class="row" style="grid-template-columns:minmax(0,1fr);max-width:760px">
+    <div class="row" style="grid-template-columns:minmax(0,1fr)">
+      {t && n.blocks && <section class="panel" aria-labelledby="bus-h"><div class="ph"><h2 id="bus-h">Buses right now</h2></div>
+        <BusMap n={n} />
+      </section>}
       <section class="panel" aria-labelledby="live-h"><div class="ph"><h2 id="live-h">Next arrivals</h2></div>
         <TransitBoard n={n} />
       </section>

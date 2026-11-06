@@ -1,0 +1,270 @@
+---
+// Live bus map: the neighborhood's streets (ingest/blocks.py basemap), its bus stops and Metro stations
+// (ingest/transit.py), and the buses on the road right now. The browser asks our Worker (/api/transit) for bus
+// positions inside the map's box and, when a stop is tapped, that stop's predictions; the Worker caches each
+// WMATA answer ~30 s. The map is drawn here, so no map tiles or third-party requests.
+import type { Neighborhood } from "../lib/data";
+
+interface Props { n: Neighborhood }
+const { n } = Astro.props;
+const t = n.transit;
+const streets = n.blocks?.basemap.streets ?? [];
+const ring = n.boundary.rings.flat();
+const stops = t?.bus_stops ?? [];
+const pts = [...ring, ...stops.map((s) => [s.lon, s.lat] as [number, number])];
+const PAD = 0.0025;
+const west = Math.min(...pts.map((p) => p[0])) - PAD, east = Math.max(...pts.map((p) => p[0])) + PAD;
+const south = Math.min(...pts.map((p) => p[1])) - PAD, north = Math.max(...pts.map((p) => p[1])) + PAD;
+const cos = Math.cos((((south + north) / 2) * Math.PI) / 180);
+const W = 640, K = W / ((east - west) * cos), H = Math.round((north - south) * K);
+const x = (lo: number) => +((lo - west) * cos * K).toFixed(1);
+const y = (la: number) => +((north - la) * K).toFixed(1);
+const path = (p: [number, number][]) => "M" + p.map(([lo, la]) => `${x(lo)},${y(la)}`).join("L");
+const inView = (p: [number, number][]) => p.some(([lo, la]) => lo >= west && lo <= east && la >= south && la <= north);
+const segs = streets.filter((s) => inView(s.p));
+const outline = n.boundary.rings.map((r) => path(r) + "Z").join("");
+// The dashed edge skips sides two districts share, so a neighborhood made of several reads as one shape.
+const side = (a: [number, number], b: [number, number]) => [a, b].map((p) => p.map((v) => v.toFixed(5)).join(",")).sort().join("|");
+const sides = new Map<string, number>();
+for (const r of n.boundary.rings) for (let i = 1; i < r.length; i++) { const k = side(r[i - 1], r[i]); sides.set(k, (sides.get(k) ?? 0) + 1); }
+const edge = n.boundary.rings.map((r) => {
+  let d = "", open = false;
+  for (let i = 1; i < r.length; i++) {
+    if (sides.get(side(r[i - 1], r[i]))! > 1) { open = false; continue; }
+    d += open ? `L${x(r[i][0])},${y(r[i][1])}` : `M${x(r[i - 1][0])},${y(r[i - 1][1])}L${x(r[i][0])},${y(r[i][1])}`;
+    open = true;
+  }
+  return d;
+}).join("");
+// One label per major street, on the segment nearest the middle of its run in view, turned to follow it.
+const nice = (n: string) => n.replace(/ (NW|NE|SW|SE)$/, "").toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase());
+const runs = new Map<string, { x: number; y: number; a: number; len: number }[]>();
+for (const s of segs.filter((s) => s.k === "major" && s.p.length > 1)) {
+  const [a, b] = [s.p[0], s.p[s.p.length - 1]];
+  const dx = x(b[0]) - x(a[0]), dy = y(b[1]) - y(a[1]);
+  let ang = (Math.atan2(dy, dx) * 180) / Math.PI;
+  if (ang > 90) ang -= 180; else if (ang < -90) ang += 180;
+  const k = nice(s.n);
+  runs.set(k, [...(runs.get(k) ?? []), { x: (x(a[0]) + x(b[0])) / 2, y: (y(a[1]) + y(b[1])) / 2, a: ang, len: Math.hypot(dx, dy) }]);
+}
+const label = new Map<string, { x: number; y: number; a: number }>();
+for (const [k, r] of runs) {
+  if (/\b(Bn|Ramp|Exit)$/i.test(k)) continue;
+  const long = r.filter((p) => p.len > 45 && p.x > 40 && p.x < W - 40 && p.y > 30 && p.y < H - 30);
+  if (!long.length || r.length < 3) continue;
+  const cx = r.reduce((t, p) => t + p.x, 0) / r.length, cy = r.reduce((t, p) => t + p.y, 0) / r.length;
+  label.set(k, long.sort((p, q) => Math.hypot(p.x - cx, p.y - cy) - Math.hypot(q.x - cx, q.y - cy))[0]);
+}
+// The stop shown before anyone taps: the one nearest the Metro station inside the neighborhood, else the middle.
+const inStn = t?.stations.find((s) => s.km_outside === 0);
+const [ax, ay] = inStn ? [x(inStn.lon), y(inStn.lat)] : [W / 2, H / 2];
+const first = stops.map((s) => ({ id: s.id, d: Math.hypot(x(s.lon) - ax, y(s.lat) - ay) })).sort((a, b) => a.d - b.d)[0]?.id;
+// A Metro name near the right edge goes on the left of its marker.
+const metroIn = (t?.stations ?? []).filter((s) => s.lon >= west && s.lon <= east && s.lat >= south && s.lat <= north)
+  .map((s) => ({ ...s, left: x(s.lon) + 30 + (s.name.length + 6) * 9.5 > W }));
+const cfg = {
+  first,
+  // Boxes bus tags keep clear of: each Metro marker and its name.
+  avoid: metroIn.map((s) => { const w = 30 + (s.name.length + 6) * 9.5; return { x: x(s.lon) + (s.left ? 14 - w / 2 : w / 2 - 14), y: y(s.lat), w }; }),
+  bbox: [west, south, east, north].map((v) => +v.toFixed(5)),
+  w: W, h: H, k: K, cos,
+  stops: stops.map((s) => ({ id: s.id, name: s.name, x: x(s.lon), y: y(s.lat) })),
+};
+---
+{t && n.blocks && (
+  <div class="busmap" data-cfg={JSON.stringify(cfg)}>
+    <div class="bm-map">
+    <div class="bm-frame">
+      <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Map of ${n.name}'s streets, its ${stops.length} bus stops and the buses on the road now`}>
+        <rect width={W} height={H} class="bm-out" />
+        <path d={outline} class="bm-land" />
+        <g class="bm-streets">{segs.map((s) => <path d={path(s.p)} class={s.k} />)}</g>
+        <path d={edge} class="bm-edge" />
+        <g class="bm-labels">{[...label].map(([name, l]) => <text transform={`translate(${l.x.toFixed(0)},${l.y.toFixed(0)}) rotate(${l.a.toFixed(0)})`}>{name}</text>)}</g>
+        <g class="bm-stops">{cfg.stops.map((s) => <circle cx={s.x} cy={s.y} r="5" data-stop={s.id} />)}</g>
+        <g class="bm-buses"></g>
+        <g class="bm-metro">{metroIn.map((s) => (
+          <g transform={`translate(${x(s.lon)},${y(s.lat)})`}><circle r="11" /><text x={s.left ? -16 : 16} y="5" text-anchor={s.left ? "end" : "start"}>{s.name} Metro</text></g>
+        ))}</g>
+      </svg>
+    </div>
+    <p class="bm-key"><span class="k-bus">D40</span> bus, where it last reported <span class="k-stop"></span> bus stop <span class="k-old">D40</span> no report in 3+ min</p>
+    </div>
+    <div class="bm-side">
+    <div class="bm-panel" aria-live="polite">
+      <p class="muted">Tap a stop on the map to see when the next buses arrive.</p>
+    </div>
+    <p class="bm-hint muted">Tap any stop on the map to see its next buses.</p>
+    <div class="bm-now"></div>
+    <p class="note" data-status>Bus positions are WMATA&rsquo;s and refresh every 15 seconds; arrival times every 30. Not affiliated with WMATA.</p>
+    </div>
+  </div>
+)}
+
+<script>
+  type Stop = { id: string; name: string; x: number; y: number };
+  type Cfg = { first?: string; avoid: { x: number; y: number; w: number }[]; bbox: number[]; w: number; h: number; k: number; cos: number; stops: Stop[] };
+  type Bus = { route: string; to: string; dir: string; lat: number; lon: number; age: number };
+  const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]!);
+  const title = (s: string) => s.toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase());
+  const SVGNS = "http://www.w3.org/2000/svg";
+
+  for (const el of document.querySelectorAll<HTMLElement>(".busmap[data-cfg]")) {
+    const cfg: Cfg = JSON.parse(el.dataset.cfg!);
+    const svg = el.querySelector("svg")!;
+    const layer = el.querySelector<SVGGElement>(".bm-buses")!;
+    const panel = el.querySelector<HTMLElement>(".bm-panel")!;
+    const status = el.querySelector<HTMLElement>("[data-status]")!;
+    const baseNote = status.innerHTML;
+    const [west, , , north] = cfg.bbox;
+    const px = (lon: number) => (lon - west) * cfg.cos * cfg.k;
+    const py = (lat: number) => (north - lat) * cfg.k;
+    let picked: Stop | null = null;
+    let buses: Bus[] = [];
+
+    // Each bus is a dot where it reported, with its route tag beside it. Tags that would overlap one already
+    // placed, or run off the map, are moved, with a short line back to the dot.
+    function drawBuses() {
+      const placed: { x: number; y: number; w: number }[] = [...cfg.avoid];
+      const hit = (x: number, y: number, w: number) => placed.some((p) => Math.abs(p.x - x) < (p.w + w) / 2 + 3 && Math.abs(p.y - y) < 27);
+      const list = buses.filter((b) => b.age < 600).sort((a, b) => a.age - b.age);
+      layer.replaceChildren(...list.map((b) => {
+        const bx = px(b.lon), by = py(b.lat);
+        const w = 12 + b.route.length * 11;
+        const clampX = (x: number) => Math.min(cfg.w - w / 2 - 2, Math.max(w / 2 + 2, x));
+        const clampY = (y: number) => Math.min(cfg.h - 14, Math.max(14, y));
+        let tx = clampX(bx), ty = clampY(by - 20);
+        for (const [dx, dy] of [[0, 0], [0, 40], [w + 4, 20], [-w - 4, 20], [0, -28], [0, 68], [w + 4, -8], [-w - 4, -8]]) {
+          const x = clampX(bx + dx), y = clampY(by - 20 + dy);
+          if (!hit(x, y, w)) { tx = x; ty = y; break; }
+        }
+        placed.push({ x: tx, y: ty, w });
+        const g = document.createElementNS(SVGNS, "g");
+        g.setAttribute("class", b.age >= 180 ? "old" : "");
+        g.innerHTML = `<line x1="${bx.toFixed(1)}" y1="${by.toFixed(1)}" x2="${tx.toFixed(1)}" y2="${ty.toFixed(1)}"/><circle cx="${bx.toFixed(1)}" cy="${by.toFixed(1)}" r="4.5"/>`
+          + `<g transform="translate(${tx.toFixed(1)},${ty.toFixed(1)})"><rect x="${-w / 2}" y="-12" width="${w}" height="24" rx="4"/><text y="6">${esc(b.route)}</text></g>`
+          + `<title>${esc(b.route)} to ${esc(title(b.to))}, reported ${b.age < 60 ? "under a minute" : Math.round(b.age / 60) + " min"} ago</title>`;
+        return g;
+      }));
+    }
+
+    async function api(q: Record<string, string>) {
+      const r = await fetch(`/api/transit?${new URLSearchParams(q)}`, { headers: { accept: "application/json" } });
+      if (!r.ok) throw new Error(String(r.status));
+      return r.json();
+    }
+
+    async function refresh() {
+      try {
+        const live = await api({ bbox: cfg.bbox.join(",") });
+        if (live.positions == null) throw new Error("none");
+        buses = live.positions;
+        status.innerHTML = `${buses.filter((b: Bus) => b.age < 600).length} buses on the map. ` + baseNote;
+      } catch {
+        buses = [];
+        status.innerHTML = "Live bus positions aren't available right now. " + baseNote;
+      }
+      drawBuses();
+      // On the map now: one line per route and destination, most buses first.
+      const groups = new Map<string, { route: string; to: string; n: number }>();
+      for (const b of buses.filter((b) => b.age < 600)) {
+        const k = `${b.route}|${b.to}`;
+        groups.set(k, { route: b.route, to: b.to, n: (groups.get(k)?.n ?? 0) + 1 });
+      }
+      const now = [...groups.values()].sort((a, b) => b.n - a.n || a.route.localeCompare(b.route));
+      el.querySelector<HTMLElement>(".bm-now")!.innerHTML = now.length
+        ? `<h3>On the map now</h3><ul>${now.map((g) => `<li><span><span class="rt">${esc(g.route)}</span>to ${esc(title(g.to))}</span><b>${g.n > 1 ? `${g.n} buses` : "1 bus"}</b></li>`).join("")}</ul>` : "";
+      if (!picked) picked = cfg.stops.find((s) => s.id === cfg.first) ?? null;
+      if (picked) showStop(picked);
+    }
+
+    async function showStop(s: Stop) {
+      picked = s;
+      svg.querySelectorAll(".bm-stops circle").forEach((c) => c.classList.toggle("on", c.getAttribute("data-stop") === s.id));
+      const head = `<h3>${esc(s.name)} <span class="muted">stop ${esc(s.id)}</span></h3>`;
+      if (!panel.querySelector(`[data-for="${s.id}"]`)) panel.innerHTML = `<div data-for="${s.id}">${head}<p class="muted">Loading next buses…</p></div>`;
+      let rows = "";
+      try {
+        const live = await api({ stops: s.id });
+        const p = live.bus?.find((x: { stop: string }) => x.stop === s.id);
+        if (!live.bus) throw new Error("none");
+        rows = !p || p.preds.length === 0 ? `<p class="muted">No buses predicted in the next hour.</p>`
+          : `<table><thead><tr><th scope="col">Route</th><th scope="col">Toward</th><th scope="col">Arrives</th></tr></thead><tbody>${
+              p.preds.slice(0, 8).map((x: { route: string; dir: string; min: number }) =>
+                `<tr><td><span class="rt">${esc(x.route)}</span></td><td>${esc(x.dir)}</td><td>${x.min <= 0 ? "Due" : `${x.min} min`}</td></tr>`).join("")
+            }</tbody></table>`;
+      } catch {
+        rows = `<p class="muted">Next buses aren't available right now. <a href="https://www.wmata.com/schedules/next-arrival/">WMATA next arrivals</a></p>`;
+      }
+      if (picked?.id === s.id) panel.innerHTML = `<div data-for="${s.id}">${head}${rows}</div>`;
+    }
+
+    // A tap picks the nearest stop within ~22 screen pixels, so close-together stops stay pickable on a phone.
+    svg.addEventListener("click", (e) => {
+      const m = svg.getScreenCTM();
+      if (!m) return;
+      const pt = new DOMPoint(e.clientX, e.clientY).matrixTransform(m.inverse());
+      const mx = pt.x, my = pt.y;
+      let best: Stop | null = null, bd = 22 / m.a;
+      for (const s of cfg.stops) {
+        const d = Math.hypot(s.x - mx, s.y - my);
+        if (d < bd) { bd = d; best = s; }
+      }
+      if (best) showStop(best);
+    });
+
+    let timer: ReturnType<typeof setInterval> | undefined;
+    new IntersectionObserver((es, ob) => {
+      if (!es.some((e) => e.isIntersecting)) return;
+      ob.disconnect();
+      refresh();
+      timer = setInterval(() => { if (!document.hidden) refresh(); }, 15_000);
+    }).observe(el);
+  }
+</script>
+
+<style is:global>
+  .busmap{font-family:var(--sans)}
+  .bm-frame{border:1px solid var(--rule);background:var(--outside)}
+  .busmap svg{display:block;width:100%;height:auto;max-height:max(70vh,560px);cursor:pointer}
+  .bm-out{fill:var(--outside)}
+  .bm-land{fill:var(--land)}
+  .bm-edge{fill:none;stroke:var(--ink2);stroke-width:2.5;stroke-dasharray:8 5}
+  .bm-streets path{fill:none;stroke:var(--street);stroke-linecap:round;stroke-linejoin:round}
+  .bm-streets .minor{stroke-width:2.5}
+  .bm-streets .major{stroke-width:6}
+  .bm-labels text{font:600 15px var(--sans);fill:var(--ink3);text-anchor:middle;paint-order:stroke;stroke:var(--land);stroke-width:4px;letter-spacing:.02em}
+  .bm-metro circle{fill:#fff;stroke:var(--ink);stroke-width:4}
+  .bm-metro text{font:700 17px var(--sans);fill:var(--ink);pointer-events:none;paint-order:stroke;stroke:#fff;stroke-width:5px}
+  .bm-stops circle{fill:#fff;stroke:var(--blue);stroke-width:3}
+  .bm-stops circle.on{fill:var(--blue);r:9}
+  .bm-buses rect{fill:var(--red);stroke:#fff;stroke-width:2}
+  .bm-buses circle{fill:var(--red);stroke:#fff;stroke-width:1.5}
+  .bm-buses line{stroke:var(--red);stroke-width:2}
+  .bm-buses text{font:700 15px var(--sans);fill:#fff;text-anchor:middle}
+  .bm-buses .old{opacity:.4}
+  .bm-key{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin:8px 0 0;font-size:13.5px;color:var(--ink3)}
+  .bm-key .k-bus,.bm-key .k-old{background:var(--red);color:#fff;font:700 12px/1 var(--sans);padding:4px 5px;border-radius:3px}
+  .bm-key .k-old{opacity:.4}
+  .bm-key .k-stop{display:inline-block;width:11px;height:11px;border-radius:50%;border:2.5px solid var(--blue);background:#fff;margin-left:8px}
+  .bm-key .k-old{margin-left:8px}
+  .bm-panel{margin-top:12px;border-top:1px solid var(--rule2);padding-top:8px;min-height:3em}
+  .bm-hint{margin:10px 0 4px}
+  .bm-now h3{margin:16px 0 4px;font:600 12px/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--ink2)}
+  .bm-now ul{list-style:none;margin:0;padding:0}
+  .bm-now li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;padding:4px 0;border-bottom:1px solid var(--rule2);font-size:15px}
+  .bm-now li b{font-weight:400;color:var(--ink3);font-size:13.5px;white-space:nowrap}
+  .bm-now .rt{display:inline-block;min-width:34px;padding:1px 5px;margin-right:8px;background:var(--red);color:#fff;font:600 12.5px/1.4 var(--sans);text-align:center}
+  @media (min-width:860px){
+    .busmap{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(260px,1fr);gap:32px;align-items:start}
+    .bm-side{position:sticky;top:16px}
+    .bm-panel{margin-top:0;border-top:0;padding-top:2px}
+  }
+  .bm-panel h3{margin:0 0 6px;font:600 16px/1.25 var(--sans)}
+  .bm-panel table{width:100%;border-collapse:collapse;font-size:15px}
+  .bm-panel th{text-align:left;font:600 12px/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);padding:4px 6px 4px 0;border-bottom:1px solid var(--rule)}
+  .bm-panel td{padding:5px 6px 5px 0;border-bottom:1px solid var(--rule2)}
+  .bm-panel td:last-child,.bm-panel th:last-child{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums;font-weight:600}
+  .bm-panel .rt{display:inline-block;min-width:34px;padding:1px 5px;background:var(--slate);color:#fff;font:600 12.5px/1.4 var(--sans);text-align:center}
+  .busmap .muted,.busmap .note{color:var(--ink3);font-size:13.5px}
+</style>
