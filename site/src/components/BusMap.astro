@@ -4,57 +4,15 @@
 // positions inside the map's box and, when a stop is tapped, that stop's predictions; the Worker caches each
 // WMATA answer ~30 s. The map is drawn here, so no map tiles or third-party requests.
 import type { Neighborhood } from "../lib/data";
+import { basemap } from "../lib/basemap";
+import BaseLayers from "./BaseLayers.astro";
 
 interface Props { n: Neighborhood }
 const { n } = Astro.props;
 const t = n.transit;
-const streets = n.blocks?.basemap.streets ?? [];
-const ring = n.boundary.rings.flat();
 const stops = t?.bus_stops ?? [];
-const pts = [...ring, ...stops.map((s) => [s.lon, s.lat] as [number, number])];
-const PAD = 0.0025;
-const west = Math.min(...pts.map((p) => p[0])) - PAD, east = Math.max(...pts.map((p) => p[0])) + PAD;
-const south = Math.min(...pts.map((p) => p[1])) - PAD, north = Math.max(...pts.map((p) => p[1])) + PAD;
-const cos = Math.cos((((south + north) / 2) * Math.PI) / 180);
-const W = 640, K = W / ((east - west) * cos), H = Math.round((north - south) * K);
-const x = (lo: number) => +((lo - west) * cos * K).toFixed(1);
-const y = (la: number) => +((north - la) * K).toFixed(1);
-const path = (p: [number, number][]) => "M" + p.map(([lo, la]) => `${x(lo)},${y(la)}`).join("L");
-const inView = (p: [number, number][]) => p.some(([lo, la]) => lo >= west && lo <= east && la >= south && la <= north);
-const segs = streets.filter((s) => inView(s.p));
-const outline = n.boundary.rings.map((r) => path(r) + "Z").join("");
-// The dashed edge skips sides two districts share, so a neighborhood made of several reads as one shape.
-const side = (a: [number, number], b: [number, number]) => [a, b].map((p) => p.map((v) => v.toFixed(5)).join(",")).sort().join("|");
-const sides = new Map<string, number>();
-for (const r of n.boundary.rings) for (let i = 1; i < r.length; i++) { const k = side(r[i - 1], r[i]); sides.set(k, (sides.get(k) ?? 0) + 1); }
-const edge = n.boundary.rings.map((r) => {
-  let d = "", open = false;
-  for (let i = 1; i < r.length; i++) {
-    if (sides.get(side(r[i - 1], r[i]))! > 1) { open = false; continue; }
-    d += open ? `L${x(r[i][0])},${y(r[i][1])}` : `M${x(r[i - 1][0])},${y(r[i - 1][1])}L${x(r[i][0])},${y(r[i][1])}`;
-    open = true;
-  }
-  return d;
-}).join("");
-// One label per major street, on the segment nearest the middle of its run in view, turned to follow it.
-const nice = (n: string) => n.replace(/ (NW|NE|SW|SE)$/, "").toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase());
-const runs = new Map<string, { x: number; y: number; a: number; len: number }[]>();
-for (const s of segs.filter((s) => s.k === "major" && s.p.length > 1)) {
-  const [a, b] = [s.p[0], s.p[s.p.length - 1]];
-  const dx = x(b[0]) - x(a[0]), dy = y(b[1]) - y(a[1]);
-  let ang = (Math.atan2(dy, dx) * 180) / Math.PI;
-  if (ang > 90) ang -= 180; else if (ang < -90) ang += 180;
-  const k = nice(s.n);
-  runs.set(k, [...(runs.get(k) ?? []), { x: (x(a[0]) + x(b[0])) / 2, y: (y(a[1]) + y(b[1])) / 2, a: ang, len: Math.hypot(dx, dy) }]);
-}
-const label = new Map<string, { x: number; y: number; a: number }>();
-for (const [k, r] of runs) {
-  if (/\b(Bn|Ramp|Exit)$/i.test(k)) continue;
-  const long = r.filter((p) => p.len > 45 && p.x > 40 && p.x < W - 40 && p.y > 30 && p.y < H - 30);
-  if (!long.length || r.length < 3) continue;
-  const cx = r.reduce((t, p) => t + p.x, 0) / r.length, cy = r.reduce((t, p) => t + p.y, 0) / r.length;
-  label.set(k, long.sort((p, q) => Math.hypot(p.x - cx, p.y - cy) - Math.hypot(q.x - cx, q.y - cy))[0]);
-}
+const m = basemap(n, stops.map((s) => [s.lon, s.lat] as [number, number]));
+const { W, H, K, cos, west, south, east, north, x, y } = m;
 // The stop shown before anyone taps: the one nearest the Metro station inside the neighborhood, else the middle.
 const inStn = t?.stations.find((s) => s.km_outside === 0);
 const [ax, ay] = inStn ? [x(inStn.lon), y(inStn.lat)] : [W / 2, H / 2];
@@ -76,11 +34,7 @@ const cfg = {
     <div class="bm-map">
     <div class="bm-frame">
       <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Map of ${n.name}'s streets, its ${stops.length} bus stops and the buses on the road now`}>
-        <rect width={W} height={H} class="bm-out" />
-        <path d={outline} class="bm-land" />
-        <g class="bm-streets">{segs.map((s) => <path d={path(s.p)} class={s.k} />)}</g>
-        <path d={edge} class="bm-edge" />
-        <g class="bm-labels">{[...label].map(([name, l]) => <text transform={`translate(${l.x.toFixed(0)},${l.y.toFixed(0)}) rotate(${l.a.toFixed(0)})`}>{name}</text>)}</g>
+        <BaseLayers m={m} />
         <g class="bm-stops">{cfg.stops.map((s) => <circle cx={s.x} cy={s.y} r="5" data-stop={s.id} />)}</g>
         <g class="bm-buses"></g>
         <g class="bm-metro">{metroIn.map((s) => (
@@ -225,15 +179,6 @@ const cfg = {
 
 <style is:global>
   .busmap{font-family:var(--sans)}
-  .bm-frame{border:1px solid var(--rule);background:var(--outside)}
-  .busmap svg{display:block;width:100%;height:auto;max-height:max(70vh,560px);cursor:pointer}
-  .bm-out{fill:var(--outside)}
-  .bm-land{fill:var(--land)}
-  .bm-edge{fill:none;stroke:var(--ink2);stroke-width:2.5;stroke-dasharray:8 5}
-  .bm-streets path{fill:none;stroke:var(--street);stroke-linecap:round;stroke-linejoin:round}
-  .bm-streets .minor{stroke-width:2.5}
-  .bm-streets .major{stroke-width:6}
-  .bm-labels text{font:600 15px var(--sans);fill:var(--ink3);text-anchor:middle;paint-order:stroke;stroke:var(--land);stroke-width:4px;letter-spacing:.02em}
   .bm-metro circle{fill:#fff;stroke:var(--ink);stroke-width:4}
   .bm-metro text{font:700 17px var(--sans);fill:var(--ink);pointer-events:none;paint-order:stroke;stroke:#fff;stroke-width:5px}
   .bm-stops circle{fill:#fff;stroke:var(--blue);stroke-width:3}

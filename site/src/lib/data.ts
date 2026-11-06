@@ -142,6 +142,8 @@ export interface Neighborhood {
     open: number;
     by_type: { type: string; count: number; previous: number }[];
     recent: { type: string; agency: string; added: string; resolved: string | null; status: string; block: string | null; lat?: number | null; lon?: number | null }[];
+    // Streets map: every request of the last 30 days by hundred block; r = [type index, opened, closed, open 1/0].
+    mapped?: { types: string[]; blocks: { block: string | null; lat: number; lon: number; r: [number, string, string | null, 0 | 1][] }[] };
   };
   crime: {
     total: number;
@@ -194,6 +196,9 @@ export const PAGES = [
 // Links are root-relative: on petworth.org the Worker maps "/news/" onto the build's /petworth/news/ folder, so pages
 // never show the neighborhood prefix. The slug argument stays so call sites read naturally.
 export const pageUrl = (_slug: string, path = "") => `/${path}`;
+
+/** The site's own domain (petworth.org), for links that must be absolute, like calendar subscriptions. */
+export const hostOf = (slug: string) => siteList.find((s) => s.slug === slug)?.hosts[0] ?? `${slug}.org`;
 
 export function staticPaths() {
   return neighborhoods.map((n) => ({ params: { slug: n.slug }, props: { n } }));

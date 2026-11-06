@@ -125,6 +125,8 @@ def fetch_311(geom: dict, now: float) -> dict:
     rows = []
     for layer in yearly_layers(SR_TITLE, start, now):
         rows += dcdata.query_features(layer, geom, dcdata.date_where("ADDDATE", start), SR_FIELDS)
+    # DC's layer lists many requests twice (identical rows under two OBJECTIDs): count each request id once.
+    rows = list({r["SERVICEREQUESTID"] or id(r): r for r in rows}.values())
     cutoff_ms = (now - SR_DAYS * DAY) * 1000
     current = [r for r in rows if (r["ADDDATE"] or 0) >= cutoff_ms]
     previous = [r for r in rows if (r["ADDDATE"] or 0) < cutoff_ms]
@@ -134,7 +136,8 @@ def fetch_311(geom: dict, now: float) -> dict:
         {"type": t, "count": n, "previous": prev_counts.get(t, 0)}
         for t, n in cur_counts.most_common()
     ]
-    recent = sorted(current, key=lambda r: r["ADDDATE"] or 0, reverse=True)[:50]
+    newest = sorted(current, key=lambda r: r["ADDDATE"] or 0, reverse=True)
+    recent = newest[:50]
     return {
         "total": len(current),
         "previous_total": len(previous),
@@ -154,7 +157,27 @@ def fetch_311(geom: dict, now: float) -> dict:
             }
             for r in recent
         ],
+        "mapped": _mapped_311(newest),
     }
+
+
+def _mapped_311(rows: list[dict]) -> dict:
+    """Every request of the last 30 days for the Streets page map, grouped by hundred block: per request only
+    its type (an index into `types`), the days it was opened and closed, and whether it is still open."""
+    types: list[str] = []
+    blocks: dict[tuple, dict] = {}
+    for r in rows:
+        lat, lon = round_coord(r["LATITUDE"], 3), round_coord(r["LONGITUDE"], 3)
+        if lat is None or lon is None:
+            continue
+        t = r["SERVICECODEDESCRIPTION"] or "Other"
+        if t not in types:
+            types.append(t)
+        block = hundred_block(r["STREETADDRESS"])
+        b = blocks.setdefault((block, lat, lon), {"block": block, "lat": lat, "lon": lon, "r": []})
+        is_open = (r["SERVICEORDERSTATUS"] or "").upper() not in ("CLOSED", "CLOSE")
+        b["r"].append([types.index(t), (iso(r["ADDDATE"]) or "")[:10], (iso(r["RESOLUTIONDATE"]) or "")[:10] or None, 1 if is_open else 0])
+    return {"types": types, "blocks": list(blocks.values())}
 
 
 def fetch_crime_counts(geom: dict, now: float) -> dict:

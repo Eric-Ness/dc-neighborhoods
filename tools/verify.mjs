@@ -70,7 +70,7 @@ const checks = {
     for (const h of index) {
       const data = JSON.parse(read(`site/src/data/${h.slug}.json`));
       for (const hit of scan(data)) errors.push(`${h.slug}: forbidden field ${hit}`);
-      for (const r of data.requests.recent) {
+      for (const r of [...data.requests.recent, ...(data.requests.mapped?.blocks ?? [])]) {
         // Intersections and landmarks carry no house number; anything starting with one must be a hundred block.
         const houseNumber = r.block && /^\s*\d+\s/.test(r.block);
         assert(!houseNumber || /^\d*00 block of [A-Z0-9]/.test(r.block), `${h.slug}: 311 address not coarsened: ${r.block}`);

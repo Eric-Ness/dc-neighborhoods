@@ -8,6 +8,8 @@ import { blockActivity } from "../../../lib/blocks";
 import { streetLabel } from "../../../lib/atlas";
 import { addr, money, shortDate, titleCase, fmt } from "../../../lib/c5";
 import { reqTitle } from "../../../lib/front";
+import { pickupFeed } from "../../../lib/ics";
+import CalLink from "../../../components/CalLink.astro";
 
 export function getStaticPaths() {
   return neighborhoods.flatMap((n) => (n.blocks?.items ?? []).map((b) => ({ params: { slug: n.slug, block: b.key }, props: { n, b } })));
@@ -46,7 +48,7 @@ const facts = [b.trash_day && `trash ${b.trash_day}`, b.schools.elementary && sc
     <section class="panel" aria-labelledby="lk-h">
       <div class="ph"><h2 id="lk-h">On this block</h2><a href={u("blocks/")}>All blocks →</a></div>
       <table class="facts"><tbody>
-        <tr><th scope="row">Trash pickup</th><td>{b.trash_day ?? "Not on DPW's route map"}<small>DPW residential collection</small></td></tr>
+        <tr><th scope="row">Trash pickup</th><td>{b.trash_day ?? "Not on DPW's route map"}<small>DPW residential collection</small>{pickupFeed(b.trash_day, b.recycling_day) && <CalLink slug={n.slug} feed={pickupFeed(b.trash_day, b.recycling_day)!} label="Pickup days in your calendar" />}</td></tr>
         <tr><th scope="row">Recycling pickup</th><td>{b.recycling_day ?? "Not on DPW's route map"}</td></tr>
         {b.leaf_zone && <tr><th scope="row">Leaf collection</th><td>{b.leaf_done ? "Done on this block this season" : "Not yet this season"}<small>Zone {b.leaf_zone}.{leafMsg && ` ${leafMsg}`}</small></td></tr>}
         <tr><th scope="row">Street sweeping</th><td>See the posted signs<small>DC doesn&rsquo;t publish a current block-by-block schedule; residential sweeping runs March to October.</small></td></tr>

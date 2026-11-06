@@ -264,18 +264,23 @@ def build_service(geom: dict, now: float) -> tuple[list[dict], list[str]]:
     ys = [p[1] for ring in geom["rings"] for p in ring]
     bbox = (f"LATITUDE BETWEEN {min(ys)} AND {max(ys)} AND LONGITUDE BETWEEN {min(xs)} AND {max(xs)}")
     durations: dict[str, list[float]] = {}
+    seen: set[str] = set()  # DC's layer lists many requests twice; each request id counts once
     for layer in layers:
         offset = 0
         while True:
             data = dcdata._request(f"{layer}/query", {
                 "where": f"{where} AND {bbox}",
-                "outFields": "SERVICECODEDESCRIPTION,ADDDATE,RESOLUTIONDATE,LATITUDE,LONGITUDE",
+                "outFields": "SERVICEREQUESTID,SERVICECODEDESCRIPTION,ADDDATE,RESOLUTIONDATE,LATITUDE,LONGITUDE",
                 "returnGeometry": "false", "orderByFields": "OBJECTID",
                 "resultOffset": offset, "resultRecordCount": 1000, "f": "json"}, post=True)
             batch = [f["attributes"] for f in data.get("features", [])]
             for r in batch:
                 if r["LATITUDE"] is None or r["LONGITUDE"] is None or not r["SERVICECODEDESCRIPTION"]:
                     continue
+                if r["SERVICEREQUESTID"]:
+                    if r["SERVICEREQUESTID"] in seen:
+                        continue
+                    seen.add(r["SERVICEREQUESTID"])
                 if point_in_rings(r["LONGITUDE"], r["LATITUDE"], geom["rings"]):
                     durations.setdefault(r["SERVICECODEDESCRIPTION"], []).append(
                         (r["RESOLUTIONDATE"] - r["ADDDATE"]) / 1000 / DAY)

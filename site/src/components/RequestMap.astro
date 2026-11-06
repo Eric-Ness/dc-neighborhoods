@@ -1,0 +1,163 @@
+---
+// 311 map for the Streets page: every request of the last 30 days, one dot per hundred block (ingest/run.py
+// requests.mapped; locations are rounded to about 110 m and named only by hundred block). Tap a dot for that
+// block's requests; filter by type or to open requests. Drawn here on the shared street map (lib/basemap.ts).
+import type { Neighborhood } from "../lib/data";
+import { titleCase } from "../lib/data";
+import { basemap } from "../lib/basemap";
+import { blockKey } from "../lib/blocks";
+import { shortType } from "../lib/c5";
+import BaseLayers from "./BaseLayers.astro";
+
+interface Props { n: Neighborhood }
+const { n } = Astro.props;
+const mp = n.requests.mapped;
+const blocks = (mp?.blocks ?? []).filter((b) => b.lat != null && b.lon != null);
+const m = basemap(n);
+const HUNDRED = /^\d+\s+block\s+of\s+/i;
+// A dot sits at the middle of its hundred block (the block pages' list) when the name matches one; otherwise at
+// DC's rounded point. Requests that land on the same spot share one dot.
+const centers = new Map((n.blocks?.items ?? []).map((b) => [b.key, b]));
+const spots = new Map<string, { x: number; y: number; names: string[]; r: [number, string, string | null, 0 | 1][] }>();
+for (const b of blocks) {
+  const named = b.block && HUNDRED.test(b.block);
+  const c = named ? centers.get(blockKey(b.block) ?? "") : undefined;
+  const [lon, lat] = c ? [c.lon, c.lat] : [b.lon, b.lat];
+  if (!m.inBox(lon, lat)) continue;
+  const x = m.x(lon), y = m.y(lat), k = `${x},${y}`;
+  const s = spots.get(k) ?? { x, y, names: [], r: [] };
+  const name = c ? c.name : named ? titleCase(b.block!).replace(/ Block Of /, " block of ") : "Location not shown";
+  if (!s.names.includes(name)) s.names.push(name);
+  s.r.push(...b.r);
+  spots.set(k, s);
+}
+const cfg = {
+  // Readable names: the Streets page's short names, without an agency prefix like "OCTFME - ".
+  types: (mp?.types ?? []).map((t) => shortType(t).replace(/^[A-Z]{2,8}\s+-\s+/, "")),
+  blocks: [...spots.values()].map((s) => ({ x: s.x, y: s.y, name: s.names.slice(0, 3).join(", ") + (s.names.length > 3 ? ` and ${s.names.length - 3} more` : ""), r: s.r })),
+};
+const total = cfg.blocks.reduce((t, b) => t + b.r.length, 0);
+const open = cfg.blocks.reduce((t, b) => t + b.r.filter((x) => x[3]).length, 0);
+// Type filter: most-reported first.
+const counts = new Map<number, number>();
+for (const b of cfg.blocks) for (const x of b.r) counts.set(x[0], (counts.get(x[0]) ?? 0) + 1);
+const options = [...counts].sort((a, b) => b[1] - a[1]).map(([i, c]) => ({ i, label: `${cfg.types[i]} (${c})` }));
+---
+{n.blocks && cfg.blocks.length > 0 && (
+  <div class="reqmap" data-cfg={JSON.stringify(cfg)}>
+    <div class="bm-map">
+      <div class="rq-filters">
+        <label>Show <select data-type><option value="">All {total} requests</option>{options.map((o) => <option value={o.i}>{o.label}</option>)}</select></label>
+        <label class="rq-open"><input type="checkbox" data-open /> Still open only ({open})</label>
+      </div>
+      <div class="bm-frame">
+        <svg viewBox={`0 0 ${m.W} ${m.H}`} role="img" aria-label={`Map of ${n.name}'s 311 requests in the last 30 days, one dot per hundred block`}>
+          <BaseLayers m={m} />
+          <g class="rq-dots"></g>
+        </svg>
+      </div>
+      <p class="bm-key"><span class="k-open"></span> block with an open request <span class="k-done"></span> all closed · bigger dot, more requests</p>
+    </div>
+    <div class="bm-side">
+      <div class="rq-panel" aria-live="polite">
+        <p class="muted">Tap a dot to see what was reported on that block and whether DC has closed it.</p>
+      </div>
+      <p class="muted rq-hint">Tap any dot to see that block.</p>
+      <p class="note">311 requests from Open Data DC, refreshed nightly. Places are shown by hundred block only.</p>
+    </div>
+  </div>
+)}
+
+<script>
+  type Req = [number, string, string | null, 0 | 1];
+  type Blk = { x: number; y: number; name: string; r: Req[] };
+  type Cfg = { types: string[]; blocks: Blk[] };
+  const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]!);
+  const SVGNS = "http://www.w3.org/2000/svg";
+  const day = (d: string) => new Date(d + "T12:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" });
+  const took = (a: string, b: string) => {
+    const d = Math.round((Date.parse(b + "T12:00:00Z") - Date.parse(a + "T12:00:00Z")) / 864e5);
+    return d <= 0 ? "Closed the same day" : `Closed in ${d} day${d === 1 ? "" : "s"}`;
+  };
+
+  for (const el of document.querySelectorAll<HTMLElement>(".reqmap[data-cfg]")) {
+    const cfg: Cfg = JSON.parse(el.dataset.cfg!);
+    const svg = el.querySelector("svg")!;
+    const layer = el.querySelector<SVGGElement>(".rq-dots")!;
+    const panel = el.querySelector<HTMLElement>(".rq-panel")!;
+    const typeSel = el.querySelector<HTMLSelectElement>("[data-type]")!;
+    const openBox = el.querySelector<HTMLInputElement>("[data-open]")!;
+    let picked: Blk | null = null;
+
+    const keep = (x: Req) => (typeSel.value === "" || x[0] === +typeSel.value) && (!openBox.checked || x[3] === 1);
+    const shown = () => cfg.blocks.map((b) => ({ b, r: b.r.filter(keep) })).filter((v) => v.r.length > 0);
+
+    function draw() {
+      const list = shown().sort((a, b) => b.r.length - a.r.length);
+      layer.replaceChildren(...list.map(({ b, r }) => {
+        const c = document.createElementNS(SVGNS, "circle");
+        c.setAttribute("cx", String(b.x));
+        c.setAttribute("cy", String(b.y));
+        c.setAttribute("r", (4 + Math.sqrt(r.length) * 2.6).toFixed(1));
+        c.setAttribute("class", (r.some((x) => x[3]) ? "open" : "done") + (b === picked ? " on" : ""));
+        return c;
+      }));
+      if (picked) show(picked);
+    }
+
+    function show(b: Blk) {
+      picked = b;
+      const r = b.r.filter(keep).sort((a, c) => c[1].localeCompare(a[1]));
+      const rows = r.map((x) => `<tr><td>${esc(cfg.types[x[0]] ?? "Other")}</td><td>${x[1] ? day(x[1]) : "—"}</td><td>${
+        x[3] ? `<b class="st-open">Open</b>` : x[2] && x[1] ? took(x[1], x[2]) : "Closed"}</td></tr>`).join("");
+      panel.innerHTML = `<h3>${esc(b.name)}</h3><p class="muted">${r.length} request${r.length === 1 ? "" : "s"} in the last 30 days${
+        r.length !== b.r.length ? ` matching the filter (${b.r.length} in all)` : ""}</p>${
+        r.length ? `<table><thead><tr><th scope="col">Request</th><th scope="col">Opened</th><th scope="col">Status</th></tr></thead><tbody>${rows}</tbody></table>` : ""}`;
+      layer.querySelectorAll("circle").forEach((c) => c.classList.toggle("on", +c.getAttribute("cx")! === b.x && +c.getAttribute("cy")! === b.y));
+    }
+
+    svg.addEventListener("click", (e) => {
+      const mtx = svg.getScreenCTM();
+      if (!mtx) return;
+      const pt = new DOMPoint(e.clientX, e.clientY).matrixTransform(mtx.inverse());
+      let best: Blk | null = null, bd = 22 / mtx.a;
+      for (const { b } of shown()) {
+        const d = Math.hypot(b.x - pt.x, b.y - pt.y);
+        if (d < bd) { bd = d; best = b; }
+      }
+      if (best) { show(best); draw(); }
+    });
+    typeSel.addEventListener("change", draw);
+    openBox.addEventListener("change", draw);
+    // Start on the block with the most open requests, so the side panel shows something before a tap.
+    picked = [...cfg.blocks].sort((a, b) => b.r.filter((x) => x[3]).length - a.r.filter((x) => x[3]).length || b.r.length - a.r.length)[0] ?? null;
+    draw();
+  }
+</script>
+
+<style is:global>
+  .reqmap{font-family:var(--sans)}
+  .reqmap svg{cursor:pointer}
+  .rq-filters{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;margin:0 0 10px;font-size:14px;color:var(--ink2)}
+  .rq-filters select{font:400 14px var(--sans);padding:5px 6px;border:1px solid var(--rule);background:var(--paper);color:var(--ink);min-width:0;flex:1 1 auto;width:100%}
+  .rq-filters label{display:flex;gap:6px;align-items:center;min-width:0;max-width:100%}
+  .rq-filters label:first-child{flex:1 1 320px}
+  .rq-dots circle{stroke:#fff;stroke-width:1.5;fill-opacity:.85}
+  .rq-dots circle.open{fill:var(--ochre)}
+  .rq-dots circle.done{fill:var(--slate);fill-opacity:.55}
+  .rq-dots circle.on{stroke:var(--ink);stroke-width:3;fill-opacity:1}
+  .reqmap .bm-key{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin:8px 0 0;font-size:13.5px;color:var(--ink3)}
+  .reqmap .k-open,.reqmap .k-done{display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--ochre)}
+  .reqmap .k-done{background:var(--slate);opacity:.55;margin-left:8px}
+  .rq-panel h3{margin:0 0 2px;font:600 16px/1.25 var(--sans)}
+  .rq-panel table{width:100%;border-collapse:collapse;font-size:14.5px;margin-top:6px}
+  .rq-panel th{text-align:left;font:600 12px/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);padding:4px 6px 4px 0;border-bottom:1px solid var(--rule)}
+  .rq-panel td{padding:5px 6px 5px 0;border-bottom:1px solid var(--rule2);vertical-align:top}
+  .rq-panel td:nth-child(2){white-space:nowrap}
+  .rq-panel .st-open{color:var(--ochre)}
+  .reqmap .muted,.reqmap .note{color:var(--ink3);font-size:13.5px}
+  @media (min-width:860px){
+    .reqmap{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(260px,1fr);gap:32px;align-items:start}
+    .reqmap .bm-side{position:sticky;top:16px}
+  }
+</style>

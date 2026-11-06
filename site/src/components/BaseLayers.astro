@@ -1,0 +1,12 @@
+---
+// The street-map layers shared by the bus map and the 311 map (lib/basemap.ts), drawn inside the caller's <svg>.
+import type { basemap } from "../lib/basemap";
+
+interface Props { m: ReturnType<typeof basemap> }
+const { m } = Astro.props;
+---
+<rect width={m.W} height={m.H} class="bm-out" />
+<path d={m.outline} class="bm-land" />
+<g class="bm-streets">{m.segs.map((s) => <path d={m.path(s.p)} class={s.k} />)}</g>
+<path d={m.edge} class="bm-edge" />
+<g class="bm-labels">{m.labels.map((l) => <text transform={`translate(${l.x.toFixed(0)},${l.y.toFixed(0)}) rotate(${l.a.toFixed(0)})`}>{l.name}</text>)}</g>

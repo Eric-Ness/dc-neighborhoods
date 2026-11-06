@@ -1,0 +1,12 @@
+---
+// "Add to your calendar" links for a feed from pages/[slug]/calendar/[feed].ics.ts: subscribe in Apple Calendar or
+// Outlook (webcal), in Google Calendar, or download the file once.
+import { hostOf } from "../lib/data";
+
+interface Props { slug: string; feed: string; label?: string }
+const { slug, feed, label = "Add to your calendar" } = Astro.props;
+const path = `/calendar/${feed}.ics`;
+const webcal = `webcal://${hostOf(slug)}${path}`;
+const google = `https://calendar.google.com/calendar/render?cid=${encodeURIComponent(webcal)}`;
+---
+<p class="callink"><span>{label}:</span> <a href={webcal}>Apple or Outlook</a> · <a href={google} rel="noopener">Google</a> · <a href={path} download>download</a></p>

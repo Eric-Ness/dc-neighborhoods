@@ -1,0 +1,78 @@
+---
+// "Report a problem": pick what's wrong and see what to expect in this neighborhood (how often it's reported, how
+// many are still open, how long DC usually takes to close it here and citywide), then go to DC's own 311.
+import type { Neighborhood } from "../lib/data";
+import { shortType } from "../lib/c5";
+
+interface Props { n: Neighborhood }
+const { n } = Astro.props;
+const mp = n.requests.mapped;
+const service = new Map((n.streets?.service ?? []).map((s) => [s.type, s]));
+const tally = new Map<string, { count: number; open: number }>();
+for (const b of mp?.blocks ?? []) for (const r of b.r) {
+  const t = mp!.types[r[0]] ?? "Other";
+  const v = tally.get(t) ?? { count: 0, open: 0 };
+  v.count++; v.open += r[3];
+  tally.set(t, v);
+}
+for (const t of n.requests.by_type) if (!tally.has(t.type)) tally.set(t.type, { count: t.count, open: 0 });
+const dur = (d: number) => (d < 1 ? `${Math.max(1, Math.round(d * 24))} hours` : `${d < 10 ? d.toFixed(1) : Math.round(d)} days`);
+const items = [...tally].sort((a, b) => b[1].count - a[1].count).map(([type, v]) => {
+  const s = service.get(type);
+  return {
+    type: shortType(type).replace(/^[A-Z]{2,8}\s+-\s+/, ""), count: v.count, open: v.open,
+    here: s ? dur(s.median_days) : null,
+    city: s?.city_median_days != null ? dur(s.city_median_days) : null,
+  };
+});
+const days = n.windows.requests_days;
+---
+{items.length > 0 && (
+  <div class="report" data-items={JSON.stringify(items)} data-name={n.name} data-days={days}>
+    <label class="rp-pick">What&rsquo;s the problem?
+      <select>{items.map((it, i) => <option value={i}>{it.type}</option>)}</select>
+    </label>
+    <div class="rp-out" aria-live="polite"></div>
+    <p class="rp-go"><a class="cta" href="https://311.dc.gov/" rel="noopener">Report it to DC 311 <span>311.dc.gov ↗</span></a> <span class="muted">or call 311 (202-737-4404 from outside DC)</span></p>
+    <p class="note">This site can&rsquo;t take reports; DC&rsquo;s 311 can. Times are medians for requests DC closed in the last 12 months.</p>
+  </div>
+)}
+
+<script>
+  type Item = { type: string; count: number; open: number; here: string | null; city: string | null };
+  const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]!);
+  for (const el of document.querySelectorAll<HTMLElement>(".report[data-items]")) {
+    const items: Item[] = JSON.parse(el.dataset.items!);
+    const sel = el.querySelector("select")!;
+    const out = el.querySelector<HTMLElement>(".rp-out")!;
+    const name = el.dataset.name!, days = el.dataset.days!;
+    const render = () => {
+      const it = items[+sel.value];
+      out.innerHTML = `<dl>
+        <div><dt>Reported in ${esc(name)}</dt><dd>${it.count} in the last ${esc(days)} days${it.open ? `, <b>${it.open} still open</b>` : ""}</dd></div>
+        <div><dt>Usually closed in</dt><dd>${it.here ? `<b>${esc(it.here)}</b> here` : "Not enough closed requests here to say"}${it.city ? ` · ${esc(it.city)} citywide` : ""}</dd></div>
+      </dl>${it.open ? `<p class="muted">Already reported? Check the map below before filing it again.</p>` : ""}`;
+    };
+    sel.addEventListener("change", render);
+    render();
+  }
+</script>
+
+<style is:global>
+  .report{font-family:var(--sans)}
+  .rp-pick{display:flex;flex-direction:column;gap:6px;font:600 14px var(--sans);color:var(--ink2)}
+  .rp-pick select{font:400 16px var(--sans);padding:8px;border:1px solid var(--ink);background:var(--paper);color:var(--ink);max-width:100%}
+  .rp-out dl{margin:14px 0 0;display:grid;gap:10px}
+  .rp-out dl div{display:grid;grid-template-columns:minmax(0,10em) minmax(0,1fr);gap:10px;border-bottom:1px solid var(--rule2);padding-bottom:8px}
+  .rp-out dt{color:var(--ink3);font-size:14px}
+  .rp-out dd{margin:0;font-size:15.5px}
+  .rp-out .muted{margin:8px 0 0}
+  .rp-go{margin:16px 0 0;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}
+  .report .muted,.report .note{color:var(--ink3);font-size:13.5px}
+  @media (min-width:860px){
+    .report{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:8px 40px;align-items:start}
+    .rp-out dl{margin:0}
+    .rp-go{grid-column:2;margin:4px 0 0}
+    .report .note{grid-column:1;grid-row:2;margin:0}
+  }
+</style>

@@ -2,6 +2,8 @@
 import Hood from "../../layouts/Hood.astro";
 import { staticPaths, pageUrl, type Neighborhood } from "../../lib/data";
 import { reading, pair, bar, icon, stateTag, fmt, shortType, shortDate, titleCase } from "../../lib/c5";
+import RequestMap from "../../components/RequestMap.astro";
+import ReportHelper from "../../components/ReportHelper.astro";
 
 export const getStaticPaths = staticPaths;
 const { n } = Astro.props as { n: Neighborhood };
@@ -95,6 +97,22 @@ const condCls: Record<string, string> = { Excellent: "fill s-easing", Good: "fil
           </table></div>
         )}
         <p class="note">Listed by block, as DDOT issues them, with the hours each permit holds the curb.</p>
+      </section>
+    </div>
+  )}
+
+  <div class="row one">
+    <section id="report" class="panel" aria-labelledby="rp-h">
+      <div class="ph"><h2 id="rp-h">Report a problem</h2><span class="sub">What to expect in {n.name}</span></div>
+      <ReportHelper n={n} />
+    </section>
+  </div>
+
+  {n.requests.mapped && (
+    <div class="row one">
+      <section id="map311" class="panel" aria-labelledby="mq-h">
+        <div class="ph"><h2 id="mq-h">311 on the map</h2><span class="sub">Last {days} days, by hundred block</span></div>
+        <RequestMap n={n} />
       </section>
     </div>
   )}

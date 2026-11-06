@@ -66,7 +66,7 @@ nav.sections a[aria-current="page"]{text-decoration:underline;text-decoration-th
 
 .pagehead{margin:0 0 8px}
 .pagehead h1{margin:0;font:500 40px/1.05 var(--serif);letter-spacing:-.02em}
-.pagehead p{margin:8px 0 0;font:400 18px/1.45 var(--serif);color:var(--ink2);max-width:62ch}
+.pagehead p{margin:8px 0 0;font:400 18px/1.45 var(--serif);color:var(--ink2);max-width:none}
 .panel,.cond{background:transparent;border:0;border-top:1px solid var(--ink);border-radius:0;padding:12px 0 6px;font-family:var(--sans);font-size:15px}
 .c-box,.thencard,.stage,.chip,.tag,.c-strip li,nav.snav a{border-radius:0}
 .ph h2{color:var(--ink);letter-spacing:.12em}
@@ -210,3 +210,18 @@ footer nav.sites{margin-bottom:14px}
 .pt{font:400 15px/1.4 var(--sans);color:var(--ink2)}
 .blockcta{margin:0 0 22px;padding:12px 14px;background:var(--surface-2);font:400 15px/1.4 var(--sans);color:var(--ink2)}
 .blockcta strong{color:var(--ink)}
+
+.callink{margin:10px 0 0;font:400 14px/1.5 var(--sans);color:var(--ink3)}
+.callink span{color:var(--ink2);font-weight:600}
+.facts .callink{margin:4px 0 0;font-size:13px}
+
+/* drawn street maps (bus map, 311 map): lib/basemap.ts */
+.bm-frame{border:1px solid var(--rule);background:var(--outside)}
+.bm-frame svg{display:block;width:100%;height:auto;max-height:max(70vh,560px);cursor:pointer}
+.bm-out{fill:var(--outside)}
+.bm-land{fill:var(--land)}
+.bm-edge{fill:none;stroke:var(--ink2);stroke-width:2.5;stroke-dasharray:8 5}
+.bm-streets path{fill:none;stroke:var(--street);stroke-linecap:round;stroke-linejoin:round}
+.bm-streets .minor{stroke-width:2.5}
+.bm-streets .major{stroke-width:6}
+.bm-labels text{font:600 15px var(--sans);fill:var(--ink3);text-anchor:middle;paint-order:stroke;stroke:var(--land);stroke-width:4px;letter-spacing:.02em}

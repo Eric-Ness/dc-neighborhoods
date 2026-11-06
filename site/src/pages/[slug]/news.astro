@@ -2,6 +2,7 @@
 import Hood from "../../layouts/Hood.astro";
 import NewsList from "../../components/NewsList.astro";
 import EventList from "../../components/EventList.astro";
+import CalLink from "../../components/CalLink.astro";
 import { staticPaths, pageUrl, type Neighborhood } from "../../lib/data";
 import { model, addr, newsDate, titleCase } from "../../lib/c5";
 
@@ -23,6 +24,7 @@ const STATE: Record<string, string> = { ok: "Read tonight", partial: "Partly rea
     <NewsList n={n} heading="Headlines" />
     <div class="stack">
       <EventList n={n} heading="What's on" />
+      {n.events && <CalLink slug={n.slug} feed="events" label="Events and ANC meetings in your calendar" />}
 
       <section id="records" class="panel" aria-labelledby="rec-h">
         <div class="ph"><h2 id="rec-h">New in DC's records</h2><span class="sub">From DC open data</span></div>

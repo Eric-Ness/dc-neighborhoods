@@ -1,5 +1,6 @@
 ---
 import Hood from "../../layouts/Hood.astro";
+import CalLink from "../../components/CalLink.astro";
 import { staticPaths, pageUrl, type Neighborhood } from "../../lib/data";
 import { titleCase, newsDate, eventDay } from "../../lib/c5";
 
@@ -68,6 +69,7 @@ const unread = ancs.filter((a) => !postAncs.has(`ANC ${a.anc}`));
         {upcoming.length === 0 ? <p class="reps-p">No meeting notice posted yet for the next {ev?.days_ahead ?? 30} days. ANCs usually post a week or two ahead.</p> : (
           <ul class="rec">{upcoming.map((e) => <li><a href={e.url} rel="noopener">{e.title}</a><span>{eventDay(e.date, ev!.today).label}{e.time && ` · ${e.time}`}</span></li>)}</ul>
         )}
+        {ev && <CalLink slug={n.slug} feed="events" label="ANC meetings and events in your calendar" />}
         <ul class="reps-links">
           {ancs.map((a) => <li>{a.url ? <a href={a.url}>ANC {a.anc} site ↗</a> : <span>ANC {a.anc}: no site on file; use anc.dc.gov</span>}</li>)}
         </ul>
