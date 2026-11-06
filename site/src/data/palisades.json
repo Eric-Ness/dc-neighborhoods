@@ -1,7 +1,7 @@
 {
  "slug": "palisades",
  "name": "Palisades",
- "generated_at": "2026-11-06T03:16:22Z",
+ "generated_at": "2026-11-06T09:19:38Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods: Kent/Palisades (Open Data DC). It includes Kent and the C&O Canal parkland along the river.",
   "rings": [
@@ -9666,6 +9666,19 @@
    "smd": "3D04"
   },
   {
+   "id": "SOL2700001",
+   "issued": "2026-10-20T04:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "SOLAR SYSTEM",
+   "address": "5002 50TH PL NW 20016",
+   "work": "Installation of 23 PV solar panels mounted flush to roof of a single family dwelling at a system size of 9.66 KW. Installation of a 27 KW energy storage system.",
+   "zoning": "R-1A",
+   "lat": 38.9452,
+   "lon": -77.09907,
+   "smd": "3D03"
+  },
+  {
    "id": "EN2602713",
    "issued": "2026-10-20T04:00:00Z",
    "group": "Other",
@@ -9768,19 +9781,6 @@
    "lat": 38.9264,
    "lon": -77.09928,
    "smd": "3D01"
-  },
-  {
-   "id": "SOL2700001",
-   "issued": "2026-10-20T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "SOLAR SYSTEM",
-   "address": "5002 50TH PL NW 20016",
-   "work": "Installation of 23 PV solar panels mounted flush to roof of a single family dwelling at a system size of 9.66 KW. Installation of a 27 KW energy storage system.",
-   "zoning": "R-1A",
-   "lat": 38.9452,
-   "lon": -77.09907,
-   "smd": "3D03"
   },
   {
    "id": "B2505806-EXT-1",
@@ -10344,7 +10344,7 @@
  ],
  "requests": {
   "total": 1091,
-  "previous_total": 1259,
+  "previous_total": 1255,
   "by_type": [
    {
     "type": "Bulk Collection",
@@ -10354,7 +10354,7 @@
    {
     "type": "Scheduled Yard Waste",
     "count": 170,
-    "previous": 172
+    "previous": 171
    },
    {
     "type": "Parking Enforcement",
@@ -10369,7 +10369,7 @@
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 47,
-    "previous": 68
+    "previous": 67
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -10379,12 +10379,12 @@
    {
     "type": "Roadway Signs",
     "count": 45,
-    "previous": 33
+    "previous": 32
    },
    {
     "type": "Tree Inspection",
     "count": 36,
-    "previous": 66
+    "previous": 65
    },
    {
     "type": "Container Removal",
@@ -10434,7 +10434,7 @@
    {
     "type": "DMV - Vehicle Registration Issues",
     "count": 12,
-    "previous": 13
+    "previous": 12
    },
    {
     "type": "Pothole",
@@ -10584,7 +10584,7 @@
    {
     "type": "Streetlight Repair Investigation",
     "count": 3,
-    "previous": 7
+    "previous": 8
    },
    {
     "type": "DMV - Ticket Ombudsman",
@@ -11258,7 +11258,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -11586,7 +11586,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -11606,15 +11606,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 139,
-   "starting_next_7d": 24,
-   "reserved_ft": 16302,
+   "active_this_week": 135,
+   "starting_next_7d": 22,
+   "reserved_ft": 15686,
    "long_running_90d": 56,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 3
+     "count": 1
     },
     {
      "type": "Dumpsters",
@@ -11622,7 +11622,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 82
+     "count": 83
     },
     {
      "type": "Lead pipe replacement",
@@ -11630,30 +11630,14 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 32
+     "count": 30
     },
     {
      "type": "Events & reserved parking",
-     "count": 3
+     "count": 2
     }
    ],
    "upcoming": [
-    {
-     "type": "Moving & storage",
-     "block": "4400 block of Reservoir Road NW",
-     "start": "2026-11-06",
-     "end": "2026-11-06",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "4900 block of Eskridge Terrace NW",
-     "start": "2026-11-06",
-     "end": "2026-11-06",
-     "ft": 88,
-     "hours": "1 pm\u20133 pm"
-    },
     {
      "type": "Utility & DDOT work",
      "block": "5900 block of Macarthur Boulevard NW",
@@ -11663,28 +11647,12 @@
      "hours": "7:30 am\u20133 pm"
     },
     {
-     "type": "Moving & storage",
-     "block": "4200 block of 48th Place NW",
-     "start": "2026-11-06",
-     "end": "2026-11-06",
-     "ft": 88,
-     "hours": ""
-    },
-    {
      "type": "Utility & DDOT work",
      "block": "2300 block of Nebraska Avenue NW",
      "start": "2026-11-06",
      "end": "2026-11-09",
      "ft": 264,
      "hours": "7:30 am\u20133 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "5800 block of Sherier Place NW",
-     "start": "2026-11-09",
-     "end": "2026-12-08",
-     "ft": 638,
-     "hours": "7 am\u20137 pm"
     },
     {
      "type": "Utility & DDOT work",
@@ -11725,6 +11693,14 @@
      "end": "2026-11-13",
      "ft": 132,
      "hours": "8 am\u20133 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "5800 block of Sherier Place NW",
+     "start": "2026-11-09",
+     "end": "2026-12-08",
+     "ft": 638,
+     "hours": "7 am\u20137 pm"
     },
     {
      "type": "Construction staging",
@@ -11813,6 +11789,14 @@
      "end": "2026-11-10",
      "ft": 176,
      "hours": "7:30 am\u20133 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "5000 block of Glenbrook Terrace NW",
+     "start": "2026-11-10",
+     "end": "2026-11-11",
+     "ft": 176,
+     "hours": "7 am\u20133 pm"
     },
     {
      "type": "Utility & DDOT work",
@@ -11914,7 +11898,7 @@
     "type": "Bulk Collection",
     "median_days": 7.61,
     "city_median_days": 6.91,
-    "closed_n": 1741
+    "closed_n": 1740
    },
    {
     "type": "Scheduled Yard Waste",
@@ -11931,14 +11915,14 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 12.23,
-    "city_median_days": 4.88,
+    "city_median_days": 4.85,
     "closed_n": 651
    },
    {
     "type": "Parking Enforcement",
     "median_days": 0.06,
     "city_median_days": 0.05,
-    "closed_n": 524
+    "closed_n": 523
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -11955,14 +11939,14 @@
    {
     "type": "Tree Inspection",
     "median_days": 0.63,
-    "city_median_days": 0.61,
+    "city_median_days": 0.62,
     "closed_n": 283
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -12115,7 +12099,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "archive_days": 180,
   "sources": [
    {
@@ -12425,8 +12409,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-06T03:16:22Z",
-  "today": "2026-11-05",
+  "generated_at": "2026-11-06T09:19:38Z",
+  "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
    {
@@ -12559,7 +12543,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -49865,7 +49849,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

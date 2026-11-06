@@ -1,7 +1,7 @@
 {
  "slug": "kingmanpark",
  "name": "Kingman Park",
- "generated_at": "2026-11-06T03:16:22Z",
+ "generated_at": "2026-11-06T09:19:38Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -2280,19 +2280,6 @@
    "smd": "6A06"
   },
   {
-   "id": "E2700301",
-   "issued": "2026-10-08T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "1307 C ST NE 20002",
-   "work": "",
-   "zoning": "RF-1",
-   "lat": 38.89342,
-   "lon": -76.98793,
-   "smd": "6A04"
-  },
-  {
    "id": "P2700234",
    "issued": "2026-10-08T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -2343,81 +2330,94 @@
    "lat": 38.89342,
    "lon": -76.98793,
    "smd": "6A04"
+  },
+  {
+   "id": "E2700301",
+   "issued": "2026-10-08T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "1307 C ST NE 20002",
+   "work": "",
+   "zoning": "RF-1",
+   "lat": 38.89342,
+   "lon": -76.98793,
+   "smd": "6A04"
   }
  ],
  "requests": {
-  "total": 2166,
-  "previous_total": 2743,
+  "total": 2165,
+  "previous_total": 2735,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 344,
-    "previous": 365
+    "count": 346,
+    "previous": 363
    },
    {
     "type": "Scheduled Yard Waste",
     "count": 322,
-    "previous": 314
+    "previous": 313
    },
    {
     "type": "Parking Enforcement",
-    "count": 213,
-    "previous": 227
+    "count": 210,
+    "previous": 229
    },
    {
     "type": "Illegal Dumping",
-    "count": 145,
-    "previous": 129
+    "count": 142,
+    "previous": 128
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 128,
-    "previous": 110
+    "count": 127,
+    "previous": 109
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 121,
-    "previous": 131
+    "count": 124,
+    "previous": 133
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
     "count": 87,
-    "previous": 80
+    "previous": 88
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 80,
-    "previous": 92
+    "count": 79,
+    "previous": 91
    },
    {
     "type": "Residential Parking Permit Violation",
     "count": 72,
-    "previous": 110
+    "previous": 107
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 53,
+    "count": 54,
     "previous": 143
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 49,
+    "count": 50,
     "previous": 2
    },
    {
     "type": "Recycling Collection - Missed",
-    "count": 42,
-    "previous": 29
-   },
-   {
-    "type": "Trash Cart - Delivery",
-    "count": 37,
-    "previous": 48
+    "count": 43,
+    "previous": 28
    },
    {
     "type": "Tree Inspection",
-    "count": 35,
-    "previous": 153
+    "count": 36,
+    "previous": 156
+   },
+   {
+    "type": "Trash Cart - Delivery",
+    "count": 36,
+    "previous": 49
    },
    {
     "type": "Dead Animal Collection",
@@ -2431,8 +2431,8 @@
    },
    {
     "type": "Roadway Signs",
-    "count": 23,
-    "previous": 37
+    "count": 24,
+    "previous": 38
    },
    {
     "type": "Public Space Litter Can-Collection",
@@ -2441,13 +2441,13 @@
    },
    {
     "type": "Rat Replacement Containers",
-    "count": 18,
+    "count": 19,
     "previous": 10
    },
    {
     "type": "DOB - Vacant Private Property Inspection",
-    "count": 18,
-    "previous": 27
+    "count": 17,
+    "previous": 25
    },
    {
     "type": "DC Government Information",
@@ -2455,29 +2455,29 @@
     "previous": 10
    },
    {
-    "type": "Tree Pruning",
-    "count": 16,
-    "previous": 39
-   },
-   {
     "type": "Abandoned Vehicle - On Public Property",
     "count": 16,
     "previous": 34
    },
    {
-    "type": "Streetlight Repair Investigation",
-    "count": 15,
-    "previous": 27
-   },
-   {
     "type": "Container Removal",
     "count": 15,
-    "previous": 32
+    "previous": 31
+   },
+   {
+    "type": "Streetlight Repair Investigation",
+    "count": 14,
+    "previous": 28
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 14,
     "previous": 35
+   },
+   {
+    "type": "Tree Pruning",
+    "count": 14,
+    "previous": 36
    },
    {
     "type": "Recycling Cart - Repair",
@@ -2487,7 +2487,7 @@
    {
     "type": "Roadway Repair",
     "count": 13,
-    "previous": 14
+    "previous": 13
    },
    {
     "type": "DOB - Illegal Construction",
@@ -2495,19 +2495,24 @@
     "previous": 3
    },
    {
+    "type": "DMV - Drivers License/ID Issues",
+    "count": 11,
+    "previous": 9
+   },
+   {
     "type": "Traffic Safety Input",
     "count": 10,
     "previous": 10
    },
    {
-    "type": "DMV - Drivers License/ID Issues",
-    "count": 10,
-    "previous": 9
-   },
-   {
     "type": "Trash Cart Repair",
     "count": 10,
-    "previous": 17
+    "previous": 18
+   },
+   {
+    "type": "DMV - Vehicle Registration Issues",
+    "count": 10,
+    "previous": 13
    },
    {
     "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
@@ -2515,29 +2520,19 @@
     "previous": 6
    },
    {
-    "type": "DMV - Vehicle Registration Issues",
-    "count": 9,
-    "previous": 14
-   },
-   {
     "type": "Abandoned Bicycle",
     "count": 8,
-    "previous": 3
+    "previous": 2
    },
    {
     "type": "Supercan - Delivery",
     "count": 8,
-    "previous": 23
+    "previous": 22
    },
    {
     "type": "Sidewalk Repair",
     "count": 7,
     "previous": 29
-   },
-   {
-    "type": "Tree Removal",
-    "count": 7,
-    "previous": 36
    },
    {
     "type": "OCTFME - Down Cable Wires",
@@ -2548,6 +2543,11 @@
     "type": "Tree Planting",
     "count": 6,
     "previous": 11
+   },
+   {
+    "type": "Tree Removal",
+    "count": 6,
+    "previous": 35
    },
    {
     "type": "Public Space Inspection",
@@ -2697,7 +2697,7 @@
    {
     "type": "DMV - eTIMS Ticket Alert Services Issues",
     "count": 1,
-    "previous": 2
+    "previous": 1
    },
    {
     "type": "Public Space Litter Can Repair",
@@ -2715,8 +2715,18 @@
     "previous": 0
    }
   ],
-  "open": 370,
+  "open": 366,
   "recent": [
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "agency": "DOH",
+    "added": "2026-11-06T04:19:38Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1600 block of E STREET NE",
+    "lat": 38.896,
+    "lon": -76.982
+   },
    {
     "type": "Bulk Collection",
     "agency": "DPW",
@@ -3206,16 +3216,6 @@
     "block": "1700 block of C STREET NE",
     "lat": 38.894,
     "lon": -76.98
-   },
-   {
-    "type": "Supercan - Delivery",
-    "agency": "DPW",
-    "added": "2026-11-05T14:32:56Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "400 block of 20TH STREET NE",
-    "lat": 38.896,
-    "lon": -76.976
    }
   ]
  },
@@ -3308,7 +3308,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3683,7 +3683,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3703,15 +3703,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 165,
-   "starting_next_7d": 34,
-   "reserved_ft": 27478,
+   "active_this_week": 158,
+   "starting_next_7d": 33,
+   "reserved_ft": 26752,
    "long_running_90d": 11,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 7
+     "count": 6
     },
     {
      "type": "Dumpsters",
@@ -3723,42 +3723,18 @@
     },
     {
      "type": "Lead pipe replacement",
-     "count": 46
+     "count": 43
     },
     {
      "type": "Utility & DDOT work",
-     "count": 53
+     "count": 51
     },
     {
      "type": "Events & reserved parking",
-     "count": 7
+     "count": 6
     }
    ],
    "upcoming": [
-    {
-     "type": "Moving & storage",
-     "block": "500 block of 23rd Place NE",
-     "start": "2026-11-06",
-     "end": "2026-11-06",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Moving & storage",
-     "block": "200 block of 14th Street NE",
-     "start": "2026-11-06",
-     "end": "2026-11-07",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "300 block of 11th Street NE",
-     "start": "2026-11-06",
-     "end": "2026-11-06",
-     "ft": 88,
-     "hours": "9:30 am\u20133:30 pm"
-    },
     {
      "type": "Utility & DDOT work",
      "block": "700 block of 18th Street NE",
@@ -3806,14 +3782,6 @@
      "end": "2026-11-09",
      "ft": 66,
      "hours": "7:30 am\u20133 pm"
-    },
-    {
-     "type": "Moving & storage",
-     "block": "1100 block of D Street NE",
-     "start": "2026-11-06",
-     "end": "2026-11-06",
-     "ft": 88,
-     "hours": ""
     },
     {
      "type": "Utility & DDOT work",
@@ -3904,6 +3872,22 @@
      "hours": "7 am\u20135 pm"
     },
     {
+     "type": "Lead pipe replacement",
+     "block": "400 block of 13th Street NE",
+     "start": "2026-11-09",
+     "end": "2026-12-04",
+     "ft": 176,
+     "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Lead pipe replacement",
+     "block": "1200 block of D Street NE",
+     "start": "2026-11-09",
+     "end": "2026-12-29",
+     "ft": 220,
+     "hours": "7 am\u20137 pm"
+    },
+    {
      "type": "Utility & DDOT work",
      "block": "300 block of Tennessee Avenue NE",
      "start": "2026-11-09",
@@ -3988,6 +3972,14 @@
      "block": "1300 block of F Street NE",
      "start": "2026-11-11",
      "end": "2026-11-12",
+     "ft": 88,
+     "hours": ""
+    },
+    {
+     "type": "Moving & storage",
+     "block": "400 block of 11th Street NE",
+     "start": "2026-11-12",
+     "end": "2026-11-13",
      "ft": 88,
      "hours": ""
     },
@@ -4091,31 +4083,31 @@
     "type": "Bulk Collection",
     "median_days": 5.87,
     "city_median_days": 6.91,
-    "closed_n": 3304
+    "closed_n": 3301
    },
    {
     "type": "Scheduled Yard Waste",
-    "median_days": 10.65,
+    "median_days": 10.66,
     "city_median_days": 9.63,
-    "closed_n": 2552
+    "closed_n": 2551
    },
    {
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 1731
+    "closed_n": 1730
    },
    {
     "type": "Trash Collection - Missed",
     "median_days": 3.83,
     "city_median_days": 4.01,
-    "closed_n": 1219
+    "closed_n": 1218
    },
    {
     "type": "Illegal Dumping",
     "median_days": 3.69,
     "city_median_days": 4.02,
-    "closed_n": 1007
+    "closed_n": 1006
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
@@ -4127,7 +4119,7 @@
     "type": "Residential Parking Permit Violation",
     "median_days": 0.1,
     "city_median_days": 0.1,
-    "closed_n": 758
+    "closed_n": 757
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -4139,7 +4131,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4297,7 +4289,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4601,8 +4593,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-06T03:16:22Z",
-  "today": "2026-11-05",
+  "generated_at": "2026-11-06T09:19:38Z",
+  "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
    {
@@ -4662,6 +4654,15 @@
     "source": "DC farmers market list",
     "kind": "market",
     "date": "2026-11-28"
+   },
+   {
+    "title": "RFK Open Air Market",
+    "place": "2615 Benning Rd NE",
+    "time": "8:00 AM - 3:00 PM",
+    "url": "https://www.millerfarmsclinton.com",
+    "source": "DC farmers market list",
+    "kind": "market",
+    "date": "2026-12-05"
    }
   ],
   "unscheduled": [],
@@ -4690,7 +4691,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -25551,7 +25552,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

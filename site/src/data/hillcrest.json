@@ -1,7 +1,7 @@
 {
  "slug": "hillcrest",
  "name": "Hillcrest",
- "generated_at": "2026-11-06T03:16:22Z",
+ "generated_at": "2026-11-06T09:19:38Z",
  "boundary": {
   "source": "ANC single-member districts 7B02, 7B03, 7B05, 7B06, 8B02 and 8B05, about the same ground as DC's NAYLOR/HILLCREST planning area (Open Data DC). Hillcrest Heights, Maryland, is not included.",
   "rings": [
@@ -8577,19 +8577,6 @@
  },
  "permits": [
   {
-   "id": "BP2700536",
-   "issued": "2026-11-02T05:00:00Z",
-   "group": "Minor work",
-   "type": "POST CARD",
-   "subtype": "BUILDING",
-   "address": "2207 31ST PL SE 20020",
-   "work": "",
-   "zoning": "R-1B",
-   "lat": 38.86234,
-   "lon": -76.96251,
-   "smd": "7B02"
-  },
-  {
    "id": "E2701129",
    "issued": "2026-11-02T05:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -8613,6 +8600,19 @@
    "zoning": "R-1B",
    "lat": 38.86761,
    "lon": -76.96272,
+   "smd": "7B02"
+  },
+  {
+   "id": "BP2700536",
+   "issued": "2026-11-02T05:00:00Z",
+   "group": "Minor work",
+   "type": "POST CARD",
+   "subtype": "BUILDING",
+   "address": "2207 31ST PL SE 20020",
+   "work": "",
+   "zoning": "R-1B",
+   "lat": 38.86234,
+   "lon": -76.96251,
    "smd": "7B02"
   },
   {
@@ -8941,16 +8941,16 @@
    "smd": "7B02"
   },
   {
-   "id": "P2700403",
+   "id": "P2700404",
    "issued": "2026-10-14T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
    "type": "SUPPLEMENTAL",
    "subtype": "PLUMBING AND GAS",
-   "address": "2636 NAYLOR RD SE 20020",
+   "address": "2634 NAYLOR RD SE 20020",
    "work": "",
    "zoning": "MU-7B",
-   "lat": 38.86247,
-   "lon": -76.96943,
+   "lat": 38.86251,
+   "lon": -76.96947,
    "smd": "7B02"
   },
   {
@@ -9019,6 +9019,19 @@
    "smd": "7B02"
   },
   {
+   "id": "P2700403",
+   "issued": "2026-10-14T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "2636 NAYLOR RD SE 20020",
+   "work": "",
+   "zoning": "MU-7B",
+   "lat": 38.86247,
+   "lon": -76.96943,
+   "smd": "7B02"
+  },
+  {
    "id": "B2700079",
    "issued": "2026-10-14T04:00:00Z",
    "group": "Renovation & repair",
@@ -9030,19 +9043,6 @@
    "lat": 38.86148,
    "lon": -76.95163,
    "smd": "7B06"
-  },
-  {
-   "id": "P2700404",
-   "issued": "2026-10-14T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "2634 NAYLOR RD SE 20020",
-   "work": "",
-   "zoning": "MU-7B",
-   "lat": 38.86251,
-   "lon": -76.96947,
-   "smd": "7B02"
   },
   {
    "id": "HO2700075",
@@ -9124,13 +9124,13 @@
   }
  ],
  "requests": {
-  "total": 774,
-  "previous_total": 754,
+  "total": 776,
+  "previous_total": 752,
   "by_type": [
    {
     "type": "Bulk Collection",
     "count": 134,
-    "previous": 116
+    "previous": 115
    },
    {
     "type": "Parking Enforcement",
@@ -9183,19 +9183,19 @@
     "previous": 26
    },
    {
-    "type": "Roadway Repair",
-    "count": 14,
-    "previous": 12
-   },
-   {
     "type": "Container Removal",
-    "count": 14,
+    "count": 15,
     "previous": 7
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
-    "count": 14,
+    "count": 15,
     "previous": 13
+   },
+   {
+    "type": "Roadway Repair",
+    "count": 14,
+    "previous": 12
    },
    {
     "type": "Supercan - Delivery",
@@ -9305,7 +9305,7 @@
    {
     "type": "OCTFME - Down Cable Wires",
     "count": 3,
-    "previous": 9
+    "previous": 8
    },
    {
     "type": "DMV - Vehicle Registration Issues",
@@ -9403,8 +9403,18 @@
     "previous": 0
    }
   ],
-  "open": 162,
+  "open": 164,
   "recent": [
+   {
+    "type": "Container Removal",
+    "agency": "DPW",
+    "added": "2026-11-06T03:50:40Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2900 block of W STREET SE",
+    "lat": 38.863,
+    "lon": -76.965
+   },
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
@@ -9894,16 +9904,6 @@
     "block": "2700 block of R STREET SE",
     "lat": 38.869,
     "lon": -76.968
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-03T21:48:44Z",
-    "resolved": "2026-11-03T23:14:56Z",
-    "status": "Closed",
-    "block": "2000 block of FORT DAVIS STREET SE",
-    "lat": 38.864,
-    "lon": -76.95
    }
   ]
  },
@@ -9990,7 +9990,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -10177,7 +10177,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -10197,11 +10197,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 53,
+   "active_this_week": 49,
    "starting_next_7d": 4,
-   "reserved_ft": 6930,
+   "reserved_ft": 6666,
    "long_running_90d": 14,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Dumpsters",
@@ -10209,7 +10209,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 19
+     "count": 16
     },
     {
      "type": "Lead pipe replacement",
@@ -10217,7 +10217,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 20
+     "count": 19
     },
     {
      "type": "Events & reserved parking",
@@ -10341,13 +10341,13 @@
     "type": "Bulk Collection",
     "median_days": 6.01,
     "city_median_days": 6.91,
-    "closed_n": 1014
+    "closed_n": 1013
    },
    {
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 572
+    "closed_n": 571
    },
    {
     "type": "Trash Collection - Missed",
@@ -10389,7 +10389,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -10509,7 +10509,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "archive_days": 180,
   "sources": [
    {
@@ -10720,8 +10720,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-06T03:16:22Z",
-  "today": "2026-11-05",
+  "generated_at": "2026-11-06T09:19:38Z",
+  "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
    {
@@ -10745,17 +10745,7 @@
     "state": "ok"
    }
   ],
-  "events": [
-   {
-    "title": "ANC 7B special public meeting",
-    "date": "2026-11-05",
-    "time": null,
-    "place": null,
-    "url": "https://oanc.dc.gov/event/november-5-2026-anc-7b-special-meeting",
-    "source": "ANC 7B",
-    "kind": "civic"
-   }
-  ],
+  "events": [],
   "unscheduled": [],
   "links": [
    {
@@ -10782,7 +10772,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -32959,7 +32949,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

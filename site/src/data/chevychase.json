@@ -1,7 +1,7 @@
 {
  "slug": "chevychase",
  "name": "Chevy Chase",
- "generated_at": "2026-11-06T03:16:22Z",
+ "generated_at": "2026-11-06T09:19:38Z",
  "boundary": {
   "source": "ANC 3/4G, the Chevy Chase DC commission (all its single-member districts, Open Data DC). DC's CHEVY CHASE planning area stops at Connecticut Avenue; this overlaps the Tenleytown site a little.",
   "rings": [
@@ -12419,19 +12419,6 @@
    "smd": "3/4G06"
   },
   {
-   "id": "B2607756",
-   "issued": "2026-10-26T04:00:00Z",
-   "group": "Additions",
-   "type": "CONSTRUCTION",
-   "subtype": "ADDITION ALTERATION REPAIR",
-   "address": "6120 32ND ST NW 20015",
-   "work": "One-story addition on crawlspace to an existing 1.5 story, brick/stone/frame home to add a first floor primary suite. The addition adds a new bedroom, and renovates an existing bedroom to add a new full bathroom and walk-in closet with laundry.",
-   "zoning": "R-1B",
-   "lat": 38.97059,
-   "lon": -77.06416,
-   "smd": "3/4G04"
-  },
-  {
    "id": "HO2700162",
    "issued": "2026-10-26T04:00:00Z",
    "group": "Home businesses",
@@ -12456,6 +12443,19 @@
    "lat": 38.96469,
    "lon": -77.06434,
    "smd": "3/4G03"
+  },
+  {
+   "id": "B2607756",
+   "issued": "2026-10-26T04:00:00Z",
+   "group": "Additions",
+   "type": "CONSTRUCTION",
+   "subtype": "ADDITION ALTERATION REPAIR",
+   "address": "6120 32ND ST NW 20015",
+   "work": "One-story addition on crawlspace to an existing 1.5 story, brick/stone/frame home to add a first floor primary suite. The addition adds a new bedroom, and renovates an existing bedroom to add a new full bathroom and walk-in closet with laundry.",
+   "zoning": "R-1B",
+   "lat": 38.97059,
+   "lon": -77.06416,
+   "smd": "3/4G04"
   },
   {
    "id": "P2700729",
@@ -13240,21 +13240,21 @@
  ],
  "requests": {
   "total": 957,
-  "previous_total": 1075,
+  "previous_total": 1071,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 265,
-    "previous": 236
+    "count": 266,
+    "previous": 235
    },
    {
     "type": "Scheduled Yard Waste",
     "count": 205,
-    "previous": 227
+    "previous": 226
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 70,
+    "count": 68,
     "previous": 157
    },
    {
@@ -13270,7 +13270,7 @@
    {
     "type": "Roadway Signs",
     "count": 27,
-    "previous": 10
+    "previous": 9
    },
    {
     "type": "Pothole",
@@ -13285,12 +13285,12 @@
    {
     "type": "Supercan - Delivery",
     "count": 14,
-    "previous": 25
+    "previous": 24
    },
    {
     "type": "DMV - Drivers License/ID Issues",
     "count": 13,
-    "previous": 9
+    "previous": 10
    },
    {
     "type": "Tree Inspection",
@@ -13343,6 +13343,11 @@
     "previous": 15
    },
    {
+    "type": "DMV - Vehicle Registration Issues",
+    "count": 8,
+    "previous": 14
+   },
+   {
     "type": "Sidewalk Repair",
     "count": 8,
     "previous": 6
@@ -13371,11 +13376,6 @@
     "type": "Streetlight Repair Investigation",
     "count": 7,
     "previous": 5
-   },
-   {
-    "type": "DMV - Vehicle Registration Issues",
-    "count": 7,
-    "previous": 14
    },
    {
     "type": "Trash Cart - Delivery",
@@ -13425,7 +13425,7 @@
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 4,
-    "previous": 4
+    "previous": 3
    },
    {
     "type": "Public Space Litter Can-Collection",
@@ -14039,7 +14039,7 @@
  },
  "crime": {
   "total": 12,
-  "previous_total": 28,
+  "previous_total": 27,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
@@ -14057,14 +14057,14 @@
     "previous": 14
    },
    {
-    "offense": "MOTOR VEHICLE THEFT",
-    "count": 0,
-    "previous": 5
-   },
-   {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
     "count": 0,
     "previous": 1
+   },
+   {
+    "offense": "MOTOR VEHICLE THEFT",
+    "count": 0,
+    "previous": 4
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -14121,7 +14121,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -14461,7 +14461,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -14481,11 +14481,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 90,
-   "starting_next_7d": 22,
-   "reserved_ft": 12210,
+   "active_this_week": 83,
+   "starting_next_7d": 24,
+   "reserved_ft": 12716,
    "long_running_90d": 18,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -14505,7 +14505,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 31
+     "count": 24
     },
     {
      "type": "Events & reserved parking",
@@ -14513,22 +14513,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Moving & storage",
-     "block": "3000 block of Oliver Street NW",
-     "start": "2026-11-06",
-     "end": "2026-11-06",
-     "ft": 176,
-     "hours": ""
-    },
-    {
-     "type": "Construction staging",
-     "block": "3100 block of Oliver Street NW",
-     "start": "2026-11-06",
-     "end": "2026-12-05",
-     "ft": 462,
-     "hours": "7 am\u20137 pm"
-    },
     {
      "type": "Dumpsters",
      "block": "3700 block of Morrison Street NW",
@@ -14666,6 +14650,38 @@
      "hours": "7 am\u20137 pm"
     },
     {
+     "type": "Utility & DDOT work",
+     "block": "5400 block of Nevada Avenue NW",
+     "start": "2026-11-09",
+     "end": "2026-11-16",
+     "ft": 660,
+     "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "5500 block of Nevada Avenue NW",
+     "start": "2026-11-09",
+     "end": "2026-11-16",
+     "ft": 660,
+     "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "3700 block of Livingston Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-16",
+     "ft": 660,
+     "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Moving & storage",
+     "block": "6200 block of Nebraska Avenue NW",
+     "start": "2026-11-09",
+     "end": "2026-11-09",
+     "ft": 88,
+     "hours": ""
+    },
+    {
      "type": "Construction staging",
      "block": "6100 block of Nebraska Avenue NW",
      "start": "2026-11-10",
@@ -14785,12 +14801,12 @@
     "type": "Scheduled Yard Waste",
     "median_days": 8.95,
     "city_median_days": 9.63,
-    "closed_n": 1734
+    "closed_n": 1733
    },
    {
     "type": "Recycling Collection - Missed",
     "median_days": 3.09,
-    "city_median_days": 4.88,
+    "city_median_days": 4.85,
     "closed_n": 839
    },
    {
@@ -14808,7 +14824,7 @@
    {
     "type": "Tree Inspection",
     "median_days": 0.63,
-    "city_median_days": 0.61,
+    "city_median_days": 0.62,
     "closed_n": 203
    },
    {
@@ -14821,7 +14837,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -14983,7 +14999,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "archive_days": 180,
   "sources": [
    {
@@ -15369,8 +15385,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-06T03:16:22Z",
-  "today": "2026-11-05",
+  "generated_at": "2026-11-06T09:19:38Z",
+  "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
    {
@@ -15430,6 +15446,15 @@
     "source": "DC farmers market list",
     "kind": "market",
     "date": "2026-11-28"
+   },
+   {
+    "title": "Chevy Chase Farmers Market",
+    "place": "5701 Broad Branch Rd NW",
+    "time": "9:00 AM - 1:00 PM",
+    "url": "https://www.chevychasefarmersmarket.com",
+    "source": "DC farmers market list",
+    "kind": "market",
+    "date": "2026-12-05"
    }
   ],
   "unscheduled": [],
@@ -15440,7 +15465,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -46184,7 +46209,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

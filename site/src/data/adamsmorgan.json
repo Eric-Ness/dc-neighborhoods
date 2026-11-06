@@ -1,7 +1,7 @@
 {
  "slug": "adamsmorgan",
  "name": "Adams Morgan",
- "generated_at": "2026-11-06T03:16:22Z",
+ "generated_at": "2026-11-06T09:19:38Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1586,19 +1586,6 @@
    "smd": "1C08"
   },
   {
-   "id": "P2700424",
-   "issued": "2026-10-14T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "1920 S ST NW 602 20009",
-   "work": "Plumbing trade Permit",
-   "zoning": "RA-2/DC",
-   "lat": 38.91393,
-   "lon": -77.04458,
-   "smd": "2B01"
-  },
-  {
    "id": "B2605830",
    "issued": "2026-10-14T04:00:00Z",
    "group": "Renovation & repair",
@@ -1610,6 +1597,19 @@
    "lat": 38.92206,
    "lon": -77.03927,
    "smd": "1C08"
+  },
+  {
+   "id": "P2700424",
+   "issued": "2026-10-14T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "1920 S ST NW 602 20009",
+   "work": "Plumbing trade Permit",
+   "zoning": "RA-2/DC",
+   "lat": 38.91393,
+   "lon": -77.04458,
+   "smd": "2B01"
   },
   {
    "id": "B2609080",
@@ -1756,12 +1756,12 @@
   }
  ],
  "requests": {
-  "total": 1306,
-  "previous_total": 1454,
+  "total": 1308,
+  "previous_total": 1453,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 321,
+    "count": 322,
     "previous": 244
    },
    {
@@ -1835,14 +1835,14 @@
     "previous": 20
    },
    {
+    "type": "Streetlight Repair Investigation",
+    "count": 18,
+    "previous": 15
+   },
+   {
     "type": "Tree Planting",
     "count": 18,
     "previous": 35
-   },
-   {
-    "type": "Streetlight Repair Investigation",
-    "count": 17,
-    "previous": 15
    },
    {
     "type": "DGS - Playground Repair",
@@ -2085,8 +2085,28 @@
     "previous": 0
    }
   ],
-  "open": 244,
+  "open": 243,
   "recent": [
+   {
+    "type": "Streetlight Repair Investigation",
+    "agency": "DDOT",
+    "added": "2026-11-06T04:05:27Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "2400 block of BEACH DRIVE NW",
+    "lat": 38.921,
+    "lon": -77.049
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-06T02:56:29Z",
+    "resolved": "2026-11-06T03:27:04Z",
+    "status": "Closed",
+    "block": "1800 block of MINTWOOD PLACE NW",
+    "lat": 38.922,
+    "lon": -77.044
+   },
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
@@ -2566,26 +2586,6 @@
     "block": "1800 block of COLUMBIA ROAD NW",
     "lat": 38.92,
     "lon": -77.044
-   },
-   {
-    "type": "Out of State Parking Violation (ROSA)",
-    "agency": "DPW",
-    "added": "2026-11-05T01:20:17Z",
-    "resolved": "2026-11-05T07:16:33Z",
-    "status": "Closed",
-    "block": "2500 block of MOZART PLACE NW",
-    "lat": 38.924,
-    "lon": -77.038
-   },
-   {
-    "type": "Tree Planting",
-    "agency": "DDOT",
-    "added": "2026-11-05T01:19:25Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "1800 block of COLUMBIA ROAD NW",
-    "lat": 38.922,
-    "lon": -77.044
    }
   ]
  },
@@ -2609,14 +2609,14 @@
     "previous": 1
    },
    {
-    "offense": "ASSAULT W/DANGEROUS WEAPON",
-    "count": 2,
-    "previous": 0
-   },
-   {
     "offense": "MOTOR VEHICLE THEFT",
     "count": 2,
     "previous": 4
+   },
+   {
+    "offense": "ASSAULT W/DANGEROUS WEAPON",
+    "count": 2,
+    "previous": 0
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -2697,7 +2697,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3130,7 +3130,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3150,15 +3150,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 211,
-   "starting_next_7d": 104,
-   "reserved_ft": 25036,
+   "active_this_week": 201,
+   "starting_next_7d": 97,
+   "reserved_ft": 23408,
    "long_running_90d": 26,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 42
+     "count": 39
     },
     {
      "type": "Dumpsters",
@@ -3166,11 +3166,11 @@
     },
     {
      "type": "Construction staging",
-     "count": 93
+     "count": 94
     },
     {
      "type": "Cranes",
-     "count": 1
+     "count": 2
     },
     {
      "type": "Lead pipe replacement",
@@ -3178,102 +3178,14 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 17
+     "count": 11
     },
     {
      "type": "Events & reserved parking",
-     "count": 49
+     "count": 46
     }
    ],
    "upcoming": [
-    {
-     "type": "Moving & storage",
-     "block": "1600 block of New Hampshire Avenue NW",
-     "start": "2026-11-06",
-     "end": "2026-11-07",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Moving & storage",
-     "block": "1700 block of S Street NW",
-     "start": "2026-11-06",
-     "end": "2026-11-07",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Moving & storage",
-     "block": "1800 block of 17th Street NW",
-     "start": "2026-11-06",
-     "end": "2026-11-06",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Construction staging",
-     "block": "1800 block of Clydesdale Place NW",
-     "start": "2026-11-06",
-     "end": "2026-12-11",
-     "ft": 88,
-     "hours": "9 am\u20133 pm"
-    },
-    {
-     "type": "Moving & storage",
-     "block": "1800 block of Riggs Place NW",
-     "start": "2026-11-06",
-     "end": "2026-11-07",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "2200 block of Ontario Road NW",
-     "start": "2026-11-06",
-     "end": "2026-11-06",
-     "ft": 44,
-     "hours": "9 am\u20136 pm"
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "1600 block of Florida Avenue NW",
-     "start": "2026-11-06",
-     "end": "2026-11-08",
-     "ft": 220,
-     "hours": "12 am\u201310:30 pm"
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "1700 block of Florida Avenue NW",
-     "start": "2026-11-06",
-     "end": "2026-11-08",
-     "ft": 22,
-     "hours": "12 am\u201310:30 pm"
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "1700 block of Florida Avenue NW",
-     "start": "2026-11-06",
-     "end": "2026-11-08",
-     "ft": 110,
-     "hours": "12 am\u201310:30 pm"
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "1700 block of Florida Avenue NW",
-     "start": "2026-11-06",
-     "end": "2026-11-08",
-     "ft": 66,
-     "hours": "12 am\u201310:30 pm"
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "1700 block of Florida Avenue NW",
-     "start": "2026-11-06",
-     "end": "2026-11-08",
-     "ft": 66,
-     "hours": "12 am\u201310:30 pm"
-    },
     {
      "type": "Construction staging",
      "block": "2100 block of Ontario Road NW",
@@ -3291,34 +3203,10 @@
      "hours": "9:30 am\u20133:30 pm"
     },
     {
-     "type": "Events & reserved parking",
-     "block": "1600 block of Crescent Place NW",
-     "start": "2026-11-06",
-     "end": "2026-11-06",
-     "ft": 88,
-     "hours": "7 am\u201311:59 pm"
-    },
-    {
-     "type": "Moving & storage",
-     "block": "1600 block of Harvard Street NW",
-     "start": "2026-11-06",
-     "end": "2026-11-06",
-     "ft": 88,
-     "hours": ""
-    },
-    {
      "type": "Moving & storage",
      "block": "2200 block of Ontario Road NW",
      "start": "2026-11-06",
      "end": "2026-11-07",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Moving & storage",
-     "block": "1800 block of Mintwood Place NW",
-     "start": "2026-11-06",
-     "end": "2026-11-06",
      "ft": 88,
      "hours": ""
     },
@@ -3331,12 +3219,12 @@
      "hours": ""
     },
     {
-     "type": "Moving & storage",
-     "block": "1800 block of Wyoming Avenue NW",
+     "type": "Construction staging",
+     "block": "1600 block of U Street NW",
      "start": "2026-11-06",
-     "end": "2026-11-07",
-     "ft": 88,
-     "hours": ""
+     "end": "2026-11-09",
+     "ft": 0,
+     "hours": "12 am\u201311 pm"
     },
     {
      "type": "Events & reserved parking",
@@ -3505,6 +3393,118 @@
      "end": "2026-11-08",
      "ft": 66,
      "hours": "4 am\u201310 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "1600 block of T Street NW",
+     "start": "2026-11-07",
+     "end": "2026-11-08",
+     "ft": 220,
+     "hours": "4 am\u20137 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "1600 block of Swann Street NW",
+     "start": "2026-11-07",
+     "end": "2026-11-08",
+     "ft": 220,
+     "hours": "4 am\u20137 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "1600 block of 18th Street NW",
+     "start": "2026-11-07",
+     "end": "2026-11-08",
+     "ft": 110,
+     "hours": "4 am\u20137 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "1600 block of T Street NW",
+     "start": "2026-11-07",
+     "end": "2026-11-08",
+     "ft": 110,
+     "hours": "4 am\u20137 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "1800 block of New Hampshire Avenue NW",
+     "start": "2026-11-07",
+     "end": "2026-11-08",
+     "ft": 220,
+     "hours": "4 am\u20137 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "1800 block of 17th Street NW",
+     "start": "2026-11-07",
+     "end": "2026-11-08",
+     "ft": 220,
+     "hours": "4 am\u20137 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "1800 block of New Hampshire Avenue NW",
+     "start": "2026-11-07",
+     "end": "2026-11-08",
+     "ft": 220,
+     "hours": "4 am\u20137 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "1800 block of New Hampshire Avenue NW",
+     "start": "2026-11-07",
+     "end": "2026-11-08",
+     "ft": 220,
+     "hours": "4 am\u20137 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "1800 block of 17th Street NW",
+     "start": "2026-11-07",
+     "end": "2026-11-08",
+     "ft": 220,
+     "hours": "4 am\u20137 pm"
+    },
+    {
+     "type": "Moving & storage",
+     "block": "1800 block of S Street NW",
+     "start": "2026-11-07",
+     "end": "2026-11-07",
+     "ft": 88,
+     "hours": ""
+    },
+    {
+     "type": "Moving & storage",
+     "block": "1800 block of California Street NW",
+     "start": "2026-11-07",
+     "end": "2026-11-07",
+     "ft": 88,
+     "hours": ""
+    },
+    {
+     "type": "Moving & storage",
+     "block": "1800 block of California Street NW",
+     "start": "2026-11-07",
+     "end": "2026-11-07",
+     "ft": 88,
+     "hours": ""
+    },
+    {
+     "type": "Moving & storage",
+     "block": "2700 block of Ontario Road NW",
+     "start": "2026-11-07",
+     "end": "2026-11-07",
+     "ft": 88,
+     "hours": ""
+    },
+    {
+     "type": "Moving & storage",
+     "block": "1700 block of Lanier Place NW",
+     "start": "2026-11-07",
+     "end": "2026-11-07",
+     "ft": 88,
+     "hours": ""
     }
    ]
   },
@@ -3590,7 +3590,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 2510
+    "closed_n": 2509
    },
    {
     "type": "Bulk Collection",
@@ -3638,7 +3638,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3801,7 +3801,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "archive_days": 180,
   "sources": [
    {
@@ -3902,7 +3902,7 @@
     "name": "WTOP",
     "url": "https://wtop.com/",
     "state": "ok",
-    "matched": 1,
+    "matched": 0,
     "fetched": 2
    },
    {
@@ -4448,8 +4448,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-06T03:16:22Z",
-  "today": "2026-11-05",
+  "generated_at": "2026-11-06T09:19:38Z",
+  "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
    {
@@ -4509,6 +4509,15 @@
     "source": "DC farmers market list",
     "kind": "market",
     "date": "2026-11-28"
+   },
+   {
+    "title": "Adams Morgan Farmers Market",
+    "place": "Euclid Street & Columbia Road",
+    "time": "8:30 AM - 1:00 PM",
+    "url": "https://www.lickingcreekbendfarm.com",
+    "source": "DC farmers market list",
+    "kind": "market",
+    "date": "2026-12-05"
    }
   ],
   "unscheduled": [],
@@ -4529,7 +4538,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -21839,7 +21848,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

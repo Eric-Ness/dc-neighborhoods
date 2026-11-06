@@ -1,7 +1,7 @@
 {
  "slug": "petworth",
  "name": "Petworth",
- "generated_at": "2026-11-06T03:16:22Z",
+ "generated_at": "2026-11-06T09:19:38Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -2837,7 +2837,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3173,7 +3173,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3193,31 +3193,31 @@
    }
   ],
   "curb": {
-   "active_this_week": 117,
-   "starting_next_7d": 12,
-   "reserved_ft": 13750,
+   "active_this_week": 110,
+   "starting_next_7d": 13,
+   "reserved_ft": 11968,
    "long_running_90d": 39,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 5
+     "count": 3
     },
     {
      "type": "Dumpsters",
-     "count": 1
+     "count": 2
     },
     {
      "type": "Construction staging",
-     "count": 36
+     "count": 37
     },
     {
      "type": "Lead pipe replacement",
-     "count": 31
+     "count": 30
     },
     {
      "type": "Utility & DDOT work",
-     "count": 43
+     "count": 37
     },
     {
      "type": "Events & reserved parking",
@@ -3225,14 +3225,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Construction staging",
-     "block": "500 block of Webster Street NW",
-     "start": "2026-11-06",
-     "end": "2026-12-05",
-     "ft": 44,
-     "hours": "7 am\u20137 pm"
-    },
     {
      "type": "Moving & storage",
      "block": "700 block of Upshur Street NW",
@@ -3256,14 +3248,6 @@
      "end": "2026-11-09",
      "ft": 88,
      "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "400 block of Quincy Street NW",
-     "start": "2026-11-09",
-     "end": "2026-12-08",
-     "ft": 352,
-     "hours": "7 am\u20137 pm"
     },
     {
      "type": "Utility & DDOT work",
@@ -3306,12 +3290,36 @@
      "hours": "8 am\u20134:30 pm"
     },
     {
+     "type": "Lead pipe replacement",
+     "block": "400 block of Randolph Street NW",
+     "start": "2026-11-09",
+     "end": "2026-12-24",
+     "ft": 330,
+     "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "400 block of Quincy Street NW",
+     "start": "2026-11-09",
+     "end": "2026-12-08",
+     "ft": 352,
+     "hours": "7 am\u20137 pm"
+    },
+    {
      "type": "Construction staging",
      "block": "300 block of Delafield Place NW",
      "start": "2026-11-09",
      "end": "2027-01-02",
      "ft": 154,
      "hours": "8 am\u20135 pm"
+    },
+    {
+     "type": "Dumpsters",
+     "block": "500 block of Randolph Street NW",
+     "start": "2026-11-09",
+     "end": "2026-12-08",
+     "ft": 44,
+     "hours": ""
     },
     {
      "type": "Moving & storage",
@@ -3405,13 +3413,13 @@
     "type": "Bulk Collection",
     "median_days": 7.95,
     "city_median_days": 6.91,
-    "closed_n": 2253
+    "closed_n": 2252
    },
    {
     "type": "Trash Collection - Missed",
     "median_days": 3.71,
     "city_median_days": 4.01,
-    "closed_n": 1182
+    "closed_n": 1181
    },
    {
     "type": "Scheduled Yard Waste",
@@ -3423,19 +3431,19 @@
     "type": "Parking Enforcement",
     "median_days": 0.05,
     "city_median_days": 0.05,
-    "closed_n": 979
+    "closed_n": 977
    },
    {
     "type": "Recycling Collection - Missed",
     "median_days": 4.05,
-    "city_median_days": 4.88,
+    "city_median_days": 4.85,
     "closed_n": 805
    },
    {
     "type": "Illegal Dumping",
     "median_days": 3.93,
     "city_median_days": 4.02,
-    "closed_n": 711
+    "closed_n": 709
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -3453,7 +3461,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3618,7 +3626,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "archive_days": 180,
   "sources": [
    {
@@ -3984,8 +3992,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-06T03:16:22Z",
-  "today": "2026-11-05",
+  "generated_at": "2026-11-06T09:19:38Z",
+  "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
    {
@@ -4078,7 +4086,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -26241,7 +26249,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

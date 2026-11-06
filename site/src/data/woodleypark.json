@@ -1,7 +1,7 @@
 {
  "slug": "woodleypark",
  "name": "Woodley Park",
- "generated_at": "2026-11-06T03:16:22Z",
+ "generated_at": "2026-11-06T09:19:38Z",
  "boundary": {
   "source": "ANC single-member districts 3C01, 3C02, 3C03 and 3C07, around the Woodley Park Metro and the National Zoo (Open Data DC). DC's WOODLEY PARK planning area also takes in much of Cleveland Park, which has its own site.",
   "rings": [
@@ -12508,7 +12508,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -12669,7 +12669,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -12689,11 +12689,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 35,
-   "starting_next_7d": 6,
-   "reserved_ft": 3630,
+   "active_this_week": 30,
+   "starting_next_7d": 5,
+   "reserved_ft": 3058,
    "long_running_90d": 13,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -12713,22 +12713,10 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 7
-    },
-    {
-     "type": "Events & reserved parking",
-     "count": 2
+     "count": 4
     }
    ],
    "upcoming": [
-    {
-     "type": "Events & reserved parking",
-     "block": "2800 block of 27th Street NW",
-     "start": "2026-11-06",
-     "end": "2026-11-06",
-     "ft": 88,
-     "hours": "9:30 am\u20133:30 pm"
-    },
     {
      "type": "Moving & storage",
      "block": "2700 block of Calvert Street NW",
@@ -12876,7 +12864,7 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 4.89,
-    "city_median_days": 4.88,
+    "city_median_days": 4.85,
     "closed_n": 130
    },
    {
@@ -12888,7 +12876,7 @@
    {
     "type": "Tree Inspection",
     "median_days": 0.21,
-    "city_median_days": 0.61,
+    "city_median_days": 0.62,
     "closed_n": 86
    },
    {
@@ -12901,7 +12889,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -13060,7 +13048,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "archive_days": 180,
   "sources": [
    {
@@ -13370,8 +13358,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-06T03:16:22Z",
-  "today": "2026-11-05",
+  "generated_at": "2026-11-06T09:19:38Z",
+  "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
    {
@@ -13431,6 +13419,15 @@
     "source": "DC farmers market list",
     "kind": "market",
     "date": "2026-11-28"
+   },
+   {
+    "title": "Maret School Farmers Market",
+    "place": "3000 Cathedral Ave NW",
+    "time": "9:00 AM - 1:00 PM",
+    "url": "https://www.twinspringsfruitfarm.com",
+    "source": "DC farmers market list",
+    "kind": "market",
+    "date": "2026-12-05"
    }
   ],
   "unscheduled": [],
@@ -13458,7 +13455,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -30237,7 +30234,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

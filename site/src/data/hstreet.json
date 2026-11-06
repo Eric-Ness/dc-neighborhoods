@@ -1,7 +1,7 @@
 {
  "slug": "hstreet",
  "name": "H Street NE",
- "generated_at": "2026-11-06T03:16:22Z",
+ "generated_at": "2026-11-06T09:19:38Z",
  "boundary": {
   "source": "The six ANC single-member districts along H Street NE from 3rd to 15th Street (6A01, 6A02, 6A06, 6C04, 6C05, 6C06; Open Data DC). DC has no planning area for H Street.",
   "rings": [
@@ -4061,19 +4061,6 @@
    "smd": "6C05"
   },
   {
-   "id": "E2700477",
-   "issued": "2026-10-15T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "634 F ST NE 20002",
-   "work": "",
-   "zoning": "RF-1",
-   "lat": 38.89756,
-   "lon": -76.99715,
-   "smd": "6C05"
-  },
-  {
    "id": "P2700432",
    "issued": "2026-10-15T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -4123,6 +4110,19 @@
    "zoning": "RF-1",
    "lat": 38.89821,
    "lon": -76.99869,
+   "smd": "6C05"
+  },
+  {
+   "id": "E2700477",
+   "issued": "2026-10-15T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "634 F ST NE 20002",
+   "work": "",
+   "zoning": "RF-1",
+   "lat": 38.89756,
+   "lon": -76.99715,
    "smd": "6C05"
   },
   {
@@ -4309,13 +4309,13 @@
   }
  ],
  "requests": {
-  "total": 2193,
-  "previous_total": 2616,
+  "total": 2191,
+  "previous_total": 2609,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 340,
-    "previous": 372
+    "count": 338,
+    "previous": 374
    },
    {
     "type": "Scheduled Yard Waste",
@@ -4325,7 +4325,7 @@
    {
     "type": "Parking Enforcement",
     "count": 304,
-    "previous": 251
+    "previous": 250
    },
    {
     "type": "Residential Parking Permit Violation",
@@ -4335,22 +4335,22 @@
    {
     "type": "Illegal Dumping",
     "count": 114,
-    "previous": 147
+    "previous": 148
    },
    {
     "type": "Trash Collection - Missed",
     "count": 90,
-    "previous": 97
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "count": 83,
-    "previous": 96
+    "previous": 94
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 81,
+    "count": 83,
     "previous": 119
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "count": 81,
+    "previous": 98
    },
    {
     "type": "Sanitation Enforcement",
@@ -4375,7 +4375,7 @@
    {
     "type": "Trash Cart - Delivery",
     "count": 38,
-    "previous": 40
+    "previous": 41
    },
    {
     "type": "Dead Animal Collection",
@@ -4390,7 +4390,7 @@
    {
     "type": "Recycling Collection - Missed",
     "count": 25,
-    "previous": 32
+    "previous": 28
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
@@ -4400,7 +4400,7 @@
    {
     "type": "Roadway Signs",
     "count": 22,
-    "previous": 21
+    "previous": 20
    },
    {
     "type": "Container Removal",
@@ -4410,7 +4410,7 @@
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 18,
-    "previous": 41
+    "previous": 40
    },
    {
     "type": "DMV - Drivers License/ID Issues",
@@ -4420,7 +4420,7 @@
    {
     "type": "Streetlight Repair Investigation",
     "count": 15,
-    "previous": 39
+    "previous": 38
    },
    {
     "type": "DMV - Vehicle Registration Issues",
@@ -4430,7 +4430,7 @@
    {
     "type": "Recycling Cart Delivery",
     "count": 15,
-    "previous": 34
+    "previous": 35
    },
    {
     "type": "Graffiti Removal",
@@ -4465,12 +4465,12 @@
    {
     "type": "Sidewalk Repair",
     "count": 11,
-    "previous": 47
+    "previous": 46
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
     "count": 10,
-    "previous": 29
+    "previous": 27
    },
    {
     "type": "Rat Replacement Containers",
@@ -4540,12 +4540,12 @@
    {
     "type": "Pothole",
     "count": 4,
-    "previous": 7
+    "previous": 8
    },
    {
     "type": "Missed Curbside Compost Collection",
     "count": 4,
-    "previous": 10
+    "previous": 11
    },
    {
     "type": "Snow and Ice Removal on Public Space",
@@ -4560,7 +4560,7 @@
    {
     "type": "OCTFME - Down Cable Wires",
     "count": 3,
-    "previous": 22
+    "previous": 21
    },
    {
     "type": "Vacant Lot - Public Property Only",
@@ -4608,8 +4608,18 @@
     "previous": 2
    }
   ],
-  "open": 301,
+  "open": 302,
   "recent": [
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-06T03:40:18Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "700 block of 12TH STREET NE",
+    "lat": 38.899,
+    "lon": -76.99
+   },
    {
     "type": "Tree Removal",
     "agency": "DDOT",
@@ -5099,22 +5109,12 @@
     "block": "700 block of G STREET NE",
     "lat": 38.899,
     "lon": -76.995
-   },
-   {
-    "type": "Recycling Cart Delivery",
-    "agency": "DPW",
-    "added": "2026-11-04T18:07:34Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "800 block of 12TH STREET NE",
-    "lat": 38.901,
-    "lon": -76.991
    }
   ]
  },
  "crime": {
-  "total": 53,
-  "previous_total": 58,
+  "total": 52,
+  "previous_total": 59,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
@@ -5123,8 +5123,8 @@
    },
    {
     "offense": "THEFT F/AUTO",
-    "count": 11,
-    "previous": 9
+    "count": 10,
+    "previous": 10
    },
    {
     "offense": "MOTOR VEHICLE THEFT",
@@ -5132,14 +5132,14 @@
     "previous": 12
    },
    {
-    "offense": "ASSAULT W/DANGEROUS WEAPON",
-    "count": 4,
-    "previous": 3
-   },
-   {
     "offense": "ROBBERY",
     "count": 4,
     "previous": 5
+   },
+   {
+    "offense": "ASSAULT W/DANGEROUS WEAPON",
+    "count": 4,
+    "previous": 3
    },
    {
     "offense": "BURGLARY",
@@ -5195,7 +5195,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -5476,7 +5476,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -5496,11 +5496,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 135,
+   "active_this_week": 132,
    "starting_next_7d": 18,
-   "reserved_ft": 18634,
-   "long_running_90d": 17,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
+   "reserved_ft": 18524,
+   "long_running_90d": 18,
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -5520,7 +5520,7 @@
     },
     {
      "type": "Lead pipe replacement",
-     "count": 28
+     "count": 25
     },
     {
      "type": "Utility & DDOT work",
@@ -5532,14 +5532,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Moving & storage",
-     "block": "300 block of G Street NE",
-     "start": "2026-11-06",
-     "end": "2026-11-07",
-     "ft": 88,
-     "hours": ""
-    },
     {
      "type": "Utility & DDOT work",
      "block": "300 block of F Street NE",
@@ -5595,6 +5587,14 @@
      "end": "2026-12-08",
      "ft": 220,
      "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "900 block of 7th Street NE",
+     "start": "2026-11-09",
+     "end": "2026-12-08",
+     "ft": 264,
+     "hours": "9:30 am\u20133:30 pm"
     },
     {
      "type": "Cranes",
@@ -5758,9 +5758,9 @@
   "service": [
    {
     "type": "Bulk Collection",
-    "median_days": 5.74,
+    "median_days": 5.73,
     "city_median_days": 6.91,
-    "closed_n": 2148
+    "closed_n": 2146
    },
    {
     "type": "Scheduled Yard Waste",
@@ -5790,7 +5790,7 @@
     "type": "Illegal Dumping",
     "median_days": 3.49,
     "city_median_days": 4.02,
-    "closed_n": 630
+    "closed_n": 628
    },
    {
     "type": "Sanitation Enforcement",
@@ -5801,14 +5801,14 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 6.69,
-    "city_median_days": 4.88,
+    "city_median_days": 4.85,
     "closed_n": 373
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -5938,7 +5938,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "archive_days": 180,
   "sources": [
    {
@@ -6446,8 +6446,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-06T03:16:22Z",
-  "today": "2026-11-05",
+  "generated_at": "2026-11-06T09:19:38Z",
+  "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
    {
@@ -6516,6 +6516,15 @@
     "source": "DC farmers market list",
     "kind": "market",
     "date": "2026-11-28"
+   },
+   {
+    "title": "FRESHFARM H Street NE",
+    "place": "800 13th St NE",
+    "time": "9:00 AM - 12:30 PM",
+    "url": "https://www.freshfarm.org/markets",
+    "source": "DC farmers market list",
+    "kind": "market",
+    "date": "2026-12-05"
    }
   ],
   "unscheduled": [],
@@ -6542,7 +6551,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -25288,7 +25297,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

@@ -1,7 +1,7 @@
 {
  "slug": "navyyard",
  "name": "Navy Yard",
- "generated_at": "2026-11-06T03:16:22Z",
+ "generated_at": "2026-11-06T09:19:38Z",
  "boundary": {
   "source": "Navy Yard (Capitol Riverfront) Business Improvement District boundary (Open Data DC). DC's planning area here is SW/Waterfront.",
   "rings": [
@@ -6817,19 +6817,6 @@
    "smd": "8F02"
   },
   {
-   "id": "P2700535",
-   "issued": "2026-10-19T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "1205 HALF ST SE 20003",
-   "work": "Plumbing trade Permit",
-   "zoning": "CG-4",
-   "lat": 38.8753,
-   "lon": -77.00789,
-   "smd": "8F02"
-  },
-  {
    "id": "TN2700019",
    "issued": "2026-10-19T04:00:00Z",
    "group": "Renovation & repair",
@@ -6840,6 +6827,19 @@
    "zoning": "CG-4",
    "lat": 38.87236,
    "lon": -77.00853,
+   "smd": "8F02"
+  },
+  {
+   "id": "P2700535",
+   "issued": "2026-10-19T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "1205 HALF ST SE 20003",
+   "work": "Plumbing trade Permit",
+   "zoning": "CG-4",
+   "lat": 38.8753,
+   "lon": -77.00789,
    "smd": "8F02"
   },
   {
@@ -6909,13 +6909,13 @@
   }
  ],
  "requests": {
-  "total": 1142,
-  "previous_total": 1168,
+  "total": 1143,
+  "previous_total": 1165,
   "by_type": [
    {
     "type": "Parking Enforcement",
     "count": 539,
-    "previous": 729
+    "previous": 726
    },
    {
     "type": "DOEE - LIHEAP",
@@ -6924,8 +6924,8 @@
    },
    {
     "type": "Bulk Collection",
-    "count": 65,
-    "previous": 68
+    "count": 66,
+    "previous": 67
    },
    {
     "type": "Streetlight Repair Investigation",
@@ -6970,7 +6970,7 @@
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 19,
-    "previous": 13
+    "previous": 14
    },
    {
     "type": "Container Removal",
@@ -7123,8 +7123,18 @@
     "previous": 0
    }
   ],
-  "open": 164,
+  "open": 163,
   "recent": [
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "agency": "DOH",
+    "added": "2026-11-06T03:23:05Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of K STREET SE",
+    "lat": 38.878,
+    "lon": -77.008
+   },
    {
     "type": "Residential Parking Permit Violation",
     "agency": "DPW",
@@ -7614,22 +7624,12 @@
     "block": "300 block of I STREET SE",
     "lat": 38.879,
     "lon": -77.002
-   },
-   {
-    "type": "Abandoned Vehicle - On Public Property",
-    "agency": "DPW",
-    "added": "2026-11-02T15:30:52Z",
-    "resolved": "2026-11-02T16:24:05Z",
-    "status": "Closed",
-    "block": "300 block of I STREET SE",
-    "lat": 38.879,
-    "lon": -77.002
    }
   ]
  },
  "crime": {
-  "total": 47,
-  "previous_total": 49,
+  "total": 46,
+  "previous_total": 50,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
@@ -7638,8 +7638,8 @@
    },
    {
     "offense": "THEFT F/AUTO",
-    "count": 15,
-    "previous": 20
+    "count": 14,
+    "previous": 21
    },
    {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
@@ -7657,14 +7657,14 @@
     "previous": 2
    },
    {
-    "offense": "SEX ABUSE",
-    "count": 0,
-    "previous": 1
-   },
-   {
     "offense": "ROBBERY",
     "count": 0,
     "previous": 3
+   },
+   {
+    "offense": "SEX ABUSE",
+    "count": 0,
+    "previous": 1
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -7721,7 +7721,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -7914,7 +7914,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -7934,11 +7934,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 56,
+   "active_this_week": 49,
    "starting_next_7d": 4,
-   "reserved_ft": 6556,
+   "reserved_ft": 5676,
    "long_running_90d": 11,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Construction staging",
@@ -7950,7 +7950,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 17
+     "count": 10
     },
     {
      "type": "Events & reserved parking",
@@ -8073,7 +8073,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 2168
+    "closed_n": 2167
    },
    {
     "type": "DC Government Information",
@@ -8108,7 +8108,7 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 1.87,
-    "city_median_days": 4.88,
+    "city_median_days": 4.85,
     "closed_n": 74
    },
    {
@@ -8121,7 +8121,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -8261,7 +8261,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "archive_days": 180,
   "sources": [
    {
@@ -8822,8 +8822,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-06T03:16:22Z",
-  "today": "2026-11-05",
+  "generated_at": "2026-11-06T09:19:38Z",
+  "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
    {
@@ -8908,7 +8908,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -31806,7 +31806,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

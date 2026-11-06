@@ -1,7 +1,7 @@
 {
  "slug": "stadiumarmory",
  "name": "Stadium-Armory",
- "generated_at": "2026-11-06T03:16:22Z",
+ "generated_at": "2026-11-06T09:19:38Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1035,13 +1035,13 @@
   }
  ],
  "requests": {
-  "total": 398,
-  "previous_total": 510,
+  "total": 400,
+  "previous_total": 505,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 102,
-    "previous": 211
+    "count": 103,
+    "previous": 210
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -1080,7 +1080,7 @@
    },
    {
     "type": "Bulk Collection",
-    "count": 8,
+    "count": 9,
     "previous": 38
    },
    {
@@ -1089,7 +1089,7 @@
     "previous": 30
    }
   ],
-  "open": 20,
+  "open": 21,
   "recent": [
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -1132,6 +1132,16 @@
     "lon": -76.978
    },
    {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T14:47:05Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1800 block of POTOMAC AVENUE SE",
+    "lat": 38.883,
+    "lon": -76.978
+   },
+   {
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-11-03T14:03:04Z",
@@ -1272,12 +1282,12 @@
     "lon": -76.978
    },
    {
-    "type": "Bulk Collection",
+    "type": "Parking Enforcement",
     "agency": "DPW",
-    "added": "2026-10-31T19:19:52Z",
-    "resolved": "2026-11-03T15:39:41Z",
+    "added": "2026-10-31T22:25:37Z",
+    "resolved": "2026-10-31T23:11:48Z",
     "status": "Closed",
-    "block": "1800 block of POTOMAC AVENUE SE",
+    "block": "1800 block of E STREET SE",
     "lat": 38.883,
     "lon": -76.978
    },
@@ -1332,6 +1342,16 @@
     "lon": -76.978
    },
    {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-10-31T19:19:52Z",
+    "resolved": "2026-11-03T15:39:41Z",
+    "status": "Closed",
+    "block": "1800 block of POTOMAC AVENUE SE",
+    "lat": 38.883,
+    "lon": -76.978
+   },
+   {
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-10-29T16:21:58Z",
@@ -1496,26 +1516,6 @@
     "agency": "DMV",
     "added": "2026-10-27T16:46:57Z",
     "resolved": "2026-10-29T20:45:25Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-27T11:36:16Z",
-    "resolved": "2026-10-27T13:48:01Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-27T11:36:16Z",
-    "resolved": "2026-10-27T13:48:01Z",
     "status": "Closed",
     "block": "1900 block of C STREET SE",
     "lat": 38.885,
@@ -1603,7 +1603,7 @@
     "previous": 2
    },
    {
-    "offense": "BURGLARY",
+    "offense": "HOMICIDE",
     "count": 1,
     "previous": 0
    },
@@ -1613,17 +1613,17 @@
     "previous": 5
    },
    {
-    "offense": "HOMICIDE",
+    "offense": "BURGLARY",
     "count": 1,
     "previous": 0
    },
    {
-    "offense": "THEFT F/AUTO",
+    "offense": "ROBBERY",
     "count": 0,
     "previous": 1
    },
    {
-    "offense": "ROBBERY",
+    "offense": "THEFT F/AUTO",
     "count": 0,
     "previous": 1
    }
@@ -1658,7 +1658,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -1854,7 +1854,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -1874,11 +1874,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 16,
-   "starting_next_7d": 5,
+   "active_this_week": 15,
+   "starting_next_7d": 4,
    "reserved_ft": 1716,
    "long_running_90d": 5,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -1886,7 +1886,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 11
+     "count": 10
     },
     {
      "type": "Cranes",
@@ -1902,14 +1902,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Construction staging",
-     "block": "800 block of 17th Street SE",
-     "start": "2026-11-06",
-     "end": "2026-12-05",
-     "ft": 374,
-     "hours": "9:30 am\u20133:30 pm"
-    },
     {
      "type": "Cranes",
      "block": "1700 block of Potomac Avenue SE",
@@ -2073,7 +2065,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2163,7 +2155,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2243,7 +2235,7 @@
     "name": "Hill Rag",
     "url": "https://www.hillrag.com/",
     "state": "ok",
-    "matched": 8,
+    "matched": 9,
     "fetched": 1
    },
    {
@@ -2570,8 +2562,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-06T03:16:22Z",
-  "today": "2026-11-05",
+  "generated_at": "2026-11-06T09:19:38Z",
+  "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
    {
@@ -2605,15 +2597,6 @@
    }
   ],
   "events": [
-   {
-    "title": "Death Cafe at Congressional Cemetery",
-    "date": "2026-11-05",
-    "time": "6 PM to 7:30 PM",
-    "place": "Historic Congressional Cemetery, 1801 E Street, Southeast",
-    "url": "https://congressionalcemetery.org/event/death-cafe-at-congressional-cemetery-4/2026-11-05/",
-    "source": "Historic Congressional Cemetery",
-    "kind": "community"
-   },
    {
     "title": "John Philip Sousa Birthday Concert 2026",
     "date": "2026-11-06",
@@ -2745,7 +2728,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -14249,7 +14232,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

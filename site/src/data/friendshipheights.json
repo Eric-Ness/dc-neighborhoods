@@ -1,7 +1,7 @@
 {
  "slug": "friendshipheights",
  "name": "Friendship Heights",
- "generated_at": "2026-11-06T03:16:22Z",
+ "generated_at": "2026-11-06T09:19:38Z",
  "boundary": {
   "source": "ANC single-member districts 3E03 and 3E04, around the Friendship Heights Metro (Open Data DC). DC has no planning area for Friendship Heights; this overlaps the Tenleytown site.",
   "rings": [
@@ -2507,19 +2507,6 @@
    "smd": "3E03"
   },
   {
-   "id": "E2701104",
-   "issued": "2026-10-31T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "3859 GRAMERCY ST NW 20016",
-   "work": "",
-   "zoning": "R-1B",
-   "lat": 38.95646,
-   "lon": -77.07684,
-   "smd": "3E04"
-  },
-  {
    "id": "E2701102",
    "issued": "2026-10-31T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -2530,6 +2517,19 @@
    "zoning": "R-1B",
    "lat": 38.95885,
    "lon": -77.07895,
+   "smd": "3E04"
+  },
+  {
+   "id": "E2701104",
+   "issued": "2026-10-31T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "3859 GRAMERCY ST NW 20016",
+   "work": "",
+   "zoning": "R-1B",
+   "lat": 38.95646,
+   "lon": -77.07684,
    "smd": "3E04"
   },
   {
@@ -2650,16 +2650,16 @@
    "smd": "3E04"
   },
   {
-   "id": "E2700592",
+   "id": "B2700302",
    "issued": "2026-10-19T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "4416 FESSENDEN ST NW 20016",
-   "work": "",
-   "zoning": "R-1B",
-   "lat": 38.95446,
-   "lon": -77.08743,
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "4422 GARRISON ST NW 20016",
+   "work": "Remove existing siding on rear of house only and replace it with new vinyl siding,",
+   "zoning": "R-2",
+   "lat": 38.95578,
+   "lon": -77.08746,
    "smd": "3E03"
   },
   {
@@ -2676,16 +2676,16 @@
    "smd": "3E03"
   },
   {
-   "id": "B2700302",
+   "id": "E2700592",
    "issued": "2026-10-19T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "4422 GARRISON ST NW 20016",
-   "work": "Remove existing siding on rear of house only and replace it with new vinyl siding,",
-   "zoning": "R-2",
-   "lat": 38.95578,
-   "lon": -77.08746,
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "4416 FESSENDEN ST NW 20016",
+   "work": "",
+   "zoning": "R-1B",
+   "lat": 38.95446,
+   "lon": -77.08743,
    "smd": "3E03"
   },
   {
@@ -2767,11 +2767,11 @@
    "smd": "3E04"
   },
   {
-   "id": "M2700161",
+   "id": "E2700425",
    "issued": "2026-10-13T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
    "type": "SUPPLEMENTAL",
-   "subtype": "MECHANICAL",
+   "subtype": "ELECTRICAL",
    "address": "4510 HARRISON ST NW 20015",
    "work": "",
    "zoning": "R-1B",
@@ -2780,11 +2780,11 @@
    "smd": "3E04"
   },
   {
-   "id": "E2700425",
+   "id": "M2700161",
    "issued": "2026-10-13T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
    "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
+   "subtype": "MECHANICAL",
    "address": "4510 HARRISON ST NW 20015",
    "work": "",
    "zoning": "R-1B",
@@ -2924,13 +2924,13 @@
   }
  ],
  "requests": {
-  "total": 469,
-  "previous_total": 531,
+  "total": 467,
+  "previous_total": 532,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
     "count": 90,
-    "previous": 65
+    "previous": 64
    },
    {
     "type": "Bulk Collection",
@@ -2988,11 +2988,6 @@
     "previous": 24
    },
    {
-    "type": "Public Space Litter Can-Collection",
-    "count": 10,
-    "previous": 0
-   },
-   {
     "type": "Tree Removal",
     "count": 9,
     "previous": 7
@@ -3006,6 +3001,11 @@
     "type": "Dockless Vehicle Parking Complaint",
     "count": 9,
     "previous": 0
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "count": 8,
+    "previous": 2
    },
    {
     "type": "Sanitation Enforcement",
@@ -3662,12 +3662,12 @@
     "previous": 0
    },
    {
-    "offense": "MOTOR VEHICLE THEFT",
+    "offense": "ROBBERY",
     "count": 1,
     "previous": 0
    },
    {
-    "offense": "ROBBERY",
+    "offense": "MOTOR VEHICLE THEFT",
     "count": 1,
     "previous": 0
    }
@@ -3696,7 +3696,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3946,7 +3946,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3967,14 +3967,14 @@
   ],
   "curb": {
    "active_this_week": 36,
-   "starting_next_7d": 9,
-   "reserved_ft": 5302,
+   "starting_next_7d": 10,
+   "reserved_ft": 5654,
    "long_running_90d": 9,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 4
+     "count": 3
     },
     {
      "type": "Dumpsters",
@@ -3994,18 +3994,10 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 4
+     "count": 5
     }
    ],
    "upcoming": [
-    {
-     "type": "Moving & storage",
-     "block": "5100 block of 44th Street NW",
-     "start": "2026-11-06",
-     "end": "2026-11-06",
-     "ft": 88,
-     "hours": ""
-    },
     {
      "type": "Cranes",
      "block": "4300 block of Jenifer Street NW",
@@ -4037,6 +4029,22 @@
      "end": "2026-11-13",
      "ft": 22,
      "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Lead pipe replacement",
+     "block": "4900 block of Wisconsin Avenue NW",
+     "start": "2026-11-09",
+     "end": "2026-11-27",
+     "ft": 176,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "3900 block of Ingomar Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-10",
+     "ft": 440,
+     "hours": "7:30 am\u20132:30 pm"
     },
     {
      "type": "Cranes",
@@ -4152,9 +4160,9 @@
   "service": [
    {
     "type": "Bulk Collection",
-    "median_days": 7.69,
+    "median_days": 7.7,
     "city_median_days": 6.91,
-    "closed_n": 697
+    "closed_n": 696
    },
    {
     "type": "Scheduled Yard Waste",
@@ -4171,7 +4179,7 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 6.08,
-    "city_median_days": 4.88,
+    "city_median_days": 4.85,
     "closed_n": 334
    },
    {
@@ -4195,14 +4203,14 @@
    {
     "type": "Roadway Signs",
     "median_days": 7.76,
-    "city_median_days": 7.02,
+    "city_median_days": 7.01,
     "closed_n": 93
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4348,7 +4356,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4635,8 +4643,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-06T03:16:22Z",
-  "today": "2026-11-05",
+  "generated_at": "2026-11-06T09:19:38Z",
+  "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
    {
@@ -4697,7 +4705,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -19254,7 +19262,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

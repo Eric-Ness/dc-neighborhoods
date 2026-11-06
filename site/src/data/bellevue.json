@@ -1,7 +1,7 @@
 {
  "slug": "bellevue",
  "name": "Bellevue",
- "generated_at": "2026-11-06T03:16:22Z",
+ "generated_at": "2026-11-06T09:19:38Z",
  "boundary": {
   "source": "ANC single-member districts 8D01, 8D03, 8D05, 8D06, 8E07, 8E08 and 8E09, the homes in DC's BELLEVUE planning area (Open Data DC). 8D04 is left out: it is mostly the empty land at DC's southern tip.",
   "rings": [
@@ -8442,18 +8442,18 @@
   }
  ],
  "requests": {
-  "total": 626,
+  "total": 625,
   "previous_total": 686,
   "by_type": [
    {
     "type": "DOEE - LIHEAP",
-    "count": 116,
+    "count": 117,
     "previous": 9
    },
    {
     "type": "Bulk Collection",
-    "count": 104,
-    "previous": 138
+    "count": 101,
+    "previous": 140
    },
    {
     "type": "Parking Enforcement",
@@ -8478,7 +8478,7 @@
    {
     "type": "Scheduled Yard Waste",
     "count": 24,
-    "previous": 25
+    "previous": 24
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
@@ -8568,7 +8568,12 @@
    {
     "type": "Pothole",
     "count": 4,
-    "previous": 8
+    "previous": 7
+   },
+   {
+    "type": "Streetlight Repair Investigation",
+    "count": 3,
+    "previous": 2
    },
    {
     "type": "DMV - Online Processing Issues",
@@ -8594,11 +8599,6 @@
     "type": "DMV - Vehicle Title Issues",
     "count": 3,
     "previous": 1
-   },
-   {
-    "type": "Streetlight Repair Investigation",
-    "count": 2,
-    "previous": 2
    },
    {
     "type": "Trash Cart Repair",
@@ -9156,8 +9156,8 @@
   ]
  },
  "crime": {
-  "total": 36,
-  "previous_total": 36,
+  "total": 35,
+  "previous_total": 37,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
@@ -9175,19 +9175,19 @@
     "previous": 4
    },
    {
+    "offense": "ROBBERY",
+    "count": 3,
+    "previous": 4
+   },
+   {
     "offense": "BURGLARY",
     "count": 3,
     "previous": 4
    },
    {
     "offense": "MOTOR VEHICLE THEFT",
-    "count": 3,
-    "previous": 6
-   },
-   {
-    "offense": "ROBBERY",
-    "count": 3,
-    "previous": 4
+    "count": 2,
+    "previous": 7
    },
    {
     "offense": "SEX ABUSE",
@@ -9249,7 +9249,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -9436,7 +9436,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -9456,15 +9456,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 37,
+   "active_this_week": 30,
    "starting_next_7d": 0,
-   "reserved_ft": 3410,
+   "reserved_ft": 2728,
    "long_running_90d": 21,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Construction staging",
-     "count": 9
+     "count": 6
     },
     {
      "type": "Lead pipe replacement",
@@ -9472,7 +9472,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 23
+     "count": 19
     }
    ],
    "upcoming": []
@@ -9607,7 +9607,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -9730,7 +9730,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "archive_days": 180,
   "sources": [
    {
@@ -9927,8 +9927,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-06T03:16:22Z",
-  "today": "2026-11-05",
+  "generated_at": "2026-11-06T09:19:38Z",
+  "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
    {
@@ -9953,15 +9953,6 @@
    }
   ],
   "events": [
-   {
-    "title": "Arcadia Mobile Market at Bellevue Library",
-    "place": "115 Atlantic Street SW",
-    "time": "3:00 PM - 5:00 PM",
-    "url": "https://www.arcadiafood.org",
-    "source": "DC farmers market list",
-    "kind": "market",
-    "date": "2026-11-05"
-   },
    {
     "title": "Arcadia Mobile Market at Bellevue Library",
     "place": "115 Atlantic Street SW",
@@ -10003,7 +9994,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -27100,7 +27091,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

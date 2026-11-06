@@ -1,7 +1,7 @@
 {
  "slug": "georgetown",
  "name": "Georgetown",
- "generated_at": "2026-11-06T03:16:22Z",
+ "generated_at": "2026-11-06T09:19:38Z",
  "boundary": {
   "source": "Georgetown Historic District (DC Historic Preservation Office, Open Data DC). DC's GEORGETOWN planning area covers only the western half of the neighborhood.",
   "rings": [
@@ -4441,6 +4441,19 @@
    "smd": "2E02"
   },
   {
+   "id": "D2700017",
+   "issued": "2026-10-20T04:00:00Z",
+   "group": "Demolition",
+   "type": "CONSTRUCTION",
+   "subtype": "DEMOLITION",
+   "address": "2715 N ST NW 20007",
+   "work": "Historic and CFA\r\nDEMO PERMIT ONLY TO REMOVE NON-LOAD BEARING WALLS PER PLANS, CABINETS/COUNTERS, BASE TRIM/CROWN ONLY AS NEEDED, BATHROOM FIXTURES, HARDWOODFLOORING, FLOOR TILES, AND PLASTER ON WALLS/CEILING WHERE NEEDED.NO CONSTRUCTION INCLUDED IN SCOPE OF DEMO PERMIT ASIDE FROM REMOVAL OF INTERIOR ELEMENTS.",
+   "zoning": "R-3/GT",
+   "lat": 38.90715,
+   "lon": -77.05641,
+   "smd": "2E06"
+  },
+  {
    "id": "B2700028",
    "issued": "2026-10-20T04:00:00Z",
    "group": "Renovation & repair",
@@ -4530,19 +4543,6 @@
    "lat": 38.91218,
    "lon": -77.06418,
    "smd": "2E02"
-  },
-  {
-   "id": "D2700017",
-   "issued": "2026-10-20T04:00:00Z",
-   "group": "Demolition",
-   "type": "CONSTRUCTION",
-   "subtype": "DEMOLITION",
-   "address": "2715 N ST NW 20007",
-   "work": "Historic and CFA\r\nDEMO PERMIT ONLY TO REMOVE NON-LOAD BEARING WALLS PER PLANS, CABINETS/COUNTERS, BASE TRIM/CROWN ONLY AS NEEDED, BATHROOM FIXTURES, HARDWOODFLOORING, FLOOR TILES, AND PLASTER ON WALLS/CEILING WHERE NEEDED.NO CONSTRUCTION INCLUDED IN SCOPE OF DEMO PERMIT ASIDE FROM REMOVAL OF INTERIOR ELEMENTS.",
-   "zoning": "R-3/GT",
-   "lat": 38.90715,
-   "lon": -77.05641,
-   "smd": "2E06"
   },
   {
    "id": "B2700013",
@@ -4949,28 +4949,28 @@
   }
  ],
  "requests": {
-  "total": 1262,
-  "previous_total": 1411,
+  "total": 1269,
+  "previous_total": 1403,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 246,
+    "count": 248,
     "previous": 185
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 140,
+    "count": 141,
     "previous": 130
    },
    {
     "type": "Bulk Collection",
-    "count": 100,
-    "previous": 129
+    "count": 102,
+    "previous": 128
    },
    {
     "type": "Residential Parking Permit Violation",
-    "count": 76,
-    "previous": 98
+    "count": 80,
+    "previous": 100
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -4979,8 +4979,8 @@
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 68,
-    "previous": 92
+    "count": 67,
+    "previous": 91
    },
    {
     "type": "Trash Collection - Missed",
@@ -4990,12 +4990,12 @@
    {
     "type": "Roadway Signs",
     "count": 50,
-    "previous": 37
+    "previous": 35
    },
    {
     "type": "Sanitation Enforcement",
     "count": 45,
-    "previous": 33
+    "previous": 32
    },
    {
     "type": "Trash Cart - Delivery",
@@ -5005,7 +5005,7 @@
    {
     "type": "DOB - Vacant Private Property Inspection",
     "count": 37,
-    "previous": 22
+    "previous": 20
    },
    {
     "type": "Container Removal",
@@ -5020,7 +5020,7 @@
    {
     "type": "Rat Replacement Containers",
     "count": 21,
-    "previous": 48
+    "previous": 47
    },
    {
     "type": "Tree Pruning",
@@ -5070,17 +5070,17 @@
    {
     "type": "Streetlight Repair Investigation",
     "count": 9,
-    "previous": 19
+    "previous": 20
+   },
+   {
+    "type": "Public Space Inspection",
+    "count": 9,
+    "previous": 16
    },
    {
     "type": "Graffiti Removal",
     "count": 9,
-    "previous": 26
-   },
-   {
-    "type": "Dead Animal Collection",
-    "count": 9,
-    "previous": 13
+    "previous": 25
    },
    {
     "type": "DMV - Drivers License/ID Issues",
@@ -5093,9 +5093,9 @@
     "previous": 5
    },
    {
-    "type": "Public Space Inspection",
+    "type": "Dead Animal Collection",
     "count": 8,
-    "previous": 16
+    "previous": 12
    },
    {
     "type": "Pothole",
@@ -5145,7 +5145,7 @@
    {
     "type": "Supercan - Delivery",
     "count": 3,
-    "previous": 6
+    "previous": 5
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
@@ -5178,17 +5178,17 @@
     "previous": 2
    },
    {
-    "type": "DMV - Copy of Ticket",
-    "count": 2,
-    "previous": 0
-   },
-   {
     "type": "Abandoned Vehicle - On Private Property",
     "count": 2,
     "previous": 0
    },
    {
     "type": "DMV - Driver and Vehicle Services Refund",
+    "count": 1,
+    "previous": 0
+   },
+   {
+    "type": "DMV - Copy of Ticket",
     "count": 1,
     "previous": 0
    },
@@ -5213,8 +5213,28 @@
     "previous": 3
    }
   ],
-  "open": 270,
+  "open": 274,
   "recent": [
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-06T03:33:14Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3100 block of O STREET NW",
+    "lat": 38.909,
+    "lon": -77.062
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-06T03:21:13Z",
+    "resolved": "2026-11-06T04:03:05Z",
+    "status": "Closed",
+    "block": "3300 block of VOLTA PLACE NW",
+    "lat": 38.91,
+    "lon": -77.067
+   },
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
@@ -5694,26 +5714,6 @@
     "block": "3200 block of GRACE STREET NW",
     "lat": 38.904,
     "lon": -77.063
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-03T21:35:15Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1200 block of 33RD STREET NW",
-    "lat": 38.906,
-    "lon": -77.066
-   },
-   {
-    "type": "Roadway Signs",
-    "agency": "DDOT",
-    "added": "2026-11-03T21:32:13Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "27TH STREET NW AND MILL ROAD NW",
-    "lat": 38.911,
-    "lon": -77.055
    }
   ]
  },
@@ -5737,7 +5737,7 @@
     "previous": 0
    },
    {
-    "offense": "BURGLARY",
+    "offense": "ROBBERY",
     "count": 1,
     "previous": 1
    },
@@ -5747,7 +5747,7 @@
     "previous": 2
    },
    {
-    "offense": "ROBBERY",
+    "offense": "BURGLARY",
     "count": 1,
     "previous": 1
    },
@@ -5805,7 +5805,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -6042,7 +6042,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -6062,15 +6062,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 151,
-   "starting_next_7d": 23,
-   "reserved_ft": 13376,
+   "active_this_week": 150,
+   "starting_next_7d": 26,
+   "reserved_ft": 13288,
    "long_running_90d": 64,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 16
+     "count": 13
     },
     {
      "type": "Dumpsters",
@@ -6078,11 +6078,11 @@
     },
     {
      "type": "Construction staging",
-     "count": 89
+     "count": 90
     },
     {
      "type": "Cranes",
-     "count": 3
+     "count": 2
     },
     {
      "type": "Lead pipe replacement",
@@ -6090,7 +6090,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 9
+     "count": 11
     },
     {
      "type": "Events & reserved parking",
@@ -6099,52 +6099,28 @@
    ],
    "upcoming": [
     {
-     "type": "Moving & storage",
-     "block": "3100 block of P Street NW",
+     "type": "Construction staging",
+     "block": "3000 block of R Street NW",
      "start": "2026-11-06",
-     "end": "2026-11-07",
-     "ft": 88,
-     "hours": ""
+     "end": "2027-01-02",
+     "ft": 176,
+     "hours": "9:30 am\u20133:30 pm"
     },
     {
-     "type": "Moving & storage",
-     "block": "3200 block of N Street NW",
+     "type": "Construction staging",
+     "block": "3000 block of R Street NW",
      "start": "2026-11-06",
-     "end": "2026-11-07",
-     "ft": 88,
-     "hours": ""
+     "end": "2027-01-02",
+     "ft": 220,
+     "hours": "9:30 am\u20133:30 pm"
     },
     {
-     "type": "Moving & storage",
-     "block": "1500 block of 33rd Street NW",
+     "type": "Construction staging",
+     "block": "3000 block of R Street NW",
      "start": "2026-11-06",
-     "end": "2026-11-07",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Moving & storage",
-     "block": "1900 block of 35th Street NW",
-     "start": "2026-11-06",
-     "end": "2026-11-06",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Moving & storage",
-     "block": "1300 block of 34th Street NW",
-     "start": "2026-11-06",
-     "end": "2026-11-06",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Moving & storage",
-     "block": "1200 block of 30th Street NW",
-     "start": "2026-11-06",
-     "end": "2026-11-06",
-     "ft": 88,
-     "hours": ""
+     "end": "2027-01-02",
+     "ft": 176,
+     "hours": "9:30 am\u20133:30 pm"
     },
     {
      "type": "Events & reserved parking",
@@ -6212,6 +6188,38 @@
     },
     {
      "type": "Moving & storage",
+     "block": "1500 block of 34th Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-10",
+     "ft": 88,
+     "hours": ""
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "3900 block of Reservoir Road NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 66,
+     "hours": "9 am\u20135 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "3900 block of Reservoir Road NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 66,
+     "hours": "9 am\u20135 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "3900 block of Reservoir Road NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 66,
+     "hours": "9 am\u20135 pm"
+    },
+    {
+     "type": "Moving & storage",
      "block": "3000 block of Dumbarton Street NW",
      "start": "2026-11-10",
      "end": "2026-11-11",
@@ -6221,6 +6229,14 @@
     {
      "type": "Moving & storage",
      "block": "2500 block of Q Street NW",
+     "start": "2026-11-10",
+     "end": "2026-11-11",
+     "ft": 88,
+     "hours": ""
+    },
+    {
+     "type": "Moving & storage",
+     "block": "1500 block of 29th Street NW",
      "start": "2026-11-10",
      "end": "2026-11-11",
      "ft": 88,
@@ -6255,6 +6271,14 @@
      "block": "3600 block of Reservoir Road NW",
      "start": "2026-11-12",
      "end": "2026-11-13",
+     "ft": 88,
+     "hours": ""
+    },
+    {
+     "type": "Moving & storage",
+     "block": "3200 block of N Street NW",
+     "start": "2026-11-12",
+     "end": "2026-11-12",
      "ft": 88,
      "hours": ""
     },
@@ -6414,7 +6438,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -6557,7 +6581,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "archive_days": 180,
   "sources": [
    {
@@ -7608,8 +7632,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-06T03:16:22Z",
-  "today": "2026-11-05",
+  "generated_at": "2026-11-06T09:19:38Z",
+  "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
    {
@@ -7642,7 +7666,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -29220,7 +29244,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

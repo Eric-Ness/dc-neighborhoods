@@ -1,7 +1,7 @@
 {
  "slug": "foggybottom",
  "name": "Foggy Bottom",
- "generated_at": "2026-11-06T03:16:22Z",
+ "generated_at": "2026-11-06T09:19:38Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods: GWU, which covers Foggy Bottom and the West End (Open Data DC).",
   "rings": [
@@ -3836,7 +3836,7 @@
   }
  ],
  "requests": {
-  "total": 726,
+  "total": 725,
   "previous_total": 813,
   "by_type": [
    {
@@ -3847,12 +3847,12 @@
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 76,
-    "previous": 135
+    "previous": 134
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 48,
-    "previous": 57
+    "count": 47,
+    "previous": 58
    },
    {
     "type": "Roadway Signs",
@@ -4657,7 +4657,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -4828,7 +4828,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4848,27 +4848,23 @@
    }
   ],
   "curb": {
-   "active_this_week": 218,
-   "starting_next_7d": 28,
-   "reserved_ft": 14740,
+   "active_this_week": 222,
+   "starting_next_7d": 33,
+   "reserved_ft": 15730,
    "long_running_90d": 127,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
    "by_type": [
-    {
-     "type": "Moving & storage",
-     "count": 2
-    },
     {
      "type": "Dumpsters",
      "count": 3
     },
     {
      "type": "Construction staging",
-     "count": 81
+     "count": 84
     },
     {
      "type": "Cranes",
-     "count": 1
+     "count": 3
     },
     {
      "type": "Lead pipe replacement",
@@ -4880,18 +4876,10 @@
     },
     {
      "type": "Events & reserved parking",
-     "count": 104
+     "count": 105
     }
    ],
    "upcoming": [
-    {
-     "type": "Construction staging",
-     "block": "700 block of 21st Street NW",
-     "start": "2026-11-06",
-     "end": "2026-12-05",
-     "ft": 66,
-     "hours": "7 am\u20137 pm"
-    },
     {
      "type": "Events & reserved parking",
      "block": "2100 block of Virginia Avenue NW",
@@ -4909,12 +4897,36 @@
      "hours": "8 am\u20135:30 pm"
     },
     {
-     "type": "Moving & storage",
-     "block": "1800 block of Jefferson Place NW",
+     "type": "Construction staging",
+     "block": "1000 block of 20th Street NW",
      "start": "2026-11-06",
-     "end": "2026-11-06",
-     "ft": 88,
-     "hours": ""
+     "end": "2027-01-02",
+     "ft": 176,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "800 block of 20th Street NW",
+     "start": "2026-11-06",
+     "end": "2027-01-02",
+     "ft": 220,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "800 block of 20th Street NW",
+     "start": "2026-11-06",
+     "end": "2027-01-02",
+     "ft": 132,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "900 block of 20th Street NW",
+     "start": "2026-11-06",
+     "end": "2027-01-02",
+     "ft": 220,
+     "hours": "9:30 am\u20133:30 pm"
     },
     {
      "type": "Cranes",
@@ -4923,6 +4935,22 @@
      "end": "2026-11-08",
      "ft": 0,
      "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Cranes",
+     "block": "1800 block of M Street NW",
+     "start": "2026-11-07",
+     "end": "2026-11-07",
+     "ft": 66,
+     "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Cranes",
+     "block": "1100 block of 19th Street NW",
+     "start": "2026-11-07",
+     "end": "2026-11-07",
+     "ft": 264,
+     "hours": "7 am\u20137 pm"
     },
     {
      "type": "Events & reserved parking",
@@ -5107,6 +5135,14 @@
      "end": "2026-11-13",
      "ft": 0,
      "hours": "8 am\u201311 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "1700 block of Rhode Island Avenue NW",
+     "start": "2026-11-13",
+     "end": "2026-11-13",
+     "ft": 132,
+     "hours": "8 am\u201312 pm"
     }
    ]
   },
@@ -5192,7 +5228,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.06,
     "city_median_days": 0.05,
-    "closed_n": 1718
+    "closed_n": 1716
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -5209,7 +5245,7 @@
    {
     "type": "Sidewalk Repair",
     "median_days": 32.89,
-    "city_median_days": 45.89,
+    "city_median_days": 45.88,
     "closed_n": 163
    },
    {
@@ -5220,9 +5256,9 @@
    },
    {
     "type": "Illegal Dumping",
-    "median_days": 2.42,
+    "median_days": 2.46,
     "city_median_days": 4.02,
-    "closed_n": 148
+    "closed_n": 147
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -5240,7 +5276,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -5414,7 +5450,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "archive_days": 180,
   "sources": [
    {
@@ -6429,8 +6465,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-06T03:16:22Z",
-  "today": "2026-11-05",
+  "generated_at": "2026-11-06T09:19:38Z",
+  "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
    {
@@ -6519,7 +6555,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -26269,7 +26305,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

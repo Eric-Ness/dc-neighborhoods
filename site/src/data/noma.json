@@ -1,7 +1,7 @@
 {
  "slug": "noma",
  "name": "NoMa",
- "generated_at": "2026-11-06T03:16:22Z",
+ "generated_at": "2026-11-06T09:19:38Z",
  "boundary": {
   "source": "NoMa Business Improvement District boundary (Open Data DC). DC has no planning area for NoMa.",
   "rings": [
@@ -570,8 +570,8 @@
   }
  ],
  "requests": {
-  "total": 1002,
-  "previous_total": 757,
+  "total": 1003,
+  "previous_total": 753,
   "by_type": [
    {
     "type": "Parking Enforcement",
@@ -586,7 +586,7 @@
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 41,
-    "previous": 118
+    "previous": 116
    },
    {
     "type": "DMV - Drivers License/ID Issues",
@@ -635,7 +635,7 @@
    },
    {
     "type": "Public Space Inspection",
-    "count": 16,
+    "count": 17,
     "previous": 11
    },
    {
@@ -661,7 +661,7 @@
    {
     "type": "DC How Am I Driving?",
     "count": 12,
-    "previous": 9
+    "previous": 8
    },
    {
     "type": "Bulk Collection",
@@ -1315,7 +1315,7 @@
  },
  "crime": {
   "total": 71,
-  "previous_total": 74,
+  "previous_total": 73,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
@@ -1325,7 +1325,7 @@
    {
     "offense": "THEFT F/AUTO",
     "count": 22,
-    "previous": 13
+    "previous": 12
    },
    {
     "offense": "MOTOR VEHICLE THEFT",
@@ -1338,14 +1338,14 @@
     "previous": 0
    },
    {
-    "offense": "ASSAULT W/DANGEROUS WEAPON",
-    "count": 1,
-    "previous": 4
-   },
-   {
     "offense": "ROBBERY",
     "count": 1,
     "previous": 8
+   },
+   {
+    "offense": "ASSAULT W/DANGEROUS WEAPON",
+    "count": 1,
+    "previous": 4
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -1378,7 +1378,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -1567,7 +1567,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -1589,9 +1589,9 @@
   "curb": {
    "active_this_week": 39,
    "starting_next_7d": 1,
-   "reserved_ft": 3828,
+   "reserved_ft": 3498,
    "long_running_90d": 12,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -1599,7 +1599,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 32
+     "count": 33
     },
     {
      "type": "Lead pipe replacement",
@@ -1608,10 +1608,6 @@
     {
      "type": "Utility & DDOT work",
      "count": 4
-    },
-    {
-     "type": "Events & reserved parking",
-     "count": 1
     }
    ],
    "upcoming": [
@@ -1741,9 +1737,9 @@
    },
    {
     "type": "DMV - Drivers License/ID Issues",
-    "median_days": 8.01,
+    "median_days": 7.97,
     "city_median_days": 8.0,
-    "closed_n": 97
+    "closed_n": 96
    },
    {
     "type": "DOEE - LIHEAP",
@@ -1755,7 +1751,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -1925,7 +1921,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2285,8 +2281,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-06T03:16:22Z",
-  "today": "2026-11-05",
+  "generated_at": "2026-11-06T09:19:38Z",
+  "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
    {
@@ -2355,7 +2351,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -13707,7 +13703,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

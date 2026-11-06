@@ -1,7 +1,7 @@
 {
  "slug": "columbiaheights",
  "name": "Columbia Heights",
- "generated_at": "2026-11-06T03:16:22Z",
+ "generated_at": "2026-11-06T09:19:38Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -2457,17 +2457,17 @@
  ],
  "requests": {
   "total": 1921,
-  "previous_total": 2103,
+  "previous_total": 2102,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 283,
-    "previous": 275
+    "count": 282,
+    "previous": 280
    },
    {
     "type": "Bulk Collection",
-    "count": 202,
-    "previous": 266
+    "count": 203,
+    "previous": 265
    },
    {
     "type": "Illegal Dumping",
@@ -2491,7 +2491,7 @@
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 78,
+    "count": 77,
     "previous": 143
    },
    {
@@ -2507,7 +2507,7 @@
    {
     "type": "Out of State Parking Violation (ROSA)",
     "count": 66,
-    "previous": 48
+    "previous": 46
    },
    {
     "type": "Public Space Litter Can-Collection",
@@ -2521,8 +2521,8 @@
    },
    {
     "type": "Recycling Collection - Missed",
-    "count": 54,
-    "previous": 61
+    "count": 53,
+    "previous": 60
    },
    {
     "type": "Trash Cart - Delivery",
@@ -2531,7 +2531,7 @@
    },
    {
     "type": "Residential Parking Permit Violation",
-    "count": 35,
+    "count": 36,
     "previous": 42
    },
    {
@@ -2552,17 +2552,17 @@
    {
     "type": "Abandoned Vehicle - On Public Property",
     "count": 21,
-    "previous": 24
+    "previous": 23
+   },
+   {
+    "type": "Recycling Cart Delivery",
+    "count": 19,
+    "previous": 22
    },
    {
     "type": "Sidewalk Repair",
     "count": 18,
     "previous": 19
-   },
-   {
-    "type": "Recycling Cart Delivery",
-    "count": 18,
-    "previous": 22
    },
    {
     "type": "DOB - Vacant Private Property Inspection",
@@ -2590,11 +2590,6 @@
     "previous": 13
    },
    {
-    "type": "DMV - Drivers License/ID Issues",
-    "count": 14,
-    "previous": 17
-   },
-   {
     "type": "Rat Replacement Containers",
     "count": 13,
     "previous": 24
@@ -2603,6 +2598,11 @@
     "type": "Container Removal",
     "count": 13,
     "previous": 31
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "count": 13,
+    "previous": 17
    },
    {
     "type": "DC Government Information",
@@ -2646,7 +2646,7 @@
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 7,
+    "count": 8,
     "previous": 50
    },
    {
@@ -2672,7 +2672,7 @@
    {
     "type": "Missed Curbside Compost Collection",
     "count": 5,
-    "previous": 8
+    "previous": 7
    },
    {
     "type": "DOEE - General Air Quality Concerns",
@@ -2777,6 +2777,26 @@
   ],
   "open": 345,
   "recent": [
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-06T04:08:01Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "600 block of COLUMBIA ROAD NW",
+    "lat": 38.928,
+    "lon": -77.022
+   },
+   {
+    "type": "Recycling Cart Delivery",
+    "agency": "DPW",
+    "added": "2026-11-06T03:09:45Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3400 block of 13TH STREET NW",
+    "lat": 38.932,
+    "lon": -77.03
+   },
    {
     "type": "Scheduled Yard Waste",
     "agency": "DPW",
@@ -3256,26 +3276,6 @@
     "block": "3000 block of 16TH STREET NW",
     "lat": 38.928,
     "lon": -77.036
-   },
-   {
-    "type": "Trash Cart - Delivery",
-    "agency": "DPW",
-    "added": "2026-11-05T14:11:04Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1200 block of MONROE STREET NW",
-    "lat": 38.932,
-    "lon": -77.029
-   },
-   {
-    "type": "Residential Parking Permit Violation",
-    "agency": "DPW",
-    "added": "2026-11-05T14:05:36Z",
-    "resolved": "2026-11-05T18:32:35Z",
-    "status": "Closed",
-    "block": "400 block of IRVING STREET NW",
-    "lat": 38.929,
-    "lon": -77.019
    }
   ]
  },
@@ -3299,9 +3299,9 @@
     "previous": 12
    },
    {
-    "offense": "BURGLARY",
+    "offense": "ROBBERY",
     "count": 4,
-    "previous": 2
+    "previous": 9
    },
    {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
@@ -3309,9 +3309,9 @@
     "previous": 9
    },
    {
-    "offense": "ROBBERY",
+    "offense": "BURGLARY",
     "count": 4,
-    "previous": 9
+    "previous": 2
    },
    {
     "offense": "HOMICIDE",
@@ -3403,7 +3403,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3648,7 +3648,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3668,15 +3668,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 140,
-   "starting_next_7d": 22,
-   "reserved_ft": 23386,
+   "active_this_week": 132,
+   "starting_next_7d": 23,
+   "reserved_ft": 21956,
    "long_running_90d": 14,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 11
+     "count": 9
     },
     {
      "type": "Dumpsters",
@@ -3684,7 +3684,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 51
+     "count": 48
     },
     {
      "type": "Cranes",
@@ -3692,11 +3692,11 @@
     },
     {
      "type": "Lead pipe replacement",
-     "count": 60
+     "count": 59
     },
     {
      "type": "Utility & DDOT work",
-     "count": 14
+     "count": 12
     },
     {
      "type": "Events & reserved parking",
@@ -3704,14 +3704,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Moving & storage",
-     "block": "700 block of Park Road NW",
-     "start": "2026-11-06",
-     "end": "2026-11-07",
-     "ft": 88,
-     "hours": ""
-    },
     {
      "type": "Construction staging",
      "block": "900 block of Monroe Street NW",
@@ -3767,6 +3759,14 @@
      "end": "2026-11-13",
      "ft": 22,
      "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Lead pipe replacement",
+     "block": "1300 block of Meridian Place NW",
+     "start": "2026-11-09",
+     "end": "2026-12-29",
+     "ft": 352,
+     "hours": "7 am\u20137 pm"
     },
     {
      "type": "Construction staging",
@@ -3879,6 +3879,14 @@
      "end": "2026-11-12",
      "ft": 88,
      "hours": ""
+    },
+    {
+     "type": "Moving & storage",
+     "block": "3200 block of Warder Street NW",
+     "start": "2026-11-12",
+     "end": "2026-11-12",
+     "ft": 88,
+     "hours": ""
     }
    ]
   },
@@ -3964,13 +3972,13 @@
     "type": "Bulk Collection",
     "median_days": 8.01,
     "city_median_days": 6.91,
-    "closed_n": 2567
+    "closed_n": 2566
    },
    {
     "type": "Parking Enforcement",
     "median_days": 0.05,
     "city_median_days": 0.05,
-    "closed_n": 2455
+    "closed_n": 2452
    },
    {
     "type": "Trash Collection - Missed",
@@ -3982,19 +3990,19 @@
     "type": "Illegal Dumping",
     "median_days": 3.34,
     "city_median_days": 4.02,
-    "closed_n": 1412
+    "closed_n": 1410
    },
    {
     "type": "Recycling Collection - Missed",
     "median_days": 4.84,
-    "city_median_days": 4.88,
-    "closed_n": 1106
+    "city_median_days": 4.85,
+    "closed_n": 1105
    },
    {
     "type": "Scheduled Yard Waste",
-    "median_days": 12.93,
+    "median_days": 12.92,
     "city_median_days": 9.63,
-    "closed_n": 1082
+    "closed_n": 1081
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -4012,7 +4020,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4180,7 +4188,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4742,8 +4750,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-06T03:16:22Z",
-  "today": "2026-11-05",
+  "generated_at": "2026-11-06T09:19:38Z",
+  "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
    {
@@ -4839,6 +4847,15 @@
     "source": "DC farmers market list",
     "kind": "market",
     "date": "2026-12-02"
+   },
+   {
+    "title": "FRESHFARM Columbia Heights (WED/SAT)",
+    "place": "1400 Park Rd NW",
+    "time": "Wednesday 3:00 PM - 7:00 PM; Saturday 9:00 AM - 1:00 PM",
+    "url": "https://www.freshfarm.org/markets",
+    "source": "DC farmers market list",
+    "kind": "market",
+    "date": "2026-12-05"
    }
   ],
   "unscheduled": [],
@@ -4851,7 +4868,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -21133,7 +21150,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

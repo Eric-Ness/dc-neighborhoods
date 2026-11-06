@@ -1,7 +1,7 @@
 {
  "slug": "lenfantplaza",
  "name": "L'Enfant Plaza",
- "generated_at": "2026-11-06T03:16:22Z",
+ "generated_at": "2026-11-06T09:19:38Z",
  "boundary": {
   "source": "Southwest Business Improvement District, which takes in L'Enfant Plaza and the federal blocks around it (Open Data DC). DC has no planning area for L'Enfant Plaza.",
   "rings": [
@@ -1025,19 +1025,6 @@
    "smd": "6D02"
   },
   {
-   "id": "E2700993",
-   "issued": "2026-10-29T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "400 7TH ST SW 20024",
-   "work": "",
-   "zoning": "D-5",
-   "lat": 38.88408,
-   "lon": -77.02152,
-   "smd": "6D02"
-  },
-  {
    "id": "B2605204",
    "issued": "2026-10-29T04:00:00Z",
    "group": "Additions",
@@ -1062,6 +1049,19 @@
    "lat": 38.88207,
    "lon": -77.02218,
    "smd": "6D01"
+  },
+  {
+   "id": "E2700993",
+   "issued": "2026-10-29T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "400 7TH ST SW 20024",
+   "work": "",
+   "zoning": "D-5",
+   "lat": 38.88408,
+   "lon": -77.02152,
+   "smd": "6D02"
   },
   {
    "id": "D2700038",
@@ -1260,13 +1260,13 @@
   }
  ],
  "requests": {
-  "total": 771,
-  "previous_total": 709,
+  "total": 772,
+  "previous_total": 706,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 208,
-    "previous": 212
+    "count": 209,
+    "previous": 211
    },
    {
     "type": "DMV - Drivers License/ID Issues",
@@ -1286,16 +1286,16 @@
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 35,
-    "previous": 26
+    "previous": 24
    },
    {
     "type": "DMV - Vehicle Title Issues",
-    "count": 34,
+    "count": 33,
     "previous": 24
    },
    {
     "type": "DMV - Ticket Payment Dispute",
-    "count": 29,
+    "count": 28,
     "previous": 45
    },
    {
@@ -1325,7 +1325,7 @@
    },
    {
     "type": "DMV - Driver Record Issues",
-    "count": 12,
+    "count": 13,
     "previous": 3
    },
    {
@@ -1374,14 +1374,14 @@
     "previous": 7
    },
    {
+    "type": "Trash Collection - Missed",
+    "count": 5,
+    "previous": 10
+   },
+   {
     "type": "Bicycle Services",
     "count": 5,
     "previous": 3
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "count": 4,
-    "previous": 10
    },
    {
     "type": "Trash Cart - Delivery",
@@ -1509,14 +1509,24 @@
     "previous": 5
    }
   ],
-  "open": 148,
+  "open": 149,
   "recent": [
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
-    "added": "2026-11-06T02:56:02Z",
+    "added": "2026-11-06T04:23:38Z",
     "resolved": null,
     "status": "Open",
+    "block": "300 block of G STREET SW",
+    "lat": 38.882,
+    "lon": -77.016
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-06T02:56:02Z",
+    "resolved": "2026-11-06T03:33:05Z",
+    "status": "Closed",
     "block": "200 block of G STREET SW",
     "lat": 38.882,
     "lon": -77.014
@@ -2000,16 +2010,6 @@
     "block": "Unit block of M STREET SW",
     "lat": 38.877,
     "lon": -77.012
-   },
-   {
-    "type": "DMV - Online Processing Issues",
-    "agency": "DMV",
-    "added": "2026-11-04T17:20:22Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "Unit block of M STREET SW",
-    "lat": 38.877,
-    "lon": -77.012
    }
   ]
  },
@@ -2079,7 +2079,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2253,7 +2253,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2273,11 +2273,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 140,
-   "starting_next_7d": 40,
-   "reserved_ft": 21846,
+   "active_this_week": 138,
+   "starting_next_7d": 43,
+   "reserved_ft": 21802,
    "long_running_90d": 33,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Dumpsters",
@@ -2285,7 +2285,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 103
+     "count": 101
     },
     {
      "type": "Cranes",
@@ -2301,22 +2301,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Cranes",
-     "block": "1100 block of Maine Avenue SW",
-     "start": "2026-11-06",
-     "end": "2026-11-07",
-     "ft": 880,
-     "hours": "10 pm\u201312 am"
-    },
-    {
-     "type": "Cranes",
-     "block": "1200 block of Maine Avenue SW",
-     "start": "2026-11-06",
-     "end": "2026-11-07",
-     "ft": 242,
-     "hours": "10 pm\u201312 am"
-    },
     {
      "type": "Cranes",
      "block": "1200 block of Maine Avenue SW",
@@ -2420,6 +2404,46 @@
      "end": "2026-11-08",
      "ft": 440,
      "hours": "11 pm\u201310 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "1200 block of D Street SW",
+     "start": "2026-11-07",
+     "end": "2027-01-08",
+     "ft": 176,
+     "hours": ""
+    },
+    {
+     "type": "Construction staging",
+     "block": "1300 block of D Street SW",
+     "start": "2026-11-07",
+     "end": "2027-01-08",
+     "ft": 132,
+     "hours": ""
+    },
+    {
+     "type": "Construction staging",
+     "block": "300 block of 12th Street SW",
+     "start": "2026-11-07",
+     "end": "2027-01-08",
+     "ft": 66,
+     "hours": ""
+    },
+    {
+     "type": "Construction staging",
+     "block": "300 block of 13th Street SW",
+     "start": "2026-11-07",
+     "end": "2027-01-08",
+     "ft": 88,
+     "hours": ""
+    },
+    {
+     "type": "Construction staging",
+     "block": "400 block of 12th Street SW",
+     "start": "2026-11-07",
+     "end": "2027-01-08",
+     "ft": 66,
+     "hours": ""
     },
     {
      "type": "Utility & DDOT work",
@@ -2596,30 +2620,6 @@
      "end": "2026-12-11",
      "ft": 220,
      "hours": "7 am\u20137 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "400 block of C Street SW",
-     "start": "2026-11-12",
-     "end": "2026-12-11",
-     "ft": 308,
-     "hours": "7 am\u20137 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "600 block of Maryland Avenue SW",
-     "start": "2026-11-12",
-     "end": "2026-12-11",
-     "ft": 264,
-     "hours": "7 am\u20137 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "700 block of C Street SW",
-     "start": "2026-11-12",
-     "end": "2026-12-11",
-     "ft": 220,
-     "hours": "7 am\u20137 pm"
     }
    ]
   },
@@ -2705,7 +2705,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 2127
+    "closed_n": 2126
    },
    {
     "type": "DMV - Ticket Payment Dispute",
@@ -2753,7 +2753,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2892,7 +2892,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "archive_days": 180,
   "sources": [
    {
@@ -3494,8 +3494,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-06T03:16:22Z",
-  "today": "2026-11-05",
+  "generated_at": "2026-11-06T09:19:38Z",
+  "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
    {
@@ -3596,7 +3596,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -17228,7 +17228,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

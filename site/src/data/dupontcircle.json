@@ -1,7 +1,7 @@
 {
  "slug": "dupontcircle",
  "name": "Dupont Circle",
- "generated_at": "2026-11-06T03:16:22Z",
+ "generated_at": "2026-11-06T09:19:38Z",
  "boundary": {
   "source": "Dupont Circle Historic District (DC Historic Preservation Office, Open Data DC). DC has no planning area named Dupont Circle; this overlaps the Adams Morgan site to the north.",
   "rings": [
@@ -1846,19 +1846,6 @@
    "smd": "2B02"
   },
   {
-   "id": "B2606718",
-   "issued": "2026-10-14T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "1200 18TH ST NW 20036",
-   "work": "HISTORIC\r\n\r\n- RECONFIGURATION OF APPROX. 5,901.5 SF OF EXISTING A-2 RESTAURANT TENANT SPACE ON THE FIRST FLOOR, SUITE 100. RECONFIGURATION OF APPROX. 841.5 SF EXISTING STORAGE SPACE ON THE BASEMENT LEVEL.  FOR A TOTAL COMBINED RENOVATED AREA OF APPROX. 6,743 SF. \r\n- NO EXTERIOR ARCHITECTURAL WORK.",
-   "zoning": "MU-9B/DC",
-   "lat": 38.90594,
-   "lon": -77.04205,
-   "smd": "2B05"
-  },
-  {
    "id": "B2606716",
    "issued": "2026-10-14T04:00:00Z",
    "group": "Renovation & repair",
@@ -1883,6 +1870,19 @@
    "lat": 38.91393,
    "lon": -77.04458,
    "smd": "2B01"
+  },
+  {
+   "id": "B2606718",
+   "issued": "2026-10-14T04:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "1200 18TH ST NW 20036",
+   "work": "HISTORIC\r\n\r\n- RECONFIGURATION OF APPROX. 5,901.5 SF OF EXISTING A-2 RESTAURANT TENANT SPACE ON THE FIRST FLOOR, SUITE 100. RECONFIGURATION OF APPROX. 841.5 SF EXISTING STORAGE SPACE ON THE BASEMENT LEVEL.  FOR A TOTAL COMBINED RENOVATED AREA OF APPROX. 6,743 SF. \r\n- NO EXTERIOR ARCHITECTURAL WORK.",
+   "zoning": "MU-9B/DC",
+   "lat": 38.90594,
+   "lon": -77.04205,
+   "smd": "2B05"
   },
   {
    "id": "B2609257",
@@ -2016,13 +2016,13 @@
   }
  ],
  "requests": {
-  "total": 764,
+  "total": 763,
   "previous_total": 716,
   "by_type": [
    {
     "type": "Parking Enforcement",
     "count": 137,
-    "previous": 100
+    "previous": 99
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -2055,14 +2055,14 @@
     "previous": 29
    },
    {
-    "type": "Dead Animal Collection",
-    "count": 23,
-    "previous": 19
-   },
-   {
     "type": "Scheduled Yard Waste",
     "count": 22,
     "previous": 24
+   },
+   {
+    "type": "Dead Animal Collection",
+    "count": 21,
+    "previous": 21
    },
    {
     "type": "Graffiti Removal",
@@ -2097,7 +2097,7 @@
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 13,
-    "previous": 24
+    "previous": 23
    },
    {
     "type": "Public Space Litter Can-Collection",
@@ -2175,6 +2175,11 @@
     "previous": 16
    },
    {
+    "type": "Residential Parking Permit Violation",
+    "count": 6,
+    "previous": 5
+   },
+   {
     "type": "Out of State Parking Violation (ROSA)",
     "count": 6,
     "previous": 3
@@ -2193,11 +2198,6 @@
     "type": "DOB - Illegal Construction",
     "count": 5,
     "previous": 3
-   },
-   {
-    "type": "Residential Parking Permit Violation",
-    "count": 5,
-    "previous": 5
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
@@ -2811,12 +2811,12 @@
  },
  "crime": {
   "total": 72,
-  "previous_total": 60,
+  "previous_total": 59,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
     "count": 44,
-    "previous": 30
+    "previous": 29
    },
    {
     "offense": "THEFT F/AUTO",
@@ -2829,14 +2829,14 @@
     "previous": 5
    },
    {
-    "offense": "ASSAULT W/DANGEROUS WEAPON",
-    "count": 2,
-    "previous": 1
-   },
-   {
     "offense": "MOTOR VEHICLE THEFT",
     "count": 2,
     "previous": 3
+   },
+   {
+    "offense": "ASSAULT W/DANGEROUS WEAPON",
+    "count": 2,
+    "previous": 1
    },
    {
     "offense": "HOMICIDE",
@@ -2892,7 +2892,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3120,7 +3120,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3141,10 +3141,10 @@
   ],
   "curb": {
    "active_this_week": 107,
-   "starting_next_7d": 42,
+   "starting_next_7d": 39,
    "reserved_ft": 11000,
    "long_running_90d": 25,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -3172,38 +3172,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Moving & storage",
-     "block": "1600 block of New Hampshire Avenue NW",
-     "start": "2026-11-06",
-     "end": "2026-11-07",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Moving & storage",
-     "block": "1700 block of S Street NW",
-     "start": "2026-11-06",
-     "end": "2026-11-07",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Moving & storage",
-     "block": "1800 block of Riggs Place NW",
-     "start": "2026-11-06",
-     "end": "2026-11-07",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Moving & storage",
-     "block": "1800 block of Jefferson Place NW",
-     "start": "2026-11-06",
-     "end": "2026-11-06",
-     "ft": 88,
-     "hours": ""
-    },
     {
      "type": "Events & reserved parking",
      "block": "1500 block of New Hampshire Avenue NW",
@@ -3413,6 +3381,14 @@
      "hours": "4 am\u201311 pm"
     },
     {
+     "type": "Moving & storage",
+     "block": "1700 block of P Street NW",
+     "start": "2026-11-08",
+     "end": "2026-11-08",
+     "ft": 88,
+     "hours": ""
+    },
+    {
      "type": "Utility & DDOT work",
      "block": "1600 block of 18th Street NW",
      "start": "2026-11-09",
@@ -3491,6 +3467,22 @@
      "end": "2026-11-12",
      "ft": 0,
      "hours": "7 am\u201311:59 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "1800 block of Q Street NW",
+     "start": "2026-11-13",
+     "end": "2026-12-12",
+     "ft": 66,
+     "hours": ""
+    },
+    {
+     "type": "Moving & storage",
+     "block": "1800 block of New Hampshire Avenue NW",
+     "start": "2026-11-13",
+     "end": "2026-11-14",
+     "ft": 88,
+     "hours": ""
     }
    ]
   },
@@ -3598,14 +3590,14 @@
    },
    {
     "type": "Sanitation Enforcement",
-    "median_days": 0.91,
+    "median_days": 0.89,
     "city_median_days": 1.11,
-    "closed_n": 281
+    "closed_n": 279
    },
    {
     "type": "Recycling Collection - Missed",
     "median_days": 4.54,
-    "city_median_days": 4.88,
+    "city_median_days": 4.85,
     "closed_n": 238
    },
    {
@@ -3624,7 +3616,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3766,7 +3758,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4483,8 +4475,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-06T03:16:22Z",
-  "today": "2026-11-05",
+  "generated_at": "2026-11-06T09:19:38Z",
+  "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
    {
@@ -4554,7 +4546,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -17562,7 +17554,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

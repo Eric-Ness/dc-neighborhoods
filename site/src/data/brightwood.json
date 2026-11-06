@@ -1,7 +1,7 @@
 {
  "slug": "brightwood",
  "name": "Brightwood",
- "generated_at": "2026-11-06T03:16:22Z",
+ "generated_at": "2026-11-06T09:19:38Z",
  "boundary": {
   "source": "ANC single-member districts 4A04, 4A05, 4A06, 4A07, 4B05, 4D01, 4D02 and 4D03, along upper Georgia Avenue and Kennedy Street (Open Data DC). It takes in Brightwood and Brightwood Park; DC's BRIGHTWOOD planning area also holds central Takoma, which has its own site.",
   "rings": [
@@ -7259,22 +7259,22 @@
  ],
  "requests": {
   "total": 1411,
-  "previous_total": 1387,
+  "previous_total": 1383,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 250,
+    "count": 249,
     "previous": 215
    },
    {
     "type": "Parking Enforcement",
     "count": 200,
-    "previous": 196
+    "previous": 195
    },
    {
     "type": "DC Health Rodent & Vector Control",
     "count": 117,
-    "previous": 91
+    "previous": 89
    },
    {
     "type": "Scheduled Yard Waste",
@@ -7283,28 +7283,28 @@
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 78,
+    "count": 79,
     "previous": 66
    },
    {
     "type": "Illegal Dumping",
-    "count": 59,
-    "previous": 87
+    "count": 61,
+    "previous": 86
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 54,
+    "count": 53,
     "previous": 47
    },
    {
     "type": "Roadway Signs",
-    "count": 45,
-    "previous": 28
+    "count": 43,
+    "previous": 30
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 37,
-    "previous": 18
+    "previous": 19
    },
    {
     "type": "DOEE - LIHEAP",
@@ -7344,7 +7344,7 @@
    {
     "type": "Residential Parking Permit Violation",
     "count": 18,
-    "previous": 43
+    "previous": 42
    },
    {
     "type": "Recycling Collection - Missed",
@@ -7359,7 +7359,7 @@
    {
     "type": "Dead Animal Collection",
     "count": 16,
-    "previous": 19
+    "previous": 18
    },
    {
     "type": "DC Government Information",
@@ -7403,7 +7403,7 @@
    },
    {
     "type": "Sidewalk Repair",
-    "count": 8,
+    "count": 9,
     "previous": 14
    },
    {
@@ -7414,7 +7414,7 @@
    {
     "type": "Recycling Cart Delivery",
     "count": 7,
-    "previous": 18
+    "previous": 17
    },
    {
     "type": "Pothole",
@@ -7542,8 +7542,18 @@
     "previous": 0
    }
   ],
-  "open": 255,
+  "open": 257,
   "recent": [
+   {
+    "type": "Trash Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-06T03:58:17Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1300 block of SHERIDAN STREET NW",
+    "lat": 38.966,
+    "lon": -77.032
+   },
    {
     "type": "Out of State Parking Violation (ROSA)",
     "agency": "DPW",
@@ -8033,16 +8043,6 @@
     "block": "900 block of MISSOURI AVENUE NW",
     "lat": 38.961,
     "lon": -77.026
-   },
-   {
-    "type": "Roadway Signs",
-    "agency": "DDOT",
-    "added": "2026-11-04T14:47:03Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "5900 block of 9TH STREET NW",
-    "lat": 38.963,
-    "lon": -77.026
    }
   ]
  },
@@ -8061,14 +8061,14 @@
     "previous": 9
    },
    {
-    "offense": "ASSAULT W/DANGEROUS WEAPON",
-    "count": 3,
-    "previous": 1
-   },
-   {
     "offense": "ROBBERY",
     "count": 3,
     "previous": 3
+   },
+   {
+    "offense": "ASSAULT W/DANGEROUS WEAPON",
+    "count": 3,
+    "previous": 1
    },
    {
     "offense": "THEFT F/AUTO",
@@ -8141,7 +8141,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -8431,7 +8431,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -8451,19 +8451,19 @@
    }
   ],
   "curb": {
-   "active_this_week": 96,
-   "starting_next_7d": 8,
-   "reserved_ft": 25476,
+   "active_this_week": 90,
+   "starting_next_7d": 16,
+   "reserved_ft": 26620,
    "long_running_90d": 8,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 1
+     "count": 2
     },
     {
      "type": "Construction staging",
-     "count": 14
+     "count": 13
     },
     {
      "type": "Lead pipe replacement",
@@ -8471,7 +8471,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 57
+     "count": 51
     },
     {
      "type": "Events & reserved parking",
@@ -8532,6 +8532,70 @@
      "block": "1300 block of Sheridan Street NW",
      "start": "2026-11-09",
      "end": "2026-11-28",
+     "ft": 660,
+     "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1200 block of Peabody Street NW",
+     "start": "2026-11-09",
+     "end": "2026-12-05",
+     "ft": 440,
+     "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1300 block of Peabody Street NW",
+     "start": "2026-11-09",
+     "end": "2026-12-05",
+     "ft": 440,
+     "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1200 block of Underwood Street NW",
+     "start": "2026-11-09",
+     "end": "2026-12-05",
+     "ft": 440,
+     "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1400 block of Somerset Place NW",
+     "start": "2026-11-09",
+     "end": "2026-12-05",
+     "ft": 440,
+     "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Moving & storage",
+     "block": "1300 block of Underwood Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-09",
+     "ft": 88,
+     "hours": ""
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "6400 block of 13th Street NW",
+     "start": "2026-11-10",
+     "end": "2026-11-17",
+     "ft": 660,
+     "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "6300 block of 13th Street NW",
+     "start": "2026-11-10",
+     "end": "2026-11-17",
+     "ft": 660,
+     "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1100 block of Tewkesbury Place NW",
+     "start": "2026-11-10",
+     "end": "2026-11-17",
      "ft": 660,
      "hours": "7 am\u20135 pm"
     },
@@ -8639,7 +8703,7 @@
     "type": "Trash Collection - Missed",
     "median_days": 2.94,
     "city_median_days": 4.01,
-    "closed_n": 671
+    "closed_n": 670
    },
    {
     "type": "Scheduled Yard Waste",
@@ -8668,14 +8732,14 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 5.02,
-    "city_median_days": 4.88,
+    "city_median_days": 4.85,
     "closed_n": 295
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -8799,7 +8863,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "archive_days": 180,
   "sources": [
    {
@@ -9127,8 +9191,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-06T03:16:22Z",
-  "today": "2026-11-05",
+  "generated_at": "2026-11-06T09:19:38Z",
+  "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
    {
@@ -9208,7 +9272,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -32376,7 +32440,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

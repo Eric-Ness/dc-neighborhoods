@@ -1,7 +1,7 @@
 {
  "slug": "shaw",
  "name": "Shaw",
- "generated_at": "2026-11-06T03:16:22Z",
+ "generated_at": "2026-11-06T09:19:38Z",
  "boundary": {
   "source": "ANC 2G, the Shaw commission (all its single-member districts, Open Data DC). DC's LOGAN CIRCLE/SHAW planning area also covers Logan Circle, which has its own site.",
   "rings": [
@@ -3111,13 +3111,13 @@
   }
  ],
  "requests": {
-  "total": 1611,
-  "previous_total": 1417,
+  "total": 1616,
+  "previous_total": 1413,
   "by_type": [
    {
     "type": "Dockless Vehicle Parking Complaint",
     "count": 457,
-    "previous": 354
+    "previous": 353
    },
    {
     "type": "Parking Enforcement",
@@ -3126,28 +3126,28 @@
    },
    {
     "type": "Bulk Collection",
-    "count": 116,
-    "previous": 134
+    "count": 117,
+    "previous": 132
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 71,
-    "previous": 99
+    "count": 72,
+    "previous": 100
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 55,
-    "previous": 65
+    "count": 56,
+    "previous": 64
    },
    {
     "type": "Illegal Dumping",
     "count": 52,
-    "previous": 50
+    "previous": 49
    },
    {
     "type": "Graffiti Removal",
     "count": 46,
-    "previous": 36
+    "previous": 35
    },
    {
     "type": "Sanitation Enforcement",
@@ -3171,8 +3171,8 @@
    },
    {
     "type": "Sidewalk Repair",
-    "count": 29,
-    "previous": 14
+    "count": 27,
+    "previous": 16
    },
    {
     "type": "Container Removal",
@@ -3181,23 +3181,23 @@
    },
    {
     "type": "Dead Animal Collection",
-    "count": 25,
-    "previous": 32
+    "count": 26,
+    "previous": 31
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 23,
+    "count": 24,
     "previous": 45
+   },
+   {
+    "type": "Rat Replacement Containers",
+    "count": 22,
+    "previous": 10
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 21,
     "previous": 73
-   },
-   {
-    "type": "Rat Replacement Containers",
-    "count": 20,
-    "previous": 10
    },
    {
     "type": "Trash Cart - Delivery",
@@ -3247,7 +3247,7 @@
    {
     "type": "Trash Cart Repair",
     "count": 8,
-    "previous": 7
+    "previous": 6
    },
    {
     "type": "Streetlight Repair Investigation",
@@ -3435,8 +3435,18 @@
     "previous": 0
    }
   ],
-  "open": 257,
+  "open": 258,
   "recent": [
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-06T03:29:04Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "400 block of R STREET NW",
+    "lat": 38.912,
+    "lon": -77.018
+   },
    {
     "type": "Dockless Vehicle Parking Complaint",
     "agency": "DDOT",
@@ -3926,16 +3936,6 @@
     "block": "900 block of BLAGDEN ALLEY NW",
     "lat": 38.907,
     "lon": -77.025
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-04T13:00:54Z",
-    "resolved": "2026-11-04T13:06:33Z",
-    "status": "Closed",
-    "block": "700 block of P STREET NW",
-    "lat": 38.909,
-    "lon": -77.023
    }
   ]
  },
@@ -4027,7 +4027,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -4256,7 +4256,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4277,10 +4277,10 @@
   ],
   "curb": {
    "active_this_week": 111,
-   "starting_next_7d": 26,
+   "starting_next_7d": 25,
    "reserved_ft": 12254,
    "long_running_90d": 20,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -4312,14 +4312,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Events & reserved parking",
-     "block": "1500 block of 9th Street NW",
-     "start": "2026-11-06",
-     "end": "2026-11-07",
-     "ft": 88,
-     "hours": "7 am\u20136 pm"
-    },
     {
      "type": "Events & reserved parking",
      "block": "500 block of Q Street NW",
@@ -4616,7 +4608,7 @@
     "type": "Bulk Collection",
     "median_days": 5.76,
     "city_median_days": 6.91,
-    "closed_n": 1000
+    "closed_n": 999
    },
    {
     "type": "Trash Collection - Missed",
@@ -4638,9 +4630,9 @@
    },
    {
     "type": "Illegal Dumping",
-    "median_days": 3.63,
+    "median_days": 3.64,
     "city_median_days": 4.02,
-    "closed_n": 405
+    "closed_n": 404
    },
    {
     "type": "Sanitation Enforcement",
@@ -4652,7 +4644,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4789,7 +4781,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "archive_days": 180,
   "sources": [
    {
@@ -5170,8 +5162,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-06T03:16:22Z",
-  "today": "2026-11-05",
+  "generated_at": "2026-11-06T09:19:38Z",
+  "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
    {
@@ -5217,7 +5209,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -21237,7 +21229,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

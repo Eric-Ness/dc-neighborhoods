@@ -1,7 +1,7 @@
 {
  "slug": "anacostia",
  "name": "Anacostia",
- "generated_at": "2026-11-06T03:16:22Z",
+ "generated_at": "2026-11-06T09:19:38Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -860,19 +860,6 @@
    "smd": "8A04"
   },
   {
-   "id": "B2700076",
-   "issued": "2026-10-21T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "2232 MOUNT VIEW PL SE 20020",
-   "work": "Historic \r\nReplacing back double doors.",
-   "zoning": "R-3",
-   "lat": 38.86345,
-   "lon": -76.98865,
-   "smd": "8A06"
-  },
-  {
    "id": "M2700271",
    "issued": "2026-10-21T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -910,6 +897,19 @@
    "lat": 38.86259,
    "lon": -76.98295,
    "smd": "8A05"
+  },
+  {
+   "id": "B2700076",
+   "issued": "2026-10-21T04:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "2232 MOUNT VIEW PL SE 20020",
+   "work": "Historic \r\nReplacing back double doors.",
+   "zoning": "R-3",
+   "lat": 38.86345,
+   "lon": -76.98865,
+   "smd": "8A06"
   },
   {
    "id": "P2700449",
@@ -1017,13 +1017,13 @@
   }
  ],
  "requests": {
-  "total": 596,
-  "previous_total": 733,
+  "total": 598,
+  "previous_total": 729,
   "by_type": [
    {
     "type": "Bulk Collection",
     "count": 111,
-    "previous": 104
+    "previous": 102
    },
    {
     "type": "DOEE - LIHEAP",
@@ -1032,7 +1032,7 @@
    },
    {
     "type": "Parking Enforcement",
-    "count": 82,
+    "count": 83,
     "previous": 107
    },
    {
@@ -1042,7 +1042,7 @@
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 22,
+    "count": 23,
     "previous": 25
    },
    {
@@ -1058,7 +1058,7 @@
    {
     "type": "DC Government Information",
     "count": 13,
-    "previous": 29
+    "previous": 28
    },
    {
     "type": "Recycling Collection - Missed",
@@ -1103,7 +1103,7 @@
    {
     "type": "Scheduled Yard Waste",
     "count": 8,
-    "previous": 25
+    "previous": 24
    },
    {
     "type": "Dead Animal Collection",
@@ -1781,8 +1781,8 @@
   ]
  },
  "crime": {
-  "total": 27,
-  "previous_total": 35,
+  "total": 26,
+  "previous_total": 36,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
@@ -1790,14 +1790,14 @@
     "previous": 15
    },
    {
-    "offense": "MOTOR VEHICLE THEFT",
-    "count": 5,
-    "previous": 6
-   },
-   {
     "offense": "THEFT F/AUTO",
     "count": 5,
     "previous": 5
+   },
+   {
+    "offense": "MOTOR VEHICLE THEFT",
+    "count": 4,
+    "previous": 7
    },
    {
     "offense": "ROBBERY",
@@ -1862,7 +1862,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -2062,7 +2062,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2082,11 +2082,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 79,
+   "active_this_week": 78,
    "starting_next_7d": 18,
    "reserved_ft": 9658,
    "long_running_90d": 22,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -2098,7 +2098,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 29
+     "count": 28
     },
     {
      "type": "Lead pipe replacement",
@@ -2340,9 +2340,9 @@
   "service": [
    {
     "type": "Bulk Collection",
-    "median_days": 6.09,
+    "median_days": 6.1,
     "city_median_days": 6.91,
-    "closed_n": 930
+    "closed_n": 929
    },
    {
     "type": "Parking Enforcement",
@@ -2383,14 +2383,14 @@
    {
     "type": "Roadway Signs",
     "median_days": 2.99,
-    "city_median_days": 7.02,
+    "city_median_days": 7.01,
     "closed_n": 156
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2559,7 +2559,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2848,8 +2848,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-06T03:16:22Z",
-  "today": "2026-11-05",
+  "generated_at": "2026-11-06T09:19:38Z",
+  "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
    {
@@ -2976,7 +2976,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -19125,7 +19125,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

@@ -1,7 +1,7 @@
 {
  "slug": "clevelandpark",
  "name": "Cleveland Park",
- "generated_at": "2026-11-06T03:16:22Z",
+ "generated_at": "2026-11-06T09:19:38Z",
  "boundary": {
   "source": "Cleveland Park Historic District (DC Historic Preservation Office, Open Data DC). DC has no planning area named Cleveland Park.",
   "rings": [
@@ -3694,7 +3694,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3962,7 +3962,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3982,15 +3982,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 45,
-   "starting_next_7d": 7,
-   "reserved_ft": 8470,
+   "active_this_week": 38,
+   "starting_next_7d": 8,
+   "reserved_ft": 6270,
    "long_running_90d": 9,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Construction staging",
-     "count": 25
+     "count": 21
     },
     {
      "type": "Lead pipe replacement",
@@ -3998,7 +3998,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 11
+     "count": 8
     },
     {
      "type": "Events & reserved parking",
@@ -4039,6 +4039,14 @@
      "hours": "7 am\u20137 pm"
     },
     {
+     "type": "Utility & DDOT work",
+     "block": "3300 block of 27th Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 22,
+     "hours": "8 am\u20134:30 pm"
+    },
+    {
      "type": "Construction staging",
      "block": "3400 block of Quebec Street NW",
      "start": "2026-11-09",
@@ -4056,11 +4064,11 @@
     },
     {
      "type": "Utility & DDOT work",
-     "block": "3300 block of 27th Street NW",
+     "block": "3500 block of Lowell Street NW",
      "start": "2026-11-09",
-     "end": "2026-11-13",
-     "ft": 22,
-     "hours": "8 am\u20134:30 pm"
+     "end": "2026-11-20",
+     "ft": 220,
+     "hours": "7 am\u20135 pm"
     }
    ]
   },
@@ -4163,7 +4171,7 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 6.02,
-    "city_median_days": 4.88,
+    "city_median_days": 4.85,
     "closed_n": 196
    },
    {
@@ -4194,7 +4202,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4349,7 +4357,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4786,8 +4794,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-06T03:16:22Z",
-  "today": "2026-11-05",
+  "generated_at": "2026-11-06T09:19:38Z",
+  "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
    {
@@ -4847,6 +4855,15 @@
     "source": "DC farmers market list",
     "kind": "market",
     "date": "2026-11-28"
+   },
+   {
+    "title": "FRESHFARM Cleveland Park",
+    "place": "3426 Connecticut Ave NW",
+    "time": "9:00 AM - 1:00 PM",
+    "url": "https://www.freshfarm.org/markets",
+    "source": "DC farmers market list",
+    "kind": "market",
+    "date": "2026-12-05"
    }
   ],
   "unscheduled": [],
@@ -4857,7 +4874,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -16194,7 +16211,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

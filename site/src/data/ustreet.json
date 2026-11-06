@@ -1,7 +1,7 @@
 {
  "slug": "ustreet",
  "name": "U Street",
- "generated_at": "2026-11-06T03:16:22Z",
+ "generated_at": "2026-11-06T09:19:38Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods: U Street/Pleasant Plains (Open Data DC), so it includes Howard University and Pleasant Plains.",
   "rings": [
@@ -2047,28 +2047,28 @@
   }
  ],
  "requests": {
-  "total": 2715,
-  "previous_total": 3014,
+  "total": 2709,
+  "previous_total": 3015,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 377,
-    "previous": 355
+    "count": 372,
+    "previous": 360
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 291,
-    "previous": 313
+    "count": 290,
+    "previous": 312
    },
    {
     "type": "Bulk Collection",
     "count": 240,
-    "previous": 259
+    "previous": 260
    },
    {
     "type": "DC Health Rodent & Vector Control",
     "count": 210,
-    "previous": 216
+    "previous": 212
    },
    {
     "type": "Scheduled Yard Waste",
@@ -2078,7 +2078,7 @@
    {
     "type": "Illegal Dumping",
     "count": 142,
-    "previous": 211
+    "previous": 212
    },
    {
     "type": "Trash Collection - Missed",
@@ -2098,7 +2098,7 @@
    {
     "type": "Sanitation Enforcement",
     "count": 88,
-    "previous": 136
+    "previous": 134
    },
    {
     "type": "Dead Animal Collection",
@@ -2203,7 +2203,7 @@
    {
     "type": "DGS - Playground Repair",
     "count": 15,
-    "previous": 10
+    "previous": 11
    },
    {
     "type": "Abandoned Bicycle",
@@ -2353,7 +2353,7 @@
    {
     "type": "Bicycle Services",
     "count": 2,
-    "previous": 11
+    "previous": 12
    },
    {
     "type": "OCTFME - Down Cable Wires",
@@ -2391,8 +2391,18 @@
     "previous": 15
    }
   ],
-  "open": 537,
+  "open": 536,
   "recent": [
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-06T03:55:05Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "200 block of T STREET NW",
+    "lat": 38.916,
+    "lon": -77.015
+   },
    {
     "type": "Scheduled Yard Waste",
     "agency": "DPW",
@@ -2882,16 +2892,6 @@
     "block": "2000 block of 15TH STREET NW",
     "lat": 38.918,
     "lon": -77.035
-   },
-   {
-    "type": "Out of State Parking Violation (ROSA)",
-    "agency": "DPW",
-    "added": "2026-11-05T01:33:31Z",
-    "resolved": "2026-11-05T06:16:24Z",
-    "status": "Closed",
-    "block": "2000 block of 13TH STREET NW",
-    "lat": 38.918,
-    "lon": -77.03
    }
   ]
  },
@@ -2915,14 +2915,14 @@
     "previous": 4
    },
    {
-    "offense": "ASSAULT W/DANGEROUS WEAPON",
-    "count": 8,
-    "previous": 3
-   },
-   {
     "offense": "MOTOR VEHICLE THEFT",
     "count": 8,
     "previous": 7
+   },
+   {
+    "offense": "ASSAULT W/DANGEROUS WEAPON",
+    "count": 8,
+    "previous": 3
    },
    {
     "offense": "BURGLARY",
@@ -3008,7 +3008,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3284,7 +3284,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3304,15 +3304,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 236,
-   "starting_next_7d": 46,
-   "reserved_ft": 28182,
+   "active_this_week": 225,
+   "starting_next_7d": 48,
+   "reserved_ft": 26312,
    "long_running_90d": 58,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 14
+     "count": 13
     },
     {
      "type": "Dumpsters",
@@ -3320,7 +3320,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 157
+     "count": 153
     },
     {
      "type": "Lead pipe replacement",
@@ -3328,22 +3328,14 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 27
+     "count": 22
     },
     {
      "type": "Events & reserved parking",
-     "count": 19
+     "count": 18
     }
    ],
    "upcoming": [
-    {
-     "type": "Moving & storage",
-     "block": "1800 block of 11th Street NW",
-     "start": "2026-11-06",
-     "end": "2026-11-07",
-     "ft": 88,
-     "hours": ""
-    },
     {
      "type": "Moving & storage",
      "block": "1900 block of 13th Street NW",
@@ -3489,6 +3481,14 @@
      "hours": ""
     },
     {
+     "type": "Utility & DDOT work",
+     "block": "700 block of Fairmont Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 66,
+     "hours": "9 am\u20135 pm"
+    },
+    {
      "type": "Construction staging",
      "block": "1900 block of 11th Street NW",
      "start": "2026-11-10",
@@ -3519,6 +3519,14 @@
      "end": "2026-11-11",
      "ft": 88,
      "hours": ""
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1000 block of W Street NW",
+     "start": "2026-11-10",
+     "end": "2026-11-11",
+     "ft": 132,
+     "hours": "7 am\u20133 pm"
     },
     {
      "type": "Construction staging",
@@ -3558,22 +3566,6 @@
      "start": "2026-11-11",
      "end": "2026-12-10",
      "ft": 132,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "1500 block of W Street NW",
-     "start": "2026-11-11",
-     "end": "2026-12-10",
-     "ft": 396,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "2100 block of 16th Street NW",
-     "start": "2026-11-11",
-     "end": "2026-12-10",
-     "ft": 198,
      "hours": "9:30 am\u20133:30 pm"
     },
     {
@@ -3626,6 +3618,22 @@
     },
     {
      "type": "Construction staging",
+     "block": "1500 block of W Street NW",
+     "start": "2026-11-11",
+     "end": "2026-12-10",
+     "ft": 396,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "2100 block of 16th Street NW",
+     "start": "2026-11-11",
+     "end": "2026-12-10",
+     "ft": 198,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
      "block": "2300 block of Sherman Avenue NW",
      "start": "2026-11-11",
      "end": "2026-12-10",
@@ -3647,14 +3655,6 @@
      "end": "2026-12-10",
      "ft": 198,
      "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "700 block of Euclid Street NW",
-     "start": "2026-11-12",
-     "end": "2026-12-05",
-     "ft": 154,
-     "hours": "8 am\u20135:30 pm"
     }
    ]
   },
@@ -3739,7 +3739,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 1798
+    "closed_n": 1797
    },
    {
     "type": "Bulk Collection",
@@ -3749,9 +3749,9 @@
    },
    {
     "type": "Trash Collection - Missed",
-    "median_days": 4.08,
+    "median_days": 4.07,
     "city_median_days": 4.01,
-    "closed_n": 1050
+    "closed_n": 1047
    },
    {
     "type": "Illegal Dumping",
@@ -3781,13 +3781,13 @@
     "type": "Graffiti Removal",
     "median_days": 3.21,
     "city_median_days": 4.05,
-    "closed_n": 515
+    "closed_n": 514
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -3955,7 +3955,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4739,8 +4739,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-06T03:16:22Z",
-  "today": "2026-11-05",
+  "generated_at": "2026-11-06T09:19:38Z",
+  "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
    {
@@ -4783,7 +4783,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -27338,7 +27338,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

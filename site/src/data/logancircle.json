@@ -1,7 +1,7 @@
 {
  "slug": "logancircle",
  "name": "Logan Circle",
- "generated_at": "2026-11-06T03:16:22Z",
+ "generated_at": "2026-11-06T09:19:38Z",
  "boundary": {
   "source": "ANC 2F, the Logan Circle commission (all its single-member districts, Open Data DC). DC's LOGAN CIRCLE/SHAW planning area also covers Shaw, which has its own site.",
   "rings": [
@@ -4156,7 +4156,7 @@
   }
  ],
  "requests": {
-  "total": 1367,
+  "total": 1368,
   "previous_total": 1383,
   "by_type": [
    {
@@ -4166,7 +4166,7 @@
    },
    {
     "type": "Parking Enforcement",
-    "count": 250,
+    "count": 251,
     "previous": 166
    },
    {
@@ -4415,8 +4415,18 @@
     "previous": 1
    }
   ],
-  "open": 211,
+  "open": 212,
   "recent": [
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-06T04:15:33Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1400 block of 12TH STREET NW",
+    "lat": 38.909,
+    "lon": -77.028
+   },
    {
     "type": "DC Health Rodent & Vector Control",
     "agency": "DOH",
@@ -4906,16 +4916,6 @@
     "block": "14TH STREET NW AND S STREET NW",
     "lat": 38.914,
     "lon": -77.032
-   },
-   {
-    "type": "Graffiti Removal",
-    "agency": "DPW",
-    "added": "2026-11-04T00:35:15Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "14TH STREET NW AND S STREET NW",
-    "lat": 38.914,
-    "lon": -77.032
    }
   ]
  },
@@ -4939,24 +4939,24 @@
     "previous": 4
    },
    {
-    "offense": "BURGLARY",
-    "count": 3,
-    "previous": 0
-   },
-   {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
     "count": 3,
     "previous": 2
    },
    {
-    "offense": "SEX ABUSE",
-    "count": 1,
+    "offense": "BURGLARY",
+    "count": 3,
     "previous": 0
    },
    {
     "offense": "ROBBERY",
     "count": 1,
     "previous": 1
+   },
+   {
+    "offense": "SEX ABUSE",
+    "count": 1,
+    "previous": 0
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -5013,7 +5013,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -5344,7 +5344,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -5364,15 +5364,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 85,
-   "starting_next_7d": 18,
-   "reserved_ft": 8932,
-   "long_running_90d": 9,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
+   "active_this_week": 92,
+   "starting_next_7d": 25,
+   "reserved_ft": 10098,
+   "long_running_90d": 10,
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 11
+     "count": 8
     },
     {
      "type": "Dumpsters",
@@ -5380,7 +5380,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 52
+     "count": 60
     },
     {
      "type": "Cranes",
@@ -5388,7 +5388,7 @@
     },
     {
      "type": "Lead pipe replacement",
-     "count": 8
+     "count": 9
     },
     {
      "type": "Utility & DDOT work",
@@ -5396,33 +5396,73 @@
     },
     {
      "type": "Events & reserved parking",
-     "count": 1
+     "count": 2
     }
    ],
    "upcoming": [
     {
-     "type": "Dumpsters",
-     "block": "1500 block of 14th Street NW",
+     "type": "Construction staging",
+     "block": "1400 block of S Street NW",
      "start": "2026-11-06",
-     "end": "2026-11-19",
-     "ft": 0,
-     "hours": ""
+     "end": "2026-12-05",
+     "ft": 220,
+     "hours": "9:30 am\u20133:30 pm"
     },
     {
-     "type": "Moving & storage",
-     "block": "1300 block of 14th Street NW",
+     "type": "Construction staging",
+     "block": "Unit block of Logan Circle NW",
      "start": "2026-11-06",
-     "end": "2026-11-06",
+     "end": "2027-01-02",
      "ft": 88,
-     "hours": ""
+     "hours": "9:30 am\u20133:30 pm"
     },
     {
-     "type": "Moving & storage",
-     "block": "1300 block of Vermont Avenue NW",
+     "type": "Construction staging",
+     "block": "1300 block of P Street NW",
      "start": "2026-11-06",
-     "end": "2026-11-06",
+     "end": "2027-01-02",
+     "ft": 110,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "1300 block of P Street NW",
+     "start": "2026-11-06",
+     "end": "2027-01-02",
+     "ft": 220,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "Unit block of Logan Circle NW",
+     "start": "2026-11-06",
+     "end": "2027-01-02",
      "ft": 88,
-     "hours": ""
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "Unit block of Logan Circle NW",
+     "start": "2026-11-06",
+     "end": "2027-01-02",
+     "ft": 220,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "Unit block of Logan Circle NW",
+     "start": "2026-11-06",
+     "end": "2027-01-02",
+     "ft": 154,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "Unit block of Logan Circle NW",
+     "start": "2026-11-06",
+     "end": "2027-01-02",
+     "ft": 66,
+     "hours": "9:30 am\u20133:30 pm"
     },
     {
      "type": "Cranes",
@@ -5457,20 +5497,20 @@
      "hours": ""
     },
     {
-     "type": "Construction staging",
-     "block": "1300 block of 12th Street NW",
-     "start": "2026-11-09",
-     "end": "2026-12-08",
-     "ft": 198,
-     "hours": "7 am\u20137 pm"
-    },
-    {
      "type": "Utility & DDOT work",
      "block": "1300 block of 12th Street NW",
      "start": "2026-11-09",
      "end": "2026-11-13",
      "ft": 22,
      "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "1300 block of 12th Street NW",
+     "start": "2026-11-09",
+     "end": "2026-12-08",
+     "ft": 198,
+     "hours": "7 am\u20137 pm"
     },
     {
      "type": "Moving & storage",
@@ -5505,6 +5545,14 @@
      "hours": "7:30 am\u20133 pm"
     },
     {
+     "type": "Events & reserved parking",
+     "block": "1700 block of 15th Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-09",
+     "ft": 220,
+     "hours": "8 am\u20132 pm"
+    },
+    {
      "type": "Moving & storage",
      "block": "1300 block of Vermont Avenue NW",
      "start": "2026-11-10",
@@ -5527,6 +5575,14 @@
      "end": "2026-11-11",
      "ft": 88,
      "hours": ""
+    },
+    {
+     "type": "Lead pipe replacement",
+     "block": "1500 block of 12th Street NW",
+     "start": "2026-11-11",
+     "end": "2027-01-09",
+     "ft": 198,
+     "hours": "9:30 am\u20133:30 pm"
     },
     {
      "type": "Moving & storage",
@@ -5627,7 +5683,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 1179
+    "closed_n": 1178
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -5675,7 +5731,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -5820,7 +5876,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "archive_days": 180,
   "sources": [
    {
@@ -6357,8 +6413,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-06T03:16:22Z",
-  "today": "2026-11-05",
+  "generated_at": "2026-11-06T09:19:38Z",
+  "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
    {
@@ -6400,7 +6456,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -18624,7 +18680,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-06T03:16:22Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
