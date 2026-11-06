@@ -1,7 +1,7 @@
 {
  "slug": "shaw",
  "name": "Shaw",
- "generated_at": "2026-11-04T19:08:57Z",
+ "generated_at": "2026-11-05T09:19:54Z",
  "boundary": {
   "source": "ANC 2G, the Shaw commission (all its single-member districts, Open Data DC). DC's LOGAN CIRCLE/SHAW planning area also covers Logan Circle, which has its own site.",
   "rings": [
@@ -3123,19 +3123,6 @@
    "smd": "2G02"
   },
   {
-   "id": "P2700175",
-   "issued": "2026-10-07T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "443 NEW YORK AVE NW 20001",
-   "work": "",
-   "zoning": "D-4-R",
-   "lat": 38.90454,
-   "lon": -77.01798,
-   "smd": "2G06"
-  },
-  {
    "id": "M2700095",
    "issued": "2026-10-07T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -3149,72 +3136,72 @@
    "smd": "2G05"
   },
   {
-   "id": "B2700108",
-   "issued": "2026-10-06T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "1005 P ST NW 20001",
-   "work": "Tuckpoint front (south facing) fa?ade, and west and north facing doglegs using lime-based mortar",
-   "zoning": "RF-1",
-   "lat": 38.90982,
-   "lon": -77.02645,
-   "smd": "2G02"
+   "id": "P2700175",
+   "issued": "2026-10-07T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "443 NEW YORK AVE NW 20001",
+   "work": "",
+   "zoning": "D-4-R",
+   "lat": 38.90454,
+   "lon": -77.01798,
+   "smd": "2G06"
   }
  ],
  "requests": {
-  "total": 1628,
-  "previous_total": 1395,
+  "total": 1611,
+  "previous_total": 1407,
   "by_type": [
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 461,
-    "previous": 358
+    "count": 453,
+    "previous": 354
    },
    {
     "type": "Parking Enforcement",
     "count": 277,
-    "previous": 132
+    "previous": 129
    },
    {
     "type": "Bulk Collection",
-    "count": 116,
-    "previous": 131
+    "count": 113,
+    "previous": 135
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 82,
-    "previous": 85
+    "count": 73,
+    "previous": 93
    },
    {
     "type": "Illegal Dumping",
-    "count": 57,
-    "previous": 51
+    "count": 54,
+    "previous": 54
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 55,
-    "previous": 64
+    "count": 52,
+    "previous": 66
    },
    {
     "type": "Graffiti Removal",
-    "count": 45,
-    "previous": 35
+    "count": 47,
+    "previous": 37
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 40,
-    "previous": 39
+    "count": 41,
+    "previous": 40
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "count": 32,
+    "previous": 4
    },
    {
     "type": "Residential Parking Permit Violation",
     "count": 31,
-    "previous": 26
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "count": 31,
-    "previous": 4
+    "previous": 27
    },
    {
     "type": "Sidewalk Repair",
@@ -3227,24 +3214,24 @@
     "previous": 2
    },
    {
-    "type": "Container Removal",
-    "count": 27,
-    "previous": 14
-   },
-   {
     "type": "Dead Animal Collection",
-    "count": 26,
+    "count": 27,
     "previous": 31
    },
    {
-    "type": "Rat Replacement Containers",
+    "type": "Container Removal",
     "count": 26,
-    "previous": 10
+    "previous": 15
    },
    {
     "type": "Trash Collection - Missed",
     "count": 23,
     "previous": 46
+   },
+   {
+    "type": "Rat Replacement Containers",
+    "count": 23,
+    "previous": 10
    },
    {
     "type": "Trash Cart - Delivery",
@@ -3257,18 +3244,23 @@
     "previous": 70
    },
    {
-    "type": "Recycling Collection - Missed",
-    "count": 15,
+    "type": "Out of State Parking Violation (ROSA)",
+    "count": 18,
     "previous": 10
    },
    {
-    "type": "Out of State Parking Violation (ROSA)",
-    "count": 15,
+    "type": "Recycling Collection - Missed",
+    "count": 16,
     "previous": 10
+   },
+   {
+    "type": "Tree Pruning",
+    "count": 15,
+    "previous": 9
    },
    {
     "type": "Roadway Signs",
-    "count": 14,
+    "count": 15,
     "previous": 9
    },
    {
@@ -3280,16 +3272,6 @@
     "type": "Abandoned Vehicle - On Public Property",
     "count": 13,
     "previous": 7
-   },
-   {
-    "type": "Tree Pruning",
-    "count": 12,
-    "previous": 9
-   },
-   {
-    "type": "Trash Cart Repair",
-    "count": 11,
-    "previous": 5
    },
    {
     "type": "Recycling Cart Delivery",
@@ -3304,11 +3286,16 @@
    {
     "type": "DMV - Vehicle Registration Issues",
     "count": 9,
-    "previous": 6
+    "previous": 5
+   },
+   {
+    "type": "Trash Cart Repair",
+    "count": 8,
+    "previous": 7
    },
    {
     "type": "Streetlight Repair Investigation",
-    "count": 8,
+    "count": 7,
     "previous": 13
    },
    {
@@ -3322,14 +3309,14 @@
     "previous": 2
    },
    {
+    "type": "DC Government Information",
+    "count": 6,
+    "previous": 9
+   },
+   {
     "type": "Illegal Poster",
     "count": 6,
     "previous": 2
-   },
-   {
-    "type": "DC Government Information",
-    "count": 5,
-    "previous": 9
    },
    {
     "type": "DC Dog Park Maintenance (DGS)",
@@ -3339,7 +3326,7 @@
    {
     "type": "Recycling Cart - Repair",
     "count": 4,
-    "previous": 4
+    "previous": 3
    },
    {
     "type": "DMV - Driver and Vehicle Services Refund",
@@ -3350,6 +3337,16 @@
     "type": "DOB - Illegal Construction",
     "count": 4,
     "previous": 4
+   },
+   {
+    "type": "DOB - Vacant Private Property Inspection",
+    "count": 4,
+    "previous": 3
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "count": 4,
+    "previous": 12
    },
    {
     "type": "DOEE - Report Construction Erosion Runoff",
@@ -3382,16 +3379,6 @@
     "previous": 0
    },
    {
-    "type": "DOB - Vacant Private Property Inspection",
-    "count": 3,
-    "previous": 3
-   },
-   {
-    "type": "DMV - Drivers License/ID Issues",
-    "count": 3,
-    "previous": 12
-   },
-   {
     "type": "Parking Meter Repair",
     "count": 3,
     "previous": 3
@@ -3404,7 +3391,7 @@
    {
     "type": "Supercan - Delivery",
     "count": 3,
-    "previous": 10
+    "previous": 9
    },
    {
     "type": "Signed Street Sweeping Missed",
@@ -3424,7 +3411,7 @@
    {
     "type": "Public Space Inspection",
     "count": 2,
-    "previous": 9
+    "previous": 10
    },
    {
     "type": "DGS - Playground Repair",
@@ -3445,6 +3432,11 @@
     "type": "Abandoned Vehicle - On Private Property",
     "count": 2,
     "previous": 0
+   },
+   {
+    "type": "Abandoned Bicycle",
+    "count": 2,
+    "previous": 1
    },
    {
     "type": "Vacant Lot - Public Property Only",
@@ -3477,18 +3469,93 @@
     "previous": 0
    },
    {
-    "type": "Abandoned Bicycle",
-    "count": 1,
-    "previous": 1
-   },
-   {
     "type": "Pet Waste Complaint",
     "count": 1,
     "previous": 0
    }
   ],
-  "open": 274,
+  "open": 269,
   "recent": [
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-05T02:12:52Z",
+    "resolved": "2026-11-05T03:43:36Z",
+    "status": "Closed",
+    "block": "800 block of O STREET NW",
+    "lat": 38.908,
+    "lon": -77.024
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-05T01:32:37Z",
+    "resolved": "2026-11-05T02:09:06Z",
+    "status": "Closed",
+    "block": "1200 block of 5TH STREET NW",
+    "lat": 38.907,
+    "lon": -77.02
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "agency": "DDOT",
+    "added": "2026-11-05T01:22:48Z",
+    "resolved": "2026-11-05T01:30:54Z",
+    "status": "Closed",
+    "block": "900 block of P STREET NW",
+    "lat": 38.909,
+    "lon": -77.026
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-05T01:13:48Z",
+    "resolved": "2026-11-05T01:29:31Z",
+    "status": "Closed",
+    "block": "400 block of N STREET NW",
+    "lat": 38.908,
+    "lon": -77.017
+   },
+   {
+    "type": "Recycling Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-04T22:37:14Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of 5TH STREET NW",
+    "lat": 38.913,
+    "lon": -77.019
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-04T22:19:43Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "400 block of WARNER STREET NW",
+    "lat": 38.912,
+    "lon": -77.018
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "agency": "DMV",
+    "added": "2026-11-04T21:16:29Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "400 block of Q STREET NW",
+    "lat": 38.911,
+    "lon": -77.018
+   },
+   {
+    "type": "DC Government Information",
+    "agency": "OUC",
+    "added": "2026-11-04T19:49:50Z",
+    "resolved": "2026-11-04T19:49:50Z",
+    "status": "Closed",
+    "block": "1200 block of 7TH STREET NW",
+    "lat": 38.906,
+    "lon": -77.022
+   },
    {
     "type": "Trash Collection - Missed",
     "agency": "DPW",
@@ -3503,8 +3570,8 @@
     "type": "Roadway Signs",
     "agency": "DDOT",
     "added": "2026-11-04T17:58:00Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-04T20:16:05Z",
+    "status": "Closed",
     "block": "1200 block of 4TH STREET NW",
     "lat": 38.906,
     "lon": -77.016
@@ -3783,8 +3850,8 @@
     "type": "Trash Collection - Missed",
     "agency": "DPW",
     "added": "2026-11-03T22:57:52Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-04T21:12:33Z",
+    "status": "Closed",
     "block": "1700 block of 9TH STREET NW",
     "lat": 38.914,
     "lon": -77.024
@@ -3813,8 +3880,8 @@
     "type": "Streetlight Repair Investigation",
     "agency": "DDOT",
     "added": "2026-11-03T22:00:53Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-05T02:15:54Z",
+    "status": "Closed",
     "block": "1300 block of 5TH STREET NW",
     "lat": 38.908,
     "lon": -77.019
@@ -3908,86 +3975,6 @@
     "block": "1700 block of 6TH STREET NW",
     "lat": 38.914,
     "lon": -77.02
-   },
-   {
-    "type": "Graffiti Removal",
-    "agency": "DPW",
-    "added": "2026-11-03T20:51:39Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "500 block of RHODE ISLAND AVENUE NW",
-    "lat": 38.913,
-    "lon": -77.02
-   },
-   {
-    "type": "Graffiti Removal",
-    "agency": "DPW",
-    "added": "2026-11-03T20:50:03Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1700 block of 7TH STREET NW",
-    "lat": 38.913,
-    "lon": -77.022
-   },
-   {
-    "type": "Graffiti Removal",
-    "agency": "DPW",
-    "added": "2026-11-03T20:49:12Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1700 block of 7TH STREET NW",
-    "lat": 38.913,
-    "lon": -77.022
-   },
-   {
-    "type": "Sidewalk Repair",
-    "agency": "DDOT",
-    "added": "2026-11-03T20:48:16Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "900 block of RHODE ISLAND AVENUE NW",
-    "lat": 38.912,
-    "lon": -77.024
-   },
-   {
-    "type": "Graffiti Removal",
-    "agency": "DPW",
-    "added": "2026-11-03T20:47:15Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "900 block of RHODE ISLAND AVENUE NW",
-    "lat": 38.912,
-    "lon": -77.024
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-03T20:46:53Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1600 block of 5TH STREET NW",
-    "lat": 38.912,
-    "lon": -77.019
-   },
-   {
-    "type": "Trash Cart - Delivery",
-    "agency": "DPW",
-    "added": "2026-11-03T20:46:47Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1700 block of NEW JERSEY AVENUE NW",
-    "lat": 38.913,
-    "lon": -77.018
-   },
-   {
-    "type": "Graffiti Removal",
-    "agency": "DPW",
-    "added": "2026-11-03T20:45:59Z",
-    "resolved": "2026-11-04T17:11:02Z",
-    "status": "Closed (Duplicate)",
-    "block": "900 block of R STREET NW",
-    "lat": 38.913,
-    "lon": -77.024
    }
   ]
  },
@@ -4016,14 +4003,14 @@
     "previous": 2
    },
    {
-    "offense": "BURGLARY",
-    "count": 1,
-    "previous": 2
-   },
-   {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
     "count": 1,
     "previous": 3
+   },
+   {
+    "offense": "BURGLARY",
+    "count": 1,
+    "previous": 2
    },
    {
     "offense": "SEX ABUSE",
@@ -4079,7 +4066,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -4094,7 +4081,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Shaw through OTR assessment sub-areas Old City 2 B and G in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Shaw boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-04): 46% of the 3,144 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 62% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Shaw through OTR assessment sub-areas Old City 2 B and G in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Shaw boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-05): 46% of the 3,144 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 62% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -4111,14 +4098,14 @@
    "area_parcels": 3144,
    "area_share_inside": 0.455,
    "boundary_share_in_area": 0.618,
-   "measured": "2026-11-04"
+   "measured": "2026-11-05"
   },
   "primary": "all",
   "all": {
    "median_12mo": 778000,
    "count_12mo": 82,
-   "median_prev_12mo": 700050,
-   "count_prev_12mo": 78
+   "median_prev_12mo": 700000,
+   "count_prev_12mo": 77
   },
   "house": {
    "median_12mo": 1095000,
@@ -4129,8 +4116,8 @@
   "condo": {
    "median_12mo": 620000,
    "count_12mo": 51,
-   "median_prev_12mo": 615000,
-   "count_prev_12mo": 51
+   "median_prev_12mo": 595000,
+   "count_prev_12mo": 50
   },
   "last_60d": {
    "median": 685000,
@@ -4272,7 +4259,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4292,11 +4279,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 111,
-   "starting_next_7d": 28,
-   "reserved_ft": 11924,
+   "active_this_week": 109,
+   "starting_next_7d": 24,
+   "reserved_ft": 12100,
    "long_running_90d": 20,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-05: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -4308,7 +4295,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 70
+     "count": 71
     },
     {
      "type": "Cranes",
@@ -4320,7 +4307,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 14
+     "count": 11
     },
     {
      "type": "Events & reserved parking",
@@ -4328,54 +4315,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Construction staging",
-     "block": "700 block of Q Street NW",
-     "start": "2026-11-05",
-     "end": "2026-12-04",
-     "ft": 88,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "1700 block of New Jersey Avenue NW",
-     "start": "2026-11-05",
-     "end": "2026-12-04",
-     "ft": 0,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "400 block of R Street NW",
-     "start": "2026-11-05",
-     "end": "2026-12-04",
-     "ft": 0,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "1800 block of New Jersey Avenue NW",
-     "start": "2026-11-05",
-     "end": "2026-12-04",
-     "ft": 0,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "400 block of Florida Avenue NW",
-     "start": "2026-11-05",
-     "end": "2026-12-04",
-     "ft": 0,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "1100 block of 6th Street NW",
-     "start": "2026-11-05",
-     "end": "2026-11-05",
-     "ft": 220,
-     "hours": "7 am\u20135 pm"
-    },
     {
      "type": "Events & reserved parking",
      "block": "1500 block of 9th Street NW",
@@ -4431,6 +4370,14 @@
      "end": "2026-11-07",
      "ft": 220,
      "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Events & reserved parking",
+     "block": "1700 block of 7th Street NW",
+     "start": "2026-11-07",
+     "end": "2026-11-07",
+     "ft": 220,
+     "hours": "9 am\u20131 pm"
     },
     {
      "type": "Construction staging",
@@ -4511,6 +4458,14 @@
      "end": "2026-11-10",
      "ft": 66,
      "hours": "7:30 am\u20133 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1800 block of 5th Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-10",
+     "ft": 110,
+     "hours": "7 am\u20133 pm"
     },
     {
      "type": "Construction staging",
@@ -4636,13 +4591,13 @@
     "type": "Dockless Vehicle Parking Complaint",
     "median_days": 0.01,
     "city_median_days": 0.01,
-    "closed_n": 1262
+    "closed_n": 1263
    },
    {
     "type": "Parking Enforcement",
     "median_days": 0.06,
     "city_median_days": 0.05,
-    "closed_n": 1127
+    "closed_n": 1130
    },
    {
     "type": "Bulk Collection",
@@ -4652,14 +4607,14 @@
    },
    {
     "type": "Trash Collection - Missed",
-    "median_days": 3.92,
-    "city_median_days": 4.08,
-    "closed_n": 536
+    "median_days": 3.9,
+    "city_median_days": 4.06,
+    "closed_n": 531
    },
    {
     "type": "Scheduled Yard Waste",
     "median_days": 11.09,
-    "city_median_days": 9.67,
+    "city_median_days": 9.66,
     "closed_n": 484
    },
    {
@@ -4670,9 +4625,9 @@
    },
    {
     "type": "Illegal Dumping",
-    "median_days": 3.64,
-    "city_median_days": 4.04,
-    "closed_n": 403
+    "median_days": 3.63,
+    "city_median_days": 4.03,
+    "closed_n": 407
    },
    {
     "type": "Sanitation Enforcement",
@@ -4684,7 +4639,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4821,7 +4776,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4847,6 +4802,10 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/"
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/"
    },
    {
     "name": "51st",
@@ -4916,6 +4875,13 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/",
     "state": "ok",
     "matched": 0,
     "fetched": 1
@@ -5184,8 +5150,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T19:08:57Z",
-  "today": "2026-11-04",
+  "generated_at": "2026-11-05T09:19:54Z",
+  "today": "2026-11-05",
   "days_ahead": 30,
   "sources": [
    {
@@ -5231,7 +5197,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -21251,7 +21217,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

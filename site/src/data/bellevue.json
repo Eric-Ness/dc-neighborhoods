@@ -1,7 +1,7 @@
 {
  "slug": "bellevue",
  "name": "Bellevue",
- "generated_at": "2026-11-04T19:08:57Z",
+ "generated_at": "2026-11-05T09:19:54Z",
  "boundary": {
   "source": "ANC single-member districts 8D01, 8D03, 8D05, 8D06, 8E07, 8E08 and 8E09, the homes in DC's BELLEVUE planning area (Open Data DC). 8D04 is left out: it is mostly the empty land at DC's southern tip.",
   "rings": [
@@ -8439,70 +8439,36 @@
    "lat": 38.83075,
    "lon": -76.99907,
    "smd": "8E07"
-  },
-  {
-   "id": "PP2700087",
-   "issued": "2026-10-06T04:00:00Z",
-   "group": "Minor work",
-   "type": "POST CARD",
-   "subtype": "PLUMBING",
-   "address": "3815 1ST ST SE 20032",
-   "work": "",
-   "zoning": "R-3",
-   "lat": 38.83408,
-   "lon": -77.00612,
-   "smd": "8D01"
-  },
-  {
-   "id": "BP2700089",
-   "issued": "2026-10-06T04:00:00Z",
-   "group": "Minor work",
-   "type": "POST CARD",
-   "subtype": "BUILDING",
-   "address": "631 ATLANTIC ST SE 20032",
-   "work": "",
-   "zoning": "R-2",
-   "lat": 38.83077,
-   "lon": -76.99717,
-   "smd": "8E07"
-  },
-  {
-   "id": "E2700164",
-   "issued": "2026-10-06T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "3 DANBURY ST SW 20032",
-   "work": "",
-   "zoning": "RA-1",
-   "lat": 38.82794,
-   "lon": -77.00826,
-   "smd": "8D06"
   }
  ],
  "requests": {
-  "total": 640,
-  "previous_total": 657,
+  "total": 644,
+  "previous_total": 655,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 116,
-    "previous": 126
+    "count": 117,
+    "previous": 123
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 110,
+    "count": 111,
     "previous": 9
    },
    {
     "type": "Parking Enforcement",
-    "count": 76,
-    "previous": 89
+    "count": 74,
+    "previous": 91
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 36,
-    "previous": 29
+    "count": 37,
+    "previous": 28
+   },
+   {
+    "type": "Illegal Dumping",
+    "count": 35,
+    "previous": 34
    },
    {
     "type": "DC Government Information",
@@ -8510,13 +8476,8 @@
     "previous": 30
    },
    {
-    "type": "Illegal Dumping",
-    "count": 34,
-    "previous": 34
-   },
-   {
     "type": "Scheduled Yard Waste",
-    "count": 23,
+    "count": 25,
     "previous": 22
    },
    {
@@ -8526,13 +8487,13 @@
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
-    "count": 19,
+    "count": 20,
     "previous": 21
    },
    {
     "type": "Residential Parking Permit Violation",
-    "count": 19,
-    "previous": 24
+    "count": 20,
+    "previous": 22
    },
    {
     "type": "Recycling Collection - Missed",
@@ -8550,11 +8511,6 @@
     "previous": 5
    },
    {
-    "type": "Tree Inspection",
-    "count": 10,
-    "previous": 11
-   },
-   {
     "type": "DOB - Vacant Private Property Inspection",
     "count": 10,
     "previous": 8
@@ -8568,6 +8524,11 @@
     "type": "Roadway Signs",
     "count": 8,
     "previous": 10
+   },
+   {
+    "type": "Tree Inspection",
+    "count": 7,
+    "previous": 14
    },
    {
     "type": "Supercan - Delivery",
@@ -8585,6 +8546,11 @@
     "previous": 5
    },
    {
+    "type": "Public Space Litter Can-Collection",
+    "count": 5,
+    "previous": 0
+   },
+   {
     "type": "Tree Pruning",
     "count": 4,
     "previous": 1
@@ -8598,11 +8564,6 @@
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 4,
     "previous": 17
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "count": 4,
-    "previous": 0
    },
    {
     "type": "Pothole",
@@ -8622,7 +8583,7 @@
    {
     "type": "DC Health Rodent & Vector Control",
     "count": 3,
-    "previous": 4
+    "previous": 3
    },
    {
     "type": "DMV - Vehicle Registration Issues",
@@ -8690,8 +8651,58 @@
     "previous": 0
    }
   ],
-  "open": 76,
+  "open": 78,
   "recent": [
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-05T00:49:50Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4300 block of MARTIN LUTHER KING JR AVENUE SW",
+    "lat": 38.826,
+    "lon": -77.012
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-04T21:45:03Z",
+    "resolved": "2026-11-04T21:45:03Z",
+    "status": "Closed",
+    "block": "Unit block of ATLANTIC STREET SE",
+    "lat": 38.831,
+    "lon": -77.006
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-04T21:24:36Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "800 block of H R DRIVE SE",
+    "lat": 38.83,
+    "lon": -76.993
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-04T20:57:36Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "100 block of DARRINGTON STREET SW",
+    "lat": 38.827,
+    "lon": -77.01
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-04T20:55:19Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4100 block of MARTIN LUTHER KING JR AVENUE SW",
+    "lat": 38.829,
+    "lon": -77.012
+   },
    {
     "type": "Dead Animal Collection",
     "agency": "DPW",
@@ -8746,8 +8757,8 @@
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-11-04T18:18:22Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-04T20:34:52Z",
+    "status": "Closed",
     "block": "Unit block of MISSISSIPPI AVENUE SE",
     "lat": 38.832,
     "lon": -77.007
@@ -9141,77 +9152,32 @@
     "block": "4000 block of MARTIN LUTHER KING JR AVENUE SW",
     "lat": 38.831,
     "lon": -77.011
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-02T14:27:03Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4000 block of MARTIN LUTHER KING JR AVENUE SW",
-    "lat": 38.83,
-    "lon": -77.011
-   },
-   {
-    "type": "Tree Pruning",
-    "agency": "DDOT",
-    "added": "2026-11-02T14:12:50Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "600 block of FORRESTER STREET SE",
-    "lat": 38.825,
-    "lon": -76.998
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-02T13:35:11Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "Unit block of BRANDYWINE STREET SW",
-    "lat": 38.829,
-    "lon": -77.011
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-02T13:04:09Z",
-    "resolved": "2026-11-02T13:04:09Z",
-    "status": "Closed",
-    "block": "4300 block of 3RD STREET SE",
-    "lat": 38.828,
-    "lon": -77.003
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-01T17:48:02Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "800 block of MARJORIE COURT SE",
-    "lat": 38.831,
-    "lon": -76.992
    }
   ]
  },
  "crime": {
-  "total": 37,
-  "previous_total": 36,
+  "total": 35,
+  "previous_total": 38,
   "by_offense": [
-   {
-    "offense": "THEFT F/AUTO",
-    "count": 11,
-    "previous": 10
-   },
    {
     "offense": "THEFT/OTHER",
     "count": 10,
     "previous": 5
    },
    {
+    "offense": "THEFT F/AUTO",
+    "count": 9,
+    "previous": 12
+   },
+   {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
     "count": 6,
     "previous": 4
+   },
+   {
+    "offense": "ROBBERY",
+    "count": 3,
+    "previous": 5
    },
    {
     "offense": "MOTOR VEHICLE THEFT",
@@ -9222,11 +9188,6 @@
     "offense": "BURGLARY",
     "count": 3,
     "previous": 4
-   },
-   {
-    "offense": "ROBBERY",
-    "count": 3,
-    "previous": 5
    },
    {
     "offense": "SEX ABUSE",
@@ -9293,7 +9254,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -9308,7 +9269,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Bellevue through OTR assessment sub-areas Congress Heights A and C in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Bellevue boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-04): 64% of the 2,419 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 79% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Bellevue through OTR assessment sub-areas Congress Heights A and C in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Bellevue boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-05): 64% of the 2,419 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 79% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -9325,7 +9286,7 @@
    "area_parcels": 2419,
    "area_share_inside": 0.64,
    "boundary_share_in_area": 0.791,
-   "measured": "2026-11-04"
+   "measured": "2026-11-05"
   },
   "primary": "house",
   "house": {
@@ -9471,7 +9432,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -9491,11 +9452,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 39,
+   "active_this_week": 37,
    "starting_next_7d": 1,
-   "reserved_ft": 3608,
+   "reserved_ft": 3410,
    "long_running_90d": 21,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-05: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Construction staging",
@@ -9507,7 +9468,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 25
+     "count": 23
     }
    ],
    "upcoming": [
@@ -9603,7 +9564,7 @@
     "type": "Bulk Collection",
     "median_days": 6.67,
     "city_median_days": 6.92,
-    "closed_n": 840
+    "closed_n": 838
    },
    {
     "type": "Parking Enforcement",
@@ -9620,7 +9581,7 @@
    {
     "type": "Trash Collection - Missed",
     "median_days": 3.71,
-    "city_median_days": 4.08,
+    "city_median_days": 4.06,
     "closed_n": 323
    },
    {
@@ -9631,9 +9592,9 @@
    },
    {
     "type": "Illegal Dumping",
-    "median_days": 4.1,
-    "city_median_days": 4.04,
-    "closed_n": 211
+    "median_days": 4.09,
+    "city_median_days": 4.03,
+    "closed_n": 212
    },
    {
     "type": "Snow and Ice Removal on Public Space",
@@ -9644,14 +9605,14 @@
    {
     "type": "Abandoned Vehicle - On Public Property",
     "median_days": 2.98,
-    "city_median_days": 3.0,
+    "city_median_days": 3.01,
     "closed_n": 195
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -9774,7 +9735,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "archive_days": 180,
   "sources": [
    {
@@ -9808,6 +9769,10 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/"
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/"
    },
    {
     "name": "51st",
@@ -9896,6 +9861,13 @@
     "fetched": 1
    },
    {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
     "name": "51st",
     "url": "https://51st.news/",
     "state": "ok",
@@ -9960,8 +9932,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T19:08:57Z",
-  "today": "2026-11-04",
+  "generated_at": "2026-11-05T09:19:54Z",
+  "today": "2026-11-05",
   "days_ahead": 30,
   "sources": [
    {
@@ -10036,7 +10008,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -27133,7 +27105,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

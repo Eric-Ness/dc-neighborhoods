@@ -1,7 +1,7 @@
 {
  "slug": "vanness",
  "name": "Van Ness",
- "generated_at": "2026-11-04T19:08:57Z",
+ "generated_at": "2026-11-05T09:19:54Z",
  "boundary": {
   "source": "ANC single-member districts 3F01, 3F02 and 3F05 around the Van Ness-UDC Metro (Open Data DC). DC has no planning area named Van Ness.",
   "rings": [
@@ -3382,23 +3382,23 @@
   }
  ],
  "requests": {
-  "total": 220,
-  "previous_total": 231,
+  "total": 222,
+  "previous_total": 234,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
-    "count": 47,
+    "count": 49,
     "previous": 59
    },
    {
     "type": "Parking Enforcement",
-    "count": 43,
-    "previous": 35
+    "count": 44,
+    "previous": 36
    },
    {
     "type": "Bulk Collection",
-    "count": 33,
-    "previous": 23
+    "count": 32,
+    "previous": 24
    },
    {
     "type": "Graffiti Removal",
@@ -3471,11 +3471,6 @@
     "previous": 1
    },
    {
-    "type": "Sidewalk Repair",
-    "count": 2,
-    "previous": 1
-   },
-   {
     "type": "Tree Inspection",
     "count": 2,
     "previous": 9
@@ -3494,6 +3489,11 @@
     "type": "Tree Pruning",
     "count": 2,
     "previous": 9
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "count": 2,
+    "previous": 5
    },
    {
     "type": "Dead Animal Collection",
@@ -3531,11 +3531,6 @@
     "previous": 0
    },
    {
-    "type": "DMV - Drivers License/ID Issues",
-    "count": 1,
-    "previous": 5
-   },
-   {
     "type": "DC How Am I Driving?",
     "count": 1,
     "previous": 0
@@ -3549,6 +3544,11 @@
     "type": "Public Space Litter Can Repair",
     "count": 1,
     "previous": 0
+   },
+   {
+    "type": "Sidewalk Repair",
+    "count": 1,
+    "previous": 2
    },
    {
     "type": "DOB - Vacant Private Property Inspection",
@@ -3596,14 +3596,64 @@
     "previous": 4
    }
   ],
-  "open": 71,
+  "open": 73,
   "recent": [
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
-    "added": "2026-11-04T19:41:19Z",
+    "added": "2026-11-05T04:42:03Z",
     "resolved": null,
     "status": "Open",
+    "block": "3500 block of BRANDYWINE STREET NW",
+    "lat": 38.95,
+    "lon": -77.069
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-05T04:31:01Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3100 block of DAVENPORT STREET NW",
+    "lat": 38.952,
+    "lon": -77.065
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T23:19:14Z",
+    "resolved": "2026-11-05T00:36:05Z",
+    "status": "Closed",
+    "block": "4000 block of CONNECTICUT AVENUE NW",
+    "lat": 38.942,
+    "lon": -77.062
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "agency": "DMV",
+    "added": "2026-11-04T20:32:14Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3000 block of ALBEMARLE STREET NW",
+    "lat": 38.948,
+    "lon": -77.062
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-04T20:27:09Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2900 block of BRANDYWINE STREET NW",
+    "lat": 38.95,
+    "lon": -77.061
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-04T19:41:19Z",
+    "resolved": "2026-11-04T20:42:05Z",
+    "status": "Closed",
     "block": "2900 block of UPTON STREET NW",
     "lat": 38.942,
     "lon": -77.061
@@ -4047,67 +4097,17 @@
     "block": "3600 block of VEAZEY STREET NW",
     "lat": 38.944,
     "lon": -77.071
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-29T23:36:13Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2900 block of UPTON STREET NW",
-    "lat": 38.942,
-    "lon": -77.061
-   },
-   {
-    "type": "Roadway Signs",
-    "agency": "DDOT",
-    "added": "2026-10-29T18:32:15Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "4500 block of RENO ROAD NW",
-    "lat": 38.949,
-    "lon": -77.072
-   },
-   {
-    "type": "Roadway Signs",
-    "agency": "DDOT",
-    "added": "2026-10-29T18:22:41Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "4500 block of CONNECTICUT AVENUE NW",
-    "lat": 38.949,
-    "lon": -77.067
-   },
-   {
-    "type": "Graffiti Removal",
-    "agency": "DPW",
-    "added": "2026-10-29T18:20:16Z",
-    "resolved": "2026-11-02T18:41:02Z",
-    "status": "Closed (Duplicate)",
-    "block": "4200 block of CONNECTICUT AVENUE NW",
-    "lat": 38.945,
-    "lon": -77.065
-   },
-   {
-    "type": "Graffiti Removal",
-    "agency": "DPW",
-    "added": "2026-10-29T18:18:22Z",
-    "resolved": "2026-11-02T18:41:02Z",
-    "status": "Closed (Duplicate)",
-    "block": "4200 block of CONNECTICUT AVENUE NW",
-    "lat": 38.945,
-    "lon": -77.065
    }
   ]
  },
  "crime": {
-  "total": 12,
-  "previous_total": 10,
+  "total": 11,
+  "previous_total": 11,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
-    "count": 9,
-    "previous": 9
+    "count": 8,
+    "previous": 10
    },
    {
     "offense": "THEFT F/AUTO",
@@ -4145,7 +4145,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -4160,7 +4160,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Van Ness through OTR assessment neighborhoods Forest Hills, Wakefield and North Cleveland Park in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Van Ness boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-04): 46% of the 3,957 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Van Ness through OTR assessment neighborhoods Forest Hills, Wakefield and North Cleveland Park in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Van Ness boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-05): 46% of the 3,957 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -4181,7 +4181,7 @@
    "area_parcels": 3957,
    "area_share_inside": 0.455,
    "boundary_share_in_area": 1.0,
-   "measured": "2026-11-04"
+   "measured": "2026-11-05"
   },
   "primary": "house",
   "house": {
@@ -4417,7 +4417,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -4437,23 +4437,19 @@
    }
   ],
   "curb": {
-   "active_this_week": 32,
+   "active_this_week": 27,
    "starting_next_7d": 4,
-   "reserved_ft": 5742,
+   "reserved_ft": 4972,
    "long_running_90d": 7,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-05: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
    "by_type": [
-    {
-     "type": "Moving & storage",
-     "count": 1
-    },
     {
      "type": "Dumpsters",
      "count": 1
     },
     {
      "type": "Construction staging",
-     "count": 16
+     "count": 15
     },
     {
      "type": "Lead pipe replacement",
@@ -4461,7 +4457,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 10
+     "count": 7
     },
     {
      "type": "Events & reserved parking",
@@ -4583,7 +4579,7 @@
    {
     "type": "Scheduled Yard Waste",
     "median_days": 7.67,
-    "city_median_days": 9.67,
+    "city_median_days": 9.66,
     "closed_n": 456
    },
    {
@@ -4596,19 +4592,19 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 354
+    "closed_n": 356
    },
    {
     "type": "Trash Collection - Missed",
     "median_days": 8.14,
-    "city_median_days": 4.08,
+    "city_median_days": 4.06,
     "closed_n": 195
    },
    {
     "type": "Recycling Collection - Missed",
-    "median_days": 4.03,
-    "city_median_days": 4.97,
-    "closed_n": 189
+    "median_days": 4.01,
+    "city_median_days": 4.94,
+    "closed_n": 188
    },
    {
     "type": "Tree Inspection",
@@ -4618,9 +4614,9 @@
    },
    {
     "type": "Roadway Signs",
-    "median_days": 41.07,
-    "city_median_days": 7.0,
-    "closed_n": 41
+    "median_days": 43.95,
+    "city_median_days": 7.01,
+    "closed_n": 43
    },
    {
     "type": "Pothole",
@@ -4632,7 +4628,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4778,7 +4774,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4804,6 +4800,10 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/"
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/"
    },
    {
     "name": "51st",
@@ -4873,6 +4873,13 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/",
     "state": "ok",
     "matched": 0,
     "fetched": 1
@@ -5117,8 +5124,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T19:08:57Z",
-  "today": "2026-11-04",
+  "generated_at": "2026-11-05T09:19:54Z",
+  "today": "2026-11-05",
   "days_ahead": 30,
   "sources": [
    {
@@ -5237,7 +5244,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -15257,7 +15264,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

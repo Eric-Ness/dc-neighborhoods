@@ -1,7 +1,7 @@
 {
  "slug": "16thstreetheights",
  "name": "16th Street Heights",
- "generated_at": "2026-11-04T19:08:57Z",
+ "generated_at": "2026-11-05T09:19:54Z",
  "boundary": {
   "source": "ANC 4E, single-member districts 4E01 through 4E06, including Crestwood west of 16th Street (Open Data DC). DC's 16TH ST HEIGHTS planning area also runs south into Petworth, which has its own site.",
   "rings": [
@@ -6171,17 +6171,17 @@
    "smd": "4E04"
   },
   {
-   "id": "P2700181",
+   "id": "F2600993",
    "issued": "2026-10-07T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "5711 16TH ST NW 20011",
-   "work": "",
-   "zoning": "R-1B/SH",
-   "lat": 38.95897,
-   "lon": -77.03602,
-   "smd": "4E02"
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "FENCE",
+   "address": "1855 TAYLOR ST NW 20011",
+   "work": "162' of 7' tall wood fence. Remove existing fence.",
+   "zoning": "R-1A",
+   "lat": 38.941,
+   "lon": -77.04295,
+   "smd": "4E06"
   },
   {
    "id": "AH2700031",
@@ -6197,63 +6197,37 @@
    "smd": "4E04"
   },
   {
-   "id": "F2600993",
+   "id": "P2700181",
    "issued": "2026-10-07T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "FENCE",
-   "address": "1855 TAYLOR ST NW 20011",
-   "work": "162' of 7' tall wood fence. Remove existing fence.",
-   "zoning": "R-1A",
-   "lat": 38.941,
-   "lon": -77.04295,
-   "smd": "4E06"
-  },
-  {
-   "id": "B2700139",
-   "issued": "2026-10-06T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "1312 BUCHANAN ST NW 20011",
-   "work": "REMOVE AND REPLACE  1 STORM DOOR, RENEWAL by ANDERSEN, NO STRUCTURAL CHANGES, NO WIDENING OF EXISTING OPENINGS",
-   "zoning": "RF-1",
-   "lat": 38.94595,
-   "lon": -77.03052,
-   "smd": "4E04"
-  },
-  {
-   "id": "B2700133",
-   "issued": "2026-10-06T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "1824 RANDOLPH ST NW 20011",
-   "work": "REMOVE AND REPLACE 6 WINDOWS, RENEWAL by ANDERSEN, NO STRUCTURAL CHANGES, NO WIDENING OF EXISTING OPENINGS",
-   "zoning": "R-1A",
-   "lat": 38.9386,
-   "lon": -77.04273,
-   "smd": "4E06"
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "5711 16TH ST NW 20011",
+   "work": "",
+   "zoning": "R-1B/SH",
+   "lat": 38.95897,
+   "lon": -77.03602,
+   "smd": "4E02"
   }
  ],
  "requests": {
-  "total": 1502,
-  "previous_total": 1441,
+  "total": 1503,
+  "previous_total": 1461,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 257,
-    "previous": 239
+    "count": 249,
+    "previous": 247
    },
    {
     "type": "Scheduled Yard Waste",
     "count": 181,
-    "previous": 184
+    "previous": 188
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 124,
-    "previous": 64
+    "count": 123,
+    "previous": 66
    },
    {
     "type": "Parking Enforcement",
@@ -6261,14 +6235,14 @@
     "previous": 108
    },
    {
-    "type": "Trash Collection - Missed",
-    "count": 83,
-    "previous": 67
+    "type": "Residential Parking Permit Violation",
+    "count": 81,
+    "previous": 85
    },
    {
-    "type": "Residential Parking Permit Violation",
-    "count": 80,
-    "previous": 85
+    "type": "Trash Collection - Missed",
+    "count": 81,
+    "previous": 68
    },
    {
     "type": "Sanitation Enforcement",
@@ -6278,12 +6252,7 @@
    {
     "type": "Traffic Safety Input",
     "count": 51,
-    "previous": 8
-   },
-   {
-    "type": "Illegal Dumping",
-    "count": 45,
-    "previous": 28
+    "previous": 9
    },
    {
     "type": "Tree Planting",
@@ -6291,34 +6260,39 @@
     "previous": 27
    },
    {
+    "type": "Illegal Dumping",
+    "count": 41,
+    "previous": 31
+   },
+   {
     "type": "Dead Animal Collection",
-    "count": 37,
-    "previous": 45
+    "count": 35,
+    "previous": 48
    },
    {
     "type": "Tree Inspection",
     "count": 33,
-    "previous": 44
+    "previous": 45
+   },
+   {
+    "type": "Recycling Collection - Missed",
+    "count": 32,
+    "previous": 10
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "count": 29,
+    "previous": 1
    },
    {
     "type": "Supercan - Delivery",
     "count": 27,
-    "previous": 36
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "count": 27,
-    "previous": 1
-   },
-   {
-    "type": "Recycling Collection - Missed",
-    "count": 24,
-    "previous": 11
+    "previous": 34
    },
    {
     "type": "Roadway Signs",
     "count": 24,
-    "previous": 97
+    "previous": 96
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -6328,7 +6302,7 @@
    {
     "type": "Out of State Parking Violation (ROSA)",
     "count": 20,
-    "previous": 32
+    "previous": 31
    },
    {
     "type": "DOB - Vacant Private Property Inspection",
@@ -6351,19 +6325,24 @@
     "previous": 16
    },
    {
+    "type": "Trash Cart - Delivery",
+    "count": 13,
+    "previous": 9
+   },
+   {
     "type": "DOEE - LIHEAP",
     "count": 13,
     "previous": 0
    },
    {
-    "type": "Trash Cart - Delivery",
-    "count": 12,
-    "previous": 9
-   },
-   {
     "type": "DMV - Drivers License/ID Issues",
     "count": 11,
     "previous": 8
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "count": 11,
+    "previous": 4
    },
    {
     "type": "Rat Replacement Containers",
@@ -6386,13 +6365,13 @@
     "previous": 14
    },
    {
-    "type": "Illegal Poster",
+    "type": "Public Space Inspection",
     "count": 7,
-    "previous": 4
+    "previous": 8
    },
    {
-    "type": "Supercan - Repair",
-    "count": 6,
+    "type": "Illegal Poster",
+    "count": 7,
     "previous": 4
    },
    {
@@ -6401,19 +6380,14 @@
     "previous": 10
    },
    {
-    "type": "Public Space Inspection",
-    "count": 6,
-    "previous": 8
-   },
-   {
     "type": "Abandoned Vehicle - On Public Property",
     "count": 6,
     "previous": 15
    },
    {
-    "type": "Public Space Litter Can-Collection",
+    "type": "Trash Cart Repair",
     "count": 5,
-    "previous": 4
+    "previous": 7
    },
    {
     "type": "Signed Street Sweeping Missed",
@@ -6423,17 +6397,12 @@
    {
     "type": "Tree Pruning",
     "count": 4,
-    "previous": 34
+    "previous": 33
    },
    {
     "type": "Streetlight Repair Investigation",
     "count": 4,
     "previous": 17
-   },
-   {
-    "type": "Trash Cart Repair",
-    "count": 4,
-    "previous": 7
    },
    {
     "type": "Snow Sidewalk Shoveling Enforcement Exemption",
@@ -6454,6 +6423,11 @@
     "type": "DMV - Online Processing Issues",
     "count": 4,
     "previous": 1
+   },
+   {
+    "type": "Supercan - Repair",
+    "count": 4,
+    "previous": 6
    },
    {
     "type": "Roadway Repair",
@@ -6483,7 +6457,7 @@
    {
     "type": "Pothole",
     "count": 2,
-    "previous": 9
+    "previous": 10
    },
    {
     "type": "DC Water - Customer Flooding",
@@ -6556,14 +6530,244 @@
     "previous": 10
    }
   ],
-  "open": 274,
+  "open": 291,
   "recent": [
+   {
+    "type": "Recycling Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-05T02:53:29Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1500 block of FARRAGUT STREET NW",
+    "lat": 38.951,
+    "lon": -77.035
+   },
+   {
+    "type": "Public Space Inspection",
+    "agency": "DDOT",
+    "added": "2026-11-05T01:20:56Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "5600 block of 14TH STREET NW",
+    "lat": 38.958,
+    "lon": -77.033
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-05T01:03:42Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1200 block of INGRAHAM STREET NW",
+    "lat": 38.954,
+    "lon": -77.029
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "agency": "DDOT",
+    "added": "2026-11-05T00:07:30Z",
+    "resolved": "2026-11-05T00:15:54Z",
+    "status": "Closed",
+    "block": "1500 block of UPSHUR STREET NW",
+    "lat": 38.942,
+    "lon": -77.035
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-04T23:24:32Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1200 block of DELAFIELD PLACE NW",
+    "lat": 38.949,
+    "lon": -77.028
+   },
+   {
+    "type": "Recycling Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-04T22:42:07Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1400 block of BUCHANAN STREET NW",
+    "lat": 38.946,
+    "lon": -77.034
+   },
+   {
+    "type": "Recycling Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-04T22:26:35Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4800 block of 14TH STREET NW",
+    "lat": 38.949,
+    "lon": -77.033
+   },
+   {
+    "type": "Recycling Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-04T22:22:53Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1400 block of EMERSON STREET NW",
+    "lat": 38.95,
+    "lon": -77.035
+   },
+   {
+    "type": "Tree Inspection",
+    "agency": "DDOT",
+    "added": "2026-11-04T22:02:44Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "4500 block of 14TH STREET NW",
+    "lat": 38.945,
+    "lon": -77.033
+   },
+   {
+    "type": "Recycling Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-04T21:56:53Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1100 block of ALLISON STREET NW",
+    "lat": 38.945,
+    "lon": -77.027
+   },
+   {
+    "type": "Recycling Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-04T21:49:25Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4500 block of 13TH STREET NW",
+    "lat": 38.945,
+    "lon": -77.03
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T21:44:44Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4700 block of 14TH STREET NW",
+    "lat": 38.947,
+    "lon": -77.033
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T21:43:11Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4700 block of 14TH STREET NW",
+    "lat": 38.948,
+    "lon": -77.033
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "agency": "DDOT",
+    "added": "2026-11-04T21:38:20Z",
+    "resolved": "2026-11-04T21:45:54Z",
+    "status": "Closed",
+    "block": "4700 block of 14TH STREET NW",
+    "lat": 38.947,
+    "lon": -77.033
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "agency": "DOH",
+    "added": "2026-11-04T21:36:28Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "5800 block of 14TH STREET NW",
+    "lat": 38.961,
+    "lon": -77.034
+   },
+   {
+    "type": "Tree Inspection",
+    "agency": "DDOT",
+    "added": "2026-11-04T21:32:56Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "4600 block of 14TH STREET NW",
+    "lat": 38.947,
+    "lon": -77.033
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T21:28:47Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4900 block of 14TH STREET NW",
+    "lat": 38.95,
+    "lon": -77.033
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T21:26:37Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "5500 block of 14TH STREET NW",
+    "lat": 38.957,
+    "lon": -77.033
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T21:24:04Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1400 block of OGLETHORPE STREET NW",
+    "lat": 38.961,
+    "lon": -77.034
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T21:20:17Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4800 block of IOWA AVENUE NW",
+    "lat": 38.95,
+    "lon": -77.033
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-04T21:06:31Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "5000 block of 16TH STREET NW",
+    "lat": 38.951,
+    "lon": -77.036
+   },
+   {
+    "type": "Recycling Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-04T20:50:42Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1100 block of BUCHANAN STREET NW",
+    "lat": 38.946,
+    "lon": -77.027
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-04T20:38:03Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1600 block of SHEPHERD STREET NW",
+    "lat": 38.94,
+    "lon": -77.037
+   },
    {
     "type": "Residential Parking Permit Violation",
     "agency": "DPW",
     "added": "2026-11-04T19:25:07Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-05T01:23:33Z",
+    "status": "Closed",
     "block": "1600 block of TAYLOR STREET NW",
     "lat": 38.941,
     "lon": -77.037
@@ -6642,8 +6846,8 @@
     "type": "Illegal Dumping",
     "agency": "DPW",
     "added": "2026-11-04T16:22:55Z",
-    "resolved": null,
-    "status": "Open (Duplicate)",
+    "resolved": "2026-11-04T22:01:07Z",
+    "status": "Closed (Duplicate)",
     "block": "4500 block of 13TH STREET NW",
     "lat": 38.945,
     "lon": -77.03
@@ -6827,236 +7031,6 @@
     "block": "1500 block of DECATUR STREET NW",
     "lat": 38.948,
     "lon": -77.035
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-03T16:38:04Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1300 block of KENNEDY STREET NW",
-    "lat": 38.956,
-    "lon": -77.031
-   },
-   {
-    "type": "DMV - Online Processing Issues",
-    "agency": "DMV",
-    "added": "2026-11-03T16:24:11Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1600 block of BUCHANAN STREET NW",
-    "lat": 38.946,
-    "lon": -77.038
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-03T15:56:05Z",
-    "resolved": "2026-11-03T15:56:05Z",
-    "status": "Closed",
-    "block": "1300 block of DELAFIELD PLACE NW",
-    "lat": 38.949,
-    "lon": -77.03
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-03T15:55:43Z",
-    "resolved": "2026-11-03T16:02:01Z",
-    "status": "Canceled",
-    "block": "1800 block of ALLISON STREET NW",
-    "lat": 38.945,
-    "lon": -77.042
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-11-03T15:54:34Z",
-    "resolved": "2026-11-04T18:43:57Z",
-    "status": "Closed",
-    "block": "4500 block of IOWA AVENUE NW",
-    "lat": 38.946,
-    "lon": -77.029
-   },
-   {
-    "type": "Residential Parking Permit Violation",
-    "agency": "DPW",
-    "added": "2026-11-03T14:31:29Z",
-    "resolved": "2026-11-03T17:20:01Z",
-    "status": "Closed",
-    "block": "1400 block of CRITTENDEN STREET NW",
-    "lat": 38.947,
-    "lon": -77.034
-   },
-   {
-    "type": "Traffic Safety Input",
-    "agency": "DDOT",
-    "added": "2026-11-03T14:21:26Z",
-    "resolved": "2026-11-03T14:30:58Z",
-    "status": "Closed",
-    "block": "5000 block of 14TH STREET NW",
-    "lat": 38.951,
-    "lon": -77.034
-   },
-   {
-    "type": "Graffiti Removal",
-    "agency": "DPW",
-    "added": "2026-11-03T14:06:04Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "5200 block of GEORGIA AVENUE NW",
-    "lat": 38.953,
-    "lon": -77.028
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "agency": "DPW",
-    "added": "2026-11-03T14:01:14Z",
-    "resolved": "2026-11-04T07:11:39Z",
-    "status": "Closed",
-    "block": "4800 block of COLORADO AVENUE NW",
-    "lat": 38.949,
-    "lon": -77.04
-   },
-   {
-    "type": "Tree Removal",
-    "agency": "DDOT",
-    "added": "2026-11-03T13:44:21Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "5700 block of 16TH STREET NW",
-    "lat": 38.959,
-    "lon": -77.036
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-11-03T13:28:18Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4500 block of 13TH STREET NW",
-    "lat": 38.945,
-    "lon": -77.03
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-11-03T13:18:47Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1200 block of MISSOURI AVENUE NW",
-    "lat": 38.961,
-    "lon": -77.029
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-11-03T13:16:54Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "5800 block of COLORADO AVENUE NW",
-    "lat": 38.961,
-    "lon": -77.029
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-03T13:16:01Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1200 block of EMERSON STREET NW",
-    "lat": 38.95,
-    "lon": -77.028
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-11-03T13:15:50Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "5800 block of COLORADO AVENUE NW",
-    "lat": 38.96,
-    "lon": -77.029
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-03T12:51:50Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4300 block of BLAGDEN AVENUE NW",
-    "lat": 38.944,
-    "lon": -77.044
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-03T12:32:17Z",
-    "resolved": "2026-11-03T12:32:17Z",
-    "status": "Closed",
-    "block": "1300 block of KENNEDY STREET NW",
-    "lat": 38.956,
-    "lon": -77.033
-   },
-   {
-    "type": "Trash Cart - Delivery",
-    "agency": "DPW",
-    "added": "2026-11-03T01:04:03Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4100 block of 18TH STREET NW",
-    "lat": 38.941,
-    "lon": -77.041
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-02T22:30:54Z",
-    "resolved": "2026-11-02T22:30:54Z",
-    "status": "Closed",
-    "block": "4700 block of BLAGDEN TERRACE NW",
-    "lat": 38.949,
-    "lon": -77.04
-   },
-   {
-    "type": "Trash Cart Repair",
-    "agency": "DPW",
-    "added": "2026-11-02T22:28:29Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4500 block of 13TH STREET NW",
-    "lat": 38.946,
-    "lon": -77.03
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-02T21:57:49Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1300 block of HAMILTON STREET NW",
-    "lat": 38.953,
-    "lon": -77.031
-   },
-   {
-    "type": "Roadway Signs",
-    "agency": "DDOT",
-    "added": "2026-11-02T20:44:48Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "5500 block of 13TH STREET NW",
-    "lat": 38.956,
-    "lon": -77.029
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-11-02T20:41:26Z",
-    "resolved": "2026-11-03T16:36:33Z",
-    "status": "Closed",
-    "block": "1400 block of ALLISON STREET NW",
-    "lat": 38.945,
-    "lon": -77.034
    }
   ]
  },
@@ -7065,19 +7039,14 @@
   "previous_total": 31,
   "by_offense": [
    {
-    "offense": "THEFT F/AUTO",
-    "count": 9,
-    "previous": 10
-   },
-   {
     "offense": "THEFT/OTHER",
     "count": 9,
     "previous": 12
    },
    {
-    "offense": "MOTOR VEHICLE THEFT",
-    "count": 1,
-    "previous": 3
+    "offense": "THEFT F/AUTO",
+    "count": 9,
+    "previous": 10
    },
    {
     "offense": "ROBBERY",
@@ -7085,14 +7054,19 @@
     "previous": 1
    },
    {
-    "offense": "BURGLARY",
-    "count": 0,
-    "previous": 4
+    "offense": "MOTOR VEHICLE THEFT",
+    "count": 1,
+    "previous": 3
    },
    {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
     "count": 0,
     "previous": 1
+   },
+   {
+    "offense": "BURGLARY",
+    "count": 0,
+    "previous": 4
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -7143,7 +7117,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -7158,7 +7132,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to 16th Street Heights through OTR assessment sub-areas 16th Street Heights A, B and C and Crestwood in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the 16th Street Heights boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-04): 97% of the 2,995 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 92% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to 16th Street Heights through OTR assessment sub-areas 16th Street Heights A, B and C and Crestwood in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the 16th Street Heights boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-05): 97% of the 2,995 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 92% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -7183,7 +7157,7 @@
    "area_parcels": 2995,
    "area_share_inside": 0.972,
    "boundary_share_in_area": 0.918,
-   "measured": "2026-11-04"
+   "measured": "2026-11-05"
   },
   "primary": "house",
   "house": {
@@ -7383,7 +7357,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -7403,11 +7377,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 182,
-   "starting_next_7d": 17,
-   "reserved_ft": 24090,
-   "long_running_90d": 45,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-04: newest permit issued 2026-11-04, newest record update 2026-11-04, so the layer is current to within a day or two.",
+   "active_this_week": 184,
+   "starting_next_7d": 20,
+   "reserved_ft": 24838,
+   "long_running_90d": 46,
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-05: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -7419,11 +7393,11 @@
     },
     {
      "type": "Construction staging",
-     "count": 103
+     "count": 104
     },
     {
      "type": "Lead pipe replacement",
-     "count": 27
+     "count": 28
     },
     {
      "type": "Utility & DDOT work",
@@ -7436,12 +7410,12 @@
    ],
    "upcoming": [
     {
-     "type": "Moving & storage",
-     "block": "1600 block of Longfellow Street NW",
+     "type": "Construction staging",
+     "block": "4300 block of 14th Street NW",
      "start": "2026-11-05",
-     "end": "2026-11-06",
-     "ft": 88,
-     "hours": ""
+     "end": "2026-12-29",
+     "ft": 110,
+     "hours": "9:30 am\u20133:30 pm"
     },
     {
      "type": "Construction staging",
@@ -7570,6 +7544,30 @@
      "end": "2026-12-30",
      "ft": 132,
      "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Lead pipe replacement",
+     "block": "1200 block of Kennedy Street NW",
+     "start": "2026-11-10",
+     "end": "2027-01-08",
+     "ft": 330,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Lead pipe replacement",
+     "block": "1600 block of Montague Street NW",
+     "start": "2026-11-10",
+     "end": "2027-01-08",
+     "ft": 462,
+     "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Moving & storage",
+     "block": "1200 block of Decatur Street NW",
+     "start": "2026-11-12",
+     "end": "2026-11-12",
+     "ft": 88,
+     "hours": ""
     }
    ]
   },
@@ -7655,18 +7653,18 @@
     "type": "Bulk Collection",
     "median_days": 7.91,
     "city_median_days": 6.92,
-    "closed_n": 1706
+    "closed_n": 1703
    },
    {
     "type": "Scheduled Yard Waste",
     "median_days": 13.8,
-    "city_median_days": 9.67,
+    "city_median_days": 9.66,
     "closed_n": 1065
    },
    {
     "type": "Trash Collection - Missed",
     "median_days": 5.01,
-    "city_median_days": 4.08,
+    "city_median_days": 4.06,
     "closed_n": 1019
    },
    {
@@ -7679,12 +7677,12 @@
     "type": "Residential Parking Permit Violation",
     "median_days": 0.11,
     "city_median_days": 0.1,
-    "closed_n": 481
+    "closed_n": 482
    },
    {
     "type": "Recycling Collection - Missed",
     "median_days": 6.05,
-    "city_median_days": 4.97,
+    "city_median_days": 4.94,
     "closed_n": 468
    },
    {
@@ -7695,15 +7693,15 @@
    },
    {
     "type": "Illegal Dumping",
-    "median_days": 4.5,
-    "city_median_days": 4.04,
-    "closed_n": 267
+    "median_days": 4.48,
+    "city_median_days": 4.03,
+    "closed_n": 268
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -7831,7 +7829,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "archive_days": 180,
   "sources": [
    {
@@ -7857,6 +7855,10 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/"
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/"
    },
    {
     "name": "51st",
@@ -7926,6 +7928,13 @@
    {
     "name": "WAMU",
     "url": "https://wamu.org/",
+    "state": "ok",
+    "matched": 0,
+    "fetched": 1
+   },
+   {
+    "name": "DC News Now",
+    "url": "https://www.dcnewsnow.com/",
     "state": "ok",
     "matched": 0,
     "fetched": 1
@@ -8043,8 +8052,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-04T19:08:57Z",
-  "today": "2026-11-04",
+  "generated_at": "2026-11-05T09:19:54Z",
+  "today": "2026-11-05",
   "days_ahead": 30,
   "sources": [
    {
@@ -8123,7 +8132,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -33818,7 +33827,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-04T19:08:57Z",
+  "generated_at": "2026-11-05T09:19:54Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
