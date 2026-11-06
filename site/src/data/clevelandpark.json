@@ -1,7 +1,7 @@
 {
  "slug": "clevelandpark",
  "name": "Cleveland Park",
- "generated_at": "2026-11-05T09:19:54Z",
+ "generated_at": "2026-11-06T09:19:38Z",
  "boundary": {
   "source": "Cleveland Park Historic District (DC Historic Preservation Office, Open Data DC). DC has no planning area named Cleveland Park.",
   "rings": [
@@ -2675,19 +2675,6 @@
  },
  "permits": [
   {
-   "id": "B2608702",
-   "issued": "2026-11-02T05:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "3500 CONNECTICUT AVE NW 20008",
-   "work": "HISTORIC\r\n\r\nInterior Nonstructural demolition (Applied under alteration and repair as the demo applications are not processing correctly) of the space.",
-   "zoning": "NMU-4/CP",
-   "lat": 38.93573,
-   "lon": -77.05894,
-   "smd": "3C06"
-  },
-  {
    "id": "B2700789",
    "issued": "2026-11-02T05:00:00Z",
    "group": "Renovation & repair",
@@ -2699,6 +2686,19 @@
    "lat": 38.93753,
    "lon": -77.06767,
    "smd": "3C08"
+  },
+  {
+   "id": "B2608702",
+   "issued": "2026-11-02T05:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "3500 CONNECTICUT AVE NW 20008",
+   "work": "HISTORIC\r\n\r\nInterior Nonstructural demolition (Applied under alteration and repair as the demo applications are not processing correctly) of the space.",
+   "zoning": "NMU-4/CP",
+   "lat": 38.93573,
+   "lon": -77.05894,
+   "smd": "3C06"
   },
   {
    "id": "B2700017",
@@ -2766,19 +2766,6 @@
    "smd": "3C05"
   },
   {
-   "id": "E2700726",
-   "issued": "2026-10-22T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "3415 CONNECTICUT AVE NW 20008",
-   "work": "",
-   "zoning": "NMU-4/CP",
-   "lat": 38.93492,
-   "lon": -77.05768,
-   "smd": "3C06"
-  },
-  {
    "id": "P2700647",
    "issued": "2026-10-22T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -2790,6 +2777,19 @@
    "lat": 38.93795,
    "lon": -77.06693,
    "smd": "3C08"
+  },
+  {
+   "id": "E2700726",
+   "issued": "2026-10-22T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "3415 CONNECTICUT AVE NW 20008",
+   "work": "",
+   "zoning": "NMU-4/CP",
+   "lat": 38.93492,
+   "lon": -77.05768,
+   "smd": "3C06"
   },
   {
    "id": "P2700550",
@@ -2831,11 +2831,11 @@
    "smd": "3C05"
   },
   {
-   "id": "P2700383",
+   "id": "E2700432",
    "issued": "2026-10-14T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
    "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
+   "subtype": "ELECTRICAL",
    "address": "3209 HIGHLAND PL NW 20008",
    "work": "",
    "zoning": "R-1B",
@@ -2870,11 +2870,11 @@
    "smd": "3C08"
   },
   {
-   "id": "E2700432",
+   "id": "P2700383",
    "issued": "2026-10-14T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
    "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
+   "subtype": "PLUMBING AND GAS",
    "address": "3209 HIGHLAND PL NW 20008",
    "work": "",
    "zoning": "R-1B",
@@ -2923,28 +2923,28 @@
   }
  ],
  "requests": {
-  "total": 240,
-  "previous_total": 289,
+  "total": 241,
+  "previous_total": 286,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
-    "count": 41,
+    "count": 42,
     "previous": 39
    },
    {
     "type": "Bulk Collection",
-    "count": 37,
-    "previous": 42
+    "count": 40,
+    "previous": 41
    },
    {
     "type": "Parking Enforcement",
     "count": 20,
-    "previous": 46
+    "previous": 45
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 15,
-    "previous": 11
+    "count": 14,
+    "previous": 12
    },
    {
     "type": "Graffiti Removal",
@@ -2957,14 +2957,9 @@
     "previous": 11
    },
    {
-    "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 8,
-    "previous": 3
-   },
-   {
-    "type": "Residential Parking Permit Violation",
-    "count": 8,
-    "previous": 5
+    "type": "Trash Collection - Missed",
+    "count": 9,
+    "previous": 10
    },
    {
     "type": "Public Space Inspection",
@@ -2972,24 +2967,24 @@
     "previous": 3
    },
    {
-    "type": "Trash Collection - Missed",
-    "count": 8,
-    "previous": 10
+    "type": "Residential Parking Permit Violation",
+    "count": 7,
+    "previous": 6
+   },
+   {
+    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "count": 7,
+    "previous": 4
    },
    {
     "type": "Sanitation Enforcement",
     "count": 7,
-    "previous": 2
+    "previous": 1
    },
    {
     "type": "Public Space Litter Can-Collection",
     "count": 6,
     "previous": 0
-   },
-   {
-    "type": "Roadway Signs",
-    "count": 4,
-    "previous": 6
    },
    {
     "type": "Traffic Safety Input",
@@ -3029,12 +3024,12 @@
    {
     "type": "Dead Animal Collection",
     "count": 3,
-    "previous": 1
+    "previous": 0
    },
    {
-    "type": "DMV - Drivers License/ID Issues",
-    "count": 2,
-    "previous": 1
+    "type": "Roadway Signs",
+    "count": 3,
+    "previous": 7
    },
    {
     "type": "Trash Cart - Delivery",
@@ -3060,6 +3055,11 @@
     "type": "DC Government Information",
     "count": 2,
     "previous": 1
+   },
+   {
+    "type": "Illegal Dumping",
+    "count": 2,
+    "previous": 7
    },
    {
     "type": "DMV - Online Processing Issues",
@@ -3099,12 +3099,12 @@
    {
     "type": "Parking Meter Repair",
     "count": 1,
-    "previous": 2
+    "previous": 1
    },
    {
-    "type": "Illegal Dumping",
+    "type": "DMV - Drivers License/ID Issues",
     "count": 1,
-    "previous": 7
+    "previous": 2
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
@@ -3129,7 +3129,7 @@
    {
     "type": "Recycling Cart - Repair",
     "count": 1,
-    "previous": 1
+    "previous": 0
    },
    {
     "type": "Bicycle Services",
@@ -3147,8 +3147,68 @@
     "previous": 1
    }
   ],
-  "open": 68,
+  "open": 66,
   "recent": [
+   {
+    "type": "Trash Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-05T23:22:42Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3200 block of 34TH STREET NW",
+    "lat": 38.933,
+    "lon": -77.067
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-05T18:31:02Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3400 block of PORTER STREET NW",
+    "lat": 38.937,
+    "lon": -77.067
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-05T15:51:03Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3100 block of 34TH STREET NW",
+    "lat": 38.932,
+    "lon": -77.066
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-05T15:21:08Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3600 block of ORDWAY STREET NW",
+    "lat": 38.936,
+    "lon": -77.072
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-05T14:00:47Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3400 block of LOWELL STREET NW",
+    "lat": 38.932,
+    "lon": -77.067
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-05T11:29:49Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3400 block of MACOMB STREET NW",
+    "lat": 38.933,
+    "lon": -77.067
+   },
    {
     "type": "Scheduled Yard Waste",
     "agency": "DPW",
@@ -3293,8 +3353,8 @@
     "type": "Trash Collection - Missed",
     "agency": "DPW",
     "added": "2026-11-03T13:22:22Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-05T13:38:57Z",
+    "status": "Closed",
     "block": "3400 block of RODMAN STREET NW",
     "lat": 38.939,
     "lon": -77.068
@@ -3313,8 +3373,8 @@
     "type": "Bulk Collection",
     "agency": "DPW",
     "added": "2026-11-02T18:47:04Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-05T15:10:36Z",
+    "status": "Closed",
     "block": "3400 block of NEWARK STREET NW",
     "lat": 38.935,
     "lon": -77.067
@@ -3383,8 +3443,8 @@
     "type": "Bulk Collection",
     "agency": "DPW",
     "added": "2026-11-02T12:50:02Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-05T15:40:15Z",
+    "status": "Closed",
     "block": "3500 block of QUEBEC STREET NW",
     "lat": 38.938,
     "lon": -77.07
@@ -3433,8 +3493,8 @@
     "type": "Bulk Collection",
     "agency": "DPW",
     "added": "2026-11-01T16:35:57Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-05T13:08:35Z",
+    "status": "Closed",
     "block": "3400 block of LOWELL STREET NW",
     "lat": 38.932,
     "lon": -77.067
@@ -3473,8 +3533,8 @@
     "type": "Bulk Collection",
     "agency": "DPW",
     "added": "2026-10-31T16:25:36Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-05T15:08:29Z",
+    "status": "Closed",
     "block": "3400 block of 33RD PLACE NW",
     "lat": 38.936,
     "lon": -77.065
@@ -3588,66 +3648,6 @@
     "block": "3100 block of HIGHLAND PLACE NW",
     "lat": 38.935,
     "lon": -77.062
-   },
-   {
-    "type": "Roadway Signs",
-    "agency": "DDOT",
-    "added": "2026-10-29T19:02:36Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "3400 block of ORDWAY STREET NW",
-    "lat": 38.936,
-    "lon": -77.068
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-10-29T17:16:38Z",
-    "resolved": "2026-10-29T17:25:54Z",
-    "status": "Closed",
-    "block": "3500 block of QUEBEC STREET NW",
-    "lat": 38.938,
-    "lon": -77.069
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-29T16:45:37Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3500 block of 34TH STREET NW",
-    "lat": 38.937,
-    "lon": -77.067
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-10-29T15:16:00Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2900 block of ORDWAY STREET NW",
-    "lat": 38.935,
-    "lon": -77.06
-   },
-   {
-    "type": "Tree Inspection",
-    "agency": "DDOT",
-    "added": "2026-10-29T14:50:29Z",
-    "resolved": "2026-10-29T16:05:57Z",
-    "status": "Closed",
-    "block": "2900 block of ORDWAY STREET NW",
-    "lat": 38.935,
-    "lon": -77.06
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "agency": "DPW",
-    "added": "2026-10-28T20:18:03Z",
-    "resolved": "2026-10-29T09:11:54Z",
-    "status": "Closed",
-    "block": "RODMAN STREET NW AND IDAHO AVENUE NW",
-    "lat": 38.939,
-    "lon": -77.071
    }
   ]
  },
@@ -3694,7 +3694,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-05T09:19:54Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -3709,7 +3709,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Cleveland Park through OTR assessment neighborhoods Cleveland Park and Forest Hills in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Cleveland Park boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-05): 33% of the 5,273 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 98% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Cleveland Park through OTR assessment neighborhoods Cleveland Park and Forest Hills in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Cleveland Park boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-06): 33% of the 5,273 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 98% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -3726,20 +3726,20 @@
    "area_parcels": 5273,
    "area_share_inside": 0.328,
    "boundary_share_in_area": 0.976,
-   "measured": "2026-11-05"
+   "measured": "2026-11-06"
   },
   "primary": "house",
   "house": {
-   "median_12mo": 2269400,
-   "count_12mo": 69,
-   "median_prev_12mo": 1910000,
-   "count_prev_12mo": 42
+   "median_12mo": 2295000,
+   "count_12mo": 67,
+   "median_prev_12mo": 1900000,
+   "count_prev_12mo": 44
   },
   "condo": {
-   "median_12mo": 385000,
+   "median_12mo": 386000,
    "count_12mo": 80,
    "median_prev_12mo": 400000,
-   "count_prev_12mo": 82
+   "count_prev_12mo": 83
   },
   "last_60d": {
    "median": 1768888,
@@ -3748,8 +3748,8 @@
    "ppsf_count": 9
   },
   "above_assessment_12mo": {
-   "n": 86,
-   "of": 149
+   "n": 84,
+   "of": 147
   },
   "by_month": [
    {
@@ -3815,6 +3815,15 @@
   ],
   "by_month_basis": "houses only; calendar months, the last one in progress; median null when under 3 sales",
   "recent_sales": [
+   {
+    "address": "3621 39th St NW # B320",
+    "date": "2026-10-29",
+    "price": 640000,
+    "kind": "condo",
+    "beds": null,
+    "sqft": null,
+    "assessed": 606980
+   },
    {
     "address": "3119 38th St NW",
     "date": "2026-10-22",
@@ -3953,7 +3962,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-05T09:19:54Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -3973,15 +3982,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 45,
-   "starting_next_7d": 7,
-   "reserved_ft": 8470,
+   "active_this_week": 38,
+   "starting_next_7d": 8,
+   "reserved_ft": 6270,
    "long_running_90d": 9,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-05: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Construction staging",
-     "count": 25
+     "count": 21
     },
     {
      "type": "Lead pipe replacement",
@@ -3989,7 +3998,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 11
+     "count": 8
     },
     {
      "type": "Events & reserved parking",
@@ -4030,6 +4039,14 @@
      "hours": "7 am\u20137 pm"
     },
     {
+     "type": "Utility & DDOT work",
+     "block": "3300 block of 27th Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "ft": 22,
+     "hours": "8 am\u20134:30 pm"
+    },
+    {
      "type": "Construction staging",
      "block": "3400 block of Quebec Street NW",
      "start": "2026-11-09",
@@ -4047,11 +4064,11 @@
     },
     {
      "type": "Utility & DDOT work",
-     "block": "3300 block of 27th Street NW",
+     "block": "3500 block of Lowell Street NW",
      "start": "2026-11-09",
-     "end": "2026-11-13",
-     "ft": 22,
-     "hours": "8 am\u20134:30 pm"
+     "end": "2026-11-20",
+     "ft": 220,
+     "hours": "7 am\u20135 pm"
     }
    ]
   },
@@ -4136,14 +4153,14 @@
    {
     "type": "Scheduled Yard Waste",
     "median_days": 7.94,
-    "city_median_days": 9.66,
-    "closed_n": 437
+    "city_median_days": 9.63,
+    "closed_n": 436
    },
    {
     "type": "Bulk Collection",
-    "median_days": 7.91,
-    "city_median_days": 6.92,
-    "closed_n": 367
+    "median_days": 7.9,
+    "city_median_days": 6.91,
+    "closed_n": 373
    },
    {
     "type": "Parking Enforcement",
@@ -4154,14 +4171,14 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 6.02,
-    "city_median_days": 4.94,
+    "city_median_days": 4.85,
     "closed_n": 196
    },
    {
     "type": "Trash Collection - Missed",
-    "median_days": 13.0,
-    "city_median_days": 4.06,
-    "closed_n": 175
+    "median_days": 13.31,
+    "city_median_days": 4.01,
+    "closed_n": 174
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -4178,14 +4195,14 @@
    {
     "type": "Pothole",
     "median_days": 3.06,
-    "city_median_days": 3.61,
+    "city_median_days": 3.6,
     "closed_n": 69
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-05T09:19:54Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -4340,7 +4357,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-05T09:19:54Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "archive_days": 180,
   "sources": [
    {
@@ -4777,8 +4794,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-05T09:19:54Z",
-  "today": "2026-11-05",
+  "generated_at": "2026-11-06T09:19:38Z",
+  "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
    {
@@ -4838,6 +4855,15 @@
     "source": "DC farmers market list",
     "kind": "market",
     "date": "2026-11-28"
+   },
+   {
+    "title": "FRESHFARM Cleveland Park",
+    "place": "3426 Connecticut Ave NW",
+    "time": "9:00 AM - 1:00 PM",
+    "url": "https://www.freshfarm.org/markets",
+    "source": "DC farmers market list",
+    "kind": "market",
+    "date": "2026-12-05"
    }
   ],
   "unscheduled": [],
@@ -4848,7 +4874,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-05T09:19:54Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -16185,7 +16211,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-05T09:19:54Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

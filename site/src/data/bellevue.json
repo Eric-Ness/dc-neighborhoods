@@ -1,7 +1,7 @@
 {
  "slug": "bellevue",
  "name": "Bellevue",
- "generated_at": "2026-11-05T09:19:54Z",
+ "generated_at": "2026-11-06T09:19:38Z",
  "boundary": {
   "source": "ANC single-member districts 8D01, 8D03, 8D05, 8D06, 8E07, 8E08 and 8E09, the homes in DC's BELLEVUE planning area (Open Data DC). 8D04 is left out: it is mostly the empty land at DC's southern tip.",
   "rings": [
@@ -8311,19 +8311,6 @@
    "smd": "8E09"
   },
   {
-   "id": "P2700779",
-   "issued": "2026-10-26T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "627 DARRINGTON ST SE 20032",
-   "work": "",
-   "zoning": "R-3",
-   "lat": 38.82602,
-   "lon": -76.99772,
-   "smd": "8E09"
-  },
-  {
    "id": "B2700538",
    "issued": "2026-10-26T04:00:00Z",
    "group": "Renovation & repair",
@@ -8335,6 +8322,19 @@
    "lat": 38.8313,
    "lon": -77.01068,
    "smd": "8D01"
+  },
+  {
+   "id": "P2700779",
+   "issued": "2026-10-26T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "627 DARRINGTON ST SE 20032",
+   "work": "",
+   "zoning": "R-3",
+   "lat": 38.82602,
+   "lon": -76.99772,
+   "smd": "8E09"
   },
   {
    "id": "E2700773",
@@ -8442,57 +8442,57 @@
   }
  ],
  "requests": {
-  "total": 644,
-  "previous_total": 655,
+  "total": 625,
+  "previous_total": 686,
   "by_type": [
    {
-    "type": "Bulk Collection",
-    "count": 117,
-    "previous": 123
-   },
-   {
     "type": "DOEE - LIHEAP",
-    "count": 111,
+    "count": 117,
     "previous": 9
    },
    {
-    "type": "Parking Enforcement",
-    "count": 74,
-    "previous": 91
+    "type": "Bulk Collection",
+    "count": 101,
+    "previous": 140
    },
    {
-    "type": "Sanitation Enforcement",
-    "count": 37,
-    "previous": 28
+    "type": "Parking Enforcement",
+    "count": 77,
+    "previous": 88
    },
    {
     "type": "Illegal Dumping",
-    "count": 35,
-    "previous": 34
+    "count": 34,
+    "previous": 36
    },
    {
     "type": "DC Government Information",
-    "count": 34,
-    "previous": 30
+    "count": 32,
+    "previous": 33
+   },
+   {
+    "type": "Sanitation Enforcement",
+    "count": 28,
+    "previous": 34
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 25,
-    "previous": 22
+    "count": 24,
+    "previous": 24
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
-    "count": 21,
+    "count": 22,
     "previous": 59
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
-    "count": 20,
+    "count": 21,
     "previous": 21
    },
    {
     "type": "Residential Parking Permit Violation",
-    "count": 20,
+    "count": 21,
     "previous": 22
    },
    {
@@ -8501,14 +8501,14 @@
     "previous": 5
    },
    {
-    "type": "DMV - Drivers License/ID Issues",
+    "type": "Dead Animal Collection",
     "count": 14,
-    "previous": 25
+    "previous": 5
    },
    {
-    "type": "Dead Animal Collection",
-    "count": 13,
-    "previous": 5
+    "type": "DMV - Drivers License/ID Issues",
+    "count": 11,
+    "previous": 28
    },
    {
     "type": "DOB - Vacant Private Property Inspection",
@@ -8517,7 +8517,7 @@
    },
    {
     "type": "Trash Collection - Missed",
-    "count": 9,
+    "count": 10,
     "previous": 23
    },
    {
@@ -8526,18 +8526,13 @@
     "previous": 10
    },
    {
-    "type": "Tree Inspection",
-    "count": 7,
-    "previous": 14
-   },
-   {
     "type": "Supercan - Delivery",
     "count": 7,
     "previous": 22
    },
    {
     "type": "Signed Street Sweeping Missed",
-    "count": 5,
+    "count": 6,
     "previous": 0
    },
    {
@@ -8556,6 +8551,11 @@
     "previous": 1
    },
    {
+    "type": "Tree Inspection",
+    "count": 4,
+    "previous": 16
+   },
+   {
     "type": "DMV - Ticket Payment Dispute",
     "count": 4,
     "previous": 0
@@ -8563,17 +8563,17 @@
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 4,
-    "previous": 17
+    "previous": 16
    },
    {
     "type": "Pothole",
     "count": 4,
-    "previous": 8
+    "previous": 7
    },
    {
-    "type": "Roadway Repair",
+    "type": "Streetlight Repair Investigation",
     "count": 3,
-    "previous": 0
+    "previous": 2
    },
    {
     "type": "DMV - Online Processing Issues",
@@ -8591,9 +8591,14 @@
     "previous": 2
    },
    {
-    "type": "Streetlight Repair Investigation",
-    "count": 2,
-    "previous": 2
+    "type": "Sidewalk Repair",
+    "count": 3,
+    "previous": 8
+   },
+   {
+    "type": "DMV - Vehicle Title Issues",
+    "count": 3,
+    "previous": 1
    },
    {
     "type": "Trash Cart Repair",
@@ -8614,16 +8619,6 @@
     "type": "Traffic Safety Input",
     "count": 2,
     "previous": 0
-   },
-   {
-    "type": "Sidewalk Repair",
-    "count": 2,
-    "previous": 8
-   },
-   {
-    "type": "DMV - Vehicle Title Issues",
-    "count": 2,
-    "previous": 1
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -8649,10 +8644,195 @@
     "type": "Grass Mowing Services Missed (DGS)",
     "count": 1,
     "previous": 0
+   },
+   {
+    "type": "Leaf  Collection Missed",
+    "count": 1,
+    "previous": 0
    }
   ],
-  "open": 78,
+  "open": 74,
   "recent": [
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-06T03:38:52Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4000 block of 1ST PLACE SW",
+    "lat": 38.831,
+    "lon": -77.01
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-05T23:08:00Z",
+    "resolved": "2026-11-05T23:08:00Z",
+    "status": "Closed",
+    "block": "4000 block of SOUTH CAPITOL STREET SW",
+    "lat": 38.831,
+    "lon": -77.008
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-05T22:53:34Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "400 block of BRANDYWINE STREET SE",
+    "lat": 38.83,
+    "lon": -77.0
+   },
+   {
+    "type": "Residential Parking Permit Violation",
+    "agency": "DPW",
+    "added": "2026-11-05T21:34:59Z",
+    "resolved": "2026-11-06T00:51:09Z",
+    "status": "Closed",
+    "block": "600 block of ELMIRA STREET SE",
+    "lat": 38.826,
+    "lon": -76.998
+   },
+   {
+    "type": "Leaf  Collection Missed",
+    "agency": "DPW",
+    "added": "2026-11-05T20:51:36Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "100 block of BRANDYWINE PLACE SW",
+    "lat": 38.83,
+    "lon": -77.013
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-05T19:54:42Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "100 block of FORRESTER STREET SW",
+    "lat": 38.825,
+    "lon": -77.01
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-05T19:01:24Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "600 block of DARRINGTON STREET SE",
+    "lat": 38.826,
+    "lon": -76.998
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-05T18:09:51Z",
+    "resolved": "2026-11-05T18:09:51Z",
+    "status": "Closed",
+    "block": "4500 block of 3RD STREET SE",
+    "lat": 38.825,
+    "lon": -77.002
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-05T17:13:20Z",
+    "resolved": "2026-11-05T17:13:20Z",
+    "status": "Closed",
+    "block": "4300 block of 3RD STREET SE",
+    "lat": 38.827,
+    "lon": -77.003
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-05T17:12:22Z",
+    "resolved": "2026-11-05T18:34:47Z",
+    "status": "Closed",
+    "block": "600 block of BRANDYWINE STREET SE",
+    "lat": 38.83,
+    "lon": -76.997
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-05T16:24:47Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3700 block of MARTIN LUTHER KING JR AVENUE SE",
+    "lat": 38.837,
+    "lon": -77.007
+   },
+   {
+    "type": "Sidewalk Repair",
+    "agency": "DDOT",
+    "added": "2026-11-05T15:37:22Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "800 block of BARNABY STREET SE",
+    "lat": 38.83,
+    "lon": -76.994
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-05T15:35:03Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "800 block of BARNABY STREET SE",
+    "lat": 38.83,
+    "lon": -76.994
+   },
+   {
+    "type": "DMV - Vehicle Title Issues",
+    "agency": "DMV",
+    "added": "2026-11-05T15:12:50Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4100 block of LIVINGSTON ROAD SE",
+    "lat": 38.829,
+    "lon": -77.003
+   },
+   {
+    "type": "Dead Animal Collection",
+    "agency": "DPW",
+    "added": "2026-11-05T15:07:20Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of ATLANTIC STREET SW",
+    "lat": 38.832,
+    "lon": -77.008
+   },
+   {
+    "type": "DC Government Information",
+    "agency": "OUC",
+    "added": "2026-11-05T15:01:32Z",
+    "resolved": "2026-11-05T15:01:32Z",
+    "status": "Closed",
+    "block": "800 block of MONTERIA COURT SE",
+    "lat": 38.83,
+    "lon": -76.991
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-05T14:53:41Z",
+    "resolved": "2026-11-05T15:35:22Z",
+    "status": "Closed",
+    "block": "Unit block of MISSISSIPPI AVENUE SE",
+    "lat": 38.832,
+    "lon": -77.007
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-05T13:32:53Z",
+    "resolved": "2026-11-05T13:32:53Z",
+    "status": "Closed",
+    "block": "800 block of SOUTHERN AVENUE SE",
+    "lat": 38.828,
+    "lon": -76.993
+   },
    {
     "type": "Bulk Collection",
     "agency": "DPW",
@@ -8677,8 +8857,8 @@
     "type": "Illegal Dumping",
     "agency": "DPW",
     "added": "2026-11-04T21:24:36Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-05T18:51:06Z",
+    "status": "Closed",
     "block": "800 block of H R DRIVE SE",
     "lat": 38.83,
     "lon": -76.993
@@ -8687,8 +8867,8 @@
     "type": "Out of State Parking Violation (ROSA)",
     "agency": "DPW",
     "added": "2026-11-04T20:57:36Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-05T07:56:39Z",
+    "status": "Closed",
     "block": "100 block of DARRINGTON STREET SW",
     "lat": 38.827,
     "lon": -77.01
@@ -8777,8 +8957,8 @@
     "type": "Pothole",
     "agency": "DDOT",
     "added": "2026-11-04T17:31:29Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-05T19:46:01Z",
+    "status": "Closed",
     "block": "300 block of LIVINGSTON TERRACE SE",
     "lat": 38.827,
     "lon": -77.001
@@ -8972,217 +9152,32 @@
     "block": "100 block of CHESAPEAKE STREET SW",
     "lat": 38.828,
     "lon": -77.012
-   },
-   {
-    "type": "DMV - Drivers License/ID Issues",
-    "agency": "DMV",
-    "added": "2026-11-03T16:37:43Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4000 block of MARTIN LUTHER KING JR AVENUE SW",
-    "lat": 38.831,
-    "lon": -77.011
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-03T15:33:46Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3600 block of BROTHERS PLACE SE",
-    "lat": 38.84,
-    "lon": -77.006
-   },
-   {
-    "type": "Roadway Signs",
-    "agency": "DDOT",
-    "added": "2026-11-03T15:12:34Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "600 block of ELMIRA STREET SE",
-    "lat": 38.826,
-    "lon": -76.998
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "agency": "DPW",
-    "added": "2026-11-03T13:46:22Z",
-    "resolved": "2026-11-04T07:11:34Z",
-    "status": "Closed",
-    "block": "Unit block of DANBURY STREET SW",
-    "lat": 38.828,
-    "lon": -77.008
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-02T22:24:54Z",
-    "resolved": "2026-11-03T15:09:13Z",
-    "status": "Closed",
-    "block": "600 block of FORRESTER STREET SE",
-    "lat": 38.825,
-    "lon": -76.998
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-02T21:49:46Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "700 block of BONINI ROAD SE",
-    "lat": 38.825,
-    "lon": -76.997
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-02T21:40:49Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "600 block of DARRINGTON STREET SE",
-    "lat": 38.826,
-    "lon": -76.998
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-02T21:39:20Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "600 block of DARRINGTON STREET SE",
-    "lat": 38.826,
-    "lon": -76.998
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-02T20:38:16Z",
-    "resolved": "2026-11-02T20:42:26Z",
-    "status": "Closed",
-    "block": "100 block of DARRINGTON STREET SW",
-    "lat": 38.827,
-    "lon": -77.01
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-02T18:47:38Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4000 block of 1ST PLACE SW",
-    "lat": 38.831,
-    "lon": -77.01
-   },
-   {
-    "type": "Abandoned Vehicle - On Private Property",
-    "agency": "DPW",
-    "added": "2026-11-02T17:55:02Z",
-    "resolved": "2026-11-03T14:54:05Z",
-    "status": "Closed",
-    "block": "Unit block of DANBURY STREET SW",
-    "lat": 38.828,
-    "lon": -77.009
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-02T17:51:29Z",
-    "resolved": "2026-11-02T17:51:29Z",
-    "status": "Closed",
-    "block": "4200 block of 6TH STREET SE",
-    "lat": 38.826,
-    "lon": -76.999
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-02T17:43:19Z",
-    "resolved": "2026-11-02T18:16:05Z",
-    "status": "Closed",
-    "block": "4300 block of MARTIN LUTHER KING JR AVENUE SW",
-    "lat": 38.826,
-    "lon": -77.012
-   },
-   {
-    "type": "Out of State Parking Violation (ROSA)",
-    "agency": "DPW",
-    "added": "2026-11-02T17:40:46Z",
-    "resolved": "2026-11-03T08:18:01Z",
-    "status": "Closed",
-    "block": "800 block of BARNABY STREET SE",
-    "lat": 38.83,
-    "lon": -76.993
-   },
-   {
-    "type": "DMV - Drivers License/ID Issues",
-    "agency": "DMV",
-    "added": "2026-11-02T17:11:30Z",
-    "resolved": "2026-11-04T16:41:50Z",
-    "status": "Closed",
-    "block": "4000 block of LIVINGSTON ROAD SE",
-    "lat": 38.83,
-    "lon": -77.003
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-02T17:11:18Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "800 block of BARNABY STREET SE",
-    "lat": 38.83,
-    "lon": -76.994
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-02T16:22:58Z",
-    "resolved": "2026-11-02T17:53:54Z",
-    "status": "Closed",
-    "block": "Unit block of DANBURY STREET SW",
-    "lat": 38.828,
-    "lon": -77.009
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-02T14:27:52Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4000 block of MARTIN LUTHER KING JR AVENUE SW",
-    "lat": 38.831,
-    "lon": -77.011
    }
   ]
  },
  "crime": {
   "total": 35,
-  "previous_total": 38,
+  "previous_total": 37,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
-    "count": 10,
+    "count": 11,
     "previous": 5
    },
    {
     "offense": "THEFT F/AUTO",
-    "count": 9,
-    "previous": 12
+    "count": 8,
+    "previous": 13
    },
    {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
-    "count": 6,
+    "count": 7,
     "previous": 4
    },
    {
     "offense": "ROBBERY",
     "count": 3,
-    "previous": 5
-   },
-   {
-    "offense": "MOTOR VEHICLE THEFT",
-    "count": 3,
-    "previous": 7
+    "previous": 4
    },
    {
     "offense": "BURGLARY",
@@ -9190,14 +9185,14 @@
     "previous": 4
    },
    {
+    "offense": "MOTOR VEHICLE THEFT",
+    "count": 2,
+    "previous": 7
+   },
+   {
     "offense": "SEX ABUSE",
     "count": 1,
     "previous": 0
-   },
-   {
-    "offense": "HOMICIDE",
-    "count": 0,
-    "previous": 1
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -9254,7 +9249,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-05T09:19:54Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -9269,7 +9264,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Bellevue through OTR assessment sub-areas Congress Heights A and C in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Bellevue boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-05): 64% of the 2,419 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 79% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Bellevue through OTR assessment sub-areas Congress Heights A and C in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Bellevue boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-06): 64% of the 2,419 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 79% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -9286,12 +9281,12 @@
    "area_parcels": 2419,
    "area_share_inside": 0.64,
    "boundary_share_in_area": 0.791,
-   "measured": "2026-11-05"
+   "measured": "2026-11-06"
   },
   "primary": "house",
   "house": {
    "median_12mo": 385000,
-   "count_12mo": 35,
+   "count_12mo": 36,
    "median_prev_12mo": 426000,
    "count_prev_12mo": 42
   },
@@ -9302,14 +9297,14 @@
    "count_prev_12mo": 11
   },
   "last_60d": {
-   "median": 390000,
-   "count": 5,
-   "median_ppsf": 340,
-   "ppsf_count": 5
+   "median": 385000,
+   "count": 6,
+   "median_ppsf": 326,
+   "ppsf_count": 6
   },
   "above_assessment_12mo": {
    "n": 30,
-   "of": 42
+   "of": 43
   },
   "by_month": [
    {
@@ -9364,8 +9359,8 @@
    },
    {
     "month": "2026-10",
-    "median": 390000,
-    "count": 3
+    "median": 385000,
+    "count": 4
    },
    {
     "month": "2026-11",
@@ -9375,6 +9370,15 @@
   ],
   "by_month_basis": "houses only; calendar months, the last one in progress; median null when under 3 sales",
   "recent_sales": [
+   {
+    "address": "1359 Barnaby Ter SE",
+    "date": "2026-10-22",
+    "price": 240000,
+    "kind": "house",
+    "beds": 3,
+    "sqft": 1116,
+    "assessed": 259720
+   },
    {
     "address": "713 Brandywine St SE # 301",
     "date": "2026-10-20",
@@ -9432,7 +9436,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-05T09:19:54Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -9452,15 +9456,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 37,
-   "starting_next_7d": 1,
-   "reserved_ft": 3410,
+   "active_this_week": 30,
+   "starting_next_7d": 0,
+   "reserved_ft": 2728,
    "long_running_90d": 21,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-05: newest permit issued 2026-11-05, newest record update 2026-11-05, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Construction staging",
-     "count": 9
+     "count": 6
     },
     {
      "type": "Lead pipe replacement",
@@ -9468,19 +9472,10 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 23
+     "count": 19
     }
    ],
-   "upcoming": [
-    {
-     "type": "Utility & DDOT work",
-     "block": "4200 block of 7th Street SE",
-     "start": "2026-11-05",
-     "end": "2026-11-12",
-     "ft": 660,
-     "hours": "7 am\u20135 pm"
-    }
-   ]
+   "upcoming": []
   },
   "trees": {
    "total": 3304,
@@ -9563,8 +9558,8 @@
    {
     "type": "Bulk Collection",
     "median_days": 6.67,
-    "city_median_days": 6.92,
-    "closed_n": 838
+    "city_median_days": 6.91,
+    "closed_n": 834
    },
    {
     "type": "Parking Enforcement",
@@ -9576,25 +9571,25 @@
     "type": "DC Government Information",
     "median_days": 0.0,
     "city_median_days": 0.0,
-    "closed_n": 628
+    "closed_n": 627
    },
    {
     "type": "Trash Collection - Missed",
     "median_days": 3.71,
-    "city_median_days": 4.06,
+    "city_median_days": 4.01,
     "closed_n": 323
    },
    {
     "type": "Sanitation Enforcement",
     "median_days": 1.86,
-    "city_median_days": 1.1,
+    "city_median_days": 1.11,
     "closed_n": 221
    },
    {
     "type": "Illegal Dumping",
-    "median_days": 4.09,
-    "city_median_days": 4.03,
-    "closed_n": 212
+    "median_days": 4.18,
+    "city_median_days": 4.02,
+    "closed_n": 210
    },
    {
     "type": "Snow and Ice Removal on Public Space",
@@ -9604,15 +9599,15 @@
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
-    "median_days": 2.98,
-    "city_median_days": 3.01,
-    "closed_n": 195
+    "median_days": 2.99,
+    "city_median_days": 3.03,
+    "closed_n": 197
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-05T09:19:54Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -9735,7 +9730,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-05T09:19:54Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "archive_days": 180,
   "sources": [
    {
@@ -9932,8 +9927,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-05T09:19:54Z",
-  "today": "2026-11-05",
+  "generated_at": "2026-11-06T09:19:38Z",
+  "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
    {
@@ -9958,15 +9953,6 @@
    }
   ],
   "events": [
-   {
-    "title": "Arcadia Mobile Market at Bellevue Library",
-    "place": "115 Atlantic Street SW",
-    "time": "3:00 PM - 5:00 PM",
-    "url": "https://www.arcadiafood.org",
-    "source": "DC farmers market list",
-    "kind": "market",
-    "date": "2026-11-05"
-   },
    {
     "title": "Arcadia Mobile Market at Bellevue Library",
     "place": "115 Atlantic Street SW",
@@ -10008,7 +9994,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-05T09:19:54Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -27105,7 +27091,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-05T09:19:54Z",
+  "generated_at": "2026-11-06T09:19:38Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
@@ -27400,6 +27386,13 @@
     "capacity": 19,
     "lat": 38.82448,
     "lon": -77.0055
+   },
+   {
+    "id": "2283154596818720820",
+    "name": "6th & Chesapeake St SE",
+    "capacity": 11,
+    "lat": 38.82892,
+    "lon": -76.99842
    },
    {
     "id": "d72b1790-0fea-4af8-9d2a-fd4d4db24d1a",
