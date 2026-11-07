@@ -1,7 +1,7 @@
 {
  "slug": "lenfantplaza",
  "name": "L'Enfant Plaza",
- "generated_at": "2026-11-07T03:11:31Z",
+ "generated_at": "2026-11-07T09:18:04Z",
  "boundary": {
   "source": "Southwest Business Improvement District, which takes in L'Enfant Plaza and the federal blocks around it (Open Data DC). DC has no planning area for L'Enfant Plaza.",
   "rings": [
@@ -1260,18 +1260,18 @@
   }
  ],
  "requests": {
-  "total": 671,
-  "previous_total": 738,
+  "total": 670,
+  "previous_total": 736,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 179,
+    "count": 178,
     "previous": 218
    },
    {
     "type": "DMV - Drivers License/ID Issues",
     "count": 91,
-    "previous": 99
+    "previous": 97
    },
    {
     "type": "DMV - Copy of Ticket",
@@ -5466,12 +5466,6 @@
        "2026-11-03",
        "2026-11-03",
        0
-      ],
-      [
-       0,
-       "2026-10-08",
-       "2026-10-08",
-       0
       ]
      ]
     },
@@ -7146,14 +7140,14 @@
     "previous": 14
    },
    {
-    "offense": "THEFT F/AUTO",
-    "count": 5,
-    "previous": 4
-   },
-   {
     "offense": "MOTOR VEHICLE THEFT",
     "count": 5,
     "previous": 3
+   },
+   {
+    "offense": "THEFT F/AUTO",
+    "count": 5,
+    "previous": 4
    },
    {
     "offense": "ROBBERY",
@@ -7207,7 +7201,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -7381,7 +7375,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -7401,11 +7395,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 142,
-   "starting_next_7d": 40,
-   "reserved_ft": 22792,
-   "long_running_90d": 33,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-07: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
+   "active_this_week": 130,
+   "starting_next_7d": 38,
+   "reserved_ft": 20174,
+   "long_running_90d": 31,
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-07: newest permit issued 2026-11-07, newest record update 2026-11-07, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -7417,54 +7411,22 @@
     },
     {
      "type": "Construction staging",
-     "count": 103
+     "count": 97
     },
     {
      "type": "Cranes",
-     "count": 8
+     "count": 2
     },
     {
      "type": "Utility & DDOT work",
-     "count": 11
+     "count": 12
     },
     {
      "type": "Events & reserved parking",
-     "count": 17
+     "count": 16
     }
    ],
    "upcoming": [
-    {
-     "type": "Events & reserved parking",
-     "block": "700 block of L'Enfant Plaza SW",
-     "start": "2026-11-07",
-     "end": "2026-11-07",
-     "ft": 154,
-     "hours": "7 am\u20137 pm"
-    },
-    {
-     "type": "Cranes",
-     "block": "600 block of 7th Street SW",
-     "start": "2026-11-07",
-     "end": "2026-11-07",
-     "ft": 330,
-     "hours": "7 am\u20137 pm"
-    },
-    {
-     "type": "Cranes",
-     "block": "700 block of 7th Street SW",
-     "start": "2026-11-07",
-     "end": "2026-11-07",
-     "ft": 0,
-     "hours": "7 am\u20137 pm"
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "400 block of L'Enfant Plaza SW",
-     "start": "2026-11-07",
-     "end": "2026-11-07",
-     "ft": 44,
-     "hours": "7 am\u201311:59 pm"
-    },
     {
      "type": "Cranes",
      "block": "1100 block of Maine Avenue SW",
@@ -7722,6 +7684,22 @@
      "hours": "7 am\u20137 pm"
     },
     {
+     "type": "Events & reserved parking",
+     "block": "900 block of Maine Avenue SW",
+     "start": "2026-11-12",
+     "end": "2026-11-12",
+     "ft": 88,
+     "hours": "7 am\u201311:59 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "300 block of D Street SW",
+     "start": "2026-11-12",
+     "end": "2026-11-13",
+     "ft": 66,
+     "hours": "7:30 am\u20133 pm"
+    },
+    {
      "type": "Moving & storage",
      "block": "300 block of Maple Drive SW",
      "start": "2026-11-14",
@@ -7756,23 +7734,23 @@
    ]
   },
   "trees": {
-   "total": 2345,
+   "total": 2347,
    "species": 153,
-   "planted_5y": 287,
-   "empty_boxes": 12,
-   "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (12). Not counted: 'Proposed' = planting scheduled (51), 'Conflict'/'Utility' = empty but blocked (28), 'Retired' = box removed (371). 'total' is boxes with status 'Plant' whose condition is not Dead.",
+   "planted_5y": 290,
+   "empty_boxes": 10,
+   "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (10). Not counted: 'Proposed' = planting scheduled (51), 'Conflict'/'Utility' = empty but blocked (28), 'Retired' = box removed (371). 'total' is boxes with status 'Plant' whose condition is not Dead.",
    "condition": {
-    "Good": 1394,
-    "Fair": 719,
-    "Excellent": 186,
-    "Poor": 45,
+    "Good": 1399,
+    "Fair": 714,
+    "Excellent": 189,
+    "Poor": 44,
     "Not rated": 1
    },
    "dead": 25,
    "top_species": [
     {
      "name": "Willow oak",
-     "count": 493
+     "count": 492
     },
     {
      "name": "Loblolly Pine",
@@ -7830,14 +7808,14 @@
      "block": "800 block of 4th St SW"
     }
    ],
-   "inventory_date": "2026-10-28"
+   "inventory_date": "2026-11-03"
   },
   "service": [
    {
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 2129
+    "closed_n": 2128
    },
    {
     "type": "DMV - Ticket Payment Dispute",
@@ -7885,7 +7863,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -8012,7 +7990,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "archive_days": 180,
   "sources": [
    {
@@ -8076,9 +8054,9 @@
    {
     "name": "The Southwester",
     "url": "https://thesouthwester.com/",
-    "state": "ok",
-    "matched": 20,
-    "fetched": 1
+    "state": "error: TimeoutError",
+    "matched": 0,
+    "failed": 1
    },
    {
     "name": "Southwest BID",
@@ -8646,8 +8624,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-07T03:11:31Z",
-  "today": "2026-11-06",
+  "generated_at": "2026-11-07T09:18:04Z",
+  "today": "2026-11-07",
   "days_ahead": 30,
   "sources": [
    {
@@ -8748,7 +8726,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -22380,7 +22358,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

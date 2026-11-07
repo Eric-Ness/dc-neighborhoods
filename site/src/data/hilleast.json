@@ -1,7 +1,7 @@
 {
  "slug": "hilleast",
  "name": "Hill East",
- "generated_at": "2026-11-07T03:11:31Z",
+ "generated_at": "2026-11-07T09:18:04Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -872,19 +872,6 @@
    "smd": "6B07"
   },
   {
-   "id": "E2701009",
-   "issued": "2026-10-29T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "278 15TH ST SE 20003",
-   "work": "",
-   "zoning": "MU-4",
-   "lat": 38.88562,
-   "lon": -76.98335,
-   "smd": "7D10"
-  },
-  {
    "id": "E2701044",
    "issued": "2026-10-29T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -935,6 +922,19 @@
    "lat": 38.88818,
    "lon": -76.98104,
    "smd": "7D09"
+  },
+  {
+   "id": "E2701009",
+   "issued": "2026-10-29T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "278 15TH ST SE 20003",
+   "work": "",
+   "zoning": "MU-4",
+   "lat": 38.88562,
+   "lon": -76.98335,
+   "smd": "7D10"
   },
   {
    "id": "E2700954",
@@ -1054,6 +1054,19 @@
    "smd": "7D10"
   },
   {
+   "id": "M2700287",
+   "issued": "2026-10-22T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "MECHANICAL",
+   "address": "1718 INDEPENDENCE AVE SE 20003",
+   "work": "",
+   "zoning": "RF-1",
+   "lat": 38.88778,
+   "lon": -76.98011,
+   "smd": "7D09"
+  },
+  {
    "id": "B2606523",
    "issued": "2026-10-22T04:00:00Z",
    "group": "Additions",
@@ -1077,19 +1090,6 @@
    "zoning": "RF-1",
    "lat": 38.88669,
    "lon": -76.978,
-   "smd": "7D09"
-  },
-  {
-   "id": "M2700287",
-   "issued": "2026-10-22T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "MECHANICAL",
-   "address": "1718 INDEPENDENCE AVE SE 20003",
-   "work": "",
-   "zoning": "RF-1",
-   "lat": 38.88778,
-   "lon": -76.98011,
    "smd": "7D09"
   },
   {
@@ -1158,19 +1158,6 @@
    "smd": "7D10"
   },
   {
-   "id": "B2700423",
-   "issued": "2026-10-19T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "302 12TH ST SE 20003",
-   "work": "REMOVE 18 EXISTING WINDOWS AND REPLACE WITH NEW ANDERSEN 400 SERIES AND SIMONTON 6150 SERIES WINDOWS.",
-   "zoning": "RF-1",
-   "lat": 38.88506,
-   "lon": -76.98997,
-   "smd": "6B07"
-  },
-  {
    "id": "E2700601",
    "issued": "2026-10-19T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -1208,6 +1195,19 @@
    "lat": 38.88562,
    "lon": -76.98335,
    "smd": "7D10"
+  },
+  {
+   "id": "B2700423",
+   "issued": "2026-10-19T04:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "302 12TH ST SE 20003",
+   "work": "REMOVE 18 EXISTING WINDOWS AND REPLACE WITH NEW ANDERSEN 400 SERIES AND SIMONTON 6150 SERIES WINDOWS.",
+   "zoning": "RF-1",
+   "lat": 38.88506,
+   "lon": -76.98997,
+   "smd": "6B07"
   },
   {
    "id": "BP2700294",
@@ -1484,8 +1484,8 @@
   }
  ],
  "requests": {
-  "total": 845,
-  "previous_total": 1093,
+  "total": 844,
+  "previous_total": 1086,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
@@ -1495,12 +1495,12 @@
    {
     "type": "Bulk Collection",
     "count": 138,
-    "previous": 193
+    "previous": 190
    },
    {
     "type": "Parking Enforcement",
     "count": 86,
-    "previous": 99
+    "previous": 98
    },
    {
     "type": "Trash Collection - Missed",
@@ -1525,7 +1525,7 @@
    {
     "type": "DC Health Rodent & Vector Control",
     "count": 28,
-    "previous": 39
+    "previous": 38
    },
    {
     "type": "Residential Parking Permit Violation",
@@ -1605,7 +1605,7 @@
    {
     "type": "DMV - Vehicle Registration Issues",
     "count": 7,
-    "previous": 6
+    "previous": 5
    },
    {
     "type": "Tree Pruning",
@@ -1688,11 +1688,6 @@
     "previous": 1
    },
    {
-    "type": "Pothole",
-    "count": 2,
-    "previous": 2
-   },
-   {
     "type": "Roadway Repair",
     "count": 2,
     "previous": 6
@@ -1721,6 +1716,11 @@
     "type": "DOEE - Report Construction Erosion Runoff",
     "count": 1,
     "previous": 2
+   },
+   {
+    "type": "Pothole",
+    "count": 1,
+    "previous": 3
    },
    {
     "type": "Public Space Litter Can Repair",
@@ -9394,19 +9394,6 @@
        0
       ]
      ]
-    },
-    {
-     "block": "K STREET SE AND BARNEY CIRCLE SE",
-     "lat": 38.878,
-     "lon": -76.982,
-     "r": [
-      [
-       53,
-       "2026-10-08",
-       "2026-10-09",
-       0
-      ]
-     ]
     }
    ]
   }
@@ -9416,14 +9403,14 @@
   "previous_total": 21,
   "by_offense": [
    {
-    "offense": "THEFT F/AUTO",
-    "count": 12,
-    "previous": 6
-   },
-   {
     "offense": "THEFT/OTHER",
     "count": 12,
     "previous": 11
+   },
+   {
+    "offense": "THEFT F/AUTO",
+    "count": 12,
+    "previous": 6
    },
    {
     "offense": "MOTOR VEHICLE THEFT",
@@ -9431,14 +9418,14 @@
     "previous": 2
    },
    {
-    "offense": "BURGLARY",
-    "count": 1,
-    "previous": 0
-   },
-   {
     "offense": "ROBBERY",
     "count": 1,
     "previous": 2
+   },
+   {
+    "offense": "BURGLARY",
+    "count": 1,
+    "previous": 0
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -9477,7 +9464,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -9789,7 +9776,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -9810,14 +9797,14 @@
   ],
   "curb": {
    "active_this_week": 74,
-   "starting_next_7d": 10,
-   "reserved_ft": 8976,
+   "starting_next_7d": 12,
+   "reserved_ft": 9152,
    "long_running_90d": 10,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-07: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-07: newest permit issued 2026-11-07, newest record update 2026-11-07, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 6
+     "count": 5
     },
     {
      "type": "Dumpsters",
@@ -9825,7 +9812,11 @@
     },
     {
      "type": "Construction staging",
-     "count": 36
+     "count": 35
+    },
+    {
+     "type": "Cranes",
+     "count": 1
     },
     {
      "type": "Lead pipe replacement",
@@ -9833,7 +9824,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 7
+     "count": 8
     },
     {
      "type": "Events & reserved parking",
@@ -9914,25 +9905,41 @@
      "hours": ""
     },
     {
+     "type": "Utility & DDOT work",
+     "block": "1400 block of G Street SE",
+     "start": "2026-11-12",
+     "end": "2026-11-13",
+     "ft": 66,
+     "hours": "7:30 am\u20133 pm"
+    },
+    {
      "type": "Events & reserved parking",
      "block": "1800 block of Burke Street SE",
      "start": "2026-11-14",
      "end": "2026-11-14",
      "ft": 0,
      "hours": "10 am\u201310 pm"
+    },
+    {
+     "type": "Cranes",
+     "block": "1600 block of C Street SE",
+     "start": "2026-11-14",
+     "end": "2026-11-14",
+     "ft": 264,
+     "hours": "7 am\u20137 pm"
     }
    ]
   },
   "trees": {
-   "total": 3452,
+   "total": 3454,
    "species": 158,
-   "planted_5y": 543,
-   "empty_boxes": 18,
-   "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (18). Not counted: 'Proposed' = planting scheduled (47), 'Conflict'/'Utility' = empty but blocked (44), 'Retired' = box removed (115). 'total' is boxes with status 'Plant' whose condition is not Dead.",
+   "planted_5y": 545,
+   "empty_boxes": 16,
+   "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (16). Not counted: 'Proposed' = planting scheduled (47), 'Conflict'/'Utility' = empty but blocked (44), 'Retired' = box removed (115). 'total' is boxes with status 'Plant' whose condition is not Dead.",
    "condition": {
     "Good": 2614,
     "Fair": 506,
-    "Excellent": 291,
+    "Excellent": 293,
     "Poor": 36,
     "Not rated": 5
    },
@@ -9998,7 +10005,7 @@
      "block": "300 block of Kentucky Ave SE"
     }
    ],
-   "inventory_date": "2026-10-29"
+   "inventory_date": "2026-11-04"
   },
   "service": [
    {
@@ -10010,8 +10017,8 @@
    {
     "type": "Scheduled Yard Waste",
     "median_days": 8.88,
-    "city_median_days": 9.59,
-    "closed_n": 1875
+    "city_median_days": 9.58,
+    "closed_n": 1874
    },
    {
     "type": "Parking Enforcement",
@@ -10041,7 +10048,7 @@
     "type": "Residential Parking Permit Violation",
     "median_days": 0.13,
     "city_median_days": 0.1,
-    "closed_n": 289
+    "closed_n": 288
    },
    {
     "type": "Sanitation Enforcement",
@@ -10053,7 +10060,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -10186,7 +10193,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "archive_days": 180,
   "sources": [
    {
@@ -10458,8 +10465,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-07T03:11:31Z",
-  "today": "2026-11-06",
+  "generated_at": "2026-11-07T09:18:04Z",
+  "today": "2026-11-07",
   "days_ahead": 30,
   "sources": [
    {
@@ -10532,7 +10539,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -28665,7 +28672,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

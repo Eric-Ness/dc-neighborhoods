@@ -1,7 +1,7 @@
 {
  "slug": "stadiumarmory",
  "name": "Stadium-Armory",
- "generated_at": "2026-11-07T03:11:31Z",
+ "generated_at": "2026-11-07T09:18:04Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1036,12 +1036,12 @@
  ],
  "requests": {
   "total": 29,
-  "previous_total": 30,
+  "previous_total": 28,
   "by_type": [
    {
     "type": "Parking Enforcement",
     "count": 10,
-    "previous": 12
+    "previous": 11
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -1688,12 +1688,12 @@
     "previous": 0
    },
    {
-    "offense": "THEFT F/AUTO",
+    "offense": "ROBBERY",
     "count": 0,
     "previous": 1
    },
    {
-    "offense": "ROBBERY",
+    "offense": "THEFT F/AUTO",
     "count": 0,
     "previous": 1
    }
@@ -1728,7 +1728,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -1942,7 +1942,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -1962,11 +1962,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 15,
-   "starting_next_7d": 4,
-   "reserved_ft": 1716,
+   "active_this_week": 14,
+   "starting_next_7d": 3,
+   "reserved_ft": 1386,
    "long_running_90d": 5,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-07: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-07: newest permit issued 2026-11-07, newest record update 2026-11-07, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -1978,7 +1978,7 @@
     },
     {
      "type": "Cranes",
-     "count": 2
+     "count": 1
     },
     {
      "type": "Utility & DDOT work",
@@ -1990,14 +1990,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Cranes",
-     "block": "1700 block of Potomac Avenue SE",
-     "start": "2026-11-07",
-     "end": "2026-11-07",
-     "ft": 330,
-     "hours": "7 am\u20137 pm"
-    },
     {
      "type": "Moving & storage",
      "block": "1800 block of Massachusetts Avenue SE",
@@ -2025,22 +2017,22 @@
    ]
   },
   "trees": {
-   "total": 873,
+   "total": 874,
    "species": 80,
    "planted_5y": 146,
-   "empty_boxes": 6,
-   "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (6). Not counted: 'Proposed' = planting scheduled (24), 'Conflict'/'Utility' = empty but blocked (2), 'Retired' = box removed (6). 'total' is boxes with status 'Plant' whose condition is not Dead.",
+   "empty_boxes": 2,
+   "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (2). Not counted: 'Proposed' = planting scheduled (27), 'Conflict'/'Utility' = empty but blocked (2), 'Retired' = box removed (6). 'total' is boxes with status 'Plant' whose condition is not Dead.",
    "condition": {
     "Good": 633,
     "Fair": 123,
-    "Excellent": 91,
+    "Excellent": 92,
     "Poor": 26
    },
    "dead": 21,
    "top_species": [
     {
      "name": "Willow oak",
-     "count": 80
+     "count": 81
     },
     {
      "name": "Red oak",
@@ -2098,7 +2090,7 @@
      "block": "1800 block of E St SE"
     }
    ],
-   "inventory_date": "2026-10-09"
+   "inventory_date": "2026-11-05"
   },
   "service": [
    {
@@ -2146,14 +2138,14 @@
    {
     "type": "Roadway Signs",
     "median_days": 23.79,
-    "city_median_days": 7.02,
+    "city_median_days": 7.03,
     "closed_n": 11
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2243,7 +2235,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2650,8 +2642,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-07T03:11:31Z",
-  "today": "2026-11-06",
+  "generated_at": "2026-11-07T09:18:04Z",
+  "today": "2026-11-07",
   "days_ahead": 30,
   "sources": [
    {
@@ -2685,15 +2677,6 @@
    }
   ],
   "events": [
-   {
-    "title": "John Philip Sousa Birthday Concert 2026",
-    "date": "2026-11-06",
-    "time": "12:30 PM to 1:30 PM",
-    "place": "Historic Congressional Cemetery Chapel, 1801 E Street, Southeast",
-    "url": "https://congressionalcemetery.org/event/john-philip-sousa-birthday-concert-2026/",
-    "source": "Historic Congressional Cemetery",
-    "kind": "community"
-   },
    {
     "title": "Introductory Tour",
     "date": "2026-11-07",
@@ -2774,6 +2757,15 @@
     "url": "https://congressionalcemetery.org/event/rededication-of-the-masonic-section-at-congressional-cemetery/",
     "source": "Historic Congressional Cemetery",
     "kind": "community"
+   },
+   {
+    "title": "HCC Holiday Market",
+    "date": "2026-12-06",
+    "time": "11 AM to 4 PM",
+    "place": null,
+    "url": "https://congressionalcemetery.org/event/hcc-holiday-market-3/",
+    "source": "Historic Congressional Cemetery",
+    "kind": "community"
    }
   ],
   "unscheduled": [],
@@ -2825,7 +2817,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -14329,7 +14321,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

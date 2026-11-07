@@ -1,7 +1,7 @@
 {
  "slug": "anacostia",
  "name": "Anacostia",
- "generated_at": "2026-11-07T03:11:31Z",
+ "generated_at": "2026-11-07T09:18:04Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -991,8 +991,8 @@
   }
  ],
  "requests": {
-  "total": 496,
-  "previous_total": 640,
+  "total": 495,
+  "previous_total": 638,
   "by_type": [
    {
     "type": "DOEE - LIHEAP",
@@ -1006,8 +1006,8 @@
    },
    {
     "type": "Parking Enforcement",
-    "count": 64,
-    "previous": 98
+    "count": 63,
+    "previous": 99
    },
    {
     "type": "Illegal Dumping",
@@ -1087,7 +1087,7 @@
    {
     "type": "Dead Animal Collection",
     "count": 5,
-    "previous": 4
+    "previous": 3
    },
    {
     "type": "Scheduled Yard Waste",
@@ -2436,12 +2436,6 @@
        13,
        "2026-10-16",
        "2026-10-16",
-       0
-      ],
-      [
-       1,
-       "2026-10-08",
-       "2026-10-08",
        0
       ]
      ]
@@ -6368,7 +6362,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -6568,7 +6562,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -6592,7 +6586,7 @@
    "starting_next_7d": 18,
    "reserved_ft": 9658,
    "long_running_90d": 22,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-07: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-07: newest permit issued 2026-11-07, newest record update 2026-11-07, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -6767,19 +6761,19 @@
    ]
   },
   "trees": {
-   "total": 2198,
-   "species": 175,
+   "total": 2284,
+   "species": 182,
    "planted_5y": 402,
-   "empty_boxes": 36,
-   "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (36). Not counted: 'Proposed' = planting scheduled (134), 'Conflict'/'Utility' = empty but blocked (57), 'Retired' = box removed (137). 'total' is boxes with status 'Plant' whose condition is not Dead.",
+   "empty_boxes": 37,
+   "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (37). Not counted: 'Proposed' = planting scheduled (94), 'Conflict'/'Utility' = empty but blocked (57), 'Retired' = box removed (137). 'total' is boxes with status 'Plant' whose condition is not Dead.",
    "condition": {
-    "Good": 1597,
-    "Fair": 435,
+    "Good": 1627,
+    "Fair": 481,
     "Excellent": 100,
-    "Poor": 65,
+    "Poor": 75,
     "Not rated": 1
    },
-   "dead": 46,
+   "dead": 58,
    "top_species": [
     {
      "name": "Red maple",
@@ -6795,7 +6789,7 @@
     },
     {
      "name": "American elm",
-     "count": 79
+     "count": 85
     },
     {
      "name": "Hackberry",
@@ -6803,7 +6797,7 @@
     },
     {
      "name": "Pin oak",
-     "count": 69
+     "count": 70
     },
     {
      "name": "Chinese elm",
@@ -6841,14 +6835,14 @@
      "block": "1400 block of Cedar St SE"
     }
    ],
-   "inventory_date": "2026-10-30"
+   "inventory_date": "2026-11-06"
   },
   "service": [
    {
     "type": "Bulk Collection",
-    "median_days": 6.13,
+    "median_days": 6.14,
     "city_median_days": 6.91,
-    "closed_n": 926
+    "closed_n": 925
    },
    {
     "type": "Parking Enforcement",
@@ -6864,9 +6858,9 @@
    },
    {
     "type": "Trash Collection - Missed",
-    "median_days": 4.45,
+    "median_days": 4.52,
     "city_median_days": 3.98,
-    "closed_n": 429
+    "closed_n": 427
    },
    {
     "type": "Snow and Ice Removal on Public Space",
@@ -6889,14 +6883,14 @@
    {
     "type": "Roadway Signs",
     "median_days": 2.99,
-    "city_median_days": 7.02,
+    "city_median_days": 7.03,
     "closed_n": 156
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -7065,7 +7059,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "archive_days": 180,
   "sources": [
    {
@@ -7370,8 +7364,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-07T03:11:31Z",
-  "today": "2026-11-06",
+  "generated_at": "2026-11-07T09:18:04Z",
+  "today": "2026-11-07",
   "days_ahead": 30,
   "sources": [
    {
@@ -7498,7 +7492,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -23647,7 +23641,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

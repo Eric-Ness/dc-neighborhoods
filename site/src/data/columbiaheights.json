@@ -1,7 +1,7 @@
 {
  "slug": "columbiaheights",
  "name": "Columbia Heights",
- "generated_at": "2026-11-07T03:11:31Z",
+ "generated_at": "2026-11-07T09:18:04Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -2404,18 +2404,18 @@
   }
  ],
  "requests": {
-  "total": 1718,
-  "previous_total": 1936,
+  "total": 1717,
+  "previous_total": 1924,
   "by_type": [
    {
     "type": "Parking Enforcement",
     "count": 258,
-    "previous": 254
+    "previous": 250
    },
    {
     "type": "Bulk Collection",
-    "count": 179,
-    "previous": 240
+    "count": 178,
+    "previous": 238
    },
    {
     "type": "Illegal Dumping",
@@ -2430,7 +2430,7 @@
    {
     "type": "Scheduled Yard Waste",
     "count": 106,
-    "previous": 114
+    "previous": 113
    },
    {
     "type": "DOEE - LIHEAP",
@@ -2450,7 +2450,7 @@
    {
     "type": "Dockless Vehicle Parking Complaint",
     "count": 62,
-    "previous": 16
+    "previous": 15
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
@@ -2495,7 +2495,7 @@
    {
     "type": "Roadway Signs",
     "count": 21,
-    "previous": 15
+    "previous": 14
    },
    {
     "type": "Recycling Cart Delivery",
@@ -2525,7 +2525,7 @@
    {
     "type": "Tree Pruning",
     "count": 14,
-    "previous": 7
+    "previous": 6
    },
    {
     "type": "DMV - Drivers License/ID Issues",
@@ -2695,7 +2695,7 @@
    {
     "type": "OCTFME - Down Cable Wires",
     "count": 1,
-    "previous": 6
+    "previous": 5
    },
    {
     "type": "DMV - Driver and Vehicle Services Refund",
@@ -2723,14 +2723,14 @@
     "previous": 0
    }
   ],
-  "open": 310,
+  "open": 309,
   "recent": [
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
     "added": "2026-11-07T02:57:21Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-07T03:38:42Z",
+    "status": "Closed",
     "block": "700 block of COLUMBIA ROAD NW",
     "lat": 38.928,
     "lon": -77.023
@@ -3301,8 +3301,8 @@
       [
        0,
        "2026-11-07",
-       null,
-       1
+       "2026-11-07",
+       0
       ],
       [
        0,
@@ -9786,12 +9786,6 @@
        9,
        "2026-10-26",
        "2026-11-03",
-       0
-      ],
-      [
-       9,
-       "2026-10-08",
-       "2026-10-14",
        0
       ]
      ]
@@ -16779,14 +16773,14 @@
     "previous": 9
    },
    {
-    "offense": "BURGLARY",
-    "count": 4,
-    "previous": 2
-   },
-   {
     "offense": "ROBBERY",
     "count": 4,
     "previous": 10
+   },
+   {
+    "offense": "BURGLARY",
+    "count": 4,
+    "previous": 2
    },
    {
     "offense": "HOMICIDE",
@@ -16878,7 +16872,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -17123,7 +17117,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -17143,15 +17137,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 133,
-   "starting_next_7d": 22,
-   "reserved_ft": 22044,
+   "active_this_week": 128,
+   "starting_next_7d": 25,
+   "reserved_ft": 21208,
    "long_running_90d": 14,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-07: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-07: newest permit issued 2026-11-07, newest record update 2026-11-07, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 10
+     "count": 8
     },
     {
      "type": "Dumpsters",
@@ -17162,12 +17156,8 @@
      "count": 48
     },
     {
-     "type": "Cranes",
-     "count": 1
-    },
-    {
      "type": "Lead pipe replacement",
-     "count": 59
+     "count": 57
     },
     {
      "type": "Utility & DDOT work",
@@ -17179,22 +17169,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Moving & storage",
-     "block": "3200 block of Park Place NW",
-     "start": "2026-11-07",
-     "end": "2026-11-07",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Cranes",
-     "block": "1500 block of Park Road NW",
-     "start": "2026-11-07",
-     "end": "2026-11-07",
-     "ft": 308,
-     "hours": "7 am\u20137 pm"
-    },
     {
      "type": "Construction staging",
      "block": "1400 block of Columbia Road NW",
@@ -17292,6 +17266,38 @@
      "hours": "7 am\u20133 pm"
     },
     {
+     "type": "Lead pipe replacement",
+     "block": "1300 block of Newton Street NW",
+     "start": "2026-11-10",
+     "end": "2026-11-29",
+     "ft": 352,
+     "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Lead pipe replacement",
+     "block": "1400 block of Spring Place NW",
+     "start": "2026-11-10",
+     "end": "2026-12-30",
+     "ft": 418,
+     "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Lead pipe replacement",
+     "block": "3300 block of 11th Street NW",
+     "start": "2026-11-10",
+     "end": "2026-11-28",
+     "ft": 44,
+     "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Lead pipe replacement",
+     "block": "1400 block of Meridian Place NW",
+     "start": "2026-11-10",
+     "end": "2026-11-28",
+     "ft": 836,
+     "hours": "7 am\u20137 pm"
+    },
+    {
      "type": "Moving & storage",
      "block": "1500 block of Newton Street NW",
      "start": "2026-11-11",
@@ -17354,27 +17360,35 @@
      "end": "2026-11-15",
      "ft": 88,
      "hours": ""
+    },
+    {
+     "type": "Moving & storage",
+     "block": "1400 block of Monroe Street NW",
+     "start": "2026-11-14",
+     "end": "2026-11-15",
+     "ft": 88,
+     "hours": ""
     }
    ]
   },
   "trees": {
-   "total": 3056,
+   "total": 3055,
    "species": 165,
-   "planted_5y": 501,
-   "empty_boxes": 41,
-   "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (41). Not counted: 'Proposed' = planting scheduled (73), 'Conflict'/'Utility' = empty but blocked (86), 'Retired' = box removed (197). 'total' is boxes with status 'Plant' whose condition is not Dead.",
+   "planted_5y": 504,
+   "empty_boxes": 48,
+   "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (48). Not counted: 'Proposed' = planting scheduled (70), 'Conflict'/'Utility' = empty but blocked (86), 'Retired' = box removed (197). 'total' is boxes with status 'Plant' whose condition is not Dead.",
    "condition": {
-    "Good": 2041,
-    "Excellent": 659,
-    "Fair": 281,
-    "Poor": 72,
+    "Good": 2051,
+    "Excellent": 652,
+    "Fair": 279,
+    "Poor": 70,
     "Not rated": 3
    },
-   "dead": 41,
+   "dead": 40,
    "top_species": [
     {
      "name": "Pin oak",
-     "count": 209
+     "count": 208
     },
     {
      "name": "London plane tree",
@@ -17432,26 +17446,26 @@
      "block": "3500 block of 11th St NW"
     }
    ],
-   "inventory_date": "2026-10-30"
+   "inventory_date": "2026-11-07"
   },
   "service": [
    {
     "type": "Bulk Collection",
-    "median_days": 7.98,
+    "median_days": 7.99,
     "city_median_days": 6.91,
-    "closed_n": 2591
+    "closed_n": 2589
    },
    {
     "type": "Parking Enforcement",
     "median_days": 0.05,
     "city_median_days": 0.05,
-    "closed_n": 2454
+    "closed_n": 2452
    },
    {
     "type": "Trash Collection - Missed",
-    "median_days": 6.78,
+    "median_days": 6.77,
     "city_median_days": 3.98,
-    "closed_n": 1721
+    "closed_n": 1720
    },
    {
     "type": "Illegal Dumping",
@@ -17462,13 +17476,13 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 4.84,
-    "city_median_days": 4.76,
+    "city_median_days": 4.75,
     "closed_n": 1102
    },
    {
     "type": "Scheduled Yard Waste",
     "median_days": 12.92,
-    "city_median_days": 9.59,
+    "city_median_days": 9.58,
     "closed_n": 1080
    },
    {
@@ -17487,7 +17501,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -17649,7 +17663,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "archive_days": 180,
   "sources": [
    {
@@ -18267,8 +18281,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-07T03:11:31Z",
-  "today": "2026-11-06",
+  "generated_at": "2026-11-07T09:18:04Z",
+  "today": "2026-11-07",
   "days_ahead": 30,
   "sources": [
    {
@@ -18385,7 +18399,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -34667,7 +34681,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

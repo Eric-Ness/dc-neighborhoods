@@ -1,7 +1,7 @@
 {
  "slug": "clevelandpark",
  "name": "Cleveland Park",
- "generated_at": "2026-11-07T03:11:31Z",
+ "generated_at": "2026-11-07T09:18:04Z",
  "boundary": {
   "source": "Cleveland Park Historic District (DC Historic Preservation Office, Open Data DC). DC has no planning area named Cleveland Park.",
   "rings": [
@@ -2898,12 +2898,12 @@
  ],
  "requests": {
   "total": 237,
-  "previous_total": 284,
+  "previous_total": 282,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
     "count": 40,
-    "previous": 36
+    "previous": 35
    },
    {
     "type": "Bulk Collection",
@@ -2913,7 +2913,7 @@
    {
     "type": "Parking Enforcement",
     "count": 20,
-    "previous": 46
+    "previous": 45
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -6049,7 +6049,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -6335,7 +6335,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -6359,7 +6359,7 @@
    "starting_next_7d": 9,
    "reserved_ft": 6270,
    "long_running_90d": 11,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-07: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-07: newest permit issued 2026-11-07, newest record update 2026-11-07, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Construction staging",
@@ -6379,14 +6379,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Utility & DDOT work",
-     "block": "3500 block of Rodman Street NW",
-     "start": "2026-11-07",
-     "end": "2026-11-07",
-     "ft": 220,
-     "hours": "7 am\u20133 pm"
-    },
     {
      "type": "Construction staging",
      "block": "3500 block of 35th Street NW",
@@ -6431,6 +6423,14 @@
      "type": "Utility & DDOT work",
      "block": "3500 block of Lowell Street NW",
      "start": "2026-11-09",
+     "end": "2026-11-20",
+     "ft": 220,
+     "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "3100 block of 35th Street NW",
+     "start": "2026-11-10",
      "end": "2026-11-20",
      "ft": 220,
      "hours": "7 am\u20135 pm"
@@ -6534,7 +6534,7 @@
    {
     "type": "Scheduled Yard Waste",
     "median_days": 7.93,
-    "city_median_days": 9.59,
+    "city_median_days": 9.58,
     "closed_n": 434
    },
    {
@@ -6552,14 +6552,14 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 6.02,
-    "city_median_days": 4.76,
+    "city_median_days": 4.75,
     "closed_n": 196
    },
    {
     "type": "Trash Collection - Missed",
-    "median_days": 13.31,
+    "median_days": 13.61,
     "city_median_days": 3.98,
-    "closed_n": 174
+    "closed_n": 173
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -6583,7 +6583,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -6750,7 +6750,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "archive_days": 180,
   "sources": [
    {
@@ -7219,8 +7219,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-07T03:11:31Z",
-  "today": "2026-11-06",
+  "generated_at": "2026-11-07T09:18:04Z",
+  "today": "2026-11-07",
   "days_ahead": 30,
   "sources": [
    {
@@ -7299,7 +7299,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -18636,7 +18636,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

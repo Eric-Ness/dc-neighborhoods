@@ -1,7 +1,7 @@
 {
  "slug": "bellevue",
  "name": "Bellevue",
- "generated_at": "2026-11-07T03:11:31Z",
+ "generated_at": "2026-11-07T09:18:04Z",
  "boundary": {
   "source": "ANC single-member districts 8D01, 8D03, 8D05, 8D06, 8E07, 8E08 and 8E09, the homes in DC's BELLEVUE planning area (Open Data DC). 8D04 is left out: it is mostly the empty land at DC's southern tip.",
   "rings": [
@@ -8430,7 +8430,7 @@
  ],
  "requests": {
   "total": 394,
-  "previous_total": 432,
+  "previous_total": 430,
   "by_type": [
    {
     "type": "DOEE - LIHEAP",
@@ -8450,7 +8450,7 @@
    {
     "type": "Sanitation Enforcement",
     "count": 19,
-    "previous": 21
+    "previous": 20
    },
    {
     "type": "Illegal Dumping",
@@ -12777,12 +12777,12 @@
     "previous": 4
    },
    {
-    "offense": "BURGLARY",
+    "offense": "ROBBERY",
     "count": 3,
     "previous": 4
    },
    {
-    "offense": "ROBBERY",
+    "offense": "BURGLARY",
     "count": 3,
     "previous": 4
    },
@@ -12851,7 +12851,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -13047,7 +13047,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -13067,15 +13067,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 30,
-   "starting_next_7d": 0,
-   "reserved_ft": 2728,
-   "long_running_90d": 21,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-07: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
+   "active_this_week": 33,
+   "starting_next_7d": 4,
+   "reserved_ft": 4202,
+   "long_running_90d": 20,
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-07: newest permit issued 2026-11-07, newest record update 2026-11-07, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Construction staging",
-     "count": 6
+     "count": 5
     },
     {
      "type": "Lead pipe replacement",
@@ -13083,10 +13083,43 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 19
+     "count": 23
     }
    ],
-   "upcoming": []
+   "upcoming": [
+    {
+     "type": "Utility & DDOT work",
+     "block": "600 block of Chesapeake Street SE",
+     "start": "2026-11-09",
+     "end": "2026-11-23",
+     "ft": 440,
+     "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "4500 block of 6th Street SE",
+     "start": "2026-11-09",
+     "end": "2026-11-23",
+     "ft": 220,
+     "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "4600 block of 6th Street SE",
+     "start": "2026-11-09",
+     "end": "2026-11-23",
+     "ft": 440,
+     "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "400 block of Brandywine Street SE",
+     "start": "2026-11-09",
+     "end": "2026-11-23",
+     "ft": 440,
+     "hours": "7 am\u20135 pm"
+    }
+   ]
   },
   "trees": {
    "total": 3304,
@@ -13098,8 +13131,8 @@
     "Good": 2475,
     "Fair": 503,
     "Excellent": 144,
-    "Poor": 123,
-    "Not rated": 59
+    "Poor": 122,
+    "Not rated": 60
    },
    "dead": 51,
    "top_species": [
@@ -13163,14 +13196,14 @@
      "block": "3800 block of South Capitol St Bn"
     }
    ],
-   "inventory_date": "2026-10-30"
+   "inventory_date": "2026-11-05"
   },
   "service": [
    {
     "type": "Bulk Collection",
     "median_days": 6.67,
     "city_median_days": 6.91,
-    "closed_n": 832
+    "closed_n": 831
    },
    {
     "type": "Parking Enforcement",
@@ -13211,14 +13244,14 @@
    {
     "type": "Abandoned Vehicle - On Public Property",
     "median_days": 2.99,
-    "city_median_days": 3.02,
+    "city_median_days": 3.03,
     "closed_n": 196
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -13341,7 +13374,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "archive_days": 180,
   "sources": [
    {
@@ -13538,8 +13571,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-07T03:11:31Z",
-  "today": "2026-11-06",
+  "generated_at": "2026-11-07T09:18:04Z",
+  "today": "2026-11-07",
   "days_ahead": 30,
   "sources": [
    {
@@ -13605,7 +13638,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -30702,7 +30735,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

@@ -1,7 +1,7 @@
 {
  "slug": "navyyard",
  "name": "Navy Yard",
- "generated_at": "2026-11-07T03:11:31Z",
+ "generated_at": "2026-11-07T09:18:04Z",
  "boundary": {
   "source": "Navy Yard (Capitol Riverfront) Business Improvement District boundary (Open Data DC). DC's planning area here is SW/Waterfront.",
   "rings": [
@@ -6910,12 +6910,12 @@
  ],
  "requests": {
   "total": 463,
-  "previous_total": 397,
+  "previous_total": 391,
   "by_type": [
    {
     "type": "Parking Enforcement",
     "count": 217,
-    "previous": 240
+    "previous": 237
    },
    {
     "type": "DOEE - LIHEAP",
@@ -6945,7 +6945,7 @@
    {
     "type": "DC Health Rodent & Vector Control",
     "count": 13,
-    "previous": 3
+    "previous": 2
    },
    {
     "type": "Roadway Signs",
@@ -6965,7 +6965,7 @@
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 7,
-    "previous": 4
+    "previous": 3
    },
    {
     "type": "Public Space Inspection",
@@ -7000,7 +7000,7 @@
    {
     "type": "DMV - Vehicle Registration Issues",
     "count": 4,
-    "previous": 6
+    "previous": 5
    },
    {
     "type": "Traffic Safety Input",
@@ -11569,7 +11569,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -11762,7 +11762,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -11782,15 +11782,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 49,
-   "starting_next_7d": 3,
-   "reserved_ft": 5676,
+   "active_this_week": 53,
+   "starting_next_7d": 6,
+   "reserved_ft": 8470,
    "long_running_90d": 11,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-07: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-07: newest permit issued 2026-11-07, newest record update 2026-11-07, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Construction staging",
-     "count": 19
+     "count": 20
     },
     {
      "type": "Lead pipe replacement",
@@ -11798,22 +11798,14 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 10
+     "count": 14
     },
     {
      "type": "Events & reserved parking",
-     "count": 19
+     "count": 18
     }
    ],
    "upcoming": [
-    {
-     "type": "Events & reserved parking",
-     "block": "200 block of Tingey Street SE",
-     "start": "2026-11-07",
-     "end": "2026-11-07",
-     "ft": 88,
-     "hours": "7 am\u201311:59 pm"
-    },
     {
      "type": "Utility & DDOT work",
      "block": "1st Street SE And M Street SE",
@@ -11829,19 +11821,51 @@
      "end": "2026-12-31",
      "ft": 132,
      "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "Unit block of S Street SW",
+     "start": "2026-11-12",
+     "end": "2026-11-19",
+     "ft": 660,
+     "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "Unit block of S Street SW",
+     "start": "2026-11-12",
+     "end": "2026-11-19",
+     "ft": 660,
+     "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1700 block of South Capitol Street SW",
+     "start": "2026-11-12",
+     "end": "2026-11-19",
+     "ft": 660,
+     "hours": "7 am\u20135 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1700 block of Half Street SW",
+     "start": "2026-11-12",
+     "end": "2026-11-19",
+     "ft": 660,
+     "hours": "7 am\u20135 pm"
     }
    ]
   },
   "trees": {
-   "total": 2815,
+   "total": 2818,
    "species": 129,
-   "planted_5y": 425,
-   "empty_boxes": 35,
-   "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (35). Not counted: 'Proposed' = planting scheduled (126), 'Conflict'/'Utility' = empty but blocked (53), 'Retired' = box removed (208). 'total' is boxes with status 'Plant' whose condition is not Dead.",
+   "planted_5y": 428,
+   "empty_boxes": 32,
+   "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (32). Not counted: 'Proposed' = planting scheduled (126), 'Conflict'/'Utility' = empty but blocked (53), 'Retired' = box removed (208). 'total' is boxes with status 'Plant' whose condition is not Dead.",
    "condition": {
     "Good": 2091,
     "Fair": 468,
-    "Excellent": 183,
+    "Excellent": 186,
     "Poor": 73
    },
    "dead": 48,
@@ -11906,7 +11930,7 @@
      "block": "1100 block of Block South Capitol St Bn"
     }
    ],
-   "inventory_date": "2026-10-26"
+   "inventory_date": "2026-11-03"
   },
   "service": [
    {
@@ -11948,7 +11972,7 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 1.87,
-    "city_median_days": 4.76,
+    "city_median_days": 4.75,
     "closed_n": 74
    },
    {
@@ -11961,7 +11985,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -12107,7 +12131,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "archive_days": 180,
   "sources": [
    {
@@ -12708,8 +12732,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-07T03:11:31Z",
-  "today": "2026-11-06",
+  "generated_at": "2026-11-07T09:18:04Z",
+  "today": "2026-11-07",
   "days_ahead": 30,
   "sources": [
    {
@@ -12794,7 +12818,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -35692,7 +35716,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

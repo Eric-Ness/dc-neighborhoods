@@ -1,7 +1,7 @@
 {
  "slug": "hillcrest",
  "name": "Hillcrest",
- "generated_at": "2026-11-07T03:11:31Z",
+ "generated_at": "2026-11-07T09:18:04Z",
  "boundary": {
   "source": "ANC single-member districts 7B02, 7B03, 7B05, 7B06, 8B02 and 8B05, about the same ground as DC's NAYLOR/HILLCREST planning area (Open Data DC). Hillcrest Heights, Maryland, is not included.",
   "rings": [
@@ -9085,18 +9085,18 @@
   }
  ],
  "requests": {
-  "total": 485,
-  "previous_total": 558,
+  "total": 482,
+  "previous_total": 555,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 83,
-    "previous": 84
+    "count": 82,
+    "previous": 85
    },
    {
     "type": "Parking Enforcement",
-    "count": 59,
-    "previous": 57
+    "count": 57,
+    "previous": 59
    },
    {
     "type": "DOEE - LIHEAP",
@@ -9106,7 +9106,7 @@
    {
     "type": "Trash Collection - Missed",
     "count": 29,
-    "previous": 53
+    "previous": 52
    },
    {
     "type": "Illegal Dumping",
@@ -9126,7 +9126,7 @@
    {
     "type": "Recycling Collection - Missed",
     "count": 13,
-    "previous": 22
+    "previous": 21
    },
    {
     "type": "DC Government Information",
@@ -9256,7 +9256,7 @@
    {
     "type": "OCTFME - Down Cable Wires",
     "count": 2,
-    "previous": 7
+    "previous": 5
    },
    {
     "type": "DMV - Vehicle Registration Issues",
@@ -9316,7 +9316,7 @@
    {
     "type": "DMV - Driver and Vehicle Services Refund",
     "count": 1,
-    "previous": 4
+    "previous": 3
    },
    {
     "type": "DOB - Illegal Construction",
@@ -10460,12 +10460,6 @@
        7,
        "2026-10-31",
        "2026-10-31",
-       0
-      ],
-      [
-       7,
-       "2026-10-08",
-       "2026-10-08",
        0
       ]
      ]
@@ -13406,12 +13400,6 @@
        "2026-10-22",
        "2026-10-22",
        0
-      ],
-      [
-       7,
-       "2026-10-08",
-       "2026-10-08",
-       0
       ]
      ]
     },
@@ -14388,12 +14376,6 @@
        "2026-10-12",
        "2026-10-15",
        0
-      ],
-      [
-       3,
-       "2026-10-08",
-       "2026-10-15",
-       0
       ]
      ]
     },
@@ -14678,7 +14660,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -14865,7 +14847,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -14885,16 +14867,12 @@
    }
   ],
   "curb": {
-   "active_this_week": 49,
+   "active_this_week": 46,
    "starting_next_7d": 4,
-   "reserved_ft": 6666,
+   "reserved_ft": 5764,
    "long_running_90d": 14,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-07: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-07: newest permit issued 2026-11-07, newest record update 2026-11-07, so the layer is current to within a day or two.",
    "by_type": [
-    {
-     "type": "Dumpsters",
-     "count": 1
-    },
     {
      "type": "Construction staging",
      "count": 16
@@ -14905,7 +14883,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 19
+     "count": 17
     },
     {
      "type": "Events & reserved parking",
@@ -14948,19 +14926,19 @@
    ]
   },
   "trees": {
-   "total": 4800,
+   "total": 4816,
    "species": 194,
-   "planted_5y": 639,
-   "empty_boxes": 87,
-   "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (87). Not counted: 'Proposed' = planting scheduled (89), 'Conflict'/'Utility' = empty but blocked (141), 'Retired' = box removed (238). 'total' is boxes with status 'Plant' whose condition is not Dead.",
+   "planted_5y": 656,
+   "empty_boxes": 76,
+   "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (76). Not counted: 'Proposed' = planting scheduled (89), 'Conflict'/'Utility' = empty but blocked (140), 'Retired' = box removed (237). 'total' is boxes with status 'Plant' whose condition is not Dead.",
    "condition": {
     "Good": 3772,
     "Fair": 736,
-    "Excellent": 141,
-    "Poor": 138,
+    "Excellent": 158,
+    "Poor": 137,
     "Not rated": 13
    },
-   "dead": 103,
+   "dead": 100,
    "top_species": [
     {
      "name": "Red maple",
@@ -15022,20 +15000,20 @@
      "block": "3200 block of T Street SE"
     }
    ],
-   "inventory_date": "2026-10-30"
+   "inventory_date": "2026-11-04"
   },
   "service": [
    {
     "type": "Bulk Collection",
-    "median_days": 6.01,
+    "median_days": 6.02,
     "city_median_days": 6.91,
-    "closed_n": 1009
+    "closed_n": 1007
    },
    {
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 573
+    "closed_n": 572
    },
    {
     "type": "Trash Collection - Missed",
@@ -15051,9 +15029,9 @@
    },
    {
     "type": "Scheduled Yard Waste",
-    "median_days": 6.51,
-    "city_median_days": 9.59,
-    "closed_n": 386
+    "median_days": 6.57,
+    "city_median_days": 9.58,
+    "closed_n": 385
    },
    {
     "type": "Illegal Dumping",
@@ -15077,7 +15055,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -15210,7 +15188,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "archive_days": 180,
   "sources": [
    {
@@ -15421,8 +15399,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-07T03:11:31Z",
-  "today": "2026-11-06",
+  "generated_at": "2026-11-07T09:18:04Z",
+  "today": "2026-11-07",
   "days_ahead": 30,
   "sources": [
    {
@@ -15473,7 +15451,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -37650,7 +37628,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

@@ -1,7 +1,7 @@
 {
  "slug": "ustreet",
  "name": "U Street",
- "generated_at": "2026-11-07T03:11:31Z",
+ "generated_at": "2026-11-07T09:18:04Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods: U Street/Pleasant Plains (Open Data DC), so it includes Howard University and Pleasant Plains.",
   "rings": [
@@ -1266,19 +1266,6 @@
    "smd": "1B08"
   },
   {
-   "id": "E2700979",
-   "issued": "2026-10-29T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "1804 10TH ST NW 20001",
-   "work": "",
-   "zoning": "RF-1",
-   "lat": 38.91451,
-   "lon": -77.02618,
-   "smd": "1B02"
-  },
-  {
    "id": "P2700924",
    "issued": "2026-10-29T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -1290,6 +1277,19 @@
    "lat": 38.91679,
    "lon": -77.01471,
    "smd": "1B01"
+  },
+  {
+   "id": "E2700979",
+   "issued": "2026-10-29T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "1804 10TH ST NW 20001",
+   "work": "",
+   "zoning": "RF-1",
+   "lat": 38.91451,
+   "lon": -77.02618,
+   "smd": "1B02"
   },
   {
    "id": "E2700965",
@@ -2035,12 +2035,12 @@
  ],
  "requests": {
   "total": 1498,
-  "previous_total": 1736,
+  "previous_total": 1726,
   "by_type": [
    {
     "type": "Parking Enforcement",
     "count": 204,
-    "previous": 203
+    "previous": 202
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -2065,7 +2065,7 @@
    {
     "type": "Illegal Dumping",
     "count": 79,
-    "previous": 128
+    "previous": 127
    },
    {
     "type": "Trash Collection - Missed",
@@ -2085,12 +2085,12 @@
    {
     "type": "Sanitation Enforcement",
     "count": 48,
-    "previous": 84
+    "previous": 83
    },
    {
     "type": "Dead Animal Collection",
     "count": 46,
-    "previous": 46
+    "previous": 45
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
@@ -2100,7 +2100,7 @@
    {
     "type": "Roadway Signs",
     "count": 37,
-    "previous": 28
+    "previous": 27
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -2115,7 +2115,7 @@
    {
     "type": "Graffiti Removal",
     "count": 24,
-    "previous": 85
+    "previous": 82
    },
    {
     "type": "Container Removal",
@@ -2165,7 +2165,7 @@
    {
     "type": "Tree Pruning",
     "count": 10,
-    "previous": 24
+    "previous": 23
    },
    {
     "type": "DOB - Illegal Construction",
@@ -14647,7 +14647,7 @@
   }
  },
  "crime": {
-  "total": 124,
+  "total": 123,
   "previous_total": 109,
   "by_offense": [
    {
@@ -14658,7 +14658,7 @@
    {
     "offense": "THEFT F/AUTO",
     "count": 44,
-    "previous": 32
+    "previous": 31
    },
    {
     "offense": "ROBBERY",
@@ -14666,14 +14666,14 @@
     "previous": 5
    },
    {
-    "offense": "ASSAULT W/DANGEROUS WEAPON",
-    "count": 8,
-    "previous": 2
-   },
-   {
     "offense": "MOTOR VEHICLE THEFT",
     "count": 8,
     "previous": 7
+   },
+   {
+    "offense": "ASSAULT W/DANGEROUS WEAPON",
+    "count": 7,
+    "previous": 3
    },
    {
     "offense": "BURGLARY",
@@ -14759,7 +14759,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -15062,7 +15062,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -15082,23 +15082,23 @@
    }
   ],
   "curb": {
-   "active_this_week": 235,
+   "active_this_week": 239,
    "starting_next_7d": 58,
-   "reserved_ft": 29744,
+   "reserved_ft": 30096,
    "long_running_90d": 58,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-07: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-07: newest permit issued 2026-11-07, newest record update 2026-11-07, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 16
+     "count": 14
     },
     {
      "type": "Dumpsters",
-     "count": 6
+     "count": 7
     },
     {
      "type": "Construction staging",
-     "count": 154
+     "count": 157
     },
     {
      "type": "Lead pipe replacement",
@@ -15110,50 +15110,10 @@
     },
     {
      "type": "Events & reserved parking",
-     "count": 24
+     "count": 26
     }
    ],
    "upcoming": [
-    {
-     "type": "Moving & storage",
-     "block": "1900 block of 13th Street NW",
-     "start": "2026-11-07",
-     "end": "2026-11-08",
-     "ft": 0,
-     "hours": ""
-    },
-    {
-     "type": "Moving & storage",
-     "block": "1900 block of 6th Street NW",
-     "start": "2026-11-07",
-     "end": "2026-11-08",
-     "ft": 88,
-     "hours": ""
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "1800 block of 16th Street NW",
-     "start": "2026-11-07",
-     "end": "2026-11-08",
-     "ft": 220,
-     "hours": "4 am\u20137 pm"
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "1800 block of 16th Street NW",
-     "start": "2026-11-07",
-     "end": "2026-11-08",
-     "ft": 220,
-     "hours": "4 am\u20137 pm"
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "1900 block of 16th Street NW",
-     "start": "2026-11-07",
-     "end": "2026-11-08",
-     "ft": 220,
-     "hours": "4 am\u20137 pm"
-    },
     {
      "type": "Events & reserved parking",
      "block": "1200 block of U Street NW",
@@ -15161,14 +15121,6 @@
      "end": "2026-11-08",
      "ft": 66,
      "hours": "4 am\u201311 pm"
-    },
-    {
-     "type": "Moving & storage",
-     "block": "1800 block of 4th Street NW",
-     "start": "2026-11-07",
-     "end": "2026-11-07",
-     "ft": 88,
-     "hours": ""
     },
     {
      "type": "Moving & storage",
@@ -15209,6 +15161,38 @@
      "end": "2026-11-13",
      "ft": 22,
      "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "1500 block of Caroline Street NW",
+     "start": "2026-11-09",
+     "end": "2027-01-06",
+     "ft": 220,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "1900 block of 16th Street NW",
+     "start": "2026-11-09",
+     "end": "2027-01-06",
+     "ft": 176,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "1900 block of 16th Street NW",
+     "start": "2026-11-09",
+     "end": "2027-01-06",
+     "ft": 176,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Dumpsters",
+     "block": "700 block of Girard Street NW",
+     "start": "2026-11-09",
+     "end": "2026-11-16",
+     "ft": 44,
+     "hours": ""
     },
     {
      "type": "Moving & storage",
@@ -15433,22 +15417,38 @@
      "end": "2026-12-10",
      "ft": 198,
      "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Moving & storage",
+     "block": "1900 block of 12th Street NW",
+     "start": "2026-11-11",
+     "end": "2026-11-11",
+     "ft": 88,
+     "hours": ""
+    },
+    {
+     "type": "Construction staging",
+     "block": "700 block of Euclid Street NW",
+     "start": "2026-11-12",
+     "end": "2026-12-05",
+     "ft": 154,
+     "hours": "8 am\u20135:30 pm"
     }
    ]
   },
   "trees": {
-   "total": 3417,
+   "total": 3429,
    "species": 175,
-   "planted_5y": 660,
-   "empty_boxes": 40,
-   "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (40). Not counted: 'Proposed' = planting scheduled (92), 'Conflict'/'Utility' = empty but blocked (87), 'Retired' = box removed (177). 'total' is boxes with status 'Plant' whose condition is not Dead.",
+   "planted_5y": 676,
+   "empty_boxes": 41,
+   "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (41). Not counted: 'Proposed' = planting scheduled (92), 'Conflict'/'Utility' = empty but blocked (88), 'Retired' = box removed (177). 'total' is boxes with status 'Plant' whose condition is not Dead.",
    "condition": {
-    "Good": 2419,
-    "Excellent": 561,
-    "Fair": 358,
-    "Poor": 79
+    "Good": 2420,
+    "Excellent": 574,
+    "Fair": 359,
+    "Poor": 76
    },
-   "dead": 57,
+   "dead": 43,
    "top_species": [
     {
      "name": "Pin oak",
@@ -15456,7 +15456,7 @@
     },
     {
      "name": "Red maple",
-     "count": 193
+     "count": 192
     },
     {
      "name": "Willow oak",
@@ -15510,7 +15510,7 @@
      "block": "2000 block of New Hampshire Ave NW"
     }
    ],
-   "inventory_date": "2026-10-30"
+   "inventory_date": "2026-11-07"
   },
   "service": [
    {
@@ -15521,9 +15521,9 @@
    },
    {
     "type": "Bulk Collection",
-    "median_days": 7.72,
+    "median_days": 7.73,
     "city_median_days": 6.91,
-    "closed_n": 1583
+    "closed_n": 1582
    },
    {
     "type": "Trash Collection - Missed",
@@ -15535,7 +15535,7 @@
     "type": "Illegal Dumping",
     "median_days": 2.87,
     "city_median_days": 4.0,
-    "closed_n": 857
+    "closed_n": 855
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -15546,7 +15546,7 @@
    {
     "type": "Scheduled Yard Waste",
     "median_days": 12.89,
-    "city_median_days": 9.59,
+    "city_median_days": 9.58,
     "closed_n": 726
    },
    {
@@ -15565,7 +15565,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -15709,7 +15709,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "archive_days": 180,
   "sources": [
    {
@@ -15838,7 +15838,7 @@
     "name": "DC News Now",
     "url": "https://www.dcnewsnow.com/",
     "state": "ok",
-    "matched": 0,
+    "matched": 1,
     "fetched": 1
    },
    {
@@ -15878,6 +15878,13 @@
    }
   ],
   "items": [
+   {
+    "title": "LeDroit Park neighbors demand action amid surge in gun violence",
+    "url": "https://www.dcnewsnow.com/news/local-news/washington-dc/ledroit-park-neighbors-demand-action-amid-surge-in-gun-violence/",
+    "source": "DC News Now",
+    "published": "2026-11-07T03:23:39Z",
+    "first_seen": "2026-11-07T09:18:04Z"
+   },
    {
     "title": "December 2026 Agenda",
     "url": "https://www.anc1b.org/announcements/dec-2026-agenda",
@@ -16668,8 +16675,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-07T03:11:31Z",
-  "today": "2026-11-06",
+  "generated_at": "2026-11-07T09:18:04Z",
+  "today": "2026-11-07",
   "days_ahead": 30,
   "sources": [
    {
@@ -16712,7 +16719,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -39267,7 +39274,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

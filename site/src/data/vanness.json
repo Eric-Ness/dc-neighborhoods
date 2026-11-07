@@ -1,7 +1,7 @@
 {
  "slug": "vanness",
  "name": "Van Ness",
- "generated_at": "2026-11-07T03:11:31Z",
+ "generated_at": "2026-11-07T09:18:04Z",
  "boundary": {
   "source": "ANC single-member districts 3F01, 3F02 and 3F05 around the Van Ness-UDC Metro (Open Data DC). DC has no planning area named Van Ness.",
   "rings": [
@@ -3173,17 +3173,17 @@
    "smd": "3F01"
   },
   {
-   "id": "E2700736",
+   "id": "HO2700148",
    "issued": "2026-10-22T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "3646 ALTON PL NW 20008",
+   "group": "Home businesses",
+   "type": "HOME OCCUPATION",
+   "subtype": "NA",
+   "address": "4501 CONNECTICUT AVE NW 317 20008",
    "work": "",
-   "zoning": "R-2",
-   "lat": 38.9469,
-   "lon": -77.07173,
-   "smd": "3F01"
+   "zoning": "RA-4",
+   "lat": 38.9485,
+   "lon": -77.06519,
+   "smd": "3F02"
   },
   {
    "id": "P2700661",
@@ -3199,17 +3199,17 @@
    "smd": "3F05"
   },
   {
-   "id": "HO2700148",
+   "id": "E2700736",
    "issued": "2026-10-22T04:00:00Z",
-   "group": "Home businesses",
-   "type": "HOME OCCUPATION",
-   "subtype": "NA",
-   "address": "4501 CONNECTICUT AVE NW 317 20008",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "3646 ALTON PL NW 20008",
    "work": "",
-   "zoning": "RA-4",
-   "lat": 38.9485,
-   "lon": -77.06519,
-   "smd": "3F02"
+   "zoning": "R-2",
+   "lat": 38.9469,
+   "lon": -77.07173,
+   "smd": "3F01"
   },
   {
    "id": "EA2700124",
@@ -3357,12 +3357,12 @@
  ],
  "requests": {
   "total": 220,
-  "previous_total": 240,
+  "previous_total": 236,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
     "count": 47,
-    "previous": 57
+    "previous": 54
    },
    {
     "type": "Parking Enforcement",
@@ -3427,7 +3427,7 @@
    {
     "type": "DMV - Vehicle Registration Issues",
     "count": 3,
-    "previous": 3
+    "previous": 2
    },
    {
     "type": "Public Space Litter Can-Collection",
@@ -6188,7 +6188,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -6496,7 +6496,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -6516,11 +6516,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 23,
-   "starting_next_7d": 1,
-   "reserved_ft": 4466,
+   "active_this_week": 22,
+   "starting_next_7d": 2,
+   "reserved_ft": 4026,
    "long_running_90d": 7,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-07: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-07: newest permit issued 2026-11-07, newest record update 2026-11-07, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Dumpsters",
@@ -6536,7 +6536,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 4
+     "count": 3
     },
     {
      "type": "Events & reserved parking",
@@ -6544,6 +6544,14 @@
     }
    ],
    "upcoming": [
+    {
+     "type": "Lead pipe replacement",
+     "block": "4000 block of Connecticut Avenue NW",
+     "start": "2026-11-10",
+     "end": "2026-11-27",
+     "ft": 308,
+     "hours": "9:30 am\u20133:30 pm"
+    },
     {
      "type": "Events & reserved parking",
      "block": "4500 block of 31st Street NW",
@@ -6558,15 +6566,15 @@
    "total": 1750,
    "species": 150,
    "planted_5y": 177,
-   "empty_boxes": 15,
-   "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (15). Not counted: 'Proposed' = planting scheduled (1), 'Conflict'/'Utility' = empty but blocked (57), 'Retired' = box removed (116). 'total' is boxes with status 'Plant' whose condition is not Dead.",
+   "empty_boxes": 16,
+   "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (16). Not counted: 'Proposed' = planting scheduled (1), 'Conflict'/'Utility' = empty but blocked (57), 'Retired' = box removed (116). 'total' is boxes with status 'Plant' whose condition is not Dead.",
    "condition": {
     "Good": 1081,
     "Excellent": 416,
     "Fair": 184,
     "Poor": 69
    },
-   "dead": 26,
+   "dead": 25,
    "top_species": [
     {
      "name": "Willow oak",
@@ -6628,14 +6636,14 @@
      "block": "4500 block of 29th St NW"
     }
    ],
-   "inventory_date": "2026-10-26"
+   "inventory_date": "2026-11-06"
   },
   "service": [
    {
     "type": "Scheduled Yard Waste",
     "median_days": 7.66,
-    "city_median_days": 9.59,
-    "closed_n": 455
+    "city_median_days": 9.58,
+    "closed_n": 454
    },
    {
     "type": "Bulk Collection",
@@ -6647,7 +6655,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 355
+    "closed_n": 353
    },
    {
     "type": "Trash Collection - Missed",
@@ -6657,9 +6665,9 @@
    },
    {
     "type": "Recycling Collection - Missed",
-    "median_days": 3.98,
-    "city_median_days": 4.76,
-    "closed_n": 187
+    "median_days": 3.95,
+    "city_median_days": 4.75,
+    "closed_n": 186
    },
    {
     "type": "Tree Inspection",
@@ -6670,7 +6678,7 @@
    {
     "type": "Roadway Signs",
     "median_days": 65.13,
-    "city_median_days": 7.02,
+    "city_median_days": 7.03,
     "closed_n": 43
    },
    {
@@ -6683,7 +6691,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -6816,7 +6824,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "archive_days": 180,
   "sources": [
    {
@@ -7246,8 +7254,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-07T03:11:31Z",
-  "today": "2026-11-06",
+  "generated_at": "2026-11-07T09:18:04Z",
+  "today": "2026-11-07",
   "days_ahead": 30,
   "sources": [
    {
@@ -7375,7 +7383,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -17395,7 +17403,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

@@ -1,7 +1,7 @@
 {
  "slug": "trinidad",
  "name": "Trinidad",
- "generated_at": "2026-11-07T03:11:31Z",
+ "generated_at": "2026-11-07T09:18:04Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1858,7 +1858,7 @@
   }
  ],
  "requests": {
-  "total": 1208,
+  "total": 1206,
   "previous_total": 1417,
   "by_type": [
    {
@@ -1912,14 +1912,14 @@
     "previous": 24
    },
    {
-    "type": "Trash Collection - Missed",
-    "count": 23,
-    "previous": 60
-   },
-   {
     "type": "Out of State Parking Violation (ROSA)",
     "count": 22,
     "previous": 44
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "count": 22,
+    "previous": 61
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -1977,14 +1977,14 @@
     "previous": 3
    },
    {
-    "type": "Recycling Collection - Missed",
-    "count": 9,
-    "previous": 13
-   },
-   {
     "type": "DMV - Online Processing Issues",
     "count": 8,
     "previous": 4
+   },
+   {
+    "type": "Recycling Collection - Missed",
+    "count": 8,
+    "previous": 14
    },
    {
     "type": "Rat Replacement Containers",
@@ -2039,7 +2039,7 @@
    {
     "type": "Dead Animal Collection",
     "count": 6,
-    "previous": 10
+    "previous": 9
    },
    {
     "type": "Container Removal",
@@ -7039,18 +7039,6 @@
        0,
        "2026-10-09",
        "2026-10-14",
-       0
-      ],
-      [
-       12,
-       "2026-10-08",
-       "2026-10-09",
-       0
-      ],
-      [
-       46,
-       "2026-10-08",
-       "2026-10-08",
        0
       ]
      ]
@@ -12707,14 +12695,14 @@
     "previous": 34
    },
    {
-    "offense": "THEFT F/AUTO",
-    "count": 13,
-    "previous": 13
-   },
-   {
     "offense": "MOTOR VEHICLE THEFT",
     "count": 13,
     "previous": 21
+   },
+   {
+    "offense": "THEFT F/AUTO",
+    "count": 13,
+    "previous": 13
    },
    {
     "offense": "ROBBERY",
@@ -12797,7 +12785,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -13037,7 +13025,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -13057,11 +13045,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 115,
-   "starting_next_7d": 19,
-   "reserved_ft": 19690,
+   "active_this_week": 113,
+   "starting_next_7d": 21,
+   "reserved_ft": 19470,
    "long_running_90d": 20,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-07: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-07: newest permit issued 2026-11-07, newest record update 2026-11-07, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -13081,22 +13069,14 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 30
+     "count": 29
     },
     {
      "type": "Events & reserved parking",
-     "count": 3
+     "count": 2
     }
    ],
    "upcoming": [
-    {
-     "type": "Events & reserved parking",
-     "block": "400 block of Morse Street NE",
-     "start": "2026-11-07",
-     "end": "2026-11-07",
-     "ft": 88,
-     "hours": "8 am\u20135 pm"
-    },
     {
      "type": "Construction staging",
      "block": "1700 block of Montello Avenue NE",
@@ -13186,6 +13166,30 @@
      "hours": "7 am\u20133 pm"
     },
     {
+     "type": "Lead pipe replacement",
+     "block": "1600 block of L Street NE",
+     "start": "2026-11-10",
+     "end": "2026-12-30",
+     "ft": 66,
+     "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Lead pipe replacement",
+     "block": "1700 block of L Street NE",
+     "start": "2026-11-10",
+     "end": "2026-12-30",
+     "ft": 198,
+     "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Lead pipe replacement",
+     "block": "1700 block of L Street NE",
+     "start": "2026-11-10",
+     "end": "2026-12-30",
+     "ft": 44,
+     "hours": "7 am\u20137 pm"
+    },
+    {
      "type": "Construction staging",
      "block": "2000 block of West Virginia Avenue NE",
      "start": "2026-11-10",
@@ -13244,19 +13248,19 @@
    ]
   },
   "trees": {
-   "total": 3434,
+   "total": 3459,
    "species": 156,
-   "planted_5y": 635,
-   "empty_boxes": 55,
-   "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (55). Not counted: 'Proposed' = planting scheduled (308), 'Conflict'/'Utility' = empty but blocked (41), 'Retired' = box removed (254). 'total' is boxes with status 'Plant' whose condition is not Dead.",
+   "planted_5y": 661,
+   "empty_boxes": 39,
+   "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (39). Not counted: 'Proposed' = planting scheduled (310), 'Conflict'/'Utility' = empty but blocked (41), 'Retired' = box removed (254). 'total' is boxes with status 'Plant' whose condition is not Dead.",
    "condition": {
-    "Good": 2668,
-    "Fair": 434,
-    "Excellent": 192,
-    "Poor": 136,
+    "Good": 2662,
+    "Fair": 433,
+    "Excellent": 225,
+    "Poor": 135,
     "Not rated": 4
    },
-   "dead": 92,
+   "dead": 84,
    "top_species": [
     {
      "name": "Willow oak",
@@ -13284,7 +13288,7 @@
     },
     {
      "name": "Swamp white oak",
-     "count": 96
+     "count": 97
     },
     {
      "name": "Chinese elm",
@@ -13318,14 +13322,14 @@
      "block": "Mt Olivet Cemetery"
     }
    ],
-   "inventory_date": "2026-10-30"
+   "inventory_date": "2026-11-04"
   },
   "service": [
    {
     "type": "Parking Enforcement",
     "median_days": 0.05,
     "city_median_days": 0.05,
-    "closed_n": 2149
+    "closed_n": 2148
    },
    {
     "type": "Bulk Collection",
@@ -13337,7 +13341,7 @@
     "type": "Illegal Dumping",
     "median_days": 5.09,
     "city_median_days": 4.0,
-    "closed_n": 1119
+    "closed_n": 1118
    },
    {
     "type": "Trash Collection - Missed",
@@ -13366,14 +13370,14 @@
    {
     "type": "Scheduled Yard Waste",
     "median_days": 12.87,
-    "city_median_days": 9.59,
+    "city_median_days": 9.58,
     "closed_n": 365
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -13503,7 +13507,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "archive_days": 180,
   "sources": [
    {
@@ -14203,8 +14207,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-07T03:11:31Z",
-  "today": "2026-11-06",
+  "generated_at": "2026-11-07T09:18:04Z",
+  "today": "2026-11-07",
   "days_ahead": 30,
   "sources": [
    {
@@ -14507,6 +14511,33 @@
     "url": "https://unionmarketdc.com/event/howl-hide-trunk-show/",
     "source": "Union Market District",
     "kind": "community"
+   },
+   {
+    "title": "Official F1\u00ae Watch Party",
+    "date": "2026-12-06",
+    "time": null,
+    "place": "F1 Arcade, 420 Penn St NE",
+    "url": "https://unionmarketdc.com/event/f1-arcade-watch-party/2026-12-06/",
+    "source": "Union Market District",
+    "kind": "community"
+   },
+   {
+    "title": "Pieces of Starr Trunk Show at Shelter",
+    "date": "2026-12-06",
+    "time": "11 AM to 6 PM",
+    "place": "Shelter, 1258 5th St NE",
+    "url": "https://unionmarketdc.com/event/pieces-of-starr-trunk-show-at-shelter/2026-12-06/",
+    "source": "Union Market District",
+    "kind": "community"
+   },
+   {
+    "title": "Trinidad Farmers Market",
+    "place": "1299 Neal St NE",
+    "time": "9:00 AM - 1:00 PM",
+    "url": "https://www.trinidadfarmersmarket.net",
+    "source": "DC farmers market list",
+    "kind": "market",
+    "date": "2026-12-06"
    }
   ],
   "unscheduled": [],
@@ -14535,7 +14566,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -40128,7 +40159,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

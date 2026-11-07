@@ -1,7 +1,7 @@
 {
  "slug": "deanwood",
  "name": "Deanwood",
- "generated_at": "2026-11-07T03:11:31Z",
+ "generated_at": "2026-11-07T09:18:04Z",
  "boundary": {
   "source": "ANC 7C, single-member districts 7C01 through 7C09, the commission that holds Deanwood (Open Data DC). DC has no planning area named Deanwood; most of this ground is its LINCOLN HEIGHTS area.",
   "rings": [
@@ -12910,13 +12910,13 @@
   }
  ],
  "requests": {
-  "total": 1267,
-  "previous_total": 1680,
+  "total": 1266,
+  "previous_total": 1668,
   "by_type": [
    {
     "type": "Bulk Collection",
     "count": 213,
-    "previous": 258
+    "previous": 257
    },
    {
     "type": "Residential Parking Permit Violation",
@@ -12931,7 +12931,7 @@
    {
     "type": "Illegal Dumping",
     "count": 107,
-    "previous": 81
+    "previous": 80
    },
    {
     "type": "DOEE - LIHEAP",
@@ -12946,12 +12946,12 @@
    {
     "type": "DC Health Rodent & Vector Control",
     "count": 63,
-    "previous": 43
+    "previous": 41
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
-    "count": 51,
-    "previous": 34
+    "count": 50,
+    "previous": 35
    },
    {
     "type": "Scheduled Yard Waste",
@@ -12961,7 +12961,7 @@
    {
     "type": "Sanitation Enforcement",
     "count": 46,
-    "previous": 53
+    "previous": 51
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -13001,7 +13001,7 @@
    {
     "type": "Tree Pruning",
     "count": 16,
-    "previous": 22
+    "previous": 21
    },
    {
     "type": "Public Space Litter Can-Collection",
@@ -24938,19 +24938,6 @@
        0
       ]
      ]
-    },
-    {
-     "block": "500 block of 50TH PLACE NE",
-     "lat": 38.897,
-     "lon": -76.928,
-     "r": [
-      [
-       15,
-       "2026-10-08",
-       "2026-10-08",
-       0
-      ]
-     ]
     }
    ]
   }
@@ -24985,14 +24972,14 @@
     "previous": 3
    },
    {
-    "offense": "HOMICIDE",
-    "count": 2,
-    "previous": 0
-   },
-   {
     "offense": "BURGLARY",
     "count": 2,
     "previous": 2
+   },
+   {
+    "offense": "HOMICIDE",
+    "count": 2,
+    "previous": 0
    },
    {
     "offense": "SEX ABUSE",
@@ -25066,7 +25053,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -25288,7 +25275,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -25308,11 +25295,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 154,
-   "starting_next_7d": 10,
-   "reserved_ft": 21912,
+   "active_this_week": 148,
+   "starting_next_7d": 13,
+   "reserved_ft": 20196,
    "long_running_90d": 52,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-07: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-07: newest permit issued 2026-11-07, newest record update 2026-11-07, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Dumpsters",
@@ -25320,11 +25307,11 @@
     },
     {
      "type": "Construction staging",
-     "count": 78
+     "count": 75
     },
     {
      "type": "Lead pipe replacement",
-     "count": 36
+     "count": 33
     },
     {
      "type": "Utility & DDOT work",
@@ -25409,6 +25396,30 @@
      "hours": "7:30 am\u20133 pm"
     },
     {
+     "type": "Lead pipe replacement",
+     "block": "5300 block of Blaine Street NE",
+     "start": "2026-11-10",
+     "end": "2026-12-08",
+     "ft": 66,
+     "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Lead pipe replacement",
+     "block": "5300 block of Blaine Street NE",
+     "start": "2026-11-10",
+     "end": "2026-12-08",
+     "ft": 330,
+     "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Lead pipe replacement",
+     "block": "Unit block of 53rd Place SE",
+     "start": "2026-11-10",
+     "end": "2026-12-30",
+     "ft": 858,
+     "hours": "7 am\u20137 pm"
+    },
+    {
      "type": "Construction staging",
      "block": "800 block of Division Avenue NE",
      "start": "2026-11-10",
@@ -25419,23 +25430,23 @@
    ]
   },
   "trees": {
-   "total": 7857,
-   "species": 181,
-   "planted_5y": 825,
-   "empty_boxes": 84,
-   "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (84). Not counted: 'Proposed' = planting scheduled (156), 'Conflict'/'Utility' = empty but blocked (205), 'Retired' = box removed (335). 'total' is boxes with status 'Plant' whose condition is not Dead.",
+   "total": 7868,
+   "species": 183,
+   "planted_5y": 844,
+   "empty_boxes": 72,
+   "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (72). Not counted: 'Proposed' = planting scheduled (156), 'Conflict'/'Utility' = empty but blocked (207), 'Retired' = box removed (338). 'total' is boxes with status 'Plant' whose condition is not Dead.",
    "condition": {
-    "Good": 6247,
-    "Fair": 1099,
-    "Excellent": 257,
-    "Poor": 246,
-    "Not rated": 8
+    "Good": 6243,
+    "Fair": 1095,
+    "Excellent": 276,
+    "Poor": 245,
+    "Not rated": 9
    },
-   "dead": 187,
+   "dead": 183,
    "top_species": [
     {
      "name": "Red maple",
-     "count": 812
+     "count": 809
     },
     {
      "name": "Crape myrtle",
@@ -25463,7 +25474,7 @@
     },
     {
      "name": "Yellowwood",
-     "count": 254
+     "count": 258
     }
    ],
    "biggest": [
@@ -25493,14 +25504,14 @@
      "block": "400 block of 57th St NE"
     }
    ],
-   "inventory_date": "2026-10-30"
+   "inventory_date": "2026-11-06"
   },
   "service": [
    {
     "type": "Bulk Collection",
     "median_days": 5.99,
     "city_median_days": 6.91,
-    "closed_n": 2801
+    "closed_n": 2798
    },
    {
     "type": "Trash Collection - Missed",
@@ -25512,7 +25523,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.05,
     "city_median_days": 0.05,
-    "closed_n": 1034
+    "closed_n": 1033
    },
    {
     "type": "Residential Parking Permit Violation",
@@ -25541,14 +25552,14 @@
    {
     "type": "Scheduled Yard Waste",
     "median_days": 6.94,
-    "city_median_days": 9.59,
+    "city_median_days": 9.58,
     "closed_n": 576
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -25679,7 +25690,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "archive_days": 180,
   "sources": [
    {
@@ -25936,8 +25947,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-07T03:11:31Z",
-  "today": "2026-11-06",
+  "generated_at": "2026-11-07T09:18:04Z",
+  "today": "2026-11-07",
   "days_ahead": 30,
   "sources": [
    {
@@ -26043,7 +26054,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -60148,7 +60159,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-07T03:11:31Z",
+  "generated_at": "2026-11-07T09:18:04Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
