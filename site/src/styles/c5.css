@@ -415,6 +415,9 @@ body.hide-other .pt.c-other{display:none}
 .rec li:first-child{border-top:0}
 .rec li span{font-size:12.5px;color:var(--muted)}
 .rec a{color:var(--accent);font-weight:600;text-decoration:none}
+/* Long lists (openings, closings) scroll inside their panel instead of running far past the page's other column. */
+.rec-scroll{max-height:min(560px,70vh);overflow-y:auto;padding-right:6px;border-bottom:1px solid var(--line-2)}
+.rec-scroll:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .happening{margin-top:0}
 .happening+.cond{margin-top:14px}
 @media (min-width:720px){.happening+.cond{margin-top:18px}}

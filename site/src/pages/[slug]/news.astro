@@ -42,7 +42,7 @@ const STATE: Record<string, string> = { ok: "Read tonight", partial: "Partly rea
         {!lic ? <p class="note">License data didn't update tonight.</p>
         : lic.new.length === 0 ? <p class="note">None since we started tracking on {since}. A new liquor license usually means a new restaurant, bar or shop; it shows here the night it appears in DC's list.</p>
         : (
-          <ul class="rec">
+          <ul class="rec rec-scroll" tabindex="0" aria-label="New licenses">
             {lic.new.map((l) => <li><div><b>{l.trade_name ? titleCase(l.trade_name) : "New license"}</b> · {addr(l.address)}</div><span>{l.type} · first seen {newsDate(l.first_seen, n.generated_at)}</span></li>)}
           </ul>
         )}
@@ -50,7 +50,7 @@ const STATE: Record<string, string> = { ok: "Read tonight", partial: "Partly rea
         {!lic?.cancelled ? <p class="note">Cancellations didn't update tonight.</p>
         : lic.cancelled.length === 0 ? <p class="note">No cancelled liquor licenses in {n.name}.</p>
         : (
-          <ul class="rec">
+          <ul class="rec rec-scroll" tabindex="0" aria-label="Cancelled licenses">
             {lic.cancelled.map((c) => <li><div><b>{c.trade_name && c.trade_name !== "TBD" ? titleCase(c.trade_name) : "Unnamed business"}</b> · {addr(c.address)}</div>
               <span>{c.type} · {c.cancelled ? `cancelled ${newsDate(c.cancelled, n.generated_at)}` : c.first_seen ? `cancellation first seen ${newsDate(c.first_seen, n.generated_at)}` : `cancelled before ${since}`}</span></li>)}
           </ul>

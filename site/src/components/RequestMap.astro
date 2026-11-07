@@ -112,7 +112,8 @@ const options = [...counts].sort((a, b) => b[1] - a[1]).map(([i, c]) => ({ i, la
         x[3] ? `<b class="st-open">Open</b>` : x[2] && x[1] ? took(x[1], x[2]) : "Closed"}</td></tr>`).join("");
       panel.innerHTML = `<h3>${esc(b.name)}</h3><p class="muted">${r.length} request${r.length === 1 ? "" : "s"} in the last 30 days${
         r.length !== b.r.length ? ` matching the filter (${b.r.length} in all)` : ""}</p>${
-        r.length ? `<table><thead><tr><th scope="col">Request</th><th scope="col">Opened</th><th scope="col">Status</th></tr></thead><tbody>${rows}</tbody></table>` : ""}`;
+        r.length ? `<div class="rq-list" tabindex="0" aria-label="Requests on this block"><table><thead><tr><th scope="col">Request</th><th scope="col">Opened</th><th scope="col">Status</th></tr></thead><tbody>${rows}</tbody></table></div>` : ""}`;
+      panel.querySelector(".rq-list")?.scrollTo(0, 0);
       layer.querySelectorAll("circle").forEach((c) => c.classList.toggle("on", +c.getAttribute("cx")! === b.x && +c.getAttribute("cy")! === b.y));
     }
 
@@ -150,7 +151,11 @@ const options = [...counts].sort((a, b) => b[1] - a[1]).map(([i, c]) => ({ i, la
   .reqmap .k-open,.reqmap .k-done{display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--ochre)}
   .reqmap .k-done{background:var(--slate);opacity:.55;margin-left:8px}
   .rq-panel h3{margin:0 0 2px;font:600 16px/1.25 var(--sans)}
-  .rq-panel table{width:100%;border-collapse:collapse;font-size:14.5px;margin-top:6px}
+  .rq-panel table{width:100%;border-collapse:collapse;font-size:14.5px}
+  /* Long blocks scroll inside the panel instead of running down the page; the header row stays put. */
+  .rq-list{max-height:min(420px,60vh);overflow-y:auto;margin-top:6px;border-bottom:1px solid var(--rule)}
+  .rq-list:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+  .rq-panel thead th{position:sticky;top:0;background:var(--paper);z-index:1}
   .rq-panel th{text-align:left;font:600 12px/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);padding:4px 6px 4px 0;border-bottom:1px solid var(--rule)}
   .rq-panel td{padding:5px 6px 5px 0;border-bottom:1px solid var(--rule2);vertical-align:top}
   .rq-panel td:nth-child(2){white-space:nowrap}
@@ -159,5 +164,7 @@ const options = [...counts].sort((a, b) => b[1] - a[1]).map(([i, c]) => ({ i, la
   @media (min-width:860px){
     .reqmap{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(260px,1fr);gap:32px;align-items:start}
     .reqmap .bm-side{position:sticky;top:16px}
+    /* About the map's height, less the block name and count above the list. */
+    .rq-list{max-height:min(470px,calc(100vh - 160px))}
   }
 </style>
