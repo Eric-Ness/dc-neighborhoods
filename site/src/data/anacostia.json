@@ -1,7 +1,7 @@
 {
  "slug": "anacostia",
  "name": "Anacostia",
- "generated_at": "2026-11-06T16:59:01Z",
+ "generated_at": "2026-11-07T03:11:31Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -988,67 +988,46 @@
    "lat": 38.8646,
    "lon": -76.98219,
    "smd": "8A05"
-  },
-  {
-   "id": "HO2700044",
-   "issued": "2026-10-08T04:00:00Z",
-   "group": "Home businesses",
-   "type": "HOME OCCUPATION",
-   "subtype": "NA",
-   "address": "1412 BANGOR ST SE 20020",
-   "work": "Licensed Professional - Other",
-   "zoning": "RA-1",
-   "lat": 38.86068,
-   "lon": -76.98739,
-   "smd": "8A05"
-  },
-  {
-   "id": "SOL2700004",
-   "issued": "2026-10-08T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "SOLAR SYSTEM",
-   "address": "2246 CHESTER ST SE 20020",
-   "work": "Historic \r\nRevision of the issued permit SOL2601381. During the installation were some changes in the DC size, number and type of panels. The initial system was as follows: 14 TALESUN BIPRO TM7G54M-450W panels / 6.3 kW DC Current system with the changes applied is as follows: 11 SERAPHIM SOLAR SRP-440-BTD-BG panels / 4.84 kW DC",
-   "zoning": "R-3",
-   "lat": 38.86318,
-   "lon": -76.98699,
-   "smd": "8A06"
   }
  ],
  "requests": {
-  "total": 494,
-  "previous_total": 631,
+  "total": 496,
+  "previous_total": 640,
   "by_type": [
    {
     "type": "DOEE - LIHEAP",
-    "count": 87,
+    "count": 92,
     "previous": 8
    },
    {
     "type": "Bulk Collection",
     "count": 86,
-    "previous": 81
+    "previous": 83
    },
    {
     "type": "Parking Enforcement",
-    "count": 65,
-    "previous": 96
+    "count": 64,
+    "previous": 98
    },
    {
     "type": "Illegal Dumping",
-    "count": 33,
-    "previous": 20
+    "count": 32,
+    "previous": 22
    },
    {
     "type": "Trash Collection - Missed",
     "count": 19,
-    "previous": 22
+    "previous": 21
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 18,
+    "count": 17,
     "previous": 24
+   },
+   {
+    "type": "Residential Parking Permit Violation",
+    "count": 12,
+    "previous": 11
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -1058,22 +1037,12 @@
    {
     "type": "Streetlight Repair Investigation",
     "count": 11,
-    "previous": 10
-   },
-   {
-    "type": "DMV - Drivers License/ID Issues",
-    "count": 10,
-    "previous": 18
+    "previous": 9
    },
    {
     "type": "DC Government Information",
     "count": 10,
     "previous": 18
-   },
-   {
-    "type": "Residential Parking Permit Violation",
-    "count": 10,
-    "previous": 11
    },
    {
     "type": "Recycling Collection - Missed",
@@ -1086,14 +1055,19 @@
     "previous": 10
    },
    {
-    "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 8,
-    "previous": 2
+    "type": "DMV - Drivers License/ID Issues",
+    "count": 10,
+    "previous": 19
    },
    {
     "type": "Roadway Signs",
-    "count": 8,
+    "count": 9,
     "previous": 42
+   },
+   {
+    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "count": 7,
+    "previous": 3
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
@@ -1106,11 +1080,6 @@
     "previous": 0
    },
    {
-    "type": "Scheduled Yard Waste",
-    "count": 6,
-    "previous": 20
-   },
-   {
     "type": "Tree Inspection",
     "count": 6,
     "previous": 20
@@ -1119,6 +1088,11 @@
     "type": "Dead Animal Collection",
     "count": 5,
     "previous": 4
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "count": 5,
+    "previous": 20
    },
    {
     "type": "Supercan - Delivery",
@@ -1144,11 +1118,6 @@
     "type": "Traffic Safety Input",
     "count": 4,
     "previous": 4
-   },
-   {
-    "type": "Pet Waste Complaint",
-    "count": 3,
-    "previous": 1
    },
    {
     "type": "Public Space Litter Can-Collection",
@@ -1191,9 +1160,19 @@
     "previous": 1
    },
    {
+    "type": "Pet Waste Complaint",
+    "count": 2,
+    "previous": 2
+   },
+   {
     "type": "Tree Pruning",
     "count": 2,
     "previous": 17
+   },
+   {
+    "type": "DMV - Vehicle Registration Issues",
+    "count": 2,
+    "previous": 3
    },
    {
     "type": "DOB - Illegal Construction",
@@ -1208,16 +1187,6 @@
    {
     "type": "Alley Repair",
     "count": 2,
-    "previous": 0
-   },
-   {
-    "type": "DC Water - Customer Flooding",
-    "count": 1,
-    "previous": 1
-   },
-   {
-    "type": "Illegal Poster",
-    "count": 1,
     "previous": 0
    },
    {
@@ -1246,11 +1215,6 @@
     "previous": 0
    },
    {
-    "type": "DMV - Vehicle Registration Issues",
-    "count": 1,
-    "previous": 3
-   },
-   {
     "type": "Emergency - Power Outage/Wires Down",
     "count": 1,
     "previous": 0
@@ -1274,10 +1238,165 @@
     "type": "DGS - Playground Repair",
     "count": 1,
     "previous": 5
+   },
+   {
+    "type": "Recycling Cart Delivery",
+    "count": 1,
+    "previous": 9
    }
   ],
-  "open": 69,
+  "open": 75,
   "recent": [
+   {
+    "type": "Recycling Cart Delivery",
+    "agency": "DPW",
+    "added": "2026-11-06T23:18:15Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1500 block of W STREET SE",
+    "lat": 38.864,
+    "lon": -76.983
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-06T21:54:38Z",
+    "resolved": "2026-11-06T22:36:12Z",
+    "status": "Closed",
+    "block": "1300 block of TALBERT TERRACE SE",
+    "lat": 38.861,
+    "lon": -76.992
+   },
+   {
+    "type": "Residential Parking Permit Violation",
+    "agency": "DPW",
+    "added": "2026-11-06T21:52:37Z",
+    "resolved": "2026-11-07T00:00:38Z",
+    "status": "Closed",
+    "block": "1300 block of TALBERT TERRACE SE",
+    "lat": 38.861,
+    "lon": -76.992
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-06T20:25:34Z",
+    "resolved": "2026-11-06T20:25:34Z",
+    "status": "Closed",
+    "block": "2200 block of 16TH STREET SE",
+    "lat": 38.863,
+    "lon": -76.983
+   },
+   {
+    "type": "Roadway Signs",
+    "agency": "DDOT",
+    "added": "2026-11-06T19:46:05Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "2200 block of SHANNON PLACE SE",
+    "lat": 38.864,
+    "lon": -76.991
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-06T19:27:52Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2700 block of STANTON ROAD SE",
+    "lat": 38.857,
+    "lon": -76.987
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-06T18:56:23Z",
+    "resolved": "2026-11-06T18:56:23Z",
+    "status": "Closed",
+    "block": "2300 block of PITTS PLACE SE",
+    "lat": 38.86,
+    "lon": -76.985
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-06T18:52:44Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1200 block of TALBERT STREET SE",
+    "lat": 38.862,
+    "lon": -76.99
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-06T18:45:21Z",
+    "resolved": "2026-11-06T18:45:21Z",
+    "status": "Closed",
+    "block": "2400 block of MARTIN LUTHER KING JR AVENUE SE",
+    "lat": 38.862,
+    "lon": -76.993
+   },
+   {
+    "type": "DMV - Vehicle Registration Issues",
+    "agency": "DMV",
+    "added": "2026-11-06T18:32:12Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1400 block of MORRIS ROAD SE",
+    "lat": 38.859,
+    "lon": -76.987
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-06T17:47:41Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3000 block of STANTON ROAD SE",
+    "lat": 38.854,
+    "lon": -76.985
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-06T17:31:40Z",
+    "resolved": "2026-11-06T17:31:40Z",
+    "status": "Closed",
+    "block": "1400 block of CEDAR STREET SE",
+    "lat": 38.862,
+    "lon": -76.985
+   },
+   {
+    "type": "Residential Parking Permit Violation",
+    "agency": "DPW",
+    "added": "2026-11-06T17:25:22Z",
+    "resolved": "2026-11-06T18:08:39Z",
+    "status": "Closed",
+    "block": "2500 block of WEST STREET SE",
+    "lat": 38.86,
+    "lon": -76.988
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-06T17:15:36Z",
+    "resolved": "2026-11-06T17:15:36Z",
+    "status": "Closed",
+    "block": "2400 block of ELVANS ROAD SE",
+    "lat": 38.854,
+    "lon": -76.986
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "agency": "DMV",
+    "added": "2026-11-06T17:11:15Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2600 block of BOWEN ROAD SE",
+    "lat": 38.859,
+    "lon": -76.989
+   },
    {
     "type": "DOEE - LIHEAP",
     "agency": "DOEE",
@@ -1382,8 +1501,8 @@
     "type": "Dead Animal Collection",
     "agency": "DPW",
     "added": "2026-11-06T00:26:36Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-06T17:42:47Z",
+    "status": "Closed",
     "block": "1300 block of DEXTER TERRACE SE",
     "lat": 38.86,
     "lon": -76.99
@@ -1627,172 +1746,24 @@
     "block": "2500 block of ELVANS ROAD SE",
     "lat": 38.854,
     "lon": -76.99
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-04T22:53:04Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2500 block of ELVANS ROAD SE",
-    "lat": 38.854,
-    "lon": -76.99
-   },
-   {
-    "type": "Out of State Parking Violation (ROSA)",
-    "agency": "DPW",
-    "added": "2026-11-04T20:58:36Z",
-    "resolved": "2026-11-05T07:59:53Z",
-    "status": "Closed",
-    "block": "2200 block of HUNTER PLACE SE",
-    "lat": 38.86,
-    "lon": -76.984
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-04T20:35:53Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2300 block of CHESTER STREET SE",
-    "lat": 38.862,
-    "lon": -76.988
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-04T20:15:46Z",
-    "resolved": "2026-11-04T20:15:46Z",
-    "status": "Closed",
-    "block": "2500 block of POMEROY ROAD SE",
-    "lat": 38.855,
-    "lon": -76.99
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-04T19:57:21Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1700 block of FRANKFORD STREET SE",
-    "lat": 38.856,
-    "lon": -76.98
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-04T19:52:01Z",
-    "resolved": "2026-11-04T19:52:01Z",
-    "status": "Closed",
-    "block": "2500 block of POMEROY ROAD SE",
-    "lat": 38.855,
-    "lon": -76.991
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-04T19:32:55Z",
-    "resolved": "2026-11-04T19:32:55Z",
-    "status": "Closed",
-    "block": "1400 block of CEDAR STREET SE",
-    "lat": 38.861,
-    "lon": -76.985
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-11-04T19:31:42Z",
-    "resolved": "2026-11-05T13:10:29Z",
-    "status": "Closed",
-    "block": "1200 block of MORRIS ROAD SE",
-    "lat": 38.863,
-    "lon": -76.991
-   },
-   {
-    "type": "Sidewalk Repair",
-    "agency": "DDOT",
-    "added": "2026-11-04T17:41:48Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "1200 block of MARION BARRY AVENUE SE",
-    "lat": 38.867,
-    "lon": -76.988
-   },
-   {
-    "type": "Sidewalk Repair",
-    "agency": "DDOT",
-    "added": "2026-11-04T17:41:13Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "1400 block of V STREET SE",
-    "lat": 38.865,
-    "lon": -76.985
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-04T17:11:24Z",
-    "resolved": "2026-11-04T17:11:24Z",
-    "status": "Closed",
-    "block": "2400 block of ELVANS ROAD SE",
-    "lat": 38.854,
-    "lon": -76.985
-   },
-   {
-    "type": "DMV - Drivers License/ID Issues",
-    "agency": "DMV",
-    "added": "2026-11-04T17:01:51Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1400 block of HOWARD ROAD SE",
-    "lat": 38.858,
-    "lon": -76.987
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-04T16:39:04Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1300 block of MAPLE VIEW PLACE SE",
-    "lat": 38.861,
-    "lon": -76.988
-   },
-   {
-    "type": "Pothole",
-    "agency": "DDOT",
-    "added": "2026-11-04T16:36:11Z",
-    "resolved": "2026-11-05T19:45:55Z",
-    "status": "Closed",
-    "block": "1400 block of V STREET SE",
-    "lat": 38.865,
-    "lon": -76.984
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-04T15:51:28Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2400 block of 18TH PLACE SE",
-    "lat": 38.857,
-    "lon": -76.978
    }
   ],
   "mapped": {
    "types": [
-    "DOEE - LIHEAP",
-    "DC Health Rodent & Vector Control",
-    "DMV - Drivers License/ID Issues",
-    "Bulk Collection",
-    "Trash Collection - Missed",
+    "Recycling Cart Delivery",
     "Parking Enforcement",
     "Residential Parking Permit Violation",
+    "DOEE - LIHEAP",
+    "Roadway Signs",
+    "Bulk Collection",
+    "Illegal Dumping",
+    "DMV - Vehicle Registration Issues",
+    "DMV - Drivers License/ID Issues",
+    "DC Health Rodent & Vector Control",
+    "Trash Collection - Missed",
     "Dead Animal Collection",
     "Sanitation Enforcement",
     "DC Government Information",
-    "Roadway Signs",
-    "Illegal Dumping",
     "Out of State Parking Violation (ROSA)",
     "Sidewalk Repair",
     "Pothole",
@@ -1818,7 +1789,6 @@
     "Pet Waste Complaint",
     "Dockless Vehicle Parking Complaint",
     "Emergency - Power Outage/Wires Down",
-    "DMV - Vehicle Registration Issues",
     "Recycling Collection - Missed",
     "DOEE - General Air Quality Concerns",
     "DFHV - For Hire Vehicle Concerns",
@@ -1829,63 +1799,452 @@
     "Abandoned Vehicle - On Private Property",
     "Signed Street Sweeping Missed",
     "Public Space Inspection",
-    "Graffiti Removal",
-    "DC Water - Customer Flooding",
-    "Illegal Poster"
+    "Graffiti Removal"
    ],
    "blocks": [
+    {
+     "block": "1500 block of W STREET SE",
+     "lat": 38.864,
+     "lon": -76.983,
+     "r": [
+      [
+       0,
+       "2026-11-06",
+       null,
+       1
+      ],
+      [
+       12,
+       "2026-11-05",
+       "2026-11-06",
+       0
+      ],
+      [
+       20,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       32,
+       "2026-10-26",
+       "2026-10-27",
+       0
+      ],
+      [
+       10,
+       "2026-10-23",
+       "2026-10-26",
+       0
+      ],
+      [
+       32,
+       "2026-10-21",
+       null,
+       1
+      ],
+      [
+       32,
+       "2026-10-21",
+       "2026-10-27",
+       0
+      ],
+      [
+       32,
+       "2026-10-17",
+       "2026-10-21",
+       0
+      ],
+      [
+       32,
+       "2026-10-15",
+       "2026-10-21",
+       0
+      ],
+      [
+       20,
+       "2026-10-08",
+       "2026-10-08",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1300 block of TALBERT TERRACE SE",
+     "lat": 38.861,
+     "lon": -76.992,
+     "r": [
+      [
+       1,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       2,
+       "2026-11-06",
+       "2026-11-07",
+       0
+      ],
+      [
+       1,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       2,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       2,
+       "2026-11-05",
+       "2026-11-05",
+       0
+      ],
+      [
+       14,
+       "2026-11-04",
+       "2026-11-05",
+       0
+      ],
+      [
+       14,
+       "2026-11-03",
+       "2026-11-04",
+       0
+      ],
+      [
+       2,
+       "2026-11-02",
+       "2026-11-02",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "2200 block of 16TH STREET SE",
+     "lat": 38.863,
+     "lon": -76.983,
+     "r": [
+      [
+       3,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       7,
+       "2026-10-22",
+       "2026-10-29",
+       0
+      ],
+      [
+       6,
+       "2026-10-13",
+       "2026-10-27",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "2200 block of SHANNON PLACE SE",
+     "lat": 38.864,
+     "lon": -76.991,
+     "r": [
+      [
+       4,
+       "2026-11-06",
+       null,
+       1
+      ],
+      [
+       9,
+       "2026-11-03",
+       null,
+       1
+      ],
+      [
+       47,
+       "2026-10-15",
+       "2026-10-15",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "2700 block of STANTON ROAD SE",
+     "lat": 38.857,
+     "lon": -76.987,
+     "r": [
+      [
+       5,
+       "2026-11-06",
+       null,
+       1
+      ],
+      [
+       10,
+       "2026-10-19",
+       "2026-10-22",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "2300 block of PITTS PLACE SE",
+     "lat": 38.86,
+     "lon": -76.985,
+     "r": [
+      [
+       3,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       3,
+       "2026-10-21",
+       "2026-10-21",
+       0
+      ],
+      [
+       3,
+       "2026-10-21",
+       "2026-10-21",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1200 block of TALBERT STREET SE",
+     "lat": 38.862,
+     "lon": -76.99,
+     "r": [
+      [
+       6,
+       "2026-11-06",
+       null,
+       1
+      ]
+     ]
+    },
     {
      "block": "2400 block of MARTIN LUTHER KING JR AVENUE SE",
      "lat": 38.862,
      "lon": -76.993,
      "r": [
       [
-       0,
+       3,
        "2026-11-06",
        "2026-11-06",
        0
       ],
       [
-       0,
+       3,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       3,
        "2026-11-05",
        "2026-11-05",
        0
       ],
       [
-       0,
+       3,
        "2026-11-02",
        "2026-11-02",
        0
       ],
       [
-       0,
+       3,
        "2026-11-02",
        "2026-11-02",
        0
       ],
       [
-       0,
+       3,
        "2026-10-30",
        "2026-10-30",
+       0
+      ],
+      [
+       1,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       3,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       3,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1400 block of MORRIS ROAD SE",
+     "lat": 38.859,
+     "lon": -76.987,
+     "r": [
+      [
+       7,
+       "2026-11-06",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "3000 block of STANTON ROAD SE",
+     "lat": 38.854,
+     "lon": -76.985,
+     "r": [
+      [
+       5,
+       "2026-11-06",
+       null,
+       1
+      ],
+      [
+       12,
+       "2026-10-22",
+       "2026-10-27",
        0
       ],
       [
        5,
-       "2026-10-29",
-       "2026-10-29",
+       "2026-10-12",
+       "2026-10-15",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1400 block of CEDAR STREET SE",
+     "lat": 38.862,
+     "lon": -76.985,
+     "r": [
+      [
+       3,
+       "2026-11-06",
+       "2026-11-06",
        0
       ],
       [
-       0,
-       "2026-10-29",
-       "2026-10-29",
+       3,
+       "2026-11-05",
+       "2026-11-05",
        0
       ],
       [
-       0,
-       "2026-10-29",
-       "2026-10-29",
+       3,
+       "2026-11-04",
+       "2026-11-04",
        0
+      ],
+      [
+       3,
+       "2026-11-04",
+       "2026-11-04",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "2500 block of WEST STREET SE",
+     "lat": 38.86,
+     "lon": -76.988,
+     "r": [
+      [
+       2,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       1,
+       "2026-10-21",
+       "2026-10-21",
+       0
+      ],
+      [
+       1,
+       "2026-10-08",
+       "2026-10-08",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "2400 block of ELVANS ROAD SE",
+     "lat": 38.854,
+     "lon": -76.986,
+     "r": [
+      [
+       3,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       1,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       13,
+       "2026-11-04",
+       "2026-11-04",
+       0
+      ],
+      [
+       3,
+       "2026-10-30",
+       "2026-10-30",
+       0
+      ],
+      [
+       3,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ],
+      [
+       3,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ],
+      [
+       1,
+       "2026-10-13",
+       "2026-10-13",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "2600 block of BOWEN ROAD SE",
+     "lat": 38.859,
+     "lon": -76.989,
+     "r": [
+      [
+       8,
+       "2026-11-06",
+       null,
+       1
       ]
      ]
     },
@@ -1895,55 +2254,55 @@
      "lon": -76.992,
      "r": [
       [
-       1,
+       9,
        "2026-11-06",
        null,
        1
       ],
       [
-       0,
+       3,
        "2026-11-05",
        "2026-11-05",
        0
       ],
       [
-       0,
+       3,
        "2026-10-27",
        "2026-10-27",
        0
       ],
       [
-       0,
+       3,
        "2026-10-26",
        "2026-10-26",
        0
       ],
       [
-       0,
+       3,
        "2026-10-23",
        "2026-10-23",
        0
       ],
       [
-       0,
+       3,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       0,
+       3,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       0,
+       3,
        "2026-10-21",
        "2026-10-21",
        0
       ],
       [
-       0,
+       3,
        "2026-10-20",
        "2026-10-20",
        0
@@ -1956,7 +2315,7 @@
      "lon": -76.982,
      "r": [
       [
-       2,
+       8,
        "2026-11-06",
        null,
        1
@@ -1969,57 +2328,45 @@
      "lon": -76.981,
      "r": [
       [
-       0,
+       3,
        "2026-11-06",
        "2026-11-06",
        0
       ],
       [
-       0,
+       3,
        "2026-10-28",
        "2026-10-28",
        0
       ],
       [
-       0,
+       3,
        "2026-10-28",
        "2026-10-28",
        0
       ],
       [
-       0,
+       3,
        "2026-10-26",
        "2026-10-26",
        0
       ],
       [
-       0,
+       3,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       0,
+       3,
        "2026-10-20",
        "2026-10-20",
        0
       ],
       [
-       11,
+       6,
        "2026-10-12",
        "2026-10-13",
-       0
-      ],
-      [
-       50,
-       "2026-10-07",
-       "2026-10-22",
-       0
-      ],
-      [
-       34,
-       "2026-10-07",
-       "2026-10-07",
        0
       ]
      ]
@@ -2030,13 +2377,13 @@
      "lon": -76.987,
      "r": [
       [
-       3,
+       5,
        "2026-11-06",
        null,
        1
       ],
       [
-       8,
+       12,
        "2026-11-05",
        "2026-11-05",
        0
@@ -2049,7 +2396,7 @@
      "lon": -76.973,
      "r": [
       [
-       4,
+       10,
        "2026-11-06",
        null,
        1
@@ -2062,125 +2409,39 @@
      "lon": -76.991,
      "r": [
       [
-       5,
+       1,
        "2026-11-06",
        "2026-11-06",
        0
       ],
       [
-       0,
+       3,
        "2026-10-27",
        "2026-10-27",
        0
       ],
       [
-       0,
+       3,
        "2026-10-23",
        "2026-10-23",
        0
       ],
       [
-       5,
+       1,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       9,
+       13,
        "2026-10-16",
        "2026-10-16",
        0
       ],
       [
-       5,
+       1,
        "2026-10-08",
        "2026-10-08",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "2400 block of ELVANS ROAD SE",
-     "lat": 38.854,
-     "lon": -76.986,
-     "r": [
-      [
-       5,
-       "2026-11-06",
-       "2026-11-06",
-       0
-      ],
-      [
-       9,
-       "2026-11-04",
-       "2026-11-04",
-       0
-      ],
-      [
-       0,
-       "2026-10-30",
-       "2026-10-30",
-       0
-      ],
-      [
-       0,
-       "2026-10-22",
-       "2026-10-22",
-       0
-      ],
-      [
-       0,
-       "2026-10-22",
-       "2026-10-22",
-       0
-      ],
-      [
-       5,
-       "2026-10-13",
-       "2026-10-13",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1300 block of TALBERT TERRACE SE",
-     "lat": 38.861,
-     "lon": -76.992,
-     "r": [
-      [
-       5,
-       "2026-11-06",
-       "2026-11-06",
-       0
-      ],
-      [
-       6,
-       "2026-11-06",
-       "2026-11-06",
-       0
-      ],
-      [
-       6,
-       "2026-11-05",
-       "2026-11-05",
-       0
-      ],
-      [
-       12,
-       "2026-11-04",
-       "2026-11-05",
-       0
-      ],
-      [
-       12,
-       "2026-11-03",
-       "2026-11-04",
-       0
-      ],
-      [
-       6,
-       "2026-11-02",
-       "2026-11-02",
        0
       ]
      ]
@@ -2191,10 +2452,10 @@
      "lon": -76.99,
      "r": [
       [
-       7,
+       11,
        "2026-11-06",
-       null,
-       1
+       "2026-11-06",
+       0
       ]
      ]
     },
@@ -2204,13 +2465,13 @@
      "lon": -76.991,
      "r": [
       [
-       5,
+       1,
        "2026-11-05",
        "2026-11-05",
        0
       ],
       [
-       0,
+       3,
        "2026-10-20",
        "2026-10-20",
        0
@@ -2223,88 +2484,27 @@
      "lon": -76.981,
      "r": [
       [
-       0,
+       3,
        "2026-11-05",
        "2026-11-05",
        0
       ],
       [
-       0,
+       3,
        "2026-10-29",
        "2026-10-29",
        0
       ],
       [
-       0,
+       3,
        "2026-10-26",
        "2026-10-26",
        0
       ],
       [
-       0,
+       3,
        "2026-10-21",
        "2026-10-21",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1500 block of W STREET SE",
-     "lat": 38.864,
-     "lon": -76.983,
-     "r": [
-      [
-       8,
-       "2026-11-05",
-       "2026-11-06",
-       0
-      ],
-      [
-       18,
-       "2026-10-28",
-       "2026-10-28",
-       0
-      ],
-      [
-       30,
-       "2026-10-26",
-       "2026-10-27",
-       0
-      ],
-      [
-       4,
-       "2026-10-23",
-       "2026-10-26",
-       0
-      ],
-      [
-       30,
-       "2026-10-21",
-       null,
-       1
-      ],
-      [
-       30,
-       "2026-10-21",
-       "2026-10-27",
-       0
-      ],
-      [
-       30,
-       "2026-10-17",
-       "2026-10-21",
-       0
-      ],
-      [
-       30,
-       "2026-10-15",
-       "2026-10-21",
-       0
-      ],
-      [
-       18,
-       "2026-10-08",
-       "2026-10-08",
        0
       ]
      ]
@@ -2315,13 +2515,13 @@
      "lon": -76.98,
      "r": [
       [
-       9,
+       13,
        "2026-11-05",
        "2026-11-05",
        0
       ],
       [
-       3,
+       5,
        "2026-10-24",
        "2026-10-28",
        0
@@ -2334,13 +2534,13 @@
      "lon": -76.986,
      "r": [
       [
-       2,
+       8,
        "2026-11-05",
        "2026-11-05",
        0
       ],
       [
-       42,
+       43,
        "2026-10-16",
        "2026-10-17",
        0
@@ -2353,13 +2553,13 @@
      "lon": -76.986,
      "r": [
       [
-       10,
+       4,
        "2026-11-05",
        null,
        1
       ],
       [
-       3,
+       5,
        "2026-10-12",
        "2026-10-15",
        0
@@ -2372,25 +2572,25 @@
      "lon": -76.992,
      "r": [
       [
-       3,
+       5,
        "2026-11-05",
        null,
        1
       ],
       [
-       1,
+       9,
        "2026-11-02",
        null,
        1
       ],
       [
-       3,
+       5,
        "2026-11-02",
        null,
        1
       ],
       [
-       1,
+       9,
        "2026-10-31",
        null,
        1
@@ -2403,19 +2603,19 @@
      "lon": -76.991,
      "r": [
       [
-       0,
+       3,
        "2026-11-05",
        "2026-11-05",
        0
       ],
       [
-       0,
+       3,
        "2026-10-30",
        "2026-10-30",
        0
       ],
       [
-       0,
+       3,
        "2026-10-30",
        "2026-10-30",
        0
@@ -2428,38 +2628,32 @@
      "lon": -76.988,
      "r": [
       [
-       11,
+       6,
        "2026-11-05",
        null,
        1
       ],
       [
-       3,
+       5,
        "2026-11-04",
        null,
        1
       ],
       [
-       3,
+       5,
        "2026-10-29",
        "2026-11-03",
        0
       ],
       [
-       3,
+       5,
        "2026-10-22",
        "2026-10-28",
        0
       ],
       [
-       21,
+       23,
        "2026-10-12",
-       "2026-10-13",
-       0
-      ],
-      [
-       5,
-       "2026-10-07",
        "2026-10-13",
        0
       ]
@@ -2471,61 +2665,61 @@
      "lon": -76.985,
      "r": [
       [
-       0,
+       3,
        "2026-11-05",
        "2026-11-05",
        0
       ],
       [
-       0,
+       3,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       0,
+       3,
        "2026-11-02",
        "2026-11-02",
        0
       ],
       [
-       0,
+       3,
        "2026-10-29",
        "2026-10-29",
        0
       ],
       [
-       0,
+       3,
        "2026-10-26",
        "2026-10-26",
        0
       ],
       [
-       0,
+       3,
        "2026-10-24",
        "2026-10-24",
        0
       ],
       [
-       14,
+       16,
        "2026-10-23",
        "2026-10-26",
        0
       ],
       [
-       0,
+       3,
        "2026-10-23",
        "2026-10-23",
        0
       ],
       [
-       0,
+       3,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       0,
+       3,
        "2026-10-20",
        "2026-10-20",
        0
@@ -2538,31 +2732,31 @@
      "lon": -76.988,
      "r": [
       [
-       3,
+       5,
        "2026-11-05",
        null,
        1
       ],
       [
-       5,
+       1,
        "2026-10-27",
        "2026-10-27",
        0
       ],
       [
-       5,
+       1,
        "2026-10-19",
        "2026-10-19",
        0
       ],
       [
-       48,
+       49,
        "2026-10-12",
        "2026-11-03",
        0
       ],
       [
-       5,
+       1,
        "2026-10-08",
        "2026-10-08",
        0
@@ -2575,7 +2769,7 @@
      "lon": -76.982,
      "r": [
       [
-       12,
+       14,
        "2026-11-05",
        "2026-11-06",
        0
@@ -2588,19 +2782,19 @@
      "lon": -76.988,
      "r": [
       [
-       11,
+       6,
        "2026-11-05",
        "2026-11-05",
        0
       ],
       [
-       10,
+       4,
        "2026-10-23",
        null,
        1
       ],
       [
-       10,
+       4,
        "2026-10-13",
        null,
        1
@@ -2613,34 +2807,9 @@
      "lon": -76.992,
      "r": [
       [
-       12,
+       14,
        "2026-11-05",
        "2026-11-06",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1400 block of CEDAR STREET SE",
-     "lat": 38.862,
-     "lon": -76.985,
-     "r": [
-      [
-       0,
-       "2026-11-05",
-       "2026-11-05",
-       0
-      ],
-      [
-       0,
-       "2026-11-04",
-       "2026-11-04",
-       0
-      ],
-      [
-       0,
-       "2026-11-04",
-       "2026-11-04",
        0
       ]
      ]
@@ -2651,43 +2820,43 @@
      "lon": -76.987,
      "r": [
       [
-       8,
+       12,
        "2026-11-05",
        "2026-11-05",
        0
       ],
       [
-       8,
+       12,
        "2026-10-29",
        "2026-10-30",
        0
       ],
       [
-       23,
+       25,
        "2026-10-29",
        null,
        1
       ],
       [
-       3,
+       5,
        "2026-10-25",
        "2026-10-28",
        0
       ],
       [
-       3,
+       5,
        "2026-10-09",
        "2026-10-15",
        0
       ],
       [
-       3,
+       5,
        "2026-10-09",
        "2026-10-15",
        0
       ],
       [
-       38,
+       39,
        "2026-10-09",
        "2026-10-16",
        0
@@ -2700,27 +2869,21 @@
      "lon": -76.988,
      "r": [
       [
-       3,
+       5,
        "2026-11-05",
        null,
        1
       ],
       [
-       3,
+       5,
        "2026-10-28",
        "2026-11-03",
        0
       ],
       [
-       5,
+       1,
        "2026-10-13",
        "2026-10-13",
-       0
-      ],
-      [
-       5,
-       "2026-10-07",
-       "2026-10-07",
        0
       ]
      ]
@@ -2731,19 +2894,19 @@
      "lon": -76.991,
      "r": [
       [
-       0,
+       3,
        "2026-11-05",
        "2026-11-05",
        0
       ],
       [
-       0,
+       3,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       0,
+       3,
        "2026-10-22",
        "2026-10-22",
        0
@@ -2756,37 +2919,37 @@
      "lon": -76.984,
      "r": [
       [
-       5,
+       1,
        "2026-11-04",
        "2026-11-05",
        0
       ],
       [
-       12,
+       14,
        "2026-11-04",
        "2026-11-05",
        0
       ],
       [
-       6,
+       2,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       12,
+       14,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       6,
+       2,
        "2026-11-03",
        "2026-11-04",
        0
       ],
       [
-       3,
+       5,
        "2026-10-11",
        "2026-10-15",
        0
@@ -2799,19 +2962,19 @@
      "lon": -76.99,
      "r": [
       [
-       3,
-       "2026-11-04",
-       null,
-       1
-      ],
-      [
-       3,
+       5,
        "2026-11-04",
        null,
        1
       ],
       [
        5,
+       "2026-11-04",
+       null,
+       1
+      ],
+      [
+       1,
        "2026-10-30",
        "2026-10-30",
        0
@@ -2824,13 +2987,13 @@
      "lon": -76.99,
      "r": [
       [
-       0,
+       3,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       0,
+       3,
        "2026-10-22",
        "2026-10-22",
        0
@@ -2843,33 +3006,27 @@
      "lon": -76.98,
      "r": [
       [
-       3,
+       5,
        "2026-11-04",
        null,
        1
       ],
       [
-       3,
+       5,
        "2026-10-29",
        "2026-11-03",
        0
       ],
       [
-       3,
+       5,
        "2026-10-27",
        "2026-11-03",
        0
       ],
       [
-       10,
+       4,
        "2026-10-21",
        "2026-10-21",
-       0
-      ],
-      [
-       3,
-       "2026-10-07",
-       "2026-10-15",
        0
       ]
      ]
@@ -2880,13 +3037,13 @@
      "lon": -76.985,
      "r": [
       [
-       0,
+       3,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       9,
+       13,
        "2026-10-12",
        "2026-10-12",
        0
@@ -2899,25 +3056,25 @@
      "lon": -76.991,
      "r": [
       [
-       4,
+       10,
        "2026-11-04",
        "2026-11-05",
        0
       ],
       [
-       11,
+       6,
        "2026-10-29",
        "2026-10-30",
        0
       ],
       [
-       11,
+       6,
        "2026-10-29",
        "2026-11-03",
        0
       ],
       [
-       11,
+       6,
        "2026-10-29",
        "2026-10-29",
        0
@@ -2930,13 +3087,13 @@
      "lon": -76.988,
      "r": [
       [
-       13,
+       15,
        "2026-11-04",
        null,
        1
       ],
       [
-       20,
+       22,
        "2026-10-30",
        "2026-10-30",
        0
@@ -2949,13 +3106,13 @@
      "lon": -76.985,
      "r": [
       [
-       13,
+       15,
        "2026-11-04",
        null,
        1
       ],
       [
-       9,
+       13,
        "2026-10-20",
        "2026-10-20",
        0
@@ -2968,19 +3125,19 @@
      "lon": -76.987,
      "r": [
       [
-       2,
+       8,
        "2026-11-04",
        null,
        1
       ],
       [
-       3,
+       5,
        "2026-11-02",
        null,
        1
       ],
       [
-       3,
+       5,
        "2026-10-18",
        "2026-10-21",
        0
@@ -2993,7 +3150,7 @@
      "lon": -76.988,
      "r": [
       [
-       3,
+       5,
        "2026-11-04",
        null,
        1
@@ -3006,19 +3163,19 @@
      "lon": -76.984,
      "r": [
       [
-       14,
+       16,
        "2026-11-04",
        "2026-11-05",
        0
       ],
       [
-       35,
+       37,
        "2026-10-24",
        "2026-10-24",
        0
       ],
       [
-       35,
+       37,
        "2026-10-24",
        "2026-10-24",
        0
@@ -3031,7 +3188,7 @@
      "lon": -76.978,
      "r": [
       [
-       3,
+       5,
        "2026-11-04",
        null,
        1
@@ -3044,7 +3201,7 @@
      "lon": -76.992,
      "r": [
       [
-       2,
+       8,
        "2026-11-04",
        null,
        1
@@ -3057,7 +3214,7 @@
      "lon": -76.989,
      "r": [
       [
-       15,
+       17,
        "2026-11-04",
        null,
        1
@@ -3070,7 +3227,7 @@
      "lon": -76.99,
      "r": [
       [
-       5,
+       1,
        "2026-11-04",
        "2026-11-04",
        0
@@ -3083,19 +3240,19 @@
      "lon": -76.98,
      "r": [
       [
-       0,
+       3,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       3,
+       5,
        "2026-10-24",
        "2026-10-28",
        0
       ],
       [
-       3,
+       5,
        "2026-10-18",
        "2026-10-21",
        0
@@ -3108,19 +3265,19 @@
      "lon": -76.984,
      "r": [
       [
-       3,
+       5,
        "2026-11-04",
        null,
        1
       ],
       [
-       0,
+       3,
        "2026-11-02",
        "2026-11-02",
        0
       ],
       [
-       3,
+       5,
        "2026-10-23",
        "2026-10-28",
        0
@@ -3133,13 +3290,13 @@
      "lon": -76.988,
      "r": [
       [
-       3,
+       5,
        "2026-11-03",
        null,
        1
       ],
       [
-       3,
+       5,
        "2026-10-29",
        "2026-11-03",
        0
@@ -3152,7 +3309,7 @@
      "lon": -76.984,
      "r": [
       [
-       3,
+       5,
        "2026-11-03",
        null,
        1
@@ -3165,7 +3322,7 @@
      "lon": -76.988,
      "r": [
       [
-       3,
+       5,
        "2026-11-03",
        null,
        1
@@ -3178,19 +3335,19 @@
      "lon": -76.992,
      "r": [
       [
-       0,
+       3,
        "2026-11-03",
        "2026-11-03",
        0
       ],
       [
-       0,
+       3,
        "2026-10-26",
        "2026-10-26",
        0
       ],
       [
-       0,
+       3,
        "2026-10-22",
        "2026-10-22",
        0
@@ -3203,7 +3360,7 @@
      "lon": -76.986,
      "r": [
       [
-       0,
+       3,
        "2026-11-03",
        "2026-11-03",
        0
@@ -3216,7 +3373,7 @@
      "lon": -76.978,
      "r": [
       [
-       8,
+       12,
        "2026-11-03",
        "2026-11-05",
        0
@@ -3229,7 +3386,7 @@
      "lon": -76.986,
      "r": [
       [
-       16,
+       18,
        "2026-11-03",
        null,
        1
@@ -3242,7 +3399,7 @@
      "lon": -76.978,
      "r": [
       [
-       17,
+       19,
        "2026-11-03",
        "2026-11-04",
        0
@@ -3255,19 +3412,19 @@
      "lon": -76.988,
      "r": [
       [
-       6,
+       2,
        "2026-11-03",
        "2026-11-03",
        0
       ],
       [
-       20,
+       22,
        "2026-11-02",
        "2026-11-02",
        0
       ],
       [
-       6,
+       2,
        "2026-10-20",
        "2026-10-20",
        0
@@ -3280,7 +3437,7 @@
      "lon": -76.983,
      "r": [
       [
-       18,
+       20,
        "2026-11-03",
        "2026-11-04",
        0
@@ -3293,7 +3450,7 @@
      "lon": -76.988,
      "r": [
       [
-       3,
+       5,
        "2026-11-03",
        null,
        1
@@ -3306,7 +3463,7 @@
      "lon": -76.991,
      "r": [
       [
-       2,
+       8,
        "2026-11-03",
        "2026-11-03",
        0
@@ -3319,25 +3476,25 @@
      "lon": -76.98,
      "r": [
       [
-       15,
+       17,
        "2026-11-03",
        null,
        1
       ],
       [
-       21,
+       23,
        "2026-11-02",
        "2026-11-02",
        0
       ],
       [
-       12,
+       14,
        "2026-10-19",
        "2026-10-20",
        0
       ],
       [
-       15,
+       17,
        "2026-10-10",
        "2026-10-15",
        0
@@ -3350,40 +3507,21 @@
      "lon": -76.99,
      "r": [
       [
-       19,
+       21,
        "2026-11-03",
        "2026-11-03",
        0
       ],
       [
-       19,
+       21,
        "2026-11-03",
        "2026-11-03",
        0
       ],
       [
-       19,
+       21,
        "2026-10-26",
        "2026-10-27",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "2200 block of SHANNON PLACE SE",
-     "lat": 38.864,
-     "lon": -76.991,
-     "r": [
-      [
-       1,
-       "2026-11-03",
-       null,
-       1
-      ],
-      [
-       46,
-       "2026-10-15",
-       "2026-10-15",
        0
       ]
      ]
@@ -3394,21 +3532,15 @@
      "lon": -76.991,
      "r": [
       [
-       19,
+       21,
        "2026-11-03",
        "2026-11-03",
        0
       ],
       [
-       19,
+       21,
        "2026-11-03",
        "2026-11-03",
-       0
-      ],
-      [
-       19,
-       "2026-10-07",
-       "2026-10-08",
        0
       ]
      ]
@@ -3419,7 +3551,7 @@
      "lon": -76.986,
      "r": [
       [
-       3,
+       5,
        "2026-11-03",
        null,
        1
@@ -3432,13 +3564,13 @@
      "lon": -76.982,
      "r": [
       [
-       3,
+       5,
        "2026-11-02",
        null,
        1
       ],
       [
-       35,
+       37,
        "2026-10-22",
        "2026-10-22",
        0
@@ -3451,7 +3583,7 @@
      "lon": -76.99,
      "r": [
       [
-       0,
+       3,
        "2026-11-02",
        "2026-11-02",
        0
@@ -3464,13 +3596,13 @@
      "lon": -76.993,
      "r": [
       [
-       7,
+       11,
        "2026-11-02",
        "2026-11-04",
        0
       ],
       [
-       5,
+       1,
        "2026-10-14",
        "2026-10-14",
        0
@@ -3483,13 +3615,13 @@
      "lon": -76.99,
      "r": [
       [
-       5,
+       1,
        "2026-11-02",
        "2026-11-02",
        0
       ],
       [
-       5,
+       1,
        "2026-10-26",
        "2026-10-26",
        0
@@ -3502,37 +3634,37 @@
      "lon": -76.983,
      "r": [
       [
-       0,
+       3,
        "2026-11-02",
        "2026-11-02",
        0
       ],
       [
-       0,
+       3,
        "2026-10-27",
        "2026-10-27",
        0
       ],
       [
-       2,
+       8,
        "2026-10-23",
        "2026-10-29",
        0
       ],
       [
-       0,
+       3,
        "2026-10-22",
        "2026-10-22",
+       0
+      ],
+      [
+       1,
+       "2026-10-16",
+       "2026-10-16",
        0
       ],
       [
        5,
-       "2026-10-16",
-       "2026-10-16",
-       0
-      ],
-      [
-       3,
        "2026-10-08",
        "2026-10-15",
        0
@@ -3545,19 +3677,19 @@
      "lon": -76.988,
      "r": [
       [
-       5,
+       1,
+       "2026-11-01",
+       "2026-11-01",
+       0
+      ],
+      [
+       1,
        "2026-11-01",
        "2026-11-01",
        0
       ],
       [
        5,
-       "2026-11-01",
-       "2026-11-01",
-       0
-      ],
-      [
-       3,
        "2026-10-29",
        "2026-11-03",
        0
@@ -3570,31 +3702,31 @@
      "lon": -76.992,
      "r": [
       [
-       3,
+       5,
        "2026-11-01",
        null,
        1
       ],
       [
-       3,
+       5,
        "2026-10-26",
        "2026-11-03",
        0
       ],
       [
-       0,
+       3,
        "2026-10-26",
        "2026-10-26",
        0
       ],
       [
-       8,
+       12,
        "2026-10-23",
        "2026-10-27",
        0
       ],
       [
-       8,
+       12,
        "2026-10-14",
        "2026-10-16",
        0
@@ -3607,13 +3739,13 @@
      "lon": -76.982,
      "r": [
       [
-       22,
+       24,
        "2026-10-31",
        null,
        1
       ],
       [
-       11,
+       6,
        "2026-10-12",
        "2026-10-13",
        0
@@ -3626,13 +3758,13 @@
      "lon": -76.99,
      "r": [
       [
-       20,
+       22,
        "2026-10-31",
        "2026-10-31",
        0
       ],
       [
-       20,
+       22,
        "2026-10-31",
        "2026-10-31",
        0
@@ -3645,37 +3777,37 @@
      "lon": -76.99,
      "r": [
       [
-       20,
+       22,
        "2026-10-30",
        "2026-10-30",
        0
       ],
       [
-       5,
+       1,
        "2026-10-29",
        "2026-10-29",
        0
       ],
       [
-       5,
+       1,
        "2026-10-27",
        "2026-10-28",
        0
       ],
       [
-       5,
+       1,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       24,
+       26,
        "2026-10-20",
        "2026-10-22",
        0
       ],
       [
-       24,
+       26,
        "2026-10-20",
        null,
        1
@@ -3688,25 +3820,25 @@
      "lon": -76.989,
      "r": [
       [
-       20,
+       22,
        "2026-10-30",
        "2026-10-30",
        0
       ],
       [
-       11,
+       6,
        "2026-10-26",
        "2026-11-03",
        0
       ],
       [
-       24,
+       26,
        "2026-10-14",
        "2026-10-16",
        0
       ],
       [
-       24,
+       26,
        "2026-10-14",
        "2026-10-16",
        0
@@ -3719,19 +3851,19 @@
      "lon": -76.989,
      "r": [
       [
-       20,
+       22,
        "2026-10-30",
        "2026-10-30",
        0
       ],
       [
-       24,
+       26,
        "2026-10-14",
        "2026-10-16",
        0
       ],
       [
-       24,
+       26,
        "2026-10-14",
        "2026-10-14",
        0
@@ -3744,19 +3876,19 @@
      "lon": -76.987,
      "r": [
       [
-       23,
+       25,
        "2026-10-30",
        null,
        1
       ],
       [
-       26,
+       28,
        "2026-10-28",
        null,
        1
       ],
       [
-       3,
+       5,
        "2026-10-27",
        "2026-11-03",
        0
@@ -3769,7 +3901,7 @@
      "lon": -76.983,
      "r": [
       [
-       5,
+       1,
        "2026-10-30",
        "2026-10-30",
        0
@@ -3782,13 +3914,13 @@
      "lon": -76.992,
      "r": [
       [
-       4,
+       10,
        "2026-10-30",
        "2026-11-03",
        0
       ],
       [
-       3,
+       5,
        "2026-10-09",
        "2026-10-15",
        0
@@ -3801,19 +3933,19 @@
      "lon": -76.986,
      "r": [
       [
-       5,
+       1,
        "2026-10-30",
        "2026-10-30",
        0
       ],
       [
-       10,
+       4,
        "2026-10-22",
        null,
        1
       ],
       [
-       5,
+       1,
        "2026-10-21",
        "2026-10-21",
        0
@@ -3826,25 +3958,25 @@
      "lon": -76.988,
      "r": [
       [
-       4,
+       10,
        "2026-10-30",
        "2026-10-31",
        0
       ],
       [
-       0,
+       3,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       5,
+       1,
        "2026-10-21",
        "2026-10-21",
        0
       ],
       [
-       6,
+       2,
        "2026-10-10",
        "2026-10-11",
        0
@@ -3857,7 +3989,7 @@
      "lon": -76.987,
      "r": [
       [
-       0,
+       3,
        "2026-10-30",
        "2026-10-30",
        0
@@ -3870,19 +4002,19 @@
      "lon": -76.983,
      "r": [
       [
-       11,
+       6,
        "2026-10-29",
        null,
        1
       ],
       [
-       7,
+       11,
        "2026-10-09",
        "2026-10-13",
        1
       ],
       [
-       7,
+       11,
        "2026-10-09",
        "2026-10-13",
        0
@@ -3895,31 +4027,31 @@
      "lon": -76.992,
      "r": [
       [
-       5,
+       1,
        "2026-10-29",
        "2026-10-29",
        0
       ],
       [
-       5,
+       1,
        "2026-10-28",
        "2026-10-28",
        0
       ],
       [
-       5,
+       1,
        "2026-10-28",
        "2026-10-28",
        0
       ],
       [
-       5,
+       1,
        "2026-10-28",
        "2026-10-28",
        0
       ],
       [
-       5,
+       1,
        "2026-10-28",
        "2026-10-28",
        0
@@ -3932,13 +4064,13 @@
      "lon": -76.984,
      "r": [
       [
-       0,
+       3,
        "2026-10-29",
        "2026-10-29",
        0
       ],
       [
-       0,
+       3,
        "2026-10-22",
        "2026-10-22",
        0
@@ -3951,19 +4083,19 @@
      "lon": -76.987,
      "r": [
       [
-       0,
+       3,
        "2026-10-29",
        "2026-10-29",
        0
       ],
       [
-       3,
+       5,
        "2026-10-13",
        "2026-10-21",
        0
       ],
       [
-       3,
+       5,
        "2026-10-08",
        "2026-10-15",
        0
@@ -3976,25 +4108,25 @@
      "lon": -76.981,
      "r": [
       [
-       4,
+       10,
        "2026-10-28",
        "2026-10-29",
        0
       ],
       [
-       4,
+       10,
        "2026-10-26",
        "2026-10-30",
        0
       ],
       [
-       4,
+       10,
        "2026-10-23",
        "2026-10-26",
        0
       ],
       [
-       3,
+       5,
        "2026-10-16",
        "2026-10-21",
        0
@@ -4007,13 +4139,13 @@
      "lon": -76.98,
      "r": [
       [
-       7,
+       11,
        "2026-10-28",
        "2026-10-31",
        0
       ],
       [
-       15,
+       17,
        "2026-10-24",
        "2026-10-29",
        0
@@ -4026,13 +4158,13 @@
      "lon": -76.978,
      "r": [
       [
-       24,
+       26,
        "2026-10-28",
        "2026-11-02",
        0
       ],
       [
-       3,
+       5,
        "2026-10-23",
        "2026-10-28",
        0
@@ -4045,7 +4177,7 @@
      "lon": -76.978,
      "r": [
       [
-       0,
+       3,
        "2026-10-28",
        "2026-10-28",
        0
@@ -4058,13 +4190,13 @@
      "lon": -76.989,
      "r": [
       [
-       3,
+       5,
        "2026-10-28",
        "2026-11-03",
        0
       ],
       [
-       0,
+       3,
        "2026-10-27",
        "2026-10-27",
        0
@@ -4077,25 +4209,25 @@
      "lon": -76.99,
      "r": [
       [
-       5,
+       1,
        "2026-10-28",
        "2026-10-28",
        0
       ],
       [
-       5,
+       1,
        "2026-10-23",
        "2026-10-23",
        0
       ],
       [
-       5,
+       1,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       24,
+       26,
        "2026-10-15",
        "2026-10-16",
        0
@@ -4108,7 +4240,7 @@
      "lon": -76.982,
      "r": [
       [
-       18,
+       20,
        "2026-10-28",
        "2026-10-28",
        0
@@ -4121,19 +4253,19 @@
      "lon": -76.989,
      "r": [
       [
-       25,
+       27,
        "2026-10-28",
        null,
        1
       ],
       [
-       27,
+       29,
        "2026-10-21",
        "2026-10-21",
        0
       ],
       [
-       8,
+       12,
        "2026-10-12",
        "2026-10-13",
        0
@@ -4146,13 +4278,13 @@
      "lon": -76.987,
      "r": [
       [
-       0,
+       3,
        "2026-10-28",
        "2026-10-28",
        0
       ],
       [
-       0,
+       3,
        "2026-10-21",
        "2026-10-21",
        0
@@ -4165,13 +4297,13 @@
      "lon": -76.986,
      "r": [
       [
-       0,
+       3,
        "2026-10-27",
        "2026-10-27",
        0
       ],
       [
-       9,
+       13,
        "2026-10-09",
        "2026-10-09",
        0
@@ -4184,31 +4316,31 @@
      "lon": -76.989,
      "r": [
       [
-       16,
+       18,
        "2026-10-27",
        null,
        1
       ],
       [
-       6,
+       2,
        "2026-10-19",
        "2026-10-19",
        0
       ],
       [
-       11,
+       6,
        "2026-10-19",
        "2026-10-27",
        0
       ],
       [
-       6,
+       2,
        "2026-10-08",
        "2026-10-08",
        0
       ],
       [
-       11,
+       6,
        "2026-10-08",
        "2026-10-17",
        0
@@ -4221,13 +4353,13 @@
      "lon": -76.993,
      "r": [
       [
-       0,
+       3,
        "2026-10-27",
        "2026-10-27",
        0
       ],
       [
-       0,
+       3,
        "2026-10-26",
        "2026-10-26",
        0
@@ -4240,13 +4372,13 @@
      "lon": -76.986,
      "r": [
       [
-       2,
+       8,
        "2026-10-27",
        "2026-11-04",
        0
       ],
       [
-       9,
+       13,
        "2026-10-17",
        "2026-10-17",
        0
@@ -4259,7 +4391,7 @@
      "lon": -76.988,
      "r": [
       [
-       27,
+       29,
        "2026-10-27",
        "2026-10-27",
        0
@@ -4272,7 +4404,7 @@
      "lon": -76.984,
      "r": [
       [
-       0,
+       3,
        "2026-10-27",
        "2026-10-27",
        0
@@ -4285,7 +4417,7 @@
      "lon": -76.99,
      "r": [
       [
-       19,
+       21,
        "2026-10-27",
        "2026-10-27",
        0
@@ -4298,33 +4430,27 @@
      "lon": -76.984,
      "r": [
       [
-       3,
+       5,
        "2026-10-27",
        "2026-11-03",
        0
       ],
       [
-       0,
+       3,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       11,
+       6,
        "2026-10-10",
        "2026-10-17",
        0
       ],
       [
-       3,
+       5,
        "2026-10-08",
        "2026-10-15",
-       0
-      ],
-      [
-       11,
-       "2026-10-07",
-       "2026-10-08",
        0
       ]
      ]
@@ -4335,13 +4461,13 @@
      "lon": -76.986,
      "r": [
       [
-       5,
+       1,
        "2026-10-27",
        "2026-10-27",
        0
       ],
       [
-       21,
+       23,
        "2026-10-22",
        "2026-10-22",
        0
@@ -4354,19 +4480,19 @@
      "lon": -76.99,
      "r": [
       [
-       10,
+       4,
        "2026-10-27",
        null,
        1
       ],
       [
-       27,
+       29,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       11,
+       6,
        "2026-10-12",
        "2026-10-13",
        0
@@ -4379,19 +4505,19 @@
      "lon": -76.99,
      "r": [
       [
-       28,
+       30,
        "2026-10-27",
        "2026-10-27",
        0
       ],
       [
-       1,
+       9,
        "2026-10-21",
        "2026-10-21",
        0
       ],
       [
-       1,
+       9,
        "2026-10-13",
        "2026-10-14",
        0
@@ -4404,13 +4530,13 @@
      "lon": -76.986,
      "r": [
       [
-       5,
+       1,
        "2026-10-27",
        "2026-10-27",
        0
       ],
       [
-       0,
+       3,
        "2026-10-21",
        "2026-10-21",
        0
@@ -4423,31 +4549,31 @@
      "lon": -76.979,
      "r": [
       [
-       3,
+       5,
        "2026-10-26",
        "2026-11-03",
        0
       ],
       [
-       3,
+       5,
        "2026-10-20",
        "2026-10-28",
        0
       ],
       [
-       3,
+       5,
        "2026-10-19",
        "2026-10-28",
        0
       ],
       [
-       33,
+       35,
        "2026-10-16",
        null,
        1
       ],
       [
-       3,
+       5,
        "2026-10-16",
        "2026-10-21",
        0
@@ -4460,7 +4586,7 @@
      "lon": -76.99,
      "r": [
       [
-       8,
+       12,
        "2026-10-26",
        "2026-10-27",
        0
@@ -4473,7 +4599,7 @@
      "lon": -76.983,
      "r": [
       [
-       29,
+       31,
        "2026-10-26",
        null,
        1
@@ -4486,7 +4612,7 @@
      "lon": -76.989,
      "r": [
       [
-       0,
+       3,
        "2026-10-26",
        "2026-10-26",
        0
@@ -4499,7 +4625,7 @@
      "lon": -76.979,
      "r": [
       [
-       31,
+       33,
        "2026-10-26",
        null,
        1
@@ -4512,13 +4638,13 @@
      "lon": -76.979,
      "r": [
       [
-       0,
+       3,
        "2026-10-26",
        "2026-10-26",
        0
       ],
       [
-       35,
+       37,
        "2026-10-12",
        "2026-10-12",
        0
@@ -4531,7 +4657,7 @@
      "lon": -76.985,
      "r": [
       [
-       3,
+       5,
        "2026-10-26",
        "2026-11-03",
        0
@@ -4544,19 +4670,19 @@
      "lon": -76.985,
      "r": [
       [
-       32,
+       34,
        "2026-10-26",
        null,
        1
       ],
       [
-       14,
+       16,
        "2026-10-19",
        "2026-10-21",
        0
       ],
       [
-       26,
+       28,
        "2026-10-19",
        null,
        1
@@ -4569,27 +4695,21 @@
      "lon": -76.991,
      "r": [
       [
-       11,
+       6,
        "2026-10-26",
        "2026-10-29",
        0
       ],
       [
-       11,
+       6,
        "2026-10-26",
        "2026-10-29",
        0
       ],
       [
-       39,
+       40,
        "2026-10-19",
        "2026-10-22",
-       0
-      ],
-      [
-       2,
-       "2026-10-07",
-       "2026-10-19",
        0
       ]
      ]
@@ -4600,7 +4720,7 @@
      "lon": -76.982,
      "r": [
       [
-       11,
+       6,
        "2026-10-26",
        "2026-10-27",
        0
@@ -4613,7 +4733,7 @@
      "lon": -76.981,
      "r": [
       [
-       11,
+       6,
        "2026-10-26",
        "2026-10-29",
        0
@@ -4626,13 +4746,13 @@
      "lon": -76.981,
      "r": [
       [
-       3,
+       5,
        "2026-10-26",
        "2026-11-03",
        0
       ],
       [
-       3,
+       5,
        "2026-10-17",
        "2026-10-20",
        1
@@ -4645,19 +4765,19 @@
      "lon": -76.983,
      "r": [
       [
-       4,
+       10,
        "2026-10-26",
        "2026-10-30",
        0
       ],
       [
-       35,
+       37,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       3,
+       5,
        "2026-10-22",
        "2026-10-28",
        0
@@ -4670,25 +4790,25 @@
      "lon": -76.982,
      "r": [
       [
-       4,
+       10,
        "2026-10-26",
        "2026-10-30",
        0
       ],
       [
-       38,
+       39,
        "2026-10-18",
        "2026-10-20",
        0
       ],
       [
-       38,
+       39,
        "2026-10-17",
        "2026-10-18",
        1
       ],
       [
-       38,
+       39,
        "2026-10-17",
        "2026-10-18",
        0
@@ -4701,7 +4821,7 @@
      "lon": -76.99,
      "r": [
       [
-       31,
+       33,
        "2026-10-25",
        null,
        1
@@ -4714,7 +4834,7 @@
      "lon": -76.987,
      "r": [
       [
-       3,
+       5,
        "2026-10-25",
        "2026-10-28",
        0
@@ -4727,7 +4847,7 @@
      "lon": -76.985,
      "r": [
       [
-       11,
+       6,
        "2026-10-25",
        "2026-10-27",
        0
@@ -4740,7 +4860,7 @@
      "lon": -76.98,
      "r": [
       [
-       5,
+       1,
        "2026-10-25",
        "2026-10-25",
        0
@@ -4753,13 +4873,13 @@
      "lon": -76.985,
      "r": [
       [
-       33,
+       35,
        "2026-10-25",
        null,
        1
       ],
       [
-       13,
+       15,
        "2026-10-23",
        null,
        1
@@ -4772,7 +4892,7 @@
      "lon": -76.988,
      "r": [
       [
-       34,
+       36,
        "2026-10-24",
        "2026-10-24",
        0
@@ -4785,7 +4905,7 @@
      "lon": -76.98,
      "r": [
       [
-       3,
+       5,
        "2026-10-24",
        "2026-10-28",
        0
@@ -4798,7 +4918,7 @@
      "lon": -76.986,
      "r": [
       [
-       5,
+       1,
        "2026-10-24",
        "2026-10-24",
        0
@@ -4811,13 +4931,13 @@
      "lon": -76.986,
      "r": [
       [
-       5,
+       1,
        "2026-10-24",
        "2026-10-24",
        0
       ],
       [
-       28,
+       30,
        "2026-10-24",
        "2026-10-27",
        0
@@ -4830,19 +4950,19 @@
      "lon": -76.985,
      "r": [
       [
-       35,
+       37,
        "2026-10-24",
        "2026-10-24",
        0
       ],
       [
-       3,
+       5,
        "2026-10-12",
        "2026-10-15",
        0
       ],
       [
-       11,
+       6,
        "2026-10-12",
        "2026-10-13",
        0
@@ -4855,25 +4975,25 @@
      "lon": -76.98,
      "r": [
       [
-       4,
+       10,
        "2026-10-23",
        "2026-10-26",
        0
       ],
       [
-       4,
+       10,
        "2026-10-21",
        "2026-10-22",
        0
       ],
       [
-       0,
+       3,
        "2026-10-20",
        "2026-10-20",
        0
       ],
       [
-       9,
+       13,
        "2026-10-08",
        "2026-10-08",
        0
@@ -4886,7 +5006,7 @@
      "lon": -76.99,
      "r": [
       [
-       27,
+       29,
        "2026-10-23",
        "2026-10-23",
        0
@@ -4899,7 +5019,7 @@
      "lon": -76.982,
      "r": [
       [
-       5,
+       1,
        "2026-10-23",
        "2026-10-23",
        0
@@ -4912,7 +5032,7 @@
      "lon": -76.983,
      "r": [
       [
-       11,
+       6,
        "2026-10-23",
        "2026-11-03",
        0
@@ -4925,13 +5045,13 @@
      "lon": -76.985,
      "r": [
       [
-       16,
+       18,
        "2026-10-23",
        null,
        1
       ],
       [
-       3,
+       5,
        "2026-10-13",
        "2026-10-21",
        0
@@ -4944,31 +5064,31 @@
      "lon": -76.991,
      "r": [
       [
-       15,
+       17,
        "2026-10-22",
        "2026-10-29",
        0
       ],
       [
-       3,
+       5,
        "2026-10-20",
        "2026-10-28",
        0
       ],
       [
-       43,
+       44,
        "2026-10-16",
        "2026-10-16",
        0
       ],
       [
-       3,
+       5,
        "2026-10-15",
        "2026-10-21",
        0
       ],
       [
-       3,
+       5,
        "2026-10-14",
        "2026-10-21",
        0
@@ -4981,7 +5101,7 @@
      "lon": -76.981,
      "r": [
       [
-       11,
+       6,
        "2026-10-22",
        "2026-10-30",
        0
@@ -4994,7 +5114,7 @@
      "lon": -76.984,
      "r": [
       [
-       29,
+       31,
        "2026-10-22",
        null,
        1
@@ -5007,7 +5127,7 @@
      "lon": -76.991,
      "r": [
       [
-       16,
+       18,
        "2026-10-22",
        null,
        1
@@ -5020,19 +5140,19 @@
      "lon": -76.989,
      "r": [
       [
-       5,
+       1,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       5,
+       1,
        "2026-10-20",
        "2026-10-20",
        0
       ],
       [
-       29,
+       31,
        "2026-10-16",
        "2026-11-06",
        0
@@ -5045,13 +5165,13 @@
      "lon": -76.988,
      "r": [
       [
-       5,
+       1,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       5,
+       1,
        "2026-10-21",
        "2026-10-21",
        0
@@ -5064,34 +5184,15 @@
      "lon": -76.99,
      "r": [
       [
-       0,
+       3,
        "2026-10-22",
        "2026-10-22",
-       0
-      ],
-      [
-       0,
-       "2026-10-22",
-       "2026-10-22",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "3000 block of STANTON ROAD SE",
-     "lat": 38.854,
-     "lon": -76.985,
-     "r": [
-      [
-       8,
-       "2026-10-22",
-       "2026-10-27",
        0
       ],
       [
        3,
-       "2026-10-12",
-       "2026-10-15",
+       "2026-10-22",
+       "2026-10-22",
        0
       ]
      ]
@@ -5102,7 +5203,7 @@
      "lon": -76.988,
      "r": [
       [
-       36,
+       38,
        "2026-10-22",
        "2026-10-22",
        0
@@ -5115,7 +5216,7 @@
      "lon": -76.979,
      "r": [
       [
-       8,
+       12,
        "2026-10-22",
        "2026-10-22",
        0
@@ -5128,34 +5229,15 @@
      "lon": -76.974,
      "r": [
       [
-       2,
+       8,
        "2026-10-22",
        "2026-11-02",
        0
       ],
       [
-       3,
+       5,
        "2026-10-14",
        "2026-10-21",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "2200 block of 16TH STREET SE",
-     "lat": 38.863,
-     "lon": -76.983,
-     "r": [
-      [
-       37,
-       "2026-10-22",
-       "2026-10-29",
-       0
-      ],
-      [
-       11,
-       "2026-10-13",
-       "2026-10-27",
        0
       ]
      ]
@@ -5166,25 +5248,25 @@
      "lon": -76.985,
      "r": [
       [
-       5,
+       1,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       42,
+       43,
        "2026-10-17",
        "2026-10-18",
        0
       ],
       [
-       11,
+       6,
        "2026-10-12",
        "2026-10-13",
        0
       ],
       [
-       5,
+       1,
        "2026-10-08",
        "2026-10-08",
        0
@@ -5197,7 +5279,7 @@
      "lon": -76.988,
      "r": [
       [
-       9,
+       13,
        "2026-10-22",
        "2026-10-22",
        0
@@ -5210,38 +5292,19 @@
      "lon": -76.986,
      "r": [
       [
-       5,
+       1,
        "2026-10-21",
        "2026-10-21",
        0
       ],
       [
-       5,
+       1,
        "2026-10-20",
        "2026-10-20",
        0
       ],
       [
-       21,
-       "2026-10-08",
-       "2026-10-08",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "2500 block of WEST STREET SE",
-     "lat": 38.86,
-     "lon": -76.988,
-     "r": [
-      [
-       5,
-       "2026-10-21",
-       "2026-10-21",
-       0
-      ],
-      [
-       5,
+       23,
        "2026-10-08",
        "2026-10-08",
        0
@@ -5254,7 +5317,7 @@
      "lon": -76.986,
      "r": [
       [
-       5,
+       1,
        "2026-10-21",
        "2026-10-21",
        0
@@ -5267,7 +5330,7 @@
      "lon": -76.987,
      "r": [
       [
-       3,
+       5,
        "2026-10-21",
        "2026-10-28",
        0
@@ -5280,7 +5343,7 @@
      "lon": -76.987,
      "r": [
       [
-       8,
+       12,
        "2026-10-21",
        "2026-10-29",
        0
@@ -5293,37 +5356,37 @@
      "lon": -76.992,
      "r": [
       [
-       4,
+       10,
        "2026-10-21",
        "2026-10-22",
        0
       ],
       [
-       3,
+       5,
        "2026-10-21",
        "2026-10-28",
        0
       ],
       [
-       38,
+       39,
        "2026-10-19",
        "2026-10-20",
        0
       ],
       [
-       38,
+       39,
        "2026-10-18",
        "2026-10-18",
        0
       ],
       [
-       3,
+       5,
        "2026-10-12",
        "2026-10-15",
        0
       ],
       [
-       3,
+       5,
        "2026-10-12",
        "2026-10-15",
        0
@@ -5336,34 +5399,15 @@
      "lon": -76.985,
      "r": [
       [
-       8,
+       12,
        "2026-10-21",
        "2026-10-23",
        0
       ],
       [
-       4,
+       10,
        "2026-10-20",
        "2026-10-22",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "2300 block of PITTS PLACE SE",
-     "lat": 38.86,
-     "lon": -76.985,
-     "r": [
-      [
-       0,
-       "2026-10-21",
-       "2026-10-21",
-       0
-      ],
-      [
-       0,
-       "2026-10-21",
-       "2026-10-21",
        0
       ]
      ]
@@ -5374,19 +5418,19 @@
      "lon": -76.989,
      "r": [
       [
-       24,
+       26,
        "2026-10-21",
        "2026-10-21",
        0
       ],
       [
-       24,
+       26,
        "2026-10-20",
        "2026-10-22",
        0
       ],
       [
-       40,
+       41,
        "2026-10-19",
        "2026-11-05",
        0
@@ -5399,7 +5443,7 @@
      "lon": -76.991,
      "r": [
       [
-       1,
+       9,
        "2026-10-21",
        "2026-10-21",
        0
@@ -5412,7 +5456,7 @@
      "lon": -76.986,
      "r": [
       [
-       10,
+       4,
        "2026-10-20",
        "2026-10-21",
        0
@@ -5425,13 +5469,13 @@
      "lon": -76.985,
      "r": [
       [
-       38,
+       39,
        "2026-10-20",
        "2026-10-22",
        0
       ],
       [
-       4,
+       10,
        "2026-10-13",
        "2026-10-15",
        0
@@ -5444,7 +5488,7 @@
      "lon": -76.979,
      "r": [
       [
-       3,
+       5,
        "2026-10-20",
        "2026-10-28",
        0
@@ -5457,7 +5501,7 @@
      "lon": -76.983,
      "r": [
       [
-       3,
+       5,
        "2026-10-20",
        "2026-10-28",
        0
@@ -5470,7 +5514,7 @@
      "lon": -76.981,
      "r": [
       [
-       3,
+       5,
        "2026-10-20",
        "2026-10-28",
        0
@@ -5483,7 +5527,7 @@
      "lon": -76.982,
      "r": [
       [
-       0,
+       3,
        "2026-10-20",
        "2026-10-20",
        0
@@ -5496,7 +5540,7 @@
      "lon": -76.988,
      "r": [
       [
-       5,
+       1,
        "2026-10-20",
        "2026-10-20",
        0
@@ -5509,7 +5553,7 @@
      "lon": -76.989,
      "r": [
       [
-       0,
+       3,
        "2026-10-20",
        "2026-10-20",
        0
@@ -5522,13 +5566,13 @@
      "lon": -76.979,
      "r": [
       [
-       3,
+       5,
        "2026-10-19",
        "2026-10-28",
        0
       ],
       [
-       35,
+       37,
        "2026-10-19",
        "2026-10-19",
        0
@@ -5541,22 +5585,9 @@
      "lon": -76.993,
      "r": [
       [
-       2,
+       8,
        "2026-10-19",
        "2026-10-28",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "2700 block of STANTON ROAD SE",
-     "lat": 38.857,
-     "lon": -76.987,
-     "r": [
-      [
-       4,
-       "2026-10-19",
-       "2026-10-22",
        0
       ]
      ]
@@ -5567,7 +5598,7 @@
      "lon": -76.987,
      "r": [
       [
-       4,
+       10,
        "2026-10-19",
        "2026-10-22",
        0
@@ -5580,13 +5611,13 @@
      "lon": -76.989,
      "r": [
       [
-       3,
+       5,
        "2026-10-18",
        "2026-10-21",
        0
       ],
       [
-       3,
+       5,
        "2026-10-13",
        "2026-10-21",
        0
@@ -5599,13 +5630,13 @@
      "lon": -76.989,
      "r": [
       [
-       38,
+       39,
        "2026-10-17",
        "2026-10-18",
        0
       ],
       [
-       24,
+       26,
        "2026-10-13",
        "2026-10-16",
        0
@@ -5618,7 +5649,7 @@
      "lon": -76.984,
      "r": [
       [
-       34,
+       36,
        "2026-10-17",
        "2026-10-17",
        0
@@ -5631,19 +5662,19 @@
      "lon": -76.984,
      "r": [
       [
-       41,
+       42,
        "2026-10-17",
        "2026-10-30",
        0
       ],
       [
-       35,
+       37,
        "2026-10-12",
        "2026-10-12",
        0
       ],
       [
-       11,
+       6,
        "2026-10-12",
        "2026-10-13",
        0
@@ -5656,7 +5687,7 @@
      "lon": -76.985,
      "r": [
       [
-       4,
+       10,
        "2026-10-17",
        "2026-10-19",
        0
@@ -5669,7 +5700,7 @@
      "lon": -76.983,
      "r": [
       [
-       9,
+       13,
        "2026-10-16",
        "2026-10-16",
        0
@@ -5682,7 +5713,7 @@
      "lon": -76.991,
      "r": [
       [
-       5,
+       1,
        "2026-10-16",
        "2026-10-18",
        0
@@ -5695,7 +5726,7 @@
      "lon": -76.977,
      "r": [
       [
-       43,
+       44,
        "2026-10-16",
        "2026-10-16",
        0
@@ -5708,7 +5739,7 @@
      "lon": -76.983,
      "r": [
       [
-       21,
+       23,
        "2026-10-16",
        "2026-10-19",
        0
@@ -5721,7 +5752,7 @@
      "lon": -76.984,
      "r": [
       [
-       8,
+       12,
        "2026-10-16",
        "2026-10-19",
        0
@@ -5734,7 +5765,7 @@
      "lon": -76.987,
      "r": [
       [
-       29,
+       31,
        "2026-10-16",
        null,
        1
@@ -5747,7 +5778,7 @@
      "lon": -76.988,
      "r": [
       [
-       44,
+       45,
        "2026-10-16",
        "2026-10-23",
        0
@@ -5760,63 +5791,57 @@
      "lon": -76.979,
      "r": [
       [
-       3,
+       5,
        "2026-10-16",
        "2026-10-20",
        1
       ],
       [
-       5,
+       1,
        "2026-10-13",
        "2026-10-13",
        0
       ],
       [
-       3,
+       5,
        "2026-10-13",
        "2026-10-21",
        0
       ],
       [
-       5,
+       1,
        "2026-10-12",
        "2026-10-13",
        0
       ],
       [
-       8,
+       12,
        "2026-10-12",
        "2026-10-13",
        0
       ],
       [
-       11,
+       6,
        "2026-10-11",
        "2026-10-13",
        0
       ],
       [
-       35,
+       37,
        "2026-10-08",
        "2026-10-08",
        0
       ],
       [
-       35,
+       37,
        "2026-10-08",
        "2026-10-08",
        0
       ],
       [
-       47,
+       48,
        "2026-10-08",
        "2026-10-27",
-       0
-      ],
-      [
-       8,
-       "2026-10-07",
-       "2026-10-08",
        0
       ]
      ]
@@ -5827,7 +5852,7 @@
      "lon": -76.99,
      "r": [
       [
-       5,
+       1,
        "2026-10-15",
        "2026-10-15",
        0
@@ -5840,7 +5865,7 @@
      "lon": -76.992,
      "r": [
       [
-       5,
+       1,
        "2026-10-15",
        "2026-10-15",
        0
@@ -5853,19 +5878,19 @@
      "lon": -76.99,
      "r": [
       [
-       45,
+       46,
        "2026-10-15",
        "2026-10-16",
        1
       ],
       [
-       45,
+       46,
        "2026-10-15",
        "2026-10-16",
        0
       ],
       [
-       45,
+       46,
        "2026-10-15",
        "2026-10-16",
        0
@@ -5878,7 +5903,7 @@
      "lon": -76.979,
      "r": [
       [
-       35,
+       37,
        "2026-10-15",
        "2026-10-15",
        0
@@ -5891,25 +5916,25 @@
      "lon": -76.989,
      "r": [
       [
-       5,
+       1,
        "2026-10-14",
        "2026-10-14",
        0
       ],
       [
-       5,
+       1,
        "2026-10-12",
        "2026-10-13",
        0
       ],
       [
-       38,
+       39,
        "2026-10-09",
        "2026-10-15",
        0
       ],
       [
-       35,
+       37,
        "2026-10-09",
        "2026-10-09",
        0
@@ -5922,7 +5947,7 @@
      "lon": -76.989,
      "r": [
       [
-       16,
+       18,
        "2026-10-14",
        null,
        1
@@ -5935,7 +5960,7 @@
      "lon": -76.992,
      "r": [
       [
-       8,
+       12,
        "2026-10-14",
        "2026-10-16",
        0
@@ -5948,7 +5973,7 @@
      "lon": -76.982,
      "r": [
       [
-       5,
+       1,
        "2026-10-14",
        "2026-10-14",
        0
@@ -5961,7 +5986,7 @@
      "lon": -76.993,
      "r": [
       [
-       10,
+       4,
        "2026-10-14",
        null,
        1
@@ -5974,7 +5999,7 @@
      "lon": -76.99,
      "r": [
       [
-       3,
+       5,
        "2026-10-14",
        "2026-10-21",
        0
@@ -5987,7 +6012,7 @@
      "lon": -76.978,
      "r": [
       [
-       3,
+       5,
        "2026-10-14",
        "2026-10-21",
        0
@@ -6000,7 +6025,7 @@
      "lon": -76.984,
      "r": [
       [
-       42,
+       43,
        "2026-10-14",
        "2026-10-17",
        0
@@ -6013,7 +6038,7 @@
      "lon": -76.981,
      "r": [
       [
-       3,
+       5,
        "2026-10-14",
        "2026-10-21",
        0
@@ -6026,15 +6051,9 @@
      "lon": -76.986,
      "r": [
       [
-       3,
+       5,
        "2026-10-13",
        "2026-10-21",
-       0
-      ],
-      [
-       3,
-       "2026-10-07",
-       "2026-10-15",
        0
       ]
      ]
@@ -6045,13 +6064,13 @@
      "lon": -76.991,
      "r": [
       [
-       11,
+       6,
        "2026-10-13",
        "2026-10-14",
        0
       ],
       [
-       1,
+       9,
        "2026-10-13",
        "2026-10-14",
        0
@@ -6064,7 +6083,7 @@
      "lon": -76.99,
      "r": [
       [
-       47,
+       48,
        "2026-10-13",
        "2026-10-23",
        0
@@ -6077,7 +6096,7 @@
      "lon": -76.988,
      "r": [
       [
-       3,
+       5,
        "2026-10-12",
        "2026-10-15",
        0
@@ -6090,7 +6109,7 @@
      "lon": -76.99,
      "r": [
       [
-       48,
+       49,
        "2026-10-12",
        "2026-11-03",
        0
@@ -6103,7 +6122,7 @@
      "lon": -76.988,
      "r": [
       [
-       11,
+       6,
        "2026-10-12",
        "2026-10-13",
        0
@@ -6116,7 +6135,7 @@
      "lon": -76.986,
      "r": [
       [
-       11,
+       6,
        "2026-10-12",
        "2026-10-17",
        0
@@ -6129,31 +6148,31 @@
      "lon": -76.984,
      "r": [
       [
-       11,
+       6,
        "2026-10-12",
        "2026-10-17",
        1
       ],
       [
-       1,
+       9,
        "2026-10-12",
        "2026-10-14",
        0
       ],
       [
-       11,
+       6,
        "2026-10-12",
        "2026-10-17",
        0
       ],
       [
-       21,
+       23,
        "2026-10-12",
        "2026-10-13",
        0
       ],
       [
-       38,
+       39,
        "2026-10-12",
        "2026-10-16",
        0
@@ -6166,7 +6185,7 @@
      "lon": -76.983,
      "r": [
       [
-       1,
+       9,
        "2026-10-11",
        "2026-10-13",
        0
@@ -6179,7 +6198,7 @@
      "lon": -76.982,
      "r": [
       [
-       3,
+       5,
        "2026-10-11",
        "2026-10-15",
        0
@@ -6192,7 +6211,7 @@
      "lon": -76.983,
      "r": [
       [
-       3,
+       5,
        "2026-10-10",
        "2026-10-15",
        0
@@ -6205,7 +6224,7 @@
      "lon": -76.994,
      "r": [
       [
-       19,
+       21,
        "2026-10-10",
        "2026-10-13",
        0
@@ -6218,7 +6237,7 @@
      "lon": -76.987,
      "r": [
       [
-       4,
+       10,
        "2026-10-09",
        "2026-10-13",
        0
@@ -6231,7 +6250,7 @@
      "lon": -76.99,
      "r": [
       [
-       5,
+       1,
        "2026-10-09",
        "2026-10-09",
        0
@@ -6244,7 +6263,7 @@
      "lon": -76.984,
      "r": [
       [
-       8,
+       12,
        "2026-10-09",
        "2026-10-13",
        0
@@ -6257,48 +6276,9 @@
      "lon": -76.987,
      "r": [
       [
-       11,
+       6,
        "2026-10-09",
        "2026-10-13",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1300 block of MARION BARRY AVENUE SE",
-     "lat": 38.867,
-     "lon": -76.987,
-     "r": [
-      [
-       49,
-       "2026-10-07",
-       "2026-10-07",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1100 block of CHICAGO STREET SE",
-     "lat": 38.864,
-     "lon": -76.991,
-     "r": [
-      [
-       15,
-       "2026-10-07",
-       "2026-10-15",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1700 block of W STREET SE",
-     "lat": 38.863,
-     "lon": -76.979,
-     "r": [
-      [
-       11,
-       "2026-10-07",
-       "2026-10-27",
        0
       ]
      ]
@@ -6326,14 +6306,14 @@
     "previous": 3
    },
    {
-    "offense": "MOTOR VEHICLE THEFT",
-    "count": 2,
-    "previous": 9
-   },
-   {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
     "count": 2,
     "previous": 2
+   },
+   {
+    "offense": "MOTOR VEHICLE THEFT",
+    "count": 2,
+    "previous": 9
    },
    {
     "offense": "SEX ABUSE",
@@ -6388,7 +6368,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-06T16:59:01Z",
+  "generated_at": "2026-11-07T03:11:31Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -6403,7 +6383,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Anacostia through OTR assessment sub-areas Anacostia A and Randle Heights B, and Barry Farms in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Anacostia boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-06): 77% of the 2,603 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 78% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Anacostia through OTR assessment sub-areas Anacostia A and Randle Heights B, and Barry Farms in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Anacostia boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-07): 77% of the 2,603 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 78% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -6424,20 +6404,20 @@
    "area_parcels": 2603,
    "area_share_inside": 0.768,
    "boundary_share_in_area": 0.775,
-   "measured": "2026-11-06"
+   "measured": "2026-11-07"
   },
   "primary": "house",
   "house": {
    "median_12mo": 513750,
    "count_12mo": 32,
    "median_prev_12mo": 480000,
-   "count_prev_12mo": 34
+   "count_prev_12mo": 32
   },
   "condo": {
    "median_12mo": 133500,
    "count_12mo": 6,
-   "median_prev_12mo": 154000,
-   "count_prev_12mo": 19
+   "median_prev_12mo": 150000,
+   "count_prev_12mo": 17
   },
   "last_60d": {
    "median": 412500,
@@ -6588,7 +6568,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-06T16:59:01Z",
+  "generated_at": "2026-11-07T03:11:31Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -6612,7 +6592,7 @@
    "starting_next_7d": 18,
    "reserved_ft": 9658,
    "long_running_90d": 22,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-07: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -6868,13 +6848,13 @@
     "type": "Bulk Collection",
     "median_days": 6.13,
     "city_median_days": 6.91,
-    "closed_n": 927
+    "closed_n": 926
    },
    {
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 785
+    "closed_n": 786
    },
    {
     "type": "DC Government Information",
@@ -6909,14 +6889,14 @@
    {
     "type": "Roadway Signs",
     "median_days": 2.99,
-    "city_median_days": 7.01,
+    "city_median_days": 7.02,
     "closed_n": 156
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-06T16:59:01Z",
+  "generated_at": "2026-11-07T03:11:31Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -7033,9 +7013,9 @@
    }
   },
   "archive": {
-   "week_label": "October 31 \u2013 November 6, 1926",
-   "week_start": "1926-10-31",
-   "week_end": "1926-11-06",
+   "week_label": "November 7\u201313, 1926",
+   "week_start": "1926-11-07",
+   "week_end": "1926-11-13",
    "paper": "Evening Star",
    "terms": [
     "\"Anacostia\"",
@@ -7044,40 +7024,40 @@
    ],
    "clips": [
     {
-     "date": "1926-10-31",
-     "page": 5,
-     "text": "There are 803 acres in four f>arcels one on each side of Nichols avenue, Anacostia; one in Congress Heights, and one at God ding Hall, named for a former super intendent.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-10-31/ed-1/?sp=5"
+     "date": "1926-11-07",
+     "page": 63,
+     "text": "Choral Society, Needleeraft Club, Boys\u2019 Club, Anacostia Athletic Club.",
+     "url": "https://www.loc.gov/resource/sn83045462/1926-11-07/ed-1/?sp=63"
     },
     {
-     "date": "1926-10-31",
-     "page": 23,
-     "text": "Helen ttlmstend. Anacostia Station, sends in a cartoon consisting of 16 pictures, to show the excitement caused in a latnilv with several school children by the piraffe naming con test.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-10-31/ed-1/?sp=23"
+     "date": "1926-11-08",
+     "page": 2,
+     "text": "Present accommodations in Anacostia afford rooms for only about 50 children the year around, t'nder the proposed building program.",
+     "url": "https://www.loc.gov/resource/sn83045462/1926-11-08/ed-1/?sp=2"
     },
     {
-     "date": "1926-11-02",
-     "page": 13,
-     "text": "No. 4. meeting at Fourth street and Penn sylvania avenue southeast at 8 o\u2019clock, and to Anacostia Lodge.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-02/ed-1/?sp=13"
+     "date": "1926-11-10",
+     "page": 36,
+     "text": "Manager Quienten Trotter of Renroca at Lin coln 7268 wants to hear from the pilots of Friendship, Mereurys and National Preps after 5:30 p.m. Anacostia Eagles, who will work out tonight and Friday night at 7:30 o'clock at Fourteenth street and Good Hope road southeast, are after a game Sunday with a 110 pound team.",
+     "url": "https://www.loc.gov/resource/sn83045462/1926-11-10/ed-1/?sp=36"
     },
     {
-     "date": "1926-11-04",
-     "page": 43,
-     "text": "Pointing for their game Sunday with Argyles. Anacostia Eagle Prep pigskin handlers will work out tonight at 7:30 o\u2019clock at Fourteenth street and Good Hope road southeast.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-04/ed-1/?sp=43"
+     "date": "1926-11-11",
+     "page": 35,
+     "text": "The parade will proceed north on Good Hope road to Nichols avenue, south on Nichols avenue to Pleasant street, east on Pleasant street to Val ley place, east on Valley place to fourteenth street, north or Four teenth street to Good \u2026",
+     "url": "https://www.loc.gov/resource/sn83045462/1926-11-11/ed-1/?sp=35"
     },
     {
-     "date": "1926-11-05",
-     "page": 17,
-     "text": "The visita tion to Anacostia Lodge was followed by a program of entertainment fea tures, after which supper was served by members of Electa Chapter, Order of the Eastern Star.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-05/ed-1/?sp=17"
+     "date": "1926-11-13",
+     "page": 2,
+     "text": "W. G. Tomlinson of the naval air station at Anacostia, who miracuously escaped death a few hours previously, put the Curtiss (Hawk) standard Navy fighting ship through the tests, topping them off with several neat rolls, loops and spins.",
+     "url": "https://www.loc.gov/resource/sn83045462/1926-11-13/ed-1/?sp=2"
     },
     {
-     "date": "1926-11-06",
-     "page": 32,
-     "text": "The commission established a near side car stop for northbound cars on Eleventh street at Harvard street, and an additional car stop at S street and Nichols avenue southeast.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-06/ed-1/?sp=32"
+     "date": "1926-11-13",
+     "page": 16,
+     "text": "\u2026 arc lights in Bogan Park and attracted hundreds of spectators, some of them coming from distant sections of the city to pay tribute to the enterprise of the Anacostia citizens.",
+     "url": "https://www.loc.gov/resource/sn83045462/1926-11-13/ed-1/?sp=16"
     }
    ],
    "screened": 0,
@@ -7085,7 +7065,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-06T16:59:01Z",
+  "generated_at": "2026-11-07T03:11:31Z",
   "archive_days": 180,
   "sources": [
    {
@@ -7355,11 +7335,19 @@
    "new": [],
    "cancelled": [
     {
+     "license": "ABRA-122521",
+     "trade_name": "Kitchen Savages",
+     "address": "1211 GOOD HOPE ROAD SE",
+     "type": "Restaurant",
+     "cancelled": "2026-07-08T04:00:00Z",
+     "first_seen": "2026-11-07T03:11:31Z"
+    },
+    {
      "license": "ABRA-124045",
      "trade_name": "Kitchen Savages",
      "address": "1211 GOOD HOPE ROAD SE",
      "type": "Caterer",
-     "cancelled": null,
+     "cancelled": "2025-05-14T04:00:00Z",
      "first_seen": null
     },
     {
@@ -7367,14 +7355,22 @@
      "trade_name": "King Convenience Store",
      "address": "1535 U STREET SE",
      "type": "Retail - Grocery",
-     "cancelled": null,
+     "cancelled": "2024-05-22T04:00:00Z",
      "first_seen": null
+    },
+    {
+     "license": "ABRA-108568",
+     "trade_name": "District Culture",
+     "address": "1922 MARTIN LUTHER KING JR AVENUE SE",
+     "type": "Tavern",
+     "cancelled": "2021-11-17T05:00:00Z",
+     "first_seen": "2026-11-07T03:11:31Z"
     }
    ]
   }
  },
  "events": {
-  "generated_at": "2026-11-06T16:59:01Z",
+  "generated_at": "2026-11-07T03:11:31Z",
   "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
@@ -7502,7 +7498,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-06T16:59:01Z",
+  "generated_at": "2026-11-07T03:11:31Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -7535,7 +7531,7 @@
   ],
   "lookup_errors": [],
   "leaf_status": {
-   "8A": "The first pass for Leaf collection in Section A will begin on Monday, November 2, 2026. Section A should have their leaves raked to the tree box or curbside by Sunday, November 1, 2026."
+   "8A": "The first pass for leaf collection in Section A in Wards 1-8 is underway."
   },
   "schools": {
    "dcps_417.0": {
@@ -23651,7 +23647,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-06T16:59:01Z",
+  "generated_at": "2026-11-07T03:11:31Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

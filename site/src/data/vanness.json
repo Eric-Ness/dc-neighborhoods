@@ -1,7 +1,7 @@
 {
  "slug": "vanness",
  "name": "Van Ness",
- "generated_at": "2026-11-06T16:59:01Z",
+ "generated_at": "2026-11-07T03:11:31Z",
  "boundary": {
   "source": "ANC single-member districts 3F01, 3F02 and 3F05 around the Van Ness-UDC Metro (Open Data DC). DC has no planning area named Van Ness.",
   "rings": [
@@ -3329,19 +3329,6 @@
    "smd": "3F01"
   },
   {
-   "id": "P2700267",
-   "issued": "2026-10-09T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "3566 ALTON PL NW 20008",
-   "work": "",
-   "zoning": "R-1B",
-   "lat": 38.94686,
-   "lon": -77.06945,
-   "smd": "3F05"
-  },
-  {
    "id": "SB2600218",
    "issued": "2026-10-09T04:00:00Z",
    "group": "Renovation & repair",
@@ -3355,22 +3342,22 @@
    "smd": "3F05"
   },
   {
-   "id": "D2700013",
-   "issued": "2026-10-08T04:00:00Z",
-   "group": "Demolition",
-   "type": "CONSTRUCTION",
-   "subtype": "DEMOLITION",
-   "address": "3643 ALTON PL NW 20008",
-   "work": "Removal of Kitchen appliances, cabinets and finishes, bathroom fixtures and finishes.",
+   "id": "P2700267",
+   "issued": "2026-10-09T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "3566 ALTON PL NW 20008",
+   "work": "",
    "zoning": "R-1B",
-   "lat": 38.94726,
-   "lon": -77.0716,
-   "smd": "3F01"
+   "lat": 38.94686,
+   "lon": -77.06945,
+   "smd": "3F05"
   }
  ],
  "requests": {
-  "total": 221,
-  "previous_total": 239,
+  "total": 220,
+  "previous_total": 240,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
@@ -3384,18 +3371,18 @@
    },
    {
     "type": "Bulk Collection",
-    "count": 31,
+    "count": 30,
     "previous": 27
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "count": 12,
+    "previous": 15
    },
    {
     "type": "Graffiti Removal",
     "count": 12,
     "previous": 0
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "count": 11,
-    "previous": 15
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -3416,11 +3403,6 @@
     "type": "Recycling Collection - Missed",
     "count": 4,
     "previous": 4
-   },
-   {
-    "type": "Out of State Parking Violation (ROSA)",
-    "count": 3,
-    "previous": 1
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
@@ -3481,6 +3463,11 @@
     "type": "DMV - Drivers License/ID Issues",
     "count": 2,
     "previous": 5
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "count": 2,
+    "previous": 2
    },
    {
     "type": "Dead Animal Collection",
@@ -3578,8 +3565,38 @@
     "previous": 4
    }
   ],
-  "open": 64,
+  "open": 65,
   "recent": [
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-06T18:33:01Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3000 block of ALBEMARLE STREET NW",
+    "lat": 38.948,
+    "lon": -77.062
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-06T18:09:06Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3600 block of VAN NESS STREET NW",
+    "lat": 38.943,
+    "lon": -77.071
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-06T17:16:58Z",
+    "resolved": null,
+    "status": "Open (Duplicate)",
+    "block": "3500 block of CHESAPEAKE STREET NW",
+    "lat": 38.951,
+    "lon": -77.069
+   },
    {
     "type": "Bulk Collection",
     "agency": "DPW",
@@ -4049,47 +4066,17 @@
     "block": "3600 block of UPTON STREET NW",
     "lat": 38.942,
     "lon": -77.07
-   },
-   {
-    "type": "Tree Pruning",
-    "agency": "DDOT",
-    "added": "2026-10-31T17:06:54Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "3600 block of ALTON PLACE NW",
-    "lat": 38.947,
-    "lon": -77.072
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-31T16:34:09Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4500 block of 30TH STREET NW",
-    "lat": 38.949,
-    "lon": -77.062
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-10-31T16:11:33Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3500 block of APPLETON STREET NW",
-    "lat": 38.949,
-    "lon": -77.069
    }
   ],
   "mapped": {
    "types": [
+    "Scheduled Yard Waste",
+    "Trash Collection - Missed",
     "Bulk Collection",
     "Graffiti Removal",
     "Parking Enforcement",
-    "Trash Collection - Missed",
     "Out of State Parking Violation (ROSA)",
     "Roadway Signs",
-    "Scheduled Yard Waste",
     "DMV - Drivers License/ID Issues",
     "DOEE - LIHEAP",
     "Abandoned Vehicle - On Public Property",
@@ -4127,9 +4114,9 @@
    ],
    "blocks": [
     {
-     "block": "3600 block of VEAZEY STREET NW",
-     "lat": 38.944,
-     "lon": -77.071,
+     "block": "3000 block of ALBEMARLE STREET NW",
+     "lat": 38.948,
+     "lon": -77.062,
      "r": [
       [
        0,
@@ -4138,13 +4125,112 @@
        1
       ],
       [
-       3,
+       7,
+       "2026-11-04",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "3600 block of VAN NESS STREET NW",
+     "lat": 38.943,
+     "lon": -77.071,
+     "r": [
+      [
+       1,
+       "2026-11-06",
+       null,
+       1
+      ],
+      [
+       1,
        "2026-11-05",
        null,
        1
       ],
       [
-       6,
+       1,
+       "2026-11-03",
+       "2026-11-05",
+       0
+      ],
+      [
+       2,
+       "2026-10-26",
+       "2026-10-30",
+       0
+      ],
+      [
+       1,
+       "2026-10-23",
+       "2026-10-27",
+       0
+      ],
+      [
+       2,
+       "2026-10-17",
+       "2026-10-26",
+       0
+      ],
+      [
+       2,
+       "2026-10-17",
+       "2026-10-26",
+       0
+      ],
+      [
+       2,
+       "2026-10-17",
+       "2026-10-26",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3500 block of CHESAPEAKE STREET NW",
+     "lat": 38.951,
+     "lon": -77.069,
+     "r": [
+      [
+       0,
+       "2026-11-06",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-11-03",
+       null,
+       1
+      ],
+      [
+       4,
+       "2026-10-19",
+       "2026-10-19",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3600 block of VEAZEY STREET NW",
+     "lat": 38.944,
+     "lon": -77.071,
+     "r": [
+      [
+       2,
+       "2026-11-06",
+       null,
+       1
+      ],
+      [
+       1,
+       "2026-11-05",
+       null,
+       1
+      ],
+      [
+       0,
        "2026-11-04",
        null,
        1
@@ -4156,19 +4242,19 @@
        0
       ],
       [
-       3,
+       1,
        "2026-11-03",
        "2026-11-05",
        0
       ],
       [
-       0,
+       2,
        "2026-10-29",
        "2026-11-05",
        0
       ],
       [
-       0,
+       2,
        "2026-10-23",
        "2026-10-30",
        0
@@ -4180,13 +4266,13 @@
        0
       ],
       [
-       6,
+       0,
        "2026-10-08",
        "2026-10-13",
        0
       ],
       [
-       0,
+       2,
        "2026-10-08",
        "2026-10-13",
        0
@@ -4199,19 +4285,19 @@
      "lon": -77.064,
      "r": [
       [
-       1,
+       3,
        "2026-11-05",
        null,
        1
       ],
       [
-       5,
+       6,
        "2026-11-05",
        null,
        1
       ],
       [
-       2,
+       4,
        "2026-10-24",
        "2026-10-24",
        0
@@ -4224,37 +4310,37 @@
      "lon": -77.063,
      "r": [
       [
-       1,
+       3,
        "2026-11-05",
        null,
        1
       ],
       [
-       1,
+       3,
        "2026-10-29",
        null,
        1
       ],
       [
-       2,
+       4,
        "2026-10-28",
        "2026-10-28",
        0
       ],
       [
-       2,
+       4,
        "2026-10-23",
        "2026-10-23",
        0
       ],
       [
-       2,
+       4,
        "2026-10-21",
        "2026-10-21",
        0
       ],
       [
-       2,
+       4,
        "2026-10-14",
        "2026-10-14",
        0
@@ -4267,13 +4353,13 @@
      "lon": -77.062,
      "r": [
       [
-       2,
+       4,
        "2026-11-05",
        "2026-11-05",
        0
       ],
       [
-       2,
+       4,
        "2026-11-04",
        "2026-11-05",
        0
@@ -4287,61 +4373,12 @@
      ]
     },
     {
-     "block": "3600 block of VAN NESS STREET NW",
-     "lat": 38.943,
-     "lon": -77.071,
-     "r": [
-      [
-       3,
-       "2026-11-05",
-       null,
-       1
-      ],
-      [
-       3,
-       "2026-11-03",
-       "2026-11-05",
-       0
-      ],
-      [
-       0,
-       "2026-10-26",
-       "2026-10-30",
-       0
-      ],
-      [
-       3,
-       "2026-10-23",
-       "2026-10-27",
-       0
-      ],
-      [
-       0,
-       "2026-10-17",
-       "2026-10-26",
-       0
-      ],
-      [
-       0,
-       "2026-10-17",
-       "2026-10-26",
-       0
-      ],
-      [
-       0,
-       "2026-10-17",
-       "2026-10-26",
-       0
-      ]
-     ]
-    },
-    {
      "block": "3100 block of BRANDYWINE STREET NW",
      "lat": 38.949,
      "lon": -77.063,
      "r": [
       [
-       4,
+       5,
        "2026-11-05",
        "2026-11-06",
        0
@@ -4354,7 +4391,7 @@
      "lon": -77.061,
      "r": [
       [
-       0,
+       2,
        "2026-11-05",
        null,
        1
@@ -4367,7 +4404,7 @@
      "lon": -77.062,
      "r": [
       [
-       2,
+       4,
        "2026-11-05",
        "2026-11-06",
        0
@@ -4380,7 +4417,7 @@
      "lon": -77.069,
      "r": [
       [
-       2,
+       4,
        "2026-11-05",
        "2026-11-05",
        0
@@ -4392,7 +4429,7 @@
        0
       ],
       [
-       0,
+       2,
        "2026-10-13",
        "2026-10-19",
        0
@@ -4405,29 +4442,16 @@
      "lon": -77.065,
      "r": [
       [
-       6,
+       0,
        "2026-11-05",
        null,
        1
       ],
       [
-       6,
+       0,
        "2026-10-15",
        "2026-10-20",
        0
-      ]
-     ]
-    },
-    {
-     "block": "3000 block of ALBEMARLE STREET NW",
-     "lat": 38.948,
-     "lon": -77.062,
-     "r": [
-      [
-       7,
-       "2026-11-04",
-       null,
-       1
       ]
      ]
     },
@@ -4437,13 +4461,13 @@
      "lon": -77.061,
      "r": [
       [
-       6,
+       0,
        "2026-11-04",
        null,
        1
       ],
       [
-       6,
+       0,
        "2026-10-09",
        "2026-10-13",
        0
@@ -4462,75 +4486,69 @@
      "lon": -77.061,
      "r": [
       [
-       2,
+       4,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       2,
+       4,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       2,
+       4,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       2,
+       4,
        "2026-11-03",
        "2026-11-03",
        0
       ],
       [
-       2,
+       4,
        "2026-11-02",
        "2026-11-02",
        0
       ],
       [
-       6,
+       0,
        "2026-11-02",
        null,
        1
       ],
       [
-       0,
+       2,
        "2026-11-01",
        "2026-11-05",
        0
       ],
       [
-       0,
+       2,
        "2026-10-29",
        "2026-11-05",
        0
       ],
       [
-       6,
+       0,
        "2026-10-26",
        "2026-11-03",
        0
       ],
       [
-       2,
+       4,
        "2026-10-20",
        "2026-10-20",
        0
       ],
       [
-       0,
+       2,
        "2026-10-08",
        "2026-10-19",
-       0
-      ],
-      [
-       6,
-       "2026-10-07",
-       "2026-10-13",
        0
       ]
      ]
@@ -4549,8 +4567,8 @@
       [
        20,
        "2026-10-29",
-       null,
-       1
+       "2026-11-06",
+       0
       ]
      ]
     },
@@ -4573,13 +4591,13 @@
      "lon": -77.072,
      "r": [
       [
-       3,
+       1,
        "2026-11-03",
        "2026-11-05",
        0
       ],
       [
-       6,
+       0,
        "2026-10-12",
        "2026-10-20",
        0
@@ -4605,7 +4623,7 @@
      "lon": -77.068,
      "r": [
       [
-       2,
+       4,
        "2026-11-03",
        "2026-11-03",
        0
@@ -4617,19 +4635,19 @@
        0
       ],
       [
-       2,
+       4,
        "2026-10-29",
        "2026-10-29",
        0
       ],
       [
-       2,
+       4,
        "2026-10-24",
        "2026-10-24",
        0
       ],
       [
-       2,
+       4,
        "2026-10-23",
        "2026-10-23",
        0
@@ -4641,7 +4659,7 @@
        1
       ],
       [
-       2,
+       4,
        "2026-10-21",
        "2026-10-21",
        0
@@ -4654,7 +4672,7 @@
      "lon": -77.072,
      "r": [
       [
-       6,
+       0,
        "2026-11-03",
        null,
        1
@@ -4668,55 +4686,36 @@
      ]
     },
     {
-     "block": "3500 block of CHESAPEAKE STREET NW",
-     "lat": 38.951,
-     "lon": -77.069,
-     "r": [
-      [
-       6,
-       "2026-11-03",
-       null,
-       1
-      ],
-      [
-       2,
-       "2026-10-19",
-       "2026-10-19",
-       0
-      ]
-     ]
-    },
-    {
      "block": "2900 block of UPTON STREET NW",
      "lat": 38.942,
      "lon": -77.06,
      "r": [
       [
-       0,
+       2,
        "2026-11-02",
        "2026-11-05",
        0
       ],
       [
-       6,
+       0,
        "2026-10-25",
        "2026-11-03",
        0
       ],
       [
-       6,
+       0,
        "2026-10-24",
        "2026-10-27",
        0
       ],
       [
-       6,
+       0,
        "2026-10-14",
        "2026-10-20",
        0
       ],
       [
-       6,
+       0,
        "2026-10-13",
        "2026-10-20",
        0
@@ -4729,13 +4728,13 @@
      "lon": -77.061,
      "r": [
       [
-       2,
+       4,
        "2026-11-02",
        "2026-11-02",
        0
       ],
       [
-       2,
+       4,
        "2026-11-01",
        "2026-11-01",
        0
@@ -4748,7 +4747,7 @@
      "lon": -77.068,
      "r": [
       [
-       6,
+       0,
        "2026-11-02",
        null,
        1
@@ -4761,13 +4760,13 @@
      "lon": -77.069,
      "r": [
       [
-       6,
+       0,
        "2026-11-02",
        null,
        1
       ],
       [
-       0,
+       2,
        "2026-10-22",
        "2026-10-26",
        0
@@ -4793,7 +4792,7 @@
      "lon": -77.067,
      "r": [
       [
-       6,
+       0,
        "2026-11-02",
        null,
        1
@@ -4812,7 +4811,7 @@
        1
       ],
       [
-       2,
+       4,
        "2026-11-02",
        "2026-11-02",
        0
@@ -4831,13 +4830,13 @@
      "lon": -77.071,
      "r": [
       [
-       6,
+       0,
        "2026-11-01",
        null,
        1
       ],
       [
-       6,
+       0,
        "2026-10-10",
        "2026-10-13",
        0
@@ -4850,7 +4849,7 @@
      "lon": -77.072,
      "r": [
       [
-       0,
+       2,
        "2026-11-01",
        "2026-11-05",
        0
@@ -4863,7 +4862,7 @@
      "lon": -77.07,
      "r": [
       [
-       6,
+       0,
        "2026-10-31",
        null,
        1
@@ -4876,13 +4875,13 @@
      "lon": -77.07,
      "r": [
       [
-       6,
+       0,
        "2026-10-31",
        null,
        1
       ],
       [
-       6,
+       0,
        "2026-10-31",
        null,
        1
@@ -4908,19 +4907,19 @@
      "lon": -77.062,
      "r": [
       [
-       6,
+       0,
        "2026-10-31",
        null,
        1
       ],
       [
-       6,
+       0,
        "2026-10-16",
        "2026-10-20",
        0
       ],
       [
-       0,
+       2,
        "2026-10-16",
        "2026-10-26",
        0
@@ -4939,19 +4938,19 @@
      "lon": -77.069,
      "r": [
       [
-       6,
+       0,
        "2026-10-31",
        null,
        1
       ],
       [
-       6,
+       0,
        "2026-10-18",
        "2026-10-27",
        0
       ],
       [
-       6,
+       0,
        "2026-10-10",
        "2026-10-13",
        0
@@ -4964,13 +4963,13 @@
      "lon": -77.067,
      "r": [
       [
-       2,
+       4,
        "2026-10-31",
        "2026-10-31",
        0
       ],
       [
-       2,
+       4,
        "2026-10-10",
        "2026-10-10",
        0
@@ -5007,7 +5006,7 @@
        0
       ],
       [
-       2,
+       4,
        "2026-10-08",
        "2026-10-08",
        0
@@ -5032,7 +5031,7 @@
      "lon": -77.071,
      "r": [
       [
-       2,
+       4,
        "2026-10-30",
        "2026-10-30",
        0
@@ -5044,7 +5043,7 @@
        0
       ],
       [
-       2,
+       4,
        "2026-10-13",
        "2026-10-13",
        0
@@ -5065,17 +5064,17 @@
       [
        16,
        "2026-10-30",
-       null,
-       1
+       "2026-11-06",
+       0
       ],
       [
-       2,
+       4,
        "2026-10-27",
        "2026-10-27",
        0
       ],
       [
-       2,
+       4,
        "2026-10-16",
        "2026-10-16",
        0
@@ -5088,37 +5087,37 @@
      "lon": -77.064,
      "r": [
       [
-       6,
+       0,
        "2026-10-30",
        null,
        1
       ],
       [
-       0,
+       2,
        "2026-10-26",
        "2026-10-30",
        0
       ],
       [
-       6,
+       0,
        "2026-10-23",
        "2026-10-27",
        0
       ],
       [
-       0,
+       2,
        "2026-10-20",
        "2026-10-26",
        0
       ],
       [
-       6,
+       0,
        "2026-10-16",
        "2026-10-20",
        0
       ],
       [
-       6,
+       0,
        "2026-10-09",
        "2026-10-13",
        0
@@ -5131,7 +5130,7 @@
      "lon": -77.072,
      "r": [
       [
-       5,
+       6,
        "2026-10-29",
        null,
        1
@@ -5144,7 +5143,7 @@
      "lon": -77.067,
      "r": [
       [
-       5,
+       6,
        "2026-10-29",
        null,
        1
@@ -5163,25 +5162,25 @@
      "lon": -77.065,
      "r": [
       [
-       1,
+       3,
        "2026-10-29",
        "2026-11-02",
        1
       ],
       [
-       1,
+       3,
        "2026-10-29",
        "2026-11-02",
        1
       ],
       [
-       1,
+       3,
        "2026-10-29",
        "2026-11-02",
        1
       ],
       [
-       1,
+       3,
        "2026-10-15",
        "2026-11-02",
        0
@@ -5194,7 +5193,7 @@
      "lon": -77.063,
      "r": [
       [
-       1,
+       3,
        "2026-10-29",
        null,
        1
@@ -5213,7 +5212,7 @@
        0
       ],
       [
-       5,
+       6,
        "2026-10-28",
        null,
        1
@@ -5226,7 +5225,7 @@
      "lon": -77.065,
      "r": [
       [
-       1,
+       3,
        "2026-10-29",
        null,
        1
@@ -5239,7 +5238,7 @@
      "lon": -77.068,
      "r": [
       [
-       1,
+       3,
        "2026-10-29",
        null,
        1
@@ -5252,7 +5251,7 @@
      "lon": -77.058,
      "r": [
       [
-       6,
+       0,
        "2026-10-29",
        "2026-11-03",
        0
@@ -5277,13 +5276,13 @@
        1
       ],
       [
-       5,
+       6,
        "2026-10-15",
        null,
        1
       ],
       [
-       2,
+       4,
        "2026-10-13",
        "2026-10-13",
        0
@@ -5302,7 +5301,7 @@
        0
       ],
       [
-       1,
+       3,
        "2026-10-28",
        null,
        1
@@ -5333,7 +5332,7 @@
      "lon": -77.064,
      "r": [
       [
-       2,
+       4,
        "2026-10-27",
        "2026-10-27",
        0
@@ -5385,7 +5384,7 @@
      "lon": -77.061,
      "r": [
       [
-       2,
+       4,
        "2026-10-26",
        "2026-10-26",
        0
@@ -5404,7 +5403,7 @@
      "lon": -77.063,
      "r": [
       [
-       6,
+       0,
        "2026-10-26",
        "2026-11-03",
        0
@@ -5443,7 +5442,7 @@
      "lon": -77.07,
      "r": [
       [
-       0,
+       2,
        "2026-10-24",
        "2026-10-30",
        0
@@ -5469,19 +5468,19 @@
      "lon": -77.066,
      "r": [
       [
-       2,
+       4,
        "2026-10-24",
        "2026-10-24",
        0
       ],
       [
-       2,
+       4,
        "2026-10-20",
        "2026-10-20",
        0
       ],
       [
-       2,
+       4,
        "2026-10-16",
        "2026-10-16",
        0
@@ -5500,13 +5499,13 @@
      "lon": -77.067,
      "r": [
       [
-       2,
+       4,
        "2026-10-24",
        "2026-10-24",
        0
       ],
       [
-       2,
+       4,
        "2026-10-17",
        "2026-10-17",
        0
@@ -5525,13 +5524,13 @@
        0
       ],
       [
-       2,
+       4,
        "2026-10-16",
        "2026-10-16",
        0
       ],
       [
-       6,
+       0,
        "2026-10-13",
        "2026-10-20",
        0
@@ -5557,7 +5556,7 @@
      "lon": -77.06,
      "r": [
       [
-       0,
+       2,
        "2026-10-23",
        "2026-10-30",
        0
@@ -5570,7 +5569,7 @@
      "lon": -77.068,
      "r": [
       [
-       0,
+       2,
        "2026-10-22",
        "2026-10-26",
        0
@@ -5582,7 +5581,7 @@
        0
       ],
       [
-       2,
+       4,
        "2026-10-08",
        "2026-10-08",
        0
@@ -5595,7 +5594,7 @@
      "lon": -77.063,
      "r": [
       [
-       6,
+       0,
        "2026-10-22",
        "2026-10-27",
        0
@@ -5640,7 +5639,7 @@
      "lon": -77.072,
      "r": [
       [
-       0,
+       2,
        "2026-10-21",
        "2026-10-26",
        0
@@ -5653,7 +5652,7 @@
      "lon": -77.071,
      "r": [
       [
-       0,
+       2,
        "2026-10-21",
        "2026-10-26",
        0
@@ -5692,13 +5691,13 @@
      "lon": -77.059,
      "r": [
       [
-       6,
+       0,
        "2026-10-20",
        "2026-10-27",
        0
       ],
       [
-       6,
+       0,
        "2026-10-09",
        "2026-10-13",
        0
@@ -5711,7 +5710,7 @@
      "lon": -77.061,
      "r": [
       [
-       0,
+       2,
        "2026-10-20",
        "2026-10-26",
        0
@@ -5724,19 +5723,19 @@
      "lon": -77.071,
      "r": [
       [
-       0,
+       2,
        "2026-10-20",
        "2026-10-26",
        0
       ],
       [
-       0,
+       2,
        "2026-10-13",
        "2026-10-19",
        0
       ],
       [
-       0,
+       2,
        "2026-10-08",
        "2026-10-13",
        0
@@ -5749,7 +5748,7 @@
      "lon": -77.066,
      "r": [
       [
-       4,
+       5,
        "2026-10-20",
        "2026-10-21",
        0
@@ -5768,7 +5767,7 @@
      "lon": -77.07,
      "r": [
       [
-       3,
+       1,
        "2026-10-19",
        "2026-10-22",
        0
@@ -5794,7 +5793,7 @@
      "lon": -77.07,
      "r": [
       [
-       6,
+       0,
        "2026-10-19",
        "2026-10-27",
        0
@@ -5826,13 +5825,13 @@
      "lon": -77.066,
      "r": [
       [
-       2,
+       4,
        "2026-10-19",
        "2026-10-19",
        0
       ],
       [
-       2,
+       4,
        "2026-10-08",
        "2026-10-08",
        0
@@ -5845,7 +5844,7 @@
      "lon": -77.063,
      "r": [
       [
-       6,
+       0,
        "2026-10-17",
        "2026-10-20",
        0
@@ -5858,7 +5857,7 @@
      "lon": -77.061,
      "r": [
       [
-       6,
+       0,
        "2026-10-17",
        "2026-10-20",
        0
@@ -5890,7 +5889,7 @@
        1
       ],
       [
-       6,
+       0,
        "2026-10-16",
        "2026-10-20",
        0
@@ -5903,7 +5902,7 @@
      "lon": -77.072,
      "r": [
       [
-       0,
+       2,
        "2026-10-15",
        "2026-10-19",
        0
@@ -5916,7 +5915,7 @@
      "lon": -77.064,
      "r": [
       [
-       1,
+       3,
        "2026-10-15",
        "2026-11-02",
        0
@@ -5929,7 +5928,7 @@
      "lon": -77.063,
      "r": [
       [
-       3,
+       1,
        "2026-10-14",
        "2026-10-15",
        0
@@ -5942,7 +5941,7 @@
      "lon": -77.068,
      "r": [
       [
-       0,
+       2,
        "2026-10-14",
        "2026-10-19",
        0
@@ -5951,12 +5950,6 @@
        10,
        "2026-10-08",
        "2026-10-13",
-       0
-      ],
-      [
-       4,
-       "2026-10-07",
-       "2026-10-08",
        0
       ]
      ]
@@ -5967,7 +5960,7 @@
      "lon": -77.072,
      "r": [
       [
-       6,
+       0,
        "2026-10-13",
        "2026-10-20",
        0
@@ -5986,7 +5979,7 @@
      "lon": -77.064,
      "r": [
       [
-       3,
+       1,
        "2026-10-13",
        "2026-10-14",
        0
@@ -6038,7 +6031,7 @@
      "lon": -77.059,
      "r": [
       [
-       3,
+       1,
        "2026-10-13",
        "2026-10-14",
        0
@@ -6051,7 +6044,7 @@
      "lon": -77.059,
      "r": [
       [
-       6,
+       0,
        "2026-10-12",
        "2026-10-20",
        0
@@ -6101,7 +6094,7 @@
        0
       ],
       [
-       3,
+       1,
        "2026-10-08",
        "2026-10-09",
        0
@@ -6127,7 +6120,7 @@
      "lon": -77.07,
      "r": [
       [
-       6,
+       0,
        "2026-10-09",
        "2026-10-13",
        0
@@ -6140,28 +6133,9 @@
      "lon": -77.065,
      "r": [
       [
-       2,
+       4,
        "2026-10-08",
        "2026-10-08",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "2900 block of TILDEN STREET NW",
-     "lat": 38.941,
-     "lon": -77.06,
-     "r": [
-      [
-       6,
-       "2026-10-07",
-       "2026-10-13",
-       0
-      ],
-      [
-       0,
-       "2026-10-07",
-       "2026-10-13",
        0
       ]
      ]
@@ -6214,7 +6188,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-06T16:59:01Z",
+  "generated_at": "2026-11-07T03:11:31Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -6229,7 +6203,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Van Ness through OTR assessment neighborhoods Forest Hills, Wakefield and North Cleveland Park in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Van Ness boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-06): 46% of the 3,957 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Van Ness through OTR assessment neighborhoods Forest Hills, Wakefield and North Cleveland Park in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Van Ness boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-07): 46% of the 3,957 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -6250,14 +6224,14 @@
    "area_parcels": 3957,
    "area_share_inside": 0.455,
    "boundary_share_in_area": 1.0,
-   "measured": "2026-11-06"
+   "measured": "2026-11-07"
   },
   "primary": "house",
   "house": {
    "median_12mo": 1820000,
    "count_12mo": 72,
-   "median_prev_12mo": 1800000,
-   "count_prev_12mo": 51
+   "median_prev_12mo": 1895000,
+   "count_prev_12mo": 49
   },
   "condo": {
    "median_12mo": 320000,
@@ -6522,7 +6496,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-06T16:59:01Z",
+  "generated_at": "2026-11-07T03:11:31Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -6546,7 +6520,7 @@
    "starting_next_7d": 1,
    "reserved_ft": 4466,
    "long_running_90d": 7,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-06: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-07: newest permit issued 2026-11-06, newest record update 2026-11-06, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Dumpsters",
@@ -6684,7 +6658,7 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 3.98,
-    "city_median_days": 4.78,
+    "city_median_days": 4.76,
     "closed_n": 187
    },
    {
@@ -6696,7 +6670,7 @@
    {
     "type": "Roadway Signs",
     "median_days": 65.13,
-    "city_median_days": 7.01,
+    "city_median_days": 7.02,
     "closed_n": 43
    },
    {
@@ -6709,7 +6683,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-06T16:59:01Z",
+  "generated_at": "2026-11-07T03:11:31Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -6826,9 +6800,9 @@
    }
   },
   "archive": {
-   "week_label": "October 31 \u2013 November 6, 1926",
-   "week_start": "1926-10-31",
-   "week_end": "1926-11-06",
+   "week_label": "November 7\u201313, 1926",
+   "week_start": "1926-11-07",
+   "week_end": "1926-11-13",
    "paper": "Evening Star",
    "terms": [
     "\"North Cleveland Park\"",
@@ -6836,26 +6810,13 @@
     "\"Van Ness street\"",
     "\"Forest Hills\""
    ],
-   "clips": [
-    {
-     "date": "1926-11-04",
-     "page": 3,
-     "text": "\u2026 were injured last night when the automo j bile in which thA- were riding was j struck by a street car and thrown i against a tree at Connecticut avenue land Van Ness street.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-04/ed-1/?sp=3"
-    },
-    {
-     "date": "1926-11-06",
-     "page": 39,
-     "text": "Drive out Connecticut ave. to Van Ness st., west to 58th st., north one block on 38th to Warren st., or Wisconsin ave. to War ren. east on Warren to 38th st. Any Broker or Owner.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-06/ed-1/?sp=39"
-    }
-   ],
+   "clips": [],
    "screened": 0,
-   "note": "Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
+   "note": "No usable mentions in the Evening Star for November 7\u201313, 1926 (10 matching pages searched). Some weeks a neighborhood just isn't in the paper. Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
   }
  },
  "news": {
-  "generated_at": "2026-11-06T16:59:01Z",
+  "generated_at": "2026-11-07T03:11:31Z",
   "archive_days": 180,
   "sources": [
    {
@@ -7162,27 +7123,11 @@
    "new": [],
    "cancelled": [
     {
-     "license": "ABRA-113397",
-     "trade_name": "Soul Mega",
-     "address": "4221 CONNECTICUT AVENUE NW",
-     "type": "Wholesaler",
-     "cancelled": null,
-     "first_seen": null
-    },
-    {
      "license": "ABRA-123273",
      "trade_name": "Somm Cellars",
      "address": "4221 CONNECTICUT AVENUE NW",
      "type": "Internet",
-     "cancelled": null,
-     "first_seen": null
-    },
-    {
-     "license": "ABRA-117406",
-     "trade_name": "Rose Creek Wine",
-     "address": "4221 CONNECTICUT AVENUE NW",
-     "type": "Internet",
-     "cancelled": null,
+     "cancelled": "2024-05-08T04:00:00Z",
      "first_seen": null
     },
     {
@@ -7190,7 +7135,23 @@
      "trade_name": "Lot 33 Wine Company",
      "address": "4221 CONNECTICUT AVENUE NW",
      "type": "Internet",
-     "cancelled": null,
+     "cancelled": "2024-05-08T04:00:00Z",
+     "first_seen": null
+    },
+    {
+     "license": "ABRA-117406",
+     "trade_name": "Rose Creek Wine",
+     "address": "4221 CONNECTICUT AVENUE NW",
+     "type": "Internet",
+     "cancelled": "2024-03-13T04:00:00Z",
+     "first_seen": null
+    },
+    {
+     "license": "ABRA-113397",
+     "trade_name": "Soul Mega",
+     "address": "4221 CONNECTICUT AVENUE NW",
+     "type": "Wholesaler",
+     "cancelled": "2023-11-15T05:00:00Z",
      "first_seen": null
     },
     {
@@ -7198,14 +7159,94 @@
      "trade_name": "Laliguras Indian & Nepali Bistro",
      "address": "4221 CONNECTICUT AVENUE NW",
      "type": "Restaurant",
-     "cancelled": null,
+     "cancelled": "2023-09-20T04:00:00Z",
      "first_seen": null
+    },
+    {
+     "license": "ABRA-117634",
+     "trade_name": "Widget Wine",
+     "address": "4221 CONNECTICUT AVENUE NW",
+     "type": "Internet",
+     "cancelled": "2023-05-10T04:00:00Z",
+     "first_seen": "2026-11-07T03:11:31Z"
+    },
+    {
+     "license": "ABRA-117873",
+     "trade_name": "Craft Spirits Monthly",
+     "address": "4221 CONNECTICUT AVENUE NW",
+     "type": "Internet",
+     "cancelled": "2023-04-05T04:00:00Z",
+     "first_seen": "2026-11-07T03:11:31Z"
+    },
+    {
+     "license": "ABRA-117009",
+     "trade_name": "Ikavina Wine and Spirits, LLC",
+     "address": "4221 CONNECTICUT AVENUE NW",
+     "type": "Wholesaler",
+     "cancelled": "2022-11-02T04:00:00Z",
+     "first_seen": "2026-11-07T03:11:31Z"
+    },
+    {
+     "license": "ABRA-089590",
+     "trade_name": "Direct du Domaine",
+     "address": "4221 CONNECTICUT AVENUE NW",
+     "type": "Wholesaler",
+     "cancelled": "2022-11-02T04:00:00Z",
+     "first_seen": "2026-11-07T03:11:31Z"
+    },
+    {
+     "license": "ABRA-112287",
+     "trade_name": "Somm Stock",
+     "address": "4221 CONNECTICUT AVENUE NW",
+     "type": "Internet",
+     "cancelled": "2022-10-05T04:00:00Z",
+     "first_seen": "2026-11-07T03:11:31Z"
+    },
+    {
+     "license": "ABRA-080916",
+     "trade_name": "Acacia",
+     "address": "4340 CONNECTICUT AVENUE NW",
+     "type": "Restaurant",
+     "cancelled": "2022-07-27T04:00:00Z",
+     "first_seen": "2026-11-07T03:11:31Z"
+    },
+    {
+     "license": "ABRA-075977",
+     "trade_name": "First Vine",
+     "address": "4221 CONNECTICUT AVENUE NW",
+     "type": "Internet",
+     "cancelled": "2022-03-23T04:00:00Z",
+     "first_seen": "2026-11-07T03:11:31Z"
+    },
+    {
+     "license": "ABRA-088557",
+     "trade_name": "Sushi Para",
+     "address": "4221 CONNECTICUT AVENUE NW",
+     "type": "Restaurant",
+     "cancelled": "2022-03-16T04:00:00Z",
+     "first_seen": "2026-11-07T03:11:31Z"
+    },
+    {
+     "license": "ABRA-115985",
+     "trade_name": "Tesoro Trattoria & Pizzeria",
+     "address": "4400 CONNECTICUT AVENUE NW",
+     "type": "Restaurant",
+     "cancelled": "2021-11-17T05:00:00Z",
+     "first_seen": "2026-11-07T03:11:31Z"
+    },
+    {
+     "license": "ABRA-116969",
+     "trade_name": "Squash Club DC",
+     "address": "4221 CONNECTICUT AVENUE NW",
+     "type": "Internet",
+     "cancelled": "2021-11-17T05:00:00Z",
+     "first_seen": "2026-11-07T03:11:31Z"
     }
    ]
   }
  },
  "events": {
-  "generated_at": "2026-11-06T16:59:01Z",
+  "generated_at": "2026-11-07T03:11:31Z",
   "today": "2026-11-06",
   "days_ahead": 30,
   "sources": [
@@ -7334,7 +7375,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-06T16:59:01Z",
+  "generated_at": "2026-11-07T03:11:31Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -7367,8 +7408,8 @@
   ],
   "lookup_errors": [],
   "leaf_status": {
-   "3C": "We have not reached your section yet. Each section will receive two weekends\u2019 notice of when to rake your leaves to the tree box or curb. Please check back on Friday for an update on our collection schedule.",
-   "3A": "The first pass for Leaf collection in Section A will begin on Monday, November 2, 2026. Section A should have their leaves raked to the tree box or curbside by Sunday, November 1, 2026."
+   "3C": "We have not reached your section yet. Each section will receive two weekends\u2019 notice of when to rake your leaves to the tree box or curb. Please check back on Fridays for an update on our collection schedule.",
+   "3A": "The first pass for leaf collection in Section A in Wards 1-8 is underway."
   },
   "schools": {
    "dcps_287.0": {
@@ -17354,7 +17395,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-06T16:59:01Z",
+  "generated_at": "2026-11-07T03:11:31Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
