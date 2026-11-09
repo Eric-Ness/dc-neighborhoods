@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: "15 9 * * *" # 05:15 Eastern (EDT), after DC's overnight dataset refresh
   workflow_dispatch:
+  # A push rebuilds and redeploys from the data already committed; only the nightly run (and a manual run) fetches
+  # DC's data again. The full ingest takes about an hour, so running it on every push used up the private repo's
+  # Actions minutes (22 pushes in early November 2026 cost about 1,000 minutes). To try a change to ingest/ right
+  # away, run the workflow by hand from the Actions tab.
   push:
     branches: [main]
     paths: ["site/**", "worker/**", "ingest/**", "wrangler.jsonc"]
@@ -18,7 +22,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 150  # 23 neighborhoods take about 60 minutes; DC retries can add more
+    timeout-minutes: 150  # 23 neighborhoods take about 60 minutes; DC retries can add more (a push run takes a few)
     env:
       # Until the Cloudflare token is added as a repo secret, ingest and build still run; only deploy is skipped.
       HAS_CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
@@ -26,6 +30,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v5
+        if: github.event_name != 'push'
         with:
           python-version: "3.13"
 
@@ -33,11 +38,12 @@ jobs:
       # deploys the last good snapshot (the site flags data older than 3 days) and fails at the end, so GitHub emails you.
       - name: Ingest DC open data
         id: ingest
+        if: github.event_name != 'push'
         continue-on-error: true
         run: python ingest/run.py --check
 
       - name: Fall back to the last good snapshot
-        if: steps.ingest.outcome != 'success'
+        if: steps.ingest.outcome == 'failure'
         run: |
           git checkout -- site/src/data
           echo "::warning::Ingest failed; deploying the last committed data instead."
@@ -97,7 +103,7 @@ jobs:
           printf '%s' "$WMATA_API_KEY" | npx --yes wrangler@4.156.0 secret put WMATA_API_KEY
 
       - name: Report a failed ingest
-        if: steps.ingest.outcome != 'success'
+        if: steps.ingest.outcome == 'failure'
         run: |
           echo "::error::Tonight's ingest failed (see the Ingest step). The site was redeployed with the last good data."
           exit 1
