@@ -1,7 +1,7 @@
 {
  "slug": "takoma",
  "name": "Takoma",
- "generated_at": "2026-11-08T09:17:54Z",
+ "generated_at": "2026-11-09T09:23:16Z",
  "boundary": {
   "source": "ANC single-member districts 4A01, 4A02, 4A03, 4B01, 4B02, 4B03 and 4B04, the DC side of Takoma plus Shepherd Park and the Parks at Walter Reed (Open Data DC). Takoma Park, Maryland, is not included. DC's planning areas split this ground: Takoma Metro falls in BRIGHTWOOD, not SHEPHERD PARK.",
   "rings": [
@@ -8349,56 +8349,17 @@
    "smd": "4A02"
   },
   {
-   "id": "HO2700064",
-   "issued": "2026-10-12T04:00:00Z",
-   "group": "Home businesses",
-   "type": "HOME OCCUPATION",
-   "subtype": "NA",
-   "address": "7031 16TH ST NW 20012",
-   "work": "",
-   "zoning": "R-1B",
-   "lat": 38.976,
-   "lon": -77.03601,
-   "smd": "4A02"
-  },
-  {
-   "id": "EG2700177",
+   "id": "PP2700179",
    "issued": "2026-10-12T04:00:00Z",
    "group": "Minor work",
    "type": "POST CARD",
-   "subtype": "ELECTRICAL - GENERAL",
+   "subtype": "PLUMBING",
    "address": "6600 LUZON AVE NW 20012",
    "work": "",
    "zoning": "RA-1",
    "lat": 38.97049,
    "lon": -77.03303,
    "smd": "4A03"
-  },
-  {
-   "id": "GF2700178",
-   "issued": "2026-10-12T04:00:00Z",
-   "group": "Minor work",
-   "type": "POST CARD",
-   "subtype": "GAS FITTING",
-   "address": "6600 LUZON AVE NW 20012",
-   "work": "",
-   "zoning": "RA-1",
-   "lat": 38.97049,
-   "lon": -77.03303,
-   "smd": "4A03"
-  },
-  {
-   "id": "P2700304",
-   "issued": "2026-10-12T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "1601 NORTH PORTAL DR NW 20012",
-   "work": "",
-   "zoning": "R-1A",
-   "lat": 38.99224,
-   "lon": -77.03677,
-   "smd": "4A01"
   },
   {
    "id": "P2700306",
@@ -8414,57 +8375,91 @@
    "smd": "4A01"
   },
   {
-   "id": "PP2700179",
+   "id": "P2700304",
+   "issued": "2026-10-12T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "1601 NORTH PORTAL DR NW 20012",
+   "work": "",
+   "zoning": "R-1A",
+   "lat": 38.99224,
+   "lon": -77.03677,
+   "smd": "4A01"
+  },
+  {
+   "id": "GF2700178",
    "issued": "2026-10-12T04:00:00Z",
    "group": "Minor work",
    "type": "POST CARD",
-   "subtype": "PLUMBING",
+   "subtype": "GAS FITTING",
    "address": "6600 LUZON AVE NW 20012",
    "work": "",
    "zoning": "RA-1",
    "lat": 38.97049,
    "lon": -77.03303,
    "smd": "4A03"
+  },
+  {
+   "id": "EG2700177",
+   "issued": "2026-10-12T04:00:00Z",
+   "group": "Minor work",
+   "type": "POST CARD",
+   "subtype": "ELECTRICAL - GENERAL",
+   "address": "6600 LUZON AVE NW 20012",
+   "work": "",
+   "zoning": "RA-1",
+   "lat": 38.97049,
+   "lon": -77.03303,
+   "smd": "4A03"
+  },
+  {
+   "id": "HO2700064",
+   "issued": "2026-10-12T04:00:00Z",
+   "group": "Home businesses",
+   "type": "HOME OCCUPATION",
+   "subtype": "NA",
+   "address": "7031 16TH ST NW 20012",
+   "work": "",
+   "zoning": "R-1B",
+   "lat": 38.976,
+   "lon": -77.03601,
+   "smd": "4A02"
   }
  ],
  "requests": {
-  "total": 1068,
-  "previous_total": 1240,
+  "total": 1089,
+  "previous_total": 1211,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 179,
-    "previous": 190
+    "count": 191,
+    "previous": 187
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 124,
-    "previous": 139
+    "count": 122,
+    "previous": 140
    },
    {
     "type": "Parking Enforcement",
-    "count": 98,
-    "previous": 149
-   },
-   {
-    "type": "Tree Planting",
-    "count": 44,
-    "previous": 33
+    "count": 97,
+    "previous": 146
    },
    {
     "type": "Roadway Signs",
-    "count": 42,
-    "previous": 58
+    "count": 48,
+    "previous": 55
+   },
+   {
+    "type": "Tree Planting",
+    "count": 47,
+    "previous": 33
    },
    {
     "type": "Residential Parking Permit Violation",
-    "count": 35,
-    "previous": 23
-   },
-   {
-    "type": "Trash Collection - Missed",
     "count": 34,
-    "previous": 60
+    "previous": 21
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -8472,8 +8467,18 @@
     "previous": 41
    },
    {
+    "type": "Trash Collection - Missed",
+    "count": 33,
+    "previous": 58
+   },
+   {
     "type": "Traffic Lights and Pedestrian Walk Signals",
-    "count": 29,
+    "count": 30,
+    "previous": 26
+   },
+   {
+    "type": "Dead Animal Collection",
+    "count": 27,
     "previous": 27
    },
    {
@@ -8482,19 +8487,9 @@
     "previous": 37
    },
    {
-    "type": "Dead Animal Collection",
-    "count": 27,
-    "previous": 27
-   },
-   {
     "type": "DOEE - LIHEAP",
     "count": 27,
-    "previous": 2
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "count": 26,
-    "previous": 19
+    "previous": 0
    },
    {
     "type": "Tree Pruning",
@@ -8502,59 +8497,64 @@
     "previous": 44
    },
    {
+    "type": "Sanitation Enforcement",
+    "count": 26,
+    "previous": 20
+   },
+   {
     "type": "Tree Inspection",
     "count": 23,
-    "previous": 21
+    "previous": 17
    },
    {
     "type": "Supercan - Delivery",
-    "count": 20,
-    "previous": 13
+    "count": 21,
+    "previous": 12
    },
    {
     "type": "Public Space Litter Can-Collection",
-    "count": 20,
+    "count": 21,
     "previous": 7
    },
    {
     "type": "Graffiti Removal",
-    "count": 18,
+    "count": 20,
     "previous": 13
    },
    {
     "type": "DOB - Vacant Private Property Inspection",
-    "count": 15,
-    "previous": 11
+    "count": 16,
+    "previous": 10
    },
    {
     "type": "Streetlight Repair Investigation",
-    "count": 15,
+    "count": 16,
     "previous": 15
    },
    {
     "type": "Recycling Collection - Missed",
     "count": 15,
-    "previous": 51
-   },
-   {
-    "type": "DMV - Drivers License/ID Issues",
-    "count": 13,
-    "previous": 11
-   },
-   {
-    "type": "DC Government Information",
-    "count": 13,
-    "previous": 4
+    "previous": 50
    },
    {
     "type": "Sidewalk Repair",
+    "count": 13,
+    "previous": 23
+   },
+   {
+    "type": "DC Government Information",
     "count": 12,
-    "previous": 24
+    "previous": 5
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "count": 12,
+    "previous": 12
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
     "count": 12,
-    "previous": 13
+    "previous": 11
    },
    {
     "type": "Recycling Cart Delivery",
@@ -8579,17 +8579,12 @@
    {
     "type": "DMV - Vehicle Registration Issues",
     "count": 8,
-    "previous": 9
+    "previous": 8
    },
    {
     "type": "Rat Replacement Containers",
     "count": 8,
     "previous": 3
-   },
-   {
-    "type": "Traffic Safety Input",
-    "count": 7,
-    "previous": 12
    },
    {
     "type": "Tree Removal",
@@ -8599,7 +8594,12 @@
    {
     "type": "Public Space Inspection",
     "count": 6,
-    "previous": 9
+    "previous": 8
+   },
+   {
+    "type": "Traffic Safety Input",
+    "count": 6,
+    "previous": 13
    },
    {
     "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
@@ -8609,7 +8609,7 @@
    {
     "type": "Missed Curbside Compost Collection",
     "count": 6,
-    "previous": 10
+    "previous": 6
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -8649,7 +8649,7 @@
    {
     "type": "DMV - Online Processing Issues",
     "count": 3,
-    "previous": 5
+    "previous": 4
    },
    {
     "type": "Trash Cart Repair",
@@ -8752,8 +8752,408 @@
     "previous": 0
    }
   ],
-  "open": 239,
+  "open": 274,
   "recent": [
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-09T03:26:06Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1300 block of IRIS STREET NW",
+    "lat": 38.982,
+    "lon": -77.031
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-09T02:05:44Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1300 block of LOCUST ROAD NW",
+    "lat": 38.986,
+    "lon": -77.033
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-09T00:59:16Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "900 block of BUTTERNUT STREET NW",
+    "lat": 38.974,
+    "lon": -77.026
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-09T00:31:23Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "7800 block of 12TH STREET NW",
+    "lat": 38.985,
+    "lon": -77.028
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-08T23:42:51Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "7500 block of 12TH STREET NW",
+    "lat": 38.981,
+    "lon": -77.028
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-08T23:23:46Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "7000 block of 5TH STREET NW",
+    "lat": 38.976,
+    "lon": -77.02
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-08T22:28:20Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "7200 block of 8TH STREET NW",
+    "lat": 38.977,
+    "lon": -77.024
+   },
+   {
+    "type": "Roadway Signs",
+    "agency": "DDOT",
+    "added": "2026-11-08T22:07:58Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "EASTERN AVENUE NW AND CEDAR STREET NW",
+    "lat": 38.976,
+    "lon": -77.016
+   },
+   {
+    "type": "Roadway Signs",
+    "agency": "DDOT",
+    "added": "2026-11-08T20:56:15Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "1100 block of FERN STREET NW",
+    "lat": 38.978,
+    "lon": -77.027
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-08T20:36:36Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "600 block of GERANIUM STREET NW",
+    "lat": 38.979,
+    "lon": -77.023
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-08T19:34:58Z",
+    "resolved": null,
+    "status": "Open (Duplicate)",
+    "block": "6800 block of LAUREL STREET NW",
+    "lat": 38.972,
+    "lon": -77.015
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-08T19:28:07Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "6800 block of LAUREL STREET NW",
+    "lat": 38.972,
+    "lon": -77.015
+   },
+   {
+    "type": "Sanitation Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-08T18:59:33Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1100 block of ASPEN STREET NW",
+    "lat": 38.972,
+    "lon": -77.028
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-08T18:30:08Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1300 block of LEEGATE ROAD NW",
+    "lat": 38.986,
+    "lon": -77.032
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "agency": "DOH",
+    "added": "2026-11-08T18:25:07Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "500 block of TUCKERMAN STREET NW",
+    "lat": 38.967,
+    "lon": -77.021
+   },
+   {
+    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "agency": "DDOT",
+    "added": "2026-11-08T18:14:20Z",
+    "resolved": "2026-11-08T22:50:54Z",
+    "status": "Closed",
+    "block": "7400 block of 16TH STREET NW",
+    "lat": 38.98,
+    "lon": -77.036
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-08T18:12:07Z",
+    "resolved": "2026-11-08T18:35:48Z",
+    "status": "Closed",
+    "block": "500 block of WHITTIER STREET NW",
+    "lat": 38.971,
+    "lon": -77.021
+   },
+   {
+    "type": "Roadway Signs",
+    "agency": "DDOT",
+    "added": "2026-11-08T18:05:29Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "7100 block of GEORGIA AVENUE NW",
+    "lat": 38.976,
+    "lon": -77.026
+   },
+   {
+    "type": "Roadway Signs",
+    "agency": "DDOT",
+    "added": "2026-11-08T18:03:15Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "1100 block of DAHLIA STREET NW",
+    "lat": 38.976,
+    "lon": -77.027
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-08T18:00:36Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "7000 block of GEORGIA AVENUE NW",
+    "lat": 38.976,
+    "lon": -77.026
+   },
+   {
+    "type": "Supercan - Delivery",
+    "agency": "DPW",
+    "added": "2026-11-08T18:00:14Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "400 block of ASPEN STREET NW",
+    "lat": 38.972,
+    "lon": -77.018
+   },
+   {
+    "type": "Roadway Signs",
+    "agency": "DDOT",
+    "added": "2026-11-08T17:58:39Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "7100 block of GEORGIA AVENUE NW",
+    "lat": 38.977,
+    "lon": -77.026
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-08T17:56:49Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of JUNIPER STREET NW",
+    "lat": 38.983,
+    "lon": -77.039
+   },
+   {
+    "type": "Tree Planting",
+    "agency": "DDOT",
+    "added": "2026-11-08T17:49:42Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "7200 block of GEORGIA AVENUE NW",
+    "lat": 38.978,
+    "lon": -77.026
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-08T17:33:26Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "800 block of VENABLE PLACE NW",
+    "lat": 38.971,
+    "lon": -77.025
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-08T17:31:05Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "800 block of VENABLE PLACE NW",
+    "lat": 38.971,
+    "lon": -77.025
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-08T16:53:03Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "700 block of FERN PLACE NW",
+    "lat": 38.978,
+    "lon": -77.024
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-08T16:32:34Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "7600 block of MORNINGSIDE DRIVE NW",
+    "lat": 38.983,
+    "lon": -77.031
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-08T16:02:13Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "7800 block of 16TH STREET NW",
+    "lat": 38.986,
+    "lon": -77.036
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-08T15:35:59Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1100 block of GERANIUM STREET NW",
+    "lat": 38.979,
+    "lon": -77.028
+   },
+   {
+    "type": "DOB - Vacant Private Property Inspection",
+    "agency": "DOB",
+    "added": "2026-11-08T15:26:14Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "7400 block of GEORGIA AVENUE NW",
+    "lat": 38.98,
+    "lon": -77.026
+   },
+   {
+    "type": "Sidewalk Repair",
+    "agency": "DDOT",
+    "added": "2026-11-08T15:21:55Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "7300 block of GEORGIA AVENUE NW",
+    "lat": 38.979,
+    "lon": -77.026
+   },
+   {
+    "type": "Graffiti Removal",
+    "agency": "DPW",
+    "added": "2026-11-08T15:18:09Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "7300 block of GEORGIA AVENUE NW",
+    "lat": 38.979,
+    "lon": -77.027
+   },
+   {
+    "type": "Tree Planting",
+    "agency": "DDOT",
+    "added": "2026-11-08T15:15:03Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "1100 block of FERN STREET NW",
+    "lat": 38.978,
+    "lon": -77.028
+   },
+   {
+    "type": "Streetlight Repair Investigation",
+    "agency": "DDOT",
+    "added": "2026-11-08T15:14:38Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "7300 block of GEORGIA AVENUE NW",
+    "lat": 38.978,
+    "lon": -77.027
+   },
+   {
+    "type": "Graffiti Removal",
+    "agency": "DPW",
+    "added": "2026-11-08T15:06:23Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "7300 block of GEORGIA AVENUE NW",
+    "lat": 38.979,
+    "lon": -77.027
+   },
+   {
+    "type": "Tree Planting",
+    "agency": "DDOT",
+    "added": "2026-11-08T13:08:46Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "7000 block of 16TH STREET NW",
+    "lat": 38.976,
+    "lon": -77.036
+   },
+   {
+    "type": "Tree Planting",
+    "agency": "DDOT",
+    "added": "2026-11-08T13:07:17Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "7300 block of GEORGIA AVENUE NW",
+    "lat": 38.978,
+    "lon": -77.027
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-08T11:53:14Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "800 block of ASPEN STREET NW",
+    "lat": 38.973,
+    "lon": -77.025
+   },
+   {
+    "type": "Roadway Signs",
+    "agency": "DDOT",
+    "added": "2026-11-08T06:52:27Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "1200 block of ASPEN STREET NW",
+    "lat": 38.972,
+    "lon": -77.029
+   },
    {
     "type": "Scheduled Yard Waste",
     "agency": "DPW",
@@ -8818,8 +9218,8 @@
     "type": "Tree Planting",
     "agency": "DDOT",
     "added": "2026-11-08T02:24:31Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-08T11:36:01Z",
+    "status": "Closed",
     "block": "7300 block of GEORGIA AVENUE NW",
     "lat": 38.978,
     "lon": -77.027
@@ -8848,426 +9248,30 @@
     "type": "Tree Planting",
     "agency": "DDOT",
     "added": "2026-11-08T00:23:29Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-08T11:36:05Z",
+    "status": "Closed",
     "block": "7200 block of GEORGIA AVENUE NW",
     "lat": 38.978,
-    "lon": -77.026
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-08T00:15:27Z",
-    "resolved": "2026-11-08T01:09:10Z",
-    "status": "Closed",
-    "block": "7900 block of EASTERN AVENUE NW",
-    "lat": 38.986,
-    "lon": -77.029
-   },
-   {
-    "type": "Tree Planting",
-    "agency": "DDOT",
-    "added": "2026-11-07T22:57:49Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "7100 block of ALASKA AVENUE NW",
-    "lat": 38.977,
-    "lon": -77.035
-   },
-   {
-    "type": "Roadway Signs",
-    "agency": "DDOT",
-    "added": "2026-11-07T22:52:06Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "7200 block of GEORGIA AVENUE NW",
-    "lat": 38.978,
-    "lon": -77.026
-   },
-   {
-    "type": "Roadway Signs",
-    "agency": "DDOT",
-    "added": "2026-11-07T22:50:42Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "7100 block of GEORGIA AVENUE NW",
-    "lat": 38.977,
-    "lon": -77.026
-   },
-   {
-    "type": "Streetlight Repair Investigation",
-    "agency": "DDOT",
-    "added": "2026-11-07T21:09:55Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "7300 block of GEORGIA AVENUE NW",
-    "lat": 38.978,
-    "lon": -77.027
-   },
-   {
-    "type": "Traffic Lights and Pedestrian Walk Signals",
-    "agency": "DDOT",
-    "added": "2026-11-07T20:22:08Z",
-    "resolved": "2026-11-08T00:40:53Z",
-    "status": "Closed",
-    "block": "16TH STREET NW AND ALASKA AVENUE NW",
-    "lat": 38.975,
-    "lon": -77.036
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-11-07T19:40:39Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "6400 block of 8TH STREET NW",
-    "lat": 38.968,
-    "lon": -77.024
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-11-07T19:33:34Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "6400 block of 8TH STREET NW",
-    "lat": 38.968,
-    "lon": -77.024
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-07T18:30:22Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1700 block of VERBENA STREET NW",
-    "lat": 38.994,
-    "lon": -77.04
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-07T18:21:03Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "600 block of WHITTIER STREET NW",
-    "lat": 38.971,
-    "lon": -77.022
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-07T16:39:01Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "7600 block of MORNINGSIDE DRIVE NW",
-    "lat": 38.982,
-    "lon": -77.032
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-07T16:37:45Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1300 block of KALMIA ROAD NW",
-    "lat": 38.985,
-    "lon": -77.032
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-07T16:22:26Z",
-    "resolved": "2026-11-07T19:13:37Z",
-    "status": "Closed",
-    "block": "400 block of VAN BUREN STREET NW",
-    "lat": 38.97,
-    "lon": -77.018
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-11-07T16:06:20Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "6400 block of GEORGIA AVENUE NW",
-    "lat": 38.968,
-    "lon": -77.027
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-07T14:09:02Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "6800 block of PINEY BRANCH ROAD NW",
-    "lat": 38.973,
-    "lon": -77.024
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-07T13:54:51Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "7500 block of ALASKA AVENUE NW",
-    "lat": 38.982,
-    "lon": -77.028
-   },
-   {
-    "type": "Dead Animal Collection",
-    "agency": "DPW",
-    "added": "2026-11-07T12:42:34Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "6TH STREET NW AND PINEY BRANCH ROAD NW",
-    "lat": 38.975,
-    "lon": -77.021
-   },
-   {
-    "type": "Dead Animal Collection",
-    "agency": "DPW",
-    "added": "2026-11-07T12:03:52Z",
-    "resolved": null,
-    "status": "Open (Duplicate)",
-    "block": "7000 block of PINEY BRANCH ROAD NW",
-    "lat": 38.975,
-    "lon": -77.023
-   },
-   {
-    "type": "Roadway Signs",
-    "agency": "DDOT",
-    "added": "2026-11-07T04:37:14Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "6700 block of 6TH STREET NW",
-    "lat": 38.972,
-    "lon": -77.021
-   },
-   {
-    "type": "Traffic Lights and Pedestrian Walk Signals",
-    "agency": "DDOT",
-    "added": "2026-11-07T03:57:16Z",
-    "resolved": "2026-11-07T14:30:53Z",
-    "status": "Closed",
-    "block": "6900 block of 4TH STREET NW",
-    "lat": 38.974,
-    "lon": -77.018
-   },
-   {
-    "type": "Dead Animal Collection",
-    "agency": "DPW",
-    "added": "2026-11-07T00:30:11Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "500 block of CEDAR STREET NW",
-    "lat": 38.975,
-    "lon": -77.021
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-11-06T23:28:31Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "600 block of SOMERSET PLACE NW",
-    "lat": 38.967,
-    "lon": -77.022
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-06T22:49:25Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "800 block of TEWKESBURY PLACE NW",
-    "lat": 38.968,
-    "lon": -77.025
-   },
-   {
-    "type": "DC Indoor and Outdoor Pool Maintenance  (DGS)",
-    "agency": "DGS",
-    "added": "2026-11-06T21:39:06Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "300 block of VAN BUREN STREET NW",
-    "lat": 38.969,
-    "lon": -77.018
-   },
-   {
-    "type": "Dead Animal Collection",
-    "agency": "DPW",
-    "added": "2026-11-06T20:31:53Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "BUTTERNUT STREET NW AND PINEY BRANCH ROAD NW",
-    "lat": 38.974,
-    "lon": -77.023
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-11-06T20:05:24Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "800 block of FLORAL PLACE NW",
-    "lat": 38.979,
-    "lon": -77.026
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-06T19:37:28Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "7900 block of 16TH STREET NW",
-    "lat": 38.989,
-    "lon": -77.036
-   },
-   {
-    "type": "Residential Parking Permit Violation",
-    "agency": "DPW",
-    "added": "2026-11-06T19:33:06Z",
-    "resolved": "2026-11-06T23:41:41Z",
-    "status": "Closed",
-    "block": "7100 block of 9TH STREET NW",
-    "lat": 38.976,
-    "lon": -77.026
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-06T19:28:46Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "8000 block of 16TH STREET NW",
-    "lat": 38.99,
-    "lon": -77.036
-   },
-   {
-    "type": "Abandoned Vehicle - On Public Property",
-    "agency": "DPW",
-    "added": "2026-11-06T19:14:33Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3RD STREET NW AND VAN BUREN STREET NW",
-    "lat": 38.97,
-    "lon": -77.016
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-06T18:49:13Z",
-    "resolved": "2026-11-06T18:49:13Z",
-    "status": "Closed",
-    "block": "6800 block of GEORGIA AVENUE NW",
-    "lat": 38.973,
-    "lon": -77.027
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-06T18:38:32Z",
-    "resolved": "2026-11-06T19:09:10Z",
-    "status": "Closed",
-    "block": "7000 block of SPRING PLACE NW",
-    "lat": 38.976,
-    "lon": -77.019
-   },
-   {
-    "type": "Dead Animal Collection",
-    "agency": "DPW",
-    "added": "2026-11-06T17:41:53Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "7000 block of PINEY BRANCH ROAD NW",
-    "lat": 38.975,
-    "lon": -77.022
-   },
-   {
-    "type": "Dead Animal Collection",
-    "agency": "DPW",
-    "added": "2026-11-06T17:15:44Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "7000 block of PINEY BRANCH ROAD NW",
-    "lat": 38.975,
-    "lon": -77.021
-   },
-   {
-    "type": "Dead Animal Collection",
-    "agency": "DPW",
-    "added": "2026-11-06T17:07:57Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "7000 block of PINEY BRANCH ROAD NW",
-    "lat": 38.975,
-    "lon": -77.022
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-06T16:52:31Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "6600 block of 7TH PLACE NW",
-    "lat": 38.971,
-    "lon": -77.023
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-06T16:48:07Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "600 block of WHITTIER STREET NW",
-    "lat": 38.971,
-    "lon": -77.022
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-06T16:46:23Z",
-    "resolved": "2026-11-06T16:46:23Z",
-    "status": "Closed",
-    "block": "1100 block of DAHLIA STREET NW",
-    "lat": 38.976,
-    "lon": -77.027
-   },
-   {
-    "type": "Recycling Cart Delivery",
-    "agency": "DPW",
-    "added": "2026-11-06T15:48:25Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "7400 block of ALASKA AVENUE NW",
-    "lat": 38.98,
-    "lon": -77.03
-   },
-   {
-    "type": "Leaf  Collection Missed",
-    "agency": "DPW",
-    "added": "2026-11-06T15:01:33Z",
-    "resolved": "2026-11-06T19:46:36Z",
-    "status": "Closed",
-    "block": "900 block of ASPEN STREET NW",
-    "lat": 38.972,
     "lon": -77.026
    }
   ],
   "mapped": {
    "types": [
-    "Scheduled Yard Waste",
     "Bulk Collection",
+    "Roadway Signs",
+    "Sanitation Enforcement",
+    "DC Health Rodent & Vector Control",
+    "Traffic Lights and Pedestrian Walk Signals",
+    "Parking Enforcement",
+    "Public Space Litter Can-Collection",
+    "Supercan - Delivery",
+    "Scheduled Yard Waste",
+    "Tree Planting",
+    "Illegal Dumping",
     "DOB - Vacant Private Property Inspection",
     "Sidewalk Repair",
-    "Tree Planting",
-    "Parking Enforcement",
-    "Roadway Signs",
+    "Graffiti Removal",
     "Streetlight Repair Investigation",
-    "Traffic Lights and Pedestrian Walk Signals",
-    "Illegal Dumping",
-    "DC Health Rodent & Vector Control",
     "Dead Animal Collection",
     "DC Indoor and Outdoor Pool Maintenance  (DGS)",
     "Residential Parking Permit Violation",
@@ -9279,15 +9283,11 @@
     "Tree Inspection",
     "DMV - Vehicle Registration Issues",
     "Out of State Parking Violation (ROSA)",
-    "Graffiti Removal",
     "Recycling Cart - Repair",
     "Rat Replacement Containers",
-    "Supercan - Delivery",
     "Missed Curbside Compost Collection",
-    "Sanitation Enforcement",
     "Public Space Inspection",
     "DC Government Information",
-    "Public Space Litter Can-Collection",
     "DMV - Online Processing Issues",
     "Tree Pruning",
     "OCTFME - Down Cable Wires",
@@ -9324,12 +9324,728 @@
    ],
    "blocks": [
     {
-     "block": "600 block of WHITTIER STREET NW",
-     "lat": 38.971,
-     "lon": -77.022,
+     "block": "1300 block of IRIS STREET NW",
+     "lat": 38.982,
+     "lon": -77.031,
      "r": [
       [
        0,
+       "2026-11-09",
+       null,
+       1
+      ],
+      [
+       8,
+       "2026-10-25",
+       "2026-10-28",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1300 block of LOCUST ROAD NW",
+     "lat": 38.986,
+     "lon": -77.033,
+     "r": [
+      [
+       0,
+       "2026-11-09",
+       null,
+       1
+      ],
+      [
+       23,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "900 block of BUTTERNUT STREET NW",
+     "lat": 38.974,
+     "lon": -77.026,
+     "r": [
+      [
+       0,
+       "2026-11-09",
+       null,
+       1
+      ],
+      [
+       15,
+       "2026-10-31",
+       "2026-10-31",
+       0
+      ],
+      [
+       52,
+       "2026-10-24",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-10-20",
+       "2026-10-27",
+       0
+      ],
+      [
+       0,
+       "2026-10-18",
+       "2026-10-27",
+       0
+      ],
+      [
+       0,
+       "2026-10-15",
+       "2026-10-27",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "7800 block of 12TH STREET NW",
+     "lat": 38.985,
+     "lon": -77.028,
+     "r": [
+      [
+       0,
+       "2026-11-09",
+       null,
+       1
+      ],
+      [
+       7,
+       "2026-10-16",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "7500 block of 12TH STREET NW",
+     "lat": 38.981,
+     "lon": -77.028,
+     "r": [
+      [
+       0,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       28,
+       "2026-11-05",
+       null,
+       1
+      ],
+      [
+       42,
+       "2026-11-02",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-11-02",
+       "2026-11-06",
+       0
+      ],
+      [
+       42,
+       "2026-11-01",
+       null,
+       1
+      ],
+      [
+       23,
+       "2026-11-01",
+       "2026-11-02",
+       0
+      ],
+      [
+       7,
+       "2026-10-26",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "7000 block of 5TH STREET NW",
+     "lat": 38.976,
+     "lon": -77.02,
+     "r": [
+      [
+       0,
+       "2026-11-08",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "7200 block of 8TH STREET NW",
+     "lat": 38.977,
+     "lon": -77.024,
+     "r": [
+      [
+       0,
+       "2026-11-08",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "EASTERN AVENUE NW AND CEDAR STREET NW",
+     "lat": 38.976,
+     "lon": -77.016,
+     "r": [
+      [
+       1,
+       "2026-11-08",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "1100 block of FERN STREET NW",
+     "lat": 38.978,
+     "lon": -77.027,
+     "r": [
+      [
+       1,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       1,
+       "2026-10-31",
+       "2026-11-03",
+       0
+      ],
+      [
+       9,
+       "2026-10-28",
+       "2026-10-29",
+       0
+      ],
+      [
+       9,
+       "2026-10-28",
+       "2026-10-29",
+       0
+      ],
+      [
+       13,
+       "2026-10-28",
+       null,
+       1
+      ],
+      [
+       1,
+       "2026-10-28",
+       "2026-11-03",
+       0
+      ],
+      [
+       9,
+       "2026-10-28",
+       "2026-10-29",
+       0
+      ],
+      [
+       32,
+       "2026-10-28",
+       "2026-11-06",
+       0
+      ],
+      [
+       9,
+       "2026-10-25",
+       "2026-10-25",
+       0
+      ],
+      [
+       2,
+       "2026-10-24",
+       "2026-10-28",
+       0
+      ],
+      [
+       1,
+       "2026-10-24",
+       null,
+       1
+      ],
+      [
+       2,
+       "2026-10-20",
+       "2026-10-21",
+       0
+      ],
+      [
+       9,
+       "2026-10-17",
+       "2026-10-19",
+       0
+      ],
+      [
+       12,
+       "2026-10-17",
+       "2026-10-23",
+       0
+      ],
+      [
+       1,
+       "2026-10-17",
+       null,
+       1
+      ],
+      [
+       1,
+       "2026-10-14",
+       null,
+       1
+      ],
+      [
+       1,
+       "2026-10-13",
+       null,
+       1
+      ],
+      [
+       17,
+       "2026-10-13",
+       "2026-10-13",
+       0
+      ],
+      [
+       32,
+       "2026-10-12",
+       "2026-10-29",
+       0
+      ],
+      [
+       1,
+       "2026-10-12",
+       null,
+       1
+      ],
+      [
+       1,
+       "2026-10-11",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "600 block of GERANIUM STREET NW",
+     "lat": 38.979,
+     "lon": -77.023,
+     "r": [
+      [
+       0,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       43,
+       "2026-11-01",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-10-26",
+       "2026-11-02",
+       0
+      ],
+      [
+       38,
+       "2026-10-14",
+       "2026-10-15",
+       0
+      ],
+      [
+       38,
+       "2026-10-13",
+       "2026-10-14",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "6800 block of LAUREL STREET NW",
+     "lat": 38.972,
+     "lon": -77.015,
+     "r": [
+      [
+       0,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       17,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       0,
+       "2026-10-24",
+       "2026-11-02",
+       0
+      ],
+      [
+       8,
+       "2026-10-24",
+       "2026-10-28",
+       0
+      ],
+      [
+       8,
+       "2026-10-20",
+       "2026-10-28",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1100 block of ASPEN STREET NW",
+     "lat": 38.972,
+     "lon": -77.028,
+     "r": [
+      [
+       2,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       2,
+       "2026-10-25",
+       "2026-10-26",
+       0
+      ],
+      [
+       2,
+       "2026-10-20",
+       "2026-10-21",
+       0
+      ],
+      [
+       2,
+       "2026-10-18",
+       "2026-10-19",
+       0
+      ],
+      [
+       2,
+       "2026-10-12",
+       "2026-10-13",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1300 block of LEEGATE ROAD NW",
+     "lat": 38.986,
+     "lon": -77.032,
+     "r": [
+      [
+       0,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       8,
+       "2026-10-28",
+       "2026-11-04",
+       0
+      ],
+      [
+       30,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       8,
+       "2026-10-24",
+       "2026-10-28",
+       0
+      ],
+      [
+       38,
+       "2026-10-20",
+       "2026-10-21",
+       0
+      ],
+      [
+       8,
+       "2026-10-12",
+       "2026-10-21",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "500 block of TUCKERMAN STREET NW",
+     "lat": 38.967,
+     "lon": -77.021,
+     "r": [
+      [
+       3,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-11-03",
+       "2026-11-06",
+       0
+      ],
+      [
+       0,
+       "2026-10-29",
+       "2026-11-02",
+       0
+      ],
+      [
+       8,
+       "2026-10-28",
+       "2026-11-04",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "7400 block of 16TH STREET NW",
+     "lat": 38.98,
+     "lon": -77.036,
+     "r": [
+      [
+       4,
+       "2026-11-08",
+       "2026-11-08",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "500 block of WHITTIER STREET NW",
+     "lat": 38.971,
+     "lon": -77.021,
+     "r": [
+      [
+       5,
+       "2026-11-08",
+       "2026-11-08",
+       0
+      ],
+      [
+       18,
+       "2026-11-05",
+       "2026-11-06",
+       0
+      ],
+      [
+       0,
+       "2026-11-01",
+       "2026-11-06",
+       0
+      ],
+      [
+       0,
+       "2026-10-25",
+       "2026-11-02",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "7100 block of GEORGIA AVENUE NW",
+     "lat": 38.976,
+     "lon": -77.026,
+     "r": [
+      [
+       1,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       24,
+       "2026-10-28",
+       "2026-11-05",
+       0
+      ],
+      [
+       34,
+       "2026-10-28",
+       "2026-11-06",
+       0
+      ],
+      [
+       0,
+       "2026-10-27",
+       "2026-11-02",
+       0
+      ],
+      [
+       3,
+       "2026-10-27",
+       "2026-10-30",
+       0
+      ],
+      [
+       11,
+       "2026-10-27",
+       null,
+       1
+      ],
+      [
+       23,
+       "2026-10-24",
+       "2026-10-25",
+       0
+      ],
+      [
+       3,
+       "2026-10-12",
+       "2026-10-15",
+       0
+      ],
+      [
+       0,
+       "2026-10-11",
+       "2026-10-20",
+       0
+      ],
+      [
+       1,
+       "2026-10-10",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "1100 block of DAHLIA STREET NW",
+     "lat": 38.976,
+     "lon": -77.027,
+     "r": [
+      [
+       1,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       19,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       19,
+       "2026-11-04",
+       "2026-11-04",
+       0
+      ],
+      [
+       19,
+       "2026-10-27",
+       "2026-10-27",
+       0
+      ],
+      [
+       6,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ],
+      [
+       1,
+       "2026-10-17",
+       null,
+       1
+      ],
+      [
+       1,
+       "2026-10-13",
+       null,
+       1
+      ],
+      [
+       1,
+       "2026-10-12",
+       null,
+       1
+      ],
+      [
+       1,
+       "2026-10-10",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "7000 block of GEORGIA AVENUE NW",
+     "lat": 38.976,
+     "lon": -77.026,
+     "r": [
+      [
+       6,
+       "2026-11-08",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "400 block of ASPEN STREET NW",
+     "lat": 38.972,
+     "lon": -77.018,
+     "r": [
+      [
+       7,
+       "2026-11-08",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "7100 block of GEORGIA AVENUE NW",
+     "lat": 38.977,
+     "lon": -77.026,
+     "r": [
+      [
+       1,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       1,
        "2026-11-08",
        null,
        1
@@ -9341,31 +10057,761 @@
        1
       ],
       [
+       23,
+       "2026-10-31",
+       "2026-11-01",
+       0
+      ],
+      [
        1,
-       "2026-11-06",
+       "2026-10-28",
+       "2026-11-03",
+       0
+      ],
+      [
+       1,
+       "2026-10-25",
        null,
        1
       ],
       [
-       0,
-       "2026-10-26",
-       "2026-11-04",
+       13,
+       "2026-10-25",
+       "2026-11-06",
        0
       ],
       [
-       0,
-       "2026-10-24",
+       2,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ],
+      [
+       1,
+       "2026-10-17",
        "2026-10-28",
        0
       ],
       [
        1,
+       "2026-10-14",
+       "2026-10-28",
+       0
+      ],
+      [
+       1,
+       "2026-10-14",
+       "2026-10-28",
+       0
+      ],
+      [
+       1,
+       "2026-10-13",
+       "2026-10-28",
+       0
+      ],
+      [
+       1,
+       "2026-10-12",
+       "2026-10-22",
+       0
+      ],
+      [
+       1,
+       "2026-10-11",
+       "2026-10-22",
+       0
+      ],
+      [
+       52,
+       "2026-10-11",
+       null,
+       1
+      ],
+      [
+       1,
+       "2026-10-11",
+       "2026-10-22",
+       0
+      ],
+      [
+       1,
+       "2026-10-10",
+       "2026-10-28",
+       0
+      ],
+      [
+       32,
+       "2026-10-10",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "1700 block of JUNIPER STREET NW",
+     "lat": 38.983,
+     "lon": -77.039,
+     "r": [
+      [
+       8,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-10-23",
+       "2026-11-02",
+       0
+      ],
+      [
+       8,
+       "2026-10-22",
+       "2026-10-28",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "7200 block of GEORGIA AVENUE NW",
+     "lat": 38.978,
+     "lon": -77.026,
+     "r": [
+      [
+       9,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       9,
+       "2026-11-08",
+       "2026-11-08",
+       0
+      ],
+      [
+       1,
+       "2026-11-07",
+       null,
+       1
+      ],
+      [
+       6,
+       "2026-11-03",
+       "2026-11-04",
+       0
+      ],
+      [
+       6,
+       "2026-11-02",
+       "2026-11-03",
+       0
+      ],
+      [
+       9,
+       "2026-10-31",
+       "2026-11-01",
+       0
+      ],
+      [
+       9,
+       "2026-10-28",
+       "2026-10-30",
+       0
+      ],
+      [
+       9,
+       "2026-10-27",
+       "2026-10-27",
+       0
+      ],
+      [
+       6,
+       "2026-10-25",
+       "2026-10-28",
+       0
+      ],
+      [
+       6,
+       "2026-10-24",
+       "2026-10-27",
+       0
+      ],
+      [
+       9,
+       "2026-10-23",
+       "2026-10-23",
+       0
+      ],
+      [
+       9,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ],
+      [
+       52,
+       "2026-10-17",
+       null,
+       1
+      ],
+      [
+       9,
+       "2026-10-17",
+       "2026-10-19",
+       0
+      ],
+      [
+       6,
+       "2026-10-14",
+       "2026-10-17",
+       0
+      ],
+      [
+       9,
+       "2026-10-14",
+       "2026-10-14",
+       0
+      ],
+      [
+       9,
+       "2026-10-11",
+       "2026-10-11",
+       0
+      ],
+      [
+       9,
+       "2026-10-10",
+       "2026-10-13",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "800 block of VENABLE PLACE NW",
+     "lat": 38.971,
+     "lon": -77.025,
+     "r": [
+      [
+       8,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-11-08",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "700 block of FERN PLACE NW",
+     "lat": 38.978,
+     "lon": -77.024,
+     "r": [
+      [
+       8,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       8,
+       "2026-11-03",
+       null,
+       1
+      ],
+      [
+       8,
+       "2026-10-23",
+       "2026-10-28",
+       0
+      ],
+      [
+       2,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ],
+      [
+       0,
+       "2026-10-22",
+       "2026-10-27",
+       0
+      ],
+      [
+       8,
+       "2026-10-17",
+       "2026-10-21",
+       0
+      ],
+      [
+       0,
+       "2026-10-10",
+       "2026-10-20",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "7600 block of MORNINGSIDE DRIVE NW",
+     "lat": 38.983,
+     "lon": -77.031,
+     "r": [
+      [
+       0,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       10,
+       "2026-10-22",
+       "2026-10-23",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "7800 block of 16TH STREET NW",
+     "lat": 38.986,
+     "lon": -77.036,
+     "r": [
+      [
+       0,
+       "2026-11-08",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "1100 block of GERANIUM STREET NW",
+     "lat": 38.979,
+     "lon": -77.028,
+     "r": [
+      [
+       10,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       15,
+       "2026-10-14",
+       "2026-10-16",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "7400 block of GEORGIA AVENUE NW",
+     "lat": 38.98,
+     "lon": -77.026,
+     "r": [
+      [
+       11,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       32,
+       "2026-11-01",
+       null,
+       1
+      ],
+      [
+       11,
+       "2026-10-27",
+       "2026-11-03",
+       0
+      ],
+      [
+       11,
+       "2026-10-17",
+       "2026-10-21",
+       0
+      ],
+      [
+       11,
+       "2026-10-10",
+       "2026-10-13",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "7300 block of GEORGIA AVENUE NW",
+     "lat": 38.979,
+     "lon": -77.026,
+     "r": [
+      [
+       12,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       12,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       40,
+       "2026-11-03",
+       "2026-11-04",
+       0
+      ],
+      [
+       6,
+       "2026-10-17",
        "2026-10-18",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "7300 block of GEORGIA AVENUE NW",
+     "lat": 38.979,
+     "lon": -77.027,
+     "r": [
+      [
+       13,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       13,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       10,
+       "2026-11-03",
+       "2026-11-04",
+       0
+      ],
+      [
+       4,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ],
+      [
+       12,
+       "2026-10-25",
+       null,
+       1
+      ],
+      [
+       1,
+       "2026-10-17",
+       "2026-10-28",
+       0
+      ],
+      [
+       14,
+       "2026-10-17",
+       "2026-10-19",
+       0
+      ],
+      [
+       1,
+       "2026-10-17",
+       null,
+       1
+      ],
+      [
+       6,
+       "2026-10-17",
+       "2026-10-18",
+       0
+      ],
+      [
+       12,
+       "2026-10-17",
+       "2026-10-23",
+       0
+      ],
+      [
+       13,
+       "2026-10-17",
+       "2026-11-03",
+       0
+      ],
+      [
+       13,
+       "2026-10-10",
+       "2026-10-29",
+       0
+      ],
+      [
+       12,
+       "2026-10-10",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "1100 block of FERN STREET NW",
+     "lat": 38.978,
+     "lon": -77.028,
+     "r": [
+      [
+       9,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       9,
+       "2026-10-28",
+       null,
+       1
+      ],
+      [
+       10,
+       "2026-10-15",
+       "2026-10-20",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "7300 block of GEORGIA AVENUE NW",
+     "lat": 38.978,
+     "lon": -77.027,
+     "r": [
+      [
+       14,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       9,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       9,
+       "2026-11-08",
+       "2026-11-08",
+       0
+      ],
+      [
+       14,
+       "2026-11-07",
+       null,
+       1
+      ],
+      [
+       14,
+       "2026-11-03",
+       "2026-11-04",
+       0
+      ],
+      [
+       9,
+       "2026-10-28",
+       "2026-10-29",
+       0
+      ],
+      [
+       13,
+       "2026-10-25",
+       "2026-11-06",
+       0
+      ],
+      [
+       9,
+       "2026-10-25",
+       "2026-10-25",
+       0
+      ],
+      [
+       14,
+       "2026-10-25",
+       "2026-10-26",
+       0
+      ],
+      [
+       14,
+       "2026-10-24",
+       "2026-10-26",
+       0
+      ],
+      [
+       14,
+       "2026-10-23",
+       "2026-10-26",
+       0
+      ],
+      [
+       14,
+       "2026-10-22",
+       "2026-10-27",
+       0
+      ],
+      [
+       9,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ],
+      [
+       9,
+       "2026-10-17",
+       "2026-10-19",
+       0
+      ],
+      [
+       9,
+       "2026-10-12",
+       "2026-10-13",
+       0
+      ],
+      [
+       13,
+       "2026-10-10",
+       "2026-10-29",
+       0
+      ],
+      [
+       9,
+       "2026-10-10",
+       "2026-10-13",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "7000 block of 16TH STREET NW",
+     "lat": 38.976,
+     "lon": -77.036,
+     "r": [
+      [
+       9,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       9,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       0,
+       "2026-10-22",
        "2026-10-27",
        0
       ],
       [
        0,
+       "2026-10-14",
+       "2026-10-20",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "800 block of ASPEN STREET NW",
+     "lat": 38.973,
+     "lon": -77.025,
+     "r": [
+      [
+       0,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-10-27",
+       "2026-11-02",
+       0
+      ],
+      [
+       8,
+       "2026-10-20",
+       "2026-10-28",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1200 block of ASPEN STREET NW",
+     "lat": 38.972,
+     "lon": -77.029,
+     "r": [
+      [
+       1,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       42,
+       "2026-10-29",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "600 block of WHITTIER STREET NW",
+     "lat": 38.971,
+     "lon": -77.022,
+     "r": [
+      [
+       8,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-11-07",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-11-06",
+       null,
+       1
+      ],
+      [
+       8,
+       "2026-10-26",
+       "2026-11-04",
+       0
+      ],
+      [
+       8,
+       "2026-10-24",
+       "2026-10-28",
+       0
+      ],
+      [
+       0,
+       "2026-10-18",
+       "2026-10-27",
+       0
+      ],
+      [
+       8,
        "2026-10-12",
        "2026-10-14",
        0
@@ -9378,19 +10824,19 @@
      "lon": -77.033,
      "r": [
       [
-       0,
+       8,
        "2026-11-08",
        null,
        1
       ],
       [
-       0,
+       8,
        "2026-10-21",
        "2026-10-28",
        0
       ],
       [
-       0,
+       8,
        "2026-10-10",
        "2026-10-14",
        0
@@ -9403,7 +10849,7 @@
      "lon": -77.034,
      "r": [
       [
-       1,
+       0,
        "2026-11-08",
        null,
        1
@@ -9416,25 +10862,25 @@
      "lon": -77.026,
      "r": [
       [
-       2,
+       11,
        "2026-11-08",
        null,
        1
       ],
       [
-       27,
+       2,
        "2026-11-04",
        "2026-11-05",
        0
       ],
       [
-       9,
+       10,
        "2026-11-03",
        "2026-11-05",
        0
       ],
       [
-       2,
+       11,
        "2026-10-10",
        "2026-10-13",
        0
@@ -9447,167 +10893,45 @@
      "lon": -77.029,
      "r": [
       [
-       0,
+       8,
        "2026-11-08",
        null,
        1
       ],
       [
-       7,
+       14,
        "2026-11-04",
        "2026-11-06",
        0
       ],
       [
-       13,
+       17,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       13,
+       17,
        "2026-10-30",
        "2026-10-30",
        0
       ],
       [
-       13,
+       17,
        "2026-10-29",
-       "2026-10-29",
-       0
-      ],
-      [
-       1,
-       "2026-10-18",
        "2026-10-29",
        0
       ],
       [
        0,
+       "2026-10-18",
+       "2026-10-29",
+       0
+      ],
+      [
+       8,
        "2026-10-11",
        "2026-10-14",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "7300 block of GEORGIA AVENUE NW",
-     "lat": 38.979,
-     "lon": -77.026,
-     "r": [
-      [
-       3,
-       "2026-11-08",
-       null,
-       1
-      ],
-      [
-       40,
-       "2026-11-03",
-       "2026-11-04",
-       0
-      ],
-      [
-       30,
-       "2026-10-17",
-       "2026-10-18",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "7300 block of GEORGIA AVENUE NW",
-     "lat": 38.978,
-     "lon": -77.027,
-     "r": [
-      [
-       4,
-       "2026-11-08",
-       null,
-       1
-      ],
-      [
-       7,
-       "2026-11-07",
-       null,
-       1
-      ],
-      [
-       7,
-       "2026-11-03",
-       "2026-11-04",
-       0
-      ],
-      [
-       4,
-       "2026-10-28",
-       "2026-10-29",
-       0
-      ],
-      [
-       22,
-       "2026-10-25",
-       "2026-11-06",
-       0
-      ],
-      [
-       4,
-       "2026-10-25",
-       "2026-10-25",
-       0
-      ],
-      [
-       7,
-       "2026-10-25",
-       "2026-10-26",
-       0
-      ],
-      [
-       7,
-       "2026-10-24",
-       "2026-10-26",
-       0
-      ],
-      [
-       7,
-       "2026-10-23",
-       "2026-10-26",
-       0
-      ],
-      [
-       7,
-       "2026-10-22",
-       "2026-10-27",
-       0
-      ],
-      [
-       4,
-       "2026-10-22",
-       "2026-10-22",
-       0
-      ],
-      [
-       4,
-       "2026-10-17",
-       "2026-10-19",
-       0
-      ],
-      [
-       4,
-       "2026-10-12",
-       "2026-10-13",
-       0
-      ],
-      [
-       22,
-       "2026-10-10",
-       "2026-10-29",
-       0
-      ],
-      [
-       4,
-       "2026-10-10",
-       "2026-10-13",
        0
       ]
      ]
@@ -9636,7 +10960,7 @@
        0
       ],
       [
-       15,
+       19,
        "2026-11-05",
        "2026-11-05",
        0
@@ -9660,19 +10984,19 @@
        0
       ],
       [
-       15,
+       19,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       15,
+       19,
        "2026-11-03",
        "2026-11-03",
        0
       ],
       [
-       15,
+       19,
        "2026-11-02",
        "2026-11-02",
        0
@@ -9684,13 +11008,13 @@
        0
       ],
       [
-       19,
+       23,
        "2026-10-31",
        "2026-11-01",
        0
       ],
       [
-       15,
+       19,
        "2026-10-29",
        "2026-10-29",
        0
@@ -9708,7 +11032,7 @@
        0
       ],
       [
-       15,
+       19,
        "2026-10-23",
        "2026-10-23",
        0
@@ -9738,7 +11062,7 @@
        1
       ],
       [
-       15,
+       19,
        "2026-10-20",
        "2026-10-20",
        0
@@ -9756,13 +11080,13 @@
        0
       ],
       [
-       19,
+       23,
        "2026-10-17",
        "2026-10-19",
        0
       ],
       [
-       29,
+       30,
        "2026-10-15",
        "2026-10-15",
        0
@@ -9774,7 +11098,7 @@
        0
       ],
       [
-       29,
+       30,
        "2026-10-13",
        "2026-10-13",
        0
@@ -9792,13 +11116,13 @@
        0
       ],
       [
-       19,
+       23,
        "2026-10-10",
        "2026-10-13",
        0
       ],
       [
-       19,
+       23,
        "2026-10-10",
        "2026-10-13",
        0
@@ -9807,230 +11131,6 @@
        5,
        "2026-10-10",
        "2026-10-10",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "7100 block of GEORGIA AVENUE NW",
-     "lat": 38.977,
-     "lon": -77.026,
-     "r": [
-      [
-       6,
-       "2026-11-08",
-       null,
-       1
-      ],
-      [
-       6,
-       "2026-11-07",
-       null,
-       1
-      ],
-      [
-       19,
-       "2026-10-31",
-       "2026-11-01",
-       0
-      ],
-      [
-       6,
-       "2026-10-28",
-       "2026-11-03",
-       0
-      ],
-      [
-       6,
-       "2026-10-25",
-       null,
-       1
-      ],
-      [
-       22,
-       "2026-10-25",
-       "2026-11-06",
-       0
-      ],
-      [
-       27,
-       "2026-10-22",
-       "2026-10-22",
-       0
-      ],
-      [
-       6,
-       "2026-10-17",
-       "2026-10-28",
-       0
-      ],
-      [
-       6,
-       "2026-10-14",
-       "2026-10-28",
-       0
-      ],
-      [
-       6,
-       "2026-10-14",
-       "2026-10-28",
-       0
-      ],
-      [
-       6,
-       "2026-10-13",
-       "2026-10-28",
-       0
-      ],
-      [
-       6,
-       "2026-10-12",
-       "2026-10-22",
-       0
-      ],
-      [
-       6,
-       "2026-10-11",
-       "2026-10-22",
-       0
-      ],
-      [
-       52,
-       "2026-10-11",
-       null,
-       1
-      ],
-      [
-       6,
-       "2026-10-11",
-       "2026-10-22",
-       0
-      ],
-      [
-       6,
-       "2026-10-10",
-       "2026-10-28",
-       0
-      ],
-      [
-       32,
-       "2026-10-10",
-       null,
-       1
-      ],
-      [
-       5,
-       "2026-10-09",
-       "2026-10-09",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "7200 block of GEORGIA AVENUE NW",
-     "lat": 38.978,
-     "lon": -77.026,
-     "r": [
-      [
-       4,
-       "2026-11-08",
-       null,
-       1
-      ],
-      [
-       6,
-       "2026-11-07",
-       null,
-       1
-      ],
-      [
-       30,
-       "2026-11-03",
-       "2026-11-04",
-       0
-      ],
-      [
-       30,
-       "2026-11-02",
-       "2026-11-03",
-       0
-      ],
-      [
-       4,
-       "2026-10-31",
-       "2026-11-01",
-       0
-      ],
-      [
-       4,
-       "2026-10-28",
-       "2026-10-30",
-       0
-      ],
-      [
-       4,
-       "2026-10-27",
-       "2026-10-27",
-       0
-      ],
-      [
-       30,
-       "2026-10-25",
-       "2026-10-28",
-       0
-      ],
-      [
-       30,
-       "2026-10-24",
-       "2026-10-27",
-       0
-      ],
-      [
-       4,
-       "2026-10-23",
-       "2026-10-23",
-       0
-      ],
-      [
-       4,
-       "2026-10-22",
-       "2026-10-22",
-       0
-      ],
-      [
-       52,
-       "2026-10-17",
-       null,
-       1
-      ],
-      [
-       4,
-       "2026-10-17",
-       "2026-10-19",
-       0
-      ],
-      [
-       30,
-       "2026-10-14",
-       "2026-10-17",
-       0
-      ],
-      [
-       4,
-       "2026-10-14",
-       "2026-10-14",
-       0
-      ],
-      [
-       4,
-       "2026-10-11",
-       "2026-10-11",
-       0
-      ],
-      [
-       4,
-       "2026-10-10",
-       "2026-10-13",
        0
       ]
      ]
@@ -10054,19 +11154,19 @@
      "lon": -77.035,
      "r": [
       [
-       4,
+       9,
        "2026-11-07",
-       null,
-       1
+       "2026-11-08",
+       0
       ],
       [
-       4,
+       9,
        "2026-10-27",
        "2026-10-28",
        0
       ],
       [
-       4,
+       9,
        "2026-10-21",
        "2026-10-27",
        0
@@ -10079,7 +11179,7 @@
      "lon": -77.036,
      "r": [
       [
-       8,
+       4,
        "2026-11-07",
        "2026-11-08",
        0
@@ -10092,13 +11192,13 @@
      "lon": -77.024,
      "r": [
       [
-       9,
+       10,
        "2026-11-07",
        null,
        1
       ],
       [
-       10,
+       3,
        "2026-11-07",
        null,
        1
@@ -10117,7 +11217,7 @@
      "lon": -77.04,
      "r": [
       [
-       1,
+       0,
        "2026-11-07",
        null,
        1
@@ -10130,7 +11230,7 @@
      "lon": -77.032,
      "r": [
       [
-       1,
+       0,
        "2026-11-07",
        null,
        1
@@ -10143,7 +11243,7 @@
      "lon": -77.032,
      "r": [
       [
-       0,
+       8,
        "2026-11-07",
        null,
        1
@@ -10175,7 +11275,7 @@
      "lon": -77.027,
      "r": [
       [
-       9,
+       10,
        "2026-11-07",
        null,
        1
@@ -10188,7 +11288,7 @@
      "lon": -77.024,
      "r": [
       [
-       0,
+       8,
        "2026-11-07",
        null,
        1
@@ -10207,7 +11307,7 @@
      "lon": -77.028,
      "r": [
       [
-       1,
+       0,
        "2026-11-07",
        null,
        1
@@ -10220,7 +11320,7 @@
      "lon": -77.021,
      "r": [
       [
-       11,
+       15,
        "2026-11-07",
        null,
        1
@@ -10233,13 +11333,13 @@
      "lon": -77.023,
      "r": [
       [
-       11,
+       15,
        "2026-11-07",
        null,
        1
       ],
       [
-       11,
+       15,
        "2026-11-06",
        null,
        1
@@ -10252,13 +11352,13 @@
      "lon": -77.021,
      "r": [
       [
-       6,
+       1,
        "2026-11-07",
        null,
        1
       ],
       [
-       25,
+       7,
        "2026-10-30",
        null,
        1
@@ -10277,7 +11377,7 @@
      "lon": -77.018,
      "r": [
       [
-       8,
+       4,
        "2026-11-07",
        "2026-11-07",
        0
@@ -10290,7 +11390,7 @@
      "lon": -77.021,
      "r": [
       [
-       11,
+       15,
        "2026-11-07",
        null,
        1
@@ -10302,7 +11402,7 @@
        0
       ],
       [
-       0,
+       8,
        "2026-10-28",
        "2026-11-04",
        0
@@ -10321,13 +11421,13 @@
      "lon": -77.022,
      "r": [
       [
-       10,
+       3,
        "2026-11-06",
        null,
        1
       ],
       [
-       10,
+       3,
        "2026-10-12",
        "2026-10-19",
        0
@@ -10340,43 +11440,43 @@
      "lon": -77.025,
      "r": [
       [
-       1,
+       0,
        "2026-11-06",
        null,
        1
       ],
       [
-       10,
+       3,
        "2026-11-05",
        null,
        1
       ],
       [
-       1,
+       0,
        "2026-11-03",
        "2026-11-06",
        0
       ],
       [
-       1,
+       0,
        "2026-10-29",
        "2026-11-06",
        0
       ],
       [
-       1,
+       0,
        "2026-10-16",
        "2026-10-27",
        0
       ],
       [
-       16,
+       20,
        "2026-10-11",
        null,
        1
       ],
       [
-       25,
+       7,
        "2026-10-11",
        null,
        1
@@ -10389,7 +11489,7 @@
      "lon": -77.018,
      "r": [
       [
-       12,
+       16,
        "2026-11-06",
        null,
        1
@@ -10444,7 +11544,7 @@
      "lon": -77.023,
      "r": [
       [
-       11,
+       15,
        "2026-11-06",
        null,
        1
@@ -10457,7 +11557,7 @@
      "lon": -77.026,
      "r": [
       [
-       10,
+       3,
        "2026-11-06",
        null,
        1
@@ -10470,7 +11570,7 @@
      "lon": -77.036,
      "r": [
       [
-       1,
+       0,
        "2026-11-06",
        null,
        1
@@ -10483,31 +11583,31 @@
      "lon": -77.026,
      "r": [
       [
-       13,
+       17,
        "2026-11-06",
        "2026-11-06",
        0
       ],
       [
-       14,
+       18,
        "2026-10-28",
        "2026-10-29",
        0
       ],
       [
-       1,
+       0,
        "2026-10-27",
        "2026-11-02",
        0
       ],
       [
-       11,
+       15,
        "2026-10-20",
        "2026-10-23",
        0
       ],
       [
-       1,
+       0,
        "2026-10-18",
        "2026-10-27",
        0
@@ -10520,7 +11620,7 @@
      "lon": -77.036,
      "r": [
       [
-       1,
+       0,
        "2026-11-06",
        null,
        1
@@ -10533,7 +11633,7 @@
      "lon": -77.016,
      "r": [
       [
-       14,
+       18,
        "2026-11-06",
        null,
        1
@@ -10546,7 +11646,7 @@
      "lon": -77.027,
      "r": [
       [
-       15,
+       19,
        "2026-11-06",
        "2026-11-06",
        0
@@ -10564,7 +11664,7 @@
        0
       ],
       [
-       8,
+       4,
        "2026-10-31",
        "2026-10-31",
        0
@@ -10582,13 +11682,13 @@
        0
       ],
       [
-       15,
+       19,
        "2026-10-27",
        "2026-10-27",
        0
       ],
       [
-       15,
+       19,
        "2026-10-27",
        "2026-10-27",
        0
@@ -10606,13 +11706,13 @@
        0
       ],
       [
-       29,
+       30,
        "2026-10-20",
        "2026-10-20",
        0
       ],
       [
-       29,
+       30,
        "2026-10-19",
        "2026-10-19",
        0
@@ -10630,7 +11730,7 @@
        0
       ],
       [
-       4,
+       9,
        "2026-10-13",
        "2026-10-14",
        0
@@ -10673,7 +11773,7 @@
        0
       ],
       [
-       13,
+       17,
        "2026-10-18",
        "2026-10-18",
        0
@@ -10692,13 +11792,13 @@
      "lon": -77.022,
      "r": [
       [
-       11,
+       15,
        "2026-11-06",
        null,
        1
       ],
       [
-       11,
+       15,
        "2026-11-06",
        null,
        1
@@ -10711,7 +11811,7 @@
      "lon": -77.021,
      "r": [
       [
-       11,
+       15,
        "2026-11-06",
        null,
        1
@@ -10724,71 +11824,16 @@
      "lon": -77.023,
      "r": [
       [
-       1,
+       0,
        "2026-11-06",
        null,
        1
       ],
       [
-       1,
+       0,
        "2026-10-16",
        "2026-10-27",
        0
-      ]
-     ]
-    },
-    {
-     "block": "1100 block of DAHLIA STREET NW",
-     "lat": 38.976,
-     "lon": -77.027,
-     "r": [
-      [
-       15,
-       "2026-11-06",
-       "2026-11-06",
-       0
-      ],
-      [
-       15,
-       "2026-11-04",
-       "2026-11-04",
-       0
-      ],
-      [
-       15,
-       "2026-10-27",
-       "2026-10-27",
-       0
-      ],
-      [
-       30,
-       "2026-10-22",
-       "2026-10-22",
-       0
-      ],
-      [
-       6,
-       "2026-10-17",
-       null,
-       1
-      ],
-      [
-       6,
-       "2026-10-13",
-       null,
-       1
-      ],
-      [
-       6,
-       "2026-10-12",
-       null,
-       1
-      ],
-      [
-       6,
-       "2026-10-10",
-       null,
-       1
       ]
      ]
     },
@@ -10798,7 +11843,7 @@
      "lon": -77.03,
      "r": [
       [
-       16,
+       20,
        "2026-11-06",
        null,
        1
@@ -10811,7 +11856,7 @@
      "lon": -77.026,
      "r": [
       [
-       17,
+       21,
        "2026-11-06",
        "2026-11-06",
        0
@@ -10824,7 +11869,7 @@
      "lon": -77.02,
      "r": [
       [
-       13,
+       17,
        "2026-11-06",
        "2026-11-06",
        0
@@ -10854,7 +11899,7 @@
        1
       ],
       [
-       26,
+       28,
        "2026-10-29",
        null,
        1
@@ -10867,7 +11912,7 @@
      "lon": -77.028,
      "r": [
       [
-       1,
+       0,
        "2026-11-06",
        null,
        1
@@ -10880,28 +11925,15 @@
      "lon": -77.027,
      "r": [
       [
-       18,
+       22,
        "2026-11-06",
        "2026-11-06",
        0
       ],
       [
-       8,
+       4,
        "2026-10-31",
        "2026-10-31",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1300 block of LOCUST ROAD NW",
-     "lat": 38.986,
-     "lon": -77.033,
-     "r": [
-      [
-       19,
-       "2026-11-06",
-       "2026-11-06",
        0
       ]
      ]
@@ -10925,25 +11957,25 @@
      "lon": -77.021,
      "r": [
       [
-       13,
+       17,
        "2026-11-06",
        "2026-11-06",
        0
       ],
       [
-       29,
+       30,
        "2026-10-27",
        "2026-10-27",
        0
       ],
       [
-       9,
+       10,
        "2026-10-27",
        "2026-10-29",
        0
       ],
       [
-       13,
+       17,
        "2026-10-27",
        "2026-10-27",
        0
@@ -10956,7 +11988,7 @@
      "lon": -77.033,
      "r": [
       [
-       20,
+       24,
        "2026-11-06",
        null,
        1
@@ -10993,7 +12025,7 @@
      "lon": -77.022,
      "r": [
       [
-       0,
+       8,
        "2026-11-06",
        null,
        1
@@ -11006,7 +12038,7 @@
      "lon": -77.022,
      "r": [
       [
-       21,
+       25,
        "2026-11-05",
        "2026-11-06",
        0
@@ -11019,7 +12051,7 @@
      "lon": -77.017,
      "r": [
       [
-       22,
+       13,
        "2026-11-05",
        null,
        1
@@ -11038,13 +12070,13 @@
      "lon": -77.036,
      "r": [
       [
-       6,
+       1,
        "2026-11-05",
        null,
        1
       ],
       [
-       8,
+       4,
        "2026-10-23",
        "2026-10-23",
        0
@@ -11057,7 +12089,7 @@
      "lon": -77.035,
      "r": [
       [
-       4,
+       9,
        "2026-11-05",
        null,
        1
@@ -11095,35 +12127,10 @@
      "lon": -77.043,
      "r": [
       [
-       1,
+       0,
        "2026-11-05",
        null,
        1
-      ]
-     ]
-    },
-    {
-     "block": "500 block of WHITTIER STREET NW",
-     "lat": 38.971,
-     "lon": -77.021,
-     "r": [
-      [
-       14,
-       "2026-11-05",
-       "2026-11-06",
-       0
-      ],
-      [
-       1,
-       "2026-11-01",
-       "2026-11-06",
-       0
-      ],
-      [
-       1,
-       "2026-10-25",
-       "2026-11-02",
-       0
       ]
      ]
     },
@@ -11133,7 +12140,7 @@
      "lon": -77.021,
      "r": [
       [
-       23,
+       26,
        "2026-11-05",
        "2026-11-05",
        1
@@ -11146,7 +12153,7 @@
      "lon": -77.023,
      "r": [
       [
-       24,
+       27,
        "2026-11-05",
        null,
        1
@@ -11158,7 +12165,7 @@
        0
       ],
       [
-       0,
+       8,
        "2026-10-20",
        "2026-10-28",
        0
@@ -11171,7 +12178,7 @@
      "lon": -77.046,
      "r": [
       [
-       1,
+       0,
        "2026-11-05",
        null,
        1
@@ -11184,7 +12191,7 @@
      "lon": -77.026,
      "r": [
       [
-       1,
+       0,
        "2026-11-05",
        null,
        1
@@ -11197,7 +12204,7 @@
      "lon": -77.022,
      "r": [
       [
-       1,
+       0,
        "2026-11-05",
        null,
        1
@@ -11210,7 +12217,7 @@
      "lon": -77.035,
      "r": [
       [
-       25,
+       7,
        "2026-11-05",
        null,
        1
@@ -11223,19 +12230,19 @@
      "lon": -77.031,
      "r": [
       [
-       1,
+       0,
        "2026-11-05",
        null,
        1
       ],
       [
-       0,
+       8,
        "2026-10-25",
        "2026-10-28",
        0
       ],
       [
-       0,
+       8,
        "2026-10-14",
        "2026-10-21",
        0
@@ -11249,55 +12256,12 @@
      ]
     },
     {
-     "block": "7500 block of 12TH STREET NW",
-     "lat": 38.981,
-     "lon": -77.028,
-     "r": [
-      [
-       26,
-       "2026-11-05",
-       null,
-       1
-      ],
-      [
-       42,
-       "2026-11-02",
-       null,
-       1
-      ],
-      [
-       1,
-       "2026-11-02",
-       "2026-11-06",
-       0
-      ],
-      [
-       42,
-       "2026-11-01",
-       null,
-       1
-      ],
-      [
-       19,
-       "2026-11-01",
-       "2026-11-02",
-       0
-      ],
-      [
-       25,
-       "2026-10-26",
-       null,
-       1
-      ]
-     ]
-    },
-    {
      "block": "6800 block of LAUREL STREET NW",
      "lat": 38.974,
      "lon": -77.014,
      "r": [
       [
-       15,
+       19,
        "2026-11-05",
        "2026-11-05",
        0
@@ -11309,7 +12273,7 @@
        0
       ],
       [
-       15,
+       19,
        "2026-10-26",
        "2026-10-26",
        0
@@ -11334,7 +12298,7 @@
      "lon": -77.022,
      "r": [
       [
-       27,
+       2,
        "2026-11-05",
        "2026-11-05",
        0
@@ -11347,7 +12311,7 @@
      "lon": -77.041,
      "r": [
       [
-       1,
+       0,
        "2026-11-05",
        null,
        1
@@ -11360,7 +12324,7 @@
      "lon": -77.022,
      "r": [
       [
-       15,
+       19,
        "2026-11-05",
        "2026-11-05",
        0
@@ -11386,19 +12350,19 @@
      "lon": -77.017,
      "r": [
       [
-       14,
+       18,
        "2026-11-05",
        "2026-11-05",
        0
       ],
       [
-       0,
+       8,
        "2026-10-16",
        "2026-10-21",
        0
       ],
       [
-       1,
+       0,
        "2026-10-15",
        "2026-10-27",
        0
@@ -11411,7 +12375,7 @@
      "lon": -77.034,
      "r": [
       [
-       1,
+       0,
        "2026-11-05",
        null,
        1
@@ -11424,7 +12388,7 @@
      "lon": -77.021,
      "r": [
       [
-       27,
+       2,
        "2026-11-05",
        "2026-11-05",
        0
@@ -11442,7 +12406,7 @@
        0
       ],
       [
-       1,
+       0,
        "2026-10-11",
        "2026-10-20",
        0
@@ -11455,7 +12419,7 @@
      "lon": -77.032,
      "r": [
       [
-       16,
+       20,
        "2026-11-05",
        null,
        1
@@ -11474,7 +12438,7 @@
        0
       ],
       [
-       1,
+       0,
        "2026-10-25",
        "2026-11-02",
        0
@@ -11487,7 +12451,7 @@
      "lon": -77.025,
      "r": [
       [
-       8,
+       4,
        "2026-11-05",
        "2026-11-05",
        0
@@ -11500,7 +12464,7 @@
      "lon": -77.018,
      "r": [
       [
-       28,
+       29,
        "2026-11-04",
        "2026-11-06",
        0
@@ -11513,7 +12477,7 @@
      "lon": -77.026,
      "r": [
       [
-       6,
+       1,
        "2026-11-04",
        null,
        1
@@ -11551,19 +12515,19 @@
        0
       ],
       [
-       9,
+       10,
        "2026-11-03",
        "2026-11-05",
        0
       ],
       [
-       9,
+       10,
        "2026-10-15",
        "2026-10-23",
        0
       ],
       [
-       0,
+       8,
        "2026-10-15",
        "2026-10-21",
        0
@@ -11576,13 +12540,13 @@
      "lon": -77.025,
      "r": [
       [
-       10,
+       3,
        "2026-11-04",
        null,
        1
       ],
       [
-       27,
+       2,
        "2026-11-04",
        "2026-11-05",
        0
@@ -11594,13 +12558,13 @@
        0
       ],
       [
-       1,
+       0,
        "2026-10-20",
        "2026-10-27",
        0
       ],
       [
-       10,
+       3,
        "2026-10-14",
        "2026-10-16",
        0
@@ -11619,7 +12583,7 @@
      "lon": -77.038,
      "r": [
       [
-       1,
+       0,
        "2026-11-04",
        null,
        1
@@ -11650,13 +12614,13 @@
        0
       ],
       [
-       23,
+       26,
        "2026-10-25",
        null,
        1
       ],
       [
-       1,
+       0,
        "2026-10-16",
        "2026-10-29",
        0
@@ -11669,13 +12633,13 @@
      "lon": -77.025,
      "r": [
       [
-       10,
+       3,
        "2026-11-04",
        null,
        1
       ],
       [
-       11,
+       15,
        "2026-10-30",
        "2026-10-31",
        0
@@ -11688,7 +12652,7 @@
      "lon": -77.025,
      "r": [
       [
-       21,
+       25,
        "2026-11-04",
        "2026-11-05",
        0
@@ -11701,7 +12665,7 @@
      "lon": -77.04,
      "r": [
       [
-       0,
+       8,
        "2026-11-04",
        null,
        1
@@ -11720,7 +12684,7 @@
      "lon": -77.02,
      "r": [
       [
-       29,
+       30,
        "2026-11-04",
        "2026-11-04",
        0
@@ -11732,7 +12696,7 @@
        0
       ],
       [
-       0,
+       8,
        "2026-11-01",
        null,
        1
@@ -11744,7 +12708,7 @@
        1
       ],
       [
-       10,
+       3,
        "2026-10-16",
        "2026-10-28",
        0
@@ -11757,31 +12721,31 @@
      "lon": -77.015,
      "r": [
       [
-       30,
+       6,
        "2026-11-04",
        "2026-11-05",
        0
       ],
       [
-       27,
+       2,
        "2026-11-04",
        "2026-11-05",
        0
       ],
       [
-       28,
+       29,
        "2026-10-27",
        "2026-11-04",
        0
       ],
       [
-       30,
+       6,
        "2026-10-23",
        "2026-10-24",
        0
       ],
       [
-       30,
+       6,
        "2026-10-12",
        "2026-10-12",
        0
@@ -11794,13 +12758,13 @@
      "lon": -77.02,
      "r": [
       [
-       13,
+       17,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       0,
+       8,
        "2026-11-03",
        null,
        1
@@ -11813,7 +12777,7 @@
      "lon": -77.029,
      "r": [
       [
-       20,
+       24,
        "2026-11-04",
        null,
        1
@@ -11826,7 +12790,7 @@
      "lon": -77.032,
      "r": [
       [
-       0,
+       8,
        "2026-11-04",
        null,
        1
@@ -11839,31 +12803,31 @@
      "lon": -77.046,
      "r": [
       [
-       15,
+       19,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       15,
+       19,
        "2026-10-27",
        "2026-10-27",
        0
       ],
       [
-       15,
+       19,
        "2026-10-26",
        "2026-10-26",
        0
       ],
       [
-       15,
+       19,
        "2026-10-23",
        "2026-10-23",
        0
       ],
       [
-       1,
+       0,
        "2026-10-20",
        "2026-10-29",
        0
@@ -11911,12 +12875,6 @@
        "2026-10-22",
        "2026-10-22",
        0
-      ],
-      [
-       9,
-       "2026-10-09",
-       "2026-10-14",
-       0
       ]
      ]
     },
@@ -11932,21 +12890,15 @@
        1
       ],
       [
-       0,
+       8,
        "2026-11-02",
        null,
        1
       ],
       [
-       0,
+       8,
        "2026-10-24",
        "2026-10-28",
-       0
-      ],
-      [
-       0,
-       "2026-10-09",
-       "2026-10-14",
        0
       ]
      ]
@@ -11957,7 +12909,7 @@
      "lon": -77.014,
      "r": [
       [
-       15,
+       19,
        "2026-11-04",
        "2026-11-04",
        0
@@ -11970,19 +12922,19 @@
      "lon": -77.015,
      "r": [
       [
-       13,
+       17,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       13,
+       17,
        "2026-10-26",
        "2026-10-26",
        0
       ],
       [
-       13,
+       17,
        "2026-10-13",
        "2026-10-18",
        0
@@ -11995,19 +12947,19 @@
      "lon": -77.015,
      "r": [
       [
-       13,
+       17,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       1,
+       0,
        "2026-10-31",
        "2026-11-06",
        0
       ],
       [
-       13,
+       17,
        "2026-10-26",
        "2026-10-26",
        1
@@ -12019,13 +12971,13 @@
        1
       ],
       [
-       16,
+       20,
        "2026-10-19",
        "2026-10-27",
        0
       ],
       [
-       13,
+       17,
        "2026-10-13",
        "2026-10-14",
        0
@@ -12038,31 +12990,31 @@
      "lon": -77.015,
      "r": [
       [
-       13,
+       17,
        "2026-11-04",
        "2026-11-04",
+       0
+      ],
+      [
+       22,
+       "2026-10-27",
+       "2026-10-27",
        0
       ],
       [
        18,
        "2026-10-27",
-       "2026-10-27",
-       0
-      ],
-      [
-       14,
-       "2026-10-27",
        "2026-10-28",
        0
       ],
       [
-       13,
+       17,
        "2026-10-26",
        "2026-10-26",
        0
       ],
       [
-       10,
+       3,
        "2026-10-19",
        "2026-10-22",
        0
@@ -12081,13 +13033,13 @@
        0
       ],
       [
-       13,
+       17,
        "2026-10-26",
        "2026-10-26",
        0
       ],
       [
-       13,
+       17,
        "2026-10-13",
        "2026-10-13",
        0
@@ -12106,25 +13058,25 @@
        1
       ],
       [
-       1,
+       0,
        "2026-11-03",
        "2026-11-06",
        0
       ],
       [
-       0,
+       8,
        "2026-11-01",
        null,
        1
       ],
       [
-       0,
+       8,
        "2026-10-19",
        "2026-10-28",
        0
       ],
       [
-       0,
+       8,
        "2026-10-13",
        "2026-10-21",
        0
@@ -12137,13 +13089,13 @@
      "lon": -77.032,
      "r": [
       [
-       0,
+       8,
        "2026-11-04",
        null,
        1
       ],
       [
-       0,
+       8,
        "2026-10-21",
        "2026-10-28",
        0
@@ -12156,13 +13108,13 @@
      "lon": -77.042,
      "r": [
       [
-       27,
+       2,
        "2026-11-04",
        "2026-11-05",
        0
       ],
       [
-       27,
+       2,
        "2026-10-22",
        "2026-10-23",
        0
@@ -12175,25 +13127,25 @@
      "lon": -77.022,
      "r": [
       [
-       0,
+       8,
        "2026-11-04",
        null,
        1
       ],
       [
-       0,
+       8,
        "2026-10-28",
        "2026-11-04",
        0
       ],
       [
-       0,
+       8,
        "2026-10-22",
        "2026-10-28",
        0
       ],
       [
-       0,
+       8,
        "2026-10-14",
        "2026-10-21",
        0
@@ -12206,7 +13158,7 @@
      "lon": -77.021,
      "r": [
       [
-       10,
+       3,
        "2026-11-04",
        null,
        1
@@ -12239,103 +13191,30 @@
      ]
     },
     {
-     "block": "7300 block of GEORGIA AVENUE NW",
-     "lat": 38.979,
-     "lon": -77.027,
-     "r": [
-      [
-       9,
-       "2026-11-03",
-       "2026-11-04",
-       0
-      ],
-      [
-       8,
-       "2026-11-03",
-       "2026-11-03",
-       0
-      ],
-      [
-       3,
-       "2026-10-25",
-       null,
-       1
-      ],
-      [
-       6,
-       "2026-10-17",
-       "2026-10-28",
-       0
-      ],
-      [
-       7,
-       "2026-10-17",
-       "2026-10-19",
-       0
-      ],
-      [
-       6,
-       "2026-10-17",
-       null,
-       1
-      ],
-      [
-       30,
-       "2026-10-17",
-       "2026-10-18",
-       0
-      ],
-      [
-       3,
-       "2026-10-17",
-       "2026-10-23",
-       0
-      ],
-      [
-       22,
-       "2026-10-17",
-       "2026-11-03",
-       0
-      ],
-      [
-       22,
-       "2026-10-10",
-       "2026-10-29",
-       0
-      ],
-      [
-       3,
-       "2026-10-10",
-       null,
-       1
-      ]
-     ]
-    },
-    {
      "block": "7500 block of EASTERN AVENUE NW",
      "lat": 38.982,
      "lon": -77.024,
      "r": [
       [
-       10,
+       3,
        "2026-11-03",
        null,
        1
       ],
       [
-       13,
+       17,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       25,
+       7,
        "2026-10-20",
        null,
        1
       ],
       [
-       10,
+       3,
        "2026-10-10",
        "2026-10-15",
        0
@@ -12354,7 +13233,7 @@
        1
       ],
       [
-       0,
+       8,
        "2026-10-21",
        "2026-10-28",
        0
@@ -12366,7 +13245,7 @@
        0
       ],
       [
-       1,
+       0,
        "2026-10-19",
        "2026-10-27",
        0
@@ -12379,7 +13258,7 @@
      "lon": -77.025,
      "r": [
       [
-       1,
+       0,
        "2026-11-03",
        "2026-11-06",
        0
@@ -12392,53 +13271,10 @@
      "lon": -77.024,
      "r": [
       [
-       0,
+       8,
        "2026-11-03",
        null,
        1
-      ]
-     ]
-    },
-    {
-     "block": "700 block of FERN PLACE NW",
-     "lat": 38.978,
-     "lon": -77.024,
-     "r": [
-      [
-       0,
-       "2026-11-03",
-       null,
-       1
-      ],
-      [
-       0,
-       "2026-10-23",
-       "2026-10-28",
-       0
-      ],
-      [
-       27,
-       "2026-10-22",
-       "2026-10-22",
-       0
-      ],
-      [
-       1,
-       "2026-10-22",
-       "2026-10-27",
-       0
-      ],
-      [
-       0,
-       "2026-10-17",
-       "2026-10-21",
-       0
-      ],
-      [
-       1,
-       "2026-10-10",
-       "2026-10-20",
-       0
       ]
      ]
     },
@@ -12448,13 +13284,13 @@
      "lon": -77.03,
      "r": [
       [
-       6,
+       1,
        "2026-11-03",
        "2026-11-03",
        0
       ],
       [
-       24,
+       27,
        "2026-10-16",
        null,
        1
@@ -12485,7 +13321,7 @@
        0
       ],
       [
-       13,
+       17,
        "2026-10-26",
        "2026-10-26",
        0
@@ -12508,12 +13344,6 @@
        "2026-11-03",
        "2026-11-05",
        0
-      ],
-      [
-       13,
-       "2026-10-09",
-       "2026-10-09",
-       0
       ]
      ]
     },
@@ -12523,19 +13353,19 @@
      "lon": -77.016,
      "r": [
       [
+       19,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ],
+      [
        15,
-       "2026-11-03",
-       "2026-11-03",
-       0
-      ],
-      [
-       11,
        "2026-11-02",
        "2026-11-03",
        0
       ],
       [
-       11,
+       15,
        "2026-11-02",
        "2026-11-03",
        0
@@ -12565,22 +13395,10 @@
        0
       ],
       [
-       3,
+       12,
        "2026-10-13",
        null,
        1
-      ],
-      [
-       5,
-       "2026-10-10",
-       "2026-10-13",
-       0
-      ],
-      [
-       29,
-       "2026-10-09",
-       "2026-10-09",
-       0
       ]
      ]
     },
@@ -12590,7 +13408,7 @@
      "lon": -77.019,
      "r": [
       [
-       8,
+       4,
        "2026-11-03",
        null,
        1
@@ -12603,7 +13421,7 @@
      "lon": -77.034,
      "r": [
       [
-       3,
+       12,
        "2026-11-03",
        null,
        1
@@ -12622,37 +13440,37 @@
      "lon": -77.022,
      "r": [
       [
-       10,
+       3,
        "2026-11-03",
        "2026-11-04",
        0
       ],
       [
-       0,
+       8,
        "2026-11-03",
        null,
        1
       ],
       [
-       10,
+       3,
        "2026-10-26",
        "2026-11-04",
        0
       ],
       [
-       2,
+       11,
        "2026-10-20",
        "2026-11-03",
        0
       ],
       [
-       27,
+       2,
        "2026-10-20",
        "2026-10-21",
        0
       ],
       [
-       2,
+       11,
        "2026-10-20",
        "2026-11-03",
        0
@@ -12665,7 +13483,7 @@
      "lon": -77.045,
      "r": [
       [
-       21,
+       25,
        "2026-11-03",
        "2026-11-04",
        0
@@ -12678,7 +13496,7 @@
      "lon": -77.019,
      "r": [
       [
-       8,
+       4,
        "2026-11-03",
        "2026-11-03",
        0
@@ -12691,35 +13509,10 @@
      "lon": -77.028,
      "r": [
       [
-       16,
+       20,
        "2026-11-03",
        null,
        1
-      ]
-     ]
-    },
-    {
-     "block": "500 block of TUCKERMAN STREET NW",
-     "lat": 38.967,
-     "lon": -77.021,
-     "r": [
-      [
-       1,
-       "2026-11-03",
-       "2026-11-06",
-       0
-      ],
-      [
-       1,
-       "2026-10-29",
-       "2026-11-02",
-       0
-      ],
-      [
-       0,
-       "2026-10-28",
-       "2026-11-04",
-       0
       ]
      ]
     },
@@ -12742,7 +13535,7 @@
      "lon": -77.027,
      "r": [
       [
-       30,
+       6,
        "2026-11-03",
        "2026-11-04",
        0
@@ -12755,7 +13548,7 @@
      "lon": -77.034,
      "r": [
       [
-       4,
+       9,
        "2026-11-03",
        "2026-11-04",
        0
@@ -12768,13 +13561,13 @@
      "lon": -77.021,
      "r": [
       [
-       9,
+       10,
        "2026-11-03",
        "2026-11-05",
        0
       ],
       [
-       1,
+       0,
        "2026-11-02",
        "2026-11-06",
        0
@@ -12787,7 +13580,7 @@
      "lon": -77.025,
      "r": [
       [
-       4,
+       9,
        "2026-11-03",
        null,
        1
@@ -12800,7 +13593,7 @@
      "lon": -77.028,
      "r": [
       [
-       9,
+       10,
        "2026-11-03",
        "2026-11-05",
        0
@@ -12813,7 +13606,7 @@
      "lon": -77.022,
      "r": [
       [
-       9,
+       10,
        "2026-11-03",
        "2026-11-05",
        0
@@ -12826,7 +13619,7 @@
      "lon": -77.026,
      "r": [
       [
-       8,
+       4,
        "2026-11-03",
        "2026-11-03",
        0
@@ -12870,7 +13663,7 @@
      "lon": -77.04,
      "r": [
       [
-       0,
+       8,
        "2026-11-03",
        null,
        1
@@ -12882,13 +13675,13 @@
        0
       ],
       [
-       14,
+       18,
        "2026-10-21",
        "2026-10-23",
        1
       ],
       [
-       14,
+       18,
        "2026-10-21",
        "2026-10-23",
        0
@@ -12901,7 +13694,7 @@
      "lon": -77.023,
      "r": [
       [
-       1,
+       0,
        "2026-11-03",
        "2026-11-06",
        0
@@ -12913,7 +13706,7 @@
        1
       ],
       [
-       29,
+       30,
        "2026-10-10",
        "2026-10-10",
        0
@@ -12926,25 +13719,25 @@
      "lon": -77.035,
      "r": [
       [
-       0,
+       8,
        "2026-11-03",
        null,
        1
       ],
       [
-       1,
+       0,
        "2026-10-26",
        "2026-11-02",
        0
       ],
       [
-       0,
+       8,
        "2026-10-26",
        "2026-10-28",
        0
       ],
       [
-       25,
+       7,
        "2026-10-20",
        null,
        1
@@ -12956,13 +13749,13 @@
        1
       ],
       [
-       0,
+       8,
        "2026-10-12",
        "2026-10-21",
        0
       ],
       [
-       1,
+       0,
        "2026-10-12",
        "2026-10-20",
        0
@@ -12975,13 +13768,13 @@
      "lon": -77.021,
      "r": [
       [
-       0,
+       8,
        "2026-11-03",
        null,
        1
       ],
       [
-       0,
+       8,
        "2026-10-12",
        "2026-10-21",
        0
@@ -12994,13 +13787,13 @@
      "lon": -77.023,
      "r": [
       [
-       0,
+       8,
        "2026-11-03",
        null,
        1
       ],
       [
-       0,
+       8,
        "2026-10-23",
        "2026-10-28",
        0
@@ -13013,7 +13806,7 @@
      "lon": -77.025,
      "r": [
       [
-       0,
+       8,
        "2026-11-02",
        null,
        1
@@ -13045,13 +13838,13 @@
        1
       ],
       [
-       11,
+       15,
        "2026-10-26",
        "2026-10-28",
        1
       ],
       [
-       11,
+       15,
        "2026-10-24",
        "2026-10-28",
        0
@@ -13077,7 +13870,7 @@
      "lon": -77.027,
      "r": [
       [
-       10,
+       3,
        "2026-11-02",
        "2026-11-05",
        0
@@ -13096,25 +13889,25 @@
      "lon": -77.028,
      "r": [
       [
-       1,
+       0,
        "2026-11-02",
        "2026-11-06",
        0
       ],
       [
-       15,
+       19,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       15,
+       19,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       15,
+       19,
        "2026-10-21",
        "2026-10-21",
        0
@@ -13133,7 +13926,7 @@
      "lon": -77.029,
      "r": [
       [
-       0,
+       8,
        "2026-11-02",
        null,
        1
@@ -13158,13 +13951,13 @@
      "lon": -77.021,
      "r": [
       [
-       1,
+       0,
        "2026-11-02",
        "2026-11-06",
        0
       ],
       [
-       11,
+       15,
        "2026-10-14",
        "2026-10-15",
        0
@@ -13183,7 +13976,7 @@
        1
       ],
       [
-       16,
+       20,
        "2026-11-02",
        null,
        1
@@ -13196,13 +13989,13 @@
      "lon": -77.022,
      "r": [
       [
-       1,
+       0,
        "2026-11-02",
        "2026-11-06",
        0
       ],
       [
-       8,
+       4,
        "2026-10-31",
        "2026-11-01",
        0
@@ -13215,16 +14008,10 @@
      "lon": -77.022,
      "r": [
       [
-       0,
+       8,
        "2026-11-02",
        null,
        1
-      ],
-      [
-       1,
-       "2026-10-09",
-       "2026-10-20",
-       0
       ]
      ]
     },
@@ -13234,13 +14021,13 @@
      "lon": -77.035,
      "r": [
       [
-       1,
+       0,
        "2026-11-02",
        "2026-11-06",
        0
       ],
       [
-       1,
+       0,
        "2026-10-10",
        "2026-10-20",
        0
@@ -13266,7 +14053,7 @@
      "lon": -77.027,
      "r": [
       [
-       20,
+       24,
        "2026-11-02",
        "2026-11-03",
        0
@@ -13311,13 +14098,13 @@
      "lon": -77.025,
      "r": [
       [
-       1,
+       0,
        "2026-11-02",
        "2026-11-06",
        0
       ],
       [
-       0,
+       8,
        "2026-10-29",
        "2026-11-04",
        0
@@ -13329,21 +14116,15 @@
        0
       ],
       [
-       0,
+       8,
        "2026-10-16",
        "2026-10-21",
        0
       ],
       [
-       1,
+       0,
        "2026-10-13",
        "2026-10-20",
-       0
-      ],
-      [
-       0,
-       "2026-10-09",
-       "2026-10-14",
        0
       ]
      ]
@@ -13354,19 +14135,19 @@
      "lon": -77.037,
      "r": [
       [
-       4,
+       9,
        "2026-11-02",
        null,
        1
       ],
       [
-       10,
+       3,
        "2026-10-26",
        "2026-10-29",
        0
       ],
       [
-       10,
+       3,
        "2026-10-24",
        "2026-10-29",
        0
@@ -13379,7 +14160,7 @@
      "lon": -77.036,
      "r": [
       [
-       4,
+       9,
        "2026-11-02",
        "2026-11-02",
        0
@@ -13392,7 +14173,7 @@
      "lon": -77.018,
      "r": [
       [
-       6,
+       1,
        "2026-11-02",
        null,
        1
@@ -13424,13 +14205,13 @@
      "lon": -77.019,
      "r": [
       [
-       19,
+       23,
        "2026-11-02",
        "2026-11-03",
        0
       ],
       [
-       0,
+       8,
        "2026-10-12",
        "2026-10-21",
        0
@@ -13443,13 +14224,13 @@
      "lon": -77.031,
      "r": [
       [
-       1,
+       0,
        "2026-11-02",
        "2026-11-06",
        0
       ],
       [
-       27,
+       2,
        "2026-10-16",
        "2026-10-19",
        0
@@ -13462,7 +14243,7 @@
      "lon": -77.022,
      "r": [
       [
-       0,
+       8,
        "2026-11-02",
        null,
        1
@@ -13475,7 +14256,7 @@
      "lon": -77.036,
      "r": [
       [
-       1,
+       0,
        "2026-11-02",
        "2026-11-06",
        0
@@ -13488,37 +14269,37 @@
      "lon": -77.025,
      "r": [
       [
-       1,
+       0,
        "2026-11-02",
        "2026-11-06",
        0
       ],
       [
-       10,
+       3,
        "2026-10-27",
        "2026-11-04",
        0
       ],
       [
-       9,
+       10,
        "2026-10-23",
        "2026-11-03",
        1
       ],
       [
-       9,
+       10,
        "2026-10-23",
        "2026-11-03",
        0
       ],
       [
-       1,
+       0,
        "2026-10-19",
        "2026-10-27",
        0
       ],
       [
-       13,
+       17,
        "2026-10-13",
        "2026-10-13",
        0
@@ -13531,7 +14312,7 @@
      "lon": -77.02,
      "r": [
       [
-       1,
+       0,
        "2026-11-01",
        "2026-11-06",
        0
@@ -13556,19 +14337,19 @@
      "lon": -77.027,
      "r": [
       [
-       8,
+       4,
        "2026-11-01",
        "2026-11-02",
        0
       ],
       [
-       8,
+       4,
        "2026-10-31",
        "2026-11-01",
        0
       ],
       [
-       8,
+       4,
        "2026-10-31",
        "2026-11-01",
        0
@@ -13581,19 +14362,19 @@
      "lon": -77.022,
      "r": [
       [
-       10,
+       3,
        "2026-11-01",
        "2026-11-05",
        0
       ],
       [
-       1,
+       0,
        "2026-10-24",
        "2026-11-02",
        0
       ],
       [
-       0,
+       8,
        "2026-10-10",
        "2026-10-14",
        0
@@ -13606,13 +14387,13 @@
      "lon": -77.031,
      "r": [
       [
-       1,
+       0,
        "2026-11-01",
        "2026-11-06",
        0
       ],
       [
-       0,
+       8,
        "2026-10-21",
        "2026-10-28",
        0
@@ -13625,19 +14406,19 @@
      "lon": -77.025,
      "r": [
       [
-       19,
+       23,
        "2026-11-01",
        "2026-11-01",
        0
       ],
       [
-       1,
+       0,
        "2026-11-01",
        "2026-11-06",
        0
       ],
       [
-       13,
+       17,
        "2026-10-16",
        "2026-10-18",
        0
@@ -13650,19 +14431,19 @@
      "lon": -77.045,
      "r": [
       [
-       1,
+       0,
        "2026-11-01",
        "2026-11-06",
        0
       ],
       [
-       0,
+       8,
        "2026-11-01",
        null,
        1
       ],
       [
-       0,
+       8,
        "2026-11-01",
        null,
        1
@@ -13675,71 +14456,9 @@
      "lon": -77.016,
      "r": [
       [
-       14,
+       18,
        "2026-11-01",
        "2026-11-05",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "600 block of GERANIUM STREET NW",
-     "lat": 38.979,
-     "lon": -77.023,
-     "r": [
-      [
-       43,
-       "2026-11-01",
-       null,
-       1
-      ],
-      [
-       1,
-       "2026-10-26",
-       "2026-11-02",
-       0
-      ],
-      [
-       38,
-       "2026-10-14",
-       "2026-10-15",
-       0
-      ],
-      [
-       38,
-       "2026-10-13",
-       "2026-10-14",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "7400 block of GEORGIA AVENUE NW",
-     "lat": 38.98,
-     "lon": -77.026,
-     "r": [
-      [
-       32,
-       "2026-11-01",
-       null,
-       1
-      ],
-      [
-       2,
-       "2026-10-27",
-       "2026-11-03",
-       0
-      ],
-      [
-       2,
-       "2026-10-17",
-       "2026-10-21",
-       0
-      ],
-      [
-       2,
-       "2026-10-10",
-       "2026-10-13",
        0
       ]
      ]
@@ -13750,7 +14469,7 @@
      "lon": -77.026,
      "r": [
       [
-       22,
+       13,
        "2026-11-01",
        null,
        1
@@ -13762,7 +14481,7 @@
        0
       ],
       [
-       6,
+       1,
        "2026-10-12",
        "2026-10-14",
        0
@@ -13801,7 +14520,7 @@
      "lon": -77.024,
      "r": [
       [
-       21,
+       25,
        "2026-10-31",
        "2026-11-02",
        0
@@ -13827,7 +14546,7 @@
      "lon": -77.038,
      "r": [
       [
-       0,
+       8,
        "2026-10-31",
        null,
        1
@@ -13840,19 +14559,19 @@
      "lon": -77.023,
      "r": [
       [
-       0,
+       8,
        "2026-10-31",
        null,
        1
       ],
       [
-       0,
+       8,
        "2026-10-20",
        "2026-10-28",
        0
       ],
       [
-       1,
+       0,
        "2026-10-16",
        "2026-10-27",
        0
@@ -13865,7 +14584,7 @@
      "lon": -77.036,
      "r": [
       [
-       1,
+       0,
        "2026-10-31",
        "2026-11-06",
        0
@@ -13878,7 +14597,7 @@
      "lon": -77.045,
      "r": [
       [
-       0,
+       8,
        "2026-10-31",
        null,
        1
@@ -13891,13 +14610,13 @@
      "lon": -77.031,
      "r": [
       [
-       16,
+       20,
        "2026-10-31",
        null,
        1
       ],
       [
-       25,
+       7,
        "2026-10-31",
        null,
        1
@@ -13909,25 +14628,25 @@
        1
       ],
       [
-       1,
+       0,
        "2026-10-25",
        "2026-11-02",
        0
       ],
       [
-       16,
+       20,
        "2026-10-12",
        null,
        1
       ],
       [
-       0,
+       8,
        "2026-10-12",
        "2026-10-21",
        0
       ],
       [
-       1,
+       0,
        "2026-10-10",
        "2026-10-20",
        0
@@ -13940,13 +14659,13 @@
      "lon": -77.027,
      "r": [
       [
-       8,
+       4,
        "2026-10-31",
        "2026-11-01",
        0
       ],
       [
-       4,
+       9,
        "2026-10-24",
        "2026-10-26",
        0
@@ -13958,7 +14677,7 @@
        0
       ],
       [
-       1,
+       0,
        "2026-10-15",
        "2026-10-27",
        0
@@ -13971,7 +14690,7 @@
      "lon": -77.021,
      "r": [
       [
-       11,
+       15,
        "2026-10-31",
        "2026-11-03",
        0
@@ -13984,7 +14703,7 @@
      "lon": -77.026,
      "r": [
       [
-       22,
+       13,
        "2026-10-31",
        null,
        1
@@ -13997,149 +14716,22 @@
      "lon": -77.026,
      "r": [
       [
-       8,
+       4,
        "2026-10-31",
        "2026-11-01",
        0
       ],
       [
-       7,
+       14,
        "2026-10-31",
        "2026-10-31",
        1
       ],
       [
-       8,
+       4,
        "2026-10-31",
        "2026-11-01",
        0
-      ]
-     ]
-    },
-    {
-     "block": "1100 block of FERN STREET NW",
-     "lat": 38.978,
-     "lon": -77.027,
-     "r": [
-      [
-       6,
-       "2026-10-31",
-       "2026-11-03",
-       0
-      ],
-      [
-       4,
-       "2026-10-28",
-       "2026-10-29",
-       0
-      ],
-      [
-       4,
-       "2026-10-28",
-       "2026-10-29",
-       0
-      ],
-      [
-       22,
-       "2026-10-28",
-       null,
-       1
-      ],
-      [
-       6,
-       "2026-10-28",
-       "2026-11-03",
-       0
-      ],
-      [
-       4,
-       "2026-10-28",
-       "2026-10-29",
-       0
-      ],
-      [
-       32,
-       "2026-10-28",
-       "2026-11-06",
-       0
-      ],
-      [
-       4,
-       "2026-10-25",
-       "2026-10-25",
-       0
-      ],
-      [
-       27,
-       "2026-10-24",
-       "2026-10-28",
-       0
-      ],
-      [
-       6,
-       "2026-10-24",
-       null,
-       1
-      ],
-      [
-       27,
-       "2026-10-20",
-       "2026-10-21",
-       0
-      ],
-      [
-       4,
-       "2026-10-17",
-       "2026-10-19",
-       0
-      ],
-      [
-       3,
-       "2026-10-17",
-       "2026-10-23",
-       0
-      ],
-      [
-       6,
-       "2026-10-17",
-       null,
-       1
-      ],
-      [
-       6,
-       "2026-10-14",
-       null,
-       1
-      ],
-      [
-       6,
-       "2026-10-13",
-       null,
-       1
-      ],
-      [
-       13,
-       "2026-10-13",
-       "2026-10-13",
-       0
-      ],
-      [
-       32,
-       "2026-10-12",
-       "2026-10-29",
-       0
-      ],
-      [
-       6,
-       "2026-10-12",
-       null,
-       1
-      ],
-      [
-       6,
-       "2026-10-11",
-       null,
-       1
       ]
      ]
     },
@@ -14149,7 +14741,7 @@
      "lon": -77.043,
      "r": [
       [
-       1,
+       0,
        "2026-10-31",
        "2026-11-06",
        0
@@ -14162,7 +14754,7 @@
      "lon": -77.027,
      "r": [
       [
-       8,
+       4,
        "2026-10-31",
        "2026-10-31",
        0
@@ -14175,76 +14767,39 @@
      "lon": -77.036,
      "r": [
       [
-       8,
+       4,
        "2026-10-31",
        null,
        1
       ],
       [
-       8,
+       4,
        "2026-10-31",
        null,
        1
       ],
       [
-       8,
+       4,
        "2026-10-21",
        "2026-10-22",
        0
       ],
       [
-       8,
+       4,
        "2026-10-21",
        "2026-10-22",
        0
       ],
       [
-       8,
+       4,
        "2026-10-21",
        "2026-10-22",
        0
       ],
       [
-       8,
+       4,
        "2026-10-21",
        "2026-10-22",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "900 block of BUTTERNUT STREET NW",
-     "lat": 38.974,
-     "lon": -77.026,
-     "r": [
-      [
-       11,
-       "2026-10-31",
-       "2026-10-31",
-       0
-      ],
-      [
-       52,
-       "2026-10-24",
-       null,
-       1
-      ],
-      [
-       1,
-       "2026-10-20",
-       "2026-10-27",
-       0
-      ],
-      [
-       1,
-       "2026-10-18",
-       "2026-10-27",
-       0
-      ],
-      [
-       1,
-       "2026-10-15",
-       "2026-10-27",
        0
       ]
      ]
@@ -14255,7 +14810,7 @@
      "lon": -77.036,
      "r": [
       [
-       8,
+       4,
        "2026-10-31",
        "2026-11-01",
        0
@@ -14281,7 +14836,7 @@
      "lon": -77.043,
      "r": [
       [
-       0,
+       8,
        "2026-10-31",
        null,
        1
@@ -14294,13 +14849,13 @@
      "lon": -77.029,
      "r": [
       [
-       9,
+       10,
        "2026-10-30",
        "2026-11-02",
        0
       ],
       [
-       9,
+       10,
        "2026-10-28",
        "2026-10-29",
        0
@@ -14313,7 +14868,7 @@
      "lon": -77.032,
      "r": [
       [
-       28,
+       29,
        "2026-10-30",
        "2026-11-05",
        0
@@ -14326,7 +14881,7 @@
      "lon": -77.018,
      "r": [
       [
-       2,
+       11,
        "2026-10-30",
        "2026-11-03",
        0
@@ -14338,7 +14893,7 @@
        0
       ],
       [
-       2,
+       11,
        "2026-10-16",
        "2026-10-21",
        0
@@ -14357,13 +14912,13 @@
        0
       ],
       [
-       1,
+       0,
        "2026-10-25",
        "2026-11-02",
        0
       ],
       [
-       1,
+       0,
        "2026-10-12",
        "2026-10-20",
        0
@@ -14395,7 +14950,7 @@
      "lon": -77.029,
      "r": [
       [
-       20,
+       24,
        "2026-10-30",
        "2026-11-06",
        0
@@ -14408,13 +14963,13 @@
      "lon": -77.031,
      "r": [
       [
-       1,
+       0,
        "2026-10-30",
        "2026-11-06",
        0
       ],
       [
-       25,
+       7,
        "2026-10-15",
        null,
        1
@@ -14439,7 +14994,7 @@
        1
       ],
       [
-       1,
+       0,
        "2026-10-21",
        "2026-10-27",
        0
@@ -14452,7 +15007,7 @@
      "lon": -77.028,
      "r": [
       [
-       10,
+       3,
        "2026-10-30",
        "2026-11-02",
        0
@@ -14468,12 +15023,6 @@
        "2026-10-21",
        "2026-10-21",
        0
-      ],
-      [
-       34,
-       "2026-10-09",
-       "2026-10-21",
-       0
       ]
      ]
     },
@@ -14483,7 +15032,7 @@
      "lon": -77.025,
      "r": [
       [
-       1,
+       0,
        "2026-10-30",
        "2026-11-06",
        0
@@ -14501,7 +15050,7 @@
        0
       ],
       [
-       1,
+       0,
        "2026-10-13",
        "2026-10-20",
        0
@@ -14514,7 +15063,7 @@
      "lon": -77.033,
      "r": [
       [
-       1,
+       0,
        "2026-10-30",
        "2026-11-06",
        0
@@ -14527,7 +15076,7 @@
      "lon": -77.022,
      "r": [
       [
-       21,
+       25,
        "2026-10-30",
        "2026-10-30",
        0
@@ -14540,13 +15089,13 @@
      "lon": -77.028,
      "r": [
       [
-       21,
+       25,
        "2026-10-30",
        "2026-10-30",
        0
       ],
       [
-       4,
+       9,
        "2026-10-28",
        null,
        1
@@ -14555,12 +15104,6 @@
        32,
        "2026-10-28",
        "2026-11-04",
-       0
-      ],
-      [
-       4,
-       "2026-10-10",
-       "2026-10-13",
        0
       ]
      ]
@@ -14571,19 +15114,19 @@
      "lon": -77.029,
      "r": [
       [
-       21,
+       25,
        "2026-10-30",
        "2026-10-30",
        0
       ],
       [
-       3,
+       12,
        "2026-10-21",
        null,
        1
       ],
       [
-       21,
+       25,
        "2026-10-20",
        "2026-10-20",
        0
@@ -14596,7 +15139,7 @@
      "lon": -77.032,
      "r": [
       [
-       25,
+       7,
        "2026-10-30",
        null,
        1
@@ -14615,13 +15158,13 @@
      "lon": -77.032,
      "r": [
       [
-       0,
+       8,
        "2026-10-29",
        "2026-11-04",
        0
       ],
       [
-       19,
+       23,
        "2026-10-13",
        "2026-10-13",
        0
@@ -14634,13 +15177,13 @@
      "lon": -77.02,
      "r": [
       [
-       1,
+       0,
        "2026-10-29",
        "2026-11-06",
        0
       ],
       [
-       10,
+       3,
        "2026-10-23",
        "2026-10-28",
        0
@@ -14672,7 +15215,7 @@
        1
       ],
       [
-       1,
+       0,
        "2026-10-21",
        "2026-10-29",
        0
@@ -14685,13 +15228,13 @@
      "lon": -77.018,
      "r": [
       [
-       30,
+       6,
        "2026-10-29",
        "2026-10-30",
        0
       ],
       [
-       30,
+       6,
        "2026-10-22",
        "2026-10-23",
        0
@@ -14710,13 +15253,13 @@
        1
       ],
       [
-       25,
+       7,
        "2026-10-29",
        null,
        1
       ],
       [
-       21,
+       25,
        "2026-10-27",
        "2026-10-28",
        0
@@ -14729,7 +15272,7 @@
      "lon": -77.039,
      "r": [
       [
-       1,
+       0,
        "2026-10-29",
        "2026-11-06",
        0
@@ -14742,19 +15285,19 @@
      "lon": -77.017,
      "r": [
       [
-       25,
+       7,
        "2026-10-29",
        null,
        1
       ],
       [
-       1,
+       0,
        "2026-10-23",
        "2026-11-02",
        0
       ],
       [
-       3,
+       12,
        "2026-10-17",
        null,
        1
@@ -14780,7 +15323,7 @@
      "lon": -77.035,
      "r": [
       [
-       19,
+       23,
        "2026-10-29",
        "2026-10-29",
        0
@@ -14792,23 +15335,10 @@
        0
       ],
       [
-       0,
+       8,
        "2026-10-29",
        "2026-11-04",
        0
-      ]
-     ]
-    },
-    {
-     "block": "1200 block of ASPEN STREET NW",
-     "lat": 38.972,
-     "lon": -77.029,
-     "r": [
-      [
-       42,
-       "2026-10-29",
-       null,
-       1
       ]
      ]
     },
@@ -14818,7 +15348,7 @@
      "lon": -77.026,
      "r": [
       [
-       13,
+       17,
        "2026-10-29",
        "2026-10-29",
        0
@@ -14831,47 +15361,22 @@
      "lon": -77.015,
      "r": [
       [
-       10,
+       3,
        "2026-10-29",
        "2026-10-30",
        0
       ],
       [
-       10,
+       3,
        "2026-10-28",
        "2026-10-30",
        0
       ],
       [
-       22,
+       13,
        "2026-10-28",
        null,
        1
-      ]
-     ]
-    },
-    {
-     "block": "7000 block of 16TH STREET NW",
-     "lat": 38.976,
-     "lon": -77.036,
-     "r": [
-      [
-       4,
-       "2026-10-29",
-       "2026-10-29",
-       0
-      ],
-      [
-       1,
-       "2026-10-22",
-       "2026-10-27",
-       0
-      ],
-      [
-       1,
-       "2026-10-14",
-       "2026-10-20",
-       0
       ]
      ]
     },
@@ -14881,40 +15386,9 @@
      "lon": -77.027,
      "r": [
       [
-       27,
+       2,
        "2026-10-29",
        "2026-10-30",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "6800 block of LAUREL STREET NW",
-     "lat": 38.972,
-     "lon": -77.015,
-     "r": [
-      [
-       13,
-       "2026-10-29",
-       "2026-10-29",
-       0
-      ],
-      [
-       1,
-       "2026-10-24",
-       "2026-11-02",
-       0
-      ],
-      [
-       0,
-       "2026-10-24",
-       "2026-10-28",
-       0
-      ],
-      [
-       0,
-       "2026-10-20",
-       "2026-10-28",
        0
       ]
      ]
@@ -14925,13 +15399,13 @@
      "lon": -77.025,
      "r": [
       [
-       11,
+       15,
        "2026-10-29",
        "2026-10-31",
        0
       ],
       [
-       0,
+       8,
        "2026-10-25",
        "2026-10-28",
        0
@@ -14944,13 +15418,13 @@
      "lon": -77.025,
      "r": [
       [
-       11,
+       15,
        "2026-10-29",
        "2026-10-31",
        0
       ],
       [
-       1,
+       0,
        "2026-10-23",
        "2026-11-02",
        0
@@ -14963,7 +15437,7 @@
      "lon": -77.038,
      "r": [
       [
-       27,
+       2,
        "2026-10-29",
        "2026-11-05",
        0
@@ -14976,28 +15450,9 @@
      "lon": -77.023,
      "r": [
       [
-       27,
+       2,
        "2026-10-28",
        "2026-10-29",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1100 block of FERN STREET NW",
-     "lat": 38.978,
-     "lon": -77.028,
-     "r": [
-      [
-       4,
-       "2026-10-28",
-       null,
-       1
-      ],
-      [
-       9,
-       "2026-10-15",
-       "2026-10-20",
        0
       ]
      ]
@@ -15008,63 +15463,20 @@
      "lon": -77.036,
      "r": [
       [
-       4,
+       9,
        "2026-10-28",
        "2026-11-04",
        0
       ],
       [
-       6,
+       1,
        "2026-10-27",
        null,
        1
       ],
       [
-       19,
+       23,
        "2026-10-13",
-       "2026-10-14",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1300 block of LEEGATE ROAD NW",
-     "lat": 38.986,
-     "lon": -77.032,
-     "r": [
-      [
-       0,
-       "2026-10-28",
-       "2026-11-04",
-       0
-      ],
-      [
-       29,
-       "2026-10-28",
-       "2026-10-28",
-       0
-      ],
-      [
-       0,
-       "2026-10-24",
-       "2026-10-28",
-       0
-      ],
-      [
-       38,
-       "2026-10-20",
-       "2026-10-21",
-       0
-      ],
-      [
-       0,
-       "2026-10-12",
-       "2026-10-21",
-       0
-      ],
-      [
-       0,
-       "2026-10-09",
        "2026-10-14",
        0
       ]
@@ -15089,7 +15501,7 @@
      "lon": -77.02,
      "r": [
       [
-       18,
+       22,
        "2026-10-28",
        "2026-10-28",
        0
@@ -15102,25 +15514,25 @@
      "lon": -77.022,
      "r": [
       [
-       1,
+       0,
        "2026-10-28",
        "2026-11-02",
        0
       ],
       [
-       0,
+       8,
        "2026-10-22",
        "2026-10-28",
        0
       ],
       [
-       23,
+       26,
        "2026-10-22",
        null,
        1
       ],
       [
-       1,
+       0,
        "2026-10-22",
        "2026-10-27",
        0
@@ -15151,7 +15563,7 @@
      "lon": -77.034,
      "r": [
       [
-       25,
+       7,
        "2026-10-28",
        null,
        1
@@ -15164,31 +15576,31 @@
      "lon": -77.029,
      "r": [
       [
-       1,
+       0,
        "2026-10-28",
        "2026-11-02",
        0
       ],
       [
-       24,
+       27,
        "2026-10-21",
        null,
        1
       ],
       [
-       1,
+       0,
        "2026-10-19",
        "2026-10-27",
        0
       ],
       [
-       24,
+       27,
        "2026-10-16",
        "2026-10-16",
        0
       ],
       [
-       25,
+       7,
        "2026-10-16",
        null,
        1
@@ -15201,7 +15613,7 @@
      "lon": -77.023,
      "r": [
       [
-       0,
+       8,
        "2026-10-28",
        "2026-11-04",
        0
@@ -15214,7 +15626,7 @@
      "lon": -77.024,
      "r": [
       [
-       1,
+       0,
        "2026-10-28",
        "2026-11-02",
        0
@@ -15227,7 +15639,7 @@
      "lon": -77.024,
      "r": [
       [
-       1,
+       0,
        "2026-10-28",
        "2026-11-02",
        0
@@ -15248,73 +15660,12 @@
      ]
     },
     {
-     "block": "7100 block of GEORGIA AVENUE NW",
-     "lat": 38.976,
-     "lon": -77.026,
-     "r": [
-      [
-       20,
-       "2026-10-28",
-       "2026-11-05",
-       0
-      ],
-      [
-       34,
-       "2026-10-28",
-       "2026-11-06",
-       0
-      ],
-      [
-       1,
-       "2026-10-27",
-       "2026-11-02",
-       0
-      ],
-      [
-       10,
-       "2026-10-27",
-       "2026-10-30",
-       0
-      ],
-      [
-       2,
-       "2026-10-27",
-       null,
-       1
-      ],
-      [
-       19,
-       "2026-10-24",
-       "2026-10-25",
-       0
-      ],
-      [
-       10,
-       "2026-10-12",
-       "2026-10-15",
-       0
-      ],
-      [
-       1,
-       "2026-10-11",
-       "2026-10-20",
-       0
-      ],
-      [
-       6,
-       "2026-10-10",
-       null,
-       1
-      ]
-     ]
-    },
-    {
      "block": "1600 block of KALMIA ROAD NW",
      "lat": 38.986,
      "lon": -77.037,
      "r": [
       [
-       1,
+       0,
        "2026-10-28",
        "2026-11-02",
        0
@@ -15346,13 +15697,13 @@
      "lon": -77.028,
      "r": [
       [
-       10,
+       3,
        "2026-10-28",
        "2026-11-04",
        0
       ],
       [
-       22,
+       13,
        "2026-10-14",
        "2026-10-30",
        0
@@ -15365,13 +15716,13 @@
      "lon": -77.017,
      "r": [
       [
-       0,
+       8,
        "2026-10-28",
        "2026-11-04",
        0
       ],
       [
-       0,
+       8,
        "2026-10-28",
        "2026-11-04",
        0
@@ -15384,19 +15735,19 @@
      "lon": -77.025,
      "r": [
       [
-       0,
+       8,
        "2026-10-28",
        "2026-11-04",
        0
       ],
       [
-       1,
+       0,
        "2026-10-19",
        "2026-10-29",
        0
       ],
       [
-       1,
+       0,
        "2026-10-17",
        "2026-10-29",
        0
@@ -15409,13 +15760,13 @@
      "lon": -77.036,
      "r": [
       [
-       1,
+       0,
        "2026-10-28",
        "2026-11-02",
        0
       ],
       [
-       1,
+       0,
        "2026-10-22",
        "2026-10-29",
        0
@@ -15428,25 +15779,25 @@
      "lon": -77.018,
      "r": [
       [
-       4,
+       9,
        "2026-10-28",
        "2026-10-28",
        0
       ],
       [
-       22,
+       13,
        "2026-10-27",
        "2026-11-06",
        0
       ],
       [
-       4,
+       9,
        "2026-10-17",
        "2026-10-19",
        0
       ],
       [
-       4,
+       9,
        "2026-10-11",
        "2026-10-13",
        0
@@ -15459,7 +15810,7 @@
      "lon": -77.02,
      "r": [
       [
-       1,
+       0,
        "2026-10-28",
        "2026-11-02",
        0
@@ -15478,13 +15829,13 @@
        1
       ],
       [
-       1,
+       0,
        "2026-10-26",
        "2026-11-02",
        0
       ],
       [
-       19,
+       23,
        "2026-10-12",
        "2026-10-13",
        0
@@ -15497,7 +15848,7 @@
      "lon": -77.025,
      "r": [
       [
-       11,
+       15,
        "2026-10-28",
        "2026-10-29",
        0
@@ -15510,13 +15861,13 @@
      "lon": -77.032,
      "r": [
       [
-       1,
+       0,
        "2026-10-28",
        "2026-11-02",
        0
       ],
       [
-       1,
+       0,
        "2026-10-16",
        "2026-10-29",
        0
@@ -15529,34 +15880,15 @@
      "lon": -77.039,
      "r": [
       [
-       1,
+       0,
        "2026-10-28",
-       "2026-11-02",
-       0
-      ],
-      [
-       1,
-       "2026-10-12",
-       "2026-10-20",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "800 block of ASPEN STREET NW",
-     "lat": 38.973,
-     "lon": -77.025,
-     "r": [
-      [
-       1,
-       "2026-10-27",
        "2026-11-02",
        0
       ],
       [
        0,
+       "2026-10-12",
        "2026-10-20",
-       "2026-10-28",
        0
       ]
      ]
@@ -15573,7 +15905,7 @@
        0
       ],
       [
-       30,
+       6,
        "2026-10-26",
        "2026-10-28",
        0
@@ -15629,13 +15961,13 @@
      "lon": -77.033,
      "r": [
       [
-       29,
+       30,
        "2026-10-27",
        "2026-10-27",
        0
       ],
       [
-       1,
+       0,
        "2026-10-19",
        "2026-10-29",
        0
@@ -15648,7 +15980,7 @@
      "lon": -77.026,
      "r": [
       [
-       25,
+       7,
        "2026-10-27",
        null,
        1
@@ -15661,13 +15993,13 @@
      "lon": -77.026,
      "r": [
       [
-       7,
+       14,
        "2026-10-27",
        "2026-10-28",
        0
       ],
       [
-       7,
+       14,
        "2026-10-27",
        "2026-10-28",
        0
@@ -15680,7 +16012,7 @@
      "lon": -77.024,
      "r": [
       [
-       14,
+       18,
        "2026-10-27",
        "2026-10-30",
        0
@@ -15693,25 +16025,25 @@
      "lon": -77.025,
      "r": [
       [
-       0,
+       8,
        "2026-10-27",
        "2026-11-04",
        0
       ],
       [
-       1,
+       0,
        "2026-10-20",
        "2026-10-27",
        0
       ],
       [
-       0,
+       8,
        "2026-10-18",
        "2026-10-21",
        0
       ],
       [
-       1,
+       0,
        "2026-10-13",
        "2026-10-20",
        0
@@ -15724,13 +16056,13 @@
      "lon": -77.026,
      "r": [
       [
-       0,
+       8,
        "2026-10-27",
        "2026-11-04",
        0
       ],
       [
-       1,
+       0,
        "2026-10-27",
        "2026-11-02",
        0
@@ -15743,7 +16075,7 @@
      "lon": -77.026,
      "r": [
       [
-       1,
+       0,
        "2026-10-27",
        "2026-11-02",
        0
@@ -15769,7 +16101,7 @@
      "lon": -77.035,
      "r": [
       [
-       11,
+       15,
        "2026-10-27",
        "2026-10-29",
        0
@@ -15795,7 +16127,7 @@
      "lon": -77.02,
      "r": [
       [
-       1,
+       0,
        "2026-10-27",
        "2026-11-02",
        0
@@ -15808,7 +16140,7 @@
      "lon": -77.035,
      "r": [
       [
-       13,
+       17,
        "2026-10-27",
        "2026-10-27",
        0
@@ -15821,7 +16153,7 @@
      "lon": -77.036,
      "r": [
       [
-       27,
+       2,
        "2026-10-27",
        "2026-10-27",
        0
@@ -15844,12 +16176,6 @@
        "2026-10-27",
        "2026-11-02",
        0
-      ],
-      [
-       0,
-       "2026-10-09",
-       "2026-10-14",
-       0
       ]
      ]
     },
@@ -15859,7 +16185,7 @@
      "lon": -77.033,
      "r": [
       [
-       0,
+       8,
        "2026-10-27",
        "2026-11-04",
        0
@@ -15878,43 +16204,37 @@
      "lon": -77.022,
      "r": [
       [
-       10,
+       3,
        "2026-10-27",
        null,
        1
       ],
       [
-       27,
+       2,
        "2026-10-27",
        "2026-10-28",
        0
       ],
       [
-       1,
+       0,
        "2026-10-21",
        "2026-10-27",
        0
       ],
       [
-       1,
+       0,
        "2026-10-14",
        "2026-10-20",
        0
       ],
       [
-       1,
+       0,
        "2026-10-14",
        "2026-10-20",
        0
       ],
       [
-       1,
-       "2026-10-13",
-       "2026-10-20",
-       0
-      ],
-      [
-       1,
+       0,
        "2026-10-13",
        "2026-10-20",
        0
@@ -15922,13 +16242,13 @@
       [
        0,
        "2026-10-13",
-       "2026-10-21",
+       "2026-10-20",
        0
       ],
       [
-       38,
-       "2026-10-09",
-       "2026-10-14",
+       8,
+       "2026-10-13",
+       "2026-10-21",
        0
       ]
      ]
@@ -15952,7 +16272,7 @@
      "lon": -77.018,
      "r": [
       [
-       21,
+       25,
        "2026-10-27",
        "2026-10-27",
        0
@@ -15965,7 +16285,7 @@
      "lon": -77.026,
      "r": [
       [
-       7,
+       14,
        "2026-10-26",
        "2026-10-28",
        0
@@ -15978,7 +16298,7 @@
      "lon": -77.032,
      "r": [
       [
-       13,
+       17,
        "2026-10-26",
        "2026-10-27",
        0
@@ -15997,7 +16317,7 @@
      "lon": -77.022,
      "r": [
       [
-       30,
+       6,
        "2026-10-26",
        "2026-10-27",
        0
@@ -16029,7 +16349,7 @@
        0
       ],
       [
-       13,
+       17,
        "2026-10-16",
        "2026-10-17",
        0
@@ -16042,7 +16362,7 @@
      "lon": -77.041,
      "r": [
       [
-       1,
+       0,
        "2026-10-26",
        "2026-11-02",
        0
@@ -16055,7 +16375,7 @@
      "lon": -77.036,
      "r": [
       [
-       1,
+       0,
        "2026-10-26",
        "2026-11-02",
        0
@@ -16081,7 +16401,7 @@
      "lon": -77.016,
      "r": [
       [
-       15,
+       19,
        "2026-10-26",
        "2026-10-26",
        0
@@ -16131,7 +16451,7 @@
      "lon": -77.039,
      "r": [
       [
-       3,
+       12,
        "2026-10-26",
        "2026-11-05",
        0
@@ -16157,7 +16477,7 @@
      "lon": -77.031,
      "r": [
       [
-       1,
+       0,
        "2026-10-26",
        "2026-11-02",
        0
@@ -16170,7 +16490,7 @@
      "lon": -77.03,
      "r": [
       [
-       1,
+       0,
        "2026-10-26",
        "2026-11-02",
        0
@@ -16183,7 +16503,7 @@
      "lon": -77.02,
      "r": [
       [
-       29,
+       30,
        "2026-10-26",
        "2026-10-26",
        0
@@ -16202,7 +16522,7 @@
      "lon": -77.024,
      "r": [
       [
-       1,
+       0,
        "2026-10-26",
        "2026-11-02",
        0
@@ -16215,13 +16535,13 @@
      "lon": -77.016,
      "r": [
       [
-       30,
+       6,
        "2026-10-26",
        "2026-10-28",
        0
       ],
       [
-       2,
+       11,
        "2026-10-20",
        "2026-10-27",
        0
@@ -16234,7 +16554,7 @@
      "lon": -77.035,
      "r": [
       [
-       15,
+       19,
        "2026-10-26",
        "2026-10-26",
        0
@@ -16247,7 +16567,7 @@
      "lon": -77.028,
      "r": [
       [
-       28,
+       29,
        "2026-10-26",
        "2026-10-27",
        0
@@ -16260,19 +16580,19 @@
      "lon": -77.025,
      "r": [
       [
-       1,
+       0,
        "2026-10-26",
        "2026-11-02",
        0
       ],
       [
-       1,
+       0,
        "2026-10-19",
        "2026-10-27",
        0
       ],
       [
-       0,
+       8,
        "2026-10-18",
        "2026-10-21",
        0
@@ -16285,40 +16605,9 @@
      "lon": -77.034,
      "r": [
       [
-       0,
+       8,
        "2026-10-25",
        "2026-10-28",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1100 block of ASPEN STREET NW",
-     "lat": 38.972,
-     "lon": -77.028,
-     "r": [
-      [
-       27,
-       "2026-10-25",
-       "2026-10-26",
-       0
-      ],
-      [
-       27,
-       "2026-10-20",
-       "2026-10-21",
-       0
-      ],
-      [
-       27,
-       "2026-10-18",
-       "2026-10-19",
-       0
-      ],
-      [
-       27,
-       "2026-10-12",
-       "2026-10-13",
        0
       ]
      ]
@@ -16329,22 +16618,9 @@
      "lon": -77.021,
      "r": [
       [
-       21,
+       25,
        "2026-10-25",
        "2026-10-26",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1300 block of IRIS STREET NW",
-     "lat": 38.982,
-     "lon": -77.031,
-     "r": [
-      [
-       0,
-       "2026-10-25",
-       "2026-10-28",
        0
       ]
      ]
@@ -16355,13 +16631,13 @@
      "lon": -77.023,
      "r": [
       [
-       1,
+       0,
        "2026-10-25",
        "2026-11-02",
        0
       ],
       [
-       1,
+       0,
        "2026-10-13",
        "2026-10-20",
        0
@@ -16374,7 +16650,7 @@
      "lon": -77.021,
      "r": [
       [
-       1,
+       0,
        "2026-10-25",
        "2026-11-02",
        0
@@ -16412,7 +16688,7 @@
      "lon": -77.023,
      "r": [
       [
-       0,
+       8,
        "2026-10-25",
        "2026-10-28",
        0
@@ -16431,19 +16707,19 @@
        0
       ],
       [
-       7,
+       14,
        "2026-10-17",
        "2026-10-19",
        0
       ],
       [
-       7,
+       14,
        "2026-10-12",
        "2026-10-12",
        0
       ],
       [
-       7,
+       14,
        "2026-10-10",
        "2026-10-12",
        0
@@ -16456,7 +16732,7 @@
      "lon": -77.037,
      "r": [
       [
-       1,
+       0,
        "2026-10-25",
        "2026-11-02",
        0
@@ -16469,25 +16745,25 @@
      "lon": -77.027,
      "r": [
       [
-       9,
+       10,
        "2026-10-24",
        "2026-10-27",
        0
       ],
       [
-       9,
+       10,
        "2026-10-23",
        "2026-10-29",
        0
       ],
       [
-       9,
+       10,
        "2026-10-23",
        "2026-10-23",
        0
       ],
       [
-       27,
+       2,
        "2026-10-22",
        "2026-10-22",
        0
@@ -16512,7 +16788,7 @@
        0
       ],
       [
-       0,
+       8,
        "2026-10-21",
        "2026-10-28",
        0
@@ -16525,7 +16801,7 @@
      "lon": -77.027,
      "r": [
       [
-       22,
+       13,
        "2026-10-24",
        null,
        1
@@ -16538,13 +16814,13 @@
      "lon": -77.029,
      "r": [
       [
-       0,
+       8,
        "2026-10-24",
        "2026-10-28",
        0
       ],
       [
-       1,
+       0,
        "2026-10-24",
        "2026-11-02",
        0
@@ -16557,7 +16833,7 @@
      "lon": -77.027,
      "r": [
       [
-       18,
+       22,
        "2026-10-24",
        "2026-10-24",
        0
@@ -16589,34 +16865,15 @@
      "lon": -77.026,
      "r": [
       [
-       13,
+       17,
        "2026-10-23",
        "2026-10-24",
        0
       ],
       [
-       13,
+       17,
        "2026-10-14",
        "2026-10-15",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1700 block of JUNIPER STREET NW",
-     "lat": 38.983,
-     "lon": -77.039,
-     "r": [
-      [
-       1,
-       "2026-10-23",
-       "2026-11-02",
-       0
-      ],
-      [
-       0,
-       "2026-10-22",
-       "2026-10-28",
        0
       ]
      ]
@@ -16627,7 +16884,7 @@
      "lon": -77.023,
      "r": [
       [
-       27,
+       2,
        "2026-10-23",
        "2026-10-26",
        0
@@ -16640,7 +16897,7 @@
      "lon": -77.026,
      "r": [
       [
-       26,
+       28,
        "2026-10-23",
        null,
        1
@@ -16653,7 +16910,7 @@
      "lon": -77.028,
      "r": [
       [
-       9,
+       10,
        "2026-10-23",
        "2026-10-23",
        0
@@ -16666,7 +16923,7 @@
      "lon": -77.028,
      "r": [
       [
-       10,
+       3,
        "2026-10-23",
        "2026-10-29",
        0
@@ -16679,7 +16936,7 @@
      "lon": -77.024,
      "r": [
       [
-       26,
+       28,
        "2026-10-23",
        null,
        1
@@ -16704,19 +16961,19 @@
        0
       ],
       [
-       3,
+       12,
        "2026-10-12",
        "2026-10-23",
        0
       ],
       [
-       2,
+       11,
        "2026-10-10",
        "2026-10-13",
        0
       ],
       [
-       2,
+       11,
        "2026-10-10",
        "2026-10-27",
        0
@@ -16729,7 +16986,7 @@
      "lon": -77.021,
      "r": [
       [
-       0,
+       8,
        "2026-10-23",
        "2026-10-28",
        0
@@ -16742,7 +16999,7 @@
      "lon": -77.02,
      "r": [
       [
-       19,
+       23,
        "2026-10-23",
        "2026-10-23",
        0
@@ -16755,13 +17012,13 @@
      "lon": -77.024,
      "r": [
       [
-       26,
+       28,
        "2026-10-22",
        null,
        1
       ],
       [
-       1,
+       0,
        "2026-10-13",
        "2026-10-20",
        0
@@ -16793,7 +17050,7 @@
      "lon": -77.021,
      "r": [
       [
-       0,
+       8,
        "2026-10-22",
        "2026-10-28",
        0
@@ -16806,28 +17063,15 @@
      "lon": -77.024,
      "r": [
       [
-       27,
+       2,
        "2026-10-22",
        "2026-10-23",
        0
       ],
       [
-       29,
+       30,
        "2026-10-14",
        "2026-10-14",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "7600 block of MORNINGSIDE DRIVE NW",
-     "lat": 38.983,
-     "lon": -77.031,
-     "r": [
-      [
-       9,
-       "2026-10-22",
-       "2026-10-23",
        0
       ]
      ]
@@ -16838,7 +17082,7 @@
      "lon": -77.026,
      "r": [
       [
-       6,
+       1,
        "2026-10-22",
        "2026-10-28",
        0
@@ -16851,13 +17095,13 @@
      "lon": -77.039,
      "r": [
       [
-       13,
+       17,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       21,
+       25,
        "2026-10-22",
        "2026-10-23",
        0
@@ -16870,13 +17114,13 @@
      "lon": -77.024,
      "r": [
       [
-       1,
+       0,
        "2026-10-22",
        "2026-10-27",
        0
       ],
       [
-       11,
+       15,
        "2026-10-10",
        "2026-10-14",
        0
@@ -16889,13 +17133,13 @@
      "lon": -77.021,
      "r": [
       [
-       10,
+       3,
        "2026-10-22",
        "2026-10-30",
        0
       ],
       [
-       1,
+       0,
        "2026-10-14",
        "2026-10-20",
        0
@@ -16907,7 +17151,7 @@
        1
       ],
       [
-       9,
+       10,
        "2026-10-12",
        "2026-10-12",
        1
@@ -16920,7 +17164,7 @@
      "lon": -77.038,
      "r": [
       [
-       1,
+       0,
        "2026-10-22",
        "2026-10-29",
        0
@@ -16933,7 +17177,7 @@
      "lon": -77.039,
      "r": [
       [
-       9,
+       10,
        "2026-10-22",
        "2026-10-26",
        0
@@ -16946,7 +17190,7 @@
      "lon": -77.027,
      "r": [
       [
-       1,
+       0,
        "2026-10-22",
        "2026-10-29",
        0
@@ -16959,7 +17203,7 @@
      "lon": -77.028,
      "r": [
       [
-       6,
+       1,
        "2026-10-22",
        "2026-10-28",
        0
@@ -16972,7 +17216,7 @@
      "lon": -77.033,
      "r": [
       [
-       4,
+       9,
        "2026-10-21",
        "2026-10-22",
        0
@@ -16985,7 +17229,7 @@
      "lon": -77.041,
      "r": [
       [
-       1,
+       0,
        "2026-10-21",
        "2026-10-29",
        0
@@ -16998,13 +17242,13 @@
      "lon": -77.02,
      "r": [
       [
-       8,
+       4,
        "2026-10-21",
        "2026-10-29",
        0
       ],
       [
-       8,
+       4,
        "2026-10-20",
        "2026-10-29",
        0
@@ -17017,19 +17261,19 @@
      "lon": -77.024,
      "r": [
       [
-       1,
+       0,
        "2026-10-21",
        "2026-10-29",
        0
       ],
       [
-       13,
+       17,
        "2026-10-19",
        "2026-10-19",
        0
       ],
       [
-       1,
+       0,
        "2026-10-19",
        "2026-10-29",
        0
@@ -17042,13 +17286,13 @@
      "lon": -77.031,
      "r": [
       [
-       1,
+       0,
        "2026-10-21",
        "2026-10-29",
        0
       ],
       [
-       0,
+       8,
        "2026-10-13",
        "2026-10-21",
        0
@@ -17061,7 +17305,7 @@
      "lon": -77.033,
      "r": [
       [
-       0,
+       8,
        "2026-10-21",
        "2026-10-28",
        0
@@ -17074,13 +17318,13 @@
      "lon": -77.041,
      "r": [
       [
-       1,
+       0,
        "2026-10-21",
        "2026-10-29",
        0
       ],
       [
-       1,
+       0,
        "2026-10-16",
        "2026-10-20",
        0
@@ -17093,7 +17337,7 @@
      "lon": -77.028,
      "r": [
       [
-       25,
+       7,
        "2026-10-21",
        null,
        1
@@ -17106,13 +17350,13 @@
      "lon": -77.045,
      "r": [
       [
-       0,
+       8,
        "2026-10-21",
        "2026-10-28",
        0
       ],
       [
-       0,
+       8,
        "2026-10-15",
        "2026-10-21",
        0
@@ -17125,7 +17369,7 @@
      "lon": -77.037,
      "r": [
       [
-       0,
+       8,
        "2026-10-21",
        "2026-10-28",
        0
@@ -17157,7 +17401,7 @@
        1
       ],
       [
-       19,
+       23,
        "2026-10-20",
        "2026-10-21",
        0
@@ -17188,13 +17432,13 @@
        0
       ],
       [
-       19,
+       23,
        "2026-10-20",
        "2026-10-21",
        0
       ],
       [
-       19,
+       23,
        "2026-10-20",
        "2026-10-21",
        0
@@ -17220,7 +17464,7 @@
      "lon": -77.023,
      "r": [
       [
-       1,
+       0,
        "2026-10-20",
        "2026-10-27",
        0
@@ -17233,13 +17477,13 @@
      "lon": -77.022,
      "r": [
       [
-       6,
+       1,
        "2026-10-20",
        "2026-10-29",
        0
       ],
       [
-       6,
+       1,
        "2026-10-20",
        null,
        1
@@ -17277,7 +17521,7 @@
        1
       ],
       [
-       8,
+       4,
        "2026-10-20",
        "2026-10-29",
        0
@@ -17290,7 +17534,7 @@
      "lon": -77.018,
      "r": [
       [
-       30,
+       6,
        "2026-10-20",
        "2026-10-21",
        0
@@ -17309,7 +17553,7 @@
      "lon": -77.018,
      "r": [
       [
-       4,
+       9,
        "2026-10-20",
        "2026-10-21",
        0
@@ -17322,7 +17566,7 @@
      "lon": -77.016,
      "r": [
       [
-       22,
+       13,
        "2026-10-20",
        "2026-11-04",
        0
@@ -17373,13 +17617,13 @@
        0
       ],
       [
-       1,
+       0,
        "2026-10-14",
        "2026-10-20",
        0
       ],
       [
-       16,
+       20,
        "2026-10-11",
        "2026-10-20",
        0
@@ -17405,7 +17649,7 @@
      "lon": -77.025,
      "r": [
       [
-       19,
+       23,
        "2026-10-20",
        "2026-10-20",
        0
@@ -17424,7 +17668,7 @@
      "lon": -77.025,
      "r": [
       [
-       1,
+       0,
        "2026-10-20",
        "2026-10-27",
        0
@@ -17437,13 +17681,13 @@
      "lon": -77.021,
      "r": [
       [
-       24,
+       27,
        "2026-10-20",
        null,
        1
       ],
       [
-       1,
+       0,
        "2026-10-20",
        "2026-10-27",
        0
@@ -17455,37 +17699,37 @@
        0
       ],
       [
-       24,
+       27,
        "2026-10-19",
        null,
        1
       ],
       [
-       9,
+       10,
        "2026-10-19",
        "2026-10-19",
        0
       ],
       [
-       1,
+       0,
        "2026-10-16",
        "2026-10-26",
        1
       ],
       [
-       24,
+       27,
        "2026-10-15",
        null,
        1
       ],
       [
-       29,
+       30,
        "2026-10-14",
        "2026-10-14",
        0
       ],
       [
-       1,
+       0,
        "2026-10-13",
        "2026-10-13",
        1
@@ -17498,7 +17742,7 @@
      "lon": -77.036,
      "r": [
       [
-       0,
+       8,
        "2026-10-20",
        "2026-10-28",
        0
@@ -17511,13 +17755,13 @@
      "lon": -77.022,
      "r": [
       [
-       1,
+       0,
        "2026-10-20",
        "2026-10-27",
        0
       ],
       [
-       1,
+       0,
        "2026-10-15",
        "2026-10-20",
        0
@@ -17530,7 +17774,7 @@
      "lon": -77.029,
      "r": [
       [
-       1,
+       0,
        "2026-10-19",
        "2026-10-29",
        0
@@ -17543,7 +17787,7 @@
      "lon": -77.022,
      "r": [
       [
-       1,
+       0,
        "2026-10-19",
        "2026-10-27",
        0
@@ -17582,7 +17826,7 @@
      "lon": -77.024,
      "r": [
       [
-       1,
+       0,
        "2026-10-19",
        "2026-10-27",
        0
@@ -17601,7 +17845,7 @@
      "lon": -77.042,
      "r": [
       [
-       1,
+       0,
        "2026-10-19",
        "2026-10-29",
        0
@@ -17627,7 +17871,7 @@
      "lon": -77.039,
      "r": [
       [
-       1,
+       0,
        "2026-10-19",
        "2026-10-29",
        0
@@ -17640,7 +17884,7 @@
      "lon": -77.031,
      "r": [
       [
-       0,
+       8,
        "2026-10-19",
        "2026-10-28",
        0
@@ -17653,7 +17897,7 @@
      "lon": -77.013,
      "r": [
       [
-       0,
+       8,
        "2026-10-19",
        "2026-10-28",
        0
@@ -17666,7 +17910,7 @@
      "lon": -77.022,
      "r": [
       [
-       0,
+       8,
        "2026-10-19",
        "2026-10-28",
        0
@@ -17679,13 +17923,13 @@
      "lon": -77.024,
      "r": [
       [
-       0,
+       8,
        "2026-10-19",
        "2026-10-28",
        0
       ],
       [
-       25,
+       7,
        "2026-10-15",
        null,
        1
@@ -17698,7 +17942,7 @@
      "lon": -77.031,
      "r": [
       [
-       22,
+       13,
        "2026-10-19",
        "2026-11-03",
        0
@@ -17711,7 +17955,7 @@
      "lon": -77.034,
      "r": [
       [
-       22,
+       13,
        "2026-10-19",
        "2026-11-03",
        0
@@ -17724,7 +17968,7 @@
      "lon": -77.035,
      "r": [
       [
-       0,
+       8,
        "2026-10-18",
        "2026-10-21",
        0
@@ -17750,7 +17994,7 @@
      "lon": -77.031,
      "r": [
       [
-       0,
+       8,
        "2026-10-18",
        "2026-10-21",
        0
@@ -17763,7 +18007,7 @@
      "lon": -77.017,
      "r": [
       [
-       0,
+       8,
        "2026-10-18",
        "2026-10-21",
        0
@@ -17782,7 +18026,7 @@
      "lon": -77.025,
      "r": [
       [
-       0,
+       8,
        "2026-10-18",
        "2026-10-21",
        0
@@ -17801,15 +18045,9 @@
        0
       ],
       [
-       1,
+       0,
        "2026-10-13",
        "2026-10-20",
-       0
-      ],
-      [
-       10,
-       "2026-10-09",
-       "2026-10-14",
        0
       ]
      ]
@@ -17820,7 +18058,7 @@
      "lon": -77.031,
      "r": [
       [
-       10,
+       3,
        "2026-10-18",
        "2026-10-26",
        0
@@ -17839,19 +18077,19 @@
      "lon": -77.031,
      "r": [
       [
-       0,
+       8,
        "2026-10-18",
        "2026-10-21",
        0
       ],
       [
-       0,
+       8,
        "2026-10-13",
        "2026-10-21",
        0
       ],
       [
-       0,
+       8,
        "2026-10-13",
        "2026-10-21",
        0
@@ -17864,21 +18102,15 @@
      "lon": -77.031,
      "r": [
       [
-       0,
+       8,
        "2026-10-18",
        "2026-10-21",
        0
       ],
       [
-       9,
+       10,
        "2026-10-15",
        "2026-10-15",
-       0
-      ],
-      [
-       27,
-       "2026-10-09",
-       "2026-10-13",
        0
       ]
      ]
@@ -17889,13 +18121,13 @@
      "lon": -77.011,
      "r": [
       [
-       1,
+       0,
        "2026-10-18",
        "2026-10-27",
        0
       ],
       [
-       18,
+       22,
        "2026-10-15",
        "2026-10-15",
        0
@@ -17908,7 +18140,7 @@
      "lon": -77.029,
      "r": [
       [
-       0,
+       8,
        "2026-10-18",
        "2026-10-21",
        0
@@ -17921,7 +18153,7 @@
      "lon": -77.032,
      "r": [
       [
-       13,
+       17,
        "2026-10-17",
        "2026-10-17",
        0
@@ -17934,7 +18166,7 @@
      "lon": -77.041,
      "r": [
       [
-       1,
+       0,
        "2026-10-17",
        "2026-10-29",
        0
@@ -17947,7 +18179,7 @@
      "lon": -77.025,
      "r": [
       [
-       0,
+       8,
        "2026-10-17",
        "2026-10-21",
        0
@@ -17960,7 +18192,7 @@
      "lon": -77.035,
      "r": [
       [
-       1,
+       0,
        "2026-10-17",
        "2026-10-29",
        0
@@ -17973,7 +18205,7 @@
      "lon": -77.016,
      "r": [
       [
-       4,
+       9,
        "2026-10-17",
        "2026-10-20",
        0
@@ -17986,7 +18218,7 @@
      "lon": -77.035,
      "r": [
       [
-       19,
+       23,
        "2026-10-17",
        "2026-10-19",
        0
@@ -18007,25 +18239,12 @@
      ]
     },
     {
-     "block": "7800 block of 12TH STREET NW",
-     "lat": 38.985,
-     "lon": -77.028,
-     "r": [
-      [
-       25,
-       "2026-10-16",
-       null,
-       1
-      ]
-     ]
-    },
-    {
      "block": "7300 block of 14TH STREET NW",
      "lat": 38.979,
      "lon": -77.033,
      "r": [
       [
-       1,
+       0,
        "2026-10-16",
        "2026-10-29",
        0
@@ -18051,13 +18270,13 @@
      "lon": -77.022,
      "r": [
       [
-       24,
+       27,
        "2026-10-16",
        null,
        1
       ],
       [
-       11,
+       15,
        "2026-10-13",
        "2026-10-15",
        0
@@ -18083,7 +18302,7 @@
      "lon": -77.041,
      "r": [
       [
-       20,
+       24,
        "2026-10-16",
        "2026-10-19",
        0
@@ -18096,7 +18315,7 @@
      "lon": -77.029,
      "r": [
       [
-       1,
+       0,
        "2026-10-16",
        "2026-10-29",
        0
@@ -18122,7 +18341,7 @@
      "lon": -77.021,
      "r": [
       [
-       1,
+       0,
        "2026-10-16",
        "2026-10-27",
        0
@@ -18135,7 +18354,7 @@
      "lon": -77.042,
      "r": [
       [
-       0,
+       8,
        "2026-10-16",
        "2026-10-21",
        0
@@ -18148,7 +18367,7 @@
      "lon": -77.034,
      "r": [
       [
-       3,
+       12,
        "2026-10-16",
        null,
        1
@@ -18167,7 +18386,7 @@
        0
       ],
       [
-       25,
+       7,
        "2026-10-15",
        null,
        1
@@ -18180,7 +18399,7 @@
      "lon": -77.019,
      "r": [
       [
-       22,
+       13,
        "2026-10-15",
        "2026-11-03",
        0
@@ -18206,7 +18425,7 @@
      "lon": -77.037,
      "r": [
       [
-       28,
+       29,
        "2026-10-15",
        "2026-10-22",
        0
@@ -18219,7 +18438,7 @@
      "lon": -77.033,
      "r": [
       [
-       25,
+       7,
        "2026-10-15",
        null,
        1
@@ -18251,7 +18470,7 @@
        0
       ],
       [
-       19,
+       23,
        "2026-10-11",
        "2026-10-13",
        0
@@ -18277,7 +18496,7 @@
      "lon": -77.016,
      "r": [
       [
-       30,
+       6,
        "2026-10-15",
        "2026-10-17",
        0
@@ -18290,7 +18509,7 @@
      "lon": -77.023,
      "r": [
       [
-       20,
+       24,
        "2026-10-15",
        "2026-10-16",
        0
@@ -18303,7 +18522,7 @@
      "lon": -77.018,
      "r": [
       [
-       19,
+       23,
        "2026-10-15",
        "2026-10-15",
        0
@@ -18316,13 +18535,13 @@
      "lon": -77.018,
      "r": [
       [
-       19,
+       23,
        "2026-10-15",
        "2026-10-15",
        0
       ],
       [
-       6,
+       1,
        "2026-10-15",
        null,
        1
@@ -18335,7 +18554,7 @@
      "lon": -77.02,
      "r": [
       [
-       6,
+       1,
        "2026-10-15",
        null,
        1
@@ -18361,7 +18580,7 @@
      "lon": -77.026,
      "r": [
       [
-       10,
+       3,
        "2026-10-15",
        "2026-10-19",
        0
@@ -18374,7 +18593,7 @@
      "lon": -77.034,
      "r": [
       [
-       0,
+       8,
        "2026-10-15",
        "2026-10-21",
        0
@@ -18387,7 +18606,7 @@
      "lon": -77.035,
      "r": [
       [
-       1,
+       0,
        "2026-10-14",
        "2026-10-20",
        0
@@ -18400,7 +18619,7 @@
      "lon": -77.033,
      "r": [
       [
-       26,
+       28,
        "2026-10-14",
        "2026-10-15",
        0
@@ -18413,7 +18632,7 @@
      "lon": -77.021,
      "r": [
       [
-       9,
+       10,
        "2026-10-14",
        "2026-10-16",
        0
@@ -18426,13 +18645,13 @@
      "lon": -77.035,
      "r": [
       [
-       0,
+       8,
        "2026-10-14",
        "2026-10-21",
        0
       ],
       [
-       1,
+       0,
        "2026-10-14",
        "2026-10-20",
        0
@@ -18445,7 +18664,7 @@
      "lon": -77.028,
      "r": [
       [
-       18,
+       22,
        "2026-10-14",
        "2026-10-14",
        0
@@ -18458,13 +18677,13 @@
      "lon": -77.019,
      "r": [
       [
-       16,
+       20,
        "2026-10-14",
        null,
        1
       ],
       [
-       25,
+       7,
        "2026-10-14",
        null,
        1
@@ -18477,7 +18696,7 @@
      "lon": -77.022,
      "r": [
       [
-       20,
+       24,
        "2026-10-14",
        "2026-10-22",
        0
@@ -18490,13 +18709,13 @@
      "lon": -77.03,
      "r": [
       [
-       14,
+       18,
        "2026-10-14",
        "2026-10-16",
        0
       ],
       [
-       14,
+       18,
        "2026-10-12",
        "2026-10-13",
        0
@@ -18509,22 +18728,9 @@
      "lon": -77.036,
      "r": [
       [
-       9,
+       10,
        "2026-10-14",
        "2026-10-15",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1100 block of GERANIUM STREET NW",
-     "lat": 38.979,
-     "lon": -77.028,
-     "r": [
-      [
-       11,
-       "2026-10-14",
-       "2026-10-16",
        0
       ]
      ]
@@ -18535,7 +18741,7 @@
      "lon": -77.029,
      "r": [
       [
-       1,
+       0,
        "2026-10-13",
        "2026-10-20",
        0
@@ -18548,7 +18754,7 @@
      "lon": -77.019,
      "r": [
       [
-       4,
+       9,
        "2026-10-13",
        null,
        1
@@ -18587,7 +18793,7 @@
      "lon": -77.036,
      "r": [
       [
-       28,
+       29,
        "2026-10-13",
        "2026-10-21",
        0
@@ -18600,7 +18806,7 @@
      "lon": -77.031,
      "r": [
       [
-       1,
+       0,
        "2026-10-13",
        "2026-10-20",
        0
@@ -18613,7 +18819,7 @@
      "lon": -77.032,
      "r": [
       [
-       1,
+       0,
        "2026-10-13",
        "2026-10-20",
        0
@@ -18639,7 +18845,7 @@
      "lon": -77.026,
      "r": [
       [
-       0,
+       8,
        "2026-10-13",
        "2026-10-21",
        0
@@ -18665,7 +18871,7 @@
      "lon": -77.04,
      "r": [
       [
-       0,
+       8,
        "2026-10-13",
        "2026-10-21",
        0
@@ -18691,7 +18897,7 @@
      "lon": -77.027,
      "r": [
       [
-       6,
+       1,
        "2026-10-12",
        null,
        1
@@ -18704,7 +18910,7 @@
      "lon": -77.027,
      "r": [
       [
-       2,
+       11,
        "2026-10-12",
        "2026-11-03",
        0
@@ -18717,7 +18923,7 @@
      "lon": -77.026,
      "r": [
       [
-       30,
+       6,
        "2026-10-12",
        "2026-10-13",
        0
@@ -18730,7 +18936,7 @@
      "lon": -77.034,
      "r": [
       [
-       1,
+       0,
        "2026-10-12",
        "2026-10-20",
        0
@@ -18743,7 +18949,7 @@
      "lon": -77.032,
      "r": [
       [
-       16,
+       20,
        "2026-10-12",
        null,
        1
@@ -18762,7 +18968,7 @@
      "lon": -77.03,
      "r": [
       [
-       11,
+       15,
        "2026-10-12",
        "2026-10-14",
        0
@@ -18775,7 +18981,7 @@
      "lon": -77.039,
      "r": [
       [
-       1,
+       0,
        "2026-10-12",
        "2026-10-20",
        0
@@ -18788,7 +18994,7 @@
      "lon": -77.043,
      "r": [
       [
-       1,
+       0,
        "2026-10-12",
        "2026-10-20",
        0
@@ -18814,7 +19020,7 @@
      "lon": -77.032,
      "r": [
       [
-       1,
+       0,
        "2026-10-11",
        "2026-10-20",
        0
@@ -18827,7 +19033,7 @@
      "lon": -77.036,
      "r": [
       [
-       8,
+       4,
        "2026-10-11",
        "2026-10-11",
        0
@@ -18853,7 +19059,7 @@
      "lon": -77.021,
      "r": [
       [
-       0,
+       8,
        "2026-10-11",
        "2026-10-14",
        0
@@ -18866,7 +19072,7 @@
      "lon": -77.029,
      "r": [
       [
-       11,
+       15,
        "2026-10-11",
        "2026-10-14",
        0
@@ -18879,7 +19085,7 @@
      "lon": -77.027,
      "r": [
       [
-       22,
+       13,
        "2026-10-10",
        "2026-10-29",
        0
@@ -18918,7 +19124,7 @@
      "lon": -77.033,
      "r": [
       [
-       1,
+       0,
        "2026-10-10",
        "2026-10-20",
        0
@@ -18931,7 +19137,7 @@
      "lon": -77.025,
      "r": [
       [
-       1,
+       0,
        "2026-10-10",
        "2026-10-20",
        0
@@ -18944,7 +19150,7 @@
      "lon": -77.037,
      "r": [
       [
-       1,
+       0,
        "2026-10-10",
        "2026-10-20",
        0
@@ -18957,7 +19163,7 @@
      "lon": -77.024,
      "r": [
       [
-       11,
+       15,
        "2026-10-10",
        "2026-10-13",
        0
@@ -18983,61 +19189,9 @@
      "lon": -77.032,
      "r": [
       [
-       2,
+       11,
        "2026-10-10",
        "2026-10-27",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "400 block of ASPEN STREET NW",
-     "lat": 38.973,
-     "lon": -77.019,
-     "r": [
-      [
-       1,
-       "2026-10-09",
-       "2026-10-20",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "7100 block of CHESTNUT STREET NW",
-     "lat": 38.977,
-     "lon": -77.019,
-     "r": [
-      [
-       0,
-       "2026-10-09",
-       "2026-10-14",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "EASTERN AVENUE NW AND WALNUT AVENUE NW",
-     "lat": 38.972,
-     "lon": -77.011,
-     "r": [
-      [
-       18,
-       "2026-10-09",
-       "2026-10-09",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "7300 block of ALASKA AVENUE NW",
-     "lat": 38.978,
-     "lon": -77.032,
-     "r": [
-      [
-       1,
-       "2026-10-09",
-       "2026-10-20",
        0
       ]
      ]
@@ -19046,23 +19200,23 @@
   }
  },
  "crime": {
-  "total": 46,
-  "previous_total": 65,
+  "total": 45,
+  "previous_total": 64,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
-    "count": 24,
-    "previous": 32
+    "count": 23,
+    "previous": 31
    },
    {
     "offense": "MOTOR VEHICLE THEFT",
-    "count": 11,
-    "previous": 12
+    "count": 10,
+    "previous": 13
    },
    {
     "offense": "THEFT F/AUTO",
-    "count": 7,
-    "previous": 13
+    "count": 8,
+    "previous": 12
    },
    {
     "offense": "BURGLARY",
@@ -19134,7 +19288,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-08T09:17:54Z",
+  "generated_at": "2026-11-09T09:23:16Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -19149,7 +19303,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Takoma through OTR assessment neighborhoods Shepherd Park and Colonial Village and sub-areas Brightwood B and D in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Takoma boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-08): 100% of the 3,581 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 79% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Takoma through OTR assessment neighborhoods Shepherd Park and Colonial Village and sub-areas Brightwood B and D in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Takoma boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-09): 100% of the 3,581 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 79% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -19174,7 +19328,7 @@
    "area_parcels": 3581,
    "area_share_inside": 1.0,
    "boundary_share_in_area": 0.793,
-   "measured": "2026-11-08"
+   "measured": "2026-11-09"
   },
   "primary": "house",
   "house": {
@@ -19428,7 +19582,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-08T09:17:54Z",
+  "generated_at": "2026-11-09T09:23:16Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -19448,15 +19602,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 139,
-   "starting_next_7d": 25,
-   "reserved_ft": 22858,
+   "active_this_week": 153,
+   "starting_next_7d": 29,
+   "reserved_ft": 24046,
    "long_running_90d": 27,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-08: newest permit issued 2026-11-08, newest record update 2026-11-08, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-09: newest permit issued 2026-11-09, newest record update 2026-11-09, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Dumpsters",
-     "count": 2
+     "count": 3
     },
     {
      "type": "Construction staging",
@@ -19468,7 +19622,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 34
+     "count": 47
     },
     {
      "type": "Events & reserved parking",
@@ -19476,94 +19630,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Construction staging",
-     "block": "6600 block of Piney Branch Road NW",
-     "start": "2026-11-09",
-     "end": "2026-12-11",
-     "ft": 198,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "6700 block of Piney Branch Road NW",
-     "start": "2026-11-09",
-     "end": "2026-12-11",
-     "ft": 66,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "800 block of Whittier Place NW",
-     "start": "2026-11-09",
-     "end": "2026-12-11",
-     "ft": 66,
-     "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "7100 block of Georgia Avenue NW",
-     "start": "2026-11-09",
-     "end": "2026-11-13",
-     "ft": 154,
-     "hours": "8 am\u20134:30 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "7200 block of Georgia Avenue NW",
-     "start": "2026-11-09",
-     "end": "2026-11-13",
-     "ft": 22,
-     "hours": "8 am\u20134:30 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "7300 block of Georgia Avenue NW",
-     "start": "2026-11-09",
-     "end": "2026-11-13",
-     "ft": 88,
-     "hours": "8 am\u20134:30 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "7400 block of Georgia Avenue NW",
-     "start": "2026-11-09",
-     "end": "2026-11-13",
-     "ft": 242,
-     "hours": "8 am\u20134:30 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "1400 block of Jonquil Street NW",
-     "start": "2026-11-09",
-     "end": "2026-11-13",
-     "ft": 110,
-     "hours": "8 am\u20134:30 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "500 block of Aspen Street NW",
-     "start": "2026-11-09",
-     "end": "2026-11-13",
-     "ft": 44,
-     "hours": "8 am\u20134:30 pm"
-    },
-    {
-     "type": "Utility & DDOT work",
-     "block": "6900 block of Georgia Avenue NW",
-     "start": "2026-11-09",
-     "end": "2026-11-13",
-     "ft": 198,
-     "hours": "8 am\u20134:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "7200 block of Blair Road NW",
-     "start": "2026-11-09",
-     "end": "2026-12-08",
-     "ft": 220,
-     "hours": "7 am\u20137 pm"
-    },
     {
      "type": "Construction staging",
      "block": "1200 block of Floral Street NW",
@@ -19675,6 +19741,126 @@
      "end": "2027-01-10",
      "ft": 0,
      "hours": ""
+    },
+    {
+     "type": "Construction staging",
+     "block": "6600 block of Piney Branch Road NW",
+     "start": "2026-11-16",
+     "end": "2027-01-08",
+     "ft": 176,
+     "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "7600 block of Morningside Drive NW",
+     "start": "2026-11-16",
+     "end": "2026-11-20",
+     "ft": 22,
+     "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "8000 block of Parkside Lane NW",
+     "start": "2026-11-16",
+     "end": "2026-11-20",
+     "ft": 66,
+     "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1100 block of Kalmia Road NW",
+     "start": "2026-11-16",
+     "end": "2026-11-20",
+     "ft": 44,
+     "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1400 block of Juniper Street NW",
+     "start": "2026-11-16",
+     "end": "2026-11-20",
+     "ft": 352,
+     "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1800 block of Parkside Drive NW",
+     "start": "2026-11-16",
+     "end": "2026-11-20",
+     "ft": 264,
+     "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1800 block of Plymouth Street NW",
+     "start": "2026-11-16",
+     "end": "2026-11-20",
+     "ft": 110,
+     "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1900 block of Plymouth Street NW",
+     "start": "2026-11-16",
+     "end": "2026-11-20",
+     "ft": 88,
+     "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "2100 block of Plymouth Circle NW",
+     "start": "2026-11-16",
+     "end": "2026-11-20",
+     "ft": 44,
+     "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "7500 block of Morningside Drive NW",
+     "start": "2026-11-16",
+     "end": "2026-11-20",
+     "ft": 44,
+     "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "2000 block of Plymouth Street NW",
+     "start": "2026-11-16",
+     "end": "2026-11-20",
+     "ft": 44,
+     "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "2000 block of Plymouth Street NW",
+     "start": "2026-11-16",
+     "end": "2026-11-20",
+     "ft": 0,
+     "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "1100 block of Kalmia Road NW",
+     "start": "2026-11-16",
+     "end": "2026-11-20",
+     "ft": 44,
+     "hours": "8 am\u20134:30 pm"
+    },
+    {
+     "type": "Dumpsters",
+     "block": "1700 block of Portal Drive NW",
+     "start": "2026-11-16",
+     "end": "2027-02-12",
+     "ft": 44,
+     "hours": ""
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "7500 block of 16th Street NW",
+     "start": "2026-11-16",
+     "end": "2026-11-20",
+     "ft": 22,
+     "hours": "8 am\u20134:30 pm"
     }
    ]
   },
@@ -19760,19 +19946,19 @@
     "type": "Bulk Collection",
     "median_days": 7.96,
     "city_median_days": 6.91,
-    "closed_n": 2056
+    "closed_n": 2047
    },
    {
     "type": "Parking Enforcement",
     "median_days": 0.05,
     "city_median_days": 0.05,
-    "closed_n": 1398
+    "closed_n": 1395
    },
    {
     "type": "Scheduled Yard Waste",
-    "median_days": 10.08,
-    "city_median_days": 9.57,
-    "closed_n": 1268
+    "median_days": 10.03,
+    "city_median_days": 9.55,
+    "closed_n": 1264
    },
    {
     "type": "Trash Collection - Missed",
@@ -19782,33 +19968,33 @@
    },
    {
     "type": "Roadway Signs",
-    "median_days": 3.38,
-    "city_median_days": 7.07,
-    "closed_n": 876
+    "median_days": 3.31,
+    "city_median_days": 7.06,
+    "closed_n": 874
    },
    {
     "type": "Tree Planting",
-    "median_days": 0.65,
-    "city_median_days": 1.8,
-    "closed_n": 790
+    "median_days": 0.64,
+    "city_median_days": 1.78,
+    "closed_n": 789
    },
    {
     "type": "Recycling Collection - Missed",
     "median_days": 3.95,
-    "city_median_days": 4.71,
+    "city_median_days": 4.68,
     "closed_n": 591
    },
    {
     "type": "Tree Pruning",
     "median_days": 1.56,
     "city_median_days": 3.82,
-    "closed_n": 404
+    "closed_n": 403
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-08T09:17:54Z",
+  "generated_at": "2026-11-09T09:23:16Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -19973,7 +20159,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-08T09:17:54Z",
+  "generated_at": "2026-11-09T09:23:16Z",
   "archive_days": 180,
   "sources": [
    {
@@ -20341,8 +20527,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-08T09:17:54Z",
-  "today": "2026-11-08",
+  "generated_at": "2026-11-09T09:23:16Z",
+  "today": "2026-11-09",
   "days_ahead": 30,
   "sources": [
    {
@@ -20376,15 +20562,6 @@
    }
   ],
   "events": [
-   {
-    "title": "Fully Human Art Exhibit",
-    "date": "2026-11-08",
-    "time": "11:45 AM to 2 PM",
-    "place": "Art Gallery at Seekers Church, 276 Carroll St NW",
-    "url": "https://mainstreettakoma.org/event/fully-human-art-exhibit/2026-11-08/",
-    "source": "Main Street Takoma",
-    "kind": "community"
-   },
    {
     "title": "FRESHFARM Whittier Elementary Farm Stand",
     "place": "6201 5th St NW",
@@ -20596,7 +20773,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-08T09:17:54Z",
+  "generated_at": "2026-11-09T09:23:16Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -55323,7 +55500,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-08T09:17:54Z",
+  "generated_at": "2026-11-09T09:23:16Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

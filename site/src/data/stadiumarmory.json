@@ -1,7 +1,7 @@
 {
  "slug": "stadiumarmory",
  "name": "Stadium-Armory",
- "generated_at": "2026-11-08T09:17:54Z",
+ "generated_at": "2026-11-09T09:23:16Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1035,8 +1035,8 @@
   }
  ],
  "requests": {
-  "total": 29,
-  "previous_total": 25,
+  "total": 28,
+  "previous_total": 24,
   "by_type": [
    {
     "type": "Parking Enforcement",
@@ -1067,11 +1067,6 @@
     "type": "Bulk Collection",
     "count": 2,
     "previous": 2
-   },
-   {
-    "type": "DMV - Vehicle Registration Issues",
-    "count": 1,
-    "previous": 0
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -1375,16 +1370,6 @@
     "block": "21ST STREET NE AND C STREET NE",
     "lat": 38.893,
     "lon": -76.975
-   },
-   {
-    "type": "DMV - Vehicle Registration Issues",
-    "agency": "DMV",
-    "added": "2026-10-09T17:31:28Z",
-    "resolved": "2026-10-15T20:37:12Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
    }
   ],
   "mapped": {
@@ -1398,8 +1383,7 @@
     "Illegal Dumping",
     "Dockless Vehicle Parking Complaint",
     "DC Health Rodent & Vector Control",
-    "Streetlight Repair Investigation",
-    "DMV - Vehicle Registration Issues"
+    "Streetlight Repair Investigation"
    ],
    "blocks": [
     {
@@ -1465,12 +1449,6 @@
        5,
        "2026-10-20",
        "2026-10-20",
-       0
-      ],
-      [
-       10,
-       "2026-10-09",
-       "2026-10-15",
        0
       ]
      ]
@@ -1664,8 +1642,8 @@
   }
  },
  "crime": {
-  "total": 5,
-  "previous_total": 9,
+  "total": 4,
+  "previous_total": 10,
   "by_offense": [
    {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
@@ -1678,14 +1656,14 @@
     "previous": 0
    },
    {
-    "offense": "THEFT/OTHER",
-    "count": 1,
-    "previous": 5
-   },
-   {
     "offense": "BURGLARY",
     "count": 1,
     "previous": 0
+   },
+   {
+    "offense": "THEFT/OTHER",
+    "count": 0,
+    "previous": 6
    },
    {
     "offense": "THEFT F/AUTO",
@@ -1728,7 +1706,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-08T09:17:54Z",
+  "generated_at": "2026-11-09T09:23:16Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -1743,7 +1721,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Stadium-Armory through OTR assessment sub-areas Old City 1 A and B, the rowhouse blocks just west of the stadium grounds in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Stadium-Armory boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-08): 7% of the 2,431 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Stadium-Armory through OTR assessment sub-areas Old City 1 A and B, the rowhouse blocks just west of the stadium grounds in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Stadium-Armory boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-09): 7% of the 2,431 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -1760,7 +1738,7 @@
    "area_parcels": 2431,
    "area_share_inside": 0.07,
    "boundary_share_in_area": 1.0,
-   "measured": "2026-11-08"
+   "measured": "2026-11-09"
   },
   "primary": "house",
   "house": {
@@ -1933,7 +1911,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-08T09:17:54Z",
+  "generated_at": "2026-11-09T09:23:16Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -1957,7 +1935,7 @@
    "starting_next_7d": 2,
    "reserved_ft": 1298,
    "long_running_90d": 5,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-08: newest permit issued 2026-11-08, newest record update 2026-11-08, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-09: newest permit issued 2026-11-09, newest record update 2026-11-09, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Construction staging",
@@ -2076,7 +2054,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.06,
     "city_median_days": 0.05,
-    "closed_n": 154
+    "closed_n": 153
    },
    {
     "type": "DC Government Information",
@@ -2099,7 +2077,7 @@
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "median_days": 0.2,
-    "city_median_days": 0.22,
+    "city_median_days": 0.21,
     "closed_n": 18
    },
    {
@@ -2117,14 +2095,14 @@
    {
     "type": "Roadway Signs",
     "median_days": 23.79,
-    "city_median_days": 7.07,
+    "city_median_days": 7.06,
     "closed_n": 11
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-08T09:17:54Z",
+  "generated_at": "2026-11-09T09:23:16Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2214,7 +2192,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-08T09:17:54Z",
+  "generated_at": "2026-11-09T09:23:16Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2293,9 +2271,9 @@
    {
     "name": "Hill Rag",
     "url": "https://www.hillrag.com/",
-    "state": "error: ParseError",
-    "matched": 0,
-    "failed": 1
+    "state": "ok",
+    "matched": 9,
+    "fetched": 1
    },
    {
     "name": "The DC Line",
@@ -2621,8 +2599,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-08T09:17:54Z",
-  "today": "2026-11-08",
+  "generated_at": "2026-11-09T09:23:16Z",
+  "today": "2026-11-09",
   "days_ahead": 30,
   "sources": [
    {
@@ -2787,7 +2765,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-08T09:17:54Z",
+  "generated_at": "2026-11-09T09:23:16Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -14291,7 +14269,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-08T09:17:54Z",
+  "generated_at": "2026-11-09T09:23:16Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

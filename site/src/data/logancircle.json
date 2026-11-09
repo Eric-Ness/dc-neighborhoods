@@ -1,7 +1,7 @@
 {
  "slug": "logancircle",
  "name": "Logan Circle",
- "generated_at": "2026-11-08T09:17:54Z",
+ "generated_at": "2026-11-09T09:23:16Z",
  "boundary": {
   "source": "ANC 2F, the Logan Circle commission (all its single-member districts, Open Data DC). DC's LOGAN CIRCLE/SHAW planning area also covers Shaw, which has its own site.",
   "rings": [
@@ -3505,19 +3505,6 @@
    "smd": "2F03"
   },
   {
-   "id": "E2700972",
-   "issued": "2026-10-29T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "1317 RHODE ISLAND AVE NW 202 20005",
-   "work": "",
-   "zoning": "RA-2",
-   "lat": 38.90939,
-   "lon": -77.03134,
-   "smd": "2F03"
-  },
-  {
    "id": "E2701051",
    "issued": "2026-10-29T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -3555,6 +3542,19 @@
    "lat": 38.91231,
    "lon": -77.02732,
    "smd": "2F02"
+  },
+  {
+   "id": "E2700972",
+   "issued": "2026-10-29T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "1317 RHODE ISLAND AVE NW 202 20005",
+   "work": "",
+   "zoning": "RA-2",
+   "lat": 38.90939,
+   "lon": -77.03134,
+   "smd": "2F03"
   },
   {
    "id": "B2608411",
@@ -4104,53 +4104,53 @@
   }
  ],
  "requests": {
-  "total": 818,
-  "previous_total": 1012,
+  "total": 845,
+  "previous_total": 988,
   "by_type": [
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 183,
-    "previous": 186
+    "count": 188,
+    "previous": 182
    },
    {
     "type": "Parking Enforcement",
     "count": 163,
-    "previous": 118
+    "previous": 119
    },
    {
     "type": "Illegal Dumping",
-    "count": 48,
-    "previous": 38
-   },
-   {
-    "type": "Bulk Collection",
-    "count": 44,
-    "previous": 37
+    "count": 50,
+    "previous": 35
    },
    {
     "type": "Public Space Litter Can-Collection",
-    "count": 37,
+    "count": 47,
     "previous": 49
+   },
+   {
+    "type": "Bulk Collection",
+    "count": 41,
+    "previous": 38
    },
    {
     "type": "Trash Collection - Missed",
     "count": 34,
-    "previous": 14
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "count": 30,
-    "previous": 44
+    "previous": 12
    },
    {
     "type": "Graffiti Removal",
-    "count": 26,
-    "previous": 97
+    "count": 33,
+    "previous": 94
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "count": 31,
+    "previous": 42
    },
    {
     "type": "Residential Parking Permit Violation",
-    "count": 22,
-    "previous": 30
+    "count": 21,
+    "previous": 26
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -4160,21 +4160,21 @@
    {
     "type": "Sanitation Enforcement",
     "count": 19,
-    "previous": 36
+    "previous": 35
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 18,
-    "previous": 26
+    "count": 16,
+    "previous": 27
    },
    {
     "type": "Sidewalk Repair",
     "count": 14,
-    "previous": 12
+    "previous": 11
    },
    {
     "type": "Roadway Signs",
-    "count": 12,
+    "count": 11,
     "previous": 29
    },
    {
@@ -4185,16 +4185,31 @@
    {
     "type": "DMV - Vehicle Registration Issues",
     "count": 11,
-    "previous": 7
+    "previous": 6
    },
    {
     "type": "DMV - Drivers License/ID Issues",
     "count": 10,
-    "previous": 12
+    "previous": 10
+   },
+   {
+    "type": "Abandoned Bicycle",
+    "count": 10,
+    "previous": 7
+   },
+   {
+    "type": "Tree Inspection",
+    "count": 9,
+    "previous": 19
+   },
+   {
+    "type": "Tree Pruning",
+    "count": 8,
+    "previous": 42
    },
    {
     "type": "Container Removal",
-    "count": 9,
+    "count": 8,
     "previous": 10
    },
    {
@@ -4203,39 +4218,24 @@
     "previous": 9
    },
    {
-    "type": "Tree Pruning",
-    "count": 7,
-    "previous": 41
-   },
-   {
     "type": "Out of State Parking Violation (ROSA)",
     "count": 7,
     "previous": 5
    },
    {
-    "type": "Tree Inspection",
-    "count": 7,
-    "previous": 23
-   },
-   {
-    "type": "Abandoned Bicycle",
+    "type": "Tree Planting",
     "count": 6,
-    "previous": 7
-   },
-   {
-    "type": "DC How Am I Driving?",
-    "count": 5,
-    "previous": 4
-   },
-   {
-    "type": "Public Space Inspection",
-    "count": 5,
-    "previous": 4
+    "previous": 34
    },
    {
     "type": "Bicycle Services",
     "count": 5,
     "previous": 0
+   },
+   {
+    "type": "DOB - Vacant Private Property Inspection",
+    "count": 5,
+    "previous": 9
    },
    {
     "type": "Rat Replacement Containers",
@@ -4248,13 +4248,18 @@
     "previous": 2
    },
    {
-    "type": "Pothole",
+    "type": "Public Space Inspection",
     "count": 4,
-    "previous": 2
+    "previous": 5
    },
    {
-    "type": "Roadway Repair",
-    "count": 3,
+    "type": "DC How Am I Driving?",
+    "count": 4,
+    "previous": 4
+   },
+   {
+    "type": "Pothole",
+    "count": 4,
     "previous": 2
    },
    {
@@ -4265,17 +4270,12 @@
    {
     "type": "Recycling Collection - Missed",
     "count": 3,
-    "previous": 4
+    "previous": 3
    },
    {
     "type": "Tree Removal",
     "count": 3,
     "previous": 17
-   },
-   {
-    "type": "DOB - Vacant Private Property Inspection",
-    "count": 3,
-    "previous": 9
    },
    {
     "type": "DFHV - For Hire Vehicle Concerns",
@@ -4288,14 +4288,9 @@
     "previous": 0
    },
    {
-    "type": "Emergency No-Parking Verification",
+    "type": "Roadway Repair",
     "count": 2,
-    "previous": 1
-   },
-   {
-    "type": "Tree Planting",
-    "count": 2,
-    "previous": 34
+    "previous": 3
    },
    {
     "type": "Recycling Cart - Repair",
@@ -4350,7 +4345,7 @@
    {
     "type": "DOEE - LIHEAP",
     "count": 1,
-    "previous": 1
+    "previous": 0
    },
    {
     "type": "Illegal Poster",
@@ -4363,399 +4358,409 @@
     "previous": 2
    },
    {
+    "type": "Emergency No-Parking Verification",
+    "count": 1,
+    "previous": 2
+   },
+   {
     "type": "DMV - Vehicle Title Issues",
+    "count": 1,
+    "previous": 0
+   },
+   {
+    "type": "Supercan - Delivery",
     "count": 1,
     "previous": 0
    }
   ],
-  "open": 138,
+  "open": 170,
   "recent": [
    {
-    "type": "Parking Enforcement",
+    "type": "Graffiti Removal",
     "agency": "DPW",
-    "added": "2026-11-08T04:21:18Z",
+    "added": "2026-11-09T04:33:58Z",
     "resolved": null,
     "status": "Open",
-    "block": "1400 block of P STREET NW",
-    "lat": 38.909,
+    "block": "15TH STREET NW AND Q STREET NW",
+    "lat": 38.911,
+    "lon": -77.035
+   },
+   {
+    "type": "Tree Planting",
+    "agency": "DDOT",
+    "added": "2026-11-09T04:32:52Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "1400 block of Q STREET NW",
+    "lat": 38.911,
     "lon": -77.034
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-07T23:58:16Z",
-    "resolved": "2026-11-08T01:58:06Z",
-    "status": "Closed",
-    "block": "1300 block of 14TH STREET NW",
-    "lat": 38.908,
-    "lon": -77.032
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-07T23:57:15Z",
-    "resolved": "2026-11-08T00:13:31Z",
-    "status": "Closed",
-    "block": "1300 block of 14TH STREET NW",
-    "lat": 38.909,
-    "lon": -77.032
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-07T23:45:12Z",
-    "resolved": "2026-11-08T02:02:40Z",
-    "status": "Closed (Duplicate)",
-    "block": "1300 block of R STREET NW",
-    "lat": 38.913,
-    "lon": -77.03
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-07T23:40:43Z",
-    "resolved": "2026-11-08T02:02:40Z",
-    "status": "Closed (Duplicate)",
-    "block": "1300 block of R STREET NW",
-    "lat": 38.913,
-    "lon": -77.03
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-07T23:38:29Z",
-    "resolved": "2026-11-08T02:02:40Z",
-    "status": "Closed",
-    "block": "1300 block of R STREET NW",
-    "lat": 38.913,
-    "lon": -77.03
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-07T19:27:20Z",
-    "resolved": "2026-11-07T19:51:05Z",
-    "status": "Closed",
-    "block": "1300 block of 14TH STREET NW",
-    "lat": 38.908,
-    "lon": -77.032
    },
    {
     "type": "Graffiti Removal",
     "agency": "DPW",
-    "added": "2026-11-07T16:32:46Z",
+    "added": "2026-11-09T04:32:05Z",
     "resolved": null,
     "status": "Open",
-    "block": "1500 block of 14TH STREET NW",
+    "block": "1400 block of Q STREET NW",
+    "lat": 38.911,
+    "lon": -77.034
+   },
+   {
+    "type": "Tree Planting",
+    "agency": "DDOT",
+    "added": "2026-11-09T04:31:04Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "1400 block of Q STREET NW",
+    "lat": 38.911,
+    "lon": -77.033
+   },
+   {
+    "type": "Graffiti Removal",
+    "agency": "DPW",
+    "added": "2026-11-09T04:28:55Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1400 block of Q STREET NW",
+    "lat": 38.911,
+    "lon": -77.033
+   },
+   {
+    "type": "Tree Inspection",
+    "agency": "DDOT",
+    "added": "2026-11-09T04:27:43Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "1400 block of Q STREET NW",
+    "lat": 38.911,
+    "lon": -77.033
+   },
+   {
+    "type": "Graffiti Removal",
+    "agency": "DPW",
+    "added": "2026-11-09T04:26:42Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "14TH STREET NW AND Q STREET NW",
     "lat": 38.911,
     "lon": -77.032
    },
    {
-    "type": "Dockless Vehicle Parking Complaint",
+    "type": "Tree Planting",
     "agency": "DDOT",
-    "added": "2026-11-07T14:51:06Z",
-    "resolved": "2026-11-07T15:00:53Z",
-    "status": "Closed",
-    "block": "1500 block of 14TH STREET NW",
-    "lat": 38.91,
+    "added": "2026-11-09T04:25:23Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "14TH STREET NW AND Q STREET NW",
+    "lat": 38.911,
     "lon": -77.032
    },
    {
-    "type": "Dead Animal Collection",
+    "type": "Illegal Dumping",
     "agency": "DPW",
-    "added": "2026-11-07T13:53:13Z",
+    "added": "2026-11-09T04:22:58Z",
     "resolved": null,
     "status": "Open",
-    "block": "1400 block of R STREET NW",
-    "lat": 38.913,
-    "lon": -77.032
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-07T13:49:35Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1100 block of P STREET NW",
-    "lat": 38.909,
-    "lon": -77.028
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-07T13:47:44Z",
-    "resolved": "2026-11-07T13:55:56Z",
-    "status": "Closed",
-    "block": "1400 block of 12TH STREET NW",
-    "lat": 38.909,
-    "lon": -77.028
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-07T13:47:31Z",
-    "resolved": "2026-11-07T13:55:59Z",
-    "status": "Closed",
-    "block": "1400 block of 12TH STREET NW",
-    "lat": 38.909,
-    "lon": -77.028
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-07T13:45:18Z",
-    "resolved": "2026-11-07T13:50:53Z",
-    "status": "Closed",
     "block": "1300 block of 12TH STREET NW",
-    "lat": 38.908,
-    "lon": -77.028
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-07T12:31:14Z",
-    "resolved": "2026-11-07T14:33:04Z",
-    "status": "Closed",
-    "block": "1200 block of N STREET NW",
     "lat": 38.907,
     "lon": -77.028
    },
    {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-07T11:25:51Z",
-    "resolved": "2026-11-07T14:18:05Z",
-    "status": "Closed",
-    "block": "1900 block of 14TH STREET NW",
-    "lat": 38.916,
-    "lon": -77.032
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-07T07:48:08Z",
-    "resolved": "2026-11-07T09:08:25Z",
-    "status": "Closed",
-    "block": "1600 block of 14TH STREET NW",
+    "type": "Tree Inspection",
+    "agency": "DDOT",
+    "added": "2026-11-09T04:22:15Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "14TH STREET NW AND Q STREET NW",
     "lat": 38.911,
     "lon": -77.032
    },
    {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-11-07T04:12:55Z",
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-09T04:15:51Z",
     "resolved": null,
     "status": "Open",
-    "block": "1100 block of P STREET NW",
-    "lat": 38.909,
-    "lon": -77.028
+    "block": "1100 block of MASSACHUSETTS AVENUE NW",
+    "lat": 38.904,
+    "lon": -77.027
    },
    {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-07T03:23:20Z",
-    "resolved": "2026-11-07T04:25:26Z",
-    "status": "Closed",
-    "block": "1400 block of 12TH STREET NW",
-    "lat": 38.909,
-    "lon": -77.028
+    "type": "DOB - Vacant Private Property Inspection",
+    "agency": "DOB",
+    "added": "2026-11-09T04:14:20Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1300 block of Q STREET NW",
+    "lat": 38.911,
+    "lon": -77.03
    },
    {
-    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "type": "Tree Pruning",
     "agency": "DDOT",
-    "added": "2026-11-07T02:07:54Z",
-    "resolved": "2026-11-07T04:20:53Z",
-    "status": "Closed",
-    "block": "1200 block of Q STREET NW",
+    "added": "2026-11-09T04:12:35Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "13TH STREET NW AND Q STREET NW",
+    "lat": 38.911,
+    "lon": -77.03
+   },
+   {
+    "type": "Graffiti Removal",
+    "agency": "DPW",
+    "added": "2026-11-09T04:11:04Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Q STREET NW AND VERMONT AVENUE NW",
     "lat": 38.911,
     "lon": -77.029
    },
    {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-07T02:02:56Z",
-    "resolved": "2026-11-07T02:10:58Z",
-    "status": "Closed",
-    "block": "1600 block of 14TH STREET NW",
+    "type": "Abandoned Bicycle",
+    "agency": "DPW",
+    "added": "2026-11-09T04:09:16Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1200 block of Q STREET NW",
     "lat": 38.911,
-    "lon": -77.032
+    "lon": -77.028
+   },
+   {
+    "type": "Graffiti Removal",
+    "agency": "DPW",
+    "added": "2026-11-09T04:07:33Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "12TH STREET NW AND Q STREET NW",
+    "lat": 38.911,
+    "lon": -77.028
+   },
+   {
+    "type": "Tree Pruning",
+    "agency": "DDOT",
+    "added": "2026-11-09T04:04:19Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "Q STREET NW AND 11TH STREET NW",
+    "lat": 38.911,
+    "lon": -77.027
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-09T00:18:59Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1400 block of P STREET NW",
+    "lat": 38.91,
+    "lon": -77.033
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
     "agency": "DDOT",
-    "added": "2026-11-07T02:02:32Z",
-    "resolved": "2026-11-07T02:11:01Z",
+    "added": "2026-11-09T00:12:53Z",
+    "resolved": "2026-11-09T00:21:43Z",
     "status": "Closed",
-    "block": "1600 block of 14TH STREET NW",
-    "lat": 38.911,
-    "lon": -77.032
+    "block": "1400 block of P STREET NW",
+    "lat": 38.91,
+    "lon": -77.033
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
     "agency": "DDOT",
-    "added": "2026-11-07T02:01:53Z",
-    "resolved": "2026-11-07T02:10:54Z",
+    "added": "2026-11-09T00:12:34Z",
+    "resolved": "2026-11-09T00:20:53Z",
     "status": "Closed",
+    "block": "1400 block of P STREET NW",
+    "lat": 38.91,
+    "lon": -77.033
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "agency": "DDOT",
+    "added": "2026-11-09T00:11:54Z",
+    "resolved": "2026-11-09T00:21:04Z",
+    "status": "Closed",
+    "block": "Unit block of LOGAN CIRCLE NW",
+    "lat": 38.91,
+    "lon": -77.031
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "agency": "DDOT",
+    "added": "2026-11-09T00:11:39Z",
+    "resolved": "2026-11-09T00:21:32Z",
+    "status": "Closed",
+    "block": "1200 block of O STREET NW",
+    "lat": 38.909,
+    "lon": -77.029
+   },
+   {
+    "type": "Graffiti Removal",
+    "agency": "DPW",
+    "added": "2026-11-09T00:11:00Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of LOGAN CIRCLE NW",
+    "lat": 38.91,
+    "lon": -77.031
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-09T00:07:49Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1400 block of 14TH STREET NW",
+    "lat": 38.91,
+    "lon": -77.032
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-09T00:07:35Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1400 block of 14TH STREET NW",
+    "lat": 38.909,
+    "lon": -77.032
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-09T00:07:22Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of 14TH STREET NW",
+    "lat": 38.914,
+    "lon": -77.032
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-09T00:07:09Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1300 block of RIGGS STREET NW",
+    "lat": 38.913,
+    "lon": -77.032
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-09T00:07:00Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1300 block of CORCORAN STREET NW",
+    "lat": 38.912,
+    "lon": -77.032
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-09T00:06:40Z",
+    "resolved": null,
+    "status": "Open",
     "block": "1600 block of 14TH STREET NW",
     "lat": 38.912,
     "lon": -77.032
    },
    {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-07T02:00:38Z",
-    "resolved": "2026-11-07T02:05:54Z",
-    "status": "Closed",
-    "block": "1300 block of S STREET NW",
-    "lat": 38.914,
-    "lon": -77.032
-   },
-   {
-    "type": "Parking Enforcement",
+    "type": "Public Space Litter Can-Collection",
     "agency": "DPW",
-    "added": "2026-11-07T01:56:58Z",
-    "resolved": "2026-11-07T02:13:53Z",
-    "status": "Closed (Duplicate)",
-    "block": "1200 block of 13TH STREET NW",
-    "lat": 38.907,
-    "lon": -77.029
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-07T01:56:27Z",
-    "resolved": "2026-11-07T02:13:53Z",
-    "status": "Closed",
-    "block": "1200 block of 13TH STREET NW",
-    "lat": 38.907,
-    "lon": -77.029
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-07T01:48:21Z",
-    "resolved": "2026-11-07T01:52:15Z",
-    "status": "Closed",
-    "block": "1300 block of 14TH STREET NW",
-    "lat": 38.908,
-    "lon": -77.032
-   },
-   {
-    "type": "DC Government Information",
-    "agency": "OUC",
-    "added": "2026-11-07T01:02:18Z",
-    "resolved": "2026-11-07T01:02:18Z",
-    "status": "Closed",
-    "block": "1300 block of 13TH STREET NW",
-    "lat": 38.907,
-    "lon": -77.029
-   },
-   {
-    "type": "Missed Curbside Compost Collection",
-    "agency": "DPW",
-    "added": "2026-11-07T00:08:42Z",
+    "added": "2026-11-09T00:06:20Z",
     "resolved": null,
     "status": "Open",
-    "block": "1400 block of Q STREET NW",
-    "lat": 38.911,
-    "lon": -77.033
+    "block": "Unit block of LOGAN CIRCLE NW",
+    "lat": 38.91,
+    "lon": -77.031
    },
    {
     "type": "Trash Collection - Missed",
     "agency": "DPW",
-    "added": "2026-11-06T23:45:28Z",
+    "added": "2026-11-08T23:01:25Z",
     "resolved": null,
     "status": "Open",
-    "block": "1400 block of Q STREET NW",
-    "lat": 38.911,
-    "lon": -77.033
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-06T23:25:07Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1300 block of S STREET NW",
-    "lat": 38.914,
-    "lon": -77.031
-   },
-   {
-    "type": "Traffic Safety Input",
-    "agency": "DDOT",
-    "added": "2026-11-06T23:04:44Z",
-    "resolved": "2026-11-06T23:10:54Z",
-    "status": "Closed",
-    "block": "1200 block of 13TH STREET NW",
-    "lat": 38.907,
-    "lon": -77.029
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-11-06T23:03:25Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1400 block of T STREET NW",
-    "lat": 38.916,
-    "lon": -77.033
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "agency": "DPW",
-    "added": "2026-11-06T23:02:30Z",
-    "resolved": "2026-11-07T10:12:20Z",
-    "status": "Closed",
     "block": "1400 block of R STREET NW",
     "lat": 38.913,
+    "lon": -77.033
+   },
+   {
+    "type": "DOB - Vacant Private Property Inspection",
+    "agency": "DOB",
+    "added": "2026-11-08T18:16:54Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1400 block of U STREET NW",
+    "lat": 38.917,
+    "lon": -77.034
+   },
+   {
+    "type": "Tree Planting",
+    "agency": "DDOT",
+    "added": "2026-11-08T18:15:36Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "1400 block of U STREET NW",
+    "lat": 38.917,
+    "lon": -77.033
+   },
+   {
+    "type": "Abandoned Bicycle",
+    "agency": "DPW",
+    "added": "2026-11-08T18:14:49Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1900 block of 14TH STREET NW",
+    "lat": 38.916,
     "lon": -77.032
    },
    {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-06T22:59:50Z",
-    "resolved": "2026-11-06T23:06:19Z",
-    "status": "Closed",
-    "block": "Unit block of LOGAN CIRCLE NW",
-    "lat": 38.909,
-    "lon": -77.03
+    "type": "Abandoned Bicycle",
+    "agency": "DPW",
+    "added": "2026-11-08T18:08:39Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1900 block of 14TH STREET NW",
+    "lat": 38.916,
+    "lon": -77.032
    },
    {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-06T22:59:17Z",
-    "resolved": "2026-11-06T23:07:00Z",
-    "status": "Closed",
-    "block": "1300 block of N STREET NW",
-    "lat": 38.907,
-    "lon": -77.03
+    "type": "Abandoned Bicycle",
+    "agency": "DPW",
+    "added": "2026-11-08T18:06:42Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1900 block of 14TH STREET NW",
+    "lat": 38.916,
+    "lon": -77.032
    },
    {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-06T22:59:00Z",
-    "resolved": "2026-11-06T23:06:15Z",
-    "status": "Closed",
-    "block": "1300 block of 13TH STREET NW",
-    "lat": 38.908,
-    "lon": -77.03
+    "type": "DC Health Rodent & Vector Control",
+    "agency": "DOH",
+    "added": "2026-11-08T17:57:38Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of 13TH STREET NW",
+    "lat": 38.913,
+    "lon": -77.029
    },
    {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-06T22:58:32Z",
-    "resolved": "2026-11-06T23:06:56Z",
-    "status": "Closed",
-    "block": "1300 block of 13TH STREET NW",
-    "lat": 38.908,
-    "lon": -77.03
+    "type": "Supercan - Delivery",
+    "agency": "DPW",
+    "added": "2026-11-08T16:58:01Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1400 block of S STREET NW",
+    "lat": 38.914,
+    "lon": -77.034
    },
    {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-06T22:58:01Z",
-    "resolved": "2026-11-06T23:06:10Z",
-    "status": "Closed",
+    "type": "Dead Animal Collection",
+    "agency": "DPW",
+    "added": "2026-11-08T13:56:32Z",
+    "resolved": null,
+    "status": "Open",
     "block": "1200 block of O STREET NW",
     "lat": 38.909,
     "lon": -77.029
@@ -4763,130 +4768,136 @@
    {
     "type": "Dockless Vehicle Parking Complaint",
     "agency": "DDOT",
-    "added": "2026-11-06T22:57:43Z",
-    "resolved": "2026-11-06T23:06:06Z",
+    "added": "2026-11-08T13:56:07Z",
+    "resolved": "2026-11-08T14:05:54Z",
     "status": "Closed",
-    "block": "1300 block of P STREET NW",
-    "lat": 38.91,
-    "lon": -77.031
+    "block": "1400 block of 12TH STREET NW",
+    "lat": 38.909,
+    "lon": -77.028
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
     "agency": "DDOT",
-    "added": "2026-11-06T22:57:25Z",
-    "resolved": "2026-11-06T23:06:47Z",
+    "added": "2026-11-08T13:55:41Z",
+    "resolved": "2026-11-08T14:01:02Z",
     "status": "Closed",
-    "block": "1300 block of P STREET NW",
-    "lat": 38.91,
-    "lon": -77.031
+    "block": "1400 block of 12TH STREET NW",
+    "lat": 38.909,
+    "lon": -77.028
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
     "agency": "DDOT",
-    "added": "2026-11-06T22:57:05Z",
-    "resolved": "2026-11-06T23:06:02Z",
+    "added": "2026-11-08T13:54:28Z",
+    "resolved": "2026-11-08T14:00:59Z",
     "status": "Closed",
-    "block": "1600 block of 14TH STREET NW",
-    "lat": 38.912,
-    "lon": -77.032
+    "block": "1100 block of O STREET NW",
+    "lat": 38.909,
+    "lon": -77.028
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
     "agency": "DDOT",
-    "added": "2026-11-06T22:56:41Z",
-    "resolved": "2026-11-06T23:05:57Z",
+    "added": "2026-11-08T13:50:10Z",
+    "resolved": "2026-11-08T13:55:57Z",
     "status": "Closed",
-    "block": "1600 block of 14TH STREET NW",
-    "lat": 38.912,
-    "lon": -77.032
+    "block": "1200 block of 12TH STREET NW",
+    "lat": 38.907,
+    "lon": -77.028
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
     "agency": "DDOT",
-    "added": "2026-11-06T22:56:27Z",
-    "resolved": "2026-11-06T23:06:38Z",
+    "added": "2026-11-08T13:44:41Z",
+    "resolved": "2026-11-08T13:51:00Z",
     "status": "Closed",
-    "block": "1900 block of 14TH STREET NW",
-    "lat": 38.916,
-    "lon": -77.032
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-06T22:56:07Z",
-    "resolved": "2026-11-06T23:06:52Z",
-    "status": "Closed",
-    "block": "1500 block of 14TH STREET NW",
-    "lat": 38.911,
-    "lon": -77.032
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-06T22:55:34Z",
-    "resolved": "2026-11-06T23:00:54Z",
-    "status": "Closed",
-    "block": "1300 block of Q STREET NW",
-    "lat": 38.911,
-    "lon": -77.031
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-06T22:48:31Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1300 block of S STREET NW",
-    "lat": 38.914,
-    "lon": -77.031
-   },
-   {
-    "type": "Missed Curbside Compost Collection",
-    "agency": "DPW",
-    "added": "2026-11-06T22:12:01Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1900 block of 15TH STREET NW",
-    "lat": 38.916,
-    "lon": -77.034
+    "block": "1200 block of 10TH STREET NW",
+    "lat": 38.906,
+    "lon": -77.026
    },
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
-    "added": "2026-11-06T18:08:18Z",
-    "resolved": "2026-11-06T18:21:05Z",
+    "added": "2026-11-08T05:42:21Z",
+    "resolved": "2026-11-08T06:00:05Z",
+    "status": "Closed",
+    "block": "1200 block of 13TH STREET NW",
+    "lat": 38.906,
+    "lon": -77.029
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-08T05:41:26Z",
+    "resolved": "2026-11-08T06:04:13Z",
     "status": "Closed",
     "block": "1300 block of 14TH STREET NW",
     "lat": 38.908,
     "lon": -77.032
    },
    {
-    "type": "DMV - Vehicle Title Issues",
-    "agency": "DMV",
-    "added": "2026-11-06T17:23:53Z",
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-08T05:40:41Z",
+    "resolved": "2026-11-08T06:23:04Z",
+    "status": "Closed",
+    "block": "1300 block of 14TH STREET NW",
+    "lat": 38.908,
+    "lon": -77.032
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-08T05:21:41Z",
     "resolved": null,
     "status": "Open",
-    "block": "1600 block of 13TH STREET NW",
-    "lat": 38.912,
-    "lon": -77.03
+    "block": "1300 block of 14TH STREET NW",
+    "lat": 38.909,
+    "lon": -77.032
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-08T05:21:20Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1400 block of 14TH STREET NW",
+    "lat": 38.909,
+    "lon": -77.032
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "agency": "DDOT",
+    "added": "2026-11-08T05:19:11Z",
+    "resolved": "2026-11-08T05:26:07Z",
+    "status": "Closed",
+    "block": "1400 block of N STREET NW",
+    "lat": 38.907,
+    "lon": -77.034
    }
   ],
   "mapped": {
    "types": [
-    "Parking Enforcement",
     "Graffiti Removal",
+    "Tree Planting",
+    "Tree Inspection",
+    "Illegal Dumping",
+    "DOB - Vacant Private Property Inspection",
+    "Tree Pruning",
+    "Abandoned Bicycle",
+    "Public Space Litter Can-Collection",
     "Dockless Vehicle Parking Complaint",
-    "Dead Animal Collection",
-    "Sanitation Enforcement",
+    "Trash Collection - Missed",
     "DC Health Rodent & Vector Control",
+    "Supercan - Delivery",
+    "Dead Animal Collection",
+    "Parking Enforcement",
+    "Sanitation Enforcement",
     "Traffic Lights and Pedestrian Walk Signals",
     "DC Government Information",
     "Missed Curbside Compost Collection",
-    "Trash Collection - Missed",
     "Bulk Collection",
     "Traffic Safety Input",
-    "Illegal Dumping",
-    "Public Space Litter Can-Collection",
     "DMV - Vehicle Title Issues",
     "Trash Cart - Delivery",
     "DMV - Drivers License/ID Issues",
@@ -4895,14 +4906,10 @@
     "Roadway Signs",
     "Sidewalk Repair",
     "Public Space Inspection",
-    "DOB - Vacant Private Property Inspection",
-    "Abandoned Bicycle",
-    "Tree Inspection",
     "Container Removal",
     "DMV - Online Processing Issues",
     "DMV - Vehicle Registration Issues",
     "DC How Am I Driving?",
-    "Tree Pruning",
     "Emergency No-Parking Verification",
     "Tree Removal",
     "Pothole",
@@ -4918,7 +4925,6 @@
     "Out of State Parking Violation (ROSA)",
     "Bus Stop Issues",
     "Recycling Collection - Missed",
-    "Tree Planting",
     "Pet Waste Complaint",
     "DC Water - Customer Flooding",
     "Trash Cart Repair",
@@ -4928,56 +4934,1281 @@
    ],
    "blocks": [
     {
-     "block": "1400 block of P STREET NW",
-     "lat": 38.909,
-     "lon": -77.034,
+     "block": "15TH STREET NW AND Q STREET NW",
+     "lat": 38.911,
+     "lon": -77.035,
      "r": [
       [
        0,
-       "2026-11-08",
+       "2026-11-09",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "1400 block of Q STREET NW",
+     "lat": 38.911,
+     "lon": -77.034,
+     "r": [
+      [
+       1,
+       "2026-11-09",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-11-09",
+       null,
+       1
+      ],
+      [
+       24,
+       "2026-11-02",
+       null,
+       1
+      ],
+      [
+       9,
+       "2026-10-29",
+       "2026-10-30",
+       0
+      ],
+      [
+       46,
+       "2026-10-27",
+       "2026-10-28",
+       0
+      ],
+      [
+       9,
+       "2026-10-27",
+       "2026-10-29",
+       0
+      ],
+      [
+       10,
+       "2026-10-26",
+       "2026-10-27",
+       0
+      ],
+      [
+       14,
+       "2026-10-26",
+       "2026-10-26",
+       0
+      ],
+      [
+       24,
+       "2026-10-26",
+       "2026-11-04",
+       0
+      ],
+      [
+       24,
+       "2026-10-20",
+       "2026-10-26",
+       1
+      ]
+     ]
+    },
+    {
+     "block": "1400 block of Q STREET NW",
+     "lat": 38.911,
+     "lon": -77.033,
+     "r": [
+      [
+       1,
+       "2026-11-09",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-11-09",
        null,
        1
       ],
       [
        2,
+       "2026-11-09",
+       null,
+       1
+      ],
+      [
+       17,
+       "2026-11-07",
+       null,
+       1
+      ],
+      [
+       9,
+       "2026-11-06",
+       null,
+       1
+      ],
+      [
+       8,
+       "2026-11-02",
+       "2026-11-02",
+       0
+      ],
+      [
+       24,
+       "2026-10-26",
+       "2026-10-28",
+       0
+      ],
+      [
+       38,
+       "2026-10-25",
+       "2026-10-25",
+       0
+      ],
+      [
+       46,
+       "2026-10-14",
+       "2026-10-20",
+       0
+      ],
+      [
+       9,
+       "2026-10-13",
+       "2026-10-15",
+       0
+      ],
+      [
+       18,
+       "2026-10-12",
+       "2026-10-16",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "14TH STREET NW AND Q STREET NW",
+     "lat": 38.911,
+     "lon": -77.032,
+     "r": [
+      [
+       0,
+       "2026-11-09",
+       null,
+       1
+      ],
+      [
+       1,
+       "2026-11-09",
+       null,
+       1
+      ],
+      [
+       2,
+       "2026-11-09",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-11-04",
+       "2026-11-06",
+       1
+      ]
+     ]
+    },
+    {
+     "block": "1300 block of 12TH STREET NW",
+     "lat": 38.907,
+     "lon": -77.028,
+     "r": [
+      [
+       3,
+       "2026-11-09",
+       null,
+       1
+      ],
+      [
+       8,
+       "2026-10-27",
+       "2026-10-27",
+       0
+      ],
+      [
+       3,
+       "2026-10-16",
+       "2026-10-20",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1100 block of MASSACHUSETTS AVENUE NW",
+     "lat": 38.904,
+     "lon": -77.027,
+     "r": [
+      [
+       3,
+       "2026-11-09",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "1300 block of Q STREET NW",
+     "lat": 38.911,
+     "lon": -77.03,
+     "r": [
+      [
+       4,
+       "2026-11-09",
+       null,
+       1
+      ],
+      [
+       13,
+       "2026-10-23",
+       "2026-10-23",
+       0
+      ],
+      [
+       10,
+       "2026-10-17",
+       "2026-10-26",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "13TH STREET NW AND Q STREET NW",
+     "lat": 38.911,
+     "lon": -77.03,
+     "r": [
+      [
+       5,
+       "2026-11-09",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "Q STREET NW AND VERMONT AVENUE NW",
+     "lat": 38.911,
+     "lon": -77.029,
+     "r": [
+      [
+       0,
+       "2026-11-09",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "1200 block of Q STREET NW",
+     "lat": 38.911,
+     "lon": -77.028,
+     "r": [
+      [
+       6,
+       "2026-11-09",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "12TH STREET NW AND Q STREET NW",
+     "lat": 38.911,
+     "lon": -77.028,
+     "r": [
+      [
+       0,
+       "2026-11-09",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "Q STREET NW AND 11TH STREET NW",
+     "lat": 38.911,
+     "lon": -77.027,
+     "r": [
+      [
+       5,
+       "2026-11-09",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "1400 block of P STREET NW",
+     "lat": 38.91,
+     "lon": -77.033,
+     "r": [
+      [
+       7,
+       "2026-11-09",
+       null,
+       1
+      ],
+      [
+       8,
+       "2026-11-09",
+       "2026-11-09",
+       0
+      ],
+      [
+       8,
+       "2026-11-09",
+       "2026-11-09",
+       0
+      ],
+      [
+       7,
+       "2026-11-02",
+       "2026-11-03",
+       0
+      ],
+      [
+       13,
+       "2026-10-26",
+       "2026-10-28",
+       0
+      ],
+      [
+       13,
+       "2026-10-16",
+       "2026-10-16",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of LOGAN CIRCLE NW",
+     "lat": 38.91,
+     "lon": -77.031,
+     "r": [
+      [
+       8,
+       "2026-11-09",
+       "2026-11-09",
+       0
+      ],
+      [
+       0,
+       "2026-11-09",
+       null,
+       1
+      ],
+      [
+       7,
+       "2026-11-09",
+       null,
+       1
+      ],
+      [
+       26,
+       "2026-10-31",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "1200 block of O STREET NW",
+     "lat": 38.909,
+     "lon": -77.029,
+     "r": [
+      [
+       8,
+       "2026-11-09",
+       "2026-11-09",
+       0
+      ],
+      [
+       12,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       8,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       13,
+       "2026-10-31",
+       "2026-10-31",
+       0
+      ],
+      [
+       30,
+       "2026-10-30",
+       null,
+       1
+      ],
+      [
+       3,
+       "2026-10-27",
+       "2026-10-28",
+       0
+      ],
+      [
+       8,
+       "2026-10-13",
+       "2026-10-13",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1400 block of 14TH STREET NW",
+     "lat": 38.91,
+     "lon": -77.032,
+     "r": [
+      [
+       7,
+       "2026-11-09",
+       null,
+       1
+      ],
+      [
+       8,
+       "2026-10-23",
+       "2026-10-23",
+       0
+      ],
+      [
+       8,
+       "2026-10-23",
+       "2026-10-23",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1400 block of 14TH STREET NW",
+     "lat": 38.909,
+     "lon": -77.032,
+     "r": [
+      [
+       7,
+       "2026-11-09",
+       null,
+       1
+      ],
+      [
+       7,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       8,
+       "2026-11-08",
+       "2026-11-08",
+       0
+      ],
+      [
+       4,
+       "2026-11-04",
+       null,
+       1
+      ],
+      [
+       7,
+       "2026-11-02",
+       "2026-11-03",
+       0
+      ],
+      [
+       33,
+       "2026-10-13",
+       null,
+       1
+      ],
+      [
+       7,
+       "2026-10-13",
+       "2026-10-14",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1700 block of 14TH STREET NW",
+     "lat": 38.914,
+     "lon": -77.032,
+     "r": [
+      [
+       7,
+       "2026-11-09",
+       null,
+       1
+      ],
+      [
+       36,
+       "2026-10-28",
+       null,
+       1
+      ],
+      [
+       13,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       7,
+       "2026-10-12",
+       "2026-10-13",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1300 block of RIGGS STREET NW",
+     "lat": 38.913,
+     "lon": -77.032,
+     "r": [
+      [
+       7,
+       "2026-11-09",
+       null,
+       1
+      ],
+      [
+       15,
+       "2026-10-30",
+       null,
+       1
+      ],
+      [
+       15,
+       "2026-10-26",
+       null,
+       1
+      ],
+      [
+       18,
+       "2026-10-16",
+       "2026-10-22",
+       0
+      ],
+      [
+       7,
+       "2026-10-10",
+       "2026-10-11",
+       0
+      ],
+      [
+       8,
+       "2026-10-10",
+       "2026-10-10",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1300 block of CORCORAN STREET NW",
+     "lat": 38.912,
+     "lon": -77.032,
+     "r": [
+      [
+       7,
+       "2026-11-09",
+       null,
+       1
+      ],
+      [
+       7,
+       "2026-11-02",
+       "2026-11-03",
+       0
+      ],
+      [
+       13,
+       "2026-10-31",
+       "2026-10-31",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1600 block of 14TH STREET NW",
+     "lat": 38.912,
+     "lon": -77.032,
+     "r": [
+      [
+       7,
+       "2026-11-09",
+       null,
+       1
+      ],
+      [
+       8,
+       "2026-11-07",
+       "2026-11-07",
+       0
+      ],
+      [
+       8,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       8,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       8,
+       "2026-10-16",
+       "2026-10-16",
+       0
+      ],
+      [
+       8,
+       "2026-10-13",
+       "2026-10-13",
+       0
+      ],
+      [
+       8,
+       "2026-10-13",
+       "2026-10-13",
+       0
+      ],
+      [
+       7,
+       "2026-10-10",
+       "2026-10-11",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1400 block of R STREET NW",
+     "lat": 38.913,
+     "lon": -77.033,
+     "r": [
+      [
+       9,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       8,
+       "2026-10-18",
+       "2026-10-18",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1400 block of U STREET NW",
+     "lat": 38.917,
+     "lon": -77.034,
+     "r": [
+      [
+       4,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       8,
+       "2026-10-16",
+       "2026-10-16",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1400 block of U STREET NW",
+     "lat": 38.917,
+     "lon": -77.033,
+     "r": [
+      [
+       1,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       8,
+       "2026-10-16",
+       "2026-10-16",
+       0
+      ],
+      [
+       8,
+       "2026-10-16",
+       "2026-10-16",
+       0
+      ],
+      [
+       8,
+       "2026-10-16",
+       "2026-10-16",
+       0
+      ],
+      [
+       8,
+       "2026-10-16",
+       "2026-10-16",
+       0
+      ],
+      [
+       13,
+       "2026-10-14",
+       "2026-10-14",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1900 block of 14TH STREET NW",
+     "lat": 38.916,
+     "lon": -77.032,
+     "r": [
+      [
+       6,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       6,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       6,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       13,
+       "2026-11-07",
+       "2026-11-07",
+       0
+      ],
+      [
+       8,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       13,
+       "2026-10-31",
+       "2026-10-31",
+       0
+      ],
+      [
+       8,
+       "2026-10-27",
+       "2026-10-27",
+       0
+      ],
+      [
+       13,
+       "2026-10-24",
+       "2026-10-25",
+       0
+      ],
+      [
+       13,
+       "2026-10-23",
+       "2026-10-23",
+       1
+      ],
+      [
+       13,
+       "2026-10-23",
+       "2026-10-23",
+       0
+      ],
+      [
+       13,
+       "2026-10-17",
+       "2026-10-17",
+       0
+      ],
+      [
+       13,
+       "2026-10-17",
+       "2026-10-17",
+       0
+      ],
+      [
+       7,
+       "2026-10-17",
+       "2026-10-17",
+       0
+      ],
+      [
+       13,
+       "2026-10-16",
+       "2026-10-16",
+       0
+      ],
+      [
+       22,
+       "2026-10-15",
+       "2026-10-26",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1700 block of 13TH STREET NW",
+     "lat": 38.913,
+     "lon": -77.029,
+     "r": [
+      [
+       10,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       13,
+       "2026-10-18",
+       "2026-10-18",
+       0
+      ],
+      [
+       10,
+       "2026-10-14",
+       "2026-10-26",
+       0
+      ],
+      [
+       8,
+       "2026-10-13",
+       "2026-10-13",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1400 block of S STREET NW",
+     "lat": 38.914,
+     "lon": -77.034,
+     "r": [
+      [
+       11,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       18,
+       "2026-11-04",
+       null,
+       1
+      ],
+      [
+       13,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       12,
+       18,
+       "2026-10-30",
+       "2026-11-04",
+       0
+      ],
+      [
+       9,
+       "2026-10-27",
        "2026-10-28",
+       0
+      ],
+      [
+       25,
+       "2026-10-25",
+       null,
+       1
+      ],
+      [
+       18,
+       "2026-10-22",
+       "2026-10-29",
+       0
+      ],
+      [
+       23,
+       "2026-10-20",
+       null,
+       1
+      ],
+      [
+       18,
+       "2026-10-20",
+       "2026-10-22",
+       1
+      ],
+      [
+       18,
+       "2026-10-18",
+       "2026-10-22",
+       0
+      ],
+      [
+       9,
+       "2026-10-17",
+       "2026-10-19",
+       0
+      ],
+      [
+       8,
+       "2026-10-16",
+       "2026-10-16",
+       0
+      ],
+      [
+       13,
+       "2026-10-15",
+       "2026-10-15",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1400 block of 12TH STREET NW",
+     "lat": 38.909,
+     "lon": -77.028,
+     "r": [
+      [
+       8,
+       "2026-11-08",
+       "2026-11-08",
+       0
+      ],
+      [
+       8,
+       "2026-11-08",
+       "2026-11-08",
+       0
+      ],
+      [
+       8,
+       "2026-11-07",
+       "2026-11-07",
+       0
+      ],
+      [
+       8,
+       "2026-11-07",
+       "2026-11-07",
+       0
+      ],
+      [
+       13,
+       "2026-11-07",
+       "2026-11-07",
+       0
+      ],
+      [
+       8,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       13,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       13,
+       "2026-11-05",
+       "2026-11-05",
+       0
+      ],
+      [
+       8,
+       "2026-11-05",
+       "2026-11-05",
+       0
+      ],
+      [
+       8,
+       "2026-11-05",
+       "2026-11-05",
+       0
+      ],
+      [
+       3,
+       "2026-11-03",
+       "2026-11-05",
+       0
+      ],
+      [
+       8,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ],
+      [
+       8,
+       "2026-11-02",
+       "2026-11-02",
+       0
+      ],
+      [
+       13,
+       "2026-10-30",
+       "2026-10-30",
+       0
+      ],
+      [
+       13,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       43,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       8,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ],
+      [
+       8,
+       "2026-10-21",
+       "2026-10-21",
+       0
+      ],
+      [
+       8,
+       "2026-10-19",
+       "2026-10-19",
+       0
+      ],
+      [
+       8,
+       "2026-10-19",
+       "2026-10-19",
+       0
+      ],
+      [
+       8,
+       "2026-10-16",
+       "2026-10-16",
+       0
+      ],
+      [
+       8,
+       "2026-10-16",
+       "2026-10-16",
+       0
+      ],
+      [
+       8,
+       "2026-10-16",
+       "2026-10-16",
+       0
+      ],
+      [
+       8,
+       "2026-10-14",
+       "2026-10-14",
+       0
+      ],
+      [
+       8,
+       "2026-10-13",
+       "2026-10-13",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1100 block of O STREET NW",
+     "lat": 38.909,
+     "lon": -77.028,
+     "r": [
+      [
+       8,
+       "2026-11-08",
+       "2026-11-08",
+       0
+      ],
+      [
+       7,
+       "2026-11-05",
+       "2026-11-06",
+       0
+      ],
+      [
+       7,
+       "2026-11-04",
+       "2026-11-05",
+       0
+      ],
+      [
+       7,
+       "2026-11-03",
        "2026-11-04",
        0
       ],
       [
        13,
+       "2026-11-01",
+       "2026-11-01",
+       0
+      ],
+      [
+       10,
        "2026-10-25",
+       "2026-11-02",
+       0
+      ],
+      [
+       9,
+       "2026-10-20",
+       "2026-10-22",
+       0
+      ],
+      [
+       3,
+       "2026-10-16",
+       "2026-10-19",
+       1
+      ],
+      [
+       7,
+       "2026-10-16",
+       "2026-10-17",
+       0
+      ],
+      [
+       3,
+       "2026-10-16",
+       "2026-10-19",
+       0
+      ],
+      [
+       18,
+       "2026-10-14",
+       "2026-10-22",
+       0
+      ],
+      [
+       10,
+       "2026-10-10",
+       "2026-10-14",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1200 block of 12TH STREET NW",
+     "lat": 38.907,
+     "lon": -77.028,
+     "r": [
+      [
+       8,
+       "2026-11-08",
+       "2026-11-08",
+       0
+      ],
+      [
+       51,
+       "2026-10-17",
+       null,
+       1
+      ],
+      [
+       34,
+       "2026-10-14",
+       "2026-10-15",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1200 block of 10TH STREET NW",
+     "lat": 38.906,
+     "lon": -77.026,
+     "r": [
+      [
+       8,
+       "2026-11-08",
+       "2026-11-08",
+       0
+      ],
+      [
+       14,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ],
+      [
+       8,
+       "2026-10-26",
+       "2026-10-26",
+       0
+      ],
+      [
+       3,
+       "2026-10-26",
        "2026-10-27",
        0
-      ],
+      ]
+     ]
+    },
+    {
+     "block": "1200 block of 13TH STREET NW",
+     "lat": 38.906,
+     "lon": -77.029,
+     "r": [
       [
-       2,
-       "2026-10-19",
-       "2026-10-19",
+       13,
+       "2026-11-08",
+       "2026-11-08",
        0
       ],
       [
-       2,
-       "2026-10-19",
-       "2026-10-19",
+       13,
+       "2026-10-29",
+       "2026-10-29",
        0
       ],
       [
-       1,
-       "2026-10-15",
-       "2026-11-06",
+       13,
+       "2026-10-29",
+       "2026-10-29",
        0
       ],
       [
-       12,
-       "2026-10-15",
-       "2026-10-15",
+       3,
+       "2026-10-17",
+       "2026-10-20",
        0
       ]
      ]
@@ -4988,51 +6219,57 @@
      "lon": -77.032,
      "r": [
       [
-       0,
+       13,
+       "2026-11-08",
+       "2026-11-08",
+       0
+      ],
+      [
+       13,
+       "2026-11-08",
+       "2026-11-08",
+       0
+      ],
+      [
+       13,
        "2026-11-07",
        "2026-11-08",
        0
       ],
       [
-       0,
+       13,
        "2026-11-07",
        "2026-11-07",
        0
       ],
       [
-       0,
+       13,
        "2026-11-07",
        "2026-11-07",
        0
       ],
       [
-       0,
+       13,
        "2026-11-06",
        "2026-11-06",
        0
       ],
       [
-       0,
+       13,
        "2026-11-06",
        "2026-11-06",
        0
       ],
       [
-       0,
+       13,
        "2026-11-06",
        "2026-11-06",
        0
       ],
       [
-       0,
+       13,
        "2026-11-06",
        "2026-11-06",
-       0
-      ],
-      [
-       0,
-       "2026-11-03",
-       "2026-11-03",
        0
       ],
       [
@@ -5042,79 +6279,85 @@
        0
       ],
       [
-       12,
+       7,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ],
+      [
+       3,
        "2026-10-30",
        "2026-11-02",
        0
       ],
       [
-       4,
+       14,
        "2026-10-26",
        "2026-10-27",
        0
       ],
       [
-       0,
+       13,
        "2026-10-23",
        "2026-10-23",
        0
       ],
       [
-       0,
+       13,
        "2026-10-23",
        "2026-10-24",
        0
       ],
       [
-       0,
+       13,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       12,
+       3,
        "2026-10-21",
        "2026-10-22",
        0
       ],
       [
-       12,
+       3,
        "2026-10-20",
        "2026-10-21",
        0
       ],
       [
-       13,
+       7,
        "2026-10-13",
        "2026-10-14",
        0
       ],
       [
-       40,
+       42,
        "2026-10-13",
        null,
        1
       ],
       [
-       4,
+       14,
        "2026-10-13",
        "2026-10-14",
        0
       ],
       [
-       31,
+       33,
        "2026-10-13",
        "2026-10-14",
        0
       ],
       [
-       2,
+       8,
        "2026-10-11",
        "2026-10-11",
        0
       ],
       [
-       0,
+       13,
        "2026-10-11",
        "2026-10-12",
        0
@@ -5127,27 +6370,120 @@
      "lon": -77.032,
      "r": [
       [
-       0,
+       7,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       13,
        "2026-11-07",
        "2026-11-08",
        0
       ],
       [
-       0,
+       13,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       51,
+       52,
        "2026-10-15",
        null,
        1
       ],
       [
-       22,
+       4,
        "2026-10-13",
        "2026-10-21",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1400 block of N STREET NW",
+     "lat": 38.907,
+     "lon": -77.034,
+     "r": [
+      [
+       8,
+       "2026-11-08",
+       "2026-11-08",
+       0
+      ],
+      [
+       30,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1200 block of 15TH STREET NW",
+     "lat": 38.907,
+     "lon": -77.034,
+     "r": [
+      [
+       13,
+       "2026-11-08",
+       "2026-11-08",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1400 block of P STREET NW",
+     "lat": 38.909,
+     "lon": -77.034,
+     "r": [
+      [
+       13,
+       "2026-11-08",
+       "2026-11-08",
+       0
+      ],
+      [
+       8,
+       "2026-11-04",
+       "2026-11-04",
+       0
+      ],
+      [
+       3,
+       "2026-10-28",
+       "2026-11-04",
+       0
+      ],
+      [
+       7,
+       "2026-10-25",
+       "2026-10-27",
+       0
+      ],
+      [
+       8,
+       "2026-10-19",
+       "2026-10-19",
+       0
+      ],
+      [
+       8,
+       "2026-10-19",
+       "2026-10-19",
+       0
+      ],
+      [
+       0,
+       "2026-10-15",
+       "2026-11-06",
+       0
+      ],
+      [
+       3,
+       "2026-10-15",
+       "2026-10-15",
        0
       ]
      ]
@@ -5158,43 +6494,43 @@
      "lon": -77.03,
      "r": [
       [
-       0,
+       13,
        "2026-11-07",
        "2026-11-08",
        1
       ],
       [
-       0,
+       13,
        "2026-11-07",
        "2026-11-08",
        1
       ],
       [
-       0,
+       13,
        "2026-11-07",
        "2026-11-08",
        0
       ],
       [
-       10,
+       18,
        "2026-10-24",
        "2026-10-29",
        0
       ],
       [
-       39,
+       41,
        "2026-10-24",
        "2026-10-24",
        0
       ],
       [
-       0,
+       13,
        "2026-10-24",
        "2026-10-24",
        0
       ],
       [
-       0,
+       13,
        "2026-10-24",
        "2026-10-24",
        0
@@ -5207,19 +6543,19 @@
      "lon": -77.032,
      "r": [
       [
-       1,
+       0,
        "2026-11-07",
        null,
        1
       ],
       [
-       2,
+       8,
        "2026-11-06",
        "2026-11-06",
        0
       ],
       [
-       2,
+       8,
        "2026-10-18",
        "2026-10-18",
        0
@@ -5232,73 +6568,73 @@
      "lon": -77.032,
      "r": [
       [
-       2,
+       8,
        "2026-11-07",
        "2026-11-07",
        0
       ],
       [
-       0,
+       13,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       12,
+       3,
        "2026-11-04",
        null,
        1
       ],
       [
-       13,
+       7,
        "2026-11-02",
        "2026-11-03",
        0
       ],
       [
-       2,
+       8,
        "2026-10-30",
        "2026-10-30",
        0
       ],
       [
-       2,
+       8,
        "2026-10-29",
        "2026-10-29",
        0
       ],
       [
-       2,
+       8,
        "2026-10-24",
        "2026-10-24",
        0
       ],
       [
-       2,
+       8,
        "2026-10-24",
        "2026-10-24",
        0
       ],
       [
-       2,
+       8,
        "2026-10-17",
        "2026-10-17",
        0
       ],
       [
-       2,
+       8,
        "2026-10-11",
        "2026-10-11",
        0
       ],
       [
-       2,
+       8,
        "2026-10-11",
        "2026-10-11",
        0
       ],
       [
-       2,
+       8,
        "2026-10-11",
        "2026-10-11",
        0
@@ -5311,31 +6647,31 @@
      "lon": -77.032,
      "r": [
       [
-       3,
+       12,
        "2026-11-07",
        null,
        1
       ],
       [
-       13,
+       7,
        "2026-11-06",
        "2026-11-07",
        0
       ],
       [
-       0,
+       13,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       0,
+       13,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       0,
+       13,
        "2026-10-12",
        "2026-10-12",
        0
@@ -5348,178 +6684,33 @@
      "lon": -77.028,
      "r": [
       [
-       4,
+       14,
        "2026-11-07",
        null,
        1
       ],
       [
-       5,
+       10,
        "2026-11-07",
        null,
        1
       ],
       [
-       20,
+       26,
        "2026-11-02",
        null,
        1
       ],
       [
-       2,
+       8,
        "2026-10-19",
        "2026-10-19",
        0
       ],
       [
-       2,
+       8,
        "2026-10-16",
        "2026-10-16",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1400 block of 12TH STREET NW",
-     "lat": 38.909,
-     "lon": -77.028,
-     "r": [
-      [
-       2,
-       "2026-11-07",
-       "2026-11-07",
-       0
-      ],
-      [
-       2,
-       "2026-11-07",
-       "2026-11-07",
-       0
-      ],
-      [
-       0,
-       "2026-11-07",
-       "2026-11-07",
-       0
-      ],
-      [
-       2,
-       "2026-11-06",
-       "2026-11-06",
-       0
-      ],
-      [
-       0,
-       "2026-11-06",
-       "2026-11-06",
-       0
-      ],
-      [
-       0,
-       "2026-11-05",
-       "2026-11-05",
-       0
-      ],
-      [
-       2,
-       "2026-11-05",
-       "2026-11-05",
-       0
-      ],
-      [
-       2,
-       "2026-11-05",
-       "2026-11-05",
-       0
-      ],
-      [
-       12,
-       "2026-11-03",
-       "2026-11-05",
-       0
-      ],
-      [
-       2,
-       "2026-11-03",
-       "2026-11-03",
-       0
-      ],
-      [
-       2,
-       "2026-11-02",
-       "2026-11-02",
-       0
-      ],
-      [
-       0,
-       "2026-10-30",
-       "2026-10-30",
-       0
-      ],
-      [
-       0,
-       "2026-10-29",
-       "2026-10-29",
-       0
-      ],
-      [
-       41,
-       "2026-10-29",
-       "2026-10-29",
-       0
-      ],
-      [
-       2,
-       "2026-10-22",
-       "2026-10-22",
-       0
-      ],
-      [
-       2,
-       "2026-10-21",
-       "2026-10-21",
-       0
-      ],
-      [
-       2,
-       "2026-10-19",
-       "2026-10-19",
-       0
-      ],
-      [
-       2,
-       "2026-10-19",
-       "2026-10-19",
-       0
-      ],
-      [
-       2,
-       "2026-10-16",
-       "2026-10-16",
-       0
-      ],
-      [
-       2,
-       "2026-10-16",
-       "2026-10-16",
-       0
-      ],
-      [
-       2,
-       "2026-10-16",
-       "2026-10-16",
-       0
-      ],
-      [
-       2,
-       "2026-10-14",
-       "2026-10-14",
-       0
-      ],
-      [
-       2,
-       "2026-10-13",
-       "2026-10-13",
        0
       ]
      ]
@@ -5530,19 +6721,19 @@
      "lon": -77.028,
      "r": [
       [
-       2,
+       8,
        "2026-11-07",
        "2026-11-07",
        0
       ],
       [
-       2,
+       8,
        "2026-11-06",
        "2026-11-06",
        0
       ],
       [
-       24,
+       2,
        "2026-11-03",
        "2026-11-04",
        0
@@ -5554,49 +6745,49 @@
        0
       ],
       [
-       2,
+       8,
        "2026-10-27",
        "2026-10-27",
        0
       ],
       [
-       2,
+       8,
        "2026-10-27",
        "2026-10-27",
        0
       ],
       [
-       2,
+       8,
        "2026-10-26",
        "2026-10-26",
        0
       ],
       [
-       2,
+       8,
        "2026-10-26",
        "2026-10-26",
        0
       ],
       [
-       2,
+       8,
        "2026-10-16",
        "2026-10-16",
        0
       ],
       [
-       2,
+       8,
        "2026-10-12",
        "2026-10-12",
        0
       ],
       [
-       2,
+       8,
        "2026-10-12",
        "2026-10-12",
        0
       ],
       [
-       2,
+       8,
        "2026-10-12",
        "2026-10-12",
        0
@@ -5609,142 +6800,51 @@
      "lon": -77.028,
      "r": [
       [
-       0,
+       13,
        "2026-11-07",
        "2026-11-07",
        0
       ],
       [
-       2,
+       8,
        "2026-10-20",
        "2026-10-20",
        0
       ],
       [
-       2,
+       8,
        "2026-10-18",
        "2026-10-18",
        0
       ],
       [
-       2,
+       8,
        "2026-10-18",
        "2026-10-18",
        0
       ],
       [
-       27,
+       30,
        "2026-10-16",
        "2026-10-19",
        0
       ],
       [
-       2,
+       8,
        "2026-10-16",
        "2026-10-16",
        0
       ],
       [
-       2,
+       8,
        "2026-10-16",
        "2026-10-16",
        0
       ],
       [
-       2,
+       8,
        "2026-10-15",
        "2026-10-15",
-       0
-      ],
-      [
-       28,
-       "2026-10-09",
-       null,
-       1
-      ]
-     ]
-    },
-    {
-     "block": "1900 block of 14TH STREET NW",
-     "lat": 38.916,
-     "lon": -77.032,
-     "r": [
-      [
-       0,
-       "2026-11-07",
-       "2026-11-07",
-       0
-      ],
-      [
-       2,
-       "2026-11-06",
-       "2026-11-06",
-       0
-      ],
-      [
-       0,
-       "2026-10-31",
-       "2026-10-31",
-       0
-      ],
-      [
-       2,
-       "2026-10-27",
-       "2026-10-27",
-       0
-      ],
-      [
-       0,
-       "2026-10-24",
-       "2026-10-25",
-       0
-      ],
-      [
-       0,
-       "2026-10-23",
-       "2026-10-23",
-       1
-      ],
-      [
-       0,
-       "2026-10-23",
-       "2026-10-23",
-       0
-      ],
-      [
-       0,
-       "2026-10-17",
-       "2026-10-17",
-       0
-      ],
-      [
-       0,
-       "2026-10-17",
-       "2026-10-17",
-       0
-      ],
-      [
-       13,
-       "2026-10-17",
-       "2026-10-17",
-       0
-      ],
-      [
-       0,
-       "2026-10-16",
-       "2026-10-16",
-       0
-      ],
-      [
-       16,
-       "2026-10-15",
-       "2026-10-26",
-       0
-      ],
-      [
-       2,
-       "2026-10-09",
-       "2026-10-09",
        0
       ]
      ]
@@ -5755,55 +6855,55 @@
      "lon": -77.032,
      "r": [
       [
-       0,
+       13,
        "2026-11-07",
        "2026-11-07",
        0
       ],
       [
-       2,
+       8,
        "2026-11-07",
        "2026-11-07",
        0
       ],
       [
-       2,
+       8,
        "2026-11-07",
        "2026-11-07",
        0
       ],
       [
-       0,
+       13,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       0,
+       13,
        "2026-10-31",
        "2026-10-31",
+       0
+      ],
+      [
+       36,
+       "2026-10-19",
+       "2026-11-04",
+       0
+      ],
+      [
+       13,
+       "2026-10-19",
+       "2026-10-19",
+       0
+      ],
+      [
+       8,
+       "2026-10-16",
+       "2026-10-16",
        0
       ],
       [
        34,
-       "2026-10-19",
-       "2026-11-04",
-       0
-      ],
-      [
-       0,
-       "2026-10-19",
-       "2026-10-19",
-       0
-      ],
-      [
-       2,
-       "2026-10-16",
-       "2026-10-16",
-       0
-      ],
-      [
-       32,
        "2026-10-15",
        "2026-10-22",
        0
@@ -5816,100 +6916,45 @@
      "lon": -77.029,
      "r": [
       [
-       6,
+       15,
        "2026-11-07",
        "2026-11-07",
        0
       ],
       [
-       25,
+       28,
        "2026-10-27",
        "2026-11-06",
        0
       ],
       [
-       12,
+       3,
        "2026-10-26",
        "2026-10-27",
        0
       ],
       [
-       10,
+       18,
        "2026-10-22",
        "2026-10-29",
        0
       ],
       [
-       36,
+       38,
        "2026-10-21",
        "2026-10-21",
        0
       ],
       [
-       10,
+       18,
        "2026-10-14",
        "2026-10-22",
        0
       ],
       [
-       12,
+       3,
        "2026-10-14",
        "2026-10-15",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1600 block of 14TH STREET NW",
-     "lat": 38.912,
-     "lon": -77.032,
-     "r": [
-      [
-       2,
-       "2026-11-07",
-       "2026-11-07",
-       0
-      ],
-      [
-       2,
-       "2026-11-06",
-       "2026-11-06",
-       0
-      ],
-      [
-       2,
-       "2026-11-06",
-       "2026-11-06",
-       0
-      ],
-      [
-       2,
-       "2026-10-16",
-       "2026-10-16",
-       0
-      ],
-      [
-       2,
-       "2026-10-13",
-       "2026-10-13",
-       0
-      ],
-      [
-       2,
-       "2026-10-13",
-       "2026-10-13",
-       0
-      ],
-      [
-       13,
-       "2026-10-10",
-       "2026-10-11",
-       0
-      ],
-      [
-       2,
-       "2026-10-09",
-       "2026-10-09",
        0
       ]
      ]
@@ -5920,25 +6965,25 @@
      "lon": -77.032,
      "r": [
       [
-       2,
+       8,
        "2026-11-07",
        "2026-11-07",
        0
       ],
       [
-       10,
+       18,
        "2026-10-24",
        "2026-10-29",
        0
       ],
       [
-       1,
+       0,
        "2026-10-15",
        "2026-10-21",
        1
       ],
       [
-       13,
+       7,
        "2026-10-12",
        "2026-10-13",
        0
@@ -5951,73 +6996,73 @@
      "lon": -77.029,
      "r": [
       [
-       0,
+       13,
        "2026-11-07",
        "2026-11-07",
        1
       ],
       [
-       0,
-       "2026-11-07",
-       "2026-11-07",
-       0
-      ],
-      [
-       11,
-       "2026-11-06",
-       "2026-11-06",
-       0
-      ],
-      [
        13,
+       "2026-11-07",
+       "2026-11-07",
+       0
+      ],
+      [
+       19,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       7,
        "2026-11-06",
        null,
        1
       ],
       [
-       0,
+       13,
        "2026-11-05",
        "2026-11-05",
+       0
+      ],
+      [
+       7,
+       "2026-11-03",
+       "2026-11-03",
        0
       ],
       [
        13,
-       "2026-11-03",
-       "2026-11-03",
-       0
-      ],
-      [
-       0,
        "2026-11-02",
        "2026-11-03",
        0
       ],
       [
-       0,
+       13,
        "2026-10-31",
        "2026-10-31",
        0
       ],
       [
-       0,
+       13,
        "2026-10-23",
        "2026-10-24",
        0
       ],
       [
-       0,
+       13,
        "2026-10-23",
        "2026-10-23",
        0
       ],
       [
-       0,
+       13,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       0,
+       13,
        "2026-10-14",
        "2026-10-14",
        0
@@ -6030,76 +7075,15 @@
      "lon": -77.029,
      "r": [
       [
-       7,
+       16,
        "2026-11-07",
        "2026-11-07",
        0
       ],
       [
-       0,
+       13,
        "2026-10-11",
        "2026-10-11",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1400 block of Q STREET NW",
-     "lat": 38.911,
-     "lon": -77.033,
-     "r": [
-      [
-       8,
-       "2026-11-07",
-       null,
-       1
-      ],
-      [
-       9,
-       "2026-11-06",
-       null,
-       1
-      ],
-      [
-       2,
-       "2026-11-02",
-       "2026-11-02",
-       0
-      ],
-      [
-       18,
-       "2026-10-26",
-       "2026-10-28",
-       0
-      ],
-      [
-       36,
-       "2026-10-25",
-       "2026-10-25",
-       0
-      ],
-      [
-       44,
-       "2026-10-14",
-       "2026-10-20",
-       0
-      ],
-      [
-       9,
-       "2026-10-13",
-       "2026-10-15",
-       0
-      ],
-      [
-       10,
-       "2026-10-12",
-       "2026-10-16",
-       0
-      ],
-      [
-       10,
-       "2026-10-09",
-       "2026-10-16",
        0
       ]
      ]
@@ -6110,37 +7094,37 @@
      "lon": -77.031,
      "r": [
       [
-       10,
+       18,
        "2026-11-06",
        null,
        1
       ],
       [
-       4,
+       14,
        "2026-11-06",
        null,
        1
       ],
       [
-       15,
+       21,
        "2026-11-06",
        null,
        1
       ],
       [
-       1,
+       0,
        "2026-10-26",
        "2026-11-06",
        0
       ],
       [
-       2,
+       8,
        "2026-10-17",
        "2026-10-17",
        0
       ],
       [
-       2,
+       8,
        "2026-10-17",
        "2026-10-17",
        0
@@ -6153,43 +7137,43 @@
      "lon": -77.033,
      "r": [
       [
-       12,
+       3,
        "2026-11-06",
        null,
        1
       ],
       [
-       16,
+       22,
        "2026-11-05",
        "2026-11-05",
        0
       ],
       [
-       0,
+       13,
        "2026-10-31",
        "2026-10-31",
        0
       ],
       [
-       0,
+       13,
        "2026-10-31",
        "2026-10-31",
        0
       ],
       [
-       0,
+       13,
        "2026-10-31",
        "2026-10-31",
        0
       ],
       [
-       0,
+       13,
        "2026-10-31",
        "2026-10-31",
        0
       ],
       [
-       0,
+       13,
        "2026-10-25",
        "2026-10-25",
        0
@@ -6202,31 +7186,31 @@
      "lon": -77.03,
      "r": [
       [
-       2,
+       8,
        "2026-11-06",
        "2026-11-06",
        0
       ],
       [
-       0,
+       13,
        "2026-11-05",
        "2026-11-05",
        0
       ],
       [
-       2,
+       8,
        "2026-11-05",
        "2026-11-05",
        0
       ],
       [
-       2,
+       8,
        "2026-10-13",
        "2026-10-13",
        0
       ],
       [
-       6,
+       15,
        "2026-10-11",
        "2026-10-12",
        0
@@ -6239,55 +7223,55 @@
      "lon": -77.03,
      "r": [
       [
-       2,
+       8,
        "2026-11-06",
        "2026-11-06",
        0
       ],
       [
-       2,
+       8,
        "2026-10-21",
        "2026-10-21",
-       0
-      ],
-      [
-       0,
-       "2026-10-19",
-       "2026-10-19",
-       0
-      ],
-      [
-       2,
-       "2026-10-19",
-       "2026-10-19",
        0
       ],
       [
        13,
+       "2026-10-19",
+       "2026-10-19",
+       0
+      ],
+      [
+       8,
+       "2026-10-19",
+       "2026-10-19",
+       0
+      ],
+      [
+       7,
        "2026-10-18",
        "2026-10-19",
        0
       ],
       [
-       2,
+       8,
        "2026-10-14",
        "2026-10-14",
        0
       ],
       [
-       3,
+       12,
        "2026-10-13",
        "2026-10-15",
        0
       ],
       [
-       50,
+       51,
        "2026-10-13",
        "2026-10-23",
        0
       ],
       [
-       13,
+       7,
        "2026-10-10",
        "2026-10-11",
        0
@@ -6300,88 +7284,51 @@
      "lon": -77.03,
      "r": [
       [
-       2,
+       8,
        "2026-11-06",
        "2026-11-06",
        0
       ],
       [
-       2,
+       8,
        "2026-11-06",
        "2026-11-06",
        0
       ],
       [
-       0,
+       13,
        "2026-11-02",
        "2026-11-02",
        0
       ],
       [
-       27,
+       30,
        "2026-10-19",
        "2026-10-27",
        0
       ],
       [
-       2,
+       8,
        "2026-10-18",
        "2026-10-18",
        0
       ],
       [
-       2,
+       8,
        "2026-10-17",
        "2026-10-17",
        0
       ],
       [
-       2,
+       8,
        "2026-10-13",
        "2026-10-13",
        0
       ],
       [
-       2,
+       8,
        "2026-10-11",
        "2026-10-11",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1200 block of O STREET NW",
-     "lat": 38.909,
-     "lon": -77.029,
-     "r": [
-      [
-       2,
-       "2026-11-06",
-       "2026-11-06",
-       0
-      ],
-      [
-       0,
-       "2026-10-31",
-       "2026-10-31",
-       0
-      ],
-      [
-       27,
-       "2026-10-30",
-       null,
-       1
-      ],
-      [
-       12,
-       "2026-10-27",
-       "2026-10-28",
-       0
-      ],
-      [
-       2,
-       "2026-10-13",
-       "2026-10-13",
        0
       ]
      ]
@@ -6392,31 +7339,31 @@
      "lon": -77.031,
      "r": [
       [
-       2,
+       8,
        "2026-11-06",
        "2026-11-06",
        0
       ],
       [
-       2,
+       8,
        "2026-11-06",
        "2026-11-06",
        0
       ],
       [
-       2,
+       8,
        "2026-10-31",
        "2026-10-31",
        0
       ],
       [
-       2,
+       8,
        "2026-10-18",
        "2026-10-18",
        0
       ],
       [
-       2,
+       8,
        "2026-10-10",
        "2026-10-10",
        0
@@ -6429,21 +7376,15 @@
      "lon": -77.031,
      "r": [
       [
-       2,
+       8,
        "2026-11-06",
        "2026-11-06",
        0
       ],
       [
-       0,
+       13,
        "2026-11-04",
        "2026-11-04",
-       0
-      ],
-      [
-       11,
-       "2026-10-28",
-       "2026-10-28",
        0
       ],
       [
@@ -6453,25 +7394,31 @@
        0
       ],
       [
-       0,
+       25,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       13,
        "2026-10-26",
        "2026-10-28",
        0
       ],
       [
-       18,
+       24,
        "2026-10-23",
        "2026-10-28",
        0
       ],
       [
-       0,
+       13,
        "2026-10-23",
        "2026-10-23",
        0
       ],
       [
-       25,
+       28,
        "2026-10-17",
        "2026-10-28",
        0
@@ -6484,13 +7431,13 @@
      "lon": -77.034,
      "r": [
       [
-       8,
+       17,
        "2026-11-06",
        null,
        1
       ],
       [
-       0,
+       13,
        "2026-10-18",
        "2026-10-18",
        0
@@ -6503,13 +7450,13 @@
      "lon": -77.03,
      "r": [
       [
-       14,
+       20,
        "2026-11-06",
        null,
        1
       ],
       [
-       27,
+       30,
        "2026-10-29",
        null,
        1
@@ -6522,7 +7469,7 @@
      "lon": -77.03,
      "r": [
       [
-       10,
+       18,
        "2026-11-06",
        null,
        1
@@ -6535,31 +7482,31 @@
      "lon": -77.034,
      "r": [
       [
-       16,
+       22,
        "2026-11-06",
        null,
        1
       ],
       [
-       2,
+       8,
        "2026-10-27",
        "2026-10-27",
        0
       ],
       [
-       16,
+       22,
        "2026-10-27",
        "2026-11-04",
        0
       ],
       [
-       5,
+       10,
        "2026-10-25",
        "2026-10-26",
        0
       ],
       [
-       5,
+       10,
        "2026-10-11",
        "2026-10-21",
        0
@@ -6572,55 +7519,55 @@
      "lon": -77.033,
      "r": [
       [
-       10,
+       18,
        "2026-11-06",
        null,
        1
       ],
       [
-       0,
+       13,
        "2026-10-31",
        "2026-10-31",
        0
       ],
       [
-       27,
+       30,
        "2026-10-30",
        null,
        1
       ],
       [
-       5,
+       10,
        "2026-10-26",
        "2026-10-27",
        0
       ],
       [
-       27,
+       30,
        "2026-10-22",
        "2026-10-30",
        0
       ],
       [
-       10,
+       18,
        "2026-10-16",
        "2026-10-22",
        0
       ],
       [
-       2,
+       8,
        "2026-10-16",
        "2026-10-16",
        0
       ],
       [
-       2,
+       8,
        "2026-10-16",
        "2026-10-16",
        0
       ],
       [
-       10,
+       18,
        "2026-10-11",
        "2026-10-16",
        0
@@ -6633,31 +7580,31 @@
      "lon": -77.026,
      "r": [
       [
-       2,
+       8,
        "2026-11-06",
        "2026-11-06",
        0
       ],
       [
-       12,
+       3,
        "2026-11-05",
        null,
        1
       ],
       [
-       2,
+       8,
        "2026-11-03",
        "2026-11-03",
        0
       ],
       [
-       2,
+       8,
        "2026-11-01",
        "2026-11-01",
        0
       ],
       [
-       2,
+       8,
        "2026-10-24",
        "2026-10-24",
        0
@@ -6670,31 +7617,31 @@
      "lon": -77.026,
      "r": [
       [
-       2,
+       8,
        "2026-11-06",
        "2026-11-06",
        0
       ],
       [
-       2,
+       8,
        "2026-10-29",
        "2026-10-29",
        0
       ],
       [
-       1,
+       0,
        "2026-10-29",
        "2026-11-06",
        0
       ],
       [
-       16,
+       22,
        "2026-10-26",
        "2026-11-04",
        0
       ],
       [
-       2,
+       8,
        "2026-10-19",
        "2026-10-19",
        0
@@ -6707,7 +7654,7 @@
      "lon": -77.033,
      "r": [
       [
-       5,
+       10,
        "2026-11-05",
        null,
        1
@@ -6719,13 +7666,13 @@
        0
       ],
       [
-       35,
+       37,
        "2026-11-01",
        "2026-11-03",
        0
       ],
       [
-       27,
+       30,
        "2026-10-21",
        "2026-10-27",
        0
@@ -6737,7 +7684,7 @@
        0
       ],
       [
-       29,
+       5,
        "2026-10-13",
        "2026-10-15",
        0
@@ -6746,12 +7693,6 @@
        9,
        "2026-10-13",
        "2026-10-15",
-       0
-      ],
-      [
-       3,
-       "2026-10-09",
-       "2026-10-13",
        0
       ]
      ]
@@ -6762,67 +7703,67 @@
      "lon": -77.032,
      "r": [
       [
-       10,
+       18,
        "2026-11-05",
        null,
        1
       ],
       [
-       10,
+       18,
        "2026-11-05",
        null,
        1
       ],
       [
-       13,
+       7,
        "2026-11-02",
        "2026-11-03",
        0
       ],
       [
-       13,
+       7,
        "2026-11-02",
        "2026-11-03",
        0
       ],
       [
-       34,
+       36,
        "2026-11-01",
        null,
        1
+      ],
+      [
+       13,
+       "2026-11-01",
+       "2026-11-01",
+       0
       ],
       [
        0,
-       "2026-11-01",
-       "2026-11-01",
-       0
-      ],
-      [
-       1,
        "2026-10-26",
        "2026-11-06",
        1
       ],
       [
-       23,
+       6,
        "2026-10-22",
        "2026-10-27",
        1
       ],
       [
-       23,
+       6,
        "2026-10-22",
        "2026-10-27",
        1
       ],
       [
-       23,
+       6,
        "2026-10-22",
        "2026-10-27",
        0
       ],
       [
-       1,
+       0,
        "2026-10-15",
        "2026-11-06",
        0
@@ -6835,31 +7776,31 @@
      "lon": -77.034,
      "r": [
       [
-       17,
+       23,
        "2026-11-05",
        null,
        1
       ],
       [
-       20,
+       26,
        "2026-11-05",
        null,
        1
       ],
       [
-       3,
+       12,
        "2026-11-03",
        "2026-11-04",
        0
       ],
       [
-       13,
+       7,
        "2026-10-21",
        "2026-10-22",
        0
       ],
       [
-       2,
+       8,
        "2026-10-16",
        "2026-10-16",
        0
@@ -6872,7 +7813,7 @@
      "lon": -77.035,
      "r": [
       [
-       12,
+       3,
        "2026-11-05",
        null,
        1
@@ -6885,106 +7826,33 @@
      "lon": -77.029,
      "r": [
       [
-       18,
+       24,
        "2026-11-05",
        null,
        1
       ],
       [
-       28,
+       31,
        "2026-11-03",
        null,
        1
       ],
       [
-       36,
+       38,
        "2026-10-31",
        "2026-10-31",
        0
       ],
       [
-       36,
+       38,
        "2026-10-28",
        "2026-10-28",
        0
       ],
       [
-       2,
+       8,
        "2026-10-23",
        "2026-10-23",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1100 block of O STREET NW",
-     "lat": 38.909,
-     "lon": -77.028,
-     "r": [
-      [
-       13,
-       "2026-11-05",
-       "2026-11-06",
-       0
-      ],
-      [
-       13,
-       "2026-11-04",
-       "2026-11-05",
-       0
-      ],
-      [
-       13,
-       "2026-11-03",
-       "2026-11-04",
-       0
-      ],
-      [
-       0,
-       "2026-11-01",
-       "2026-11-01",
-       0
-      ],
-      [
-       5,
-       "2026-10-25",
-       "2026-11-02",
-       0
-      ],
-      [
-       9,
-       "2026-10-20",
-       "2026-10-22",
-       0
-      ],
-      [
-       12,
-       "2026-10-16",
-       "2026-10-19",
-       1
-      ],
-      [
-       13,
-       "2026-10-16",
-       "2026-10-17",
-       0
-      ],
-      [
-       12,
-       "2026-10-16",
-       "2026-10-19",
-       0
-      ],
-      [
-       10,
-       "2026-10-14",
-       "2026-10-22",
-       0
-      ],
-      [
-       5,
-       "2026-10-10",
-       "2026-10-14",
        0
       ]
      ]
@@ -6995,19 +7863,19 @@
      "lon": -77.027,
      "r": [
       [
-       19,
+       25,
        "2026-11-05",
        null,
        1
       ],
       [
-       45,
+       1,
        "2026-10-18",
        null,
        1
       ],
       [
-       21,
+       27,
        "2026-10-12",
        "2026-10-19",
        0
@@ -7020,7 +7888,7 @@
      "lon": -77.027,
      "r": [
       [
-       12,
+       3,
        "2026-11-05",
        null,
        1
@@ -7033,13 +7901,13 @@
      "lon": -77.033,
      "r": [
       [
-       3,
+       12,
        "2026-11-05",
        "2026-11-06",
        0
       ],
       [
-       37,
+       39,
        "2026-10-27",
        null,
        1
@@ -7052,13 +7920,13 @@
      "lon": -77.028,
      "r": [
       [
-       0,
+       13,
        "2026-11-05",
        "2026-11-05",
        0
       ],
       [
-       5,
+       10,
        "2026-10-22",
        "2026-10-26",
        0
@@ -7071,7 +7939,7 @@
      "lon": -77.034,
      "r": [
       [
-       10,
+       18,
        "2026-11-05",
        null,
        1
@@ -7083,31 +7951,31 @@
        0
       ],
       [
-       10,
+       18,
        "2026-11-03",
        null,
        1
       ],
       [
-       5,
+       10,
        "2026-10-30",
        "2026-11-03",
        0
       ],
       [
-       10,
+       18,
        "2026-10-20",
        "2026-10-29",
        0
       ],
       [
-       25,
+       28,
        "2026-10-19",
        "2026-11-02",
        0
       ],
       [
-       18,
+       24,
        "2026-10-19",
        "2026-10-28",
        0
@@ -7120,13 +7988,13 @@
      "lon": -77.034,
      "r": [
       [
-       18,
+       24,
        "2026-11-05",
        null,
        1
       ],
       [
-       10,
+       18,
        "2026-10-18",
        "2026-10-22",
        0
@@ -7139,19 +8007,19 @@
      "lon": -77.03,
      "r": [
       [
-       4,
+       14,
        "2026-11-04",
        "2026-11-05",
        0
       ],
       [
-       10,
+       18,
        "2026-10-26",
        "2026-10-29",
        0
       ],
       [
-       4,
+       14,
        "2026-10-19",
        "2026-10-19",
        0
@@ -7164,7 +8032,7 @@
      "lon": -77.032,
      "r": [
       [
-       16,
+       22,
        "2026-11-04",
        "2026-11-05",
        0
@@ -7177,7 +8045,7 @@
      "lon": -77.033,
      "r": [
       [
-       0,
+       13,
        "2026-11-04",
        "2026-11-04",
        0
@@ -7190,37 +8058,37 @@
      "lon": -77.026,
      "r": [
       [
-       5,
+       10,
        "2026-11-04",
        "2026-11-05",
        0
       ],
       [
-       10,
+       18,
        "2026-10-30",
        "2026-11-04",
        0
       ],
       [
-       2,
+       8,
        "2026-10-28",
        "2026-10-28",
        0
       ],
       [
-       10,
+       18,
        "2026-10-24",
        "2026-10-29",
        0
       ],
       [
-       10,
+       18,
        "2026-10-13",
        "2026-10-16",
        0
       ],
       [
-       18,
+       24,
        "2026-10-10",
        "2026-10-14",
        0
@@ -7233,7 +8101,7 @@
      "lon": -77.032,
      "r": [
       [
-       21,
+       27,
        "2026-11-04",
        null,
        1
@@ -7252,88 +8120,9 @@
        1
       ],
       [
-       10,
+       18,
        "2026-10-26",
        "2026-10-29",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1400 block of S STREET NW",
-     "lat": 38.914,
-     "lon": -77.034,
-     "r": [
-      [
-       10,
-       "2026-11-04",
-       null,
-       1
-      ],
-      [
-       0,
-       "2026-11-04",
-       "2026-11-04",
-       0
-      ],
-      [
-       10,
-       "2026-10-30",
-       "2026-11-04",
-       0
-      ],
-      [
-       9,
-       "2026-10-27",
-       "2026-10-28",
-       0
-      ],
-      [
-       19,
-       "2026-10-25",
-       null,
-       1
-      ],
-      [
-       10,
-       "2026-10-22",
-       "2026-10-29",
-       0
-      ],
-      [
-       17,
-       "2026-10-20",
-       null,
-       1
-      ],
-      [
-       10,
-       "2026-10-20",
-       "2026-10-22",
-       1
-      ],
-      [
-       10,
-       "2026-10-18",
-       "2026-10-22",
-       0
-      ],
-      [
-       9,
-       "2026-10-17",
-       "2026-10-19",
-       0
-      ],
-      [
-       2,
-       "2026-10-16",
-       "2026-10-16",
-       0
-      ],
-      [
-       0,
-       "2026-10-15",
-       "2026-10-15",
        0
       ]
      ]
@@ -7344,75 +8133,63 @@
      "lon": -77.034,
      "r": [
       [
-       0,
+       13,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       0,
+       13,
        "2026-10-31",
        "2026-11-01",
        0
       ],
       [
-       0,
+       13,
        "2026-10-31",
        "2026-10-31",
        0
       ],
       [
-       0,
+       13,
        "2026-10-25",
        "2026-10-25",
        1
       ],
       [
-       0,
+       13,
        "2026-10-25",
        "2026-10-25",
        0
       ],
       [
-       0,
+       13,
        "2026-10-18",
        "2026-10-18",
        0
       ],
       [
-       0,
+       13,
        "2026-10-16",
        "2026-10-16",
        0
       ],
       [
-       0,
+       13,
        "2026-10-14",
        "2026-10-14",
        0
       ],
       [
-       0,
+       13,
        "2026-10-11",
        "2026-10-12",
        1
       ],
       [
-       0,
+       13,
        "2026-10-11",
        "2026-10-12",
-       0
-      ],
-      [
-       0,
-       "2026-10-10",
-       "2026-10-10",
-       1
-      ],
-      [
-       0,
-       "2026-10-10",
-       "2026-10-10",
        0
       ]
      ]
@@ -7423,13 +8200,13 @@
      "lon": -77.031,
      "r": [
       [
-       0,
+       13,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       2,
+       8,
        "2026-10-22",
        "2026-10-22",
        0
@@ -7441,7 +8218,7 @@
        0
       ],
       [
-       1,
+       0,
        "2026-10-12",
        null,
        1
@@ -7454,65 +8231,21 @@
      "lon": -77.032,
      "r": [
       [
-       1,
+       0,
        "2026-11-04",
        null,
        1
       ],
       [
-       1,
+       0,
        "2026-11-04",
        null,
        1
       ],
       [
-       4,
+       14,
        "2026-10-21",
        "2026-10-23",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "14TH STREET NW AND Q STREET NW",
-     "lat": 38.911,
-     "lon": -77.032,
-     "r": [
-      [
-       1,
-       "2026-11-04",
-       "2026-11-06",
-       1
-      ]
-     ]
-    },
-    {
-     "block": "1400 block of 14TH STREET NW",
-     "lat": 38.909,
-     "lon": -77.032,
-     "r": [
-      [
-       22,
-       "2026-11-04",
-       null,
-       1
-      ],
-      [
-       13,
-       "2026-11-02",
-       "2026-11-03",
-       0
-      ],
-      [
-       31,
-       "2026-10-13",
-       null,
-       1
-      ],
-      [
-       13,
-       "2026-10-13",
-       "2026-10-14",
        0
       ]
      ]
@@ -7523,7 +8256,7 @@
      "lon": -77.032,
      "r": [
       [
-       23,
+       6,
        "2026-11-04",
        null,
        1
@@ -7536,37 +8269,37 @@
      "lon": -77.027,
      "r": [
       [
-       2,
+       8,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       10,
+       18,
        "2026-11-01",
        "2026-11-04",
        0
       ],
       [
-       2,
+       8,
        "2026-10-30",
        "2026-10-30",
        0
       ],
       [
-       2,
+       8,
        "2026-10-18",
        "2026-10-18",
        0
       ],
       [
-       2,
+       8,
        "2026-10-12",
        "2026-10-12",
        0
       ],
       [
-       2,
+       8,
        "2026-10-10",
        "2026-10-10",
        0
@@ -7579,7 +8312,7 @@
      "lon": -77.032,
      "r": [
       [
-       1,
+       0,
        "2026-11-04",
        null,
        1
@@ -7592,37 +8325,37 @@
      "lon": -77.033,
      "r": [
       [
-       25,
+       28,
        "2026-11-03",
        null,
        1
       ],
       [
-       30,
+       32,
        "2026-11-02",
        "2026-11-02",
        0
       ],
       [
-       0,
+       13,
        "2026-10-29",
        "2026-10-29",
        0
       ],
       [
-       4,
+       14,
        "2026-10-29",
        "2026-10-30",
        0
       ],
       [
-       12,
+       3,
        "2026-10-29",
        "2026-10-30",
        0
       ],
       [
-       12,
+       3,
        "2026-10-26",
        "2026-10-26",
        0
@@ -7652,13 +8385,13 @@
        0
       ],
       [
-       0,
+       13,
        "2026-10-16",
        "2026-10-16",
        0
       ],
       [
-       15,
+       21,
        "2026-10-13",
        null,
        1
@@ -7677,69 +8410,63 @@
        1
       ],
       [
-       19,
+       25,
        "2026-10-29",
        null,
        1
       ],
       [
-       10,
+       18,
        "2026-10-26",
        "2026-10-29",
        0
       ],
       [
-       1,
+       0,
        "2026-10-22",
        "2026-11-06",
        0
       ],
       [
-       19,
+       25,
        "2026-10-22",
        null,
        1
       ],
       [
-       10,
+       18,
        "2026-10-17",
        "2026-10-22",
        0
       ],
       [
-       10,
+       18,
        "2026-10-16",
        "2026-10-22",
        0
       ],
       [
-       25,
+       28,
        "2026-10-14",
        "2026-11-02",
        0
       ],
       [
-       18,
+       24,
        "2026-10-13",
        "2026-10-14",
        1
       ],
       [
-       10,
+       18,
        "2026-10-12",
        "2026-10-16",
        0
       ],
       [
-       4,
+       14,
        "2026-10-10",
        "2026-10-13",
-       0
-      ],
-      [
-       18,
-       "2026-10-09",
-       "2026-10-14",
        0
       ]
      ]
@@ -7750,37 +8477,37 @@
      "lon": -77.034,
      "r": [
       [
-       2,
+       8,
        "2026-11-03",
        "2026-11-03",
        0
       ],
       [
-       2,
+       8,
        "2026-10-26",
        "2026-10-26",
        0
       ],
       [
-       19,
+       25,
        "2026-10-25",
        null,
        1
       ],
       [
-       0,
+       13,
        "2026-10-21",
        "2026-10-21",
        0
       ],
       [
-       2,
+       8,
        "2026-10-20",
        "2026-10-20",
        0
       ],
       [
-       0,
+       13,
        "2026-10-10",
        "2026-10-10",
        0
@@ -7793,19 +8520,19 @@
      "lon": -77.027,
      "r": [
       [
-       12,
+       3,
        "2026-11-03",
        "2026-11-04",
        0
       ],
       [
-       12,
+       3,
        "2026-10-15",
        "2026-10-19",
        0
       ],
       [
-       12,
+       3,
        "2026-10-15",
        "2026-10-19",
        0
@@ -7818,23 +8545,10 @@
      "lon": -77.034,
      "r": [
       [
-       26,
+       29,
        "2026-11-03",
        null,
        1
-      ]
-     ]
-    },
-    {
-     "block": "1400 block of N STREET NW",
-     "lat": 38.907,
-     "lon": -77.034,
-     "r": [
-      [
-       27,
-       "2026-11-03",
-       "2026-11-03",
-       0
       ]
      ]
     },
@@ -7844,19 +8558,19 @@
      "lon": -77.028,
      "r": [
       [
-       19,
+       25,
        "2026-11-03",
        null,
        1
       ],
       [
-       2,
+       8,
        "2026-10-23",
        "2026-10-23",
        0
       ],
       [
-       20,
+       26,
        "2026-10-15",
        "2026-10-23",
        0
@@ -7869,13 +8583,13 @@
      "lon": -77.031,
      "r": [
       [
-       10,
+       18,
        "2026-11-03",
        null,
        1
       ],
       [
-       7,
+       16,
        "2026-10-24",
        "2026-10-24",
        0
@@ -7888,13 +8602,13 @@
      "lon": -77.033,
      "r": [
       [
-       26,
+       29,
        "2026-11-03",
        null,
        1
       ],
       [
-       0,
+       13,
        "2026-10-15",
        "2026-10-15",
        0
@@ -7907,7 +8621,7 @@
      "lon": -77.029,
      "r": [
       [
-       4,
+       14,
        "2026-11-03",
        "2026-11-04",
        0
@@ -7920,7 +8634,7 @@
      "lon": -77.026,
      "r": [
       [
-       29,
+       5,
        "2026-11-03",
        "2026-11-05",
        0
@@ -7933,45 +8647,39 @@
      "lon": -77.026,
      "r": [
       [
-       29,
+       5,
        "2026-11-03",
        "2026-11-05",
        0
       ],
       [
-       1,
+       0,
        "2026-11-03",
        null,
        1
       ],
       [
-       1,
+       0,
        "2026-11-03",
        null,
        1
       ],
       [
-       24,
+       2,
        "2026-11-03",
        "2026-11-03",
        0
       ],
       [
-       2,
+       8,
        "2026-10-17",
        "2026-10-17",
        0
       ],
       [
-       2,
+       8,
        "2026-10-17",
        "2026-10-17",
-       0
-      ],
-      [
-       2,
-       "2026-10-09",
-       "2026-10-09",
        0
       ]
      ]
@@ -7982,41 +8690,16 @@
      "lon": -77.026,
      "r": [
       [
-       23,
+       6,
        "2026-11-03",
        null,
        1
       ],
       [
-       1,
+       0,
        "2026-11-03",
        null,
        1
-      ]
-     ]
-    },
-    {
-     "block": "1200 block of 10TH STREET NW",
-     "lat": 38.906,
-     "lon": -77.026,
-     "r": [
-      [
-       4,
-       "2026-11-03",
-       "2026-11-03",
-       0
-      ],
-      [
-       2,
-       "2026-10-26",
-       "2026-10-26",
-       0
-      ],
-      [
-       12,
-       "2026-10-26",
-       "2026-10-27",
-       0
       ]
      ]
     },
@@ -8026,7 +8709,7 @@
      "lon": -77.026,
      "r": [
       [
-       1,
+       0,
        "2026-11-03",
        null,
        1
@@ -8039,13 +8722,13 @@
      "lon": -77.026,
      "r": [
       [
-       1,
+       0,
        "2026-11-03",
        null,
        1
       ],
       [
-       29,
+       5,
        "2026-11-03",
        "2026-11-04",
        0
@@ -8058,19 +8741,19 @@
      "lon": -77.026,
      "r": [
       [
-       5,
+       10,
        "2026-11-03",
        "2026-11-03",
        0
       ],
       [
-       20,
+       26,
        "2026-10-22",
        null,
        1
       ],
       [
-       44,
+       46,
        "2026-10-13",
        "2026-10-14",
        0
@@ -8082,13 +8765,13 @@
        0
       ],
       [
-       10,
+       18,
        "2026-10-11",
        "2026-10-16",
        0
       ],
       [
-       5,
+       10,
        "2026-10-10",
        "2026-10-14",
        0
@@ -8101,20 +8784,20 @@
      "lon": -77.031,
      "r": [
       [
-       12,
+       3,
        "2026-11-03",
-       "2026-11-04",
-       0
-      ],
-      [
-       12,
-       "2026-11-02",
        "2026-11-04",
        0
       ],
       [
        3,
        "2026-11-02",
+       "2026-11-04",
+       0
+      ],
+      [
+       12,
+       "2026-11-02",
        "2026-11-03",
        0
       ],
@@ -8125,7 +8808,7 @@
        0
       ],
       [
-       39,
+       41,
        "2026-10-28",
        "2026-10-28",
        0
@@ -8137,13 +8820,13 @@
        0
       ],
       [
-       0,
+       13,
        "2026-10-21",
        "2026-10-21",
        0
       ],
       [
-       24,
+       2,
        "2026-10-21",
        "2026-10-21",
        0
@@ -8155,22 +8838,10 @@
        0
       ],
       [
-       10,
+       18,
        "2026-10-19",
        "2026-10-22",
        0
-      ],
-      [
-       9,
-       "2026-10-09",
-       "2026-10-14",
-       0
-      ],
-      [
-       25,
-       "2026-10-09",
-       "2026-10-27",
-       1
       ]
      ]
     },
@@ -8180,13 +8851,13 @@
      "lon": -77.032,
      "r": [
       [
-       13,
+       7,
        "2026-11-03",
        "2026-11-03",
        0
       ],
       [
-       0,
+       13,
        "2026-10-24",
        "2026-10-24",
        0
@@ -8199,50 +8870,44 @@
      "lon": -77.032,
      "r": [
       [
-       13,
+       7,
        "2026-11-03",
        "2026-11-03",
        0
       ],
       [
-       3,
+       12,
        "2026-11-02",
        "2026-11-06",
        0
       ],
       [
-       2,
+       8,
        "2026-10-18",
        "2026-10-18",
        0
       ],
       [
-       12,
+       3,
        "2026-10-13",
        "2026-10-15",
        1
       ],
       [
-       12,
+       3,
        "2026-10-11",
        "2026-10-15",
        1
       ],
       [
-       12,
+       3,
        "2026-10-10",
        "2026-10-15",
        0
       ],
       [
-       21,
+       27,
        "2026-10-10",
-       "2026-10-13",
-       0
-      ],
-      [
-       21,
-       "2026-10-09",
        "2026-10-13",
        0
       ]
@@ -8254,89 +8919,33 @@
      "lon": -77.032,
      "r": [
       [
-       13,
+       7,
        "2026-11-02",
        "2026-11-03",
        0
       ],
       [
-       0,
+       13,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       13,
+       7,
        "2026-10-17",
        "2026-10-17",
        0
       ],
       [
-       13,
+       7,
        "2026-10-17",
        "2026-10-17",
        0
       ],
       [
-       2,
+       8,
        "2026-10-10",
        "2026-10-10",
-       0
-      ],
-      [
-       2,
-       "2026-10-09",
-       "2026-10-09",
-       0
-      ],
-      [
-       0,
-       "2026-10-09",
-       "2026-10-09",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1300 block of CORCORAN STREET NW",
-     "lat": 38.912,
-     "lon": -77.032,
-     "r": [
-      [
-       13,
-       "2026-11-02",
-       "2026-11-03",
-       0
-      ],
-      [
-       0,
-       "2026-10-31",
-       "2026-10-31",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1400 block of P STREET NW",
-     "lat": 38.91,
-     "lon": -77.033,
-     "r": [
-      [
-       13,
-       "2026-11-02",
-       "2026-11-03",
-       0
-      ],
-      [
-       0,
-       "2026-10-26",
-       "2026-10-28",
-       0
-      ],
-      [
-       0,
-       "2026-10-16",
-       "2026-10-16",
        0
       ]
      ]
@@ -8347,77 +8956,10 @@
      "lon": -77.035,
      "r": [
       [
-       13,
+       7,
        "2026-11-02",
        "2026-11-03",
        0
-      ],
-      [
-       29,
-       "2026-10-09",
-       "2026-10-16",
-       0
-      ],
-      [
-       19,
-       "2026-10-09",
-       null,
-       1
-      ]
-     ]
-    },
-    {
-     "block": "1400 block of Q STREET NW",
-     "lat": 38.911,
-     "lon": -77.034,
-     "r": [
-      [
-       18,
-       "2026-11-02",
-       null,
-       1
-      ],
-      [
-       9,
-       "2026-10-29",
-       "2026-10-30",
-       0
-      ],
-      [
-       44,
-       "2026-10-27",
-       "2026-10-28",
-       0
-      ],
-      [
-       9,
-       "2026-10-27",
-       "2026-10-29",
-       0
-      ],
-      [
-       5,
-       "2026-10-26",
-       "2026-10-27",
-       0
-      ],
-      [
-       4,
-       "2026-10-26",
-       "2026-10-26",
-       0
-      ],
-      [
-       18,
-       "2026-10-26",
-       "2026-11-04",
-       0
-      ],
-      [
-       18,
-       "2026-10-20",
-       "2026-10-26",
-       1
       ]
      ]
     },
@@ -8427,43 +8969,43 @@
      "lon": -77.031,
      "r": [
       [
-       20,
+       26,
        "2026-11-02",
        null,
        1
       ],
       [
-       4,
+       14,
        "2026-10-21",
        "2026-10-21",
        0
       ],
       [
-       12,
+       3,
        "2026-10-21",
        "2026-10-23",
        1
       ],
       [
-       4,
+       14,
        "2026-10-20",
        "2026-10-21",
        0
       ],
       [
-       12,
+       3,
        "2026-10-20",
        "2026-10-23",
        0
       ],
       [
-       5,
+       10,
        "2026-10-15",
        "2026-10-26",
        0
       ],
       [
-       5,
+       10,
        "2026-10-13",
        "2026-10-26",
        0
@@ -8476,19 +9018,19 @@
      "lon": -77.032,
      "r": [
       [
-       0,
+       13,
        "2026-11-02",
        "2026-11-02",
        0
       ],
       [
-       19,
+       25,
        "2026-10-15",
        null,
        1
       ],
       [
-       19,
+       25,
        "2026-10-12",
        null,
        1
@@ -8501,13 +9043,13 @@
      "lon": -77.034,
      "r": [
       [
-       10,
+       18,
        "2026-11-02",
        null,
        1
       ],
       [
-       45,
+       1,
        "2026-10-23",
        "2026-10-29",
        0
@@ -8520,21 +9062,15 @@
      "lon": -77.033,
      "r": [
       [
-       31,
+       33,
        "2026-11-02",
        "2026-11-03",
        0
       ],
       [
-       5,
+       10,
        "2026-11-01",
        "2026-11-03",
-       0
-      ],
-      [
-       30,
-       "2026-10-09",
-       "2026-10-09",
        0
       ]
      ]
@@ -8545,19 +9081,19 @@
      "lon": -77.034,
      "r": [
       [
-       18,
+       24,
        "2026-11-02",
        null,
        1
       ],
       [
-       12,
+       3,
        "2026-10-30",
        "2026-10-30",
        0
       ],
       [
-       25,
+       28,
        "2026-10-20",
        "2026-11-02",
        0
@@ -8570,7 +9106,7 @@
      "lon": -77.028,
      "r": [
       [
-       12,
+       3,
        "2026-11-02",
        "2026-11-04",
        0
@@ -8583,55 +9119,55 @@
      "lon": -77.028,
      "r": [
       [
-       0,
+       13,
        "2026-11-02",
        "2026-11-02",
        0
       ],
       [
-       0,
+       13,
        "2026-11-02",
        "2026-11-02",
        0
       ],
       [
-       12,
+       3,
        "2026-10-31",
        "2026-11-04",
        0
       ],
       [
-       0,
+       13,
        "2026-10-29",
        "2026-10-29",
        0
       ],
       [
-       39,
+       41,
        "2026-10-28",
        "2026-10-28",
        0
       ],
       [
-       2,
+       8,
        "2026-10-21",
        "2026-10-21",
        0
       ],
       [
-       5,
+       10,
        "2026-10-20",
        "2026-10-26",
        0
       ],
       [
-       0,
+       13,
        "2026-10-16",
        "2026-10-16",
        0
       ],
       [
-       2,
+       8,
        "2026-10-15",
        "2026-10-15",
        0
@@ -8644,25 +9180,25 @@
      "lon": -77.028,
      "r": [
       [
-       4,
+       14,
        "2026-11-02",
        "2026-11-02",
        0
       ],
       [
-       18,
+       24,
        "2026-10-24",
        "2026-10-28",
        0
       ],
       [
-       11,
+       19,
        "2026-10-19",
        "2026-10-19",
        0
       ],
       [
-       2,
+       8,
        "2026-10-11",
        "2026-10-11",
        0
@@ -8675,19 +9211,19 @@
      "lon": -77.029,
      "r": [
       [
-       5,
+       10,
        "2026-11-02",
        "2026-11-02",
        0
       ],
       [
-       20,
+       26,
        "2026-10-21",
        null,
        1
       ],
       [
-       12,
+       3,
        "2026-10-11",
        "2026-10-15",
        0
@@ -8700,55 +9236,55 @@
      "lon": -77.027,
      "r": [
       [
-       32,
+       34,
        "2026-11-01",
        "2026-11-03",
        0
       ],
       [
-       5,
+       10,
        "2026-10-30",
        "2026-11-02",
        0
       ],
       [
-       32,
+       34,
        "2026-10-30",
        "2026-11-03",
        0
       ],
       [
-       1,
+       0,
        "2026-10-29",
        "2026-11-04",
        1
       ],
       [
-       1,
+       0,
        "2026-10-29",
        "2026-11-04",
        1
       ],
       [
-       15,
+       21,
        "2026-10-26",
        null,
        1
       ],
       [
-       5,
+       10,
        "2026-10-23",
        "2026-11-02",
        0
       ],
       [
-       2,
+       8,
        "2026-10-17",
        "2026-10-17",
        0
       ],
       [
-       2,
+       8,
        "2026-10-17",
        "2026-10-17",
        0
@@ -8761,7 +9297,7 @@
      "lon": -77.032,
      "r": [
       [
-       33,
+       35,
        "2026-11-01",
        "2026-11-03",
        0
@@ -8774,31 +9310,31 @@
      "lon": -77.032,
      "r": [
       [
-       22,
+       4,
        "2026-11-01",
        "2026-11-03",
        0
       ],
       [
-       12,
+       3,
        "2026-10-27",
        "2026-10-29",
        0
       ],
       [
-       0,
-       "2026-10-18",
-       "2026-10-18",
-       0
-      ],
-      [
        13,
+       "2026-10-18",
+       "2026-10-18",
+       0
+      ],
+      [
+       7,
        "2026-10-17",
        "2026-10-17",
        0
       ],
       [
-       5,
+       10,
        "2026-10-16",
        "2026-10-20",
        0
@@ -8811,7 +9347,7 @@
      "lon": -77.027,
      "r": [
       [
-       19,
+       25,
        "2026-11-01",
        null,
        1
@@ -8824,25 +9360,25 @@
      "lon": -77.027,
      "r": [
       [
-       12,
+       3,
        "2026-11-01",
        "2026-11-04",
        0
       ],
       [
-       0,
+       13,
        "2026-10-29",
        "2026-10-29",
        0
       ],
       [
-       0,
+       13,
        "2026-10-25",
        "2026-10-26",
        0
       ],
       [
-       2,
+       8,
        "2026-10-25",
        "2026-10-25",
        0
@@ -8855,13 +9391,13 @@
      "lon": -77.03,
      "r": [
       [
-       6,
+       15,
        "2026-11-01",
        "2026-11-01",
        0
       ],
       [
-       6,
+       15,
        "2026-11-01",
        "2026-11-01",
        0
@@ -8874,7 +9410,7 @@
      "lon": -77.032,
      "r": [
       [
-       6,
+       15,
        "2026-11-01",
        "2026-11-01",
        0
@@ -8887,31 +9423,31 @@
      "lon": -77.029,
      "r": [
       [
-       6,
+       15,
        "2026-11-01",
        "2026-11-01",
        0
       ],
       [
-       13,
+       7,
        "2026-10-29",
        "2026-10-30",
        0
       ],
       [
-       0,
+       13,
        "2026-10-26",
        "2026-10-26",
        0
       ],
       [
-       16,
+       22,
        "2026-10-16",
        "2026-10-19",
        0
       ],
       [
-       0,
+       13,
        "2026-10-14",
        "2026-10-14",
        0
@@ -8924,29 +9460,16 @@
      "lon": -77.029,
      "r": [
       [
-       3,
+       12,
        "2026-10-31",
        "2026-11-02",
        0
       ],
       [
-       6,
+       15,
        "2026-10-28",
        "2026-10-28",
        0
-      ]
-     ]
-    },
-    {
-     "block": "Unit block of LOGAN CIRCLE NW",
-     "lat": 38.91,
-     "lon": -77.031,
-     "r": [
-      [
-       20,
-       "2026-10-31",
-       null,
-       1
       ]
      ]
     },
@@ -8956,7 +9479,7 @@
      "lon": -77.034,
      "r": [
       [
-       0,
+       13,
        "2026-10-31",
        "2026-10-31",
        0
@@ -8969,31 +9492,31 @@
      "lon": -77.031,
      "r": [
       [
-       0,
+       13,
        "2026-10-31",
        "2026-10-31",
        0
       ],
       [
-       19,
+       25,
        "2026-10-22",
        "2026-10-27",
        0
       ],
       [
-       27,
+       30,
        "2026-10-20",
        "2026-10-27",
        0
       ],
       [
-       36,
+       38,
        "2026-10-19",
        "2026-10-19",
        0
       ],
       [
-       24,
+       2,
        "2026-10-19",
        "2026-10-20",
        0
@@ -9006,19 +9529,19 @@
      "lon": -77.03,
      "r": [
       [
-       0,
+       13,
        "2026-10-30",
        "2026-10-30",
        0
       ],
       [
-       0,
+       13,
        "2026-10-30",
        "2026-10-31",
        0
       ],
       [
-       24,
+       2,
        "2026-10-29",
        "2026-10-30",
        0
@@ -9031,13 +9554,13 @@
      "lon": -77.028,
      "r": [
       [
-       0,
+       13,
        "2026-10-30",
        "2026-10-30",
        0
       ],
       [
-       0,
+       13,
        "2026-10-30",
        "2026-10-30",
        0
@@ -9050,39 +9573,33 @@
      "lon": -77.027,
      "r": [
       [
-       3,
+       12,
        "2026-10-30",
        "2026-10-31",
        0
       ],
       [
-       3,
+       12,
        "2026-10-28",
        "2026-10-29",
        0
       ],
       [
-       2,
+       8,
        "2026-10-19",
        "2026-10-19",
        0
       ],
       [
-       2,
+       8,
        "2026-10-14",
        "2026-10-14",
        0
       ],
       [
-       2,
+       8,
        "2026-10-12",
        "2026-10-12",
-       0
-      ],
-      [
-       2,
-       "2026-10-09",
-       "2026-10-09",
        0
       ]
      ]
@@ -9093,33 +9610,27 @@
      "lon": -77.034,
      "r": [
       [
-       37,
+       39,
        "2026-10-30",
        "2026-11-02",
        0
       ],
       [
-       10,
+       18,
        "2026-10-16",
        "2026-10-22",
        0
       ],
       [
-       18,
+       24,
        "2026-10-15",
        "2026-10-21",
        0
       ],
       [
-       37,
+       39,
        "2026-10-14",
        "2026-10-15",
-       0
-      ],
-      [
-       10,
-       "2026-10-09",
-       "2026-10-16",
        0
       ]
      ]
@@ -9130,19 +9641,19 @@
      "lon": -77.028,
      "r": [
       [
-       12,
+       3,
        "2026-10-30",
        "2026-11-02",
        0
       ],
       [
-       0,
+       13,
        "2026-10-18",
        "2026-10-18",
        0
       ],
       [
-       0,
+       13,
        "2026-10-17",
        "2026-10-17",
        0
@@ -9155,31 +9666,31 @@
      "lon": -77.033,
      "r": [
       [
-       38,
+       40,
        "2026-10-30",
        "2026-10-30",
        0
       ],
       [
-       4,
+       14,
        "2026-10-27",
        "2026-10-29",
        0
       ],
       [
-       4,
+       14,
        "2026-10-18",
        "2026-10-19",
        0
       ],
       [
-       2,
+       8,
        "2026-10-18",
        "2026-10-18",
        0
       ],
       [
-       0,
+       13,
        "2026-10-15",
        "2026-10-15",
        0
@@ -9192,145 +9703,145 @@
      "lon": -77.028,
      "r": [
       [
-       39,
+       41,
        "2026-10-30",
        "2026-11-04",
        1
       ],
       [
-       39,
+       41,
        "2026-10-29",
        "2026-11-04",
        1
       ],
       [
-       0,
+       13,
        "2026-10-29",
        "2026-10-29",
        0
       ],
       [
-       42,
+       44,
        "2026-10-29",
        "2026-10-29",
        0
       ],
       [
-       0,
+       13,
        "2026-10-28",
        "2026-11-04",
        1
       ],
       [
-       0,
+       13,
        "2026-10-28",
        "2026-11-04",
        0
       ],
       [
-       39,
+       41,
        "2026-10-28",
        "2026-11-04",
        0
       ],
       [
-       20,
+       26,
        "2026-10-28",
        null,
        1
       ],
       [
-       0,
+       13,
        "2026-10-28",
        "2026-10-28",
        0
       ],
       [
-       0,
+       13,
        "2026-10-28",
        "2026-10-28",
        0
       ],
       [
-       0,
+       13,
        "2026-10-28",
        "2026-10-28",
        0
       ],
       [
-       11,
+       19,
        "2026-10-27",
        "2026-10-27",
        0
       ],
       [
-       0,
+       13,
        "2026-10-27",
        "2026-10-27",
        0
       ],
       [
-       0,
+       13,
        "2026-10-26",
        "2026-10-28",
        0
       ],
       [
-       39,
+       41,
        "2026-10-26",
        "2026-10-26",
        0
       ],
       [
-       0,
+       13,
        "2026-10-24",
        "2026-10-25",
        0
       ],
       [
-       0,
+       13,
        "2026-10-23",
        "2026-10-23",
        0
       ],
       [
-       0,
+       13,
        "2026-10-16",
        "2026-10-16",
        0
       ],
       [
-       0,
+       13,
        "2026-10-16",
        "2026-10-16",
        0
       ],
       [
-       0,
+       13,
        "2026-10-14",
        "2026-10-14",
        0
       ],
       [
-       0,
+       13,
        "2026-10-14",
        "2026-10-14",
        0
       ],
       [
-       0,
+       13,
        "2026-10-13",
        "2026-10-13",
        0
       ],
       [
-       0,
+       13,
        "2026-10-10",
        "2026-10-10",
        0
       ],
       [
-       0,
+       13,
        "2026-10-10",
        "2026-10-10",
        0
@@ -9343,123 +9854,117 @@
      "lon": -77.029,
      "r": [
       [
-       11,
+       19,
        "2026-10-30",
        "2026-10-30",
        0
       ],
       [
-       20,
+       26,
        "2026-10-28",
        null,
        1
       ],
       [
-       39,
+       41,
        "2026-10-28",
        "2026-10-28",
        0
       ],
       [
-       29,
+       5,
        "2026-10-28",
        "2026-10-29",
        0
       ],
       [
-       42,
+       44,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       39,
+       41,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       39,
+       41,
        "2026-10-21",
        "2026-10-22",
        1
       ],
       [
-       39,
+       41,
        "2026-10-21",
        "2026-10-22",
        0
       ],
       [
-       39,
+       41,
        "2026-10-21",
        "2026-10-21",
        0
       ],
       [
-       42,
+       44,
        "2026-10-21",
        "2026-10-21",
        0
       ],
       [
-       39,
+       41,
        "2026-10-21",
        "2026-10-21",
        0
       ],
       [
-       42,
+       44,
        "2026-10-15",
        "2026-10-16",
        0
       ],
       [
-       39,
+       41,
        "2026-10-15",
        "2026-10-18",
        1
       ],
       [
-       39,
+       41,
        "2026-10-14",
        "2026-10-18",
        0
       ],
       [
-       42,
+       44,
        "2026-10-14",
        "2026-10-15",
        0
       ],
       [
-       12,
+       3,
        "2026-10-12",
        "2026-10-15",
        0
       ],
       [
-       39,
+       41,
        "2026-10-10",
        "2026-10-10",
        0
       ],
       [
-       39,
+       41,
        "2026-10-10",
        "2026-10-10",
        0
       ],
       [
-       42,
+       44,
        "2026-10-10",
        "2026-10-13",
-       0
-      ],
-      [
-       39,
-       "2026-10-09",
-       "2026-10-09",
        0
       ]
      ]
@@ -9470,7 +9975,7 @@
      "lon": -77.027,
      "r": [
       [
-       2,
+       8,
        "2026-10-30",
        "2026-10-30",
        0
@@ -9488,13 +9993,13 @@
        0
       ],
       [
-       0,
+       13,
        "2026-10-12",
        "2026-10-12",
        0
       ],
       [
-       24,
+       2,
        "2026-10-12",
        "2026-10-13",
        0
@@ -9507,76 +10012,39 @@
      "lon": -77.027,
      "r": [
       [
-       3,
+       12,
        "2026-10-30",
        "2026-10-30",
        0
       ],
       [
-       2,
+       8,
        "2026-10-28",
        "2026-10-28",
        0
       ],
       [
-       2,
+       8,
        "2026-10-25",
        "2026-10-25",
        0
       ],
       [
-       2,
+       8,
        "2026-10-21",
        "2026-10-21",
        0
       ],
       [
-       21,
+       27,
        "2026-10-19",
        null,
        1
       ],
       [
-       2,
+       8,
        "2026-10-17",
        "2026-10-17",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1300 block of RIGGS STREET NW",
-     "lat": 38.913,
-     "lon": -77.032,
-     "r": [
-      [
-       6,
-       "2026-10-30",
-       null,
-       1
-      ],
-      [
-       6,
-       "2026-10-26",
-       null,
-       1
-      ],
-      [
-       10,
-       "2026-10-16",
-       "2026-10-22",
-       0
-      ],
-      [
-       13,
-       "2026-10-10",
-       "2026-10-11",
-       0
-      ],
-      [
-       2,
-       "2026-10-10",
-       "2026-10-10",
        0
       ]
      ]
@@ -9587,19 +10055,19 @@
      "lon": -77.029,
      "r": [
       [
-       6,
+       15,
        "2026-10-30",
        "2026-10-30",
        0
       ],
       [
-       0,
+       13,
        "2026-10-21",
        "2026-10-21",
        0
       ],
       [
-       2,
+       8,
        "2026-10-10",
        "2026-10-10",
        0
@@ -9612,49 +10080,49 @@
      "lon": -77.027,
      "r": [
       [
-       2,
+       8,
        "2026-10-29",
        "2026-10-29",
        0
       ],
       [
-       40,
+       42,
        "2026-10-29",
-       null,
-       1
-      ],
-      [
-       1,
-       "2026-10-29",
-       "2026-11-06",
-       0
-      ],
-      [
-       1,
-       "2026-10-29",
-       "2026-11-06",
-       0
-      ],
-      [
-       40,
-       "2026-10-28",
        null,
        1
       ],
       [
        0,
+       "2026-10-29",
+       "2026-11-06",
+       0
+      ],
+      [
+       0,
+       "2026-10-29",
+       "2026-11-06",
+       0
+      ],
+      [
+       42,
+       "2026-10-28",
+       null,
+       1
+      ],
+      [
+       13,
        "2026-10-28",
        "2026-10-28",
        0
       ],
       [
-       6,
+       15,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       40,
+       42,
        "2026-10-13",
        null,
        1
@@ -9667,13 +10135,13 @@
      "lon": -77.031,
      "r": [
       [
-       18,
+       24,
        "2026-10-29",
        "2026-11-04",
        0
       ],
       [
-       18,
+       24,
        "2026-10-25",
        "2026-10-28",
        0
@@ -9686,40 +10154,15 @@
      "lon": -77.029,
      "r": [
       [
-       0,
+       13,
        "2026-10-29",
        "2026-10-29",
        0
       ],
       [
-       0,
+       13,
        "2026-10-28",
        "2026-10-28",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1200 block of 13TH STREET NW",
-     "lat": 38.906,
-     "lon": -77.029,
-     "r": [
-      [
-       0,
-       "2026-10-29",
-       "2026-10-29",
-       0
-      ],
-      [
-       0,
-       "2026-10-29",
-       "2026-10-29",
-       0
-      ],
-      [
-       12,
-       "2026-10-17",
-       "2026-10-20",
        0
       ]
      ]
@@ -9730,7 +10173,7 @@
      "lon": -77.027,
      "r": [
       [
-       0,
+       13,
        "2026-10-29",
        "2026-10-29",
        0
@@ -9743,19 +10186,19 @@
      "lon": -77.028,
      "r": [
       [
-       41,
+       43,
        "2026-10-29",
        "2026-10-29",
        0
       ],
       [
-       41,
+       43,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       2,
+       8,
        "2026-10-18",
        "2026-10-18",
        0
@@ -9768,19 +10211,19 @@
      "lon": -77.03,
      "r": [
       [
-       4,
+       14,
        "2026-10-29",
        "2026-10-29",
        0
       ],
       [
-       12,
+       3,
        "2026-10-29",
        "2026-10-29",
        0
       ],
       [
-       12,
+       3,
        "2026-10-22",
        "2026-10-26",
        0
@@ -9793,45 +10236,39 @@
      "lon": -77.027,
      "r": [
       [
-       2,
+       8,
        "2026-10-29",
        "2026-10-29",
        0
       ],
       [
-       2,
+       8,
        "2026-10-28",
        "2026-10-28",
        0
       ],
       [
-       2,
+       8,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       16,
+       22,
        "2026-10-19",
        "2026-10-26",
        0
       ],
       [
-       2,
+       8,
        "2026-10-19",
        "2026-10-19",
        0
       ],
       [
-       13,
+       7,
        "2026-10-16",
        "2026-10-17",
-       0
-      ],
-      [
-       0,
-       "2026-10-09",
-       "2026-10-09",
        0
       ]
      ]
@@ -9842,19 +10279,19 @@
      "lon": -77.027,
      "r": [
       [
-       2,
+       8,
        "2026-10-29",
        "2026-10-29",
        0
       ],
       [
-       2,
+       8,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       2,
+       8,
        "2026-10-19",
        "2026-10-19",
        0
@@ -9867,7 +10304,7 @@
      "lon": -77.034,
      "r": [
       [
-       5,
+       10,
        "2026-10-29",
        "2026-10-29",
        0
@@ -9880,7 +10317,7 @@
      "lon": -77.027,
      "r": [
       [
-       0,
+       13,
        "2026-10-28",
        "2026-10-28",
        0
@@ -9893,7 +10330,7 @@
      "lon": -77.031,
      "r": [
       [
-       5,
+       10,
        "2026-10-28",
        "2026-11-02",
        0
@@ -9906,7 +10343,7 @@
      "lon": -77.031,
      "r": [
       [
-       16,
+       22,
        "2026-10-28",
        "2026-11-02",
        0
@@ -9919,7 +10356,7 @@
      "lon": -77.027,
      "r": [
       [
-       11,
+       19,
        "2026-10-28",
        "2026-10-28",
        0
@@ -9932,7 +10369,7 @@
      "lon": -77.028,
      "r": [
       [
-       43,
+       45,
        "2026-10-28",
        "2026-10-28",
        0
@@ -9945,40 +10382,15 @@
      "lon": -77.027,
      "r": [
       [
-       2,
+       8,
        "2026-10-28",
        "2026-10-28",
        0
       ],
       [
-       10,
+       18,
        "2026-10-21",
        "2026-10-29",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1700 block of 14TH STREET NW",
-     "lat": 38.914,
-     "lon": -77.032,
-     "r": [
-      [
-       34,
-       "2026-10-28",
-       null,
-       1
-      ],
-      [
-       0,
-       "2026-10-28",
-       "2026-10-28",
-       0
-      ],
-      [
-       13,
-       "2026-10-12",
-       "2026-10-13",
        0
       ]
      ]
@@ -9989,7 +10401,7 @@
      "lon": -77.033,
      "r": [
       [
-       5,
+       10,
        "2026-10-28",
        "2026-10-28",
        0
@@ -10002,7 +10414,7 @@
      "lon": -77.029,
      "r": [
       [
-       2,
+       8,
        "2026-10-27",
        "2026-10-27",
        0
@@ -10021,49 +10433,49 @@
      "lon": -77.03,
      "r": [
       [
-       0,
+       13,
        "2026-10-27",
        "2026-11-04",
        0
       ],
       [
-       0,
+       13,
        "2026-10-26",
        "2026-10-28",
        0
       ],
       [
-       0,
+       13,
        "2026-10-26",
        "2026-10-28",
        0
       ],
       [
-       0,
+       13,
        "2026-10-24",
        "2026-10-24",
        0
       ],
       [
-       0,
+       13,
        "2026-10-24",
        "2026-10-24",
        0
       ],
       [
-       0,
+       13,
        "2026-10-24",
        "2026-10-24",
        0
       ],
       [
-       39,
+       41,
        "2026-10-21",
        "2026-10-22",
        0
       ],
       [
-       42,
+       44,
        "2026-10-21",
        "2026-10-22",
        0
@@ -10082,7 +10494,7 @@
        0
       ],
       [
-       12,
+       3,
        "2026-10-27",
        "2026-10-29",
        0
@@ -10095,28 +10507,9 @@
      "lon": -77.029,
      "r": [
       [
-       16,
+       22,
        "2026-10-27",
        "2026-10-29",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1300 block of 12TH STREET NW",
-     "lat": 38.907,
-     "lon": -77.028,
-     "r": [
-      [
-       2,
-       "2026-10-27",
-       "2026-10-27",
-       0
-      ],
-      [
-       12,
-       "2026-10-16",
-       "2026-10-20",
        0
       ]
      ]
@@ -10127,19 +10520,19 @@
      "lon": -77.03,
      "r": [
       [
-       5,
+       10,
        "2026-10-26",
        "2026-11-02",
        0
       ],
       [
-       5,
+       10,
        "2026-10-13",
        "2026-10-14",
        0
       ],
       [
-       5,
+       10,
        "2026-10-10",
        "2026-10-14",
        0
@@ -10152,7 +10545,7 @@
      "lon": -77.034,
      "r": [
       [
-       2,
+       8,
        "2026-10-26",
        "2026-10-26",
        0
@@ -10165,13 +10558,13 @@
      "lon": -77.03,
      "r": [
       [
-       27,
+       30,
        "2026-10-26",
        "2026-10-29",
        0
       ],
       [
-       27,
+       30,
        "2026-10-14",
        "2026-10-22",
        0
@@ -10184,13 +10577,13 @@
      "lon": -77.03,
      "r": [
       [
-       6,
+       15,
        "2026-10-26",
        "2026-10-26",
        0
       ],
       [
-       6,
+       15,
        "2026-10-22",
        "2026-10-22",
        0
@@ -10203,25 +10596,25 @@
      "lon": -77.029,
      "r": [
       [
-       11,
+       19,
        "2026-10-26",
        "2026-10-26",
        0
       ],
       [
-       46,
+       47,
        "2026-10-23",
        "2026-10-23",
        0
       ],
       [
-       20,
+       26,
        "2026-10-22",
        null,
        1
       ],
       [
-       0,
+       13,
        "2026-10-20",
        "2026-10-20",
        0
@@ -10234,7 +10627,7 @@
      "lon": -77.027,
      "r": [
       [
-       12,
+       3,
        "2026-10-25",
        "2026-10-27",
        0
@@ -10247,25 +10640,25 @@
      "lon": -77.028,
      "r": [
       [
-       2,
+       8,
        "2026-10-25",
        "2026-10-25",
        0
       ],
       [
-       2,
+       8,
        "2026-10-25",
        "2026-10-25",
        0
       ],
       [
-       2,
+       8,
        "2026-10-23",
        "2026-10-23",
        0
       ],
       [
-       4,
+       14,
        "2026-10-19",
        "2026-10-20",
        0
@@ -10277,7 +10670,7 @@
        0
       ],
       [
-       12,
+       3,
        "2026-10-16",
        "2026-10-19",
        0
@@ -10290,7 +10683,7 @@
      "lon": -77.026,
      "r": [
       [
-       6,
+       15,
        "2026-10-24",
        "2026-10-26",
        0
@@ -10303,7 +10696,7 @@
      "lon": -77.035,
      "r": [
       [
-       11,
+       19,
        "2026-10-24",
        "2026-10-24",
        0
@@ -10316,13 +10709,13 @@
      "lon": -77.03,
      "r": [
       [
-       25,
+       28,
        "2026-10-24",
        "2026-11-04",
        0
       ],
       [
-       10,
+       18,
        "2026-10-21",
        "2026-10-29",
        0
@@ -10335,25 +10728,25 @@
      "lon": -77.031,
      "r": [
       [
-       39,
+       41,
        "2026-10-24",
        "2026-10-25",
        1
       ],
       [
-       39,
+       41,
        "2026-10-24",
        "2026-10-25",
        0
       ],
       [
-       39,
+       41,
        "2026-10-24",
        "2026-10-24",
        1
       ],
       [
-       47,
+       48,
        "2026-10-19",
        "2026-10-19",
        0
@@ -10366,7 +10759,7 @@
      "lon": -77.03,
      "r": [
       [
-       0,
+       13,
        "2026-10-24",
        "2026-10-24",
        0
@@ -10379,47 +10772,9 @@
      "lon": -77.031,
      "r": [
       [
-       0,
+       13,
        "2026-10-24",
        "2026-10-24",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1300 block of Q STREET NW",
-     "lat": 38.911,
-     "lon": -77.03,
-     "r": [
-      [
-       0,
-       "2026-10-23",
-       "2026-10-23",
-       0
-      ],
-      [
-       5,
-       "2026-10-17",
-       "2026-10-26",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1400 block of 14TH STREET NW",
-     "lat": 38.91,
-     "lon": -77.032,
-     "r": [
-      [
-       2,
-       "2026-10-23",
-       "2026-10-23",
-       0
-      ],
-      [
-       2,
-       "2026-10-23",
-       "2026-10-23",
        0
       ]
      ]
@@ -10430,19 +10785,19 @@
      "lon": -77.033,
      "r": [
       [
-       20,
+       26,
        "2026-10-22",
        null,
        1
       ],
       [
-       0,
+       13,
        "2026-10-14",
        "2026-10-14",
        0
       ],
       [
-       0,
+       13,
        "2026-10-13",
        "2026-10-13",
        0
@@ -10467,7 +10822,7 @@
        1
       ],
       [
-       37,
+       39,
        "2026-10-21",
        null,
        1
@@ -10479,7 +10834,7 @@
        0
       ],
       [
-       37,
+       39,
        "2026-10-20",
        "2026-10-21",
        0
@@ -10492,55 +10847,55 @@
      "lon": -77.028,
      "r": [
       [
-       2,
+       8,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       2,
+       8,
        "2026-10-15",
        "2026-10-15",
        0
       ],
       [
-       2,
+       8,
        "2026-10-15",
        "2026-10-15",
        0
       ],
       [
-       2,
+       8,
        "2026-10-15",
        "2026-10-15",
        0
       ],
       [
-       2,
+       8,
        "2026-10-15",
        "2026-10-15",
        0
       ],
       [
-       2,
+       8,
        "2026-10-15",
        "2026-10-15",
        0
       ],
       [
-       2,
+       8,
        "2026-10-13",
        "2026-10-13",
        0
       ],
       [
-       2,
+       8,
        "2026-10-13",
        "2026-10-13",
        0
       ],
       [
-       1,
+       0,
        "2026-10-11",
        "2026-11-04",
        0
@@ -10553,39 +10908,33 @@
      "lon": -77.029,
      "r": [
       [
-       20,
+       26,
        "2026-10-22",
        null,
        1
       ],
       [
-       20,
+       26,
        "2026-10-21",
        null,
        1
       ],
       [
-       48,
+       49,
        "2026-10-19",
        null,
        1
       ],
       [
-       18,
+       24,
        "2026-10-18",
        "2026-10-21",
        0
       ],
       [
-       10,
+       18,
        "2026-10-10",
        "2026-10-16",
-       0
-      ],
-      [
-       18,
-       "2026-10-09",
-       "2026-10-14",
        0
       ]
      ]
@@ -10596,7 +10945,7 @@
      "lon": -77.032,
      "r": [
       [
-       1,
+       0,
        "2026-10-21",
        "2026-11-06",
        0
@@ -10609,13 +10958,13 @@
      "lon": -77.032,
      "r": [
       [
-       28,
+       31,
        "2026-10-21",
        null,
        1
       ],
       [
-       13,
+       7,
        "2026-10-13",
        "2026-10-14",
        0
@@ -10628,31 +10977,31 @@
      "lon": -77.03,
      "r": [
       [
-       28,
+       31,
        "2026-10-21",
        null,
        1
       ],
       [
-       6,
+       15,
        "2026-10-16",
        "2026-10-16",
        0
       ],
       [
-       6,
+       15,
        "2026-10-16",
        "2026-10-16",
        0
       ],
       [
-       6,
+       15,
        "2026-10-16",
        "2026-10-16",
        0
       ],
       [
-       6,
+       15,
        "2026-10-16",
        "2026-10-16",
        0
@@ -10665,7 +11014,7 @@
      "lon": -77.029,
      "r": [
       [
-       12,
+       3,
        "2026-10-21",
        "2026-10-23",
        0
@@ -10678,7 +11027,7 @@
      "lon": -77.032,
      "r": [
       [
-       0,
+       13,
        "2026-10-21",
        "2026-10-21",
        0
@@ -10691,13 +11040,13 @@
      "lon": -77.034,
      "r": [
       [
-       2,
+       8,
        "2026-10-21",
        "2026-10-21",
        0
       ],
       [
-       2,
+       8,
        "2026-10-21",
        "2026-10-21",
        0
@@ -10710,7 +11059,7 @@
      "lon": -77.032,
      "r": [
       [
-       23,
+       6,
        "2026-10-20",
        null,
        1
@@ -10723,7 +11072,7 @@
      "lon": -77.027,
      "r": [
       [
-       25,
+       28,
        "2026-10-20",
        "2026-10-27",
        0
@@ -10736,7 +11085,7 @@
      "lon": -77.033,
      "r": [
       [
-       12,
+       3,
        "2026-10-19",
        "2026-10-20",
        0
@@ -10749,13 +11098,13 @@
      "lon": -77.032,
      "r": [
       [
-       12,
+       3,
        "2026-10-19",
        "2026-10-22",
        0
       ],
       [
-       24,
+       2,
        "2026-10-15",
        "2026-10-15",
        0
@@ -10768,13 +11117,13 @@
      "lon": -77.034,
      "r": [
       [
-       2,
+       8,
        "2026-10-19",
        "2026-10-19",
        0
       ],
       [
-       2,
+       8,
        "2026-10-19",
        "2026-10-19",
        0
@@ -10787,65 +11136,27 @@
      "lon": -77.032,
      "r": [
       [
-       20,
+       26,
        "2026-10-19",
        "2026-10-23",
        0
       ],
       [
-       2,
+       8,
        "2026-10-11",
        "2026-10-11",
        0
       ],
       [
-       2,
+       8,
        "2026-10-11",
        "2026-10-11",
        0
       ],
       [
-       2,
+       8,
        "2026-10-11",
        "2026-10-11",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1400 block of R STREET NW",
-     "lat": 38.913,
-     "lon": -77.033,
-     "r": [
-      [
-       2,
-       "2026-10-18",
-       "2026-10-18",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1700 block of 13TH STREET NW",
-     "lat": 38.913,
-     "lon": -77.029,
-     "r": [
-      [
-       0,
-       "2026-10-18",
-       "2026-10-18",
-       0
-      ],
-      [
-       5,
-       "2026-10-14",
-       "2026-10-26",
-       0
-      ],
-      [
-       2,
-       "2026-10-13",
-       "2026-10-13",
        0
       ]
      ]
@@ -10856,46 +11167,21 @@
      "lon": -77.032,
      "r": [
       [
-       49,
-       "2026-10-17",
-       null,
-       1
-      ],
-      [
-       2,
-       "2026-10-10",
-       "2026-10-10",
-       0
-      ],
-      [
-       2,
-       "2026-10-10",
-       "2026-10-10",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1200 block of 12TH STREET NW",
-     "lat": 38.907,
-     "lon": -77.028,
-     "r": [
-      [
        50,
        "2026-10-17",
        null,
        1
       ],
       [
-       32,
-       "2026-10-14",
-       "2026-10-15",
+       8,
+       "2026-10-10",
+       "2026-10-10",
        0
       ],
       [
-       50,
-       "2026-10-09",
-       "2026-10-23",
+       8,
+       "2026-10-10",
+       "2026-10-10",
        0
       ]
      ]
@@ -10906,7 +11192,7 @@
      "lon": -77.03,
      "r": [
       [
-       29,
+       5,
        "2026-10-16",
        "2026-10-22",
        0
@@ -10919,46 +11205,9 @@
      "lon": -77.027,
      "r": [
       [
-       40,
+       42,
        "2026-10-16",
        "2026-10-21",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1400 block of U STREET NW",
-     "lat": 38.917,
-     "lon": -77.033,
-     "r": [
-      [
-       2,
-       "2026-10-16",
-       "2026-10-16",
-       0
-      ],
-      [
-       2,
-       "2026-10-16",
-       "2026-10-16",
-       0
-      ],
-      [
-       2,
-       "2026-10-16",
-       "2026-10-16",
-       0
-      ],
-      [
-       2,
-       "2026-10-16",
-       "2026-10-16",
-       0
-      ],
-      [
-       0,
-       "2026-10-14",
-       "2026-10-14",
        0
       ]
      ]
@@ -10969,20 +11218,7 @@
      "lon": -77.034,
      "r": [
       [
-       2,
-       "2026-10-16",
-       "2026-10-16",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1400 block of U STREET NW",
-     "lat": 38.917,
-     "lon": -77.034,
-     "r": [
-      [
-       2,
+       8,
        "2026-10-16",
        "2026-10-16",
        0
@@ -10995,7 +11231,7 @@
      "lon": -77.027,
      "r": [
       [
-       0,
+       13,
        "2026-10-15",
        "2026-10-16",
        0
@@ -11008,7 +11244,7 @@
      "lon": -77.027,
      "r": [
       [
-       12,
+       3,
        "2026-10-15",
        "2026-10-15",
        0
@@ -11021,13 +11257,13 @@
      "lon": -77.033,
      "r": [
       [
-       0,
+       13,
        "2026-10-15",
        "2026-10-15",
        0
       ],
       [
-       0,
+       13,
        "2026-10-14",
        "2026-10-14",
        0
@@ -11040,13 +11276,13 @@
      "lon": -77.032,
      "r": [
       [
-       6,
+       15,
        "2026-10-14",
        "2026-10-15",
        0
       ],
       [
-       6,
+       15,
        "2026-10-14",
        "2026-10-14",
        0
@@ -11063,12 +11299,6 @@
        "2026-10-14",
        "2026-10-19",
        0
-      ],
-      [
-       10,
-       "2026-10-09",
-       "2026-10-16",
-       0
       ]
      ]
     },
@@ -11078,7 +11308,7 @@
      "lon": -77.032,
      "r": [
       [
-       13,
+       7,
        "2026-10-13",
        "2026-10-14",
        0
@@ -11091,7 +11321,7 @@
      "lon": -77.032,
      "r": [
       [
-       13,
+       7,
        "2026-10-13",
        "2026-10-14",
        0
@@ -11104,7 +11334,7 @@
      "lon": -77.028,
      "r": [
       [
-       28,
+       31,
        "2026-10-13",
        null,
        1
@@ -11130,7 +11360,7 @@
      "lon": -77.029,
      "r": [
       [
-       2,
+       8,
        "2026-10-13",
        "2026-10-13",
        0
@@ -11143,7 +11373,7 @@
      "lon": -77.029,
      "r": [
       [
-       2,
+       8,
        "2026-10-13",
        "2026-10-13",
        0
@@ -11156,7 +11386,7 @@
      "lon": -77.028,
      "r": [
       [
-       5,
+       10,
        "2026-10-12",
        "2026-10-26",
        0
@@ -11169,7 +11399,7 @@
      "lon": -77.033,
      "r": [
       [
-       0,
+       13,
        "2026-10-11",
        "2026-10-12",
        0
@@ -11182,13 +11412,13 @@
      "lon": -77.027,
      "r": [
       [
-       1,
+       0,
        "2026-10-11",
        "2026-11-04",
        1
       ],
       [
-       1,
+       0,
        "2026-10-11",
        "2026-11-04",
        0
@@ -11201,22 +11431,9 @@
      "lon": -77.032,
      "r": [
       [
-       2,
+       8,
        "2026-10-11",
        "2026-10-11",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1400 block of T STREET NW",
-     "lat": 38.915,
-     "lon": -77.033,
-     "r": [
-      [
-       2,
-       "2026-10-10",
-       "2026-10-10",
        0
       ]
      ]
@@ -11225,18 +11442,18 @@
   }
  },
  "crime": {
-  "total": 45,
-  "previous_total": 36,
+  "total": 44,
+  "previous_total": 38,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
     "count": 18,
-    "previous": 17
+    "previous": 18
    },
    {
     "offense": "THEFT F/AUTO",
-    "count": 14,
-    "previous": 11
+    "count": 15,
+    "previous": 10
    },
    {
     "offense": "MOTOR VEHICLE THEFT",
@@ -11244,19 +11461,19 @@
     "previous": 4
    },
    {
-    "offense": "ASSAULT W/DANGEROUS WEAPON",
-    "count": 3,
-    "previous": 2
-   },
-   {
     "offense": "BURGLARY",
     "count": 3,
     "previous": 0
    },
    {
+    "offense": "ASSAULT W/DANGEROUS WEAPON",
+    "count": 2,
+    "previous": 3
+   },
+   {
     "offense": "SEX ABUSE",
-    "count": 1,
-    "previous": 0
+    "count": 0,
+    "previous": 1
    },
    {
     "offense": "ROBBERY",
@@ -11318,7 +11535,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-08T09:17:54Z",
+  "generated_at": "2026-11-09T09:23:16Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -11333,7 +11550,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Logan Circle through OTR assessment sub-areas Old City 2 C and E in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Logan Circle boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-08): 71% of the 5,628 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 95% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Logan Circle through OTR assessment sub-areas Old City 2 C and E in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Logan Circle boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-09): 71% of the 5,628 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 95% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -11350,7 +11567,7 @@
    "area_parcels": 5628,
    "area_share_inside": 0.714,
    "boundary_share_in_area": 0.951,
-   "measured": "2026-11-08"
+   "measured": "2026-11-09"
   },
   "primary": "condo",
   "house": {
@@ -11667,7 +11884,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-08T09:17:54Z",
+  "generated_at": "2026-11-09T09:23:16Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -11687,15 +11904,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 93,
-   "starting_next_7d": 20,
-   "reserved_ft": 10736,
+   "active_this_week": 92,
+   "starting_next_7d": 19,
+   "reserved_ft": 10604,
    "long_running_90d": 10,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-08: newest permit issued 2026-11-08, newest record update 2026-11-08, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-09: newest permit issued 2026-11-09, newest record update 2026-11-09, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 8
+     "count": 9
     },
     {
      "type": "Dumpsters",
@@ -11716,21 +11933,9 @@
     {
      "type": "Utility & DDOT work",
      "count": 12
-    },
-    {
-     "type": "Events & reserved parking",
-     "count": 2
     }
    ],
    "upcoming": [
-    {
-     "type": "Utility & DDOT work",
-     "block": "1300 block of 12th Street NW",
-     "start": "2026-11-09",
-     "end": "2026-11-13",
-     "ft": 22,
-     "hours": "8 am\u20134:30 pm"
-    },
     {
      "type": "Construction staging",
      "block": "1300 block of 12th Street NW",
@@ -11778,14 +11983,6 @@
      "end": "2026-11-10",
      "ft": 66,
      "hours": "7:30 am\u20133 pm"
-    },
-    {
-     "type": "Events & reserved parking",
-     "block": "1700 block of 15th Street NW",
-     "start": "2026-11-09",
-     "end": "2026-11-09",
-     "ft": 220,
-     "hours": "8 am\u20132 pm"
     },
     {
      "type": "Moving & storage",
@@ -11882,6 +12079,14 @@
      "end": "2026-11-15",
      "ft": 88,
      "hours": ""
+    },
+    {
+     "type": "Moving & storage",
+     "block": "1400 block of Q Street NW",
+     "start": "2026-11-16",
+     "end": "2026-11-16",
+     "ft": 88,
+     "hours": ""
     }
    ]
   },
@@ -11966,13 +12171,13 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 1189
+    "closed_n": 1193
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
     "median_days": 0.01,
     "city_median_days": 0.01,
-    "closed_n": 864
+    "closed_n": 875
    },
    {
     "type": "Trash Collection - Missed",
@@ -12008,13 +12213,13 @@
     "type": "Sanitation Enforcement",
     "median_days": 0.96,
     "city_median_days": 1.1,
-    "closed_n": 265
+    "closed_n": 263
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-08T09:17:54Z",
+  "generated_at": "2026-11-09T09:23:16Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -12171,7 +12376,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-08T09:17:54Z",
+  "generated_at": "2026-11-09T09:23:16Z",
   "archive_days": 180,
   "sources": [
    {
@@ -12787,8 +12992,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-08T09:17:54Z",
-  "today": "2026-11-08",
+  "generated_at": "2026-11-09T09:23:16Z",
+  "today": "2026-11-09",
   "days_ahead": 30,
   "sources": [
    {
@@ -12830,7 +13035,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-08T09:17:54Z",
+  "generated_at": "2026-11-09T09:23:16Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -25054,7 +25259,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-08T09:17:54Z",
+  "generated_at": "2026-11-09T09:23:16Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
@@ -25143,16 +25348,16 @@
     "lon": -77.02705
    },
    {
-    "id": "1001427",
-    "name": "11 St NW & P St NW",
-    "lat": 38.90944,
-    "lon": -77.02696
-   },
-   {
     "id": "1001464",
     "name": "11 St NW & P St NW",
     "lat": 38.90977,
     "lon": -77.02705
+   },
+   {
+    "id": "1001427",
+    "name": "11 St NW & P St NW",
+    "lat": 38.90944,
+    "lon": -77.02696
    },
    {
     "id": "1001505",

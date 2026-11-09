@@ -1,7 +1,7 @@
 {
  "slug": "vanness",
  "name": "Van Ness",
- "generated_at": "2026-11-08T09:17:54Z",
+ "generated_at": "2026-11-09T09:23:16Z",
  "boundary": {
   "source": "ANC single-member districts 3F01, 3F02 and 3F05 around the Van Ness-UDC Metro (Open Data DC). DC has no planning area named Van Ness.",
   "rings": [
@@ -3317,22 +3317,22 @@
   }
  ],
  "requests": {
-  "total": 210,
-  "previous_total": 239,
+  "total": 206,
+  "previous_total": 234,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
-    "count": 47,
-    "previous": 54
+    "count": 44,
+    "previous": 56
    },
    {
     "type": "Parking Enforcement",
     "count": 41,
-    "previous": 40
+    "previous": 36
    },
    {
     "type": "Bulk Collection",
-    "count": 30,
+    "count": 32,
     "previous": 29
    },
    {
@@ -3343,7 +3343,7 @@
    {
     "type": "Trash Collection - Missed",
     "count": 11,
-    "previous": 15
+    "previous": 14
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -3356,11 +3356,6 @@
     "previous": 9
    },
    {
-    "type": "Recycling Collection - Missed",
-    "count": 3,
-    "previous": 5
-   },
-   {
     "type": "Public Space Inspection",
     "count": 3,
     "previous": 2
@@ -3368,12 +3363,12 @@
    {
     "type": "Supercan - Delivery",
     "count": 3,
-    "previous": 7
+    "previous": 5
    },
    {
     "type": "Container Removal",
     "count": 3,
-    "previous": 4
+    "previous": 3
    },
    {
     "type": "DMV - Vehicle Registration Issues",
@@ -3384,16 +3379,6 @@
     "type": "Public Space Litter Can-Collection",
     "count": 3,
     "previous": 1
-   },
-   {
-    "type": "Tree Inspection",
-    "count": 2,
-    "previous": 9
-   },
-   {
-    "type": "Parking Meter Repair",
-    "count": 2,
-    "previous": 0
    },
    {
     "type": "Roadway Repair",
@@ -3429,6 +3414,11 @@
     "type": "Dead Animal Collection",
     "count": 2,
     "previous": 0
+   },
+   {
+    "type": "Recycling Collection - Missed",
+    "count": 2,
+    "previous": 6
    },
    {
     "type": "DOEE - LIHEAP",
@@ -3469,6 +3459,16 @@
     "type": "Public Space Litter Can Repair",
     "count": 1,
     "previous": 0
+   },
+   {
+    "type": "Parking Meter Repair",
+    "count": 1,
+    "previous": 1
+   },
+   {
+    "type": "Tree Inspection",
+    "count": 1,
+    "previous": 9
    },
    {
     "type": "Sidewalk Repair",
@@ -3521,8 +3521,38 @@
     "previous": 4
    }
   ],
-  "open": 68,
+  "open": 70,
   "recent": [
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-09T01:38:10Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3600 block of WARREN STREET NW",
+    "lat": 38.945,
+    "lon": -77.072
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-08T22:10:14Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3600 block of WARREN STREET NW",
+    "lat": 38.945,
+    "lon": -77.072
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-08T20:25:25Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4200 block of 37TH STREET NW",
+    "lat": 38.944,
+    "lon": -77.072
+   },
    {
     "type": "Container Removal",
     "agency": "DPW",
@@ -3992,43 +4022,13 @@
     "block": "4500 block of CONNECTICUT AVENUE NW",
     "lat": 38.948,
     "lon": -77.066
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-02T13:55:14Z",
-    "resolved": "2026-11-02T15:15:13Z",
-    "status": "Closed",
-    "block": "2900 block of UPTON STREET NW",
-    "lat": 38.942,
-    "lon": -77.061
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-02T00:16:28Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2900 block of UPTON STREET NW",
-    "lat": 38.942,
-    "lon": -77.061
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-01T20:38:54Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3600 block of APPLETON STREET NW",
-    "lat": 38.949,
-    "lon": -77.071
    }
   ],
   "mapped": {
    "types": [
-    "Container Removal",
     "Bulk Collection",
     "Scheduled Yard Waste",
+    "Container Removal",
     "Parking Enforcement",
     "Trash Collection - Missed",
     "Graffiti Removal",
@@ -4069,10 +4069,66 @@
    ],
    "blocks": [
     {
+     "block": "3600 block of WARREN STREET NW",
+     "lat": 38.945,
+     "lon": -77.072,
+     "r": [
+      [
+       0,
+       "2026-11-09",
+       null,
+       1
+      ],
+      [
+       1,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-10-15",
+       "2026-10-19",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4200 block of 37TH STREET NW",
+     "lat": 38.944,
+     "lon": -77.072,
+     "r": [
+      [
+       0,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       4,
+       "2026-11-03",
+       "2026-11-05",
+       0
+      ],
+      [
+       1,
+       "2026-10-12",
+       "2026-10-20",
+       0
+      ]
+     ]
+    },
+    {
      "block": "2900 block of UPTON STREET NW",
      "lat": 38.942,
      "lon": -77.059,
      "r": [
+      [
+       2,
+       "2026-11-07",
+       null,
+       1
+      ],
       [
        0,
        "2026-11-07",
@@ -4081,12 +4137,6 @@
       ],
       [
        1,
-       "2026-11-07",
-       null,
-       1
-      ],
-      [
-       2,
        "2026-10-12",
        "2026-10-20",
        0
@@ -4099,7 +4149,7 @@
      "lon": -77.061,
      "r": [
       [
-       1,
+       0,
        "2026-11-07",
        null,
        1
@@ -4135,25 +4185,25 @@
        0
       ],
       [
-       2,
+       1,
        "2026-11-02",
        null,
        1
       ],
       [
-       1,
+       0,
        "2026-11-01",
        "2026-11-05",
        0
       ],
       [
-       1,
+       0,
        "2026-10-29",
        "2026-11-05",
        0
       ],
       [
-       2,
+       1,
        "2026-10-26",
        "2026-11-03",
        0
@@ -4172,19 +4222,19 @@
      "lon": -77.071,
      "r": [
       [
-       2,
+       1,
        "2026-11-07",
        null,
        1
       ],
       [
-       2,
+       1,
        "2026-11-01",
        null,
        1
       ],
       [
-       2,
+       1,
        "2026-10-10",
        "2026-10-13",
        0
@@ -4197,13 +4247,13 @@
      "lon": -77.072,
      "r": [
       [
-       1,
+       0,
        "2026-11-07",
        null,
        1
       ],
       [
-       1,
+       0,
        "2026-10-21",
        "2026-10-26",
        0
@@ -4241,7 +4291,7 @@
      "lon": -77.062,
      "r": [
       [
-       2,
+       1,
        "2026-11-06",
        null,
        1
@@ -4278,7 +4328,7 @@
        0
       ],
       [
-       1,
+       0,
        "2026-10-26",
        "2026-10-30",
        0
@@ -4290,19 +4340,19 @@
        0
       ],
       [
-       1,
+       0,
        "2026-10-17",
        "2026-10-26",
        0
       ],
       [
-       1,
+       0,
        "2026-10-17",
        "2026-10-26",
        0
       ],
       [
-       1,
+       0,
        "2026-10-17",
        "2026-10-26",
        0
@@ -4315,13 +4365,13 @@
      "lon": -77.069,
      "r": [
       [
-       2,
+       1,
        "2026-11-06",
        null,
        1
       ],
       [
-       2,
+       1,
        "2026-11-03",
        null,
        1
@@ -4340,7 +4390,7 @@
      "lon": -77.071,
      "r": [
       [
-       1,
+       0,
        "2026-11-06",
        null,
        1
@@ -4352,7 +4402,7 @@
        1
       ],
       [
-       2,
+       1,
        "2026-11-04",
        null,
        1
@@ -4370,13 +4420,13 @@
        0
       ],
       [
-       1,
+       0,
        "2026-10-29",
        "2026-11-05",
        0
       ],
       [
-       1,
+       0,
        "2026-10-23",
        "2026-10-30",
        0
@@ -4501,7 +4551,7 @@
      "lon": -77.061,
      "r": [
       [
-       1,
+       0,
        "2026-11-05",
        null,
        1
@@ -4539,7 +4589,7 @@
        0
       ],
       [
-       1,
+       0,
        "2026-10-13",
        "2026-10-19",
        0
@@ -4552,13 +4602,13 @@
      "lon": -77.065,
      "r": [
       [
-       2,
+       1,
        "2026-11-05",
        null,
        1
       ],
       [
-       2,
+       1,
        "2026-10-15",
        "2026-10-20",
        0
@@ -4571,16 +4621,10 @@
      "lon": -77.061,
      "r": [
       [
-       2,
+       1,
        "2026-11-04",
        null,
        1
-      ],
-      [
-       2,
-       "2026-10-09",
-       "2026-10-13",
-       0
       ]
      ]
     },
@@ -4612,25 +4656,6 @@
        10,
        "2026-11-04",
        "2026-11-05",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "4200 block of 37TH STREET NW",
-     "lat": 38.944,
-     "lon": -77.072,
-     "r": [
-      [
-       4,
-       "2026-11-03",
-       "2026-11-05",
-       0
-      ],
-      [
-       2,
-       "2026-10-12",
-       "2026-10-20",
        0
       ]
      ]
@@ -4703,7 +4728,7 @@
      "lon": -77.072,
      "r": [
       [
-       2,
+       1,
        "2026-11-03",
        null,
        1
@@ -4722,31 +4747,31 @@
      "lon": -77.06,
      "r": [
       [
-       1,
+       0,
        "2026-11-02",
        "2026-11-05",
        0
       ],
       [
-       2,
+       1,
        "2026-10-25",
        "2026-11-03",
        0
       ],
       [
-       2,
+       1,
        "2026-10-24",
        "2026-10-27",
        0
       ],
       [
-       2,
+       1,
        "2026-10-14",
        "2026-10-20",
        0
       ],
       [
-       2,
+       1,
        "2026-10-13",
        "2026-10-20",
        0
@@ -4759,7 +4784,7 @@
      "lon": -77.068,
      "r": [
       [
-       2,
+       1,
        "2026-11-02",
        null,
        1
@@ -4772,13 +4797,13 @@
      "lon": -77.069,
      "r": [
       [
-       2,
+       1,
        "2026-11-02",
        null,
        1
       ],
       [
-       1,
+       0,
        "2026-10-22",
        "2026-10-26",
        0
@@ -4804,7 +4829,7 @@
      "lon": -77.067,
      "r": [
       [
-       2,
+       1,
        "2026-11-02",
        null,
        1
@@ -4842,7 +4867,7 @@
      "lon": -77.072,
      "r": [
       [
-       1,
+       0,
        "2026-11-01",
        "2026-11-05",
        0
@@ -4855,7 +4880,7 @@
      "lon": -77.07,
      "r": [
       [
-       2,
+       1,
        "2026-10-31",
        null,
        1
@@ -4868,13 +4893,13 @@
      "lon": -77.07,
      "r": [
       [
-       2,
+       1,
        "2026-10-31",
        null,
        1
       ],
       [
-       2,
+       1,
        "2026-10-31",
        null,
        1
@@ -4900,19 +4925,19 @@
      "lon": -77.062,
      "r": [
       [
-       2,
+       1,
        "2026-10-31",
        null,
        1
       ],
       [
-       2,
+       1,
        "2026-10-16",
        "2026-10-20",
        0
       ],
       [
-       1,
+       0,
        "2026-10-16",
        "2026-10-26",
        0
@@ -4925,19 +4950,19 @@
      "lon": -77.069,
      "r": [
       [
-       2,
+       1,
        "2026-10-31",
        null,
        1
       ],
       [
-       2,
+       1,
        "2026-10-18",
        "2026-10-27",
        0
       ],
       [
-       2,
+       1,
        "2026-10-10",
        "2026-10-13",
        0
@@ -5056,39 +5081,33 @@
      "lon": -77.064,
      "r": [
       [
-       2,
+       1,
        "2026-10-30",
        null,
        1
       ],
       [
-       1,
+       0,
        "2026-10-26",
        "2026-10-30",
        0
       ],
       [
-       2,
+       1,
        "2026-10-23",
        "2026-10-27",
        0
       ],
       [
-       1,
+       0,
        "2026-10-20",
        "2026-10-26",
        0
       ],
       [
-       2,
+       1,
        "2026-10-16",
        "2026-10-20",
-       0
-      ],
-      [
-       2,
-       "2026-10-09",
-       "2026-10-13",
        0
       ]
      ]
@@ -5220,7 +5239,7 @@
      "lon": -77.058,
      "r": [
       [
-       2,
+       1,
        "2026-10-29",
        "2026-11-03",
        0
@@ -5372,7 +5391,7 @@
      "lon": -77.063,
      "r": [
       [
-       2,
+       1,
        "2026-10-26",
        "2026-11-03",
        0
@@ -5411,7 +5430,7 @@
      "lon": -77.07,
      "r": [
       [
-       1,
+       0,
        "2026-10-24",
        "2026-10-30",
        0
@@ -5424,7 +5443,7 @@
      "lon": -77.071,
      "r": [
       [
-       0,
+       2,
        "2026-10-24",
        "2026-11-06",
        0
@@ -5453,12 +5472,6 @@
        "2026-10-16",
        "2026-10-16",
        0
-      ],
-      [
-       32,
-       "2026-10-09",
-       null,
-       1
       ]
      ]
     },
@@ -5499,7 +5512,7 @@
        0
       ],
       [
-       2,
+       1,
        "2026-10-13",
        "2026-10-20",
        0
@@ -5512,7 +5525,7 @@
      "lon": -77.06,
      "r": [
       [
-       0,
+       2,
        "2026-10-23",
        "2026-11-06",
        0
@@ -5525,7 +5538,7 @@
      "lon": -77.06,
      "r": [
       [
-       1,
+       0,
        "2026-10-23",
        "2026-10-30",
        0
@@ -5538,7 +5551,7 @@
      "lon": -77.068,
      "r": [
       [
-       1,
+       0,
        "2026-10-22",
        "2026-10-26",
        0
@@ -5557,7 +5570,7 @@
      "lon": -77.063,
      "r": [
       [
-       2,
+       1,
        "2026-10-22",
        "2026-10-27",
        0
@@ -5602,7 +5615,7 @@
      "lon": -77.071,
      "r": [
       [
-       1,
+       0,
        "2026-10-21",
        "2026-10-26",
        0
@@ -5641,15 +5654,9 @@
      "lon": -77.059,
      "r": [
       [
-       2,
+       1,
        "2026-10-20",
        "2026-10-27",
-       0
-      ],
-      [
-       2,
-       "2026-10-09",
-       "2026-10-13",
        0
       ]
      ]
@@ -5660,7 +5667,7 @@
      "lon": -77.061,
      "r": [
       [
-       1,
+       0,
        "2026-10-20",
        "2026-10-26",
        0
@@ -5673,13 +5680,13 @@
      "lon": -77.071,
      "r": [
       [
-       1,
+       0,
        "2026-10-20",
        "2026-10-26",
        0
       ],
       [
-       1,
+       0,
        "2026-10-13",
        "2026-10-19",
        0
@@ -5737,7 +5744,7 @@
      "lon": -77.07,
      "r": [
       [
-       2,
+       1,
        "2026-10-19",
        "2026-10-27",
        0
@@ -5776,7 +5783,7 @@
      "lon": -77.063,
      "r": [
       [
-       2,
+       1,
        "2026-10-17",
        "2026-10-20",
        0
@@ -5789,7 +5796,7 @@
      "lon": -77.061,
      "r": [
       [
-       2,
+       1,
        "2026-10-17",
        "2026-10-20",
        0
@@ -5821,22 +5828,9 @@
        1
       ],
       [
-       2,
+       1,
        "2026-10-16",
        "2026-10-20",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "3600 block of WARREN STREET NW",
-     "lat": 38.945,
-     "lon": -77.072,
-     "r": [
-      [
-       1,
-       "2026-10-15",
-       "2026-10-19",
        0
       ]
      ]
@@ -5873,7 +5867,7 @@
      "lon": -77.068,
      "r": [
       [
-       1,
+       0,
        "2026-10-14",
        "2026-10-19",
        0
@@ -5886,7 +5880,7 @@
      "lon": -77.072,
      "r": [
       [
-       2,
+       1,
        "2026-10-13",
        "2026-10-20",
        0
@@ -5988,56 +5982,17 @@
        1
       ]
      ]
-    },
-    {
-     "block": "2900 block of BRANDYWINE STREET NW",
-     "lat": 38.95,
-     "lon": -77.06,
-     "r": [
-      [
-       12,
-       "2026-10-09",
-       "2026-10-10",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "ALBEMARLE STREET NW AND RENO ROAD NW",
-     "lat": 38.948,
-     "lon": -77.073,
-     "r": [
-      [
-       30,
-       "2026-10-09",
-       "2026-10-09",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "4300 block of 36TH STREET NW",
-     "lat": 38.946,
-     "lon": -77.07,
-     "r": [
-      [
-       2,
-       "2026-10-09",
-       "2026-10-13",
-       0
-      ]
-     ]
     }
    ]
   }
  },
  "crime": {
-  "total": 10,
+  "total": 11,
   "previous_total": 13,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
-    "count": 8,
+    "count": 9,
     "previous": 11
    },
    {
@@ -6076,7 +6031,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-08T09:17:54Z",
+  "generated_at": "2026-11-09T09:23:16Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -6091,7 +6046,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Van Ness through OTR assessment neighborhoods Forest Hills, Wakefield and North Cleveland Park in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Van Ness boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-08): 46% of the 3,957 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Van Ness through OTR assessment neighborhoods Forest Hills, Wakefield and North Cleveland Park in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Van Ness boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-09): 46% of the 3,957 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -6112,7 +6067,7 @@
    "area_parcels": 3957,
    "area_share_inside": 0.455,
    "boundary_share_in_area": 1.0,
-   "measured": "2026-11-08"
+   "measured": "2026-11-09"
   },
   "primary": "house",
   "house": {
@@ -6366,7 +6321,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-08T09:17:54Z",
+  "generated_at": "2026-11-09T09:23:16Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -6386,11 +6341,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 26,
-   "starting_next_7d": 6,
-   "reserved_ft": 4114,
+   "active_this_week": 27,
+   "starting_next_7d": 7,
+   "reserved_ft": 4158,
    "long_running_90d": 7,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-08: newest permit issued 2026-11-08, newest record update 2026-11-08, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-09: newest permit issued 2026-11-09, newest record update 2026-11-09, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Dumpsters",
@@ -6406,7 +6361,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 7
+     "count": 8
     },
     {
      "type": "Events & reserved parking",
@@ -6461,13 +6416,21 @@
      "end": "2026-11-12",
      "ft": 88,
      "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "4300 block of Connecticut Avenue NW",
+     "start": "2026-11-16",
+     "end": "2026-11-20",
+     "ft": 44,
+     "hours": "8 am\u20134:30 pm"
     }
    ]
   },
   "trees": {
    "total": 1750,
    "species": 150,
-   "planted_5y": 177,
+   "planted_5y": 175,
    "empty_boxes": 16,
    "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (16). Not counted: 'Proposed' = planting scheduled (1), 'Conflict'/'Utility' = empty but blocked (57), 'Retired' = box removed (116). 'total' is boxes with status 'Plant' whose condition is not Dead.",
    "condition": {
@@ -6544,7 +6507,7 @@
    {
     "type": "Scheduled Yard Waste",
     "median_days": 7.66,
-    "city_median_days": 9.57,
+    "city_median_days": 9.55,
     "closed_n": 454
    },
    {
@@ -6568,7 +6531,7 @@
    {
     "type": "Recycling Collection - Missed",
     "median_days": 3.95,
-    "city_median_days": 4.71,
+    "city_median_days": 4.68,
     "closed_n": 186
    },
    {
@@ -6580,7 +6543,7 @@
    {
     "type": "Roadway Signs",
     "median_days": 65.13,
-    "city_median_days": 7.07,
+    "city_median_days": 7.06,
     "closed_n": 43
    },
    {
@@ -6593,7 +6556,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-08T09:17:54Z",
+  "generated_at": "2026-11-09T09:23:16Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -6726,7 +6689,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-08T09:17:54Z",
+  "generated_at": "2026-11-09T09:23:16Z",
   "archive_days": 180,
   "sources": [
    {
@@ -7156,8 +7119,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-08T09:17:54Z",
-  "today": "2026-11-08",
+  "generated_at": "2026-11-09T09:23:16Z",
+  "today": "2026-11-09",
   "days_ahead": 30,
   "sources": [
    {
@@ -7267,7 +7230,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-08T09:17:54Z",
+  "generated_at": "2026-11-09T09:23:16Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -17287,7 +17250,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-08T09:17:54Z",
+  "generated_at": "2026-11-09T09:23:16Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
