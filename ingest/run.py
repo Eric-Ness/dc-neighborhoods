@@ -88,11 +88,23 @@ def round_coord(value: float | None, places: int) -> float | None:
     return None if value is None else round(value, places)
 
 
+PERMIT_RETRY_WAIT = 20  # seconds before asking DC again after an empty permit answer
+
+
 def fetch_permits(geom: dict, now: float) -> list[dict]:
     start = now - PERMIT_DAYS * DAY
     rows = []
-    for layer in yearly_layers(PERMITS_TITLE, start, now):
-        rows += dcdata.query_features(layer, geom, dcdata.date_where("ISSUE_DATE", start), PERMIT_FIELDS, "ISSUE_DATE DESC")
+    # DC's server sometimes answers a busy moment with an empty result instead of an error, and an empty list
+    # fails --check and holds back every site's update for the night. Ask once more before trusting "none".
+    for attempt in range(2):
+        if attempt:
+            time.sleep(PERMIT_RETRY_WAIT)
+        for layer in yearly_layers(PERMITS_TITLE, start, now):
+            rows += dcdata.query_features(layer, geom, dcdata.date_where("ISSUE_DATE", start), PERMIT_FIELDS, "ISSUE_DATE DESC")
+        if rows:
+            break
+        if not attempt:
+            print(f"  permits came back empty; retrying in {PERMIT_RETRY_WAIT} s", flush=True)
     permits = []
     for r in rows:
         work = (r["DESC_OF_WORK"] or "").strip()
