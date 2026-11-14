@@ -1,7 +1,7 @@
 {
  "slug": "mountpleasant",
  "name": "Mount Pleasant",
- "generated_at": "2026-11-13T09:20:14Z",
+ "generated_at": "2026-11-14T09:17:25Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1044,19 +1044,6 @@
    "smd": "1D04"
   },
   {
-   "id": "E2701348",
-   "issued": "2026-11-09T05:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "1722 NEWTON ST NW 20010",
-   "work": "",
-   "zoning": "RF-1",
-   "lat": 38.934,
-   "lon": -77.04063,
-   "smd": "1D03"
-  },
-  {
    "id": "P2701292",
    "issued": "2026-11-09T05:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -1070,32 +1057,6 @@
    "smd": "1D05"
   },
   {
-   "id": "FB2700011",
-   "issued": "2026-11-09T05:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "BOILER",
-   "address": "3620 16TH ST NW 20010",
-   "work": "",
-   "zoning": "RA-4",
-   "lat": 38.93586,
-   "lon": -77.03698,
-   "smd": "1D02"
-  },
-  {
-   "id": "HO2700262",
-   "issued": "2026-11-09T05:00:00Z",
-   "group": "Home businesses",
-   "type": "HOME OCCUPATION",
-   "subtype": "NA",
-   "address": "3300 16TH ST NW 716 20010",
-   "work": "",
-   "zoning": "RA-4",
-   "lat": 38.93225,
-   "lon": -77.03681,
-   "smd": "1D06"
-  },
-  {
    "id": "B2608622",
    "issued": "2026-11-09T05:00:00Z",
    "group": "Renovation & repair",
@@ -1106,6 +1067,19 @@
    "zoning": "RF-1",
    "lat": 38.93172,
    "lon": -77.04563,
+   "smd": "1D01"
+  },
+  {
+   "id": "F2700029",
+   "issued": "2026-11-09T05:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "FENCE",
+   "address": "3168 18TH ST NW 20010",
+   "work": "HISTORIC\r\n\r\nINSTALL FENCE W/ GATE",
+   "zoning": "RF-1",
+   "lat": 38.93101,
+   "lon": -77.04156,
    "smd": "1D01"
   },
   {
@@ -1122,17 +1096,43 @@
    "smd": "1D03"
   },
   {
-   "id": "F2700029",
+   "id": "FB2700011",
    "issued": "2026-11-09T05:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "FENCE",
-   "address": "3168 18TH ST NW 20010",
-   "work": "HISTORIC\r\n\r\nINSTALL FENCE W/ GATE",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "BOILER",
+   "address": "3620 16TH ST NW 20010",
+   "work": "",
+   "zoning": "RA-4",
+   "lat": 38.93586,
+   "lon": -77.03698,
+   "smd": "1D02"
+  },
+  {
+   "id": "E2701348",
+   "issued": "2026-11-09T05:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "1722 NEWTON ST NW 20010",
+   "work": "",
    "zoning": "RF-1",
-   "lat": 38.93101,
-   "lon": -77.04156,
-   "smd": "1D01"
+   "lat": 38.934,
+   "lon": -77.04063,
+   "smd": "1D03"
+  },
+  {
+   "id": "HO2700262",
+   "issued": "2026-11-09T05:00:00Z",
+   "group": "Home businesses",
+   "type": "HOME OCCUPATION",
+   "subtype": "NA",
+   "address": "3300 16TH ST NW 716 20010",
+   "work": "",
+   "zoning": "RA-4",
+   "lat": 38.93225,
+   "lon": -77.03681,
+   "smd": "1D06"
   },
   {
    "id": "B2607776",
@@ -1161,19 +1161,6 @@
    "smd": "1D01"
   },
   {
-   "id": "SOL2700113",
-   "issued": "2026-11-05T05:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "SOLAR SYSTEM",
-   "address": "1851 NEWTON ST NW 20010",
-   "work": "Historic \r\nTo install 11.88 KWdc on the roof of the building.",
-   "zoning": "RF-1",
-   "lat": 38.93435,
-   "lon": -77.04285,
-   "smd": "1D03"
-  },
-  {
    "id": "P2701158",
    "issued": "2026-11-05T05:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -1185,6 +1172,19 @@
    "lat": 38.92745,
    "lon": -77.04005,
    "smd": "1D05"
+  },
+  {
+   "id": "SOL2700113",
+   "issued": "2026-11-05T05:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "SOLAR SYSTEM",
+   "address": "1851 NEWTON ST NW 20010",
+   "work": "Historic \r\nTo install 11.88 KWdc on the roof of the building.",
+   "zoning": "RF-1",
+   "lat": 38.93435,
+   "lon": -77.04285,
+   "smd": "1D03"
   },
   {
    "id": "P2701134",
@@ -1200,17 +1200,17 @@
    "smd": "1D06"
   },
   {
-   "id": "D2600564",
+   "id": "SOL2700121",
    "issued": "2026-11-04T05:00:00Z",
-   "group": "Demolition",
+   "group": "Renovation & repair",
    "type": "CONSTRUCTION",
-   "subtype": "DEMOLITION",
-   "address": "3222 19TH ST NW 20010",
-   "work": "HISTORIC\r\n\r\nALL DEMOLITION WORK IS INTERIOR AND NON-STRUCTURAL\r\nDEMOLISH KITCHEN CABINETRY AND APPLIANCES\r\nDEMOLISH ALL DOORS TRIMS AND FRAMES \r\nREMOVE PLUMBING FIXTURES AND MECHANICAL & ELECTRICAL DEVICES\r\nREMOVE ALL INTERIOR FINISHES INCLUDING FLOORING WALLS BASE AND\r\nTRIM PLATER AND CEILING DEMO ALL INTERIOR WALLS",
+   "subtype": "SOLAR SYSTEM",
+   "address": "1722 NEWTON ST NW 20010",
+   "work": "Historic\r\nTo install 8.55 KWdc on the roof of the building.",
    "zoning": "RF-1",
-   "lat": 38.93223,
-   "lon": -77.04446,
-   "smd": "1D01"
+   "lat": 38.934,
+   "lon": -77.04063,
+   "smd": "1D03"
   },
   {
    "id": "P2701111",
@@ -1226,30 +1226,30 @@
    "smd": "1D01"
   },
   {
-   "id": "SOL2700121",
+   "id": "D2600564",
    "issued": "2026-11-04T05:00:00Z",
-   "group": "Renovation & repair",
+   "group": "Demolition",
    "type": "CONSTRUCTION",
-   "subtype": "SOLAR SYSTEM",
-   "address": "1722 NEWTON ST NW 20010",
-   "work": "Historic\r\nTo install 8.55 KWdc on the roof of the building.",
+   "subtype": "DEMOLITION",
+   "address": "3222 19TH ST NW 20010",
+   "work": "HISTORIC\r\n\r\nALL DEMOLITION WORK IS INTERIOR AND NON-STRUCTURAL\r\nDEMOLISH KITCHEN CABINETRY AND APPLIANCES\r\nDEMOLISH ALL DOORS TRIMS AND FRAMES \r\nREMOVE PLUMBING FIXTURES AND MECHANICAL & ELECTRICAL DEVICES\r\nREMOVE ALL INTERIOR FINISHES INCLUDING FLOORING WALLS BASE AND\r\nTRIM PLATER AND CEILING DEMO ALL INTERIOR WALLS",
    "zoning": "RF-1",
-   "lat": 38.934,
-   "lon": -77.04063,
-   "smd": "1D03"
+   "lat": 38.93223,
+   "lon": -77.04446,
+   "smd": "1D01"
   },
   {
-   "id": "E2701135",
+   "id": "E2701132",
    "issued": "2026-11-02T05:00:00Z",
    "group": "Electrical, plumbing & mechanical",
    "type": "SUPPLEMENTAL",
    "subtype": "ELECTRICAL",
-   "address": "1648 NEWTON ST NW 20010",
-   "work": "",
+   "address": "1708 KENYON ST NW 20010",
+   "work": "Electrical Trade Permit",
    "zoning": "RF-1",
-   "lat": 38.93386,
-   "lon": -77.03836,
-   "smd": "1D06"
+   "lat": 38.9295,
+   "lon": -77.03938,
+   "smd": "1D05"
   },
   {
    "id": "P2701014",
@@ -1265,16 +1265,55 @@
    "smd": "1D05"
   },
   {
-   "id": "E2701132",
+   "id": "E2701135",
    "issued": "2026-11-02T05:00:00Z",
    "group": "Electrical, plumbing & mechanical",
    "type": "SUPPLEMENTAL",
    "subtype": "ELECTRICAL",
-   "address": "1708 KENYON ST NW 20010",
-   "work": "Electrical Trade Permit",
+   "address": "1648 NEWTON ST NW 20010",
+   "work": "",
    "zoning": "RF-1",
-   "lat": 38.9295,
-   "lon": -77.03938,
+   "lat": 38.93386,
+   "lon": -77.03836,
+   "smd": "1D06"
+  },
+  {
+   "id": "P2700985",
+   "issued": "2026-10-30T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "1733 PARK RD NW 20010",
+   "work": "",
+   "zoning": null,
+   "lat": 38.93269,
+   "lon": -77.03967,
+   "smd": "1D03"
+  },
+  {
+   "id": "P2700963",
+   "issued": "2026-10-30T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "3120 18TH ST NW 20010",
+   "work": "Plumbing trade Permit",
+   "zoning": "RF-1",
+   "lat": 38.93033,
+   "lon": -77.04159,
+   "smd": "1D01"
+  },
+  {
+   "id": "P2700969",
+   "issued": "2026-10-30T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "1746 IRVING ST NW 20010",
+   "work": "",
+   "zoning": "RF-1",
+   "lat": 38.9286,
+   "lon": -77.04085,
    "smd": "1D05"
   },
   {
@@ -1304,29 +1343,16 @@
    "smd": "1D03"
   },
   {
-   "id": "P2700985",
+   "id": "M2700420",
    "issued": "2026-10-30T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
    "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "1733 PARK RD NW 20010",
-   "work": "",
-   "zoning": null,
-   "lat": 38.93269,
-   "lon": -77.03967,
-   "smd": "1D03"
-  },
-  {
-   "id": "P2700969",
-   "issued": "2026-10-30T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "1746 IRVING ST NW 20010",
+   "subtype": "MECHANICAL",
+   "address": "1662 IRVING ST NW 20010",
    "work": "",
    "zoning": "RF-1",
    "lat": 38.9286,
-   "lon": -77.04085,
+   "lon": -77.03882,
    "smd": "1D05"
   },
   {
@@ -1343,32 +1369,6 @@
    "smd": "1D06"
   },
   {
-   "id": "P2700963",
-   "issued": "2026-10-30T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "3120 18TH ST NW 20010",
-   "work": "Plumbing trade Permit",
-   "zoning": "RF-1",
-   "lat": 38.93033,
-   "lon": -77.04159,
-   "smd": "1D01"
-  },
-  {
-   "id": "M2700420",
-   "issued": "2026-10-30T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "MECHANICAL",
-   "address": "1662 IRVING ST NW 20010",
-   "work": "",
-   "zoning": "RF-1",
-   "lat": 38.9286,
-   "lon": -77.03882,
-   "smd": "1D05"
-  },
-  {
    "id": "D2700042",
    "issued": "2026-10-29T04:00:00Z",
    "group": "Demolition",
@@ -1380,19 +1380,6 @@
    "lat": 38.93363,
    "lon": -77.04153,
    "smd": "1D03"
-  },
-  {
-   "id": "P2700935",
-   "issued": "2026-10-29T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "3221 ADAMS MILL RD NW 20010",
-   "work": "Plumbing trade Permit",
-   "zoning": "RF-1",
-   "lat": 38.93221,
-   "lon": -77.04608,
-   "smd": "1D01"
   },
   {
    "id": "B2504338-EXT-2",
@@ -1408,6 +1395,19 @@
    "smd": "1D05"
   },
   {
+   "id": "P2700935",
+   "issued": "2026-10-29T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "3221 ADAMS MILL RD NW 20010",
+   "work": "Plumbing trade Permit",
+   "zoning": "RF-1",
+   "lat": 38.93221,
+   "lon": -77.04608,
+   "smd": "1D01"
+  },
+  {
    "id": "B2606122",
    "issued": "2026-10-29T04:00:00Z",
    "group": "Renovation & repair",
@@ -1418,6 +1418,19 @@
    "zoning": "RA-4",
    "lat": 38.93467,
    "lon": -77.0368,
+   "smd": "1D06"
+  },
+  {
+   "id": "D2700011",
+   "issued": "2026-10-28T04:00:00Z",
+   "group": "Demolition",
+   "type": "CONSTRUCTION",
+   "subtype": "DEMOLITION",
+   "address": "1632 NEWTON ST NW 20010",
+   "work": "Historic\r\n\r\nDEMOLISH SOME INTERIOR WALLS, DOORS, KITCHEN CABINETS & FLOORING, RADIATORS THROUGHOUT AND FINISHES AS INDICATED IN PHOTOGRAPHS",
+   "zoning": "RF-1",
+   "lat": 38.93354,
+   "lon": -77.03765,
    "smd": "1D06"
   },
   {
@@ -1434,30 +1447,17 @@
    "smd": "1D01"
   },
   {
-   "id": "D2700011",
-   "issued": "2026-10-28T04:00:00Z",
-   "group": "Demolition",
-   "type": "CONSTRUCTION",
-   "subtype": "DEMOLITION",
-   "address": "1632 NEWTON ST NW 20010",
-   "work": "Historic\r\n\r\nDEMOLISH SOME INTERIOR WALLS, DOORS, KITCHEN CABINETS & FLOORING, RADIATORS THROUGHOUT AND FINISHES AS INDICATED IN PHOTOGRAPHS",
-   "zoning": "RF-1",
-   "lat": 38.93354,
-   "lon": -77.03765,
-   "smd": "1D06"
-  },
-  {
-   "id": "E2700861",
+   "id": "M2700341",
    "issued": "2026-10-27T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
    "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "1733 PARK RD NW 20010",
+   "subtype": "MECHANICAL",
+   "address": "3442 OAKWOOD TER NW 20010",
    "work": "",
-   "zoning": null,
-   "lat": 38.93269,
-   "lon": -77.03967,
-   "smd": "1D03"
+   "zoning": "RF-1",
+   "lat": 38.93526,
+   "lon": -77.03845,
+   "smd": "1D02"
   },
   {
    "id": "P2700841",
@@ -1473,6 +1473,19 @@
    "smd": "1D02"
   },
   {
+   "id": "E2700861",
+   "issued": "2026-10-27T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "1733 PARK RD NW 20010",
+   "work": "",
+   "zoning": null,
+   "lat": 38.93269,
+   "lon": -77.03967,
+   "smd": "1D03"
+  },
+  {
    "id": "F2700061",
    "issued": "2026-10-27T04:00:00Z",
    "group": "Renovation & repair",
@@ -1484,32 +1497,6 @@
    "lat": 38.93352,
    "lon": -77.04359,
    "smd": "1D03"
-  },
-  {
-   "id": "M2700341",
-   "issued": "2026-10-27T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "MECHANICAL",
-   "address": "3442 OAKWOOD TER NW 20010",
-   "work": "",
-   "zoning": "RF-1",
-   "lat": 38.93526,
-   "lon": -77.03845,
-   "smd": "1D02"
-  },
-  {
-   "id": "B2609050",
-   "issued": "2026-10-26T04:00:00Z",
-   "group": "Additions",
-   "type": "CONSTRUCTION",
-   "subtype": "ADDITION ALTERATION REPAIR",
-   "address": "1841 PARK RD NW 20010",
-   "work": "Renovations and rear addition to an existing 3-unit residential building to convert to a 2-unit flat, including mechanical, electrical, and plumbing systems, stoops, steps, walks, terraces, and associated appurtenances. 6,510 sf",
-   "zoning": "RF-1",
-   "lat": 38.93262,
-   "lon": -77.04274,
-   "smd": "1D01"
   },
   {
    "id": "BH2700476",
@@ -1525,6 +1512,19 @@
    "smd": "1D03"
   },
   {
+   "id": "B2609050",
+   "issued": "2026-10-26T04:00:00Z",
+   "group": "Additions",
+   "type": "CONSTRUCTION",
+   "subtype": "ADDITION ALTERATION REPAIR",
+   "address": "1841 PARK RD NW 20010",
+   "work": "Renovations and rear addition to an existing 3-unit residential building to convert to a 2-unit flat, including mechanical, electrical, and plumbing systems, stoops, steps, walks, terraces, and associated appurtenances. 6,510 sf",
+   "zoning": "RF-1",
+   "lat": 38.93262,
+   "lon": -77.04274,
+   "smd": "1D01"
+  },
+  {
    "id": "E2700799",
    "issued": "2026-10-25T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -1536,6 +1536,19 @@
    "lat": 38.93223,
    "lon": -77.03845,
    "smd": "1D04"
+  },
+  {
+   "id": "HO2700101",
+   "issued": "2026-10-23T04:00:00Z",
+   "group": "Home businesses",
+   "type": "HOME OCCUPATION",
+   "subtype": "NA",
+   "address": "1836 KENYON ST NW 20010",
+   "work": "Home Office of Licensed Professional - Nurse Practitioner",
+   "zoning": "RF-1",
+   "lat": 38.92952,
+   "lon": -77.04279,
+   "smd": "1D05"
   },
   {
    "id": "SOL2700097",
@@ -1562,19 +1575,6 @@
    "lat": 38.93293,
    "lon": -77.03858,
    "smd": "1D06"
-  },
-  {
-   "id": "HO2700101",
-   "issued": "2026-10-23T04:00:00Z",
-   "group": "Home businesses",
-   "type": "HOME OCCUPATION",
-   "subtype": "NA",
-   "address": "1836 KENYON ST NW 20010",
-   "work": "Home Office of Licensed Professional - Nurse Practitioner",
-   "zoning": "RF-1",
-   "lat": 38.92952,
-   "lon": -77.04279,
-   "smd": "1D05"
   },
   {
    "id": "B2700399",
@@ -1616,19 +1616,6 @@
    "smd": "1D06"
   },
   {
-   "id": "P2700549",
-   "issued": "2026-10-19T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "3421 BROWN ST NW 20010",
-   "work": "",
-   "zoning": "RF-1",
-   "lat": 38.93448,
-   "lon": -77.03724,
-   "smd": "1D06"
-  },
-  {
    "id": "B2700100",
    "issued": "2026-10-19T04:00:00Z",
    "group": "Renovation & repair",
@@ -1642,83 +1629,57 @@
    "smd": "1D05"
   },
   {
-   "id": "HO2700094",
-   "issued": "2026-10-15T04:00:00Z",
-   "group": "Home businesses",
-   "type": "HOME OCCUPATION",
-   "subtype": "NA",
-   "address": "3165 18TH ST NW 20010",
-   "work": "",
-   "zoning": "RF-1",
-   "lat": 38.93091,
-   "lon": -77.04103,
-   "smd": "1D01"
-  },
-  {
-   "id": "M2700186",
-   "issued": "2026-10-15T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "MECHANICAL",
-   "address": "3606 16TH ST NW 20010",
-   "work": "",
-   "zoning": "RA-4",
-   "lat": 38.93543,
-   "lon": -77.03677,
-   "smd": "1D02"
-  },
-  {
-   "id": "P2700458",
-   "issued": "2026-10-15T04:00:00Z",
+   "id": "P2700549",
+   "issued": "2026-10-19T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
    "type": "SUPPLEMENTAL",
    "subtype": "PLUMBING AND GAS",
-   "address": "3217 ADAMS MILL RD NW 20010",
-   "work": "Plumbing trade Permit",
+   "address": "3421 BROWN ST NW 20010",
+   "work": "",
    "zoning": "RF-1",
-   "lat": 38.93211,
-   "lon": -77.04599,
-   "smd": "1D01"
+   "lat": 38.93448,
+   "lon": -77.03724,
+   "smd": "1D06"
   }
  ],
  "requests": {
-  "total": 731,
-  "previous_total": 709,
+  "total": 704,
+  "previous_total": 717,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 151,
-    "previous": 134
+    "count": 150,
+    "previous": 138
    },
    {
     "type": "Bulk Collection",
-    "count": 114,
-    "previous": 102
+    "count": 113,
+    "previous": 100
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 79,
-    "previous": 77
+    "count": 76,
+    "previous": 78
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
-    "count": 35,
-    "previous": 34
+    "count": 34,
+    "previous": 26
    },
    {
     "type": "Illegal Dumping",
-    "count": 32,
-    "previous": 22
-   },
-   {
-    "type": "Graffiti Removal",
-    "count": 30,
-    "previous": 14
+    "count": 29,
+    "previous": 24
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 26,
-    "previous": 37
+    "count": 27,
+    "previous": 38
+   },
+   {
+    "type": "Graffiti Removal",
+    "count": 24,
+    "previous": 20
    },
    {
     "type": "Dead Animal Collection",
@@ -1727,18 +1688,18 @@
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
-    "count": 13,
+    "count": 14,
     "previous": 9
    },
    {
-    "type": "Sanitation Enforcement",
-    "count": 12,
-    "previous": 18
+    "type": "Trash Collection - Missed",
+    "count": 13,
+    "previous": 15
    },
    {
     "type": "Roadway Signs",
     "count": 12,
-    "previous": 21
+    "previous": 19
    },
    {
     "type": "Public Space Litter Can-Collection",
@@ -1746,29 +1707,24 @@
     "previous": 8
    },
    {
-    "type": "DOB - Vacant Private Property Inspection",
-    "count": 11,
-    "previous": 10
+    "type": "Sanitation Enforcement",
+    "count": 9,
+    "previous": 20
    },
    {
     "type": "Residential Parking Permit Violation",
-    "count": 10,
-    "previous": 9
-   },
-   {
-    "type": "Trash Collection - Missed",
     "count": 9,
-    "previous": 14
+    "previous": 10
    },
    {
     "type": "Recycling Collection - Missed",
     "count": 9,
-    "previous": 10
+    "previous": 8
    },
    {
-    "type": "Tree Removal",
+    "type": "Container Removal",
     "count": 9,
-    "previous": 18
+    "previous": 16
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -1776,24 +1732,9 @@
     "previous": 1
    },
    {
-    "type": "Tree Pruning",
-    "count": 8,
-    "previous": 9
-   },
-   {
-    "type": "Container Removal",
-    "count": 8,
-    "previous": 17
-   },
-   {
     "type": "Abandoned Vehicle - On Public Property",
     "count": 8,
-    "previous": 10
-   },
-   {
-    "type": "Abandoned Bicycle",
-    "count": 7,
-    "previous": 2
+    "previous": 8
    },
    {
     "type": "Sidewalk Repair",
@@ -1801,14 +1742,19 @@
     "previous": 2
    },
    {
-    "type": "Supercan - Delivery",
+    "type": "Tree Pruning",
     "count": 7,
-    "previous": 15
+    "previous": 10
    },
    {
-    "type": "Streetlight Repair Investigation",
-    "count": 6,
-    "previous": 2
+    "type": "Supercan - Delivery",
+    "count": 7,
+    "previous": 14
+   },
+   {
+    "type": "DOB - Vacant Private Property Inspection",
+    "count": 7,
+    "previous": 13
    },
    {
     "type": "Trash Cart - Delivery",
@@ -1821,12 +1767,22 @@
     "previous": 4
    },
    {
-    "type": "Tree Planting",
-    "count": 5,
-    "previous": 7
+    "type": "Traffic Safety Input",
+    "count": 6,
+    "previous": 6
+   },
+   {
+    "type": "Tree Removal",
+    "count": 6,
+    "previous": 19
    },
    {
     "type": "Rat Replacement Containers",
+    "count": 5,
+    "previous": 3
+   },
+   {
+    "type": "Streetlight Repair Investigation",
     "count": 5,
     "previous": 3
    },
@@ -1836,24 +1792,19 @@
     "previous": 2
    },
    {
-    "type": "Traffic Safety Input",
+    "type": "DMV - Drivers License/ID Issues",
     "count": 5,
-    "previous": 6
+    "previous": 5
+   },
+   {
+    "type": "Abandoned Bicycle",
+    "count": 5,
+    "previous": 4
    },
    {
     "type": "Recycling Cart Delivery",
     "count": 5,
-    "previous": 7
-   },
-   {
-    "type": "Missed Curbside Compost Collection",
-    "count": 4,
-    "previous": 2
-   },
-   {
-    "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
-    "count": 4,
-    "previous": 3
+    "previous": 6
    },
    {
     "type": "Public Space Inspection",
@@ -1866,9 +1817,9 @@
     "previous": 2
    },
    {
-    "type": "DMV - Drivers License/ID Issues",
-    "count": 4,
-    "previous": 5
+    "type": "Tree Planting",
+    "count": 3,
+    "previous": 9
    },
    {
     "type": "DC Government Information",
@@ -1881,14 +1832,19 @@
     "previous": 1
    },
    {
+    "type": "Missed Curbside Compost Collection",
+    "count": 3,
+    "previous": 2
+   },
+   {
     "type": "DOEE - LIHEAP",
     "count": 3,
     "previous": 0
    },
    {
-    "type": "Vacant Lot - Public Property Only",
-    "count": 2,
-    "previous": 3
+    "type": "Leaf  Collection Missed",
+    "count": 3,
+    "previous": 0
    },
    {
     "type": "DOEE - Engine Idling Tips",
@@ -1898,7 +1854,12 @@
    {
     "type": "Resident Parking Permit",
     "count": 2,
-    "previous": 2
+    "previous": 0
+   },
+   {
+    "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
+    "count": 2,
+    "previous": 5
    },
    {
     "type": "Recycling Cart - Repair",
@@ -1908,21 +1869,11 @@
    {
     "type": "Tree Inspection",
     "count": 2,
-    "previous": 14
+    "previous": 13
    },
    {
     "type": "Supercan - Repair",
     "count": 2,
-    "previous": 0
-   },
-   {
-    "type": "Leaf  Collection Missed",
-    "count": 2,
-    "previous": 0
-   },
-   {
-    "type": "DOEE - Report Construction Erosion Runoff",
-    "count": 1,
     "previous": 0
    },
    {
@@ -1933,7 +1884,7 @@
    {
     "type": "OCTFME - Down Cable Wires",
     "count": 1,
-    "previous": 2
+    "previous": 1
    },
    {
     "type": "DGS - Playground Repair",
@@ -1971,6 +1922,11 @@
     "previous": 3
    },
    {
+    "type": "Vacant Lot - Public Property Only",
+    "count": 1,
+    "previous": 4
+   },
+   {
     "type": "FEMS - Fire Safety Inspection",
     "count": 1,
     "previous": 0
@@ -1986,8 +1942,238 @@
     "previous": 1
    }
   ],
-  "open": 179,
+  "open": 150,
   "recent": [
+   {
+    "type": "Trash Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-14T03:47:21Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3100 block of MOUNT PLEASANT STREET NW",
+    "lat": 38.929,
+    "lon": -77.037
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "agency": "DMV",
+    "added": "2026-11-13T21:31:59Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3400 block of MOUNT PLEASANT STREET NW",
+    "lat": 38.935,
+    "lon": -77.04
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-13T21:20:42Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1900 block of PARK ROAD NW",
+    "lat": 38.933,
+    "lon": -77.045
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-13T21:20:24Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3100 block of 17TH STREET NW",
+    "lat": 38.93,
+    "lon": -77.039
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-13T20:58:32Z",
+    "resolved": "2026-11-13T21:36:12Z",
+    "status": "Closed",
+    "block": "3200 block of MOUNT PLEASANT STREET NW",
+    "lat": 38.932,
+    "lon": -77.038
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-13T20:11:47Z",
+    "resolved": "2026-11-13T21:45:04Z",
+    "status": "Closed",
+    "block": "3000 block of MOUNT PLEASANT STREET NW",
+    "lat": 38.928,
+    "lon": -77.037
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "agency": "DDOT",
+    "added": "2026-11-13T19:45:22Z",
+    "resolved": "2026-11-13T19:50:59Z",
+    "status": "Closed",
+    "block": "3100 block of 18TH STREET NW",
+    "lat": 38.931,
+    "lon": -77.041
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-13T19:39:02Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3400 block of OAKWOOD TERRACE NW",
+    "lat": 38.935,
+    "lon": -77.038
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-13T19:35:13Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1700 block of NEWTON STREET NW",
+    "lat": 38.934,
+    "lon": -77.041
+   },
+   {
+    "type": "Container Removal",
+    "agency": "DPW",
+    "added": "2026-11-13T19:00:24Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1600 block of NEWTON STREET NW",
+    "lat": 38.934,
+    "lon": -77.038
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-13T17:59:59Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1800 block of IRVING STREET NW",
+    "lat": 38.929,
+    "lon": -77.043
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-13T17:19:00Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3300 block of 17TH STREET NW",
+    "lat": 38.934,
+    "lon": -77.039
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-13T16:44:25Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3100 block of 18TH STREET NW",
+    "lat": 38.93,
+    "lon": -77.041
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-13T15:53:50Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3200 block of 17TH STREET NW",
+    "lat": 38.932,
+    "lon": -77.039
+   },
+   {
+    "type": "Recycling Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-13T15:28:34Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3300 block of 18TH STREET NW",
+    "lat": 38.934,
+    "lon": -77.042
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "agency": "DOH",
+    "added": "2026-11-13T15:15:54Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1800 block of NEWTON STREET NW",
+    "lat": 38.934,
+    "lon": -77.042
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-13T15:13:56Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1800 block of NEWTON STREET NW",
+    "lat": 38.934,
+    "lon": -77.042
+   },
+   {
+    "type": "DC Health Rodent & Vector Control",
+    "agency": "DOH",
+    "added": "2026-11-13T14:42:24Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3300 block of MOUNT PLEASANT STREET NW",
+    "lat": 38.933,
+    "lon": -77.04
+   },
+   {
+    "type": "Traffic Safety Input",
+    "agency": "DDOT",
+    "added": "2026-11-13T13:59:19Z",
+    "resolved": "2026-11-13T14:05:54Z",
+    "status": "Closed",
+    "block": "16TH STREET NW AND IRVING STREET NW",
+    "lat": 38.929,
+    "lon": -77.036
+   },
+   {
+    "type": "Leaf  Collection Missed",
+    "agency": "DPW",
+    "added": "2026-11-13T13:35:07Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3300 block of 17TH STREET NW",
+    "lat": 38.933,
+    "lon": -77.039
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-13T13:33:10Z",
+    "resolved": "2026-11-13T15:09:11Z",
+    "status": "Closed",
+    "block": "1600 block of MONROE STREET NW",
+    "lat": 38.934,
+    "lon": -77.039
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-13T13:27:34Z",
+    "resolved": "2026-11-13T15:24:11Z",
+    "status": "Closed",
+    "block": "1700 block of PARK ROAD NW",
+    "lat": 38.933,
+    "lon": -77.039
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-13T12:53:39Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1600 block of MONROE STREET NW",
+    "lat": 38.933,
+    "lon": -77.037
+   },
    {
     "type": "Scheduled Yard Waste",
     "agency": "DPW",
@@ -2002,8 +2188,8 @@
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "agency": "DDOT",
     "added": "2026-11-13T01:15:03Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-13T16:55:57Z",
+    "status": "Closed",
     "block": "1900 block of PARK ROAD NW",
     "lat": 38.933,
     "lon": -77.045
@@ -2052,8 +2238,8 @@
     "type": "Recycling Collection - Missed",
     "agency": "DPW",
     "added": "2026-11-12T22:39:28Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-13T15:11:30Z",
+    "status": "Closed",
     "block": "1600 block of IRVING STREET NW",
     "lat": 38.929,
     "lon": -77.038
@@ -2092,8 +2278,8 @@
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "agency": "DDOT",
     "added": "2026-11-12T17:25:10Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-13T13:15:54Z",
+    "status": "Closed",
     "block": "3500 block of 16TH STREET NW",
     "lat": 38.935,
     "lon": -77.037
@@ -2102,8 +2288,8 @@
     "type": "Abandoned Vehicle - On Public Property",
     "agency": "DPW",
     "added": "2026-11-12T16:59:28Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-13T16:36:06Z",
+    "status": "Closed",
     "block": "1600 block of KILBOURNE PLACE NW",
     "lat": 38.931,
     "lon": -77.039
@@ -2257,254 +2443,28 @@
     "block": "1700 block of HARVARD STREET NW",
     "lat": 38.927,
     "lon": -77.041
-   },
-   {
-    "type": "Leaf  Collection Missed",
-    "agency": "DPW",
-    "added": "2026-11-11T15:37:25Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2000 block of KLINGLE ROAD NW",
-    "lat": 38.933,
-    "lon": -77.046
-   },
-   {
-    "type": "Tree Pruning",
-    "agency": "DDOT",
-    "added": "2026-11-11T15:09:47Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "1700 block of LAMONT STREET NW",
-    "lat": 38.931,
-    "lon": -77.041
-   },
-   {
-    "type": "Graffiti Removal",
-    "agency": "DPW",
-    "added": "2026-11-11T14:35:57Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3200 block of 18TH STREET NW",
-    "lat": 38.932,
-    "lon": -77.042
-   },
-   {
-    "type": "Abandoned Vehicle - On Public Property",
-    "agency": "DPW",
-    "added": "2026-11-11T14:04:00Z",
-    "resolved": null,
-    "status": "Open (Duplicate)",
-    "block": "1800 block of IRVING STREET NW",
-    "lat": 38.929,
-    "lon": -77.044
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-11T13:44:31Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1600 block of MONROE STREET NW",
-    "lat": 38.933,
-    "lon": -77.038
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-11T13:10:36Z",
-    "resolved": "2026-11-11T14:33:15Z",
-    "status": "Closed",
-    "block": "3000 block of MOUNT PLEASANT STREET NW",
-    "lat": 38.928,
-    "lon": -77.037
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-11-11T01:51:11Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1600 block of IRVING STREET NW",
-    "lat": 38.929,
-    "lon": -77.037
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-11-11T01:11:21Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3600 block of 16TH STREET NW",
-    "lat": 38.935,
-    "lon": -77.037
-   },
-   {
-    "type": "Graffiti Removal",
-    "agency": "DPW",
-    "added": "2026-11-11T00:56:50Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3100 block of MOUNT PLEASANT STREET NW",
-    "lat": 38.931,
-    "lon": -77.038
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-11T00:31:48Z",
-    "resolved": "2026-11-11T01:27:05Z",
-    "status": "Closed",
-    "block": "3600 block of 16TH STREET NW",
-    "lat": 38.936,
-    "lon": -77.037
-   },
-   {
-    "type": "DMV - Drivers License/ID Issues",
-    "agency": "DMV",
-    "added": "2026-11-10T23:53:52Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3600 block of 16TH STREET NW",
-    "lat": 38.936,
-    "lon": -77.037
-   },
-   {
-    "type": "Pothole",
-    "agency": "DDOT",
-    "added": "2026-11-10T23:22:23Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "1600 block of LAMONT STREET NW",
-    "lat": 38.931,
-    "lon": -77.037
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-10T22:15:43Z",
-    "resolved": "2026-11-10T22:54:05Z",
-    "status": "Closed",
-    "block": "3300 block of 18TH STREET NW",
-    "lat": 38.933,
-    "lon": -77.041
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-10T20:42:20Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1800 block of 1/2 INGLESIDE TERRACE NW",
-    "lat": 38.935,
-    "lon": -77.044
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-10T20:41:13Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1800 block of 1/2 INGLESIDE TERRACE NW",
-    "lat": 38.935,
-    "lon": -77.044
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-11-10T20:34:13Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1700 block of KILBOURNE PLACE NW",
-    "lat": 38.931,
-    "lon": -77.039
-   },
-   {
-    "type": "Recycling Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-11-10T20:30:23Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1800 block of INGLESIDE TERRACE NW",
-    "lat": 38.935,
-    "lon": -77.044
-   },
-   {
-    "type": "Leaf  Collection Missed",
-    "agency": "DPW",
-    "added": "2026-11-10T20:02:15Z",
-    "resolved": "2026-11-11T16:45:15Z",
-    "status": "Closed",
-    "block": "3400 block of OAKWOOD TERRACE NW",
-    "lat": 38.935,
-    "lon": -77.038
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-10T19:55:25Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1800 block of IRVING STREET NW",
-    "lat": 38.929,
-    "lon": -77.043
-   },
-   {
-    "type": "Tree Removal",
-    "agency": "DDOT",
-    "added": "2026-11-10T19:14:45Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "1700 block of HARVARD STREET NW",
-    "lat": 38.927,
-    "lon": -77.04
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-11-10T19:11:02Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1700 block of HARVARD STREET NW",
-    "lat": 38.927,
-    "lon": -77.04
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-10T17:17:59Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3400 block of BROWN STREET NW",
-    "lat": 38.934,
-    "lon": -77.037
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-10T17:07:21Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1600 block of PARK ROAD NW",
-    "lat": 38.932,
-    "lon": -77.038
    }
   ],
   "mapped": {
    "types": [
-    "Scheduled Yard Waste",
-    "Traffic Lights and Pedestrian Walk Signals",
+    "Trash Collection - Missed",
+    "DMV - Drivers License/ID Issues",
     "Bulk Collection",
     "Parking Enforcement",
+    "Dockless Vehicle Parking Complaint",
+    "Scheduled Yard Waste",
+    "Container Removal",
     "Recycling Collection - Missed",
     "DC Health Rodent & Vector Control",
+    "Traffic Safety Input",
+    "Leaf  Collection Missed",
+    "Out of State Parking Violation (ROSA)",
+    "Traffic Lights and Pedestrian Walk Signals",
     "Abandoned Vehicle - On Public Property",
     "Roadway Repair",
     "Streetlight Repair Investigation",
     "Tree Pruning",
-    "Leaf  Collection Missed",
     "Graffiti Removal",
-    "Trash Collection - Missed",
-    "DMV - Drivers License/ID Issues",
     "Pothole",
     "Illegal Dumping",
     "Tree Removal",
@@ -2512,14 +2472,10 @@
     "Sidewalk Repair",
     "Supercan - Delivery",
     "Parking Meter Repair",
-    "Traffic Safety Input",
-    "Dockless Vehicle Parking Complaint",
     "Tree Planting",
     "Dead Animal Collection",
     "Roadway Signs",
     "DOB - Vacant Private Property Inspection",
-    "Out of State Parking Violation (ROSA)",
-    "Container Removal",
     "Abandoned Bicycle",
     "Supercan - Repair",
     "Public Space Inspection",
@@ -2549,14 +2505,106 @@
     "Abandoned Vehicle - On Private Property",
     "DGS - Playground Repair",
     "OCTFME - Down Cable Wires",
-    "DC Water - Customer Flooding",
-    "DOEE - Report Construction Erosion Runoff"
+    "DC Water - Customer Flooding"
    ],
    "blocks": [
     {
-     "block": "1800 block of LAMONT STREET NW",
-     "lat": 38.932,
-     "lon": -77.043,
+     "block": "3100 block of MOUNT PLEASANT STREET NW",
+     "lat": 38.929,
+     "lon": -77.037,
+     "r": [
+      [
+       0,
+       "2026-11-14",
+       null,
+       1
+      ],
+      [
+       29,
+       "2026-11-04",
+       "2026-11-10",
+       0
+      ],
+      [
+       17,
+       "2026-11-04",
+       "2026-11-09",
+       0
+      ],
+      [
+       3,
+       "2026-10-23",
+       "2026-10-23",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3400 block of MOUNT PLEASANT STREET NW",
+     "lat": 38.935,
+     "lon": -77.04,
+     "r": [
+      [
+       1,
+       "2026-11-13",
+       null,
+       1
+      ],
+      [
+       2,
+       "2026-10-28",
+       "2026-11-02",
+       0
+      ],
+      [
+       5,
+       "2026-10-18",
+       "2026-10-26",
+       0
+      ],
+      [
+       2,
+       "2026-10-18",
+       "2026-10-27",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1900 block of PARK ROAD NW",
+     "lat": 38.933,
+     "lon": -77.045,
+     "r": [
+      [
+       2,
+       "2026-11-13",
+       null,
+       1
+      ],
+      [
+       12,
+       "2026-11-13",
+       "2026-11-13",
+       0
+      ],
+      [
+       5,
+       "2026-10-28",
+       "2026-11-09",
+       0
+      ],
+      [
+       30,
+       "2026-10-27",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "3100 block of 17TH STREET NW",
+     "lat": 38.93,
+     "lon": -77.039,
      "r": [
       [
        0,
@@ -2565,19 +2613,926 @@
        1
       ],
       [
+       3,
+       "2026-10-30",
+       "2026-10-30",
+       0
+      ],
+      [
+       3,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       3,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
        5,
-       "2026-11-12",
+       "2026-10-26",
+       "2026-11-02",
+       0
+      ],
+      [
+       2,
+       "2026-10-25",
+       "2026-11-02",
+       0
+      ],
+      [
+       2,
+       "2026-10-25",
+       "2026-11-02",
+       0
+      ],
+      [
+       34,
+       "2026-10-24",
+       "2026-10-24",
+       0
+      ],
+      [
+       3,
+       "2026-10-24",
+       "2026-10-24",
+       0
+      ],
+      [
+       42,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ],
+      [
+       5,
+       "2026-10-21",
+       "2026-10-26",
+       0
+      ],
+      [
+       42,
+       "2026-10-17",
+       "2026-10-19",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3200 block of MOUNT PLEASANT STREET NW",
+     "lat": 38.932,
+     "lon": -77.038,
+     "r": [
+      [
+       3,
+       "2026-11-13",
+       "2026-11-13",
+       0
+      ],
+      [
+       17,
+       "2026-11-09",
+       "2026-11-10",
+       1
+      ],
+      [
+       19,
+       "2026-11-07",
+       "2026-11-10",
+       0
+      ],
+      [
+       3,
+       "2026-10-28",
+       "2026-10-29",
+       0
+      ],
+      [
+       3,
+       "2026-10-28",
+       "2026-10-29",
+       0
+      ],
+      [
+       11,
+       "2026-10-28",
+       "2026-10-29",
+       0
+      ],
+      [
+       3,
+       "2026-10-27",
+       "2026-10-27",
+       0
+      ],
+      [
+       17,
+       "2026-10-24",
+       "2026-11-10",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3000 block of MOUNT PLEASANT STREET NW",
+     "lat": 38.928,
+     "lon": -77.037,
+     "r": [
+      [
+       3,
+       "2026-11-13",
+       "2026-11-13",
+       0
+      ],
+      [
+       3,
+       "2026-11-11",
+       "2026-11-11",
+       0
+      ],
+      [
+       22,
+       "2026-11-10",
+       null,
+       1
+      ],
+      [
+       24,
+       "2026-11-10",
+       "2026-11-10",
+       0
+      ],
+      [
+       3,
+       "2026-11-07",
+       "2026-11-07",
+       0
+      ],
+      [
+       3,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       3,
+       "2026-11-04",
+       "2026-11-04",
+       0
+      ],
+      [
+       3,
+       "2026-10-27",
+       "2026-10-27",
+       0
+      ],
+      [
+       3,
+       "2026-10-26",
+       "2026-10-26",
+       0
+      ],
+      [
+       3,
+       "2026-10-25",
+       "2026-10-25",
+       0
+      ],
+      [
+       26,
+       "2026-10-24",
+       "2026-10-28",
+       0
+      ],
+      [
+       26,
+       "2026-10-20",
+       "2026-10-22",
+       0
+      ],
+      [
+       14,
+       "2026-10-16",
+       "2026-11-04",
+       0
+      ],
+      [
+       31,
+       "2026-10-15",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "3100 block of 18TH STREET NW",
+     "lat": 38.931,
+     "lon": -77.041,
+     "r": [
+      [
+       4,
+       "2026-11-13",
+       "2026-11-13",
+       0
+      ],
+      [
+       4,
+       "2026-11-07",
+       "2026-11-07",
+       0
+      ],
+      [
+       3,
+       "2026-10-21",
+       "2026-10-21",
+       0
+      ],
+      [
+       33,
+       "2026-10-15",
+       "2026-11-13",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3400 block of OAKWOOD TERRACE NW",
+     "lat": 38.935,
+     "lon": -77.038,
+     "r": [
+      [
+       5,
+       "2026-11-13",
+       null,
+       1
+      ],
+      [
+       10,
+       "2026-11-10",
+       "2026-11-11",
+       0
+      ],
+      [
+       2,
+       "2026-11-02",
+       "2026-11-06",
+       0
+      ],
+      [
+       20,
+       "2026-10-30",
+       null,
+       1
+      ],
+      [
+       15,
+       "2026-10-19",
+       "2026-10-20",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1700 block of NEWTON STREET NW",
+     "lat": 38.934,
+     "lon": -77.041,
+     "r": [
+      [
+       0,
+       "2026-11-13",
+       null,
+       1
+      ],
+      [
+       34,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       3,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       8,
+       "2026-10-30",
+       "2026-11-02",
+       0
+      ],
+      [
+       35,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       3,
+       "2026-10-27",
+       "2026-10-27",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1600 block of NEWTON STREET NW",
+     "lat": 38.934,
+     "lon": -77.038,
+     "r": [
+      [
+       6,
+       "2026-11-13",
        null,
        1
       ],
       [
        5,
+       "2026-11-11",
+       null,
+       1
+      ],
+      [
+       5,
+       "2026-11-08",
+       null,
+       1
+      ],
+      [
+       11,
+       "2026-11-06",
+       "2026-11-09",
+       0
+      ],
+      [
+       11,
+       "2026-10-29",
+       "2026-10-30",
+       0
+      ],
+      [
+       2,
+       "2026-10-26",
+       "2026-11-02",
+       0
+      ],
+      [
+       52,
+       "2026-10-24",
+       null,
+       1
+      ],
+      [
+       3,
+       "2026-10-24",
+       "2026-10-24",
+       0
+      ],
+      [
+       53,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       53,
+       "2026-10-20",
+       "2026-11-13",
+       0
+      ],
+      [
+       11,
+       "2026-10-19",
+       "2026-10-20",
+       0
+      ],
+      [
+       11,
+       "2026-10-19",
+       "2026-10-20",
+       0
+      ],
+      [
+       5,
+       "2026-10-16",
+       "2026-10-26",
+       0
+      ],
+      [
+       5,
+       "2026-10-15",
+       "2026-10-26",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1800 block of IRVING STREET NW",
+     "lat": 38.929,
+     "lon": -77.043,
+     "r": [
+      [
+       2,
+       "2026-11-13",
+       null,
+       1
+      ],
+      [
+       2,
+       "2026-11-10",
+       "2026-11-13",
+       0
+      ],
+      [
+       2,
+       "2026-11-07",
+       "2026-11-13",
+       0
+      ],
+      [
+       2,
+       "2026-11-01",
+       "2026-11-06",
+       0
+      ],
+      [
+       2,
+       "2026-10-29",
+       "2026-11-02",
+       0
+      ],
+      [
+       55,
+       "2026-10-21",
+       "2026-10-22",
+       0
+      ],
+      [
+       35,
+       "2026-10-21",
+       "2026-10-21",
+       0
+      ],
+      [
+       2,
+       "2026-10-19",
+       "2026-10-27",
+       0
+      ],
+      [
+       16,
+       "2026-10-15",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "3300 block of 17TH STREET NW",
+     "lat": 38.934,
+     "lon": -77.039,
+     "r": [
+      [
+       5,
+       "2026-11-13",
+       null,
+       1
+      ],
+      [
+       11,
+       "2026-10-19",
+       "2026-10-20",
+       0
+      ],
+      [
+       19,
+       "2026-10-19",
+       "2026-10-23",
+       0
+      ],
+      [
+       5,
+       "2026-10-17",
+       "2026-10-26",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3100 block of 18TH STREET NW",
+     "lat": 38.93,
+     "lon": -77.041,
+     "r": [
+      [
+       0,
+       "2026-11-13",
+       null,
+       1
+      ],
+      [
+       3,
+       "2026-11-01",
+       "2026-11-01",
+       0
+      ],
+      [
+       3,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3200 block of 17TH STREET NW",
+     "lat": 38.932,
+     "lon": -77.039,
+     "r": [
+      [
+       0,
+       "2026-11-13",
+       null,
+       1
+      ],
+      [
+       3,
+       "2026-11-08",
+       "2026-11-08",
+       0
+      ],
+      [
+       36,
+       "2026-11-05",
+       "2026-11-05",
+       0
+      ],
+      [
+       20,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       20,
+       "2026-10-26",
+       "2026-10-28",
+       0
+      ],
+      [
+       3,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3300 block of 18TH STREET NW",
+     "lat": 38.934,
+     "lon": -77.042,
+     "r": [
+      [
+       7,
+       "2026-11-13",
+       null,
+       1
+      ],
+      [
+       42,
+       "2026-11-02",
+       "2026-11-03",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1800 block of NEWTON STREET NW",
+     "lat": 38.934,
+     "lon": -77.042,
+     "r": [
+      [
+       8,
+       "2026-11-13",
+       null,
+       1
+      ],
+      [
+       2,
+       "2026-11-13",
+       null,
+       1
+      ],
+      [
+       2,
+       "2026-11-03",
+       "2026-11-06",
+       0
+      ],
+      [
+       2,
+       "2026-10-28",
+       "2026-11-02",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3300 block of MOUNT PLEASANT STREET NW",
+     "lat": 38.933,
+     "lon": -77.04,
+     "r": [
+      [
+       8,
+       "2026-11-13",
+       null,
+       1
+      ],
+      [
+       2,
+       "2026-11-03",
+       "2026-11-06",
+       0
+      ],
+      [
+       44,
+       "2026-11-03",
+       null,
+       1
+      ],
+      [
+       5,
+       "2026-10-21",
+       "2026-10-26",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "16TH STREET NW AND IRVING STREET NW",
+     "lat": 38.929,
+     "lon": -77.036,
+     "r": [
+      [
+       9,
+       "2026-11-13",
+       "2026-11-13",
+       0
+      ],
+      [
+       27,
+       "2026-10-23",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "3300 block of 17TH STREET NW",
+     "lat": 38.933,
+     "lon": -77.039,
+     "r": [
+      [
+       10,
+       "2026-11-13",
+       null,
+       1
+      ],
+      [
+       3,
+       "2026-11-10",
+       "2026-11-10",
+       0
+      ],
+      [
+       2,
+       "2026-11-03",
+       "2026-11-06",
+       0
+      ],
+      [
+       11,
        "2026-11-01",
        "2026-11-02",
        0
       ],
       [
+       19,
+       "2026-10-26",
+       "2026-10-28",
+       0
+      ],
+      [
+       2,
+       "2026-10-25",
+       "2026-11-02",
+       0
+      ],
+      [
+       3,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ],
+      [
+       2,
+       "2026-10-20",
+       "2026-10-27",
+       0
+      ],
+      [
        5,
+       "2026-10-19",
+       "2026-10-26",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1600 block of MONROE STREET NW",
+     "lat": 38.934,
+     "lon": -77.039,
+     "r": [
+      [
+       3,
+       "2026-11-13",
+       "2026-11-13",
+       0
+      ],
+      [
+       3,
+       "2026-11-12",
+       "2026-11-12",
+       0
+      ],
+      [
+       11,
+       "2026-11-06",
+       "2026-11-09",
+       0
+      ],
+      [
+       3,
+       "2026-10-30",
+       "2026-10-30",
+       0
+      ],
+      [
+       3,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       26,
+       "2026-10-28",
+       "2026-10-29",
+       0
+      ],
+      [
+       3,
+       "2026-10-27",
+       "2026-10-27",
+       0
+      ],
+      [
+       3,
+       "2026-10-26",
+       "2026-10-26",
+       0
+      ],
+      [
+       3,
+       "2026-10-24",
+       "2026-10-24",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1700 block of PARK ROAD NW",
+     "lat": 38.933,
+     "lon": -77.039,
+     "r": [
+      [
+       3,
+       "2026-11-13",
+       "2026-11-13",
+       0
+      ],
+      [
+       9,
+       "2026-11-09",
+       "2026-11-09",
+       0
+      ],
+      [
+       28,
+       "2026-11-09",
+       null,
+       1
+      ],
+      [
+       28,
+       "2026-10-24",
+       "2026-10-27",
+       0
+      ],
+      [
+       3,
+       "2026-10-24",
+       "2026-10-24",
+       0
+      ],
+      [
+       3,
+       "2026-10-23",
+       "2026-10-23",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1600 block of MONROE STREET NW",
+     "lat": 38.933,
+     "lon": -77.037,
+     "r": [
+      [
+       11,
+       "2026-11-13",
+       null,
+       1
+      ],
+      [
+       11,
+       "2026-10-29",
+       "2026-10-30",
+       0
+      ],
+      [
+       8,
+       "2026-10-26",
+       "2026-10-27",
+       0
+      ],
+      [
+       11,
+       "2026-10-26",
+       "2026-10-27",
+       0
+      ],
+      [
+       11,
+       "2026-10-26",
+       "2026-10-27",
+       0
+      ],
+      [
+       11,
+       "2026-10-26",
+       "2026-10-27",
+       0
+      ],
+      [
+       28,
+       "2026-10-23",
+       "2026-10-27",
+       0
+      ],
+      [
+       11,
+       "2026-10-19",
+       "2026-10-20",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1800 block of LAMONT STREET NW",
+     "lat": 38.932,
+     "lon": -77.043,
+     "r": [
+      [
+       5,
+       "2026-11-13",
+       null,
+       1
+      ],
+      [
+       8,
+       "2026-11-12",
+       null,
+       1
+      ],
+      [
+       8,
+       "2026-11-01",
+       "2026-11-02",
+       0
+      ],
+      [
+       8,
        "2026-10-28",
        "2026-10-30",
        0
@@ -2599,43 +3554,6 @@
        "2026-10-23",
        "2026-11-02",
        0
-      ],
-      [
-       0,
-       "2026-10-14",
-       "2026-10-26",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1900 block of PARK ROAD NW",
-     "lat": 38.933,
-     "lon": -77.045,
-     "r": [
-      [
-       1,
-       "2026-11-13",
-       null,
-       1
-      ],
-      [
-       0,
-       "2026-10-28",
-       "2026-11-09",
-       0
-      ],
-      [
-       30,
-       "2026-10-27",
-       null,
-       1
-      ],
-      [
-       16,
-       "2026-10-14",
-       "2026-10-15",
-       0
       ]
      ]
     },
@@ -2651,13 +3569,13 @@
        1
       ],
       [
-       15,
+       19,
        "2026-11-06",
        "2026-11-10",
        0
       ],
       [
-       15,
+       19,
        "2026-11-06",
        "2026-11-06",
        0
@@ -2675,7 +3593,7 @@
        0
       ],
       [
-       15,
+       19,
        "2026-11-02",
        "2026-11-03",
        0
@@ -2744,7 +3662,7 @@
      "lon": -77.043,
      "r": [
       [
-       0,
+       5,
        "2026-11-12",
        null,
        1
@@ -2757,13 +3675,13 @@
      "lon": -77.038,
      "r": [
       [
-       4,
+       7,
        "2026-11-12",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
-       15,
+       19,
        "2026-11-09",
        null,
        1
@@ -2777,8 +3695,8 @@
       [
        2,
        "2026-11-05",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
        2,
@@ -2787,7 +3705,7 @@
        0
       ],
       [
-       4,
+       7,
        "2026-10-29",
        "2026-10-30",
        0
@@ -2801,8 +3719,8 @@
       [
        33,
        "2026-10-23",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
        3,
@@ -2847,70 +3765,9 @@
        0
       ],
       [
-       5,
+       8,
        "2026-10-15",
        "2026-10-19",
-       0
-      ],
-      [
-       12,
-       "2026-10-14",
-       "2026-10-16",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1600 block of MONROE STREET NW",
-     "lat": 38.934,
-     "lon": -77.039,
-     "r": [
-      [
-       3,
-       "2026-11-12",
-       "2026-11-12",
-       0
-      ],
-      [
-       27,
-       "2026-11-06",
-       "2026-11-09",
-       0
-      ],
-      [
-       3,
-       "2026-10-30",
-       "2026-10-30",
-       0
-      ],
-      [
-       3,
-       "2026-10-29",
-       "2026-10-29",
-       0
-      ],
-      [
-       24,
-       "2026-10-28",
-       "2026-10-29",
-       0
-      ],
-      [
-       3,
-       "2026-10-27",
-       "2026-10-27",
-       0
-      ],
-      [
-       3,
-       "2026-10-26",
-       "2026-10-26",
-       0
-      ],
-      [
-       3,
-       "2026-10-24",
-       "2026-10-24",
        0
       ]
      ]
@@ -2939,7 +3796,7 @@
        0
       ],
       [
-       13,
+       1,
        "2026-11-10",
        null,
        1
@@ -2957,7 +3814,7 @@
        0
       ],
       [
-       1,
+       12,
        "2026-11-02",
        "2026-11-02",
        0
@@ -2969,13 +3826,13 @@
        0
       ],
       [
-       11,
+       17,
        "2026-10-23",
        "2026-11-10",
        0
       ],
       [
-       14,
+       18,
        "2026-10-22",
        "2026-10-27",
        0
@@ -3000,10 +3857,10 @@
      "lon": -77.037,
      "r": [
       [
-       1,
+       12,
        "2026-11-12",
-       null,
-       1
+       "2026-11-13",
+       0
       ]
      ]
     },
@@ -3013,28 +3870,22 @@
      "lon": -77.039,
      "r": [
       [
-       6,
+       13,
        "2026-11-12",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
-       18,
+       22,
        "2026-11-05",
        null,
        1
       ],
       [
-       18,
+       22,
        "2026-10-28",
        null,
        1
-      ],
-      [
-       15,
-       "2026-10-14",
-       "2026-10-15",
-       0
       ]
      ]
     },
@@ -3044,7 +3895,7 @@
      "lon": -77.042,
      "r": [
       [
-       0,
+       5,
        "2026-11-12",
        null,
        1
@@ -3063,13 +3914,13 @@
        1
       ],
       [
-       0,
+       5,
        "2026-11-09",
        null,
        1
       ],
       [
-       0,
+       5,
        "2026-11-06",
        null,
        1
@@ -3088,7 +3939,7 @@
        1
       ],
       [
-       16,
+       20,
        "2026-10-27",
        "2026-10-27",
        0
@@ -3100,7 +3951,7 @@
        0
       ],
       [
-       18,
+       22,
        "2026-10-26",
        null,
        1
@@ -3137,7 +3988,7 @@
        1
       ],
       [
-       19,
+       23,
        "2026-11-10",
        null,
        1
@@ -3155,7 +4006,7 @@
        0
       ],
       [
-       0,
+       5,
        "2026-10-24",
        "2026-11-02",
        0
@@ -3173,7 +4024,7 @@
        1
       ],
       [
-       28,
+       6,
        "2026-10-19",
        "2026-10-29",
        0
@@ -3185,7 +4036,7 @@
        0
       ],
       [
-       19,
+       23,
        "2026-10-16",
        null,
        1
@@ -3204,7 +4055,7 @@
        1
       ],
       [
-       0,
+       5,
        "2026-11-03",
        null,
        1
@@ -3216,112 +4067,9 @@
        0
       ],
       [
-       5,
+       8,
        "2026-10-19",
        "2026-10-26",
-       0
-      ],
-      [
-       16,
-       "2026-10-14",
-       "2026-10-15",
-       0
-      ],
-      [
-       9,
-       "2026-10-14",
-       "2026-10-15",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1600 block of NEWTON STREET NW",
-     "lat": 38.934,
-     "lon": -77.038,
-     "r": [
-      [
-       0,
-       "2026-11-11",
-       null,
-       1
-      ],
-      [
-       0,
-       "2026-11-08",
-       null,
-       1
-      ],
-      [
-       27,
-       "2026-11-06",
-       "2026-11-09",
-       0
-      ],
-      [
-       27,
-       "2026-10-29",
-       "2026-10-30",
-       0
-      ],
-      [
-       2,
-       "2026-10-26",
-       "2026-11-02",
-       0
-      ],
-      [
-       52,
-       "2026-10-24",
-       null,
-       1
-      ],
-      [
-       3,
-       "2026-10-24",
-       "2026-10-24",
-       0
-      ],
-      [
-       53,
-       "2026-10-20",
-       "2026-10-20",
-       0
-      ],
-      [
-       53,
-       "2026-10-20",
-       null,
-       1
-      ],
-      [
-       27,
-       "2026-10-19",
-       "2026-10-20",
-       0
-      ],
-      [
-       27,
-       "2026-10-19",
-       "2026-10-20",
-       0
-      ],
-      [
-       0,
-       "2026-10-16",
-       "2026-10-26",
-       0
-      ],
-      [
-       0,
-       "2026-10-15",
-       "2026-10-26",
-       0
-      ],
-      [
-       2,
-       "2026-10-14",
-       "2026-10-20",
        0
       ]
      ]
@@ -3340,8 +4088,8 @@
       [
        2,
        "2026-11-09",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
        41,
@@ -3356,7 +4104,7 @@
        0
       ],
       [
-       0,
+       5,
        "2026-10-29",
        "2026-11-09",
        0
@@ -3368,13 +4116,13 @@
        0
       ],
       [
-       5,
+       8,
        "2026-10-26",
        "2026-10-26",
        0
       ],
       [
-       0,
+       5,
        "2026-10-20",
        "2026-10-26",
        0
@@ -3393,7 +4141,7 @@
        1
       ],
       [
-       12,
+       0,
        "2026-11-05",
        "2026-11-09",
        0
@@ -3405,13 +4153,13 @@
        0
       ],
       [
-       24,
+       26,
        "2026-10-28",
        "2026-10-29",
        0
       ],
       [
-       14,
+       18,
        "2026-10-28",
        "2026-11-03",
        0
@@ -3454,7 +4202,7 @@
      "lon": -77.037,
      "r": [
       [
-       7,
+       14,
        "2026-11-11",
        null,
        1
@@ -3467,19 +4215,19 @@
      "lon": -77.036,
      "r": [
       [
-       8,
+       15,
        "2026-11-11",
        "2026-11-12",
        0
       ],
       [
-       1,
+       12,
        "2026-11-11",
        "2026-11-12",
        0
       ],
       [
-       9,
+       16,
        "2026-10-23",
        null,
        1
@@ -3492,13 +4240,13 @@
      "lon": -77.039,
      "r": [
       [
-       9,
+       16,
        "2026-11-11",
        null,
        1
       ],
       [
-       9,
+       16,
        "2026-11-11",
        null,
        1
@@ -3517,7 +4265,7 @@
      "lon": -77.041,
      "r": [
       [
-       0,
+       5,
        "2026-11-11",
        null,
        1
@@ -3548,33 +4296,27 @@
        1
       ],
       [
-       1,
+       12,
        "2026-11-09",
        "2026-11-10",
        0
       ],
       [
-       1,
+       12,
        "2026-11-09",
        "2026-11-10",
        0
       ],
       [
-       9,
+       16,
        "2026-10-27",
        null,
        1
       ],
       [
-       21,
+       9,
        "2026-10-27",
        "2026-10-27",
-       0
-      ],
-      [
-       0,
-       "2026-10-14",
-       "2026-10-26",
        0
       ]
      ]
@@ -3585,7 +4327,7 @@
      "lon": -77.041,
      "r": [
       [
-       9,
+       16,
        "2026-11-11",
        null,
        1
@@ -3604,7 +4346,7 @@
      "lon": -77.042,
      "r": [
       [
-       11,
+       17,
        "2026-11-11",
        null,
        1
@@ -3612,11 +4354,11 @@
       [
        2,
        "2026-11-10",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
-       0,
+       5,
        "2026-11-09",
        null,
        1
@@ -3635,16 +4377,16 @@
      "lon": -77.044,
      "r": [
       [
-       6,
+       13,
        "2026-11-11",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
-       6,
+       13,
        "2026-11-09",
-       null,
-       1
+       "2026-11-13",
+       0
       ]
      ]
     },
@@ -3654,19 +4396,19 @@
      "lon": -77.038,
      "r": [
       [
-       0,
+       5,
        "2026-11-11",
        null,
        1
       ],
       [
-       24,
+       26,
        "2026-11-09",
        "2026-11-12",
        0
       ],
       [
-       27,
+       11,
        "2026-11-06",
        "2026-11-09",
        0
@@ -3678,143 +4420,58 @@
        0
       ],
       [
-       12,
+       0,
        "2026-11-03",
        "2026-11-05",
        0
       ],
       [
-       28,
+       6,
        "2026-10-29",
        null,
        1
       ],
       [
-       24,
+       26,
        "2026-10-28",
        "2026-10-29",
        0
       ],
       [
-       24,
+       26,
        "2026-10-27",
        "2026-10-28",
        0
       ],
       [
-       24,
+       26,
        "2026-10-27",
        "2026-10-28",
        0
       ],
       [
-       27,
+       11,
        "2026-10-26",
        "2026-10-27",
        0
       ],
       [
-       27,
+       11,
        "2026-10-19",
        "2026-10-20",
        0
       ],
       [
-       0,
+       5,
        "2026-10-19",
        "2026-10-26",
        0
       ],
       [
-       27,
+       11,
        "2026-10-19",
        "2026-10-20",
        0
-      ]
-     ]
-    },
-    {
-     "block": "3000 block of MOUNT PLEASANT STREET NW",
-     "lat": 38.928,
-     "lon": -77.037,
-     "r": [
-      [
-       3,
-       "2026-11-11",
-       "2026-11-11",
-       0
-      ],
-      [
-       18,
-       "2026-11-10",
-       null,
-       1
-      ],
-      [
-       20,
-       "2026-11-10",
-       "2026-11-10",
-       0
-      ],
-      [
-       3,
-       "2026-11-07",
-       "2026-11-07",
-       0
-      ],
-      [
-       3,
-       "2026-11-06",
-       "2026-11-06",
-       0
-      ],
-      [
-       3,
-       "2026-11-04",
-       "2026-11-04",
-       0
-      ],
-      [
-       3,
-       "2026-10-27",
-       "2026-10-27",
-       0
-      ],
-      [
-       3,
-       "2026-10-26",
-       "2026-10-26",
-       0
-      ],
-      [
-       3,
-       "2026-10-25",
-       "2026-10-25",
-       0
-      ],
-      [
-       24,
-       "2026-10-24",
-       "2026-10-28",
-       0
-      ],
-      [
-       24,
-       "2026-10-20",
-       "2026-10-22",
-       0
-      ],
-      [
-       7,
-       "2026-10-16",
-       "2026-11-04",
-       0
-      ],
-      [
-       31,
-       "2026-10-15",
-       null,
-       1
       ]
      ]
     },
@@ -3824,21 +4481,15 @@
      "lon": -77.037,
      "r": [
       [
-       12,
+       0,
        "2026-11-11",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
        3,
        "2026-10-27",
        "2026-10-27",
-       0
-      ],
-      [
-       4,
-       "2026-10-14",
-       "2026-10-15",
        0
       ]
      ]
@@ -3849,13 +4500,13 @@
      "lon": -77.037,
      "r": [
       [
-       12,
+       0,
        "2026-11-11",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
-       12,
+       0,
        "2026-10-19",
        "2026-10-21",
        0
@@ -3874,49 +4525,49 @@
      "lon": -77.038,
      "r": [
       [
-       11,
+       17,
        "2026-11-11",
        null,
        1
       ],
       [
-       22,
+       4,
        "2026-11-09",
        "2026-11-09",
        0
       ],
       [
-       22,
+       4,
        "2026-11-09",
        "2026-11-09",
        0
       ],
       [
-       11,
+       17,
        "2026-11-07",
        "2026-11-10",
        1
       ],
       [
-       11,
+       17,
        "2026-11-06",
        "2026-11-10",
        1
       ],
       [
-       11,
+       17,
        "2026-11-06",
        "2026-11-10",
        1
       ],
       [
-       11,
+       17,
        "2026-11-05",
        "2026-11-09",
        0
       ],
       [
-       25,
+       27,
        "2026-11-01",
        "2026-11-03",
        0
@@ -3928,13 +4579,13 @@
        0
       ],
       [
-       15,
+       19,
        "2026-10-27",
        "2026-10-29",
        0
       ],
       [
-       11,
+       17,
        "2026-10-24",
        "2026-11-10",
        0
@@ -3947,13 +4598,13 @@
      "lon": -77.037,
      "r": [
       [
-       14,
+       18,
        "2026-11-10",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
-       5,
+       8,
        "2026-11-02",
        "2026-11-03",
        0
@@ -3971,7 +4622,7 @@
        1
       ],
       [
-       5,
+       8,
        "2026-10-20",
        "2026-10-21",
        0
@@ -3992,11 +4643,11 @@
       [
        2,
        "2026-11-09",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
-       0,
+       5,
        "2026-11-09",
        null,
        1
@@ -4010,11 +4661,11 @@
       [
        2,
        "2026-11-06",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
-       0,
+       5,
        "2026-11-06",
        null,
        1
@@ -4026,7 +4677,7 @@
        1
       ],
       [
-       0,
+       5,
        "2026-11-03",
        null,
        1
@@ -4044,7 +4695,7 @@
        0
       ],
       [
-       0,
+       5,
        "2026-10-31",
        "2026-11-09",
        0
@@ -4056,7 +4707,7 @@
        0
       ],
       [
-       0,
+       5,
        "2026-10-17",
        "2026-10-26",
        0
@@ -4069,7 +4720,7 @@
      "lon": -77.044,
      "r": [
       [
-       0,
+       5,
        "2026-11-10",
        null,
        1
@@ -4077,8 +4728,8 @@
       [
        2,
        "2026-11-10",
-       null,
-       1
+       "2026-11-13",
+       0
       ]
      ]
     },
@@ -4088,19 +4739,19 @@
      "lon": -77.039,
      "r": [
       [
-       15,
+       19,
        "2026-11-10",
        null,
        1
       ],
       [
-       15,
+       19,
        "2026-11-06",
        "2026-11-06",
        0
       ],
       [
-       15,
+       19,
        "2026-11-04",
        "2026-11-05",
        0
@@ -4113,114 +4764,22 @@
      "lon": -77.044,
      "r": [
       [
-       4,
+       7,
        "2026-11-10",
        null,
        1
       ],
       [
-       0,
+       5,
        "2026-10-27",
        "2026-11-02",
        0
       ],
       [
-       6,
+       13,
        "2026-10-23",
        "2026-10-27",
        0
-      ]
-     ]
-    },
-    {
-     "block": "3400 block of OAKWOOD TERRACE NW",
-     "lat": 38.935,
-     "lon": -77.038,
-     "r": [
-      [
-       10,
-       "2026-11-10",
-       "2026-11-11",
-       0
-      ],
-      [
-       2,
-       "2026-11-02",
-       "2026-11-06",
-       0
-      ],
-      [
-       16,
-       "2026-10-30",
-       null,
-       1
-      ],
-      [
-       8,
-       "2026-10-19",
-       "2026-10-20",
-       0
-      ],
-      [
-       41,
-       "2026-10-14",
-       null,
-       1
-      ]
-     ]
-    },
-    {
-     "block": "1800 block of IRVING STREET NW",
-     "lat": 38.929,
-     "lon": -77.043,
-     "r": [
-      [
-       2,
-       "2026-11-10",
-       null,
-       1
-      ],
-      [
-       2,
-       "2026-11-07",
-       null,
-       1
-      ],
-      [
-       2,
-       "2026-11-01",
-       "2026-11-06",
-       0
-      ],
-      [
-       2,
-       "2026-10-29",
-       "2026-11-02",
-       0
-      ],
-      [
-       55,
-       "2026-10-21",
-       "2026-10-22",
-       0
-      ],
-      [
-       35,
-       "2026-10-21",
-       "2026-10-21",
-       0
-      ],
-      [
-       2,
-       "2026-10-19",
-       "2026-10-27",
-       0
-      ],
-      [
-       9,
-       "2026-10-15",
-       null,
-       1
       ]
      ]
     },
@@ -4230,13 +4789,13 @@
      "lon": -77.04,
      "r": [
       [
-       16,
+       20,
        "2026-11-10",
        null,
        1
       ],
       [
-       15,
+       19,
        "2026-11-10",
        null,
        1
@@ -4251,8 +4810,8 @@
       [
        2,
        "2026-11-10",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
        47,
@@ -4276,128 +4835,73 @@
       [
        2,
        "2026-11-10",
-       null,
-       1
-      ],
-      [
-       25,
-       "2026-11-09",
-       null,
-       1
-      ],
-      [
-       2,
-       "2026-11-05",
-       null,
-       1
-      ],
-      [
-       11,
-       "2026-11-05",
-       "2026-11-09",
-       0
-      ],
-      [
-       3,
-       "2026-11-05",
-       "2026-11-05",
-       0
-      ],
-      [
-       11,
-       "2026-10-24",
-       "2026-11-10",
-       0
-      ],
-      [
-       25,
-       "2026-10-24",
-       null,
-       1
-      ],
-      [
-       11,
-       "2026-10-24",
-       "2026-11-10",
-       0
-      ],
-      [
-       11,
-       "2026-10-24",
-       "2026-11-10",
-       0
-      ],
-      [
-       26,
-       "2026-10-24",
-       "2026-10-27",
-       0
-      ],
-      [
-       26,
-       "2026-10-24",
-       "2026-11-03",
-       0
-      ],
-      [
-       3,
-       "2026-10-16",
-       "2026-10-16",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "3300 block of 17TH STREET NW",
-     "lat": 38.933,
-     "lon": -77.039,
-     "r": [
-      [
-       3,
-       "2026-11-10",
-       "2026-11-10",
-       0
-      ],
-      [
-       2,
-       "2026-11-03",
-       "2026-11-06",
+       "2026-11-13",
        0
       ],
       [
        27,
-       "2026-11-01",
-       "2026-11-02",
-       0
-      ],
-      [
-       15,
-       "2026-10-26",
-       "2026-10-28",
-       0
+       "2026-11-09",
+       null,
+       1
       ],
       [
        2,
-       "2026-10-25",
-       "2026-11-02",
+       "2026-11-05",
+       "2026-11-13",
+       0
+      ],
+      [
+       17,
+       "2026-11-05",
+       "2026-11-09",
        0
       ],
       [
        3,
-       "2026-10-22",
-       "2026-10-22",
+       "2026-11-05",
+       "2026-11-05",
        0
       ],
       [
-       2,
-       "2026-10-20",
+       17,
+       "2026-10-24",
+       "2026-11-10",
+       0
+      ],
+      [
+       27,
+       "2026-10-24",
+       null,
+       1
+      ],
+      [
+       17,
+       "2026-10-24",
+       "2026-11-10",
+       0
+      ],
+      [
+       17,
+       "2026-10-24",
+       "2026-11-10",
+       0
+      ],
+      [
+       28,
+       "2026-10-24",
        "2026-10-27",
        0
       ],
       [
-       0,
-       "2026-10-19",
-       "2026-10-26",
+       28,
+       "2026-10-24",
+       "2026-11-03",
+       0
+      ],
+      [
+       3,
+       "2026-10-16",
+       "2026-10-16",
        0
       ]
      ]
@@ -4414,7 +4918,7 @@
        0
       ],
       [
-       15,
+       19,
        "2026-11-10",
        "2026-11-10",
        0
@@ -4429,8 +4933,8 @@
       [
        2,
        "2026-11-10",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
        2,
@@ -4446,7 +4950,7 @@
      "lon": -77.038,
      "r": [
       [
-       17,
+       21,
        "2026-11-10",
        "2026-11-10",
        0
@@ -4460,8 +4964,8 @@
       [
        2,
        "2026-11-06",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
        2,
@@ -4476,7 +4980,7 @@
        0
       ],
       [
-       24,
+       26,
        "2026-10-15",
        "2026-10-16",
        0
@@ -4489,13 +4993,13 @@
      "lon": -77.037,
      "r": [
       [
-       0,
+       5,
        "2026-11-10",
        null,
        1
       ],
       [
-       0,
+       5,
        "2026-11-01",
        "2026-11-09",
        0
@@ -4520,7 +5024,7 @@
        0
       ],
       [
-       14,
+       18,
        "2026-10-31",
        "2026-11-02",
        0
@@ -4533,19 +5037,19 @@
      "lon": -77.047,
      "r": [
       [
-       21,
+       9,
        "2026-11-10",
        "2026-11-10",
        0
       ],
       [
-       27,
+       11,
        "2026-11-08",
        "2026-11-09",
        0
       ],
       [
-       27,
+       11,
        "2026-11-05",
        "2026-11-05",
        0
@@ -4563,7 +5067,7 @@
        0
       ],
       [
-       14,
+       18,
        "2026-11-03",
        "2026-11-03",
        0
@@ -4581,7 +5085,7 @@
        0
       ],
       [
-       0,
+       5,
        "2026-10-25",
        "2026-11-02",
        0
@@ -4594,13 +5098,13 @@
      "lon": -77.041,
      "r": [
       [
-       0,
+       5,
        "2026-11-10",
        null,
        1
       ],
       [
-       0,
+       5,
        "2026-11-07",
        null,
        1
@@ -4692,7 +5196,7 @@
      "lon": -77.037,
      "r": [
       [
-       0,
+       5,
        "2026-11-09",
        null,
        1
@@ -4710,7 +5214,7 @@
        0
       ],
       [
-       0,
+       5,
        "2026-10-20",
        "2026-10-26",
        0
@@ -4722,7 +5226,7 @@
        0
       ],
       [
-       25,
+       27,
        "2026-10-15",
        "2026-10-21",
        0
@@ -4737,11 +5241,11 @@
       [
        2,
        "2026-11-09",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
-       11,
+       17,
        "2026-10-27",
        null,
        1
@@ -4760,7 +5264,7 @@
      "lon": -77.037,
      "r": [
       [
-       1,
+       12,
        "2026-11-09",
        null,
        1
@@ -4768,8 +5272,8 @@
       [
        2,
        "2026-11-06",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
        39,
@@ -4797,7 +5301,7 @@
      "lon": -77.038,
      "r": [
       [
-       22,
+       4,
        "2026-11-09",
        "2026-11-09",
        0
@@ -4815,7 +5319,7 @@
        0
       ],
       [
-       15,
+       19,
        "2026-10-17",
        "2026-10-29",
        0
@@ -4830,8 +5334,8 @@
       [
        2,
        "2026-11-09",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
        2,
@@ -4855,23 +5359,23 @@
       [
        2,
        "2026-11-09",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
-       23,
+       25,
        "2026-11-09",
        null,
        1
       ],
       [
-       28,
+       6,
        "2026-11-07",
        null,
        1
       ],
       [
-       22,
+       4,
        "2026-11-06",
        "2026-11-06",
        0
@@ -4883,58 +5387,15 @@
        0
       ],
       [
-       0,
+       5,
        "2026-10-26",
        "2026-11-02",
        0
       ],
       [
-       0,
+       5,
        "2026-10-21",
        "2026-10-26",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1700 block of PARK ROAD NW",
-     "lat": 38.933,
-     "lon": -77.039,
-     "r": [
-      [
-       21,
-       "2026-11-09",
-       "2026-11-09",
-       0
-      ],
-      [
-       26,
-       "2026-11-09",
-       null,
-       1
-      ],
-      [
-       26,
-       "2026-10-24",
-       "2026-10-27",
-       0
-      ],
-      [
-       3,
-       "2026-10-24",
-       "2026-10-24",
-       0
-      ],
-      [
-       3,
-       "2026-10-23",
-       "2026-10-23",
-       0
-      ],
-      [
-       46,
-       "2026-10-15",
-       "2026-10-15",
        0
       ]
      ]
@@ -4951,7 +5412,7 @@
        0
       ],
       [
-       27,
+       11,
        "2026-11-08",
        "2026-11-09",
        0
@@ -4963,7 +5424,7 @@
        0
       ],
       [
-       27,
+       11,
        "2026-11-05",
        "2026-11-05",
        0
@@ -4982,22 +5443,22 @@
      "lon": -77.042,
      "r": [
       [
-       6,
+       13,
        "2026-11-09",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
        2,
        "2026-11-09",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
        2,
        "2026-11-07",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
        3,
@@ -5012,13 +5473,13 @@
        0
       ],
       [
-       15,
+       19,
        "2026-11-01",
        "2026-11-04",
        0
       ],
       [
-       0,
+       5,
        "2026-10-30",
        "2026-11-09",
        0
@@ -5030,13 +5491,13 @@
        0
       ],
       [
-       6,
+       13,
        "2026-10-23",
        "2026-10-27",
        0
       ],
       [
-       4,
+       7,
        "2026-10-16",
        "2026-10-27",
        0
@@ -5049,76 +5510,21 @@
      "lon": -77.036,
      "r": [
       [
-       11,
+       17,
        "2026-11-09",
        null,
        1
       ],
       [
-       11,
+       17,
        "2026-11-09",
        null,
        1
       ],
       [
-       1,
+       12,
        "2026-11-02",
        "2026-11-02",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "3200 block of MOUNT PLEASANT STREET NW",
-     "lat": 38.932,
-     "lon": -77.038,
-     "r": [
-      [
-       11,
-       "2026-11-09",
-       "2026-11-10",
-       1
-      ],
-      [
-       15,
-       "2026-11-07",
-       "2026-11-10",
-       0
-      ],
-      [
-       3,
-       "2026-10-28",
-       "2026-10-29",
-       0
-      ],
-      [
-       3,
-       "2026-10-28",
-       "2026-10-29",
-       0
-      ],
-      [
-       27,
-       "2026-10-28",
-       "2026-10-29",
-       0
-      ],
-      [
-       3,
-       "2026-10-27",
-       "2026-10-27",
-       0
-      ],
-      [
-       11,
-       "2026-10-24",
-       "2026-11-10",
-       0
-      ],
-      [
-       11,
-       "2026-10-15",
-       "2026-10-22",
        0
       ]
      ]
@@ -5129,13 +5535,13 @@
      "lon": -77.04,
      "r": [
       [
-       23,
+       25,
        "2026-11-09",
        "2026-11-12",
        0
       ],
       [
-       28,
+       6,
        "2026-10-21",
        "2026-11-04",
        0
@@ -5148,7 +5554,7 @@
      "lon": -77.037,
      "r": [
       [
-       11,
+       17,
        "2026-11-09",
        null,
        1
@@ -5161,7 +5567,7 @@
      "lon": -77.04,
      "r": [
       [
-       0,
+       5,
        "2026-11-08",
        null,
        1
@@ -5173,52 +5579,15 @@
        0
       ],
       [
-       17,
+       21,
        "2026-10-22",
        "2026-10-23",
        0
       ],
       [
-       17,
+       21,
        "2026-10-20",
        "2026-10-23",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "3200 block of 17TH STREET NW",
-     "lat": 38.932,
-     "lon": -77.039,
-     "r": [
-      [
-       3,
-       "2026-11-08",
-       "2026-11-08",
-       0
-      ],
-      [
-       36,
-       "2026-11-05",
-       "2026-11-05",
-       0
-      ],
-      [
-       16,
-       "2026-10-28",
-       "2026-10-28",
-       0
-      ],
-      [
-       16,
-       "2026-10-26",
-       "2026-10-28",
-       0
-      ],
-      [
-       3,
-       "2026-10-22",
-       "2026-10-22",
        0
       ]
      ]
@@ -5229,13 +5598,13 @@
      "lon": -77.042,
      "r": [
       [
-       0,
+       5,
        "2026-11-08",
        null,
        1
       ],
       [
-       12,
+       0,
        "2026-11-06",
        "2026-11-10",
        0
@@ -5247,7 +5616,7 @@
        0
       ],
       [
-       15,
+       19,
        "2026-10-26",
        "2026-10-29",
        0
@@ -5260,31 +5629,31 @@
      "lon": -77.038,
      "r": [
       [
-       15,
+       19,
        "2026-11-08",
        null,
        1
       ],
       [
-       15,
+       19,
        "2026-10-29",
        "2026-10-30",
        0
       ],
       [
-       15,
+       19,
        "2026-10-26",
        "2026-10-28",
        0
       ],
       [
-       11,
+       17,
        "2026-10-26",
        "2026-11-10",
        1
       ],
       [
-       5,
+       8,
        "2026-10-17",
        "2026-10-19",
        0
@@ -5303,33 +5672,15 @@
      "lon": -77.041,
      "r": [
       [
-       0,
+       5,
        "2026-11-08",
        null,
        1
       ],
       [
-       4,
+       7,
        "2026-10-28",
        "2026-10-29",
-       0
-      ],
-      [
-       2,
-       "2026-10-14",
-       "2026-10-20",
-       0
-      ],
-      [
-       2,
-       "2026-10-14",
-       "2026-10-20",
-       0
-      ],
-      [
-       15,
-       "2026-10-14",
-       "2026-10-23",
        0
       ]
      ]
@@ -5340,15 +5691,9 @@
      "lon": -77.039,
      "r": [
       [
-       22,
+       4,
        "2026-11-08",
        "2026-11-08",
-       0
-      ],
-      [
-       11,
-       "2026-10-15",
-       "2026-10-22",
        0
       ]
      ]
@@ -5361,11 +5706,11 @@
       [
        2,
        "2026-11-08",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
-       4,
+       7,
        "2026-11-07",
        null,
        1
@@ -5378,7 +5723,7 @@
      "lon": -77.039,
      "r": [
       [
-       27,
+       11,
        "2026-11-08",
        "2026-11-09",
        0
@@ -5390,7 +5735,7 @@
        0
       ],
       [
-       27,
+       11,
        "2026-10-18",
        "2026-10-19",
        0
@@ -5405,8 +5750,8 @@
       [
        2,
        "2026-11-08",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
        2,
@@ -5419,12 +5764,6 @@
        "2026-11-02",
        "2026-11-06",
        0
-      ],
-      [
-       26,
-       "2026-10-14",
-       "2026-10-21",
-       0
       ]
      ]
     },
@@ -5436,8 +5775,8 @@
       [
        2,
        "2026-11-08",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
        2,
@@ -5461,11 +5800,11 @@
       [
        2,
        "2026-11-08",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
-       0,
+       5,
        "2026-11-08",
        "2026-11-10",
        1
@@ -5474,12 +5813,6 @@
        2,
        "2026-10-22",
        "2026-10-27",
-       0
-      ],
-      [
-       26,
-       "2026-10-14",
-       "2026-10-21",
        0
       ]
      ]
@@ -5490,7 +5823,7 @@
      "lon": -77.037,
      "r": [
       [
-       11,
+       17,
        "2026-11-08",
        null,
        1
@@ -5503,27 +5836,21 @@
      "lon": -77.04,
      "r": [
       [
-       5,
+       8,
        "2026-11-08",
        "2026-11-09",
        0
       ],
       [
-       5,
+       8,
        "2026-11-06",
        "2026-11-09",
        0
       ],
       [
-       0,
+       5,
        "2026-11-06",
        null,
-       1
-      ],
-      [
-       0,
-       "2026-10-15",
-       "2026-10-21",
        1
       ]
      ]
@@ -5536,23 +5863,23 @@
       [
        2,
        "2026-11-08",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
-       21,
+       9,
        "2026-11-02",
        "2026-11-02",
        0
       ],
       [
-       5,
+       8,
        "2026-10-27",
        "2026-10-30",
        0
       ],
       [
-       8,
+       15,
        "2026-10-19",
        "2026-10-19",
        0
@@ -5561,18 +5888,6 @@
        2,
        "2026-10-16",
        "2026-10-27",
-       0
-      ],
-      [
-       41,
-       "2026-10-15",
-       null,
-       1
-      ],
-      [
-       0,
-       "2026-10-14",
-       "2026-10-26",
        0
       ]
      ]
@@ -5583,7 +5898,7 @@
      "lon": -77.039,
      "r": [
       [
-       18,
+       22,
        "2026-11-08",
        null,
        1
@@ -5607,13 +5922,13 @@
        0
       ],
       [
-       15,
+       19,
        "2026-10-28",
        "2026-10-29",
        0
       ],
       [
-       15,
+       19,
        "2026-10-26",
        "2026-10-29",
        0
@@ -5626,37 +5941,37 @@
      "lon": -77.041,
      "r": [
       [
-       22,
+       4,
        "2026-11-08",
        "2026-11-08",
        0
       ],
       [
-       22,
+       4,
        "2026-11-08",
        "2026-11-08",
        0
       ],
       [
-       0,
+       5,
        "2026-11-07",
        null,
        1
       ],
       [
-       16,
+       20,
        "2026-11-04",
        "2026-11-06",
        0
       ],
       [
-       22,
+       4,
        "2026-11-02",
        "2026-11-02",
        0
       ],
       [
-       22,
+       4,
        "2026-10-28",
        "2026-10-28",
        0
@@ -5709,37 +6024,6 @@
        "2026-10-21",
        "2026-10-27",
        0
-      ],
-      [
-       42,
-       "2026-10-15",
-       "2026-10-15",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "3100 block of 18TH STREET NW",
-     "lat": 38.931,
-     "lon": -77.041,
-     "r": [
-      [
-       22,
-       "2026-11-07",
-       "2026-11-07",
-       0
-      ],
-      [
-       3,
-       "2026-10-21",
-       "2026-10-21",
-       0
-      ],
-      [
-       33,
-       "2026-10-15",
-       null,
-       1
       ]
      ]
     },
@@ -5751,25 +6035,13 @@
       [
        2,
        "2026-11-07",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
        3,
        "2026-10-15",
        "2026-10-15",
-       0
-      ],
-      [
-       35,
-       "2026-10-14",
-       "2026-10-14",
-       0
-      ],
-      [
-       3,
-       "2026-10-14",
-       "2026-10-14",
        0
       ]
      ]
@@ -5780,13 +6052,13 @@
      "lon": -77.043,
      "r": [
       [
-       12,
+       0,
        "2026-11-07",
        "2026-11-10",
        0
       ],
       [
-       12,
+       0,
        "2026-11-06",
        "2026-11-06",
        0
@@ -5798,7 +6070,7 @@
        0
       ],
       [
-       0,
+       5,
        "2026-10-22",
        "2026-10-26",
        0
@@ -5810,7 +6082,7 @@
        1
       ],
       [
-       24,
+       26,
        "2026-10-19",
        "2026-10-20",
        0
@@ -5831,11 +6103,11 @@
       [
        2,
        "2026-11-07",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
-       0,
+       5,
        "2026-11-05",
        null,
        1
@@ -5866,7 +6138,7 @@
      "lon": -77.04,
      "r": [
       [
-       0,
+       5,
        "2026-11-07",
        null,
        1
@@ -5878,7 +6150,7 @@
        0
       ],
       [
-       0,
+       5,
        "2026-10-17",
        "2026-10-26",
        0
@@ -5893,35 +6165,35 @@
       [
        2,
        "2026-11-07",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
-       8,
+       15,
        "2026-10-26",
        "2026-10-28",
        0
       ],
       [
-       0,
+       5,
        "2026-10-21",
        "2026-10-26",
        0
       ],
       [
-       24,
+       26,
        "2026-10-19",
        "2026-10-20",
        0
       ],
       [
-       15,
+       19,
        "2026-10-18",
        "2026-10-19",
        0
       ],
       [
-       5,
+       8,
        "2026-10-18",
        "2026-10-19",
        0
@@ -5985,7 +6257,7 @@
        1
       ],
       [
-       15,
+       19,
        "2026-11-03",
        "2026-11-05",
        0
@@ -6017,7 +6289,7 @@
      "lon": -77.043,
      "r": [
       [
-       13,
+       1,
        "2026-11-06",
        "2026-11-09",
        0
@@ -6030,46 +6302,9 @@
      "lon": -77.038,
      "r": [
       [
-       15,
+       19,
        "2026-11-06",
        "2026-11-09",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1700 block of NEWTON STREET NW",
-     "lat": 38.934,
-     "lon": -77.041,
-     "r": [
-      [
-       34,
-       "2026-11-06",
-       "2026-11-06",
-       0
-      ],
-      [
-       3,
-       "2026-11-06",
-       "2026-11-06",
-       0
-      ],
-      [
-       5,
-       "2026-10-30",
-       "2026-11-02",
-       0
-      ],
-      [
-       35,
-       "2026-10-29",
-       "2026-10-29",
-       0
-      ],
-      [
-       3,
-       "2026-10-27",
-       "2026-10-27",
        0
       ]
      ]
@@ -6092,13 +6327,13 @@
        0
       ],
       [
-       0,
+       5,
        "2026-10-20",
        "2026-10-26",
        0
       ],
       [
-       23,
+       25,
        "2026-10-15",
        "2026-11-12",
        0
@@ -6137,19 +6372,19 @@
      "lon": -77.038,
      "r": [
       [
-       11,
+       17,
        "2026-11-05",
        null,
        1
       ],
       [
-       22,
+       4,
        "2026-11-01",
        "2026-11-01",
        0
       ],
       [
-       22,
+       4,
        "2026-11-01",
        "2026-11-01",
        0
@@ -6161,7 +6396,7 @@
        0
       ],
       [
-       15,
+       19,
        "2026-10-28",
        "2026-10-30",
        0
@@ -6179,16 +6414,10 @@
        0
       ],
       [
-       25,
+       27,
        "2026-10-24",
        null,
        1
-      ],
-      [
-       26,
-       "2026-10-15",
-       "2026-10-21",
-       0
       ]
      ]
     },
@@ -6198,7 +6427,7 @@
      "lon": -77.044,
      "r": [
       [
-       0,
+       5,
        "2026-11-05",
        null,
        1
@@ -6217,19 +6446,19 @@
        0
       ],
       [
-       15,
+       19,
        "2026-11-05",
        "2026-11-06",
        0
       ],
       [
-       13,
+       1,
        "2026-10-26",
        "2026-10-29",
        0
       ],
       [
-       5,
+       8,
        "2026-10-20",
        "2026-10-21",
        0
@@ -6244,17 +6473,17 @@
       [
        2,
        "2026-11-05",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
-       15,
+       19,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       0,
+       5,
        "2026-10-15",
        "2026-10-26",
        0
@@ -6286,7 +6515,7 @@
      "lon": -77.038,
      "r": [
       [
-       27,
+       11,
        "2026-11-05",
        "2026-11-05",
        0
@@ -6305,25 +6534,25 @@
      "lon": -77.04,
      "r": [
       [
-       0,
-       "2026-11-04",
-       null,
-       1
-      ],
-      [
-       9,
-       "2026-11-04",
-       null,
-       1
-      ],
-      [
        5,
+       "2026-11-04",
+       null,
+       1
+      ],
+      [
+       16,
+       "2026-11-04",
+       null,
+       1
+      ],
+      [
+       8,
        "2026-10-24",
        "2026-10-27",
        0
       ],
       [
-       28,
+       6,
        "2026-10-21",
        "2026-11-04",
        0
@@ -6336,13 +6565,13 @@
      "lon": -77.04,
      "r": [
       [
-       15,
+       19,
        "2026-11-04",
        "2026-11-06",
        0
       ],
       [
-       25,
+       27,
        "2026-10-21",
        "2026-10-26",
        0
@@ -6357,8 +6586,8 @@
       [
        2,
        "2026-11-04",
-       null,
-       1
+       "2026-11-13",
+       0
       ],
       [
        35,
@@ -6374,19 +6603,19 @@
      "lon": -77.041,
      "r": [
       [
-       25,
+       27,
        "2026-11-04",
        null,
        1
       ],
       [
-       25,
+       27,
        "2026-11-04",
        null,
        1
       ],
       [
-       25,
+       27,
        "2026-11-02",
        null,
        1
@@ -6417,13 +6646,13 @@
        0
       ],
       [
-       26,
+       28,
        "2026-11-03",
        "2026-11-10",
        0
       ],
       [
-       4,
+       7,
        "2026-10-29",
        null,
        1
@@ -6436,7 +6665,7 @@
      "lon": -77.039,
      "r": [
       [
-       25,
+       27,
        "2026-11-04",
        null,
        1
@@ -6490,12 +6719,6 @@
        "2026-10-24",
        "2026-10-24",
        0
-      ],
-      [
-       3,
-       "2026-10-15",
-       "2026-10-15",
-       0
       ]
      ]
     },
@@ -6505,19 +6728,19 @@
      "lon": -77.045,
      "r": [
       [
-       27,
+       11,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       5,
+       8,
        "2026-11-02",
        "2026-11-03",
        0
       ],
       [
-       0,
+       5,
        "2026-11-01",
        "2026-11-09",
        0
@@ -6529,64 +6752,21 @@
        0
       ],
       [
-       5,
+       8,
        "2026-10-26",
        "2026-10-30",
        0
       ],
       [
-       5,
+       8,
        "2026-10-20",
        "2026-10-23",
        0
       ],
       [
-       19,
+       23,
        "2026-10-16",
        "2026-11-11",
-       0
-      ],
-      [
-       5,
-       "2026-10-14",
-       "2026-10-23",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "3100 block of MOUNT PLEASANT STREET NW",
-     "lat": 38.929,
-     "lon": -77.037,
-     "r": [
-      [
-       29,
-       "2026-11-04",
-       "2026-11-10",
-       0
-      ],
-      [
-       11,
-       "2026-11-04",
-       "2026-11-09",
-       0
-      ],
-      [
-       3,
-       "2026-10-23",
-       "2026-10-23",
-       0
-      ],
-      [
-       11,
-       "2026-10-15",
-       "2026-10-22",
-       0
-      ],
-      [
-       42,
-       "2026-10-15",
-       "2026-10-15",
        0
       ]
      ]
@@ -6630,31 +6810,12 @@
      ]
     },
     {
-     "block": "1800 block of NEWTON STREET NW",
-     "lat": 38.934,
-     "lon": -77.042,
-     "r": [
-      [
-       2,
-       "2026-11-03",
-       "2026-11-06",
-       0
-      ],
-      [
-       2,
-       "2026-10-28",
-       "2026-11-02",
-       0
-      ]
-     ]
-    },
-    {
      "block": "1600 block of NEWTON STREET NW",
      "lat": 38.934,
      "lon": -77.039,
      "r": [
       [
-       5,
+       8,
        "2026-11-03",
        "2026-11-04",
        0
@@ -6666,25 +6827,25 @@
        0
       ],
       [
-       27,
+       11,
        "2026-10-30",
        "2026-10-30",
        0
       ],
       [
-       21,
+       9,
        "2026-10-25",
        "2026-10-25",
        0
       ],
       [
-       27,
+       11,
        "2026-10-19",
        "2026-10-20",
        0
       ],
       [
-       0,
+       5,
        "2026-10-19",
        "2026-10-26",
        0
@@ -6710,13 +6871,13 @@
      "lon": -77.041,
      "r": [
       [
-       19,
+       23,
        "2026-11-03",
        null,
        1
       ],
       [
-       28,
+       6,
        "2026-10-26",
        "2026-11-04",
        0
@@ -6730,37 +6891,12 @@
      ]
     },
     {
-     "block": "3300 block of MOUNT PLEASANT STREET NW",
-     "lat": 38.933,
-     "lon": -77.04,
-     "r": [
-      [
-       2,
-       "2026-11-03",
-       "2026-11-06",
-       0
-      ],
-      [
-       44,
-       "2026-11-03",
-       null,
-       1
-      ],
-      [
-       0,
-       "2026-10-21",
-       "2026-10-26",
-       0
-      ]
-     ]
-    },
-    {
      "block": "3100 block of 19TH STREET NW",
      "lat": 38.931,
      "lon": -77.044,
      "r": [
       [
-       0,
+       5,
        "2026-11-03",
        null,
        1
@@ -6809,21 +6945,9 @@
        0
       ],
       [
-       6,
+       13,
        "2026-10-19",
        "2026-10-22",
-       0
-      ],
-      [
-       11,
-       "2026-10-15",
-       "2026-10-22",
-       0
-      ],
-      [
-       42,
-       "2026-10-15",
-       "2026-10-15",
        0
       ]
      ]
@@ -6834,15 +6958,9 @@
      "lon": -77.038,
      "r": [
       [
-       26,
+       28,
        "2026-11-03",
        "2026-11-10",
-       0
-      ],
-      [
-       3,
-       "2026-10-15",
-       "2026-10-15",
        0
       ]
      ]
@@ -6853,7 +6971,7 @@
      "lon": -77.042,
      "r": [
       [
-       28,
+       6,
        "2026-11-02",
        null,
        1
@@ -6889,7 +7007,7 @@
        0
       ],
       [
-       0,
+       5,
        "2026-10-15",
        "2026-10-26",
        0
@@ -6951,28 +7069,9 @@
        0
       ],
       [
-       0,
+       5,
        "2026-10-22",
        "2026-10-26",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "3300 block of 18TH STREET NW",
-     "lat": 38.934,
-     "lon": -77.042,
-     "r": [
-      [
-       42,
-       "2026-11-02",
-       "2026-11-03",
-       0
-      ],
-      [
-       26,
-       "2026-10-15",
-       "2026-10-21",
        0
       ]
      ]
@@ -6983,7 +7082,7 @@
      "lon": -77.042,
      "r": [
       [
-       0,
+       5,
        "2026-11-01",
        "2026-11-09",
        0
@@ -6992,37 +7091,6 @@
        3,
        "2026-10-24",
        "2026-10-24",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "3100 block of 18TH STREET NW",
-     "lat": 38.93,
-     "lon": -77.041,
-     "r": [
-      [
-       3,
-       "2026-11-01",
-       "2026-11-01",
-       0
-      ],
-      [
-       3,
-       "2026-10-28",
-       "2026-10-28",
-       0
-      ],
-      [
-       29,
-       "2026-10-15",
-       "2026-10-19",
-       0
-      ],
-      [
-       16,
-       "2026-10-15",
-       "2026-11-12",
        0
       ]
      ]
@@ -7039,7 +7107,7 @@
        0
       ],
       [
-       0,
+       5,
        "2026-10-20",
        "2026-10-26",
        0
@@ -7058,7 +7126,7 @@
        0
       ],
       [
-       0,
+       5,
        "2026-10-27",
        "2026-11-02",
        0
@@ -7090,7 +7158,7 @@
        0
       ],
       [
-       0,
+       5,
        "2026-10-30",
        "2026-11-09",
        0
@@ -7103,7 +7171,7 @@
      "lon": -77.037,
      "r": [
       [
-       5,
+       8,
        "2026-10-31",
        null,
        1
@@ -7124,85 +7192,12 @@
      ]
     },
     {
-     "block": "3100 block of 17TH STREET NW",
-     "lat": 38.93,
-     "lon": -77.039,
-     "r": [
-      [
-       3,
-       "2026-10-30",
-       "2026-10-30",
-       0
-      ],
-      [
-       3,
-       "2026-10-28",
-       "2026-10-28",
-       0
-      ],
-      [
-       3,
-       "2026-10-28",
-       "2026-10-28",
-       0
-      ],
-      [
-       0,
-       "2026-10-26",
-       "2026-11-02",
-       0
-      ],
-      [
-       2,
-       "2026-10-25",
-       "2026-11-02",
-       0
-      ],
-      [
-       2,
-       "2026-10-25",
-       "2026-11-02",
-       0
-      ],
-      [
-       34,
-       "2026-10-24",
-       "2026-10-24",
-       0
-      ],
-      [
-       3,
-       "2026-10-24",
-       "2026-10-24",
-       0
-      ],
-      [
-       42,
-       "2026-10-22",
-       "2026-10-22",
-       0
-      ],
-      [
-       0,
-       "2026-10-21",
-       "2026-10-26",
-       0
-      ],
-      [
-       42,
-       "2026-10-17",
-       "2026-10-19",
-       0
-      ]
-     ]
-    },
-    {
      "block": "2000 block of PIERCE MILL ROAD NW",
      "lat": 38.934,
      "lon": -77.046,
      "r": [
       [
-       0,
+       5,
        "2026-10-30",
        "2026-11-09",
        0
@@ -7247,67 +7242,12 @@
      ]
     },
     {
-     "block": "1600 block of MONROE STREET NW",
-     "lat": 38.933,
-     "lon": -77.037,
-     "r": [
-      [
-       27,
-       "2026-10-29",
-       "2026-10-30",
-       0
-      ],
-      [
-       5,
-       "2026-10-26",
-       "2026-10-27",
-       0
-      ],
-      [
-       27,
-       "2026-10-26",
-       "2026-10-27",
-       0
-      ],
-      [
-       27,
-       "2026-10-26",
-       "2026-10-27",
-       0
-      ],
-      [
-       27,
-       "2026-10-26",
-       "2026-10-27",
-       0
-      ],
-      [
-       26,
-       "2026-10-23",
-       "2026-10-27",
-       0
-      ],
-      [
-       27,
-       "2026-10-19",
-       "2026-10-20",
-       0
-      ],
-      [
-       27,
-       "2026-10-14",
-       "2026-10-15",
-       0
-      ]
-     ]
-    },
-    {
      "block": "1800 block of PARK ROAD NW",
      "lat": 38.932,
      "lon": -77.044,
      "r": [
       [
-       24,
+       26,
        "2026-10-29",
        "2026-10-30",
        0
@@ -7336,12 +7276,6 @@
        "2026-10-27",
        "2026-10-27",
        0
-      ],
-      [
-       3,
-       "2026-10-15",
-       "2026-10-15",
-       0
       ]
      ]
     },
@@ -7351,7 +7285,7 @@
      "lon": -77.042,
      "r": [
       [
-       0,
+       5,
        "2026-10-29",
        "2026-11-09",
        0
@@ -7364,19 +7298,19 @@
      "lon": -77.038,
      "r": [
       [
-       27,
+       11,
        "2026-10-29",
        "2026-10-30",
        1
       ],
       [
-       27,
+       11,
        "2026-10-29",
        "2026-10-30",
        0
       ],
       [
-       5,
+       8,
        "2026-10-26",
        "2026-10-29",
        0
@@ -7395,7 +7329,7 @@
      "lon": -77.047,
      "r": [
       [
-       7,
+       14,
        "2026-10-29",
        null,
        1
@@ -7416,55 +7350,30 @@
      ]
     },
     {
-     "block": "3400 block of MOUNT PLEASANT STREET NW",
-     "lat": 38.935,
-     "lon": -77.04,
-     "r": [
-      [
-       2,
-       "2026-10-28",
-       "2026-11-02",
-       0
-      ],
-      [
-       0,
-       "2026-10-18",
-       "2026-10-26",
-       0
-      ],
-      [
-       2,
-       "2026-10-18",
-       "2026-10-27",
-       0
-      ]
-     ]
-    },
-    {
      "block": "1700 block of KENYON STREET NW",
      "lat": 38.93,
      "lon": -77.041,
      "r": [
       [
-       0,
+       5,
        "2026-10-28",
        "2026-11-09",
        0
       ],
       [
-       5,
+       8,
        "2026-10-23",
        "2026-10-26",
        0
       ],
       [
-       24,
+       26,
        "2026-10-23",
        "2026-10-28",
        0
       ],
       [
-       24,
+       26,
        "2026-10-20",
        "2026-10-22",
        0
@@ -7483,7 +7392,7 @@
      "lon": -77.038,
      "r": [
       [
-       19,
+       23,
        "2026-10-28",
        null,
        1
@@ -7496,7 +7405,7 @@
      "lon": -77.049,
      "r": [
       [
-       14,
+       18,
        "2026-10-28",
        "2026-11-03",
        0
@@ -7509,7 +7418,7 @@
      "lon": -77.037,
      "r": [
       [
-       15,
+       19,
        "2026-10-28",
        "2026-10-29",
        0
@@ -7521,13 +7430,13 @@
        0
       ],
       [
-       7,
+       14,
        "2026-10-23",
        null,
        1
       ],
       [
-       5,
+       8,
        "2026-10-21",
        "2026-10-22",
        0
@@ -7577,19 +7486,19 @@
      "lon": -77.04,
      "r": [
       [
-       4,
+       7,
        "2026-10-28",
        "2026-10-29",
        0
       ],
       [
-       27,
+       11,
        "2026-10-26",
        "2026-10-27",
        0
       ],
       [
-       27,
+       11,
        "2026-10-26",
        "2026-10-27",
        0
@@ -7614,13 +7523,13 @@
        0
       ],
       [
-       27,
+       11,
        "2026-10-26",
        "2026-10-27",
        0
       ],
       [
-       27,
+       11,
        "2026-10-22",
        "2026-10-23",
        0
@@ -7629,12 +7538,6 @@
        3,
        "2026-10-19",
        "2026-10-19",
-       0
-      ],
-      [
-       27,
-       "2026-10-14",
-       "2026-10-15",
        0
       ]
      ]
@@ -7658,19 +7561,19 @@
      "lon": -77.043,
      "r": [
       [
-       0,
+       5,
        "2026-10-27",
        "2026-11-02",
        0
       ],
       [
-       13,
+       1,
        "2026-10-23",
        "2026-11-02",
        0
       ],
       [
-       28,
+       6,
        "2026-10-23",
        "2026-11-04",
        0
@@ -7709,7 +7612,7 @@
      "lon": -77.041,
      "r": [
       [
-       1,
+       12,
        "2026-10-27",
        null,
        1
@@ -7722,7 +7625,7 @@
      "lon": -77.044,
      "r": [
       [
-       19,
+       23,
        "2026-10-26",
        null,
        1
@@ -7744,12 +7647,6 @@
        "2026-10-16",
        null,
        1
-      ],
-      [
-       17,
-       "2026-10-14",
-       null,
-       1
       ]
      ]
     },
@@ -7765,27 +7662,21 @@
        1
       ],
       [
-       8,
+       15,
        "2026-10-23",
        "2026-10-23",
        0
       ],
       [
-       11,
+       17,
        "2026-10-23",
        "2026-11-10",
        0
       ],
       [
-       6,
+       13,
        "2026-10-23",
        "2026-11-04",
-       0
-      ],
-      [
-       8,
-       "2026-10-14",
-       "2026-10-15",
        0
       ]
      ]
@@ -7796,7 +7687,7 @@
      "lon": -77.043,
      "r": [
       [
-       19,
+       23,
        "2026-10-26",
        "2026-11-11",
        0
@@ -7809,7 +7700,7 @@
      "lon": -77.039,
      "r": [
       [
-       0,
+       5,
        "2026-10-26",
        "2026-11-02",
        0
@@ -7832,12 +7723,6 @@
        "2026-10-24",
        "2026-10-27",
        0
-      ],
-      [
-       11,
-       "2026-10-15",
-       "2026-10-22",
-       0
       ]
      ]
     },
@@ -7847,16 +7732,10 @@
      "lon": -77.039,
      "r": [
       [
-       25,
+       27,
        "2026-10-24",
        null,
        1
-      ],
-      [
-       2,
-       "2026-10-14",
-       "2026-10-20",
-       0
       ]
      ]
     },
@@ -7879,7 +7758,7 @@
      "lon": -77.04,
      "r": [
       [
-       11,
+       17,
        "2026-10-24",
        "2026-11-10",
        0
@@ -7892,7 +7771,7 @@
      "lon": -77.038,
      "r": [
       [
-       18,
+       22,
        "2026-10-23",
        null,
        1
@@ -7932,19 +7811,6 @@
      ]
     },
     {
-     "block": "16TH STREET NW AND IRVING STREET NW",
-     "lat": 38.929,
-     "lon": -77.036,
-     "r": [
-      [
-       25,
-       "2026-10-23",
-       null,
-       1
-      ]
-     ]
-    },
-    {
      "block": "1600 block of IRVING STREET NW",
      "lat": 38.929,
      "lon": -77.039,
@@ -7975,7 +7841,7 @@
      "lon": -77.037,
      "r": [
       [
-       0,
+       5,
        "2026-10-22",
        "2026-10-26",
        0
@@ -7990,18 +7856,6 @@
        42,
        "2026-10-15",
        "2026-10-16",
-       0
-      ],
-      [
-       0,
-       "2026-10-14",
-       "2026-10-26",
-       0
-      ],
-      [
-       15,
-       "2026-10-14",
-       "2026-10-14",
        0
       ]
      ]
@@ -8061,12 +7915,6 @@
        "2026-10-19",
        "2026-10-21",
        0
-      ],
-      [
-       3,
-       "2026-10-14",
-       "2026-10-14",
-       0
       ]
      ]
     },
@@ -8089,7 +7937,7 @@
      "lon": -77.041,
      "r": [
       [
-       22,
+       4,
        "2026-10-20",
        "2026-10-20",
        0
@@ -8102,33 +7950,8 @@
      "lon": -77.045,
      "r": [
       [
-       0,
+       5,
        "2026-10-20",
-       "2026-10-26",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "3300 block of 17TH STREET NW",
-     "lat": 38.934,
-     "lon": -77.039,
-     "r": [
-      [
-       27,
-       "2026-10-19",
-       "2026-10-20",
-       0
-      ],
-      [
-       15,
-       "2026-10-19",
-       "2026-10-23",
-       0
-      ],
-      [
-       0,
-       "2026-10-17",
        "2026-10-26",
        0
       ]
@@ -8140,7 +7963,7 @@
      "lon": -77.043,
      "r": [
       [
-       0,
+       5,
        "2026-10-19",
        "2026-10-26",
        0
@@ -8179,7 +8002,7 @@
      "lon": -77.038,
      "r": [
       [
-       0,
+       5,
        "2026-10-18",
        "2026-10-26",
        0
@@ -8218,67 +8041,9 @@
      "lon": -77.039,
      "r": [
       [
-       18,
+       22,
        "2026-10-15",
        "2026-10-23",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "18TH STREET NW AND PARK ROAD NW",
-     "lat": 38.932,
-     "lon": -77.041,
-     "r": [
-      [
-       29,
-       "2026-10-15",
-       "2026-10-19",
-       0
-      ],
-      [
-       23,
-       "2026-10-15",
-       "2026-11-03",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "NEWTON STREET NW AND INGLESIDE TERRACE NW",
-     "lat": 38.934,
-     "lon": -77.044,
-     "r": [
-      [
-       11,
-       "2026-10-14",
-       "2026-10-22",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "3500 block of 17TH STREET NW",
-     "lat": 38.936,
-     "lon": -77.039,
-     "r": [
-      [
-       59,
-       "2026-10-14",
-       "2026-10-14",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "2000 block of PIERCE MILL ROAD NW",
-     "lat": 38.933,
-     "lon": -77.046,
-     "r": [
-      [
-       23,
-       "2026-10-14",
-       "2026-10-14",
        0
       ]
      ]
@@ -8287,12 +8052,12 @@
   }
  },
  "crime": {
-  "total": 25,
+  "total": 27,
   "previous_total": 25,
   "by_offense": [
    {
     "offense": "THEFT F/AUTO",
-    "count": 12,
+    "count": 14,
     "previous": 3
    },
    {
@@ -8364,7 +8129,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-13T09:20:14Z",
+  "generated_at": "2026-11-14T09:17:25Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -8379,7 +8144,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Mount Pleasant through OTR assessment sub-area Mount Pleasant A in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Mount Pleasant boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-13): 97% of the 1,797 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 89% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Mount Pleasant through OTR assessment sub-area Mount Pleasant A in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Mount Pleasant boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-14): 97% of the 3,594 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 89% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -8389,39 +8154,39 @@
   ],
   "boundary_fit": {
    "squares": 34,
-   "area_parcels": 1797,
+   "area_parcels": 3594,
    "area_share_inside": 0.971,
    "boundary_share_in_area": 0.89,
-   "measured": "2026-11-13"
+   "measured": "2026-11-14"
   },
   "primary": "house",
   "house": {
    "median_12mo": 1529000,
-   "count_12mo": 35,
+   "count_12mo": 70,
    "median_prev_12mo": 1462500,
-   "count_prev_12mo": 28
+   "count_prev_12mo": 56
   },
   "condo": {
    "median_12mo": 467500,
-   "count_12mo": 29,
+   "count_12mo": 58,
    "median_prev_12mo": 566500,
-   "count_prev_12mo": 24
+   "count_prev_12mo": 48
   },
   "last_60d": {
    "median": 1487628,
-   "count": 6,
+   "count": 12,
    "median_ppsf": 604,
-   "ppsf_count": 6
+   "ppsf_count": 12
   },
   "above_assessment_12mo": {
-   "n": 42,
-   "of": 64
+   "n": 84,
+   "of": 128
   },
   "by_month": [
    {
     "month": "2025-12",
     "median": 1550000,
-    "count": 3
+    "count": 6
    },
    {
     "month": "2026-01",
@@ -8436,47 +8201,47 @@
    {
     "month": "2026-03",
     "median": 1595000,
-    "count": 3
+    "count": 6
    },
    {
     "month": "2026-04",
     "median": 1425275,
-    "count": 4
+    "count": 8
    },
    {
     "month": "2026-05",
     "median": 1543000,
-    "count": 3
+    "count": 6
    },
    {
     "month": "2026-06",
     "median": 1205000,
-    "count": 3
+    "count": 6
    },
    {
     "month": "2026-07",
     "median": 1613000,
-    "count": 4
+    "count": 8
    },
    {
     "month": "2026-08",
     "median": 1465000,
-    "count": 9
+    "count": 18
    },
    {
     "month": "2026-09",
     "median": null,
-    "count": 1
+    "count": 2
    },
    {
     "month": "2026-10",
     "median": 1487628,
-    "count": 4
+    "count": 8
    },
    {
     "month": "2026-11",
     "median": null,
-    "count": 1
+    "count": 2
    }
   ],
   "by_month_basis": "houses only; calendar months, the last one in progress; median null when under 3 sales",
@@ -8489,6 +8254,24 @@
     "beds": 4,
     "sqft": 1622,
     "assessed": 1105890
+   },
+   {
+    "address": "1823 Ingleside Ter NW",
+    "date": "2026-11-03",
+    "price": 950000,
+    "kind": "house",
+    "beds": 4,
+    "sqft": 1622,
+    "assessed": 1105890
+   },
+   {
+    "address": "3426 16th St NW # 603",
+    "date": "2026-10-29",
+    "price": 250000,
+    "kind": "condo",
+    "beds": null,
+    "sqft": null,
+    "assessed": 494740
    },
    {
     "address": "3426 16th St NW # 603",
@@ -8509,6 +8292,15 @@
     "assessed": 455280
    },
    {
+    "address": "3350 17th St NW # 1",
+    "date": "2026-10-27",
+    "price": 438000,
+    "kind": "condo",
+    "beds": null,
+    "sqft": null,
+    "assessed": 455280
+   },
+   {
     "address": "1820 Kenyon St NW",
     "date": "2026-10-27",
     "price": 1677000,
@@ -8516,6 +8308,24 @@
     "beds": 4,
     "sqft": 1765,
     "assessed": 1091310
+   },
+   {
+    "address": "1820 Kenyon St NW",
+    "date": "2026-10-27",
+    "price": 1677000,
+    "kind": "house",
+    "beds": 4,
+    "sqft": 1765,
+    "assessed": 1091310
+   },
+   {
+    "address": "1850 Park Rd NW",
+    "date": "2026-10-26",
+    "price": 1525000,
+    "kind": "house",
+    "beds": 5,
+    "sqft": 2120,
+    "assessed": 1485720
    },
    {
     "address": "1850 Park Rd NW",
@@ -8536,6 +8346,15 @@
     "assessed": 1182500
    },
    {
+    "address": "3222 19th St NW",
+    "date": "2026-10-20",
+    "price": 1250000,
+    "kind": "house",
+    "beds": 2,
+    "sqft": 2730,
+    "assessed": 1182500
+   },
+   {
     "address": "1750 Harvard St NW # 2b #2B",
     "date": "2026-10-19",
     "price": 510000,
@@ -8543,6 +8362,24 @@
     "beds": null,
     "sqft": null,
     "assessed": 480530
+   },
+   {
+    "address": "1750 Harvard St NW # 2b #2B",
+    "date": "2026-10-19",
+    "price": 510000,
+    "kind": "condo",
+    "beds": null,
+    "sqft": null,
+    "assessed": 480530
+   },
+   {
+    "address": "3350 18th St NW",
+    "date": "2026-10-13",
+    "price": 1450256,
+    "kind": "house",
+    "beds": 6,
+    "sqft": 2810,
+    "assessed": 1188200
    },
    {
     "address": "3350 18th St NW",
@@ -8563,6 +8400,24 @@
     "assessed": 441520
    },
    {
+    "address": "1615 Kenyon St NW # 4",
+    "date": "2026-10-07",
+    "price": 410000,
+    "kind": "condo",
+    "beds": null,
+    "sqft": null,
+    "assessed": 441520
+   },
+   {
+    "address": "3172 17th St NW",
+    "date": "2026-09-29",
+    "price": 2200000,
+    "kind": "house",
+    "beds": 5,
+    "sqft": 3538,
+    "assessed": 1511090
+   },
+   {
     "address": "3172 17th St NW",
     "date": "2026-09-29",
     "price": 2200000,
@@ -8579,11 +8434,20 @@
     "beds": null,
     "sqft": null,
     "assessed": 881520
+   },
+   {
+    "address": "3423 Brown St NW # 302",
+    "date": "2026-09-17",
+    "price": 875000,
+    "kind": "condo",
+    "beds": null,
+    "sqft": null,
+    "assessed": 881520
    }
   ]
  },
  "streets": {
-  "generated_at": "2026-11-13T09:20:14Z",
+  "generated_at": "2026-11-14T09:17:25Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -8603,15 +8467,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 51,
-   "starting_next_7d": 14,
-   "reserved_ft": 7568,
+   "active_this_week": 49,
+   "starting_next_7d": 15,
+   "reserved_ft": 7436,
    "long_running_90d": 7,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-13: newest permit issued 2026-11-13, newest record update 2026-11-13, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-14: newest permit issued 2026-11-14, newest record update 2026-11-14, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
-     "count": 6
+     "count": 7
     },
     {
      "type": "Dumpsters",
@@ -8619,7 +8483,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 26
+     "count": 25
     },
     {
      "type": "Lead pipe replacement",
@@ -8627,7 +8491,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 6
+     "count": 4
     },
     {
      "type": "Events & reserved parking",
@@ -8635,14 +8499,6 @@
     }
    ],
    "upcoming": [
-    {
-     "type": "Moving & storage",
-     "block": "1600 block of Park Road NW",
-     "start": "2026-11-13",
-     "end": "2026-11-14",
-     "ft": 88,
-     "hours": ""
-    },
     {
      "type": "Construction staging",
      "block": "1600 block of Hobart Street NW",
@@ -8740,24 +8596,40 @@
      "hours": ""
     },
     {
+     "type": "Moving & storage",
+     "block": "1600 block of Lamont Street NW",
+     "start": "2026-11-19",
+     "end": "2026-11-19",
+     "ft": 0,
+     "hours": ""
+    },
+    {
      "type": "Events & reserved parking",
      "block": "3000 block of Mount Pleasant Street NW",
      "start": "2026-11-20",
      "end": "2026-11-20",
      "ft": 0,
      "hours": "9 am\u20138 pm"
+    },
+    {
+     "type": "Moving & storage",
+     "block": "1600 block of Park Road NW",
+     "start": "2026-11-21",
+     "end": "2026-11-22",
+     "ft": 88,
+     "hours": ""
     }
    ]
   },
   "trees": {
-   "total": 1481,
+   "total": 1482,
    "species": 157,
-   "planted_5y": 194,
-   "empty_boxes": 4,
-   "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (4). Not counted: 'Proposed' = planting scheduled (12), 'Conflict'/'Utility' = empty but blocked (41), 'Retired' = box removed (247). 'total' is boxes with status 'Plant' whose condition is not Dead.",
+   "planted_5y": 195,
+   "empty_boxes": 3,
+   "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (3). Not counted: 'Proposed' = planting scheduled (12), 'Conflict'/'Utility' = empty but blocked (41), 'Retired' = box removed (247). 'total' is boxes with status 'Plant' whose condition is not Dead.",
    "condition": {
     "Good": 746,
-    "Excellent": 472,
+    "Excellent": 473,
     "Fair": 230,
     "Poor": 32,
     "Not rated": 1
@@ -8824,7 +8696,7 @@
      "block": "1800 block of Park Rd NW"
     }
    ],
-   "inventory_date": "2026-11-06"
+   "inventory_date": "2026-11-14"
   },
   "service": [
    {
@@ -8835,33 +8707,33 @@
    },
    {
     "type": "Bulk Collection",
-    "median_days": 7.85,
-    "city_median_days": 6.9,
-    "closed_n": 1076
+    "median_days": 7.82,
+    "city_median_days": 6.91,
+    "closed_n": 1104
    },
    {
     "type": "Scheduled Yard Waste",
-    "median_days": 13.24,
+    "median_days": 13.21,
     "city_median_days": 9.45,
-    "closed_n": 738
+    "closed_n": 735
    },
    {
     "type": "Trash Collection - Missed",
-    "median_days": 10.82,
-    "city_median_days": 3.96,
-    "closed_n": 446
+    "median_days": 10.83,
+    "city_median_days": 3.95,
+    "closed_n": 445
    },
    {
     "type": "Recycling Collection - Missed",
-    "median_days": 7.44,
-    "city_median_days": 4.63,
-    "closed_n": 357
+    "median_days": 7.78,
+    "city_median_days": 4.56,
+    "closed_n": 349
    },
    {
     "type": "Sanitation Enforcement",
     "median_days": 0.77,
-    "city_median_days": 1.11,
-    "closed_n": 313
+    "city_median_days": 1.12,
+    "closed_n": 312
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -8879,7 +8751,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-13T09:20:14Z",
+  "generated_at": "2026-11-14T09:17:25Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -8988,9 +8860,9 @@
    }
   },
   "archive": {
-   "week_label": "November 7\u201313, 1926",
-   "week_start": "1926-11-07",
-   "week_end": "1926-11-13",
+   "week_label": "November 14\u201320, 1926",
+   "week_start": "1926-11-14",
+   "week_end": "1926-11-20",
    "paper": "Evening Star",
    "terms": [
     "\"Mount Pleasant Citizens\"",
@@ -9000,22 +8872,22 @@
    ],
    "clips": [
     {
-     "date": "1926-11-07",
-     "page": 4,
-     "text": "The Mount Pleasant Citizens\u2019 Asso ciation is particularly interested in building enlargement for the Bancroft School, which is located within its jur isdiction. and because the needed prop erty cannot be \u2026",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-07/ed-1/?sp=4"
+     "date": "1926-11-14",
+     "page": 54,
+     "text": "The Writerscraft Club met Monday evening In the basement of the Mount Pleasant Library.",
+     "url": "https://www.loc.gov/resource/sn83045462/1926-11-14/ed-1/?sp=54"
     },
     {
-     "date": "1926-11-07",
-     "page": 46,
-     "text": "This morning YYRC will broadcast church services from the Mount Pleasant Congregational Church, where Rev. M. R. Lovell, pastor, will preach.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-07/ed-1/?sp=46"
+     "date": "1926-11-17",
+     "page": 10,
+     "text": "The Towne Players, a dramatic club of the Church of Our Saviour, will present \"The Thirteenth Chair,\u201d at the parish house, 1616 Irving street.",
+     "url": "https://www.loc.gov/resource/sn83045462/1926-11-17/ed-1/?sp=10"
     },
     {
-     "date": "1926-11-08",
-     "page": 27,
-     "text": "Columbia Heights Christian 13 5 .72\" Central Presbyterian 11 7 .611 Mount Pleasant Methodist. 11 7 .611 Immanuel Baptist 10 8 .655 Wallace Memorial 7 11 .388 Pet worth Baptist 7 11 .388 Emory Methodist 7 11 .388 Petworth Methodist. 6 1\" .333 Columbia Heights remained \u2026",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-08/ed-1/?sp=27"
+     "date": "1926-11-18",
+     "page": 3,
+     "text": "\u2026 of Grace Dodge Hotel. j The Towne Players, senior dramatic club of the Church of Our Savior, will i present \u201cThe Thirteenth Chair\u201d at the I parish house, 1616 Irving street northJ east.",
+     "url": "https://www.loc.gov/resource/sn83045462/1926-11-18/ed-1/?sp=3"
     }
    ],
    "screened": 0,
@@ -9023,7 +8895,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-13T09:20:14Z",
+  "generated_at": "2026-11-14T09:17:25Z",
   "archive_days": 180,
   "sources": [
    {
@@ -9120,7 +8992,7 @@
     "name": "PoPville",
     "url": "https://www.popville.com/",
     "state": "ok",
-    "matched": 3,
+    "matched": 2,
     "fetched": 3
    },
    {
@@ -9320,8 +9192,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-13T09:20:14Z",
-  "today": "2026-11-13",
+  "generated_at": "2026-11-14T09:17:25Z",
+  "today": "2026-11-14",
   "days_ahead": 30,
   "sources": [
    {
@@ -9417,7 +9289,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-13T09:20:14Z",
+  "generated_at": "2026-11-14T09:17:25Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -9451,7 +9323,7 @@
   "lookup_errors": [],
   "leaf_status": {
    "1B": "The first pass for leaf collection in Section B will begin Monday, November 16, 2026. Section B residents, please have your leaves at the tree box or curbside by Sunday, November 15, 2026.",
-   "1A": "The first pass for leaf collection in Section A in Wards 1-8 is underway."
+   "1A": "The first pass for leaf collection in Section A in Wards 1-8 is complete."
   },
   "schools": {
    "dcps_328.0": {
@@ -18388,7 +18260,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-13T09:20:14Z",
+  "generated_at": "2026-11-14T09:17:25Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

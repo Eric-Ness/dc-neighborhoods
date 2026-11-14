@@ -1,7 +1,7 @@
 {
  "slug": "stadiumarmory",
  "name": "Stadium-Armory",
- "generated_at": "2026-11-13T09:20:14Z",
+ "generated_at": "2026-11-14T09:17:25Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1032,55 +1032,16 @@
    "lat": 38.88987,
    "lon": -76.97294,
    "smd": "7D05"
-  },
-  {
-   "id": "BCIV2600134",
-   "issued": "2026-10-15T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "CIVIL PLANS",
-   "address": "2400 EAST CAPITOL ST NE 20003",
-   "work": "APPROVED PLAN REVISION TO RFK STADIUM STORM SEWER RELOCATION PLANS (BCIV2500224)\r\n\r\nTHE RFK REDEVELOPMENT PROJECT WILL CATALYZE THE TRANSFORMATION OF THE ENTIRE 180-ACRE CAMPUS, WHICH WILL INCLUDE HOUSING, PARKS, RECREATION FACILITIES, HOTELS, RESTAURANTS, RETAIL SPACES, AND NEIGHBORHOOD AMENITIES. THERE ARE MULTIPLE \"DISTRICTS\" WITHIN THE 180-ACRE CAMPUS, AND AS SUCH, THE PROJECT WILL BE COMPLETE",
-   "zoning": "UNZONED",
-   "lat": 38.88987,
-   "lon": -76.97294,
-   "smd": "7D05"
-  },
-  {
-   "id": "R2400140-EXT-1",
-   "issued": "2026-10-15T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "PERMIT",
-   "address": "1900 MASSACHUSETTS AVE SE 20003",
-   "work": "",
-   "zoning": "HE-3",
-   "lat": 38.88514,
-   "lon": -76.97307,
-   "smd": "7F07"
-  },
-  {
-   "id": "D2400359-EXT-2",
-   "issued": "2026-10-15T04:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "PERMIT",
-   "address": "1900 MASSACHUSETTS AVE SE 20003",
-   "work": "",
-   "zoning": "HE-3",
-   "lat": 38.88514,
-   "lon": -76.97307,
-   "smd": "7F07"
   }
  ],
  "requests": {
-  "total": 27,
-  "previous_total": 24,
+  "total": 26,
+  "previous_total": 23,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 13,
-    "previous": 7
+    "count": 12,
+    "previous": 8
    },
    {
     "type": "DOEE - LIHEAP",
@@ -1389,16 +1350,6 @@
     "block": "1900 block of MASSACHUSETTS AVENUE SE",
     "lat": 38.885,
     "lon": -76.973
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-14T14:09:30Z",
-    "resolved": "2026-10-14T15:25:29Z",
-    "status": "Closed",
-    "block": "1900 block of MASSACHUSETTS AVENUE SE",
-    "lat": 38.885,
-    "lon": -76.973
    }
   ],
   "mapped": {
@@ -1448,12 +1399,6 @@
        0,
        "2026-10-16",
        "2026-10-16",
-       0
-      ],
-      [
-       0,
-       "2026-10-14",
-       "2026-10-14",
        0
       ]
      ]
@@ -1660,19 +1605,14 @@
     "previous": 2
    },
    {
-    "offense": "HOMICIDE",
-    "count": 1,
-    "previous": 0
-   },
-   {
     "offense": "BURGLARY",
     "count": 1,
     "previous": 0
    },
    {
-    "offense": "THEFT F/AUTO",
-    "count": 0,
-    "previous": 1
+    "offense": "HOMICIDE",
+    "count": 1,
+    "previous": 0
    },
    {
     "offense": "ROBBERY",
@@ -1683,6 +1623,11 @@
     "offense": "THEFT/OTHER",
     "count": 0,
     "previous": 5
+   },
+   {
+    "offense": "THEFT F/AUTO",
+    "count": 0,
+    "previous": 1
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -1715,7 +1660,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-13T09:20:14Z",
+  "generated_at": "2026-11-14T09:17:25Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -1730,7 +1675,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Stadium-Armory through OTR assessment sub-areas Old City 1 A and B, the rowhouse blocks just west of the stadium grounds in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Stadium-Armory boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-13): 7% of the 2,431 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Stadium-Armory through OTR assessment sub-areas Old City 1 A and B, the rowhouse blocks just west of the stadium grounds in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Stadium-Armory boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-14): 7% of the 4,862 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -1744,89 +1689,89 @@
   ],
   "boundary_fit": {
    "squares": 9,
-   "area_parcels": 2431,
+   "area_parcels": 4862,
    "area_share_inside": 0.07,
    "boundary_share_in_area": 1.0,
-   "measured": "2026-11-13"
+   "measured": "2026-11-14"
   },
   "primary": "house",
   "house": {
    "median_12mo": 1025000,
-   "count_12mo": 55,
+   "count_12mo": 110,
    "median_prev_12mo": 942500,
-   "count_prev_12mo": 76
+   "count_prev_12mo": 152
   },
   "condo": {
    "median_12mo": 662500,
-   "count_12mo": 14,
+   "count_12mo": 28,
    "median_prev_12mo": 672500,
-   "count_prev_12mo": 22
+   "count_prev_12mo": 44
   },
   "last_60d": {
    "median": 838000,
-   "count": 7,
+   "count": 14,
    "median_ppsf": 691,
-   "ppsf_count": 7
+   "ppsf_count": 14
   },
   "above_assessment_12mo": {
-   "n": 47,
-   "of": 69
+   "n": 94,
+   "of": 138
   },
   "by_month": [
    {
     "month": "2025-12",
     "median": 1037000,
-    "count": 4
+    "count": 8
    },
    {
     "month": "2026-01",
     "median": 1300000,
-    "count": 3
+    "count": 6
    },
    {
     "month": "2026-02",
     "median": 901000,
-    "count": 4
+    "count": 8
    },
    {
     "month": "2026-03",
     "median": 1200000,
-    "count": 5
+    "count": 10
    },
    {
     "month": "2026-04",
     "median": 945000,
-    "count": 3
+    "count": 6
    },
    {
     "month": "2026-05",
     "median": 925550,
-    "count": 10
+    "count": 20
    },
    {
     "month": "2026-06",
     "median": 1135000,
-    "count": 7
+    "count": 14
    },
    {
     "month": "2026-07",
     "median": 970250,
-    "count": 4
+    "count": 8
    },
    {
     "month": "2026-08",
     "median": 1200000,
-    "count": 3
+    "count": 6
    },
    {
     "month": "2026-09",
     "median": 870000,
-    "count": 5
+    "count": 10
    },
    {
     "month": "2026-10",
     "median": 938500,
-    "count": 5
+    "count": 10
    },
    {
     "month": "2026-11",
@@ -1844,6 +1789,24 @@
     "beds": null,
     "sqft": null,
     "assessed": 358700
+   },
+   {
+    "address": "732 15th St SE # 1",
+    "date": "2026-10-28",
+    "price": 395000,
+    "kind": "condo",
+    "beds": null,
+    "sqft": null,
+    "assessed": 358700
+   },
+   {
+    "address": "1365 E St SE",
+    "date": "2026-10-28",
+    "price": 838000,
+    "kind": "house",
+    "beds": 3,
+    "sqft": 1301,
+    "assessed": 809390
    },
    {
     "address": "1365 E St SE",
@@ -1864,6 +1827,15 @@
     "assessed": 685000
    },
    {
+    "address": "1332 G St SE # 1",
+    "date": "2026-10-27",
+    "price": 635000,
+    "kind": "condo",
+    "beds": null,
+    "sqft": null,
+    "assessed": 685000
+   },
+   {
     "address": "35 17th St SE",
     "date": "2026-10-26",
     "price": 685000,
@@ -1871,6 +1843,24 @@
     "beds": 2,
     "sqft": 992,
     "assessed": 643680
+   },
+   {
+    "address": "35 17th St SE",
+    "date": "2026-10-26",
+    "price": 685000,
+    "kind": "house",
+    "beds": 2,
+    "sqft": 992,
+    "assessed": 643680
+   },
+   {
+    "address": "515 14th St SE",
+    "date": "2026-10-23",
+    "price": 965000,
+    "kind": "house",
+    "beds": 3,
+    "sqft": 1308,
+    "assessed": 753770
    },
    {
     "address": "515 14th St SE",
@@ -1891,6 +1881,15 @@
     "assessed": 896130
    },
    {
+    "address": "1328 G St SE",
+    "date": "2026-10-15",
+    "price": 938500,
+    "kind": "house",
+    "beds": 3,
+    "sqft": 1352,
+    "assessed": 896130
+   },
+   {
     "address": "1405 East Capitol St SE # 3",
     "date": "2026-10-09",
     "price": 377500,
@@ -1898,6 +1897,24 @@
     "beds": null,
     "sqft": null,
     "assessed": 342490
+   },
+   {
+    "address": "1405 East Capitol St SE # 3",
+    "date": "2026-10-09",
+    "price": 377500,
+    "kind": "condo",
+    "beds": null,
+    "sqft": null,
+    "assessed": 342490
+   },
+   {
+    "address": "125 16th St SE",
+    "date": "2026-10-06",
+    "price": 984500,
+    "kind": "house",
+    "beds": 4,
+    "sqft": 1152,
+    "assessed": 794450
    },
    {
     "address": "125 16th St SE",
@@ -1918,6 +1935,24 @@
     "assessed": 691140
    },
    {
+    "address": "308 16th St SE",
+    "date": "2026-09-30",
+    "price": 625000,
+    "kind": "house",
+    "beds": 3,
+    "sqft": 1290,
+    "assessed": 691140
+   },
+   {
+    "address": "1601 E St SE",
+    "date": "2026-09-30",
+    "price": 630000,
+    "kind": "house",
+    "beds": 3,
+    "sqft": 1222,
+    "assessed": 821650
+   },
+   {
     "address": "1601 E St SE",
     "date": "2026-09-30",
     "price": 630000,
@@ -1929,7 +1964,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-13T09:20:14Z",
+  "generated_at": "2026-11-14T09:17:25Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -1953,7 +1988,7 @@
    "starting_next_7d": 0,
    "reserved_ft": 1188,
    "long_running_90d": 5,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-13: newest permit issued 2026-11-13, newest record update 2026-11-13, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-14: newest permit issued 2026-11-14, newest record update 2026-11-14, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Construction staging",
@@ -2062,13 +2097,13 @@
    {
     "type": "Illegal Dumping",
     "median_days": 3.78,
-    "city_median_days": 3.97,
+    "city_median_days": 3.96,
     "closed_n": 29
    },
    {
     "type": "Pothole",
     "median_days": 6.41,
-    "city_median_days": 3.61,
+    "city_median_days": 3.6,
     "closed_n": 24
    },
    {
@@ -2080,26 +2115,26 @@
    {
     "type": "Sanitation Enforcement",
     "median_days": 1.98,
-    "city_median_days": 1.11,
+    "city_median_days": 1.12,
     "closed_n": 15
    },
    {
     "type": "Dead Animal Collection",
     "median_days": 1.18,
-    "city_median_days": 1.74,
+    "city_median_days": 1.75,
     "closed_n": 11
    },
    {
     "type": "Roadway Signs",
     "median_days": 23.79,
-    "city_median_days": 7.12,
+    "city_median_days": 7.13,
     "closed_n": 11
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-13T09:20:14Z",
+  "generated_at": "2026-11-14T09:17:25Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2160,9 +2195,9 @@
    }
   },
   "archive": {
-   "week_label": "November 7\u201313, 1926",
-   "week_start": "1926-11-07",
-   "week_end": "1926-11-13",
+   "week_label": "November 14\u201320, 1926",
+   "week_start": "1926-11-14",
+   "week_end": "1926-11-20",
    "paper": "Evening Star",
    "terms": [
     "\"Congressional Cemetery\"",
@@ -2172,24 +2207,48 @@
    ],
    "clips": [
     {
-     "date": "1926-11-10",
-     "page": 9,
-     "text": "I Pierce Frazier. 38. 761 Kenyon st. Samuel Ashley Williams. 38, 812 New j Hampshire are Sarah Fox. 27. Gallinger Hospital Irene Bali. 28.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-10/ed-1/?sp=9"
+     "date": "1926-11-14",
+     "page": 5,
+     "text": "The old potter\u2019s field was in back of Gallinger Hospital and was used until the present one was established in 1921.",
+     "url": "https://www.loc.gov/resource/sn83045462/1926-11-14/ed-1/?sp=5"
     },
     {
-     "date": "1926-11-11",
-     "page": 19,
-     "text": "Charles Kamni. 05. 431 Buchanan Ft. i James R. Wellington. 83. 4733 Meade st. i n.e Emma Easley. 00. Gallinger Hospital.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-11/ed-1/?sp=19"
+     "date": "1926-11-15",
+     "page": 9,
+     "text": "On Sunday, November jft. 1920 at the Gallinger Hospital.",
+     "url": "https://www.loc.gov/resource/sn83045462/1926-11-15/ed-1/?sp=9"
+    },
+    {
+     "date": "1926-11-17",
+     "page": 1,
+     "text": "Today\u2019s session was held up by a proposal to introduce testimony from a prisoner at the District jail.",
+     "url": "https://www.loc.gov/resource/sn83045462/1926-11-17/ed-1/?sp=1"
+    },
+    {
+     "date": "1926-11-18",
+     "page": 7,
+     "text": "It appeared that the District at torney\u2019s office was holding what It supposed to be a surprise up its sleeve In the person of Moore, now in the District Jail.",
+     "url": "https://www.loc.gov/resource/sn83045462/1926-11-18/ed-1/?sp=7"
+    },
+    {
+     "date": "1926-11-19",
+     "page": 1,
+     "text": "The Scrivener death pistol clue, born in the office of District Attorney Pey ton Gordon when Henry Miller Moore, a District Jail prisoner.",
+     "url": "https://www.loc.gov/resource/sn83045462/1926-11-19/ed-1/?sp=1"
+    },
+    {
+     "date": "1926-11-20",
+     "page": 10,
+     "text": "The Annunciation, Congressional Cemetery Chapel. 3:30. 4.",
+     "url": "https://www.loc.gov/resource/sn83045462/1926-11-20/ed-1/?sp=10"
     }
    ],
-   "screened": 0,
-   "note": "Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
+   "screened": 1,
+   "note": "Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too. This week 1 otherwise usable clip was held back by that screen."
   }
  },
  "news": {
-  "generated_at": "2026-11-13T09:20:14Z",
+  "generated_at": "2026-11-14T09:17:25Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2371,6 +2430,13 @@
     "source": "DC News Now",
     "published": "2026-11-10T23:56:27Z",
     "first_seen": "2026-11-11T09:19:05Z"
+   },
+   {
+    "title": "ANC 7D Updated Agenda for November 16 Virtual Meeting",
+    "url": "https://anc7d.dc.gov/release/anc-7d-updated-agenda-november-16-virtual-meeting",
+    "source": "ANC 7D",
+    "published": "2026-11-10T03:58:33Z",
+    "first_seen": "2026-11-14T09:17:25Z"
    },
    {
     "title": "ANC 7D Preliminary Agenda for November 16 Virtual Meeting",
@@ -2610,8 +2676,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-13T09:20:14Z",
-  "today": "2026-11-13",
+  "generated_at": "2026-11-14T09:17:25Z",
+  "today": "2026-11-14",
   "days_ahead": 30,
   "sources": [
    {
@@ -2758,7 +2824,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-13T09:20:14Z",
+  "generated_at": "2026-11-14T09:17:25Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -14262,7 +14328,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-13T09:20:14Z",
+  "generated_at": "2026-11-14T09:17:25Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
