@@ -86,12 +86,15 @@
     { "pattern": "bellevuedc.org", "custom_domain": true },
     { "pattern": "www.bellevuedc.org", "custom_domain": true },
     { "pattern": "16thstreetheights.org", "custom_domain": true },
-    { "pattern": "www.16thstreetheights.org", "custom_domain": true }
+    { "pattern": "www.16thstreetheights.org", "custom_domain": true },
+    { "pattern": "fortlincoln.net", "custom_domain": true },
+    { "pattern": "www.fortlincoln.net", "custom_domain": true },
+    { "pattern": "twiningdc.org", "custom_domain": true },
+    { "pattern": "www.twiningdc.org", "custom_domain": true }
     // lenfantplaza.net (redirects to the .org) comes back once its zone is active on Cloudflare.
     // capitolriverfront.net (redirects to navyyarddc.net) comes back once its zone is active on Cloudflare.
     // petworth.net and tenleytown.net come back here once those zones are on Cloudflare;
     // the Worker already 301s them to the .org.
-    // bellevuedc.net (redirects to bellevuedc.org), twiningdc.org and fortlincoln.net come back here once their
-    // zones are active on Cloudflare; Twining and Fort Lincoln are configured in neighborhoods.json but disabled.
+    // bellevuedc.net (redirects to bellevuedc.org) comes back here once its zone is active on Cloudflare.
   ]
 }
