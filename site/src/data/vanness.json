@@ -1,7 +1,7 @@
 {
  "slug": "vanness",
  "name": "Van Ness",
- "generated_at": "2026-11-14T09:17:25Z",
+ "generated_at": "2026-11-15T09:18:06Z",
  "boundary": {
   "source": "ANC single-member districts 3F01, 3F02 and 3F05 around the Van Ness-UDC Metro (Open Data DC). DC has no planning area named Van Ness.",
   "rings": [
@@ -3340,44 +3340,31 @@
    "lat": 38.95022,
    "lon": -77.06757,
    "smd": "3F01"
-  },
-  {
-   "id": "P2700485",
-   "issued": "2026-10-16T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
-   "address": "4731 30TH ST NW 20008",
-   "work": "Plumbing trade Permit",
-   "zoning": "R-1A/FH",
-   "lat": 38.95147,
-   "lon": -77.06139,
-   "smd": "3F02"
   }
  ],
  "requests": {
-  "total": 223,
-  "previous_total": 222,
+  "total": 227,
+  "previous_total": 213,
   "by_type": [
    {
     "type": "Scheduled Yard Waste",
-    "count": 46,
-    "previous": 54
+    "count": 48,
+    "previous": 51
    },
    {
     "type": "Parking Enforcement",
     "count": 42,
-    "previous": 34
+    "previous": 33
    },
    {
     "type": "Bulk Collection",
-    "count": 36,
+    "count": 40,
     "previous": 25
    },
    {
     "type": "Graffiti Removal",
-    "count": 13,
-    "previous": 0
+    "count": 11,
+    "previous": 2
    },
    {
     "type": "Trash Collection - Missed",
@@ -3387,12 +3374,7 @@
    {
     "type": "Public Space Litter Can-Collection",
     "count": 6,
-    "previous": 1
-   },
-   {
-    "type": "Roadway Signs",
-    "count": 5,
-    "previous": 6
+    "previous": 0
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -3405,9 +3387,14 @@
     "previous": 1
    },
    {
+    "type": "Roadway Signs",
+    "count": 4,
+    "previous": 7
+   },
+   {
     "type": "Recycling Collection - Missed",
     "count": 3,
-    "previous": 5
+    "previous": 4
    },
    {
     "type": "DMV - Vehicle Registration Issues",
@@ -3432,7 +3419,7 @@
    {
     "type": "Supercan - Delivery",
     "count": 3,
-    "previous": 7
+    "previous": 6
    },
    {
     "type": "Traffic Safety Input",
@@ -3447,7 +3434,7 @@
    {
     "type": "DMV - Drivers License/ID Issues",
     "count": 2,
-    "previous": 5
+    "previous": 4
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
@@ -3478,6 +3465,11 @@
     "type": "Sidewalk Repair",
     "count": 2,
     "previous": 1
+   },
+   {
+    "type": "Residential Parking Permit Violation",
+    "count": 2,
+    "previous": 2
    },
    {
     "type": "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
@@ -3512,7 +3504,7 @@
    {
     "type": "DOB - Vacant Private Property Inspection",
     "count": 1,
-    "previous": 1
+    "previous": 0
    },
    {
     "type": "Grass Mowing Services Missed (DGS)",
@@ -3532,7 +3524,7 @@
    {
     "type": "Dockless Vehicle Parking Complaint",
     "count": 1,
-    "previous": 3
+    "previous": 2
    },
    {
     "type": "DMV - Adjudication Supervisor",
@@ -3557,7 +3549,7 @@
    {
     "type": "Illegal Dumping",
     "count": 1,
-    "previous": 3
+    "previous": 2
    },
    {
     "type": "Public Space Inspection",
@@ -3573,15 +3565,100 @@
     "type": "Supercan - Repair",
     "count": 1,
     "previous": 1
+   }
+  ],
+  "open": 72,
+  "recent": [
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-14T23:00:50Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2900 block of DAVENPORT STREET NW",
+    "lat": 38.952,
+    "lon": -77.06
    },
    {
     "type": "Residential Parking Permit Violation",
-    "count": 1,
-    "previous": 2
-   }
-  ],
-  "open": 65,
-  "recent": [
+    "agency": "DPW",
+    "added": "2026-11-14T21:33:32Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3500 block of APPLETON STREET NW",
+    "lat": 38.949,
+    "lon": -77.067
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-14T20:38:04Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3600 block of ALTON PLACE NW",
+    "lat": 38.947,
+    "lon": -77.072
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-14T20:15:06Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3600 block of VEAZEY STREET NW",
+    "lat": 38.944,
+    "lon": -77.071
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-14T20:02:35Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4200 block of RENO ROAD NW",
+    "lat": 38.944,
+    "lon": -77.07
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-14T19:45:22Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2900 block of UPTON STREET NW",
+    "lat": 38.942,
+    "lon": -77.061
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-14T17:20:28Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3600 block of VAN NESS STREET NW",
+    "lat": 38.943,
+    "lon": -77.071
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-14T16:30:03Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4200 block of 37TH STREET NW",
+    "lat": 38.944,
+    "lon": -77.072
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-14T15:16:47Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3500 block of ALBEMARLE STREET NW",
+    "lat": 38.948,
+    "lon": -77.069
+   },
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
@@ -3846,8 +3923,8 @@
     "type": "Recycling Collection - Missed",
     "agency": "DPW",
     "added": "2026-11-10T18:57:18Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-14T13:24:19Z",
+    "status": "Closed",
     "block": "3000 block of DAVENPORT STREET NW",
     "lat": 38.952,
     "lon": -77.064
@@ -3991,108 +4068,18 @@
     "block": "3500 block of APPLETON STREET NW",
     "lat": 38.949,
     "lon": -77.067
-   },
-   {
-    "type": "Supercan - Delivery",
-    "agency": "DPW",
-    "added": "2026-11-09T14:00:01Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3600 block of YUMA STREET NW",
-    "lat": 38.946,
-    "lon": -77.07
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-09T13:53:56Z",
-    "resolved": "2026-11-12T13:19:05Z",
-    "status": "Closed",
-    "block": "2900 block of BRANDYWINE STREET NW",
-    "lat": 38.95,
-    "lon": -77.061
-   },
-   {
-    "type": "Public Space Inspection",
-    "agency": "DDOT",
-    "added": "2026-11-09T13:50:44Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "CONNECTICUT AVENUE NW AND TILDEN STREET NW",
-    "lat": 38.941,
-    "lon": -77.062
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-09T13:36:06Z",
-    "resolved": "2026-11-12T13:19:12Z",
-    "status": "Closed",
-    "block": "4500 block of 30TH STREET NW",
-    "lat": 38.949,
-    "lon": -77.062
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-09T01:38:10Z",
-    "resolved": "2026-11-12T16:45:06Z",
-    "status": "Closed",
-    "block": "3600 block of WARREN STREET NW",
-    "lat": 38.945,
-    "lon": -77.072
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-08T22:10:14Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3600 block of WARREN STREET NW",
-    "lat": 38.945,
-    "lon": -77.072
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-08T20:25:25Z",
-    "resolved": "2026-11-12T16:16:04Z",
-    "status": "Closed",
-    "block": "4200 block of 37TH STREET NW",
-    "lat": 38.944,
-    "lon": -77.072
-   },
-   {
-    "type": "Container Removal",
-    "agency": "DPW",
-    "added": "2026-11-07T17:30:56Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2900 block of UPTON STREET NW",
-    "lat": 38.942,
-    "lon": -77.059
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-07T17:29:25Z",
-    "resolved": "2026-11-12T16:44:23Z",
-    "status": "Closed",
-    "block": "2900 block of UPTON STREET NW",
-    "lat": 38.942,
-    "lon": -77.061
    }
   ],
   "mapped": {
    "types": [
+    "Bulk Collection",
+    "Residential Parking Permit Violation",
+    "Scheduled Yard Waste",
     "Parking Enforcement",
     "Supercan - Delivery",
-    "Bulk Collection",
     "DGS - Overflowing Recycling Can",
     "Roadway Repair",
-    "Scheduled Yard Waste",
     "Public Space Litter Can-Collection",
-    "Residential Parking Permit Violation",
     "Graffiti Removal",
     "Traffic Safety Input",
     "Sidewalk Repair",
@@ -4132,18 +4119,351 @@
    ],
    "blocks": [
     {
+     "block": "2900 block of DAVENPORT STREET NW",
+     "lat": 38.952,
+     "lon": -77.06,
+     "r": [
+      [
+       0,
+       "2026-11-14",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "3500 block of APPLETON STREET NW",
+     "lat": 38.949,
+     "lon": -77.067,
+     "r": [
+      [
+       1,
+       "2026-11-14",
+       null,
+       1
+      ],
+      [
+       3,
+       "2026-11-09",
+       "2026-11-09",
+       0
+      ],
+      [
+       3,
+       "2026-10-24",
+       "2026-10-24",
+       0
+      ],
+      [
+       3,
+       "2026-10-17",
+       "2026-10-17",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3600 block of ALTON PLACE NW",
+     "lat": 38.947,
+     "lon": -77.072,
+     "r": [
+      [
+       0,
+       "2026-11-14",
+       null,
+       1
+      ],
+      [
+       25,
+       "2026-10-31",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "3600 block of VEAZEY STREET NW",
+     "lat": 38.944,
+     "lon": -77.071,
+     "r": [
+      [
+       0,
+       "2026-11-14",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-11-06",
+       "2026-11-12",
+       0
+      ],
+      [
+       16,
+       "2026-11-05",
+       "2026-11-09",
+       0
+      ],
+      [
+       2,
+       "2026-11-04",
+       null,
+       1
+      ],
+      [
+       13,
+       "2026-11-03",
+       "2026-11-05",
+       0
+      ],
+      [
+       16,
+       "2026-11-03",
+       "2026-11-05",
+       0
+      ],
+      [
+       0,
+       "2026-10-29",
+       "2026-11-05",
+       0
+      ],
+      [
+       0,
+       "2026-10-23",
+       "2026-10-30",
+       0
+      ],
+      [
+       13,
+       "2026-10-22",
+       "2026-10-23",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4200 block of RENO ROAD NW",
+     "lat": 38.944,
+     "lon": -77.07,
+     "r": [
+      [
+       0,
+       "2026-11-14",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "2900 block of UPTON STREET NW",
+     "lat": 38.942,
+     "lon": -77.061,
+     "r": [
+      [
+       2,
+       "2026-11-14",
+       null,
+       1
+      ],
+      [
+       4,
+       "2026-11-13",
+       null,
+       1
+      ],
+      [
+       2,
+       "2026-11-10",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-11-07",
+       "2026-11-12",
+       0
+      ],
+      [
+       3,
+       "2026-11-04",
+       "2026-11-04",
+       0
+      ],
+      [
+       3,
+       "2026-11-04",
+       "2026-11-04",
+       0
+      ],
+      [
+       3,
+       "2026-11-04",
+       "2026-11-04",
+       0
+      ],
+      [
+       3,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ],
+      [
+       3,
+       "2026-11-02",
+       "2026-11-02",
+       0
+      ],
+      [
+       2,
+       "2026-11-02",
+       "2026-11-10",
+       0
+      ],
+      [
+       0,
+       "2026-11-01",
+       "2026-11-05",
+       0
+      ],
+      [
+       0,
+       "2026-10-29",
+       "2026-11-05",
+       0
+      ],
+      [
+       2,
+       "2026-10-26",
+       "2026-11-03",
+       0
+      ],
+      [
+       3,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3600 block of VAN NESS STREET NW",
+     "lat": 38.943,
+     "lon": -77.071,
+     "r": [
+      [
+       2,
+       "2026-11-14",
+       null,
+       1
+      ],
+      [
+       16,
+       "2026-11-06",
+       "2026-11-09",
+       0
+      ],
+      [
+       16,
+       "2026-11-05",
+       "2026-11-09",
+       0
+      ],
+      [
+       16,
+       "2026-11-03",
+       "2026-11-05",
+       0
+      ],
+      [
+       0,
+       "2026-10-26",
+       "2026-10-30",
+       0
+      ],
+      [
+       16,
+       "2026-10-23",
+       "2026-10-27",
+       0
+      ],
+      [
+       0,
+       "2026-10-17",
+       "2026-10-26",
+       0
+      ],
+      [
+       0,
+       "2026-10-17",
+       "2026-10-26",
+       0
+      ],
+      [
+       0,
+       "2026-10-17",
+       "2026-10-26",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4200 block of 37TH STREET NW",
+     "lat": 38.944,
+     "lon": -77.072,
+     "r": [
+      [
+       2,
+       "2026-11-14",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-11-08",
+       "2026-11-12",
+       0
+      ],
+      [
+       16,
+       "2026-11-03",
+       "2026-11-05",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3500 block of ALBEMARLE STREET NW",
+     "lat": 38.948,
+     "lon": -77.069,
+     "r": [
+      [
+       0,
+       "2026-11-14",
+       null,
+       1
+      ],
+      [
+       39,
+       "2026-10-21",
+       null,
+       1
+      ]
+     ]
+    },
+    {
      "block": "3500 block of APPLETON STREET NW",
      "lat": 38.949,
      "lon": -77.068,
      "r": [
       [
-       0,
+       3,
        "2026-11-13",
        "2026-11-14",
        0
       ],
       [
-       2,
+       0,
        "2026-10-22",
        "2026-10-26",
        0
@@ -4162,13 +4482,13 @@
      "lon": -77.061,
      "r": [
       [
-       0,
+       3,
        "2026-11-13",
        "2026-11-13",
        0
       ],
       [
-       0,
+       3,
        "2026-10-26",
        "2026-10-26",
        0
@@ -4182,103 +4502,18 @@
      ]
     },
     {
-     "block": "2900 block of UPTON STREET NW",
-     "lat": 38.942,
-     "lon": -77.061,
-     "r": [
-      [
-       1,
-       "2026-11-13",
-       null,
-       1
-      ],
-      [
-       5,
-       "2026-11-10",
-       null,
-       1
-      ],
-      [
-       2,
-       "2026-11-07",
-       "2026-11-12",
-       0
-      ],
-      [
-       0,
-       "2026-11-04",
-       "2026-11-04",
-       0
-      ],
-      [
-       0,
-       "2026-11-04",
-       "2026-11-04",
-       0
-      ],
-      [
-       0,
-       "2026-11-04",
-       "2026-11-04",
-       0
-      ],
-      [
-       0,
-       "2026-11-03",
-       "2026-11-03",
-       0
-      ],
-      [
-       0,
-       "2026-11-02",
-       "2026-11-02",
-       0
-      ],
-      [
-       5,
-       "2026-11-02",
-       "2026-11-10",
-       0
-      ],
-      [
-       2,
-       "2026-11-01",
-       "2026-11-05",
-       0
-      ],
-      [
-       2,
-       "2026-10-29",
-       "2026-11-05",
-       0
-      ],
-      [
-       5,
-       "2026-10-26",
-       "2026-11-03",
-       0
-      ],
-      [
-       0,
-       "2026-10-20",
-       "2026-10-20",
-       0
-      ]
-     ]
-    },
-    {
      "block": "4300 block of RENO ROAD NW",
      "lat": 38.945,
      "lon": -77.071,
      "r": [
       [
-       2,
+       0,
        "2026-11-13",
        null,
        1
       ],
       [
-       2,
+       0,
        "2026-10-20",
        "2026-10-26",
        0
@@ -4291,7 +4526,7 @@
      "lon": -77.061,
      "r": [
       [
-       2,
+       0,
        "2026-11-13",
        null,
        1
@@ -4304,7 +4539,7 @@
      "lon": -77.064,
      "r": [
       [
-       3,
+       5,
        "2026-11-13",
        null,
        1
@@ -4317,7 +4552,7 @@
      "lon": -77.059,
      "r": [
       [
-       2,
+       0,
        "2026-11-13",
        null,
        1
@@ -4329,7 +4564,7 @@
        1
       ],
       [
-       2,
+       0,
        "2026-11-07",
        "2026-11-12",
        0
@@ -4342,7 +4577,7 @@
      "lon": -77.061,
      "r": [
       [
-       4,
+       6,
        "2026-11-13",
        null,
        1
@@ -4361,7 +4596,7 @@
      "lon": -77.069,
      "r": [
       [
-       5,
+       2,
        "2026-11-12",
        null,
        1
@@ -4380,7 +4615,7 @@
      "lon": -77.065,
      "r": [
       [
-       6,
+       7,
        "2026-11-12",
        "2026-11-13",
        0
@@ -4393,13 +4628,13 @@
      "lon": -77.063,
      "r": [
       [
-       0,
+       3,
        "2026-11-12",
        "2026-11-12",
        0
       ],
       [
-       6,
+       7,
        "2026-11-12",
        "2026-11-13",
        0
@@ -4417,19 +4652,19 @@
        1
       ],
       [
-       0,
+       3,
        "2026-10-28",
        "2026-10-28",
        0
       ],
       [
-       0,
+       3,
        "2026-10-23",
        "2026-10-23",
        0
       ],
       [
-       0,
+       3,
        "2026-10-21",
        "2026-10-21",
        0
@@ -4442,7 +4677,7 @@
      "lon": -77.061,
      "r": [
       [
-       6,
+       7,
        "2026-11-12",
        "2026-11-13",
        0
@@ -4455,7 +4690,7 @@
      "lon": -77.063,
      "r": [
       [
-       7,
+       1,
        "2026-11-12",
        "2026-11-12",
        0
@@ -4474,13 +4709,13 @@
      "lon": -77.07,
      "r": [
       [
-       5,
+       2,
        "2026-11-12",
        null,
        1
       ],
       [
-       5,
+       2,
        "2026-10-31",
        "2026-11-10",
        0
@@ -4493,19 +4728,19 @@
      "lon": -77.069,
      "r": [
       [
-       5,
+       2,
        "2026-11-12",
        null,
        1
       ],
       [
-       5,
+       2,
        "2026-11-02",
        "2026-11-10",
        0
       ],
       [
-       2,
+       0,
        "2026-10-22",
        "2026-10-26",
        0
@@ -4536,7 +4771,7 @@
        0
       ],
       [
-       6,
+       7,
        "2026-10-28",
        "2026-10-29",
        1
@@ -4561,37 +4796,37 @@
      "lon": -77.064,
      "r": [
       [
-       5,
+       2,
        "2026-11-11",
        null,
        1
       ],
       [
-       5,
+       2,
        "2026-10-30",
        "2026-11-10",
        0
       ],
       [
-       2,
+       0,
        "2026-10-26",
        "2026-10-30",
        0
       ],
       [
-       5,
+       2,
        "2026-10-23",
        "2026-10-27",
        0
       ],
       [
-       2,
+       0,
        "2026-10-20",
        "2026-10-26",
        0
       ],
       [
-       5,
+       2,
        "2026-10-16",
        "2026-10-20",
        0
@@ -4604,7 +4839,7 @@
      "lon": -77.072,
      "r": [
       [
-       5,
+       2,
        "2026-11-11",
        null,
        1
@@ -4617,7 +4852,7 @@
      "lon": -77.059,
      "r": [
       [
-       5,
+       2,
        "2026-11-11",
        null,
        1
@@ -4636,7 +4871,7 @@
        1
       ],
       [
-       2,
+       0,
        "2026-11-01",
        "2026-11-05",
        0
@@ -4674,25 +4909,25 @@
      "lon": -77.06,
      "r": [
       [
-       5,
+       2,
        "2026-11-10",
        null,
        1
       ],
       [
-       2,
+       0,
        "2026-11-02",
        "2026-11-05",
        0
       ],
       [
-       5,
+       2,
        "2026-10-25",
        "2026-11-03",
        0
       ],
       [
-       5,
+       2,
        "2026-10-24",
        "2026-10-27",
        0
@@ -4711,7 +4946,7 @@
        1
       ],
       [
-       2,
+       0,
        "2026-11-10",
        null,
        1
@@ -4726,8 +4961,8 @@
       [
        13,
        "2026-11-10",
-       null,
-       1
+       "2026-11-14",
+       0
       ]
      ]
     },
@@ -4737,7 +4972,7 @@
      "lon": -77.071,
      "r": [
       [
-       5,
+       2,
        "2026-11-10",
        null,
        1
@@ -4756,13 +4991,13 @@
        1
       ],
       [
-       5,
+       2,
        "2026-10-31",
        "2026-11-10",
        0
       ],
       [
-       5,
+       2,
        "2026-10-18",
        "2026-10-27",
        0
@@ -4775,7 +5010,7 @@
      "lon": -77.066,
      "r": [
       [
-       0,
+       3,
        "2026-11-10",
        "2026-11-10",
        0
@@ -4800,7 +5035,7 @@
        1
       ],
       [
-       1,
+       4,
        "2026-11-02",
        null,
        1
@@ -4813,13 +5048,13 @@
      "lon": -77.07,
      "r": [
       [
-       5,
+       2,
        "2026-11-10",
        null,
        1
       ],
       [
-       5,
+       2,
        "2026-10-19",
        "2026-10-27",
        0
@@ -4838,7 +5073,7 @@
        0
       ],
       [
-       0,
+       3,
        "2026-10-30",
        "2026-10-30",
        0
@@ -4863,7 +5098,7 @@
        0
       ],
       [
-       5,
+       2,
        "2026-10-22",
        "2026-10-27",
        0
@@ -4899,12 +5134,6 @@
        "2026-11-09",
        null,
        1
-      ],
-      [
-       8,
-       "2026-10-15",
-       "2026-11-02",
-       0
       ]
      ]
     },
@@ -4927,34 +5156,9 @@
      "lon": -77.067,
      "r": [
       [
-       2,
+       0,
        "2026-11-09",
        "2026-11-12",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "3500 block of APPLETON STREET NW",
-     "lat": 38.949,
-     "lon": -77.067,
-     "r": [
-      [
-       0,
-       "2026-11-09",
-       "2026-11-09",
-       0
-      ],
-      [
-       0,
-       "2026-10-24",
-       "2026-10-24",
-       0
-      ],
-      [
-       0,
-       "2026-10-17",
-       "2026-10-17",
        0
       ]
      ]
@@ -4965,7 +5169,7 @@
      "lon": -77.07,
      "r": [
       [
-       1,
+       4,
        "2026-11-09",
        null,
        1
@@ -4978,13 +5182,13 @@
      "lon": -77.061,
      "r": [
       [
-       2,
+       0,
        "2026-11-09",
        "2026-11-12",
        0
       ],
       [
-       5,
+       2,
        "2026-11-04",
        null,
        1
@@ -5010,25 +5214,25 @@
      "lon": -77.062,
      "r": [
       [
-       2,
+       0,
        "2026-11-09",
        "2026-11-12",
        0
       ],
       [
-       5,
+       2,
        "2026-10-31",
        "2026-11-10",
        0
       ],
       [
-       5,
+       2,
        "2026-10-16",
        "2026-10-20",
        0
       ],
       [
-       2,
+       0,
        "2026-10-16",
        "2026-10-26",
        0
@@ -5041,41 +5245,16 @@
      "lon": -77.072,
      "r": [
       [
-       2,
+       0,
        "2026-11-09",
        "2026-11-12",
        0
       ],
       [
-       5,
+       2,
        "2026-11-08",
        null,
        1
-      ],
-      [
-       2,
-       "2026-10-15",
-       "2026-10-19",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "4200 block of 37TH STREET NW",
-     "lat": 38.944,
-     "lon": -77.072,
-     "r": [
-      [
-       2,
-       "2026-11-08",
-       "2026-11-12",
-       0
-      ],
-      [
-       16,
-       "2026-11-03",
-       "2026-11-05",
-       0
       ]
      ]
     },
@@ -5085,13 +5264,13 @@
      "lon": -77.071,
      "r": [
       [
-       5,
+       2,
        "2026-11-07",
        null,
        1
       ],
       [
-       5,
+       2,
        "2026-11-01",
        "2026-11-10",
        0
@@ -5104,13 +5283,13 @@
      "lon": -77.072,
      "r": [
       [
-       2,
+       0,
        "2026-11-07",
        "2026-11-12",
        0
       ],
       [
-       2,
+       0,
        "2026-10-21",
        "2026-10-26",
        0
@@ -5123,19 +5302,19 @@
      "lon": -77.061,
      "r": [
       [
-       0,
+       3,
        "2026-11-07",
        "2026-11-07",
        0
       ],
       [
-       0,
+       3,
        "2026-11-02",
        "2026-11-02",
        0
       ],
       [
-       0,
+       3,
        "2026-11-01",
        "2026-11-01",
        0
@@ -5148,7 +5327,7 @@
      "lon": -77.062,
      "r": [
       [
-       5,
+       2,
        "2026-11-06",
        null,
        1
@@ -5162,136 +5341,26 @@
      ]
     },
     {
-     "block": "3600 block of VAN NESS STREET NW",
-     "lat": 38.943,
-     "lon": -77.071,
-     "r": [
-      [
-       16,
-       "2026-11-06",
-       "2026-11-09",
-       0
-      ],
-      [
-       16,
-       "2026-11-05",
-       "2026-11-09",
-       0
-      ],
-      [
-       16,
-       "2026-11-03",
-       "2026-11-05",
-       0
-      ],
-      [
-       2,
-       "2026-10-26",
-       "2026-10-30",
-       0
-      ],
-      [
-       16,
-       "2026-10-23",
-       "2026-10-27",
-       0
-      ],
-      [
-       2,
-       "2026-10-17",
-       "2026-10-26",
-       0
-      ],
-      [
-       2,
-       "2026-10-17",
-       "2026-10-26",
-       0
-      ],
-      [
-       2,
-       "2026-10-17",
-       "2026-10-26",
-       0
-      ]
-     ]
-    },
-    {
      "block": "3500 block of CHESAPEAKE STREET NW",
      "lat": 38.951,
      "lon": -77.069,
      "r": [
       [
-       5,
-       "2026-11-06",
-       null,
-       1
-      ],
-      [
-       5,
-       "2026-11-03",
-       null,
-       1
-      ],
-      [
-       0,
-       "2026-10-19",
-       "2026-10-19",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "3600 block of VEAZEY STREET NW",
-     "lat": 38.944,
-     "lon": -77.071,
-     "r": [
-      [
        2,
        "2026-11-06",
-       "2026-11-12",
-       0
-      ],
-      [
-       16,
-       "2026-11-05",
-       "2026-11-09",
-       0
-      ],
-      [
-       5,
-       "2026-11-04",
        null,
        1
       ],
       [
-       13,
-       "2026-11-03",
-       "2026-11-05",
-       0
-      ],
-      [
-       16,
-       "2026-11-03",
-       "2026-11-05",
-       0
-      ],
-      [
        2,
-       "2026-10-29",
-       "2026-11-05",
-       0
+       "2026-11-03",
+       null,
+       1
       ],
       [
-       2,
-       "2026-10-23",
-       "2026-10-30",
-       0
-      ],
-      [
-       13,
-       "2026-10-22",
-       "2026-10-23",
+       3,
+       "2026-10-19",
+       "2026-10-19",
        0
       ]
      ]
@@ -5314,7 +5383,7 @@
        1
       ],
       [
-       0,
+       3,
        "2026-10-24",
        "2026-10-24",
        0
@@ -5327,19 +5396,19 @@
      "lon": -77.062,
      "r": [
       [
-       0,
+       3,
        "2026-11-05",
        "2026-11-05",
        0
       ],
       [
-       0,
+       3,
        "2026-11-04",
        "2026-11-05",
        0
       ],
       [
-       4,
+       6,
        "2026-10-22",
        null,
        1
@@ -5352,7 +5421,7 @@
      "lon": -77.061,
      "r": [
       [
-       2,
+       0,
        "2026-11-05",
        "2026-11-12",
        0
@@ -5365,7 +5434,7 @@
      "lon": -77.062,
      "r": [
       [
-       0,
+       3,
        "2026-11-05",
        "2026-11-06",
        0
@@ -5378,7 +5447,7 @@
      "lon": -77.069,
      "r": [
       [
-       0,
+       3,
        "2026-11-05",
        "2026-11-05",
        0
@@ -5397,16 +5466,10 @@
      "lon": -77.065,
      "r": [
       [
-       5,
+       2,
        "2026-11-05",
        null,
        1
-      ],
-      [
-       5,
-       "2026-10-15",
-       "2026-10-20",
-       0
       ]
      ]
     },
@@ -5461,7 +5524,7 @@
      "lon": -77.068,
      "r": [
       [
-       0,
+       3,
        "2026-11-03",
        "2026-11-03",
        0
@@ -5473,19 +5536,19 @@
        0
       ],
       [
-       0,
+       3,
        "2026-10-29",
        "2026-10-29",
        0
       ],
       [
-       0,
+       3,
        "2026-10-24",
        "2026-10-24",
        0
       ],
       [
-       0,
+       3,
        "2026-10-23",
        "2026-10-23",
        0
@@ -5497,7 +5560,7 @@
        1
       ],
       [
-       0,
+       3,
        "2026-10-21",
        "2026-10-21",
        0
@@ -5510,7 +5573,7 @@
      "lon": -77.072,
      "r": [
       [
-       5,
+       2,
        "2026-11-03",
        null,
        1
@@ -5523,7 +5586,7 @@
      "lon": -77.068,
      "r": [
       [
-       5,
+       2,
        "2026-11-02",
        null,
        1
@@ -5536,7 +5599,7 @@
      "lon": -77.067,
      "r": [
       [
-       5,
+       2,
        "2026-11-02",
        "2026-11-10",
        0
@@ -5555,7 +5618,7 @@
        0
       ],
       [
-       0,
+       3,
        "2026-11-02",
        "2026-11-02",
        0
@@ -5574,29 +5637,16 @@
      "lon": -77.07,
      "r": [
       [
-       5,
+       2,
        "2026-10-31",
        "2026-11-10",
        1
       ],
       [
-       5,
+       2,
        "2026-10-31",
        "2026-11-10",
        0
-      ]
-     ]
-    },
-    {
-     "block": "3600 block of ALTON PLACE NW",
-     "lat": 38.947,
-     "lon": -77.072,
-     "r": [
-      [
-       25,
-       "2026-10-31",
-       null,
-       1
       ]
      ]
     },
@@ -5606,7 +5656,7 @@
      "lon": -77.067,
      "r": [
       [
-       0,
+       3,
        "2026-10-31",
        "2026-10-31",
        0
@@ -5619,25 +5669,25 @@
      "lon": -77.065,
      "r": [
       [
-       3,
+       5,
        "2026-10-30",
        "2026-11-02",
        0
       ],
       [
-       3,
+       5,
        "2026-10-30",
        "2026-11-02",
        0
       ],
       [
-       6,
+       7,
        "2026-10-28",
        "2026-10-29",
        0
       ],
       [
-       6,
+       7,
        "2026-10-24",
        "2026-10-27",
        0
@@ -5662,13 +5712,13 @@
        0
       ],
       [
-       0,
+       3,
        "2026-10-27",
        "2026-10-27",
        0
       ],
       [
-       0,
+       3,
        "2026-10-16",
        "2026-10-16",
        0
@@ -5710,12 +5760,6 @@
        "2026-10-29",
        "2026-11-02",
        1
-      ],
-      [
-       8,
-       "2026-10-15",
-       "2026-11-02",
-       0
       ]
      ]
     },
@@ -5783,7 +5827,7 @@
      "lon": -77.058,
      "r": [
       [
-       5,
+       2,
        "2026-10-29",
        "2026-11-03",
        0
@@ -5806,12 +5850,6 @@
        "2026-10-22",
        null,
        1
-      ],
-      [
-       21,
-       "2026-10-15",
-       null,
-       1
       ]
      ]
     },
@@ -5821,7 +5859,7 @@
      "lon": -77.064,
      "r": [
       [
-       0,
+       3,
        "2026-10-27",
        "2026-10-27",
        0
@@ -5873,7 +5911,7 @@
      "lon": -77.063,
      "r": [
       [
-       5,
+       2,
        "2026-10-26",
        "2026-11-03",
        0
@@ -5912,7 +5950,7 @@
      "lon": -77.07,
      "r": [
       [
-       2,
+       0,
        "2026-10-24",
        "2026-10-30",
        0
@@ -5938,19 +5976,19 @@
      "lon": -77.066,
      "r": [
       [
-       0,
+       3,
        "2026-10-24",
        "2026-10-24",
        0
       ],
       [
-       0,
+       3,
        "2026-10-20",
        "2026-10-20",
        0
       ],
       [
-       0,
+       3,
        "2026-10-16",
        "2026-10-16",
        0
@@ -5969,7 +6007,7 @@
        0
       ],
       [
-       0,
+       3,
        "2026-10-16",
        "2026-10-16",
        0
@@ -5995,7 +6033,7 @@
      "lon": -77.06,
      "r": [
       [
-       2,
+       0,
        "2026-10-23",
        "2026-10-30",
        0
@@ -6016,25 +6054,12 @@
      ]
     },
     {
-     "block": "3500 block of ALBEMARLE STREET NW",
-     "lat": 38.948,
-     "lon": -77.069,
-     "r": [
-      [
-       39,
-       "2026-10-21",
-       null,
-       1
-      ]
-     ]
-    },
-    {
      "block": "3600 block of WARREN STREET NW",
      "lat": 38.945,
      "lon": -77.071,
      "r": [
       [
-       2,
+       0,
        "2026-10-21",
        "2026-10-26",
        0
@@ -6073,7 +6098,7 @@
      "lon": -77.059,
      "r": [
       [
-       5,
+       2,
        "2026-10-20",
        "2026-10-27",
        0
@@ -6086,7 +6111,7 @@
      "lon": -77.061,
      "r": [
       [
-       2,
+       0,
        "2026-10-20",
        "2026-10-26",
        0
@@ -6125,7 +6150,7 @@
      "lon": -77.066,
      "r": [
       [
-       0,
+       3,
        "2026-10-19",
        "2026-10-19",
        0
@@ -6138,7 +6163,7 @@
      "lon": -77.063,
      "r": [
       [
-       5,
+       2,
        "2026-10-17",
        "2026-10-20",
        0
@@ -6151,7 +6176,7 @@
      "lon": -77.061,
      "r": [
       [
-       5,
+       2,
        "2026-10-17",
        "2026-10-20",
        0
@@ -6183,7 +6208,7 @@
        1
       ],
       [
-       5,
+       2,
        "2026-10-16",
        "2026-10-20",
        0
@@ -6194,13 +6219,13 @@
   }
  },
  "crime": {
-  "total": 11,
-  "previous_total": 13,
+  "total": 10,
+  "previous_total": 12,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
-    "count": 9,
-    "previous": 11
+    "count": 8,
+    "previous": 10
    },
    {
     "offense": "THEFT F/AUTO",
@@ -6238,7 +6263,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-14T09:17:25Z",
+  "generated_at": "2026-11-15T09:18:06Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -6253,7 +6278,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Van Ness through OTR assessment neighborhoods Forest Hills, Wakefield and North Cleveland Park in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Van Ness boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-14): 46% of the 7,914 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Van Ness through OTR assessment neighborhoods Forest Hills, Wakefield and North Cleveland Park in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Van Ness boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-15): 46% of the 7,914 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -6274,14 +6299,14 @@
    "area_parcels": 7914,
    "area_share_inside": 0.455,
    "boundary_share_in_area": 1.0,
-   "measured": "2026-11-14"
+   "measured": "2026-11-15"
   },
   "primary": "house",
   "house": {
    "median_12mo": 1820000,
    "count_12mo": 144,
-   "median_prev_12mo": 1895000,
-   "count_prev_12mo": 98
+   "median_prev_12mo": 1897500,
+   "count_prev_12mo": 96
   },
   "condo": {
    "median_12mo": 317500,
@@ -6654,7 +6679,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-14T09:17:25Z",
+  "generated_at": "2026-11-15T09:18:06Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -6678,7 +6703,7 @@
    "starting_next_7d": 10,
    "reserved_ft": 4862,
    "long_running_90d": 7,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-14: newest permit issued 2026-11-14, newest record update 2026-11-14, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-15: newest permit issued 2026-11-15, newest record update 2026-11-15, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -6864,32 +6889,32 @@
    {
     "type": "Scheduled Yard Waste",
     "median_days": 7.68,
-    "city_median_days": 9.45,
+    "city_median_days": 9.43,
     "closed_n": 457
    },
    {
     "type": "Bulk Collection",
-    "median_days": 7.71,
+    "median_days": 7.74,
     "city_median_days": 6.91,
-    "closed_n": 380
+    "closed_n": 378
    },
    {
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 351
+    "closed_n": 349
    },
    {
     "type": "Trash Collection - Missed",
     "median_days": 7.6,
-    "city_median_days": 3.95,
+    "city_median_days": 3.94,
     "closed_n": 199
    },
    {
     "type": "Recycling Collection - Missed",
-    "median_days": 3.95,
-    "city_median_days": 4.56,
-    "closed_n": 184
+    "median_days": 3.92,
+    "city_median_days": 4.55,
+    "closed_n": 185
    },
    {
     "type": "Tree Inspection",
@@ -6900,7 +6925,7 @@
    {
     "type": "Roadway Signs",
     "median_days": 65.13,
-    "city_median_days": 7.13,
+    "city_median_days": 7.12,
     "closed_n": 41
    },
    {
@@ -6913,7 +6938,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-14T09:17:25Z",
+  "generated_at": "2026-11-15T09:18:06Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -7065,7 +7090,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-14T09:17:25Z",
+  "generated_at": "2026-11-15T09:18:06Z",
   "archive_days": 180,
   "sources": [
    {
@@ -7516,8 +7541,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-14T09:17:25Z",
-  "today": "2026-11-14",
+  "generated_at": "2026-11-15T09:18:06Z",
+  "today": "2026-11-15",
   "days_ahead": 30,
   "sources": [
    {
@@ -7542,24 +7567,6 @@
    }
   ],
   "events": [
-   {
-    "title": "New Morning Farm at Sheridan School (SAT)",
-    "place": "4400 36th St NW",
-    "time": "8:00 AM - 1:00 PM",
-    "url": "https://www.newmorningfarm.net",
-    "source": "DC farmers market list",
-    "kind": "market",
-    "date": "2026-11-14"
-   },
-   {
-    "title": "UDC Van Ness Farmers Market",
-    "place": "4200 Connecticut Ave",
-    "time": "9:00 AM - 1:00 PM",
-    "url": "https://www.facebook.com/udcvnmarket",
-    "source": "DC farmers market list",
-    "kind": "market",
-    "date": "2026-11-14"
-   },
    {
     "title": "New Morning Farm at Sheridan School (SAT)",
     "place": "4400 36th St NW",
@@ -7636,7 +7643,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-14T09:17:25Z",
+  "generated_at": "2026-11-15T09:18:06Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -7697,8 +7704,8 @@
     "url": "https://www.wilsonhs.org/",
     "grades": "9th-12th"
    },
-   "dcps_258": {
-    "name": "Hearst",
+   "dcps_287": {
+    "name": "Murch",
     "address": null,
     "url": null,
     "grades": null
@@ -7715,8 +7722,8 @@
     "url": null,
     "grades": null
    },
-   "dcps_287": {
-    "name": "Murch",
+   "dcps_258": {
+    "name": "Hearst",
     "address": null,
     "url": null,
     "grades": null
@@ -7731,55 +7738,26 @@
    ],
    "streets": [
     {
-     "n": "NEBRASKA AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.07373,
-       38.95216
-      ],
-      [
-       -77.07362,
-       38.95228
-      ]
-     ]
-    },
-    {
-     "n": "29TH ST NW",
+     "n": "GRANT RD NW",
      "k": "minor",
      "p": [
       [
-       -77.05863,
-       38.94098
+       -77.06163,
+       38.95169
       ],
       [
-       -77.05864,
-       38.94206
+       -77.06417,
+       38.95128
+      ],
+      [
+       -77.06517,
+       38.95127
       ]
      ],
-     "b": "4000-29th-st-nw"
+     "b": "3000-grant-rd-nw"
     },
     {
-     "n": "APPLETON ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06622,
-       38.94883
-      ],
-      [
-       -77.0664,
-       38.9488
-      ],
-      [
-       -77.06985,
-       38.9488
-      ]
-     ],
-     "b": "3500-appleton-st-nw"
-    },
-    {
-     "n": "ELLICOTT ST NW",
+     "n": "32ND ST NW",
      "k": "minor",
      "p": [
       [
@@ -7787,8 +7765,22 @@
        38.95331
       ],
       [
-       -77.06883,
-       38.95332
+       -77.06517,
+       38.95427
+      ]
+     ]
+    },
+    {
+     "n": "CHESAPEAKE ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.0746,
+       38.95074
+      ],
+      [
+       -77.07495,
+       38.95074
       ]
      ]
     },
@@ -7797,12 +7789,435 @@
      "k": "major",
      "p": [
       [
-       -77.06812,
+       -77.06883,
+       38.95332
+      ],
+      [
+       -77.06924,
+       38.95402
+      ]
+     ]
+    },
+    {
+     "n": "37TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07242,
+       38.94479
+      ],
+      [
+       -77.07241,
+       38.94554
+      ]
+     ],
+     "b": "4300-37th-st-nw"
+    },
+    {
+     "n": "37TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07242,
+       38.94317
+      ],
+      [
+       -77.07241,
+       38.94398
+      ]
+     ],
+     "b": "4200-37th-st-nw"
+    },
+    {
+     "n": "38TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.076,
+       38.93739
+      ],
+      [
+       -77.07607,
+       38.93777
+      ],
+      [
+       -77.07604,
+       38.93818
+      ],
+      [
+       -77.07597,
+       38.93848
+      ],
+      [
+       -77.07564,
+       38.9392
+      ],
+      [
+       -77.07564,
+       38.93935
+      ]
+     ]
+    },
+    {
+     "n": "FORT DR NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07434,
+       38.95235
+      ],
+      [
+       -77.07376,
+       38.95234
+      ],
+      [
+       -77.07362,
+       38.95228
+      ]
+     ]
+    },
+    {
+     "n": "FESSENDEN ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07156,
+       38.9547
+      ],
+      [
+       -77.07273,
+       38.9547
+      ]
+     ]
+    },
+    {
+     "n": "CUMBERLAND ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06985,
+       38.95142
+      ],
+      [
+       -77.07153,
+       38.95142
+      ]
+     ]
+    },
+    {
+     "n": "NEBRASKA AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.07041,
+       38.95604
+      ],
+      [
+       -77.06847,
+       38.95832
+      ]
+     ]
+    },
+    {
+     "n": "INTERNATIONAL DR NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.0649,
+       38.94241
+      ],
+      [
+       -77.0649,
+       38.9417
+      ],
+      [
+       -77.06499,
+       38.94161
+      ],
+      [
+       -77.06512,
+       38.94157
+      ],
+      [
+       -77.06637,
+       38.94157
+      ]
+     ],
+     "b": "3400-international-dr-nw"
+    },
+    {
+     "n": "EVERETT ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06924,
+       38.95402
+      ],
+      [
+       -77.0696,
+       38.95398
+      ]
+     ]
+    },
+    {
+     "n": "ALBEMARLE ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06691,
+       38.9479
+      ],
+      [
+       -77.06985,
+       38.9479
+      ]
+     ],
+     "b": "3500-albemarle-st-nw"
+    },
+    {
+     "n": "LINNEAN AVE NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06253,
+       38.95331
+      ],
+      [
+       -77.06287,
+       38.9535
+      ],
+      [
+       -77.06312,
+       38.9537
+      ],
+      [
+       -77.06333,
+       38.95395
+      ],
+      [
+       -77.06349,
+       38.95428
+      ]
+     ]
+    },
+    {
+     "n": "35TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06765,
+       38.94626
+      ],
+      [
+       -77.06697,
+       38.9469
+      ],
+      [
+       -77.06691,
+       38.94709
+      ]
+     ],
+     "b": "4400-35th-st-nw"
+    },
+    {
+     "n": "ELLICOTT TER NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05905,
+       38.95274
+      ],
+      [
+       -77.05925,
+       38.95267
+      ],
+      [
+       -77.05954,
+       38.95266
+      ],
+      [
+       -77.05999,
+       38.95286
+      ],
+      [
+       -77.06009,
+       38.95301
+      ],
+      [
+       -77.06013,
+       38.95338
+      ]
+     ]
+    },
+    {
+     "n": "HARRISON ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07459,
+       38.95703
+      ],
+      [
+       -77.07714,
+       38.95703
+      ]
+     ]
+    },
+    {
+     "n": "38TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07461,
+       38.94398
+      ],
+      [
+       -77.07461,
+       38.94479
+      ]
+     ]
+    },
+    {
+     "n": "CONNECTICUT AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.06733,
+       38.95073
+      ],
+      [
+       -77.06773,
+       38.95142
+      ]
+     ]
+    },
+    {
+     "n": "DAVENPORT ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06985,
        38.9521
       ],
       [
-       -77.06883,
-       38.95332
+       -77.07152,
+       38.95211
+      ]
+     ]
+    },
+    {
+     "n": "34TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06728,
+       38.95549
+      ],
+      [
+       -77.06679,
+       38.95609
+      ]
+     ]
+    },
+    {
+     "n": "CONNECTICUT AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.06428,
+       38.94549
+      ],
+      [
+       -77.06501,
+       38.94674
+      ]
+     ],
+     "b": "4300-connecticut-ave-nw"
+    },
+    {
+     "n": "CHESAPEAKE ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07495,
+       38.95074
+      ],
+      [
+       -77.07852,
+       38.95074
+      ]
+     ]
+    },
+    {
+     "n": "LINNEAN AVE NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05413,
+       38.94221
+      ],
+      [
+       -77.05409,
+       38.94235
+      ],
+      [
+       -77.05409,
+       38.94268
+      ],
+      [
+       -77.05447,
+       38.9437
+      ],
+      [
+       -77.0547,
+       38.94399
+      ],
+      [
+       -77.05533,
+       38.94447
+      ]
+     ]
+    },
+    {
+     "n": "38TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.0746,
+       38.9555
+      ],
+      [
+       -77.0746,
+       38.95627
+      ]
+     ]
+    },
+    {
+     "n": "ALBEMARLE ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05671,
+       38.9479
+      ],
+      [
+       -77.05791,
+       38.9479
+      ]
+     ],
+     "b": "2800-albemarle-st-nw"
+    },
+    {
+     "n": "CONNECTICUT AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.06006,
+       38.93823
+      ],
+      [
+       -77.06074,
+       38.9394
       ]
      ]
     },
@@ -7822,77 +8237,323 @@
      "b": "4800-30th-st-nw"
     },
     {
-     "n": "INTERNATIONAL CT NW",
+     "n": "CONNECTICUT AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.06166,
+       38.94098
+      ],
+      [
+       -77.06226,
+       38.94202
+      ]
+     ],
+     "b": "4000-connecticut-ave-nw"
+    },
+    {
+     "n": "GARRISON ST NW",
      "k": "minor",
      "p": [
       [
-       -77.06771,
-       38.94306
+       -77.0746,
+       38.9555
       ],
       [
-       -77.06771,
-       38.94406
+       -77.07715,
+       38.95551
+      ]
+     ]
+    },
+    {
+     "n": "ALTON PL NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06985,
+       38.94709
       ],
       [
-       -77.0678,
-       38.94431
-      ],
-      [
-       -77.06794,
-       38.94449
-      ],
-      [
-       -77.06812,
-       38.94463
-      ],
-      [
-       -77.06863,
-       38.94479
+       -77.07235,
+       38.9471
       ]
      ],
-     "b": "3500-international-ct-nw"
+     "b": "3600-alton-pl-nw"
     },
     {
      "n": "36TH ST NW",
      "k": "minor",
      "p": [
       [
-       -77.06985,
-       38.94629
+       -77.06943,
+       38.95434
       ],
       [
-       -77.06985,
-       38.94709
+       -77.06931,
+       38.95445
+      ],
+      [
+       -77.06923,
+       38.9547
       ]
-     ],
-     "b": "4400-36th-st-nw"
+     ]
     },
     {
-     "n": "29TH PL NW",
+     "n": "37TH ST NW",
      "k": "minor",
      "p": [
       [
-       -77.06053,
-       38.95072
+       -77.07242,
+       38.93734
       ],
       [
-       -77.06045,
-       38.95097
+       -77.07242,
+       38.93816
+      ]
+     ]
+    },
+    {
+     "n": "DAVENPORT ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06812,
+       38.9521
       ],
       [
-       -77.06014,
-       38.95135
+       -77.06985,
+       38.9521
+      ]
+     ]
+    },
+    {
+     "n": "32ND ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06434,
+       38.9489
       ],
       [
-       -77.05997,
-       38.9518
+       -77.06425,
+       38.94927
       ],
       [
-       -77.05989,
-       38.95189
+       -77.06422,
+       38.94969
       ]
      ],
-     "b": "4600-29th-pl-nw"
+     "b": "4500-32nd-st-nw"
+    },
+    {
+     "n": "38TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.0746,
+       38.95074
+      ],
+      [
+       -77.07461,
+       38.951
+      ],
+      [
+       -77.07466,
+       38.95108
+      ]
+     ]
+    },
+    {
+     "n": "NEBRASKA AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.0758,
+       38.94974
+      ],
+      [
+       -77.07495,
+       38.95074
+      ]
+     ]
+    },
+    {
+     "n": "ELLICOTT ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06984,
+       38.95331
+      ],
+      [
+       -77.07191,
+       38.95329
+      ]
+     ]
+    },
+    {
+     "n": "34TH ST NW",
+     "k": "major",
+     "p": [
+      [
+       -77.06639,
+       38.9363
+      ],
+      [
+       -77.06639,
+       38.93711
+      ]
+     ]
+    },
+    {
+     "n": "CONNECTICUT AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.05851,
+       38.93557
+      ],
+      [
+       -77.05925,
+       38.93683
+      ]
+     ]
+    },
+    {
+     "n": "BROAD BRANCH TER NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06679,
+       38.95609
+      ],
+      [
+       -77.0676,
+       38.95651
+      ]
+     ]
+    },
+    {
+     "n": "FORT DR NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.0764,
+       38.9526
+      ],
+      [
+       -77.07616,
+       38.95243
+      ],
+      [
+       -77.07588,
+       38.95235
+      ],
+      [
+       -77.07434,
+       38.95235
+      ]
+     ]
+    },
+    {
+     "n": "CONNECTICUT AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.06963,
+       38.9547
+      ],
+      [
+       -77.07041,
+       38.95604
+      ]
+     ]
+    },
+    {
+     "n": "ALTON PL NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07461,
+       38.9471
+      ],
+      [
+       -77.07703,
+       38.9471
+      ]
+     ]
+    },
+    {
+     "n": "CONNECTICUT AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.05925,
+       38.93683
+      ],
+      [
+       -77.06006,
+       38.93823
+      ]
+     ]
+    },
+    {
+     "n": "ALTON PL NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07235,
+       38.9471
+      ],
+      [
+       -77.07461,
+       38.9471
+      ]
+     ]
+    },
+    {
+     "n": "37TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07242,
+       38.93816
+      ],
+      [
+       -77.07242,
+       38.94123
+      ]
+     ]
+    },
+    {
+     "n": "36TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06982,
+       38.94404
+      ],
+      [
+       -77.06985,
+       38.94479
+      ]
+     ],
+     "b": "4200-36th-st-nw"
+    },
+    {
+     "n": "ALBEMARLE ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05791,
+       38.9479
+      ],
+      [
+       -77.06164,
+       38.9479
+      ]
+     ],
+     "b": "2900-albemarle-st-nw"
     },
     {
      "n": "38TH ST NW",
@@ -7900,11 +8561,747 @@
      "p": [
       [
        -77.07461,
-       38.94969
+       38.9471
+      ],
+      [
+       -77.07461,
+       38.94791
+      ]
+     ]
+    },
+    {
+     "n": "ALBEMARLE ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06164,
+       38.9479
+      ],
+      [
+       -77.06445,
+       38.9479
+      ]
+     ],
+     "b": "3000-albemarle-st-nw"
+    },
+    {
+     "n": "BROAD BRANCH RD NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05298,
+       38.95037
+      ],
+      [
+       -77.05311,
+       38.95071
+      ],
+      [
+       -77.05305,
+       38.95133
+      ],
+      [
+       -77.0532,
+       38.95164
+      ],
+      [
+       -77.0534,
+       38.95174
+      ],
+      [
+       -77.05455,
+       38.95199
+      ],
+      [
+       -77.05474,
+       38.95207
+      ],
+      [
+       -77.05488,
+       38.95222
+      ],
+      [
+       -77.05507,
+       38.95273
+      ],
+      [
+       -77.05557,
+       38.9533
+      ],
+      [
+       -77.05584,
+       38.95351
+      ],
+      [
+       -77.0563,
+       38.95375
+      ]
+     ]
+    },
+    {
+     "n": "ELLICOTT ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06212,
+       38.95331
+      ],
+      [
+       -77.06253,
+       38.95331
+      ]
+     ]
+    },
+    {
+     "n": "BRANDYWINE ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05298,
+       38.95037
+      ],
+      [
+       -77.0536,
+       38.95048
+      ],
+      [
+       -77.05406,
+       38.95044
+      ],
+      [
+       -77.05431,
+       38.95036
+      ],
+      [
+       -77.05531,
+       38.94982
+      ],
+      [
+       -77.0557,
+       38.94972
+      ]
+     ]
+    },
+    {
+     "n": "36TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06985,
+       38.94479
+      ],
+      [
+       -77.06985,
+       38.94629
+      ]
+     ],
+     "b": "4300-36th-st-nw"
+    },
+    {
+     "n": "38TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07461,
+       38.94554
+      ],
+      [
+       -77.07461,
+       38.94629
+      ]
+     ]
+    },
+    {
+     "n": "37TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07241,
+       38.94398
+      ],
+      [
+       -77.07242,
+       38.94479
+      ]
+     ],
+     "b": "4200-37th-st-nw"
+    },
+    {
+     "n": "35TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06864,
+       38.93734
+      ],
+      [
+       -77.06864,
+       38.93816
+      ]
+     ]
+    },
+    {
+     "n": "ELLICOTT ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06517,
+       38.95331
+      ],
+      [
+       -77.06883,
+       38.95332
+      ]
+     ]
+    },
+    {
+     "n": "36TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06985,
+       38.94709
+      ],
+      [
+       -77.06985,
+       38.9479
+      ]
+     ],
+     "b": "4400-36th-st-nw"
+    },
+    {
+     "n": "38TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07461,
+       38.94317
+      ],
+      [
+       -77.07461,
+       38.94398
+      ]
+     ]
+    },
+    {
+     "n": "FESSENDEN ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06963,
+       38.9547
+      ],
+      [
+       -77.07156,
+       38.9547
+      ]
+     ]
+    },
+    {
+     "n": "ELLICOTT ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05848,
+       38.95355
+      ],
+      [
+       -77.05848,
+       38.95355
+      ]
+     ]
+    },
+    {
+     "n": "37TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07241,
+       38.94222
+      ],
+      [
+       -77.07242,
+       38.94317
+      ]
+     ],
+     "b": "4100-37th-st-nw"
+    },
+    {
+     "n": "36TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06985,
+       38.9521
+      ],
+      [
+       -77.06984,
+       38.95331
+      ]
+     ]
+    },
+    {
+     "n": "LINNEAN AVE NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06346,
+       38.95554
+      ],
+      [
+       -77.06341,
+       38.95599
+      ],
+      [
+       -77.06343,
+       38.95627
+      ],
+      [
+       -77.06357,
+       38.9566
+      ],
+      [
+       -77.06377,
+       38.95687
+      ]
+     ]
+    },
+    {
+     "n": "LINNEAN AVE NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05799,
+       38.95078
+      ],
+      [
+       -77.05848,
+       38.95113
+      ],
+      [
+       -77.05989,
+       38.95189
+      ]
+     ],
+     "b": "4700-linnean-ave-nw"
+    },
+    {
+     "n": "BRANDYWINE ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.0557,
+       38.94972
+      ],
+      [
+       -77.05722,
+       38.94968
+      ]
+     ]
+    },
+    {
+     "n": "37TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07242,
+       38.94123
+      ],
+      [
+       -77.07241,
+       38.94222
+      ]
+     ]
+    },
+    {
+     "n": "36TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06898,
+       38.95551
+      ],
+      [
+       -77.06888,
+       38.95574
+      ],
+      [
+       -77.06811,
+       38.95694
+      ],
+      [
+       -77.06779,
+       38.95732
+      ],
+      [
+       -77.06726,
+       38.95778
+      ],
+      [
+       -77.06604,
+       38.95863
+      ]
+     ]
+    },
+    {
+     "n": "CHESAPEAKE ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.055,
+       38.95102
+      ],
+      [
+       -77.0558,
+       38.95061
+      ],
+      [
+       -77.0561,
+       38.95051
+      ],
+      [
+       -77.05765,
+       38.95044
+      ]
+     ]
+    },
+    {
+     "n": "38TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07461,
+       38.94791
       ],
       [
        -77.0746,
+       38.94873
+      ]
+     ]
+    },
+    {
+     "n": "IDAHO AVE NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07298,
+       38.93629
+      ],
+      [
+       -77.07236,
+       38.93704
+      ]
+     ]
+    },
+    {
+     "n": "LINNEAN AVE NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05501,
+       38.94067
+      ],
+      [
+       -77.0548,
+       38.94089
+      ],
+      [
+       -77.05467,
+       38.94112
+      ],
+      [
+       -77.05451,
+       38.94177
+      ],
+      [
+       -77.05413,
+       38.94221
+      ]
+     ]
+    },
+    {
+     "n": "GRAMERCY ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.0746,
+       38.95627
+      ],
+      [
+       -77.07715,
+       38.95627
+      ]
+     ]
+    },
+    {
+     "n": "35TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06864,
+       38.93816
+      ],
+      [
+       -77.06864,
+       38.93909
+      ]
+     ]
+    },
+    {
+     "n": "ALBEMARLE ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05416,
+       38.94835
+      ],
+      [
+       -77.0554,
+       38.94802
+      ],
+      [
+       -77.05671,
+       38.9479
+      ]
+     ]
+    },
+    {
+     "n": "FESSENDEN ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07322,
+       38.9547
+      ],
+      [
+       -77.0746,
+       38.9547
+      ]
+     ]
+    },
+    {
+     "n": "GATES RD NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06164,
+       38.94969
+      ],
+      [
+       -77.06169,
+       38.9498
+      ],
+      [
+       -77.06293,
+       38.95023
+      ]
+     ],
+     "b": "3000-gates-rd-nw"
+    },
+    {
+     "n": "CONNECTICUT AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.07041,
+       38.95604
+      ],
+      [
+       -77.07111,
+       38.95723
+      ]
+     ]
+    },
+    {
+     "n": "CONNECTICUT AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.06568,
+       38.9479
+      ],
+      [
+       -77.06622,
+       38.94883
+      ]
+     ],
+     "b": "4500-connecticut-ave-nw"
+    },
+    {
+     "n": "29TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05913,
+       38.94644
+      ],
+      [
+       -77.0591,
+       38.94661
+      ],
+      [
+       -77.059,
+       38.94671
+      ],
+      [
+       -77.05835,
+       38.9468
+      ],
+      [
+       -77.05801,
+       38.94702
+      ],
+      [
+       -77.05791,
+       38.94727
+      ],
+      [
+       -77.05791,
+       38.9479
+      ]
+     ]
+    },
+    {
+     "n": "NEBRASKA AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.07466,
+       38.95108
+      ],
+      [
+       -77.07432,
+       38.95148
+      ]
+     ]
+    },
+    {
+     "n": "GATES RD NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06293,
+       38.95023
+      ],
+      [
+       -77.06431,
+       38.95072
+      ]
+     ],
+     "b": "3000-gates-rd-nw"
+    },
+    {
+     "n": "NEBRASKA AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.07226,
+       38.95389
+      ],
+      [
+       -77.07215,
+       38.95402
+      ]
+     ]
+    },
+    {
+     "n": "35TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06691,
+       38.94709
+      ],
+      [
+       -77.06691,
+       38.9479
+      ]
+     ],
+     "b": "4400-35th-st-nw"
+    },
+    {
+     "n": "INTERNATIONAL DR NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06489,
+       38.94317
+      ],
+      [
+       -77.0649,
+       38.94241
+      ]
+     ],
+     "b": "3400-international-dr-nw"
+    },
+    {
+     "n": "BRANDYWINE ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07212,
+       38.94969
+      ],
+      [
+       -77.07461,
+       38.94969
+      ]
+     ]
+    },
+    {
+     "n": "APPLETON ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07248,
+       38.94876
+      ],
+      [
+       -77.0746,
+       38.94873
+      ]
+     ]
+    },
+    {
+     "n": "36TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06985,
+       38.94969
+      ],
+      [
+       -77.06985,
        38.95074
+      ]
+     ],
+     "b": "4600-36th-st-nw"
+    },
+    {
+     "n": "35TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06863,
+       38.9363
+      ],
+      [
+       -77.06864,
+       38.93734
+      ]
+     ]
+    },
+    {
+     "n": "CONNECTICUT AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.06074,
+       38.9394
+      ],
+      [
+       -77.06166,
+       38.94098
       ]
      ]
     },
@@ -7967,30 +9364,16 @@
      ]
     },
     {
-     "n": "34TH ST NW",
+     "n": "CHEVY CHASE PKWY NW",
      "k": "minor",
      "p": [
       [
-       -77.06679,
-       38.95609
+       -77.07128,
+       38.95703
       ],
       [
-       -77.06566,
-       38.95743
-      ]
-     ]
-    },
-    {
-     "n": "ELLICOTT ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06098,
-       38.95331
-      ],
-      [
-       -77.06212,
-       38.95331
+       -77.07111,
+       38.95723
       ]
      ]
     },
@@ -7999,383 +9382,75 @@
      "k": "minor",
      "p": [
       [
+       -77.06566,
+       38.95462
+      ],
+      [
+       -77.06561,
+       38.95471
+      ],
+      [
+       -77.06562,
+       38.95479
+      ],
+      [
+       -77.06602,
+       38.95556
+      ],
+      [
        -77.06618,
        38.95574
-      ],
-      [
-       -77.06679,
-       38.95609
       ]
      ]
     },
     {
-     "n": "BRANDYWINE ST NW",
+     "n": "INTERNATIONAL CT NW",
      "k": "minor",
      "p": [
       [
-       -77.0557,
-       38.94972
-      ],
-      [
-       -77.05722,
-       38.94968
-      ]
-     ]
-    },
-    {
-     "n": "GRANT RD NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07534,
-       38.9497
-      ],
-      [
-       -77.07525,
-       38.95011
-      ]
-     ]
-    },
-    {
-     "n": "INTERNATIONAL DR NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06489,
-       38.94317
-      ],
-      [
-       -77.0649,
-       38.94241
-      ]
-     ],
-     "b": "3400-international-dr-nw"
-    },
-    {
-     "n": "37TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07242,
+       -77.06863,
        38.94479
       ],
       [
-       -77.07241,
-       38.94554
+       -77.06858,
+       38.94497
+      ],
+      [
+       -77.06859,
+       38.94535
       ]
      ],
-     "b": "4300-37th-st-nw"
+     "b": "3500-international-ct-nw"
     },
     {
-     "n": "FESSENDEN ST NW",
+     "n": "36TH ST NW",
      "k": "minor",
      "p": [
       [
-       -77.07156,
-       38.9547
+       -77.06985,
+       38.9488
       ],
       [
-       -77.07273,
-       38.9547
-      ]
-     ]
-    },
-    {
-     "n": "INTERNATIONAL PL NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06637,
-       38.94157
-      ],
-      [
-       -77.06637,
-       38.94226
-      ],
-      [
-       -77.06626,
-       38.94239
-      ],
-      [
-       -77.0649,
-       38.94241
+       -77.06985,
+       38.94969
       ]
      ],
-     "b": "3500-international-pl-nw"
-    },
-    {
-     "n": "CUMBERLAND ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07153,
-       38.95142
-      ],
-      [
-       -77.07371,
-       38.95142
-      ]
-     ]
-    },
-    {
-     "n": "CONNECTICUT AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.06501,
-       38.94674
-      ],
-      [
-       -77.06568,
-       38.9479
-      ]
-     ]
-    },
-    {
-     "n": "NEBRASKA AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.07362,
-       38.95228
-      ],
-      [
-       -77.07226,
-       38.95389
-      ]
-     ]
-    },
-    {
-     "n": "30TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06108,
-       38.93583
-      ],
-      [
-       -77.06107,
-       38.93716
-      ]
-     ]
-    },
-    {
-     "n": "38TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07461,
-       38.9471
-      ],
-      [
-       -77.07461,
-       38.94791
-      ]
-     ]
-    },
-    {
-     "n": "30TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06098,
-       38.95331
-      ],
-      [
-       -77.06099,
-       38.95464
-      ]
-     ]
-    },
-    {
-     "n": "ELLICOTT ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06212,
-       38.95331
-      ],
-      [
-       -77.06253,
-       38.95331
-      ]
-     ]
+     "b": "4500-36th-st-nw"
     },
     {
      "n": "LINNEAN AVE NW",
      "k": "minor",
      "p": [
       [
+       -77.05698,
+       38.94885
+      ],
+      [
        -77.05722,
        38.94968
-      ],
-      [
-       -77.05742,
-       38.95009
-      ],
-      [
-       -77.05765,
-       38.95044
       ]
      ],
-     "b": "4600-linnean-ave-nw"
-    },
-    {
-     "n": "CHEVY CHASE PKWY NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07322,
-       38.9547
-      ],
-      [
-       -77.07295,
-       38.95507
-      ]
-     ]
-    },
-    {
-     "n": "CHESAPEAKE ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.0746,
-       38.95074
-      ],
-      [
-       -77.07495,
-       38.95074
-      ]
-     ]
-    },
-    {
-     "n": "IDAHO AVE NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07081,
-       38.94068
-      ],
-      [
-       -77.07076,
-       38.9413
-      ]
-     ]
-    },
-    {
-     "n": "GARRISON ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.0746,
-       38.9555
-      ],
-      [
-       -77.07715,
-       38.95551
-      ]
-     ]
-    },
-    {
-     "n": "CONNECTICUT AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.05851,
-       38.93557
-      ],
-      [
-       -77.05925,
-       38.93683
-      ]
-     ]
-    },
-    {
-     "n": "38TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07461,
-       38.94629
-      ],
-      [
-       -77.07461,
-       38.9471
-      ]
-     ]
-    },
-    {
-     "n": "DAVENPORT ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07152,
-       38.95211
-      ],
-      [
-       -77.07287,
-       38.95211
-      ]
-     ]
-    },
-    {
-     "n": "37TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07236,
-       38.93704
-      ],
-      [
-       -77.07242,
-       38.93713
-      ],
-      [
-       -77.07242,
-       38.93734
-      ]
-     ]
-    },
-    {
-     "n": "ELLICOTT ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.05848,
-       38.95355
-      ],
-      [
-       -77.0588,
-       38.95367
-      ],
-      [
-       -77.05925,
-       38.95367
-      ],
-      [
-       -77.05974,
-       38.95356
-      ],
-      [
-       -77.06013,
-       38.95338
-      ]
-     ]
-    },
-    {
-     "n": "CHESAPEAKE ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06733,
-       38.95073
-      ],
-      [
-       -77.06985,
-       38.95074
-      ]
-     ],
-     "b": "3500-chesapeake-st-nw"
+     "b": "4500-linnean-ave-nw"
     },
     {
      "n": "ALTON PL NW",
@@ -8393,6 +9468,43 @@
      "b": "3500-alton-pl-nw"
     },
     {
+     "n": "GRANT RD NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07704,
+       38.94807
+      ],
+      [
+       -77.07628,
+       38.94842
+      ],
+      [
+       -77.07559,
+       38.94886
+      ],
+      [
+       -77.07534,
+       38.9497
+      ]
+     ]
+    },
+    {
+     "n": "BRANDYWINE ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06985,
+       38.94969
+      ],
+      [
+       -77.07212,
+       38.94969
+      ]
+     ],
+     "b": "3600-brandywine-st-nw"
+    },
+    {
      "n": "BRANDYWINE ST NW",
      "k": "minor",
      "p": [
@@ -8408,172 +9520,98 @@
      "b": "3000-brandywine-st-nw"
     },
     {
-     "n": "LINNEAN AVE NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.05671,
-       38.9479
-      ],
-      [
-       -77.05698,
-       38.94885
-      ]
-     ],
-     "b": "4500-linnean-ave-nw"
-    },
-    {
-     "n": "36TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06985,
-       38.94479
-      ],
-      [
-       -77.06985,
-       38.94629
-      ]
-     ],
-     "b": "4300-36th-st-nw"
-    },
-    {
      "n": "CONNECTICUT AVE NW",
      "k": "major",
      "p": [
       [
-       -77.07111,
-       38.95723
+       -77.06226,
+       38.94202
       ],
       [
-       -77.07141,
-       38.95775
+       -77.06292,
+       38.94316
       ]
-     ]
+     ],
+     "b": "4000-connecticut-ave-nw"
     },
     {
-     "n": "27TH ST NW",
+     "n": "GRANT RD NW",
      "k": "minor",
      "p": [
       [
-       -77.05807,
-       38.95672
+       -77.07287,
+       38.95211
       ],
       [
-       -77.05753,
-       38.95674
+       -77.07294,
+       38.95195
       ],
       [
-       -77.05732,
-       38.95683
+       -77.07361,
+       38.95154
       ],
       [
-       -77.0572,
-       38.95701
-      ],
-      [
-       -77.05688,
-       38.95786
-      ],
-      [
-       -77.05672,
-       38.95804
-      ],
-      [
-       -77.05634,
-       38.95829
-      ],
-      [
-       -77.05606,
-       38.95868
-      ],
-      [
-       -77.05601,
-       38.95891
-      ],
-      [
-       -77.0562,
-       38.96001
-      ],
-      [
-       -77.0562,
-       38.96102
-      ]
-     ]
-    },
-    {
-     "n": "36TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06985,
+       -77.07371,
        38.95142
+      ]
+     ]
+    },
+    {
+     "n": "INTERNATIONAL CT NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06771,
+       38.94306
       ],
+      [
+       -77.06771,
+       38.94406
+      ],
+      [
+       -77.0678,
+       38.94431
+      ],
+      [
+       -77.06794,
+       38.94449
+      ],
+      [
+       -77.06812,
+       38.94463
+      ],
+      [
+       -77.06863,
+       38.94479
+      ]
+     ],
+     "b": "3500-international-ct-nw"
+    },
+    {
+     "n": "CHESAPEAKE ST NW",
+     "k": "minor",
+     "p": [
       [
        -77.06985,
-       38.9521
+       38.95074
+      ],
+      [
+       -77.07171,
+       38.95073
       ]
      ]
     },
     {
-     "n": "32ND ST NW",
+     "n": "LINNEAN TER NW",
      "k": "minor",
      "p": [
       [
-       -77.06434,
-       38.9489
+       -77.06566,
+       38.95743
       ],
       [
-       -77.06425,
-       38.94927
-      ],
-      [
-       -77.06422,
-       38.94969
-      ]
-     ],
-     "b": "4500-32nd-st-nw"
-    },
-    {
-     "n": "BRANDYWINE ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06293,
-       38.94969
-      ],
-      [
-       -77.06422,
-       38.94969
-      ]
-     ],
-     "b": "3100-brandywine-st-nw"
-    },
-    {
-     "n": "FESSENDEN ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06349,
-       38.95428
-      ],
-      [
-       -77.06517,
-       38.95427
-      ]
-     ]
-    },
-    {
-     "n": "EVERETT ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06924,
-       38.95402
-      ],
-      [
-       -77.0696,
-       38.95398
+       -77.0648,
+       38.9573
       ]
      ]
     },
@@ -8592,35 +9630,22 @@
      ]
     },
     {
-     "n": "CHEVY CHASE PKWY NW",
+     "n": "29TH ST NW",
      "k": "minor",
      "p": [
       [
-       -77.07128,
-       38.95703
+       -77.05863,
+       38.94098
       ],
       [
-       -77.07111,
-       38.95723
+       -77.05864,
+       38.94206
       ]
-     ]
+     ],
+     "b": "4000-29th-st-nw"
     },
     {
-     "n": "37TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07241,
-       38.94554
-      ],
-      [
-       -77.07242,
-       38.94629
-      ]
-     ]
-    },
-    {
-     "n": "ALBEMARLE ST NW",
+     "n": "LINNEAN AVE NW",
      "k": "minor",
      "p": [
       [
@@ -8628,337 +9653,72 @@
        38.9479
       ],
       [
-       -77.05791,
-       38.9479
+       -77.05698,
+       38.94885
       ]
      ],
-     "b": "2800-albemarle-st-nw"
-    },
-    {
-     "n": "37TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07242,
-       38.93734
-      ],
-      [
-       -77.07242,
-       38.93816
-      ]
-     ]
-    },
-    {
-     "n": "AUDUBON TER NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.05913,
-       38.94644
-      ],
-      [
-       -77.06154,
-       38.9466
-      ],
-      [
-       -77.06192,
-       38.9467
-      ]
-     ]
-    },
-    {
-     "n": "35TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06765,
-       38.94626
-      ],
-      [
-       -77.06697,
-       38.9469
-      ],
-      [
-       -77.06691,
-       38.94709
-      ]
-     ],
-     "b": "4400-35th-st-nw"
-    },
-    {
-     "n": "LINNEAN AVE NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06346,
-       38.95554
-      ],
-      [
-       -77.06341,
-       38.95599
-      ],
-      [
-       -77.06343,
-       38.95627
-      ],
-      [
-       -77.06357,
-       38.9566
-      ],
-      [
-       -77.06377,
-       38.95687
-      ]
-     ]
-    },
-    {
-     "n": "LINNEAN AVE NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06349,
-       38.95428
-      ],
-      [
-       -77.06355,
-       38.95466
-      ],
-      [
-       -77.06346,
-       38.95554
-      ]
-     ]
-    },
-    {
-     "n": "FESSENDEN ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07322,
-       38.9547
-      ],
-      [
-       -77.0746,
-       38.9547
-      ]
-     ]
-    },
-    {
-     "n": "ALBEMARLE ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06445,
-       38.9479
-      ],
-      [
-       -77.06568,
-       38.9479
-      ]
-     ],
-     "b": "3200-albemarle-st-nw"
-    },
-    {
-     "n": "ALBEMARLE ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.05791,
-       38.9479
-      ],
-      [
-       -77.06164,
-       38.9479
-      ]
-     ],
-     "b": "2900-albemarle-st-nw"
-    },
-    {
-     "n": "GARRISON ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06728,
-       38.95549
-      ],
-      [
-       -77.06898,
-       38.95551
-      ]
-     ]
-    },
-    {
-     "n": "CONNECTICUT AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.05925,
-       38.93683
-      ],
-      [
-       -77.06006,
-       38.93823
-      ]
-     ]
-    },
-    {
-     "n": "FORT DR NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07434,
-       38.95235
-      ],
-      [
-       -77.07376,
-       38.95234
-      ],
-      [
-       -77.07362,
-       38.95228
-      ]
-     ]
-    },
-    {
-     "n": "NEBRASKA AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.0758,
-       38.94974
-      ],
-      [
-       -77.07495,
-       38.95074
-      ]
-     ]
-    },
-    {
-     "n": "31ST ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06293,
-       38.94969
-      ],
-      [
-       -77.06293,
-       38.95023
-      ]
-     ],
-     "b": "4600-31st-st-nw"
-    },
-    {
-     "n": "CONNECTICUT AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.06006,
-       38.93823
-      ],
-      [
-       -77.06074,
-       38.9394
-      ]
-     ]
-    },
-    {
-     "n": "30TH PL NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06212,
-       38.95331
-      ],
-      [
-       -77.06212,
-       38.95507
-      ]
-     ]
-    },
-    {
-     "n": "LINNEAN AVE NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06253,
-       38.95331
-      ],
-      [
-       -77.06287,
-       38.9535
-      ],
-      [
-       -77.06312,
-       38.9537
-      ],
-      [
-       -77.06333,
-       38.95395
-      ],
-      [
-       -77.06349,
-       38.95428
-      ]
-     ]
-    },
-    {
-     "n": "ALTON PL NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07235,
-       38.9471
-      ],
-      [
-       -77.07461,
-       38.9471
-      ]
-     ]
+     "b": "4500-linnean-ave-nw"
     },
     {
      "n": "CHESAPEAKE ST NW",
      "k": "minor",
      "p": [
       [
-       -77.06985,
+       -77.05799,
+       38.95078
+      ],
+      [
+       -77.05811,
        38.95074
       ],
       [
-       -77.07171,
-       38.95073
+       -77.05936,
+       38.95072
+      ],
+      [
+       -77.05951,
+       38.95067
+      ]
+     ],
+     "b": "2900-chesapeake-st-nw"
+    },
+    {
+     "n": "DAVENPORT ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.0563,
+       38.95375
+      ],
+      [
+       -77.0568,
+       38.95353
+      ],
+      [
+       -77.05687,
+       38.95313
+      ],
+      [
+       -77.05696,
+       38.95298
+      ],
+      [
+       -77.05776,
+       38.95256
+      ],
+      [
+       -77.05831,
+       38.95208
+      ],
+      [
+       -77.05964,
+       38.95184
+      ],
+      [
+       -77.05989,
+       38.95189
       ]
      ]
-    },
-    {
-     "n": "LINNEAN AVE NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.05765,
-       38.95044
-      ],
-      [
-       -77.05799,
-       38.95078
-      ]
-     ],
-     "b": "4600-linnean-ave-nw"
-    },
-    {
-     "n": "ALTON PL NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06985,
-       38.94709
-      ],
-      [
-       -77.07235,
-       38.9471
-      ]
-     ],
-     "b": "3600-alton-pl-nw"
     },
     {
      "n": "INTERNATIONAL DR NW",
@@ -8996,32 +9756,89 @@
      "b": "3500-international-dr-nw"
     },
     {
-     "n": "LINNEAN AVE NW",
+     "n": "28TH ST NW",
      "k": "minor",
      "p": [
       [
-       -77.05413,
-       38.94221
+       -77.05416,
+       38.94835
       ],
       [
-       -77.05409,
-       38.94235
+       -77.05457,
+       38.94902
       ],
       [
-       -77.05409,
-       38.94268
+       -77.05478,
+       38.94915
       ],
       [
-       -77.05447,
-       38.9437
+       -77.05546,
+       38.9494
       ],
       [
-       -77.0547,
-       38.94399
+       -77.05561,
+       38.94954
       ],
       [
-       -77.05533,
-       38.94447
+       -77.0557,
+       38.94972
+      ]
+     ]
+    },
+    {
+     "n": "29TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05791,
+       38.9479
+      ],
+      [
+       -77.05841,
+       38.94968
+      ]
+     ],
+     "b": "4500-29th-st-nw"
+    },
+    {
+     "n": "36TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06984,
+       38.95331
+      ],
+      [
+       -77.0696,
+       38.95398
+      ]
+     ]
+    },
+    {
+     "n": "FESSENDEN ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06923,
+       38.9547
+      ],
+      [
+       -77.06963,
+       38.9547
+      ]
+     ]
+    },
+    {
+     "n": "NEBRASKA AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.07373,
+       38.95216
+      ],
+      [
+       -77.07362,
+       38.95228
       ]
      ]
     },
@@ -9030,26 +9847,334 @@
      "k": "minor",
      "p": [
       [
-       -77.0746,
-       38.94873
+       -77.07461,
+       38.94479
       ],
       [
        -77.07461,
-       38.94969
+       38.94554
       ]
      ]
     },
     {
-     "n": "35TH ST NW",
+     "n": "30TH ST NW",
      "k": "minor",
      "p": [
       [
-       -77.06864,
-       38.93816
+       -77.06108,
+       38.93583
       ],
       [
-       -77.06864,
-       38.93909
+       -77.06107,
+       38.93716
+      ]
+     ]
+    },
+    {
+     "n": "ELLICOTT ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06013,
+       38.95338
+      ],
+      [
+       -77.06042,
+       38.95332
+      ],
+      [
+       -77.06098,
+       38.95331
+      ]
+     ]
+    },
+    {
+     "n": "NEBRASKA AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.07362,
+       38.95228
+      ],
+      [
+       -77.07226,
+       38.95389
+      ]
+     ]
+    },
+    {
+     "n": "DAVENPORT ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06163,
+       38.95186
+      ],
+      [
+       -77.06517,
+       38.95186
+      ]
+     ],
+     "b": "3000-davenport-st-nw"
+    },
+    {
+     "n": "CONNECTICUT AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.06672,
+       38.94969
+      ],
+      [
+       -77.06733,
+       38.95073
+      ]
+     ],
+     "b": "4600-connecticut-ave-nw"
+    },
+    {
+     "n": "CONNECTICUT AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.06812,
+       38.9521
+      ],
+      [
+       -77.06883,
+       38.95332
+      ]
+     ]
+    },
+    {
+     "n": "36TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.0696,
+       38.95398
+      ],
+      [
+       -77.06943,
+       38.95434
+      ]
+     ]
+    },
+    {
+     "n": "CHEVY CHASE PKWY NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07111,
+       38.95723
+      ],
+      [
+       -77.0704,
+       38.95806
+      ],
+      [
+       -77.07019,
+       38.95839
+      ]
+     ]
+    },
+    {
+     "n": "28TH PL NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.0577,
+       38.94097
+      ],
+      [
+       -77.05769,
+       38.9416
+      ]
+     ]
+    },
+    {
+     "n": "LINNEAN AVE NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05541,
+       38.94459
+      ],
+      [
+       -77.05599,
+       38.94561
+      ]
+     ]
+    },
+    {
+     "n": "LINNEAN AVE NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06161,
+       38.95282
+      ],
+      [
+       -77.06253,
+       38.95331
+      ]
+     ],
+     "b": "4800-linnean-ave-nw"
+    },
+    {
+     "n": "HARRISON ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06279,
+       38.95697
+      ],
+      [
+       -77.06342,
+       38.95701
+      ],
+      [
+       -77.06377,
+       38.95687
+      ]
+     ]
+    },
+    {
+     "n": "CONNECTICUT AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.06924,
+       38.95402
+      ],
+      [
+       -77.06943,
+       38.95434
+      ]
+     ]
+    },
+    {
+     "n": "GARRISON ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06099,
+       38.95464
+      ],
+      [
+       -77.06106,
+       38.95487
+      ],
+      [
+       -77.06129,
+       38.95503
+      ],
+      [
+       -77.06152,
+       38.95508
+      ],
+      [
+       -77.06212,
+       38.95507
+      ]
+     ]
+    },
+    {
+     "n": "ALBEMARLE ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07258,
+       38.94791
+      ],
+      [
+       -77.07461,
+       38.94791
+      ]
+     ]
+    },
+    {
+     "n": "32ND ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06517,
+       38.95073
+      ],
+      [
+       -77.06517,
+       38.95127
+      ]
+     ]
+    },
+    {
+     "n": "DAVENPORT ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05989,
+       38.95189
+      ],
+      [
+       -77.06163,
+       38.95186
+      ]
+     ],
+     "b": "2900-davenport-st-nw"
+    },
+    {
+     "n": "ELLICOTT ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06883,
+       38.95332
+      ],
+      [
+       -77.06984,
+       38.95331
+      ]
+     ]
+    },
+    {
+     "n": "BROAD BRANCH TER NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06618,
+       38.95574
+      ],
+      [
+       -77.06679,
+       38.95609
+      ]
+     ]
+    },
+    {
+     "n": "30TH PL NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06212,
+       38.95331
+      ],
+      [
+       -77.06212,
+       38.95507
+      ]
+     ]
+    },
+    {
+     "n": "LINNEAN AVE NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05533,
+       38.94447
+      ],
+      [
+       -77.05541,
+       38.94459
       ]
      ]
     },
@@ -9096,1174 +10221,7 @@
      ]
     },
     {
-     "n": "32ND ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06517,
-       38.95073
-      ],
-      [
-       -77.06517,
-       38.95127
-      ]
-     ]
-    },
-    {
-     "n": "CONNECTICUT AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.06963,
-       38.9547
-      ],
-      [
-       -77.07041,
-       38.95604
-      ]
-     ]
-    },
-    {
-     "n": "ALBEMARLE ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06985,
-       38.9479
-      ],
-      [
-       -77.07258,
-       38.94791
-      ]
-     ],
-     "b": "3600-albemarle-st-nw"
-    },
-    {
-     "n": "38TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.076,
-       38.93739
-      ],
-      [
-       -77.07607,
-       38.93777
-      ],
-      [
-       -77.07604,
-       38.93818
-      ],
-      [
-       -77.07597,
-       38.93848
-      ],
-      [
-       -77.07564,
-       38.9392
-      ],
-      [
-       -77.07564,
-       38.93935
-      ]
-     ]
-    },
-    {
-     "n": "CONNECTICUT AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.06943,
-       38.95434
-      ],
-      [
-       -77.06963,
-       38.9547
-      ]
-     ]
-    },
-    {
-     "n": "CONNECTICUT AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.06356,
-       38.94426
-      ],
-      [
-       -77.06428,
-       38.94549
-      ]
-     ],
-     "b": "4200-connecticut-ave-nw"
-    },
-    {
-     "n": "GATES RD NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06164,
-       38.94969
-      ],
-      [
-       -77.06169,
-       38.9498
-      ],
-      [
-       -77.06293,
-       38.95023
-      ]
-     ],
-     "b": "3000-gates-rd-nw"
-    },
-    {
-     "n": "NEBRASKA AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.07226,
-       38.95389
-      ],
-      [
-       -77.07215,
-       38.95402
-      ]
-     ]
-    },
-    {
-     "n": "DAVENPORT ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06812,
-       38.9521
-      ],
-      [
-       -77.06985,
-       38.9521
-      ]
-     ]
-    },
-    {
-     "n": "37TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07242,
-       38.93816
-      ],
-      [
-       -77.07242,
-       38.94123
-      ]
-     ]
-    },
-    {
-     "n": "GARRISON ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06212,
-       38.95507
-      ],
-      [
-       -77.06281,
-       38.95515
-      ],
-      [
-       -77.06333,
-       38.95551
-      ],
-      [
-       -77.06346,
-       38.95554
-      ]
-     ]
-    },
-    {
-     "n": "32ND ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06445,
-       38.9479
-      ],
-      [
-       -77.06445,
-       38.94849
-      ],
-      [
-       -77.06434,
-       38.9489
-      ]
-     ],
-     "b": "4500-32nd-st-nw"
-    },
-    {
-     "n": "ELLICOTT ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.05848,
-       38.95355
-      ],
-      [
-       -77.05848,
-       38.95355
-      ]
-     ]
-    },
-    {
-     "n": "BROAD BRANCH TER NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06566,
-       38.95462
-      ],
-      [
-       -77.06561,
-       38.95471
-      ],
-      [
-       -77.06562,
-       38.95479
-      ],
-      [
-       -77.06602,
-       38.95556
-      ],
-      [
-       -77.06618,
-       38.95574
-      ]
-     ]
-    },
-    {
-     "n": "LINNEAN AVE NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06161,
-       38.95282
-      ],
-      [
-       -77.06253,
-       38.95331
-      ]
-     ],
-     "b": "4800-linnean-ave-nw"
-    },
-    {
-     "n": "CONNECTICUT AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.06226,
-       38.94202
-      ],
-      [
-       -77.06292,
-       38.94316
-      ]
-     ],
-     "b": "4000-connecticut-ave-nw"
-    },
-    {
-     "n": "35TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06863,
-       38.9363
-      ],
-      [
-       -77.06864,
-       38.93734
-      ]
-     ]
-    },
-    {
-     "n": "GATES RD NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06293,
-       38.95023
-      ],
-      [
-       -77.06431,
-       38.95072
-      ]
-     ],
-     "b": "3000-gates-rd-nw"
-    },
-    {
-     "n": "37TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07241,
-       38.94222
-      ],
-      [
-       -77.07242,
-       38.94317
-      ]
-     ],
-     "b": "4100-37th-st-nw"
-    },
-    {
-     "n": "DAVENPORT ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06163,
-       38.95186
-      ],
-      [
-       -77.06517,
-       38.95186
-      ]
-     ],
-     "b": "3000-davenport-st-nw"
-    },
-    {
-     "n": "36TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06943,
-       38.95434
-      ],
-      [
-       -77.06931,
-       38.95445
-      ],
-      [
-       -77.06923,
-       38.9547
-      ]
-     ]
-    },
-    {
-     "n": "CONNECTICUT AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.06292,
-       38.94316
-      ],
-      [
-       -77.06356,
-       38.94426
-      ]
-     ],
-     "b": "4200-connecticut-ave-nw"
-    },
-    {
-     "n": "35TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06864,
-       38.93734
-      ],
-      [
-       -77.06864,
-       38.93816
-      ]
-     ]
-    },
-    {
-     "n": "37TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07242,
-       38.94123
-      ],
-      [
-       -77.07241,
-       38.94222
-      ]
-     ]
-    },
-    {
-     "n": "CHESAPEAKE ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07171,
-       38.95073
-      ],
-      [
-       -77.0746,
-       38.95074
-      ]
-     ]
-    },
-    {
-     "n": "GARRISON ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06099,
-       38.95464
-      ],
-      [
-       -77.06106,
-       38.95487
-      ],
-      [
-       -77.06129,
-       38.95503
-      ],
-      [
-       -77.06152,
-       38.95508
-      ],
-      [
-       -77.06212,
-       38.95507
-      ]
-     ]
-    },
-    {
-     "n": "29TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.05791,
-       38.9479
-      ],
-      [
-       -77.05841,
-       38.94968
-      ]
-     ],
-     "b": "4500-29th-st-nw"
-    },
-    {
-     "n": "CONNECTICUT AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.06622,
-       38.94883
-      ],
-      [
-       -77.06672,
-       38.94969
-      ]
-     ],
-     "b": "4500-connecticut-ave-nw"
-    },
-    {
-     "n": "ALBEMARLE ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06164,
-       38.9479
-      ],
-      [
-       -77.06445,
-       38.9479
-      ]
-     ],
-     "b": "3000-albemarle-st-nw"
-    },
-    {
-     "n": "LINNEAN TER NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.0676,
-       38.95651
-      ],
-      [
-       -77.067,
-       38.95721
-      ],
-      [
-       -77.06674,
-       38.9574
-      ],
-      [
-       -77.06635,
-       38.95751
-      ],
-      [
-       -77.06566,
-       38.95743
-      ]
-     ]
-    },
-    {
-     "n": "LINNEAN TER NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.0648,
-       38.9573
-      ],
-      [
-       -77.06437,
-       38.95753
-      ]
-     ]
-    },
-    {
-     "n": "FESSENDEN ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06566,
-       38.95462
-      ],
-      [
-       -77.06611,
-       38.95471
-      ],
-      [
-       -77.06766,
-       38.9547
-      ]
-     ]
-    },
-    {
-     "n": "CHESAPEAKE ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.055,
-       38.95102
-      ],
-      [
-       -77.0558,
-       38.95061
-      ],
-      [
-       -77.0561,
-       38.95051
-      ],
-      [
-       -77.05765,
-       38.95044
-      ]
-     ]
-    },
-    {
-     "n": "ELLICOTT ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06984,
-       38.95331
-      ],
-      [
-       -77.07191,
-       38.95329
-      ]
-     ]
-    },
-    {
-     "n": "36TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06984,
-       38.95331
-      ],
-      [
-       -77.0696,
-       38.95398
-      ]
-     ]
-    },
-    {
-     "n": "BRANDYWINE ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.05298,
-       38.95037
-      ],
-      [
-       -77.0536,
-       38.95048
-      ],
-      [
-       -77.05406,
-       38.95044
-      ],
-      [
-       -77.05431,
-       38.95036
-      ],
-      [
-       -77.05531,
-       38.94982
-      ],
-      [
-       -77.0557,
-       38.94972
-      ]
-     ]
-    },
-    {
-     "n": "38TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07459,
-       38.95703
-      ],
-      [
-       -77.0746,
-       38.95769
-      ]
-     ]
-    },
-    {
-     "n": "NEBRASKA AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.07215,
-       38.95402
-      ],
-      [
-       -77.07156,
-       38.9547
-      ]
-     ]
-    },
-    {
-     "n": "36TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06985,
-       38.9479
-      ],
-      [
-       -77.06985,
-       38.9488
-      ]
-     ],
-     "b": "4500-36th-st-nw"
-    },
-    {
-     "n": "AUDUBON TER NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.05704,
-       38.9462
-      ],
-      [
-       -77.05776,
-       38.94618
-      ],
-      [
-       -77.05913,
-       38.94644
-      ]
-     ]
-    },
-    {
-     "n": "FESSENDEN ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06766,
-       38.9547
-      ],
-      [
-       -77.06923,
-       38.9547
-      ]
-     ]
-    },
-    {
-     "n": "BRANDYWINE ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07534,
-       38.9497
-      ],
-      [
-       -77.07568,
-       38.9497
-      ],
-      [
-       -77.0758,
-       38.94974
-      ]
-     ]
-    },
-    {
-     "n": "NEBRASKA AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.07495,
-       38.95074
-      ],
-      [
-       -77.07466,
-       38.95108
-      ]
-     ]
-    },
-    {
-     "n": "BRANDYWINE ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06672,
-       38.94969
-      ],
-      [
-       -77.06985,
-       38.94969
-      ]
-     ],
-     "b": "3500-brandywine-st-nw"
-    },
-    {
-     "n": "32ND ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06517,
-       38.95186
-      ],
-      [
-       -77.06517,
-       38.95331
-      ]
-     ],
-     "b": "4800-32nd-st-nw"
-    },
-    {
-     "n": "38TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07461,
-       38.94479
-      ],
-      [
-       -77.07461,
-       38.94554
-      ]
-     ]
-    },
-    {
-     "n": "CONNECTICUT AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.06773,
-       38.95142
-      ],
-      [
-       -77.06812,
-       38.9521
-      ]
-     ]
-    },
-    {
-     "n": "ALLENDALE PL NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.05571,
-       38.94856
-      ],
-      [
-       -77.05636,
-       38.94884
-      ],
-      [
-       -77.05698,
-       38.94885
-      ]
-     ]
-    },
-    {
      "n": "APPLETON ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06985,
-       38.9488
-      ],
-      [
-       -77.07236,
-       38.9488
-      ],
-      [
-       -77.07248,
-       38.94876
-      ]
-     ],
-     "b": "3600-appleton-st-nw"
-    },
-    {
-     "n": "36TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06985,
-       38.94709
-      ],
-      [
-       -77.06985,
-       38.9479
-      ]
-     ],
-     "b": "4400-36th-st-nw"
-    },
-    {
-     "n": "BROAD BRANCH RD NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.05298,
-       38.95037
-      ],
-      [
-       -77.05311,
-       38.95071
-      ],
-      [
-       -77.05305,
-       38.95133
-      ],
-      [
-       -77.0532,
-       38.95164
-      ],
-      [
-       -77.0534,
-       38.95174
-      ],
-      [
-       -77.05455,
-       38.95199
-      ],
-      [
-       -77.05474,
-       38.95207
-      ],
-      [
-       -77.05488,
-       38.95222
-      ],
-      [
-       -77.05507,
-       38.95273
-      ],
-      [
-       -77.05557,
-       38.9533
-      ],
-      [
-       -77.05584,
-       38.95351
-      ],
-      [
-       -77.0563,
-       38.95375
-      ]
-     ]
-    },
-    {
-     "n": "CONNECTICUT AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.06883,
-       38.95332
-      ],
-      [
-       -77.06924,
-       38.95402
-      ]
-     ]
-    },
-    {
-     "n": "38TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07461,
-       38.94317
-      ],
-      [
-       -77.07461,
-       38.94398
-      ]
-     ]
-    },
-    {
-     "n": "FESSENDEN ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06923,
-       38.9547
-      ],
-      [
-       -77.06963,
-       38.9547
-      ]
-     ]
-    },
-    {
-     "n": "LINNEAN AVE NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06377,
-       38.95687
-      ],
-      [
-       -77.06437,
-       38.95753
-      ]
-     ]
-    },
-    {
-     "n": "IDAHO AVE NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07298,
-       38.93629
-      ],
-      [
-       -77.07236,
-       38.93704
-      ]
-     ]
-    },
-    {
-     "n": "HARRISON ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07459,
-       38.95703
-      ],
-      [
-       -77.07714,
-       38.95703
-      ]
-     ]
-    },
-    {
-     "n": "FESSENDEN ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06963,
-       38.9547
-      ],
-      [
-       -77.07156,
-       38.9547
-      ]
-     ]
-    },
-    {
-     "n": "37TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07241,
-       38.94398
-      ],
-      [
-       -77.07242,
-       38.94479
-      ]
-     ],
-     "b": "4200-37th-st-nw"
-    },
-    {
-     "n": "30TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06164,
-       38.94969
-      ],
-      [
-       -77.06163,
-       38.95169
-      ]
-     ],
-     "b": "4600-30th-st-nw"
-    },
-    {
-     "n": "ALBEMARLE ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06691,
-       38.9479
-      ],
-      [
-       -77.06985,
-       38.9479
-      ]
-     ],
-     "b": "3500-albemarle-st-nw"
-    },
-    {
-     "n": "CONNECTICUT AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.07041,
-       38.95604
-      ],
-      [
-       -77.07111,
-       38.95723
-      ]
-     ]
-    },
-    {
-     "n": "DAVENPORT ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07287,
-       38.95211
-      ],
-      [
-       -77.07361,
-       38.95211
-      ],
-      [
-       -77.07373,
-       38.95216
-      ]
-     ]
-    },
-    {
-     "n": "GRANT RD NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06163,
-       38.95169
-      ],
-      [
-       -77.06417,
-       38.95128
-      ],
-      [
-       -77.06517,
-       38.95127
-      ]
-     ],
-     "b": "3000-grant-rd-nw"
-    },
-    {
-     "n": "DAVENPORT ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.0563,
-       38.95375
-      ],
-      [
-       -77.0568,
-       38.95353
-      ],
-      [
-       -77.05687,
-       38.95313
-      ],
-      [
-       -77.05696,
-       38.95298
-      ],
-      [
-       -77.05776,
-       38.95256
-      ],
-      [
-       -77.05831,
-       38.95208
-      ],
-      [
-       -77.05964,
-       38.95184
-      ],
-      [
-       -77.05989,
-       38.95189
-      ]
-     ]
-    },
-    {
-     "n": "28TH PL NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.0577,
-       38.94097
-      ],
-      [
-       -77.05769,
-       38.9416
-      ]
-     ]
-    },
-    {
-     "n": "LINNEAN AVE NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.05646,
-       38.94696
-      ],
-      [
-       -77.05671,
-       38.9479
-      ]
-     ]
-    },
-    {
-     "n": "INTERNATIONAL CT NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06875,
-       38.9438
-      ],
-      [
-       -77.0688,
-       38.94425
-      ],
-      [
-       -77.06863,
-       38.94479
-      ]
-     ],
-     "b": "3500-international-ct-nw"
-    },
-    {
-     "n": "31ST ST NW",
      "k": "minor",
      "p": [
       [
@@ -10271,33 +10229,11 @@
        38.94891
       ],
       [
-       -77.06293,
-       38.94897
-      ],
-      [
-       -77.06293,
-       38.94969
+       -77.06434,
+       38.9489
       ]
      ],
-     "b": "4500-31st-st-nw"
-    },
-    {
-     "n": "ALBEMARLE ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.05416,
-       38.94835
-      ],
-      [
-       -77.0554,
-       38.94802
-      ],
-      [
-       -77.05671,
-       38.9479
-      ]
-     ]
+     "b": "3100-appleton-st-nw"
     },
     {
      "n": "CHESAPEAKE ST NW",
@@ -10315,558 +10251,19 @@
      "b": "3200-chesapeake-st-nw"
     },
     {
-     "n": "30TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06163,
-       38.95169
-      ],
-      [
-       -77.06163,
-       38.95186
-      ]
-     ],
-     "b": "4700-30th-st-nw"
-    },
-    {
-     "n": "LINNEAN AVE NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.05501,
-       38.94067
-      ],
-      [
-       -77.0548,
-       38.94089
-      ],
-      [
-       -77.05467,
-       38.94112
-      ],
-      [
-       -77.05451,
-       38.94177
-      ],
-      [
-       -77.05413,
-       38.94221
-      ]
-     ]
-    },
-    {
-     "n": "DAVENPORT ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06517,
-       38.95186
-      ],
-      [
-       -77.06812,
-       38.9521
-      ]
-     ]
-    },
-    {
-     "n": "ELLICOTT TER NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.05905,
-       38.95274
-      ],
-      [
-       -77.05925,
-       38.95267
-      ],
-      [
-       -77.05954,
-       38.95266
-      ],
-      [
-       -77.05999,
-       38.95286
-      ],
-      [
-       -77.06009,
-       38.95301
-      ],
-      [
-       -77.06013,
-       38.95338
-      ]
-     ]
-    },
-    {
-     "n": "NEBRASKA AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.07041,
-       38.95604
-      ],
-      [
-       -77.06847,
-       38.95832
-      ]
-     ]
-    },
-    {
-     "n": "FESSENDEN ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06517,
-       38.95427
-      ],
-      [
-       -77.06566,
-       38.95462
-      ]
-     ]
-    },
-    {
-     "n": "BRANDYWINE ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06422,
-       38.94969
-      ],
-      [
-       -77.06672,
-       38.94969
-      ]
-     ],
-     "b": "3200-brandywine-st-nw"
-    },
-    {
-     "n": "CUMBERLAND ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06773,
-       38.95142
-      ],
-      [
-       -77.06985,
-       38.95142
-      ]
-     ]
-    },
-    {
-     "n": "LINNEAN TER NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06566,
-       38.95743
-      ],
-      [
-       -77.0648,
-       38.9573
-      ]
-     ]
-    },
-    {
-     "n": "30TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06164,
-       38.9479
-      ],
-      [
-       -77.06164,
-       38.94969
-      ]
-     ],
-     "b": "4500-30th-st-nw"
-    },
-    {
-     "n": "36TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06985,
-       38.94969
-      ],
-      [
-       -77.06985,
-       38.95074
-      ]
-     ],
-     "b": "4600-36th-st-nw"
-    },
-    {
-     "n": "34TH ST NW",
-     "k": "major",
-     "p": [
-      [
-       -77.06639,
-       38.93711
-      ],
-      [
-       -77.06639,
-       38.93734
-      ]
-     ]
-    },
-    {
      "n": "CONNECTICUT AVE NW",
      "k": "major",
      "p": [
       [
+       -77.06356,
+       38.94426
+      ],
+      [
        -77.06428,
        38.94549
-      ],
-      [
-       -77.06501,
-       38.94674
       ]
      ],
-     "b": "4300-connecticut-ave-nw"
-    },
-    {
-     "n": "36TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06985,
-       38.95074
-      ],
-      [
-       -77.06985,
-       38.95142
-      ]
-     ]
-    },
-    {
-     "n": "32ND ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06517,
-       38.95331
-      ],
-      [
-       -77.06517,
-       38.95427
-      ]
-     ]
-    },
-    {
-     "n": "INTERNATIONAL CT NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06863,
-       38.94479
-      ],
-      [
-       -77.06858,
-       38.94497
-      ],
-      [
-       -77.06859,
-       38.94535
-      ]
-     ],
-     "b": "3500-international-ct-nw"
-    },
-    {
-     "n": "CHEVY CHASE PKWY NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07111,
-       38.95723
-      ],
-      [
-       -77.0704,
-       38.95806
-      ],
-      [
-       -77.07019,
-       38.95839
-      ]
-     ]
-    },
-    {
-     "n": "APPLETON ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07248,
-       38.94876
-      ],
-      [
-       -77.0746,
-       38.94873
-      ]
-     ]
-    },
-    {
-     "n": "34TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06728,
-       38.95549
-      ],
-      [
-       -77.06679,
-       38.95609
-      ]
-     ]
-    },
-    {
-     "n": "34TH ST NW",
-     "k": "major",
-     "p": [
-      [
-       -77.06639,
-       38.93734
-      ],
-      [
-       -77.06639,
-       38.93816
-      ]
-     ]
-    },
-    {
-     "n": "ELLICOTT ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06013,
-       38.95338
-      ],
-      [
-       -77.06042,
-       38.95332
-      ],
-      [
-       -77.06098,
-       38.95331
-      ]
-     ]
-    },
-    {
-     "n": "APPLETON ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06296,
-       38.94891
-      ],
-      [
-       -77.06434,
-       38.9489
-      ]
-     ],
-     "b": "3100-appleton-st-nw"
-    },
-    {
-     "n": "FESSENDEN ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07273,
-       38.9547
-      ],
-      [
-       -77.07322,
-       38.9547
-      ]
-     ]
-    },
-    {
-     "n": "36TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06982,
-       38.94404
-      ],
-      [
-       -77.06985,
-       38.94479
-      ]
-     ],
-     "b": "4200-36th-st-nw"
-    },
-    {
-     "n": "BROAD BRANCH RD NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.05807,
-       38.95672
-      ],
-      [
-       -77.05817,
-       38.95689
-      ],
-      [
-       -77.05876,
-       38.95735
-      ],
-      [
-       -77.0593,
-       38.95757
-      ],
-      [
-       -77.0606,
-       38.95781
-      ],
-      [
-       -77.06337,
-       38.95803
-      ],
-      [
-       -77.06513,
-       38.95849
-      ]
-     ]
-    },
-    {
-     "n": "33RD PL NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06543,
-       38.93816
-      ],
-      [
-       -77.06543,
-       38.93861
-      ]
-     ]
-    },
-    {
-     "n": "HOWARD ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07434,
-       38.95235
-      ],
-      [
-       -77.0739,
-       38.95353
-      ]
-     ]
-    },
-    {
-     "n": "ELLICOTT ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06253,
-       38.95331
-      ],
-      [
-       -77.06517,
-       38.95331
-      ]
-     ],
-     "b": "3000-ellicott-st-nw"
-    },
-    {
-     "n": "DAVENPORT ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.05989,
-       38.95189
-      ],
-      [
-       -77.06163,
-       38.95186
-      ]
-     ],
-     "b": "2900-davenport-st-nw"
-    },
-    {
-     "n": "INTERNATIONAL DR NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.0649,
-       38.94241
-      ],
-      [
-       -77.0649,
-       38.9417
-      ],
-      [
-       -77.06499,
-       38.94161
-      ],
-      [
-       -77.06512,
-       38.94157
-      ],
-      [
-       -77.06637,
-       38.94157
-      ]
-     ],
-     "b": "3400-international-dr-nw"
-    },
-    {
-     "n": "BRANDYWINE ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.05841,
-       38.94968
-      ],
-      [
-       -77.06164,
-       38.94969
-      ]
-     ],
-     "b": "2900-brandywine-st-nw"
-    },
-    {
-     "n": "ELLICOTT ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06883,
-       38.95332
-      ],
-      [
-       -77.06984,
-       38.95331
-      ]
-     ]
-    },
-    {
-     "n": "FESSENDEN ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.05874,
-       38.95486
-      ],
-      [
-       -77.05888,
-       38.95475
-      ],
-      [
-       -77.0593,
-       38.95465
-      ],
-      [
-       -77.06099,
-       38.95464
-      ]
-     ]
+     "b": "4200-connecticut-ave-nw"
     },
     {
      "n": "38TH ST NW",
@@ -10895,42 +10292,128 @@
      ]
     },
     {
-     "n": "33RD ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06618,
-       38.95574
-      ],
-      [
-       -77.06575,
-       38.95619
-      ],
-      [
-       -77.0651,
-       38.95674
-      ],
-      [
-       -77.06492,
-       38.957
-      ],
-      [
-       -77.0648,
-       38.9573
-      ]
-     ]
-    },
-    {
      "n": "36TH ST NW",
      "k": "minor",
      "p": [
       [
-       -77.07088,
-       38.9363
+       -77.06923,
+       38.9547
       ],
       [
-       -77.07089,
-       38.93734
+       -77.06922,
+       38.95484
+      ],
+      [
+       -77.06898,
+       38.95551
+      ]
+     ]
+    },
+    {
+     "n": "CUMBERLAND ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06773,
+       38.95142
+      ],
+      [
+       -77.06985,
+       38.95142
+      ]
+     ]
+    },
+    {
+     "n": "LINNEAN TER NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.0648,
+       38.9573
+      ],
+      [
+       -77.06437,
+       38.95753
+      ]
+     ]
+    },
+    {
+     "n": "LINNEAN TER NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.0676,
+       38.95651
+      ],
+      [
+       -77.067,
+       38.95721
+      ],
+      [
+       -77.06674,
+       38.9574
+      ],
+      [
+       -77.06635,
+       38.95751
+      ],
+      [
+       -77.06566,
+       38.95743
+      ]
+     ]
+    },
+    {
+     "n": "CONNECTICUT AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.06501,
+       38.94674
+      ],
+      [
+       -77.06568,
+       38.9479
+      ]
+     ]
+    },
+    {
+     "n": "GARRISON ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06212,
+       38.95507
+      ],
+      [
+       -77.06281,
+       38.95515
+      ],
+      [
+       -77.06333,
+       38.95551
+      ],
+      [
+       -77.06346,
+       38.95554
+      ]
+     ]
+    },
+    {
+     "n": "EVERETT ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.0696,
+       38.95398
+      ],
+      [
+       -77.07181,
+       38.95398
+      ],
+      [
+       -77.07215,
+       38.95402
       ]
      ]
     },
@@ -10985,121 +10468,43 @@
      ]
     },
     {
-     "n": "CHESTERFIELD PL NW",
+     "n": "BRANDYWINE ST NW",
      "k": "minor",
      "p": [
       [
-       -77.05634,
-       38.95282
+       -77.05841,
+       38.94968
       ],
       [
-       -77.05639,
-       38.95219
-      ],
-      [
-       -77.05659,
-       38.95178
-      ],
-      [
-       -77.0568,
-       38.95158
-      ],
-      [
-       -77.05799,
-       38.95078
-      ]
-     ]
-    },
-    {
-     "n": "38TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07461,
-       38.94554
-      ],
-      [
-       -77.07461,
-       38.94629
-      ]
-     ]
-    },
-    {
-     "n": "IDAHO AVE NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07211,
-       38.93734
-      ],
-      [
-       -77.07143,
-       38.93816
-      ]
-     ]
-    },
-    {
-     "n": "36TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06985,
-       38.9488
-      ],
-      [
-       -77.06985,
+       -77.06164,
        38.94969
       ]
      ],
-     "b": "4500-36th-st-nw"
+     "b": "2900-brandywine-st-nw"
     },
     {
-     "n": "GRANT RD NW",
+     "n": "33RD ST NW",
      "k": "minor",
      "p": [
       [
-       -77.07704,
-       38.94807
+       -77.06618,
+       38.95574
       ],
       [
-       -77.07628,
-       38.94842
+       -77.06575,
+       38.95619
       ],
       [
-       -77.07559,
-       38.94886
+       -77.0651,
+       38.95674
       ],
       [
-       -77.07534,
-       38.9497
-      ]
-     ]
-    },
-    {
-     "n": "ALBEMARLE ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.05281,
-       38.94882
+       -77.06492,
+       38.957
       ],
       [
-       -77.05416,
-       38.94835
-      ]
-     ]
-    },
-    {
-     "n": "ALBEMARLE ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07461,
-       38.94791
-      ],
-      [
-       -77.07703,
-       38.94791
+       -77.0648,
+       38.9573
       ]
      ]
     },
@@ -11108,95 +10513,34 @@
      "k": "minor",
      "p": [
       [
-       -77.05989,
-       38.95189
+       -77.05722,
+       38.94968
       ],
       [
-       -77.06161,
-       38.95282
-      ]
-     ]
-    },
-    {
-     "n": "BRANDYWINE ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07461,
-       38.94969
+       -77.05742,
+       38.95009
       ],
       [
-       -77.07534,
-       38.9497
-      ]
-     ]
-    },
-    {
-     "n": "CHESAPEAKE ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06431,
-       38.95072
-      ],
-      [
-       -77.06517,
-       38.95073
+       -77.05765,
+       38.95044
       ]
      ],
-     "b": "3000-chesapeake-st-nw"
+     "b": "4600-linnean-ave-nw"
     },
     {
-     "n": "34TH ST NW",
+     "n": "ALBEMARLE ST NW",
      "k": "minor",
      "p": [
       [
-       -77.06766,
-       38.9547
+       -77.06445,
+       38.9479
       ],
       [
-       -77.06753,
-       38.95506
-      ],
-      [
-       -77.06728,
-       38.95549
-      ]
-     ]
-    },
-    {
-     "n": "29TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.05913,
-       38.94644
-      ],
-      [
-       -77.0591,
-       38.94661
-      ],
-      [
-       -77.059,
-       38.94671
-      ],
-      [
-       -77.05835,
-       38.9468
-      ],
-      [
-       -77.05801,
-       38.94702
-      ],
-      [
-       -77.05791,
-       38.94727
-      ],
-      [
-       -77.05791,
+       -77.06568,
        38.9479
       ]
-     ]
+     ],
+     "b": "3200-albemarle-st-nw"
     },
     {
      "n": "38TH ST NW",
@@ -11204,25 +10548,54 @@
      "p": [
       [
        -77.07461,
-       38.94398
+       38.94629
       ],
       [
        -77.07461,
-       38.94479
+       38.9471
       ]
      ]
     },
     {
-     "n": "34TH ST NW",
+     "n": "LINNEAN AVE NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05765,
+       38.95044
+      ],
+      [
+       -77.05799,
+       38.95078
+      ]
+     ],
+     "b": "4600-linnean-ave-nw"
+    },
+    {
+     "n": "CONNECTICUT AVE NW",
      "k": "major",
      "p": [
       [
-       -77.06639,
-       38.9363
+       -77.06943,
+       38.95434
       ],
       [
-       -77.06639,
-       38.93711
+       -77.06963,
+       38.9547
+      ]
+     ]
+    },
+    {
+     "n": "DAVENPORT ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06517,
+       38.95186
+      ],
+      [
+       -77.06812,
+       38.9521
       ]
      ]
     },
@@ -11245,16 +10618,63 @@
      ]
     },
     {
-     "n": "BROAD BRANCH TER NW",
+     "n": "ELLICOTT ST NW",
      "k": "minor",
      "p": [
       [
-       -77.06679,
-       38.95609
+       -77.06253,
+       38.95331
       ],
       [
-       -77.0676,
-       38.95651
+       -77.06517,
+       38.95331
+      ]
+     ],
+     "b": "3000-ellicott-st-nw"
+    },
+    {
+     "n": "ALLENDALE PL NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05571,
+       38.94856
+      ],
+      [
+       -77.05636,
+       38.94884
+      ],
+      [
+       -77.05698,
+       38.94885
+      ]
+     ]
+    },
+    {
+     "n": "GRANT RD NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07534,
+       38.9497
+      ],
+      [
+       -77.07525,
+       38.95011
+      ]
+     ]
+    },
+    {
+     "n": "ELLICOTT ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06098,
+       38.95331
+      ],
+      [
+       -77.06212,
+       38.95331
       ]
      ]
     },
@@ -11263,95 +10683,185 @@
      "k": "minor",
      "p": [
       [
-       -77.05799,
-       38.95078
+       -77.06733,
+       38.95073
       ],
       [
-       -77.05811,
+       -77.06985,
        38.95074
-      ],
-      [
-       -77.05936,
-       38.95072
-      ],
-      [
-       -77.05951,
-       38.95067
       ]
      ],
-     "b": "2900-chesapeake-st-nw"
+     "b": "3500-chesapeake-st-nw"
     },
     {
-     "n": "38TH ST NW",
+     "n": "30TH ST NW",
      "k": "minor",
      "p": [
       [
+       -77.06098,
+       38.95331
+      ],
+      [
+       -77.06099,
+       38.95464
+      ]
+     ]
+    },
+    {
+     "n": "CHESAPEAKE ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07171,
+       38.95073
+      ],
+      [
        -77.0746,
+       38.95074
+      ]
+     ]
+    },
+    {
+     "n": "CONNECTICUT AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.06292,
+       38.94316
+      ],
+      [
+       -77.06356,
+       38.94426
+      ]
+     ],
+     "b": "4200-connecticut-ave-nw"
+    },
+    {
+     "n": "CONNECTICUT AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.06773,
+       38.95142
+      ],
+      [
+       -77.06812,
+       38.9521
+      ]
+     ]
+    },
+    {
+     "n": "FESSENDEN ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06766,
        38.9547
       ],
       [
-       -77.0746,
-       38.9555
+       -77.06923,
+       38.9547
       ]
      ]
     },
     {
-     "n": "28TH ST NW",
+     "n": "APPLETON ST NW",
      "k": "minor",
      "p": [
       [
-       -77.05416,
-       38.94835
+       -77.06985,
+       38.9488
       ],
       [
-       -77.05457,
-       38.94902
+       -77.07236,
+       38.9488
       ],
       [
-       -77.05478,
-       38.94915
+       -77.07248,
+       38.94876
+      ]
+     ],
+     "b": "3600-appleton-st-nw"
+    },
+    {
+     "n": "BRANDYWINE ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07534,
+       38.9497
       ],
       [
-       -77.05546,
-       38.9494
+       -77.07568,
+       38.9497
       ],
       [
-       -77.05561,
-       38.94954
-      ],
-      [
-       -77.0557,
-       38.94972
+       -77.0758,
+       38.94974
       ]
      ]
     },
     {
-     "n": "ALTON PL NW",
+     "n": "32ND ST NW",
      "k": "minor",
      "p": [
       [
-       -77.07461,
-       38.9471
+       -77.06517,
+       38.95186
       ],
       [
-       -77.07703,
-       38.9471
+       -77.06517,
+       38.95331
+      ]
+     ],
+     "b": "4800-32nd-st-nw"
+    },
+    {
+     "n": "37TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07241,
+       38.94554
+      ],
+      [
+       -77.07242,
+       38.94629
       ]
      ]
     },
     {
-     "n": "ALBEMARLE ST NW",
+     "n": "LINNEAN AVE NW",
      "k": "minor",
      "p": [
       [
-       -77.07258,
-       38.94791
+       -77.06377,
+       38.95687
       ],
       [
-       -77.07461,
-       38.94791
+       -77.06437,
+       38.95753
       ]
      ]
+    },
+    {
+     "n": "INTERNATIONAL CT NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06875,
+       38.9438
+      ],
+      [
+       -77.0688,
+       38.94425
+      ],
+      [
+       -77.06863,
+       38.94479
+      ]
+     ],
+     "b": "3500-international-ct-nw"
     },
     {
      "n": "ALBEMARLE ST NW",
@@ -11369,44 +10879,204 @@
      "b": "3400-albemarle-st-nw"
     },
     {
-     "n": "NEBRASKA AVE NW",
+     "n": "BROAD BRANCH RD NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05807,
+       38.95672
+      ],
+      [
+       -77.05817,
+       38.95689
+      ],
+      [
+       -77.05876,
+       38.95735
+      ],
+      [
+       -77.0593,
+       38.95757
+      ],
+      [
+       -77.0606,
+       38.95781
+      ],
+      [
+       -77.06337,
+       38.95803
+      ],
+      [
+       -77.06513,
+       38.95849
+      ]
+     ]
+    },
+    {
+     "n": "ALBEMARLE ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07461,
+       38.94791
+      ],
+      [
+       -77.07703,
+       38.94791
+      ]
+     ]
+    },
+    {
+     "n": "FESSENDEN ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06349,
+       38.95428
+      ],
+      [
+       -77.06517,
+       38.95427
+      ]
+     ]
+    },
+    {
+     "n": "CONNECTICUT AVE NW",
      "k": "major",
      "p": [
       [
-       -77.07466,
-       38.95108
+       -77.07111,
+       38.95723
       ],
       [
-       -77.07432,
-       38.95148
+       -77.07141,
+       38.95775
       ]
      ]
+    },
+    {
+     "n": "BRANDYWINE ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05722,
+       38.94968
+      ],
+      [
+       -77.05841,
+       38.94968
+      ]
+     ],
+     "b": "2800-brandywine-st-nw"
     },
     {
      "n": "LINNEAN AVE NW",
      "k": "minor",
      "p": [
       [
-       -77.05541,
-       38.94459
+       -77.05989,
+       38.95189
       ],
       [
-       -77.05599,
-       38.94561
+       -77.06161,
+       38.95282
       ]
      ]
     },
     {
-     "n": "38TH ST NW",
+     "n": "32ND ST NW",
      "k": "minor",
      "p": [
       [
-       -77.07461,
-       38.94222
+       -77.06517,
+       38.95127
       ],
       [
-       -77.07461,
-       38.94317
+       -77.06517,
+       38.95186
+      ]
+     ],
+     "b": "4700-32nd-st-nw"
+    },
+    {
+     "n": "CHEVY CHASE PKWY NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07295,
+       38.95507
+      ],
+      [
+       -77.07128,
+       38.95703
+      ]
+     ]
+    },
+    {
+     "n": "NEBRASKA AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.07432,
+       38.95148
+      ],
+      [
+       -77.07373,
+       38.95216
+      ]
+     ]
+    },
+    {
+     "n": "FESSENDEN ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.0746,
+       38.9547
+      ],
+      [
+       -77.07715,
+       38.95471
+      ]
+     ]
+    },
+    {
+     "n": "ELLICOTT ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05848,
+       38.95355
+      ],
+      [
+       -77.0588,
+       38.95367
+      ],
+      [
+       -77.05925,
+       38.95367
+      ],
+      [
+       -77.05974,
+       38.95356
+      ],
+      [
+       -77.06013,
+       38.95338
+      ]
+     ]
+    },
+    {
+     "n": "NEBRASKA AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.07215,
+       38.95402
+      ],
+      [
+       -77.07156,
+       38.9547
       ]
      ]
     },
@@ -11415,28 +11085,27 @@
      "k": "minor",
      "p": [
       [
-       -77.06898,
-       38.95551
+       -77.06985,
+       38.9479
       ],
       [
-       -77.06888,
-       38.95574
+       -77.06985,
+       38.9488
+      ]
+     ],
+     "b": "4500-36th-st-nw"
+    },
+    {
+     "n": "IDAHO AVE NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07081,
+       38.94068
       ],
       [
-       -77.06811,
-       38.95694
-      ],
-      [
-       -77.06779,
-       38.95732
-      ],
-      [
-       -77.06726,
-       38.95778
-      ],
-      [
-       -77.06604,
-       38.95863
+       -77.07076,
+       38.9413
       ]
      ]
     },
@@ -11455,34 +11124,157 @@
      ]
     },
     {
-     "n": "CHEVY CHASE PKWY NW",
+     "n": "ALBEMARLE ST NW",
      "k": "minor",
      "p": [
       [
-       -77.07295,
-       38.95507
+       -77.05281,
+       38.94882
       ],
       [
-       -77.07128,
-       38.95703
+       -77.05416,
+       38.94835
       ]
      ]
     },
     {
-     "n": "EVERETT ST NW",
+     "n": "DAVENPORT ST NW",
      "k": "minor",
      "p": [
       [
-       -77.0696,
-       38.95398
+       -77.07287,
+       38.95211
       ],
       [
-       -77.07181,
-       38.95398
+       -77.07361,
+       38.95211
       ],
       [
-       -77.07215,
-       38.95402
+       -77.07373,
+       38.95216
+      ]
+     ]
+    },
+    {
+     "n": "38TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07459,
+       38.95703
+      ],
+      [
+       -77.0746,
+       38.95769
+      ]
+     ]
+    },
+    {
+     "n": "FESSENDEN ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06517,
+       38.95427
+      ],
+      [
+       -77.06566,
+       38.95462
+      ]
+     ]
+    },
+    {
+     "n": "AUDUBON TER NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05704,
+       38.9462
+      ],
+      [
+       -77.05776,
+       38.94618
+      ],
+      [
+       -77.05913,
+       38.94644
+      ]
+     ]
+    },
+    {
+     "n": "32ND ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06445,
+       38.9479
+      ],
+      [
+       -77.06445,
+       38.94849
+      ],
+      [
+       -77.06434,
+       38.9489
+      ]
+     ],
+     "b": "4500-32nd-st-nw"
+    },
+    {
+     "n": "30TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06163,
+       38.95169
+      ],
+      [
+       -77.06163,
+       38.95186
+      ]
+     ],
+     "b": "4700-30th-st-nw"
+    },
+    {
+     "n": "30TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06164,
+       38.94969
+      ],
+      [
+       -77.06163,
+       38.95169
+      ]
+     ],
+     "b": "4600-30th-st-nw"
+    },
+    {
+     "n": "34TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06679,
+       38.95609
+      ],
+      [
+       -77.06566,
+       38.95743
+      ]
+     ]
+    },
+    {
+     "n": "38TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.0746,
+       38.9547
+      ],
+      [
+       -77.0746,
+       38.9555
       ]
      ]
     },
@@ -11491,49 +11283,16 @@
      "k": "minor",
      "p": [
       [
-       -77.05698,
-       38.94885
+       -77.06349,
+       38.95428
       ],
       [
-       -77.05722,
-       38.94968
-      ]
-     ],
-     "b": "4500-linnean-ave-nw"
-    },
-    {
-     "n": "HARRISON ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07128,
-       38.95703
+       -77.06355,
+       38.95466
       ],
       [
-       -77.07459,
-       38.95703
-      ]
-     ]
-    },
-    {
-     "n": "GRANT RD NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07287,
-       38.95211
-      ],
-      [
-       -77.07294,
-       38.95195
-      ],
-      [
-       -77.07361,
-       38.95154
-      ],
-      [
-       -77.07371,
-       38.95142
+       -77.06346,
+       38.95554
       ]
      ]
     },
@@ -11543,11 +11302,81 @@
      "p": [
       [
        -77.06985,
-       38.9521
+       38.95074
       ],
       [
-       -77.06984,
-       38.95331
+       -77.06985,
+       38.95142
+      ]
+     ]
+    },
+    {
+     "n": "38TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07461,
+       38.94969
+      ],
+      [
+       -77.0746,
+       38.95074
+      ]
+     ]
+    },
+    {
+     "n": "NEBRASKA AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.07707,
+       38.94826
+      ],
+      [
+       -77.0758,
+       38.94974
+      ]
+     ]
+    },
+    {
+     "n": "GARRISON ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06728,
+       38.95549
+      ],
+      [
+       -77.06898,
+       38.95551
+      ]
+     ]
+    },
+    {
+     "n": "DAVENPORT ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07152,
+       38.95211
+      ],
+      [
+       -77.07287,
+       38.95211
+      ]
+     ]
+    },
+    {
+     "n": "38TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.0746,
+       38.94873
+      ],
+      [
+       -77.07461,
+       38.94969
       ]
      ]
     },
@@ -11556,107 +11385,88 @@
      "k": "minor",
      "p": [
       [
-       -77.05533,
-       38.94447
+       -77.05646,
+       38.94696
       ],
       [
-       -77.05541,
-       38.94459
+       -77.05671,
+       38.9479
       ]
      ]
     },
     {
-     "n": "LINNEAN AVE NW",
+     "n": "31ST ST NW",
      "k": "minor",
      "p": [
       [
-       -77.05799,
-       38.95078
+       -77.06296,
+       38.94891
       ],
       [
-       -77.05848,
-       38.95113
+       -77.06293,
+       38.94897
       ],
       [
-       -77.05989,
-       38.95189
+       -77.06293,
+       38.94969
       ]
      ],
-     "b": "4700-linnean-ave-nw"
+     "b": "4500-31st-st-nw"
+    },
+    {
+     "n": "34TH ST NW",
+     "k": "major",
+     "p": [
+      [
+       -77.06639,
+       38.93734
+      ],
+      [
+       -77.06639,
+       38.93816
+      ]
+     ]
     },
     {
      "n": "BRANDYWINE ST NW",
      "k": "minor",
      "p": [
       [
-       -77.06985,
+       -77.06422,
        38.94969
       ],
-      [
-       -77.07212,
-       38.94969
-      ]
-     ],
-     "b": "3600-brandywine-st-nw"
-    },
-    {
-     "n": "CONNECTICUT AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.06924,
-       38.95402
-      ],
-      [
-       -77.06943,
-       38.95434
-      ]
-     ]
-    },
-    {
-     "n": "CONNECTICUT AVE NW",
-     "k": "major",
-     "p": [
       [
        -77.06672,
        38.94969
-      ],
-      [
-       -77.06733,
-       38.95073
       ]
      ],
-     "b": "4600-connecticut-ave-nw"
+     "b": "3200-brandywine-st-nw"
     },
     {
-     "n": "CUMBERLAND ST NW",
-     "k": "minor",
+     "n": "NEBRASKA AVE NW",
+     "k": "major",
      "p": [
       [
-       -77.06985,
-       38.95142
+       -77.07495,
+       38.95074
       ],
       [
-       -77.07153,
-       38.95142
+       -77.07466,
+       38.95108
       ]
      ]
     },
     {
-     "n": "CUMBERLAND ST NW",
+     "n": "FESSENDEN ST NW",
      "k": "minor",
      "p": [
       [
-       -77.07371,
-       38.95142
+       -77.07273,
+       38.9547
       ],
       [
-       -77.0742,
-       38.95143
-      ],
-      [
-       -77.07432,
-       38.95148
+       -77.07322,
+       38.9547
       ]
      ]
     },
@@ -11703,186 +11513,70 @@
      ]
     },
     {
-     "n": "FORT DR NW",
+     "n": "CHESAPEAKE ST NW",
      "k": "minor",
      "p": [
       [
-       -77.0764,
-       38.9526
+       -77.06431,
+       38.95072
       ],
       [
-       -77.07616,
-       38.95243
-      ],
-      [
-       -77.07588,
-       38.95235
-      ],
-      [
-       -77.07434,
-       38.95235
-      ]
-     ]
-    },
-    {
-     "n": "38TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.0746,
-       38.9555
-      ],
-      [
-       -77.0746,
-       38.95627
-      ]
-     ]
-    },
-    {
-     "n": "37TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07242,
-       38.94317
-      ],
-      [
-       -77.07241,
-       38.94398
+       -77.06517,
+       38.95073
       ]
      ],
-     "b": "4200-37th-st-nw"
+     "b": "3000-chesapeake-st-nw"
     },
     {
-     "n": "CONNECTICUT AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.06074,
-       38.9394
-      ],
-      [
-       -77.06166,
-       38.94098
-      ]
-     ]
-    },
-    {
-     "n": "HARRISON ST NW",
+     "n": "IDAHO AVE NW",
      "k": "minor",
      "p": [
       [
-       -77.06279,
-       38.95697
+       -77.07211,
+       38.93734
       ],
       [
-       -77.06342,
-       38.95701
-      ],
-      [
-       -77.06377,
-       38.95687
+       -77.07143,
+       38.93816
       ]
      ]
-    },
-    {
-     "n": "36TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.0696,
-       38.95398
-      ],
-      [
-       -77.06943,
-       38.95434
-      ]
-     ]
-    },
-    {
-     "n": "BRANDYWINE ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07212,
-       38.94969
-      ],
-      [
-       -77.07461,
-       38.94969
-      ]
-     ]
-    },
-    {
-     "n": "GRAMERCY ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.0746,
-       38.95627
-      ],
-      [
-       -77.07715,
-       38.95627
-      ]
-     ]
-    },
-    {
-     "n": "38TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07461,
-       38.94791
-      ],
-      [
-       -77.0746,
-       38.94873
-      ]
-     ]
-    },
-    {
-     "n": "NEBRASKA AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.07156,
-       38.9547
-      ],
-      [
-       -77.07041,
-       38.95604
-      ]
-     ]
-    },
-    {
-     "n": "35TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06691,
-       38.94709
-      ],
-      [
-       -77.06691,
-       38.9479
-      ]
-     ],
-     "b": "4400-35th-st-nw"
     },
     {
      "n": "FESSENDEN ST NW",
      "k": "minor",
      "p": [
       [
-       -77.0746,
-       38.9547
+       -77.05874,
+       38.95486
       ],
       [
-       -77.07715,
-       38.95471
+       -77.05888,
+       38.95475
+      ],
+      [
+       -77.0593,
+       38.95465
+      ],
+      [
+       -77.06099,
+       38.95464
       ]
      ]
+    },
+    {
+     "n": "30TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06164,
+       38.9479
+      ],
+      [
+       -77.06164,
+       38.94969
+      ]
+     ],
+     "b": "4500-30th-st-nw"
     },
     {
      "n": "38TH ST NW",
@@ -11899,138 +11593,71 @@
      ]
     },
     {
-     "n": "DAVENPORT ST NW",
+     "n": "APPLETON ST NW",
      "k": "minor",
      "p": [
+      [
+       -77.06622,
+       38.94883
+      ],
+      [
+       -77.0664,
+       38.9488
+      ],
       [
        -77.06985,
-       38.9521
-      ],
-      [
-       -77.07152,
-       38.95211
+       38.9488
       ]
-     ]
+     ],
+     "b": "3500-appleton-st-nw"
     },
     {
-     "n": "NEBRASKA AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.07707,
-       38.94826
-      ],
-      [
-       -77.0758,
-       38.94974
-      ]
-     ]
-    },
-    {
-     "n": "CHESAPEAKE ST NW",
+     "n": "BRANDYWINE ST NW",
      "k": "minor",
      "p": [
-      [
-       -77.07495,
-       38.95074
-      ],
-      [
-       -77.07852,
-       38.95074
-      ]
-     ]
-    },
-    {
-     "n": "CONNECTICUT AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.06733,
-       38.95073
-      ],
-      [
-       -77.06773,
-       38.95142
-      ]
-     ]
-    },
-    {
-     "n": "NEBRASKA AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.07432,
-       38.95148
-      ],
-      [
-       -77.07373,
-       38.95216
-      ]
-     ]
-    },
-    {
-     "n": "38TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.0746,
-       38.95074
-      ],
       [
        -77.07461,
-       38.951
+       38.94969
       ],
       [
-       -77.07466,
-       38.95108
+       -77.07534,
+       38.9497
       ]
      ]
     },
     {
-     "n": "32ND ST NW",
+     "n": "FESSENDEN ST NW",
      "k": "minor",
      "p": [
       [
-       -77.06517,
-       38.95127
+       -77.06566,
+       38.95462
       ],
       [
-       -77.06517,
-       38.95186
-      ]
-     ],
-     "b": "4700-32nd-st-nw"
-    },
-    {
-     "n": "CONNECTICUT AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.06166,
-       38.94098
+       -77.06611,
+       38.95471
       ],
       [
-       -77.06226,
-       38.94202
-      ]
-     ],
-     "b": "4000-connecticut-ave-nw"
-    },
-    {
-     "n": "36TH ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06923,
+       -77.06766,
        38.9547
+      ]
+     ]
+    },
+    {
+     "n": "AUDUBON TER NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05913,
+       38.94644
       ],
       [
-       -77.06922,
-       38.95484
+       -77.06154,
+       38.9466
       ],
       [
-       -77.06898,
-       38.95551
+       -77.06192,
+       38.9467
       ]
      ]
     },
@@ -12049,177 +11676,412 @@
      ]
     },
     {
+     "n": "34TH ST NW",
+     "k": "major",
+     "p": [
+      [
+       -77.06639,
+       38.93711
+      ],
+      [
+       -77.06639,
+       38.93734
+      ]
+     ]
+    },
+    {
      "n": "BRANDYWINE ST NW",
      "k": "minor",
      "p": [
       [
-       -77.05722,
-       38.94968
+       -77.06672,
+       38.94969
       ],
       [
-       -77.05841,
-       38.94968
+       -77.06985,
+       38.94969
       ]
      ],
-     "b": "2800-brandywine-st-nw"
+     "b": "3500-brandywine-st-nw"
+    },
+    {
+     "n": "31ST ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06293,
+       38.94969
+      ],
+      [
+       -77.06293,
+       38.95023
+      ]
+     ],
+     "b": "4600-31st-st-nw"
     },
     {
      "n": "CONNECTICUT AVE NW",
      "k": "major",
      "p": [
       [
-       -77.06568,
-       38.9479
-      ],
-      [
        -77.06622,
        38.94883
+      ],
+      [
+       -77.06672,
+       38.94969
       ]
      ],
      "b": "4500-connecticut-ave-nw"
     },
     {
-     "n": "TILDEN ST NW",
-     "k": "major",
-     "p": [
-      [
-       -77.05863,
-       38.94098
-      ],
-      [
-       -77.06166,
-       38.94098
-      ]
-     ],
-     "b": "2900-tilden-st-nw"
-    },
-    {
-     "n": "PORTER ST NW",
-     "k": "major",
-     "p": [
-      [
-       -77.07089,
-       38.93734
-      ],
-      [
-       -77.07211,
-       38.93734
-      ]
-     ]
-    },
-    {
-     "n": "PORTER ST NW",
-     "k": "major",
-     "p": [
-      [
-       -77.06639,
-       38.93734
-      ],
-      [
-       -77.06864,
-       38.93734
-      ]
-     ]
-    },
-    {
-     "n": "UPTON ST NW",
+     "n": "38TH ST NW",
      "k": "minor",
      "p": [
       [
-       -77.07651,
+       -77.07461,
        38.94222
       ],
       [
-       -77.07829,
-       38.94224
+       -77.07461,
+       38.94317
       ]
      ]
     },
     {
-     "n": "RODMAN ST NW",
+     "n": "29TH PL NW",
      "k": "minor",
      "p": [
       [
-       -77.07564,
-       38.93935
+       -77.06053,
+       38.95072
       ],
       [
-       -77.07661,
-       38.93907
+       -77.06045,
+       38.95097
       ],
       [
-       -77.07804,
-       38.93893
+       -77.06014,
+       38.95135
+      ],
+      [
+       -77.05997,
+       38.9518
+      ],
+      [
+       -77.05989,
+       38.95189
+      ]
+     ],
+     "b": "4600-29th-pl-nw"
+    },
+    {
+     "n": "CHESTERFIELD PL NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05634,
+       38.95282
+      ],
+      [
+       -77.05639,
+       38.95219
+      ],
+      [
+       -77.05659,
+       38.95178
+      ],
+      [
+       -77.0568,
+       38.95158
+      ],
+      [
+       -77.05799,
+       38.95078
       ]
      ]
     },
     {
-     "n": "YUMA ST NW",
+     "n": "33RD PL NW",
      "k": "minor",
      "p": [
+      [
+       -77.06543,
+       38.93816
+      ],
+      [
+       -77.06543,
+       38.93861
+      ]
+     ]
+    },
+    {
+     "n": "36TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07088,
+       38.9363
+      ],
+      [
+       -77.07089,
+       38.93734
+      ]
+     ]
+    },
+    {
+     "n": "34TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06766,
+       38.9547
+      ],
+      [
+       -77.06753,
+       38.95506
+      ],
+      [
+       -77.06728,
+       38.95549
+      ]
+     ]
+    },
+    {
+     "n": "37TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07236,
+       38.93704
+      ],
       [
        -77.07242,
-       38.94629
+       38.93713
       ],
       [
-       -77.07461,
-       38.94629
+       -77.07242,
+       38.93734
       ]
      ]
     },
     {
-     "n": "PLATTSBURG CT NW",
+     "n": "BRANDYWINE ST NW",
      "k": "minor",
      "p": [
       [
-       -77.076,
-       38.93739
+       -77.06293,
+       38.94969
       ],
       [
-       -77.07628,
-       38.93731
+       -77.06422,
+       38.94969
       ]
-     ]
+     ],
+     "b": "3100-brandywine-st-nw"
     },
     {
-     "n": "WISCONSIN AVE NW",
+     "n": "INTERNATIONAL PL NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06637,
+       38.94157
+      ],
+      [
+       -77.06637,
+       38.94226
+      ],
+      [
+       -77.06626,
+       38.94239
+      ],
+      [
+       -77.0649,
+       38.94241
+      ]
+     ],
+     "b": "3500-international-pl-nw"
+    },
+    {
+     "n": "NEBRASKA AVE NW",
      "k": "major",
      "p": [
       [
-       -77.0738,
-       38.93729
+       -77.07156,
+       38.9547
       ],
       [
-       -77.07426,
-       38.93814
+       -77.07041,
+       38.95604
       ]
      ]
     },
     {
-     "n": "WISCONSIN AVE NW",
-     "k": "major",
+     "n": "CUMBERLAND ST NW",
+     "k": "minor",
      "p": [
       [
-       -77.07315,
-       38.93608
+       -77.07371,
+       38.95142
       ],
       [
-       -77.0738,
-       38.93729
+       -77.0742,
+       38.95143
+      ],
+      [
+       -77.07432,
+       38.95148
       ]
      ]
     },
     {
-     "n": "RENO RD NW",
-     "k": "major",
+     "n": "36TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06985,
+       38.95142
+      ],
+      [
+       -77.06985,
+       38.9521
+      ]
+     ]
+    },
+    {
+     "n": "HOWARD ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07434,
+       38.95235
+      ],
+      [
+       -77.0739,
+       38.95353
+      ]
+     ]
+    },
+    {
+     "n": "36TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06985,
+       38.94629
+      ],
+      [
+       -77.06985,
+       38.94709
+      ]
+     ],
+     "b": "4400-36th-st-nw"
+    },
+    {
+     "n": "ALBEMARLE ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06985,
+       38.9479
+      ],
+      [
+       -77.07258,
+       38.94791
+      ]
+     ],
+     "b": "3600-albemarle-st-nw"
+    },
+    {
+     "n": "CHEVY CHASE PKWY NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07322,
+       38.9547
+      ],
+      [
+       -77.07295,
+       38.95507
+      ]
+     ]
+    },
+    {
+     "n": "HARRISON ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07128,
+       38.95703
+      ],
+      [
+       -77.07459,
+       38.95703
+      ]
+     ]
+    },
+    {
+     "n": "CUMBERLAND ST NW",
+     "k": "minor",
      "p": [
       [
        -77.07153,
        38.95142
       ],
       [
-       -77.07152,
-       38.95211
+       -77.07371,
+       38.95142
+      ]
+     ]
+    },
+    {
+     "n": "27TH ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05807,
+       38.95672
+      ],
+      [
+       -77.05753,
+       38.95674
+      ],
+      [
+       -77.05732,
+       38.95683
+      ],
+      [
+       -77.0572,
+       38.95701
+      ],
+      [
+       -77.05688,
+       38.95786
+      ],
+      [
+       -77.05672,
+       38.95804
+      ],
+      [
+       -77.05634,
+       38.95829
+      ],
+      [
+       -77.05606,
+       38.95868
+      ],
+      [
+       -77.05601,
+       38.95891
+      ],
+      [
+       -77.0562,
+       38.96001
+      ],
+      [
+       -77.0562,
+       38.96102
       ]
      ]
     },
@@ -12239,73 +12101,23 @@
      "b": "3600-upton-st-nw"
     },
     {
-     "n": "PLATTSBURG CT NW",
+     "n": "WINDOM PL NW",
      "k": "minor",
      "p": [
       [
-       -77.07516,
-       38.93758
+       -77.06428,
+       38.94549
       ],
       [
-       -77.076,
-       38.93739
-      ]
-     ]
-    },
-    {
-     "n": "RENO RD NW",
-     "k": "major",
-     "p": [
-      [
-       -77.071,
-       38.94557
+       -77.06446,
+       38.94552
       ],
       [
-       -77.07174,
-       38.94629
+       -77.06515,
+       38.94543
       ]
      ],
-     "b": "4300-reno-rd-nw"
-    },
-    {
-     "n": "RENO RD NW",
-     "k": "major",
-     "p": [
-      [
-       -77.07459,
-       38.95703
-      ],
-      [
-       -77.07555,
-       38.9577
-      ]
-     ]
-    },
-    {
-     "n": "RODMAN ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06006,
-       38.93823
-      ],
-      [
-       -77.06058,
-       38.93819
-      ],
-      [
-       -77.06136,
-       38.93824
-      ],
-      [
-       -77.06198,
-       38.93836
-      ],
-      [
-       -77.06269,
-       38.93857
-      ]
-     ]
+     "b": "3000-windom-pl-nw"
     },
     {
      "n": "WISCONSIN AVE NW",
@@ -12322,282 +12134,18 @@
      ]
     },
     {
-     "n": "QUEBEC ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07143,
-       38.93816
-      ],
-      [
-       -77.07242,
-       38.93816
-      ]
-     ]
-    },
-    {
-     "n": "RODMAN ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06269,
-       38.93857
-      ],
-      [
-       -77.06346,
-       38.93887
-      ],
-      [
-       -77.06435,
-       38.93905
-      ],
-      [
-       -77.0668,
-       38.93909
-      ]
-     ]
-    },
-    {
-     "n": "VAN NESS ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06489,
-       38.94317
-      ],
-      [
-       -77.06685,
-       38.94316
-      ],
-      [
-       -77.06771,
-       38.94306
-      ]
-     ],
-     "b": "3300-van-ness-st-nw"
-    },
-    {
-     "n": "WARREN ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06985,
-       38.94479
-      ],
-      [
-       -77.07031,
-       38.94479
-      ]
-     ],
-     "b": "3600-warren-st-nw"
-    },
-    {
-     "n": "TILDEN PL NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.05359,
-       38.94199
-      ],
-      [
-       -77.05413,
-       38.94221
-      ]
-     ]
-    },
-    {
-     "n": "WARREN ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07461,
-       38.94479
-      ],
-      [
-       -77.07704,
-       38.94479
-      ]
-     ]
-    },
-    {
-     "n": "SPRING OF FREEDOM ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.05275,
-       38.9397
-      ],
-      [
-       -77.05453,
-       38.93979
-      ],
-      [
-       -77.05478,
-       38.93985
-      ],
-      [
-       -77.05496,
-       38.93998
-      ],
-      [
-       -77.05509,
-       38.94019
-      ],
-      [
-       -77.0551,
-       38.94037
-      ],
-      [
-       -77.05501,
-       38.94067
-      ]
-     ]
-    },
-    {
      "n": "YUMA ST NW",
      "k": "minor",
      "p": [
       [
-       -77.07174,
-       38.94629
-      ],
-      [
-       -77.07242,
-       38.94629
-      ]
-     ]
-    },
-    {
-     "n": "VEAZEY TER NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06172,
-       38.94448
-      ],
-      [
-       -77.06246,
-       38.94427
-      ],
-      [
-       -77.06356,
-       38.94426
-      ]
-     ]
-    },
-    {
-     "n": "VEAZEY ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07241,
-       38.94398
-      ],
-      [
        -77.07461,
-       38.94398
-      ]
-     ]
-    },
-    {
-     "n": "RENO RD NW",
-     "k": "major",
-     "p": [
-      [
-       -77.06932,
-       38.94317
-      ],
-      [
-       -77.06982,
-       38.94404
-      ]
-     ],
-     "b": "4200-reno-rd-nw"
-    },
-    {
-     "n": "RENO RD NW",
-     "k": "major",
-     "p": [
-      [
-       -77.07174,
        38.94629
       ],
       [
-       -77.07211,
-       38.94671
-      ],
-      [
-       -77.07235,
-       38.9471
-      ]
-     ],
-     "b": "4400-reno-rd-nw"
-    },
-    {
-     "n": "YUMA ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06765,
-       38.94626
-      ],
-      [
-       -77.06985,
+       -77.07703,
        38.94629
       ]
-     ],
-     "b": "3500-yuma-st-nw"
-    },
-    {
-     "n": "PORTER ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07472,
-       38.93678
-      ],
-      [
-       -77.07534,
-       38.93683
-      ],
-      [
-       -77.07578,
-       38.93703
-      ]
      ]
-    },
-    {
-     "n": "PORTER ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07628,
-       38.93731
-      ],
-      [
-       -77.07709,
-       38.9377
-      ],
-      [
-       -77.07783,
-       38.93789
-      ]
-     ]
-    },
-    {
-     "n": "RENO RD NW",
-     "k": "major",
-     "p": [
-      [
-       -77.06888,
-       38.94222
-      ],
-      [
-       -77.06932,
-       38.94317
-      ]
-     ],
-     "b": "4100-reno-rd-nw"
     },
     {
      "n": "WINDOM PL NW",
@@ -12610,162 +12158,6 @@
       [
        -77.07703,
        38.94554
-      ]
-     ]
-    },
-    {
-     "n": "VEAZEY ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07461,
-       38.94398
-      ],
-      [
-       -77.07704,
-       38.94398
-      ]
-     ]
-    },
-    {
-     "n": "SEDGWICK ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06074,
-       38.9394
-      ],
-      [
-       -77.0611,
-       38.93938
-      ],
-      [
-       -77.06199,
-       38.93958
-      ],
-      [
-       -77.064,
-       38.94043
-      ],
-      [
-       -77.06417,
-       38.94058
-      ]
-     ]
-    },
-    {
-     "n": "RENO RD NW",
-     "k": "major",
-     "p": [
-      [
-       -77.07152,
-       38.95211
-      ],
-      [
-       -77.07164,
-       38.95267
-      ],
-      [
-       -77.07191,
-       38.95329
-      ]
-     ]
-    },
-    {
-     "n": "TILDEN ST NW",
-     "k": "major",
-     "p": [
-      [
-       -77.06166,
-       38.94098
-      ],
-      [
-       -77.06271,
-       38.9409
-      ],
-      [
-       -77.06417,
-       38.94058
-      ]
-     ]
-    },
-    {
-     "n": "PORTER ST NW",
-     "k": "major",
-     "p": [
-      [
-       -77.05877,
-       38.9368
-      ],
-      [
-       -77.05925,
-       38.93683
-      ]
-     ]
-    },
-    {
-     "n": "RENO RD NW",
-     "k": "major",
-     "p": [
-      [
-       -77.07258,
-       38.94791
-      ],
-      [
-       -77.07258,
-       38.94835
-      ],
-      [
-       -77.07248,
-       38.94876
-      ]
-     ],
-     "b": "4500-reno-rd-nw"
-    },
-    {
-     "n": "RENO RD NW",
-     "k": "major",
-     "p": [
-      [
-       -77.06785,
-       38.94088
-      ],
-      [
-       -77.0686,
-       38.94169
-      ],
-      [
-       -77.06888,
-       38.94222
-      ]
-     ],
-     "b": "3900-reno-rd-nw"
-    },
-    {
-     "n": "YUMA ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07461,
-       38.94629
-      ],
-      [
-       -77.07703,
-       38.94629
-      ]
-     ]
-    },
-    {
-     "n": "UPTON ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07241,
-       38.94222
-      ],
-      [
-       -77.07461,
-       38.94222
       ]
      ]
     },
@@ -12804,61 +12196,16 @@
      ]
     },
     {
-     "n": "PORTER ST NW",
-     "k": "major",
-     "p": [
-      [
-       -77.05925,
-       38.93683
-      ],
-      [
-       -77.06008,
-       38.93687
-      ],
-      [
-       -77.06107,
-       38.93716
-      ]
-     ]
-    },
-    {
-     "n": "VAN NESS ST NW",
+     "n": "TILDEN ST NW",
      "k": "minor",
      "p": [
       [
-       -77.06771,
-       38.94306
+       -77.07076,
+       38.9413
       ],
       [
-       -77.06862,
-       38.94316
-      ],
-      [
-       -77.06932,
-       38.94317
-      ]
-     ],
-     "b": "3500-van-ness-st-nw"
-    },
-    {
-     "n": "RIDGE RD NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.05217,
-       38.9558
-      ],
-      [
-       -77.05244,
-       38.95614
-      ],
-      [
-       -77.05263,
-       38.9565
-      ],
-      [
-       -77.05285,
-       38.95776
+       -77.07242,
+       38.94123
       ]
      ]
     },
@@ -12867,45 +12214,16 @@
      "k": "minor",
      "p": [
       [
-       -77.0738,
-       38.93729
+       -77.07628,
+       38.93731
       ],
       [
-       -77.07419,
-       38.93715
+       -77.07709,
+       38.9377
       ],
       [
-       -77.07472,
-       38.93678
-      ]
-     ]
-    },
-    {
-     "n": "VAN NESS ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06292,
-       38.94316
-      ],
-      [
-       -77.06489,
-       38.94317
-      ]
-     ],
-     "b": "3000-van-ness-st-nw"
-    },
-    {
-     "n": "RENO RD NW",
-     "k": "major",
-     "p": [
-      [
-       -77.07226,
-       38.95389
-      ],
-      [
-       -77.07273,
-       38.9547
+       -77.07783,
+       38.93789
       ]
      ]
     },
@@ -12914,125 +12232,110 @@
      "k": "minor",
      "p": [
       [
+       -77.07241,
+       38.94222
+      ],
+      [
        -77.07461,
        38.94222
-      ],
-      [
-       -77.07651,
-       38.94222
       ]
      ]
     },
     {
-     "n": "WINDOM PL NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.071,
-       38.94557
-      ],
-      [
-       -77.07241,
-       38.94554
-      ]
-     ],
-     "b": "3600-windom-pl-nw"
-    },
-    {
-     "n": "QUEBEC ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06864,
-       38.93816
-      ],
-      [
-       -77.07143,
-       38.93816
-      ]
-     ]
-    },
-    {
-     "n": "RENO RD NW",
+     "n": "PORTER ST NW",
      "k": "major",
-     "p": [
-      [
-       -77.06766,
-       38.94046
-      ],
-      [
-       -77.06785,
-       38.94088
-      ]
-     ]
-    },
-    {
-     "n": "RENO RD NW",
-     "k": "major",
-     "p": [
-      [
-       -77.07295,
-       38.95507
-      ],
-      [
-       -77.07326,
-       38.95558
-      ],
-      [
-       -77.0737,
-       38.95616
-      ],
-      [
-       -77.07459,
-       38.95703
-      ]
-     ]
-    },
-    {
-     "n": "ROWLAND PL NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06436,
-       38.93771
-      ],
-      [
-       -77.06407,
-       38.93782
-      ],
-      [
-       -77.06391,
-       38.938
-      ],
-      [
-       -77.06389,
-       38.93825
-      ],
-      [
-       -77.06404,
-       38.93847
-      ],
-      [
-       -77.06441,
-       38.93861
-      ],
-      [
-       -77.06543,
-       38.93861
-      ]
-     ]
-    },
-    {
-     "n": "VAN NESS ST NW",
-     "k": "minor",
      "p": [
       [
        -77.07242,
-       38.94317
+       38.93734
       ],
       [
-       -77.07461,
-       38.94317
+       -77.07366,
+       38.93733
+      ],
+      [
+       -77.0738,
+       38.93729
+      ]
+     ]
+    },
+    {
+     "n": "RENO RD NW",
+     "k": "major",
+     "p": [
+      [
+       -77.07153,
+       38.95142
+      ],
+      [
+       -77.07152,
+       38.95211
+      ]
+     ]
+    },
+    {
+     "n": "PORTER ST NW",
+     "k": "major",
+     "p": [
+      [
+       -77.05877,
+       38.9368
+      ],
+      [
+       -77.05925,
+       38.93683
+      ]
+     ]
+    },
+    {
+     "n": "PLATTSBURG CT NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.076,
+       38.93739
+      ],
+      [
+       -77.07628,
+       38.93731
+      ]
+     ]
+    },
+    {
+     "n": "UPTON ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05533,
+       38.94447
+      ],
+      [
+       -77.05521,
+       38.94402
+      ],
+      [
+       -77.05524,
+       38.94358
+      ],
+      [
+       -77.05591,
+       38.94234
+      ],
+      [
+       -77.05605,
+       38.9422
+      ],
+      [
+       -77.05627,
+       38.9421
+      ],
+      [
+       -77.05647,
+       38.94206
+      ],
+      [
+       -77.05864,
+       38.94206
       ]
      ]
     },
@@ -13103,45 +12406,30 @@
      ]
     },
     {
-     "n": "WISCONSIN AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.07426,
-       38.93814
-      ],
-      [
-       -77.07504,
-       38.93955
-      ]
-     ]
-    },
-    {
      "n": "RENO RD NW",
      "k": "major",
      "p": [
       [
-       -77.07248,
-       38.94876
+       -77.06766,
+       38.94046
       ],
       [
-       -77.07212,
-       38.94969
+       -77.06785,
+       38.94088
       ]
-     ],
-     "b": "4500-reno-rd-nw"
+     ]
     },
     {
-     "n": "TILDEN ST NW",
+     "n": "UPTON ST NW",
      "k": "minor",
      "p": [
       [
-       -77.06948,
-       38.94143
+       -77.07651,
+       38.94222
       ],
       [
-       -77.07076,
-       38.9413
+       -77.07829,
+       38.94224
       ]
      ]
     },
@@ -13150,44 +12438,12 @@
      "k": "major",
      "p": [
       [
-       -77.07171,
-       38.95073
+       -77.07226,
+       38.95389
       ],
       [
-       -77.07153,
-       38.95142
-      ]
-     ]
-    },
-    {
-     "n": "RODMAN ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07504,
-       38.93955
-      ],
-      [
-       -77.07564,
-       38.93935
-      ]
-     ]
-    },
-    {
-     "n": "RENO RD NW",
-     "k": "major",
-     "p": [
-      [
-       -77.06646,
-       38.93859
-      ],
-      [
-       -77.0666,
-       38.93887
-      ],
-      [
-       -77.0668,
-       38.93909
+       -77.07273,
+       38.9547
       ]
      ]
     },
@@ -13202,322 +12458,6 @@
       [
        -77.07703,
        38.94317
-      ]
-     ]
-    },
-    {
-     "n": "WINDOM PL NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06217,
-       38.94526
-      ],
-      [
-       -77.06297,
-       38.94531
-      ],
-      [
-       -77.06371,
-       38.94546
-      ],
-      [
-       -77.06412,
-       38.94544
-      ],
-      [
-       -77.06428,
-       38.94549
-      ]
-     ]
-    },
-    {
-     "n": "PORTER ST NW",
-     "k": "major",
-     "p": [
-      [
-       -77.07211,
-       38.93734
-      ],
-      [
-       -77.07242,
-       38.93734
-      ]
-     ]
-    },
-    {
-     "n": "VAN NESS ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06932,
-       38.94317
-      ],
-      [
-       -77.07242,
-       38.94317
-      ]
-     ],
-     "b": "3500-van-ness-st-nw"
-    },
-    {
-     "n": "WARREN ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07242,
-       38.94479
-      ],
-      [
-       -77.07461,
-       38.94479
-      ]
-     ]
-    },
-    {
-     "n": "PORTER ST NW",
-     "k": "major",
-     "p": [
-      [
-       -77.07242,
-       38.93734
-      ],
-      [
-       -77.07366,
-       38.93733
-      ],
-      [
-       -77.0738,
-       38.93729
-      ]
-     ]
-    },
-    {
-     "n": "ROWLAND PL NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06543,
-       38.93861
-      ],
-      [
-       -77.06646,
-       38.93859
-      ]
-     ]
-    },
-    {
-     "n": "PORTER ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07578,
-       38.93703
-      ],
-      [
-       -77.07628,
-       38.93731
-      ]
-     ]
-    },
-    {
-     "n": "TILDEN ST NW",
-     "k": "major",
-     "p": [
-      [
-       -77.0577,
-       38.94097
-      ],
-      [
-       -77.05863,
-       38.94098
-      ]
-     ]
-    },
-    {
-     "n": "WINDOM PL NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07241,
-       38.94554
-      ],
-      [
-       -77.07461,
-       38.94554
-      ]
-     ]
-    },
-    {
-     "n": "YUMA ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06985,
-       38.94629
-      ],
-      [
-       -77.07174,
-       38.94629
-      ]
-     ],
-     "b": "3600-yuma-st-nw"
-    },
-    {
-     "n": "RENO RD NW",
-     "k": "major",
-     "p": [
-      [
-       -77.07031,
-       38.94479
-      ],
-      [
-       -77.071,
-       38.94557
-      ]
-     ],
-     "b": "4300-reno-rd-nw"
-    },
-    {
-     "n": "TILDEN ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07076,
-       38.9413
-      ],
-      [
-       -77.07242,
-       38.94123
-      ]
-     ]
-    },
-    {
-     "n": "RENO RD NW",
-     "k": "major",
-     "p": [
-      [
-       -77.07273,
-       38.9547
-      ],
-      [
-       -77.07295,
-       38.95507
-      ]
-     ]
-    },
-    {
-     "n": "RENO RD NW",
-     "k": "major",
-     "p": [
-      [
-       -77.0668,
-       38.93909
-      ],
-      [
-       -77.06732,
-       38.93968
-      ],
-      [
-       -77.06766,
-       38.94046
-      ]
-     ]
-    },
-    {
-     "n": "RENO RD NW",
-     "k": "major",
-     "p": [
-      [
-       -77.07212,
-       38.94969
-      ],
-      [
-       -77.07171,
-       38.95073
-      ]
-     ]
-    },
-    {
-     "n": "QUEBEC PL NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06436,
-       38.93771
-      ],
-      [
-       -77.06521,
-       38.9377
-      ],
-      [
-       -77.06559,
-       38.93774
-      ],
-      [
-       -77.06587,
-       38.93784
-      ],
-      [
-       -77.06639,
-       38.93816
-      ]
-     ]
-    },
-    {
-     "n": "VEAZEY ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06982,
-       38.94404
-      ],
-      [
-       -77.06991,
-       38.94398
-      ],
-      [
-       -77.07241,
-       38.94398
-      ]
-     ],
-     "b": "3600-veazey-st-nw"
-    },
-    {
-     "n": "UPTON ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.05533,
-       38.94447
-      ],
-      [
-       -77.05521,
-       38.94402
-      ],
-      [
-       -77.05524,
-       38.94358
-      ],
-      [
-       -77.05591,
-       38.94234
-      ],
-      [
-       -77.05605,
-       38.9422
-      ],
-      [
-       -77.05627,
-       38.9421
-      ],
-      [
-       -77.05647,
-       38.94206
-      ],
-      [
-       -77.05864,
-       38.94206
       ]
      ]
     },
@@ -13556,20 +12496,26 @@
      "k": "major",
      "p": [
       [
-       -77.0524,
-       38.94046
+       -77.0577,
+       38.94097
       ],
       [
-       -77.05284,
-       38.94081
+       -77.05863,
+       38.94098
+      ]
+     ]
+    },
+    {
+     "n": "VAN NESS ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07242,
+       38.94317
       ],
       [
-       -77.05313,
-       38.94089
-      ],
-      [
-       -77.05501,
-       38.94067
+       -77.07461,
+       38.94317
       ]
      ]
     },
@@ -13578,27 +12524,455 @@
      "k": "major",
      "p": [
       [
-       -77.06982,
-       38.94404
+       -77.07258,
+       38.94791
       ],
       [
-       -77.07031,
-       38.94479
+       -77.07258,
+       38.94835
+      ],
+      [
+       -77.07248,
+       38.94876
       ]
      ],
-     "b": "4200-reno-rd-nw"
+     "b": "4500-reno-rd-nw"
+    },
+    {
+     "n": "QUEBEC ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06864,
+       38.93816
+      ],
+      [
+       -77.07143,
+       38.93816
+      ]
+     ]
+    },
+    {
+     "n": "PORTER ST NW",
+     "k": "major",
+     "p": [
+      [
+       -77.07211,
+       38.93734
+      ],
+      [
+       -77.07242,
+       38.93734
+      ]
+     ]
+    },
+    {
+     "n": "VAN NESS ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06489,
+       38.94317
+      ],
+      [
+       -77.06685,
+       38.94316
+      ],
+      [
+       -77.06771,
+       38.94306
+      ]
+     ],
+     "b": "3300-van-ness-st-nw"
+    },
+    {
+     "n": "RIDGE SQ NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07594,
+       38.9412
+      ],
+      [
+       -77.07664,
+       38.94119
+      ],
+      [
+       -77.07815,
+       38.94068
+      ],
+      [
+       -77.07782,
+       38.94003
+      ],
+      [
+       -77.07731,
+       38.94022
+      ],
+      [
+       -77.07764,
+       38.94086
+      ]
+     ]
+    },
+    {
+     "n": "QUEBEC ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07242,
+       38.93816
+      ],
+      [
+       -77.07426,
+       38.93814
+      ]
+     ]
+    },
+    {
+     "n": "PLATTSBURG CT NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07516,
+       38.93758
+      ],
+      [
+       -77.076,
+       38.93739
+      ]
+     ]
     },
     {
      "n": "RENO RD NW",
      "k": "major",
      "p": [
       [
-       -77.06639,
-       38.93816
+       -77.07295,
+       38.95507
       ],
       [
-       -77.06646,
-       38.93859
+       -77.07326,
+       38.95558
+      ],
+      [
+       -77.0737,
+       38.95616
+      ],
+      [
+       -77.07459,
+       38.95703
+      ]
+     ]
+    },
+    {
+     "n": "PORTER ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07578,
+       38.93703
+      ],
+      [
+       -77.07628,
+       38.93731
+      ]
+     ]
+    },
+    {
+     "n": "YUMA ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07242,
+       38.94629
+      ],
+      [
+       -77.07461,
+       38.94629
+      ]
+     ]
+    },
+    {
+     "n": "TILDEN ST NW",
+     "k": "major",
+     "p": [
+      [
+       -77.06166,
+       38.94098
+      ],
+      [
+       -77.06271,
+       38.9409
+      ],
+      [
+       -77.06417,
+       38.94058
+      ]
+     ]
+    },
+    {
+     "n": "RIDGE RD NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05217,
+       38.9558
+      ],
+      [
+       -77.05244,
+       38.95614
+      ],
+      [
+       -77.05263,
+       38.9565
+      ],
+      [
+       -77.05285,
+       38.95776
+      ]
+     ]
+    },
+    {
+     "n": "RENO RD NW",
+     "k": "major",
+     "p": [
+      [
+       -77.06785,
+       38.94088
+      ],
+      [
+       -77.0686,
+       38.94169
+      ],
+      [
+       -77.06888,
+       38.94222
+      ]
+     ],
+     "b": "3900-reno-rd-nw"
+    },
+    {
+     "n": "PORTER ST NW",
+     "k": "major",
+     "p": [
+      [
+       -77.06864,
+       38.93734
+      ],
+      [
+       -77.07089,
+       38.93734
+      ]
+     ]
+    },
+    {
+     "n": "RENO RD NW",
+     "k": "major",
+     "p": [
+      [
+       -77.071,
+       38.94557
+      ],
+      [
+       -77.07174,
+       38.94629
+      ]
+     ],
+     "b": "4300-reno-rd-nw"
+    },
+    {
+     "n": "TILDEN PL NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05359,
+       38.94199
+      ],
+      [
+       -77.05413,
+       38.94221
+      ]
+     ]
+    },
+    {
+     "n": "PORTER ST NW",
+     "k": "major",
+     "p": [
+      [
+       -77.05925,
+       38.93683
+      ],
+      [
+       -77.06008,
+       38.93687
+      ],
+      [
+       -77.06107,
+       38.93716
+      ]
+     ]
+    },
+    {
+     "n": "TILDEN ST NW",
+     "k": "major",
+     "p": [
+      [
+       -77.05501,
+       38.94067
+      ],
+      [
+       -77.05553,
+       38.94072
+      ],
+      [
+       -77.05635,
+       38.94095
+      ],
+      [
+       -77.0577,
+       38.94097
+      ]
+     ]
+    },
+    {
+     "n": "RODMAN ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.0668,
+       38.93909
+      ],
+      [
+       -77.06864,
+       38.93909
+      ]
+     ]
+    },
+    {
+     "n": "PORTER ST NW",
+     "k": "major",
+     "p": [
+      [
+       -77.07089,
+       38.93734
+      ],
+      [
+       -77.07211,
+       38.93734
+      ]
+     ]
+    },
+    {
+     "n": "YUMA ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06765,
+       38.94626
+      ],
+      [
+       -77.06985,
+       38.94629
+      ]
+     ],
+     "b": "3500-yuma-st-nw"
+    },
+    {
+     "n": "SPRINGLAND LN NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06766,
+       38.94046
+      ],
+      [
+       -77.06837,
+       38.94029
+      ],
+      [
+       -77.0689,
+       38.94024
+      ],
+      [
+       -77.07035,
+       38.93991
+      ],
+      [
+       -77.07047,
+       38.93985
+      ]
+     ]
+    },
+    {
+     "n": "RENO RD NW",
+     "k": "major",
+     "p": [
+      [
+       -77.07248,
+       38.94876
+      ],
+      [
+       -77.07212,
+       38.94969
+      ]
+     ],
+     "b": "4500-reno-rd-nw"
+    },
+    {
+     "n": "RENO RD NW",
+     "k": "major",
+     "p": [
+      [
+       -77.07191,
+       38.95329
+      ],
+      [
+       -77.07226,
+       38.95389
+      ]
+     ]
+    },
+    {
+     "n": "TILDEN ST NW",
+     "k": "major",
+     "p": [
+      [
+       -77.05863,
+       38.94098
+      ],
+      [
+       -77.06166,
+       38.94098
+      ]
+     ],
+     "b": "2900-tilden-st-nw"
+    },
+    {
+     "n": "WISCONSIN AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.0738,
+       38.93729
+      ],
+      [
+       -77.07426,
+       38.93814
+      ]
+     ]
+    },
+    {
+     "n": "PORTER ST NW",
+     "k": "major",
+     "p": [
+      [
+       -77.06639,
+       38.93734
+      ],
+      [
+       -77.06864,
+       38.93734
       ]
      ]
     },
@@ -13641,50 +13015,67 @@
      ]
     },
     {
-     "n": "SHOEMAKER ST NW",
+     "n": "WARREN ST NW",
      "k": "minor",
      "p": [
       [
-       -77.05275,
-       38.9397
+       -77.06985,
+       38.94479
       ],
       [
-       -77.0526,
-       38.94027
-      ],
-      [
-       -77.0524,
-       38.94046
+       -77.07031,
+       38.94479
       ]
-     ]
+     ],
+     "b": "3600-warren-st-nw"
+    },
+    {
+     "n": "RENO RD NW",
+     "k": "major",
+     "p": [
+      [
+       -77.06982,
+       38.94404
+      ],
+      [
+       -77.07031,
+       38.94479
+      ]
+     ],
+     "b": "4200-reno-rd-nw"
     },
     {
      "n": "RODMAN ST NW",
      "k": "minor",
      "p": [
       [
-       -77.0668,
-       38.93909
+       -77.07564,
+       38.93935
       ],
       [
-       -77.06864,
-       38.93909
+       -77.07661,
+       38.93907
+      ],
+      [
+       -77.07804,
+       38.93893
       ]
      ]
     },
     {
-     "n": "QUEBEC ST NW",
+     "n": "VAN NESS ST NW",
      "k": "minor",
      "p": [
       [
-       -77.07242,
-       38.93816
+       -77.06932,
+       38.94317
       ],
       [
-       -77.07426,
-       38.93814
+       -77.07242,
+       38.94317
       ]
-     ]
+     ],
+     "b": "3500-van-ness-st-nw"
     },
     {
      "n": "RENO RD NW",
@@ -13706,16 +13097,16 @@
      "b": "4400-reno-rd-nw"
     },
     {
-     "n": "PORTER ST NW",
-     "k": "major",
+     "n": "YUMA ST NW",
+     "k": "minor",
      "p": [
       [
-       -77.06864,
-       38.93734
+       -77.07174,
+       38.94629
       ],
       [
-       -77.07089,
-       38.93734
+       -77.07242,
+       38.94629
       ]
      ]
     },
@@ -13723,197 +13114,72 @@
      "n": "VAN NESS ST NW",
      "k": "minor",
      "p": [
-      [
-       -77.06052,
-       38.94323
-      ],
-      [
-       -77.06079,
-       38.94316
-      ],
       [
        -77.06292,
        38.94316
+      ],
+      [
+       -77.06489,
+       38.94317
       ]
      ],
-     "b": "2900-van-ness-st-nw"
+     "b": "3000-van-ness-st-nw"
     },
     {
-     "n": "VEAZEY TER NW",
-     "k": "minor",
+     "n": "RENO RD NW",
+     "k": "major",
      "p": [
       [
-       -77.06356,
-       38.94426
-      ],
-      [
-       -77.06373,
-       38.94432
-      ],
-      [
-       -77.06465,
-       38.94432
-      ]
-     ],
-     "b": "3100-veazey-ter-nw"
-    },
-    {
-     "n": "SPRINGLAND LN NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06766,
-       38.94046
-      ],
-      [
-       -77.06837,
-       38.94029
-      ],
-      [
-       -77.0689,
-       38.94024
-      ],
-      [
-       -77.07035,
-       38.93991
-      ],
-      [
-       -77.07047,
-       38.93985
-      ]
-     ]
-    },
-    {
-     "n": "RODMAN ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06864,
+       -77.0668,
        38.93909
       ],
       [
-       -77.07065,
-       38.93908
+       -77.06732,
+       38.93968
+      ],
+      [
+       -77.06766,
+       38.94046
       ]
      ]
     },
     {
-     "n": "TILDEN ST NW",
-     "k": "major",
-     "p": [
-      [
-       -77.05501,
-       38.94067
-      ],
-      [
-       -77.05553,
-       38.94072
-      ],
-      [
-       -77.05635,
-       38.94095
-      ],
-      [
-       -77.0577,
-       38.94097
-      ]
-     ]
-    },
-    {
-     "n": "UPTON ST NW",
+     "n": "SEDGWICK ST NW",
      "k": "minor",
      "p": [
       [
-       -77.05864,
-       38.94206
+       -77.06074,
+       38.9394
       ],
       [
-       -77.06209,
-       38.94206
+       -77.0611,
+       38.93938
       ],
       [
-       -77.06226,
-       38.94202
-      ]
-     ],
-     "b": "2900-upton-st-nw"
-    },
-    {
-     "n": "WINDOM PL NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06428,
-       38.94549
+       -77.06199,
+       38.93958
       ],
       [
-       -77.06446,
-       38.94552
+       -77.064,
+       38.94043
       ],
       [
-       -77.06515,
-       38.94543
-      ]
-     ],
-     "b": "3000-windom-pl-nw"
-    },
-    {
-     "n": "VAN NESS ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.07461,
-       38.94317
-      ],
-      [
-       -77.07703,
-       38.94317
-      ]
-     ]
-    },
-    {
-     "n": "WISCONSIN AVE NW",
-     "k": "major",
-     "p": [
-      [
-       -77.07504,
-       38.93955
-      ],
-      [
-       -77.07594,
-       38.9412
-      ]
-     ]
-    },
-    {
-     "n": "QUEBEC ST NW",
-     "k": "minor",
-     "p": [
-      [
-       -77.06639,
-       38.93816
-      ],
-      [
-       -77.06864,
-       38.93816
+       -77.06417,
+       38.94058
       ]
      ]
     },
     {
      "n": "RENO RD NW",
-     "k": "minor",
+     "k": "major",
      "p": [
       [
-       -77.0659,
-       38.9363
+       -77.07459,
+       38.95703
       ],
       [
-       -77.06623,
-       38.93676
-      ],
-      [
-       -77.06639,
-       38.93711
+       -77.07555,
+       38.9577
       ]
      ]
     },
@@ -13941,32 +13207,35 @@
      "b": "3400-yuma-st-nw"
     },
     {
-     "n": "RIDGE SQ NW",
+     "n": "VAN NESS ST NW",
      "k": "minor",
      "p": [
       [
-       -77.07594,
-       38.9412
+       -77.06052,
+       38.94323
       ],
       [
-       -77.07664,
-       38.94119
+       -77.06079,
+       38.94316
       ],
       [
-       -77.07815,
-       38.94068
+       -77.06292,
+       38.94316
+      ]
+     ],
+     "b": "2900-van-ness-st-nw"
+    },
+    {
+     "n": "RODMAN ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07504,
+       38.93955
       ],
       [
-       -77.07782,
-       38.94003
-      ],
-      [
-       -77.07731,
-       38.94022
-      ],
-      [
-       -77.07764,
-       38.94086
+       -77.07564,
+       38.93935
       ]
      ]
     },
@@ -13975,12 +13244,243 @@
      "k": "major",
      "p": [
       [
-       -77.07191,
-       38.95329
+       -77.06932,
+       38.94317
       ],
       [
-       -77.07226,
-       38.95389
+       -77.06982,
+       38.94404
+      ]
+     ],
+     "b": "4200-reno-rd-nw"
+    },
+    {
+     "n": "VEAZEY ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07241,
+       38.94398
+      ],
+      [
+       -77.07461,
+       38.94398
+      ]
+     ]
+    },
+    {
+     "n": "QUEBEC ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06639,
+       38.93816
+      ],
+      [
+       -77.06864,
+       38.93816
+      ]
+     ]
+    },
+    {
+     "n": "VAN NESS ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06771,
+       38.94306
+      ],
+      [
+       -77.06862,
+       38.94316
+      ],
+      [
+       -77.06932,
+       38.94317
+      ]
+     ],
+     "b": "3500-van-ness-st-nw"
+    },
+    {
+     "n": "RODMAN ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06864,
+       38.93909
+      ],
+      [
+       -77.07065,
+       38.93908
+      ]
+     ]
+    },
+    {
+     "n": "WARREN ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07242,
+       38.94479
+      ],
+      [
+       -77.07461,
+       38.94479
+      ]
+     ]
+    },
+    {
+     "n": "RENO RD NW",
+     "k": "major",
+     "p": [
+      [
+       -77.07273,
+       38.9547
+      ],
+      [
+       -77.07295,
+       38.95507
+      ]
+     ]
+    },
+    {
+     "n": "QUEBEC PL NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06436,
+       38.93771
+      ],
+      [
+       -77.06521,
+       38.9377
+      ],
+      [
+       -77.06559,
+       38.93774
+      ],
+      [
+       -77.06587,
+       38.93784
+      ],
+      [
+       -77.06639,
+       38.93816
+      ]
+     ]
+    },
+    {
+     "n": "PORTER ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.0738,
+       38.93729
+      ],
+      [
+       -77.07419,
+       38.93715
+      ],
+      [
+       -77.07472,
+       38.93678
+      ]
+     ]
+    },
+    {
+     "n": "YUMA ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06985,
+       38.94629
+      ],
+      [
+       -77.07174,
+       38.94629
+      ]
+     ],
+     "b": "3600-yuma-st-nw"
+    },
+    {
+     "n": "SHOEMAKER ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05275,
+       38.9397
+      ],
+      [
+       -77.0526,
+       38.94027
+      ],
+      [
+       -77.0524,
+       38.94046
+      ]
+     ]
+    },
+    {
+     "n": "PORTER ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07472,
+       38.93678
+      ],
+      [
+       -77.07534,
+       38.93683
+      ],
+      [
+       -77.07578,
+       38.93703
+      ]
+     ]
+    },
+    {
+     "n": "RENO RD NW",
+     "k": "major",
+     "p": [
+      [
+       -77.07171,
+       38.95073
+      ],
+      [
+       -77.07153,
+       38.95142
+      ]
+     ]
+    },
+    {
+     "n": "WISCONSIN AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.07315,
+       38.93608
+      ],
+      [
+       -77.0738,
+       38.93729
+      ]
+     ]
+    },
+    {
+     "n": "RENO RD NW",
+     "k": "major",
+     "p": [
+      [
+       -77.06646,
+       38.93859
+      ],
+      [
+       -77.0666,
+       38.93887
+      ],
+      [
+       -77.0668,
+       38.93909
       ]
      ]
     },
@@ -13998,6 +13498,428 @@
       ]
      ],
      "b": "3600-warren-st-nw"
+    },
+    {
+     "n": "UPTON ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07461,
+       38.94222
+      ],
+      [
+       -77.07651,
+       38.94222
+      ]
+     ]
+    },
+    {
+     "n": "SPRING OF FREEDOM ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05275,
+       38.9397
+      ],
+      [
+       -77.05453,
+       38.93979
+      ],
+      [
+       -77.05478,
+       38.93985
+      ],
+      [
+       -77.05496,
+       38.93998
+      ],
+      [
+       -77.05509,
+       38.94019
+      ],
+      [
+       -77.0551,
+       38.94037
+      ],
+      [
+       -77.05501,
+       38.94067
+      ]
+     ]
+    },
+    {
+     "n": "RENO RD NW",
+     "k": "major",
+     "p": [
+      [
+       -77.07174,
+       38.94629
+      ],
+      [
+       -77.07211,
+       38.94671
+      ],
+      [
+       -77.07235,
+       38.9471
+      ]
+     ],
+     "b": "4400-reno-rd-nw"
+    },
+    {
+     "n": "RODMAN ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06269,
+       38.93857
+      ],
+      [
+       -77.06346,
+       38.93887
+      ],
+      [
+       -77.06435,
+       38.93905
+      ],
+      [
+       -77.0668,
+       38.93909
+      ]
+     ]
+    },
+    {
+     "n": "RENO RD NW",
+     "k": "major",
+     "p": [
+      [
+       -77.06639,
+       38.93816
+      ],
+      [
+       -77.06646,
+       38.93859
+      ]
+     ]
+    },
+    {
+     "n": "VEAZEY TER NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06172,
+       38.94448
+      ],
+      [
+       -77.06246,
+       38.94427
+      ],
+      [
+       -77.06356,
+       38.94426
+      ]
+     ]
+    },
+    {
+     "n": "QUEBEC ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07143,
+       38.93816
+      ],
+      [
+       -77.07242,
+       38.93816
+      ]
+     ]
+    },
+    {
+     "n": "WINDOM PL NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.071,
+       38.94557
+      ],
+      [
+       -77.07241,
+       38.94554
+      ]
+     ],
+     "b": "3600-windom-pl-nw"
+    },
+    {
+     "n": "VEAZEY ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06982,
+       38.94404
+      ],
+      [
+       -77.06991,
+       38.94398
+      ],
+      [
+       -77.07241,
+       38.94398
+      ]
+     ],
+     "b": "3600-veazey-st-nw"
+    },
+    {
+     "n": "VEAZEY TER NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06356,
+       38.94426
+      ],
+      [
+       -77.06373,
+       38.94432
+      ],
+      [
+       -77.06465,
+       38.94432
+      ]
+     ],
+     "b": "3100-veazey-ter-nw"
+    },
+    {
+     "n": "WINDOM PL NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07241,
+       38.94554
+      ],
+      [
+       -77.07461,
+       38.94554
+      ]
+     ]
+    },
+    {
+     "n": "RENO RD NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.0659,
+       38.9363
+      ],
+      [
+       -77.06623,
+       38.93676
+      ],
+      [
+       -77.06639,
+       38.93711
+      ]
+     ]
+    },
+    {
+     "n": "UPTON ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.05864,
+       38.94206
+      ],
+      [
+       -77.06209,
+       38.94206
+      ],
+      [
+       -77.06226,
+       38.94202
+      ]
+     ],
+     "b": "2900-upton-st-nw"
+    },
+    {
+     "n": "TILDEN ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06948,
+       38.94143
+      ],
+      [
+       -77.07076,
+       38.9413
+      ]
+     ]
+    },
+    {
+     "n": "RENO RD NW",
+     "k": "major",
+     "p": [
+      [
+       -77.07152,
+       38.95211
+      ],
+      [
+       -77.07164,
+       38.95267
+      ],
+      [
+       -77.07191,
+       38.95329
+      ]
+     ]
+    },
+    {
+     "n": "RODMAN ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06006,
+       38.93823
+      ],
+      [
+       -77.06058,
+       38.93819
+      ],
+      [
+       -77.06136,
+       38.93824
+      ],
+      [
+       -77.06198,
+       38.93836
+      ],
+      [
+       -77.06269,
+       38.93857
+      ]
+     ]
+    },
+    {
+     "n": "RENO RD NW",
+     "k": "major",
+     "p": [
+      [
+       -77.06888,
+       38.94222
+      ],
+      [
+       -77.06932,
+       38.94317
+      ]
+     ],
+     "b": "4100-reno-rd-nw"
+    },
+    {
+     "n": "WINDOM PL NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06217,
+       38.94526
+      ],
+      [
+       -77.06297,
+       38.94531
+      ],
+      [
+       -77.06371,
+       38.94546
+      ],
+      [
+       -77.06412,
+       38.94544
+      ],
+      [
+       -77.06428,
+       38.94549
+      ]
+     ]
+    },
+    {
+     "n": "TILDEN ST NW",
+     "k": "major",
+     "p": [
+      [
+       -77.0524,
+       38.94046
+      ],
+      [
+       -77.05284,
+       38.94081
+      ],
+      [
+       -77.05313,
+       38.94089
+      ],
+      [
+       -77.05501,
+       38.94067
+      ]
+     ]
+    },
+    {
+     "n": "ROWLAND PL NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06436,
+       38.93771
+      ],
+      [
+       -77.06407,
+       38.93782
+      ],
+      [
+       -77.06391,
+       38.938
+      ],
+      [
+       -77.06389,
+       38.93825
+      ],
+      [
+       -77.06404,
+       38.93847
+      ],
+      [
+       -77.06441,
+       38.93861
+      ],
+      [
+       -77.06543,
+       38.93861
+      ]
+     ]
+    },
+    {
+     "n": "WISCONSIN AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.07426,
+       38.93814
+      ],
+      [
+       -77.07504,
+       38.93955
+      ]
+     ]
+    },
+    {
+     "n": "ROWLAND PL NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.06543,
+       38.93861
+      ],
+      [
+       -77.06646,
+       38.93859
+      ]
+     ]
     },
     {
      "n": "TILDEN ST NW",
@@ -14025,6 +13947,91 @@
       ]
      ],
      "b": "3000-tilden-st-nw"
+    },
+    {
+     "n": "WARREN ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07461,
+       38.94479
+      ],
+      [
+       -77.07704,
+       38.94479
+      ]
+     ]
+    },
+    {
+     "n": "VAN NESS ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07461,
+       38.94317
+      ],
+      [
+       -77.07703,
+       38.94317
+      ]
+     ]
+    },
+    {
+     "n": "RENO RD NW",
+     "k": "major",
+     "p": [
+      [
+       -77.07212,
+       38.94969
+      ],
+      [
+       -77.07171,
+       38.95073
+      ]
+     ]
+    },
+    {
+     "n": "WISCONSIN AVE NW",
+     "k": "major",
+     "p": [
+      [
+       -77.07504,
+       38.93955
+      ],
+      [
+       -77.07594,
+       38.9412
+      ]
+     ]
+    },
+    {
+     "n": "VEAZEY ST NW",
+     "k": "minor",
+     "p": [
+      [
+       -77.07461,
+       38.94398
+      ],
+      [
+       -77.07704,
+       38.94398
+      ]
+     ]
+    },
+    {
+     "n": "RENO RD NW",
+     "k": "major",
+     "p": [
+      [
+       -77.07031,
+       38.94479
+      ],
+      [
+       -77.071,
+       38.94557
+      ]
+     ],
+     "b": "4300-reno-rd-nw"
     }
    ]
   },
@@ -14679,9 +14686,9 @@
     "hundred": 4400,
     "street": "36TH ST NW",
     "name": "4400 block of 36th St NW",
-    "from": "Yuma St NW",
+    "from": "Alton Pl NW",
     "to": "Albemarle St NW",
-    "lat": 38.94669,
+    "lat": 38.9475,
     "lon": -77.06985,
     "major": false,
     "snow_emergency": false,
@@ -14690,7 +14697,7 @@
     "protected_bike_lane": false,
     "bus_lane": false,
     "slow_street": true,
-    "pavement": "Excellent",
+    "pavement": "Fair",
     "pavement_checked": "2023",
     "smd": "3F01",
     "trash_day": "Monday",
@@ -14722,9 +14729,9 @@
     "hundred": 4500,
     "street": "36TH ST NW",
     "name": "4500 block of 36th St NW",
-    "from": "Albemarle St NW",
+    "from": "Appleton St NW",
     "to": "Brandywine St NW",
-    "lat": 38.94835,
+    "lat": 38.94925,
     "lon": -77.06985,
     "major": false,
     "snow_emergency": false,
@@ -14851,10 +14858,10 @@
     "hundred": 4200,
     "street": "37TH ST NW",
     "name": "4200 block of 37th St NW",
-    "from": "Veazey St NW",
+    "from": "Van Ness St NW",
     "to": "Warren St NW",
-    "lat": 38.94438,
-    "lon": -77.07242,
+    "lat": 38.94358,
+    "lon": -77.07241,
     "major": false,
     "snow_emergency": false,
     "speed": 15,
@@ -14862,7 +14869,7 @@
     "protected_bike_lane": false,
     "bus_lane": false,
     "slow_street": false,
-    "pavement": "Poor",
+    "pavement": "Fair",
     "pavement_checked": "2023",
     "smd": "3E05",
     "trash_day": "Monday",
@@ -15599,7 +15606,7 @@
     "trash_day": "Monday",
     "recycling_day": "Monday",
     "leaf_zone": "3A",
-    "leaf_done": false,
+    "leaf_done": true,
     "schools": {
      "elementary": "dcps_287",
      "middle": "dcps_405",
@@ -15642,7 +15649,7 @@
     "trash_day": "Monday",
     "recycling_day": "Monday",
     "leaf_zone": "3A",
-    "leaf_done": false,
+    "leaf_done": true,
     "schools": {
      "elementary": "dcps_287",
      "middle": "dcps_405",
@@ -15926,10 +15933,10 @@
     "hundred": 4000,
     "street": "CONNECTICUT AVE NW",
     "name": "4000 block of Connecticut Ave NW",
-    "from": "Upton St NW",
+    "from": "Tilden St NW",
     "to": "Van Ness St NW",
-    "lat": 38.94259,
-    "lon": -77.06259,
+    "lat": 38.9415,
+    "lon": -77.06196,
     "major": true,
     "snow_emergency": true,
     "speed": 25,
@@ -15942,7 +15949,7 @@
     "smd": "3F05",
     "trash_day": "Monday",
     "recycling_day": "Monday",
-    "leaf_zone": "3A",
+    "leaf_zone": "3C",
     "leaf_done": false,
     "schools": {
      "elementary": "dcps_258",
@@ -16055,10 +16062,10 @@
     "hundred": 4500,
     "street": "CONNECTICUT AVE NW",
     "name": "4500 block of Connecticut Ave NW",
-    "from": "Appleton St NW",
+    "from": "Albemarle St NW",
     "to": "Brandywine St NW",
-    "lat": 38.94926,
-    "lon": -77.06647,
+    "lat": 38.94837,
+    "lon": -77.06595,
     "major": true,
     "snow_emergency": true,
     "speed": 30,
@@ -16356,13 +16363,13 @@
     "hundred": 3500,
     "street": "INTERNATIONAL CT NW",
     "name": "3500 block of International Ct NW",
-    "from": "International Dr NW / Van Ness St NW",
-    "to": "Dead End",
-    "lat": 38.94418,
-    "lon": -77.06776,
+    "from": "International Ct NW",
+    "to": "International Ct NW",
+    "lat": 38.94507,
+    "lon": -77.06859,
     "major": false,
     "snow_emergency": false,
-    "speed": 20,
+    "speed": null,
     "bike_lanes": 0,
     "protected_bike_lane": false,
     "bus_lane": false,
@@ -16399,10 +16406,10 @@
     "hundred": 3400,
     "street": "INTERNATIONAL DR NW",
     "name": "3400 block of International Dr NW",
-    "from": "Van Ness St NW",
+    "from": "International Pl NW",
     "to": "International Pl NW",
-    "lat": 38.94279,
-    "lon": -77.06489,
+    "lat": 38.94157,
+    "lon": -77.06526,
     "major": false,
     "snow_emergency": false,
     "speed": 20,
@@ -16540,10 +16547,10 @@
     "hundred": 4500,
     "street": "LINNEAN AVE NW",
     "name": "4500 block of Linnean Ave NW",
-    "from": "Albemarle St NW",
+    "from": "Allendale Pl NW",
     "to": "Brandywine St NW",
-    "lat": 38.94837,
-    "lon": -77.05685,
+    "lat": 38.94927,
+    "lon": -77.0571,
     "major": false,
     "snow_emergency": false,
     "speed": 20,
@@ -16557,7 +16564,7 @@
     "trash_day": "Monday",
     "recycling_day": "Monday",
     "leaf_zone": "3A",
-    "leaf_done": false,
+    "leaf_done": true,
     "schools": {
      "elementary": "dcps_287",
      "middle": "dcps_405",
@@ -16798,10 +16805,10 @@
     "hundred": 4200,
     "street": "RENO RD NW",
     "name": "4200 block of Reno Rd NW",
-    "from": "Van Ness St NW",
+    "from": "36th St NW / Veazey St NW",
     "to": "Warren St NW",
-    "lat": 38.9436,
-    "lon": -77.06957,
+    "lat": 38.94441,
+    "lon": -77.07007,
     "major": true,
     "snow_emergency": false,
     "speed": 25,
@@ -16809,7 +16816,7 @@
     "protected_bike_lane": false,
     "bus_lane": false,
     "slow_street": false,
-    "pavement": "Excellent",
+    "pavement": "Good",
     "pavement_checked": "2023",
     "smd": "3F01",
     "trash_day": "Monday",
@@ -16884,10 +16891,10 @@
     "hundred": 4400,
     "street": "RENO RD NW",
     "name": "4400 block of Reno Rd NW",
-    "from": "Yuma St NW",
+    "from": "Alton Pl NW",
     "to": "Albemarle St NW",
-    "lat": 38.94667,
-    "lon": -77.07208,
+    "lat": 38.94749,
+    "lon": -77.0725,
     "major": true,
     "snow_emergency": false,
     "speed": 25,
@@ -16895,7 +16902,7 @@
     "protected_bike_lane": false,
     "bus_lane": false,
     "slow_street": false,
-    "pavement": "Excellent",
+    "pavement": "Poor",
     "pavement_checked": "2023",
     "smd": "3E05",
     "trash_day": "Monday",
@@ -17271,20 +17278,20 @@
     "hundred": 3500,
     "street": "VAN NESS ST NW",
     "name": "3500 block of Van Ness St NW",
-    "from": "International Ct NW / International Dr NW",
+    "from": "Reno Rd NW",
     "to": "37th St NW",
-    "lat": 38.94315,
-    "lon": -77.06851,
+    "lat": 38.94317,
+    "lon": -77.07087,
     "major": false,
     "snow_emergency": false,
     "speed": 20,
-    "bike_lanes": 3,
+    "bike_lanes": 0,
     "protected_bike_lane": true,
     "bus_lane": false,
     "slow_street": false,
     "pavement": "Good",
     "pavement_checked": "2023",
-    "smd": "3F05",
+    "smd": "3F01",
     "trash_day": "Monday",
     "recycling_day": "Monday",
     "leaf_zone": "3C",
@@ -17656,7 +17663,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-14T09:17:25Z",
+  "generated_at": "2026-11-15T09:18:06Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
