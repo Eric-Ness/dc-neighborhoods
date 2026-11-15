@@ -297,6 +297,18 @@ HOODS = {
         "otr": [("16th Street Heights", "A"), ("16th Street Heights", "B"), ("16th Street Heights", "C"), ("Crestwood", None)],
         "label": "OTR assessment sub-areas 16th Street Heights A, B and C and Crestwood",
     },
+    "twining": {
+        # DC's TWINING planning area, measured 2026-11-15. Fort Dupont Park D, Hillcrest B and Randle Heights A are
+        # wholly inside, Anacostia B 77%. Hillcrest A (56% inside) is already the Hillcrest site's.
+        "otr": [("Fort Dupont Park", "D"), ("Hillcrest", "B"), ("Randle Heights", "A"), ("Anacostia", "B")],
+        "label": "OTR assessment sub-areas Fort Dupont Park D, Hillcrest B, Randle Heights A and Anacostia B",
+    },
+    "fortlincoln": {
+        # DC's FORT LINCOLN/GATEWAY planning area, measured 2026-11-15. Fort Lincoln, Woodridge B and D are wholly
+        # inside, Woodridge C 74%. Old City 2 D (8% inside) is left out.
+        "otr": [("Fort Lincoln", None), ("Woodridge", "B"), ("Woodridge", "C"), ("Woodridge", "D")],
+        "label": "OTR assessment area Fort Lincoln and sub-areas Woodridge B, C and D",
+    },
     "congressheights": {
         # Boundary is ANC 8C02-04, 8C06-08 and 8E03-05. Congress Heights B is 79% inside, Randle Heights D 67%, Randle Heights C 42%.
         # Congress Heights C (27% inside) is mostly Washington Highlands, so it's left out.

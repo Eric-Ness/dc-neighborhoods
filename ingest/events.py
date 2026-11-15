@@ -363,6 +363,18 @@ LINKS["16thstreetheights"] = [
     {"name": "ANC 4E", "url": "https://anc4e.dc.gov/"},
     {"name": "DC Office of ANCs calendar", "url": "https://oanc.dc.gov/"},
 ]
+ANCS["twining"] = ["7B", "7F", "8A"]
+LINKS["twining"] = [
+    {"name": "Anacostia Library events", "url": "https://dclibrary.libnet.info/events?l=Anacostia%20Neighborhood%20Library"},
+    {"name": "Francis A. Gregory Library events", "url": "https://dclibrary.libnet.info/events?l=Francis%20A.%20Gregory%20Neighborhood%20Library"},
+    {"name": "ANC 8A", "url": "https://anc8a.dc.gov/"},
+    {"name": "DC Office of ANCs calendar", "url": "https://oanc.dc.gov/"},
+]
+ANCS["fortlincoln"] = ["5C", "5D"]
+LINKS["fortlincoln"] = [
+    {"name": "Woodridge Library events", "url": "https://dclibrary.libnet.info/events?l=Woodridge%20Neighborhood%20Library"},
+    {"name": "DC Office of ANCs calendar", "url": "https://oanc.dc.gov/"},
+]
 ANCS["congressheights"] = ["8C", "8E"]
 LINKS["congressheights"] = [
     {"name": "ANC 8C calendar", "url": "https://www.anc8c.org/calendar"},

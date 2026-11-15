@@ -438,6 +438,27 @@ FEEDS = {
         ("The DC Line", WP_SEARCH.format(base="https://thedcline.org", q="16th+street+heights"), "https://thedcline.org/", "match"),
         *SHARED,
     ],
+    "twining": [
+        ("East of the River", "https://eastoftheriverdcnews.com/wp-json/wp/v2/posts?per_page=20&_fields=date,title,excerpt,link", "https://eastoftheriverdcnews.com/", "match"),
+        ("Congress Heights on the Rise", "https://www.congressheightsontherise.com/blog?format=rss", "https://www.congressheightsontherise.com/", "match"),
+        ("Washington Informer", "https://www.washingtoninformer.com/tag/ward-7/feed/", "https://www.washingtoninformer.com/", "match"),
+        ("Washington Informer", "https://www.washingtoninformer.com/tag/ward-8/feed/", "https://www.washingtoninformer.com/", "match"),
+        ("WTOP", "https://wtop.com/tag/ward-7/feed/", "https://wtop.com/", "match"),
+        ("WTOP", "https://wtop.com/tag/ward-8/feed/", "https://wtop.com/", "match"),
+        ("The DC Line", WP_SEARCH.format(base="https://thedcline.org", q="twining"), "https://thedcline.org/", "match"),
+        ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=2", "https://www.popville.com/", "match"),
+        *SHARED,
+    ],
+    "fortlincoln": [
+        ("WTOP", "https://wtop.com/tag/fort-lincoln/feed/", "https://wtop.com/", "match"),
+        ("WTOP", "https://wtop.com/tag/ward-5/feed/", "https://wtop.com/", "match"),
+        ("Washington Informer", "https://www.washingtoninformer.com/tag/ward-5/feed/", "https://www.washingtoninformer.com/", "match"),
+        ("The DC Line", WP_SEARCH.format(base="https://thedcline.org", q="fort+lincoln"), "https://thedcline.org/", "match"),
+        ("PoPville", "https://www.popville.com/feed/", "https://www.popville.com/", "match"),
+        ("PoPville", "https://www.popville.com/feed/?paged=2", "https://www.popville.com/", "match"),
+        *SHARED,
+    ],
     "congressheights": [
         ("East of the River", "https://eastoftheriverdcnews.com/wp-json/wp/v2/posts?per_page=20&_fields=date,title,excerpt,link", "https://eastoftheriverdcnews.com/", "match"),  # Crawl-delay 10
         ("Congress Heights on the Rise", "https://www.congressheightsontherise.com/blog?format=rss", "https://www.congressheightsontherise.com/", "match"),  # never "all": about 7 posts a day, mostly citywide
@@ -610,6 +631,10 @@ TERMS = {
     # Bellevue is a common place name, so it needs a DC cue. Washington Highlands is the area's other everyday name.
     "bellevue": re.compile(r"\bbellevue\b(?=.{0,120}\b(d\.?c\.?|SE|southeast|ward\s*8|library|lockridge|south\s+capitol|atlantic\s+st)\b)|\b(d\.?c\.?|SE|southeast|ward\s*8)\b.{0,60}\bbellevue\b|\bwashington\s+highlands\b|\b(william\s+o\.?\s+)?lockridge\b.{0,40}\blibrary\b|\bANC\s*8D\b|\b8D0[13568]\b|\b8E0[789]\b", re.I | re.S),
     "16thstreetheights": re.compile(r"\b(16th|sixteenth)\s+st(reet|\.)?\s+heights\b|\bANC\s*4E\b|\b4E0[1-6]\b|\bhamilton\s+rec(reation)?\b|\bcarter\s+barron\b|\bfreshfarm\s+uptown\b|\bcolorado\s+ave(nue)?\.?,?\s+n\.?w\b|\bbrightwood\s+education\s+campus\b|\b(4[6-9]|5[0-5])\d\d\s+16th\s+st(reet)?\.?,?\s+n\.?w\b", re.I | re.S),
+    # "Twining" is also a surname (and Twining, Michigan), so it needs a DC cue unless it's Twining City or Twining Square.
+    "twining": re.compile(r"\btwining\s+(city|square|neighborhood|community)\b|\btwining\b(?=.{0,200}\b(d\.?c\.?|SE|southeast|ward\s*[78]|anacostia|pennsylvania\s+ave|minnesota\s+ave|randle|fort\s+dupont)\b)|\b(d\.?c\.?|SE|southeast|ward\s*[78])\b.{0,60}\btwining\b|\brandle\s+circle\b|\b7B0[1478]\b|\b7F06\b|\b8A0[1237]\b|\b2[0-9]\d\d\s+pennsylvania\s+ave(nue)?\.?,?\s+s\.?e\b", re.I | re.S),
+    # Fort Lincoln Cemetery is over the line in Brentwood, Maryland; it is rejected in NOT_HERE.
+    "fortlincoln": re.compile(r"\bfort\s+lincoln\b|\bdakota\s+crossing\b|\bgateway\s+(neighborhood|community)\b(?=.{0,200}\b(d\.?c\.?|NE|northeast|ward\s*5)\b)|\b5C0[12347]\b|\b5D09\b|\bthurgood\s+marshall\s+(elementary|es)\b(?=.{0,200}\b(d\.?c\.?|NE|northeast|fort\s+lincoln)\b)", re.I | re.S),
     "congressheights": re.compile(r"\bcongress\s+heights\b(?!\s+on\s+the\s+rise)|\bshipley\s+terrace\b|\b(st\.?|saint)\s+elizabeths?\s+(east|campus|hospital|west)\b|\bst\.?\s+e['\u2019]?s\s+(east|campus)\b|\b(st\.?|saint)\s+elizabeth['\u2019]?s\b(?=.{0,200}\b(d\.?c\.?|southeast|SE|ward\s*8|bowser|patients?|ICE)\b)|\bdc['\u2019]s\s+st\.?\s+elizabeth|\bentertainment\s+(and|&)\s+sports\s+arena\b|\bcedar\s+hill\s+(regional|urgent|hospital|medical)\b|\bballou\s+(high|senior|stay|sr)\b|\bmalcolm\s+x\s+(elementary|opportunity|avenue|ave)\b|\bsimon\s+elementary\b|\bhart\s+middle\b|\bhendley\s+elementary\b|\bfletcher[-\s]johnson\b|\boxon\s+run\b|\bparklands[-\s]turner\b|\bparklands\s+(library|community)\b|\bTHEARC\b|\bfort\s+greble\b|\bdestination\s+congress\s+heights\b|\bsoul\s+of\s+the\s+city\b|\bANC\s*8[CE]\b|\b8[CE]0[1-9]\b|\b(2[7-9]|3[0-7])\d\d\s+(martin\s+luther\s+king|MLK)(\s+jr\.?)?\s+(ave(nue)?)\.?,?\s+s\.?e\b|\b([4-9]\d\d|1[0-5]\d\d)\s+alabama\s+ave(nue)?\.?,?\s+s\.?e\b|\b\d{3,4}\s+mississippi\s+ave(nue)?\.?,?\s+s\.?e\b|\bwashington\s+highlands\b|\bbellevue\s+(community|library|neighborhood|anc)\b|\bbellevue\b(?=.{0,200}\b(d\.?c\.?|SW|SE|ward\s*8|southeast|southwest|ANC)\b)", re.I | re.S),
 }
 
@@ -685,6 +710,10 @@ NOT_HERE = {
     "bellevue": (re.compile(r"^\W*(?:(?:home|building)\s+)?(?:for\s+sale|short\s+sale|coming\s+soon|price\s+reduction|open\s+house)\b|^DC\s+Fresh\s+Finds\b|\bbellevue,?\s+(wash|wa\b|neb|ne\b|ky\b|kentucky|ohio|idaho|iowa|tenn|pa\b|mich)|\bbellevue\s+(hospital|college|university|square|arts)\b|\bseattle\b|\bomaha\b", re.I),
         re.compile(r"(?!)")),
     "16thstreetheights": (re.compile(r"^\W*(?:(?:home|building)\s+)?(?:for\s+sale|short\s+sale|coming\s+soon|price\s+reduction|open\s+house)\b|^DC\s+Fresh\s+Finds\b", re.I),
+        re.compile(r"(?!)")),
+    "twining": (re.compile(r"^\W*(?:(?:home|building)\s+)?(?:for\s+sale|short\s+sale|coming\s+soon|price\s+reduction|open\s+house)\b|^DC\s+Fresh\s+Finds\b|\btwining,?\s+(mi\b|mich|michigan|ny\b|new\s+york)|\btwinings?\s+tea\b", re.I),
+        re.compile(r"(?!)")),
+    "fortlincoln": (re.compile(r"^\W*(?:(?:home|building)\s+)?(?:for\s+sale|short\s+sale|coming\s+soon|price\s+reduction|open\s+house)\b|^DC\s+Fresh\s+Finds\b|\bfort\s+lincoln\s+(cemetery|funeral)\b|\bbrentwood,?\s+(md|maryland)\b|\bfort\s+abraham\s+lincoln\b|\bnorth\s+dakota\b|\bmandan\b|\bbismarck\b|\bkansas\b", re.I),
         re.compile(r"(?!)")),
     "congressheights": (re.compile(r"^\W*(?:(?:home|building)\s+)?(?:for\s+sale|short\s+sale|coming\s+soon|price\s+reduction|open\s+house)\b|^DC\s+Fresh\s+Finds\b|\bboston\b|\bbrighton\b|\byoungstown\b|\bdayton\b|\bdhs\s+headquarters\b(?!.{0,200}\bcongress\s+heights\b)|\bmount\s+st\.?\s+elizabeth|\bbellevue,?\s+(wash|washington|wa|neb|nebraska|ne|ky|kentucky|tenn|ohio|idaho|iowa)\b|\bseattle\b|\bking\s+county\b|\bbellevue\s+hospital\b|\bmanhattan\b|\bnew\s+york\b|\bvs\.?\s|\bpoints\b.{0,80}\brebounds\b|\bwashington\s+highlands?,?\s+(n\.?y|new\s+york)\b", re.I | re.S),
         re.compile(r"^(?!(?i:\W*(?:(?:home|building)\s+)?(?:for\s+sale|short\s+sale|coming\s+soon|price\s+reduction|open\s+house)\b|DC\s+Fresh\s+Finds\b)).*?(?:\bcongress\s+heights\b|\bANC\s*8[CE]\b|\bcedar\s+hill\s+regional\b|\b(st\.?|saint)\s+elizabeths\s+(east|campus)\b.{0,200}\b(ward\s*8|southeast|SE|bowser|ANC)\b)", re.I | re.S)),

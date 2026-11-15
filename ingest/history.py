@@ -333,6 +333,21 @@ ARCHIVE = {
         "reject": r"departed\s+this\s+life|interment|inter\s+ment|funeral|deaths?\s+reported|\b\d+\s+years(\s+old)?\b",
         "local": r"sixteenth\s+street|colorado\s+av|n\.\s?w\.|citizens",
     },
+    "twining": {
+        # The 1926 name is Twining City, after Engineer Commissioner William J. Twining; bare "Twining" is mostly people.
+        "terms": ['"Twining City"', '"Randle Highlands"', '"Pennsylvania avenue southeast"'],
+        "pattern": r"twining\s+city|randle\s+high(?=.{0,200}(twining|pennsylvania|minnesota|bennings?))|pennsylvania\s+avenue\s+(s\.\s?e|southeast)(?=.{0,120}(twining|bridge|anacostia))",
+        "reject": r"departed\s+this\s+life|interment|inter\s+ment|funeral|deaths?\s+reported|\b\d+\s+years(\s+old)?\b",
+        "local": r"twining|randle|s\.\s?e\.|southeast|anacostia|citizens",
+    },
+    "fortlincoln": {
+        # In 1926 the ground was the National Training School for Boys; Fort Lincoln Cemetery is in Maryland.
+        "terms": ['"Training School for Boys"', '"Fort Lincoln"'],
+        # Not Bladensburg road alone: it runs from Fort Lincoln down to Trinidad and H Street.
+        "pattern": r"training\s+school\s+for\s+boys|fort\s+lincoln(?!\s+cemetery)",
+        "reject": r"cemetery|departed\s+this\s+life|interment|inter\s+ment|funeral|deaths?\s+reported|\b\d+\s+years(\s+old)?\b",
+        "local": r"training\s+school|fort\s+lincoln|bladensburg|n\.\s?e\.|northeast",
+    },
     "congressheights": {
         # In 1926 this is the subdivision and the government hospital. Nichols avenue is now MLK Ave.
         "terms": ['"St. Elizabeth\'s"', "Congress Heights", '"Nichols avenue"'],

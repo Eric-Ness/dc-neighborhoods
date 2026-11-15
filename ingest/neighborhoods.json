@@ -428,7 +428,9 @@
       "hosts": [
         "bellevuedc.org"
       ],
-      "redirect_hosts": [],
+      "redirect_hosts": [
+        "bellevuedc.net"
+      ],
       "enabled": true,
       "boundary_layer": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Administrative_Other_Boundaries_WebMercator/MapServer/55",
       "boundary_parts": 7,
@@ -446,6 +448,26 @@
       "boundary_layer": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Administrative_Other_Boundaries_WebMercator/MapServer/55",
       "boundary_parts": 6,
       "boundary_source": "ANC 4E, single-member districts 4E01 through 4E06, including Crestwood west of 16th Street (Open Data DC). DC's 16TH ST HEIGHTS planning area also runs south into Petworth, which has its own site."
+    },
+    {
+      "slug": "twining",
+      "name": "Twining",
+      "boundary_where": "DC_HPN_NAME='TWINING'",
+      "hosts": [
+        "twiningdc.org"
+      ],
+      "redirect_hosts": [],
+      "enabled": false
+    },
+    {
+      "slug": "fortlincoln",
+      "name": "Fort Lincoln",
+      "boundary_where": "DC_HPN_NAME='FORT LINCOLN/GATEWAY'",
+      "hosts": [
+        "fortlincoln.net"
+      ],
+      "redirect_hosts": [],
+      "enabled": false
     }
   ]
 }

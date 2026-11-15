@@ -91,5 +91,7 @@
     // capitolriverfront.net (redirects to navyyarddc.net) comes back once its zone is active on Cloudflare.
     // petworth.net and tenleytown.net come back here once those zones are on Cloudflare;
     // the Worker already 301s them to the .org.
+    // bellevuedc.net (redirects to bellevuedc.org), twiningdc.org and fortlincoln.net come back here once their
+    // zones are active on Cloudflare; Twining and Fort Lincoln are configured in neighborhoods.json but disabled.
   ]
 }
