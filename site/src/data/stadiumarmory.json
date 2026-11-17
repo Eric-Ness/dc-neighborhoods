@@ -1,7 +1,7 @@
 {
  "slug": "stadiumarmory",
  "name": "Stadium-Armory",
- "generated_at": "2026-11-15T09:18:06Z",
+ "generated_at": "2026-11-17T09:20:06Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1008,19 +1008,6 @@
    "smd": "7F07"
   },
   {
-   "id": "AH2700143",
-   "issued": "2026-11-04T05:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "MISCELLANEOUS",
-   "address": "2400 EAST CAPITOL ST NE 20003",
-   "work": "After hours work for construction of new north and south storm sewer trunk lines outside of the future stadium footprint. (LIMITED TO Work Area #1 is around the N1 manhole and Work Area #2 is around the J1 junction structure)",
-   "zoning": "UNZONED",
-   "lat": 38.88987,
-   "lon": -76.97294,
-   "smd": "7D05"
-  },
-  {
    "id": "D2600468",
    "issued": "2026-11-04T05:00:00Z",
    "group": "Demolition",
@@ -1032,11 +1019,24 @@
    "lat": 38.88987,
    "lon": -76.97294,
    "smd": "7D05"
+  },
+  {
+   "id": "AH2700143",
+   "issued": "2026-11-04T05:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "MISCELLANEOUS",
+   "address": "2400 EAST CAPITOL ST NE 20003",
+   "work": "After hours work for construction of new north and south storm sewer trunk lines outside of the future stadium footprint. (LIMITED TO Work Area #1 is around the N1 manhole and Work Area #2 is around the J1 junction structure)",
+   "zoning": "UNZONED",
+   "lat": 38.88987,
+   "lon": -76.97294,
+   "smd": "7D05"
   }
  ],
  "requests": {
-  "total": 27,
-  "previous_total": 22,
+  "total": 28,
+  "previous_total": 21,
   "by_type": [
    {
     "type": "Parking Enforcement",
@@ -1056,7 +1056,7 @@
    {
     "type": "Bulk Collection",
     "count": 2,
-    "previous": 2
+    "previous": 1
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -1087,10 +1087,35 @@
     "type": "DOB - Illegal Construction",
     "count": 1,
     "previous": 0
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "count": 1,
+    "previous": 0
    }
   ],
-  "open": 5,
+  "open": 6,
   "recent": [
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-16T15:40:03Z",
+    "resolved": "2026-11-16T16:35:07Z",
+    "status": "Closed",
+    "block": "1900 block of MASSACHUSETTS AVENUE SE",
+    "lat": 38.885,
+    "lon": -76.973
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-16T15:26:58Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1800 block of POTOMAC AVENUE SE",
+    "lat": 38.883,
+    "lon": -76.978
+   },
    {
     "type": "Parking Enforcement",
     "agency": "DPW",
@@ -1350,21 +1375,12 @@
     "block": "1900 block of C STREET SE",
     "lat": 38.885,
     "lon": -76.977
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-10-16T14:13:22Z",
-    "resolved": "2026-10-16T15:45:10Z",
-    "status": "Closed",
-    "block": "1900 block of MASSACHUSETTS AVENUE SE",
-    "lat": 38.885,
-    "lon": -76.973
    }
   ],
   "mapped": {
    "types": [
     "Parking Enforcement",
+    "Trash Collection - Missed",
     "DOB - Illegal Construction",
     "DMV - Online Processing Issues",
     "Traffic Lights and Pedestrian Walk Signals",
@@ -1377,6 +1393,68 @@
    ],
    "blocks": [
     {
+     "block": "1900 block of MASSACHUSETTS AVENUE SE",
+     "lat": 38.885,
+     "lon": -76.973,
+     "r": [
+      [
+       0,
+       "2026-11-16",
+       "2026-11-16",
+       0
+      ],
+      [
+       0,
+       "2026-11-12",
+       "2026-11-12",
+       1
+      ],
+      [
+       0,
+       "2026-11-12",
+       "2026-11-12",
+       0
+      ],
+      [
+       0,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ],
+      [
+       0,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1800 block of POTOMAC AVENUE SE",
+     "lat": 38.883,
+     "lon": -76.978,
+     "r": [
+      [
+       1,
+       "2026-11-16",
+       null,
+       1
+      ],
+      [
+       5,
+       "2026-11-04",
+       "2026-11-09",
+       0
+      ],
+      [
+       5,
+       "2026-10-31",
+       "2026-11-03",
+       0
+      ]
+     ]
+    },
+    {
      "block": "1900 block of C STREET SE",
      "lat": 38.885,
      "lon": -76.977,
@@ -1388,7 +1466,7 @@
        0
       ],
       [
-       1,
+       2,
        "2026-11-11",
        null,
        1
@@ -1400,7 +1478,7 @@
        0
       ],
       [
-       2,
+       3,
        "2026-11-06",
        null,
        1
@@ -1418,7 +1496,7 @@
        0
       ],
       [
-       5,
+       6,
        "2026-10-27",
        "2026-10-29",
        0
@@ -1436,7 +1514,7 @@
        0
       ],
       [
-       6,
+       7,
        "2026-10-26",
        "2026-10-26",
        0
@@ -1448,52 +1526,15 @@
        0
       ],
       [
-       6,
+       7,
        "2026-10-23",
        "2026-10-23",
        0
       ],
       [
-       6,
+       7,
        "2026-10-20",
        "2026-10-20",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1900 block of MASSACHUSETTS AVENUE SE",
-     "lat": 38.885,
-     "lon": -76.973,
-     "r": [
-      [
-       0,
-       "2026-11-12",
-       "2026-11-12",
-       1
-      ],
-      [
-       0,
-       "2026-11-12",
-       "2026-11-12",
-       0
-      ],
-      [
-       0,
-       "2026-11-03",
-       "2026-11-03",
-       0
-      ],
-      [
-       0,
-       "2026-10-29",
-       "2026-10-29",
-       0
-      ],
-      [
-       0,
-       "2026-10-16",
-       "2026-10-16",
        0
       ]
      ]
@@ -1504,29 +1545,10 @@
      "lon": -76.979,
      "r": [
       [
-       3,
+       4,
        "2026-11-05",
        null,
        1
-      ]
-     ]
-    },
-    {
-     "block": "1800 block of POTOMAC AVENUE SE",
-     "lat": 38.883,
-     "lon": -76.978,
-     "r": [
-      [
-       4,
-       "2026-11-04",
-       "2026-11-09",
-       0
-      ],
-      [
-       4,
-       "2026-10-31",
-       "2026-11-03",
-       0
       ]
      ]
     },
@@ -1549,7 +1571,7 @@
      "lon": -76.969,
      "r": [
       [
-       7,
+       8,
        "2026-10-26",
        "2026-10-27",
        0
@@ -1562,7 +1584,7 @@
      "lon": -76.964,
      "r": [
       [
-       7,
+       8,
        "2026-10-22",
        "2026-10-23",
        0
@@ -1575,7 +1597,7 @@
      "lon": -76.968,
      "r": [
       [
-       8,
+       9,
        "2026-10-22",
        "2026-10-22",
        0
@@ -1588,7 +1610,7 @@
      "lon": -76.968,
      "r": [
       [
-       9,
+       10,
        "2026-10-20",
        null,
        1
@@ -1601,7 +1623,7 @@
      "lon": -76.977,
      "r": [
       [
-       7,
+       8,
        "2026-10-20",
        "2026-10-20",
        0
@@ -1612,13 +1634,13 @@
   }
  },
  "crime": {
-  "total": 4,
-  "previous_total": 8,
+  "total": 3,
+  "previous_total": 9,
   "by_offense": [
    {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
-    "count": 2,
-    "previous": 1
+    "count": 1,
+    "previous": 2
    },
    {
     "offense": "HOMICIDE",
@@ -1631,9 +1653,9 @@
     "previous": 0
    },
    {
-    "offense": "THEFT/OTHER",
+    "offense": "ROBBERY",
     "count": 0,
-    "previous": 5
+    "previous": 1
    },
    {
     "offense": "THEFT F/AUTO",
@@ -1641,9 +1663,9 @@
     "previous": 1
    },
    {
-    "offense": "ROBBERY",
+    "offense": "THEFT/OTHER",
     "count": 0,
-    "previous": 1
+    "previous": 5
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -1676,7 +1698,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-15T09:18:06Z",
+  "generated_at": "2026-11-17T09:20:06Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -1691,7 +1713,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Stadium-Armory through OTR assessment sub-areas Old City 1 A and B, the rowhouse blocks just west of the stadium grounds in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Stadium-Armory boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-15): 7% of the 4,862 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Stadium-Armory through OTR assessment sub-areas Old City 1 A and B, the rowhouse blocks just west of the stadium grounds in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Stadium-Armory boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-17): 7% of the 2,431 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -1705,106 +1727,106 @@
   ],
   "boundary_fit": {
    "squares": 9,
-   "area_parcels": 4862,
+   "area_parcels": 2431,
    "area_share_inside": 0.07,
    "boundary_share_in_area": 1.0,
-   "measured": "2026-11-15"
+   "measured": "2026-11-17"
   },
   "primary": "house",
   "house": {
-   "median_12mo": 1007000,
-   "count_12mo": 108,
+   "median_12mo": 989000,
+   "count_12mo": 55,
    "median_prev_12mo": 950000,
-   "count_prev_12mo": 154
+   "count_prev_12mo": 77
   },
   "condo": {
    "median_12mo": 662500,
-   "count_12mo": 28,
-   "median_prev_12mo": 672500,
-   "count_prev_12mo": 44
+   "count_12mo": 14,
+   "median_prev_12mo": 670000,
+   "count_prev_12mo": 21
   },
   "last_60d": {
-   "median": 838000,
-   "count": 14,
-   "median_ppsf": 691,
-   "ppsf_count": 14
+   "median": 809000,
+   "count": 8,
+   "median_ppsf": 692,
+   "ppsf_count": 8
   },
   "above_assessment_12mo": {
-   "n": 92,
-   "of": 136
+   "n": 47,
+   "of": 69
   },
   "by_month": [
    {
     "month": "2025-12",
     "median": 1037000,
-    "count": 8
+    "count": 4
    },
    {
     "month": "2026-01",
     "median": 1300000,
-    "count": 6
+    "count": 3
    },
    {
     "month": "2026-02",
     "median": 901000,
-    "count": 8
+    "count": 4
    },
    {
     "month": "2026-03",
     "median": 1200000,
-    "count": 10
+    "count": 5
    },
    {
     "month": "2026-04",
     "median": 945000,
-    "count": 6
+    "count": 3
    },
    {
     "month": "2026-05",
     "median": 925550,
-    "count": 20
+    "count": 10
    },
    {
     "month": "2026-06",
     "median": 1135000,
-    "count": 14
+    "count": 7
    },
    {
     "month": "2026-07",
     "median": 970250,
-    "count": 8
+    "count": 4
    },
    {
     "month": "2026-08",
     "median": 1200000,
-    "count": 6
+    "count": 3
    },
    {
     "month": "2026-09",
     "median": 870000,
-    "count": 10
+    "count": 5
    },
    {
     "month": "2026-10",
     "median": 938500,
-    "count": 10
+    "count": 5
    },
    {
     "month": "2026-11",
     "median": null,
-    "count": 0
+    "count": 1
    }
   ],
   "by_month_basis": "houses only; calendar months, the last one in progress; median null when under 3 sales",
   "recent_sales": [
    {
-    "address": "732 15th St SE # 1",
-    "date": "2026-10-28",
-    "price": 395000,
-    "kind": "condo",
-    "beds": null,
-    "sqft": null,
-    "assessed": 358700
+    "address": "203 17th St SE",
+    "date": "2026-11-04",
+    "price": 780000,
+    "kind": "house",
+    "beds": 2,
+    "sqft": 1008,
+    "assessed": 770960
    },
    {
     "address": "732 15th St SE # 1",
@@ -1825,15 +1847,6 @@
     "assessed": 809390
    },
    {
-    "address": "1365 E St SE",
-    "date": "2026-10-28",
-    "price": 838000,
-    "kind": "house",
-    "beds": 3,
-    "sqft": 1301,
-    "assessed": 809390
-   },
-   {
     "address": "1332 G St SE # 1",
     "date": "2026-10-27",
     "price": 635000,
@@ -1841,24 +1854,6 @@
     "beds": null,
     "sqft": null,
     "assessed": 685000
-   },
-   {
-    "address": "1332 G St SE # 1",
-    "date": "2026-10-27",
-    "price": 635000,
-    "kind": "condo",
-    "beds": null,
-    "sqft": null,
-    "assessed": 685000
-   },
-   {
-    "address": "35 17th St SE",
-    "date": "2026-10-26",
-    "price": 685000,
-    "kind": "house",
-    "beds": 2,
-    "sqft": 992,
-    "assessed": 643680
    },
    {
     "address": "35 17th St SE",
@@ -1879,15 +1874,6 @@
     "assessed": 753770
    },
    {
-    "address": "515 14th St SE",
-    "date": "2026-10-23",
-    "price": 965000,
-    "kind": "house",
-    "beds": 3,
-    "sqft": 1308,
-    "assessed": 753770
-   },
-   {
     "address": "1328 G St SE",
     "date": "2026-10-15",
     "price": 938500,
@@ -1895,24 +1881,6 @@
     "beds": 3,
     "sqft": 1352,
     "assessed": 896130
-   },
-   {
-    "address": "1328 G St SE",
-    "date": "2026-10-15",
-    "price": 938500,
-    "kind": "house",
-    "beds": 3,
-    "sqft": 1352,
-    "assessed": 896130
-   },
-   {
-    "address": "1405 East Capitol St SE # 3",
-    "date": "2026-10-09",
-    "price": 377500,
-    "kind": "condo",
-    "beds": null,
-    "sqft": null,
-    "assessed": 342490
    },
    {
     "address": "1405 East Capitol St SE # 3",
@@ -1933,15 +1901,6 @@
     "assessed": 794450
    },
    {
-    "address": "125 16th St SE",
-    "date": "2026-10-06",
-    "price": 984500,
-    "kind": "house",
-    "beds": 4,
-    "sqft": 1152,
-    "assessed": 794450
-   },
-   {
     "address": "308 16th St SE",
     "date": "2026-09-30",
     "price": 625000,
@@ -1949,24 +1908,6 @@
     "beds": 3,
     "sqft": 1290,
     "assessed": 691140
-   },
-   {
-    "address": "308 16th St SE",
-    "date": "2026-09-30",
-    "price": 625000,
-    "kind": "house",
-    "beds": 3,
-    "sqft": 1290,
-    "assessed": 691140
-   },
-   {
-    "address": "1601 E St SE",
-    "date": "2026-09-30",
-    "price": 630000,
-    "kind": "house",
-    "beds": 3,
-    "sqft": 1222,
-    "assessed": 821650
    },
    {
     "address": "1601 E St SE",
@@ -1980,7 +1921,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-15T09:18:06Z",
+  "generated_at": "2026-11-17T09:20:06Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2000,15 +1941,19 @@
    }
   ],
   "curb": {
-   "active_this_week": 12,
-   "starting_next_7d": 0,
-   "reserved_ft": 1188,
+   "active_this_week": 14,
+   "starting_next_7d": 2,
+   "reserved_ft": 1496,
    "long_running_90d": 5,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-15: newest permit issued 2026-11-15, newest record update 2026-11-15, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-17: newest permit issued 2026-11-17, newest record update 2026-11-17, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Construction staging",
      "count": 10
+    },
+    {
+     "type": "Lead pipe replacement",
+     "count": 2
     },
     {
      "type": "Utility & DDOT work",
@@ -2019,7 +1964,24 @@
      "count": 1
     }
    ],
-   "upcoming": []
+   "upcoming": [
+    {
+     "type": "Lead pipe replacement",
+     "block": "100 block of 19th Street SE",
+     "start": "2026-11-23",
+     "end": "2027-01-18",
+     "ft": 88,
+     "hours": "7 am\u20137 pm"
+    },
+    {
+     "type": "Lead pipe replacement",
+     "block": "1800 block of E Street SE",
+     "start": "2026-11-23",
+     "end": "2027-01-18",
+     "ft": 220,
+     "hours": "7 am\u20137 pm"
+    }
+   ]
   },
   "trees": {
    "total": 874,
@@ -2100,9 +2062,9 @@
   "service": [
    {
     "type": "Parking Enforcement",
-    "median_days": 0.06,
+    "median_days": 0.05,
     "city_median_days": 0.05,
-    "closed_n": 154
+    "closed_n": 155
    },
    {
     "type": "DC Government Information",
@@ -2113,7 +2075,7 @@
    {
     "type": "Illegal Dumping",
     "median_days": 3.78,
-    "city_median_days": 3.96,
+    "city_median_days": 3.97,
     "closed_n": 29
    },
    {
@@ -2131,26 +2093,26 @@
    {
     "type": "Sanitation Enforcement",
     "median_days": 1.98,
-    "city_median_days": 1.1,
+    "city_median_days": 1.09,
     "closed_n": 15
    },
    {
     "type": "Dead Animal Collection",
     "median_days": 1.18,
-    "city_median_days": 1.75,
+    "city_median_days": 1.76,
     "closed_n": 11
    },
    {
     "type": "Roadway Signs",
     "median_days": 23.79,
-    "city_median_days": 7.12,
+    "city_median_days": 7.17,
     "closed_n": 11
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-15T09:18:06Z",
+  "generated_at": "2026-11-17T09:20:06Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2264,7 +2226,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-15T09:18:06Z",
+  "generated_at": "2026-11-17T09:20:06Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2358,7 +2320,7 @@
     "name": "ANC 7D",
     "url": "https://anc7d.dc.gov/",
     "state": "ok",
-    "matched": 7,
+    "matched": 6,
     "fetched": 1
    },
    {
@@ -2692,8 +2654,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-15T09:18:06Z",
-  "today": "2026-11-15",
+  "generated_at": "2026-11-17T09:20:06Z",
+  "today": "2026-11-17",
   "days_ahead": 30,
   "sources": [
    {
@@ -2755,6 +2717,15 @@
     "kind": "community"
    },
    {
+    "title": "Giving Tuesday at HCC",
+    "date": "2026-12-01",
+    "time": "7 AM to 7 PM",
+    "place": "Historic Congressional Cemetery, 1801 E Street, Southeast",
+    "url": "https://congressionalcemetery.org/event/giving-tuesday-at-hcc-2/",
+    "source": "Historic Congressional Cemetery",
+    "kind": "community"
+   },
+   {
     "title": "Death Cafe at Congressional Cemetery",
     "date": "2026-12-03",
     "time": "6 PM to 7:30 PM",
@@ -2769,6 +2740,15 @@
     "time": "10 AM to 12 PM",
     "place": null,
     "url": "https://congressionalcemetery.org/event/rededication-of-the-masonic-section-at-congressional-cemetery/",
+    "source": "Historic Congressional Cemetery",
+    "kind": "community"
+   },
+   {
+    "title": "Holiday Market Pet Portraits",
+    "date": "2026-12-06",
+    "time": "10 AM to 3:50 PM",
+    "place": "Historic Congressional Cemetery, 1801 E Street, Southeast",
+    "url": "https://congressionalcemetery.org/event/holiday-market-pet-portraits/",
     "source": "Historic Congressional Cemetery",
     "kind": "community"
    },
@@ -2831,7 +2811,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-15T09:18:06Z",
+  "generated_at": "2026-11-17T09:20:06Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -14335,7 +14315,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-15T09:18:06Z",
+  "generated_at": "2026-11-17T09:20:06Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
