@@ -1,7 +1,7 @@
 {
  "slug": "gloverpark",
  "name": "Glover Park",
- "generated_at": "2026-11-17T09:20:06Z",
+ "generated_at": "2026-11-18T09:19:45Z",
  "boundary": {
   "source": "ANC 3B, the Glover Park commission (all its single-member districts, Open Data DC). DC has no planning area named Glover Park.",
   "rings": [
@@ -7449,6 +7449,32 @@
  },
  "permits": [
   {
+   "id": "HO2700280",
+   "issued": "2026-11-15T05:00:00Z",
+   "group": "Home businesses",
+   "type": "HOME OCCUPATION",
+   "subtype": "NA",
+   "address": "3860 CALVERT ST NW 20007",
+   "work": "Cottage Foods",
+   "zoning": "R-3",
+   "lat": 38.9224,
+   "lon": -77.0768,
+   "smd": "3B02"
+  },
+  {
+   "id": "P2701498",
+   "issued": "2026-11-14T05:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "3273 SUTTON PL NW B 20016",
+   "work": "",
+   "zoning": "RA-1",
+   "lat": 38.93316,
+   "lon": -77.08363,
+   "smd": "3B06"
+  },
+  {
    "id": "BP2700692",
    "issued": "2026-11-12T05:00:00Z",
    "group": "Minor work",
@@ -7592,17 +7618,17 @@
    "smd": "3B02"
   },
   {
-   "id": "M2700466",
+   "id": "B2608426",
    "issued": "2026-11-03T05:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "MECHANICAL",
-   "address": "2200 40TH PL NW 20007",
-   "work": "",
-   "zoning": "RA-1",
-   "lat": 38.91935,
-   "lon": -77.08003,
-   "smd": "3B03"
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "3600 CALVERT ST NW 20007",
+   "work": "Historic\r\n\r\nGuy Mason Recreation Center \u001a Renovate interior restrooms to make three ADA compliant. Modify exterior dog park entrance with crosswalk for ADA compliance. Modify parking lot striping and signs for ADA compliance.",
+   "zoning": "R-1B/NO",
+   "lat": 38.92214,
+   "lon": -77.07122,
+   "smd": "3B02"
   },
   {
    "id": "P2701066",
@@ -7618,17 +7644,17 @@
    "smd": "3B02"
   },
   {
-   "id": "B2608426",
+   "id": "M2700466",
    "issued": "2026-11-03T05:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "ALTERATION AND REPAIR",
-   "address": "3600 CALVERT ST NW 20007",
-   "work": "Historic\r\n\r\nGuy Mason Recreation Center \u001a Renovate interior restrooms to make three ADA compliant. Modify exterior dog park entrance with crosswalk for ADA compliance. Modify parking lot striping and signs for ADA compliance.",
-   "zoning": "R-1B/NO",
-   "lat": 38.92214,
-   "lon": -77.07122,
-   "smd": "3B02"
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "MECHANICAL",
+   "address": "2200 40TH PL NW 20007",
+   "work": "",
+   "zoning": "RA-1",
+   "lat": 38.91935,
+   "lon": -77.08003,
+   "smd": "3B03"
   },
   {
    "id": "B2608575",
@@ -7670,19 +7696,6 @@
    "smd": "3B05"
   },
   {
-   "id": "M2700373",
-   "issued": "2026-10-28T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "MECHANICAL",
-   "address": "3900 WATSON PL NW",
-   "work": "",
-   "zoning": "RA-1",
-   "lat": 38.92775,
-   "lon": -77.07858,
-   "smd": "3B04"
-  },
-  {
    "id": "HO2700197",
    "issued": "2026-10-28T04:00:00Z",
    "group": "Home businesses",
@@ -7694,6 +7707,19 @@
    "lat": 38.92008,
    "lon": -77.07813,
    "smd": "3B05"
+  },
+  {
+   "id": "M2700373",
+   "issued": "2026-10-28T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "MECHANICAL",
+   "address": "3900 WATSON PL NW",
+   "work": "",
+   "zoning": "RA-1",
+   "lat": 38.92775,
+   "lon": -77.07858,
+   "smd": "3B04"
   },
   {
    "id": "E2700878",
@@ -7759,44 +7785,31 @@
    "lat": 38.92207,
    "lon": -77.08166,
    "smd": "3B03"
-  },
-  {
-   "id": "E2700575",
-   "issued": "2026-10-19T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "3900 TUNLAW RD NW 20007",
-   "work": "",
-   "zoning": "RA-1",
-   "lat": 38.92532,
-   "lon": -77.07789,
-   "smd": "3B01"
   }
  ],
  "requests": {
-  "total": 271,
-  "previous_total": 293,
+  "total": 286,
+  "previous_total": 287,
   "by_type": [
    {
     "type": "Bulk Collection",
-    "count": 52,
-    "previous": 55
+    "count": 51,
+    "previous": 56
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 34,
-    "previous": 37
+    "count": 33,
+    "previous": 39
    },
    {
     "type": "Public Space Litter Can-Collection",
-    "count": 28,
-    "previous": 13
+    "count": 31,
+    "previous": 12
    },
    {
     "type": "Parking Enforcement",
     "count": 19,
-    "previous": 31
+    "previous": 25
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -7804,22 +7817,27 @@
     "previous": 20
    },
    {
-    "type": "Rat Replacement Containers",
-    "count": 12,
-    "previous": 5
-   },
-   {
     "type": "DMV - Vehicle Registration Issues",
     "count": 12,
     "previous": 7
    },
    {
-    "type": "Graffiti Removal",
+    "type": "Rat Replacement Containers",
+    "count": 11,
+    "previous": 6
+   },
+   {
+    "type": "Illegal Dumping",
+    "count": 8,
+    "previous": 5
+   },
+   {
+    "type": "Container Removal",
     "count": 7,
     "previous": 5
    },
    {
-    "type": "Illegal Dumping",
+    "type": "Graffiti Removal",
     "count": 7,
     "previous": 5
    },
@@ -7829,9 +7847,9 @@
     "previous": 1
    },
    {
-    "type": "Container Removal",
-    "count": 6,
-    "previous": 6
+    "type": "Supercan - Repair",
+    "count": 5,
+    "previous": 2
    },
    {
     "type": "Roadway Signs",
@@ -7841,12 +7859,17 @@
    {
     "type": "Supercan - Delivery",
     "count": 5,
-    "previous": 8
+    "previous": 7
    },
    {
-    "type": "Dead Animal Collection",
+    "type": "Residential Parking Permit Violation",
+    "count": 5,
+    "previous": 5
+   },
+   {
+    "type": "Sanitation Enforcement",
     "count": 4,
-    "previous": 4
+    "previous": 6
    },
    {
     "type": "DMV - Drivers License/ID Issues",
@@ -7854,13 +7877,8 @@
     "previous": 9
    },
    {
-    "type": "Supercan - Repair",
+    "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 4,
-    "previous": 2
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "count": 3,
     "previous": 6
    },
    {
@@ -7874,9 +7892,9 @@
     "previous": 3
    },
    {
-    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "type": "Abandoned Vehicle - On Public Property",
     "count": 3,
-    "previous": 6
+    "previous": 3
    },
    {
     "type": "Trash Cart - Delivery",
@@ -7884,14 +7902,19 @@
     "previous": 4
    },
    {
+    "type": "Dead Animal Collection",
+    "count": 3,
+    "previous": 5
+   },
+   {
     "type": "Tree Inspection",
     "count": 3,
     "previous": 6
    },
    {
-    "type": "Residential Parking Permit Violation",
-    "count": 3,
-    "previous": 5
+    "type": "Tree Removal",
+    "count": 2,
+    "previous": 1
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
@@ -7916,16 +7939,16 @@
    {
     "type": "Dockless Vehicle Parking Complaint",
     "count": 2,
-    "previous": 2
+    "previous": 1
    },
    {
-    "type": "Abandoned Vehicle - On Public Property",
+    "type": "OCTFME - Down Cable Wires",
     "count": 2,
-    "previous": 3
+    "previous": 1
    },
    {
-    "type": "Tree Removal",
-    "count": 1,
+    "type": "DOB - Vacant Private Property Inspection",
+    "count": 2,
     "previous": 1
    },
    {
@@ -7937,11 +7960,6 @@
     "type": "Sidewalk Repair",
     "count": 1,
     "previous": 0
-   },
-   {
-    "type": "OCTFME - Down Cable Wires",
-    "count": 1,
-    "previous": 1
    },
    {
     "type": "Public Space Inspection",
@@ -7986,7 +8004,7 @@
    {
     "type": "DOB - Illegal Construction",
     "count": 1,
-    "previous": 4
+    "previous": 3
    },
    {
     "type": "DMV - Vehicle Inspection Issues",
@@ -7997,10 +8015,230 @@
     "type": "Leaf  Collection Missed",
     "count": 1,
     "previous": 0
+   },
+   {
+    "type": "Grass Mowing Services Missed (DGS)",
+    "count": 1,
+    "previous": 0
+   },
+   {
+    "type": "Tree Pruning",
+    "count": 1,
+    "previous": 0
+   },
+   {
+    "type": "Bicycle Services",
+    "count": 1,
+    "previous": 0
+   },
+   {
+    "type": "Tree Planting",
+    "count": 1,
+    "previous": 0
    }
   ],
-  "open": 62,
+  "open": 71,
   "recent": [
+   {
+    "type": "OCTFME - Down Cable Wires",
+    "agency": "OCTFME",
+    "added": "2026-11-18T03:40:31Z",
+    "resolved": "2026-11-18T03:40:31Z",
+    "status": "Closed",
+    "block": "2300 block of 40TH STREET NW",
+    "lat": 38.921,
+    "lon": -77.079
+   },
+   {
+    "type": "Supercan - Repair",
+    "agency": "DPW",
+    "added": "2026-11-17T23:24:30Z",
+    "resolved": "2026-11-18T00:41:34Z",
+    "status": "Closed",
+    "block": "2100 block of HUIDEKOPER PLACE NW",
+    "lat": 38.918,
+    "lon": -77.074
+   },
+   {
+    "type": "Tree Removal",
+    "agency": "DDOT",
+    "added": "2026-11-17T23:06:22Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "WISCONSIN AVENUE NW AND WHITEHAVEN STREET NW",
+    "lat": 38.917,
+    "lon": -77.069
+   },
+   {
+    "type": "Tree Planting",
+    "agency": "DDOT",
+    "added": "2026-11-17T23:04:54Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "WISCONSIN AVENUE NW AND WHITEHAVEN STREET NW",
+    "lat": 38.917,
+    "lon": -77.069
+   },
+   {
+    "type": "DOB - Vacant Private Property Inspection",
+    "agency": "DOB",
+    "added": "2026-11-17T23:03:39Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2300 block of WISCONSIN AVENUE NW",
+    "lat": 38.921,
+    "lon": -77.072
+   },
+   {
+    "type": "DOB - Vacant Private Property Inspection",
+    "agency": "DOB",
+    "added": "2026-11-17T23:02:28Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2100 block of WISCONSIN AVENUE NW",
+    "lat": 38.919,
+    "lon": -77.07
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-17T23:01:26Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2200 block of WISCONSIN AVENUE NW",
+    "lat": 38.92,
+    "lon": -77.071
+   },
+   {
+    "type": "Bicycle Services",
+    "agency": "DDOT",
+    "added": "2026-11-17T22:39:22Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "2300 block of WISCONSIN AVENUE NW",
+    "lat": 38.921,
+    "lon": -77.072
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-17T22:37:50Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "WISCONSIN AVENUE NW AND CALVERT STREET NW",
+    "lat": 38.923,
+    "lon": -77.073
+   },
+   {
+    "type": "Tree Pruning",
+    "agency": "DDOT",
+    "added": "2026-11-17T22:36:35Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "WISCONSIN AVENUE NW AND DAVIS STREET NW",
+    "lat": 38.924,
+    "lon": -77.073
+   },
+   {
+    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "agency": "DDOT",
+    "added": "2026-11-17T18:46:53Z",
+    "resolved": "2026-11-17T21:10:56Z",
+    "status": "Closed",
+    "block": "3300 block of NEW MEXICO AVENUE NW",
+    "lat": 38.934,
+    "lon": -77.085
+   },
+   {
+    "type": "Grass Mowing Services Missed (DGS)",
+    "agency": "DGS",
+    "added": "2026-11-17T18:43:38Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "WISCONSIN AVENUE NW AND DAVIS STREET NW",
+    "lat": 38.924,
+    "lon": -77.073
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-17T18:24:06Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "WISCONSIN AVENUE NW AND FULTON STREET NW",
+    "lat": 38.926,
+    "lon": -77.073
+   },
+   {
+    "type": "Sanitation Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-17T17:37:07Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2200 block of WISCONSIN AVENUE NW",
+    "lat": 38.92,
+    "lon": -77.071
+   },
+   {
+    "type": "Residential Parking Permit Violation",
+    "agency": "DPW",
+    "added": "2026-11-17T16:41:37Z",
+    "resolved": "2026-11-17T18:28:48Z",
+    "status": "Closed",
+    "block": "2700 block of 38TH STREET NW",
+    "lat": 38.926,
+    "lon": -77.075
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-17T16:34:36Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2700 block of WISCONSIN AVENUE NW",
+    "lat": 38.926,
+    "lon": -77.074
+   },
+   {
+    "type": "Abandoned Vehicle - On Public Property",
+    "agency": "DPW",
+    "added": "2026-11-17T15:24:46Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3800 block of DAVIS PLACE NW",
+    "lat": 38.924,
+    "lon": -77.077
+   },
+   {
+    "type": "Residential Parking Permit Violation",
+    "agency": "DPW",
+    "added": "2026-11-17T15:13:28Z",
+    "resolved": "2026-11-17T18:30:51Z",
+    "status": "Closed",
+    "block": "2000 block of TUNLAW ROAD NW",
+    "lat": 38.918,
+    "lon": -77.072
+   },
+   {
+    "type": "Container Removal",
+    "agency": "DPW",
+    "added": "2026-11-17T14:27:26Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2200 block of 39TH STREET NW",
+    "lat": 38.92,
+    "lon": -77.077
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-17T11:53:56Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2200 block of HALL PLACE NW",
+    "lat": 38.919,
+    "lon": -77.072
+   },
    {
     "type": "Residential Parking Permit Violation",
     "agency": "DPW",
@@ -8285,8 +8523,8 @@
     "type": "Bulk Collection",
     "agency": "DPW",
     "added": "2026-11-13T15:39:03Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-17T13:38:36Z",
+    "status": "Canceled",
     "block": "2200 block of HALL PLACE NW",
     "lat": 38.919,
     "lon": -77.072
@@ -8295,233 +8533,43 @@
     "type": "Graffiti Removal",
     "agency": "DPW",
     "added": "2026-11-12T19:25:30Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-17T17:11:59Z",
+    "status": "Closed",
     "block": "2400 block of WISCONSIN AVENUE NW",
     "lat": 38.922,
     "lon": -77.073
-   },
-   {
-    "type": "Container Removal",
-    "agency": "DPW",
-    "added": "2026-11-12T18:52:00Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3800 block of BENTON STREET NW",
-    "lat": 38.921,
-    "lon": -77.076
-   },
-   {
-    "type": "Tree Inspection",
-    "agency": "DDOT",
-    "added": "2026-11-12T15:24:12Z",
-    "resolved": "2026-11-12T18:11:03Z",
-    "status": "Closed",
-    "block": "NEW MEXICO AVENUE NW AND CATHEDRAL AVENUE NW",
-    "lat": 38.93,
-    "lon": -77.084
-   },
-   {
-    "type": "Graffiti Removal",
-    "agency": "DPW",
-    "added": "2026-11-12T15:06:33Z",
-    "resolved": "2026-11-16T17:12:03Z",
-    "status": "Closed",
-    "block": "GUY MASON DOG PARK",
-    "lat": 38.922,
-    "lon": -77.071
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-12T12:30:23Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2300 block of TUNLAW ROAD NW",
-    "lat": 38.92,
-    "lon": -77.074
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-12T12:17:53Z",
-    "resolved": "2026-11-12T15:24:05Z",
-    "status": "Closed",
-    "block": "2200 block of 40TH PLACE NW",
-    "lat": 38.919,
-    "lon": -77.08
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-12T03:48:16Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2400 block of TUNLAW ROAD NW",
-    "lat": 38.922,
-    "lon": -77.074
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-12T02:05:31Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2200 block of HALL PLACE NW",
-    "lat": 38.919,
-    "lon": -77.072
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-12T00:08:13Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3700 block of FULTON STREET NW",
-    "lat": 38.926,
-    "lon": -77.074
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-12T00:06:48Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3700 block of FULTON STREET NW",
-    "lat": 38.926,
-    "lon": -77.074
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-11T22:56:53Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2200 block of 39TH PLACE NW",
-    "lat": 38.92,
-    "lon": -77.078
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "agency": "DPW",
-    "added": "2026-11-11T20:10:46Z",
-    "resolved": "2026-11-12T06:13:14Z",
-    "status": "Closed",
-    "block": "NEW MEXICO AVENUE NW AND EMBASSY PARK DRIVE NW",
-    "lat": 38.934,
-    "lon": -77.086
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "agency": "DPW",
-    "added": "2026-11-11T20:09:49Z",
-    "resolved": "2026-11-12T06:13:09Z",
-    "status": "Closed",
-    "block": "3300 block of NEW MEXICO AVENUE NW",
-    "lat": 38.934,
-    "lon": -77.085
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-11T20:07:34Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3900 block of WATSON PLACE NW",
-    "lat": 38.927,
-    "lon": -77.078
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-11T20:04:24Z",
-    "resolved": "2026-11-12T03:24:57Z",
-    "status": "Closed",
-    "block": "3000 block of NEW MEXICO AVENUE NW",
-    "lat": 38.929,
-    "lon": -77.083
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-11T18:52:25Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2000 block of 37TH STREET NW",
-    "lat": 38.918,
-    "lon": -77.073
-   },
-   {
-    "type": "Tree Inspection",
-    "agency": "DDOT",
-    "added": "2026-11-11T18:13:16Z",
-    "resolved": "2026-11-12T17:00:56Z",
-    "status": "Closed",
-    "block": "2200 block of HALL PLACE NW",
-    "lat": 38.92,
-    "lon": -77.072
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-11T16:50:52Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2300 block of 39TH STREET NW",
-    "lat": 38.92,
-    "lon": -77.077
-   },
-   {
-    "type": "DOB - Illegal Construction",
-    "agency": "DOB",
-    "added": "2026-11-11T16:18:38Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2200 block of WISCONSIN AVENUE NW",
-    "lat": 38.919,
-    "lon": -77.07
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "agency": "DPW",
-    "added": "2026-11-10T22:47:17Z",
-    "resolved": "2026-11-12T06:12:06Z",
-    "status": "Closed",
-    "block": "2300 block of TUNLAW ROAD NW",
-    "lat": 38.92,
-    "lon": -77.074
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "agency": "DPW",
-    "added": "2026-11-10T21:08:21Z",
-    "resolved": "2026-11-12T06:11:55Z",
-    "status": "Closed",
-    "block": "4200 block of CATHEDRAL AVENUE NW",
-    "lat": 38.931,
-    "lon": -77.083
    }
   ],
   "mapped": {
    "types": [
+    "OCTFME - Down Cable Wires",
+    "Supercan - Repair",
+    "Tree Removal",
+    "Tree Planting",
+    "DOB - Vacant Private Property Inspection",
+    "Public Space Litter Can-Collection",
+    "Bicycle Services",
+    "Tree Pruning",
+    "Traffic Lights and Pedestrian Walk Signals",
+    "Grass Mowing Services Missed (DGS)",
+    "Sanitation Enforcement",
     "Residential Parking Permit Violation",
+    "Illegal Dumping",
+    "Abandoned Vehicle - On Public Property",
+    "Container Removal",
+    "Scheduled Yard Waste",
     "Bulk Collection",
     "Rat Replacement Containers",
     "Out of State Parking Violation (ROSA)",
-    "Sanitation Enforcement",
     "Parking Enforcement",
     "Pet Waste Complaint",
     "Dockless Vehicle Parking Complaint",
-    "Public Space Litter Can-Collection",
-    "Container Removal",
-    "Illegal Dumping",
     "Leaf  Collection Missed",
     "Trash Collection - Missed",
     "DMV - Vehicle Inspection Issues",
     "Roadway Signs",
     "Graffiti Removal",
     "Tree Inspection",
-    "Scheduled Yard Waste",
     "DOB - Illegal Construction",
     "DMV - Vehicle Registration Issues",
     "DC Government Information",
@@ -8532,45 +8580,457 @@
     "Lost/Stolen Compost Bin, Broken Compost Bin or Opt-Out of Curbside Composting Pilot Program",
     "DMV - Ticket Ombudsman",
     "DGS - Overflowing Recycling Can",
-    "Traffic Lights and Pedestrian Walk Signals",
     "DMV - Copy of Ticket",
     "DOEE - LIHEAP",
     "Recycling Collection - Missed",
     "Illegal Poster",
     "Recycling Cart Delivery",
-    "Supercan - Repair",
     "DMV - Online Processing Issues",
     "DMV - Drivers License/ID Issues",
-    "Abandoned Vehicle - On Public Property",
     "DOEE - Engine Idling Tips",
     "Public Space Inspection",
-    "OCTFME - Down Cable Wires",
     "Sidewalk Repair",
-    "Traffic Safety Input",
-    "Tree Removal"
+    "Traffic Safety Input"
    ],
    "blocks": [
+    {
+     "block": "2300 block of 40TH STREET NW",
+     "lat": 38.921,
+     "lon": -77.079,
+     "r": [
+      [
+       0,
+       "2026-11-18",
+       "2026-11-18",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "2100 block of HUIDEKOPER PLACE NW",
+     "lat": 38.918,
+     "lon": -77.074,
+     "r": [
+      [
+       1,
+       "2026-11-17",
+       "2026-11-18",
+       0
+      ],
+      [
+       16,
+       "2026-10-22",
+       "2026-10-26",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "WISCONSIN AVENUE NW AND WHITEHAVEN STREET NW",
+     "lat": 38.917,
+     "lon": -77.069,
+     "r": [
+      [
+       2,
+       "2026-11-17",
+       null,
+       1
+      ],
+      [
+       3,
+       "2026-11-17",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "2300 block of WISCONSIN AVENUE NW",
+     "lat": 38.921,
+     "lon": -77.072,
+     "r": [
+      [
+       4,
+       "2026-11-17",
+       null,
+       1
+      ],
+      [
+       6,
+       "2026-11-17",
+       null,
+       1
+      ],
+      [
+       10,
+       "2026-11-15",
+       "2026-11-16",
+       0
+      ],
+      [
+       25,
+       "2026-11-13",
+       null,
+       1
+      ],
+      [
+       26,
+       "2026-11-13",
+       "2026-11-16",
+       1
+      ],
+      [
+       26,
+       "2026-11-10",
+       "2026-11-16",
+       0
+      ],
+      [
+       26,
+       "2026-11-10",
+       "2026-11-16",
+       0
+      ],
+      [
+       26,
+       "2026-11-10",
+       "2026-11-10",
+       1
+      ],
+      [
+       37,
+       "2026-11-05",
+       "2026-11-05",
+       0
+      ],
+      [
+       8,
+       "2026-10-29",
+       "2026-10-30",
+       0
+      ],
+      [
+       37,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "2100 block of WISCONSIN AVENUE NW",
+     "lat": 38.919,
+     "lon": -77.07,
+     "r": [
+      [
+       4,
+       "2026-11-17",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "2200 block of WISCONSIN AVENUE NW",
+     "lat": 38.92,
+     "lon": -77.071,
+     "r": [
+      [
+       5,
+       "2026-11-17",
+       null,
+       1
+      ],
+      [
+       10,
+       "2026-11-17",
+       null,
+       1
+      ],
+      [
+       25,
+       "2026-11-10",
+       null,
+       1
+      ],
+      [
+       38,
+       "2026-11-03",
+       "2026-11-12",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "WISCONSIN AVENUE NW AND CALVERT STREET NW",
+     "lat": 38.923,
+     "lon": -77.073,
+     "r": [
+      [
+       5,
+       "2026-11-17",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "WISCONSIN AVENUE NW AND DAVIS STREET NW",
+     "lat": 38.924,
+     "lon": -77.073,
+     "r": [
+      [
+       7,
+       "2026-11-17",
+       null,
+       1
+      ],
+      [
+       9,
+       "2026-11-17",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "3300 block of NEW MEXICO AVENUE NW",
+     "lat": 38.934,
+     "lon": -77.085,
+     "r": [
+      [
+       8,
+       "2026-11-17",
+       "2026-11-17",
+       0
+      ],
+      [
+       5,
+       "2026-11-13",
+       "2026-11-14",
+       0
+      ],
+      [
+       5,
+       "2026-11-11",
+       "2026-11-12",
+       0
+      ],
+      [
+       5,
+       "2026-11-07",
+       "2026-11-08",
+       0
+      ],
+      [
+       5,
+       "2026-11-06",
+       "2026-11-07",
+       0
+      ],
+      [
+       5,
+       "2026-11-05",
+       "2026-11-06",
+       0
+      ],
+      [
+       5,
+       "2026-10-30",
+       "2026-10-31",
+       0
+      ],
+      [
+       8,
+       "2026-10-23",
+       "2026-10-24",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "WISCONSIN AVENUE NW AND FULTON STREET NW",
+     "lat": 38.926,
+     "lon": -77.073,
+     "r": [
+      [
+       5,
+       "2026-11-17",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "2700 block of 38TH STREET NW",
+     "lat": 38.926,
+     "lon": -77.075,
+     "r": [
+      [
+       11,
+       "2026-11-17",
+       "2026-11-17",
+       0
+      ],
+      [
+       11,
+       "2026-11-16",
+       "2026-11-16",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "2700 block of WISCONSIN AVENUE NW",
+     "lat": 38.926,
+     "lon": -77.074,
+     "r": [
+      [
+       12,
+       "2026-11-17",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "3800 block of DAVIS PLACE NW",
+     "lat": 38.924,
+     "lon": -77.077,
+     "r": [
+      [
+       13,
+       "2026-11-17",
+       null,
+       1
+      ]
+     ]
+    },
     {
      "block": "2000 block of TUNLAW ROAD NW",
      "lat": 38.918,
      "lon": -77.072,
      "r": [
       [
-       0,
+       11,
+       "2026-11-17",
+       "2026-11-17",
+       0
+      ],
+      [
+       11,
        "2026-11-16",
        "2026-11-17",
        0
       ],
       [
-       2,
+       17,
        "2026-11-02",
        "2026-11-13",
        0
       ],
       [
-       2,
+       17,
        "2026-11-01",
        "2026-11-02",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "2200 block of 39TH STREET NW",
+     "lat": 38.92,
+     "lon": -77.077,
+     "r": [
+      [
+       14,
+       "2026-11-17",
+       null,
+       1
+      ],
+      [
+       16,
+       "2026-10-25",
+       "2026-10-30",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "2200 block of HALL PLACE NW",
+     "lat": 38.919,
+     "lon": -77.072,
+     "r": [
+      [
+       15,
+       "2026-11-17",
+       null,
+       1
+      ],
+      [
+       16,
+       "2026-11-13",
+       "2026-11-17",
+       1
+      ],
+      [
+       15,
+       "2026-11-12",
+       null,
+       1
+      ],
+      [
+       15,
+       "2026-11-10",
+       null,
+       1
+      ],
+      [
+       15,
+       "2026-11-02",
+       "2026-11-17",
+       0
+      ],
+      [
+       15,
+       "2026-11-02",
+       "2026-11-10",
+       0
+      ],
+      [
+       15,
+       "2026-11-02",
+       "2026-11-10",
+       0
+      ],
+      [
+       15,
+       "2026-11-02",
+       "2026-11-10",
+       0
+      ],
+      [
+       15,
+       "2026-11-02",
+       "2026-11-10",
+       0
+      ],
+      [
+       15,
+       "2026-11-02",
+       "2026-11-10",
+       0
+      ],
+      [
+       15,
+       "2026-11-02",
+       "2026-11-10",
+       0
+      ],
+      [
+       19,
+       "2026-10-28",
+       "2026-10-28",
        0
       ]
      ]
@@ -8581,19 +9041,19 @@
      "lon": -77.075,
      "r": [
       [
-       1,
+       16,
        "2026-11-16",
        null,
        1
       ],
       [
-       17,
+       15,
        "2026-11-01",
        "2026-11-10",
        0
       ],
       [
-       1,
+       16,
        "2026-10-19",
        "2026-10-26",
        0
@@ -8606,47 +9066,28 @@
      "lon": -77.074,
      "r": [
       [
-       2,
+       17,
        "2026-11-16",
        null,
        1
       ],
       [
-       17,
+       15,
        "2026-11-12",
        null,
        1
       ],
       [
-       8,
+       5,
        "2026-11-10",
        "2026-11-12",
        0
       ],
       [
-       25,
+       35,
        "2026-11-07",
        null,
        1
-      ],
-      [
-       2,
-       "2026-10-18",
-       "2026-10-29",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "2700 block of 38TH STREET NW",
-     "lat": 38.926,
-     "lon": -77.075,
-     "r": [
-      [
-       0,
-       "2026-11-16",
-       "2026-11-16",
-       0
       ]
      ]
     },
@@ -8656,13 +9097,13 @@
      "lon": -77.077,
      "r": [
       [
-       3,
+       18,
        "2026-11-16",
        "2026-11-16",
        0
       ],
       [
-       0,
+       11,
        "2026-11-15",
        null,
        1
@@ -8675,25 +9116,25 @@
      "lon": -77.074,
      "r": [
       [
-       1,
+       16,
        "2026-11-15",
        null,
        1
       ],
       [
-       17,
+       15,
        "2026-11-10",
        null,
        1
       ],
       [
-       8,
+       5,
        "2026-11-09",
        "2026-11-10",
        0
       ],
       [
-       17,
+       15,
        "2026-10-29",
        "2026-11-03",
        0
@@ -8706,7 +9147,7 @@
      "lon": -77.071,
      "r": [
       [
-       1,
+       16,
        "2026-11-15",
        null,
        1
@@ -8719,118 +9160,51 @@
      "lon": -77.073,
      "r": [
       [
-       1,
+       16,
        "2026-11-15",
        null,
        1
       ],
       [
-       1,
+       16,
        "2026-11-11",
        null,
        1
       ],
       [
-       1,
+       16,
        "2026-11-06",
        "2026-11-14",
        0
       ],
       [
-       1,
+       16,
        "2026-11-06",
        "2026-11-14",
        0
       ],
       [
-       5,
+       19,
        "2026-10-29",
        "2026-10-29",
        0
       ],
       [
-       2,
+       17,
        "2026-10-23",
        "2026-11-13",
        0
       ],
       [
-       33,
+       42,
        "2026-10-22",
        "2026-11-03",
        0
       ],
       [
-       1,
+       16,
        "2026-10-21",
        "2026-10-26",
-       0
-      ],
-      [
-       17,
-       "2026-10-18",
-       "2026-10-27",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "2300 block of WISCONSIN AVENUE NW",
-     "lat": 38.921,
-     "lon": -77.072,
-     "r": [
-      [
-       4,
-       "2026-11-15",
-       "2026-11-16",
-       0
-      ],
-      [
-       14,
-       "2026-11-13",
-       null,
-       1
-      ],
-      [
-       15,
-       "2026-11-13",
-       "2026-11-16",
-       1
-      ],
-      [
-       15,
-       "2026-11-10",
-       "2026-11-16",
-       0
-      ],
-      [
-       15,
-       "2026-11-10",
-       "2026-11-16",
-       0
-      ],
-      [
-       15,
-       "2026-11-10",
-       "2026-11-10",
-       1
-      ],
-      [
-       27,
-       "2026-11-05",
-       "2026-11-05",
-       0
-      ],
-      [
-       28,
-       "2026-10-29",
-       "2026-10-30",
-       0
-      ],
-      [
-       27,
-       "2026-10-22",
-       "2026-10-22",
        0
       ]
      ]
@@ -8841,7 +9215,7 @@
      "lon": -77.079,
      "r": [
       [
-       5,
+       19,
        "2026-11-15",
        "2026-11-15",
        0
@@ -8854,25 +9228,25 @@
      "lon": -77.08,
      "r": [
       [
-       6,
+       20,
        "2026-11-14",
        "2026-11-14",
        0
       ],
       [
-       19,
+       29,
        "2026-11-06",
        null,
        1
       ],
       [
-       36,
+       44,
        "2026-10-29",
        "2026-11-06",
        0
       ],
       [
-       19,
+       29,
        "2026-10-28",
        "2026-11-06",
        0
@@ -8885,7 +9259,7 @@
      "lon": -77.073,
      "r": [
       [
-       1,
+       16,
        "2026-11-14",
        null,
        1
@@ -8898,7 +9272,7 @@
      "lon": -77.075,
      "r": [
       [
-       1,
+       16,
        "2026-11-14",
        null,
        1
@@ -8911,19 +9285,19 @@
      "lon": -77.082,
      "r": [
       [
-       7,
+       21,
        "2026-11-13",
        "2026-11-13",
        0
       ],
       [
-       28,
+       8,
        "2026-11-04",
        "2026-11-05",
        0
       ],
       [
-       5,
+       19,
        "2026-10-24",
        "2026-10-24",
        0
@@ -8936,76 +9310,27 @@
      "lon": -77.078,
      "r": [
       [
-       1,
+       16,
        "2026-11-13",
        null,
        1
       ],
       [
-       1,
+       16,
        "2026-10-27",
        "2026-10-30",
        0
       ],
       [
-       34,
+       1,
        "2026-10-27",
        null,
        1
       ],
       [
-       22,
+       32,
        "2026-10-26",
        "2026-11-13",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "3300 block of NEW MEXICO AVENUE NW",
-     "lat": 38.934,
-     "lon": -77.085,
-     "r": [
-      [
-       8,
-       "2026-11-13",
-       "2026-11-14",
-       0
-      ],
-      [
-       8,
-       "2026-11-11",
-       "2026-11-12",
-       0
-      ],
-      [
-       8,
-       "2026-11-07",
-       "2026-11-08",
-       0
-      ],
-      [
-       8,
-       "2026-11-06",
-       "2026-11-07",
-       0
-      ],
-      [
-       8,
-       "2026-11-05",
-       "2026-11-06",
-       0
-      ],
-      [
-       8,
-       "2026-10-30",
-       "2026-10-31",
-       0
-      ],
-      [
-       28,
-       "2026-10-23",
-       "2026-10-24",
        0
       ]
      ]
@@ -9016,31 +9341,31 @@
      "lon": -77.083,
      "r": [
       [
-       8,
+       5,
        "2026-11-13",
        "2026-11-14",
        0
       ],
       [
-       8,
+       5,
        "2026-11-07",
        "2026-11-08",
        0
       ],
       [
-       8,
+       5,
        "2026-11-06",
        "2026-11-07",
        0
       ],
       [
-       8,
+       5,
        "2026-11-05",
        "2026-11-06",
        0
       ],
       [
-       5,
+       19,
        "2026-10-23",
        "2026-10-23",
        0
@@ -9053,49 +9378,49 @@
      "lon": -77.078,
      "r": [
       [
-       2,
+       17,
        "2026-11-13",
        "2026-11-16",
        0
       ],
       [
-       9,
+       14,
        "2026-11-13",
        null,
        1
       ],
       [
-       17,
+       15,
        "2026-11-09",
        null,
        1
       ],
       [
-       1,
+       16,
        "2026-11-06",
        "2026-11-14",
        0
       ],
       [
-       2,
+       17,
        "2026-10-23",
        "2026-11-13",
        0
       ],
       [
-       21,
+       31,
        "2026-10-21",
        "2026-10-28",
        0
       ],
       [
-       2,
+       17,
        "2026-10-21",
        "2026-10-22",
        0
       ],
       [
-       2,
+       17,
        "2026-10-21",
        "2026-10-23",
        0
@@ -9108,31 +9433,31 @@
      "lon": -77.077,
      "r": [
       [
-       10,
+       12,
        "2026-11-13",
        "2026-11-16",
        0
       ],
       [
-       10,
+       12,
        "2026-11-09",
        "2026-11-10",
        0
       ],
       [
-       1,
+       16,
        "2026-11-06",
        "2026-11-14",
        0
       ],
       [
-       23,
+       33,
        "2026-10-29",
        "2026-10-30",
        0
       ],
       [
-       1,
+       16,
        "2026-10-23",
        "2026-10-30",
        0
@@ -9145,25 +9470,25 @@
      "lon": -77.077,
      "r": [
       [
-       1,
+       16,
        "2026-11-13",
        null,
        1
       ],
       [
-       12,
+       23,
        "2026-11-13",
        "2026-11-14",
        0
       ],
       [
-       17,
+       15,
        "2026-11-09",
        null,
        1
       ],
       [
-       1,
+       16,
        "2026-11-04",
        "2026-11-14",
        0
@@ -9176,7 +9501,7 @@
      "lon": -77.082,
      "r": [
       [
-       11,
+       22,
        "2026-11-13",
        "2026-11-14",
        0
@@ -9189,7 +9514,7 @@
      "lon": -77.079,
      "r": [
       [
-       13,
+       24,
        "2026-11-13",
        null,
        1
@@ -9202,88 +9527,15 @@
      "lon": -77.086,
      "r": [
       [
-       8,
+       5,
        "2026-11-13",
        "2026-11-15",
        0
       ],
       [
-       8,
+       5,
        "2026-11-11",
        "2026-11-12",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "2200 block of HALL PLACE NW",
-     "lat": 38.919,
-     "lon": -77.072,
-     "r": [
-      [
-       1,
-       "2026-11-13",
-       null,
-       1
-      ],
-      [
-       17,
-       "2026-11-12",
-       null,
-       1
-      ],
-      [
-       17,
-       "2026-11-10",
-       null,
-       1
-      ],
-      [
-       17,
-       "2026-11-02",
-       null,
-       1
-      ],
-      [
-       17,
-       "2026-11-02",
-       "2026-11-10",
-       0
-      ],
-      [
-       17,
-       "2026-11-02",
-       "2026-11-10",
-       0
-      ],
-      [
-       17,
-       "2026-11-02",
-       "2026-11-10",
-       0
-      ],
-      [
-       17,
-       "2026-11-02",
-       "2026-11-10",
-       0
-      ],
-      [
-       17,
-       "2026-11-02",
-       "2026-11-10",
-       0
-      ],
-      [
-       17,
-       "2026-11-02",
-       "2026-11-10",
-       0
-      ],
-      [
-       5,
-       "2026-10-28",
-       "2026-10-28",
        0
       ]
      ]
@@ -9294,10 +9546,10 @@
      "lon": -77.073,
      "r": [
       [
-       15,
+       26,
        "2026-11-12",
-       null,
-       1
+       "2026-11-17",
+       0
       ]
      ]
     },
@@ -9307,7 +9559,7 @@
      "lon": -77.076,
      "r": [
       [
-       9,
+       14,
        "2026-11-12",
        null,
        1
@@ -9320,7 +9572,7 @@
      "lon": -77.084,
      "r": [
       [
-       16,
+       27,
        "2026-11-12",
        "2026-11-12",
        0
@@ -9333,7 +9585,7 @@
      "lon": -77.071,
      "r": [
       [
-       15,
+       26,
        "2026-11-12",
        "2026-11-16",
        0
@@ -9346,43 +9598,43 @@
      "lon": -77.08,
      "r": [
       [
-       5,
+       19,
        "2026-11-12",
        "2026-11-12",
        0
       ],
       [
-       5,
+       19,
        "2026-10-30",
        "2026-10-30",
        0
       ],
       [
-       5,
+       19,
        "2026-10-28",
        "2026-10-28",
        0
       ],
       [
-       39,
+       46,
        "2026-10-26",
        null,
        1
       ],
       [
-       5,
+       19,
        "2026-10-26",
        "2026-10-26",
        0
       ],
       [
-       5,
+       19,
        "2026-10-20",
        "2026-10-20",
        0
       ],
       [
-       4,
+       10,
        "2026-10-19",
        "2026-10-19",
        0
@@ -9395,13 +9647,13 @@
      "lon": -77.074,
      "r": [
       [
-       17,
+       15,
        "2026-11-12",
        null,
        1
       ],
       [
-       12,
+       23,
        "2026-11-05",
        "2026-11-10",
        0
@@ -9414,13 +9666,13 @@
      "lon": -77.074,
      "r": [
       [
-       1,
+       16,
        "2026-11-12",
        null,
        1
       ],
       [
-       17,
+       15,
        "2026-11-12",
        null,
        1
@@ -9433,37 +9685,37 @@
      "lon": -77.078,
      "r": [
       [
-       1,
+       16,
        "2026-11-11",
        null,
        1
       ],
       [
-       23,
+       33,
        "2026-11-01",
        "2026-11-06",
        0
       ],
       [
-       9,
+       14,
        "2026-10-29",
        null,
        1
       ],
       [
-       1,
+       16,
        "2026-10-23",
        "2026-10-30",
        0
       ],
       [
-       19,
+       29,
        "2026-10-23",
        "2026-10-27",
        0
       ],
       [
-       1,
+       16,
        "2026-10-21",
        "2026-10-26",
        0
@@ -9476,13 +9728,13 @@
      "lon": -77.078,
      "r": [
       [
-       17,
+       15,
        "2026-11-11",
        null,
        1
       ],
       [
-       5,
+       19,
        "2026-11-06",
        "2026-11-06",
        0
@@ -9495,7 +9747,7 @@
      "lon": -77.083,
      "r": [
       [
-       5,
+       19,
        "2026-11-11",
        "2026-11-12",
        0
@@ -9508,25 +9760,25 @@
      "lon": -77.072,
      "r": [
       [
-       16,
+       27,
        "2026-11-11",
        "2026-11-12",
        0
       ],
       [
-       5,
+       19,
        "2026-11-09",
        "2026-11-09",
        0
       ],
       [
-       1,
+       16,
        "2026-11-04",
        "2026-11-14",
        0
       ],
       [
-       17,
+       15,
        "2026-11-02",
        "2026-11-10",
        0
@@ -9539,27 +9791,21 @@
      "lon": -77.077,
      "r": [
       [
-       17,
+       15,
        "2026-11-11",
        null,
        1
       ],
       [
-       16,
+       27,
        "2026-11-01",
        "2026-11-02",
        0
       ],
       [
-       17,
+       15,
        "2026-10-30",
        "2026-11-10",
-       0
-      ],
-      [
-       17,
-       "2026-10-18",
-       "2026-10-27",
        0
       ]
      ]
@@ -9570,7 +9816,7 @@
      "lon": -77.07,
      "r": [
       [
-       18,
+       28,
        "2026-11-11",
        null,
        1
@@ -9583,25 +9829,25 @@
      "lon": -77.083,
      "r": [
       [
-       8,
+       5,
        "2026-11-10",
        "2026-11-12",
        0
       ],
       [
-       8,
+       5,
        "2026-11-05",
        "2026-11-06",
        0
       ],
       [
-       19,
+       29,
        "2026-11-03",
        "2026-11-10",
        0
       ],
       [
-       8,
+       5,
        "2026-11-02",
        "2026-11-03",
        0
@@ -9614,7 +9860,7 @@
      "lon": -77.079,
      "r": [
       [
-       19,
+       29,
        "2026-11-10",
        null,
        1
@@ -9627,34 +9873,15 @@
      "lon": -77.083,
      "r": [
       [
-       8,
+       5,
        "2026-11-10",
        "2026-11-12",
        0
       ],
       [
-       8,
+       5,
        "2026-11-01",
        "2026-11-03",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "2200 block of WISCONSIN AVENUE NW",
-     "lat": 38.92,
-     "lon": -77.071,
-     "r": [
-      [
-       14,
-       "2026-11-10",
-       null,
-       1
-      ],
-      [
-       29,
-       "2026-11-03",
-       "2026-11-12",
        0
       ]
      ]
@@ -9665,7 +9892,7 @@
      "lon": -77.076,
      "r": [
       [
-       20,
+       30,
        "2026-11-10",
        "2026-11-10",
        0
@@ -9678,7 +9905,7 @@
      "lon": -77.077,
      "r": [
       [
-       8,
+       5,
        "2026-11-10",
        "2026-11-12",
        0
@@ -9691,7 +9918,7 @@
      "lon": -77.072,
      "r": [
       [
-       21,
+       31,
        "2026-11-10",
        "2026-11-10",
        0
@@ -9704,7 +9931,7 @@
      "lon": -77.074,
      "r": [
       [
-       1,
+       16,
        "2026-11-09",
        "2026-11-14",
        0
@@ -9717,7 +9944,7 @@
      "lon": -77.078,
      "r": [
       [
-       17,
+       15,
        "2026-11-09",
        null,
        1
@@ -9730,31 +9957,31 @@
      "lon": -77.076,
      "r": [
       [
-       21,
+       31,
        "2026-11-09",
        "2026-11-13",
        0
       ],
       [
-       1,
+       16,
        "2026-11-08",
        "2026-11-14",
        0
       ],
       [
-       2,
+       17,
        "2026-10-30",
        "2026-11-16",
        0
       ],
       [
-       9,
+       14,
        "2026-10-29",
        null,
        1
       ],
       [
-       2,
+       17,
        "2026-10-29",
        "2026-10-30",
        0
@@ -9767,49 +9994,49 @@
      "lon": -77.076,
      "r": [
       [
-       22,
+       32,
        "2026-11-09",
        null,
        1
       ],
       [
-       21,
+       31,
        "2026-11-09",
        "2026-11-13",
        0
       ],
       [
-       35,
+       43,
        "2026-10-30",
        "2026-11-09",
        0
       ],
       [
-       35,
+       43,
        "2026-10-30",
        "2026-11-09",
        0
       ],
       [
-       35,
+       43,
        "2026-10-30",
        "2026-11-06",
        0
       ],
       [
-       35,
+       43,
        "2026-10-30",
        "2026-11-06",
        0
       ],
       [
-       5,
+       19,
        "2026-10-20",
        "2026-10-20",
        0
       ],
       [
-       5,
+       19,
        "2026-10-19",
        "2026-10-20",
        0
@@ -9822,25 +10049,25 @@
      "lon": -77.085,
      "r": [
       [
-       8,
+       5,
        "2026-11-09",
        "2026-11-10",
        0
       ],
       [
-       8,
+       5,
        "2026-11-07",
        "2026-11-08",
        0
       ],
       [
-       8,
+       5,
        "2026-11-06",
        "2026-11-07",
        0
       ],
       [
-       8,
+       5,
        "2026-10-30",
        "2026-10-31",
        0
@@ -9853,25 +10080,25 @@
      "lon": -77.075,
      "r": [
       [
-       1,
+       16,
        "2026-11-09",
        "2026-11-14",
        0
       ],
       [
-       31,
+       40,
        "2026-10-22",
        "2026-10-23",
        0
       ],
       [
-       1,
+       16,
        "2026-10-20",
        "2026-10-26",
        0
       ],
       [
-       9,
+       14,
        "2026-10-20",
        "2026-10-29",
        0
@@ -9884,7 +10111,7 @@
      "lon": -77.08,
      "r": [
       [
-       23,
+       33,
        "2026-11-09",
        "2026-11-13",
        0
@@ -9897,7 +10124,7 @@
      "lon": -77.074,
      "r": [
       [
-       8,
+       5,
        "2026-11-08",
        "2026-11-10",
        0
@@ -9910,25 +10137,25 @@
      "lon": -77.074,
      "r": [
       [
-       21,
+       31,
        "2026-11-08",
        "2026-11-13",
        0
       ],
       [
-       21,
+       31,
        "2026-11-01",
        "2026-11-06",
        0
       ],
       [
-       1,
+       16,
        "2026-11-01",
        "2026-11-05",
        0
       ],
       [
-       17,
+       15,
        "2026-10-25",
        "2026-11-03",
        0
@@ -9941,7 +10168,7 @@
      "lon": -77.077,
      "r": [
       [
-       24,
+       34,
        "2026-11-08",
        null,
        1
@@ -9954,7 +10181,7 @@
      "lon": -77.085,
      "r": [
       [
-       8,
+       5,
        "2026-11-06",
        "2026-11-08",
        0
@@ -9967,7 +10194,7 @@
      "lon": -77.083,
      "r": [
       [
-       26,
+       36,
        "2026-11-06",
        null,
        1
@@ -9980,13 +10207,13 @@
      "lon": -77.074,
      "r": [
       [
-       21,
+       31,
        "2026-11-06",
        "2026-11-09",
        0
       ],
       [
-       21,
+       31,
        "2026-10-29",
        "2026-10-30",
        0
@@ -9999,7 +10226,7 @@
      "lon": -77.081,
      "r": [
       [
-       10,
+       12,
        "2026-11-06",
        "2026-11-10",
        0
@@ -10012,19 +10239,19 @@
      "lon": -77.08,
      "r": [
       [
-       19,
+       29,
        "2026-11-06",
        "2026-11-09",
        0
       ],
       [
-       8,
+       5,
        "2026-11-01",
        "2026-11-03",
        0
       ],
       [
-       36,
+       44,
        "2026-10-29",
        "2026-11-03",
        0
@@ -10037,37 +10264,37 @@
      "lon": -77.071,
      "r": [
       [
-       10,
+       12,
        "2026-11-05",
        "2026-11-10",
        0
       ],
       [
-       21,
+       31,
        "2026-10-31",
        "2026-11-06",
        0
       ],
       [
-       10,
+       12,
        "2026-10-25",
        "2026-10-30",
        1
       ],
       [
-       21,
+       31,
        "2026-10-25",
        "2026-10-26",
        0
       ],
       [
-       10,
+       12,
        "2026-10-22",
        "2026-10-30",
        0
       ],
       [
-       15,
+       26,
        "2026-10-22",
        "2026-11-06",
        0
@@ -10080,19 +10307,19 @@
      "lon": -77.073,
      "r": [
       [
-       14,
+       25,
        "2026-11-05",
        null,
        1
       ],
       [
-       1,
+       16,
        "2026-11-02",
        "2026-11-05",
        0
       ],
       [
-       17,
+       15,
        "2026-10-31",
        "2026-11-10",
        0
@@ -10105,15 +10332,9 @@
      "lon": -77.073,
      "r": [
       [
-       22,
+       32,
        "2026-11-05",
-       null,
-       1
-      ],
-      [
-       1,
-       "2026-10-18",
-       "2026-10-26",
+       "2026-11-17",
        0
       ]
      ]
@@ -10124,13 +10345,13 @@
      "lon": -77.076,
      "r": [
       [
-       1,
+       16,
        "2026-11-05",
        "2026-11-14",
        0
       ],
       [
-       19,
+       29,
        "2026-11-02",
        "2026-11-05",
        0
@@ -10143,37 +10364,37 @@
      "lon": -77.075,
      "r": [
       [
-       17,
+       15,
        "2026-11-05",
+       "2026-11-17",
+       0
+      ],
+      [
+       42,
+       "2026-11-01",
        null,
        1
       ],
       [
-       33,
+       1,
        "2026-11-01",
        null,
        1
       ],
       [
        34,
-       "2026-11-01",
-       null,
-       1
-      ],
-      [
-       24,
        "2026-10-31",
        null,
        1
       ],
       [
-       21,
+       31,
        "2026-10-27",
        "2026-10-27",
        0
       ],
       [
-       21,
+       31,
        "2026-10-26",
        "2026-10-29",
        0
@@ -10186,25 +10407,25 @@
      "lon": -77.078,
      "r": [
       [
-       5,
+       19,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       19,
+       29,
        "2026-10-26",
        "2026-10-29",
        0
       ],
       [
-       7,
+       21,
        "2026-10-23",
        "2026-10-23",
        0
       ],
       [
-       35,
+       43,
        "2026-10-19",
        "2026-10-26",
        0
@@ -10217,7 +10438,7 @@
      "lon": -77.079,
      "r": [
       [
-       5,
+       19,
        "2026-11-04",
        "2026-11-04",
        0
@@ -10230,7 +10451,7 @@
      "lon": -77.077,
      "r": [
       [
-       1,
+       16,
        "2026-11-04",
        "2026-11-14",
        0
@@ -10243,7 +10464,7 @@
      "lon": -77.08,
      "r": [
       [
-       21,
+       31,
        "2026-11-04",
        "2026-11-06",
        0
@@ -10256,7 +10477,7 @@
      "lon": -77.081,
      "r": [
       [
-       19,
+       29,
        "2026-11-03",
        "2026-11-13",
        0
@@ -10269,13 +10490,13 @@
      "lon": -77.081,
      "r": [
       [
-       30,
+       39,
        "2026-11-03",
        "2026-11-03",
        0
       ],
       [
-       6,
+       20,
        "2026-10-20",
        "2026-10-20",
        0
@@ -10288,7 +10509,7 @@
      "lon": -77.08,
      "r": [
       [
-       8,
+       5,
        "2026-11-02",
        "2026-11-03",
        0
@@ -10301,19 +10522,19 @@
      "lon": -77.079,
      "r": [
       [
-       17,
+       15,
        "2026-11-02",
-       null,
-       1
+       "2026-11-17",
+       0
       ],
       [
-       36,
+       44,
        "2026-10-23",
        "2026-11-03",
        0
       ],
       [
-       17,
+       15,
        "2026-10-19",
        "2026-10-27",
        0
@@ -10326,25 +10547,25 @@
      "lon": -77.077,
      "r": [
       [
-       1,
+       16,
        "2026-11-02",
        "2026-11-05",
        0
       ],
       [
-       1,
+       16,
        "2026-11-02",
        "2026-11-05",
        0
       ],
       [
-       1,
+       16,
        "2026-11-02",
        "2026-11-05",
        0
       ],
       [
-       1,
+       16,
        "2026-11-02",
        "2026-11-05",
        0
@@ -10357,31 +10578,31 @@
      "lon": -77.073,
      "r": [
       [
-       31,
+       40,
        "2026-11-02",
        "2026-11-03",
        0
       ],
       [
-       1,
+       16,
        "2026-11-02",
        "2026-11-05",
        0
       ],
       [
-       17,
+       15,
        "2026-11-02",
        "2026-11-10",
        0
       ],
       [
-       12,
+       23,
        "2026-10-22",
        "2026-10-23",
        0
       ],
       [
-       1,
+       16,
        "2026-10-22",
        "2026-10-26",
        0
@@ -10394,7 +10615,7 @@
      "lon": -77.073,
      "r": [
       [
-       17,
+       15,
        "2026-11-02",
        "2026-11-10",
        0
@@ -10407,7 +10628,7 @@
      "lon": -77.076,
      "r": [
       [
-       17,
+       15,
        "2026-11-02",
        "2026-11-10",
        0
@@ -10420,13 +10641,13 @@
      "lon": -77.074,
      "r": [
       [
-       19,
+       29,
        "2026-11-02",
        "2026-11-03",
        0
       ],
       [
-       19,
+       29,
        "2026-10-30",
        "2026-11-06",
        0
@@ -10439,19 +10660,19 @@
      "lon": -77.074,
      "r": [
       [
-       1,
+       16,
        "2026-11-02",
        "2026-11-05",
        0
       ],
       [
-       33,
+       42,
        "2026-10-21",
        "2026-11-03",
        0
       ],
       [
-       1,
+       16,
        "2026-10-20",
        "2026-10-26",
        0
@@ -10464,7 +10685,7 @@
      "lon": -77.076,
      "r": [
       [
-       1,
+       16,
        "2026-11-01",
        "2026-11-05",
        0
@@ -10477,13 +10698,13 @@
      "lon": -77.073,
      "r": [
       [
-       32,
+       41,
        "2026-11-01",
        "2026-11-10",
        0
       ],
       [
-       42,
+       48,
        "2026-10-21",
        "2026-10-21",
        0
@@ -10496,19 +10717,19 @@
      "lon": -77.075,
      "r": [
       [
-       1,
+       16,
        "2026-11-01",
        "2026-11-05",
        0
       ],
       [
-       1,
+       16,
        "2026-10-31",
        "2026-11-05",
        0
       ],
       [
-       34,
+       1,
        "2026-10-26",
        null,
        1
@@ -10521,7 +10742,7 @@
      "lon": -77.079,
      "r": [
       [
-       21,
+       31,
        "2026-10-30",
        "2026-10-30",
        0
@@ -10534,10 +10755,10 @@
      "lon": -77.076,
      "r": [
       [
-       22,
+       32,
        "2026-10-30",
-       null,
-       1
+       "2026-11-17",
+       0
       ]
      ]
     },
@@ -10547,15 +10768,9 @@
      "lon": -77.078,
      "r": [
       [
-       19,
+       29,
        "2026-10-30",
        "2026-11-02",
-       0
-      ],
-      [
-       23,
-       "2026-10-18",
-       "2026-10-19",
        0
       ]
      ]
@@ -10566,19 +10781,19 @@
      "lon": -77.075,
      "r": [
       [
-       17,
+       15,
        "2026-10-30",
        "2026-11-03",
        0
       ],
       [
-       1,
+       16,
        "2026-10-30",
        "2026-11-05",
        0
       ],
       [
-       1,
+       16,
        "2026-10-20",
        "2026-10-26",
        0
@@ -10591,7 +10806,7 @@
      "lon": -77.085,
      "r": [
       [
-       14,
+       25,
        "2026-10-29",
        null,
        1
@@ -10604,13 +10819,13 @@
      "lon": -77.08,
      "r": [
       [
-       5,
+       19,
        "2026-10-29",
        "2026-10-29",
        0
       ],
       [
-       43,
+       2,
        "2026-10-19",
        null,
        1
@@ -10623,13 +10838,13 @@
      "lon": -77.069,
      "r": [
       [
-       37,
+       13,
        "2026-10-28",
        "2026-11-02",
        0
       ],
       [
-       35,
+       43,
        "2026-10-23",
        "2026-11-03",
        0
@@ -10642,7 +10857,7 @@
      "lon": -77.077,
      "r": [
       [
-       1,
+       16,
        "2026-10-28",
        "2026-11-05",
        0
@@ -10655,13 +10870,13 @@
      "lon": -77.079,
      "r": [
       [
-       22,
+       32,
        "2026-10-27",
        null,
        1
       ],
       [
-       4,
+       10,
        "2026-10-22",
        "2026-10-23",
        0
@@ -10674,19 +10889,19 @@
      "lon": -77.076,
      "r": [
       [
-       24,
+       34,
        "2026-10-27",
        null,
        1
       ],
       [
-       21,
+       31,
        "2026-10-19",
        "2026-10-27",
        0
       ],
       [
-       2,
+       17,
        "2026-10-19",
        "2026-10-19",
        0
@@ -10699,7 +10914,7 @@
      "lon": -77.079,
      "r": [
       [
-       9,
+       14,
        "2026-10-27",
        "2026-11-06",
        0
@@ -10712,7 +10927,7 @@
      "lon": -77.077,
      "r": [
       [
-       38,
+       45,
        "2026-10-26",
        "2026-10-27",
        0
@@ -10725,13 +10940,13 @@
      "lon": -77.076,
      "r": [
       [
-       40,
+       0,
        "2026-10-25",
        "2026-10-25",
        0
       ],
       [
-       1,
+       16,
        "2026-10-20",
        "2026-10-26",
        0
@@ -10744,22 +10959,9 @@
      "lon": -77.072,
      "r": [
       [
-       37,
+       13,
        "2026-10-25",
        "2026-10-26",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "2200 block of 39TH STREET NW",
-     "lat": 38.92,
-     "lon": -77.077,
-     "r": [
-      [
-       1,
-       "2026-10-25",
-       "2026-10-30",
        0
       ]
      ]
@@ -10770,7 +10972,7 @@
      "lon": -77.081,
      "r": [
       [
-       10,
+       12,
        "2026-10-24",
        "2026-10-30",
        0
@@ -10783,7 +10985,7 @@
      "lon": -77.076,
      "r": [
       [
-       17,
+       15,
        "2026-10-24",
        "2026-10-27",
        0
@@ -10796,7 +10998,7 @@
      "lon": -77.076,
      "r": [
       [
-       5,
+       19,
        "2026-10-24",
        "2026-10-24",
        0
@@ -10809,7 +11011,7 @@
      "lon": -77.073,
      "r": [
       [
-       14,
+       25,
        "2026-10-24",
        null,
        1
@@ -10822,7 +11024,7 @@
      "lon": -77.071,
      "r": [
       [
-       41,
+       47,
        "2026-10-23",
        null,
        1
@@ -10835,7 +11037,7 @@
      "lon": -77.074,
      "r": [
       [
-       1,
+       16,
        "2026-10-23",
        "2026-10-30",
        0
@@ -10848,20 +11050,7 @@
      "lon": -77.075,
      "r": [
       [
-       1,
-       "2026-10-22",
-       "2026-10-26",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "2100 block of HUIDEKOPER PLACE NW",
-     "lat": 38.918,
-     "lon": -77.074,
-     "r": [
-      [
-       1,
+       16,
        "2026-10-22",
        "2026-10-26",
        0
@@ -10874,7 +11063,7 @@
      "lon": -77.072,
      "r": [
       [
-       21,
+       31,
        "2026-10-20",
        "2026-10-29",
        0
@@ -10887,7 +11076,7 @@
      "lon": -77.082,
      "r": [
       [
-       3,
+       18,
        "2026-10-20",
        "2026-10-21",
        0
@@ -10900,13 +11089,13 @@
      "lon": -77.074,
      "r": [
       [
-       34,
+       1,
        "2026-10-19",
        null,
        1
       ],
       [
-       21,
+       31,
        "2026-10-19",
        "2026-10-20",
        0
@@ -10919,13 +11108,13 @@
      "lon": -77.08,
      "r": [
       [
-       36,
+       44,
        "2026-10-19",
        "2026-10-19",
        0
       ],
       [
-       21,
+       31,
        "2026-10-19",
        "2026-10-19",
        0
@@ -10950,14 +11139,14 @@
     "previous": 4
    },
    {
-    "offense": "MOTOR VEHICLE THEFT",
-    "count": 1,
-    "previous": 0
-   },
-   {
     "offense": "BURGLARY",
     "count": 1,
     "previous": 1
+   },
+   {
+    "offense": "MOTOR VEHICLE THEFT",
+    "count": 1,
+    "previous": 0
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -11008,7 +11197,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-17T09:20:06Z",
+  "generated_at": "2026-11-18T09:19:45Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -11023,7 +11212,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Glover Park through OTR assessment neighborhoods Glover Park and Observatory Circle and sub-area Wesley Heights B in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Glover Park boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-17): 85% of the 5,031 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Glover Park through OTR assessment neighborhoods Glover Park and Observatory Circle and sub-area Wesley Heights B in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Glover Park boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-18): 85% of the 5,031 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -11044,7 +11233,7 @@
    "area_parcels": 5031,
    "area_share_inside": 0.846,
    "boundary_share_in_area": 1.0,
-   "measured": "2026-11-17"
+   "measured": "2026-11-18"
   },
   "primary": "house",
   "house": {
@@ -11054,8 +11243,8 @@
    "count_prev_12mo": 58
   },
   "condo": {
-   "median_12mo": 410000,
-   "count_12mo": 99,
+   "median_12mo": 415000,
+   "count_12mo": 100,
    "median_prev_12mo": 387500,
    "count_prev_12mo": 92
   },
@@ -11067,7 +11256,7 @@
   },
   "above_assessment_12mo": {
    "n": 85,
-   "of": 146
+   "of": 147
   },
   "by_month": [
    {
@@ -11150,6 +11339,15 @@
     "beds": null,
     "sqft": null,
     "assessed": 1014340
+   },
+   {
+    "address": "2801 New Mexico Ave NW # 1016",
+    "date": "2026-11-03",
+    "price": 645000,
+    "kind": "condo",
+    "beds": null,
+    "sqft": null,
+    "assessed": 694580
    },
    {
     "address": "3101 New Mexico Ave NW # 1104",
@@ -11303,20 +11501,11 @@
     "beds": null,
     "sqft": null,
     "assessed": 406210
-   },
-   {
-    "address": "2801 New Mexico Ave NW # 806",
-    "date": "2026-09-18",
-    "price": 522500,
-    "kind": "condo",
-    "beds": null,
-    "sqft": null,
-    "assessed": 574990
    }
   ]
  },
  "streets": {
-  "generated_at": "2026-11-17T09:20:06Z",
+  "generated_at": "2026-11-18T09:19:45Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -11340,7 +11529,7 @@
    "starting_next_7d": 5,
    "reserved_ft": 2156,
    "long_running_90d": 8,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-17: newest permit issued 2026-11-17, newest record update 2026-11-17, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-18: newest permit issued 2026-11-18, newest record update 2026-11-18, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -11486,15 +11675,15 @@
   "service": [
    {
     "type": "Bulk Collection",
-    "median_days": 8.01,
+    "median_days": 8.02,
     "city_median_days": 6.91,
-    "closed_n": 702
+    "closed_n": 701
    },
    {
     "type": "Scheduled Yard Waste",
-    "median_days": 8.03,
-    "city_median_days": 9.42,
-    "closed_n": 342
+    "median_days": 8.04,
+    "city_median_days": 9.43,
+    "closed_n": 345
    },
    {
     "type": "Parking Enforcement",
@@ -11523,7 +11712,7 @@
    {
     "type": "Rodent Inspection and Treatment",
     "median_days": 2.21,
-    "city_median_days": 1.73,
+    "city_median_days": 1.74,
     "closed_n": 93
    },
    {
@@ -11536,7 +11725,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-17T09:20:06Z",
+  "generated_at": "2026-11-18T09:19:45Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -11666,7 +11855,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-17T09:20:06Z",
+  "generated_at": "2026-11-18T09:19:45Z",
   "archive_days": 180,
   "sources": [
    {
@@ -11730,9 +11919,9 @@
    {
     "name": "Glover Park Citizens' Association",
     "url": "https://gpcadc.org/",
-    "state": "ok",
-    "matched": 3,
-    "fetched": 1
+    "state": "error: HTTPError",
+    "matched": 0,
+    "failed": 1
    },
    {
     "name": "WTOP",
@@ -11744,9 +11933,9 @@
    {
     "name": "The DC Line",
     "url": "https://thedcline.org/",
-    "state": "ok",
+    "state": "error: HTTPError",
     "matched": 0,
-    "fetched": 1
+    "failed": 1
    },
    {
     "name": "PoPville",
@@ -11948,8 +12137,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-17T09:20:06Z",
-  "today": "2026-11-17",
+  "generated_at": "2026-11-18T09:19:45Z",
+  "today": "2026-11-18",
   "days_ahead": 30,
   "sources": [
    {
@@ -12003,7 +12192,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-17T09:20:06Z",
+  "generated_at": "2026-11-18T09:19:45Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -26520,7 +26709,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-17T09:20:06Z",
+  "generated_at": "2026-11-18T09:19:45Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

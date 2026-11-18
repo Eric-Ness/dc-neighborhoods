@@ -1,7 +1,7 @@
 {
  "slug": "noma",
  "name": "NoMa",
- "generated_at": "2026-11-17T09:20:06Z",
+ "generated_at": "2026-11-18T09:19:45Z",
  "boundary": {
   "source": "NoMa Business Improvement District boundary (Open Data DC). DC has no planning area for NoMa.",
   "rings": [
@@ -465,19 +465,6 @@
    "smd": "6E06"
   },
   {
-   "id": "HO2700279",
-   "issued": "2026-11-11T05:00:00Z",
-   "group": "Home businesses",
-   "type": "HOME OCCUPATION",
-   "subtype": "NA",
-   "address": "130 M ST NE 20002",
-   "work": "",
-   "zoning": "D-5",
-   "lat": 38.9059,
-   "lon": -77.00497,
-   "smd": "6E06"
-  },
-  {
    "id": "E2701498",
    "issued": "2026-11-11T05:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -489,6 +476,19 @@
    "lat": 38.90755,
    "lon": -77.00226,
    "smd": "6C07"
+  },
+  {
+   "id": "HO2700279",
+   "issued": "2026-11-11T05:00:00Z",
+   "group": "Home businesses",
+   "type": "HOME OCCUPATION",
+   "subtype": "NA",
+   "address": "130 M ST NE 20002",
+   "work": "",
+   "zoning": "D-5",
+   "lat": 38.9059,
+   "lon": -77.00497,
+   "smd": "6E06"
   },
   {
    "id": "M2700546",
@@ -530,19 +530,6 @@
    "smd": "6E07"
   },
   {
-   "id": "E2701255",
-   "issued": "2026-11-05T05:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "1200 1ST ST NE 20002",
-   "work": "",
-   "zoning": "D-5",
-   "lat": 38.90608,
-   "lon": -77.0063,
-   "smd": "6E05"
-  },
-  {
    "id": "HO2700246",
    "issued": "2026-11-05T05:00:00Z",
    "group": "Home businesses",
@@ -554,6 +541,19 @@
    "lat": 38.912,
    "lon": -77.004,
    "smd": "5F06"
+  },
+  {
+   "id": "E2701255",
+   "issued": "2026-11-05T05:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "1200 1ST ST NE 20002",
+   "work": "",
+   "zoning": "D-5",
+   "lat": 38.90608,
+   "lon": -77.0063,
+   "smd": "6E05"
   },
   {
    "id": "AH2700131",
@@ -621,19 +621,6 @@
    "smd": "6E07"
   },
   {
-   "id": "HO2700183",
-   "issued": "2026-10-27T04:00:00Z",
-   "group": "Home businesses",
-   "type": "HOME OCCUPATION",
-   "subtype": "NA",
-   "address": "130 M ST NE 20002",
-   "work": "",
-   "zoning": "D-5",
-   "lat": 38.9059,
-   "lon": -77.00497,
-   "smd": "6E06"
-  },
-  {
    "id": "FB2700006",
    "issued": "2026-10-27T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -644,6 +631,19 @@
    "zoning": "D-5",
    "lat": 38.9078,
    "lon": -77.00316,
+   "smd": "6E06"
+  },
+  {
+   "id": "HO2700183",
+   "issued": "2026-10-27T04:00:00Z",
+   "group": "Home businesses",
+   "type": "HOME OCCUPATION",
+   "subtype": "NA",
+   "address": "130 M ST NE 20002",
+   "work": "",
+   "zoning": "D-5",
+   "lat": 38.9059,
+   "lon": -77.00497,
    "smd": "6E06"
   },
   {
@@ -661,28 +661,28 @@
   }
  ],
  "requests": {
-  "total": 435,
-  "previous_total": 380,
+  "total": 455,
+  "previous_total": 368,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 152,
-    "previous": 138
+    "count": 161,
+    "previous": 134
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 90,
+    "count": 96,
     "previous": 0
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "count": 18,
+    "previous": 10
    },
    {
     "type": "Illegal Dumping",
     "count": 17,
     "previous": 8
-   },
-   {
-    "type": "Out of State Parking Violation (ROSA)",
-    "count": 17,
-    "previous": 11
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -692,7 +692,7 @@
    {
     "type": "DMV - Drivers License/ID Issues",
     "count": 13,
-    "previous": 17
+    "previous": 14
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -712,7 +712,12 @@
    {
     "type": "DC Government Information",
     "count": 7,
-    "previous": 15
+    "previous": 14
+   },
+   {
+    "type": "Streetlight Repair Investigation",
+    "count": 7,
+    "previous": 13
    },
    {
     "type": "Illegal Poster",
@@ -726,13 +731,8 @@
    },
    {
     "type": "DC Health Rodent & Vector Control",
-    "count": 6,
-    "previous": 8
-   },
-   {
-    "type": "Streetlight Repair Investigation",
     "count": 5,
-    "previous": 13
+    "previous": 7
    },
    {
     "type": "Tree Removal",
@@ -740,9 +740,9 @@
     "previous": 5
    },
    {
-    "type": "Public Space Inspection",
+    "type": "Bicycle Services",
     "count": 4,
-    "previous": 6
+    "previous": 5
    },
    {
     "type": "Sidewalk Repair",
@@ -765,14 +765,9 @@
     "previous": 4
    },
    {
-    "type": "Dead Animal Collection",
+    "type": "Public Space Inspection",
     "count": 3,
-    "previous": 10
-   },
-   {
-    "type": "Bicycle Services",
-    "count": 3,
-    "previous": 5
+    "previous": 7
    },
    {
     "type": "Bulk Collection",
@@ -780,9 +775,24 @@
     "previous": 3
    },
    {
+    "type": "Residential Parking Permit Violation",
+    "count": 3,
+    "previous": 2
+   },
+   {
     "type": "DGS - Playground Repair",
     "count": 3,
     "previous": 3
+   },
+   {
+    "type": "Traffic Safety Input",
+    "count": 3,
+    "previous": 4
+   },
+   {
+    "type": "Dead Animal Collection",
+    "count": 2,
+    "previous": 9
    },
    {
     "type": "DC How Am I Driving?",
@@ -800,24 +810,19 @@
     "previous": 6
    },
    {
-    "type": "Roadway Markings / Pylons",
+    "type": "DMV - Copy of Ticket",
     "count": 2,
-    "previous": 5
+    "previous": 0
    },
    {
-    "type": "Residential Parking Permit Violation",
+    "type": "Roadway Markings / Pylons",
     "count": 2,
-    "previous": 2
+    "previous": 4
    },
    {
     "type": "Trash Collection - Missed",
     "count": 2,
     "previous": 0
-   },
-   {
-    "type": "Traffic Safety Input",
-    "count": 2,
-    "previous": 4
    },
    {
     "type": "Public Space Litter Can-Collection",
@@ -838,11 +843,6 @@
     "type": "Tree Planting",
     "count": 2,
     "previous": 1
-   },
-   {
-    "type": "DMV - Copy of Ticket",
-    "count": 1,
-    "previous": 0
    },
    {
     "type": "Tree Inspection",
@@ -893,10 +893,245 @@
     "type": "DMV - Vehicle Registration Issues",
     "count": 1,
     "previous": 2
+   },
+   {
+    "type": "DMV - Hearings",
+    "count": 1,
+    "previous": 0
    }
   ],
-  "open": 51,
+  "open": 52,
   "recent": [
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-18T01:56:38Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of M STREET NE",
+    "lat": 38.905,
+    "lon": -77.007
+   },
+   {
+    "type": "Streetlight Repair Investigation",
+    "agency": "DDOT",
+    "added": "2026-11-17T22:48:27Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "Unit block of PIERCE STREET NE",
+    "lat": 38.904,
+    "lon": -77.008
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-17T21:40:13Z",
+    "resolved": "2026-11-18T00:28:42Z",
+    "status": "Closed",
+    "block": "Unit block of M STREET NE",
+    "lat": 38.906,
+    "lon": -77.007
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-17T20:41:59Z",
+    "resolved": "2026-11-17T20:41:59Z",
+    "status": "Closed",
+    "block": "1200 block of 3RD STREET NE",
+    "lat": 38.907,
+    "lon": -77.002
+   },
+   {
+    "type": "DMV - Copy of Ticket",
+    "agency": "DMV",
+    "added": "2026-11-17T19:29:32Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of NEW YORK AVENUE NE",
+    "lat": 38.909,
+    "lon": -77.007
+   },
+   {
+    "type": "Traffic Safety Input",
+    "agency": "DDOT",
+    "added": "2026-11-17T19:28:14Z",
+    "resolved": "2026-11-17T19:35:54Z",
+    "status": "Closed",
+    "block": "1200 block of 3RD STREET NE",
+    "lat": 38.908,
+    "lon": -77.002
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-17T19:13:51Z",
+    "resolved": "2026-11-17T19:27:49Z",
+    "status": "Closed",
+    "block": "Unit block of M STREET NE",
+    "lat": 38.905,
+    "lon": -77.009
+   },
+   {
+    "type": "Bicycle Services",
+    "agency": "DDOT",
+    "added": "2026-11-17T18:54:58Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "100 block of M STREET NE",
+    "lat": 38.906,
+    "lon": -77.004
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-17T18:03:59Z",
+    "resolved": "2026-11-17T18:16:44Z",
+    "status": "Closed",
+    "block": "Unit block of L STREET NE",
+    "lat": 38.903,
+    "lon": -77.007
+   },
+   {
+    "type": "Residential Parking Permit Violation",
+    "agency": "DPW",
+    "added": "2026-11-17T17:42:47Z",
+    "resolved": "2026-11-17T18:15:58Z",
+    "status": "Closed",
+    "block": "Unit block of L STREET NE",
+    "lat": 38.903,
+    "lon": -77.007
+   },
+   {
+    "type": "Streetlight Repair Investigation",
+    "agency": "DDOT",
+    "added": "2026-11-17T17:16:57Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "1500 block of ECKINGTON PLACE NE",
+    "lat": 38.91,
+    "lon": -77.006
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-17T17:14:26Z",
+    "resolved": "2026-11-17T17:14:26Z",
+    "status": "Closed",
+    "block": "1100 block of 1ST STREET NE",
+    "lat": 38.905,
+    "lon": -77.006
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-17T17:10:42Z",
+    "resolved": "2026-11-17T17:25:20Z",
+    "status": "Closed",
+    "block": "200 block of K STREET NE",
+    "lat": 38.903,
+    "lon": -77.002
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-17T16:41:50Z",
+    "resolved": "2026-11-17T16:41:50Z",
+    "status": "Closed",
+    "block": "300 block of N STREET NE",
+    "lat": 38.907,
+    "lon": -77.001
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-17T16:16:31Z",
+    "resolved": "2026-11-17T16:16:31Z",
+    "status": "Closed",
+    "block": "Unit block of M STREET NE",
+    "lat": 38.906,
+    "lon": -77.008
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-17T16:13:07Z",
+    "resolved": "2026-11-17T16:48:05Z",
+    "status": "Closed",
+    "block": "200 block of K STREET NE",
+    "lat": 38.903,
+    "lon": -77.002
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-17T15:56:20Z",
+    "resolved": "2026-11-17T15:56:20Z",
+    "status": "Closed",
+    "block": "1200 block of 3RD STREET NE",
+    "lat": 38.907,
+    "lon": -77.002
+   },
+   {
+    "type": "DMV - Hearings",
+    "agency": "DMV",
+    "added": "2026-11-17T15:50:10Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of L STREET NE",
+    "lat": 38.904,
+    "lon": -77.008
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-17T15:36:14Z",
+    "resolved": "2026-11-17T16:33:05Z",
+    "status": "Closed",
+    "block": "1200 block of 4TH STREET NE",
+    "lat": 38.906,
+    "lon": -77.001
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-17T15:13:05Z",
+    "resolved": "2026-11-17T15:13:05Z",
+    "status": "Closed",
+    "block": "1100 block of 1ST STREET NE",
+    "lat": 38.905,
+    "lon": -77.006
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-17T14:12:13Z",
+    "resolved": "2026-11-17T14:36:05Z",
+    "status": "Closed",
+    "block": "300 block of N STREET NE",
+    "lat": 38.907,
+    "lon": -77.001
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-17T12:14:41Z",
+    "resolved": "2026-11-17T14:00:11Z",
+    "status": "Closed",
+    "block": "200 block of K STREET NE",
+    "lat": 38.903,
+    "lon": -77.003
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-17T04:55:06Z",
+    "resolved": "2026-11-17T05:58:18Z",
+    "status": "Closed",
+    "block": "100 block of K STREET NE",
+    "lat": 38.903,
+    "lon": -77.005
+   },
    {
     "type": "Parking Meter Repair",
     "agency": "DDOT",
@@ -911,8 +1146,8 @@
     "type": "Out of State Parking Violation (ROSA)",
     "agency": "DPW",
     "added": "2026-11-17T00:51:18Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-17T04:53:25Z",
+    "status": "Closed",
     "block": "Unit block of M STREET NE",
     "lat": 38.905,
     "lon": -77.007
@@ -931,8 +1166,8 @@
     "type": "Out of State Parking Violation (ROSA)",
     "agency": "DPW",
     "added": "2026-11-17T00:48:45Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-17T04:57:32Z",
+    "status": "Closed",
     "block": "1100 block of 1ST STREET NE",
     "lat": 38.905,
     "lon": -77.006
@@ -951,8 +1186,8 @@
     "type": "DMV - Drivers License/ID Issues",
     "agency": "DMV",
     "added": "2026-11-16T22:05:47Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-17T14:00:17Z",
+    "status": "Closed",
     "block": "Unit block of FLORIDA AVENUE NE",
     "lat": 38.911,
     "lon": -77.008
@@ -1071,8 +1306,8 @@
     "type": "DMV - Vehicle Registration Issues",
     "agency": "DMV",
     "added": "2026-11-16T14:39:14Z",
-    "resolved": null,
-    "status": "Open",
+    "resolved": "2026-11-17T18:59:17Z",
+    "status": "Closed",
     "block": "100 block of FLORIDA AVENUE NE",
     "lat": 38.909,
     "lon": -77.004
@@ -1166,244 +1401,20 @@
     "block": "100 block of Q STREET NE",
     "lat": 38.911,
     "lon": -77.004
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-14T22:57:47Z",
-    "resolved": "2026-11-15T00:54:20Z",
-    "status": "Closed",
-    "block": "1100 block of 3RD STREET NE",
-    "lat": 38.905,
-    "lon": -77.002
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-14T22:30:28Z",
-    "resolved": "2026-11-14T23:15:07Z",
-    "status": "Closed (Duplicate)",
-    "block": "200 block of L STREET NE",
-    "lat": 38.904,
-    "lon": -77.003
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-14T22:14:38Z",
-    "resolved": "2026-11-14T22:45:04Z",
-    "status": "Closed",
-    "block": "1000 block of 1ST STREET NE",
-    "lat": 38.903,
-    "lon": -77.006
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-14T22:07:27Z",
-    "resolved": "2026-11-14T23:15:07Z",
-    "status": "Closed",
-    "block": "200 block of L STREET NE",
-    "lat": 38.904,
-    "lon": -77.003
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-14T21:04:14Z",
-    "resolved": "2026-11-14T22:30:04Z",
-    "status": "Closed",
-    "block": "100 block of Q STREET NE",
-    "lat": 38.911,
-    "lon": -77.004
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-14T20:46:14Z",
-    "resolved": "2026-11-14T20:46:14Z",
-    "status": "Closed",
-    "block": "200 block of Q STREET NE",
-    "lat": 38.911,
-    "lon": -77.003
-   },
-   {
-    "type": "DOB - Illegal Construction",
-    "agency": "DOB",
-    "added": "2026-11-14T19:42:11Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "100 block of Q STREET NE",
-    "lat": 38.911,
-    "lon": -77.004
-   },
-   {
-    "type": "Emergency - Flooding",
-    "agency": "OUC",
-    "added": "2026-11-14T19:39:35Z",
-    "resolved": "2026-11-14T19:39:35Z",
-    "status": "Closed",
-    "block": "100 block of Q STREET NE",
-    "lat": 38.911,
-    "lon": -77.004
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-14T17:37:05Z",
-    "resolved": "2026-11-14T18:13:01Z",
-    "status": "Closed",
-    "block": "100 block of Q STREET NE",
-    "lat": 38.911,
-    "lon": -77.004
-   },
-   {
-    "type": "Out of State Parking Violation (ROSA)",
-    "agency": "DPW",
-    "added": "2026-11-14T03:28:28Z",
-    "resolved": "2026-11-16T07:47:18Z",
-    "status": "Closed",
-    "block": "1100 block of 1ST STREET NE",
-    "lat": 38.905,
-    "lon": -77.006
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-14T00:08:58Z",
-    "resolved": "2026-11-14T00:30:58Z",
-    "status": "Closed",
-    "block": "1100 block of 1ST STREET NE",
-    "lat": 38.905,
-    "lon": -77.006
-   },
-   {
-    "type": "DMV - Drivers License/ID Issues",
-    "agency": "DMV",
-    "added": "2026-11-13T20:41:21Z",
-    "resolved": "2026-11-16T21:25:14Z",
-    "status": "Closed",
-    "block": "200 block of Q STREET NE",
-    "lat": 38.911,
-    "lon": -77.003
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-13T19:25:44Z",
-    "resolved": "2026-11-13T19:25:44Z",
-    "status": "Closed",
-    "block": "1500 block of HARRY THOMAS WAY NE",
-    "lat": 38.912,
-    "lon": -77.002
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "agency": "DDOT",
-    "added": "2026-11-13T18:48:23Z",
-    "resolved": "2026-11-13T18:56:05Z",
-    "status": "Closed",
-    "block": "200 block of Q STREET NE",
-    "lat": 38.911,
-    "lon": -77.003
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-13T18:22:00Z",
-    "resolved": "2026-11-13T18:22:00Z",
-    "status": "Closed",
-    "block": "200 block of K STREET NE",
-    "lat": 38.903,
-    "lon": -77.003
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-13T18:03:25Z",
-    "resolved": "2026-11-14T00:39:56Z",
-    "status": "Closed",
-    "block": "200 block of K STREET NE",
-    "lat": 38.903,
-    "lon": -77.002
-   },
-   {
-    "type": "DMV - Drivers License/ID Issues",
-    "agency": "DMV",
-    "added": "2026-11-13T17:51:36Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1500 block of HARRY THOMAS WAY NE",
-    "lat": 38.912,
-    "lon": -77.002
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-13T16:31:01Z",
-    "resolved": "2026-11-13T17:42:04Z",
-    "status": "Closed (Duplicate)",
-    "block": "200 block of K STREET NE",
-    "lat": 38.903,
-    "lon": -77.002
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-13T16:27:54Z",
-    "resolved": "2026-11-13T17:42:04Z",
-    "status": "Closed",
-    "block": "200 block of K STREET NE",
-    "lat": 38.903,
-    "lon": -77.002
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-11-13T15:46:15Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "1500 block of ECKINGTON PLACE NE",
-    "lat": 38.91,
-    "lon": -77.006
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-13T15:36:09Z",
-    "resolved": "2026-11-13T15:36:09Z",
-    "status": "Closed",
-    "block": "1500 block of HARRY THOMAS WAY NE",
-    "lat": 38.912,
-    "lon": -77.002
-   },
-   {
-    "type": "Recycling Cart - Repair",
-    "agency": "DPW",
-    "added": "2026-11-13T15:27:33Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "Unit block of PORTER STREET NE",
-    "lat": 38.911,
-    "lon": -77.008
-   },
-   {
-    "type": "Traffic Lights and Pedestrian Walk Signals",
-    "agency": "DDOT",
-    "added": "2026-11-13T13:05:00Z",
-    "resolved": "2026-11-13T16:56:01Z",
-    "status": "Closed",
-    "block": "H STREET NW AND 1ST STREET NW",
-    "lat": 38.9,
-    "lon": -77.012
    }
   ],
   "mapped": {
    "types": [
-    "Parking Meter Repair",
     "Out of State Parking Violation (ROSA)",
+    "Streetlight Repair Investigation",
     "Parking Enforcement",
     "DOEE - LIHEAP",
+    "DMV - Copy of Ticket",
+    "Traffic Safety Input",
+    "Bicycle Services",
+    "Residential Parking Permit Violation",
+    "DMV - Hearings",
+    "Parking Meter Repair",
     "DMV - Drivers License/ID Issues",
     "Illegal Poster",
     "DC Government Information",
@@ -1419,13 +1430,10 @@
     "Recycling Cart - Repair",
     "Traffic Lights and Pedestrian Walk Signals",
     "Sidewalk Repair",
-    "Traffic Safety Input",
-    "Bicycle Services",
     "Dead Animal Collection",
     "Sanitation Enforcement",
     "Public Space Litter Can-Collection",
     "Tree Removal",
-    "Residential Parking Permit Violation",
     "DMV - Online Processing Issues",
     "DGS - Playground Repair",
     "Graffiti Removal",
@@ -1436,7 +1444,6 @@
     "Leaf  Collection Missed",
     "Public Space Inspection",
     "DMV - Driver and Vehicle Services Refund",
-    "Streetlight Repair Investigation",
     "Bus Stop Issues",
     "DC Health Rodent & Vector Control",
     "OCTFME - Down Cable Wires",
@@ -1444,8 +1451,7 @@
     "Pothole",
     "Abandoned Bicycle",
     "Tree Inspection",
-    "DC How Am I Driving?",
-    "DMV - Copy of Ticket"
+    "DC How Am I Driving?"
    ],
    "blocks": [
     {
@@ -1455,10 +1461,71 @@
      "r": [
       [
        0,
+       "2026-11-18",
+       null,
+       1
+      ],
+      [
+       9,
        "2026-11-17",
        "2026-11-17",
        0
       ],
+      [
+       0,
+       "2026-11-17",
+       "2026-11-17",
+       0
+      ],
+      [
+       2,
+       "2026-11-17",
+       "2026-11-17",
+       0
+      ],
+      [
+       2,
+       "2026-11-10",
+       "2026-11-10",
+       0
+      ],
+      [
+       3,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       3,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       12,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       12,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       0,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of PIERCE STREET NE",
+     "lat": 38.904,
+     "lon": -77.008,
+     "r": [
       [
        1,
        "2026-11-17",
@@ -1466,9 +1533,40 @@
        1
       ],
       [
+       29,
+       "2026-11-02",
+       "2026-11-12",
+       0
+      ],
+      [
+       38,
+       "2026-11-02",
+       "2026-11-05",
+       0
+      ],
+      [
+       40,
+       "2026-10-26",
+       "2026-10-27",
+       0
+      ],
+      [
+       40,
+       "2026-10-26",
+       "2026-10-27",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of M STREET NE",
+     "lat": 38.906,
+     "lon": -77.007,
+     "r": [
+      [
        2,
        "2026-11-17",
-       "2026-11-17",
+       "2026-11-18",
        0
       ],
       [
@@ -1478,33 +1576,238 @@
        0
       ],
       [
-       3,
-       "2026-10-29",
+       2,
+       "2026-11-07",
+       "2026-11-07",
+       0
+      ],
+      [
+       0,
+       "2026-10-28",
        "2026-10-29",
        0
       ],
       [
-       3,
-       "2026-10-29",
-       "2026-10-29",
-       0
-      ],
-      [
-       6,
+       0,
        "2026-10-28",
        "2026-10-28",
        0
       ],
       [
-       6,
+       2,
+       "2026-10-27",
+       "2026-10-27",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1200 block of 3RD STREET NE",
+     "lat": 38.907,
+     "lon": -77.002,
+     "r": [
+      [
+       3,
+       "2026-11-17",
+       "2026-11-17",
+       0
+      ],
+      [
+       3,
+       "2026-11-17",
+       "2026-11-17",
+       0
+      ],
+      [
+       2,
+       "2026-11-13",
+       "2026-11-13",
+       0
+      ],
+      [
+       2,
+       "2026-11-13",
+       "2026-11-13",
+       0
+      ],
+      [
+       23,
+       "2026-11-06",
+       "2026-11-16",
+       0
+      ],
+      [
+       3,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       34,
+       "2026-11-05",
+       "2026-11-13",
+       0
+      ],
+      [
+       3,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ],
+      [
+       3,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ],
+      [
+       10,
+       "2026-11-03",
+       "2026-11-04",
+       0
+      ],
+      [
+       15,
+       "2026-10-30",
+       null,
+       1
+      ],
+      [
+       3,
+       "2026-10-21",
+       "2026-10-21",
+       0
+      ],
+      [
+       15,
+       "2026-10-20",
+       null,
+       1
+      ],
+      [
+       2,
        "2026-10-20",
        "2026-10-20",
        0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of NEW YORK AVENUE NE",
+     "lat": 38.909,
+     "lon": -77.007,
+     "r": [
+      [
+       4,
+       "2026-11-17",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "1200 block of 3RD STREET NE",
+     "lat": 38.908,
+     "lon": -77.002,
+     "r": [
+      [
+       5,
+       "2026-11-17",
+       "2026-11-17",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of M STREET NE",
+     "lat": 38.905,
+     "lon": -77.009,
+     "r": [
+      [
+       2,
+       "2026-11-17",
+       "2026-11-17",
+       0
       ],
+      [
+       3,
+       "2026-11-17",
+       "2026-11-17",
+       0
+      ],
+      [
+       21,
+       "2026-11-10",
+       null,
+       1
+      ],
+      [
+       3,
+       "2026-10-21",
+       "2026-10-21",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "100 block of M STREET NE",
+     "lat": 38.906,
+     "lon": -77.004,
+     "r": [
+      [
+       6,
+       "2026-11-17",
+       null,
+       1
+      ],
+      [
+       21,
+       "2026-10-30",
+       "2026-11-03",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of L STREET NE",
+     "lat": 38.903,
+     "lon": -77.007,
+     "r": [
+      [
+       2,
+       "2026-11-17",
+       "2026-11-17",
+       0
+      ],
+      [
+       7,
+       "2026-11-17",
+       "2026-11-17",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1500 block of ECKINGTON PLACE NE",
+     "lat": 38.91,
+     "lon": -77.006,
+     "r": [
       [
        1,
-       "2026-10-20",
-       "2026-10-20",
+       "2026-11-17",
+       null,
+       1
+      ],
+      [
+       21,
+       "2026-11-13",
+       null,
+       1
+      ],
+      [
+       21,
+       "2026-10-29",
+       "2026-11-03",
        0
       ]
      ]
@@ -1515,19 +1818,31 @@
      "lon": -77.006,
      "r": [
       [
-       1,
+       3,
        "2026-11-17",
-       null,
-       1
+       "2026-11-17",
+       0
       ],
       [
-       6,
+       3,
+       "2026-11-17",
+       "2026-11-17",
+       0
+      ],
+      [
+       0,
+       "2026-11-17",
+       "2026-11-17",
+       0
+      ],
+      [
+       12,
        "2026-11-15",
        "2026-11-15",
        0
       ],
       [
-       1,
+       0,
        "2026-11-14",
        "2026-11-16",
        0
@@ -1539,7 +1854,7 @@
        0
       ],
       [
-       1,
+       0,
        "2026-11-13",
        "2026-11-13",
        0
@@ -1551,7 +1866,7 @@
        0
       ],
       [
-       1,
+       0,
        "2026-11-12",
        "2026-11-12",
        0
@@ -1563,7 +1878,7 @@
        0
       ],
       [
-       1,
+       0,
        "2026-11-07",
        "2026-11-09",
        0
@@ -1587,7 +1902,7 @@
        0
       ],
       [
-       1,
+       0,
        "2026-11-04",
        "2026-11-05",
        0
@@ -1605,7 +1920,7 @@
        0
       ],
       [
-       1,
+       0,
        "2026-10-27",
        "2026-10-27",
        0
@@ -1619,40 +1934,142 @@
      ]
     },
     {
-     "block": "Unit block of M STREET NE",
-     "lat": 38.905,
-     "lon": -77.009,
+     "block": "200 block of K STREET NE",
+     "lat": 38.903,
+     "lon": -77.002,
      "r": [
       [
-       3,
+       2,
        "2026-11-17",
        "2026-11-17",
        0
       ],
       [
-       15,
-       "2026-11-10",
-       null,
+       2,
+       "2026-11-17",
+       "2026-11-17",
+       0
+      ],
+      [
+       2,
+       "2026-11-13",
+       "2026-11-14",
+       0
+      ],
+      [
+       2,
+       "2026-11-13",
+       "2026-11-13",
        1
       ],
       [
+       2,
+       "2026-11-13",
+       "2026-11-13",
+       0
+      ],
+      [
+       2,
+       "2026-11-12",
+       "2026-11-12",
+       0
+      ],
+      [
        3,
-       "2026-10-21",
-       "2026-10-21",
+       "2026-11-10",
+       "2026-11-10",
        0
       ]
      ]
     },
     {
-     "block": "Unit block of FLORIDA AVENUE NE",
-     "lat": 38.911,
-     "lon": -77.008,
+     "block": "300 block of N STREET NE",
+     "lat": 38.907,
+     "lon": -77.001,
      "r": [
       [
-       4,
-       "2026-11-16",
-       null,
-       1
+       3,
+       "2026-11-17",
+       "2026-11-17",
+       0
+      ],
+      [
+       2,
+       "2026-11-17",
+       "2026-11-17",
+       0
+      ],
+      [
+       2,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ],
+      [
+       2,
+       "2026-11-02",
+       "2026-11-02",
+       0
+      ],
+      [
+       2,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       2,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       2,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       15,
+       "2026-10-26",
+       "2026-10-30",
+       0
+      ],
+      [
+       2,
+       "2026-10-23",
+       "2026-10-23",
+       0
+      ],
+      [
+       3,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ],
+      [
+       2,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       3,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       3,
+       "2026-10-20",
+       "2026-10-20",
+       0
+      ],
+      [
+       10,
+       "2026-10-20",
+       "2026-10-20",
+       0
       ]
      ]
     },
@@ -1663,8 +2080,8 @@
      "r": [
       [
        3,
-       "2026-11-16",
-       "2026-11-16",
+       "2026-11-17",
+       "2026-11-17",
        0
       ],
       [
@@ -1680,7 +2097,13 @@
        0
       ],
       [
-       10,
+       3,
+       "2026-11-16",
+       "2026-11-16",
+       0
+      ],
+      [
+       16,
        "2026-11-15",
        null,
        1
@@ -1692,13 +2115,13 @@
        0
       ],
       [
-       15,
+       21,
        "2026-11-07",
        "2026-11-13",
        0
       ],
       [
-       30,
+       33,
        "2026-11-05",
        "2026-11-10",
        0
@@ -1716,7 +2139,7 @@
        0
       ],
       [
-       26,
+       29,
        "2026-10-27",
        "2026-10-30",
        0
@@ -1754,6 +2177,203 @@
      ]
     },
     {
+     "block": "Unit block of L STREET NE",
+     "lat": 38.904,
+     "lon": -77.008,
+     "r": [
+      [
+       8,
+       "2026-11-17",
+       null,
+       1
+      ],
+      [
+       3,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ],
+      [
+       3,
+       "2026-10-19",
+       "2026-10-19",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1200 block of 4TH STREET NE",
+     "lat": 38.906,
+     "lon": -77.001,
+     "r": [
+      [
+       2,
+       "2026-11-17",
+       "2026-11-17",
+       0
+      ],
+      [
+       2,
+       "2026-11-09",
+       "2026-11-09",
+       0
+      ],
+      [
+       2,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       2,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       2,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "200 block of K STREET NE",
+     "lat": 38.903,
+     "lon": -77.003,
+     "r": [
+      [
+       2,
+       "2026-11-17",
+       "2026-11-17",
+       0
+      ],
+      [
+       3,
+       "2026-11-16",
+       "2026-11-16",
+       0
+      ],
+      [
+       3,
+       "2026-11-13",
+       "2026-11-13",
+       0
+      ],
+      [
+       3,
+       "2026-11-12",
+       "2026-11-12",
+       0
+      ],
+      [
+       3,
+       "2026-11-12",
+       "2026-11-12",
+       0
+      ],
+      [
+       10,
+       "2026-11-10",
+       "2026-11-10",
+       0
+      ],
+      [
+       3,
+       "2026-11-09",
+       "2026-11-09",
+       0
+      ],
+      [
+       2,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       3,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       17,
+       "2026-11-03",
+       null,
+       1
+      ],
+      [
+       15,
+       "2026-10-28",
+       null,
+       1
+      ],
+      [
+       3,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ],
+      [
+       20,
+       "2026-10-26",
+       "2026-10-26",
+       0
+      ],
+      [
+       3,
+       "2026-10-26",
+       "2026-10-26",
+       0
+      ],
+      [
+       3,
+       "2026-10-26",
+       "2026-10-26",
+       0
+      ],
+      [
+       3,
+       "2026-10-23",
+       "2026-10-23",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "100 block of K STREET NE",
+     "lat": 38.903,
+     "lon": -77.005,
+     "r": [
+      [
+       2,
+       "2026-11-17",
+       "2026-11-17",
+       0
+      ],
+      [
+       10,
+       "2026-10-27",
+       "2026-11-05",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of FLORIDA AVENUE NE",
+     "lat": 38.911,
+     "lon": -77.008,
+     "r": [
+      [
+       10,
+       "2026-11-16",
+       "2026-11-17",
+       0
+      ]
+     ]
+    },
+    {
      "block": "200 block of Q STREET NE",
      "lat": 38.911,
      "lon": -77.003,
@@ -1771,13 +2391,13 @@
        0
       ],
       [
-       4,
+       10,
        "2026-11-13",
        "2026-11-16",
        0
       ],
       [
-       14,
+       20,
        "2026-11-13",
        "2026-11-13",
        0
@@ -1923,25 +2543,25 @@
      "lon": -77.004,
      "r": [
       [
-       5,
+       11,
        "2026-11-16",
        null,
        1
       ],
       [
-       9,
+       15,
        "2026-11-10",
        null,
        1
       ],
       [
-       14,
+       20,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       15,
+       21,
        "2026-10-19",
        "2026-10-20",
        0
@@ -1966,19 +2586,19 @@
        0
       ],
       [
-       24,
+       28,
        "2026-10-28",
        "2026-10-29",
        0
       ],
       [
-       40,
+       42,
        "2026-10-27",
        null,
        1
       ],
       [
-       41,
+       43,
        "2026-10-25",
        "2026-10-27",
        0
@@ -1997,7 +2617,7 @@
        0
       ],
       [
-       15,
+       21,
        "2026-11-05",
        "2026-11-06",
        0
@@ -2052,13 +2672,13 @@
        0
       ],
       [
-       4,
+       10,
        "2026-10-27",
        "2026-11-05",
        0
       ],
       [
-       4,
+       10,
        "2026-10-21",
        "2026-10-29",
        0
@@ -2077,19 +2697,19 @@
      "lon": -77.008,
      "r": [
       [
-       6,
+       12,
        "2026-11-16",
        "2026-11-16",
        0
       ],
       [
-       11,
+       17,
        "2026-11-15",
        null,
        1
       ],
       [
-       18,
+       24,
        "2026-11-12",
        null,
        1
@@ -2107,7 +2727,7 @@
        0
       ],
       [
-       15,
+       21,
        "2026-11-06",
        "2026-11-10",
        0
@@ -2131,7 +2751,7 @@
        0
       ],
       [
-       43,
+       45,
        "2026-10-22",
        "2026-10-23",
        0
@@ -2162,13 +2782,13 @@
        0
       ],
       [
-       1,
+       0,
        "2026-10-21",
        "2026-10-21",
        0
       ],
       [
-       44,
+       46,
        "2026-10-20",
        null,
        1
@@ -2181,10 +2801,10 @@
      "lon": -77.004,
      "r": [
       [
-       7,
+       13,
        "2026-11-16",
-       null,
-       1
+       "2026-11-17",
+       0
       ],
       [
        2,
@@ -2205,106 +2825,9 @@
        0
       ],
       [
-       6,
+       12,
        "2026-10-27",
        "2026-10-27",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "200 block of K STREET NE",
-     "lat": 38.903,
-     "lon": -77.003,
-     "r": [
-      [
-       3,
-       "2026-11-16",
-       "2026-11-16",
-       0
-      ],
-      [
-       3,
-       "2026-11-13",
-       "2026-11-13",
-       0
-      ],
-      [
-       3,
-       "2026-11-12",
-       "2026-11-12",
-       0
-      ],
-      [
-       3,
-       "2026-11-12",
-       "2026-11-12",
-       0
-      ],
-      [
-       4,
-       "2026-11-10",
-       "2026-11-10",
-       0
-      ],
-      [
-       3,
-       "2026-11-09",
-       "2026-11-09",
-       0
-      ],
-      [
-       2,
-       "2026-11-06",
-       "2026-11-06",
-       0
-      ],
-      [
-       3,
-       "2026-11-06",
-       "2026-11-06",
-       0
-      ],
-      [
-       11,
-       "2026-11-03",
-       null,
-       1
-      ],
-      [
-       9,
-       "2026-10-28",
-       null,
-       1
-      ],
-      [
-       3,
-       "2026-10-28",
-       "2026-10-28",
-       0
-      ],
-      [
-       14,
-       "2026-10-26",
-       "2026-10-26",
-       0
-      ],
-      [
-       3,
-       "2026-10-26",
-       "2026-10-26",
-       0
-      ],
-      [
-       3,
-       "2026-10-26",
-       "2026-10-26",
-       0
-      ],
-      [
-       3,
-       "2026-10-23",
-       "2026-10-23",
        0
       ]
      ]
@@ -2315,7 +2838,7 @@
      "lon": -77.008,
      "r": [
       [
-       8,
+       14,
        "2026-11-16",
        null,
        1
@@ -2347,7 +2870,7 @@
      "lon": -77.003,
      "r": [
       [
-       9,
+       15,
        "2026-11-15",
        null,
        1
@@ -2372,7 +2895,7 @@
      "lon": -77.007,
      "r": [
       [
-       10,
+       16,
        "2026-11-15",
        null,
        1
@@ -2397,13 +2920,13 @@
        0
       ],
       [
-       12,
+       18,
        "2026-11-14",
        null,
        1
       ],
       [
-       13,
+       19,
        "2026-11-14",
        "2026-11-14",
        0
@@ -2469,7 +2992,7 @@
        0
       ],
       [
-       26,
+       29,
        "2026-11-02",
        "2026-11-10",
        0
@@ -2535,7 +3058,7 @@
        0
       ],
       [
-       6,
+       12,
        "2026-10-26",
        "2026-10-26",
        0
@@ -2601,7 +3124,7 @@
        0
       ],
       [
-       6,
+       12,
        "2026-10-20",
        "2026-10-20",
        0
@@ -2688,7 +3211,7 @@
        0
       ],
       [
-       14,
+       20,
        "2026-11-07",
        "2026-11-07",
        0
@@ -2700,7 +3223,7 @@
        0
       ],
       [
-       36,
+       1,
        "2026-11-02",
        "2026-11-02",
        0
@@ -2737,7 +3260,7 @@
        0
       ],
       [
-       4,
+       10,
        "2026-11-13",
        null,
        1
@@ -2761,7 +3284,7 @@
        0
       ],
       [
-       32,
+       35,
        "2026-10-31",
        "2026-11-06",
        0
@@ -2773,83 +3296,27 @@
        0
       ],
       [
-       32,
+       35,
        "2026-10-28",
        "2026-10-29",
        0
       ],
       [
-       32,
+       35,
        "2026-10-27",
        "2026-10-29",
        0
       ],
       [
-       32,
+       35,
        "2026-10-22",
        "2026-10-27",
        0
       ],
       [
-       32,
+       35,
        "2026-10-20",
        "2026-10-27",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "200 block of K STREET NE",
-     "lat": 38.903,
-     "lon": -77.002,
-     "r": [
-      [
-       2,
-       "2026-11-13",
-       "2026-11-14",
-       0
-      ],
-      [
-       2,
-       "2026-11-13",
-       "2026-11-13",
-       1
-      ],
-      [
-       2,
-       "2026-11-13",
-       "2026-11-13",
-       0
-      ],
-      [
-       2,
-       "2026-11-12",
-       "2026-11-12",
-       0
-      ],
-      [
-       3,
-       "2026-11-10",
-       "2026-11-10",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1500 block of ECKINGTON PLACE NE",
-     "lat": 38.91,
-     "lon": -77.006,
-     "r": [
-      [
-       15,
-       "2026-11-13",
-       null,
-       1
-      ],
-      [
-       15,
-       "2026-10-29",
-       "2026-11-03",
        0
       ]
      ]
@@ -2860,13 +3327,13 @@
      "lon": -77.008,
      "r": [
       [
-       16,
+       22,
        "2026-11-13",
        null,
        1
       ],
       [
-       28,
+       31,
        "2026-11-06",
        null,
        1
@@ -2879,94 +3346,15 @@
      "lon": -77.012,
      "r": [
       [
-       17,
+       23,
        "2026-11-13",
        "2026-11-13",
        0
       ],
       [
-       17,
+       23,
        "2026-11-06",
        "2026-11-06",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1200 block of 3RD STREET NE",
-     "lat": 38.907,
-     "lon": -77.002,
-     "r": [
-      [
-       2,
-       "2026-11-13",
-       "2026-11-13",
-       0
-      ],
-      [
-       2,
-       "2026-11-13",
-       "2026-11-13",
-       0
-      ],
-      [
-       17,
-       "2026-11-06",
-       "2026-11-16",
-       0
-      ],
-      [
-       3,
-       "2026-11-06",
-       "2026-11-06",
-       0
-      ],
-      [
-       31,
-       "2026-11-05",
-       "2026-11-13",
-       0
-      ],
-      [
-       3,
-       "2026-11-03",
-       "2026-11-03",
-       0
-      ],
-      [
-       3,
-       "2026-11-03",
-       "2026-11-03",
-       0
-      ],
-      [
-       4,
-       "2026-11-03",
-       "2026-11-04",
-       0
-      ],
-      [
-       9,
-       "2026-10-30",
-       null,
-       1
-      ],
-      [
-       3,
-       "2026-10-21",
-       "2026-10-21",
-       0
-      ],
-      [
-       9,
-       "2026-10-20",
-       null,
-       1
-      ],
-      [
-       2,
-       "2026-10-20",
-       "2026-10-20",
        0
       ]
      ]
@@ -2977,19 +3365,19 @@
      "lon": -77.005,
      "r": [
       [
-       5,
+       11,
        "2026-11-12",
        "2026-11-16",
        0
       ],
       [
-       17,
+       23,
        "2026-11-02",
        "2026-11-03",
        0
       ],
       [
-       5,
+       11,
        "2026-10-20",
        "2026-10-22",
        0
@@ -3002,7 +3390,7 @@
      "lon": -77.009,
      "r": [
       [
-       5,
+       11,
        "2026-11-12",
        "2026-11-16",
        0
@@ -3076,7 +3464,7 @@
        0
       ],
       [
-       15,
+       21,
        "2026-10-23",
        "2026-10-29",
        0
@@ -3101,7 +3489,7 @@
      "lon": -77.012,
      "r": [
       [
-       17,
+       23,
        "2026-11-12",
        "2026-11-12",
        0
@@ -3114,7 +3502,7 @@
      "lon": -77.006,
      "r": [
       [
-       19,
+       5,
        "2026-11-11",
        "2026-11-11",
        0
@@ -3133,19 +3521,19 @@
        0
       ],
       [
-       27,
+       30,
        "2026-11-06",
        "2026-11-10",
        0
       ],
       [
-       38,
+       40,
        "2026-10-31",
        "2026-11-04",
        0
       ],
       [
-       27,
+       30,
        "2026-10-31",
        "2026-10-31",
        0
@@ -3182,7 +3570,7 @@
        0
       ],
       [
-       4,
+       10,
        "2026-11-03",
        "2026-11-03",
        0
@@ -3194,7 +3582,7 @@
        0
       ],
       [
-       25,
+       7,
        "2026-10-29",
        "2026-10-29",
        0
@@ -3224,19 +3612,19 @@
        0
       ],
       [
-       42,
+       44,
        "2026-10-23",
        "2026-10-27",
        0
       ],
       [
-       36,
+       1,
        "2026-10-23",
        "2026-10-28",
        0
       ],
       [
-       1,
+       0,
        "2026-10-23",
        "2026-10-26",
        0
@@ -3255,7 +3643,7 @@
      "lon": -77.004,
      "r": [
       [
-       15,
+       21,
        "2026-11-10",
        "2026-11-16",
        0
@@ -3267,13 +3655,13 @@
        0
       ],
       [
-       14,
+       20,
        "2026-11-05",
        "2026-11-05",
        0
       ],
       [
-       23,
+       27,
        "2026-11-05",
        "2026-11-06",
        0
@@ -3285,13 +3673,13 @@
        0
       ],
       [
-       9,
+       15,
        "2026-11-05",
        null,
        1
       ],
       [
-       14,
+       20,
        "2026-11-03",
        "2026-11-03",
        0
@@ -3303,13 +3691,13 @@
        0
       ],
       [
-       4,
+       10,
        "2026-10-27",
        "2026-10-29",
        0
       ],
       [
-       14,
+       20,
        "2026-10-25",
        "2026-10-25",
        0
@@ -3322,13 +3710,13 @@
      "lon": -77.003,
      "r": [
       [
-       20,
+       6,
        "2026-11-10",
        "2026-11-13",
        0
       ],
       [
-       21,
+       25,
        "2026-11-10",
        "2026-11-10",
        0
@@ -3341,7 +3729,7 @@
      "lon": -77.005,
      "r": [
       [
-       4,
+       10,
        "2026-11-10",
        null,
        1
@@ -3378,59 +3766,22 @@
      "lon": -77.009,
      "r": [
       [
+       20,
+       "2026-11-10",
+       "2026-11-10",
+       0
+      ],
+      [
        14,
-       "2026-11-10",
-       "2026-11-10",
-       0
-      ],
-      [
-       8,
        "2026-10-21",
        null,
        1
       ],
       [
-       34,
+       37,
        "2026-10-21",
        null,
        1
-      ]
-     ]
-    },
-    {
-     "block": "Unit block of M STREET NE",
-     "lat": 38.906,
-     "lon": -77.007,
-     "r": [
-      [
-       2,
-       "2026-11-10",
-       "2026-11-10",
-       0
-      ],
-      [
-       2,
-       "2026-11-07",
-       "2026-11-07",
-       0
-      ],
-      [
-       1,
-       "2026-10-28",
-       "2026-10-29",
-       0
-      ],
-      [
-       1,
-       "2026-10-28",
-       "2026-10-28",
-       0
-      ],
-      [
-       2,
-       "2026-10-27",
-       "2026-10-27",
-       0
       ]
      ]
     },
@@ -3440,19 +3791,19 @@
      "lon": -77.006,
      "r": [
       [
-       14,
+       20,
        "2026-11-10",
        "2026-11-10",
        0
       ],
       [
-       14,
+       20,
        "2026-11-07",
        "2026-11-07",
        0
       ],
       [
-       14,
+       20,
        "2026-11-07",
        "2026-11-07",
        0
@@ -3501,19 +3852,19 @@
        0
       ],
       [
-       1,
+       0,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       1,
+       0,
        "2026-10-27",
        "2026-10-27",
        0
       ],
       [
-       4,
+       10,
        "2026-10-22",
        "2026-11-02",
        0
@@ -3525,52 +3876,21 @@
        0
       ],
       [
-       1,
+       0,
        "2026-10-22",
        "2026-10-22",
        0
       ],
       [
-       45,
+       4,
        "2026-10-21",
        "2026-10-29",
        0
       ],
       [
-       1,
+       0,
        "2026-10-21",
        "2026-10-21",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1200 block of 4TH STREET NE",
-     "lat": 38.906,
-     "lon": -77.001,
-     "r": [
-      [
-       2,
-       "2026-11-09",
-       "2026-11-09",
-       0
-      ],
-      [
-       2,
-       "2026-10-29",
-       "2026-10-29",
-       0
-      ],
-      [
-       2,
-       "2026-10-28",
-       "2026-10-28",
-       0
-      ],
-      [
-       2,
-       "2026-10-28",
-       "2026-10-28",
        0
       ]
      ]
@@ -3581,7 +3901,7 @@
      "lon": -77.004,
      "r": [
       [
-       22,
+       26,
        "2026-11-09",
        "2026-11-10",
        0
@@ -3594,7 +3914,7 @@
      "lon": -77.002,
      "r": [
       [
-       23,
+       27,
        "2026-11-08",
        "2026-11-10",
        0
@@ -3607,7 +3927,7 @@
      "lon": -77.005,
      "r": [
       [
-       24,
+       28,
        "2026-11-08",
        "2026-11-09",
        0
@@ -3620,7 +3940,7 @@
      "lon": -77.002,
      "r": [
       [
-       22,
+       26,
        "2026-11-07",
        "2026-11-09",
        0
@@ -3633,7 +3953,7 @@
      "lon": -77.008,
      "r": [
       [
-       17,
+       23,
        "2026-11-07",
        "2026-11-08",
        0
@@ -3652,7 +3972,7 @@
      "lon": -77.003,
      "r": [
       [
-       14,
+       20,
        "2026-11-07",
        "2026-11-07",
        0
@@ -3677,7 +3997,7 @@
        1
       ],
       [
-       24,
+       28,
        "2026-11-02",
        "2026-11-05",
        0
@@ -3690,7 +4010,7 @@
      "lon": -77.001,
      "r": [
       [
-       17,
+       23,
        "2026-11-07",
        "2026-11-07",
        0
@@ -3728,7 +4048,7 @@
      "lon": -77.004,
      "r": [
       [
-       25,
+       7,
        "2026-11-06",
        "2026-11-06",
        0
@@ -3741,13 +4061,13 @@
      "lon": -77.007,
      "r": [
       [
-       26,
+       29,
        "2026-11-06",
-       null,
-       1
+       "2026-11-17",
+       0
       ],
       [
-       28,
+       31,
        "2026-11-05",
        null,
        1
@@ -3766,7 +4086,7 @@
      "lon": -77.006,
      "r": [
       [
-       15,
+       21,
        "2026-11-06",
        "2026-11-10",
        0
@@ -3810,15 +4130,9 @@
        0
       ],
       [
-       24,
+       28,
        "2026-11-03",
        "2026-11-05",
-       0
-      ],
-      [
-       38,
-       "2026-10-19",
-       "2026-10-19",
        0
       ]
      ]
@@ -3829,7 +4143,7 @@
      "lon": -77.008,
      "r": [
       [
-       15,
+       21,
        "2026-11-06",
        "2026-11-10",
        0
@@ -3853,13 +4167,13 @@
        0
       ],
       [
-       18,
+       24,
        "2026-10-30",
        null,
        1
       ],
       [
-       15,
+       21,
        "2026-10-23",
        "2026-11-03",
        0
@@ -3877,7 +4191,7 @@
        0
       ],
       [
-       18,
+       24,
        "2026-10-22",
        null,
        1
@@ -3896,13 +4210,13 @@
      "lon": -77.007,
      "r": [
       [
-       29,
+       32,
        "2026-11-05",
        null,
        1
       ],
       [
-       29,
+       32,
        "2026-11-05",
        null,
        1
@@ -3915,19 +4229,19 @@
      "lon": -77.008,
      "r": [
       [
-       0,
+       9,
        "2026-11-05",
        null,
        1
       ],
       [
-       0,
+       9,
        "2026-11-03",
        "2026-11-03",
        0
       ],
       [
-       0,
+       9,
        "2026-10-28",
        null,
        1
@@ -3972,19 +4286,19 @@
      "lon": -77.002,
      "r": [
       [
-       19,
+       5,
        "2026-11-05",
        "2026-11-05",
        0
       ],
       [
-       27,
+       30,
        "2026-11-01",
        "2026-11-02",
        0
       ],
       [
-       32,
+       35,
        "2026-10-23",
        "2026-10-26",
        0
@@ -3997,13 +4311,13 @@
      "lon": -77.009,
      "r": [
       [
-       18,
+       24,
        "2026-11-05",
        null,
        1
       ],
       [
-       38,
+       40,
        "2026-10-23",
        "2026-10-27",
        0
@@ -4016,7 +4330,7 @@
      "lon": -77.008,
      "r": [
       [
-       32,
+       35,
        "2026-11-04",
        "2026-11-12",
        0
@@ -4029,7 +4343,7 @@
      "lon": -77.008,
      "r": [
       [
-       22,
+       26,
        "2026-11-04",
        "2026-11-05",
        0
@@ -4054,7 +4368,7 @@
        0
       ],
       [
-       37,
+       39,
        "2026-11-01",
        null,
        1
@@ -4067,7 +4381,7 @@
      "lon": -77.005,
      "r": [
       [
-       14,
+       20,
        "2026-11-04",
        "2026-11-04",
        0
@@ -4093,100 +4407,21 @@
      "lon": -77.008,
      "r": [
       [
+       36,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ],
+      [
        33,
-       "2026-11-03",
-       "2026-11-03",
-       0
-      ],
-      [
-       30,
-       "2026-10-28",
-       "2026-10-28",
-       0
-      ],
-      [
-       0,
-       "2026-10-21",
-       "2026-10-21",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "300 block of N STREET NE",
-     "lat": 38.907,
-     "lon": -77.001,
-     "r": [
-      [
-       2,
-       "2026-11-03",
-       "2026-11-03",
-       0
-      ],
-      [
-       2,
-       "2026-11-02",
-       "2026-11-02",
-       0
-      ],
-      [
-       2,
-       "2026-10-29",
-       "2026-10-29",
-       0
-      ],
-      [
-       2,
-       "2026-10-29",
-       "2026-10-29",
-       0
-      ],
-      [
-       2,
        "2026-10-28",
        "2026-10-28",
        0
       ],
       [
        9,
-       "2026-10-26",
-       "2026-10-30",
-       0
-      ],
-      [
-       2,
-       "2026-10-23",
-       "2026-10-23",
-       0
-      ],
-      [
-       3,
-       "2026-10-22",
-       "2026-10-22",
-       0
-      ],
-      [
-       2,
-       "2026-10-20",
-       "2026-10-20",
-       0
-      ],
-      [
-       3,
-       "2026-10-20",
-       "2026-10-20",
-       0
-      ],
-      [
-       3,
-       "2026-10-20",
-       "2026-10-20",
-       0
-      ],
-      [
-       4,
-       "2026-10-20",
-       "2026-10-20",
+       "2026-10-21",
+       "2026-10-21",
        0
       ]
      ]
@@ -4219,12 +4454,6 @@
        "2026-10-28",
        "2026-10-28",
        0
-      ],
-      [
-       21,
-       "2026-10-18",
-       "2026-10-19",
-       0
       ]
      ]
     },
@@ -4247,7 +4476,7 @@
      "lon": -77.009,
      "r": [
       [
-       17,
+       23,
        "2026-11-03",
        "2026-11-03",
        0
@@ -4260,52 +4489,21 @@
      "lon": -77.002,
      "r": [
       [
-       34,
+       37,
        "2026-11-02",
        null,
        1
       ],
       [
-       34,
+       37,
        "2026-10-23",
        null,
        1
       ],
       [
-       9,
+       15,
        "2026-10-20",
        "2026-10-22",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "Unit block of PIERCE STREET NE",
-     "lat": 38.904,
-     "lon": -77.008,
-     "r": [
-      [
-       26,
-       "2026-11-02",
-       "2026-11-12",
-       0
-      ],
-      [
-       35,
-       "2026-11-02",
-       "2026-11-05",
-       0
-      ],
-      [
-       38,
-       "2026-10-26",
-       "2026-10-27",
-       0
-      ],
-      [
-       38,
-       "2026-10-26",
-       "2026-10-27",
        0
       ]
      ]
@@ -4324,25 +4522,12 @@
      ]
     },
     {
-     "block": "100 block of M STREET NE",
-     "lat": 38.906,
-     "lon": -77.004,
-     "r": [
-      [
-       15,
-       "2026-10-30",
-       "2026-11-03",
-       0
-      ]
-     ]
-    },
-    {
      "block": "1300 block of 2ND STREET NE",
      "lat": 38.908,
      "lon": -77.004,
      "r": [
       [
-       9,
+       15,
        "2026-10-30",
        "2026-11-02",
        0
@@ -4355,7 +4540,7 @@
      "lon": -77.009,
      "r": [
       [
-       5,
+       11,
        "2026-10-29",
        "2026-11-09",
        0
@@ -4368,7 +4553,7 @@
      "lon": -77.01,
      "r": [
       [
-       14,
+       20,
        "2026-10-29",
        "2026-10-29",
        0
@@ -4387,13 +4572,13 @@
      "lon": -77.008,
      "r": [
       [
-       15,
+       21,
        "2026-10-28",
        "2026-10-29",
        0
       ],
       [
-       30,
+       33,
        "2026-10-28",
        "2026-10-28",
        0
@@ -4406,7 +4591,7 @@
      "lon": -77.005,
      "r": [
       [
-       20,
+       6,
        "2026-10-28",
        "2026-11-04",
        0
@@ -4432,7 +4617,7 @@
      "lon": -77.005,
      "r": [
       [
-       22,
+       26,
        "2026-10-28",
        "2026-10-29",
        0
@@ -4445,13 +4630,13 @@
      "lon": -77.006,
      "r": [
       [
-       5,
+       11,
        "2026-10-28",
        "2026-11-12",
        0
       ],
       [
-       15,
+       21,
        "2026-10-20",
        "2026-10-23",
        0
@@ -4477,22 +4662,9 @@
      "lon": -77.006,
      "r": [
       [
-       39,
+       41,
        "2026-10-27",
        "2026-10-27",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "100 block of K STREET NE",
-     "lat": 38.903,
-     "lon": -77.005,
-     "r": [
-      [
-       4,
-       "2026-10-27",
-       "2026-11-05",
        0
       ]
      ]
@@ -4503,13 +4675,13 @@
      "lon": -77.006,
      "r": [
       [
-       40,
+       42,
        "2026-10-27",
        null,
        1
       ],
       [
-       37,
+       39,
        "2026-10-25",
        null,
        1
@@ -4528,7 +4700,7 @@
        0
       ],
       [
-       42,
+       44,
        "2026-10-21",
        null,
        1
@@ -4541,7 +4713,7 @@
      "lon": -77.005,
      "r": [
       [
-       32,
+       35,
        "2026-10-27",
        "2026-10-29",
        0
@@ -4554,7 +4726,7 @@
      "lon": -77.002,
      "r": [
       [
-       9,
+       15,
        "2026-10-26",
        "2026-10-30",
        0
@@ -4573,7 +4745,7 @@
      "lon": -77.003,
      "r": [
       [
-       24,
+       28,
        "2026-10-26",
        "2026-10-29",
        0
@@ -4586,7 +4758,7 @@
      "lon": -77.009,
      "r": [
       [
-       17,
+       23,
        "2026-10-26",
        "2026-10-26",
        0
@@ -4599,7 +4771,7 @@
      "lon": -77.003,
      "r": [
       [
-       0,
+       9,
        "2026-10-24",
        null,
        1
@@ -4612,13 +4784,13 @@
      "lon": -77.009,
      "r": [
       [
-       37,
+       39,
        "2026-10-24",
        "2026-11-09",
        0
       ],
       [
-       37,
+       39,
        "2026-10-24",
        null,
        1
@@ -4631,7 +4803,7 @@
      "lon": -77.008,
      "r": [
       [
-       15,
+       21,
        "2026-10-24",
        null,
        1
@@ -4644,7 +4816,7 @@
      "lon": -77.007,
      "r": [
       [
-       36,
+       1,
        "2026-10-23",
        "2026-10-23",
        0
@@ -4663,7 +4835,7 @@
      "lon": -77.002,
      "r": [
       [
-       38,
+       40,
        "2026-10-23",
        "2026-11-01",
        0
@@ -4676,28 +4848,9 @@
      "lon": -77.011,
      "r": [
       [
-       0,
+       9,
        "2026-10-22",
        "2026-10-22",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "Unit block of L STREET NE",
-     "lat": 38.904,
-     "lon": -77.008,
-     "r": [
-      [
-       3,
-       "2026-10-22",
-       "2026-10-22",
-       0
-      ],
-      [
-       3,
-       "2026-10-19",
-       "2026-10-19",
        0
       ]
      ]
@@ -4708,7 +4861,7 @@
      "lon": -77.003,
      "r": [
       [
-       20,
+       6,
        "2026-10-22",
        "2026-10-23",
        0
@@ -4721,19 +4874,19 @@
      "lon": -77.002,
      "r": [
       [
-       14,
+       20,
        "2026-10-21",
        "2026-10-21",
        0
       ],
       [
-       36,
+       1,
        "2026-10-21",
        "2026-10-22",
        0
       ],
       [
-       36,
+       1,
        "2026-10-20",
        "2026-10-21",
        0
@@ -4746,7 +4899,7 @@
      "lon": -77.006,
      "r": [
       [
-       5,
+       11,
        "2026-10-21",
        "2026-11-12",
        0
@@ -4759,7 +4912,7 @@
      "lon": -77.009,
      "r": [
       [
-       44,
+       46,
        "2026-10-21",
        null,
        1
@@ -4785,7 +4938,7 @@
      "lon": -77.009,
      "r": [
       [
-       17,
+       23,
        "2026-10-21",
        "2026-10-21",
        0
@@ -4798,7 +4951,7 @@
      "lon": -77.003,
      "r": [
       [
-       17,
+       23,
        "2026-10-21",
        "2026-10-21",
        0
@@ -4824,7 +4977,7 @@
      "lon": -77.009,
      "r": [
       [
-       21,
+       25,
        "2026-10-20",
        "2026-10-22",
        0
@@ -4850,22 +5003,9 @@
      "lon": -77.004,
      "r": [
       [
-       15,
+       21,
        "2026-10-19",
        "2026-11-03",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1ST STREET NE AND G STREET NE",
-     "lat": 38.899,
-     "lon": -77.007,
-     "r": [
-      [
-       34,
-       "2026-10-19",
-       "2026-10-20",
        0
       ]
      ]
@@ -4874,17 +5014,17 @@
   }
  },
  "crime": {
-  "total": 75,
+  "total": 72,
   "previous_total": 80,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
-    "count": 38,
+    "count": 37,
     "previous": 41
    },
    {
     "offense": "THEFT F/AUTO",
-    "count": 24,
+    "count": 22,
     "previous": 20
    },
    {
@@ -4893,14 +5033,14 @@
     "previous": 8
    },
    {
-    "offense": "ROBBERY",
-    "count": 3,
-    "previous": 6
-   },
-   {
     "offense": "BURGLARY",
     "count": 3,
     "previous": 1
+   },
+   {
+    "offense": "ROBBERY",
+    "count": 3,
+    "previous": 6
    },
    {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
@@ -4938,7 +5078,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-17T09:20:06Z",
+  "generated_at": "2026-11-18T09:19:45Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -4953,7 +5093,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to NoMa through OTR assessment sub-area Eckington B in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the NoMa boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-17): 28% of the 1,744 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 64% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to NoMa through OTR assessment sub-area Eckington B in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the NoMa boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-18): 28% of the 1,744 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 64% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -4966,14 +5106,14 @@
    "area_parcels": 1744,
    "area_share_inside": 0.283,
    "boundary_share_in_area": 0.642,
-   "measured": "2026-11-17"
+   "measured": "2026-11-18"
   },
   "primary": "all",
   "all": {
-   "median_12mo": 665000,
-   "count_12mo": 46,
-   "median_prev_12mo": 730000,
-   "count_prev_12mo": 45
+   "median_12mo": 675000,
+   "count_12mo": 45,
+   "median_prev_12mo": 724500,
+   "count_prev_12mo": 46
   },
   "house": {
    "median_12mo": 775000,
@@ -4982,10 +5122,10 @@
    "count_prev_12mo": 17
   },
   "condo": {
-   "median_12mo": 580000,
-   "count_12mo": 23,
-   "median_prev_12mo": 662500,
-   "count_prev_12mo": 28
+   "median_12mo": 570000,
+   "count_12mo": 22,
+   "median_prev_12mo": 650000,
+   "count_prev_12mo": 29
   },
   "last_60d": {
    "median": 654000,
@@ -4995,7 +5135,7 @@
   },
   "above_assessment_12mo": {
    "n": 20,
-   "of": 46
+   "of": 45
   },
   "by_month": [
    {
@@ -5127,7 +5267,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-17T09:20:06Z",
+  "generated_at": "2026-11-18T09:19:45Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -5147,15 +5287,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 40,
-   "starting_next_7d": 2,
-   "reserved_ft": 3476,
+   "active_this_week": 41,
+   "starting_next_7d": 3,
+   "reserved_ft": 3520,
    "long_running_90d": 12,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-17: newest permit issued 2026-11-17, newest record update 2026-11-17, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-18: newest permit issued 2026-11-18, newest record update 2026-11-18, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Construction staging",
-     "count": 27
+     "count": 28
     },
     {
      "type": "Lead pipe replacement",
@@ -5171,6 +5311,14 @@
     }
    ],
    "upcoming": [
+    {
+     "type": "Construction staging",
+     "block": "Unit block of K Street NE",
+     "start": "2026-11-18",
+     "end": "2026-11-19",
+     "ft": 0,
+     "hours": "7 am\u20135 pm"
+    },
     {
      "type": "Utility & DDOT work",
      "block": "1000 block of 3rd Street NE",
@@ -5271,13 +5419,13 @@
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 1652
+    "closed_n": 1659
    },
    {
     "type": "DC Government Information",
     "median_days": 0.0,
     "city_median_days": 0.0,
-    "closed_n": 338
+    "closed_n": 337
    },
    {
     "type": "Illegal Dumping",
@@ -5294,14 +5442,14 @@
    {
     "type": "Roadway Signs",
     "median_days": 10.85,
-    "city_median_days": 7.17,
+    "city_median_days": 7.24,
     "closed_n": 115
    },
    {
     "type": "DOEE - LIHEAP",
     "median_days": 0.0,
     "city_median_days": 0.0,
-    "closed_n": 107
+    "closed_n": 113
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -5311,15 +5459,15 @@
    },
    {
     "type": "DMV - Drivers License/ID Issues",
-    "median_days": 7.92,
+    "median_days": 7.89,
     "city_median_days": 8.0,
-    "closed_n": 95
+    "closed_n": 96
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-17T09:20:06Z",
+  "generated_at": "2026-11-18T09:19:45Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -5489,7 +5637,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-17T09:20:06Z",
+  "generated_at": "2026-11-18T09:19:45Z",
   "archive_days": 180,
   "sources": [
    {
@@ -5560,9 +5708,9 @@
    {
     "name": "The DC Line",
     "url": "https://thedcline.org/",
-    "state": "ok",
+    "state": "error: HTTPError",
     "matched": 0,
-    "fetched": 1
+    "failed": 1
    },
    {
     "name": "Washingtonian",
@@ -5575,7 +5723,7 @@
     "name": "PoPville",
     "url": "https://www.popville.com/",
     "state": "ok",
-    "matched": 0,
+    "matched": 1,
     "fetched": 3
    },
    {
@@ -5636,6 +5784,13 @@
    }
   ],
   "items": [
+   {
+    "title": "EXCLUSIVE and HAPPENING NOW: Call Your Mother Signage Going Up in NoMa!!",
+    "url": "https://www.popville.com/2026/11/call-your-mother-coming-dc-noma/",
+    "source": "PoPville",
+    "published": "2026-11-17T19:30:35Z",
+    "first_seen": "2026-11-18T09:19:45Z"
+   },
    {
     "title": "OK Back to Union Station Rising \u2013 Springbone Kitchen and Joe & The Juice editions",
     "url": "https://www.popville.com/2026/11/union-station-springbone-kitchen-joe-and-the-juice-updates/",
@@ -5873,8 +6028,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-17T09:20:06Z",
-  "today": "2026-11-17",
+  "generated_at": "2026-11-18T09:19:45Z",
+  "today": "2026-11-18",
   "days_ahead": 30,
   "sources": [
    {
@@ -5943,7 +6098,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-17T09:20:06Z",
+  "generated_at": "2026-11-18T09:19:45Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -17296,7 +17451,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-17T09:20:06Z",
+  "generated_at": "2026-11-18T09:19:45Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
