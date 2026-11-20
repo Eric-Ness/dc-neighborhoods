@@ -88,23 +88,25 @@ def round_coord(value: float | None, places: int) -> float | None:
     return None if value is None else round(value, places)
 
 
-PERMIT_RETRY_WAIT = 20  # seconds before asking DC again after an empty permit answer
+# Seconds to wait before each new ask after an empty permit answer. DC's permit layer answers with no rows, not an
+# error, for several minutes around 10:27-10:34 UTC (seen Nov 10, 16 and 20, 2026), most likely while DC reloads it;
+# a 20-second retry landed inside that window every time. These waits span about 11 minutes and cost nothing on a
+# night when the first answer has rows.
+PERMIT_RETRY_WAITS = (60, 180, 420)
 
 
 def fetch_permits(geom: dict, now: float) -> list[dict]:
     start = now - PERMIT_DAYS * DAY
     rows = []
-    # DC's server sometimes answers a busy moment with an empty result instead of an error, and an empty list
-    # fails --check and holds back every site's update for the night. Ask once more before trusting "none".
-    for attempt in range(2):
-        if attempt:
-            time.sleep(PERMIT_RETRY_WAIT)
+    # An empty list fails --check and holds back every site's update for the night, so ask again before trusting "none".
+    for wait in (0, *PERMIT_RETRY_WAITS):
+        if wait:
+            print(f"  permits came back empty; asking again in {wait} s", flush=True)
+            time.sleep(wait)
         for layer in yearly_layers(PERMITS_TITLE, start, now):
             rows += dcdata.query_features(layer, geom, dcdata.date_where("ISSUE_DATE", start), PERMIT_FIELDS, "ISSUE_DATE DESC")
         if rows:
             break
-        if not attempt:
-            print(f"  permits came back empty; retrying in {PERMIT_RETRY_WAIT} s", flush=True)
     permits = []
     for r in rows:
         work = (r["DESC_OF_WORK"] or "").strip()
