@@ -2,9 +2,10 @@ name: Nightly ingest, build, deploy
 
 on:
   schedule:
-    # 07:30 UTC (02:30 Eastern in winter, 03:30 in summer). The run takes about an hour, so it ends before DC's permit
+    # 07:37 UTC (02:37 Eastern in winter, 03:37 in summer). The run takes about an hour, so it ends before DC's permit
     # layer reloads around 10:27-10:34 UTC and answers "none"; the old 09:15 start ran into that window (Nov 10, 16, 20).
-    - cron: "30 7 * * *"
+    # An odd minute: GitHub delays or drops scheduled runs when busy, worst at :00 and common at :30.
+    - cron: "37 7 * * *"
   workflow_dispatch:
   # A push rebuilds and redeploys from the data already committed; only the nightly run (and a manual run) fetches
   # DC's data again. The full ingest takes about an hour, so running it on every push used up the private repo's
@@ -24,7 +25,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 150  # 23 neighborhoods take about 60 minutes; DC retries can add more (a push run takes a few)
+    timeout-minutes: 150  # 40 neighborhoods took 55-70 minutes in November 2026; DC retries can add more (a push run takes a few)
     env:
       # Until the Cloudflare token is added as a repo secret, ingest and build still run; only deploy is skipped.
       HAS_CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
