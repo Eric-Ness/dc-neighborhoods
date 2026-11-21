@@ -1,7 +1,7 @@
 {
  "slug": "bellevue",
  "name": "Bellevue",
- "generated_at": "2026-11-19T09:19:46Z",
+ "generated_at": "2026-11-21T07:40:15Z",
  "boundary": {
   "source": "ANC single-member districts 8D01, 8D03, 8D05, 8D06, 8E07, 8E08 and 8E09, the homes in DC's BELLEVUE planning area (Open Data DC). 8D04 is left out: it is mostly the empty land at DC's southern tip.",
   "rings": [
@@ -8259,6 +8259,45 @@
  },
  "permits": [
   {
+   "id": "E2701796",
+   "issued": "2026-11-18T05:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "843 MONTERIA CT SE 20032",
+   "work": "",
+   "zoning": "RF-1",
+   "lat": 38.83027,
+   "lon": -76.99107,
+   "smd": "8E08"
+  },
+  {
+   "id": "BP2700851",
+   "issued": "2026-11-18T05:00:00Z",
+   "group": "Minor work",
+   "type": "POST CARD",
+   "subtype": "BUILDING",
+   "address": "843 MONTERIA CT SE 20032",
+   "work": "",
+   "zoning": "RF-1",
+   "lat": 38.83027,
+   "lon": -76.99107,
+   "smd": "8E08"
+  },
+  {
+   "id": "P2701625",
+   "issued": "2026-11-18T05:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "PLUMBING AND GAS",
+   "address": "819 H R DR SE 20032",
+   "work": "",
+   "zoning": "RF-1",
+   "lat": 38.82984,
+   "lon": -76.99277,
+   "smd": "8E08"
+  },
+  {
    "id": "E2701640",
    "issued": "2026-11-16T05:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -8441,11 +8480,11 @@
    "smd": "8D01"
   },
   {
-   "id": "E2700822",
+   "id": "P2700779",
    "issued": "2026-10-26T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
    "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
+   "subtype": "PLUMBING AND GAS",
    "address": "627 DARRINGTON ST SE 20032",
    "work": "",
    "zoning": "R-3",
@@ -8467,11 +8506,11 @@
    "smd": "8D01"
   },
   {
-   "id": "P2700779",
+   "id": "E2700822",
    "issued": "2026-10-26T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
    "type": "SUPPLEMENTAL",
-   "subtype": "PLUMBING AND GAS",
+   "subtype": "ELECTRICAL",
    "address": "627 DARRINGTON ST SE 20032",
    "work": "",
    "zoning": "R-3",
@@ -8491,59 +8530,51 @@
    "lat": 38.8299,
    "lon": -77.01141,
    "smd": "8D01"
-  },
-  {
-   "id": "E2700714",
-   "issued": "2026-10-21T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "626 ELMIRA ST SE 20032",
-   "work": "",
-   "zoning": "R-3",
-   "lat": 38.82571,
-   "lon": -76.99783,
-   "smd": "8E09"
   }
  ],
  "requests": {
   "total": 473,
-  "previous_total": 352,
+  "previous_total": 364,
   "by_type": [
    {
     "type": "DOEE - LIHEAP",
-    "count": 131,
-    "previous": 4
+    "count": 137,
+    "previous": 11
    },
    {
     "type": "Bulk Collection",
-    "count": 70,
-    "previous": 75
+    "count": 65,
+    "previous": 77
    },
    {
     "type": "Parking Enforcement",
-    "count": 64,
-    "previous": 43
+    "count": 61,
+    "previous": 44
    },
    {
     "type": "Sanitation Enforcement",
-    "count": 25,
-    "previous": 15
+    "count": 26,
+    "previous": 13
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
-    "count": 21,
-    "previous": 17
+    "count": 22,
+    "previous": 18
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 20,
-    "previous": 10
+    "count": 22,
+    "previous": 9
    },
    {
     "type": "Illegal Dumping",
-    "count": 17,
-    "previous": 23
+    "count": 18,
+    "previous": 22
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "count": 14,
+    "previous": 10
    },
    {
     "type": "Dead Animal Collection",
@@ -8551,59 +8582,44 @@
     "previous": 4
    },
    {
-    "type": "Trash Collection - Missed",
-    "count": 12,
-    "previous": 12
-   },
-   {
     "type": "DMV - Drivers License/ID Issues",
     "count": 11,
-    "previous": 11
-   },
-   {
-    "type": "DC Government Information",
-    "count": 10,
-    "previous": 23
-   },
-   {
-    "type": "Out of State Parking Violation (ROSA)",
-    "count": 10,
-    "previous": 8
-   },
-   {
-    "type": "Supercan - Delivery",
-    "count": 7,
     "previous": 10
    },
    {
+    "type": "Out of State Parking Violation (ROSA)",
+    "count": 11,
+    "previous": 9
+   },
+   {
     "type": "Residential Parking Permit Violation",
+    "count": 8,
+    "previous": 16
+   },
+   {
+    "type": "Supercan - Delivery",
+    "count": 8,
+    "previous": 9
+   },
+   {
+    "type": "DC Government Information",
     "count": 6,
-    "previous": 18
+    "previous": 27
    },
    {
     "type": "Public Space Litter Can-Collection",
-    "count": 4,
-    "previous": 0
-   },
-   {
-    "type": "Roadway Signs",
     "count": 3,
-    "previous": 5
-   },
-   {
-    "type": "DOB - Vacant Private Property Inspection",
-    "count": 3,
-    "previous": 7
-   },
-   {
-    "type": "Pothole",
-    "count": 3,
-    "previous": 3
+    "previous": 1
    },
    {
     "type": "Abandoned Vehicle - On Private Property",
     "count": 3,
     "previous": 2
+   },
+   {
+    "type": "Roadway Signs",
+    "count": 3,
+    "previous": 6
    },
    {
     "type": "DMV - Vehicle Registration Issues",
@@ -8616,24 +8632,14 @@
     "previous": 2
    },
    {
-    "type": "Traffic Safety Input",
-    "count": 2,
-    "previous": 0
-   },
-   {
-    "type": "Sidewalk Repair",
-    "count": 2,
-    "previous": 4
-   },
-   {
-    "type": "DMV - Vehicle Title Issues",
-    "count": 2,
-    "previous": 0
-   },
-   {
     "type": "Signed Street Sweeping Missed",
     "count": 2,
     "previous": 1
+   },
+   {
+    "type": "Pothole",
+    "count": 2,
+    "previous": 4
    },
    {
     "type": "DMV - Driver and Vehicle Services Refund",
@@ -8661,9 +8667,14 @@
     "previous": 1
    },
    {
-    "type": "Supercan - Repair",
+    "type": "Public Space Inspection",
     "count": 2,
     "previous": 1
+   },
+   {
+    "type": "Supercan - Repair",
+    "count": 2,
+    "previous": 0
    },
    {
     "type": "Roadway Markings / Pylons",
@@ -8671,29 +8682,19 @@
     "previous": 0
    },
    {
-    "type": "Tree Removal",
-    "count": 1,
-    "previous": 1
+    "type": "DOB - Vacant Private Property Inspection",
+    "count": 2,
+    "previous": 8
    },
    {
-    "type": "Tree Inspection",
-    "count": 1,
-    "previous": 6
-   },
-   {
-    "type": "Recycling Collection - Missed",
-    "count": 1,
-    "previous": 9
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "count": 1,
+    "type": "Roadway Repair",
+    "count": 2,
     "previous": 1
    },
    {
     "type": "OCTFME - Down Cable Wires",
     "count": 1,
-    "previous": 1
+    "previous": 0
    },
    {
     "type": "Pet Waste Complaint",
@@ -8708,17 +8709,22 @@
    {
     "type": "DC Health Rodent & Vector Control",
     "count": 1,
-    "previous": 2
+    "previous": 1
+   },
+   {
+    "type": "Sidewalk Repair",
+    "count": 1,
+    "previous": 5
+   },
+   {
+    "type": "DMV - Vehicle Title Issues",
+    "count": 1,
+    "previous": 1
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "count": 1,
     "previous": 9
-   },
-   {
-    "type": "Public Space Inspection",
-    "count": 1,
-    "previous": 1
    },
    {
     "type": "Recycling Cart - Repair",
@@ -8731,19 +8737,404 @@
     "previous": 0
    },
    {
-    "type": "Roadway Repair",
+    "type": "Traffic Safety Input",
     "count": 1,
     "previous": 1
+   },
+   {
+    "type": "Tree Inspection",
+    "count": 1,
+    "previous": 7
+   },
+   {
+    "type": "Trash Cart - Delivery",
+    "count": 1,
+    "previous": 1
+   },
+   {
+    "type": "DC How Am I Driving?",
+    "count": 1,
+    "previous": 0
    }
   ],
-  "open": 64,
+  "open": 62,
   "recent": [
+   {
+    "type": "Trash Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-20T21:32:36Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "600 block of BRANDYWINE STREET SE",
+    "lat": 38.83,
+    "lon": -76.998
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-20T20:49:51Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "400 block of ATLANTIC STREET SE",
+    "lat": 38.831,
+    "lon": -77.0
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-20T19:03:50Z",
+    "resolved": "2026-11-20T19:03:50Z",
+    "status": "Closed",
+    "block": "4600 block of MARTIN LUTHER KING JR AVENUE SW",
+    "lat": 38.822,
+    "lon": -77.01
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-20T18:37:00Z",
+    "resolved": "2026-11-20T18:37:00Z",
+    "status": "Closed",
+    "block": "Unit block of MISSISSIPPI AVENUE SE",
+    "lat": 38.832,
+    "lon": -77.007
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-20T18:27:06Z",
+    "resolved": "2026-11-20T18:27:06Z",
+    "status": "Closed",
+    "block": "4000 block of SOUTH CAPITOL STREET SW",
+    "lat": 38.831,
+    "lon": -77.008
+   },
+   {
+    "type": "DC How Am I Driving?",
+    "agency": "ORM",
+    "added": "2026-11-20T16:05:21Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "Unit block of GALVESTON PLACE SW",
+    "lat": 38.824,
+    "lon": -77.008
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-20T15:14:32Z",
+    "resolved": "2026-11-20T15:14:32Z",
+    "status": "Closed",
+    "block": "4200 block of 1ST STREET SE",
+    "lat": 38.828,
+    "lon": -77.006
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-20T14:54:56Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "600 block of BRANDYWINE STREET SE",
+    "lat": 38.83,
+    "lon": -76.997
+   },
+   {
+    "type": "Public Space Inspection",
+    "agency": "DDOT",
+    "added": "2026-11-20T14:17:58Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "SOUTH CAPITOL STREET AND HALLEY PLACE SE",
+    "lat": 38.836,
+    "lon": -77.008
+   },
+   {
+    "type": "Residential Parking Permit Violation",
+    "agency": "DPW",
+    "added": "2026-11-20T13:59:17Z",
+    "resolved": "2026-11-20T14:32:31Z",
+    "status": "Closed",
+    "block": "600 block of BRANDYWINE STREET SE",
+    "lat": 38.83,
+    "lon": -76.996
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-20T06:07:43Z",
+    "resolved": "2026-11-20T07:11:33Z",
+    "status": "Closed",
+    "block": "3800 block of HALLEY TERRACE SE",
+    "lat": 38.834,
+    "lon": -77.007
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-19T23:14:08Z",
+    "resolved": "2026-11-20T00:11:59Z",
+    "status": "Closed",
+    "block": "4300 block of MARTIN LUTHER KING JR AVENUE SW",
+    "lat": 38.827,
+    "lon": -77.012
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "agency": "DPW",
+    "added": "2026-11-19T23:05:10Z",
+    "resolved": "2026-11-20T06:41:56Z",
+    "status": "Closed",
+    "block": "4300 block of MARTIN LUTHER KING JR AVENUE SW",
+    "lat": 38.827,
+    "lon": -77.012
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-19T20:57:39Z",
+    "resolved": "2026-11-19T20:57:39Z",
+    "status": "Closed",
+    "block": "4300 block of 4TH STREET SE",
+    "lat": 38.828,
+    "lon": -77.002
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-19T20:15:48Z",
+    "resolved": "2026-11-19T20:15:48Z",
+    "status": "Closed",
+    "block": "Unit block of GALVESTON STREET SW",
+    "lat": 38.822,
+    "lon": -77.008
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-19T20:13:40Z",
+    "resolved": "2026-11-19T20:13:40Z",
+    "status": "Closed",
+    "block": "800 block of CHESAPEAKE STREET SE",
+    "lat": 38.829,
+    "lon": -76.992
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-19T18:21:58Z",
+    "resolved": "2026-11-19T18:21:58Z",
+    "status": "Closed",
+    "block": "Unit block of HALLEY PLACE SE",
+    "lat": 38.835,
+    "lon": -77.007
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-19T18:16:02Z",
+    "resolved": "2026-11-19T18:16:02Z",
+    "status": "Closed",
+    "block": "100 block of IVANHOE STREET SW",
+    "lat": 38.822,
+    "lon": -77.008
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-19T16:44:31Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4200 block of 6TH STREET SE",
+    "lat": 38.827,
+    "lon": -76.998
+   },
+   {
+    "type": "Roadway Signs",
+    "agency": "DDOT",
+    "added": "2026-11-19T16:40:47Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "600 block of CHESAPEAKE STREET SE",
+    "lat": 38.829,
+    "lon": -76.997
+   },
+   {
+    "type": "Sanitation Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-19T16:39:27Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "700 block of BARNABY ROAD SE",
+    "lat": 38.829,
+    "lon": -76.995
+   },
+   {
+    "type": "Abandoned Vehicle - On Public Property",
+    "agency": "DPW",
+    "added": "2026-11-19T16:36:14Z",
+    "resolved": "2026-11-20T15:33:21Z",
+    "status": "Closed",
+    "block": "700 block of SOUTHERN AVENUE SE",
+    "lat": 38.827,
+    "lon": -76.994
+   },
+   {
+    "type": "Roadway Repair",
+    "agency": "DDOT",
+    "added": "2026-11-19T16:33:19Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "4000 block of SOUTH CAPITOL STREET",
+    "lat": 38.831,
+    "lon": -77.008
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-19T16:15:31Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "500 block of BRANDYWINE STREET SE",
+    "lat": 38.83,
+    "lon": -76.999
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-19T16:00:53Z",
+    "resolved": "2026-11-19T16:00:53Z",
+    "status": "Closed",
+    "block": "Unit block of DANBURY STREET SW",
+    "lat": 38.828,
+    "lon": -77.01
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-19T15:31:14Z",
+    "resolved": "2026-11-19T15:31:14Z",
+    "status": "Closed",
+    "block": "4000 block of SOUTH CAPITOL STREET SW",
+    "lat": 38.831,
+    "lon": -77.008
+   },
+   {
+    "type": "Abandoned Vehicle - On Public Property",
+    "agency": "DPW",
+    "added": "2026-11-19T15:27:02Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4000 block of LIVINGSTON ROAD SE",
+    "lat": 38.83,
+    "lon": -77.003
+   },
+   {
+    "type": "Trash Cart - Delivery",
+    "agency": "DPW",
+    "added": "2026-11-19T15:23:21Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4100 block of 4TH STREET SE",
+    "lat": 38.83,
+    "lon": -77.001
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-19T15:15:20Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "4100 block of 4TH STREET SE",
+    "lat": 38.83,
+    "lon": -77.001
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-19T15:13:19Z",
+    "resolved": "2026-11-19T15:13:19Z",
+    "status": "Closed",
+    "block": "4600 block of MARTIN LUTHER KING JR AVENUE SW",
+    "lat": 38.822,
+    "lon": -77.01
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-19T15:12:17Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3900 block of 1ST STREET SW",
+    "lat": 38.832,
+    "lon": -77.011
+   },
+   {
+    "type": "Supercan - Delivery",
+    "agency": "DPW",
+    "added": "2026-11-19T14:49:51Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3900 block of 2ND STREET SW",
+    "lat": 38.832,
+    "lon": -77.012
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-19T14:48:53Z",
+    "resolved": "2026-11-19T14:48:53Z",
+    "status": "Closed",
+    "block": "Unit block of ELMIRA STREET SE",
+    "lat": 38.826,
+    "lon": -77.006
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-19T14:41:58Z",
+    "resolved": "2026-11-19T14:41:58Z",
+    "status": "Closed",
+    "block": "4600 block of MARTIN LUTHER KING JR AVENUE SW",
+    "lat": 38.822,
+    "lon": -77.01
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-19T14:23:46Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "100 block of FORRESTER STREET SW",
+    "lat": 38.825,
+    "lon": -77.01
+   },
+   {
+    "type": "Residential Parking Permit Violation",
+    "agency": "DPW",
+    "added": "2026-11-19T14:22:09Z",
+    "resolved": "2026-11-19T14:59:29Z",
+    "status": "Closed",
+    "block": "600 block of BRANDYWINE STREET SE",
+    "lat": 38.83,
+    "lon": -76.996
+   },
+   {
+    "type": "Tree Inspection",
+    "agency": "DDOT",
+    "added": "2026-11-19T13:46:25Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "3600 block of MARTIN LUTHER KING JR AVENUE SE",
+    "lat": 38.839,
+    "lon": -77.005
+   },
    {
     "type": "Streetlight Repair Investigation",
     "agency": "DDOT",
     "added": "2026-11-19T02:24:15Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-20T06:10:57Z",
+    "status": "Closed",
     "block": "600 block of BRANDYWINE STREET SE",
     "lat": 38.83,
     "lon": -76.997
@@ -8867,400 +9258,35 @@
     "block": "Unit block of FORRESTER STREET SW",
     "lat": 38.825,
     "lon": -77.01
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-18T14:02:37Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3900 block of 2ND STREET SW",
-    "lat": 38.833,
-    "lon": -77.011
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-18T14:02:15Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "600 block of FORRESTER STREET SE",
-    "lat": 38.825,
-    "lon": -76.998
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-18T13:53:04Z",
-    "resolved": "2026-11-18T13:53:04Z",
-    "status": "Closed",
-    "block": "Unit block of DANBURY STREET SW",
-    "lat": 38.828,
-    "lon": -77.01
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-18T01:51:23Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "800 block of H R DRIVE SE",
-    "lat": 38.83,
-    "lon": -76.992
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-17T20:48:13Z",
-    "resolved": "2026-11-17T21:54:05Z",
-    "status": "Closed",
-    "block": "4200 block of 4TH STREET SE",
-    "lat": 38.827,
-    "lon": -76.999
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-17T20:46:14Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "600 block of BRANDYWINE STREET SE",
-    "lat": 38.83,
-    "lon": -76.997
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-17T20:07:09Z",
-    "resolved": "2026-11-17T20:07:09Z",
-    "status": "Closed",
-    "block": "Unit block of ATLANTIC STREET SE",
-    "lat": 38.831,
-    "lon": -77.006
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-17T18:13:14Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4000 block of 1ST PLACE SW",
-    "lat": 38.831,
-    "lon": -77.01
-   },
-   {
-    "type": "Abandoned Vehicle - On Public Property",
-    "agency": "DPW",
-    "added": "2026-11-17T17:55:30Z",
-    "resolved": "2026-11-18T15:15:48Z",
-    "status": "Closed",
-    "block": "Unit block of MISSISSIPPI AVENUE SE",
-    "lat": 38.832,
-    "lon": -77.007
-   },
-   {
-    "type": "Roadway Repair",
-    "agency": "DDOT",
-    "added": "2026-11-17T16:59:30Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "4200 block of 4TH STREET SE",
-    "lat": 38.829,
-    "lon": -77.0
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-17T16:55:28Z",
-    "resolved": "2026-11-18T16:00:06Z",
-    "status": "Closed",
-    "block": "800 block of BARNABY STREET SE",
-    "lat": 38.831,
-    "lon": -76.993
-   },
-   {
-    "type": "DOB - Vacant Private Property Inspection",
-    "agency": "DOB",
-    "added": "2026-11-17T16:49:37Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "400 block of ATLANTIC STREET SE",
-    "lat": 38.831,
-    "lon": -77.0
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-17T16:45:58Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "100 block of DARRINGTON STREET SW",
-    "lat": 38.827,
-    "lon": -77.012
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-17T16:36:35Z",
-    "resolved": "2026-11-17T18:01:40Z",
-    "status": "Closed",
-    "block": "4200 block of 4TH STREET SE",
-    "lat": 38.827,
-    "lon": -76.999
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-17T16:27:17Z",
-    "resolved": "2026-11-18T16:42:10Z",
-    "status": "Closed",
-    "block": "700 block of BARNABY STREET SE",
-    "lat": 38.829,
-    "lon": -76.995
-   },
-   {
-    "type": "DOB - Vacant Private Property Inspection",
-    "agency": "DOB",
-    "added": "2026-11-17T16:24:04Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "4200 block of 6TH STREET SE",
-    "lat": 38.828,
-    "lon": -76.998
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-17T15:55:29Z",
-    "resolved": "2026-11-18T17:36:05Z",
-    "status": "Closed",
-    "block": "3800 block of SOUTH CAPITOL STREET SE",
-    "lat": 38.835,
-    "lon": -77.008
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-17T15:37:01Z",
-    "resolved": "2026-11-17T15:37:01Z",
-    "status": "Closed",
-    "block": "700 block of BRANDYWINE STREET SE",
-    "lat": 38.83,
-    "lon": -76.994
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-17T15:04:20Z",
-    "resolved": "2026-11-17T15:04:20Z",
-    "status": "Closed",
-    "block": "4100 block of LIVINGSTON ROAD SE",
-    "lat": 38.828,
-    "lon": -77.003
-   },
-   {
-    "type": "Out of State Parking Violation (ROSA)",
-    "agency": "DPW",
-    "added": "2026-11-17T04:50:39Z",
-    "resolved": "2026-11-17T06:29:41Z",
-    "status": "Closed",
-    "block": "3800 block of HALLEY TERRACE SE",
-    "lat": 38.834,
-    "lon": -77.007
-   },
-   {
-    "type": "Traffic Safety Input",
-    "agency": "DDOT",
-    "added": "2026-11-16T23:12:55Z",
-    "resolved": "2026-11-16T23:20:56Z",
-    "status": "Closed",
-    "block": "800 block of BARNABY STREET SE",
-    "lat": 38.83,
-    "lon": -76.993
-   },
-   {
-    "type": "Streetlight Repair Investigation",
-    "agency": "DDOT",
-    "added": "2026-11-16T23:10:42Z",
-    "resolved": "2026-11-18T04:55:57Z",
-    "status": "Closed",
-    "block": "800 block of BARNABY STREET SE",
-    "lat": 38.83,
-    "lon": -76.993
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-16T21:34:52Z",
-    "resolved": "2026-11-16T21:34:52Z",
-    "status": "Closed",
-    "block": "500 block of CHESAPEAKE STREET SE",
-    "lat": 38.829,
-    "lon": -76.999
-   },
-   {
-    "type": "Roadway Markings / Pylons",
-    "agency": "DDOT",
-    "added": "2026-11-16T21:10:09Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "DANBURY STREET SW AND MARTIN LUTHER KING JR AVENUE SW",
-    "lat": 38.828,
-    "lon": -77.013
-   },
-   {
-    "type": "Roadway Markings / Pylons",
-    "agency": "DDOT",
-    "added": "2026-11-16T21:08:20Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "100 block of CHESAPEAKE STREET SW",
-    "lat": 38.828,
-    "lon": -77.012
-   },
-   {
-    "type": "Bulk Collection",
-    "agency": "DPW",
-    "added": "2026-11-16T20:58:05Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "100 block of BRANDYWINE PLACE SW",
-    "lat": 38.83,
-    "lon": -77.013
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "agency": "DPW",
-    "added": "2026-11-16T20:52:19Z",
-    "resolved": "2026-11-17T14:07:13Z",
-    "status": "Closed",
-    "block": "4000 block of MARTIN LUTHER KING JR AVENUE SW",
-    "lat": 38.831,
-    "lon": -77.01
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-16T20:51:48Z",
-    "resolved": "2026-11-16T22:42:05Z",
-    "status": "Closed",
-    "block": "3800 block of HALLEY TERRACE SE",
-    "lat": 38.834,
-    "lon": -77.007
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-16T20:31:56Z",
-    "resolved": "2026-11-16T20:33:36Z",
-    "status": "Closed (Duplicate)",
-    "block": "4200 block of 4TH STREET SE",
-    "lat": 38.827,
-    "lon": -76.999
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-16T20:29:06Z",
-    "resolved": "2026-11-16T20:33:36Z",
-    "status": "Closed (Duplicate)",
-    "block": "4200 block of 4TH STREET SE",
-    "lat": 38.827,
-    "lon": -76.999
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-16T20:26:01Z",
-    "resolved": "2026-11-16T20:33:36Z",
-    "status": "Closed (Duplicate)",
-    "block": "4200 block of 4TH STREET SE",
-    "lat": 38.827,
-    "lon": -76.999
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-16T20:24:19Z",
-    "resolved": "2026-11-16T20:33:36Z",
-    "status": "Closed (Duplicate)",
-    "block": "4200 block of 4TH STREET SE",
-    "lat": 38.827,
-    "lon": -76.999
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-16T20:22:40Z",
-    "resolved": "2026-11-16T20:33:36Z",
-    "status": "Closed (Duplicate)",
-    "block": "4200 block of 4TH STREET SE",
-    "lat": 38.827,
-    "lon": -76.999
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-16T20:20:50Z",
-    "resolved": "2026-11-16T20:33:36Z",
-    "status": "Closed (Duplicate)",
-    "block": "4200 block of 4TH STREET SE",
-    "lat": 38.827,
-    "lon": -76.999
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-16T20:15:29Z",
-    "resolved": "2026-11-16T20:33:36Z",
-    "status": "Closed (Duplicate)",
-    "block": "4200 block of 4TH STREET SE",
-    "lat": 38.827,
-    "lon": -76.999
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-16T20:13:10Z",
-    "resolved": "2026-11-16T20:33:36Z",
-    "status": "Closed (Duplicate)",
-    "block": "4200 block of 4TH STREET SE",
-    "lat": 38.827,
-    "lon": -76.999
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-16T20:12:02Z",
-    "resolved": "2026-11-16T20:12:02Z",
-    "status": "Closed",
-    "block": "Unit block of MISSISSIPPI AVENUE SE",
-    "lat": 38.832,
-    "lon": -77.007
    }
   ],
   "mapped": {
    "types": [
-    "Streetlight Repair Investigation",
+    "Trash Collection - Missed",
     "DOEE - LIHEAP",
-    "DMV - Vehicle Registration Issues",
-    "Scheduled Yard Waste",
+    "DC How Am I Driving?",
     "Bulk Collection",
-    "Illegal Dumping",
-    "Leaf  Collection Missed",
+    "Public Space Inspection",
+    "Residential Parking Permit Violation",
+    "Out of State Parking Violation (ROSA)",
     "Parking Enforcement",
+    "Illegal Dumping",
+    "Roadway Signs",
+    "Sanitation Enforcement",
     "Abandoned Vehicle - On Public Property",
     "Roadway Repair",
-    "Sanitation Enforcement",
+    "Scheduled Yard Waste",
+    "Trash Cart - Delivery",
+    "Supercan - Delivery",
+    "Tree Inspection",
+    "Streetlight Repair Investigation",
+    "DMV - Vehicle Registration Issues",
+    "Leaf  Collection Missed",
     "DOB - Vacant Private Property Inspection",
-    "Out of State Parking Violation (ROSA)",
     "Traffic Safety Input",
     "Roadway Markings / Pylons",
-    "Trash Collection - Missed",
     "DMV - Forms, Applications, and Manuals Request",
-    "Residential Parking Permit Violation",
     "Dead Animal Collection",
-    "Supercan - Delivery",
     "DMV - Online Processing Issues",
     "DMV - Drivers License/ID Issues",
     "DC Government Information",
@@ -9268,54 +9294,361 @@
     "Recycling Cart - Repair",
     "Container Removal",
     "Public Space Litter Can-Collection",
-    "Public Space Inspection",
     "DMV - Driver and Vehicle Services Refund",
     "Traffic Lights and Pedestrian Walk Signals",
     "Sidewalk Repair",
     "DMV - Vehicle Title Issues",
     "Pothole",
-    "Roadway Signs",
     "Abandoned Vehicle - On Private Property",
     "Tree Pruning",
     "DC Health Rodent & Vector Control",
     "Signed Street Sweeping Missed",
     "Grass Mowing Services Missed (DGS)",
     "Pet Waste Complaint",
-    "OCTFME - Down Cable Wires",
-    "Dockless Vehicle Parking Complaint",
-    "Recycling Collection - Missed",
-    "Tree Inspection",
-    "Tree Removal"
+    "OCTFME - Down Cable Wires"
    ],
    "blocks": [
+    {
+     "block": "600 block of BRANDYWINE STREET SE",
+     "lat": 38.83,
+     "lon": -76.998,
+     "r": [
+      [
+       0,
+       "2026-11-20",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-11-09",
+       "2026-11-10",
+       0
+      ],
+      [
+       0,
+       "2026-11-06",
+       "2026-11-10",
+       0
+      ],
+      [
+       11,
+       "2026-10-31",
+       "2026-11-20",
+       0
+      ],
+      [
+       6,
+       "2026-10-29",
+       "2026-10-30",
+       0
+      ],
+      [
+       26,
+       "2026-10-22",
+       "2026-11-02",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "400 block of ATLANTIC STREET SE",
+     "lat": 38.831,
+     "lon": -77.0,
+     "r": [
+      [
+       0,
+       "2026-11-20",
+       null,
+       1
+      ],
+      [
+       20,
+       "2026-11-17",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "4600 block of MARTIN LUTHER KING JR AVENUE SW",
+     "lat": 38.822,
+     "lon": -77.01,
+     "r": [
+      [
+       1,
+       "2026-11-20",
+       "2026-11-20",
+       0
+      ],
+      [
+       1,
+       "2026-11-19",
+       "2026-11-19",
+       0
+      ],
+      [
+       1,
+       "2026-11-19",
+       "2026-11-19",
+       0
+      ],
+      [
+       1,
+       "2026-11-09",
+       "2026-11-09",
+       0
+      ],
+      [
+       7,
+       "2026-11-08",
+       "2026-11-08",
+       0
+      ],
+      [
+       32,
+       "2026-11-06",
+       "2026-11-18",
+       0
+      ],
+      [
+       1,
+       "2026-11-04",
+       "2026-11-04",
+       0
+      ],
+      [
+       1,
+       "2026-10-27",
+       "2026-10-27",
+       0
+      ],
+      [
+       1,
+       "2026-10-26",
+       "2026-10-26",
+       0
+      ],
+      [
+       1,
+       "2026-10-23",
+       "2026-10-23",
+       0
+      ],
+      [
+       1,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ],
+      [
+       1,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of MISSISSIPPI AVENUE SE",
+     "lat": 38.832,
+     "lon": -77.007,
+     "r": [
+      [
+       1,
+       "2026-11-20",
+       "2026-11-20",
+       0
+      ],
+      [
+       11,
+       "2026-11-17",
+       "2026-11-18",
+       0
+      ],
+      [
+       1,
+       "2026-11-16",
+       "2026-11-16",
+       0
+      ],
+      [
+       7,
+       "2026-11-15",
+       "2026-11-18",
+       0
+      ],
+      [
+       24,
+       "2026-11-14",
+       "2026-11-16",
+       0
+      ],
+      [
+       1,
+       "2026-11-09",
+       "2026-11-09",
+       0
+      ],
+      [
+       7,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       1,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       7,
+       "2026-11-05",
+       "2026-11-05",
+       0
+      ],
+      [
+       1,
+       "2026-11-04",
+       "2026-11-04",
+       0
+      ],
+      [
+       7,
+       "2026-11-04",
+       "2026-11-04",
+       0
+      ],
+      [
+       7,
+       "2026-10-31",
+       "2026-10-31",
+       0
+      ],
+      [
+       1,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       1,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       7,
+       "2026-10-26",
+       "2026-10-26",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4000 block of SOUTH CAPITOL STREET SW",
+     "lat": 38.831,
+     "lon": -77.008,
+     "r": [
+      [
+       1,
+       "2026-11-20",
+       "2026-11-20",
+       0
+      ],
+      [
+       1,
+       "2026-11-19",
+       "2026-11-19",
+       0
+      ],
+      [
+       1,
+       "2026-11-05",
+       "2026-11-05",
+       0
+      ],
+      [
+       1,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       1,
+       "2026-10-27",
+       "2026-10-27",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of GALVESTON PLACE SW",
+     "lat": 38.824,
+     "lon": -77.008,
+     "r": [
+      [
+       2,
+       "2026-11-20",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "4200 block of 1ST STREET SE",
+     "lat": 38.828,
+     "lon": -77.006,
+     "r": [
+      [
+       1,
+       "2026-11-20",
+       "2026-11-20",
+       0
+      ],
+      [
+       1,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ]
+     ]
+    },
     {
      "block": "600 block of BRANDYWINE STREET SE",
      "lat": 38.83,
      "lon": -76.997,
      "r": [
       [
-       0,
-       "2026-11-19",
+       3,
+       "2026-11-20",
        null,
        1
       ],
       [
-       4,
+       17,
+       "2026-11-19",
+       "2026-11-20",
+       0
+      ],
+      [
+       3,
        "2026-11-18",
        null,
        1
       ],
       [
-       3,
+       13,
        "2026-11-17",
        null,
        1
       ],
       [
-       4,
+       3,
        "2026-11-15",
-       null,
-       1
+       "2026-11-20",
+       0
       ],
       [
        7,
@@ -9324,13 +9657,13 @@
        0
       ],
       [
-       15,
+       0,
        "2026-11-11",
        "2026-11-13",
        0
       ],
       [
-       15,
+       0,
        "2026-11-07",
        "2026-11-10",
        0
@@ -9348,10 +9681,537 @@
        0
       ],
       [
-       8,
+       11,
        "2026-10-26",
        "2026-10-26",
        0
+      ]
+     ]
+    },
+    {
+     "block": "SOUTH CAPITOL STREET AND HALLEY PLACE SE",
+     "lat": 38.836,
+     "lon": -77.008,
+     "r": [
+      [
+       4,
+       "2026-11-20",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "600 block of BRANDYWINE STREET SE",
+     "lat": 38.83,
+     "lon": -76.996,
+     "r": [
+      [
+       5,
+       "2026-11-20",
+       "2026-11-20",
+       0
+      ],
+      [
+       5,
+       "2026-11-19",
+       "2026-11-19",
+       0
+      ],
+      [
+       5,
+       "2026-11-06",
+       "2026-11-06",
+       0
+      ],
+      [
+       8,
+       "2026-10-22",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "3800 block of HALLEY TERRACE SE",
+     "lat": 38.834,
+     "lon": -77.007,
+     "r": [
+      [
+       6,
+       "2026-11-20",
+       "2026-11-20",
+       0
+      ],
+      [
+       6,
+       "2026-11-17",
+       "2026-11-17",
+       0
+      ],
+      [
+       7,
+       "2026-11-16",
+       "2026-11-16",
+       0
+      ],
+      [
+       15,
+       "2026-11-15",
+       null,
+       1
+      ],
+      [
+       10,
+       "2026-11-11",
+       "2026-11-12",
+       0
+      ],
+      [
+       3,
+       "2026-11-10",
+       "2026-11-16",
+       0
+      ],
+      [
+       6,
+       "2026-10-23",
+       "2026-10-26",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4300 block of MARTIN LUTHER KING JR AVENUE SW",
+     "lat": 38.827,
+     "lon": -77.012,
+     "r": [
+      [
+       7,
+       "2026-11-19",
+       "2026-11-20",
+       0
+      ],
+      [
+       6,
+       "2026-11-19",
+       "2026-11-20",
+       0
+      ],
+      [
+       6,
+       "2026-11-11",
+       "2026-11-12",
+       0
+      ],
+      [
+       7,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ],
+      [
+       6,
+       "2026-10-22",
+       "2026-10-23",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4300 block of 4TH STREET SE",
+     "lat": 38.828,
+     "lon": -77.002,
+     "r": [
+      [
+       1,
+       "2026-11-19",
+       "2026-11-19",
+       0
+      ],
+      [
+       1,
+       "2026-11-12",
+       "2026-11-12",
+       0
+      ],
+      [
+       1,
+       "2026-11-12",
+       "2026-11-12",
+       0
+      ],
+      [
+       1,
+       "2026-10-28",
+       "2026-10-28",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of GALVESTON STREET SW",
+     "lat": 38.822,
+     "lon": -77.008,
+     "r": [
+      [
+       1,
+       "2026-11-19",
+       "2026-11-19",
+       0
+      ],
+      [
+       27,
+       "2026-10-30",
+       "2026-10-30",
+       0
+      ],
+      [
+       1,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "800 block of CHESAPEAKE STREET SE",
+     "lat": 38.829,
+     "lon": -76.992,
+     "r": [
+      [
+       1,
+       "2026-11-19",
+       "2026-11-19",
+       0
+      ],
+      [
+       1,
+       "2026-11-09",
+       "2026-11-09",
+       0
+      ],
+      [
+       1,
+       "2026-11-04",
+       "2026-11-04",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of HALLEY PLACE SE",
+     "lat": 38.835,
+     "lon": -77.007,
+     "r": [
+      [
+       1,
+       "2026-11-19",
+       "2026-11-19",
+       0
+      ],
+      [
+       19,
+       "2026-11-18",
+       null,
+       1
+      ],
+      [
+       25,
+       "2026-11-13",
+       "2026-11-20",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "100 block of IVANHOE STREET SW",
+     "lat": 38.822,
+     "lon": -77.008,
+     "r": [
+      [
+       1,
+       "2026-11-19",
+       "2026-11-19",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4200 block of 6TH STREET SE",
+     "lat": 38.827,
+     "lon": -76.998,
+     "r": [
+      [
+       8,
+       "2026-11-19",
+       null,
+       1
+      ],
+      [
+       10,
+       "2026-11-14",
+       "2026-11-17",
+       0
+      ],
+      [
+       8,
+       "2026-11-08",
+       "2026-11-10",
+       0
+      ],
+      [
+       0,
+       "2026-11-06",
+       "2026-11-09",
+       0
+      ],
+      [
+       8,
+       "2026-10-29",
+       "2026-11-02",
+       0
+      ],
+      [
+       8,
+       "2026-10-22",
+       "2026-10-23",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "600 block of CHESAPEAKE STREET SE",
+     "lat": 38.829,
+     "lon": -76.997,
+     "r": [
+      [
+       9,
+       "2026-11-19",
+       null,
+       1
+      ],
+      [
+       10,
+       "2026-11-16",
+       "2026-11-17",
+       0
+      ],
+      [
+       8,
+       "2026-10-27",
+       "2026-10-29",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "700 block of BARNABY ROAD SE",
+     "lat": 38.829,
+     "lon": -76.995,
+     "r": [
+      [
+       10,
+       "2026-11-19",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "700 block of SOUTHERN AVENUE SE",
+     "lat": 38.827,
+     "lon": -76.994,
+     "r": [
+      [
+       11,
+       "2026-11-19",
+       "2026-11-20",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4000 block of SOUTH CAPITOL STREET",
+     "lat": 38.831,
+     "lon": -77.008,
+     "r": [
+      [
+       12,
+       "2026-11-19",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "500 block of BRANDYWINE STREET SE",
+     "lat": 38.83,
+     "lon": -76.999,
+     "r": [
+      [
+       13,
+       "2026-11-19",
+       null,
+       1
+      ],
+      [
+       13,
+       "2026-11-15",
+       "2026-11-19",
+       0
+      ],
+      [
+       3,
+       "2026-10-27",
+       "2026-11-03",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of DANBURY STREET SW",
+     "lat": 38.828,
+     "lon": -77.01,
+     "r": [
+      [
+       1,
+       "2026-11-19",
+       "2026-11-19",
+       0
+      ],
+      [
+       1,
+       "2026-11-18",
+       "2026-11-18",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4000 block of LIVINGSTON ROAD SE",
+     "lat": 38.83,
+     "lon": -77.003,
+     "r": [
+      [
+       11,
+       "2026-11-19",
+       null,
+       1
+      ],
+      [
+       26,
+       "2026-11-02",
+       "2026-11-04",
+       0
+      ],
+      [
+       7,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ],
+      [
+       7,
+       "2026-10-22",
+       "2026-10-22",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "4100 block of 4TH STREET SE",
+     "lat": 38.83,
+     "lon": -77.001,
+     "r": [
+      [
+       14,
+       "2026-11-19",
+       null,
+       1
+      ],
+      [
+       3,
+       "2026-11-19",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "3900 block of 1ST STREET SW",
+     "lat": 38.832,
+     "lon": -77.011,
+     "r": [
+      [
+       13,
+       "2026-11-19",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "3900 block of 2ND STREET SW",
+     "lat": 38.832,
+     "lon": -77.012,
+     "r": [
+      [
+       15,
+       "2026-11-19",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "Unit block of ELMIRA STREET SE",
+     "lat": 38.826,
+     "lon": -77.006,
+     "r": [
+      [
+       1,
+       "2026-11-19",
+       "2026-11-19",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "100 block of FORRESTER STREET SW",
+     "lat": 38.825,
+     "lon": -77.01,
+     "r": [
+      [
+       3,
+       "2026-11-19",
+       null,
+       1
+      ],
+      [
+       3,
+       "2026-11-13",
+       "2026-11-16",
+       0
+      ],
+      [
+       3,
+       "2026-11-05",
+       "2026-11-09",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3600 block of MARTIN LUTHER KING JR AVENUE SE",
+     "lat": 38.839,
+     "lon": -77.005,
+     "r": [
+      [
+       16,
+       "2026-11-19",
+       null,
+       1
       ]
      ]
     },
@@ -9380,7 +10240,7 @@
      "lon": -77.007,
      "r": [
       [
-       2,
+       18,
        "2026-11-18",
        "2026-11-18",
        0
@@ -9399,13 +10259,13 @@
      "lon": -76.998,
      "r": [
       [
-       3,
+       13,
        "2026-11-18",
        null,
        1
       ],
       [
-       4,
+       3,
        "2026-11-18",
        null,
        1
@@ -9418,16 +10278,16 @@
      "lon": -77.01,
      "r": [
       [
-       4,
+       3,
        "2026-11-18",
        null,
        1
       ],
       [
-       4,
+       3,
        "2026-11-15",
-       null,
-       1
+       "2026-11-20",
+       0
       ]
      ]
     },
@@ -9437,7 +10297,7 @@
      "lon": -77.01,
      "r": [
       [
-       4,
+       3,
        "2026-11-18",
        null,
        1
@@ -9463,39 +10323,33 @@
      "lon": -76.994,
      "r": [
       [
-       5,
+       8,
        "2026-11-18",
        null,
        1
       ],
       [
-       8,
+       11,
        "2026-11-09",
        "2026-11-12",
        0
       ],
       [
-       30,
+       34,
        "2026-11-05",
        "2026-11-16",
        0
       ],
       [
-       3,
+       13,
        "2026-11-05",
        "2026-11-12",
        0
       ],
       [
-       4,
+       3,
        "2026-11-02",
        "2026-11-09",
-       0
-      ],
-      [
-       7,
-       "2026-10-20",
-       "2026-10-20",
        0
       ]
      ]
@@ -9532,31 +10386,12 @@
      ]
     },
     {
-     "block": "Unit block of HALLEY PLACE SE",
-     "lat": 38.835,
-     "lon": -77.007,
-     "r": [
-      [
-       6,
-       "2026-11-18",
-       null,
-       1
-      ],
-      [
-       20,
-       "2026-11-13",
-       null,
-       1
-      ]
-     ]
-    },
-    {
      "block": "Unit block of FORRESTER STREET SW",
      "lat": 38.825,
      "lon": -77.01,
      "r": [
       [
-       4,
+       3,
        "2026-11-18",
        null,
        1
@@ -9569,7 +10404,7 @@
      "lon": -77.011,
      "r": [
       [
-       3,
+       13,
        "2026-11-18",
        null,
        1
@@ -9582,13 +10417,13 @@
      "lon": -76.998,
      "r": [
       [
-       4,
+       3,
        "2026-11-18",
        null,
        1
       ],
       [
-       12,
+       6,
        "2026-11-09",
        "2026-11-10",
        0
@@ -9600,7 +10435,7 @@
        0
       ],
       [
-       35,
+       38,
        "2026-11-02",
        null,
        1
@@ -9614,33 +10449,14 @@
      ]
     },
     {
-     "block": "Unit block of DANBURY STREET SW",
-     "lat": 38.828,
-     "lon": -77.01,
-     "r": [
-      [
-       1,
-       "2026-11-18",
-       "2026-11-18",
-       0
-      ]
-     ]
-    },
-    {
      "block": "800 block of H R DRIVE SE",
      "lat": 38.83,
      "lon": -76.992,
      "r": [
       [
-       4,
+       3,
        "2026-11-18",
-       null,
-       1
-      ],
-      [
-       7,
-       "2026-11-14",
-       "2026-11-14",
+       "2026-11-20",
        0
       ],
       [
@@ -9650,7 +10466,13 @@
        0
       ],
       [
-       4,
+       7,
+       "2026-11-14",
+       "2026-11-14",
+       0
+      ],
+      [
+       3,
        "2026-11-10",
        "2026-11-16",
        0
@@ -9791,130 +10613,39 @@
      "lon": -77.01,
      "r": [
       [
-       4,
+       3,
        "2026-11-17",
-       null,
-       1
+       "2026-11-20",
+       0
       ],
       [
-       4,
+       3,
        "2026-11-11",
        "2026-11-12",
        1
       ],
       [
-       4,
+       3,
        "2026-11-10",
        "2026-11-12",
        0
       ],
       [
-       4,
+       3,
        "2026-11-06",
        "2026-11-09",
        0
       ],
       [
-       3,
+       13,
        "2026-11-02",
        "2026-11-05",
        0
       ],
       [
-       4,
+       3,
        "2026-10-27",
        "2026-11-03",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "Unit block of MISSISSIPPI AVENUE SE",
-     "lat": 38.832,
-     "lon": -77.007,
-     "r": [
-      [
-       8,
-       "2026-11-17",
-       "2026-11-18",
-       0
-      ],
-      [
-       1,
-       "2026-11-16",
-       "2026-11-16",
-       0
-      ],
-      [
-       7,
-       "2026-11-15",
-       "2026-11-18",
-       0
-      ],
-      [
-       18,
-       "2026-11-14",
-       "2026-11-16",
-       0
-      ],
-      [
-       1,
-       "2026-11-09",
-       "2026-11-09",
-       0
-      ],
-      [
-       7,
-       "2026-11-06",
-       "2026-11-06",
-       0
-      ],
-      [
-       1,
-       "2026-11-06",
-       "2026-11-06",
-       0
-      ],
-      [
-       7,
-       "2026-11-05",
-       "2026-11-05",
-       0
-      ],
-      [
-       1,
-       "2026-11-04",
-       "2026-11-04",
-       0
-      ],
-      [
-       7,
-       "2026-11-04",
-       "2026-11-04",
-       0
-      ],
-      [
-       7,
-       "2026-10-31",
-       "2026-10-31",
-       0
-      ],
-      [
-       1,
-       "2026-10-29",
-       "2026-10-29",
-       0
-      ],
-      [
-       1,
-       "2026-10-29",
-       "2026-10-29",
-       0
-      ],
-      [
-       7,
-       "2026-10-26",
-       "2026-10-26",
        0
       ]
      ]
@@ -9925,7 +10656,7 @@
      "lon": -77.0,
      "r": [
       [
-       9,
+       12,
        "2026-11-17",
        null,
        1
@@ -9944,29 +10675,16 @@
        0
       ],
       [
-       4,
+       3,
        "2026-11-10",
        "2026-11-16",
        0
       ],
       [
-       5,
+       8,
        "2026-10-25",
        "2026-10-27",
        0
-      ]
-     ]
-    },
-    {
-     "block": "400 block of ATLANTIC STREET SE",
-     "lat": 38.831,
-     "lon": -77.0,
-     "r": [
-      [
-       11,
-       "2026-11-17",
-       null,
-       1
       ]
      ]
     },
@@ -9976,13 +10694,13 @@
      "lon": -77.012,
      "r": [
       [
-       4,
+       3,
        "2026-11-17",
-       null,
-       1
+       "2026-11-20",
+       0
       ],
       [
-       4,
+       3,
        "2026-10-30",
        "2026-11-03",
        0
@@ -10008,7 +10726,7 @@
      "lon": -76.998,
      "r": [
       [
-       11,
+       20,
        "2026-11-17",
        null,
        1
@@ -10045,7 +10763,7 @@
        0
       ],
       [
-       29,
+       33,
        "2026-11-06",
        "2026-11-06",
        0
@@ -10079,73 +10797,30 @@
      ]
     },
     {
-     "block": "3800 block of HALLEY TERRACE SE",
-     "lat": 38.834,
-     "lon": -77.007,
-     "r": [
-      [
-       12,
-       "2026-11-17",
-       "2026-11-17",
-       0
-      ],
-      [
-       7,
-       "2026-11-16",
-       "2026-11-16",
-       0
-      ],
-      [
-       19,
-       "2026-11-15",
-       null,
-       1
-      ],
-      [
-       10,
-       "2026-11-11",
-       "2026-11-12",
-       0
-      ],
-      [
-       4,
-       "2026-11-10",
-       "2026-11-16",
-       0
-      ],
-      [
-       12,
-       "2026-10-23",
-       "2026-10-26",
-       0
-      ]
-     ]
-    },
-    {
      "block": "800 block of BARNABY STREET SE",
      "lat": 38.83,
      "lon": -76.993,
      "r": [
       [
-       13,
+       21,
        "2026-11-16",
        "2026-11-16",
        0
       ],
       [
-       0,
+       17,
        "2026-11-16",
        "2026-11-18",
        0
       ],
       [
-       8,
+       11,
        "2026-11-06",
        "2026-11-09",
        0
       ],
       [
-       12,
+       6,
        "2026-11-02",
        "2026-11-03",
        0
@@ -10164,13 +10839,13 @@
        0
       ],
       [
-       4,
+       3,
        "2026-11-04",
        "2026-11-09",
        0
       ],
       [
-       4,
+       3,
        "2026-10-22",
        "2026-10-28",
        0
@@ -10183,7 +10858,7 @@
      "lon": -77.013,
      "r": [
       [
-       14,
+       22,
        "2026-11-16",
        null,
        1
@@ -10196,7 +10871,7 @@
      "lon": -77.012,
      "r": [
       [
-       14,
+       22,
        "2026-11-16",
        null,
        1
@@ -10227,19 +10902,19 @@
      "lon": -77.013,
      "r": [
       [
-       4,
+       3,
        "2026-11-16",
-       null,
-       1
+       "2026-11-20",
+       0
       ],
       [
-       0,
+       17,
        "2026-11-10",
        "2026-11-13",
        0
       ],
       [
-       6,
+       19,
        "2026-11-05",
        "2026-11-06",
        0
@@ -10252,13 +10927,13 @@
      "lon": -77.01,
      "r": [
       [
-       15,
+       0,
        "2026-11-16",
        "2026-11-17",
        0
       ],
       [
-       4,
+       3,
        "2026-11-04",
        "2026-11-09",
        0
@@ -10277,7 +10952,7 @@
      "lon": -77.012,
      "r": [
       [
-       16,
+       23,
        "2026-11-16",
        "2026-11-17",
        0
@@ -10308,7 +10983,7 @@
        0
       ],
       [
-       22,
+       27,
        "2026-11-12",
        "2026-11-12",
        0
@@ -10345,13 +11020,13 @@
        0
       ],
       [
-       22,
+       27,
        "2026-11-12",
        "2026-11-12",
        0
       ],
       [
-       22,
+       27,
        "2026-11-12",
        "2026-11-12",
        0
@@ -10419,34 +11094,15 @@
      "lon": -77.003,
      "r": [
       [
-       15,
+       0,
        "2026-11-16",
        "2026-11-17",
        0
       ],
       [
-       15,
+       0,
        "2026-10-26",
        "2026-10-27",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "600 block of CHESAPEAKE STREET SE",
-     "lat": 38.829,
-     "lon": -76.997,
-     "r": [
-      [
-       10,
-       "2026-11-16",
-       "2026-11-17",
-       0
-      ],
-      [
-       5,
-       "2026-10-27",
-       "2026-10-29",
        0
       ]
      ]
@@ -10457,13 +11113,13 @@
      "lon": -76.996,
      "r": [
       [
-       17,
+       5,
        "2026-11-16",
        "2026-11-16",
        0
       ],
       [
-       17,
+       5,
        "2026-10-30",
        "2026-10-30",
        0
@@ -10476,7 +11132,7 @@
      "lon": -76.993,
      "r": [
       [
-       5,
+       8,
        "2026-11-16",
        "2026-11-17",
        0
@@ -10489,7 +11145,7 @@
      "lon": -77.006,
      "r": [
       [
-       18,
+       24,
        "2026-11-16",
        "2026-11-16",
        0
@@ -10502,34 +11158,15 @@
      "lon": -77.01,
      "r": [
       [
-       4,
-       "2026-11-15",
-       null,
-       1
-      ],
-      [
-       4,
-       "2026-10-24",
-       "2026-10-28",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "500 block of BRANDYWINE STREET SE",
-     "lat": 38.83,
-     "lon": -76.999,
-     "r": [
-      [
        3,
        "2026-11-15",
-       null,
-       1
+       "2026-11-20",
+       0
       ],
       [
-       4,
-       "2026-10-27",
-       "2026-11-03",
+       3,
+       "2026-10-24",
+       "2026-10-28",
        0
       ]
      ]
@@ -10553,65 +11190,28 @@
      "lon": -77.011,
      "r": [
       [
-       4,
+       3,
        "2026-11-14",
-       null,
-       1
+       "2026-11-20",
+       0
       ],
       [
-       3,
+       13,
        "2026-11-02",
        "2026-11-05",
        0
       ],
       [
-       4,
+       3,
        "2026-10-31",
        "2026-11-03",
        0
       ],
       [
-       19,
+       15,
        "2026-10-27",
        null,
        1
-      ]
-     ]
-    },
-    {
-     "block": "4200 block of 6TH STREET SE",
-     "lat": 38.827,
-     "lon": -76.998,
-     "r": [
-      [
-       10,
-       "2026-11-14",
-       "2026-11-17",
-       0
-      ],
-      [
-       5,
-       "2026-11-08",
-       "2026-11-10",
-       0
-      ],
-      [
-       15,
-       "2026-11-06",
-       "2026-11-09",
-       0
-      ],
-      [
-       5,
-       "2026-10-29",
-       "2026-11-02",
-       0
-      ],
-      [
-       5,
-       "2026-10-22",
-       "2026-10-23",
-       0
       ]
      ]
     },
@@ -10621,7 +11221,7 @@
      "lon": -77.009,
      "r": [
       [
-       15,
+       0,
        "2026-11-13",
        "2026-11-13",
        0
@@ -10634,15 +11234,9 @@
      "lon": -76.999,
      "r": [
       [
-       8,
+       11,
        "2026-11-13",
        "2026-11-17",
-       0
-      ],
-      [
-       31,
-       "2026-10-20",
-       "2026-10-27",
        0
       ]
      ]
@@ -10653,25 +11247,25 @@
      "lon": -77.012,
      "r": [
       [
-       15,
+       0,
        "2026-11-13",
        "2026-11-13",
        0
       ],
       [
-       25,
+       30,
        "2026-11-10",
        null,
        1
       ],
       [
-       19,
+       15,
        "2026-11-09",
        "2026-11-18",
        0
       ],
       [
-       19,
+       15,
        "2026-10-22",
        "2026-11-11",
        0
@@ -10684,13 +11278,13 @@
      "lon": -77.006,
      "r": [
       [
-       15,
+       0,
        "2026-11-13",
        "2026-11-13",
        0
       ],
       [
-       18,
+       24,
        "2026-11-11",
        "2026-11-12",
        0
@@ -10703,39 +11297,27 @@
      "lon": -77.011,
      "r": [
       [
-       4,
+       3,
        "2026-11-13",
        "2026-11-16",
        0
       ],
       [
-       15,
+       0,
        "2026-11-09",
        "2026-11-10",
        0
       ],
       [
-       21,
+       26,
        "2026-11-03",
        "2026-11-13",
        0
       ],
       [
-       4,
+       3,
        "2026-11-02",
        "2026-11-09",
-       0
-      ],
-      [
-       4,
-       "2026-10-20",
-       "2026-10-28",
-       0
-      ],
-      [
-       1,
-       "2026-10-20",
-       "2026-10-20",
        0
       ]
      ]
@@ -10771,7 +11353,7 @@
        0
       ],
       [
-       4,
+       3,
        "2026-11-03",
        "2026-11-09",
        0
@@ -10780,12 +11362,6 @@
        1,
        "2026-10-22",
        "2026-10-22",
-       0
-      ],
-      [
-       4,
-       "2026-10-21",
-       "2026-10-28",
        0
       ]
      ]
@@ -10796,19 +11372,19 @@
      "lon": -77.009,
      "r": [
       [
-       4,
+       3,
        "2026-11-13",
        "2026-11-16",
        0
       ],
       [
-       4,
+       3,
        "2026-10-29",
        "2026-11-03",
        0
       ],
       [
-       28,
+       32,
        "2026-10-27",
        "2026-11-05",
        0
@@ -10821,28 +11397,9 @@
      "lon": -77.002,
      "r": [
       [
-       21,
+       26,
        "2026-11-13",
-       null,
-       1
-      ]
-     ]
-    },
-    {
-     "block": "100 block of FORRESTER STREET SW",
-     "lat": 38.825,
-     "lon": -77.01,
-     "r": [
-      [
-       4,
-       "2026-11-13",
-       "2026-11-16",
-       0
-      ],
-      [
-       4,
-       "2026-11-05",
-       "2026-11-09",
+       "2026-11-20",
        0
       ]
      ]
@@ -10853,10 +11410,10 @@
      "lon": -76.994,
      "r": [
       [
-       21,
+       26,
        "2026-11-13",
-       null,
-       1
+       "2026-11-20",
+       0
       ]
      ]
     },
@@ -10879,31 +11436,31 @@
      "lon": -76.998,
      "r": [
       [
-       3,
+       13,
        "2026-11-12",
-       null,
-       1
+       "2026-11-19",
+       0
+      ],
+      [
+       13,
+       "2026-11-11",
+       "2026-11-19",
+       0
       ],
       [
        3,
-       "2026-11-11",
-       null,
-       1
-      ],
-      [
-       4,
        "2026-11-05",
        "2026-11-09",
        0
       ],
       [
-       4,
+       3,
        "2026-11-02",
        "2026-11-09",
        0
       ],
       [
-       3,
+       13,
        "2026-11-02",
        "2026-11-05",
        0
@@ -10934,34 +11491,9 @@
      "lon": -76.998,
      "r": [
       [
-       21,
+       26,
        "2026-11-12",
-       null,
-       1
-      ]
-     ]
-    },
-    {
-     "block": "4300 block of 4TH STREET SE",
-     "lat": 38.828,
-     "lon": -77.002,
-     "r": [
-      [
-       1,
-       "2026-11-12",
-       "2026-11-12",
-       0
-      ],
-      [
-       1,
-       "2026-11-12",
-       "2026-11-12",
-       0
-      ],
-      [
-       1,
-       "2026-10-28",
-       "2026-10-28",
+       "2026-11-19",
        0
       ]
      ]
@@ -10972,7 +11504,7 @@
      "lon": -76.997,
      "r": [
       [
-       23,
+       28,
        "2026-11-12",
        null,
        1
@@ -10985,15 +11517,9 @@
      "lon": -76.999,
      "r": [
       [
-       4,
+       3,
        "2026-11-12",
        "2026-11-16",
-       0
-      ],
-      [
-       4,
-       "2026-10-20",
-       "2026-10-28",
        0
       ]
      ]
@@ -11004,7 +11530,7 @@
      "lon": -77.009,
      "r": [
       [
-       21,
+       26,
        "2026-11-12",
        "2026-11-18",
        0
@@ -11066,13 +11592,13 @@
      "lon": -77.009,
      "r": [
       [
-       5,
+       8,
        "2026-11-12",
        "2026-11-16",
        0
       ],
       [
-       27,
+       4,
        "2026-11-10",
        null,
        1
@@ -11084,21 +11610,15 @@
        0
       ],
       [
-       5,
+       8,
        "2026-10-31",
        "2026-11-04",
        0
       ],
       [
-       4,
+       3,
        "2026-10-28",
        "2026-11-03",
-       0
-      ],
-      [
-       1,
-       "2026-10-20",
-       "2026-10-20",
        0
       ]
      ]
@@ -11109,13 +11629,13 @@
      "lon": -77.006,
      "r": [
       [
-       24,
+       29,
        "2026-11-12",
        null,
        1
       ],
       [
-       23,
+       28,
        "2026-11-12",
        null,
        1
@@ -11128,7 +11648,7 @@
      "lon": -76.998,
      "r": [
       [
-       25,
+       30,
        "2026-11-12",
        null,
        1
@@ -11147,7 +11667,7 @@
        0
       ],
       [
-       34,
+       37,
        "2026-11-02",
        "2026-11-03",
        0
@@ -11159,13 +11679,13 @@
        0
       ],
       [
-       34,
+       37,
        "2026-10-30",
        "2026-11-02",
        0
       ],
       [
-       34,
+       37,
        "2026-10-27",
        "2026-10-28",
        0
@@ -11215,13 +11735,13 @@
      "lon": -76.995,
      "r": [
       [
-       26,
+       31,
        "2026-11-12",
        "2026-11-13",
        0
       ],
       [
-       8,
+       11,
        "2026-10-22",
        "2026-10-26",
        0
@@ -11253,7 +11773,7 @@
      "lon": -77.01,
      "r": [
       [
-       8,
+       11,
        "2026-11-12",
        "2026-11-16",
        0
@@ -11266,13 +11786,13 @@
      "lon": -77.0,
      "r": [
       [
-       8,
+       11,
        "2026-11-12",
        "2026-11-16",
        0
       ],
       [
-       8,
+       11,
        "2026-11-12",
        null,
        1
@@ -11297,13 +11817,13 @@
      "lon": -77.002,
      "r": [
       [
-       8,
+       11,
        "2026-11-12",
        "2026-11-12",
        0
       ],
       [
-       8,
+       11,
        "2026-11-12",
        "2026-11-16",
        0
@@ -11322,7 +11842,7 @@
      "lon": -77.001,
      "r": [
       [
-       8,
+       11,
        "2026-11-11",
        "2026-11-12",
        0
@@ -11335,7 +11855,7 @@
      "lon": -77.001,
      "r": [
       [
-       8,
+       11,
        "2026-11-11",
        "2026-11-12",
        0
@@ -11348,7 +11868,7 @@
      "lon": -77.002,
      "r": [
       [
-       8,
+       11,
        "2026-11-11",
        "2026-11-12",
        0
@@ -11367,7 +11887,7 @@
      "lon": -76.998,
      "r": [
       [
-       19,
+       15,
        "2026-11-11",
        null,
        1
@@ -11393,15 +11913,9 @@
      "lon": -77.01,
      "r": [
       [
-       4,
+       3,
        "2026-11-11",
        "2026-11-16",
-       0
-      ],
-      [
-       1,
-       "2026-10-20",
-       "2026-10-20",
        0
       ]
      ]
@@ -11432,31 +11946,6 @@
      ]
     },
     {
-     "block": "4300 block of MARTIN LUTHER KING JR AVENUE SW",
-     "lat": 38.827,
-     "lon": -77.012,
-     "r": [
-      [
-       12,
-       "2026-11-11",
-       "2026-11-12",
-       0
-      ],
-      [
-       7,
-       "2026-10-29",
-       "2026-10-29",
-       0
-      ],
-      [
-       12,
-       "2026-10-22",
-       "2026-10-23",
-       0
-      ]
-     ]
-    },
-    {
      "block": "4100 block of LIVINGSTON ROAD SE",
      "lat": 38.829,
      "lon": -77.003,
@@ -11468,7 +11957,7 @@
        0
       ],
       [
-       31,
+       35,
        "2026-11-05",
        "2026-11-13",
        0
@@ -11511,19 +12000,19 @@
        0
       ],
       [
-       17,
+       5,
        "2026-11-05",
        "2026-11-06",
        0
       ],
       [
-       33,
+       9,
        "2026-11-03",
        null,
        1
       ],
       [
-       17,
+       5,
        "2026-10-22",
        "2026-10-22",
        0
@@ -11536,7 +12025,7 @@
      "lon": -77.012,
      "r": [
       [
-       4,
+       3,
        "2026-11-10",
        "2026-11-16",
        0
@@ -11582,12 +12071,6 @@
        1,
        "2026-10-22",
        "2026-10-22",
-       0
-      ],
-      [
-       7,
-       "2026-10-21",
-       "2026-10-21",
        0
       ]
      ]
@@ -11661,31 +12144,31 @@
      "lon": -77.006,
      "r": [
       [
-       5,
+       8,
        "2026-11-10",
        "2026-11-12",
        0
       ],
       [
-       4,
+       3,
        "2026-11-06",
        "2026-11-09",
        0
       ],
       [
-       5,
+       8,
        "2026-11-04",
        "2026-11-06",
        0
       ],
       [
-       4,
+       3,
        "2026-11-03",
        "2026-11-09",
        0
       ],
       [
-       19,
+       15,
        "2026-10-29",
        "2026-11-11",
        0
@@ -11697,7 +12180,7 @@
        0
       ],
       [
-       4,
+       3,
        "2026-10-28",
        "2026-11-03",
        0
@@ -11716,15 +12199,9 @@
        0
       ],
       [
-       26,
+       31,
        "2026-10-23",
        "2026-10-24",
-       0
-      ],
-      [
-       11,
-       "2026-10-20",
-       "2026-10-27",
        0
       ]
      ]
@@ -11741,19 +12218,19 @@
        0
       ],
       [
-       18,
+       24,
        "2026-11-06",
        "2026-11-10",
        0
       ],
       [
-       18,
+       24,
        "2026-11-04",
        "2026-11-06",
        0
       ],
       [
-       18,
+       24,
        "2026-11-01",
        "2026-11-02",
        0
@@ -11766,112 +12243,21 @@
      "lon": -77.009,
      "r": [
       [
-       3,
+       13,
        "2026-11-09",
-       null,
-       1
+       "2026-11-19",
+       0
       ],
       [
-       3,
+       13,
        "2026-10-31",
        "2026-11-05",
        0
       ],
       [
-       3,
+       13,
        "2026-10-23",
        "2026-10-29",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "4600 block of MARTIN LUTHER KING JR AVENUE SW",
-     "lat": 38.822,
-     "lon": -77.01,
-     "r": [
-      [
-       1,
-       "2026-11-09",
-       "2026-11-09",
-       0
-      ],
-      [
-       7,
-       "2026-11-08",
-       "2026-11-08",
-       0
-      ],
-      [
-       28,
-       "2026-11-06",
-       "2026-11-18",
-       0
-      ],
-      [
-       1,
-       "2026-11-04",
-       "2026-11-04",
-       0
-      ],
-      [
-       1,
-       "2026-10-27",
-       "2026-10-27",
-       0
-      ],
-      [
-       1,
-       "2026-10-26",
-       "2026-10-26",
-       0
-      ],
-      [
-       1,
-       "2026-10-23",
-       "2026-10-23",
-       0
-      ],
-      [
-       1,
-       "2026-10-22",
-       "2026-10-22",
-       0
-      ],
-      [
-       1,
-       "2026-10-22",
-       "2026-10-22",
-       0
-      ],
-      [
-       1,
-       "2026-10-21",
-       "2026-10-21",
-       0
-      ],
-      [
-       1,
-       "2026-10-21",
-       "2026-10-21",
-       0
-      ],
-      [
-       22,
-       "2026-10-20",
-       "2026-10-20",
-       0
-      ],
-      [
-       1,
-       "2026-10-20",
-       "2026-10-20",
-       0
-      ],
-      [
-       1,
-       "2026-10-20",
-       "2026-10-20",
        0
       ]
      ]
@@ -11882,7 +12268,7 @@
      "lon": -76.999,
      "r": [
       [
-       4,
+       3,
        "2026-11-09",
        "2026-11-16",
        0
@@ -11926,28 +12312,9 @@
        0
       ],
       [
-       18,
+       24,
        "2026-10-24",
        "2026-10-27",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "800 block of CHESAPEAKE STREET SE",
-     "lat": 38.829,
-     "lon": -76.992,
-     "r": [
-      [
-       1,
-       "2026-11-09",
-       "2026-11-09",
-       0
-      ],
-      [
-       1,
-       "2026-11-04",
-       "2026-11-04",
        0
       ]
      ]
@@ -11964,13 +12331,13 @@
        0
       ],
       [
-       4,
+       3,
        "2026-11-03",
        "2026-11-09",
        0
       ],
       [
-       8,
+       11,
        "2026-10-29",
        "2026-11-05",
        0
@@ -11996,55 +12363,12 @@
      ]
     },
     {
-     "block": "600 block of BRANDYWINE STREET SE",
-     "lat": 38.83,
-     "lon": -76.998,
-     "r": [
-      [
-       15,
-       "2026-11-09",
-       "2026-11-10",
-       0
-      ],
-      [
-       15,
-       "2026-11-06",
-       "2026-11-10",
-       0
-      ],
-      [
-       8,
-       "2026-10-31",
-       null,
-       1
-      ],
-      [
-       12,
-       "2026-10-29",
-       "2026-10-30",
-       0
-      ],
-      [
-       21,
-       "2026-10-22",
-       "2026-11-02",
-       0
-      ],
-      [
-       4,
-       "2026-10-21",
-       "2026-10-28",
-       0
-      ]
-     ]
-    },
-    {
      "block": "SOUTH CAPITOL STREET AND OVERLOOK AVENUE SW",
      "lat": 38.84,
      "lon": -77.009,
      "r": [
       [
-       18,
+       24,
        "2026-11-08",
        "2026-11-13",
        0
@@ -12057,13 +12381,13 @@
      "lon": -77.012,
      "r": [
       [
-       3,
+       13,
        "2026-11-08",
        "2026-11-12",
        0
       ],
       [
-       3,
+       13,
        "2026-11-04",
        "2026-11-12",
        0
@@ -12076,13 +12400,13 @@
      "lon": -77.011,
      "r": [
       [
-       3,
+       13,
        "2026-11-07",
        "2026-11-12",
        0
       ],
       [
-       21,
+       26,
        "2026-10-23",
        "2026-11-03",
        0
@@ -12095,7 +12419,7 @@
      "lon": -77.011,
      "r": [
       [
-       4,
+       3,
        "2026-11-07",
        "2026-11-16",
        0
@@ -12108,65 +12432,21 @@
      "lon": -77.011,
      "r": [
       [
-       2,
+       18,
        "2026-11-06",
        "2026-11-18",
        0
       ],
       [
-       4,
+       3,
        "2026-11-06",
        "2026-11-09",
        0
       ],
       [
-       2,
+       18,
        "2026-10-30",
        "2026-11-06",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "600 block of BRANDYWINE STREET SE",
-     "lat": 38.83,
-     "lon": -76.996,
-     "r": [
-      [
-       17,
-       "2026-11-06",
-       "2026-11-06",
-       0
-      ],
-      [
-       5,
-       "2026-10-22",
-       null,
-       1
-      ]
-     ]
-    },
-    {
-     "block": "4000 block of SOUTH CAPITOL STREET SW",
-     "lat": 38.831,
-     "lon": -77.008,
-     "r": [
-      [
-       1,
-       "2026-11-05",
-       "2026-11-05",
-       0
-      ],
-      [
-       1,
-       "2026-10-29",
-       "2026-10-29",
-       0
-      ],
-      [
-       1,
-       "2026-10-27",
-       "2026-10-27",
        0
       ]
      ]
@@ -12177,19 +12457,19 @@
      "lon": -77.0,
      "r": [
       [
-       4,
+       3,
        "2026-11-05",
        "2026-11-09",
        0
       ],
       [
-       8,
+       11,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       4,
+       3,
        "2026-10-31",
        "2026-11-03",
        0
@@ -12215,7 +12495,7 @@
      "lon": -77.007,
      "r": [
       [
-       5,
+       8,
        "2026-11-05",
        "2026-11-06",
        0
@@ -12228,7 +12508,7 @@
      "lon": -77.008,
      "r": [
       [
-       18,
+       24,
        "2026-11-05",
        "2026-11-06",
        0
@@ -12247,7 +12527,7 @@
      "lon": -76.991,
      "r": [
       [
-       22,
+       27,
        "2026-11-05",
        "2026-11-05",
        0
@@ -12297,7 +12577,7 @@
      "lon": -77.012,
      "r": [
       [
-       4,
+       3,
        "2026-11-05",
        "2026-11-09",
        0
@@ -12309,13 +12589,13 @@
        0
       ],
       [
-       8,
+       11,
        "2026-10-29",
        "2026-11-05",
        0
       ],
       [
-       12,
+       6,
        "2026-10-29",
        "2026-10-30",
        0
@@ -12334,27 +12614,21 @@
      "lon": -76.993,
      "r": [
       [
-       5,
+       8,
        "2026-11-04",
        "2026-11-05",
        0
       ],
       [
-       3,
+       13,
        "2026-10-27",
        "2026-11-05",
        0
       ],
       [
-       40,
+       43,
        "2026-10-22",
        "2026-10-22",
-       0
-      ],
-      [
-       4,
-       "2026-10-21",
-       "2026-10-28",
        0
       ]
      ]
@@ -12365,7 +12639,7 @@
      "lon": -77.01,
      "r": [
       [
-       12,
+       6,
        "2026-11-04",
        "2026-11-05",
        0
@@ -12421,7 +12695,7 @@
      "lon": -76.994,
      "r": [
       [
-       8,
+       11,
        "2026-11-04",
        "2026-11-17",
        0
@@ -12434,7 +12708,7 @@
      "lon": -77.001,
      "r": [
       [
-       32,
+       36,
        "2026-11-04",
        "2026-11-05",
        0
@@ -12447,7 +12721,7 @@
      "lon": -77.002,
      "r": [
       [
-       8,
+       11,
        "2026-11-04",
        "2026-11-04",
        0
@@ -12486,13 +12760,13 @@
      "lon": -77.009,
      "r": [
       [
-       4,
+       3,
        "2026-11-04",
        "2026-11-09",
        0
       ],
       [
-       36,
+       39,
        "2026-10-31",
        "2026-11-10",
        0
@@ -12505,7 +12779,7 @@
      "lon": -77.011,
      "r": [
       [
-       4,
+       3,
        "2026-11-04",
        "2026-11-09",
        0
@@ -12531,7 +12805,7 @@
      "lon": -77.01,
      "r": [
       [
-       19,
+       15,
        "2026-11-03",
        "2026-11-12",
        0
@@ -12544,21 +12818,15 @@
      "lon": -77.008,
      "r": [
       [
-       26,
+       31,
        "2026-11-03",
        "2026-11-04",
        0
       ],
       [
-       5,
+       8,
        "2026-10-22",
        "2026-10-27",
-       0
-      ],
-      [
-       4,
-       "2026-10-21",
-       "2026-10-28",
        0
       ]
      ]
@@ -12569,52 +12837,21 @@
      "lon": -76.997,
      "r": [
       [
-       4,
+       3,
        "2026-11-02",
        "2026-11-09",
        0
       ],
       [
-       4,
+       3,
        "2026-10-29",
        "2026-11-03",
        0
       ],
       [
-       4,
+       3,
        "2026-10-23",
        "2026-10-28",
-       0
-      ],
-      [
-       7,
-       "2026-10-21",
-       "2026-10-21",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "4000 block of LIVINGSTON ROAD SE",
-     "lat": 38.83,
-     "lon": -77.003,
-     "r": [
-      [
-       21,
-       "2026-11-02",
-       "2026-11-04",
-       0
-      ],
-      [
-       7,
-       "2026-10-22",
-       "2026-10-22",
-       0
-      ],
-      [
-       7,
-       "2026-10-22",
-       "2026-10-22",
        0
       ]
      ]
@@ -12625,7 +12862,7 @@
      "lon": -77.011,
      "r": [
       [
-       4,
+       3,
        "2026-11-02",
        "2026-11-09",
        0
@@ -12638,15 +12875,9 @@
      "lon": -76.992,
      "r": [
       [
-       4,
+       3,
        "2026-11-01",
        "2026-11-09",
-       0
-      ],
-      [
-       41,
-       "2026-10-21",
-       "2026-10-21",
        0
       ]
      ]
@@ -12657,7 +12888,7 @@
      "lon": -77.006,
      "r": [
       [
-       18,
+       24,
        "2026-11-01",
        "2026-11-02",
        0
@@ -12670,28 +12901,9 @@
      "lon": -77.008,
      "r": [
       [
-       18,
+       24,
        "2026-10-30",
        "2026-10-31",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "Unit block of GALVESTON STREET SW",
-     "lat": 38.822,
-     "lon": -77.008,
-     "r": [
-      [
-       22,
-       "2026-10-30",
-       "2026-10-30",
-       0
-      ],
-      [
-       1,
-       "2026-10-29",
-       "2026-10-29",
        0
       ]
      ]
@@ -12708,7 +12920,7 @@
        0
       ],
       [
-       21,
+       26,
        "2026-10-29",
        "2026-11-09",
        0
@@ -12734,7 +12946,7 @@
      "lon": -77.002,
      "r": [
       [
-       20,
+       25,
        "2026-10-30",
        "2026-11-09",
        0
@@ -12772,7 +12984,7 @@
      "lon": -76.999,
      "r": [
       [
-       3,
+       13,
        "2026-10-29",
        "2026-11-05",
        0
@@ -12785,23 +12997,10 @@
      "lon": -77.01,
      "r": [
       [
-       33,
+       9,
        "2026-10-29",
        null,
        1
-      ]
-     ]
-    },
-    {
-     "block": "4200 block of 1ST STREET SE",
-     "lat": 38.828,
-     "lon": -77.006,
-     "r": [
-      [
-       1,
-       "2026-10-29",
-       "2026-10-29",
-       0
       ]
      ]
     },
@@ -12841,12 +13040,6 @@
        "2026-10-29",
        "2026-10-29",
        0
-      ],
-      [
-       4,
-       "2026-10-20",
-       "2026-10-28",
-       0
       ]
      ]
     },
@@ -12862,7 +13055,7 @@
        0
       ],
       [
-       37,
+       40,
        "2026-10-28",
        "2026-10-28",
        0
@@ -12881,7 +13074,7 @@
      "lon": -76.994,
      "r": [
       [
-       5,
+       8,
        "2026-10-28",
        "2026-10-30",
        0
@@ -12894,13 +13087,13 @@
      "lon": -77.009,
      "r": [
       [
-       38,
+       41,
        "2026-10-28",
        null,
        1
       ],
       [
-       35,
+       38,
        "2026-10-28",
        "2026-11-13",
        0
@@ -12988,15 +13181,9 @@
      "lon": -77.001,
      "r": [
       [
-       32,
+       36,
        "2026-10-27",
        "2026-10-28",
-       0
-      ],
-      [
-       32,
-       "2026-10-21",
-       "2026-10-26",
        0
       ]
      ]
@@ -13007,7 +13194,7 @@
      "lon": -77.007,
      "r": [
       [
-       18,
+       24,
        "2026-10-27",
        "2026-10-30",
        0
@@ -13020,7 +13207,7 @@
      "lon": -77.012,
      "r": [
       [
-       3,
+       13,
        "2026-10-27",
        "2026-10-29",
        0
@@ -13033,7 +13220,7 @@
      "lon": -76.995,
      "r": [
       [
-       21,
+       26,
        "2026-10-26",
        "2026-11-04",
        0
@@ -13046,7 +13233,7 @@
      "lon": -77.007,
      "r": [
       [
-       17,
+       5,
        "2026-10-26",
        "2026-10-26",
        0
@@ -13063,12 +13250,6 @@
        "2026-10-26",
        "2026-10-26",
        0
-      ],
-      [
-       22,
-       "2026-10-20",
-       "2026-10-20",
-       0
       ]
      ]
     },
@@ -13078,7 +13259,7 @@
      "lon": -76.992,
      "r": [
       [
-       21,
+       26,
        "2026-10-26",
        "2026-11-04",
        0
@@ -13110,13 +13291,13 @@
      "lon": -77.001,
      "r": [
       [
-       4,
+       3,
        "2026-10-26",
        "2026-11-03",
        0
       ],
       [
-       37,
+       40,
        "2026-10-22",
        "2026-10-22",
        0
@@ -13129,13 +13310,13 @@
      "lon": -76.99,
      "r": [
       [
-       3,
+       13,
        "2026-10-24",
        "2026-10-29",
        0
       ],
       [
-       4,
+       3,
        "2026-10-22",
        "2026-10-28",
        0
@@ -13148,7 +13329,7 @@
      "lon": -76.997,
      "r": [
       [
-       39,
+       42,
        "2026-10-23",
        "2026-10-23",
        0
@@ -13161,7 +13342,7 @@
      "lon": -77.006,
      "r": [
       [
-       22,
+       27,
        "2026-10-23",
        "2026-10-23",
        0
@@ -13200,7 +13381,7 @@
      "lon": -76.998,
      "r": [
       [
-       5,
+       8,
        "2026-10-22",
        "2026-10-23",
        0
@@ -13239,191 +13420,9 @@
      "lon": -76.996,
      "r": [
       [
-       4,
+       3,
        "2026-10-22",
        "2026-10-28",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "800 block of H R DRIVE SE",
-     "lat": 38.83,
-     "lon": -76.991,
-     "r": [
-      [
-       4,
-       "2026-10-21",
-       "2026-10-28",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "300 block of LIVINGSTON TERRACE SE",
-     "lat": 38.827,
-     "lon": -77.002,
-     "r": [
-      [
-       22,
-       "2026-10-21",
-       "2026-10-21",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "4100 block of SOUTH CAPITOL TERRACE SW",
-     "lat": 38.829,
-     "lon": -77.009,
-     "r": [
-      [
-       22,
-       "2026-10-21",
-       "2026-10-21",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "100 block of IVANHOE STREET SW",
-     "lat": 38.821,
-     "lon": -77.009,
-     "r": [
-      [
-       7,
-       "2026-10-21",
-       "2026-10-21",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "Unit block of GALVESTON PLACE SW",
-     "lat": 38.824,
-     "lon": -77.008,
-     "r": [
-      [
-       42,
-       "2026-10-20",
-       "2026-10-22",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "100 block of RALEIGH STREET SE",
-     "lat": 38.84,
-     "lon": -77.007,
-     "r": [
-      [
-       30,
-       "2026-10-20",
-       null,
-       1
-      ]
-     ]
-    },
-    {
-     "block": "Unit block of ELMIRA STREET SW",
-     "lat": 38.826,
-     "lon": -77.01,
-     "r": [
-      [
-       8,
-       "2026-10-20",
-       "2026-10-23",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "4400 block of LIVINGSTON ROAD SE",
-     "lat": 38.826,
-     "lon": -77.004,
-     "r": [
-      [
-       26,
-       "2026-10-20",
-       "2026-10-21",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "BARNABY STREET SE AND ATLANTIC STREET SE",
-     "lat": 38.831,
-     "lon": -76.993,
-     "r": [
-      [
-       43,
-       "2026-10-20",
-       "2026-10-20",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1ST STREET SE AND CHESAPEAKE STREET SE",
-     "lat": 38.829,
-     "lon": -77.006,
-     "r": [
-      [
-       33,
-       "2026-10-20",
-       "2026-11-04",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "Unit block of FORRESTER STREET SW",
-     "lat": 38.825,
-     "lon": -77.007,
-     "r": [
-      [
-       12,
-       "2026-10-20",
-       "2026-10-21",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "DARRINGTON STREET SW AND SOUTH CAPITOL TERRACE SW",
-     "lat": 38.827,
-     "lon": -77.009,
-     "r": [
-      [
-       13,
-       "2026-10-20",
-       "2026-10-20",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "4300 block of 4TH STREET SE",
-     "lat": 38.827,
-     "lon": -77.002,
-     "r": [
-      [
-       1,
-       "2026-10-20",
-       "2026-10-20",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "4000 block of SOUTH CAPITOL STREET SW",
-     "lat": 38.83,
-     "lon": -77.008,
-     "r": [
-      [
-       44,
-       "2026-10-20",
-       "2026-10-21",
        0
       ]
      ]
@@ -13433,7 +13432,7 @@
  },
  "crime": {
   "total": 33,
-  "previous_total": 40,
+  "previous_total": 39,
   "by_offense": [
    {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
@@ -13452,7 +13451,7 @@
    },
    {
     "offense": "ROBBERY",
-    "count": 2,
+    "count": 3,
     "previous": 2
    },
    {
@@ -13461,14 +13460,14 @@
     "previous": 0
    },
    {
-    "offense": "MOTOR VEHICLE THEFT",
-    "count": 2,
-    "previous": 7
-   },
-   {
     "offense": "BURGLARY",
     "count": 1,
-    "previous": 5
+    "previous": 4
+   },
+   {
+    "offense": "MOTOR VEHICLE THEFT",
+    "count": 1,
+    "previous": 7
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -13525,7 +13524,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-19T09:19:46Z",
+  "generated_at": "2026-11-21T07:40:15Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -13540,7 +13539,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Bellevue through OTR assessment sub-areas Congress Heights A and C in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Bellevue boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-19): 64% of the 2,419 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 79% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Bellevue through OTR assessment sub-areas Congress Heights A and C in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Bellevue boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-21): 64% of the 2,419 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 79% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -13557,7 +13556,7 @@
    "area_parcels": 2419,
    "area_share_inside": 0.64,
    "boundary_share_in_area": 0.791,
-   "measured": "2026-11-19"
+   "measured": "2026-11-21"
   },
   "primary": "house",
   "house": {
@@ -13712,7 +13711,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-19T09:19:46Z",
+  "generated_at": "2026-11-21T07:40:15Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -13732,15 +13731,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 33,
-   "starting_next_7d": 2,
-   "reserved_ft": 3520,
+   "active_this_week": 30,
+   "starting_next_7d": 1,
+   "reserved_ft": 3058,
    "long_running_90d": 20,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-19: newest permit issued 2026-11-19, newest record update 2026-11-19, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-21: newest permit issued 2026-11-21, newest record update 2026-11-21, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Construction staging",
-     "count": 7
+     "count": 4
     },
     {
      "type": "Lead pipe replacement",
@@ -13759,31 +13758,23 @@
      "end": "2026-12-22",
      "ft": 132,
      "hours": "9:30 am\u20133:30 pm"
-    },
-    {
-     "type": "Construction staging",
-     "block": "4600 block of Martin Luther King Jr Avenue SW",
-     "start": "2026-11-25",
-     "end": "2026-12-22",
-     "ft": 132,
-     "hours": "9:30 am\u20133:30 pm"
     }
    ]
   },
   "trees": {
-   "total": 3304,
+   "total": 3300,
    "species": 178,
    "planted_5y": 414,
    "empty_boxes": 100,
-   "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (100). Not counted: 'Proposed' = planting scheduled (5), 'Conflict'/'Utility' = empty but blocked (109), 'Retired' = box removed (124). 'total' is boxes with status 'Plant' whose condition is not Dead.",
+   "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (100). Not counted: 'Proposed' = planting scheduled (5), 'Conflict'/'Utility' = empty but blocked (109), 'Retired' = box removed (128). 'total' is boxes with status 'Plant' whose condition is not Dead.",
    "condition": {
-    "Good": 2475,
+    "Good": 2474,
     "Fair": 503,
-    "Excellent": 144,
-    "Poor": 122,
+    "Excellent": 143,
+    "Poor": 120,
     "Not rated": 60
    },
-   "dead": 51,
+   "dead": 52,
    "top_species": [
     {
      "name": "Willow oak",
@@ -13845,31 +13836,31 @@
      "block": "3800 block of South Capitol St Bn"
     }
    ],
-   "inventory_date": "2026-11-12"
+   "inventory_date": "2026-11-20"
   },
   "service": [
    {
     "type": "Bulk Collection",
-    "median_days": 6.67,
-    "city_median_days": 6.91,
-    "closed_n": 836
+    "median_days": 6.63,
+    "city_median_days": 6.9,
+    "closed_n": 838
    },
    {
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 635
+    "closed_n": 631
    },
    {
     "type": "DC Government Information",
     "median_days": 0.0,
     "city_median_days": 0.0,
-    "closed_n": 623
+    "closed_n": 621
    },
    {
     "type": "Trash Collection - Missed",
     "median_days": 3.67,
-    "city_median_days": 3.95,
+    "city_median_days": 3.94,
     "closed_n": 326
    },
    {
@@ -13880,15 +13871,15 @@
    },
    {
     "type": "Illegal Dumping",
-    "median_days": 4.01,
-    "city_median_days": 3.96,
-    "closed_n": 209
+    "median_days": 3.97,
+    "city_median_days": 3.94,
+    "closed_n": 208
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
     "median_days": 2.99,
     "city_median_days": 3.02,
-    "closed_n": 203
+    "closed_n": 205
    },
    {
     "type": "Snow and Ice Removal on Public Space",
@@ -13900,7 +13891,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-19T09:19:46Z",
+  "generated_at": "2026-11-21T07:40:15Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -14009,9 +14000,9 @@
    }
   },
   "archive": {
-   "week_label": "November 14\u201320, 1926",
-   "week_start": "1926-11-14",
-   "week_end": "1926-11-20",
+   "week_label": "November 21\u201327, 1926",
+   "week_start": "1926-11-21",
+   "week_end": "1926-11-27",
    "paper": "Evening Star",
    "terms": [
     "Bellevue",
@@ -14019,11 +14010,11 @@
    ],
    "clips": [],
    "screened": 0,
-   "note": "No usable mentions in the Evening Star for November 14\u201320, 1926 (7 matching pages searched). Some weeks a neighborhood just isn't in the paper. Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
+   "note": "No usable mentions in the Evening Star for November 21\u201327, 1926 (8 matching pages searched). Some weeks a neighborhood just isn't in the paper. Clips are machine-read text (OCR) from scanned Evening Star pages on the Library of Congress's Chronicling America, lightly cleaned (line-break hyphens rejoined, stray symbols removed); misspellings are the scanner's. Newspapers this old are public domain. Each clip links to its page at loc.gov. Clips that mention race, covenants, deed restrictions or slurs are skipped automatically (keyword list: race, races, racial, colored, coloured, negro, negroes, white only, whites only, for whites, white people, white persons, white residents, caucasian, segregation, segregated, covenant, covenants, restricted, restriction, restrictions, plus a list of slurs), because they need an editor's context; legal notices and lists of private individuals are skipped too."
   }
  },
  "news": {
-  "generated_at": "2026-11-19T09:19:46Z",
+  "generated_at": "2026-11-21T07:40:15Z",
   "archive_days": 180,
   "sources": [
    {
@@ -14228,8 +14219,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-19T09:19:46Z",
-  "today": "2026-11-19",
+  "generated_at": "2026-11-21T07:40:15Z",
+  "today": "2026-11-21",
   "days_ahead": 30,
   "sources": [
    {
@@ -14253,17 +14244,7 @@
     "state": "ok"
    }
   ],
-  "events": [
-   {
-    "title": "Arcadia Mobile Market at Bellevue Library",
-    "place": "115 Atlantic Street SW",
-    "time": "3:00 PM - 5:00 PM",
-    "url": "https://www.arcadiafood.org",
-    "source": "DC farmers market list",
-    "kind": "market",
-    "date": "2026-11-19"
-   }
-  ],
+  "events": [],
   "unscheduled": [],
   "links": [
    {
@@ -14286,7 +14267,7 @@
   "anc_meetings": []
  },
  "blocks": {
-  "generated_at": "2026-11-19T09:19:46Z",
+  "generated_at": "2026-11-21T07:40:15Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -14319,8 +14300,8 @@
   ],
   "lookup_errors": [],
   "leaf_status": {
-   "8C": "We have not reached your section yet. Each section will receive two weekends\u2019 notice of when to rake your leaves to the tree box or curb. Please check back on Fridays for an update on our collection schedule.",
-   "8B": "The first pass for leaf collection in Section B will begin Monday, November 16, 2026. Section B residents, please have your leaves at the tree box or curbside by Sunday, November 15, 2026."
+   "8C": "The first pass for leaf collection in Section C will begin Monday, November 30, 2026. Section C residents, please have your leaves at the tree box or curbside by Sunday, November 29, 2026.",
+   "8B": "The first pass for leaf collection in Section B is underway."
   },
   "schools": {
    "dcps_266.0": {
@@ -31383,7 +31364,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-19T09:19:46Z",
+  "generated_at": "2026-11-21T07:40:15Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",

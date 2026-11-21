@@ -1,7 +1,7 @@
 {
  "slug": "stadiumarmory",
  "name": "Stadium-Armory",
- "generated_at": "2026-11-19T09:19:46Z",
+ "generated_at": "2026-11-21T07:40:15Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -995,6 +995,32 @@
  },
  "permits": [
   {
+   "id": "BCIV2400065",
+   "issued": "2026-11-18T05:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "CIVIL PLANS",
+   "address": "2001 EAST CAPITOL ST SE 20003",
+   "work": "Commission of Fine Arts jurisdiction area\r\n***FEDERAL \r\n\r\nThe proposed project will improve site security at the Armory by replacing two existing gatehouses and associated overhead canopies with new gatehouses that feature modern security profiles and capabilities. The project also includes asphalt replacement (Mill and Overlay) and restriping for a portion of the parking lot.\r\nDOEE s22536 & s2253",
+   "zoning": "UNZONED",
+   "lat": 38.8885,
+   "lon": -76.97551,
+   "smd": "7D05"
+  },
+  {
+   "id": "B2603362",
+   "issued": "2026-11-17T05:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "ALTERATION AND REPAIR",
+   "address": "1901 E ST SE 20003",
+   "work": "NORTH & SOUTH CELL MODULE OF CENTRAL DETENTION FACILITY (CDF):\n?\tUPGRADE PLUMBING LINES LOCATED WITHIN THE EXISTING CHASE BETWEEN CELLS, EXISTING PLUMBING FIXTURES TO REMAIN.\n?\tWORK SHALL INCLUDE REPLACING DOMESTIC WATER SUPPLY AND EXISTING SANITARY LINE AND ADDING NEW SHUT OFF VALVES.\n?\tRECONNECT TO EXISTING WATER SUPPLY SOURCE, VENT AND SANITARY LINE.\n?\tREMOVE AND REINSTALL DUCT WORK IN THE CHAS",
+   "zoning": "HE-4",
+   "lat": 38.88271,
+   "lon": -76.97573,
+   "smd": "7F08"
+  },
+  {
    "id": "SB2700022",
    "issued": "2026-11-06T05:00:00Z",
    "group": "Renovation & repair",
@@ -1035,23 +1061,13 @@
   }
  ],
  "requests": {
-  "total": 34,
-  "previous_total": 21,
+  "total": 35,
+  "previous_total": 24,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 15,
+    "count": 17,
     "previous": 8
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "count": 3,
-    "previous": 0
-   },
-   {
-    "type": "Illegal Dumping",
-    "count": 3,
-    "previous": 0
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -1059,14 +1075,19 @@
     "previous": 1
    },
    {
-    "type": "Bulk Collection",
+    "type": "Illegal Dumping",
     "count": 2,
     "previous": 1
    },
    {
-    "type": "DC Health Rodent & Vector Control",
-    "count": 1,
-    "previous": 0
+    "type": "DOEE - LIHEAP",
+    "count": 2,
+    "previous": 1
+   },
+   {
+    "type": "Bulk Collection",
+    "count": 2,
+    "previous": 1
    },
    {
     "type": "Dockless Vehicle Parking Complaint",
@@ -1102,10 +1123,60 @@
     "type": "Pothole",
     "count": 1,
     "previous": 0
+   },
+   {
+    "type": "DC How Am I Driving?",
+    "count": 1,
+    "previous": 0
+   },
+   {
+    "type": "Tree Pruning",
+    "count": 1,
+    "previous": 0
    }
   ],
-  "open": 5,
+  "open": 6,
   "recent": [
+   {
+    "type": "Tree Pruning",
+    "agency": "DDOT",
+    "added": "2026-11-20T21:37:44Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "200 block of 19TH STREET SE",
+    "lat": 38.886,
+    "lon": -76.977
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-20T17:49:13Z",
+    "resolved": "2026-11-20T20:00:06Z",
+    "status": "Closed",
+    "block": "1900 block of INDEPENDENCE AVENUE SE",
+    "lat": 38.887,
+    "lon": -76.977
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-20T16:19:26Z",
+    "resolved": "2026-11-20T19:45:05Z",
+    "status": "Closed",
+    "block": "1900 block of MASSACHUSETTS AVENUE SE",
+    "lat": 38.885,
+    "lon": -76.973
+   },
+   {
+    "type": "DC How Am I Driving?",
+    "agency": "ORM",
+    "added": "2026-11-19T12:44:24Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "KENTUCKY AVENUE SE AND BARNEY CIRCLE SE",
+    "lat": 38.879,
+    "lon": -76.981
+   },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
     "agency": "DDOT",
@@ -1415,43 +1486,15 @@
     "block": "EAST CAPITOL STREET AND INDEPENDENCE AVENUE SE",
     "lat": 38.89,
     "lon": -76.968
-   },
-   {
-    "type": "DC Health Rodent & Vector Control",
-    "agency": "DOH",
-    "added": "2026-10-20T17:16:51Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "EAST CAPITOL STREET AND C STREET NE",
-    "lat": 38.89,
-    "lon": -76.968
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-10-20T14:25:08Z",
-    "resolved": "2026-10-20T16:15:20Z",
-    "status": "Closed",
-    "block": "300 block of 19TH STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-10-20T11:50:56Z",
-    "resolved": "2026-10-20T11:50:56Z",
-    "status": "Closed",
-    "block": "1900 block of C STREET SE",
-    "lat": 38.885,
-    "lon": -76.977
    }
   ],
   "mapped": {
    "types": [
+    "Tree Pruning",
+    "Parking Enforcement",
+    "DC How Am I Driving?",
     "Traffic Lights and Pedestrian Walk Signals",
     "Pothole",
-    "Parking Enforcement",
     "Residential Parking Permit Violation",
     "Trash Collection - Missed",
     "DOB - Illegal Construction",
@@ -1460,23 +1503,116 @@
     "DMV - Drivers License/ID Issues",
     "DOEE - LIHEAP",
     "Illegal Dumping",
-    "Dockless Vehicle Parking Complaint",
-    "DC Health Rodent & Vector Control"
+    "Dockless Vehicle Parking Complaint"
    ],
    "blocks": [
+    {
+     "block": "200 block of 19TH STREET SE",
+     "lat": 38.886,
+     "lon": -76.977,
+     "r": [
+      [
+       0,
+       "2026-11-20",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "1900 block of INDEPENDENCE AVENUE SE",
+     "lat": 38.887,
+     "lon": -76.977,
+     "r": [
+      [
+       1,
+       "2026-11-20",
+       "2026-11-20",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1900 block of MASSACHUSETTS AVENUE SE",
+     "lat": 38.885,
+     "lon": -76.973,
+     "r": [
+      [
+       1,
+       "2026-11-20",
+       "2026-11-20",
+       0
+      ],
+      [
+       1,
+       "2026-11-18",
+       "2026-11-18",
+       0
+      ],
+      [
+       1,
+       "2026-11-17",
+       "2026-11-17",
+       0
+      ],
+      [
+       1,
+       "2026-11-16",
+       "2026-11-16",
+       0
+      ],
+      [
+       1,
+       "2026-11-12",
+       "2026-11-12",
+       1
+      ],
+      [
+       1,
+       "2026-11-12",
+       "2026-11-12",
+       0
+      ],
+      [
+       1,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ],
+      [
+       1,
+       "2026-10-29",
+       "2026-10-29",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "KENTUCKY AVENUE SE AND BARNEY CIRCLE SE",
+     "lat": 38.879,
+     "lon": -76.981,
+     "r": [
+      [
+       2,
+       "2026-11-19",
+       null,
+       1
+      ]
+     ]
+    },
     {
      "block": "INDEPENDENCE AVENUE SE AND 19TH STREET SE",
      "lat": 38.888,
      "lon": -76.977,
      "r": [
       [
-       0,
+       3,
        "2026-11-18",
        "2026-11-19",
        0
       ],
       [
-       0,
+       3,
        "2026-11-18",
        "2026-11-19",
        0
@@ -1489,59 +1625,10 @@
      "lon": -76.981,
      "r": [
       [
-       1,
+       4,
        "2026-11-18",
        null,
        1
-      ]
-     ]
-    },
-    {
-     "block": "1900 block of MASSACHUSETTS AVENUE SE",
-     "lat": 38.885,
-     "lon": -76.973,
-     "r": [
-      [
-       2,
-       "2026-11-18",
-       "2026-11-18",
-       0
-      ],
-      [
-       2,
-       "2026-11-17",
-       "2026-11-17",
-       0
-      ],
-      [
-       2,
-       "2026-11-16",
-       "2026-11-16",
-       0
-      ],
-      [
-       2,
-       "2026-11-12",
-       "2026-11-12",
-       1
-      ],
-      [
-       2,
-       "2026-11-12",
-       "2026-11-12",
-       0
-      ],
-      [
-       2,
-       "2026-11-03",
-       "2026-11-03",
-       0
-      ],
-      [
-       2,
-       "2026-10-29",
-       "2026-10-29",
-       0
       ]
      ]
     },
@@ -1551,25 +1638,25 @@
      "lon": -76.978,
      "r": [
       [
-       3,
+       5,
        "2026-11-17",
        "2026-11-17",
        0
       ],
       [
-       4,
+       6,
        "2026-11-16",
        "2026-11-17",
        0
       ],
       [
-       7,
+       9,
        "2026-11-04",
        "2026-11-09",
        0
       ],
       [
-       7,
+       9,
        "2026-10-31",
        "2026-11-03",
        0
@@ -1582,81 +1669,75 @@
      "lon": -76.977,
      "r": [
       [
-       2,
+       1,
        "2026-11-15",
        "2026-11-15",
        0
       ],
       [
-       5,
+       7,
        "2026-11-11",
        null,
        1
       ],
       [
-       2,
+       1,
        "2026-11-11",
        "2026-11-11",
        0
       ],
       [
-       6,
+       8,
        "2026-11-06",
        "2026-11-18",
        0
       ],
       [
-       2,
+       1,
        "2026-11-05",
        "2026-11-05",
        0
       ],
       [
-       2,
+       1,
        "2026-11-02",
        "2026-11-02",
        0
       ],
       [
-       8,
+       10,
        "2026-10-27",
        "2026-10-29",
        0
       ],
       [
-       2,
+       1,
        "2026-10-27",
        "2026-10-27",
        0
       ],
       [
-       2,
+       1,
        "2026-10-27",
        "2026-10-27",
        0
       ],
       [
-       9,
+       11,
        "2026-10-26",
        "2026-10-26",
        0
       ],
       [
-       2,
+       1,
        "2026-10-23",
        "2026-10-23",
        0
       ],
       [
-       9,
+       11,
        "2026-10-23",
        "2026-10-23",
-       0
-      ],
-      [
-       9,
-       "2026-10-20",
-       "2026-10-20",
        0
       ]
      ]
@@ -1667,7 +1748,7 @@
      "lon": -76.979,
      "r": [
       [
-       0,
+       3,
        "2026-11-05",
        null,
        1
@@ -1680,7 +1761,7 @@
      "lon": -76.978,
      "r": [
       [
-       2,
+       1,
        "2026-10-31",
        "2026-10-31",
        0
@@ -1693,7 +1774,7 @@
      "lon": -76.969,
      "r": [
       [
-       10,
+       12,
        "2026-10-26",
        "2026-10-27",
        0
@@ -1706,7 +1787,7 @@
      "lon": -76.964,
      "r": [
       [
-       10,
+       12,
        "2026-10-22",
        "2026-10-23",
        0
@@ -1719,35 +1800,9 @@
      "lon": -76.968,
      "r": [
       [
-       11,
+       13,
        "2026-10-22",
        "2026-10-22",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "EAST CAPITOL STREET AND C STREET NE",
-     "lat": 38.89,
-     "lon": -76.968,
-     "r": [
-      [
-       12,
-       "2026-10-20",
-       null,
-       1
-      ]
-     ]
-    },
-    {
-     "block": "300 block of 19TH STREET SE",
-     "lat": 38.885,
-     "lon": -76.977,
-     "r": [
-      [
-       10,
-       "2026-10-20",
-       "2026-10-20",
        0
       ]
      ]
@@ -1756,13 +1811,18 @@
   }
  },
  "crime": {
-  "total": 3,
+  "total": 4,
   "previous_total": 8,
   "by_offense": [
    {
-    "offense": "ASSAULT W/DANGEROUS WEAPON",
+    "offense": "BURGLARY",
     "count": 1,
-    "previous": 2
+    "previous": 0
+   },
+   {
+    "offense": "THEFT/OTHER",
+    "count": 1,
+    "previous": 5
    },
    {
     "offense": "HOMICIDE",
@@ -1770,19 +1830,14 @@
     "previous": 0
    },
    {
-    "offense": "BURGLARY",
+    "offense": "ASSAULT W/DANGEROUS WEAPON",
     "count": 1,
-    "previous": 0
+    "previous": 2
    },
    {
     "offense": "THEFT F/AUTO",
     "count": 0,
     "previous": 1
-   },
-   {
-    "offense": "THEFT/OTHER",
-    "count": 0,
-    "previous": 5
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -1815,7 +1870,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-19T09:19:46Z",
+  "generated_at": "2026-11-21T07:40:15Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -1830,7 +1885,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Stadium-Armory through OTR assessment sub-areas Old City 1 A and B, the rowhouse blocks just west of the stadium grounds in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Stadium-Armory boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-19): 7% of the 2,431 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Stadium-Armory through OTR assessment sub-areas Old City 1 A and B, the rowhouse blocks just west of the stadium grounds in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Stadium-Armory boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-21): 7% of the 2,431 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -1847,30 +1902,30 @@
    "area_parcels": 2431,
    "area_share_inside": 0.07,
    "boundary_share_in_area": 1.0,
-   "measured": "2026-11-19"
+   "measured": "2026-11-21"
   },
   "primary": "house",
   "house": {
-   "median_12mo": 989000,
-   "count_12mo": 55,
+   "median_12mo": 1007000,
+   "count_12mo": 56,
    "median_prev_12mo": 942500,
    "count_prev_12mo": 78
   },
   "condo": {
    "median_12mo": 662500,
    "count_12mo": 14,
-   "median_prev_12mo": 670000,
-   "count_prev_12mo": 21
+   "median_prev_12mo": 660000,
+   "count_prev_12mo": 20
   },
   "last_60d": {
-   "median": 780000,
-   "count": 9,
-   "median_ppsf": 691,
-   "ppsf_count": 9
+   "median": 809000,
+   "count": 10,
+   "median_ppsf": 692,
+   "ppsf_count": 10
   },
   "above_assessment_12mo": {
-   "n": 46,
-   "of": 69
+   "n": 47,
+   "of": 70
   },
   "by_month": [
    {
@@ -1930,12 +1985,21 @@
    },
    {
     "month": "2026-11",
-    "median": null,
-    "count": 2
+    "median": 780000,
+    "count": 3
    }
   ],
   "by_month_basis": "houses only; calendar months, the last one in progress; median null when under 3 sales",
   "recent_sales": [
+   {
+    "address": "1840 Massachusetts Ave SE",
+    "date": "2026-11-12",
+    "price": 1520000,
+    "kind": "house",
+    "beds": 4,
+    "sqft": 2074,
+    "assessed": 1256990
+   },
    {
     "address": "1534 Independence Ave SE",
     "date": "2026-11-06",
@@ -2047,7 +2111,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-19T09:19:46Z",
+  "generated_at": "2026-11-21T07:40:15Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2071,7 +2135,7 @@
    "starting_next_7d": 2,
    "reserved_ft": 1496,
    "long_running_90d": 5,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-19: newest permit issued 2026-11-19, newest record update 2026-11-19, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-21: newest permit issued 2026-11-20, newest record update 2026-11-20, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Construction staging",
@@ -2190,7 +2254,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.06,
     "city_median_days": 0.05,
-    "closed_n": 154
+    "closed_n": 155
    },
    {
     "type": "DC Government Information",
@@ -2201,7 +2265,7 @@
    {
     "type": "Illegal Dumping",
     "median_days": 3.7,
-    "city_median_days": 3.96,
+    "city_median_days": 3.94,
     "closed_n": 28
    },
    {
@@ -2225,20 +2289,20 @@
    {
     "type": "Dead Animal Collection",
     "median_days": 1.18,
-    "city_median_days": 1.77,
+    "city_median_days": 1.78,
     "closed_n": 11
    },
    {
     "type": "Roadway Signs",
     "median_days": 23.79,
-    "city_median_days": 7.34,
+    "city_median_days": 7.31,
     "closed_n": 11
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-19T09:19:46Z",
+  "generated_at": "2026-11-21T07:40:15Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2299,9 +2363,9 @@
    }
   },
   "archive": {
-   "week_label": "November 14\u201320, 1926",
-   "week_start": "1926-11-14",
-   "week_end": "1926-11-20",
+   "week_label": "November 21\u201327, 1926",
+   "week_start": "1926-11-21",
+   "week_end": "1926-11-27",
    "paper": "Evening Star",
    "terms": [
     "\"Congressional Cemetery\"",
@@ -2311,40 +2375,16 @@
    ],
    "clips": [
     {
-     "date": "1926-11-14",
-     "page": 5,
-     "text": "The old potter\u2019s field was in back of Gallinger Hospital and was used until the present one was established in 1921.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-14/ed-1/?sp=5"
+     "date": "1926-11-21",
+     "page": 90,
+     "text": "Tuberculosis Hospital, Home for Incurables, the District jail.",
+     "url": "https://www.loc.gov/resource/sn83045462/1926-11-21/ed-1/?sp=90"
     },
     {
-     "date": "1926-11-15",
-     "page": 9,
-     "text": "On Sunday, November jft. 1920 at the Gallinger Hospital.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-15/ed-1/?sp=9"
-    },
-    {
-     "date": "1926-11-17",
-     "page": 1,
-     "text": "Today\u2019s session was held up by a proposal to introduce testimony from a prisoner at the District jail.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-17/ed-1/?sp=1"
-    },
-    {
-     "date": "1926-11-18",
-     "page": 7,
-     "text": "It appeared that the District at torney\u2019s office was holding what It supposed to be a surprise up its sleeve In the person of Moore, now in the District Jail.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-18/ed-1/?sp=7"
-    },
-    {
-     "date": "1926-11-19",
-     "page": 1,
-     "text": "The Scrivener death pistol clue, born in the office of District Attorney Pey ton Gordon when Henry Miller Moore, a District Jail prisoner.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-19/ed-1/?sp=1"
-    },
-    {
-     "date": "1926-11-20",
-     "page": 10,
-     "text": "The Annunciation, Congressional Cemetery Chapel. 3:30. 4.",
-     "url": "https://www.loc.gov/resource/sn83045462/1926-11-20/ed-1/?sp=10"
+     "date": "1926-11-24",
+     "page": 2,
+     "text": "At only two of these institutions, however, will turkey be on the menu Gallinger Hospital and Tubercu losis Hospital.",
+     "url": "https://www.loc.gov/resource/sn83045462/1926-11-24/ed-1/?sp=2"
     }
    ],
    "screened": 1,
@@ -2352,7 +2392,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-19T09:19:46Z",
+  "generated_at": "2026-11-21T07:40:15Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2432,7 +2472,7 @@
     "name": "Hill Rag",
     "url": "https://www.hillrag.com/",
     "state": "ok",
-    "matched": 8,
+    "matched": 7,
     "fetched": 1
    },
    {
@@ -2453,7 +2493,7 @@
     "name": "WTOP",
     "url": "https://wtop.com/",
     "state": "ok",
-    "matched": 2,
+    "matched": 1,
     "fetched": 4
    },
    {
@@ -2488,7 +2528,7 @@
     "name": "51st",
     "url": "https://51st.news/",
     "state": "ok",
-    "matched": 0,
+    "matched": 1,
     "fetched": 1
    },
    {
@@ -2521,6 +2561,13 @@
    }
   ],
   "items": [
+   {
+    "title": "The D.C. Jail\u2019s food has been a health hazard for too long",
+    "url": "https://51st.news/opinion-dc-jail-mouse-in-food-aramark/",
+    "source": "51st",
+    "published": "2026-11-19T17:35:07Z",
+    "first_seen": "2026-11-21T07:40:15Z"
+   },
    {
     "title": "Metro unveils plans for Gold Line service, upgraded Stadium-Armory stop",
     "url": "https://wtop.com/transportation/2026/11/metro-unveils-plans-for-gold-line-service-upgraded-stadium-armory-stop/",
@@ -2780,8 +2827,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-19T09:19:46Z",
-  "today": "2026-11-19",
+  "generated_at": "2026-11-21T07:40:15Z",
+  "today": "2026-11-21",
   "days_ahead": 30,
   "sources": [
    {
@@ -2886,6 +2933,15 @@
     "url": "https://congressionalcemetery.org/event/hcc-holiday-market-3/",
     "source": "Historic Congressional Cemetery",
     "kind": "community"
+   },
+   {
+    "title": "Wreaths Across America Wreath Laying",
+    "date": "2026-12-19",
+    "time": "11 AM to 12:30 PM",
+    "place": "Historic Congressional Cemetery, 1801 E Street, Southeast",
+    "url": "https://congressionalcemetery.org/event/wreaths-across-america-wreath-laying-4/",
+    "source": "Historic Congressional Cemetery",
+    "kind": "community"
    }
   ],
   "unscheduled": [],
@@ -2937,7 +2993,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-19T09:19:46Z",
+  "generated_at": "2026-11-21T07:40:15Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -2970,8 +3026,8 @@
   ],
   "lookup_errors": [],
   "leaf_status": {
-   "7C": "We have not reached your section yet. Each section will receive two weekends\u2019 notice of when to rake your leaves to the tree box or curb. Please check back on Fridays for an update on our collection schedule.",
-   "6B": "The first pass for leaf collection in Section B will begin Monday, November 16, 2026. Section B residents, please have your leaves at the tree box or curbside by Sunday, November 15, 2026.",
+   "7C": "The first pass for leaf collection in Section C will begin Monday, November 30, 2026. Section C residents, please have your leaves at the tree box or curbside by Sunday, November 29, 2026.",
+   "6B": "The first pass for leaf collection in Section B is underway.",
    "5D": "We have not reached your section yet. Each section will receive two weekends\u2019 notice of when to rake your leaves to the tree box or curb. Please check back on Fridays for an update on our collection schedule."
   },
   "schools": {
@@ -14441,7 +14497,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-19T09:19:46Z",
+  "generated_at": "2026-11-21T07:40:15Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
