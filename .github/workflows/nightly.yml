@@ -2,7 +2,9 @@ name: Nightly ingest, build, deploy
 
 on:
   schedule:
-    - cron: "15 9 * * *" # 05:15 Eastern (EDT), after DC's overnight dataset refresh
+    # 07:30 UTC (02:30 Eastern in winter, 03:30 in summer). The run takes about an hour, so it ends before DC's permit
+    # layer reloads around 10:27-10:34 UTC and answers "none"; the old 09:15 start ran into that window (Nov 10, 16, 20).
+    - cron: "30 7 * * *"
   workflow_dispatch:
   # A push rebuilds and redeploys from the data already committed; only the nightly run (and a manual run) fetches
   # DC's data again. The full ingest takes about an hour, so running it on every push used up the private repo's

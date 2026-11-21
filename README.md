@@ -43,7 +43,7 @@ Then open http://localhost:4321/petworth/.
 1. Add each domain as a zone in your Cloudflare account. For Cloudflare to serve custom domains, the domains must use Cloudflare nameservers.
 2. Create a Cloudflare API token with the "Edit Cloudflare Workers" template.
 3. Push this repo to GitHub and add the repository secrets `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`.
-4. Run the "Nightly ingest, build, deploy" workflow manually once. After that it runs every morning at 05:15 Eastern.
+4. Run the "Nightly ingest, build, deploy" workflow manually once. After that it runs every night at 07:30 UTC (02:30 Eastern in winter, 03:30 in summer).
 
 To deploy by hand instead, run `npx wrangler deploy` from the repo root after building.
 

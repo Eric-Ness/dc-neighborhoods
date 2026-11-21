@@ -94,18 +94,40 @@ def round_coord(value: float | None, places: int) -> float | None:
 # night when the first answer has rows.
 PERMIT_RETRY_WAITS = (60, 180, 420)
 
+# Sites whose empty permit list was checked against DC's citywide count this run, so --check accepts the zero.
+# A small site can really have none: Stadium Armory had 3 in the window on Nov 19, 2026.
+CONFIRMED_NO_PERMITS: set[str] = set()
+_citywide_permits: dict[float, int] = {}
 
-def fetch_permits(geom: dict, now: float) -> list[dict]:
+
+def citywide_permits(start: float, now: float) -> int:
+    """Permits DC has issued anywhere since start. Only a non-zero answer is cached, since zero may be the outage."""
+    if start not in _citywide_permits:
+        n = sum(dcdata.count_where(layer, dcdata.date_where("ISSUE_DATE", start)) for layer in yearly_layers(PERMITS_TITLE, start, now))
+        if not n:
+            return 0
+        _citywide_permits[start] = n
+    return _citywide_permits[start]
+
+
+def fetch_permits(geom: dict, now: float) -> tuple[list[dict], bool]:
+    """Returns the permits and whether an empty list was confirmed as real (DC has permits elsewhere)."""
     start = now - PERMIT_DAYS * DAY
-    rows = []
-    # An empty list fails --check and holds back every site's update for the night, so ask again before trusting "none".
+    rows, confirmed_zero = [], False
+    # An empty answer is either a quiet stretch or DC's reload, which answers "none" for every area. One citywide count
+    # tells them apart: if DC has permits elsewhere, this area really has none; if not, wait and ask again, since an
+    # unconfirmed empty list fails --check and holds back every site's update for the night.
     for wait in (0, *PERMIT_RETRY_WAITS):
         if wait:
-            print(f"  permits came back empty; asking again in {wait} s", flush=True)
+            print(f"  permits came back empty citywide too; asking again in {wait} s", flush=True)
             time.sleep(wait)
         for layer in yearly_layers(PERMITS_TITLE, start, now):
             rows += dcdata.query_features(layer, geom, dcdata.date_where("ISSUE_DATE", start), PERMIT_FIELDS, "ISSUE_DATE DESC")
         if rows:
+            break
+        if (n := citywide_permits(start, now)) > 0:
+            print(f"  no permits here in {PERMIT_DAYS} days; DC has {n} citywide, so the zero is real", flush=True)
+            confirmed_zero = True
             break
     permits = []
     for r in rows:
@@ -114,7 +136,7 @@ def fetch_permits(geom: dict, now: float) -> list[dict]:
             work = ""
         permits.append(_permit(r, work[:400]))
     permits.sort(key=lambda p: p["issued"] or "", reverse=True)
-    return permits
+    return permits, confirmed_zero
 
 
 def _permit(r: dict, work: str) -> dict:
@@ -292,7 +314,9 @@ def permit_group(permit_type: str | None, subtype: str | None, work: str) -> str
 def build(hood: dict, config: dict, now: float) -> dict:
     geom = dcdata.hood_boundary(config, hood)
     boundary_source = hood.get("boundary_source", config["boundary_source"])
-    permits = fetch_permits(geom, now)
+    permits, confirmed_zero = fetch_permits(geom, now)
+    if confirmed_zero:
+        CONFIRMED_NO_PERMITS.add(hood["slug"])
     sr = fetch_311(geom, now)
     crime = fetch_crime_counts(geom, now)
     smds = fetch_smds(geom)
@@ -343,8 +367,8 @@ def find_forbidden(obj, path="$") -> list[str]:
 def check(outputs: dict[str, dict]) -> list[str]:
     errors = []
     for slug, data in outputs.items():
-        if not data["permits"]:
-            errors.append(f"{slug}: no permits")
+        if not data["permits"] and slug not in CONFIRMED_NO_PERMITS:
+            errors.append(f"{slug}: no permits, and DC's permit layer answered none citywide (likely its morning reload)")
         if data["requests"]["total"] <= 0:
             errors.append(f"{slug}: no 311 requests")
         if not data["smds"]:

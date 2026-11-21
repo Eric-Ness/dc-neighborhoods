@@ -178,6 +178,12 @@ def count_by(layer_url: str, geometry: dict, where: str, field: str) -> dict[str
     return out
 
 
+def count_where(layer_url: str, where: str) -> int:
+    """How many records in the whole layer match where (no boundary), counted on DC's server."""
+    data = _request(f"{layer_url}/query", {"where": where, "returnCountOnly": "true", "f": "json"}, post=True)
+    return int(data.get("count") or 0)
+
+
 def date_where(field: str, start_epoch: float, end_epoch: float | None = None) -> str:
     start = time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime(start_epoch))
     clause = f"{field} >= TIMESTAMP '{start}'"
