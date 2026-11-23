@@ -1,7 +1,7 @@
 {
  "slug": "anacostia",
  "name": "Anacostia",
- "generated_at": "2026-11-22T07:39:32Z",
+ "generated_at": "2026-11-23T07:40:11Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -938,19 +938,6 @@
    "smd": "8A05"
   },
   {
-   "id": "E2701035",
-   "issued": "2026-10-29T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "1507 ERIE ST SE 20020",
-   "work": "",
-   "zoning": "R-3",
-   "lat": 38.8571,
-   "lon": -76.98479,
-   "smd": "8B06"
-  },
-  {
    "id": "E2700989",
    "issued": "2026-10-29T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -961,6 +948,19 @@
    "zoning": "R-2",
    "lat": 38.85656,
    "lon": -76.97824,
+   "smd": "8B06"
+  },
+  {
+   "id": "E2701035",
+   "issued": "2026-10-29T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "1507 ERIE ST SE 20020",
+   "work": "",
+   "zoning": "R-3",
+   "lat": 38.8571,
+   "lon": -76.98479,
    "smd": "8B06"
   },
   {
@@ -990,19 +990,6 @@
    "smd": "8B06"
   },
   {
-   "id": "E2700856",
-   "issued": "2026-10-27T04:00:00Z",
-   "group": "Electrical, plumbing & mechanical",
-   "type": "SUPPLEMENTAL",
-   "subtype": "ELECTRICAL",
-   "address": "2331 GREEN ST SE 20020",
-   "work": "",
-   "zoning": "RA-1",
-   "lat": 38.86173,
-   "lon": -76.98179,
-   "smd": "8A04"
-  },
-  {
    "id": "E2700853",
    "issued": "2026-10-27T04:00:00Z",
    "group": "Electrical, plumbing & mechanical",
@@ -1014,6 +1001,19 @@
    "lat": 38.85903,
    "lon": -76.98727,
    "smd": "8B06"
+  },
+  {
+   "id": "E2700856",
+   "issued": "2026-10-27T04:00:00Z",
+   "group": "Electrical, plumbing & mechanical",
+   "type": "SUPPLEMENTAL",
+   "subtype": "ELECTRICAL",
+   "address": "2331 GREEN ST SE 20020",
+   "work": "",
+   "zoning": "RA-1",
+   "lat": 38.86173,
+   "lon": -76.98179,
+   "smd": "8A04"
   },
   {
    "id": "E2700832",
@@ -1043,53 +1043,53 @@
   }
  ],
  "requests": {
-  "total": 499,
-  "previous_total": 506,
+  "total": 484,
+  "previous_total": 511,
   "by_type": [
    {
     "type": "DOEE - LIHEAP",
-    "count": 139,
-    "previous": 33
+    "count": 137,
+    "previous": 36
    },
    {
     "type": "Bulk Collection",
-    "count": 79,
+    "count": 78,
     "previous": 93
    },
    {
     "type": "Parking Enforcement",
-    "count": 66,
-    "previous": 79
+    "count": 64,
+    "previous": 76
    },
    {
     "type": "Illegal Dumping",
     "count": 23,
-    "previous": 30
-   },
-   {
-    "type": "Trash Collection - Missed",
-    "count": 16,
-    "previous": 13
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "count": 15,
-    "previous": 16
-   },
-   {
-    "type": "DMV - Drivers License/ID Issues",
-    "count": 15,
-    "previous": 13
+    "previous": 28
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 12,
+    "count": 14,
     "previous": 11
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "count": 14,
+    "previous": 16
+   },
+   {
+    "type": "Sanitation Enforcement",
+    "count": 14,
+    "previous": 17
+   },
+   {
+    "type": "DMV - Drivers License/ID Issues",
+    "count": 14,
+    "previous": 13
    },
    {
     "type": "Residential Parking Permit Violation",
     "count": 11,
-    "previous": 10
+    "previous": 9
    },
    {
     "type": "Out of State Parking Violation (ROSA)",
@@ -1099,17 +1099,17 @@
    {
     "type": "Abandoned Vehicle - On Public Property",
     "count": 9,
-    "previous": 12
-   },
-   {
-    "type": "Roadway Signs",
-    "count": 8,
-    "previous": 16
+    "previous": 11
    },
    {
     "type": "DC Government Information",
     "count": 8,
     "previous": 26
+   },
+   {
+    "type": "Roadway Signs",
+    "count": 7,
+    "previous": 17
    },
    {
     "type": "Emergency No-Parking Verification",
@@ -1127,16 +1127,6 @@
     "previous": 2
    },
    {
-    "type": "Sidewalk Repair",
-    "count": 5,
-    "previous": 1
-   },
-   {
-    "type": "Supercan - Delivery",
-    "count": 5,
-    "previous": 10
-   },
-   {
     "type": "DOB - Illegal Construction",
     "count": 5,
     "previous": 0
@@ -1147,14 +1137,19 @@
     "previous": 0
    },
    {
-    "type": "Dockless Vehicle Parking Complaint",
+    "type": "Supercan - Delivery",
     "count": 4,
-    "previous": 13
+    "previous": 11
    },
    {
     "type": "Container Removal",
     "count": 4,
     "previous": 1
+   },
+   {
+    "type": "Sidewalk Repair",
+    "count": 4,
+    "previous": 2
    },
    {
     "type": "DOB - Vacant Private Property Inspection",
@@ -1167,16 +1162,6 @@
     "previous": 4
    },
    {
-    "type": "Pothole",
-    "count": 2,
-    "previous": 1
-   },
-   {
-    "type": "Traffic Safety Input",
-    "count": 2,
-    "previous": 5
-   },
-   {
     "type": "Trash Cart Repair",
     "count": 2,
     "previous": 0
@@ -1184,7 +1169,7 @@
    {
     "type": "Tree Pruning",
     "count": 2,
-    "previous": 8
+    "previous": 7
    },
    {
     "type": "Roadway Markings / Pylons",
@@ -1204,12 +1189,12 @@
    {
     "type": "Tree Inspection",
     "count": 2,
-    "previous": 9
+    "previous": 8
    },
    {
     "type": "DMV - Vehicle Registration Issues",
     "count": 2,
-    "previous": 3
+    "previous": 2
    },
    {
     "type": "Pet Waste Complaint",
@@ -1232,7 +1217,17 @@
     "previous": 3
    },
    {
+    "type": "Traffic Safety Input",
+    "count": 1,
+    "previous": 6
+   },
+   {
     "type": "DGS - Playground Repair",
+    "count": 1,
+    "previous": 2
+   },
+   {
+    "type": "Pothole",
     "count": 1,
     "previous": 2
    },
@@ -1267,6 +1262,11 @@
     "previous": 2
    },
    {
+    "type": "Dockless Vehicle Parking Complaint",
+    "count": 1,
+    "previous": 16
+   },
+   {
     "type": "OCTFME - Down Cable Wires",
     "count": 1,
     "previous": 1
@@ -1292,8 +1292,68 @@
     "previous": 17
    }
   ],
-  "open": 65,
+  "open": 68,
   "recent": [
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-22T18:37:02Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1600 block of V STREET SE",
+    "lat": 38.865,
+    "lon": -76.982
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-22T18:24:07Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1300 block of DEXTER TERRACE SE",
+    "lat": 38.861,
+    "lon": -76.991
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-22T16:10:20Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2200 block of HUNTER PLACE SE",
+    "lat": 38.859,
+    "lon": -76.985
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "agency": "DOEE",
+    "added": "2026-11-22T14:42:52Z",
+    "resolved": "2026-11-22T14:42:52Z",
+    "status": "Closed",
+    "block": "2300 block of GREEN STREET SE",
+    "lat": 38.861,
+    "lon": -76.981
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-22T13:14:10Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2300 block of GREEN STREET SE",
+    "lat": 38.861,
+    "lon": -76.981
+   },
+   {
+    "type": "Trash Collection - Missed",
+    "agency": "DPW",
+    "added": "2026-11-22T12:17:26Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1200 block of V STREET SE",
+    "lat": 38.866,
+    "lon": -76.988
+   },
    {
     "type": "Scheduled Yard Waste",
     "agency": "DPW",
@@ -1733,79 +1793,19 @@
     "block": "2300 block of PITTS PLACE SE",
     "lat": 38.86,
     "lon": -76.986
-   },
-   {
-    "type": "DC Government Information",
-    "agency": "OUC",
-    "added": "2026-11-18T16:39:48Z",
-    "resolved": "2026-11-18T16:39:48Z",
-    "status": "Closed",
-    "block": "1800 block of GOOD HOPE ROAD SE",
-    "lat": 38.865,
-    "lon": -76.979
-   },
-   {
-    "type": "Abandoned Vehicle - On Public Property",
-    "agency": "DPW",
-    "added": "2026-11-18T16:23:03Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2500 block of HIGH STREET SE",
-    "lat": 38.86,
-    "lon": -76.989
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-18T16:13:58Z",
-    "resolved": "2026-11-18T16:13:58Z",
-    "status": "Closed",
-    "block": "2600 block of DOUGLAS PLACE SE",
-    "lat": 38.857,
-    "lon": -76.991
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-18T14:48:38Z",
-    "resolved": "2026-11-18T15:16:56Z",
-    "status": "Closed",
-    "block": "1500 block of W STREET SE",
-    "lat": 38.864,
-    "lon": -76.983
-   },
-   {
-    "type": "Abandoned Vehicle - On Public Property",
-    "agency": "DPW",
-    "added": "2026-11-18T14:46:21Z",
-    "resolved": "2026-11-19T16:06:12Z",
-    "status": "Closed",
-    "block": "1500 block of W STREET SE",
-    "lat": 38.864,
-    "lon": -76.983
-   },
-   {
-    "type": "Sidewalk Repair",
-    "agency": "DDOT",
-    "added": "2026-11-18T14:43:33Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "2000 block of MARTIN LUTHER KING JR AVENUE SE",
-    "lat": 38.866,
-    "lon": -76.989
    }
   ],
   "mapped": {
    "types": [
+    "Illegal Dumping",
     "Scheduled Yard Waste",
-    "Recycling Collection - Missed",
     "Bulk Collection",
     "DOEE - LIHEAP",
     "Trash Collection - Missed",
+    "Recycling Collection - Missed",
     "DOB - Illegal Construction",
     "Roadway Markings / Pylons",
     "Streetlight Repair Investigation",
-    "Illegal Dumping",
     "Parking Enforcement",
     "DC Health Rodent & Vector Control",
     "DMV - Online Processing Issues",
@@ -1849,12 +1849,137 @@
    ],
    "blocks": [
     {
+     "block": "1600 block of V STREET SE",
+     "lat": 38.865,
+     "lon": -76.982,
+     "r": [
+      [
+       0,
+       "2026-11-22",
+       null,
+       1
+      ],
+      [
+       1,
+       "2026-11-17",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "1300 block of DEXTER TERRACE SE",
+     "lat": 38.861,
+     "lon": -76.991,
+     "r": [
+      [
+       1,
+       "2026-11-22",
+       null,
+       1
+      ],
+      [
+       21,
+       "2026-11-11",
+       "2026-11-12",
+       0
+      ],
+      [
+       2,
+       "2026-11-09",
+       "2026-11-16",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "2200 block of HUNTER PLACE SE",
+     "lat": 38.859,
+     "lon": -76.985,
+     "r": [
+      [
+       2,
+       "2026-11-22",
+       null,
+       1
+      ],
+      [
+       2,
+       "2026-10-26",
+       "2026-11-03",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "2300 block of GREEN STREET SE",
+     "lat": 38.861,
+     "lon": -76.981,
+     "r": [
+      [
+       3,
+       "2026-11-22",
+       "2026-11-22",
+       0
+      ],
+      [
+       1,
+       "2026-11-22",
+       null,
+       1
+      ],
+      [
+       3,
+       "2026-11-12",
+       "2026-11-12",
+       0
+      ],
+      [
+       2,
+       "2026-10-26",
+       "2026-11-03",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1200 block of V STREET SE",
+     "lat": 38.866,
+     "lon": -76.988,
+     "r": [
+      [
+       4,
+       "2026-11-22",
+       null,
+       1
+      ],
+      [
+       9,
+       "2026-11-01",
+       "2026-11-01",
+       0
+      ],
+      [
+       9,
+       "2026-11-01",
+       "2026-11-01",
+       0
+      ],
+      [
+       2,
+       "2026-10-29",
+       "2026-11-03",
+       0
+      ]
+     ]
+    },
+    {
      "block": "1300 block of DEXTER TERRACE SE",
      "lat": 38.861,
      "lon": -76.99,
      "r": [
       [
-       0,
+       1,
        "2026-11-22",
        null,
        1
@@ -1890,7 +2015,7 @@
        0
       ],
       [
-       8,
+       0,
        "2026-11-12",
        "2026-11-16",
        0
@@ -1902,7 +2027,7 @@
        0
       ],
       [
-       5,
+       6,
        "2026-10-27",
        "2026-10-27",
        0
@@ -1915,7 +2040,7 @@
      "lon": -76.979,
      "r": [
       [
-       1,
+       5,
        "2026-11-21",
        null,
        1
@@ -2037,12 +2162,6 @@
        "2026-10-25",
        null,
        1
-      ],
-      [
-       20,
-       "2026-10-23",
-       null,
-       1
       ]
      ]
     },
@@ -2052,25 +2171,25 @@
      "lon": -76.982,
      "r": [
       [
-       5,
+       6,
        "2026-11-21",
        null,
        1
       ],
       [
-       5,
+       6,
        "2026-11-21",
        null,
        1
       ],
       [
-       5,
+       6,
        "2026-11-14",
        null,
        1
       ],
       [
-       8,
+       0,
        "2026-10-26",
        "2026-10-27",
        0
@@ -2114,7 +2233,7 @@
      "lon": -76.988,
      "r": [
       [
-       6,
+       7,
        "2026-11-21",
        null,
        1
@@ -2127,7 +2246,7 @@
      "lon": -76.994,
      "r": [
       [
-       7,
+       8,
        "2026-11-21",
        null,
        1
@@ -2152,7 +2271,7 @@
      "lon": -76.986,
      "r": [
       [
-       8,
+       0,
        "2026-11-21",
        null,
        1
@@ -2284,7 +2403,7 @@
      "lon": -76.984,
      "r": [
       [
-       8,
+       0,
        "2026-11-20",
        null,
        1
@@ -2366,7 +2485,7 @@
        0
       ],
       [
-       8,
+       0,
        "2026-11-06",
        "2026-11-09",
        0
@@ -2413,12 +2532,6 @@
        21,
        "2026-11-17",
        "2026-11-18",
-       0
-      ],
-      [
-       4,
-       "2026-10-23",
-       "2026-10-26",
        0
       ]
      ]
@@ -2642,7 +2755,7 @@
      "lon": -76.989,
      "r": [
       [
-       0,
+       1,
        "2026-11-19",
        null,
        1
@@ -2906,12 +3019,6 @@
        "2026-10-26",
        "2026-10-27",
        0
-      ],
-      [
-       4,
-       "2026-10-23",
-       "2026-10-26",
-       0
       ]
      ]
     },
@@ -2933,7 +3040,7 @@
        0
       ],
       [
-       8,
+       0,
        "2026-10-26",
        "2026-11-03",
        0
@@ -2952,7 +3059,7 @@
        0
       ],
       [
-       8,
+       0,
        "2026-11-16",
        "2026-11-16",
        0
@@ -3176,19 +3283,6 @@
      ]
     },
     {
-     "block": "1600 block of V STREET SE",
-     "lat": 38.865,
-     "lon": -76.982,
-     "r": [
-      [
-       0,
-       "2026-11-17",
-       null,
-       1
-      ]
-     ]
-    },
-    {
      "block": "1500 block of ERIE STREET SE",
      "lat": 38.857,
      "lon": -76.984,
@@ -3209,12 +3303,6 @@
        3,
        "2026-11-02",
        "2026-11-02",
-       0
-      ],
-      [
-       2,
-       "2026-10-23",
-       "2026-10-28",
        0
       ]
      ]
@@ -3276,7 +3364,7 @@
      "lon": -76.982,
      "r": [
       [
-       8,
+       0,
        "2026-11-17",
        "2026-11-19",
        0
@@ -3310,12 +3398,6 @@
        9,
        "2026-10-28",
        "2026-10-28",
-       0
-      ],
-      [
-       9,
-       "2026-10-23",
-       "2026-10-23",
        0
       ]
      ]
@@ -3387,12 +3469,6 @@
        "2026-11-17",
        "2026-11-17",
        0
-      ],
-      [
-       9,
-       "2026-10-23",
-       "2026-10-23",
-       0
       ]
      ]
     },
@@ -3402,13 +3478,13 @@
      "lon": -76.991,
      "r": [
       [
-       0,
+       1,
        "2026-11-16",
        "2026-11-19",
        0
       ],
       [
-       0,
+       1,
        "2026-11-08",
        "2026-11-12",
        0
@@ -3477,7 +3553,7 @@
      "lon": -76.985,
      "r": [
       [
-       8,
+       0,
        "2026-11-16",
        "2026-11-19",
        0
@@ -3541,18 +3617,6 @@
        3,
        "2026-10-24",
        "2026-10-24",
-       0
-      ],
-      [
-       38,
-       "2026-10-23",
-       "2026-10-26",
-       0
-      ],
-      [
-       3,
-       "2026-10-23",
-       "2026-10-23",
        0
       ]
      ]
@@ -3620,7 +3684,7 @@
      "lon": -76.981,
      "r": [
       [
-       0,
+       1,
        "2026-11-15",
        "2026-11-19",
        0
@@ -3641,12 +3705,6 @@
        4,
        "2026-10-26",
        "2026-10-30",
-       0
-      ],
-      [
-       4,
-       "2026-10-23",
-       "2026-10-26",
        0
       ]
      ]
@@ -3883,7 +3941,7 @@
      "lon": -76.983,
      "r": [
       [
-       8,
+       0,
        "2026-11-13",
        "2026-11-19",
        0
@@ -3902,7 +3960,7 @@
        1
       ],
       [
-       0,
+       1,
        "2026-11-12",
        "2026-11-19",
        0
@@ -3940,7 +3998,7 @@
        1
       ],
       [
-       8,
+       0,
        "2026-11-09",
        "2026-11-10",
        0
@@ -4076,7 +4134,7 @@
        1
       ],
       [
-       0,
+       1,
        "2026-11-03",
        "2026-11-12",
        0
@@ -4144,13 +4202,13 @@
        0
       ],
       [
-       8,
+       0,
        "2026-10-26",
        "2026-10-29",
        0
       ],
       [
-       8,
+       0,
        "2026-10-26",
        "2026-10-29",
        0
@@ -4228,12 +4286,6 @@
        3,
        "2026-10-27",
        "2026-10-27",
-       0
-      ],
-      [
-       3,
-       "2026-10-23",
-       "2026-10-23",
        0
       ]
      ]
@@ -4338,7 +4390,7 @@
      "lon": -76.981,
      "r": [
       [
-       0,
+       1,
        "2026-11-12",
        "2026-11-19",
        0
@@ -4397,25 +4449,6 @@
      ]
     },
     {
-     "block": "2300 block of GREEN STREET SE",
-     "lat": 38.861,
-     "lon": -76.981,
-     "r": [
-      [
-       3,
-       "2026-11-12",
-       "2026-11-12",
-       0
-      ],
-      [
-       2,
-       "2026-10-26",
-       "2026-11-03",
-       0
-      ]
-     ]
-    },
-    {
      "block": "2400 block of SKYLAND PLACE SE",
      "lat": 38.86,
      "lon": -76.974,
@@ -4440,7 +4473,7 @@
        1
       ],
       [
-       6,
+       7,
        "2026-10-28",
        null,
        1
@@ -4466,7 +4499,7 @@
      "lon": -76.99,
      "r": [
       [
-       8,
+       0,
        "2026-11-11",
        "2026-11-12",
        0
@@ -4475,25 +4508,6 @@
        9,
        "2026-11-10",
        "2026-11-10",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1300 block of DEXTER TERRACE SE",
-     "lat": 38.861,
-     "lon": -76.991,
-     "r": [
-      [
-       21,
-       "2026-11-11",
-       "2026-11-12",
-       0
-      ],
-      [
-       2,
-       "2026-11-09",
-       "2026-11-16",
        0
       ]
      ]
@@ -4555,7 +4569,7 @@
      "lon": -76.987,
      "r": [
       [
-       0,
+       1,
        "2026-11-10",
        "2026-11-19",
        0
@@ -4589,12 +4603,6 @@
        3,
        "2026-10-26",
        "2026-10-26",
-       0
-      ],
-      [
-       21,
-       "2026-10-23",
-       "2026-10-27",
        0
       ]
      ]
@@ -4653,12 +4661,6 @@
        33,
        "2026-11-10",
        "2026-11-18",
-       0
-      ],
-      [
-       33,
-       "2026-10-23",
-       "2026-11-11",
        0
       ]
      ]
@@ -5121,12 +5123,6 @@
        "2026-10-26",
        "2026-10-26",
        0
-      ],
-      [
-       3,
-       "2026-10-23",
-       "2026-10-23",
-       0
       ]
      ]
     },
@@ -5206,7 +5202,7 @@
      "lon": -76.988,
      "r": [
       [
-       8,
+       0,
        "2026-11-05",
        "2026-11-10",
        0
@@ -5250,16 +5246,10 @@
      "lon": -76.988,
      "r": [
       [
-       8,
+       0,
        "2026-11-05",
        "2026-11-05",
        0
-      ],
-      [
-       15,
-       "2026-10-23",
-       null,
-       1
       ]
      ]
     },
@@ -5301,19 +5291,19 @@
        0
       ],
       [
-       8,
+       0,
        "2026-10-29",
        "2026-10-30",
        0
       ],
       [
-       8,
+       0,
        "2026-10-29",
        "2026-11-03",
        0
       ],
       [
-       8,
+       0,
        "2026-10-29",
        "2026-10-29",
        0
@@ -5343,18 +5333,6 @@
        "2026-11-04",
        "2026-11-05",
        0
-      ],
-      [
-       23,
-       "2026-10-24",
-       "2026-10-24",
-       0
-      ],
-      [
-       23,
-       "2026-10-24",
-       "2026-10-24",
-       0
       ]
      ]
     },
@@ -5377,7 +5355,7 @@
      "lon": -76.989,
      "r": [
       [
-       0,
+       1,
        "2026-11-04",
        "2026-11-12",
        0
@@ -5663,37 +5641,6 @@
        "2026-10-27",
        "2026-10-27",
        0
-      ],
-      [
-       17,
-       "2026-10-23",
-       "2026-10-29",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1200 block of V STREET SE",
-     "lat": 38.866,
-     "lon": -76.988,
-     "r": [
-      [
-       9,
-       "2026-11-01",
-       "2026-11-01",
-       0
-      ],
-      [
-       9,
-       "2026-11-01",
-       "2026-11-01",
-       0
-      ],
-      [
-       2,
-       "2026-10-29",
-       "2026-11-03",
-       0
       ]
      ]
     },
@@ -5812,7 +5759,7 @@
      "lon": -76.983,
      "r": [
       [
-       8,
+       0,
        "2026-10-29",
        null,
        1
@@ -5881,7 +5828,7 @@
        0
       ],
       [
-       0,
+       1,
        "2026-10-24",
        "2026-10-29",
        0
@@ -5894,15 +5841,9 @@
      "lon": -76.978,
      "r": [
       [
-       7,
+       8,
        "2026-10-28",
        "2026-11-02",
-       0
-      ],
-      [
-       2,
-       "2026-10-23",
-       "2026-10-28",
        0
       ]
      ]
@@ -6076,19 +6017,6 @@
      ]
     },
     {
-     "block": "2200 block of HUNTER PLACE SE",
-     "lat": 38.859,
-     "lon": -76.985,
-     "r": [
-      [
-       2,
-       "2026-10-26",
-       "2026-11-03",
-       0
-      ]
-     ]
-    },
-    {
      "block": "1500 block of ERIE STREET SE",
      "lat": 38.857,
      "lon": -76.985,
@@ -6107,7 +6035,7 @@
      "lon": -76.981,
      "r": [
       [
-       8,
+       0,
        "2026-10-26",
        "2026-10-29",
        0
@@ -6159,7 +6087,7 @@
      "lon": -76.985,
      "r": [
       [
-       8,
+       0,
        "2026-10-25",
        "2026-10-27",
        0
@@ -6217,48 +6145,9 @@
        0
       ],
       [
-       5,
+       6,
        "2026-10-24",
        "2026-10-27",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "2000 block of 14TH STREET SE",
-     "lat": 38.866,
-     "lon": -76.985,
-     "r": [
-      [
-       23,
-       "2026-10-24",
-       "2026-10-24",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "1200 block of MAPLE VIEW PLACE SE",
-     "lat": 38.864,
-     "lon": -76.99,
-     "r": [
-      [
-       43,
-       "2026-10-23",
-       "2026-10-23",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "3000 block of STANTON ROAD SE",
-     "lat": 38.854,
-     "lon": -76.983,
-     "r": [
-      [
-       8,
-       "2026-10-23",
-       "2026-11-03",
        0
       ]
      ]
@@ -6267,13 +6156,13 @@
   }
  },
  "crime": {
-  "total": 30,
-  "previous_total": 31,
+  "total": 31,
+  "previous_total": 27,
   "by_offense": [
    {
     "offense": "THEFT/OTHER",
-    "count": 16,
-    "previous": 11
+    "count": 17,
+    "previous": 8
    },
    {
     "offense": "ASSAULT W/DANGEROUS WEAPON",
@@ -6303,7 +6192,7 @@
    {
     "offense": "SEX ABUSE",
     "count": 0,
-    "previous": 2
+    "previous": 1
    }
   ],
   "note": "Preliminary MPD counts by DC Code offense; not FBI NIBRS totals."
@@ -6348,7 +6237,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-22T07:39:32Z",
+  "generated_at": "2026-11-23T07:40:11Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -6363,7 +6252,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Anacostia through OTR assessment sub-areas Anacostia A and Randle Heights B, and Barry Farms in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Anacostia boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-22): 77% of the 2,603 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 78% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Anacostia through OTR assessment sub-areas Anacostia A and Randle Heights B, and Barry Farms in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Anacostia boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-23): 77% of the 2,603 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 78% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -6384,7 +6273,7 @@
    "area_parcels": 2603,
    "area_share_inside": 0.768,
    "boundary_share_in_area": 0.775,
-   "measured": "2026-11-22"
+   "measured": "2026-11-23"
   },
   "primary": "house",
   "house": {
@@ -6400,10 +6289,10 @@
    "count_prev_12mo": 16
   },
   "last_60d": {
-   "median": 357000,
-   "count": 8,
-   "median_ppsf": 262,
-   "ppsf_count": 8
+   "median": 339000,
+   "count": 7,
+   "median_ppsf": 247,
+   "ppsf_count": 7
   },
   "above_assessment_12mo": {
    "n": 16,
@@ -6535,20 +6424,11 @@
     "beds": 2,
     "sqft": 884,
     "assessed": 294880
-   },
-   {
-    "address": "1495 Howard Rd SE",
-    "date": "2026-09-23",
-    "price": 450000,
-    "kind": "house",
-    "beds": 3,
-    "sqft": 1216,
-    "assessed": 482700
    }
   ]
  },
  "streets": {
-  "generated_at": "2026-11-22T07:39:32Z",
+  "generated_at": "2026-11-23T07:40:11Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -6568,11 +6448,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 67,
-   "starting_next_7d": 9,
+   "active_this_week": 68,
+   "starting_next_7d": 10,
    "reserved_ft": 8448,
    "long_running_90d": 22,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-22: newest permit issued 2026-11-22, newest record update 2026-11-22, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-23: newest permit issued 2026-11-23, newest record update 2026-11-23, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Moving & storage",
@@ -6592,7 +6472,7 @@
     },
     {
      "type": "Utility & DDOT work",
-     "count": 18
+     "count": 19
     },
     {
      "type": "Events & reserved parking",
@@ -6671,13 +6551,21 @@
      "end": "2027-01-28",
      "ft": 198,
      "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Utility & DDOT work",
+     "block": "Marion Barry Avenue SE And Martin Luther King Jr Avenue SE",
+     "start": "2026-11-30",
+     "end": "2026-12-04",
+     "ft": 0,
+     "hours": "7:30 am\u20133 pm"
     }
    ]
   },
   "trees": {
    "total": 2284,
    "species": 182,
-   "planted_5y": 393,
+   "planted_5y": 386,
    "empty_boxes": 37,
    "empty_boxes_note": "Counted from the layer's tree-box status (TBOX_STAT). 'Open' = an empty box ready to plant (37). Not counted: 'Proposed' = planting scheduled (94), 'Conflict'/'Utility' = empty but blocked (57), 'Retired' = box removed (137). 'total' is boxes with status 'Plant' whose condition is not Dead.",
    "condition": {
@@ -6756,13 +6644,13 @@
     "type": "Bulk Collection",
     "median_days": 6.05,
     "city_median_days": 6.91,
-    "closed_n": 947
+    "closed_n": 945
    },
    {
     "type": "Parking Enforcement",
     "median_days": 0.04,
     "city_median_days": 0.05,
-    "closed_n": 796
+    "closed_n": 794
    },
    {
     "type": "DC Government Information",
@@ -6772,9 +6660,9 @@
    },
    {
     "type": "Trash Collection - Missed",
-    "median_days": 4.4,
+    "median_days": 4.35,
     "city_median_days": 3.94,
-    "closed_n": 422
+    "closed_n": 421
    },
    {
     "type": "Snow and Ice Removal on Public Space",
@@ -6785,7 +6673,7 @@
    {
     "type": "Sanitation Enforcement",
     "median_days": 1.03,
-    "city_median_days": 1.11,
+    "city_median_days": 1.1,
     "closed_n": 237
    },
    {
@@ -6798,13 +6686,13 @@
     "type": "DOEE - LIHEAP",
     "median_days": 0.0,
     "city_median_days": 0.0,
-    "closed_n": 203
+    "closed_n": 204
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-22T07:39:32Z",
+  "generated_at": "2026-11-23T07:40:11Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -6967,7 +6855,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-22T07:39:32Z",
+  "generated_at": "2026-11-23T07:40:11Z",
   "archive_days": 180,
   "sources": [
    {
@@ -7265,8 +7153,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-22T07:39:32Z",
-  "today": "2026-11-22",
+  "generated_at": "2026-11-23T07:40:11Z",
+  "today": "2026-11-23",
   "days_ahead": 30,
   "sources": [
    {
@@ -7332,7 +7220,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-22T07:39:32Z",
+  "generated_at": "2026-11-23T07:40:11Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -23481,7 +23369,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-22T07:39:32Z",
+  "generated_at": "2026-11-23T07:40:11Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
@@ -23524,124 +23412,166 @@
     "lon": -76.98468
    },
    {
-    "id": "1000414",
-    "name": "16 St SE & Marion Barry Av SE",
-    "lat": 38.86595,
-    "lon": -76.98196
+    "id": "1000429",
+    "name": "16 St SE & T St SE",
+    "lat": 38.86744,
+    "lon": -76.98218
    },
    {
-    "id": "1000395",
-    "name": "16 St SE & V St SE",
-    "lat": 38.86469,
-    "lon": -76.9823
+    "id": "1000267",
+    "name": "Bruce Pl SE & Erie St SE",
+    "lat": 38.85644,
+    "lon": -76.97535
    },
    {
-    "id": "1000351",
-    "name": "Anacostia & Bay E",
-    "lat": 38.86178,
-    "lon": -76.99533
-   },
-   {
-    "id": "1003273",
-    "name": "Anacostia & Bay G",
-    "lat": 38.86201,
-    "lon": -76.99535
-   },
-   {
-    "id": "1000268",
-    "name": "Bruce Pl SE & Raynolds Pl SE",
-    "lat": 38.85673,
-    "lon": -76.97496
-   },
-   {
-    "id": "1000290",
+    "id": "1000289",
     "name": "Erie St SE & 18 St SE",
-    "lat": 38.85731,
-    "lon": -76.97878
+    "lat": 38.85724,
+    "lon": -76.97916
    },
    {
-    "id": "1000283",
+    "id": "1000281",
     "name": "Fort Pl SE & #1901",
-    "lat": 38.85719,
-    "lon": -76.9769
+    "lat": 38.85718,
+    "lon": -76.9768
    },
    {
-    "id": "1000378",
-    "name": "MARTIN LUTHER KING JR AVE SE  &  MORRIS RD SE",
-    "lat": 38.86321,
-    "lon": -76.99133
+    "id": "1000363",
+    "name": "Howard Rd SE & Anacostia",
+    "lat": 38.86229,
+    "lon": -76.99483
    },
    {
-    "id": "1000389",
-    "name": "MARTIN LUTHER KING JR AVE SE  &  PLEASANT ST SE",
-    "lat": 38.86426,
-    "lon": -76.98999
+    "id": "1000382",
+    "name": "MARTIN LUTHER KING JR AVE SE  &  CHICAGO ST SE",
+    "lat": 38.86359,
+    "lon": -76.99088
    },
    {
-    "id": "1003759",
-    "name": "ML King Jr Av SE & Marion Barry Av SE",
-    "lat": 38.8672,
-    "lon": -76.98862
+    "id": "1000355",
+    "name": "MARTIN LUTHER KING JR AVE SE  &  HOWARD RD SE",
+    "lat": 38.86198,
+    "lon": -76.99354
    },
    {
-    "id": "1003970",
+    "id": "1000373",
+    "name": "MARTIN LUTHER KING JR AVE SE  &  TALBERT ST SE",
+    "lat": 38.86287,
+    "lon": -76.99224
+   },
+   {
+    "id": "1000315",
+    "name": "ML King Jr Av SE & Stanton Rd SE",
+    "lat": 38.85908,
+    "lon": -76.99528
+   },
+   {
+    "id": "1000320",
+    "name": "ML King Jr Av SE & Sumner Rd SE",
+    "lat": 38.85952,
+    "lon": -76.99509
+   },
+   {
+    "id": "1003969",
     "name": "ML King Jr Av SE & Talbert St SE",
-    "lat": 38.86283,
-    "lon": -76.99204
+    "lat": 38.86278,
+    "lon": -76.99239
    },
    {
-    "id": "1000426",
-    "name": "Marion Barry Av SE & 13 St SE",
-    "lat": 38.86727,
-    "lon": -76.98736
+    "id": "1000423",
+    "name": "ML King Jr Av SE & U St SE",
+    "lat": 38.86699,
+    "lon": -76.98885
    },
    {
-    "id": "1003683",
+    "id": "1003971",
+    "name": "ML King Jr Av SE & W St SE",
+    "lat": 38.86463,
+    "lon": -76.98977
+   },
+   {
+    "id": "1000398",
+    "name": "ML King Jr Av SE & W St SE",
+    "lat": 38.86505,
+    "lon": -76.98971
+   },
+   {
+    "id": "1000420",
     "name": "Marion Barry Av SE & 14 St SE",
-    "lat": 38.86689,
-    "lon": -76.98542
+    "lat": 38.86677,
+    "lon": -76.98533
    },
    {
-    "id": "1000417",
-    "name": "Marion Barry Av SE & 15 St SE",
-    "lat": 38.86644,
-    "lon": -76.98345
+    "id": "1003672",
+    "name": "Marion Barry Av SE & 17 St SE",
+    "lat": 38.86618,
+    "lon": -76.98134
    },
    {
-    "id": "1000408",
+    "id": "1000410",
     "name": "Marion Barry Av SE & 18 St SE",
-    "lat": 38.86561,
-    "lon": -76.97883
+    "lat": 38.8658,
+    "lon": -76.97937
    },
    {
-    "id": "1000374",
+    "id": "1000376",
     "name": "Marion Barry Av SE & Altamont Pl SE",
-    "lat": 38.86298,
-    "lon": -76.97268
+    "lat": 38.86303,
+    "lon": -76.97263
    },
    {
-    "id": "1000275",
+    "id": "1000425",
+    "name": "Marion Barry Av SE & ML King Jr Av SE",
+    "lat": 38.86723,
+    "lon": -76.98782
+   },
+   {
+    "id": "1000388",
+    "name": "Marion Barry Av SE & Marbury Plaza Apt",
+    "lat": 38.86418,
+    "lon": -76.97521
+   },
+   {
+    "id": "1000383",
+    "name": "Marion Barry Av SE & Woodmont Pl SE",
+    "lat": 38.86377,
+    "lon": -76.97469
+   },
+   {
+    "id": "1000344",
+    "name": "Morris Rd SE & #1349",
+    "lat": 38.86149,
+    "lon": -76.98942
+   },
+   {
+    "id": "1000273",
     "name": "Morris Rd SE & 16 St SE",
-    "lat": 38.85699,
-    "lon": -76.98248
+    "lat": 38.85693,
+    "lon": -76.98247
    },
    {
-    "id": "1003333",
-    "name": "Morris Rd SE & High St SE",
-    "lat": 38.86079,
-    "lon": -76.98861
+    "id": "1003332",
+    "name": "Morris Rd SE & Bangor St SE",
+    "lat": 38.86009,
+    "lon": -76.98779
    },
    {
-    "id": "1000367",
-    "name": "Morris Rd SE & Mt View Pl SE",
-    "lat": 38.86248,
-    "lon": -76.99039
+    "id": "1000304",
+    "name": "Morris Rd SE & Hunter Pl SE",
+    "lat": 38.85841,
+    "lon": -76.98535
    },
    {
-    "id": "1000325",
-    "name": "Morris Rd SE & West St SE",
-    "lat": 38.85996,
-    "lon": -76.98775
+    "id": "1000310",
+    "name": "Morris Rd SE & Hunter Pl SE",
+    "lat": 38.85869,
+    "lon": -76.98591
+   },
+   {
+    "id": "1000298",
+    "name": "Morris Rd SE & Pomeroy Rd SE",
+    "lat": 38.85795,
+    "lon": -76.98476
    },
    {
     "id": "1002975",
@@ -23674,46 +23604,34 @@
     "lon": -76.9873
    },
    {
-    "id": "1000266",
-    "name": "Sheridan Rd SE & #2646",
-    "lat": 38.85638,
-    "lon": -76.99344
+    "id": "1000252",
+    "name": "STANTON RD SE  &  ELVANS RD SE",
+    "lat": 38.85464,
+    "lon": -76.98616
    },
    {
-    "id": "1000311",
-    "name": "Sheridan Rd SE & Bowen Rd SE",
-    "lat": 38.8588,
-    "lon": -76.99332
+    "id": "1003366",
+    "name": "Sheridan Rd SE & #2633",
+    "lat": 38.85629,
+    "lon": -76.9933
    },
    {
-    "id": "1000316",
-    "name": "Sheridan Rd SE & Bowen Rd SE",
-    "lat": 38.85915,
-    "lon": -76.99342
-   },
-   {
-    "id": "1000338",
+    "id": "1002962",
     "name": "Sheridan Rd SE & ML King Jr Av SE",
-    "lat": 38.86117,
-    "lon": -76.99366
+    "lat": 38.86088,
+    "lon": -76.99373
    },
    {
-    "id": "1003365",
-    "name": "Sheridan Rd SE & Suitland Pkwy",
-    "lat": 38.85787,
-    "lon": -76.99319
+    "id": "1003363",
+    "name": "Stanton Rd SE & Bryan Pl SE",
+    "lat": 38.85824,
+    "lon": -76.98816
    },
    {
-    "id": "1002996",
-    "name": "Sheridan Rd SE & Suitland Pkwy SE",
-    "lat": 38.85803,
-    "lon": -76.99331
-   },
-   {
-    "id": "1003364",
-    "name": "Stanton Rd SE & Douglas Rd SE",
-    "lat": 38.85848,
-    "lon": -76.99156
+    "id": "1000295",
+    "name": "Stanton Rd SE & Douglas Pl SE",
+    "lat": 38.85749,
+    "lon": -76.9874
    },
    {
     "id": "1003011",
@@ -23726,24 +23644,6 @@
     "name": "Stanton Rd SE & Suitland Pkwy",
     "lat": 38.85381,
     "lon": -76.98371
-   },
-   {
-    "id": "1003361",
-    "name": "Stanton Rd SE & Washington View Apts #94",
-    "lat": 38.8584,
-    "lon": -76.99038
-   },
-   {
-    "id": "1000386",
-    "name": "W St SE & 14 St SE",
-    "lat": 38.8641,
-    "lon": -76.98558
-   },
-   {
-    "id": "1000381",
-    "name": "W St SE & 16 St SE",
-    "lat": 38.86365,
-    "lon": -76.983
    }
   ],
   "bike_docks": [

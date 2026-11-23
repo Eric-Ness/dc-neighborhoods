@@ -1,7 +1,7 @@
 {
  "slug": "fortlincoln",
  "name": "Fort Lincoln",
- "generated_at": "2026-11-22T07:39:32Z",
+ "generated_at": "2026-11-23T07:40:11Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1280,19 +1280,6 @@
    "smd": "5C02"
   },
   {
-   "id": "HO2700288",
-   "issued": "2026-11-13T05:00:00Z",
-   "group": "Home businesses",
-   "type": "HOME OCCUPATION",
-   "subtype": "NA",
-   "address": "3734 COMMODORE JOSHUA BARNEY DR NE 20018",
-   "work": "",
-   "zoning": "RA-4",
-   "lat": 38.92413,
-   "lon": -76.95187,
-   "smd": "5C03"
-  },
-  {
    "id": "BP2700720",
    "issued": "2026-11-13T05:00:00Z",
    "group": "Minor work",
@@ -1316,6 +1303,19 @@
    "zoning": "RA-4",
    "lat": 38.9229,
    "lon": -76.95075,
+   "smd": "5C03"
+  },
+  {
+   "id": "HO2700288",
+   "issued": "2026-11-13T05:00:00Z",
+   "group": "Home businesses",
+   "type": "HOME OCCUPATION",
+   "subtype": "NA",
+   "address": "3734 COMMODORE JOSHUA BARNEY DR NE 20018",
+   "work": "",
+   "zoning": "RA-4",
+   "lat": 38.92413,
+   "lon": -76.95187,
    "smd": "5C03"
   },
   {
@@ -1879,33 +1879,33 @@
   }
  ],
  "requests": {
-  "total": 485,
-  "previous_total": 455,
+  "total": 487,
+  "previous_total": 450,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 94,
-    "previous": 84
+    "count": 96,
+    "previous": 81
    },
    {
     "type": "Bulk Collection",
-    "count": 76,
-    "previous": 76
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "count": 35,
-    "previous": 9
+    "count": 77,
+    "previous": 78
    },
    {
     "type": "Scheduled Yard Waste",
-    "count": 35,
-    "previous": 20
+    "count": 37,
+    "previous": 18
+   },
+   {
+    "type": "DOEE - LIHEAP",
+    "count": 34,
+    "previous": 10
    },
    {
     "type": "Roadway Signs",
-    "count": 21,
-    "previous": 11
+    "count": 20,
+    "previous": 12
    },
    {
     "type": "Residential Parking Permit Violation",
@@ -1914,12 +1914,7 @@
    },
    {
     "type": "Illegal Dumping",
-    "count": 15,
-    "previous": 16
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "count": 14,
+    "count": 17,
     "previous": 17
    },
    {
@@ -1928,44 +1923,49 @@
     "previous": 7
    },
    {
-    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "type": "Sanitation Enforcement",
+    "count": 13,
+    "previous": 17
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
     "count": 11,
     "previous": 6
    },
    {
-    "type": "Public Space Litter Can-Collection",
-    "count": 9,
+    "type": "Traffic Lights and Pedestrian Walk Signals",
+    "count": 10,
     "previous": 6
    },
    {
     "type": "Abandoned Vehicle - On Public Property",
     "count": 8,
-    "previous": 10
+    "previous": 9
    },
    {
     "type": "Trash Collection - Missed",
     "count": 8,
-    "previous": 16
+    "previous": 14
    },
    {
     "type": "Recycling Collection - Missed",
     "count": 8,
-    "previous": 9
-   },
-   {
-    "type": "Supercan - Delivery",
-    "count": 7,
     "previous": 6
-   },
-   {
-    "type": "Out of State Parking Violation (ROSA)",
-    "count": 7,
-    "previous": 3
    },
    {
     "type": "DMV - Drivers License/ID Issues",
     "count": 7,
     "previous": 7
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "count": 6,
+    "previous": 12
+   },
+   {
+    "type": "Out of State Parking Violation (ROSA)",
+    "count": 6,
+    "previous": 4
    },
    {
     "type": "DC Health Rodent & Vector Control",
@@ -1978,14 +1978,14 @@
     "previous": 3
    },
    {
+    "type": "Supercan - Delivery",
+    "count": 6,
+    "previous": 7
+   },
+   {
     "type": "Bus Stop Issues",
     "count": 6,
     "previous": 0
-   },
-   {
-    "type": "Dockless Vehicle Parking Complaint",
-    "count": 5,
-    "previous": 13
    },
    {
     "type": "OCTFME - Down Cable Wires",
@@ -2018,11 +2018,6 @@
     "previous": 3
    },
    {
-    "type": "DOB - Vacant Private Property Inspection",
-    "count": 3,
-    "previous": 2
-   },
-   {
     "type": "DC Dog Park Maintenance (DGS)",
     "count": 3,
     "previous": 2
@@ -2048,9 +2043,9 @@
     "previous": 10
    },
    {
-    "type": "Recycling Cart - Repair",
-    "count": 2,
-    "previous": 0
+    "type": "DOB - Vacant Private Property Inspection",
+    "count": 3,
+    "previous": 2
    },
    {
     "type": "Sidewalk Repair",
@@ -2065,7 +2060,7 @@
    {
     "type": "DMV - Copy of Ticket",
     "count": 2,
-    "previous": 4
+    "previous": 3
    },
    {
     "type": "Trash Cart - Delivery",
@@ -2140,7 +2135,7 @@
    {
     "type": "Rat Replacement Containers",
     "count": 1,
-    "previous": 1
+    "previous": 0
    },
    {
     "type": "DMV - Hearings",
@@ -2158,8 +2153,178 @@
     "previous": 0
    }
   ],
-  "open": 107,
+  "open": 118,
   "recent": [
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-23T03:41:02Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3100 block of 35TH STREET NE",
+    "lat": 38.93,
+    "lon": -76.958
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-23T03:39:17Z",
+    "resolved": "2026-11-23T04:17:20Z",
+    "status": "Closed",
+    "block": "2200 block of NEW YORK AVENUE NE",
+    "lat": 38.918,
+    "lon": -76.973
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-23T01:26:19Z",
+    "resolved": "2026-11-23T01:28:47Z",
+    "status": "Closed",
+    "block": "2400 block of 21ST PLACE NE",
+    "lat": 38.922,
+    "lon": -76.975
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-22T20:48:22Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3100 block of NEWTON STREET NE",
+    "lat": 38.934,
+    "lon": -76.965
+   },
+   {
+    "type": "Dockless Vehicle Parking Complaint",
+    "agency": "DDOT",
+    "added": "2026-11-22T19:05:08Z",
+    "resolved": "2026-11-22T19:11:01Z",
+    "status": "Closed",
+    "block": "3100 block of BLADENSBURG ROAD NE",
+    "lat": 38.929,
+    "lon": -76.961
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-22T18:32:19Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2000 block of DOUGLAS STREET NE",
+    "lat": 38.924,
+    "lon": -76.975
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-22T18:29:58Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "3000 block of CENTRAL AVENUE NE",
+    "lat": 38.93,
+    "lon": -76.966
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-22T18:23:35Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2400 block of MARKET STREET NE",
+    "lat": 38.92,
+    "lon": -76.955
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-22T17:52:19Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "1900 block of RHODE ISLAND AVENUE NE",
+    "lat": 38.929,
+    "lon": -76.977
+   },
+   {
+    "type": "Scheduled Yard Waste",
+    "agency": "DPW",
+    "added": "2026-11-22T17:11:27Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2200 block of EVARTS STREET NE",
+    "lat": 38.924,
+    "lon": -76.973
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-22T17:01:06Z",
+    "resolved": "2026-11-22T18:37:26Z",
+    "status": "Closed",
+    "block": "3200 block of FORT LINCOLN DRIVE NE",
+    "lat": 38.923,
+    "lon": -76.959
+   },
+   {
+    "type": "Residential Parking Permit Violation",
+    "agency": "DPW",
+    "added": "2026-11-22T16:50:22Z",
+    "resolved": "2026-11-22T18:38:02Z",
+    "status": "Closed",
+    "block": "3200 block of FORT LINCOLN DRIVE NE",
+    "lat": 38.923,
+    "lon": -76.959
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-22T15:47:01Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2600 block of RHODE ISLAND AVENUE NE",
+    "lat": 38.933,
+    "lon": -76.968
+   },
+   {
+    "type": "Bulk Collection",
+    "agency": "DPW",
+    "added": "2026-11-22T13:20:26Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2000 block of DOUGLAS STREET NE",
+    "lat": 38.923,
+    "lon": -76.975
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-22T13:05:13Z",
+    "resolved": null,
+    "status": "Open (Duplicate)",
+    "block": "2400 block of FRANKLIN STREET NE",
+    "lat": 38.926,
+    "lon": -76.972
+   },
+   {
+    "type": "Public Space Litter Can-Collection",
+    "agency": "DPW",
+    "added": "2026-11-22T12:48:03Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2400 block of FRANKLIN STREET NE",
+    "lat": 38.926,
+    "lon": -76.972
+   },
+   {
+    "type": "DOB - Vacant Private Property Inspection",
+    "agency": "DOB",
+    "added": "2026-11-22T12:47:49Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2100 block of 30TH STREET NE",
+    "lat": 38.92,
+    "lon": -76.965
+   },
    {
     "type": "Scheduled Yard Waste",
     "agency": "DPW",
@@ -2489,199 +2654,29 @@
     "block": "3400 block of COMMODORE JOSHUA BARNEY DRIVE NE",
     "lat": 38.925,
     "lon": -76.956
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-20T13:33:43Z",
-    "resolved": "2026-11-20T15:28:18Z",
-    "status": "Closed",
-    "block": "2800 block of MONROE STREET NE",
-    "lat": 38.933,
-    "lon": -76.968
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-20T12:57:26Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2800 block of BRENTWOOD ROAD NE",
-    "lat": 38.933,
-    "lon": -76.967
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-20T12:35:30Z",
-    "resolved": "2026-11-20T15:25:25Z",
-    "status": "Closed",
-    "block": "3100 block of NEWTON STREET NE",
-    "lat": 38.934,
-    "lon": -76.964
-   },
-   {
-    "type": "Public Space Litter Can-Collection",
-    "agency": "DPW",
-    "added": "2026-11-20T12:11:28Z",
-    "resolved": "2026-11-21T05:11:41Z",
-    "status": "Closed",
-    "block": "2400 block of FRANKLIN STREET NE",
-    "lat": 38.926,
-    "lon": -76.972
-   },
-   {
-    "type": "Illegal Dumping",
-    "agency": "DPW",
-    "added": "2026-11-20T05:41:51Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3200 block of FORT LINCOLN DRIVE NE",
-    "lat": 38.923,
-    "lon": -76.958
-   },
-   {
-    "type": "Residential Parking Permit Violation",
-    "agency": "DPW",
-    "added": "2026-11-20T02:27:37Z",
-    "resolved": "2026-11-20T02:32:33Z",
-    "status": "Closed",
-    "block": "3000 block of DOUGLAS STREET NE",
-    "lat": 38.923,
-    "lon": -76.966
-   },
-   {
-    "type": "Public Space Inspection",
-    "agency": "DDOT",
-    "added": "2026-11-20T02:12:03Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "2500 block of RHODE ISLAND AVENUE NE",
-    "lat": 38.932,
-    "lon": -76.971
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-19T22:07:34Z",
-    "resolved": "2026-11-20T14:12:10Z",
-    "status": "Closed",
-    "block": "3100 block of CHANNING STREET NE",
-    "lat": 38.922,
-    "lon": -76.962
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-19T21:28:30Z",
-    "resolved": "2026-11-19T22:19:25Z",
-    "status": "Closed",
-    "block": "3000 block of DOUGLAS STREET NE",
-    "lat": 38.923,
-    "lon": -76.966
-   },
-   {
-    "type": "Roadway Repair",
-    "agency": "DDOT",
-    "added": "2026-11-19T21:24:03Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "3000 block of V STREET NE",
-    "lat": 38.918,
-    "lon": -76.965
-   },
-   {
-    "type": "DMV - Copy of Ticket",
-    "agency": "DMV",
-    "added": "2026-11-19T19:47:06Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3300 block of NEW YORK AVENUE NE",
-    "lat": 38.917,
-    "lon": -76.961
-   },
-   {
-    "type": "Scheduled Yard Waste",
-    "agency": "DPW",
-    "added": "2026-11-19T19:02:56Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2000 block of FRANKLIN STREET NE",
-    "lat": 38.926,
-    "lon": -76.976
-   },
-   {
-    "type": "Sanitation Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-19T19:01:00Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "2200 block of R STREET NE",
-    "lat": 38.913,
-    "lon": -76.973
-   },
-   {
-    "type": "DOEE - LIHEAP",
-    "agency": "DOEE",
-    "added": "2026-11-19T18:52:50Z",
-    "resolved": "2026-11-19T18:52:50Z",
-    "status": "Closed",
-    "block": "3700 block of JAMISON STREET NE",
-    "lat": 38.925,
-    "lon": -76.952
-   },
-   {
-    "type": "Supercan - Delivery",
-    "agency": "DPW",
-    "added": "2026-11-19T16:05:15Z",
-    "resolved": null,
-    "status": "Open",
-    "block": "3100 block of CHESTNUT STREET NE",
-    "lat": 38.931,
-    "lon": -76.961
-   },
-   {
-    "type": "Parking Enforcement",
-    "agency": "DPW",
-    "added": "2026-11-19T15:46:02Z",
-    "resolved": "2026-11-19T18:41:47Z",
-    "status": "Closed",
-    "block": "3000 block of BLADENSBURG ROAD NE",
-    "lat": 38.929,
-    "lon": -76.959
-   },
-   {
-    "type": "Roadway Signs",
-    "agency": "DDOT",
-    "added": "2026-11-19T15:44:20Z",
-    "resolved": null,
-    "status": "In-Progress",
-    "block": "1800 block of ADAMS STREET NE",
-    "lat": 38.92,
-    "lon": -76.979
    }
   ],
   "mapped": {
    "types": [
-    "Scheduled Yard Waste",
-    "Parking Enforcement",
     "Bulk Collection",
-    "DOB - Vacant Private Property Inspection",
-    "Dockless Vehicle Parking Complaint",
-    "OCTFME - Down Cable Wires",
+    "Parking Enforcement",
     "Illegal Dumping",
+    "Dockless Vehicle Parking Complaint",
+    "Scheduled Yard Waste",
+    "Residential Parking Permit Violation",
+    "Public Space Litter Can-Collection",
+    "DOB - Vacant Private Property Inspection",
+    "OCTFME - Down Cable Wires",
     "DC Health Rodent & Vector Control",
     "DMV - Online Processing Issues",
     "Trash Cart - Delivery",
     "DMV - Drivers License/ID Issues",
     "Bus Stop Issues",
-    "Public Space Litter Can-Collection",
     "DOEE - LIHEAP",
     "Out of State Parking Violation (ROSA)",
     "Bicycle Services",
     "DMV - Forms, Applications, and Manuals Request",
     "Sanitation Enforcement",
-    "Residential Parking Permit Violation",
     "Public Space Inspection",
     "Roadway Repair",
     "DMV - Copy of Ticket",
@@ -2716,17 +2711,433 @@
     "Snow Sidewalk Shoveling Enforcement Exemption",
     "Dead Animal Collection",
     "DMV - Vehicle Title Issues",
-    "Signed Street Sweeping Missed",
-    "Recycling Cart - Repair"
+    "Signed Street Sweeping Missed"
    ],
    "blocks": [
+    {
+     "block": "3100 block of 35TH STREET NE",
+     "lat": 38.93,
+     "lon": -76.958,
+     "r": [
+      [
+       0,
+       "2026-11-23",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "2200 block of NEW YORK AVENUE NE",
+     "lat": 38.918,
+     "lon": -76.973,
+     "r": [
+      [
+       1,
+       "2026-11-23",
+       "2026-11-23",
+       0
+      ],
+      [
+       1,
+       "2026-11-07",
+       "2026-11-07",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "2400 block of 21ST PLACE NE",
+     "lat": 38.922,
+     "lon": -76.975,
+     "r": [
+      [
+       1,
+       "2026-11-23",
+       "2026-11-23",
+       0
+      ],
+      [
+       4,
+       "2026-11-17",
+       null,
+       1
+      ],
+      [
+       1,
+       "2026-11-10",
+       "2026-11-10",
+       0
+      ],
+      [
+       4,
+       "2026-11-08",
+       "2026-11-16",
+       0
+      ],
+      [
+       1,
+       "2026-11-05",
+       "2026-11-05",
+       0
+      ],
+      [
+       53,
+       "2026-10-27",
+       "2026-10-27",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3100 block of NEWTON STREET NE",
+     "lat": 38.934,
+     "lon": -76.965,
+     "r": [
+      [
+       2,
+       "2026-11-22",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-11-09",
+       "2026-11-12",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3100 block of BLADENSBURG ROAD NE",
+     "lat": 38.929,
+     "lon": -76.961,
+     "r": [
+      [
+       3,
+       "2026-11-22",
+       "2026-11-22",
+       0
+      ],
+      [
+       1,
+       "2026-11-21",
+       "2026-11-21",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "2000 block of DOUGLAS STREET NE",
+     "lat": 38.924,
+     "lon": -76.975,
+     "r": [
+      [
+       0,
+       "2026-11-22",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-11-01",
+       "2026-11-05",
+       0
+      ],
+      [
+       26,
+       "2026-10-29",
+       "2026-11-03",
+       0
+      ],
+      [
+       26,
+       "2026-10-27",
+       "2026-11-03",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3000 block of CENTRAL AVENUE NE",
+     "lat": 38.93,
+     "lon": -76.966,
+     "r": [
+      [
+       4,
+       "2026-11-22",
+       null,
+       1
+      ],
+      [
+       22,
+       "2026-11-11",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-11-09",
+       "2026-11-12",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "2400 block of MARKET STREET NE",
+     "lat": 38.92,
+     "lon": -76.955,
+     "r": [
+      [
+       2,
+       "2026-11-22",
+       null,
+       1
+      ],
+      [
+       51,
+       "2026-10-29",
+       "2026-11-02",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "1900 block of RHODE ISLAND AVENUE NE",
+     "lat": 38.929,
+     "lon": -76.977,
+     "r": [
+      [
+       2,
+       "2026-11-22",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "2200 block of EVARTS STREET NE",
+     "lat": 38.924,
+     "lon": -76.973,
+     "r": [
+      [
+       4,
+       "2026-11-22",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-11-06",
+       "2026-11-12",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "3200 block of FORT LINCOLN DRIVE NE",
+     "lat": 38.923,
+     "lon": -76.959,
+     "r": [
+      [
+       1,
+       "2026-11-22",
+       "2026-11-22",
+       0
+      ],
+      [
+       5,
+       "2026-11-22",
+       "2026-11-22",
+       0
+      ],
+      [
+       1,
+       "2026-11-21",
+       "2026-11-21",
+       0
+      ],
+      [
+       14,
+       "2026-11-13",
+       "2026-11-13",
+       0
+      ],
+      [
+       14,
+       "2026-11-12",
+       "2026-11-12",
+       0
+      ],
+      [
+       14,
+       "2026-11-09",
+       "2026-11-09",
+       0
+      ],
+      [
+       12,
+       "2026-11-03",
+       "2026-11-03",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "2600 block of RHODE ISLAND AVENUE NE",
+     "lat": 38.933,
+     "lon": -76.968,
+     "r": [
+      [
+       0,
+       "2026-11-22",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "2000 block of DOUGLAS STREET NE",
+     "lat": 38.923,
+     "lon": -76.975,
+     "r": [
+      [
+       0,
+       "2026-11-22",
+       null,
+       1
+      ],
+      [
+       0,
+       "2026-11-05",
+       "2026-11-12",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "2400 block of FRANKLIN STREET NE",
+     "lat": 38.926,
+     "lon": -76.972,
+     "r": [
+      [
+       6,
+       "2026-11-22",
+       null,
+       1
+      ],
+      [
+       6,
+       "2026-11-22",
+       null,
+       1
+      ],
+      [
+       13,
+       "2026-11-20",
+       null,
+       1
+      ],
+      [
+       6,
+       "2026-11-20",
+       "2026-11-21",
+       0
+      ],
+      [
+       23,
+       "2026-11-19",
+       null,
+       1
+      ],
+      [
+       13,
+       "2026-11-18",
+       null,
+       1
+      ],
+      [
+       1,
+       "2026-11-18",
+       "2026-11-18",
+       0
+      ],
+      [
+       6,
+       "2026-11-17",
+       "2026-11-19",
+       0
+      ],
+      [
+       13,
+       "2026-11-17",
+       null,
+       1
+      ],
+      [
+       13,
+       "2026-11-17",
+       null,
+       1
+      ],
+      [
+       13,
+       "2026-11-17",
+       null,
+       1
+      ],
+      [
+       13,
+       "2026-11-17",
+       null,
+       1
+      ],
+      [
+       6,
+       "2026-11-03",
+       "2026-11-04",
+       0
+      ],
+      [
+       6,
+       "2026-11-02",
+       "2026-11-03",
+       1
+      ],
+      [
+       6,
+       "2026-11-01",
+       "2026-11-03",
+       1
+      ],
+      [
+       6,
+       "2026-10-31",
+       "2026-11-03",
+       0
+      ]
+     ]
+    },
+    {
+     "block": "2100 block of 30TH STREET NE",
+     "lat": 38.92,
+     "lon": -76.965,
+     "r": [
+      [
+       7,
+       "2026-11-22",
+       null,
+       1
+      ]
+     ]
+    },
     {
      "block": "1800 block of HAMLIN STREET NE",
      "lat": 38.928,
      "lon": -76.978,
      "r": [
       [
-       0,
+       4,
        "2026-11-22",
        null,
        1
@@ -2738,7 +3149,7 @@
        0
       ],
       [
-       2,
+       0,
        "2026-11-06",
        "2026-11-12",
        0
@@ -2763,7 +3174,7 @@
        0
       ],
       [
-       14,
+       15,
        "2026-11-20",
        null,
        1
@@ -2781,7 +3192,7 @@
        0
       ],
       [
-       14,
+       15,
        "2026-11-07",
        "2026-11-09",
        0
@@ -2794,7 +3205,7 @@
      "lon": -76.964,
      "r": [
       [
-       2,
+       0,
        "2026-11-22",
        null,
        1
@@ -2806,7 +3217,7 @@
        1
       ],
       [
-       2,
+       0,
        "2026-11-12",
        "2026-11-18",
        0
@@ -2818,7 +3229,7 @@
        1
       ],
       [
-       2,
+       0,
        "2026-11-03",
        "2026-11-12",
        0
@@ -2831,13 +3242,13 @@
      "lon": -76.963,
      "r": [
       [
-       3,
+       7,
        "2026-11-21",
        null,
        1
       ],
       [
-       2,
+       0,
        "2026-11-16",
        null,
        1
@@ -2850,67 +3261,67 @@
      "lon": -76.973,
      "r": [
       [
-       0,
+       4,
        "2026-11-21",
        null,
        1
       ],
       [
-       17,
+       18,
        "2026-11-19",
        null,
        1
       ],
       [
-       6,
-       "2026-11-18",
-       "2026-11-20",
-       0
-      ],
-      [
-       17,
-       "2026-11-18",
-       "2026-11-20",
-       0
-      ],
-      [
-       17,
-       "2026-11-18",
-       "2026-11-20",
-       0
-      ],
-      [
        2,
+       "2026-11-18",
+       "2026-11-20",
+       0
+      ],
+      [
+       18,
+       "2026-11-18",
+       "2026-11-20",
+       0
+      ],
+      [
+       18,
+       "2026-11-18",
+       "2026-11-20",
+       0
+      ],
+      [
+       0,
        "2026-11-16",
        null,
        1
       ],
       [
-       2,
+       0,
        "2026-11-16",
        "2026-11-16",
        1
       ],
       [
-       0,
+       4,
        "2026-10-30",
        "2026-11-09",
        0
       ],
       [
-       6,
+       2,
        "2026-10-27",
        "2026-10-29",
        0
       ],
       [
-       2,
+       0,
        "2026-10-24",
        "2026-10-30",
        0
       ],
       [
-       0,
+       4,
        "2026-10-24",
        "2026-11-02",
        0
@@ -2923,28 +3334,15 @@
      "lon": -76.974,
      "r": [
       [
-       0,
+       4,
        "2026-11-21",
        null,
        1
       ],
       [
-       2,
+       0,
        "2026-10-28",
        "2026-11-05",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "3100 block of BLADENSBURG ROAD NE",
-     "lat": 38.929,
-     "lon": -76.961,
-     "r": [
-      [
-       1,
-       "2026-11-21",
-       "2026-11-21",
        0
       ]
      ]
@@ -2963,49 +3361,12 @@
      ]
     },
     {
-     "block": "3200 block of FORT LINCOLN DRIVE NE",
-     "lat": 38.923,
-     "lon": -76.959,
-     "r": [
-      [
-       1,
-       "2026-11-21",
-       "2026-11-21",
-       0
-      ],
-      [
-       13,
-       "2026-11-13",
-       "2026-11-13",
-       0
-      ],
-      [
-       13,
-       "2026-11-12",
-       "2026-11-12",
-       0
-      ],
-      [
-       13,
-       "2026-11-09",
-       "2026-11-09",
-       0
-      ],
-      [
-       10,
-       "2026-11-03",
-       "2026-11-03",
-       0
-      ]
-     ]
-    },
-    {
      "block": "3600 block of JAMISON STREET NE",
      "lat": 38.925,
      "lon": -76.953,
      "r": [
       [
-       4,
+       3,
        "2026-11-21",
        "2026-11-21",
        0
@@ -3018,7 +3379,7 @@
      "lon": -76.966,
      "r": [
       [
-       5,
+       8,
        "2026-11-21",
        "2026-11-21",
        0
@@ -3043,13 +3404,13 @@
        0
       ],
       [
-       5,
+       8,
        "2026-10-28",
        "2026-10-28",
        0
       ],
       [
-       0,
+       4,
        "2026-10-26",
        "2026-10-26",
        1
@@ -3094,19 +3455,19 @@
        0
       ],
       [
-       13,
+       14,
        "2026-11-17",
        "2026-11-17",
        0
       ],
       [
-       13,
+       14,
        "2026-11-16",
        "2026-11-16",
        0
       ],
       [
-       13,
+       14,
        "2026-11-10",
        "2026-11-10",
        0
@@ -3138,7 +3499,7 @@
      "lon": -76.951,
      "r": [
       [
-       6,
+       2,
        "2026-11-21",
        null,
        1
@@ -3176,7 +3537,7 @@
      "lon": -76.978,
      "r": [
       [
-       7,
+       9,
        "2026-11-21",
        null,
        1
@@ -3189,7 +3550,7 @@
      "lon": -76.961,
      "r": [
       [
-       8,
+       10,
        "2026-11-20",
        null,
        1
@@ -3202,7 +3563,7 @@
      "lon": -76.975,
      "r": [
       [
-       9,
+       11,
        "2026-11-20",
        null,
        1
@@ -3227,7 +3588,7 @@
      "lon": -76.955,
      "r": [
       [
-       10,
+       12,
        "2026-11-20",
        null,
        1
@@ -3251,7 +3612,7 @@
        0
       ],
       [
-       10,
+       12,
        "2026-10-26",
        "2026-11-04",
        0
@@ -3264,7 +3625,7 @@
      "lon": -76.972,
      "r": [
       [
-       2,
+       0,
        "2026-11-20",
        null,
        1
@@ -3280,101 +3641,10 @@
     {
      "block": "2400 block of FRANKLIN STREET NE",
      "lat": 38.926,
-     "lon": -76.972,
-     "r": [
-      [
-       11,
-       "2026-11-20",
-       null,
-       1
-      ],
-      [
-       12,
-       "2026-11-20",
-       "2026-11-21",
-       0
-      ],
-      [
-       23,
-       "2026-11-19",
-       null,
-       1
-      ],
-      [
-       11,
-       "2026-11-18",
-       null,
-       1
-      ],
-      [
-       1,
-       "2026-11-18",
-       "2026-11-18",
-       0
-      ],
-      [
-       12,
-       "2026-11-17",
-       "2026-11-19",
-       0
-      ],
-      [
-       11,
-       "2026-11-17",
-       null,
-       1
-      ],
-      [
-       11,
-       "2026-11-17",
-       null,
-       1
-      ],
-      [
-       11,
-       "2026-11-17",
-       null,
-       1
-      ],
-      [
-       11,
-       "2026-11-17",
-       null,
-       1
-      ],
-      [
-       12,
-       "2026-11-03",
-       "2026-11-04",
-       0
-      ],
-      [
-       12,
-       "2026-11-02",
-       "2026-11-03",
-       1
-      ],
-      [
-       12,
-       "2026-11-01",
-       "2026-11-03",
-       1
-      ],
-      [
-       12,
-       "2026-10-31",
-       "2026-11-03",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "2400 block of FRANKLIN STREET NE",
-     "lat": 38.926,
      "lon": -76.971,
      "r": [
       [
-       12,
+       6,
        "2026-11-20",
        "2026-11-21",
        0
@@ -3387,7 +3657,7 @@
      "lon": -76.953,
      "r": [
       [
-       4,
+       3,
        "2026-11-20",
        "2026-11-20",
        0
@@ -3400,7 +3670,7 @@
      "lon": -76.976,
      "r": [
       [
-       13,
+       14,
        "2026-11-20",
        "2026-11-20",
        0
@@ -3425,7 +3695,7 @@
      "lon": -76.96,
      "r": [
       [
-       15,
+       16,
        "2026-11-20",
        null,
        1
@@ -3438,7 +3708,7 @@
      "lon": -76.95,
      "r": [
       [
-       2,
+       0,
        "2026-11-20",
        null,
        1
@@ -3457,7 +3727,7 @@
      "lon": -76.956,
      "r": [
       [
-       16,
+       17,
        "2026-11-20",
        "2026-11-20",
        0
@@ -3469,13 +3739,13 @@
        1
       ],
       [
-       10,
+       12,
        "2026-10-27",
        "2026-11-04",
        0
       ],
       [
-       6,
+       2,
        "2026-10-26",
        "2026-11-03",
        0
@@ -3484,12 +3754,6 @@
        1,
        "2026-10-24",
        "2026-10-24",
-       0
-      ],
-      [
-       17,
-       "2026-10-23",
-       "2026-10-27",
        0
       ]
      ]
@@ -3512,7 +3776,7 @@
        0
       ],
       [
-       2,
+       0,
        "2026-11-07",
        "2026-11-12",
        0
@@ -3543,13 +3807,13 @@
      "lon": -76.967,
      "r": [
       [
-       17,
+       18,
        "2026-11-20",
        null,
        1
       ],
       [
-       2,
+       0,
        "2026-11-12",
        "2026-11-18",
        0
@@ -3593,7 +3857,7 @@
      "lon": -76.958,
      "r": [
       [
-       6,
+       2,
        "2026-11-20",
        null,
        1
@@ -3606,7 +3870,7 @@
      "lon": -76.966,
      "r": [
       [
-       18,
+       5,
        "2026-11-20",
        "2026-11-20",
        0
@@ -3618,19 +3882,19 @@
        0
       ],
       [
-       0,
+       4,
        "2026-11-05",
        "2026-11-16",
        0
       ],
       [
-       0,
+       4,
        "2026-11-04",
        "2026-11-16",
        0
       ],
       [
-       18,
+       5,
        "2026-10-27",
        "2026-11-04",
        0
@@ -3656,7 +3920,7 @@
      "lon": -76.962,
      "r": [
       [
-       17,
+       18,
        "2026-11-19",
        "2026-11-20",
        0
@@ -3695,7 +3959,7 @@
      "lon": -76.976,
      "r": [
       [
-       0,
+       4,
        "2026-11-19",
        null,
        1
@@ -3708,13 +3972,13 @@
      "lon": -76.952,
      "r": [
       [
-       13,
+       14,
        "2026-11-19",
        "2026-11-19",
        0
       ],
       [
-       13,
+       14,
        "2026-11-16",
        "2026-11-16",
        0
@@ -3726,19 +3990,19 @@
        0
       ],
       [
-       13,
+       14,
        "2026-11-11",
        "2026-11-11",
        0
       ],
       [
-       13,
+       14,
        "2026-11-10",
        "2026-11-10",
        0
       ],
       [
-       13,
+       14,
        "2026-11-10",
        "2026-11-10",
        0
@@ -3750,7 +4014,7 @@
        0
       ],
       [
-       13,
+       14,
        "2026-10-26",
        "2026-10-26",
        0
@@ -3788,7 +4052,7 @@
        0
       ],
       [
-       16,
+       17,
        "2026-11-09",
        "2026-11-10",
        0
@@ -3837,7 +4101,7 @@
        1
       ],
       [
-       12,
+       6,
        "2026-11-19",
        "2026-11-20",
        0
@@ -3882,13 +4146,13 @@
      "lon": -76.961,
      "r": [
       [
-       2,
+       0,
        "2026-11-19",
        "2026-11-19",
        1
       ],
       [
-       2,
+       0,
        "2026-11-11",
        "2026-11-18",
        0
@@ -3901,7 +4165,7 @@
      "lon": -76.962,
      "r": [
       [
-       2,
+       0,
        "2026-11-19",
        null,
        1
@@ -3933,7 +4197,7 @@
      "lon": -76.977,
      "r": [
       [
-       7,
+       9,
        "2026-11-19",
        "2026-11-20",
        0
@@ -4015,7 +4279,7 @@
        0
       ],
       [
-       2,
+       0,
        "2026-11-10",
        "2026-11-18",
        0
@@ -4027,15 +4291,9 @@
        0
       ],
       [
-       2,
+       0,
        "2026-11-02",
        "2026-11-05",
-       0
-      ],
-      [
-       6,
-       "2026-10-24",
-       "2026-11-03",
        0
       ]
      ]
@@ -4046,19 +4304,19 @@
      "lon": -76.974,
      "r": [
       [
-       14,
+       15,
        "2026-11-18",
        "2026-11-19",
        0
       ],
       [
-       18,
+       5,
        "2026-11-17",
        "2026-11-18",
        0
       ],
       [
-       18,
+       5,
        "2026-11-09",
        "2026-11-09",
        0
@@ -4071,7 +4329,7 @@
      "lon": -76.973,
      "r": [
       [
-       13,
+       14,
        "2026-11-18",
        "2026-11-18",
        0
@@ -4147,7 +4405,7 @@
      "lon": -76.974,
      "r": [
       [
-       0,
+       4,
        "2026-11-18",
        null,
        1
@@ -4192,13 +4450,13 @@
      "lon": -76.97,
      "r": [
       [
-       2,
+       0,
        "2026-11-18",
        null,
        1
       ],
       [
-       0,
+       4,
        "2026-11-08",
        null,
        1
@@ -4224,7 +4482,7 @@
      "lon": -76.967,
      "r": [
       [
-       0,
+       4,
        "2026-11-17",
        null,
        1
@@ -4262,7 +4520,7 @@
        1
       ],
       [
-       13,
+       14,
        "2026-11-17",
        "2026-11-17",
        0
@@ -4275,13 +4533,13 @@
      "lon": -76.961,
      "r": [
       [
-       10,
+       12,
        "2026-11-17",
        "2026-11-18",
        0
       ],
       [
-       17,
+       18,
        "2026-11-14",
        "2026-11-16",
        0
@@ -4294,7 +4552,7 @@
      "lon": -76.971,
      "r": [
       [
-       2,
+       0,
        "2026-11-17",
        null,
        1
@@ -4326,19 +4584,19 @@
      "lon": -76.964,
      "r": [
       [
-       6,
+       2,
        "2026-11-17",
        null,
        1
       ],
       [
-       6,
+       2,
        "2026-11-16",
        null,
        1
       ],
       [
-       2,
+       0,
        "2026-11-15",
        "2026-11-18",
        0
@@ -4351,7 +4609,7 @@
      "lon": -76.972,
      "r": [
       [
-       3,
+       7,
        "2026-11-17",
        null,
        1
@@ -4364,13 +4622,13 @@
      "lon": -76.976,
      "r": [
       [
-       17,
+       18,
        "2026-11-17",
        "2026-11-17",
        0
       ],
       [
-       2,
+       0,
        "2026-11-08",
        "2026-11-12",
        0
@@ -4383,7 +4641,7 @@
      "lon": -76.974,
      "r": [
       [
-       13,
+       14,
        "2026-11-17",
        "2026-11-17",
        0
@@ -4396,13 +4654,13 @@
      "lon": -76.972,
      "r": [
       [
-       2,
+       0,
        "2026-11-17",
        null,
        1
       ],
       [
-       0,
+       4,
        "2026-11-09",
        null,
        1
@@ -4421,7 +4679,7 @@
      "lon": -76.97,
      "r": [
       [
-       14,
+       15,
        "2026-11-17",
        "2026-11-18",
        0
@@ -4455,67 +4713,30 @@
      ]
     },
     {
-     "block": "2400 block of 21ST PLACE NE",
-     "lat": 38.922,
-     "lon": -76.975,
-     "r": [
-      [
-       0,
-       "2026-11-17",
-       null,
-       1
-      ],
-      [
-       1,
-       "2026-11-10",
-       "2026-11-10",
-       0
-      ],
-      [
-       0,
-       "2026-11-08",
-       "2026-11-16",
-       0
-      ],
-      [
-       1,
-       "2026-11-05",
-       "2026-11-05",
-       0
-      ],
-      [
-       53,
-       "2026-10-27",
-       "2026-10-27",
-       0
-      ]
-     ]
-    },
-    {
      "block": "3200 block of WALNUT STREET NE",
      "lat": 38.932,
      "lon": -76.964,
      "r": [
       [
-       2,
+       0,
        "2026-11-17",
        null,
        1
       ],
       [
-       2,
+       0,
        "2026-11-06",
        "2026-11-12",
        0
       ],
       [
-       0,
+       4,
        "2026-10-30",
        "2026-11-09",
        0
       ],
       [
-       2,
+       0,
        "2026-10-25",
        "2026-10-30",
        0
@@ -4559,7 +4780,7 @@
      "lon": -76.97,
      "r": [
       [
-       13,
+       14,
        "2026-11-16",
        "2026-11-16",
        0
@@ -4572,7 +4793,7 @@
      "lon": -76.971,
      "r": [
       [
-       13,
+       14,
        "2026-11-16",
        "2026-11-16",
        0
@@ -4585,13 +4806,13 @@
      "lon": -76.952,
      "r": [
       [
-       6,
+       2,
        "2026-11-16",
        null,
        1
       ],
       [
-       6,
+       2,
        "2026-10-27",
        "2026-11-03",
        0
@@ -4617,7 +4838,7 @@
      "lon": -76.972,
      "r": [
       [
-       2,
+       0,
        "2026-11-16",
        null,
        1
@@ -4643,7 +4864,7 @@
      "lon": -76.968,
      "r": [
       [
-       0,
+       4,
        "2026-11-16",
        null,
        1
@@ -4655,7 +4876,7 @@
        0
       ],
       [
-       5,
+       8,
        "2026-10-26",
        "2026-10-26",
        0
@@ -4668,7 +4889,7 @@
      "lon": -76.951,
      "r": [
       [
-       10,
+       12,
        "2026-11-16",
        "2026-11-16",
        0
@@ -4736,7 +4957,7 @@
      "lon": -76.956,
      "r": [
       [
-       13,
+       14,
        "2026-11-16",
        "2026-11-16",
        0
@@ -4757,12 +4978,6 @@
        47,
        "2026-11-02",
        "2026-11-06",
-       0
-      ],
-      [
-       3,
-       "2026-10-23",
-       "2026-11-03",
        0
       ]
      ]
@@ -4824,19 +5039,19 @@
      "lon": -76.967,
      "r": [
       [
-       0,
+       4,
        "2026-11-15",
        null,
        1
       ],
       [
-       2,
+       0,
        "2026-11-12",
        "2026-11-18",
        0
       ],
       [
-       0,
+       4,
        "2026-10-27",
        "2026-11-02",
        0
@@ -4855,51 +5070,45 @@
      "lon": -76.973,
      "r": [
       [
-       2,
+       0,
        "2026-11-15",
        "2026-11-18",
        0
       ],
       [
-       2,
+       0,
        "2026-11-15",
        "2026-11-18",
        0
       ],
       [
-       2,
+       0,
        "2026-11-15",
        "2026-11-18",
        0
       ],
       [
-       18,
+       5,
        "2026-10-29",
        "2026-11-04",
        1
       ],
       [
-       18,
+       5,
        "2026-10-28",
        "2026-11-04",
        0
       ],
       [
-       14,
+       15,
        "2026-10-26",
        "2026-10-27",
        0
       ],
       [
-       18,
+       5,
        "2026-10-26",
        "2026-10-28",
-       0
-      ],
-      [
-       18,
-       "2026-10-23",
-       "2026-10-23",
        0
       ]
      ]
@@ -4936,7 +5145,7 @@
      "lon": -76.962,
      "r": [
       [
-       14,
+       15,
        "2026-11-14",
        "2026-11-16",
        0
@@ -4949,7 +5158,7 @@
      "lon": -76.967,
      "r": [
       [
-       2,
+       0,
        "2026-11-14",
        "2026-11-18",
        0
@@ -4962,7 +5171,7 @@
      "lon": -76.962,
      "r": [
       [
-       17,
+       18,
        "2026-11-14",
        "2026-11-16",
        0
@@ -4975,49 +5184,49 @@
      "lon": -76.975,
      "r": [
       [
-       13,
+       14,
        "2026-11-14",
        "2026-11-14",
        0
       ],
       [
-       13,
+       14,
        "2026-11-13",
        "2026-11-13",
        0
       ],
       [
-       13,
+       14,
        "2026-11-13",
        "2026-11-13",
        0
       ],
       [
-       13,
+       14,
        "2026-11-12",
        "2026-11-12",
        0
       ],
       [
-       13,
+       14,
        "2026-11-09",
        "2026-11-09",
        0
       ],
       [
-       7,
+       9,
        "2026-11-04",
        "2026-11-09",
        0
       ],
       [
-       2,
+       0,
        "2026-11-02",
        "2026-11-05",
        0
       ],
       [
-       13,
+       14,
        "2026-10-31",
        "2026-10-31",
        0
@@ -5055,19 +5264,19 @@
        0
       ],
       [
-       2,
+       0,
        "2026-11-04",
        "2026-11-12",
        0
       ],
       [
-       2,
+       0,
        "2026-10-29",
        "2026-11-05",
        0
       ],
       [
-       2,
+       0,
        "2026-10-29",
        "2026-11-05",
        0
@@ -5080,13 +5289,13 @@
      "lon": -76.972,
      "r": [
       [
-       0,
+       4,
        "2026-11-13",
        null,
        1
       ],
       [
-       2,
+       0,
        "2026-11-13",
        "2026-11-18",
        0
@@ -5099,7 +5308,7 @@
      "lon": -76.965,
      "r": [
       [
-       8,
+       10,
        "2026-11-13",
        "2026-11-19",
        0
@@ -5167,13 +5376,13 @@
      "lon": -76.966,
      "r": [
       [
-       2,
+       0,
        "2026-11-12",
        "2026-11-18",
        0
       ],
       [
-       2,
+       0,
        "2026-10-27",
        "2026-10-30",
        0
@@ -5198,7 +5407,7 @@
        0
       ],
       [
-       17,
+       18,
        "2026-10-28",
        "2026-11-06",
        0
@@ -5217,7 +5426,7 @@
        1
       ],
       [
-       2,
+       0,
        "2026-11-10",
        "2026-11-18",
        0
@@ -5230,25 +5439,25 @@
      "lon": -76.966,
      "r": [
       [
-       18,
+       5,
        "2026-11-12",
        "2026-11-12",
        0
       ],
       [
-       18,
+       5,
        "2026-11-09",
        "2026-11-09",
        0
       ],
       [
-       18,
+       5,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       18,
+       5,
        "2026-10-27",
        "2026-10-27",
        0
@@ -5267,15 +5476,9 @@
        1
       ],
       [
-       0,
+       4,
        "2026-10-25",
        "2026-11-02",
-       0
-      ],
-      [
-       2,
-       "2026-10-23",
-       "2026-10-30",
        0
       ]
      ]
@@ -5286,13 +5489,13 @@
      "lon": -76.962,
      "r": [
       [
-       2,
+       0,
        "2026-11-12",
        "2026-11-18",
        0
       ],
       [
-       2,
+       0,
        "2026-11-04",
        "2026-11-12",
        0
@@ -5318,7 +5521,7 @@
      "lon": -76.968,
      "r": [
       [
-       2,
+       0,
        "2026-11-12",
        "2026-11-18",
        0
@@ -5331,13 +5534,13 @@
      "lon": -76.974,
      "r": [
       [
-       0,
+       4,
        "2026-11-12",
        null,
        1
       ],
       [
-       0,
+       4,
        "2026-11-07",
        null,
        1
@@ -5350,7 +5553,7 @@
      "lon": -76.964,
      "r": [
       [
-       0,
+       4,
        "2026-11-12",
        null,
        1
@@ -5369,7 +5572,7 @@
        0
       ],
       [
-       2,
+       0,
        "2026-11-11",
        "2026-11-18",
        0
@@ -5378,25 +5581,6 @@
        34,
        "2026-10-29",
        "2026-11-03",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "3000 block of CENTRAL AVENUE NE",
-     "lat": 38.93,
-     "lon": -76.966,
-     "r": [
-      [
-       22,
-       "2026-11-11",
-       null,
-       1
-      ],
-      [
-       2,
-       "2026-11-09",
-       "2026-11-12",
        0
       ]
      ]
@@ -5446,31 +5630,31 @@
      "lon": -76.968,
      "r": [
       [
-       18,
+       5,
        "2026-11-11",
        "2026-11-11",
        0
       ],
       [
-       18,
+       5,
        "2026-11-09",
        "2026-11-09",
        0
       ],
       [
-       18,
+       5,
        "2026-11-05",
        "2026-11-05",
        0
       ],
       [
-       18,
+       5,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       18,
+       5,
        "2026-11-02",
        "2026-11-02",
        0
@@ -5496,13 +5680,13 @@
      "lon": -76.975,
      "r": [
       [
-       6,
+       2,
        "2026-11-10",
        "2026-11-12",
        0
       ],
       [
-       2,
+       0,
        "2026-11-03",
        "2026-11-12",
        0
@@ -5521,7 +5705,7 @@
        0
       ],
       [
-       0,
+       4,
        "2026-11-10",
        null,
        1
@@ -5540,25 +5724,25 @@
      "lon": -76.964,
      "r": [
       [
-       2,
+       0,
        "2026-11-10",
        "2026-11-18",
        0
       ],
       [
-       13,
+       14,
        "2026-11-04",
        "2026-11-04",
        0
       ],
       [
-       10,
+       12,
        "2026-10-28",
        "2026-11-06",
        0
       ],
       [
-       13,
+       14,
        "2026-10-26",
        "2026-10-26",
        0
@@ -5571,7 +5755,7 @@
      "lon": -76.967,
      "r": [
       [
-       17,
+       18,
        "2026-11-10",
        "2026-11-12",
        0
@@ -5597,7 +5781,7 @@
      "lon": -76.974,
      "r": [
       [
-       0,
+       4,
        "2026-11-10",
        null,
        1
@@ -5616,7 +5800,7 @@
        1
       ],
       [
-       6,
+       2,
        "2026-11-10",
        "2026-11-12",
        0
@@ -5635,7 +5819,7 @@
      "lon": -76.973,
      "r": [
       [
-       0,
+       4,
        "2026-11-10",
        null,
        1
@@ -5674,7 +5858,7 @@
      "lon": -76.974,
      "r": [
       [
-       2,
+       0,
        "2026-11-10",
        "2026-11-18",
        0
@@ -5687,7 +5871,7 @@
      "lon": -76.975,
      "r": [
       [
-       0,
+       4,
        "2026-11-10",
        null,
        1
@@ -5699,7 +5883,7 @@
        0
       ],
       [
-       2,
+       0,
        "2026-10-24",
        "2026-10-30",
        0
@@ -5712,7 +5896,7 @@
      "lon": -76.969,
      "r": [
       [
-       2,
+       0,
        "2026-11-10",
        "2026-11-12",
        0
@@ -5752,19 +5936,6 @@
      ]
     },
     {
-     "block": "3100 block of NEWTON STREET NE",
-     "lat": 38.934,
-     "lon": -76.965,
-     "r": [
-      [
-       2,
-       "2026-11-09",
-       "2026-11-12",
-       0
-      ]
-     ]
-    },
-    {
      "block": "1800 block of EVARTS STREET NE",
      "lat": 38.925,
      "lon": -76.979,
@@ -5789,13 +5960,13 @@
        0
       ],
       [
-       0,
+       4,
        "2026-10-31",
        "2026-11-09",
        0
       ],
       [
-       2,
+       0,
        "2026-10-31",
        "2026-11-05",
        0
@@ -5807,7 +5978,7 @@
        0
       ],
       [
-       2,
+       0,
        "2026-10-27",
        "2026-10-30",
        0
@@ -5820,7 +5991,7 @@
      "lon": -76.975,
      "r": [
       [
-       18,
+       5,
        "2026-11-09",
        "2026-11-09",
        0
@@ -5859,7 +6030,7 @@
      "lon": -76.968,
      "r": [
       [
-       2,
+       0,
        "2026-11-08",
        "2026-11-12",
        0
@@ -5872,22 +6043,9 @@
      "lon": -76.972,
      "r": [
       [
-       12,
+       6,
        "2026-11-08",
        "2026-11-10",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "2200 block of NEW YORK AVENUE NE",
-     "lat": 38.918,
-     "lon": -76.973,
-     "r": [
-      [
-       1,
-       "2026-11-07",
-       "2026-11-07",
        0
       ]
      ]
@@ -5924,7 +6082,7 @@
      "lon": -76.972,
      "r": [
       [
-       7,
+       9,
        "2026-11-06",
        "2026-11-10",
        0
@@ -5937,7 +6095,7 @@
      "lon": -76.963,
      "r": [
       [
-       18,
+       5,
        "2026-11-06",
        "2026-11-06",
        0
@@ -5963,7 +6121,7 @@
      "lon": -76.957,
      "r": [
       [
-       2,
+       0,
        "2026-11-06",
        "2026-11-12",
        0
@@ -5976,7 +6134,7 @@
      "lon": -76.979,
      "r": [
       [
-       5,
+       8,
        "2026-11-06",
        "2026-11-06",
        0
@@ -5989,7 +6147,7 @@
      "lon": -76.968,
      "r": [
       [
-       0,
+       4,
        "2026-11-06",
        null,
        1
@@ -6001,7 +6159,7 @@
        0
       ],
       [
-       13,
+       14,
        "2026-10-30",
        "2026-10-30",
        0
@@ -6041,19 +6199,6 @@
      ]
     },
     {
-     "block": "2200 block of EVARTS STREET NE",
-     "lat": 38.924,
-     "lon": -76.973,
-     "r": [
-      [
-       2,
-       "2026-11-06",
-       "2026-11-12",
-       0
-      ]
-     ]
-    },
-    {
      "block": "2600 block of 31ST STREET NE",
      "lat": 38.924,
      "lon": -76.964,
@@ -6073,25 +6218,12 @@
      ]
     },
     {
-     "block": "2000 block of DOUGLAS STREET NE",
-     "lat": 38.923,
-     "lon": -76.975,
-     "r": [
-      [
-       2,
-       "2026-11-05",
-       "2026-11-12",
-       0
-      ]
-     ]
-    },
-    {
      "block": "2100 block of RAND PLACE NE",
      "lat": 38.913,
      "lon": -76.975,
      "r": [
       [
-       0,
+       4,
        "2026-11-05",
        "2026-11-16",
        0
@@ -6104,7 +6236,7 @@
      "lon": -76.953,
      "r": [
       [
-       13,
+       14,
        "2026-11-05",
        "2026-11-05",
        0
@@ -6117,7 +6249,7 @@
      "lon": -76.959,
      "r": [
       [
-       13,
+       14,
        "2026-11-05",
        "2026-11-05",
        0
@@ -6136,15 +6268,9 @@
        0
       ],
       [
-       2,
+       0,
        "2026-10-30",
        "2026-11-05",
-       0
-      ],
-      [
-       2,
-       "2026-10-23",
-       "2026-10-30",
        0
       ]
      ]
@@ -6155,7 +6281,7 @@
      "lon": -76.966,
      "r": [
       [
-       2,
+       0,
        "2026-11-05",
        "2026-11-12",
        0
@@ -6168,7 +6294,7 @@
      "lon": -76.978,
      "r": [
       [
-       4,
+       3,
        "2026-11-05",
        "2026-11-05",
        0
@@ -6238,7 +6364,7 @@
      "lon": -76.956,
      "r": [
       [
-       13,
+       14,
        "2026-11-04",
        "2026-11-04",
        0
@@ -6251,7 +6377,7 @@
      "lon": -76.965,
      "r": [
       [
-       0,
+       4,
        "2026-11-04",
        "2026-11-16",
        0
@@ -6283,7 +6409,7 @@
        0
       ],
       [
-       6,
+       2,
        "2026-10-27",
        "2026-10-29",
        0
@@ -6296,7 +6422,7 @@
      "lon": -76.969,
      "r": [
       [
-       17,
+       18,
        "2026-11-04",
        "2026-11-04",
        0
@@ -6335,13 +6461,13 @@
      "lon": -76.972,
      "r": [
       [
-       7,
+       9,
        "2026-11-03",
        "2026-11-05",
        0
       ],
       [
-       0,
+       4,
        "2026-10-26",
        "2026-11-02",
        0
@@ -6367,7 +6493,7 @@
      "lon": -76.967,
      "r": [
       [
-       2,
+       0,
        "2026-11-03",
        "2026-11-12",
        0
@@ -6393,7 +6519,7 @@
      "lon": -76.975,
      "r": [
       [
-       9,
+       11,
        "2026-11-02",
        null,
        1
@@ -6406,7 +6532,7 @@
      "lon": -76.968,
      "r": [
       [
-       0,
+       4,
        "2026-11-02",
        "2026-11-16",
        0
@@ -6419,7 +6545,7 @@
      "lon": -76.963,
      "r": [
       [
-       2,
+       0,
        "2026-11-02",
        "2026-11-05",
        0
@@ -6451,7 +6577,7 @@
      "lon": -76.962,
      "r": [
       [
-       13,
+       14,
        "2026-11-02",
        "2026-11-02",
        0
@@ -6464,7 +6590,7 @@
      "lon": -76.964,
      "r": [
       [
-       2,
+       0,
        "2026-11-02",
        "2026-11-05",
        0
@@ -6496,7 +6622,7 @@
      "lon": -76.976,
      "r": [
       [
-       6,
+       2,
        "2026-11-02",
        "2026-11-02",
        0
@@ -6542,31 +6668,6 @@
      ]
     },
     {
-     "block": "2000 block of DOUGLAS STREET NE",
-     "lat": 38.924,
-     "lon": -76.975,
-     "r": [
-      [
-       2,
-       "2026-11-01",
-       "2026-11-05",
-       0
-      ],
-      [
-       26,
-       "2026-10-29",
-       "2026-11-03",
-       0
-      ],
-      [
-       26,
-       "2026-10-27",
-       "2026-11-03",
-       0
-      ]
-     ]
-    },
-    {
      "block": "24TH STREET NE AND RHODE ISLAND AVENUE NE",
      "lat": 38.931,
      "lon": -76.972,
@@ -6585,7 +6686,7 @@
      "lon": -76.959,
      "r": [
       [
-       2,
+       0,
        "2026-10-31",
        "2026-11-05",
        0
@@ -6598,13 +6699,13 @@
      "lon": -76.966,
      "r": [
       [
-       2,
+       0,
        "2026-10-31",
        "2026-11-05",
        0
       ],
       [
-       2,
+       0,
        "2026-10-25",
        "2026-10-30",
        0
@@ -6643,7 +6744,7 @@
      "lon": -76.971,
      "r": [
       [
-       2,
+       0,
        "2026-10-30",
        "2026-11-05",
        0
@@ -6656,13 +6757,13 @@
      "lon": -76.954,
      "r": [
       [
-       8,
+       10,
        "2026-10-30",
        "2026-11-10",
        0
       ],
       [
-       8,
+       10,
        "2026-10-30",
        "2026-11-10",
        0
@@ -6681,7 +6782,7 @@
      "lon": -76.961,
      "r": [
       [
-       13,
+       14,
        "2026-10-30",
        "2026-10-30",
        0
@@ -6707,7 +6808,7 @@
      "lon": -76.962,
      "r": [
       [
-       2,
+       0,
        "2026-10-30",
        "2026-11-05",
        0
@@ -6733,7 +6834,7 @@
      "lon": -76.962,
      "r": [
       [
-       6,
+       2,
        "2026-10-30",
        "2026-11-05",
        0
@@ -6798,26 +6899,7 @@
      "lon": -76.971,
      "r": [
       [
-       17,
-       "2026-10-29",
-       "2026-11-02",
-       0
-      ],
-      [
-       23,
-       "2026-10-23",
-       null,
-       1
-      ]
-     ]
-    },
-    {
-     "block": "2400 block of MARKET STREET NE",
-     "lat": 38.92,
-     "lon": -76.955,
-     "r": [
-      [
-       51,
+       18,
        "2026-10-29",
        "2026-11-02",
        0
@@ -6860,12 +6942,6 @@
        "2026-10-29",
        "2026-11-03",
        0
-      ],
-      [
-       54,
-       "2026-10-23",
-       "2026-11-04",
-       0
       ]
      ]
     },
@@ -6875,7 +6951,7 @@
      "lon": -76.951,
      "r": [
       [
-       2,
+       0,
        "2026-10-29",
        "2026-11-05",
        0
@@ -6920,7 +6996,7 @@
      "lon": -76.974,
      "r": [
       [
-       17,
+       18,
        "2026-10-28",
        "2026-10-29",
        0
@@ -6998,7 +7074,7 @@
      "lon": -76.966,
      "r": [
       [
-       5,
+       8,
        "2026-10-28",
        "2026-10-28",
        0
@@ -7011,7 +7087,7 @@
      "lon": -76.966,
      "r": [
       [
-       2,
+       0,
        "2026-10-28",
        "2026-11-05",
        0
@@ -7056,7 +7132,7 @@
      "lon": -76.979,
      "r": [
       [
-       7,
+       9,
        "2026-10-28",
        "2026-11-04",
        0
@@ -7114,7 +7190,7 @@
      "lon": -76.973,
      "r": [
       [
-       2,
+       0,
        "2026-10-27",
        "2026-10-30",
        0
@@ -7127,7 +7203,7 @@
      "lon": -76.971,
      "r": [
       [
-       2,
+       0,
        "2026-10-27",
        "2026-10-30",
        0
@@ -7185,7 +7261,7 @@
      "lon": -76.965,
      "r": [
       [
-       2,
+       0,
        "2026-10-26",
        "2026-10-30",
        0
@@ -7198,7 +7274,7 @@
      "lon": -76.954,
      "r": [
       [
-       13,
+       14,
        "2026-10-26",
        "2026-10-26",
        0
@@ -7243,7 +7319,7 @@
        1
       ],
       [
-       4,
+       3,
        "2026-10-25",
        "2026-10-25",
        0
@@ -7269,7 +7345,7 @@
      "lon": -76.973,
      "r": [
       [
-       4,
+       3,
        "2026-10-24",
        "2026-10-24",
        0
@@ -7282,93 +7358,9 @@
      "lon": -76.969,
      "r": [
       [
-       0,
+       4,
        "2026-10-24",
        "2026-11-02",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "2600 block of EVARTS STREET NE",
-     "lat": 38.925,
-     "lon": -76.969,
-     "r": [
-      [
-       14,
-       "2026-10-23",
-       "2026-10-26",
-       0
-      ],
-      [
-       1,
-       "2026-10-23",
-       "2026-10-23",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "2800 block of 30TH STREET NE",
-     "lat": 38.928,
-     "lon": -76.965,
-     "r": [
-      [
-       2,
-       "2026-10-23",
-       "2026-10-30",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "NEW YORK AVENUE NE AND MONTANA AVENUE NE",
-     "lat": 38.917,
-     "lon": -76.978,
-     "r": [
-      [
-       33,
-       "2026-10-23",
-       "2026-10-23",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "3700 block of JAMISON STREET NE",
-     "lat": 38.925,
-     "lon": -76.953,
-     "r": [
-      [
-       13,
-       "2026-10-23",
-       "2026-10-23",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "2400 block of GIRARD PLACE NE",
-     "lat": 38.927,
-     "lon": -76.972,
-     "r": [
-      [
-       54,
-       "2026-10-23",
-       "2026-11-04",
-       0
-      ]
-     ]
-    },
-    {
-     "block": "2900 block of MILLS AVENUE NE",
-     "lat": 38.928,
-     "lon": -76.973,
-     "r": [
-      [
-       22,
-       "2026-10-23",
-       "2026-11-10",
        0
       ]
      ]
@@ -7377,7 +7369,7 @@
   }
  },
  "crime": {
-  "total": 42,
+  "total": 41,
   "previous_total": 28,
   "by_offense": [
    {
@@ -7387,13 +7379,13 @@
    },
    {
     "offense": "THEFT F/AUTO",
-    "count": 12,
-    "previous": 11
+    "count": 11,
+    "previous": 12
    },
    {
     "offense": "MOTOR VEHICLE THEFT",
     "count": 9,
-    "previous": 10
+    "previous": 9
    },
    {
     "offense": "ROBBERY",
@@ -7459,7 +7451,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-22T07:39:32Z",
+  "generated_at": "2026-11-23T07:40:11Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -7474,7 +7466,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Fort Lincoln through OTR assessment area Fort Lincoln and sub-areas Woodridge B, C and D in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Fort Lincoln boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-22): 91% of the 3,023 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 85% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Fort Lincoln through OTR assessment area Fort Lincoln and sub-areas Woodridge B, C and D in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Fort Lincoln boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-23): 91% of the 3,023 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 85% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -7499,7 +7491,7 @@
    "area_parcels": 3023,
    "area_share_inside": 0.913,
    "boundary_share_in_area": 0.848,
-   "measured": "2026-11-22"
+   "measured": "2026-11-23"
   },
   "primary": "house",
   "house": {
@@ -7690,7 +7682,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-22T07:39:32Z",
+  "generated_at": "2026-11-23T07:40:11Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -7710,11 +7702,11 @@
    }
   ],
   "curb": {
-   "active_this_week": 101,
-   "starting_next_7d": 13,
-   "reserved_ft": 12034,
+   "active_this_week": 108,
+   "starting_next_7d": 20,
+   "reserved_ft": 12804,
    "long_running_90d": 36,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-22: newest permit issued 2026-11-22, newest record update 2026-11-22, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-23: newest permit issued 2026-11-23, newest record update 2026-11-23, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Dumpsters",
@@ -7722,7 +7714,7 @@
     },
     {
      "type": "Construction staging",
-     "count": 52
+     "count": 59
     },
     {
      "type": "Lead pipe replacement",
@@ -7837,6 +7829,62 @@
      "end": "2027-01-19",
      "ft": 154,
      "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "2300 block of Bladensburg Road NE",
+     "start": "2026-11-30",
+     "end": "2027-02-08",
+     "ft": 220,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "2400 block of Bladensburg Road NE",
+     "start": "2026-11-30",
+     "end": "2027-02-08",
+     "ft": 242,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "2500 block of Bladensburg Road NE",
+     "start": "2026-11-30",
+     "end": "2027-02-08",
+     "ft": 88,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "2500 block of Bladensburg Road NE",
+     "start": "2026-11-30",
+     "end": "2027-02-08",
+     "ft": 66,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "2600 block of Bladensburg Road NE",
+     "start": "2026-11-30",
+     "end": "2027-02-08",
+     "ft": 44,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "2600 block of Bladensburg Road NE",
+     "start": "2026-11-30",
+     "end": "2027-02-08",
+     "ft": 22,
+     "hours": "9:30 am\u20133:30 pm"
+    },
+    {
+     "type": "Construction staging",
+     "block": "1800 block of Montana Avenue NE",
+     "start": "2026-11-30",
+     "end": "2027-02-27",
+     "ft": 88,
+     "hours": "9:30 am\u20133:30 pm"
     }
    ]
   },
@@ -7920,15 +7968,15 @@
   "service": [
    {
     "type": "Bulk Collection",
-    "median_days": 7.62,
+    "median_days": 7.63,
     "city_median_days": 6.91,
-    "closed_n": 842
+    "closed_n": 840
    },
    {
     "type": "Parking Enforcement",
     "median_days": 0.05,
     "city_median_days": 0.05,
-    "closed_n": 790
+    "closed_n": 792
    },
    {
     "type": "DC Government Information",
@@ -7939,7 +7987,7 @@
    {
     "type": "Scheduled Yard Waste",
     "median_days": 11.85,
-    "city_median_days": 9.38,
+    "city_median_days": 9.37,
     "closed_n": 264
    },
    {
@@ -7956,9 +8004,9 @@
    },
    {
     "type": "Illegal Dumping",
-    "median_days": 5.16,
+    "median_days": 5.13,
     "city_median_days": 3.94,
-    "closed_n": 191
+    "closed_n": 190
    },
    {
     "type": "Recycling Collection - Missed",
@@ -7970,7 +8018,7 @@
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-22T07:39:32Z",
+  "generated_at": "2026-11-23T07:40:11Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -8104,7 +8152,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-22T07:39:32Z",
+  "generated_at": "2026-11-23T07:40:11Z",
   "archive_days": 180,
   "sources": [
    {
@@ -8484,8 +8532,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-22T07:39:32Z",
-  "today": "2026-11-22",
+  "generated_at": "2026-11-23T07:40:11Z",
+  "today": "2026-11-23",
   "days_ahead": 30,
   "sources": [
    {
@@ -8525,10 +8573,18 @@
    "ANC 5C",
    "ANC 5D"
   ],
-  "anc_meetings": []
+  "anc_meetings": [
+   {
+    "anc": "ANC 5C",
+    "date": "2026-11-20",
+    "special": false,
+    "title": "November 20, 2026, ANC 5C Public Meeting",
+    "url": "https://oanc.dc.gov/event/november-20-2026-anc-5c-public-meeting"
+   }
+  ]
  },
  "blocks": {
-  "generated_at": "2026-11-22T07:39:32Z",
+  "generated_at": "2026-11-23T07:40:11Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -38207,7 +38263,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-22T07:39:32Z",
+  "generated_at": "2026-11-23T07:40:11Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
@@ -38231,76 +38287,46 @@
     "lon": -76.97893
    },
    {
-    "id": "1001828",
+    "id": "1001849",
     "name": "18 St NE & Douglas St NE",
-    "lat": 38.92321,
+    "lat": 38.92362,
+    "lon": -76.97903
+   },
+   {
+    "id": "1001873",
+    "name": "18 St NE & Evarts St NE",
+    "lat": 38.9244,
     "lon": -76.97893
    },
    {
-    "id": "1001921",
+    "id": "1001883",
+    "name": "18 St NE & Evarts St NE",
+    "lat": 38.92468,
+    "lon": -76.97906
+   },
+   {
+    "id": "1001893",
     "name": "18 St NE & Franklin St NE",
-    "lat": 38.92533,
-    "lon": -76.9791
+    "lat": 38.92588,
+    "lon": -76.9789
    },
    {
-    "id": "1001992",
+    "id": "1003007",
     "name": "18 St NE & Hamlin St NE",
-    "lat": 38.92838,
-    "lon": -76.97931
+    "lat": 38.92842,
+    "lon": -76.97912
    },
    {
-    "id": "1003974",
-    "name": "26TH ST NE  &  BLADENSBURG RD NE",
-    "lat": 38.92224,
-    "lon": -76.96985
+    "id": "1001865",
+    "name": "31 Pl NE & Banneker Dr NE",
+    "lat": 38.92416,
+    "lon": -76.9608
    },
    {
-    "id": "1001868",
-    "name": "31 Pl NE & Ft Lincoln Dr NE",
-    "lat": 38.92423,
-    "lon": -76.95981
-   },
-   {
-    "id": "1001856",
-    "name": "31 Pl NE & South Dakota NE",
-    "lat": 38.92381,
-    "lon": -76.9623
-   },
-   {
-    "id": "1003645",
-    "name": "BANNEKER DR NE  &  APPLE RD NE",
-    "lat": 38.92477,
-    "lon": -76.96237
-   },
-   {
-    "id": "1001920",
-    "name": "BANNEKER DR NE  &  BERRY RD NE",
-    "lat": 38.92584,
-    "lon": -76.96229
-   },
-   {
-    "id": "1001972",
-    "name": "BANNEKER DR NE  &  BLADENSBURG RD NE",
-    "lat": 38.92769,
-    "lon": -76.96103
-   },
-   {
-    "id": "3004583",
-    "name": "BLADENSBURG RD  &  #3342",
-    "lat": 38.93159,
-    "lon": -76.95673
-   },
-   {
-    "id": "3002604",
-    "name": "BLADENSBURG RD  &  EASTERN AVE NE",
-    "lat": 38.93119,
-    "lon": -76.95732
-   },
-   {
-    "id": "1003723",
-    "name": "BLADENSBURG RD  &  SOUTH DAKOTA AVE",
-    "lat": 38.92458,
-    "lon": -76.96573
+    "id": "1003930",
+    "name": "BLADENSBURG DIVISION  &  EMPLOYEE SHUTTLE STOP",
+    "lat": 38.92321,
+    "lon": -76.96937
    },
    {
     "id": "1001064",
@@ -38315,18 +38341,6 @@
     "lon": -76.96064
    },
    {
-    "id": "3004027",
-    "name": "Bladensburg Rd & Eastern Av",
-    "lat": 38.93112,
-    "lon": -76.95696
-   },
-   {
-    "id": "1002033",
-    "name": "Bladensburg Rd NE & #3174",
-    "lat": 38.92917,
-    "lon": -76.96019
-   },
-   {
     "id": "1001757",
     "name": "Bladensburg Rd NE & 25 Pl NE",
     "lat": 38.9203,
@@ -38339,22 +38353,10 @@
     "lon": -76.96924
    },
    {
-    "id": "1001988",
-    "name": "Bladensburg Rd NE & Banneker Dr NE",
-    "lat": 38.92844,
-    "lon": -76.96098
-   },
-   {
-    "id": "1001848",
-    "name": "Bladensburg Rd NE & Douglas St NE",
-    "lat": 38.92359,
-    "lon": -76.96724
-   },
-   {
-    "id": "1002061",
-    "name": "Bladensburg Rd NE & Eastern Av NE",
-    "lat": 38.93053,
-    "lon": -76.95824
+    "id": "1001852",
+    "name": "Bladensburg Rd NE & 30 St NE",
+    "lat": 38.92373,
+    "lon": -76.96677
    },
    {
     "id": "1001377",
@@ -38381,10 +38383,10 @@
     "lon": -76.97572
    },
    {
-    "id": "1001892",
+    "id": "1001898",
     "name": "Bladensburg Rd NE & South Dakota Av NE",
-    "lat": 38.92538,
-    "lon": -76.96474
+    "lat": 38.92545,
+    "lon": -76.96494
    },
    {
     "id": "1001636",
@@ -38399,70 +38401,82 @@
     "lon": -76.96976
    },
    {
-    "id": "1003671",
-    "name": "COMMODORE JOSHUA BARNEY DR NE  &  RECREATION CENTER",
-    "lat": 38.92699,
-    "lon": -76.95632
+    "id": "1003635",
+    "name": "Commodore Joshua Barney Dr NE & Wesley House",
+    "lat": 38.925,
+    "lon": -76.95559
    },
    {
-    "id": "1005061",
-    "name": "Commodore Joshua Barney Dr NE-Jamison St NE",
-    "lat": 38.92372,
-    "lon": -76.95203
+    "id": "1002073",
+    "name": "Eastern Av NE & Bladensburg Rd NE",
+    "lat": 38.93118,
+    "lon": -76.9583
    },
    {
-    "id": "1002155",
-    "name": "Eastern Av NE & 34 St NE",
-    "lat": 38.93336,
-    "lon": -76.96095
+    "id": "1002154",
+    "name": "Eastern Av NE & Monroe St NE",
+    "lat": 38.93328,
+    "lon": -76.96107
    },
    {
-    "id": "1002185",
+    "id": "1003393",
+    "name": "Eastern Av NE & Perry St NE",
+    "lat": 38.93613,
+    "lon": -76.96458
+   },
+   {
+    "id": "1002188",
     "name": "Eastern Av NE & Rhode Island Av NE",
-    "lat": 38.93473,
-    "lon": -76.96295
+    "lat": 38.9349,
+    "lon": -76.96297
    },
    {
-    "id": "1001910",
+    "id": "1005090",
+    "name": "FORT LINCOLN DR NE  &  MARKET ST NE",
+    "lat": 38.92219,
+    "lon": -76.95215
+   },
+   {
+    "id": "1001906",
+    "name": "Franklin St NE & 17 St NE",
+    "lat": 38.92559,
+    "lon": -76.98063
+   },
+   {
+    "id": "1001900",
     "name": "Franklin St NE & 18 St NE",
-    "lat": 38.92562,
-    "lon": -76.97873
+    "lat": 38.92549,
+    "lon": -76.97925
    },
    {
-    "id": "1001899",
-    "name": "Franklin St NE & 20 St NE",
-    "lat": 38.92548,
-    "lon": -76.97651
-   },
-   {
-    "id": "1001909",
-    "name": "Franklin St NE & 20 St NE",
-    "lat": 38.92561,
-    "lon": -76.976
-   },
-   {
-    "id": "1001897",
+    "id": "1001905",
     "name": "Franklin St NE & 22 St NE",
-    "lat": 38.92544,
-    "lon": -76.97437
+    "lat": 38.92561,
+    "lon": -76.97402
    },
    {
-    "id": "1001896",
-    "name": "Franklin St NE & 24 St NE",
-    "lat": 38.92555,
-    "lon": -76.97231
-   },
-   {
-    "id": "1001912",
+    "id": "1001894",
     "name": "Franklin St NE & 26 St NE",
+    "lat": 38.92542,
+    "lon": -76.97041
+   },
+   {
+    "id": "1001911",
+    "name": "Franklin St NE & Mills Av NE",
     "lat": 38.92567,
-    "lon": -76.96993
+    "lon": -76.9715
    },
    {
     "id": "1001798",
     "name": "Ft Lincoln Dr NE & 33 Pl NE",
     "lat": 38.92182,
     "lon": -76.95633
+   },
+   {
+    "id": "1003644",
+    "name": "Ft Lincoln Dr NE & R C Weaver Wy NE",
+    "lat": 38.92303,
+    "lon": -76.95801
    },
    {
     "id": "1003843",
@@ -38489,28 +38503,76 @@
     "lon": -76.97613
    },
    {
-    "id": "1002190",
+    "id": "1001959",
+    "name": "Rhode Island Av NE & 18 St NE",
+    "lat": 38.92722,
+    "lon": -76.97961
+   },
+   {
+    "id": "1001982",
+    "name": "Rhode Island Av NE & 18 St NE",
+    "lat": 38.9279,
+    "lon": -76.9789
+   },
+   {
+    "id": "1002022",
+    "name": "Rhode Island Av NE & 20 St NE",
+    "lat": 38.92905,
+    "lon": -76.97589
+   },
+   {
+    "id": "1002030",
+    "name": "Rhode Island Av NE & 20 St NE",
+    "lat": 38.92931,
+    "lon": -76.97581
+   },
+   {
+    "id": "1002074",
+    "name": "Rhode Island Av NE & 24 St NE",
+    "lat": 38.93121,
+    "lon": -76.97202
+   },
+   {
+    "id": "1002194",
     "name": "Rhode Island Av NE & Eastern Av NE",
-    "lat": 38.93491,
-    "lon": -76.96428
+    "lat": 38.93468,
+    "lon": -76.96426
    },
    {
-    "id": "1003184",
+    "id": "1002119",
     "name": "Rhode Island Av NE & Monroe St NE",
-    "lat": 38.93285,
-    "lon": -76.96845
+    "lat": 38.9325,
+    "lon": -76.96879
    },
    {
-    "id": "1002171",
+    "id": "1003389",
     "name": "Rhode Island Av NE & Newton St NE",
-    "lat": 38.93382,
-    "lon": -76.96647
+    "lat": 38.93359,
+    "lon": -76.9663
    },
    {
-    "id": "1002047",
+    "id": "1002071",
+    "name": "Rhode Island Av NE & South Dakota Av NE",
+    "lat": 38.93111,
+    "lon": -76.97171
+   },
+   {
+    "id": "1002056",
     "name": "Rhode Island Av NE & Thayer St NE",
-    "lat": 38.93009,
-    "lon": -76.97376
+    "lat": 38.93043,
+    "lon": -76.97351
+   },
+   {
+    "id": "1001895",
+    "name": "South Dakota Av NE & Bladensburg Rd NE",
+    "lat": 38.92538,
+    "lon": -76.96533
+   },
+   {
+    "id": "1001915",
+    "name": "South Dakota Av NE & Franklin St NE",
+    "lat": 38.92575,
+    "lon": -76.96597
    }
   ],
   "bike_docks": [
