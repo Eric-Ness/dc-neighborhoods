@@ -1,0 +1,17 @@
+---
+import Base from "../../layouts/Base.astro";
+import Place from "../../components/Place.astro";
+import { wards, dc, summary, change, fmt, curLabel, prevLabel, wardName, type Series } from "../../lib/crime";
+
+export function getStaticPaths() {
+  return wards.map((w) => ({ params: { ward: w.ward }, props: { ward: w.ward, offenses: w.offenses } }));
+}
+const { ward, offenses } = Astro.props as { ward: string; offenses: Series };
+const s = summary(offenses);
+---
+<Base title={wardName(ward)} section="wards">
+  <p class="small"><a href="/wards/">All wards</a></p>
+  <h1>Crime reported in {wardName(ward)}</h1>
+  <p class="lede">{fmt(s.total.cur)} crimes were reported in {wardName(ward)} from {curLabel}, {change(s.total).text} from {fmt(s.total.prev)} in {prevLabel}. DC as a whole is {change(summary(dc).total).text}.</p>
+  <Place offenses={offenses} compare={dc} />
+</Base>

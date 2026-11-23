@@ -13,7 +13,7 @@ on:
   # away, run the workflow by hand from the Actions tab.
   push:
     branches: [main]
-    paths: ["site/**", "worker/**", "ingest/**", "wrangler.jsonc"]
+    paths: ["site/**", "worker/**", "ingest/**", "wrangler.jsonc", "crime/**"]
 
 permissions:
   contents: write
@@ -51,11 +51,27 @@ jobs:
           git checkout -- site/src/data
           echo "::warning::Ingest failed; deploying the last committed data instead."
 
+      # Counts for the private crime site (crime/, crime.georgetowndc.org, behind Cloudflare Access). Its own step, so a
+      # failure here never holds back the neighborhood sites; the crime site then keeps its last good counts.
+      - name: Count crime for the private site
+        id: crime
+        if: github.event_name != 'push'
+        continue-on-error: true
+        run: python ingest/crime.py --check
+
+      - name: Keep the last good crime counts
+        if: steps.crime.outcome == 'failure'
+        run: |
+          git checkout -- crime/src/data
+          echo "::warning::Crime counts failed; the crime site keeps the last committed counts."
+
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
           cache: npm
-          cache-dependency-path: site/package-lock.json
+          cache-dependency-path: |
+            site/package-lock.json
+            crime/package-lock.json
 
       - name: Build site
         working-directory: site
@@ -66,13 +82,19 @@ jobs:
       - name: Verify build output
         run: node tools/verify.mjs site
 
+      - name: Build the crime site
+        working-directory: crime
+        run: |
+          npm ci
+          npm run build
+
       # Keeping each night's JSON in git gives free history for week-over-week comparisons.
       - name: Commit data snapshot
         if: steps.ingest.outcome == 'success'
         run: |
           git config user.name "dc-neighborhoods-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add site/src/data
+          git add site/src/data crime/src/data
           git diff --cached --quiet || git commit -m "data: nightly snapshot $(date -u +%F)"
           git push
 
@@ -105,8 +127,26 @@ jobs:
           fi
           printf '%s' "$WMATA_API_KEY" | npx --yes wrangler@4.156.0 secret put WMATA_API_KEY
 
+      # Its own Worker (crime/wrangler.jsonc), with no workers.dev address, so Access on crime.georgetowndc.org is the
+      # only way in.
+      - name: Deploy the crime site
+        if: env.HAS_CF_TOKEN == 'true'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          wranglerVersion: "4.156.0"
+          workingDirectory: crime
+          command: deploy
+
       - name: Report a failed ingest
         if: steps.ingest.outcome == 'failure'
         run: |
           echo "::error::Tonight's ingest failed (see the Ingest step). The site was redeployed with the last good data."
+          exit 1
+
+      - name: Report failed crime counts
+        if: steps.crime.outcome == 'failure'
+        run: |
+          echo "::error::Tonight's crime counts failed (see the Count crime step). The crime site kept its last good counts."
           exit 1

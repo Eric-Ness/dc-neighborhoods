@@ -1,0 +1,57 @@
+---
+// Every offense, previous 12 months against the last 12, violent first. Change follows the >=100 rule in change().
+import { offenseRows, change, fmt, prevLabel, curLabel, type Series } from "../lib/crime";
+
+interface Props {
+  offenses: Series;
+  compare?: Series; // DC as a whole, for a "DC" column on ward and neighborhood pages
+}
+const { offenses, compare } = Astro.props;
+const rows = offenseRows(offenses);
+const dcRows = compare ? new Map(offenseRows(compare).map((r) => [r.offense, r])) : null;
+const groups = [
+  { title: "Violent crime", rows: rows.filter((r) => r.violent) },
+  { title: "Property crime", rows: rows.filter((r) => !r.violent) },
+].filter((g) => g.rows.length);
+const total = rows.reduce((t, r) => ({ prev: t.prev + r.prev, cur: t.cur + r.cur }), { prev: 0, cur: 0 });
+---
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Offense</th>
+        <th scope="col">{prevLabel}</th>
+        <th scope="col">{curLabel}</th>
+        <th scope="col">Change</th>
+        {dcRows && <th scope="col">DC change</th>}
+      </tr>
+    </thead>
+    {groups.map((g) => (
+      <tbody>
+        <tr class="grp"><td colspan={dcRows ? 5 : 4}>{g.title}</td></tr>
+        {g.rows.map((r) => {
+          const d = dcRows?.get(r.offense);
+          return (
+            <tr>
+              <th scope="row" style="font-weight:400">{r.name}</th>
+              <td>{fmt(r.prev)}</td>
+              <td>{fmt(r.cur)}</td>
+              <td>{change(r).short}</td>
+              {dcRows && <td>{d ? change(d).short : "–"}</td>}
+            </tr>
+          );
+        })}
+      </tbody>
+    ))}
+    <tfoot>
+      <tr>
+        <td>All reports</td>
+        <td>{fmt(total.prev)}</td>
+        <td>{fmt(total.cur)}</td>
+        <td>{change(total).short}</td>
+        {dcRows && <td>{change(offenseRows(compare!).reduce((t, r) => ({ prev: t.prev + r.prev, cur: t.cur + r.cur }), { prev: 0, cur: 0 })).short}</td>}
+      </tr>
+    </tfoot>
+  </table>
+</div>
+<p class="small">Changes of fewer than 100 reports a year are shown as counts, not percentages: at that size a handful of reports can look like a big swing.</p>

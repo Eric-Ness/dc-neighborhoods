@@ -1,0 +1,21 @@
+---
+import Base from "../../layouts/Base.astro";
+import Spark from "../../components/Spark.astro";
+import { areas, summary, change, fmt, monthly, curLabel } from "../../lib/crime";
+---
+<Base title="Neighborhoods" section="areas">
+  <h1>Crime by neighborhood</h1>
+  <p class="lede">Reports inside each neighborhood site's boundary from {curLabel}, against the 12 months before. In alphabetical order, not ranked: the areas differ a lot in size, population and how many people pass through them.</p>
+  <ul class="cards">
+    {areas.map((a) => {
+      const s = summary(a.offenses);
+      return (
+        <li><a class="card" href={`/areas/${a.slug}/`}>
+          <h3>{a.name}</h3>
+          <div class="n">{fmt(s.total.cur)} reports, {change(s.total).text}</div>
+          <Spark values={monthly(a.offenses)} />
+        </a></li>
+      );
+    })}
+  </ul>
+</Base>

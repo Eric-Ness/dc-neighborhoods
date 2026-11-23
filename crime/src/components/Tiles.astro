@@ -1,0 +1,25 @@
+---
+// The four headline figures for one place: all reports, violent, property, homicides, each with its change.
+import { change, fmt, type Summary } from "../lib/crime";
+
+interface Props {
+  s: Summary;
+  dc?: Summary; // DC's change beside each, on ward and neighborhood pages
+}
+const { s, dc } = Astro.props;
+const tiles = [
+  { k: "All reported crime", w: s.total, d: dc?.total },
+  { k: "Violent crime", w: s.violent, d: dc?.violent },
+  { k: "Property crime", w: s.property, d: dc?.property },
+  { k: "Homicides", w: s.homicide, d: dc?.homicide },
+];
+---
+<div class="tiles">
+  {tiles.map((t) => (
+    <div class="tile">
+      <div class="k">{t.k}, last 12 months</div>
+      <div class="v">{fmt(t.w.cur)}</div>
+      <div class="c">{change(t.w).text} from {fmt(t.w.prev)}{t.d && <><br />DC: {change(t.d).text}</>}</div>
+    </div>
+  ))}
+</div>

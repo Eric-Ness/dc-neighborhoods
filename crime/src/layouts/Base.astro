@@ -1,0 +1,69 @@
+---
+import "../styles/crime.css";
+import { generatedAt, curLabel } from "../lib/crime";
+
+interface Props {
+  title: string;
+  section?: "dc" | "wards" | "areas" | "about";
+}
+const { title, section } = Astro.props;
+const nav = [
+  { href: "/", label: "Citywide", key: "dc" },
+  { href: "/wards/", label: "Wards", key: "wards" },
+  { href: "/areas/", label: "Neighborhoods", key: "areas" },
+  { href: "/about/", label: "How to read this", key: "about" },
+];
+const updated = new Date(generatedAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "America/New_York" });
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>{title} · DC crime counts</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' rx='4' fill='%232a78d6'/><path d='M4 12V8M8 12V4M12 12V6' stroke='white' stroke-width='2' stroke-linecap='round'/></svg>" />
+  </head>
+  <body>
+    <header class="top">
+      <div class="wrap top-row">
+        <a class="brand" href="/">DC crime counts <span class="tag">private</span></a>
+        <nav aria-label="Sections">
+          <ul>{nav.map((n) => <li><a href={n.href} aria-current={n.key === section ? "page" : undefined}>{n.label}</a></li>)}</ul>
+        </nav>
+      </div>
+    </header>
+    <main class="wrap">
+      <slot />
+    </main>
+    <footer class="wrap foot">
+      <p>Counts of crimes reported to MPD, by month of report, {curLabel} against the 12 months before. Updated {updated}.</p>
+      <p>Source: Open Data DC, Crime Incidents (MPD), CC BY 4.0. Preliminary figures that MPD revises; not FBI NIBRS. An independent, private project, not affiliated with MPD or the DC Government. <a href="/about/">How to read these numbers</a>.</p>
+    </footer>
+    <div class="tip" role="tooltip" hidden></div>
+    <script is:inline>
+      // One shared tooltip for every [data-tip] mark: hover or keyboard focus shows it beside the mark.
+      (function () {
+        var tip = document.querySelector(".tip");
+        function show(el) {
+          tip.textContent = el.getAttribute("data-tip");
+          tip.hidden = false;
+          var r = el.getBoundingClientRect(), t = tip.getBoundingClientRect();
+          var x = Math.min(Math.max(8, r.left + r.width / 2 - t.width / 2), window.innerWidth - t.width - 8);
+          var y = r.top - t.height - 8;
+          if (y < 8) y = r.bottom + 8;
+          tip.style.left = x + "px";
+          tip.style.top = y + "px";
+        }
+        function hide() { tip.hidden = true; }
+        document.querySelectorAll("[data-tip]").forEach(function (el) {
+          el.addEventListener("mouseenter", function () { show(el); });
+          el.addEventListener("focus", function () { show(el); });
+          el.addEventListener("mouseleave", hide);
+          el.addEventListener("blur", hide);
+        });
+        window.addEventListener("scroll", hide, { passive: true });
+      })();
+    </script>
+  </body>
+</html>

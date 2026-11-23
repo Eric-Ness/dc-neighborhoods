@@ -1,0 +1,14 @@
+{
+  // The private crime site: its own Worker, so no crime page can load through one of the public neighborhood domains.
+  // Cloudflare Access (Zero Trust) guards crime.georgetowndc.org; the app must exist before the first deploy.
+  "name": "dc-crime",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  },
+  // No *.workers.dev or preview address: Access only guards crime.georgetowndc.org, so any other address would be open.
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [{ "pattern": "crime.georgetowndc.org", "custom_domain": true }]
+}

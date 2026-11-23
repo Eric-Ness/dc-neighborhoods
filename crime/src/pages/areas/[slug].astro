@@ -1,0 +1,18 @@
+---
+import Base from "../../layouts/Base.astro";
+import Place from "../../components/Place.astro";
+import { areas, dc, summary, change, fmt, curLabel, prevLabel, type Area } from "../../lib/crime";
+
+export function getStaticPaths() {
+  return areas.map((a) => ({ params: { slug: a.slug }, props: { a } }));
+}
+const { a } = Astro.props as { a: Area };
+const s = summary(a.offenses);
+---
+<Base title={a.name} section="areas">
+  <p class="small"><a href="/areas/">All neighborhoods</a></p>
+  <h1>Crime reported in {a.name}</h1>
+  <p class="lede">{fmt(s.total.cur)} crimes were reported in {a.name} from {curLabel}, {change(s.total).text} from {fmt(s.total.prev)} in {prevLabel}. DC as a whole is {change(summary(dc).total).text}.</p>
+  <p class="note">The boundary is the same one <a href={`https://${a.host}/`}>{a.host}</a> uses. A report counts here when MPD placed it inside that line.</p>
+  <Place offenses={a.offenses} compare={dc} />
+</Base>

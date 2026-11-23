@@ -1,0 +1,31 @@
+---
+import Base from "../layouts/Base.astro";
+import Place from "../components/Place.astro";
+import Spark from "../components/Spark.astro";
+import { dc, wards, unknownWard, summary, change, fmt, monthly, curLabel, prevLabel, sum, wardName } from "../lib/crime";
+
+const s = summary(dc);
+const unplaced = sum(monthly(unknownWard));
+---
+<Base title="Citywide" section="dc">
+  <h1>Crime reported in DC</h1>
+  <p class="lede">{fmt(s.total.cur)} crimes were reported to MPD from {curLabel}, {change(s.total).text} from {fmt(s.total.prev)} in {prevLabel}. Violent crime is {change(s.violent).text}, property crime {change(s.property).text}.</p>
+
+  <Place offenses={dc} />
+
+  <h2>By ward</h2>
+  <p class="note">Listed by ward number. Each line has its own scale, so it shows the shape of the last 24 months, not size against other wards.</p>
+  <ul class="cards">
+    {wards.map((w) => {
+      const ws = summary(w.offenses);
+      return (
+        <li><a class="card" href={`/wards/${w.ward}/`}>
+          <h3>{wardName(w.ward)}</h3>
+          <div class="n">{fmt(ws.total.cur)} reports, {change(ws.total).text}</div>
+          <Spark values={monthly(w.offenses)} />
+        </a></li>
+      );
+    })}
+  </ul>
+  {unplaced > 0 && <p class="small">{fmt(unplaced)} reports over the 24 months have no ward in MPD's data. They count toward DC's total but no ward.</p>}
+</Base>

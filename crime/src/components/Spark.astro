@@ -1,0 +1,10 @@
+---
+// A 24-month line with no axis, for cards; each card's scale is its own, so cards compare shape, not size.
+interface Props {
+  values: number[];
+}
+const { values } = Astro.props;
+const max = Math.max(1, ...values);
+const pts = values.map((v, i) => `${(i / (values.length - 1)) * 100},${30 - (v / max) * 28}`).join(" ");
+---
+<svg class="spark" viewBox="0 0 100 32" preserveAspectRatio="none" aria-hidden="true"><polyline points={pts} /></svg>

@@ -1,0 +1,30 @@
+---
+// The body shared by the citywide, ward and neighborhood pages.
+import Tiles from "./Tiles.astro";
+import MonthlyBars from "./MonthlyBars.astro";
+import OffenseTable from "./OffenseTable.astro";
+import { summary, monthly, isViolent, isProperty, type Series } from "../lib/crime";
+
+interface Props {
+  offenses: Series;
+  compare?: Series; // DC as a whole
+}
+const { offenses, compare } = Astro.props;
+---
+<Tiles s={summary(offenses)} dc={compare && summary(compare)} />
+
+<h2>All reported crime, by month</h2>
+<p class="note">Reports MPD logged each month, by the date of the report. Hover over or tab to a bar for its count.</p>
+<MonthlyBars values={monthly(offenses)} label="reports" />
+
+<h2>Violent crime, by month</h2>
+<p class="note">Homicide, sex abuse, assault with a dangerous weapon and robbery. Its own scale: violent crime is a small share of all reports.</p>
+<MonthlyBars values={monthly(offenses, isViolent)} label="violent crime reports" />
+
+<h2>Property crime, by month</h2>
+<p class="note">Theft, theft from a vehicle, motor vehicle theft, burglary and arson.</p>
+<MonthlyBars values={monthly(offenses, isProperty)} label="property crime reports" />
+
+<h2>By offense</h2>
+<p class="note">The 12 months before against the last 12.{compare && " The last column is DC as a whole, for comparison."}</p>
+<OffenseTable offenses={offenses} compare={compare} />

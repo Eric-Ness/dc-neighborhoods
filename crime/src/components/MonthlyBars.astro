@@ -1,0 +1,50 @@
+---
+// Reports per month for 24 months: the previous 12 in the light step, the last 12 in the strong step, one axis.
+import { months, monthLabel, fmt, prevLabel, curLabel } from "../lib/crime";
+
+interface Props {
+  values: number[];
+  label: string; // what is counted, e.g. "reports" or "violent crime reports"
+}
+const { values, label } = Astro.props;
+const half = values.length / 2;
+
+// A round top for the axis, with 3-4 gridlines.
+const max = Math.max(1, ...values);
+const mag = 10 ** Math.floor(Math.log10(max));
+// Whole-number steps only: counts below 10 a month never get a 2.5 gridline.
+const step = [1, 2, 2.5, 5, 10].map((s) => s * mag).filter(Number.isInteger).find((s) => max / s <= 4) ?? 10 * mag;
+const top = Math.ceil(max / step) * step;
+const ticks: number[] = [];
+for (let t = 0; t <= top; t += step) ticks.push(t);
+---
+<figure class="chart">
+  <ul class="legend">
+    <li><span class="sw prev" aria-hidden="true"></span>{prevLabel}</li>
+    <li><span class="sw cur" aria-hidden="true"></span>{curLabel}</li>
+  </ul>
+  <div class="plot" role="img" aria-label={`${label} per month, ${monthLabel(months[0], true)} to ${monthLabel(months[months.length - 1], true)}. The table below has every month.`}>
+    <div class="grid" aria-hidden="true">
+      {ticks.map((t) => <div class={t === 0 ? "base" : ""} style={`bottom:${(t / top) * 100}%`}><span>{fmt(t)}</span></div>)}
+    </div>
+    <div class="bars">
+      {values.map((v, i) => (
+        <span class={`bar${i < half ? " prev" : ""}`} tabindex="0" data-tip={`${monthLabel(months[i], true)}: ${fmt(v)} ${label}`} aria-label={`${monthLabel(months[i], true)}: ${fmt(v)}`}>
+          <i style={`height:${(v / top) * 100}%`}></i>
+        </span>
+      ))}
+    </div>
+  </div>
+  <div class="xaxis" aria-hidden="true">
+    {months.map((m, i) => <span>{i % 3 === 0 ? `${monthLabel(m)} ’${m.slice(2, 4)}` : ""}</span>)}
+  </div>
+  <details class="data">
+    <summary>Show the numbers</summary>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Month</th><th scope="col">{label.charAt(0).toUpperCase() + label.slice(1)}</th></tr></thead>
+        <tbody>{values.map((v, i) => <tr><td>{monthLabel(months[i], true)}</td><td>{fmt(v)}</td></tr>)}</tbody>
+      </table>
+    </div>
+  </details>
+</figure>

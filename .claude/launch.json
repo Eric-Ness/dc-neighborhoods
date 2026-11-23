@@ -54,6 +54,20 @@
         "127.0.0.1"
       ],
       "port": 8787
+    },
+    {
+      "name": "crime-preview",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "crime",
+        "run",
+        "preview",
+        "--",
+        "--port",
+        "4330"
+      ],
+      "port": 4330
     }
   ]
 }

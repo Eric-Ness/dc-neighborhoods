@@ -1,0 +1,39 @@
+---
+import Base from "../layouts/Base.astro";
+import { curLabel, prevLabel, source } from "../lib/crime";
+---
+<Base title="How to read this" section="about">
+  <h1>How to read these numbers</h1>
+  <p class="lede">Every figure on this site is a count of crimes reported to the Metropolitan Police Department, taken from DC's open data each night. Nothing is estimated, scored or ranked. These notes cover what the counts can and can't tell you.</p>
+
+  <div class="prose">
+    <h2>What is counted</h2>
+    <ul>
+      <li><strong>Nine offenses only.</strong> DC's open crime data covers homicide, sex abuse, assault with a dangerous weapon, robbery, burglary, theft from a vehicle, other theft, motor vehicle theft and arson. Simple assault, drug offenses, fraud and many others are not in it, so "all reported crime" here means all of those nine.</li>
+      <li><strong>Reports, not convictions.</strong> A report is what MPD logged. It says nothing about arrests, charges or outcomes.</li>
+      <li><strong>By report date.</strong> Each count goes in the month MPD recorded the report, which can be later than the crime itself.</li>
+      <li><strong>Two 12-month windows.</strong> The last 12 whole months ({curLabel}) against the 12 before ({prevLabel}). Comparing whole years smooths out the seasons: summer is usually busier than winter.</li>
+    </ul>
+
+    <h2>Why the numbers move after the fact</h2>
+    <ul>
+      <li><strong>The figures are preliminary.</strong> MPD revises reports as cases develop: an assault can become a homicide, and an offense can be reclassified or ruled unfounded. A month's count can change for weeks after it ends, and the most recent months move the most.</li>
+      <li><strong>The classifications themselves were questioned in 2025.</strong> That year, MPD officials were accused of moving some offenses into lower categories, which would make some violent crime counts lower than they should have been. Read changes across that period with care.</li>
+      <li><strong>Policing changed in August 2025,</strong> when federal officers and the National Guard were deployed in DC. More police on the street can change both how much crime happens and how much of it gets reported, so before-and-after comparisons are hard to read on their own.</li>
+    </ul>
+
+    <h2>Small numbers</h2>
+    <p>A change is shown as a percentage only when both 12-month counts are at least 100. Below that, a few reports can swing a percentage wildly: going from 3 robberies to 6 is "+100%" but only 3 more reports. Those changes are shown as counts instead.</p>
+
+    <h2>Places</h2>
+    <ul>
+      <li><strong>Wards</strong> come from the ward MPD attached to each report. A few reports each month carry no ward; they count toward DC but no ward.</li>
+      <li><strong>Neighborhoods</strong> use the same boundaries as the DC neighborhood sites, and count the reports MPD's block-level location puts inside each line.</li>
+      <li><strong>No rates.</strong> The counts aren't divided by population, because many of these areas have far more visitors, workers and shoppers than residents. A busy commercial area logs more theft without being more dangerous to live in.</li>
+      <li><strong>No map of incidents and no rankings,</strong> on purpose. Dots on a map point at the homes and blocks of the people involved, and a league table turns noisy counts into a verdict on a neighborhood.</li>
+    </ul>
+
+    <h2>Source</h2>
+    <p>{source} Published by DC under CC BY 4.0. This is an independent, private project, not affiliated with MPD or the DC Government. For anything that matters, check MPD's own figures.</p>
+  </div>
+</Base>

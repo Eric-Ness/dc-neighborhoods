@@ -1,0 +1,22 @@
+---
+import Base from "../../layouts/Base.astro";
+import Spark from "../../components/Spark.astro";
+import { wards, summary, change, fmt, monthly, curLabel, wardName } from "../../lib/crime";
+---
+<Base title="Wards" section="wards">
+  <h1>Crime by ward</h1>
+  <p class="lede">Reports in each of DC's 8 wards from {curLabel}, against the 12 months before. MPD tags every report with its ward. Listed by ward number, not ranked.</p>
+  <ul class="cards">
+    {wards.map((w) => {
+      const s = summary(w.offenses);
+      return (
+        <li><a class="card" href={`/wards/${w.ward}/`}>
+          <h3>{wardName(w.ward)}</h3>
+          <div class="n">{fmt(s.total.cur)} reports, {change(s.total).text}</div>
+          <div class="n">Violent: {fmt(s.violent.cur)}, {change(s.violent).text}</div>
+          <Spark values={monthly(w.offenses)} />
+        </a></li>
+      );
+    })}
+  </ul>
+</Base>
