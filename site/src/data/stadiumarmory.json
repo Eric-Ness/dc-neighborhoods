@@ -1,7 +1,7 @@
 {
  "slug": "stadiumarmory",
  "name": "Stadium-Armory",
- "generated_at": "2026-11-23T07:40:11Z",
+ "generated_at": "2026-11-24T07:39:59Z",
  "boundary": {
   "source": "DC Health Planning Neighborhoods (Open Data DC)",
   "rings": [
@@ -1034,19 +1034,6 @@
    "smd": "7F07"
   },
   {
-   "id": "AH2700143",
-   "issued": "2026-11-04T05:00:00Z",
-   "group": "Renovation & repair",
-   "type": "CONSTRUCTION",
-   "subtype": "MISCELLANEOUS",
-   "address": "2400 EAST CAPITOL ST NE 20003",
-   "work": "After hours work for construction of new north and south storm sewer trunk lines outside of the future stadium footprint. (LIMITED TO Work Area #1 is around the N1 manhole and Work Area #2 is around the J1 junction structure)",
-   "zoning": "UNZONED",
-   "lat": 38.88987,
-   "lon": -76.97294,
-   "smd": "7D05"
-  },
-  {
    "id": "D2600468",
    "issued": "2026-11-04T05:00:00Z",
    "group": "Demolition",
@@ -1058,15 +1045,28 @@
    "lat": 38.88987,
    "lon": -76.97294,
    "smd": "7D05"
+  },
+  {
+   "id": "AH2700143",
+   "issued": "2026-11-04T05:00:00Z",
+   "group": "Renovation & repair",
+   "type": "CONSTRUCTION",
+   "subtype": "MISCELLANEOUS",
+   "address": "2400 EAST CAPITOL ST NE 20003",
+   "work": "After hours work for construction of new north and south storm sewer trunk lines outside of the future stadium footprint. (LIMITED TO Work Area #1 is around the N1 manhole and Work Area #2 is around the J1 junction structure)",
+   "zoning": "UNZONED",
+   "lat": 38.88987,
+   "lon": -76.97294,
+   "smd": "7D05"
   }
  ],
  "requests": {
-  "total": 31,
+  "total": 34,
   "previous_total": 26,
   "by_type": [
    {
     "type": "Parking Enforcement",
-    "count": 16,
+    "count": 17,
     "previous": 8
    },
    {
@@ -1075,17 +1075,17 @@
     "previous": 1
    },
    {
+    "type": "Illegal Dumping",
+    "count": 2,
+    "previous": 2
+   },
+   {
     "type": "Bulk Collection",
     "count": 2,
     "previous": 0
    },
    {
     "type": "DOEE - LIHEAP",
-    "count": 1,
-    "previous": 2
-   },
-   {
-    "type": "Illegal Dumping",
     "count": 1,
     "previous": 2
    },
@@ -1128,10 +1128,45 @@
     "type": "Tree Pruning",
     "count": 1,
     "previous": 0
+   },
+   {
+    "type": "Tree Inspection",
+    "count": 1,
+    "previous": 3
    }
   ],
-  "open": 6,
+  "open": 7,
   "recent": [
+   {
+    "type": "Tree Inspection",
+    "agency": "DDOT",
+    "added": "2026-11-23T19:16:13Z",
+    "resolved": null,
+    "status": "In-Progress",
+    "block": "500 block of OKLAHOMA AVENUE NE",
+    "lat": 38.896,
+    "lon": -76.969
+   },
+   {
+    "type": "Parking Enforcement",
+    "agency": "DPW",
+    "added": "2026-11-23T15:54:54Z",
+    "resolved": "2026-11-23T18:30:10Z",
+    "status": "Closed",
+    "block": "1900 block of INDEPENDENCE AVENUE SE",
+    "lat": 38.887,
+    "lon": -76.977
+   },
+   {
+    "type": "Illegal Dumping",
+    "agency": "DPW",
+    "added": "2026-11-23T13:41:32Z",
+    "resolved": null,
+    "status": "Open",
+    "block": "2400 block of EAST CAPITOL STREET SE",
+    "lat": 38.89,
+    "lon": -76.972
+   },
    {
     "type": "Tree Pruning",
     "agency": "DDOT",
@@ -1186,8 +1221,8 @@
     "type": "Pothole",
     "agency": "DDOT",
     "added": "2026-11-18T18:17:41Z",
-    "resolved": null,
-    "status": "In-Progress",
+    "resolved": "2026-11-23T11:21:03Z",
+    "status": "Closed",
     "block": "BARNEY CIRCLE",
     "lat": 38.879,
     "lon": -76.981
@@ -1445,8 +1480,10 @@
   ],
   "mapped": {
    "types": [
-    "Tree Pruning",
+    "Tree Inspection",
     "Parking Enforcement",
+    "Illegal Dumping",
+    "Tree Pruning",
     "DC How Am I Driving?",
     "Traffic Lights and Pedestrian Walk Signals",
     "Pothole",
@@ -1456,20 +1493,25 @@
     "DMV - Online Processing Issues",
     "Bulk Collection",
     "DMV - Drivers License/ID Issues",
-    "DOEE - LIHEAP",
-    "Illegal Dumping"
+    "DOEE - LIHEAP"
    ],
    "blocks": [
     {
-     "block": "200 block of 19TH STREET SE",
-     "lat": 38.886,
-     "lon": -76.977,
+     "block": "500 block of OKLAHOMA AVENUE NE",
+     "lat": 38.896,
+     "lon": -76.969,
      "r": [
       [
        0,
-       "2026-11-20",
+       "2026-11-23",
        null,
        1
+      ],
+      [
+       2,
+       "2026-10-26",
+       "2026-10-27",
+       0
       ]
      ]
     },
@@ -1480,9 +1522,41 @@
      "r": [
       [
        1,
+       "2026-11-23",
+       "2026-11-23",
+       0
+      ],
+      [
+       1,
        "2026-11-20",
        "2026-11-20",
        0
+      ]
+     ]
+    },
+    {
+     "block": "2400 block of EAST CAPITOL STREET SE",
+     "lat": 38.89,
+     "lon": -76.972,
+     "r": [
+      [
+       2,
+       "2026-11-23",
+       null,
+       1
+      ]
+     ]
+    },
+    {
+     "block": "200 block of 19TH STREET SE",
+     "lat": 38.886,
+     "lon": -76.977,
+     "r": [
+      [
+       3,
+       "2026-11-20",
+       null,
+       1
       ]
      ]
     },
@@ -1547,7 +1621,7 @@
      "lon": -76.981,
      "r": [
       [
-       2,
+       4,
        "2026-11-19",
        null,
        1
@@ -1560,13 +1634,13 @@
      "lon": -76.977,
      "r": [
       [
-       3,
+       5,
        "2026-11-18",
        "2026-11-19",
        0
       ],
       [
-       3,
+       5,
        "2026-11-18",
        "2026-11-19",
        0
@@ -1579,10 +1653,10 @@
      "lon": -76.981,
      "r": [
       [
-       4,
+       6,
        "2026-11-18",
-       null,
-       1
+       "2026-11-23",
+       0
       ]
      ]
     },
@@ -1592,25 +1666,25 @@
      "lon": -76.978,
      "r": [
       [
-       5,
+       7,
        "2026-11-17",
        "2026-11-17",
        0
       ],
       [
-       6,
+       8,
        "2026-11-16",
        "2026-11-17",
        0
       ],
       [
-       9,
+       11,
        "2026-11-04",
        "2026-11-09",
        0
       ],
       [
-       9,
+       11,
        "2026-10-31",
        "2026-11-03",
        0
@@ -1629,7 +1703,7 @@
        0
       ],
       [
-       7,
+       9,
        "2026-11-11",
        null,
        1
@@ -1641,7 +1715,7 @@
        0
       ],
       [
-       8,
+       10,
        "2026-11-06",
        "2026-11-18",
        0
@@ -1659,7 +1733,7 @@
        0
       ],
       [
-       10,
+       12,
        "2026-10-27",
        "2026-10-29",
        0
@@ -1677,7 +1751,7 @@
        0
       ],
       [
-       11,
+       13,
        "2026-10-26",
        "2026-10-26",
        0
@@ -1690,7 +1764,7 @@
      "lon": -76.979,
      "r": [
       [
-       3,
+       5,
        "2026-11-05",
        null,
        1
@@ -1709,19 +1783,6 @@
        0
       ]
      ]
-    },
-    {
-     "block": "500 block of OKLAHOMA AVENUE NE",
-     "lat": 38.896,
-     "lon": -76.969,
-     "r": [
-      [
-       12,
-       "2026-10-26",
-       "2026-10-27",
-       0
-      ]
-     ]
     }
    ]
   }
@@ -1736,22 +1797,22 @@
     "previous": 2
    },
    {
+    "offense": "THEFT/OTHER",
+    "count": 1,
+    "previous": 4
+   },
+   {
+    "offense": "THEFT F/AUTO",
+    "count": 1,
+    "previous": 1
+   },
+   {
     "offense": "BURGLARY",
     "count": 1,
     "previous": 0
    },
    {
     "offense": "HOMICIDE",
-    "count": 1,
-    "previous": 0
-   },
-   {
-    "offense": "THEFT/OTHER",
-    "count": 1,
-    "previous": 5
-   },
-   {
-    "offense": "THEFT F/AUTO",
     "count": 0,
     "previous": 1
    }
@@ -1786,7 +1847,7 @@
   "license": "CC BY 4.0"
  },
  "homes": {
-  "generated_at": "2026-11-23T07:40:11Z",
+  "generated_at": "2026-11-24T07:39:59Z",
   "sources": [
    {
     "name": "Integrated Tax System Public Extract (OTR) via Open Data DC",
@@ -1801,7 +1862,7 @@
     "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
    }
   ],
-  "area_note": "Sales are tied to Stadium-Armory through OTR assessment sub-areas Old City 1 A and B, the rowhouse blocks just west of the stadium grounds in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Stadium-Armory boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-23): 7% of the 2,431 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
+  "area_note": "Sales are tied to Stadium-Armory through OTR assessment sub-areas Old City 1 A and B, the rowhouse blocks just west of the stadium grounds in OTR's Integrated Tax System Public Extract, not through the DC Health planning-area boundary used elsewhere on this site, because the tax extract has no coordinates. The two areas overlap but do not match exactly. Fit with the Stadium-Armory boundary, measured this run by tax square (a square counts as inside if any DC address point on it falls inside the DC Health polygon, so edge squares make these upper bounds; measured 2026-11-24): 7% of the 2,431 house and condo parcels in the OTR area(s) sit on squares inside the boundary, and 100% of house and condo parcels on in-boundary squares belong to the OTR area(s).",
   "sales_note": "Only deeds OTR codes \"Market Sale\" at $75,000 or more are counted (same filter as the prototypes); foreclosures, buyer=seller transfers, speculative, tax-deed, unusual and multi-parcel sales are excluded. \"house\" = row, semi-detached and detached (use codes 011-013); \"condo\" = use codes 016-017. Dates are deed sale dates; deeds reach the extract a few weeks after closing, so the newest weeks undercount. The extract keeps only each parcel's most recent sale, so a home that resold within 24 months counts once, in its later window. \"Assessed\" is OTR's current total assessment (NEWTOTAL), which may postdate the sale. Building area and bedrooms are from CAMA Residential (houses only).",
   "otr_neighborhoods": [
    {
@@ -1818,12 +1879,12 @@
    "area_parcels": 2431,
    "area_share_inside": 0.07,
    "boundary_share_in_area": 1.0,
-   "measured": "2026-11-23"
+   "measured": "2026-11-24"
   },
   "primary": "house",
   "house": {
-   "median_12mo": 1007000,
-   "count_12mo": 56,
+   "median_12mo": 989000,
+   "count_12mo": 57,
    "median_prev_12mo": 942500,
    "count_prev_12mo": 76
   },
@@ -1834,14 +1895,14 @@
    "count_prev_12mo": 20
   },
   "last_60d": {
-   "median": 809000,
-   "count": 10,
-   "median_ppsf": 692,
-   "ppsf_count": 10
+   "median": 835000,
+   "count": 11,
+   "median_ppsf": 691,
+   "ppsf_count": 11
   },
   "above_assessment_12mo": {
-   "n": 47,
-   "of": 70
+   "n": 48,
+   "of": 71
   },
   "by_month": [
    {
@@ -1901,12 +1962,21 @@
    },
    {
     "month": "2026-11",
-    "median": 780000,
-    "count": 3
+    "median": 807500,
+    "count": 4
    }
   ],
   "by_month_basis": "houses only; calendar months, the last one in progress; median null when under 3 sales",
   "recent_sales": [
+   {
+    "address": "540 14th St SE",
+    "date": "2026-11-16",
+    "price": 835000,
+    "kind": "house",
+    "beds": 2,
+    "sqft": 1280,
+    "assessed": 832030
+   },
    {
     "address": "1840 Massachusetts Ave SE",
     "date": "2026-11-12",
@@ -2027,7 +2097,7 @@
   ]
  },
  "streets": {
-  "generated_at": "2026-11-23T07:40:11Z",
+  "generated_at": "2026-11-24T07:39:59Z",
   "sources": [
    {
     "name": "DDOT TOPS: Occupancy Permits (Open Data DC)",
@@ -2047,15 +2117,15 @@
    }
   ],
   "curb": {
-   "active_this_week": 14,
-   "starting_next_7d": 2,
-   "reserved_ft": 1496,
+   "active_this_week": 13,
+   "starting_next_7d": 0,
+   "reserved_ft": 1320,
    "long_running_90d": 5,
-   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-23: newest permit issued 2026-11-23, newest record update 2026-11-23, so the layer is current to within a day or two.",
+   "freshness_note": "DDOT TOPS occupancy layer, checked 2026-11-24: newest permit issued 2026-11-23, newest record update 2026-11-23, so the layer is current to within a day or two.",
    "by_type": [
     {
      "type": "Construction staging",
-     "count": 10
+     "count": 9
     },
     {
      "type": "Lead pipe replacement",
@@ -2070,24 +2140,7 @@
      "count": 1
     }
    ],
-   "upcoming": [
-    {
-     "type": "Lead pipe replacement",
-     "block": "100 block of 19th Street SE",
-     "start": "2026-11-23",
-     "end": "2027-01-18",
-     "ft": 88,
-     "hours": "7 am\u20137 pm"
-    },
-    {
-     "type": "Lead pipe replacement",
-     "block": "1800 block of E Street SE",
-     "start": "2026-11-23",
-     "end": "2027-01-18",
-     "ft": 220,
-     "hours": "7 am\u20137 pm"
-    }
-   ]
+   "upcoming": []
   },
   "trees": {
    "total": 874,
@@ -2170,7 +2223,7 @@
     "type": "Parking Enforcement",
     "median_days": 0.06,
     "city_median_days": 0.05,
-    "closed_n": 155
+    "closed_n": 156
    },
    {
     "type": "DC Government Information",
@@ -2186,9 +2239,9 @@
    },
    {
     "type": "Pothole",
-    "median_days": 6.41,
-    "city_median_days": 3.59,
-    "closed_n": 24
+    "median_days": 6.08,
+    "city_median_days": 3.6,
+    "closed_n": 25
    },
    {
     "type": "Traffic Lights and Pedestrian Walk Signals",
@@ -2199,26 +2252,26 @@
    {
     "type": "Sanitation Enforcement",
     "median_days": 2.05,
-    "city_median_days": 1.1,
+    "city_median_days": 1.11,
     "closed_n": 14
    },
    {
     "type": "Dead Animal Collection",
     "median_days": 1.18,
-    "city_median_days": 1.77,
+    "city_median_days": 1.78,
     "closed_n": 11
    },
    {
     "type": "Roadway Signs",
     "median_days": 23.79,
-    "city_median_days": 7.27,
+    "city_median_days": 7.45,
     "closed_n": 11
    }
   ],
   "service_note": "Median days from request to closure for requests opened in the last 12 months and already closed, computed from request and resolution timestamps only (exact here; citywide from server-side quantiles). When the window spans two yearly layers the citywide median is merged from each layer's quantiles (accurate to a few percent). Requests still open are excluded, which biases recent months toward faster closes, equally here and citywide."
  },
  "history": {
-  "generated_at": "2026-11-23T07:40:11Z",
+  "generated_at": "2026-11-24T07:39:59Z",
   "sources": [
    {
     "name": "DC Historic Preservation Office, Historic Data on DC Buildings (HistoryQuest), CC BY 4.0",
@@ -2308,7 +2361,7 @@
   }
  },
  "news": {
-  "generated_at": "2026-11-23T07:40:11Z",
+  "generated_at": "2026-11-24T07:39:59Z",
   "archive_days": 180,
   "sources": [
    {
@@ -2388,7 +2441,7 @@
     "name": "Hill Rag",
     "url": "https://www.hillrag.com/",
     "state": "ok",
-    "matched": 7,
+    "matched": 8,
     "fetched": 1
    },
    {
@@ -2416,7 +2469,7 @@
     "name": "PoPville",
     "url": "https://www.popville.com/",
     "state": "ok",
-    "matched": 0,
+    "matched": 1,
     "fetched": 1
    },
    {
@@ -2477,6 +2530,13 @@
    }
   ],
   "items": [
+   {
+    "title": "Helluva Way to Wake Up \u201cAcross from the DC Jail\u201d edition",
+    "url": "https://www.popville.com/2026/11/helluva-way-to-wake-up-across-from-the-dc-jail-edition/",
+    "source": "PoPville",
+    "published": "2026-11-23T18:30:10Z",
+    "first_seen": "2026-11-24T07:39:59Z"
+   },
    {
     "title": "The D.C. Jail\u2019s food has been a health hazard for too long",
     "url": "https://51st.news/opinion-dc-jail-mouse-in-food-aramark/",
@@ -2743,8 +2803,8 @@
   }
  },
  "events": {
-  "generated_at": "2026-11-23T07:40:11Z",
-  "today": "2026-11-23",
+  "generated_at": "2026-11-24T07:39:59Z",
+  "today": "2026-11-24",
   "days_ahead": 30,
   "sources": [
    {
@@ -2878,20 +2938,6 @@
   "anc_meetings": [
    {
     "anc": "ANC 6B",
-    "date": "2025-04-08",
-    "special": false,
-    "title": "April 8, 2025, ANC 6B Public Meeting",
-    "url": "https://oanc.dc.gov/event/april-8-2025-anc-6b-public-meeting"
-   },
-   {
-    "anc": "ANC 6B",
-    "date": "2025-03-11",
-    "special": false,
-    "title": "March 11, 2025, ANC 6B Public Meeting",
-    "url": "https://oanc.dc.gov/event/march-11-2025-anc-6b-public-meeting"
-   },
-   {
-    "anc": "ANC 6B",
     "date": "2025-02-11",
     "special": false,
     "title": "February 11, 2025, ANC 6B Public Meeting",
@@ -2900,7 +2946,7 @@
   ]
  },
  "blocks": {
-  "generated_at": "2026-11-23T07:40:11Z",
+  "generated_at": "2026-11-24T07:39:59Z",
   "sources": [
    {
     "name": "DDOT Roadway Blocks (Open Data DC)",
@@ -14404,7 +14450,7 @@
   ]
  },
  "transit": {
-  "generated_at": "2026-11-23T07:40:11Z",
+  "generated_at": "2026-11-24T07:39:59Z",
   "sources": [
    {
     "name": "Metro stations (Open Data DC)",
