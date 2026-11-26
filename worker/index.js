@@ -4,6 +4,7 @@
 // - anything else (e.g. *.workers.dev previews) -> serves the multi-neighborhood site unchanged
 // - /api/transit on any of them -> live transit arrivals (worker/transit.js)
 // - http://anything -> 301 to https://, and every response carries the security headers below
+// - /.well-known/security.txt on any of them -> where to report a security problem
 import hoods from "../site/src/data/index.json" with { type: "json" };
 import { transit } from "./transit.js";
 
@@ -48,6 +49,24 @@ const SECURITY_HEADERS = {
   "Cross-Origin-Opener-Policy": "same-origin",
 };
 
+// RFC 9116 contact for security reports, the same on every domain. Expires rolls forward a year from
+// each request's day, so the file never goes stale between deploys.
+function securityTxt(host) {
+  const day = new Date();
+  day.setUTCHours(0, 0, 0, 0);
+  day.setUTCFullYear(day.getUTCFullYear() + 1);
+  const body = [
+    "Contact: mailto:eric.ness@nulllabs.com",
+    `Expires: ${day.toISOString().replace(".000Z", "Z")}`,
+    "Preferred-Languages: en",
+    `Canonical: https://${host}/.well-known/security.txt`,
+    "",
+  ].join("\n");
+  return new Response(body, {
+    headers: { "content-type": "text/plain; charset=utf-8", "cache-control": "public, max-age=86400" },
+  });
+}
+
 function secured(response) {
   const out = new Response(response.body, response); // redirect and asset responses have immutable headers
   for (const [k, v] of Object.entries(SECURITY_HEADERS)) out.headers.set(k, v);
@@ -72,6 +91,7 @@ async function route(request, env) {
   }
 
   if (url.pathname === "/api/transit") return transit(request, env);
+  if (url.pathname === "/.well-known/security.txt") return securityTxt(host);
 
   const slug = HOSTS.get(host);
   const isShared = url.pathname.startsWith("/_astro/") || url.pathname.startsWith("/favicon");
