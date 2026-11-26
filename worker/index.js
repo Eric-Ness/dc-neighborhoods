@@ -21,14 +21,15 @@ for (const h of hoods) {
 }
 
 // Sent on every response from every neighborhood domain. Scripts and styles may only come from the
-// site itself (plus Google Fonts); photos come from many archives, so images may load from any https host.
+// site itself (plus Google Fonts, and the Web Analytics beacon Cloudflare adds at the edge); photos come
+// from many archives, so images may load from any https host.
 const CSP = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline'",
+  "script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com",
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "font-src 'self' https://fonts.gstatic.com",
   "img-src 'self' data: https:",
-  "connect-src 'self'",
+  "connect-src 'self' https://cloudflareinsights.com",
   "object-src 'none'",
   "base-uri 'self'",
   "form-action 'self'",
