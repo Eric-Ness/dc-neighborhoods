@@ -22,6 +22,8 @@ then set it for this shell only:
   python tools/cloudflare-no-mail.py                 # show the plan
   python tools/cloudflare-no-mail.py --apply         # make the changes
   python tools/cloudflare-no-mail.py --only georgetowndc.org --apply
+  python tools/cloudflare-no-mail.py --all-zones     # every zone in the account; zones that use
+                                                     # email (a real MX or their own SPF) are skipped
 """
 
 from __future__ import annotations
@@ -139,6 +141,8 @@ def main() -> int:
     ap = argparse.ArgumentParser(description="Add no-mail SPF, DMARC and null MX records to the neighborhood domains.")
     ap.add_argument("--apply", action="store_true", help="create the records (default: dry run)")
     ap.add_argument("--only", nargs="+", metavar="DOMAIN", help="limit to these domains")
+    ap.add_argument("--all-zones", action="store_true",
+                    help="every zone the token can see, not just the neighborhood domains")
     args = ap.parse_args()
 
     token = os.environ.get("CLOUDFLARE_API_TOKEN", "").strip()
@@ -146,19 +150,20 @@ def main() -> int:
         print("Set CLOUDFLARE_API_TOKEN first (see the top of this file).", file=sys.stderr)
         return 2
 
-    wanted = our_domains()
-    if args.only:
-        unknown = sorted(set(args.only) - set(wanted))
-        if unknown:
-            print(f"Not one of the neighborhood domains: {', '.join(unknown)}", file=sys.stderr)
-            return 2
-        wanted = sorted(args.only)
-
     try:
         zones = {z["name"]: z for z in paged(token, "/zones", {})}
     except ApiError as e:
         print(f"Could not list zones: {e}", file=sys.stderr)
         return 1
+
+    wanted = sorted(zones) if args.all_zones else our_domains()
+    if args.only:
+        unknown = sorted(set(args.only) - set(wanted))
+        if unknown:
+            where = "zones the token can see" if args.all_zones else "neighborhood domains (add --all-zones for others)"
+            print(f"Not one of the {where}: {', '.join(unknown)}", file=sys.stderr)
+            return 2
+        wanted = sorted(args.only)
 
     print(("Applying" if args.apply else "Dry run (add --apply to make these changes)") + f": {len(wanted)} domains\n")
     created = failed = skipped = done = 0

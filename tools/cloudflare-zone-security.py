@@ -6,7 +6,9 @@ Cloudflare account, this:
   - sets the minimum TLS version to 1.2, so browsers can no longer connect with TLS 1.0 or 1.1
     (a zone already at 1.2 or 1.3 is left alone);
   - limits TLS 1.2 to forward-secret cipher suites (ECDHE with AES-GCM or ChaCha20), so a stolen
-    key can't decrypt recorded traffic. TLS 1.3 is always forward-secret and isn't affected;
+    key can't decrypt recorded traffic. TLS 1.3 is always forward-secret and isn't affected.
+    Cloudflare allows this only with the paid Advanced Certificate Manager add-on; without it
+    the step reports that and moves on rather than counting a failure;
   - adds CAA records naming the certificate authorities Cloudflare uses, so no other authority
     may issue a certificate for the domain. Cloudflare also adds its own CAA entries for its
     certificates whenever a zone has any, so this can't block renewals;
@@ -27,6 +29,7 @@ Token (Manage Account > Account API Tokens, or My Profile > API Tokens), for the
   python tools/cloudflare-zone-security.py                  # show the plan
   python tools/cloudflare-zone-security.py --apply          # make the changes
   python tools/cloudflare-zone-security.py --only georgetowndc.org --apply
+  python tools/cloudflare-zone-security.py --all-zones      # every zone in the account
 """
 
 from __future__ import annotations
@@ -154,7 +157,13 @@ class Zone:
             return "ciphers already forward-secret only"
         if not self.apply:
             return "would limit TLS 1.2 to forward-secret ciphers" + ("" if cur else " (now Cloudflare's default)")
-        self.write("PATCH", "/settings/ciphers", {"value": CIPHERS}, "change zone settings", perm)
+        try:
+            self.write("PATCH", "/settings/ciphers", {"value": CIPHERS}, "change zone settings", perm)
+        except ApiError as e:
+            # 1023: custom cipher suites are part of the paid Advanced Certificate Manager add-on.
+            if "1023" in str(e):
+                return "ciphers left at Cloudflare's default (custom suites need Advanced Certificate Manager)"
+            raise
         return "limited TLS 1.2 to forward-secret ciphers"
 
     def caa(self) -> str:
@@ -165,6 +174,14 @@ class Zone:
         missing = [(tag, ca) for tag, ca in CAA if (tag, ca) not in have]
         if not missing:
             return "CAA already set"
+        if not recs:
+            # A host that isn't proxied by Cloudflare gets its own certificate, maybe from an authority
+            # not on the list; restricting the zone could stop that renewal. Only add CAA to a zone with
+            # no such hosts (a zone that already has CAA has already chosen its authorities).
+            hosts = self.get("/dns_records?per_page=500", "read DNS records", perm)
+            direct = sorted({r["name"] for r in hosts if r.get("type") in ("A", "AAAA", "CNAME") and not r.get("proxied")})
+            if direct:
+                return f"CAA skipped: {', '.join(direct[:3])}{'...' if len(direct) > 3 else ''} not proxied by Cloudflare"
         if not self.apply:
             return f"would add {len(missing)} CAA records"
         for tag, ca in missing:
@@ -195,6 +212,8 @@ def main() -> int:
     ap = argparse.ArgumentParser(description="Tighten TLS, ciphers, CAA and DNSSEC for the neighborhood domains.")
     ap.add_argument("--apply", action="store_true", help="make the changes (default: dry run)")
     ap.add_argument("--only", nargs="+", metavar="DOMAIN", help="limit to these domains")
+    ap.add_argument("--all-zones", action="store_true",
+                    help="every zone the token can see, not just the neighborhood domains")
     args = ap.parse_args()
 
     token = os.environ.get("CLOUDFLARE_API_TOKEN", "").strip()
@@ -202,19 +221,20 @@ def main() -> int:
         print("Set CLOUDFLARE_API_TOKEN first (see the top of this file).", file=sys.stderr)
         return 2
 
-    wanted = our_domains()
-    if args.only:
-        unknown = sorted(set(args.only) - set(wanted))
-        if unknown:
-            print(f"Not one of the neighborhood domains: {', '.join(unknown)}", file=sys.stderr)
-            return 2
-        wanted = sorted(args.only)
-
     try:
         found = zones(token)
     except ApiError as e:
         print(f"Could not list zones: {e}", file=sys.stderr)
         return 1
+
+    wanted = sorted(found) if args.all_zones else our_domains()
+    if args.only:
+        unknown = sorted(set(args.only) - set(wanted))
+        if unknown:
+            where = "zones the token can see" if args.all_zones else "neighborhood domains (add --all-zones for others)"
+            print(f"Not one of the {where}: {', '.join(unknown)}", file=sys.stderr)
+            return 2
+        wanted = sorted(args.only)
 
     print(("Applying" if args.apply else "Dry run (add --apply to make these changes)") + f": {len(wanted)} domains\n")
     missing, pending = [], []
