@@ -7,6 +7,8 @@
 // - /.well-known/security.txt on any of them -> where to report a security problem
 import hoods from "../site/src/data/index.json" with { type: "json" };
 import { transit } from "./transit.js";
+// Hashes of the inline scripts in the build, written by tools/csp-hashes.mjs after `astro build`.
+import scriptHashes from "./csp-hashes.json" with { type: "json" };
 
 const HOSTS = new Map();
 const REDIRECTS = new Map();
@@ -21,14 +23,15 @@ for (const h of hoods) {
   }
 }
 
-// Sent on every response from every neighborhood domain. Scripts and styles may only come from the
-// site itself (plus Google Fonts, and the Web Analytics beacon Cloudflare adds at the edge); photos come
-// from many archives, so images may load from any https host.
+// Sent on every response from every neighborhood domain. Scripts may only be the site's own files, the
+// inline scripts the build listed by hash, and the Web Analytics beacon Cloudflare adds at the edge.
+// Fonts are self-hosted. Photos come from many archives, so images may load from any https host.
+// Styles keep 'unsafe-inline': the pages use style attributes, and CSS can't run code.
 const CSP = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com",
-  "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-  "font-src 'self' https://fonts.gstatic.com",
+  `script-src 'self' ${scriptHashes.join(" ")} https://static.cloudflareinsights.com`,
+  "style-src 'self' 'unsafe-inline'",
+  "font-src 'self' data:", // the bundler inlines the smallest font subsets
   "img-src 'self' data: https:",
   "connect-src 'self' https://cloudflareinsights.com",
   "object-src 'none'",
@@ -38,8 +41,9 @@ const CSP = [
   "upgrade-insecure-requests",
 ].join("; ");
 const SECURITY_HEADERS = {
-  // No includeSubDomains or preload yet: both are slow to undo once browsers have cached them.
-  "Strict-Transport-Security": "max-age=31536000",
+  // Every subdomain (www, crime) is HTTPS-only, so includeSubDomains is safe. No preload yet: getting
+  // off the browsers' built-in list takes months.
+  "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
   "Content-Security-Policy": CSP,
   "X-Content-Type-Options": "nosniff",
   "X-Frame-Options": "DENY",
@@ -47,6 +51,9 @@ const SECURITY_HEADERS = {
   // The transit board asks for location on a click, so geolocation stays allowed for the site itself.
   "Permissions-Policy": "geolocation=(self), camera=(), microphone=(), payment=(), usb=()",
   "Cross-Origin-Opener-Policy": "same-origin",
+  // Other sites may link to these pages but not embed their files; feed readers and calendar apps
+  // fetch from servers, which this doesn't affect.
+  "Cross-Origin-Resource-Policy": "same-site",
 };
 
 // RFC 9116 contact for security reports, the same on every domain. Expires rolls forward a year from
