@@ -114,3 +114,17 @@ Bold cells are reviewer adjustments to the researcher's self-score:
 The business case and content plan built on this ranking are in [BUSINESS-CASE.md](BUSINESS-CASE.md) and [CONTENT-STRATEGY.md](CONTENT-STRATEGY.md).
 
 To rebuild the ranking after editing an idea file or `reviewer-adjustments.json`, run `node tools/rank.mjs`.
+
+## To look at
+
+Not yet scored or ranked. Write one up as an idea file and run `node tools/rank.mjs` once it is worth ranking.
+
+### Crash map and Vision Zero view, modeled on crashmaps.org/dc
+
+[crashmaps.org/dc](https://crashmaps.org/dc/#section=map) is an independent, unofficial dashboard built by one person for r/washingtondc. It covers police-reported DC crashes from 2023 to 2025: severity (fatal, injury, property damage), pedestrian and cyclist crashes, DUI, speed, time of day, and progress toward Vision Zero. It has ward filters, a top-10 intersections list, an address lookup with a radius, and a commute-route tool. It has no API, embed or download, and no license beyond a "not for legal use" disclaimer, so anything we build would use the source data, not its numbers.
+
+- **Source:** the same Crashes in DC dataset already listed in [ideas/civic-data.md](ideas/civic-data.md) (MPD records through DCGIS, published every 24 hours).
+- **Gap it leaves:** it stops at wards. Clipping crashes to each neighborhood polygon would give a per-neighborhood page that it doesn't have: crashes this year against last year, pedestrian and cyclist crashes, and the worst intersections inside the boundary.
+- **Fits the data engine:** one more nightly dataset clipped to the polygon, like permits and 311. It also feeds the Block Report Card (`civic-data#9`).
+- **Rules to keep:** crashes are traffic records, not crime, so a map is allowed. DUI crashes stay as counts only. Show facts with no safety score or grade. Percentages only when both counts are at least 100. Link to crashmaps.org as a related project instead of copying its charts.
+- **Open questions:** whether the dataset's fields include anything personal that must be stripped, and how much its location precision needs rounding before it is mapped.
