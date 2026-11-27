@@ -128,3 +128,12 @@ Not yet scored or ranked. Write one up as an idea file and run `node tools/rank.
 - **Fits the data engine:** one more nightly dataset clipped to the polygon, like permits and 311. It also feeds the Block Report Card (`civic-data#9`).
 - **Rules to keep:** crashes are traffic records, not crime, so a map is allowed. DUI crashes stay as counts only. Show facts with no safety score or grade. Percentages only when both counts are at least 100. Link to crashmaps.org as a related project instead of copying its charts.
 - **Open questions:** whether the dataset's fields include anything personal that must be stripped, and how much its location precision needs rounding before it is mapped.
+
+### License plate reader map (Flock and others)
+
+A per-neighborhood map and list of automated license plate readers (ALPRs), with who makes and runs each one. It's a live local issue. In September 2026 the Council's public safety chair pressed MPD for answers on its Flock cameras, MPD opened two misuse investigations, and Fairfax County and Arlington moved to drop theirs. MPD has reported about 67 to 71 Flock readers, among roughly 98 fixed and 68 mobile ALPRs in all; the figures vary by source and date.
+
+- **Source:** OpenStreetMap, where volunteers tag each reader with `surveillance:type=ALPR` and the manufacturer, operator and facing direction. [DeFlock](https://deflock.me) is the best-known map built on it. A query on 2026-11-27 found 154 ALPRs mapped inside DC: 110 made by Flock Safety (32 tagged as run by MPD, 2 by Home Depot, the rest with no operator), plus Motorola, SenSen, Leonardo, Turing Video, Genetec and Axis.
+- **Fits the data engine:** one Overpass query each night, clipped to the neighborhood polygon. It is small and needs no API key.
+- **Rules to keep:** the data is crowdsourced and incomplete, so the page must say so, show the OSM date, and never claim a camera is or isn't there beyond what OSM says. OSM data is ODbL, so credit "© OpenStreetMap contributors" and keep our derived file open. Cameras are infrastructure, not crime, so a map is allowed. Show facts only: no "how to avoid them" routing and no grades. Link to DeFlock and to MPD's own ALPR policy instead of taking a side.
+- **Open questions:** how many of the 154 fall inside our 40 neighborhoods, and whether MPD publishes any official location list to compare against.
